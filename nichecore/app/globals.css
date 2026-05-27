@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+/* ============================================================
+   NicheCore — design tokens
+   Editorial serif voice (cream paper) + material product UI (bone),
+   forest-green governance, meaning-encoded evidence pastels.
+   ============================================================ */
+
+@theme {
+  /* Surfaces */
+  --color-paper: #f1ede3;        /* editorial cream */
+  --color-paper-deep: #e9e3d5;
+  --color-canvas: #fbfbf7;       /* bone app canvas */
+  --color-card: #ffffff;
+  --color-ink: #201c17;          /* warm near-black */
+  --color-ink-soft: #4b463e;
+  --color-ink-faint: #8b8478;
+  --color-line: #2017120f;       /* hairline */
+  --color-line-strong: #20171221;
+
+  /* Brand */
+  --color-forest: #0e3b2e;
+  --color-forest-deep: #0a2c22;
+  --color-forest-soft: #1c5a46;
+  --color-gold: #b08a3e;
+  --color-gold-deep: #8f6e2c;
+
+  /* Meaning-encoded pastels (card fills) */
+  --color-mint: #d8efe0;         /* positive / supported */
+  --color-sky: #d6e9f5;          /* info / evidence */
+  --color-amber: #fbe3a6;        /* caution / early */
+  --color-lavender: #e7dbf7;     /* supportive / mechanistic */
+  --color-blush: #f8ddd8;        /* sensitive / hypothesis */
+  --color-mint-ink: #1d5b41;
+  --color-sky-ink: #245b7a;
+  --color-amber-ink: #8a6313;
+  --color-lavender-ink: #5b3d86;
+  --color-blush-ink: #9a463a;
+
+  /* Fonts (bound from next/font in layout.tsx) */
+  --font-display: var(--font-fraunces), "Times New Roman", serif;
+  --font-sans: var(--font-hanken), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+
+  /* Radii */
+  --radius-card: 1.25rem;
+  --radius-lg: 1.5rem;
+  --radius-pill: 999px;
+
+  /* Motion */
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv01";
+    letter-spacing: -0.011em;
+  }
+  ::selection {
+    background: var(--color-forest);
+    color: var(--color-paper);
+  }
+  .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+    font-optical-sizing: auto;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    font-size: 0.6875rem;
+    color: var(--color-ink-faint);
+    font-weight: 500;
+  }
+
+  .hairline { border-color: var(--color-line-strong); }
+
+  .btn-primary {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: var(--color-forest);
+    color: var(--color-paper);
+    border-radius: var(--radius-pill);
+    padding: 0.7rem 1.3rem;
+    font-size: 0.9rem; font-weight: 500;
+    transition: transform 0.4s var(--ease-out-soft), background 0.3s, box-shadow 0.4s;
+    box-shadow: 0 1px 0 #ffffff40 inset, 0 8px 24px -12px #0e3b2e90;
+  }
+  .btn-primary:hover { background: var(--color-forest-deep); transform: translateY(-1px); }
+
+  .btn-ghost {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: transparent;
+    color: var(--color-ink);
+    border: 1px solid var(--color-line-strong);
+    border-radius: var(--radius-pill);
+    padding: 0.7rem 1.3rem;
+    font-size: 0.9rem; font-weight: 500;
+    transition: border-color 0.3s, background 0.3s, transform 0.4s var(--ease-out-soft);
+  }
+  .btn-ghost:hover { border-color: var(--color-forest); background: #ffffff70; transform: translateY(-1px); }
+
+  .card-soft {
+    background: var(--color-card);
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-card);
+    box-shadow: 0 1px 2px #20171208, 0 18px 40px -32px #20171230;
+  }
+
+  .chip {
+    display: inline-flex; align-items: center; gap: 0.4rem;
+    font-family: var(--font-mono);
+    font-size: 0.6875rem; text-transform: lowercase;
+    letter-spacing: 0.02em;
+    padding: 0.28rem 0.6rem;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--color-line-strong);
+    color: var(--color-ink-soft);
+    background: #ffffff80;
+  }
+}
+
+/* Paper grain texture */
+.grain::before {
+  content: "";
+  position: absolute; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.45'/%3E%3C/svg%3E");
+  opacity: 0.025;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.rise { animation: rise 0.7s var(--ease-out-soft) both; }
+
+@media (prefers-reduced-motion: reduce) {
+  .rise { animation: none; }
+  html { scroll-behavior: auto; }
+}

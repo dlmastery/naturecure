@@ -1,0 +1,36 @@
+# Reference material (large, not part of the build)
+_snapshot/
+_otc_zip/
+*.zip
+
+# Dependencies / build output
+node_modules/
+**/node_modules/
+.next/
+**/.next/
+out/
+**/out/
+dist/
+build/
+
+# Env & secrets
+.env
+.env*.local
+*.local
+
+# Verification artifacts
+shots/
+**/shots/
+
+# Logs / OS / editor
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Next.js / Vercel
+.vercel
+*.tsbuildinfo
+next-env.d.ts
