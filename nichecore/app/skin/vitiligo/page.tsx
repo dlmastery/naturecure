@@ -5,6 +5,7 @@ import { getBundle } from "@/lib/data";
 import { ACCENTS } from "@/lib/evidence";
 import { Eyebrow, GradeBadge, FreshnessChip, SectionHeading, RuleCard, SafetyNote } from "@/components/ui";
 import { BundleCard } from "@/components/bundle-card";
+import { NextStep } from "@/components/next-step";
 import { Footer } from "@/app/page";
 
 export const metadata = { title: "Vitiligo support — NicheCore", description: vitiligo.promise };
@@ -167,7 +168,14 @@ export default function VitiligoJourney() {
         <div className="mt-8">{bundle && <BundleCard bundle={bundle} ctaHref="/c/skin-pigmentation/package" />}</div>
       </section>
 
-      <div className="pt-16"><Footer /></div>
+      <NextStep
+        step="04 · Personalise + safety screen"
+        title="Start your 90-day vitiligo support pack"
+        body="Answer four safety questions. If you're on photosensitising medications, JAK inhibitors, or pregnant, we route you to an expert first — no checkout."
+        href="/c/skin-pigmentation/package"
+        cta="Build my regime"
+      />
+      <div className="pt-8"><Footer /></div>
     </div>
   );
 }

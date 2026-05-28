@@ -7,6 +7,7 @@ import { getCategory } from "@/lib/categories";
 import { getBundle } from "@/lib/data";
 import { Eyebrow, GradeBadge, SafetyNote } from "@/components/ui";
 import { QualityMeter } from "@/components/bundle-card";
+import { NextStep } from "@/components/next-step";
 
 export default function PackagePage({ params }: { params: Promise<{ category: string }> }) {
   const { category: id } = use(params);
@@ -121,6 +122,15 @@ export default function PackagePage({ params }: { params: Promise<{ category: st
           )}
         </div>
       </section>
+
+      <NextStep
+        step="06 · Companion"
+        title="Turn purchase into a routine"
+        body="Daily reminders, weekly check-ins, refill countdown, and evidence updates as protocols change. The relationship is where natural protocols actually work."
+        href="/companion"
+        cta="Activate the companion"
+        tone="paper"
+      />
     </div>
   );
 }

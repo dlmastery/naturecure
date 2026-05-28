@@ -6,6 +6,7 @@ import { getBundle, sources } from "@/lib/data";
 import { ACCENTS } from "@/lib/evidence";
 import { Eyebrow, GradeBadge, FreshnessChip, RiskTag, SectionHeading, RuleCard, SafetyNote } from "@/components/ui";
 import { BundleCard } from "@/components/bundle-card";
+import { NextStep } from "@/components/next-step";
 import { Footer } from "@/app/page";
 
 export function generateStaticParams() {
@@ -237,9 +238,18 @@ export default async function CategoryHub({ params }: { params: Promise<{ catego
         </div>
       </section>
 
-      {/* ── CTA row ── */}
-      <section className="px-6 pt-16 sm:px-10 lg:px-14">
-        <div className="grid gap-4 sm:grid-cols-3">
+      <NextStep
+        step="04 · Personalise + safety screen"
+        title="Build your reviewed regime"
+        body={`Four quick questions. If a flag fires we route you to a human first; otherwise you'll see the ${category.shortName.toLowerCase()} pack with one-time or subscription pricing.`}
+        href={`/c/${category.id}/package`}
+        cta="Personalise my regime"
+      />
+
+      {/* ── Optional companions ── */}
+      <section className="px-6 pt-12 sm:px-10 lg:px-14">
+        <Eyebrow>Or run alongside</Eyebrow>
+        <div className="mt-4 grid gap-4 sm:grid-cols-3">
           {[
             { href: "/guru", icon: Sparkles, title: "Ask the AI Guru", body: "Explains the reviewed protocol and evidence grades — never invents claims." },
             { href: "/expert", icon: UserRound, title: "Add an expert chart", body: "A credentialed Ayurveda or nutrition expert reviews and personalises your plan." },

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Pill, Salad, Wind, ClipboardCheck, Repeat, FlaskConical, Bell, ArrowRight } from "lucide-react";
 import { companionEvents } from "@/lib/data";
 import { Eyebrow, SectionHeading, Stat } from "@/components/ui";
+import { NextStep } from "@/components/next-step";
 import { Footer } from "@/app/page";
 
 const ICONS = { supplement: Pill, diet: Salad, routine: Wind, checkin: ClipboardCheck, refill: Repeat, research: FlaskConical } as const;
@@ -88,7 +89,14 @@ export default function Companion() {
         </div>
       </section>
 
-      <div className="pt-16"><Footer /></div>
+      <NextStep
+        step="08 · Progress"
+        title="See the trend, not a diagnosis"
+        body="Adherence, tolerance, symptom journal and refill recommendation — honestly labelled as trend signals, never causal claims."
+        href="/progress"
+        cta="Open month-one progress"
+      />
+      <div className="pt-8"><Footer /></div>
     </div>
   );
 }

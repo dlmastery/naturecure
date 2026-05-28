@@ -5,6 +5,7 @@ import { journeys } from "@/lib/data";
 import { EVIDENCE_GRADES, GRADE_ORDER } from "@/lib/evidence";
 import { CategoryCard } from "@/components/category-card";
 import { Eyebrow, GradeBadge, SectionHeading, Stat } from "@/components/ui";
+import { NextStep } from "@/components/next-step";
 
 export default function Home() {
   return (
@@ -23,10 +24,13 @@ export default function Home() {
             show the uncertainty, and refresh every hub as new findings emerge.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
-            <Link href="/c/skin-pigmentation" className="btn-primary">
-              Explore Skin &amp; Pigmentation <ArrowRight size={16} />
+            <Link href="/atlas" className="btn-primary">
+              Browse 50 journeys <ArrowRight size={16} />
             </Link>
-            <Link href="/skin/vitiligo" className="btn-ghost">See the vitiligo journey</Link>
+            <Link href="/skin/vitiligo" className="btn-ghost">See a full journey</Link>
+          </div>
+          <div className="mt-4 font-mono text-[0.7rem] uppercase tracking-[0.22em]" style={{ color: "var(--color-ink-faint)" }}>
+            01 Need · 02 Atlas · 03 Journey · 04 Personalise · 05 Regime · 06 Companion · 07 Expert · 08 Progress
           </div>
 
           {/* Trust strip */}
@@ -133,6 +137,13 @@ export default function Home() {
         </div>
       </section>
 
+      <NextStep
+        step="03 · The flagship journey"
+        title="See how a full journey actually feels"
+        body="Vitiligo is the depth proof — three graded combos, a diet anchor, flagged interactions, and a 90-day pack you can start tomorrow."
+        href="/skin/vitiligo"
+        cta="Open the vitiligo journey"
+      />
       <Footer />
     </div>
   );
