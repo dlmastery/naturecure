@@ -11,17 +11,19 @@ export function GradeBadge({ grade, withLabel = false }: { grade: EvidenceGrade;
   const accent = ACCENTS[g.accent];
   return (
     <span
+      role="img"
       className="inline-flex items-center gap-1.5 rounded-full pl-1 pr-2.5 py-0.5 text-[0.7rem] font-medium"
       style={{ background: accent.fill, color: accent.ink }}
+      aria-label={`Evidence grade ${grade}: ${g.label}. ${g.consumer}`}
       title={`Grade ${grade} — ${g.label}: ${g.consumer}`}
     >
-      <span
+      <span aria-hidden="true"
         className="grid h-5 w-5 place-items-center rounded-full font-mono text-[0.7rem] font-semibold"
         style={{ background: accent.ink, color: "var(--color-paper)" }}
       >
         {grade}
       </span>
-      {withLabel ? g.label : `Grade ${grade}`}
+      <span aria-hidden="true">{withLabel ? g.label : `Grade ${grade}`}</span>
     </span>
   );
 }

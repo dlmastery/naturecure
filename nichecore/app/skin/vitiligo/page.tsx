@@ -114,7 +114,7 @@ export default function VitiligoJourney() {
             {vitiligo.anchors.map((a) => (
               <div key={a.name} className="card-soft flex items-start gap-4 p-6">
                 {a.name === "Pranayama" ? <Wind size={22} style={{ color: "var(--color-forest)" }} /> : <Sun size={22} style={{ color: "var(--color-gold-deep)" }} />}
-                <div><h4 className="font-medium">{a.name}</h4><p className="mt-1 text-[0.86rem] leading-relaxed" style={{ color: "var(--color-ink-soft)" }}>{a.detail}</p></div>
+                <div><h3 className="font-medium">{a.name}</h3><p className="mt-1 text-[0.86rem] leading-relaxed" style={{ color: "var(--color-ink-soft)" }}>{a.detail}</p></div>
               </div>
             ))}
           </div>
@@ -128,7 +128,7 @@ export default function VitiligoJourney() {
           {vitiligo.timeline.map((t) => (
             <div key={t.week} className="card-soft p-5">
               <span className="font-mono text-[0.7rem] uppercase tracking-wider" style={{ color: "var(--color-gold-deep)" }}>{t.week}</span>
-              <h4 className="mt-2 font-medium">{t.title}</h4>
+              <h3 className="mt-2 font-medium">{t.title}</h3>
               <p className="mt-1.5 text-[0.82rem] leading-relaxed" style={{ color: "var(--color-ink-soft)" }}>{t.description}</p>
               <p className="mt-3 chip">{t.metric}</p>
             </div>

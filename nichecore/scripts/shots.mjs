@@ -1,11 +1,11 @@
-import { chromium } from "playwright";
+import { chromium, devices } from "playwright";
 import { mkdirSync } from "node:fs";
 
 const BASE = process.env.BASE || "http://localhost:3000";
-const OUT = "shots";
+const VIEW = process.env.VIEW || "desktop";       // desktop | mobile
+const OUT = `shots/${VIEW}`;
 mkdirSync(OUT, { recursive: true });
 
-// route -> filename
 const routes = process.argv[2]
   ? [[process.argv[2], process.argv[2].replace(/[\/]/g, "_").replace(/^_/, "") || "home"]]
   : [
@@ -22,14 +22,20 @@ const routes = process.argv[2]
     ];
 
 const browser = await chromium.launch();
-const page = await browser.newPage({ viewport: { width: 1440, height: 1024 }, deviceScaleFactor: 2 });
+const ctxOpts =
+  VIEW === "mobile"
+    ? { ...devices["iPhone 14 Pro"] }
+    : { viewport: { width: 1440, height: 1024 }, deviceScaleFactor: 2 };
+const context = await browser.newContext(ctxOpts);
+const page = await context.newPage();
 
 for (const [route, name] of routes) {
   const errors = [];
   page.on("console", (m) => m.type() === "error" && errors.push(m.text()));
   try {
-    const res = await page.goto(BASE + route, { waitUntil: "networkidle", timeout: 60000 });
-    await page.waitForTimeout(700);
+    const res = await page.goto(BASE + route, { waitUntil: "load", timeout: 90000 });
+    await page.waitForLoadState("domcontentloaded");
+    await page.waitForTimeout(1200);
     await page.screenshot({ path: `${OUT}/${name}.png`, fullPage: true });
     console.log(`✓ ${route} → ${name}.png  [${res?.status()}]${errors.length ? "  errors: " + errors.length : ""}`);
     errors.slice(0, 3).forEach((e) => console.log("   ! " + e.slice(0, 140)));

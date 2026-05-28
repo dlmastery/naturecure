@@ -126,11 +126,13 @@ export default async function CategoryHub({ params }: { params: Promise<{ catego
                 <GradeBadge grade={c.grade} />
               </div>
               <div className="mt-4 flex items-center gap-3">
-                <span className="font-mono text-[0.62rem] uppercase tracking-wider" style={{ color: "var(--color-ink-faint)" }}>confidence</span>
-                <span className="relative h-1.5 flex-1 overflow-hidden rounded-full" style={{ background: "var(--color-line-strong)" }}>
+                <span className="font-mono text-[0.62rem] uppercase tracking-wider" style={{ color: "var(--color-ink-faint)" }} aria-hidden="true">confidence</span>
+                <span className="relative h-1.5 flex-1 overflow-hidden rounded-full"
+                  role="progressbar" aria-label={`Confidence in this claim`} aria-valuenow={c.confidence} aria-valuemin={0} aria-valuemax={100}
+                  style={{ background: "var(--color-line-strong)" }}>
                   <span className="absolute inset-y-0 left-0 rounded-full" style={{ width: `${c.confidence}%`, background: "var(--color-forest-soft)" }} />
                 </span>
-                <span className="font-mono text-[0.7rem]">{c.confidence}</span>
+                <span className="font-mono text-[0.7rem]" aria-hidden="true">{c.confidence}</span>
               </div>
               <p className="mt-4 rounded-xl px-3 py-2 text-[0.78rem] italic" style={{ background: "var(--color-paper-deep)", color: "var(--color-ink-soft)" }}>“{c.allowedWording}”</p>
               <div className="mt-3 flex flex-wrap items-center gap-2 text-[0.72rem]" style={{ color: "var(--color-ink-faint)" }}>
@@ -200,7 +202,7 @@ export default async function CategoryHub({ params }: { params: Promise<{ catego
           {category.expectedTimeline.map((t) => (
             <div key={t.week} className="card-soft p-5">
               <span className="font-mono text-[0.7rem] uppercase tracking-wider" style={{ color: "var(--color-gold-deep)" }}>{t.week}</span>
-              <h4 className="mt-2 font-medium">{t.title}</h4>
+              <h3 className="mt-2 font-medium">{t.title}</h3>
               <p className="mt-1.5 text-[0.82rem] leading-relaxed" style={{ color: "var(--color-ink-soft)" }}>{t.description}</p>
               <p className="mt-3 chip">{t.metric}</p>
             </div>
@@ -245,7 +247,7 @@ export default async function CategoryHub({ params }: { params: Promise<{ catego
           ].map((c) => (
             <Link key={c.href} href={c.href} className="card-soft p-6 transition-transform hover:-translate-y-1">
               <c.icon size={20} style={{ color: "var(--color-forest)" }} />
-              <h4 className="mt-3 font-medium">{c.title}</h4>
+              <h3 className="mt-3 font-medium">{c.title}</h3>
               <p className="mt-1.5 text-[0.82rem] leading-relaxed" style={{ color: "var(--color-ink-soft)" }}>{c.body}</p>
             </Link>
           ))}

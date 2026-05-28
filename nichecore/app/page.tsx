@@ -79,7 +79,7 @@ export default function Home() {
           {LOOP.map((step, i) => (
             <div key={step.title} className="card-soft p-5">
               <span className="font-display text-2xl" style={{ color: "var(--color-gold-deep)" }}>{i + 1}</span>
-              <h4 className="mt-2 font-medium">{step.title}</h4>
+              <h3 className="mt-2 font-medium">{step.title}</h3>
               <p className="mt-1.5 text-[0.82rem] leading-relaxed" style={{ color: "var(--color-ink-soft)" }}>{step.body}</p>
             </div>
           ))}

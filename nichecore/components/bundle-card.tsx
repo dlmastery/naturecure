@@ -5,12 +5,18 @@ import { GradeBadge } from "@/components/ui";
 
 export function QualityMeter({ score }: { score: number }) {
   return (
-    <span className="inline-flex items-center gap-1.5" title={`Product quality score ${score}/100 — testing & sourcing, NOT efficacy`}>
-      <span className="font-mono text-[0.62rem] uppercase tracking-wider" style={{ color: "var(--color-ink-faint)" }}>quality</span>
-      <span className="relative h-1.5 w-12 overflow-hidden rounded-full" style={{ background: "var(--color-line-strong)" }}>
+    <span className="inline-flex items-center gap-1.5"
+      role="group"
+      aria-label={`Product quality score ${score} out of 100 — sourcing and testing, separate from efficacy`}
+      title={`Product quality score ${score}/100 — testing & sourcing, NOT efficacy`}>
+      <span className="font-mono text-[0.62rem] uppercase tracking-wider" style={{ color: "var(--color-ink-faint)" }} aria-hidden="true">quality</span>
+      <span className="relative h-1.5 w-12 overflow-hidden rounded-full"
+        role="progressbar" aria-label="Quality score" aria-valuenow={score} aria-valuemin={0} aria-valuemax={100}
+        aria-valuetext={`${score} out of 100`}
+        style={{ background: "var(--color-line-strong)" }}>
         <span className="absolute inset-y-0 left-0 rounded-full" style={{ width: `${score}%`, background: "var(--color-forest-soft)" }} />
       </span>
-      <span className="font-mono text-[0.68rem]" style={{ color: "var(--color-ink-soft)" }}>{score}</span>
+      <span className="font-mono text-[0.68rem]" style={{ color: "var(--color-ink-soft)" }} aria-hidden="true">{score}</span>
     </span>
   );
 }

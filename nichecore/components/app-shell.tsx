@@ -30,6 +30,10 @@ export function AppShell({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="min-h-dvh lg:grid lg:grid-cols-[248px_1fr]">
+      {/* Skip link — visible on keyboard focus only */}
+      <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-50 focus:rounded-full focus:bg-[var(--color-forest)] focus:px-4 focus:py-2 focus:text-sm focus:text-[var(--color-paper)]">
+        Skip to content
+      </a>
       {/* ── Mobile top bar ── */}
       <header className="sticky top-0 z-40 flex items-center justify-between border-b px-4 py-3 backdrop-blur-md lg:hidden"
         style={{ borderColor: "var(--color-line-strong)", background: "#f1ede3cc" }}>
@@ -43,17 +47,21 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       </header>
 
       {open && (
-        <nav className="z-30 grid grid-cols-2 gap-2 border-b px-4 py-4 lg:hidden" style={{ borderColor: "var(--color-line-strong)" }}>
-          {NAV.map((n) => (
-            <Link key={n.href} href={n.href} onClick={() => setOpen(false)}
-              className="flex items-center gap-2 rounded-xl px-3 py-2.5 text-sm"
-              style={{
-                background: isActive(pathname, n.href) ? "var(--color-forest)" : "#ffffff80",
-                color: isActive(pathname, n.href) ? "var(--color-paper)" : "var(--color-ink)",
-              }}>
-              <n.icon size={16} /> {n.label}
-            </Link>
-          ))}
+        <nav aria-label="Primary (mobile)" className="z-30 grid grid-cols-2 gap-2 border-b px-4 py-4 lg:hidden" style={{ borderColor: "var(--color-line-strong)" }}>
+          {NAV.map((n) => {
+            const active = isActive(pathname, n.href);
+            return (
+              <Link key={n.href} href={n.href} onClick={() => setOpen(false)}
+                aria-current={active ? "page" : undefined}
+                className="flex items-center gap-2 rounded-xl px-3 py-2.5 text-sm"
+                style={{
+                  background: active ? "var(--color-forest)" : "#ffffff80",
+                  color: active ? "var(--color-paper)" : "var(--color-ink)",
+                }}>
+                <n.icon size={16} aria-hidden="true" /> {n.label}
+              </Link>
+            );
+          })}
         </nav>
       )}
 
@@ -67,19 +75,21 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           </div>
         </Link>
 
-        <nav className="mt-8 flex flex-1 flex-col gap-1">
+        <nav aria-label="Primary" className="mt-8 flex flex-1 flex-col gap-1">
           {NAV.map((n) => {
             const active = isActive(pathname, n.href);
             return (
               <Link key={n.href} href={n.href}
+                aria-current={active ? "page" : undefined}
                 className="group flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm transition-colors"
                 style={{
                   background: active ? "var(--color-forest)" : "transparent",
                   color: active ? "var(--color-paper)" : "var(--color-ink-soft)",
                 }}>
-                <n.icon size={17} className="shrink-0" />
+                <n.icon size={17} aria-hidden="true" className="shrink-0" />
                 <span className="flex-1 font-medium">{n.label}</span>
-                <span className="font-mono text-[0.6rem] uppercase tracking-wider opacity-50">{n.hint}</span>
+                <span aria-hidden="true" className="font-mono text-[0.6rem] uppercase tracking-wider"
+                  style={{ color: active ? "#ffffffb3" : "var(--color-ink-faint)" }}>{n.hint}</span>
               </Link>
             );
           })}
@@ -91,13 +101,14 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       </aside>
 
       {/* ── Content ── */}
-      <main className="relative min-w-0">
+      <main id="main" className="relative min-w-0">
         {/* Desktop status bar */}
         <div className="sticky top-0 z-20 hidden items-center justify-between border-b px-8 py-3 backdrop-blur-md lg:flex"
           style={{ borderColor: "var(--color-line-strong)", background: "#f1ede3b3" }}>
           <label className="flex w-80 items-center gap-2 rounded-full border px-4 py-2 text-sm" style={{ borderColor: "var(--color-line-strong)", background: "#ffffff80" }}>
-            <Search size={15} style={{ color: "var(--color-ink-faint)" }} />
-            <input placeholder="Search a need — “hair loss”, “my sugar is high”…" className="w-full bg-transparent outline-none placeholder:text-[var(--color-ink-faint)]" />
+            <Search size={15} aria-hidden="true" style={{ color: "var(--color-ink-faint)" }} />
+            <span className="sr-only">Search a need</span>
+            <input type="search" placeholder="Search a need — “hair loss”, “my sugar is high”…" className="w-full bg-transparent outline-none placeholder:text-[var(--color-ink-faint)]" />
           </label>
           <div className="flex items-center gap-2">
             <span className="chip"><span className="h-1.5 w-1.5 rounded-full" style={{ background: "var(--color-mint-ink)" }} />evidence refreshed · may 2026</span>

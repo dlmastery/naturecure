@@ -21,6 +21,10 @@ build/
 # Verification artifacts
 shots/
 **/shots/
+test-results/
+**/test-results/
+playwright-report/
+**/playwright-report/
 
 # Logs / OS / editor
 *.log

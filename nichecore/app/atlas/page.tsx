@@ -44,7 +44,10 @@ export default function Atlas() {
         </div>
       </section>
 
-      <section className="px-6 pt-10 sm:px-10 lg:px-14">
+      <section aria-labelledby="atlas-results" className="px-6 pt-10 sm:px-10 lg:px-14">
+        <h2 id="atlas-results" className="sr-only">
+          {domain === "All" ? "All journeys" : `${DOMAIN_LABELS[domain]} journeys`} — {list.length} result{list.length === 1 ? "" : "s"}
+        </h2>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {list.map((j) => (
             <Link key={j.id} href={j.route} className="card-soft group flex flex-col p-5 transition-transform duration-500 hover:-translate-y-1">

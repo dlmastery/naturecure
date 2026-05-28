@@ -14,7 +14,7 @@
   --color-card: #ffffff;
   --color-ink: #201c17;          /* warm near-black */
   --color-ink-soft: #4b463e;
-  --color-ink-faint: #8b8478;
+  --color-ink-faint: #6b6557;  /* WCAG AA on paper for small text */
   --color-line: #2017120f;       /* hairline */
   --color-line-strong: #20171221;
 
@@ -67,6 +67,19 @@
   ::selection {
     background: var(--color-forest);
     color: var(--color-paper);
+  }
+
+  /* Universal focus ring — visible on keyboard nav, hidden on mouse */
+  :focus { outline: none; }
+  :focus-visible {
+    outline: 2px solid var(--color-forest);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+  /* Buttons that already wear a pill border get a softer offset */
+  .btn-primary:focus-visible,
+  .btn-ghost:focus-visible {
+    outline-offset: 2px;
   }
   .font-display {
     font-family: var(--font-display);
