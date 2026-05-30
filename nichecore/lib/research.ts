@@ -45,3 +45,52 @@ export function listDossierIds(): string[] {
     .filter((f) => f.endsWith(".md"))
     .map((f) => f.replace(/\.md$/, ""));
 }
+
+/**
+ * Split a dossier body into anchored chunks by H2 (`## ...`) heading.
+ * Returns an array of `{ id, title, body }` where `id` is a slugified heading.
+ *
+ * Any prose preceding the first H2 is folded into a synthetic `preface` chunk.
+ */
+export interface DossierChunk {
+  id: string;
+  title: string;
+  body: string;
+}
+
+function slugify(s: string): string {
+  return s
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "")
+    .slice(0, 80);
+}
+
+export function splitDossierByH2(body: string): DossierChunk[] {
+  const lines = body.split(/\r?\n/);
+  const chunks: DossierChunk[] = [];
+  let current: DossierChunk | null = null;
+  let preface: string[] = [];
+  for (const ln of lines) {
+    const m = ln.match(/^##\s+(.+?)\s*$/);
+    if (m) {
+      if (current) chunks.push(current);
+      // Strip leading numbering "1. ", "2. " etc. for cleaner ids
+      const titleRaw = m[1].trim();
+      const titleClean = titleRaw.replace(/^\d+(?:\.\d+)*\.?\s+/, "");
+      current = { id: slugify(titleClean) || `section-${chunks.length + 1}`, title: titleRaw, body: "" };
+    } else if (current) {
+      current.body += (current.body ? "\n" : "") + ln;
+    } else {
+      preface.push(ln);
+    }
+  }
+  if (current) chunks.push(current);
+  const prefaceBody = preface.join("\n").trim();
+  if (prefaceBody) {
+    chunks.unshift({ id: "preface", title: "Preface", body: prefaceBody });
+  }
+  return chunks;
+}

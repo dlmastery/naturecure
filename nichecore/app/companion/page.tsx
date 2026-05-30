@@ -1,17 +1,32 @@
 import Link from "next/link";
 import { Pill, Salad, Wind, ClipboardCheck, Repeat, FlaskConical, Bell, ArrowRight } from "lucide-react";
-import { companionEvents } from "@/lib/data";
-import { Eyebrow, SectionHeading, Stat } from "@/components/ui";
+import { companionEvents, getBundle } from "@/lib/data";
+import { Eyebrow, Stat } from "@/components/ui";
 import { NextStep } from "@/components/next-step";
+import { OnboardedBanner } from "@/components/onboarded-banner";
 import { Footer } from "@/app/page";
 
 const ICONS = { supplement: Pill, diet: Salad, routine: Wind, checkin: ClipboardCheck, refill: Repeat, research: FlaskConical } as const;
 const TINT: Record<string, string> = { supplement: "var(--color-mint)", diet: "var(--color-amber)", routine: "var(--color-sky)", checkin: "var(--color-lavender)", refill: "var(--color-blush)", research: "var(--color-sky)" };
 
-export default function Companion() {
+export default async function Companion({
+  searchParams,
+}: {
+  searchParams: Promise<{ onboarded?: string; bundle?: string }>;
+}) {
+  const sp = await searchParams;
+  const onboarded = sp.onboarded === "true";
+  const bundle = sp.bundle ? getBundle(sp.bundle) : undefined;
+
   return (
     <div className="grain relative pb-8">
       <section className="px-6 pt-12 sm:px-10 lg:px-14">
+        {onboarded && (
+          <div className="mb-8">
+            <OnboardedBanner bundle={bundle} />
+          </div>
+        )}
+
         <Eyebrow>The companion</Eyebrow>
         <h1 className="font-display mt-4 text-balance text-5xl leading-[1.0] sm:text-6xl">
           The companion turns purchase into a <span className="italic" style={{ color: "var(--color-forest)" }}>routine</span>.
@@ -21,9 +36,9 @@ export default function Companion() {
           weekly check-ins, refills before you run out, and evidence updates as protocols change.
         </p>
         <div className="mt-10 grid max-w-2xl grid-cols-2 gap-6 border-t pt-8 sm:grid-cols-4" style={{ borderColor: "var(--color-line-strong)" }}>
-          <Stat value="Day 23" label="of 90-day protocol" />
-          <Stat value="86%" label="7-day adherence" />
-          <Stat value="7 days" label="until refill" />
+          <Stat value={onboarded ? "Day 1" : "Day 23"} label="of 90-day protocol" />
+          <Stat value={onboarded ? "—" : "86%"} label="7-day adherence" />
+          <Stat value={onboarded ? "90 days" : "7 days"} label="until refill" />
           <Stat value="2" label="evidence updates" />
         </div>
       </section>
@@ -31,7 +46,7 @@ export default function Companion() {
       <section className="grid gap-6 px-6 pt-14 sm:px-10 lg:grid-cols-[1.2fr_1fr] lg:px-14">
         {/* Daily timeline */}
         <div className="card-soft p-6">
-          <Eyebrow>Today's timeline</Eyebrow>
+          <Eyebrow>Today&rsquo;s timeline</Eyebrow>
           <div className="mt-5 space-y-3">
             {companionEvents.map((e) => {
               const Icon = ICONS[e.type];
@@ -58,7 +73,7 @@ export default function Companion() {
           <div className="rounded-[var(--radius-card)] p-6" style={{ background: "var(--color-forest)", color: "var(--color-paper)" }}>
             <Eyebrow><span style={{ color: "#ffffff80" }}>Refill decision · day 75</span></Eyebrow>
             <p className="mt-3 text-[0.92rem] leading-relaxed" style={{ color: "#ffffffe0" }}>
-              "Your 90-day pack has ~7 days left. Are you tolerating it? Any product bother your stomach or sleep?"
+              &ldquo;Your 90-day pack has ~7 days left. Are you tolerating it? Any product bother your stomach or sleep?&rdquo;
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
               {["Continue", "Pause", "Adjust", "Ask expert"].map((o) => (

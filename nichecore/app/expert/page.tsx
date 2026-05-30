@@ -1,16 +1,97 @@
 import Link from "next/link";
-import { MapPin, Clock, ArrowRight, FileText, ShieldAlert } from "lucide-react";
+import { MapPin, Clock, ArrowRight, FileText, ShieldAlert, TriangleAlert } from "lucide-react";
 import { experts } from "@/lib/data";
-import { Eyebrow, SectionHeading } from "@/components/ui";
+import { Eyebrow } from "@/components/ui";
 import { Footer } from "@/app/page";
 
 const CHART_FIELDS = ["Your goal", "Intake summary", "Excluded ingredients + why", "Recommended package", "Timing schedule", "Diet chart", "Lifestyle routine", "Safety notes", "What to track", "Follow-up date"];
 const ESCALATION = ["Safety-sensitive category", "On medications", "Pregnancy / lactation", "Liver / kidney disease", "No improvement by milestone", "Wants an Ayurveda chart", "Multiple categories combined"];
 
-export default function Experts() {
+const FLAG_LABEL: Record<string, string> = {
+  meds: "prescription medications",
+  preg: "pregnancy / lactation",
+  organ: "liver or kidney disease",
+  allergies: "allergies / sensitivities",
+};
+
+export default async function Experts({
+  searchParams,
+}: {
+  searchParams: Promise<{
+    from?: string;
+    category?: string;
+    reason?: string;
+    meds?: string;
+    preg?: string;
+    organ?: string;
+    allergies?: string;
+  }>;
+}) {
+  const sp = await searchParams;
+  const fromSafety = sp.from === "safety" || sp.from === "safety-prescreen";
+  const flags = ["meds", "preg", "organ", "allergies"].filter(
+    (k) => sp[k as keyof typeof sp] === "yes"
+  );
+
   return (
     <div className="grain relative pb-8">
       <section className="px-6 pt-12 sm:px-10 lg:px-14">
+        {fromSafety && (
+          <div
+            className="mb-8 rounded-[var(--radius-card)] border p-5 sm:p-6"
+            style={{
+              background: "var(--color-terracotta-soft)",
+              borderColor: "var(--color-terracotta)",
+              color: "var(--color-terracotta-deep)",
+            }}
+            role="status"
+            aria-live="polite"
+            data-component="ExpertRoutedFromSafety"
+          >
+            <div className="flex items-center gap-2">
+              <TriangleAlert size={18} />
+              <span
+                className="font-mono text-[0.7rem] uppercase tracking-[0.18em]"
+              >
+                Routed from safety screen
+              </span>
+            </div>
+            <p className="mt-3 text-[0.92rem] leading-relaxed">
+              <strong>Your interaction concerns are flagged for the expert.</strong>{" "}
+              {flags.length > 0 ? (
+                <>
+                  You answered yes to{" "}
+                  {flags
+                    .map((f) => FLAG_LABEL[f] ?? f)
+                    .join(", ")}{" "}
+                  — the chart reviewer will see this on intake.
+                </>
+              ) : (
+                <>
+                  We&rsquo;re routing you here before any product is offered.
+                  The chart reviewer will see your safety-screen note on intake.
+                </>
+              )}
+              {sp.category && (
+                <>
+                  {" "}Context:{" "}
+                  <Link
+                    href={`/c/${sp.category}`}
+                    className="underline"
+                    style={{ color: "var(--color-terracotta-deep)" }}
+                  >
+                    {sp.category.replace(/-/g, " ")}
+                  </Link>
+                  .
+                </>
+              )}
+            </p>
+            <p className="mt-2 text-[0.85rem]">
+              <em>No upcharge. The refusal is the conversion.</em>
+            </p>
+          </div>
+        )}
+
         <Eyebrow>Human expert layer</Eyebrow>
         <h1 className="font-display mt-4 text-balance text-5xl leading-[1.0] sm:text-6xl">
           When trust needs a <span className="italic" style={{ color: "var(--color-forest)" }}>human</span>.

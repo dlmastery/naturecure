@@ -7,48 +7,84 @@
    ============================================================ */
 
 @theme {
-  /* Surfaces */
-  --color-paper: #f1ede3;        /* editorial cream */
+  /* ── Surfaces (warm cream editorial) ── */
+  --color-paper: #f1ede3;
   --color-paper-deep: #e9e3d5;
-  --color-canvas: #fbfbf7;       /* bone app canvas */
+  --color-paper-deeper: #ddd5c1;
+  --color-canvas: #fbfbf7;
   --color-card: #ffffff;
-  --color-ink: #201c17;          /* warm near-black */
+  --color-ink: #201c17;
   --color-ink-soft: #4b463e;
-  --color-ink-faint: #6b6557;  /* WCAG AA on paper for small text */
-  --color-line: #2017120f;       /* hairline */
-  --color-line-strong: #20171221;
+  --color-ink-faint: #6b6557;
+  --color-line: #20171210;
+  --color-line-strong: #20171224;
 
-  /* Brand */
+  /* ── Brand ── */
   --color-forest: #0e3b2e;
   --color-forest-deep: #0a2c22;
   --color-forest-soft: #1c5a46;
+  --color-forest-tint: #e3ede8;       /* paper-on-forest soft fill (callouts) */
   --color-gold: #b08a3e;
   --color-gold-deep: #8f6e2c;
 
-  /* Meaning-encoded pastels (card fills) */
-  --color-mint: #d8efe0;         /* positive / supported */
-  --color-sky: #d6e9f5;          /* info / evidence */
-  --color-amber: #fbe3a6;        /* caution / early */
-  --color-lavender: #e7dbf7;     /* supportive / mechanistic */
-  --color-blush: #f8ddd8;        /* sensitive / hypothesis */
+  /* ── Emphasis (terracotta is SAFETY/H-grade only; ochre is editorial) ── */
+  --color-terracotta: #a0411f;
+  --color-terracotta-deep: #823418;
+  --color-terracotta-soft: #f8e0d6;
+  --color-warn: #b8541f;
+  --color-warn-soft: #fbe3a6;
+  --color-ok: #1d5b41;
+  --color-ok-soft: #d8efe0;
+
+  /* ── Evidence pastels (existing — kept) ── */
+  --color-mint: #d8efe0;
+  --color-sky: #d6e9f5;
+  --color-amber: #fbe3a6;
+  --color-lavender: #e7dbf7;
+  --color-blush: #f8ddd8;
   --color-mint-ink: #1d5b41;
   --color-sky-ink: #245b7a;
   --color-amber-ink: #8a6313;
   --color-lavender-ink: #5b3d86;
   --color-blush-ink: #9a463a;
 
-  /* Fonts (bound from next/font in layout.tsx) */
-  --font-display: var(--font-fraunces), "Times New Roman", serif;
-  --font-sans: var(--font-hanken), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+  /* ── Grade-chip palette (locked) ── */
+  --color-grade-a: #0a2c22;
+  --color-grade-b: #1c5a46;
+  --color-grade-c: #8f6e2c;
+  --color-grade-d: #6b5a3a;
+  --color-grade-t: #7a5630;
+  --color-grade-h: #a0411f;
+  --color-grade-x: #201c17;
 
-  /* Radii */
-  --radius-card: 1.25rem;
-  --radius-lg: 1.5rem;
+  /* ── Track / phase tints (used by week-strip, track-card) ── */
+  --color-phase-1: #cfe1d6;   /* Reset — light teal-paper */
+  --color-phase-2: #87b09c;   /* Build — mid forest */
+  --color-phase-3: #2f6a52;   /* Compound — deep forest */
+
+  /* ── Fonts ── */
+  --font-display: var(--font-fraunces), "Newsreader", "Source Serif Pro", Georgia, serif;
+  --font-sans: var(--font-hanken), "Geist", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), "JetBrains Mono", ui-monospace, monospace;
+
+  /* ── Radii ── */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-card: 16px;
+  --radius-lg: 24px;
   --radius-pill: 999px;
 
-  /* Motion */
+  /* ── Shadows ── */
+  --shadow-sm: 0 1px 0 #20171208;
+  --shadow-md: 0 1px 2px #20171208, 0 18px 40px -32px #20171230;
+  --shadow-lg: 0 2px 4px #20171210, 0 12px 32px #20171218;
+
+  /* ── Motion ── */
   --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --dur-fast: 150ms;
+  --dur-base: 280ms;
+  --dur-slow: 600ms;
 }
 
 @layer base {
@@ -142,6 +178,22 @@
     color: var(--color-ink-soft);
     background: #ffffff80;
   }
+
+  /* ── Journey-redesign editorial utilities ── */
+  .eyebrow--accent { color: var(--color-terracotta); }
+  .eyebrow--gold   { color: var(--color-gold-deep); }
+  .rule-line       { border-color: var(--color-line-strong); }
+  .card-tinted     { background: var(--color-forest-tint); }
+  .card-warn       { background: var(--color-warn-soft); border-color: var(--color-warn); }
+  .callout         {
+    border-left: 3px solid var(--color-terracotta);
+    background: var(--color-terracotta-soft);
+    padding: 14px 16px 14px 18px;
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  }
+  .callout--note   { border-left-color: var(--color-forest); background: var(--color-forest-tint); }
+  .callout--warn   { border-left-color: var(--color-warn); background: var(--color-warn-soft); }
+  .callout--ok     { border-left-color: var(--color-ok); background: var(--color-ok-soft); }
 }
 
 /* Paper grain texture */

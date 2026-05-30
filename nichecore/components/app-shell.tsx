@@ -11,7 +11,6 @@ import {
 const NAV = [
   { href: "/", label: "Needs", icon: Compass, hint: "Catalog" },
   { href: "/atlas", label: "Atlas", icon: FlaskConical, hint: "50 journeys" },
-  { href: "/skin/vitiligo", label: "Vitiligo", icon: Leaf, hint: "Flagship" },
   { href: "/guru", label: "AI Guru", icon: Sparkles, hint: "Workspace" },
   { href: "/companion", label: "Companion", icon: CalendarHeart, hint: "Daily loop" },
   { href: "/expert", label: "Experts", icon: UserRound, hint: "Human charts" },
@@ -24,9 +23,31 @@ function isActive(pathname: string, href: string) {
   return pathname.startsWith(href);
 }
 
+/** Routes that run their own DossierShell chrome — AppShell collapses to a thin top brand bar only. */
+const NON_APP_SHELL_TOP = new Set(["c", "skin", "hair", "weight", "metabolic", "gut", "sleep", "stress", "mood", "brain", "eyes", "joints", "recovery", "energy", "women", "fertility", "men", "ears", "immune", "respiratory", "oral", "heart", "liver", "longevity"]);
+function isDossierRoute(pathname: string): boolean {
+  if (pathname === "/skin/vitiligo") return true;
+  // /<domain>/<slug> with exactly 2 segments where domain is in the dossier set
+  const m = pathname.match(/^\/([^/]+)\/([^/]+)$/);
+  return !!m && NON_APP_SHELL_TOP.has(m[1]) && m[1] !== "c";
+}
+
 export function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const dossier = isDossierRoute(pathname);
+
+  // On dossier routes, the DossierShell owns the chrome — render children directly without rail/top bar.
+  if (dossier) {
+    return (
+      <>
+        <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-50 focus:rounded-full focus:bg-[var(--color-forest)] focus:px-4 focus:py-2 focus:text-sm focus:text-[var(--color-paper)]">
+          Skip to content
+        </a>
+        <main id="main">{children}</main>
+      </>
+    );
+  }
 
   return (
     <div className="min-h-dvh lg:grid lg:grid-cols-[248px_1fr]">
