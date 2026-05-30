@@ -1,7 +1,11 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { ChevronRight, Leaf } from "lucide-react";
+import Link from "next/link";
+import {
+  ChevronRight, Leaf,
+  Compass, FlaskConical, Sparkles, CalendarHeart, UserRound, LineChart, Cpu,
+} from "lucide-react";
 
 export interface NavItemSpec {
   id: string;
@@ -79,8 +83,12 @@ export function LeftRailNav({
         borderRight: "1px solid var(--color-line)",
       }}
     >
-      {/* Brand block */}
-      <div className="mb-7 flex items-start gap-3">
+      {/* Brand block — clickable, returns to home. */}
+      <Link
+        href="/"
+        aria-label={`${brand.wordmark} — back to home`}
+        className="mb-7 flex items-start gap-3 rounded-lg p-1.5 -m-1.5 transition-colors hover:bg-white/60"
+      >
         <span
           className="grid h-9 w-9 shrink-0 place-items-center rounded-lg"
           style={{ background: "var(--color-forest)" }}
@@ -96,7 +104,7 @@ export function LeftRailNav({
             {brand.line}
           </div>
         </div>
-      </div>
+      </Link>
 
       {trackBadge && <div className="mb-5">{trackBadge}</div>}
 
@@ -234,8 +242,35 @@ export function LeftRailNav({
         ))}
       </nav>
 
+      {/* Cross-app nav so the dossier isn't an orphan island. Always
+          reachable; click → land on the matching top-level surface. */}
+      <div className="mt-2 mb-3">
+        <div
+          className="mx-2 mb-1.5 font-mono text-[10.5px] font-bold uppercase tracking-[0.12em]"
+          style={{ color: "var(--color-ink-faint)" }}
+        >
+          GO TO
+        </div>
+        <div className="flex flex-col gap-px">
+          {SITE_NAV.map((n) => (
+            <Link
+              key={n.href}
+              href={n.href}
+              className="flex items-center gap-2.5 rounded-md px-2.5 py-1.5 text-[12.5px] transition-colors hover:bg-white/60"
+              style={{ color: "var(--color-ink-soft)" }}
+            >
+              <n.icon size={13} aria-hidden="true" style={{ color: "var(--color-ink-faint)" }} />
+              <span className="flex-1">{n.label}</span>
+              <span className="font-mono text-[9.5px] uppercase tracking-wider" style={{ color: "var(--color-ink-faint)" }}>
+                {n.hint}
+              </span>
+            </Link>
+          ))}
+        </div>
+      </div>
+
       <div
-        className="mt-4 rounded-[10px] border p-3.5 text-[11px] leading-relaxed"
+        className="mt-2 rounded-[10px] border p-3.5 text-[11px] leading-relaxed"
         style={{
           borderColor: "var(--color-line-strong)",
           color: "var(--color-ink-faint)",
@@ -246,3 +281,13 @@ export function LeftRailNav({
     </aside>
   );
 }
+
+const SITE_NAV = [
+  { href: "/",        label: "Needs",            icon: Compass,       hint: "Home" },
+  { href: "/atlas",   label: "Atlas",            icon: FlaskConical,  hint: "51" },
+  { href: "/guru",    label: "AI Guru",          icon: Sparkles,      hint: "Ask" },
+  { href: "/companion", label: "Companion",      icon: CalendarHeart, hint: "Day" },
+  { href: "/expert",  label: "Experts",          icon: UserRound,     hint: "Charts" },
+  { href: "/progress", label: "Progress",        icon: LineChart,     hint: "Trends" },
+  { href: "/admin/research-factory", label: "Evidence Factory", icon: Cpu, hint: "Ops" },
+] as const;

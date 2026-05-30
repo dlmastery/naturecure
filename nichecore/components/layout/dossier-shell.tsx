@@ -2,7 +2,7 @@
 
 import { useCallback, useMemo } from "react";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ArrowLeft } from "lucide-react";
 import { useActiveSection } from "@/lib/use-active-section";
 import { useKeyboardNav } from "@/lib/use-keyboard-nav";
 import { LeftRailNav, type NavGroup, type NavItemSpec } from "@/components/nav/left-rail-nav";
@@ -32,6 +32,9 @@ export interface DossierShellProps {
   primaryCta?: { label: string; href: string };
   rightBadges?: React.ReactNode[];
   trackBadge?: React.ReactNode;
+  /** Back-link surfaced top-left in the dossier top bar.
+   *  Defaults to `{ href: "/atlas", label: "Atlas" }`. */
+  backLink?: { href: string; label: string };
   children: React.ReactNode;
 }
 
@@ -50,6 +53,7 @@ export function DossierShell({
   primaryCta,
   rightBadges,
   trackBadge,
+  backLink = { href: "/atlas", label: "Atlas" },
   children,
 }: DossierShellProps) {
   // Scroll-spy across BOTH parent H2 ids and child H3 sub-section ids
@@ -155,9 +159,12 @@ export function DossierShell({
             backdropFilter: "blur(8px)",
           }}
         >
-          <div className="flex min-w-0 flex-1 items-center gap-3">
-            <span
-              aria-hidden="true"
+          <div className="flex min-w-0 flex-1 items-center gap-2.5">
+            {/* Mobile brand mark — clickable, lands on home. Hidden on lg+
+                because the LeftRailNav already shows the full brand. */}
+            <Link
+              href="/"
+              aria-label={`${brand.wordmark} — back to home`}
               className="grid h-7 w-7 shrink-0 place-items-center rounded-md font-display lg:hidden"
               style={{
                 background: "var(--color-forest)",
@@ -167,7 +174,16 @@ export function DossierShell({
               }}
             >
               {(brand.mark ?? brand.wordmark).slice(0, 2)}
-            </span>
+            </Link>
+            {/* Back link — surfaced both viewports. Default lands on /atlas. */}
+            <Link
+              href={backLink.href}
+              className="hidden shrink-0 items-center gap-1 rounded-full border px-2.5 py-1 text-[11.5px] transition-colors hover:bg-white/60 sm:inline-flex"
+              style={{ borderColor: "var(--color-line-strong)", color: "var(--color-ink-soft)" }}
+            >
+              <ArrowLeft size={12} aria-hidden="true" />
+              {backLink.label}
+            </Link>
             <div className="min-w-0 truncate font-display text-[16px] leading-tight">
               {title}
             </div>

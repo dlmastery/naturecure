@@ -216,7 +216,7 @@ export default async function JourneyDetail({
           }
           lede={j.consumerHook}
         >
-          <div className="mx-auto max-w-[1080px]">
+          <div className="mx-auto max-w-[1280px]">
             <div className="mb-6 flex items-center gap-2 text-[0.75rem]" style={{ color: "var(--color-ink-faint)" }}>
               <Link href="/" className="hover:underline">Needs</Link>
               <span>/</span>
@@ -266,7 +266,7 @@ export default async function JourneyDetail({
           }
           lede="Here's the curated package shape we'd assemble. Each item is mapped to a protocol role and carries an evidence grade and a separate quality score."
         >
-          <div className="mx-auto max-w-[1080px] grid gap-5 lg:grid-cols-[1fr_1.2fr]">
+          <div className="mx-auto max-w-[1280px] grid gap-5 lg:grid-cols-[1fr_1.2fr]">
             <div className="card-soft p-6">
               <Eyebrow>Concept</Eyebrow>
               <p className="mt-3 text-[0.95rem] leading-relaxed">{j.packageConcept}</p>
@@ -299,7 +299,7 @@ export default async function JourneyDetail({
             </>
           }
         >
-          <div className="mx-auto max-w-[1080px] grid gap-5 lg:grid-cols-[1fr_1.2fr]">
+          <div className="mx-auto max-w-[1280px] grid gap-5 lg:grid-cols-[1fr_1.2fr]">
             <RuleCard title="Safety before commerce">
               A short intake runs the safety screen before any package is recommended. If a flag fires, we route you to an expert or clinician instead of selling. Risk tier: <strong className="uppercase">{j.risk}</strong>.
             </RuleCard>
@@ -366,7 +366,7 @@ export default async function JourneyDetail({
         }
         lede={j.consumerHook}
       >
-        <div className="mx-auto max-w-[1080px]">
+        <div className="mx-auto max-w-[1280px]">
           <div className="mb-6 flex items-center gap-2 text-[0.75rem]" style={{ color: "var(--color-ink-faint)" }}>
             <Link href="/" className="hover:underline">Needs</Link>
             <span>/</span>
@@ -423,7 +423,7 @@ export default async function JourneyDetail({
           </>
         }
       >
-        <div className="mx-auto max-w-[1080px] grid gap-5 lg:grid-cols-[1fr_1.2fr]">
+        <div className="mx-auto max-w-[1280px] grid gap-5 lg:grid-cols-[1fr_1.2fr]">
           <div className="card-soft p-6">
             <Eyebrow>Concept</Eyebrow>
             <p className="mt-3 text-[0.95rem] leading-relaxed">{j.packageConcept}</p>
@@ -440,7 +440,7 @@ export default async function JourneyDetail({
             </div>
           )}
         </div>
-        <div className="mx-auto mt-8 max-w-[1080px]">
+        <div className="mx-auto mt-8 max-w-[1280px]">
           <DossierChunks chunks={dossierFor("suppliers")} />
         </div>
       </SectionAnchor>
@@ -457,7 +457,7 @@ export default async function JourneyDetail({
           </>
         }
       >
-        <div className="mx-auto max-w-[1080px]">
+        <div className="mx-auto max-w-[1280px]">
           <FoundationPillarRow
             pillars={[
               { ordinal: "01", title: "Evidence first",   desc: "Every claim graded, dated, sourced." },
@@ -487,7 +487,7 @@ export default async function JourneyDetail({
               </>
             }
           >
-            <div className="mx-auto max-w-[1080px]">
+            <div className="mx-auto max-w-[1280px]">
               <DossierChunks chunks={dossierFor("references")} />
             </div>
           </SectionAnchor>
@@ -530,7 +530,7 @@ function SectionContent({
           </>
         }
       >
-        <div className="mx-auto max-w-[1080px]">
+        <div className="mx-auto max-w-[1280px]">
           <DossierChunks chunks={chunks} />
         </div>
       </SectionAnchor>
