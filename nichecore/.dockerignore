@@ -1,0 +1,42 @@
+# Build & dependency artefacts (rebuilt inside the image)
+node_modules
+.next
+out
+coverage
+
+# Test infra & reports (not needed at runtime)
+playwright-report
+test-results
+shots
+tests
+playwright.config.ts
+scripts/shots.mjs
+
+# Local-only env files (Cloud Run uses --set-env-vars)
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# VCS & editor noise
+.git
+.gitignore
+.gitattributes
+.vscode
+.idea
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Top-level Markdown noise — but KEEP research/*.md (consumed at runtime by lib/research.ts)
+README.md
+CHANGELOG.md
+
+# Docker meta (no need to copy these into the build context layer)
+Dockerfile
+.dockerignore
+
+# OS junk
+.DS_Store
+Thumbs.db

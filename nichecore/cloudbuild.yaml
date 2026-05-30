@@ -1,0 +1,67 @@
+# Cloud Build config — builds the nichecore container, pushes it to Artifact
+# Registry, then deploys it to Cloud Run.
+#
+# Substitutions (override with --substitutions=_KEY=value):
+#   _REGION   GCP region for Artifact Registry + Cloud Run   (default: us-central1)
+#   _REPO     Artifact Registry repo name                    (default: nichecore)
+#   _SERVICE  Cloud Run service name                         (default: nichecore)
+#   _IMAGE    Fully-qualified image tag                       (computed)
+#
+# Run from repo root:
+#   gcloud builds submit --config nichecore/cloudbuild.yaml ./nichecore
+#
+# Required APIs: run.googleapis.com, cloudbuild.googleapis.com,
+#                artifactregistry.googleapis.com
+# Required IAM (on the Cloud Build service account):
+#   roles/run.admin, roles/iam.serviceAccountUser,
+#   roles/artifactregistry.writer
+
+substitutions:
+  _REGION: us-central1
+  _REPO: nichecore
+  _SERVICE: nichecore
+  _IMAGE: ${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_REPO}/app:${SHORT_SHA}
+
+options:
+  logging: CLOUD_LOGGING_ONLY
+  machineType: E2_HIGHCPU_8
+
+images:
+  - ${_IMAGE}
+
+steps:
+  # 1. Build the container (build context = ./nichecore, passed on the CLI)
+  - id: build
+    name: gcr.io/cloud-builders/docker
+    args:
+      - build
+      - --tag=${_IMAGE}
+      - --cache-from=${_IMAGE}
+      - .
+
+  # 2. Push to Artifact Registry
+  - id: push
+    name: gcr.io/cloud-builders/docker
+    args: [push, "${_IMAGE}"]
+
+  # 3. Deploy to Cloud Run
+  - id: deploy
+    name: gcr.io/google.com/cloudsdktool/cloud-sdk
+    entrypoint: gcloud
+    args:
+      - run
+      - deploy
+      - ${_SERVICE}
+      - --image=${_IMAGE}
+      - --region=${_REGION}
+      - --platform=managed
+      - --allow-unauthenticated
+      - --memory=1Gi
+      - --cpu=1
+      - --port=8080
+      - --max-instances=3
+      - --concurrency=80
+      - --timeout=60s
+      - --set-env-vars=NODE_ENV=production,NEXT_TELEMETRY_DISABLED=1
+
+timeout: 1200s
