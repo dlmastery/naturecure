@@ -7,6 +7,8 @@ import type { Journey, JourneyDomain } from "@/lib/types";
 import { Eyebrow, GradeBadge, FreshnessChip, RiskTag, SectionHeading, RuleCard, SafetyNote } from "@/components/ui";
 import { BundleCard } from "@/components/bundle-card";
 import { NextStep } from "@/components/next-step";
+import { DossierRender } from "@/components/dossier";
+import { readDossier } from "@/lib/research";
 import { Footer } from "@/app/page";
 
 // ── Each journey points to a parent category for the deep evidence hub.
@@ -76,6 +78,7 @@ export default async function JourneyDetail({
   const parent = parentId ? getCategory(parentId) : null;
   const bundle = parent ? getBundle(parent.bundleIds[0]) : null;
   const domainLabel = DOMAIN_LABELS[j.domain];
+  const dossier = readDossier(j.id);
 
   return (
     <div className="grain relative pb-8">
@@ -121,6 +124,20 @@ export default async function JourneyDetail({
           </div>
         </div>
       </section>
+
+      {/* The full research dossier — only present when we have one on disk */}
+      {dossier && (
+        <section className="px-6 pt-16 sm:px-10 lg:px-14">
+          <SectionHeading
+            kicker="The full research dossier"
+            title={<>The 360° protocol — <span className="italic">global sources, OTC + home only</span>.</>}
+            lead="Evidence-graded, AYUSH / TGA / EMA / NMPA / Health Canada anchored. Drugs only appear in §10.1 as 'if you are already on it' — never as recommendations. No clinic, no hospital, no prescription."
+          />
+          <div className="mt-8">
+            <DossierRender dossier={dossier} />
+          </div>
+        </section>
+      )}
 
       {/* Package concept teaser */}
       <section className="px-6 pt-16 sm:px-10 lg:px-14">

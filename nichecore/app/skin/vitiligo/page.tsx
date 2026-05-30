@@ -6,12 +6,15 @@ import { ACCENTS } from "@/lib/evidence";
 import { Eyebrow, GradeBadge, FreshnessChip, SectionHeading, RuleCard, SafetyNote } from "@/components/ui";
 import { BundleCard } from "@/components/bundle-card";
 import { NextStep } from "@/components/next-step";
+import { DossierRender } from "@/components/dossier";
+import { readDossier } from "@/lib/research";
 import { Footer } from "@/app/page";
 
 export const metadata = { title: "Vitiligo support — NicheCore", description: vitiligo.promise };
 
 export default function VitiligoJourney() {
   const bundle = getBundle("skin-resilience-90");
+  const dossier = readDossier("vitiligo-support");
   return (
     <div className="grain relative pb-8">
       {/* ── Editorial hero ── */}
@@ -161,6 +164,18 @@ export default function VitiligoJourney() {
           </div>
         </div>
       </section>
+
+      {/* ── Full dossier ── */}
+      {dossier && (
+        <section className="px-6 pt-16 sm:px-10 lg:px-14">
+          <SectionHeading
+            kicker="The full research dossier"
+            title={<>The 360° vitiligo protocol — <span className="italic">global sources, OTC + home only</span>.</>}
+            lead="Evidence-graded, AYUSH / TGA / EMA / NMPA / Health Canada anchored. Drugs only appear in §10.1 as 'if you are already on it' — never as recommendations."
+          />
+          <div className="mt-8"><DossierRender dossier={dossier} /></div>
+        </section>
+      )}
 
       {/* ── Package ── */}
       <section className="px-6 pt-16 sm:px-10 lg:px-14">
