@@ -1,0 +1,33 @@
+Research corpus: 50 evidence-graded OTC + home-only dossiers
+
+Apply v5 of the Ailment 360 Research skill to every atlas journey.
+3.04 MB across 50 markdown files in research/, avg 62 KB per dossier.
+
+Skill (.claude/skills/ailment-360-research/SKILL.md, v1 -> v5):
+- 3 ralph audit cycles refined the recipe
+- Strictly OTC + home-based foundational rule (no Rx, no clinic, no hospital, no surgery)
+- 15 mandatory sections + sub-sections per dossier (mechanism triad, sub-types,
+  6 traditional systems, biophysical by domain, dietary protocol with environmental
+  triggers + cofactor floor, lifestyle anchors with weekly+monthly exercise periodization,
+  3 daily combos, master 24-hour timetable, supplier ecosystem with monthly cost,
+  full interaction matrix drug<->supp<->food<->supp<->exercise/sleep, clinical
+  scoring + comorbidity, 12-month timeline, patient primer, sovereignty paradigm)
+- Global sources only: AYUSH/CCRAS/CCRH/PCIMH/ICMR, EMA HMPC, TGA/NHMRC,
+  China NMPA + Chinese Pharmacopoeia, Health Canada NHP, Men-Tsee-Khang,
+  Hamdard/IMPCOPS, classical Ayurveda/TCM/Unani/Siddha/Tibetan texts,
+  Hahnemann/Boericke/Allen/Kent for homeopathy (T grade)
+- Forbidden: FDA, FTC, ADA, AHA, AAD, AMA, APA, ACOG, NAMS, ACR, ACS, CDC,
+  NIH-policy as authority. Never cited.
+- Mandatory 3-pass internal ralph loop per dossier:
+  - Pass 1: structural completeness
+  - Pass 2: citation + dose validation
+  - Pass 3: elite-physician smell test through AYUSH BAMS / TGA-integrative GP lens
+
+Fan-out: 8 parallel agent teams (B1-B8) each producing 6 dossiers, plus B1-retry
+and B3-retry to recover from socket-drop and timeout. Every dossier carries
+internalRalph.pass1/2/3Complete: true in YAML.
+
+All 50 dossiers passed: forbidden-source / citation-validation / smell-test.
+Word counts 44-76 KB (3.5k - 12k words depending on ailment complexity).
+
+Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>
