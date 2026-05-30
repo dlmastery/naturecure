@@ -6,6 +6,7 @@ import { EVIDENCE_GRADES, GRADE_ORDER } from "@/lib/evidence";
 import { CategoryCard } from "@/components/category-card";
 import { Eyebrow, GradeBadge, SectionHeading, Stat } from "@/components/ui";
 import { NextStep } from "@/components/next-step";
+import { JourneySearch } from "@/components/journey-search";
 
 export default function Home() {
   return (
@@ -23,9 +24,15 @@ export default function Home() {
             packages, a daily companion and optional human experts. We grade the evidence,
             show the uncertainty, and refresh every hub as new findings emerge.
           </p>
-          <div className="mt-8 flex flex-wrap items-center gap-3">
+          {/* Prominent search — search across all 51 journeys, with
+              nearest-match fallback and a suggest-for-future form. */}
+          <div className="mt-8">
+            <JourneySearch />
+          </div>
+
+          <div className="mt-5 flex flex-wrap items-center gap-3">
             <Link href="/atlas" className="btn-primary">
-              Browse 50 journeys <ArrowRight size={16} />
+              Or browse the full atlas <ArrowRight size={16} />
             </Link>
             <Link href="/skin/vitiligo" className="btn-ghost">See a full journey</Link>
           </div>
@@ -61,6 +68,74 @@ export default function Home() {
               <span key={t} className="flex items-center gap-2"><CircleCheck size={16} style={{ color: "var(--color-amber)" }} /> {t}</span>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ───────────────── Featured deep journeys ───────────────── */}
+      <section className="px-6 pt-20 sm:px-10 lg:px-14">
+        <SectionHeading
+          kicker="The protocol, in full depth"
+          title={<>Four real journeys. <span className="italic" style={{ color: "var(--color-forest)" }}>Click to enter.</span></>}
+          lead="Every featured journey is a navigable 15-section dossier — evidence, mechanism, OTC phytochemicals, six traditions, biophysical, diet, lifestyle, combos, master 24-hour plan, interactions, scoring, 12-month timeline. No long Medium article. A real reference you walk through."
+        />
+        <div className="mt-10 grid gap-5 lg:grid-cols-2">
+          {FEATURED_JOURNEYS.map((f) => (
+            <Link
+              key={f.href}
+              href={f.href}
+              className="card-soft group flex flex-col gap-4 overflow-hidden p-6 transition-transform hover:-translate-y-1 sm:p-8"
+            >
+              <div className="flex items-center justify-between">
+                <span className="eyebrow eyebrow--gold">{f.eyebrow}</span>
+                <span className="chip">{f.tag}</span>
+              </div>
+              <h3 className="font-display text-balance text-3xl leading-tight sm:text-4xl">
+                {f.titlePrefix}{" "}
+                <span className="italic" style={{ color: "var(--color-forest)" }}>{f.italicWord}</span>{f.titleSuffix}
+              </h3>
+              <p className="text-[0.95rem] leading-relaxed" style={{ color: "var(--color-ink-soft)" }}>
+                {f.lede}
+              </p>
+              <div className="mt-1 flex flex-wrap gap-1.5">
+                {f.grades.map((g) => <GradeBadge key={g} grade={g as "A" | "B" | "C" | "D" | "T" | "H"} />)}
+              </div>
+              <div className="mt-auto flex items-center justify-between border-t pt-4" style={{ borderColor: "var(--color-line)" }}>
+                <span className="font-mono text-[0.7rem] uppercase tracking-wider" style={{ color: "var(--color-ink-faint)" }}>
+                  {f.sections} sections · {f.words.toLocaleString()} words · refreshed {f.refreshedLabel}
+                </span>
+                <span className="inline-flex items-center gap-1.5 text-[0.88rem] font-medium" style={{ color: "var(--color-forest)" }}>
+                  Enter the journey
+                  <ArrowRight size={15} className="transition-transform group-hover:translate-x-0.5" />
+                </span>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* ───────────────── How the regime is built (8-stage flow) ───────────────── */}
+      <section className="px-6 pt-20 sm:px-10 lg:px-14">
+        <SectionHeading
+          kicker="How the regime is built"
+          title={<>Eight stages, end to end. <span className="italic" style={{ color: "var(--color-forest)" }}>Jump to any.</span></>}
+          lead="Need → Atlas → Journey → Personalise → Regime → Companion → Expert → Progress. Click a stage to open the live surface — no guesswork."
+        />
+        <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          {REGIME_STAGES.map((s) => (
+            <Link
+              key={s.href}
+              href={s.href}
+              className="card-soft group flex flex-col gap-2 p-5 transition-transform hover:-translate-y-0.5"
+            >
+              <span className="font-mono text-[0.7rem]" style={{ color: "var(--color-gold-deep)" }}>{s.ordinal}</span>
+              <h4 className="font-display text-xl leading-tight">{s.title}</h4>
+              <p className="text-[0.84rem] leading-relaxed" style={{ color: "var(--color-ink-soft)" }}>{s.body}</p>
+              <span className="mt-auto inline-flex items-center gap-1.5 pt-2 text-[0.78rem] font-medium" style={{ color: "var(--color-forest)" }}>
+                Open
+                <ArrowRight size={13} className="transition-transform group-hover:translate-x-0.5" />
+              </span>
+            </Link>
+          ))}
         </div>
       </section>
 
@@ -156,6 +231,72 @@ const LOOP = [
   { title: "Get a quality package", body: "Each item maps to a protocol role, an evidence grade and a quality score." },
   { title: "Keep the routine", body: "A companion handles reminders, check-ins, refills and expert escalation." },
 ];
+
+const FEATURED_JOURNEYS = [
+  {
+    href: "/skin/vitiligo",
+    eyebrow: "Skin · 360° protocol",
+    tag: "fresh",
+    titlePrefix: "The vitiligo journey,",
+    italicWord: "without the snake oil",
+    titleSuffix: ".",
+    lede: "Antioxidant + gut-skin + stress layers, sprouted-millet diet, red-light + breathwork anchors. Every interaction flagged. Adjunctive to your dermatologist — never a cure.",
+    grades: ["B", "C", "D", "T"],
+    sections: 15,
+    words: 7352,
+    refreshedLabel: "14d ago",
+  },
+  {
+    href: "/ears/tinnitus",
+    eyebrow: "Brain & Ear · 360° protocol",
+    tag: "fresh",
+    titlePrefix: "Quieter ears,",
+    italicWord: "no false promises",
+    titleSuffix: ".",
+    lede: "Tebonin Ginkgo (EMA-monograph) + magnesium NMDA-protection + zinc-balance + Bhramari breath + sound-therapy notch tones. Pulsatile tinnitus pulled out as a red-flag exception.",
+    grades: ["B", "C", "T", "H"],
+    sections: 13,
+    words: 9260,
+    refreshedLabel: "today",
+  },
+  {
+    href: "/metabolic/blood-sugar",
+    eyebrow: "Metabolic · 360° protocol",
+    tag: "review required",
+    titlePrefix: "Blood sugar,",
+    italicWord: "without snake-oil panic",
+    titleSuffix: ".",
+    lede: "Ferroptosis / Nrf2 / GPX4 + Khadir sprouted millets + Yu Quan Wan + Polydatin + Quercetin + Nigella + Momordica. Metformin / insulin interactions framed strictly as 'if already on'.",
+    grades: ["B", "C", "D", "T"],
+    sections: 15,
+    words: 11859,
+    refreshedLabel: "7d ago",
+  },
+  {
+    href: "/women/pcos",
+    eyebrow: "Hormones · 360° protocol",
+    tag: "fresh",
+    titlePrefix: "PCOS,",
+    italicWord: "support, not symptom-chase",
+    titleSuffix: ".",
+    lede: "Myo + d-chiro inositol (40:1) + berberine + NAC + spearmint + cinnamon. Insulin-androgen axis + gut. Hormonal-contraceptive interactions framed honestly.",
+    grades: ["B", "C", "T"],
+    sections: 15,
+    words: 9244,
+    refreshedLabel: "21d ago",
+  },
+] as const;
+
+const REGIME_STAGES = [
+  { ordinal: "01", title: "Need", body: "Arrive with what's bothering you, not a specialty.", href: "/" },
+  { ordinal: "02", title: "Atlas", body: "Browse all 51 journeys, filter by domain.", href: "/atlas" },
+  { ordinal: "03", title: "Journey", body: "Open the 15-section evidence dossier.", href: "/skin/vitiligo" },
+  { ordinal: "04", title: "Personalise", body: "4-question safety quiz; routes to expert on flag.", href: "/c/skin-pigmentation/package" },
+  { ordinal: "05", title: "Regime", body: "Quality-screened 90-day pack with COA-backed bottles.", href: "/c/skin-pigmentation/package" },
+  { ordinal: "06", title: "Companion", body: "Daily reminders, weekly check-ins, refill countdown.", href: "/companion" },
+  { ordinal: "07", title: "Expert", body: "Optional credentialed Ayurveda / TCM chart review.", href: "/expert" },
+  { ordinal: "08", title: "Progress", body: "Trends, photos, lab uploads — honest signals, not diagnoses.", href: "/progress" },
+] as const;
 
 export function Footer() {
   return (

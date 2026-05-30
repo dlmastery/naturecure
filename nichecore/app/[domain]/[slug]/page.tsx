@@ -9,14 +9,15 @@ import type { Journey, JourneyDomain } from "@/lib/types";
 import { Eyebrow, GradeBadge, FreshnessChip, RiskTag, RuleCard, SafetyNote } from "@/components/ui";
 import { BundleCard } from "@/components/bundle-card";
 import { NextStep } from "@/components/next-step";
-import { readDossier, splitDossierByH2 } from "@/lib/research";
+import { readDossier, splitDossierByH2, splitChunkByH3 } from "@/lib/research";
 import { Footer } from "@/app/page";
-import { DossierShell, type SectionSpec } from "@/components/layout/dossier-shell";
+import { DossierShell, type SectionSpec, type SectionSubSpec } from "@/components/layout/dossier-shell";
 import { SectionAnchor } from "@/components/layout/section-anchor";
 import { SectionFooter } from "@/components/layout/section-footer";
 import { ManifestoBand } from "@/components/layout/manifesto-band";
 import { FoundationPillarRow } from "@/components/layout/foundation-pillar-row";
 import { Callout } from "@/components/callouts/callout";
+import { DeepDive } from "@/components/layout/deep-dive";
 
 // ── Each journey points to a parent category for the deep evidence hub.
 //     Default by domain; specific journeys override where the natural parent differs.
@@ -56,6 +57,23 @@ const PARENT_OVERRIDES: Record<string, string> = {
 
 function parentCategoryFor(j: Journey): string | null {
   return PARENT_OVERRIDES[j.id] ?? DOMAIN_TO_CATEGORY[j.domain];
+}
+
+/** Per-journey bundle override — bypasses the parent category's default bundle. */
+const JOURNEY_BUNDLE_OVERRIDES: Record<string, string> = {
+  "tinnitus-support": "tinnitus-quiet-90",
+};
+
+function bundleIdFor(j: Journey, parent: { bundleIds: string[] } | null | undefined): string | null {
+  return JOURNEY_BUNDLE_OVERRIDES[j.id] ?? parent?.bundleIds[0] ?? null;
+}
+
+/** Build the package URL for a given journey, passing the bundle override if any. */
+function packageHrefFor(j: Journey, parent: { id: string } | null | undefined): string {
+  if (!parent) return "/atlas";
+  const base = "/c/" + parent.id + "/package";
+  const override = JOURNEY_BUNDLE_OVERRIDES[j.id];
+  return override ? base + "?bundle=" + override + "&from=" + j.id : base;
 }
 
 function parseRoute(route: string): { domain: string; slug: string } | null {
@@ -103,7 +121,9 @@ export default async function JourneyDetail({
 
   const parentId = parentCategoryFor(j);
   const parent = parentId ? getCategory(parentId) : null;
-  const bundle = parent ? getBundle(parent.bundleIds[0]) : null;
+  const bundleId = bundleIdFor(j, parent);
+  const bundle = bundleId ? getBundle(bundleId) : null;
+  const pkgHref = packageHrefFor(j, parent);
   const domainLabel = DOMAIN_LABELS[j.domain];
   const dossier = readDossier(j.id);
   const chunks = dossier ? splitDossierByH2(dossier.body) : [];
@@ -136,12 +156,34 @@ export default async function JourneyDetail({
     { id: "closing",      ordinal: "14", label: "Closing paradigm",   group: "REFERENCE & CARE" },
     { id: "references",   ordinal: "15", label: "References",         group: "REFERENCE & CARE" },
   ];
-  const tabs: SectionSpec[] = ALL_TABS.filter((t) => {
-    if (t.id === "overview") return true;
-    if (t.id === "closing") return true;
-    if (t.id === "suppliers") return true; // package surface
-    return present(t.id);
-  });
+  // Build the H3 sub-section children for each tab (skill v6.2 tree
+  // navigation). Each tab aggregates the H3s of all chunks it owns,
+  // tagged with their parent-chunk-prefixed id so they match the
+  // ids the renderer emits on `data-sub-anchor` elements.
+  function childrenFor(tabId: string): SectionSubSpec[] | undefined {
+    const chunksHere = chunksByTab[tabId];
+    if (!chunksHere || chunksHere.length === 0) return undefined;
+    const subs: SectionSubSpec[] = [];
+    for (const c of chunksHere) {
+      for (const sub of splitChunkByH3(c)) {
+        // Skip synthetic "Overview" sub-chunks from chunks that had no
+        // real H3s — they exist only as carrier bodies and would clutter
+        // the rail with meaningless rows.
+        if (sub.title === "Overview" && (!sub.visibleBody && !sub.deepDiveBody)) continue;
+        subs.push({ id: sub.id, label: sub.title.replace(/^\d+(?:\.\d+)*\.?\s+/, "").trim() });
+      }
+    }
+    return subs.length > 0 ? subs : undefined;
+  }
+
+  const tabs: SectionSpec[] = ALL_TABS
+    .filter((t) => {
+      if (t.id === "overview") return true;
+      if (t.id === "closing") return true;
+      if (t.id === "suppliers") return true; // package surface
+      return present(t.id);
+    })
+    .map((t) => ({ ...t, children: childrenFor(t.id) }));
 
   // If there's no dossier on disk, fall back to a minimal shell with overview + suppliers + closing.
   if (!dossier) {
@@ -160,7 +202,7 @@ export default async function JourneyDetail({
             </span>
           </span>
         }
-        primaryCta={parent ? { label: "Build my regime", href: `/c/${parent.id}/package` } : undefined}
+        primaryCta={parent ? { label: "Build my regime", href: pkgHref } : undefined}
         rightBadges={[<span key="adj" className="chip">adjunctive only</span>]}
       >
         <SectionAnchor
@@ -190,7 +232,7 @@ export default async function JourneyDetail({
             </div>
             <div className="mb-9 flex flex-wrap items-center gap-3">
               {parent && (
-                <Link href={`/c/${parent.id}/package`} className="btn-primary">
+                <Link href={pkgHref} className="btn-primary">
                   Build my regime <ArrowRight size={16} />
                 </Link>
               )}
@@ -236,7 +278,7 @@ export default async function JourneyDetail({
                 </p>
               )}
             </div>
-            {bundle ? <BundleCard bundle={bundle} ctaHref={parent ? `/c/${parent.id}/package` : "/atlas"} /> : (
+            {bundle ? <BundleCard bundle={bundle} ctaHref={parent ? pkgHref : "/atlas"} /> : (
               <div className="card-soft flex items-center justify-center p-10 text-center">
                 <p className="text-[0.9rem]" style={{ color: "var(--color-ink-soft)" }}>
                   This journey is part of the roadmap. Browse the{" "}
@@ -285,7 +327,7 @@ export default async function JourneyDetail({
           body={parent
             ? `Answer four quick questions; if a flag fires we route you to a human instead of selling. Otherwise you'll see the ${parent.shortName.toLowerCase()} pack.`
             : `This journey is on the roadmap. The atlas shows every consumer need we track, with the evidence grade mix.`}
-          href={parent ? `/c/${parent.id}/package` : "/atlas"}
+          href={parent ? pkgHref : "/atlas"}
           cta={parent ? "Personalise my regime" : "Open the atlas"}
         />
         <div className="pt-8"><Footer /></div>
@@ -306,7 +348,7 @@ export default async function JourneyDetail({
           </span>
         </span>
       }
-      primaryCta={parent ? { label: "Build my regime", href: `/c/${parent.id}/package` } : undefined}
+      primaryCta={parent ? { label: "Build my regime", href: pkgHref } : undefined}
       rightBadges={[
         <span key="adj" className="chip">adjunctive only</span>,
         <span key="no-cure" className="chip">no cure claims</span>,
@@ -340,7 +382,7 @@ export default async function JourneyDetail({
           </div>
           <div className="mb-9 flex flex-wrap items-center gap-3">
             {parent && (
-              <Link href={`/c/${parent.id}/package`} className="btn-primary">
+              <Link href={pkgHref} className="btn-primary">
                 Build my regime <ArrowRight size={16} />
               </Link>
             )}
@@ -388,7 +430,7 @@ export default async function JourneyDetail({
             <p className="mt-3 text-[0.95rem] leading-relaxed">{j.packageConcept}</p>
           </div>
           {bundle ? (
-            <BundleCard bundle={bundle} ctaHref={parent ? `/c/${parent.id}/package` : "/atlas"} />
+            <BundleCard bundle={bundle} ctaHref={parent ? pkgHref : "/atlas"} />
           ) : (
             <div className="card-soft flex items-center justify-center p-10 text-center">
               <p className="text-[0.9rem]" style={{ color: "var(--color-ink-soft)" }}>
@@ -460,7 +502,7 @@ export default async function JourneyDetail({
         body={parent
           ? `Answer four quick questions; if a flag fires we route you to a human instead of selling. Otherwise you'll see the ${parent.shortName.toLowerCase()} pack.`
           : `This journey is on the roadmap. The atlas shows every consumer need we track, with the evidence grade mix.`}
-        href={parent ? `/c/${parent.id}/package` : "/atlas"}
+        href={parent ? pkgHref : "/atlas"}
         cta={parent ? "Personalise my regime" : "Open the atlas"}
       />
       <div className="pt-8"><Footer /></div>
@@ -506,12 +548,60 @@ function DossierChunks({
   if (!chunks || chunks.length === 0) return null;
   return (
     <div className="mt-8 space-y-10">
-      {chunks.map((c) => (
-        <article key={c.id} className="dossier-prose" id={`chunk-${c.id}`}>
-          <h3 className="font-display" style={{ fontSize: "1.35rem", color: "var(--color-forest)", marginTop: 0 }}>{c.title}</h3>
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>{c.body}</ReactMarkdown>
-        </article>
-      ))}
+      {chunks.map((c) => {
+        const subs = splitChunkByH3(c);
+        return (
+          <article key={c.id} className="dossier-prose" id={`chunk-${c.id}`}>
+            <h3 className="font-display" style={{ fontSize: "1.35rem", color: "var(--color-forest)", marginTop: 0 }}>{c.title}</h3>
+            {subs.length === 1 && subs[0].title === "Overview" ? (
+              // Legacy / pre-v6.2 chunks with no H3s: render visible body inline,
+              // wrap any deep-dive body in the collapsible.
+              <>
+                {subs[0].visibleBody && (
+                  <ReactMarkdown remarkPlugins={[remarkGfm]}>{subs[0].visibleBody}</ReactMarkdown>
+                )}
+                {subs[0].deepDiveBody && (
+                  <DeepDive>
+                    <ReactMarkdown remarkPlugins={[remarkGfm]}>{subs[0].deepDiveBody}</ReactMarkdown>
+                  </DeepDive>
+                )}
+              </>
+            ) : (
+              <div className="mt-4 space-y-8">
+                {subs.map((sub) => (
+                  <section
+                    key={sub.id}
+                    id={sub.id}
+                    data-sub-anchor
+                    aria-labelledby={`${sub.id}-title`}
+                  >
+                    <h4
+                      id={`${sub.id}-title`}
+                      className="font-display"
+                      style={{
+                        fontSize: "1.05rem",
+                        color: "var(--color-ink)",
+                        marginTop: "1.25rem",
+                        marginBottom: "0.5rem",
+                      }}
+                    >
+                      {sub.title.replace(/^\d+(?:\.\d+)*\.?\s+/, "")}
+                    </h4>
+                    {sub.visibleBody && (
+                      <ReactMarkdown remarkPlugins={[remarkGfm]}>{sub.visibleBody}</ReactMarkdown>
+                    )}
+                    {sub.deepDiveBody && (
+                      <DeepDive>
+                        <ReactMarkdown remarkPlugins={[remarkGfm]}>{sub.deepDiveBody}</ReactMarkdown>
+                      </DeepDive>
+                    )}
+                  </section>
+                ))}
+              </div>
+            )}
+          </article>
+        );
+      })}
     </div>
   );
 }

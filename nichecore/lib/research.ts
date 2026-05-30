@@ -94,3 +94,72 @@ export function splitDossierByH2(body: string): DossierChunk[] {
   }
   return chunks;
 }
+
+// ─────────────── Sub-section + deep-dive splitting ───────────────
+//
+// Skill v6.2 introduces two markdown conventions that the website
+// renders specially:
+//   1. H3 (`### …`) inside a section body becomes a tree-expandable
+//      sub-section in the left-rail and gets its own scroll-spy id.
+//   2. H4 with the exact label `Open the science` (case-insensitive)
+//      starts a deep-dive block — everything until the next H2/H3
+//      collapses behind a "Open the science" toggle so the
+//      non-technical opener stays the first thing readers see.
+
+export interface DossierSubChunk {
+  /** Stable id derived from the H3 title, prefixed with parent id. */
+  id: string;
+  /** Raw H3 title text. */
+  title: string;
+  /** Body BEFORE any `#### Open the science` H4 (always visible). */
+  visibleBody: string;
+  /** Body AFTER the deep-dive H4 (collapsed in UI), or empty. */
+  deepDiveBody: string;
+}
+
+const DEEP_DIVE_H4_RE = /^####\s+open\s+the\s+science\b/i;
+
+/**
+ * Split a single H2 chunk body into H3 sub-chunks. Each sub-chunk is
+ * further split at the deep-dive H4 marker. If the H2 body has no H3s,
+ * a single synthetic sub-chunk named "Overview" is returned.
+ */
+export function splitChunkByH3(parent: DossierChunk): DossierSubChunk[] {
+  const lines = parent.body.split(/\r?\n/);
+  const subs: DossierSubChunk[] = [];
+
+  let currentTitle: string | null = null;
+  let currentBuf: string[] = [];
+
+  const flush = () => {
+    if (currentTitle === null && currentBuf.every((l) => l.trim() === "")) return;
+    const title = currentTitle ?? "Overview";
+    const cleanedTitle = title.replace(/^\d+(?:\.\d+)*\.?\s+/, "").trim();
+    const id = parent.id + "--" + (slugify(cleanedTitle) || `sub-${subs.length + 1}`);
+    const { visible, deepDive } = splitDeepDive(currentBuf);
+    subs.push({ id, title, visibleBody: visible, deepDiveBody: deepDive });
+    currentTitle = null;
+    currentBuf = [];
+  };
+
+  for (const ln of lines) {
+    const m = ln.match(/^###\s+(.+?)\s*$/);
+    if (m) {
+      flush();
+      currentTitle = m[1].trim();
+    } else {
+      currentBuf.push(ln);
+    }
+  }
+  flush();
+  return subs;
+}
+
+function splitDeepDive(bufLines: string[]): { visible: string; deepDive: string } {
+  const idx = bufLines.findIndex((ln) => DEEP_DIVE_H4_RE.test(ln));
+  if (idx === -1) return { visible: bufLines.join("\n").trim(), deepDive: "" };
+  const visible = bufLines.slice(0, idx).join("\n").trim();
+  // Drop the marker line itself; the UI provides the "Open the science" affordance.
+  const deepDive = bufLines.slice(idx + 1).join("\n").trim();
+  return { visible, deepDive };
+}

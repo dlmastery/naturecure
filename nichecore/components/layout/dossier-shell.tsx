@@ -6,15 +6,23 @@ import { ArrowRight } from "lucide-react";
 import { useActiveSection } from "@/lib/use-active-section";
 import { useKeyboardNav } from "@/lib/use-keyboard-nav";
 import { LeftRailNav, type NavGroup, type NavItemSpec } from "@/components/nav/left-rail-nav";
-import { MobileTabStrip, type MobileTabSpec } from "@/components/nav/mobile-tab-strip";
+import type { MobileTabSpec } from "@/components/nav/mobile-tab-strip";
 import { MobileDock } from "@/components/nav/mobile-dock";
 import { StepCounter } from "@/components/nav/step-counter";
+import { MindMapStrip } from "@/components/nav/mind-map-strip";
+
+export interface SectionSubSpec {
+  id: string;
+  label: string;
+}
 
 export interface SectionSpec {
   id: string;
   ordinal: string;
   label: string;
   group?: string; // group label header in the rail
+  /** Optional H3 sub-sections for tree-expansion in the left rail. */
+  children?: SectionSubSpec[];
 }
 
 export interface DossierShellProps {
@@ -44,11 +52,21 @@ export function DossierShell({
   trackBadge,
   children,
 }: DossierShellProps) {
+  // Scroll-spy across BOTH parent H2 ids and child H3 sub-section ids
+  // (skill v6.2). Keyboard nav still steps only through the parent H2
+  // tabs — sub-sections are scroll-spy and click targets, not part of
+  // the J/K stepper rotation.
   const ids = useMemo(() => tabs.map((t) => t.id), [tabs]);
-  const [active, setActive] = useActiveSection(ids);
+  const subIds = useMemo(
+    () => tabs.flatMap((t) => t.children?.map((c) => c.id) ?? []),
+    [tabs]
+  );
+  const allObservedIds = useMemo(() => [...ids, ...subIds], [ids, subIds]);
+  const [active, setActive] = useActiveSection(allObservedIds);
   useKeyboardNav(ids, active, setActive);
 
-  // Build grouped nav.
+  // Build grouped nav, preserving children so the rail can render
+  // an expandable tree per H2.
   const groups: NavGroup[] = useMemo(() => {
     const out: NavGroup[] = [];
     const byGroup = new Map<string, NavItemSpec[]>();
@@ -59,7 +77,12 @@ export function DossierShell({
         byGroup.set(g, []);
         order.push(g);
       }
-      byGroup.get(g)!.push({ id: t.id, ordinal: t.ordinal, label: t.label });
+      byGroup.get(g)!.push({
+        id: t.id,
+        ordinal: t.ordinal,
+        label: t.label,
+        children: t.children?.map((c) => ({ id: c.id, ordinal: "·", label: c.label })),
+      });
     }
     for (const g of order) out.push({ label: g, items: byGroup.get(g)! });
     return out;
@@ -70,21 +93,31 @@ export function DossierShell({
     [tabs]
   );
 
-  const idx = Math.max(0, ids.indexOf(active));
+  // Step counter follows the top-level H2 only, not the sub-sections.
+  // Resolve the active parent: if `active` is a sub-section id, find
+  // its parent in `tabs`; otherwise use `active` directly.
+  const activeParentId = useMemo(() => {
+    if (ids.includes(active)) return active;
+    const parent = tabs.find((t) => t.children?.some((c) => c.id === active));
+    return parent?.id ?? ids[0] ?? "";
+  }, [active, ids, tabs]);
+  const idx = Math.max(0, ids.indexOf(activeParentId));
   const current = idx + 1;
   const total = ids.length;
 
   const handleSelect = useCallback((id: string) => setActive(id), [setActive]);
+  // prev/next step through parent H2 tabs, treating any active sub-section
+  // as belonging to its parent for the purpose of stepping.
   const goPrev = useCallback(() => {
-    const i = ids.indexOf(active);
+    const i = ids.indexOf(activeParentId);
     const j = Math.max(0, i - 1);
     setActive(ids[j]);
-  }, [active, ids, setActive]);
+  }, [activeParentId, ids, setActive]);
   const goNext = useCallback(() => {
-    const i = ids.indexOf(active);
+    const i = ids.indexOf(activeParentId);
     const j = Math.min(ids.length - 1, i + 1);
     setActive(ids[j]);
-  }, [active, ids, setActive]);
+  }, [activeParentId, ids, setActive]);
 
   return (
     <div
@@ -92,8 +125,15 @@ export function DossierShell({
       className="lg:grid lg:grid-cols-[280px_1fr]"
       style={{ background: "var(--color-paper)", minHeight: "100dvh" }}
     >
-      {/* Global scroll-margin-top so smooth-scroll lands below the 64px sticky bar */}
-      <style>{`section[data-section-anchor] { scroll-margin-top: 80px; }`}</style>
+      {/* Global scroll-margin-top so smooth-scroll lands below the
+          64px top bar + ~46px mind-map strip = 110px sticky chrome.
+          Also targets H3 sub-section anchors (skill v6.2 tree nav). */}
+      <style>{`
+        section[data-section-anchor],
+        [data-sub-anchor] {
+          scroll-margin-top: 120px;
+        }
+      `}</style>
 
       <LeftRailNav
         brand={brand}
@@ -152,8 +192,10 @@ export function DossierShell({
           </div>
         </header>
 
-        {/* Mobile tab strip */}
-        <MobileTabStrip sections={flatItems} active={active} onSelect={handleSelect} />
+        {/* Sticky horizontal mind-map (subway-style) — all viewports.
+            Replaces the older MobileTabStrip; the mind-map already handles
+            both desktop & mobile section navigation. */}
+        <MindMapStrip sections={flatItems} active={active} onSelect={handleSelect} />
 
         {/* Main content */}
         <main id="main" className="relative min-w-0 pb-24 lg:pb-12">

@@ -5,11 +5,13 @@ import { useState } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { journeys, DOMAIN_LABELS } from "@/lib/data";
 import { Eyebrow, GradeBadge, FreshnessChip } from "@/components/ui";
+import { EVIDENCE_GRADES, GRADE_ORDER } from "@/lib/evidence";
 
 const DOMAINS = ["All", ...Object.keys(DOMAIN_LABELS)] as const;
 
 export default function Atlas() {
   const [domain, setDomain] = useState<string>("All");
+  const [legendOpen, setLegendOpen] = useState<boolean>(false);
   const list = domain === "All" ? journeys : journeys.filter((j) => j.domain === domain);
 
   return (
@@ -24,8 +26,48 @@ export default function Atlas() {
           across ten domains. The five launch categories go deep first; the rest are the roadmap.
         </p>
 
+        {/* What do the colored grade pills on each card mean? Always-visible
+            one-line legend with a click-to-expand details panel. Lives here
+            at the point of use so users don't have to hunt for it. */}
+        <div className="mt-8 rounded-2xl border bg-white/70 p-4"
+          style={{ borderColor: "var(--color-line-strong)" }}>
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
+            <span className="font-mono text-[0.65rem] uppercase tracking-[0.18em]"
+              style={{ color: "var(--color-ink-faint)" }}>
+              Evidence grades on each card
+            </span>
+            <div className="flex flex-wrap gap-1.5">
+              {GRADE_ORDER.map((g) => <GradeBadge key={g} grade={g} withLabel />)}
+            </div>
+            <button
+              type="button"
+              onClick={() => setLegendOpen((v) => !v)}
+              className="ml-auto rounded-full border px-3 py-1 text-[0.75rem] transition-colors hover:bg-[var(--color-paper-deep)]"
+              style={{ borderColor: "var(--color-line-strong)", color: "var(--color-ink-soft)" }}
+              aria-expanded={legendOpen}
+            >
+              {legendOpen ? "Hide details" : "What do these mean?"}
+            </button>
+          </div>
+          {legendOpen && (
+            <dl className="mt-4 grid gap-2 sm:grid-cols-2">
+              {GRADE_ORDER.map((g) => (
+                <div key={g} className="flex items-start gap-2.5">
+                  <dt className="shrink-0"><GradeBadge grade={g} /></dt>
+                  <dd className="text-[0.82rem] leading-snug" style={{ color: "var(--color-ink-soft)" }}>
+                    <span className="font-medium" style={{ color: "var(--color-ink)" }}>
+                      {EVIDENCE_GRADES[g].label}.
+                    </span>{" "}
+                    {EVIDENCE_GRADES[g].consumer}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          )}
+        </div>
+
         {/* Domain filter */}
-        <div className="mt-8 flex flex-wrap gap-2">
+        <div className="mt-6 flex flex-wrap gap-2">
           {DOMAINS.map((d) => {
             const active = domain === d;
             const count = d === "All" ? journeys.length : journeys.filter((j) => j.domain === d).length;

@@ -2,7 +2,7 @@
 
 import { use, useMemo, useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import {
   ShieldCheck,
   Repeat,
@@ -44,8 +44,15 @@ export default function PackagePage({
 }) {
   const { category: id } = use(params);
   const category = getCategory(id);
-  const bundle = category ? getBundle(category.bundleIds[0]) : undefined;
   const router = useRouter();
+  const searchParams = useSearchParams();
+  // Bundle override via ?bundle=… so per-journey CTAs (e.g. tinnitus) can land
+  // here with their own tinnitus-quiet-90 pack instead of the category default.
+  const bundleParam = searchParams.get("bundle") ?? undefined;
+  const fromJourney = searchParams.get("from") ?? undefined;
+  const bundle = bundleParam
+    ? getBundle(bundleParam) ?? (category ? getBundle(category.bundleIds[0]) : undefined)
+    : (category ? getBundle(category.bundleIds[0]) : undefined);
 
   const [answers, setAnswers] = useState<SafetyAnswers | null>(null);
   const [tier, setTier] = useState<Tier>("core");
@@ -113,22 +120,36 @@ export default function PackagePage({
 
         <div className="mt-6 flex flex-wrap items-end justify-between gap-4">
           <div>
-            <h1 className="font-display text-balance text-4xl leading-tight sm:text-5xl">
-              Your {bundle.duration}{" "}
-              <span
-                className="italic"
-                style={{ color: "var(--color-forest)" }}
-              >
-                {category.shortName.toLowerCase()}
-              </span>{" "}
-              pack
-            </h1>
+            {/* When a per-journey bundle override is in play (e.g. tinnitus-quiet-90)
+                use the bundle's own name; otherwise the legacy "category" headline. */}
+            {bundleParam && bundle ? (
+              <h1 className="font-display text-balance text-4xl leading-tight sm:text-5xl">
+                Your{" "}
+                <span className="italic" style={{ color: "var(--color-forest)" }}>
+                  {bundle.duration.replace(/^\d+\s*/, "").trim() || "regime"}
+                </span>{" "}
+                · {bundle.name.replace(/^\d+\s*-?\s*(Day|day)\s+/, "")}
+              </h1>
+            ) : (
+              <h1 className="font-display text-balance text-4xl leading-tight sm:text-5xl">
+                Your {bundle.duration}{" "}
+                <span className="italic" style={{ color: "var(--color-forest)" }}>
+                  {category.shortName.toLowerCase()}
+                </span>{" "}
+                pack
+              </h1>
+            )}
             <p
               className="mt-4 max-w-xl text-[0.95rem] leading-relaxed"
               style={{ color: "var(--color-ink-soft)" }}
             >
               A short safety screen runs first — products are only ever
               recommended once it clears. The refusal is the conversion.
+              {fromJourney && (
+                <>
+                  {" "}<Link href={`/atlas`} className="underline">Back to journeys ↗</Link>
+                </>
+              )}
             </p>
           </div>
           <StepIndicator
