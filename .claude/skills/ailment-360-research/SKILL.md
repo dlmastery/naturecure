@@ -5,7 +5,7 @@ description: "Produce an evidence-graded, global-sources-only, STRICTLY OTC + HO
 
 # Ailment 360 Research
 
-> **Version: v6.2.1** — adds seven load-bearing rules on top of v6.1: progressive disclosure (`#### Open the science` deep-dive blocks), tree-friendly H3 sub-sections (≤5 words, 3–7 per H2), mandatory honest evidence-tier comparison table, Cochrane/systematic-review honesty discipline, mandatory Emerging & adjunctive therapies H2 (with the narrow regulatory-context exception), mandatory adjunctive therapy coverage (CBT/CBT-i, MBCT/MBSR, TRT/ERP/vestibular rehab, biofeedback, sound/light/vagal), and word ceiling raised from 14,000 to 18,000. v6.1's plain-English TL;DR-everywhere contract is preserved unchanged. **v6.2.1 hardens two recurring failures:** (a) **EVERY table — without exception — must carry a TL;DR (plain English) column as the last text column.** No table ships without it. (b) **"Overview" is a forbidden H3 title** — when multiple chunks under the same tab each name an H3 "Overview" the left-rail tree fills with confusing duplicate rows; every H3 must be a real, specific, action-oriented title.
+> **Version: v6.2.2** — adds seven load-bearing rules on top of v6.1: progressive disclosure (`#### Open the science` deep-dive blocks), tree-friendly H3 sub-sections (≤5 words, 3–7 per H2), mandatory honest evidence-tier comparison table, Cochrane/systematic-review honesty discipline, mandatory Emerging & adjunctive therapies H2 (with the narrow regulatory-context exception), mandatory adjunctive therapy coverage (CBT/CBT-i, MBCT/MBSR, TRT/ERP/vestibular rehab, biofeedback, sound/light/vagal), and word ceiling raised from 14,000 to 18,000. v6.1's plain-English TL;DR-everywhere contract is preserved unchanged. **v6.2.1 hardens two recurring failures:** (a) **EVERY table — without exception — must carry a TL;DR (plain English) column as the last text column.** No table ships without it. (b) **"Overview" is a forbidden H3 title** — when multiple chunks under the same tab each name an H3 "Overview" the left-rail tree fills with confusing duplicate rows; every H3 must be a real, specific, action-oriented title. **v6.2.2 absorbs four defects the tinnitus regen agent flagged:** (a) self-check checklist now has a dedicated table-TL;DR-column item separate from the bundled TL;DR-everywhere check; (b) the forbidden-H3-titles list is mirrored into the Forbidden Language section so reviewers see both phrase-level and heading-level bans in one place; (c) the **"For you, in plain words → Quick start → For the curious / your clinician"** three-tier template is named explicitly as the canonical section-open scaffold rather than only appearing inside Rule 1's example; (d) the Source Policy points forward to Rule 4 so the Cochrane-honesty discipline isn't only discoverable via the v6.2 banner.
 
 ## What this skill produces
 
@@ -20,6 +20,22 @@ The seven rules below are the FIRST things any future agent must read. They sit 
 ### Rule 1 — PROGRESSIVE DISCLOSURE (load-bearing)
 
 **Every section AND every sub-section opens with the plain-English summary. The technical mechanism / citation-dense material follows in a deep-dive block that the website renders as a collapsible.**
+
+**The canonical three-tier section-open scaffold (v6.2.2 — apply to every section AND every sub-section):**
+
+```markdown
+### <specific action-oriented H3 title, ≤5 words>
+
+**For you, in plain words.** <2-3 short sentences. What this section does for the reader, in 9th-grade English, no acronyms, no jargon. Lead with the benefit; the mechanism waits its turn.>
+
+**Quick start.** <3 concrete bullets the reader can do tonight / this week. Doses in everyday units ("1 capsule twice a day with food"), not "200 mg PO BID".>
+
+#### Open the science
+
+<For the curious / your clinician — full mechanism, primary citations, dose ranges, monograph references, contraindications, the rabbit hole. The website hides this behind a "Open the science" toggle so the non-technical reader sees the gem first.>
+```
+
+This scaffold is non-negotiable. A section that opens with mechanism, or that dumps the citation-dense addendum visibly above the fold, fails Rule 1. The three labels (`**For you, in plain words.**`, `**Quick start.**`, `#### Open the science`) are the website's parsing keys — keep them verbatim.
 
 **Markdown convention** (the website parser keys on either form):
 
@@ -268,6 +284,8 @@ This rule is the load-bearing accessibility lift between "long Medium article" a
 US-origin **individual peer-reviewed papers** are allowed only with explicit conflict-of-interest review and only as **evidence objects**, never as institutional authority.
 
 **The ONE narrow exception (v6.2 — see Rule 5 above):** US regulatory milestones — "FDA De Novo grant", "FDA breakthrough designation" — and their non-US peers ("CE mark", "Health Canada licence", "TGA listing") MAY be mentioned as **factual REGULATORY-PATH CONTEXT** when discussing emerging device/biologic therapies in §5.5 (Emerging & adjunctive therapies). They are NEVER the evidence anchor. The trust anchor remains the named clinical trial (e.g., TENT-A2 for Lenire, not "FDA-cleared"). Frame inline as "(FDA De Novo 2023 — regulatory-path context, not evidence anchor)" so the reader sees the framing.
+
+**Forward reference (v6.2.2):** the source policy alone is not enough — when a Cochrane / non-US meta-analysis finds NULL evidence for an approach we'd be tempted to use, **Rule 4 (Cochrane / systematic-review honesty discipline)** kicks in: honestly downgrade the approach in the TL;DR, keep it as one layer not the cornerstone, frame as "try X weeks, stop if no shift". Do not let a Tier-2 monograph (EMA HMPC for Ginkgo) silently override a Tier-1 null Cochrane finding for the same therapy. See Rule 4 above for the canonical Ginkgo example and the ❌→✅ language table.
 
 ---
 
@@ -716,6 +734,15 @@ This table is the load-bearing trust mechanism. NicheCore tells the truth about 
 - "first-line therapy is [prescription drug]"
 - "you'll need a prescription for ..."
 
+**Forbidden H3 sub-section titles (v6.2.2 — heading-level bans, mirrored from Rule 2):**
+
+- `### Overview` — banned outright. When multiple chunks under one tab each carry an "Overview" H3, the website left-rail tree fills with duplicate "Overview" rows that confuse the reader. Write something specific instead: `### What this section gives you`, `### Why this matters tonight`, `### How to read this page`.
+- `### Details` — meaningless. Tell the reader what kind of details: `### Doses & timing`, `### Six herbs that work`, `### Side effects to watch`.
+- `### Background` — same problem. Replace with `### Why ringing happens` / `### Why your gut flares` / `### Why this gland slows down`.
+- `### Introduction` — banned. Write the H3 as the answer to "what does this give the reader?".
+- `### More information` — banned. Be specific about what additional information.
+- `### Mechanism` (when used as the H3 title rather than inside a deep-dive block) — banned at the H3 level because the reader sees it in the left rail before the section opens; rename to "How it quiets the nerve" / "How it slows the rust" / etc. The technical mechanism content itself still goes inside the `#### Open the science` deep-dive block per Rule 1.
+
 ## How to apply this skill (workflow)
 
 When asked to research ailment **X**:
@@ -833,6 +860,8 @@ internalRalph:
 - [ ] 7-day meal plan with exact gram quantities.
 - [ ] Word count: 2,500–5,500 for narrow ailments; **4,500–8,500 for moderately complex; up to 18,000 for high-complexity multi-system ailments with ≥5 prescription drug classes in §10.1** (e.g. psoriasis, T2D, IBD, Hashimoto's, RA, lupus, depression with co-prescriptions). **v6.2 ceiling raised from 14k to 18k** because progressive-disclosure deep-dive blocks + tree-friendly H3 audit + comparison table + emerging-therapies H2 + adjunctive therapies coverage add ~3–4k words on dense dossiers.
 - [ ] **TL;DR everywhere check (v6.1)**: every section opens with a 2-sentence TL;DR card; every list item starts with `**TL;DR.**`; every table includes a TL;DR column; every TL;DR ends with an inline italic citation; no claim is more than 4 lines from its citation.
+- [ ] **TABLE TL;DR COLUMN check (v6.2.2 — dedicated, do not bundle)**: walk every table in the dossier — references table, supplier table, comorbidity screen table, master 24-hour day-plan table, drug-interaction matrix, every nutrient/dose table, the §13.7 honest evidence-tier comparison table, the §10.7.x tables. **Each one must carry a `TL;DR (plain English)` column as the last text column (before the citation column), every row populated, ≤25 words, lay-reader register, italic citation.** If even ONE table is missing the column, Pass 2 fails and the dossier does not ship. This check exists separately from the TL;DR-everywhere bundle because the table case is the most-skipped failure mode and deserves its own line item.
+- [ ] **Canonical three-tier scaffold check (v6.2.2 — Rule 1)**: every section AND every sub-section opens with `**For you, in plain words.**` (≤3 short sentences, 9th-grade English, benefit-first), then `**Quick start.**` (3 concrete tonight/this-week bullets), then `#### Open the science` (mechanism + primary citations + dose ranges + monograph references hidden behind the website collapsible). The three labels are the website's parsing keys — verbatim, no paraphrasing.
 - [ ] **Progressive disclosure check (v6.2 Rule 1)**: every section AND every sub-section opens with the plain-English summary; the technical mechanism / citation-dense material sits inside a `#### Open the science` deep-dive block (or `:::deepdive` fenced block); no section dumps the mechanism before the lay-reader gem.
 - [ ] **Tree-friendly H3 check (v6.2 Rule 2)**: every H2 has 3–7 H3 sub-sections; every H3 name is ≤5 words, action-oriented where possible, specific (never "Overview", "Details", "Background", "More info").
 - [ ] **Honest evidence-tier comparison table check (v6.2 Rule 3)**: §13.7 present, immediately before §14; covers EVERY approach the dossier mentions including ones we do NOT recommend (homeopathy, low-evidence herbs, clinic-route options); plain-words verdict ≤25 words; "Where it fits" column populated.
