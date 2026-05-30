@@ -160,16 +160,15 @@ export default async function JourneyDetail({
   // navigation). Each tab aggregates the H3s of all chunks it owns,
   // tagged with their parent-chunk-prefixed id so they match the
   // ids the renderer emits on `data-sub-anchor` elements.
+  //
+  // splitChunkByH3 returns [] when the chunk has no real H3 headers,
+  // so we never invent "Overview" labels in the tree.
   function childrenFor(tabId: string): SectionSubSpec[] | undefined {
     const chunksHere = chunksByTab[tabId];
     if (!chunksHere || chunksHere.length === 0) return undefined;
     const subs: SectionSubSpec[] = [];
     for (const c of chunksHere) {
       for (const sub of splitChunkByH3(c)) {
-        // Skip synthetic "Overview" sub-chunks from chunks that had no
-        // real H3s — they exist only as carrier bodies and would clutter
-        // the rail with meaningless rows.
-        if (sub.title === "Overview" && (!sub.visibleBody && !sub.deepDiveBody)) continue;
         subs.push({ id: sub.id, label: sub.title.replace(/^\d+(?:\.\d+)*\.?\s+/, "").trim() });
       }
     }
@@ -553,19 +552,11 @@ function DossierChunks({
         return (
           <article key={c.id} className="dossier-prose" id={`chunk-${c.id}`}>
             <h3 className="font-display" style={{ fontSize: "1.35rem", color: "var(--color-forest)", marginTop: 0 }}>{c.title}</h3>
-            {subs.length === 1 && subs[0].title === "Overview" ? (
-              // Legacy / pre-v6.2 chunks with no H3s: render visible body inline,
-              // wrap any deep-dive body in the collapsible.
-              <>
-                {subs[0].visibleBody && (
-                  <ReactMarkdown remarkPlugins={[remarkGfm]}>{subs[0].visibleBody}</ReactMarkdown>
-                )}
-                {subs[0].deepDiveBody && (
-                  <DeepDive>
-                    <ReactMarkdown remarkPlugins={[remarkGfm]}>{subs[0].deepDiveBody}</ReactMarkdown>
-                  </DeepDive>
-                )}
-              </>
+            {subs.length === 0 ? (
+              // Chunk has no H3 sub-sections — render the body as-is. The
+              // chunk's own `chunk-<id>` anchor is the only navigation
+              // target; no synthetic "Overview" label gets invented.
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>{c.body}</ReactMarkdown>
             ) : (
               <div className="mt-4 space-y-8">
                 {subs.map((sub) => (

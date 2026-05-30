@@ -121,22 +121,43 @@ const DEEP_DIVE_H4_RE = /^####\s+open\s+the\s+science\b/i;
 
 /**
  * Split a single H2 chunk body into H3 sub-chunks. Each sub-chunk is
- * further split at the deep-dive H4 marker. If the H2 body has no H3s,
- * a single synthetic sub-chunk named "Overview" is returned.
+ * further split at the deep-dive H4 marker.
+ *
+ * Returns an EMPTY array if the H2 body has no H3 headers at all —
+ * the renderer falls back to inline rendering and the left-rail tree
+ * shows no children for that section. We never invent a synthetic
+ * "Overview" sub-section, because that would produce multiple
+ * misleadingly-named tree rows when several chunks roll up into the
+ * same tab. The H2 itself remains the navigable anchor.
  */
 export function splitChunkByH3(parent: DossierChunk): DossierSubChunk[] {
   const lines = parent.body.split(/\r?\n/);
+
+  // First pass: any H3 in this body at all?
+  const hasAnyH3 = lines.some((ln) => /^###\s+\S/.test(ln));
+  if (!hasAnyH3) return [];
+
   const subs: DossierSubChunk[] = [];
 
+  // Buffer everything before the first H3 as a synthetic preamble
+  // attached to the FIRST real sub-chunk (so leading prose under
+  // the H2 isn't lost). We never expose this preamble as its own
+  // tree row.
+  let preambleBuf: string[] = [];
   let currentTitle: string | null = null;
   let currentBuf: string[] = [];
 
   const flush = () => {
-    if (currentTitle === null && currentBuf.every((l) => l.trim() === "")) return;
-    const title = currentTitle ?? "Overview";
+    if (currentTitle === null) return;
+    const title = currentTitle;
     const cleanedTitle = title.replace(/^\d+(?:\.\d+)*\.?\s+/, "").trim();
     const id = parent.id + "--" + (slugify(cleanedTitle) || `sub-${subs.length + 1}`);
-    const { visible, deepDive } = splitDeepDive(currentBuf);
+    let buf = currentBuf;
+    if (subs.length === 0 && preambleBuf.length > 0) {
+      buf = [...preambleBuf, ...currentBuf];
+      preambleBuf = [];
+    }
+    const { visible, deepDive } = splitDeepDive(buf);
     subs.push({ id, title, visibleBody: visible, deepDiveBody: deepDive });
     currentTitle = null;
     currentBuf = [];
@@ -147,6 +168,8 @@ export function splitChunkByH3(parent: DossierChunk): DossierSubChunk[] {
     if (m) {
       flush();
       currentTitle = m[1].trim();
+    } else if (currentTitle === null) {
+      preambleBuf.push(ln);
     } else {
       currentBuf.push(ln);
     }

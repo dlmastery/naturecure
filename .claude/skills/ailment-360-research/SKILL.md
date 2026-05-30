@@ -5,7 +5,7 @@ description: "Produce an evidence-graded, global-sources-only, STRICTLY OTC + HO
 
 # Ailment 360 Research
 
-> **Version: v6.2** — adds seven load-bearing rules on top of v6.1: progressive disclosure (`#### Open the science` deep-dive blocks), tree-friendly H3 sub-sections (≤5 words, 3–7 per H2), mandatory honest evidence-tier comparison table, Cochrane/systematic-review honesty discipline, mandatory Emerging & adjunctive therapies H2 (with the narrow regulatory-context exception), mandatory adjunctive therapy coverage (CBT/CBT-i, MBCT/MBSR, TRT/ERP/vestibular rehab, biofeedback, sound/light/vagal), and word ceiling raised from 14,000 to 18,000. v6.1's plain-English TL;DR-everywhere contract is preserved unchanged.
+> **Version: v6.2.1** — adds seven load-bearing rules on top of v6.1: progressive disclosure (`#### Open the science` deep-dive blocks), tree-friendly H3 sub-sections (≤5 words, 3–7 per H2), mandatory honest evidence-tier comparison table, Cochrane/systematic-review honesty discipline, mandatory Emerging & adjunctive therapies H2 (with the narrow regulatory-context exception), mandatory adjunctive therapy coverage (CBT/CBT-i, MBCT/MBSR, TRT/ERP/vestibular rehab, biofeedback, sound/light/vagal), and word ceiling raised from 14,000 to 18,000. v6.1's plain-English TL;DR-everywhere contract is preserved unchanged. **v6.2.1 hardens two recurring failures:** (a) **EVERY table — without exception — must carry a TL;DR (plain English) column as the last text column.** No table ships without it. (b) **"Overview" is a forbidden H3 title** — when multiple chunks under the same tab each name an H3 "Overview" the left-rail tree fills with confusing duplicate rows; every H3 must be a real, specific, action-oriented title.
 
 ## What this skill produces
 
@@ -59,6 +59,8 @@ References: [EMA HMPC monograph 2015](...) · [Procháska et al. 2009, n=180](..
 - **≤5 words** (scannable in a left-rail tree)
 - **Action-oriented when possible** ("What to take tonight", "When to call your doctor")
 - **Specific, not generic** (NOT "Overview" / "Details" / "More info" / "Background")
+
+**"Overview" is the single most common and most damaging failure** — when a tab in the website aggregates multiple H2 chunks and each chunk has an "Overview" H3, the left-rail tree fills with several rows all labelled "Overview", which is worse than no tree at all. Banned outright. If the section needs a framing intro, write the H3 as something specific: `### What this section gives you`, `### Why this matters tonight`, `### How to read this page`.
 
 The website renders these as expandable tree nodes in the left-rail nav, so the H3 IS the user's wayfinding.
 
@@ -219,7 +221,7 @@ New tiered ceiling table:
   > **TL;DR.** Standardised Ginkgo (Tebonin brand): may make ringing softer for 1 in 3 users; daily for 12 weeks before deciding. *(EMA HMPC monograph 2015; Procháska 2009, n=180)*
   > Technical body: Ginkgo biloba EGb 761 is the only ginkgo extract with positive randomised trial data for tinnitus...
 
-- **Tables** must include a `TL;DR (plain English)` column AS THE LAST text column (before the citation column). Every row carries it populated, max 25 words, lay-reader register.
+- **Tables** must include a `TL;DR (plain English)` column AS THE LAST text column (before the citation column). Every row carries it populated, max 25 words, lay-reader register. **NO EXCEPTIONS — every table in the dossier, including the references table, the supplier table, the comorbidity table, the master 24-hour table, the interaction matrix, every nutrient/dose table, and the honest evidence-tier comparison table (Rule 3) — gets a TL;DR column.** If a table seems "too technical" to have a TL;DR column, that is a sign the table itself is failing the lay reader; add the column and write the TL;DR. Self-check #11 below enforces this — a dossier with even one table missing the TL;DR column fails Pass 2.
 
 - **Per-section TL;DR card**: every section opens with a single italic 2-sentence overview:
   ```markdown
