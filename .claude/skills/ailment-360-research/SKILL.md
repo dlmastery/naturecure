@@ -5,9 +5,230 @@ description: "Produce an evidence-graded, global-sources-only, STRICTLY OTC + HO
 
 # Ailment 360 Research
 
+> **Version: v6.2** — adds seven load-bearing rules on top of v6.1: progressive disclosure (`#### Open the science` deep-dive blocks), tree-friendly H3 sub-sections (≤5 words, 3–7 per H2), mandatory honest evidence-tier comparison table, Cochrane/systematic-review honesty discipline, mandatory Emerging & adjunctive therapies H2 (with the narrow regulatory-context exception), mandatory adjunctive therapy coverage (CBT/CBT-i, MBCT/MBSR, TRT/ERP/vestibular rehab, biofeedback, sound/light/vagal), and word ceiling raised from 14,000 to 18,000. v6.1's plain-English TL;DR-everywhere contract is preserved unchanged.
+
 ## What this skill produces
 
-A **single markdown dossier (2,500–5,500 words)** for one ailment, structured around the 15 mandatory sections below. Output goes to `research/{ailment-id}.md`. Every supplement, formula, food, exercise, and intervention carries an evidence grade (A–X) and a **timing tag** that fits the master 24-hour day plan. **No plan stands alone — supplement timing, meal composition, exercise window, breathwork, and sleep must be cross-validated against the interaction matrix.**
+A **single markdown dossier (2,500–5,500 words for narrow ailments; up to 18,000 words for high-complexity multi-system ailments — see v6.2 ceiling rule below)** for one ailment, structured around the mandatory sections below. Output goes to `research/{ailment-id}.md`. Every supplement, formula, food, exercise, and intervention carries an evidence grade (A–X) and a **timing tag** that fits the master 24-hour day plan. **No plan stands alone — supplement timing, meal composition, exercise window, breathwork, and sleep must be cross-validated against the interaction matrix.**
+
+---
+
+## v6.2 NEW LOAD-BEARING RULES — READ THESE FIRST
+
+The seven rules below are the FIRST things any future agent must read. They sit on top of (not in place of) the v6.1 TL;DR contract and the v6.0 OTC + home-based + global-sources doctrine. All v6.1 content is preserved unchanged as a strict superset.
+
+### Rule 1 — PROGRESSIVE DISCLOSURE (load-bearing)
+
+**Every section AND every sub-section opens with the plain-English summary. The technical mechanism / citation-dense material follows in a deep-dive block that the website renders as a collapsible.**
+
+**Markdown convention** (the website parser keys on either form):
+
+- **Preferred**: a markdown H4 heading `#### Open the science` marks the start of the deep-dive. Everything from that H4 until the next H2 or H3 (or end of file) is the collapsible body.
+- **Alternative**: a fenced `:::deepdive` ... `:::` block also works for inline deep-dives mid-section.
+
+This serves two audiences at once: the non-technical user gets the gem immediately; the professor-curious user clicks "Open the science" and gets the full mechanism + citations + references rabbit hole.
+
+**Worked example:**
+
+❌ **Wrong** (mechanism first, lay-reader bounces):
+```markdown
+### Ginkgo biloba EGb 761
+
+Ginkgo biloba EGb 761 is a standardised extract containing 24% flavone glycosides and 6% terpene lactones (ginkgolides A, B, C and bilobalide). It modulates cochlear microcirculation via PAF-receptor antagonism and exerts NMDA-receptor modulation in the central auditory pathway. The EMA HMPC monograph (2015) recognises it for cerebral insufficiency...
+```
+
+✅ **Right** (plain-English first, deep-dive collapsible after):
+```markdown
+### Ginkgo biloba EGb 761
+
+> **TL;DR.** Standardised Ginkgo (Tebonin brand): may make ringing softer for about 1 in 3 users; daily for 12 weeks before deciding. *(EMA HMPC monograph 2015; Procháska 2009, n=180)*
+
+**What you actually do.** 120 mg twice a day with food for 12 weeks. If no shift in ringing volume or distress by week 12, stop and don't restart.
+
+#### Open the science
+
+Ginkgo biloba EGb 761 is a standardised extract containing 24% flavone glycosides and 6% terpene lactones (ginkgolides A, B, C and bilobalide). It modulates cochlear microcirculation via PAF-receptor antagonism and exerts NMDA-receptor modulation in the central auditory pathway. The EMA HMPC monograph (2015) recognises it for cerebral insufficiency. Note: a 2012 Cochrane review (Hilton et al.) found insufficient evidence for ginkgo as a primary tinnitus monotherapy — see Rule 4 below for how to frame this honestly.
+
+References: [EMA HMPC monograph 2015](...) · [Procháska et al. 2009, n=180](...) · [Hilton Cochrane 2012](...)
+```
+
+### Rule 2 — TREE-FRIENDLY H3 SUB-SECTIONS
+
+**Every H2 must have 3–7 H3 sub-sections.** H3 names must be:
+
+- **≤5 words** (scannable in a left-rail tree)
+- **Action-oriented when possible** ("What to take tonight", "When to call your doctor")
+- **Specific, not generic** (NOT "Overview" / "Details" / "More info" / "Background")
+
+The website renders these as expandable tree nodes in the left-rail nav, so the H3 IS the user's wayfinding.
+
+❌→✅ **H3 naming examples:**
+
+| ❌ Don't write | ✅ Write instead |
+|---|---|
+| Overview | What this section does |
+| Details | Doses & timing |
+| More information | When it fails |
+| Background | Why ringing happens |
+| Introduction to herbs | Six herbs that work |
+| Discussion of evidence | What the trials show |
+| Mechanism | How it quiets the nerve |
+| Additional considerations | Side effects to watch |
+| Safety information | When to stop |
+| References and sources | Where this came from |
+
+If a section genuinely only has 1–2 things to say, split it into 3+ specific H3s anyway (e.g., "What to take", "When to take it", "When to stop") rather than collapsing into a wall of prose under one heading.
+
+### Rule 3 — HONEST EVIDENCE-TIER COMPARISON TABLE (mandatory)
+
+**Every dossier must end (immediately before the References section) with a candid evidence-tier comparison table.** This is the load-bearing trust mechanism: NicheCore tells the truth about what works AND what doesn't.
+
+Columns (in this order):
+
+| Approach | Evidence tier | Plain-words verdict (≤25 words) | Where it fits in YOUR protocol |
+|---|---|---|---|
+
+- **Evidence tier** uses the dossier's standard grading: A / B / C / D / T / H / X.
+- **Plain-words verdict** is brutally honest: "Cochrane null for primary tinnitus; one RCT (Procháska) showed benefit but with caveats. Try 12 weeks, stop if no shift." Not marketing.
+- **Where it fits** is the protocol-call: "Tier-2 layer, not cornerstone" / "Cornerstone — daily" / "Documented for transparency; not in our protocol" / "Optional adjunct if other layers plateau".
+
+The table includes **everything the dossier covers** — including approaches we DO NOT recommend (homeopathy, low-evidence herbs, popular-but-weak interventions) — listed for transparency with the honest tier label. Hiding the weak ones is dishonest; the user has already seen them in mainstream coverage and needs to know where NicheCore stands.
+
+**Example row (tinnitus dossier):**
+
+| Approach | Tier | Plain-words verdict | Where it fits |
+|---|---|---|---|
+| Ginkgo EGb 761 | B | EMA monograph supports it; Cochrane 2012 found null for primary tinnitus; one RCT shows benefit. About 1 in 3 may respond. | One layer of 6 — 12-week try, stop if no shift |
+| Homeopathy (Calcarea, Chininum Sulph) | T/H | Documented tradition (Boericke, Kent). No robust modern evidence. Included for completeness per founder mandate. | Not in our active protocol; documented for transparency |
+| Bimodal neuromodulation (Lenire) | A | TENT-A2 trial (n=191) showed 91% of moderate responders sustained benefit at 12 months. FDA De Novo grant 2023 (regulatory context, not evidence anchor). | Clinic-route option in §10 if home protocol plateaus |
+
+### Rule 4 — COCHRANE / SYSTEMATIC-REVIEW HONESTY DISCIPLINE
+
+**When a Cochrane review or major non-US meta-analysis finds NULL or insufficient evidence for an approach we are tempted to recommend, that approach MUST be honestly downgraded — even if it is the "obvious" cornerstone of the protocol or the brand-name product is widely sold.**
+
+The TL;DR leads with the honest caveat. The individual-trial wins come second. The protocol keeps the herb as ONE layer (not the cornerstone) with an explicit "try this long, stop if no shift" frame.
+
+**Canonical example (encode this exact pattern):** Ginkgo EGb 761 has an EMA HMPC monograph for cerebral insufficiency AND a 2012 Cochrane review (Hilton et al.) that found insufficient evidence for primary tinnitus. The dossier MUST:
+
+1. Lead the TL;DR with the Cochrane caveat in plain words.
+2. Present the individual-trial wins (Procháska 2009 etc.) as the secondary evidence.
+3. Keep Ginkgo in the protocol as ONE layer (not the cornerstone).
+4. Frame as "8–12 week try, stop if no shift" — not "take indefinitely".
+
+❌→✅ **Language examples:**
+
+| ❌ Don't write | ✅ Write instead |
+|---|---|
+| "Ginkgo EGb 761 is clinically proven for tinnitus (EMA HMPC monograph 2015)." | "Ginkgo (Tebonin) has an EMA monograph for cerebral circulation, but the 2012 Cochrane review found no clear benefit for tinnitus itself. One good trial (Procháska 2009) did show a softening for about 1 in 3 users — so we keep it as one layer of six, not the cornerstone. Try 12 weeks; stop if nothing shifts." |
+| "Cornerstone supplement: Ginkgo 120 mg BID indefinitely." | "Adjunct (one of six layers): Ginkgo 120 mg twice a day for a 12-week trial. Stop if no shift in volume or distress by week 12 — don't keep taking it on hope." |
+| "Acupuncture is recommended (TCM tradition + studies show benefit)." | "Acupuncture: 2014 Cochrane review found low-quality evidence and no firm conclusion. Tradition is strong (Huang Di Nei Jing); modern trials are mixed. Try 6–10 sessions; stop if no shift." |
+
+The discipline applies symmetrically — when a Cochrane or major meta-analysis is POSITIVE, surface that as the trust anchor; when it's NULL, surface that as the honest caveat. Never cherry-pick.
+
+### Rule 5 — EMERGING-THERAPIES H2 (required)
+
+**Every dossier must include a section covering emerging / device-class / advanced therapies that exist for the condition.** This is where NicheCore acknowledges what's beyond the home protocol without abandoning sovereignty.
+
+**Examples by condition family** (illustrative — agent must research the actual landscape for the specific ailment):
+
+- **Tinnitus** → bimodal neuromodulation (Lenire / Neuromod), non-invasive vagus nerve stimulation (Nurosym, transcutaneous auricular VNS, De Ridder protocols), hearing-aid masking, CR neuromodulation.
+- **Diabetes (T2D)** → continuous glucose monitors (CGM — Dexcom, Libre, Stelo), GLP-1 receptor agonists (semaglutide, tirzepatide), bariatric surgery, automated insulin delivery.
+- **Mental health (depression, OCD, PTSD)** → ketamine / esketamine clinics, transcranial magnetic stimulation (TMS), transcranial direct current stimulation (tDCS), psychedelic-assisted therapy (in legal jurisdictions).
+- **Migraine** → CGRP monoclonals (erenumab, fremanezumab), gepants, neuromodulation devices (Cefaly, gammaCore, Nerivio).
+- **Psoriasis / eczema** → biologics (IL-17, IL-23, IL-4/13 inhibitors), JAK inhibitors.
+- **Cardiac** → SGLT-2 inhibitors for HF, leadless pacemakers, wearable ECG (Apple Watch / KardiaMobile).
+- **Sleep apnea** → hypoglossal nerve stimulation (Inspire), positional therapy devices.
+
+**DOCTRINE-COMPLIANT FRAMING (load-bearing):**
+
+- **Pure OTC + home-usable device options** (e.g., consumer Nurosym, Cefaly home use, home CGM, Apple Watch ECG, home red-light, home PEMF) go in the **main protocol** with appropriate caveats.
+- **Clinic-prescribed / prescription / surgical / clinic-administered options** (Lenire bimodal, ketamine clinics, TMS sessions, biologics, bariatric, Inspire implant, esketamine) go in a **§10-style "If the home protocol plateaus — clinic-route options" addendum**. NEVER in the home regime. Never recommended; presented as honestly-described options the user may pursue on their own initiative if the home protocol plateaus.
+- **Cite the actual clinical trials directly** (TENT-A2 for Lenire; De Ridder pilots for non-invasive VNS in tinnitus; SUSTAIN / STEP for semaglutide; STAR-D for ketamine; etc.) NOT US regulatory clearance as the trust anchor.
+
+**The ONE narrow exception to the no-US-regulatory-bodies doctrine:** "FDA De Novo grant", "FDA breakthrough designation", "CE mark", or "Health Canada licence" can be mentioned **as factual REGULATORY-PATH CONTEXT** — not as evidence anchor — because regulatory history is verifiable fact and is often the clearest way to explain when a device became consumer-purchasable. The trust anchor remains the clinical trial. Frame as "(FDA De Novo 2023 — regulatory-path context, not evidence anchor)" inline, so the reader sees the framing explicitly.
+
+Update the §14 closing paradigm and the source-policy section to reflect this narrow exception: US regulatory bodies are still NEVER cited as authority on whether something works; they MAY be cited as factual context on when a device crossed the regulatory threshold.
+
+### Rule 6 — ADJUNCTIVE THERAPY COVERAGE (mandatory)
+
+**Every dossier covers the relevant adjunctive / behavioural therapy family at depth — NOT just supplements + diet + lifestyle.** These are some of the highest-evidence non-pharmacological interventions we have. Hiding them in favour of herbs is dishonest.
+
+For each condition, include the appropriate therapies from this template (only those clinically relevant to the ailment):
+
+| Therapy family | Best fit for | Typical evidence tier |
+|---|---|---|
+| **CBT / CBT-i** (cognitive behavioural therapy / for insomnia) | Distress, insomnia, chronic pain, anxiety, depression, IBS, tinnitus distress, menopause hot flashes | A (often the strongest non-pharm evidence available) |
+| **MBCT / MBSR** (mindfulness-based cognitive therapy / stress reduction) | Recurrent depression relapse prevention, chronic pain, tinnitus distress, anxiety, hot flashes | A–B |
+| **Condition-specific habituation / retraining therapies** — TRT (tinnitus retraining therapy) · ERP (exposure & response prevention for OCD) · graded exposure (phobias, PTSD) · vestibular rehab (BPPV, vestibular hypofunction) · pelvic floor PT (incontinence, pelvic pain) | Each maps to its specific condition | A–B for the ones with strong trial bases (CBT-i, ERP, vestibular rehab) |
+| **Biofeedback / HRV training** | Stress, hypertension, migraine, IBS, tinnitus, anxiety, dysautonomia | B |
+| **Masking / sensory enrichment** | Tinnitus, sensory processing, chronic pain | B–C |
+| **Sound therapies** (notched music, fractal tones, white/pink/brown noise) | Tinnitus, sleep, focus | C–B |
+| **Light therapies** (bright-light box for SAD, dawn simulators, red-light for skin/circadian) | Seasonal depression, circadian disruption, skin | A for SAD bright-light; B for circadian dawn sim; B for PBM in skin |
+| **Vagal / breath therapies** (slow paced breathing 5–6 bpm, coherent breathing, Buteyko, Wim Hof for cold tolerance only) | Anxiety, hypertension, dysautonomia, IBS, asthma | B |
+
+These get **honest evidence grades** (often A or B — frequently higher than the herbs we cover) and are framed as **the patient's own work** (no clinic dependency for self-guided CBT workbooks, app-based CBT-i like Sleepio / Somryst, app-based MBSR, home biofeedback hardware like HeartMath / Lief / Polar HRV, etc.).
+
+For therapies that require a trained therapist (TRT, ERP, vestibular rehab), document them with the honest framing: "Self-guided versions exist (workbooks, apps) but the protocol acknowledges a credentialed therapist gets better outcomes for many. The user decides; the protocol does not require it."
+
+### Rule 7 — WORD CEILING RAISED TO 18,000
+
+**Updated from 14,000 to 18,000.**
+
+The progressive-disclosure pattern (Rule 1), the tree-friendly H3 audit (Rule 2), the comparison table (Rule 3), the Cochrane-honesty layering (Rule 4), the Emerging Therapies H2 (Rule 5), and the Adjunctive Therapies coverage (Rule 6) collectively add ~3,000–4,000 words to a complex dossier. Quality and honesty over brevity.
+
+**3/3 internal ralph passes still required** — no shortcuts. The longer dossier means each pass is harder; budget the time accordingly.
+
+New tiered ceiling table:
+
+| Complexity | Word ceiling |
+|---|---|
+| Narrow ailment (single mechanism, few interactions) | 2,500–5,500 |
+| Moderately complex | 4,500–8,500 |
+| High-complexity multi-system (≥5 prescription drug classes in §10.1; multiple comorbidities; rich emerging-therapy landscape) | up to 18,000 |
+
+---
+
+## Foundational rule — TL;DR EVERYWHERE (load-bearing, v6.1)
+
+**Every entry must be readable by a non-technical user in under 15 seconds.** Add a TL;DR line/column to every list item, table row, claim, formula, ingredient, food, anchor, combo, day-plan slot, interaction, scoring instrument, timeline milestone, supplier, expert, FAQ, and references row.
+
+### Plain-English rules for the TL;DR (v6.1 — the founder's "easy to understand" mandate)
+
+**Write at a 9th-grade reading level.** The TL;DR is for a parent reading this on their phone in the supermarket, not for a clinician.
+
+| ❌ Too technical (do NOT write) | ✅ Plain-English equivalent (write this) |
+|---|---|
+| "Ginkgo EGb 761 modulates cochlear microcirculation and NMDA glutamatergic neurotransmission" | "Standardised Ginkgo (Tebonin brand) may make tinnitus ringing softer for about 1 in 3 people. Take it daily for 12 weeks before you decide if it helped." |
+| "Magnesium glycinate prevents NMDA-mediated excitotoxicity" | "Magnesium (the easy-on-the-stomach 'glycinate' form) calms the nerves that make your ears ring after loud noise." |
+| "Polydatin upregulates Nrf2 and inhibits GPX4-dependent ferroptosis in melanocytes" | "Polydatin (from Japanese knotweed) protects skin pigment cells from rusting — the same kind of damage that drives vitiligo." |
+| "Triphala is a tridoshic rasayana with mild laxative action" | "Triphala is an Indian three-fruit powder, taken at night. It gently keeps the gut moving and is safe long-term." |
+| "Bhramari pranayama increases nitric oxide and vagal tone" | "Bhramari is a humming-bee breath, 5 minutes a day. The humming calms the same nerve that handles your heart rate and ear noise." |
+
+**Hard rules:**
+1. **No jargon** — Latin names go in brackets after a plain name (e.g. "Indian gooseberry (Amla)" not "Phyllanthus emblica"). If you must use a technical word, define it in the same sentence ("vagus nerve — the calming nerve from your brain to your gut").
+2. **Lead with what it does for YOU**, not the mechanism. "Quiets ringing" before "modulates cochlear blood flow".
+3. **Use everyday units** — "1 capsule twice a day with food" beats "200 mg PO BID with meals". Keep precise dose in the technical body below.
+4. **No acronyms** in the TL;DR unless they are household (no NMDA, NRF2, GPX4, AMPK, HPA, SCFA, CYP3A4, BAMS, TFI, THI — spell out or describe).
+5. **One idea per TL;DR.** If two mechanisms apply, pick the one a patient cares about most.
+6. **End every TL;DR with a real citation in italics**: `*(EMA HMPC monograph 2015)*` / `*(Procháska 2009, n=180)*` / `*(Charaka Samhita, Ch. 28)*`.
+7. **No more than 25 words.** Count them.
+
+### Format conventions (apply to every section)
+
+- **List items** start with `**TL;DR.**` then one plain-English sentence (≤25 words), THEN the technical body. Example:
+  > **TL;DR.** Standardised Ginkgo (Tebonin brand): may make ringing softer for 1 in 3 users; daily for 12 weeks before deciding. *(EMA HMPC monograph 2015; Procháska 2009, n=180)*
+  > Technical body: Ginkgo biloba EGb 761 is the only ginkgo extract with positive randomised trial data for tinnitus...
+
+- **Tables** must include a `TL;DR (plain English)` column AS THE LAST text column (before the citation column). Every row carries it populated, max 25 words, lay-reader register.
+
+- **Per-section TL;DR card**: every section opens with a single italic 2-sentence overview:
+  ```markdown
+  > **TL;DR.** First sentence — what this section does for the patient (≤20 words). Second sentence — when it matters / who it's for (≤20 words). *(source anchor)*
+  ```
+
+- **No claim appears more than 4 lines away from its citation.** Citations are surfaced inline, not pushed to a references footer.
+
+This rule is the load-bearing accessibility lift between "long Medium article" and "navigable, trustworthy resource a non-clinician trusts at 7 PM after a long day". Without it the dossier reads as a research dump and the founder's "easy to understand" bar is failed.
 
 ## Foundational rule — STRICTLY OTC + HOME-BASED (load-bearing)
 
@@ -44,11 +265,18 @@ A **single markdown dossier (2,500–5,500 words)** for one ailment, structured 
 
 US-origin **individual peer-reviewed papers** are allowed only with explicit conflict-of-interest review and only as **evidence objects**, never as institutional authority.
 
+**The ONE narrow exception (v6.2 — see Rule 5 above):** US regulatory milestones — "FDA De Novo grant", "FDA breakthrough designation" — and their non-US peers ("CE mark", "Health Canada licence", "TGA listing") MAY be mentioned as **factual REGULATORY-PATH CONTEXT** when discussing emerging device/biologic therapies in §5.5 (Emerging & adjunctive therapies). They are NEVER the evidence anchor. The trust anchor remains the named clinical trial (e.g., TENT-A2 for Lenire, not "FDA-cleared"). Frame inline as "(FDA De Novo 2023 — regulatory-path context, not evidence anchor)" so the reader sees the framing.
+
 ---
 
-## Output structure — 15 mandatory sections
+## Output structure — 16 mandatory sections (v6.2)
 
 Each dossier opens with YAML front matter and writes the sections in exactly the order below.
+
+**v6.2 structural requirements (apply to every H2):**
+- Every H2 has **3–7 H3 sub-sections** with **≤5-word, action-oriented, specific names** (Rule 2).
+- Every section AND every sub-section **opens with the plain-English TL;DR card / summary** (v6.1 + Rule 1), then the lay-language body, then a `#### Open the science` deep-dive block holding the mechanism + citations + references (Rule 1).
+- The dossier ends with §5.5-style **Emerging & adjunctive therapies** (new H2 — see Rule 5 + Rule 6) immediately before §11 scoring, AND with a **mandatory honest evidence-tier comparison table** (Rule 3) immediately before §14 / References.
 
 ### YAML front matter
 
@@ -84,10 +312,12 @@ Mechanism families to consider: oxidative stress / Nrf2-GPX4 / ferroptosis · gu
 
 ### 3. OTC Phytochemicals — Pharmacological Validation
 
-A markdown table of **4–10 botanicals / nutrients**. Mandatory columns:
+A markdown table of **4–10 botanicals / nutrients**. Mandatory columns (TL;DR is required):
 
-| Compound | Mechanism | Dose | Timing | Take WITH | Avoid WITH (≥2h gap) | Grade | Brand options | Price/mo | Evidence note |
-|---|---|---|---|---|---|---|---|---|---|
+| Compound | TL;DR (lay-reader, ≤20 words) | Mechanism | Dose | Timing | Take WITH | Avoid WITH (≥2h gap) | Grade | Brand options | Price/mo | Citation |
+|---|---|---|---|---|---|---|---|---|---|---|
+
+The **TL;DR** column says, in plain language, *what this does for the patient and why it's on the list* — not the mechanism. Example: "Quiets ringing in 1 in 3 users; the only Ginkgo extract with monograph backing." The **Citation** column must contain a real source anchor (EMA HMPC, AYUSH, named RCT with n=N, classical chapter).
 
 - **Take WITH** — co-administration that aids bioavailability (e.g., curcumin + piperine + fat; vitamin D + dietary fat; iron + vitamin C; turmeric + black pepper + ghee).
 - **Avoid WITH** — antagonists / chelators that must be separated by at least 2h (e.g., iron + calcium; iron + tea/coffee tannins; thyroid med + calcium/iron; zinc + iron; calcium + magnesium taken at the same dose).
@@ -370,6 +600,20 @@ Bullet list of supplements/foods/drugs the ailment's pathology contraindicates:
 - Hepatic disease: kava, comfrey, chaparral
 - Renal disease: high-protein loads, high-dose creatine, potassium-sparing herbs
 
+### 10.7 Emerging & adjunctive therapies (mandatory new H2 — v6.2 Rule 5 + Rule 6)
+
+> **TL;DR.** What's on the horizon for this condition that isn't a herb. Split into (a) home-usable advanced therapies that can join the main protocol, (b) clinic-route options if the home protocol plateaus, (c) the high-evidence behavioural/adjunctive therapies the user can self-direct.
+
+**10.7.1 Home-usable advanced & device therapies** — emerging therapies that are consumer-purchasable AND home-administrable. Fold into the main protocol with appropriate caveats. Examples: consumer non-invasive VNS (Nurosym, Sensate, Pulsetto), home CGM, Apple Watch / KardiaMobile ECG, Cefaly migraine device, app-based CBT-i (Sleepio, Somryst), HRV biofeedback hardware (HeartMath Inner Balance, Lief, Polar H10). Each gets: device, dose / session protocol, evidence anchor (the actual trial, not the regulatory clearance), price, where it fits in the §8.5 day plan.
+
+**10.7.2 Adjunctive behavioural therapies** — high-evidence non-pharm interventions per **Rule 6**. Must include the relevant subset of CBT / CBT-i / MBCT / MBSR / TRT / ERP / vestibular rehab / pelvic floor PT / biofeedback / HRV training / sound therapies / light therapies / vagal-breath therapies for this specific ailment. Each gets: therapy, what it does in plain words, evidence tier (often A or B — frequently higher than the herbs in §3), self-guided resources (workbooks, apps), and the honest "therapist-led gets better outcomes for many but the user decides" framing for those that need a credentialed practitioner.
+
+**10.7.3 If the home protocol plateaus — clinic-route options** — emerging therapies that are NOT consumer-purchasable or NOT home-administrable. Documented honestly, NEVER recommended, NEVER folded into the home regime. Examples by condition family (per **Rule 5**): bimodal neuromodulation (Lenire / Neuromod) for tinnitus · GLP-1 agonists / bariatric for T2D · ketamine clinics / TMS / tDCS / psychedelic-assisted therapy for refractory depression · CGRP monoclonals / gepants for migraine · biologics (IL-17/IL-23/IL-4/13) / JAK inhibitors for psoriasis/eczema · Inspire hypoglossal stimulator for OSA. Each row cites the actual clinical trial (TENT-A2, STEP, STAR-D, etc.) as evidence anchor; regulatory milestones (FDA De Novo, CE mark) appear only as **factual regulatory-path context** in parentheses per the **narrow exception in the source policy** and **Rule 5** framing. Frame: "If the home protocol plateaus and the user wishes to pursue a clinic-route option, here is what exists and what the trials actually show. The protocol does not recommend any of these; the user is sovereign over the decision."
+
+#### Open the science
+
+Cite each trial directly: TENT-A2 (Conlon et al., *Sci Transl Med* 2020, n=191, Lenire) · De Ridder transcutaneous auricular VNS pilot studies · Hilton 2012 Cochrane (ginkgo null for primary tinnitus) · McKenna 2018 CBT for tinnitus (BMJ) · Cima 2012 TRT vs. usual care · etc. For each emerging therapy, link the primary trial paper and (where it exists) the latest Cochrane / Lancet / BMJ meta-analysis. Where regulatory-path context is mentioned, frame it explicitly as "(FDA De Novo 2023 — regulatory-path context, not evidence anchor)" so the reader sees the framing.
+
 ### 11. Clinical Scoring + Comorbidity Screening
 
 **11.0 Self-administered clinical scoring instrument** for the ailment — measured at baseline / week 12 / month 6 / month 12 **by the user**, using consumer rating scales, smartphone photos under consistent lighting, home glucose / BP / HRV / weight / waist devices. NO clinic-administered scoring. Examples by domain:
@@ -412,12 +656,28 @@ Anonymised composite — NOT a real patient identifier. Profile, baseline, proto
 
 A 150–250 word, lay-language explainer that decodes the ailment in everyday voice: what is going on inside the body, why this protocol differs from the conventional path, what the patient can expect month-by-month, what to NOT expect (this is a months-long re-balancing, not an overnight reversal), and the **sovereign ethos**: this is an independent, OTC, home-based protocol. **No prescription. No clinic. No hospital.** The user is in charge of their own body. If they choose to keep a physician informed, that is their personal decision; the protocol does not require it.
 
+### 13.7 Honest evidence-tier comparison table (mandatory — v6.2 Rule 3)
+
+> **TL;DR.** Every approach covered in this dossier, ranked by honest evidence tier with a plain-words verdict and where it fits in the protocol — including the ones we do NOT recommend, listed for transparency.
+
+This table is the load-bearing trust mechanism. NicheCore tells the truth about what works AND what doesn't. Hiding the weak approaches is dishonest; users have already seen them in mainstream coverage.
+
+| Approach | Evidence tier (A/B/C/D/T/H/X) | Plain-words verdict (≤25 words) | Where it fits in YOUR protocol |
+|---|---|---|---|
+
+**Rules for filling this table:**
+- Include EVERY approach the dossier covers — phytochemicals (§3), traditional formulas (§4), biophysical interventions (§5), dietary anchors (§6), mind-body anchors (§7), emerging & adjunctive therapies (§10.7).
+- Include approaches we do NOT recommend (homeopathy graded T/H per honest evidence; low-evidence popular herbs; clinic-route options) with the honest tier label and a "Documented for transparency; not in our active protocol" / "Clinic-route option per §10.7.3 only" verdict.
+- **Plain-words verdict** is brutally honest, follows the Cochrane-honesty discipline (Rule 4). Lead with the null result if there is one. Example: "Cochrane null for primary tinnitus; one RCT (Procháska) showed benefit; about 1 in 3 may respond. Try 12 weeks, stop if no shift."
+- **Where it fits** is the protocol call: "Cornerstone — daily" / "One layer of 6 — 12-week trial" / "Optional adjunct if other layers plateau" / "Documented for transparency; not in our active protocol" / "Clinic-route option per §10.7.3".
+
 ### 14. Independent Healing Paradigm (closing editorial, ~150 words)
 
 - Why this protocol differs from the mainstream pharmaceutical model.
 - **Sovereignty ethos**: OTC + home-based by design. **No prescription. No clinic. No hospital. No surgery.** The user owns their body and their healing path.
 - Honest acknowledgment of evidence limits and uncertainty — we are not promising outcomes; we are documenting the strongest globally-sourced natural path.
-- Explicit re-affirmation: **no FDA, FTC, ADA, AHA, AAD, AMA, APA, ACOG, NAMS, ACR, ACS, CDC, NIH-policy, AAFP, AAP as authority. Period.**
+- Explicit re-affirmation: **no FDA, FTC, ADA, AHA, AAD, AMA, APA, ACOG, NAMS, ACR, ACS, CDC, NIH-policy, AAFP, AAP as authority on whether something WORKS. Period.**
+- **Narrow exception (v6.2 Rule 5)**: US regulatory milestones (FDA De Novo, breakthrough designation) and their non-US peers (CE mark, Health Canada licence, TGA listing) may appear ONLY as factual regulatory-path context for emerging device/biologic therapies in §10.7 — never as the trust anchor on whether something works. The trust anchor remains the named clinical trial.
 - Explicit re-affirmation: protocol grounded in WHO TCIM, India AYUSH/CCRAS/CCRH/CCRYN/CCRUM/CCRS/PCIMH/ICMR, EMA HMPC, Australia TGA + NHMRC, China NMPA + Chinese Pharmacopoeia, Health Canada NHP, Men-Tsee-Khang, Hamdard, IMPCOPS, plus classical traditional texts.
 
 ---
@@ -471,9 +731,15 @@ When asked to research ailment **X**:
 11. **Write the master 24-hour day plan** that resolves every co-administration conflict from §10 (§8.5).
 12. **Map supplier ecosystem with monthly cost breakdown** (§9).
 13. **Build the full interaction matrix** — §10.1 drug↔supp, §10.2 drug↔food, §10.3 supp↔food, §10.4 supp↔supp, §10.5 timing rules, §10.6 strictly-avoid.
-14. **Specify clinical scoring instrument + comorbidity screen** (§11).
-15. **Define the 12-month implementation timeline** (§12).
-16. **Write the patient-facing primer + closing paradigm** (§13.5 + §14).
+14. **Write §10.7 Emerging & adjunctive therapies** (v6.2 Rule 5 + Rule 6) — home-usable advanced devices · adjunctive behavioural therapies (CBT/CBT-i, MBCT/MBSR, condition-specific habituation/retraining, biofeedback, sound/light/vagal) · clinic-route options if home protocol plateaus. Cite actual trials; regulatory milestones only as factual context.
+15. **Specify clinical scoring instrument + comorbidity screen** (§11).
+16. **Define the 12-month implementation timeline** (§12).
+17. **Write the patient-facing primer** (§13.5).
+18. **Write §13.7 honest evidence-tier comparison table** (v6.2 Rule 3) — every approach covered, including ones not recommended, with honest tier and plain-words verdict.
+19. **Write the closing paradigm** (§14) — including the v6.2 narrow regulatory-path-context exception.
+20. **Audit H3 tree-friendliness** (v6.2 Rule 2) — every H2 has 3–7 H3s, each ≤5 words, action-oriented, specific.
+21. **Audit progressive disclosure** (v6.2 Rule 1) — every section + sub-section opens with plain-English summary; technical body sits in a `#### Open the science` deep-dive block.
+22. **Audit Cochrane honesty** (v6.2 Rule 4) — any approach with a null Cochrane / major meta-analysis is honestly downgraded in the TL;DR and in §13.7.
 
 Save the dossier as `research/{ailmentId}.md`.
 
@@ -482,12 +748,18 @@ Save the dossier as `research/{ailmentId}.md`.
 Before writing the final file, run **three internal review iterations** on your draft and refine after each. The point is to look at the dossier from a different angle each pass so all directions of the protocol have been challenged.
 
 ### Pass 1 — Completeness & coherence (structural)
-- Are all 15 sections present in the exact order specified?
-- Are all sub-sections present (§2.5, §6.5, §6.6, §7.6, §8.5, §10.1–10.6, §11.0, §11.5, §13.5)?
+- Are all 16 sections present in the exact order specified (v6.2 adds §10.7 Emerging & adjunctive therapies and §13.7 honest evidence-tier comparison table)?
+- Are all sub-sections present (§2.5, §6.5, §6.6, §7.6, §8.5, §10.1–10.6, §10.7.1–10.7.3, §11.0, §11.5, §13.5, §13.7)?
 - Do all 6 traditional systems (§4.1–4.6) have ≥2 entries OR an explicit silence acknowledgment?
 - Does §8.5 (24-hour timetable) explicitly resolve every conflict from §10 (especially curcumin/dairy, iron/tea/Mg/Ca timing, Ashwagandha pre-bed, caffeine cut-off)?
 - Are all yoga + pranayama rows in §7.1/§7.2 mapped to a §2 mechanism node?
 - Does §6 sum to a coherent weekly grocery list that matches the §8.5 meal times?
+- **v6.2 progressive-disclosure audit (Rule 1)**: does every section AND every sub-section open with a plain-English summary, with the technical mechanism + citations + references inside a `#### Open the science` deep-dive block?
+- **v6.2 tree-friendly H3 audit (Rule 2)**: does every H2 have 3–7 H3 sub-sections, each ≤5 words, action-oriented, specific (no "Overview" / "Details" / "Background")?
+- **v6.2 comparison table audit (Rule 3)**: is §13.7 present, covering every approach the dossier mentions including ones we do NOT recommend, with brutally honest plain-words verdicts ≤25 words?
+- **v6.2 Cochrane honesty audit (Rule 4)**: for every approach with a known null Cochrane / major meta-analysis, does the TL;DR lead with the honest caveat, with individual-trial wins presented as secondary?
+- **v6.2 emerging-therapies audit (Rule 5)**: is §10.7 present and properly split into home-usable / adjunctive-behavioural / clinic-route? Are trials cited directly with regulatory milestones only as factual context?
+- **v6.2 adjunctive therapy audit (Rule 6)**: is the relevant subset of CBT / CBT-i / MBCT / MBSR / habituation-retraining / biofeedback / sound / light / vagal-breath covered with honest grades?
 - **Iterate**: if any answer is "no", revise and re-check.
 
 ### Pass 2 — Validation & citation integrity (truthfulness)
@@ -557,4 +829,12 @@ internalRalph:
 - [ ] Homeopathy section grades remedies T or H only.
 - [ ] No forbidden language anywhere.
 - [ ] 7-day meal plan with exact gram quantities.
-- [ ] Word count: 2,500–5,500 for narrow ailments; **4,500–8,500 for moderately complex; up to 12,000 for high-complexity multi-system ailments with ≥5 prescription drug classes in §10.1** (e.g. psoriasis, T2D, IBD, Hashimoto's, RA, lupus, depression with co-prescriptions).
+- [ ] Word count: 2,500–5,500 for narrow ailments; **4,500–8,500 for moderately complex; up to 18,000 for high-complexity multi-system ailments with ≥5 prescription drug classes in §10.1** (e.g. psoriasis, T2D, IBD, Hashimoto's, RA, lupus, depression with co-prescriptions). **v6.2 ceiling raised from 14k to 18k** because progressive-disclosure deep-dive blocks + tree-friendly H3 audit + comparison table + emerging-therapies H2 + adjunctive therapies coverage add ~3–4k words on dense dossiers.
+- [ ] **TL;DR everywhere check (v6.1)**: every section opens with a 2-sentence TL;DR card; every list item starts with `**TL;DR.**`; every table includes a TL;DR column; every TL;DR ends with an inline italic citation; no claim is more than 4 lines from its citation.
+- [ ] **Progressive disclosure check (v6.2 Rule 1)**: every section AND every sub-section opens with the plain-English summary; the technical mechanism / citation-dense material sits inside a `#### Open the science` deep-dive block (or `:::deepdive` fenced block); no section dumps the mechanism before the lay-reader gem.
+- [ ] **Tree-friendly H3 check (v6.2 Rule 2)**: every H2 has 3–7 H3 sub-sections; every H3 name is ≤5 words, action-oriented where possible, specific (never "Overview", "Details", "Background", "More info").
+- [ ] **Honest evidence-tier comparison table check (v6.2 Rule 3)**: §13.7 present, immediately before §14; covers EVERY approach the dossier mentions including ones we do NOT recommend (homeopathy, low-evidence herbs, clinic-route options); plain-words verdict ≤25 words; "Where it fits" column populated.
+- [ ] **Cochrane honesty check (v6.2 Rule 4)**: every approach with a null Cochrane / major meta-analysis leads its TL;DR with the honest caveat; individual-trial wins come second; protocol keeps such approaches as ONE layer not the cornerstone; "X-week try, stop if no shift" frame applied.
+- [ ] **Emerging-therapies H2 check (v6.2 Rule 5)**: §10.7 present with 10.7.1 home-usable advanced + 10.7.2 adjunctive behavioural + 10.7.3 clinic-route options; trials cited directly (TENT-A2, SUSTAIN, STAR-D, etc.); regulatory milestones (FDA De Novo, CE mark) appear only as factual regulatory-path context with explicit framing, never as evidence anchor.
+- [ ] **Adjunctive therapy coverage check (v6.2 Rule 6)**: relevant subset of CBT / CBT-i / MBCT / MBSR / condition-specific habituation-retraining (TRT/ERP/vestibular rehab/pelvic floor PT) / biofeedback / HRV / sound / light / vagal-breath covered with honest evidence grades and self-guided resources.
+- [ ] **Narrow regulatory-context exception applied correctly (v6.2 Rule 5)**: any FDA / CE / Health Canada mention is framed inline as "(regulatory-path context, not evidence anchor)"; never used as the trust anchor on whether the therapy works.
