@@ -33,8 +33,11 @@ test.describe("DossierShell — persistent nav chrome", () => {
   test("rail click smooth-scrolls and updates URL hash", async ({ page }) => {
     await page.goto("/skin/vitiligo");
     const rail = page.getByRole("navigation", { name: /section index/i });
-    await rail.getByRole("link", { name: /daily combos/i }).click();
-    await page.waitForTimeout(800);
+    // Rail items are <button>s with text like "08Daily combos" (ordinal + label).
+    await rail.locator("button").filter({ hasText: /daily combos/i }).first().click();
+    // Hash sync uses history.replaceState; allow generous time for the scroll-spy
+    // grace window (600 ms) to settle.
+    await page.waitForFunction(() => /#combos/.test(window.location.hash), undefined, { timeout: 5000 });
     expect(page.url()).toMatch(/#combos/);
   });
 
@@ -54,11 +57,12 @@ test.describe("DossierShell — persistent nav chrome", () => {
 });
 
 test.describe("Editorial fidelity — vitiligo hero", () => {
-  test("h1 contains 'vitiligo' and 'snake oil'", async ({ page }) => {
+  test("hero headline contains 'vitiligo' and 'snake oil'", async ({ page }) => {
     await page.goto("/skin/vitiligo");
-    const h1Text = await page.locator("h1").first().innerText();
-    expect(h1Text.toLowerCase()).toContain("vitiligo");
-    expect(h1Text.toLowerCase()).toContain("snake oil");
+    // SectionAnchor renders the editorial headline as h2.font-display (Section 01).
+    const text = (await page.locator("h2.font-display").first().innerText()).toLowerCase();
+    expect(text).toContain("vitiligo");
+    expect(text).toContain("snake oil");
   });
 
   test("foundation pillar row shows the four pillars", async ({ page }) => {
@@ -70,11 +74,11 @@ test.describe("Editorial fidelity — vitiligo hero", () => {
 });
 
 test.describe("Tinnitus is a first-class journey (not flagship-decorated)", () => {
-  test("/ears/tinnitus h1 contains 'tinnitus' and 'snake oil'", async ({ page }) => {
+  test("/ears/tinnitus hero headline contains 'tinnitus' and 'snake oil'", async ({ page }) => {
     await page.goto("/ears/tinnitus");
-    const h1Text = await page.locator("h1").first().innerText();
-    expect(h1Text.toLowerCase()).toContain("tinnitus");
-    expect(h1Text.toLowerCase()).toContain("snake oil");
+    const text = (await page.locator("h2.font-display").first().innerText()).toLowerCase();
+    expect(text).toContain("tinnitus");
+    expect(text).toContain("snake oil");
     const rail = page.getByRole("navigation", { name: /section index/i });
     await expect(rail).toBeVisible();
   });
@@ -103,13 +107,14 @@ test.describe("Atlas includes tinnitus + atlas links resolve", () => {
 
 async function answerSafety(page: Page, answers: ("Yes" | "No")[]) {
   for (let i = 0; i < answers.length; i++) {
-    await page.getByRole("button", { name: new RegExp(`^${answers[i]}$`) }).first().click();
-    // Continue only exists while there's a "next" step; final answer auto-completes
-    const cont = page.getByRole("button", { name: /^Continue/i }).first();
-    if (await cont.isVisible({ timeout: 500 }).catch(() => false)) {
-      await cont.click();
-      await page.waitForTimeout(150);
-    }
+    // Use text-locator filter — more robust than role/name in the presence of nested icons.
+    const ans = page.locator("button").filter({ hasText: new RegExp(`^${answers[i]}\\s*$`) }).first();
+    await ans.waitFor({ state: "visible", timeout: 5000 });
+    await ans.click();
+    // Steps 1–3 show "Continue"; step 4 swaps it for "See my reviewed regime".
+    const cont = page.locator("button").filter({ hasText: /Continue|See my reviewed/i }).first();
+    await cont.click({ timeout: 10000 });
+    await page.waitForTimeout(300);
   }
 }
 
