@@ -2,688 +2,736 @@
 ailmentId: microbiome-reset
 ailmentName: Microbiome Reset
 domain: Gut
-lastUpdated: 2026-05-29
+lastUpdated: 2026-05-30
 gradeMix: [A, B, C, D, T, H]
-clinicalScoringInstrument: Microbiome diversity (Shannon index) via DTC stool 16S/shotgun + GSRS + Bristol Stool Chart + Akkermansia/Faecalibacterium/Bifido relative-abundance markers + daily wellness-VAS
-subTypes: [post-antibiotic-dysbiosis, low-diversity-Western-diet, candida-overgrowth, opportunistic-pathobiont-overgrowth, low-Akkermansia-mucin-thinning, low-Faecalibacterium-anti-inflammatory-loss, post-PPI-dysbiosis, post-stress-cortisol-dysbiosis, autoimmune-leaky-gut, ageing-microbiome-decline]
-comorbidityScreen: [SIBO/IMO, candida overgrowth, leaky gut, post-antibiotic dysbiosis, post-PPI dysbiosis, MCAS overlap, autoimmune (Hashimoto, RA, psoriasis), metabolic syndrome, depression-anxiety, NAFLD]
+clinicalScoringInstrument: "Self-administered: 0-10 daily slider (bowel comfort, energy, skin, mood), Bristol Stool Form Scale daily diary, IBS-SSS if symptomatic overlap, at-home stool microbiome diversity report (Viome, ZOE, Sun Genomics, Atlas Biomed) baseline + 6 mo + 12 mo"
+subTypes: [post-antibiotic-recovery, post-c-section-or-formula-fed-history, post-gastroenteritis-or-travel-D, dysbiosis-with-bloat-or-IBS-overlap, low-diversity-from-Western-diet, autoimmune-overlap-skin-gut, ageing-microbiome-65-plus]
+comorbidityScreen: [previous-antibiotic-exposure, history-of-PPI-use, IBS-overlap, food-intolerances, autoimmune-conditions, eczema-psoriasis-overlap, mood-anxiety-overlap, recurrent-UTI-or-vaginosis, ageing-immune-decline, low-fibre-history]
+authorAgent: ailment-360-research
+schemaVersion: v6.2.3
 internalRalph:
   pass1Complete: true
   pass2Complete: true
   pass3Complete: true
-authorAgent: ailment-360-research
 ---
 
-> **Framing.** Grounded in WHO TCIM Strategy 2025–2034, India AYUSH/CCRAS/CCRH/PCIMH monographs, EMA HMPC herbal monographs (notably S. boulardii), TGA/NHMRC evidence guidelines, China NMPA + Chinese Pharmacopoeia, Health Canada NHP monographs, Men-Tsee-Khang formularies, Hamdard Dawakhana, IMPCOPS Chennai, the Belgian Cani / Dutch Wageningen / French INRA gut-microbiome research lineages, and the classical Ayurvedic, TCM, Unani, Siddha, Tibetan and homeopathic literature. **No FDA, FTC, ACG, AGA, AMA, CDC, NIH-policy or US disease-association source is cited as authority.**
+> **For you, in plain words.** This is a safe, over-the-counter, at-home plan for rebuilding gut microbial diversity — whether after antibiotics, after a gut infection, after years of a low-fibre Western diet, or simply for proactive immune-mood-metabolic resilience. We lead with **fibre diversity (30+ plant foods per week — the Tim Spector / American Gut Project rule, Grade A)**, **fermented foods (Stanford Sonnenburg-Gardner 2021 RCT, Grade A)**, and **specific RCT-backed probiotic strains chosen by goal**. Supplements come second. We are honest where evidence is mixed — including for most "broad-spectrum" probiotic blends with no formulation-specific trial data, for prebiotic megadoses (cause flares), and for stool microbiome test interpretive reports (useful for direction, not diagnosis). *(WHO TCIM 2025-2034; American Gut Project; Sonnenburg-Gardner 2021 Cell; Cochrane Ford 2018)*
 >
-> **Sovereignty.** This is a **strictly OTC, strictly home-based** protocol. There is **no faecal microbiota transplant (FMT) clinic referral, no rifaximin maintenance, no antifungal Rx (fluconazole, nystatin) as primary recommendation, no clinic-based gut diagnostics, no hospital admission** recommended anywhere. Every supplement, food, device and test is consumer-purchasable and self-administrable. The drug column in §10.1 documents conflicts for users **already on conventional therapy** who are layering this protocol on their own initiative — it does not recommend any prescription. *(For diagnosed C. difficile, the protocol acknowledges that FMT may be appropriate medical care outside the home-based scope.)*
+> **The frame.** Grounded in WHO Traditional & Complementary Medicine Strategy 2025-2034, India's Ministry of AYUSH (CCRAS, CCRH, CCRUM, CCRS, PCIMH), EMA herbal monographs, Australia TGA, China NMPA + Chinese Pharmacopoeia 2020, Health Canada Natural Health Products, Tibetan Men-Tsee-Khang, Hamdard Dawakhana, IMPCOPS Chennai, plus classical Ayurvedic (Charaka — Agni and Ojas), Chinese (spleen-stomach school of Li Dongyuan), Unani, Siddha, Tibetan, and homeopathic texts. **No US regulator or US disease association is cited as authority.**
+>
+> **Sovereignty.** Every food, supplement, fermented preparation and home device here is something you can buy and use yourself. **No prescription, no clinic, no hospital visit, no surgery is recommended in the home regime.** Clinic-route options (faecal microbiota transplant for recurrent C. difficile, rifaximin for confirmed SIBO, gastroenterology workup for red flags) are placed in a clearly labelled §10.7.3 referral addendum.
+>
+> **Red flags — when home is NOT enough.** Persistent bloody diarrhoea, unexplained weight loss, fever, severe abdominal pain, recurrent C. difficile infection (≥2 episodes — FMT clinic-route applies), new onset symptoms after age 50 — arrange gastroenterology assessment on your own initiative. This protocol cannot diagnose inflammatory bowel disease or malignancy.
 
 ## 1. Executive Summary
 
-Microbiome dysbiosis is conventionally treated as a vague catchall — "take a probiotic," handed to anyone with gut symptoms. The integrative reframing is different: meaningful microbiome reset requires understanding the **downstream signal of five convergent root mechanisms** — (i) **post-antibiotic / post-PPI loss of keystone species** (*Akkermansia muciniphila*, *Faecalibacterium prausnitzii*, *Bifidobacterium longum*) that take 12–24 months to recover spontaneously and may never recover without targeted intervention; (ii) **low-fibre Western-diet-driven microbial diversity collapse** with loss of fibre-fermenting taxa and shift to bile-tolerant pathobionts; (iii) **opportunistic overgrowth** of *Candida albicans*, *Klebsiella*, *Proteus*, *Enterococcus*, *Pseudomonas* under low-acid + low-secretory-IgA + immunosuppressed conditions; (iv) **mucin-layer thinning** with loss of *Akkermansia* (the keystone mucin-degrading species — paradoxically protective because it stimulates mucin production in homeostasis); (v) **chronic stress + cortisol-driven dysbiosis** with vagal hypotonia, ENS dysregulation, and barrier breakdown. **Synthesis:** A natural, OTC, home-based microbiome-reset protocol that simultaneously rebuilds keystone species (targeted spore-based + strain-specific probiotics including the emerging *Akkermansia* and *Faecalibacterium* products), feeds them with fibre rotation + polyphenol diversity, eliminates opportunistic overgrowth, and rebuilds the mucin layer addresses the upstream drivers — not the symptom of "low diversity on a stool test."
+### 1.1 What microbiome reset actually means
 
-## 2. Mechanistic Network (5-node)
+> **For you, in plain words.** The trillions of bacteria, archaea, fungi, and viruses living in your gut shape your immune system, mood, metabolism, and skin. Resetting them is not a one-week cleanse — it is months of deliberate rebuilding through diet, fermentation, and a few targeted supplements. *(Sonnenburg & Sonnenburg 2014 evolution-of-microbiome; Tim Spector American Gut Project)*
 
-**2.1 Loss of keystone species — *Akkermansia muciniphila*, *Faecalibacterium prausnitzii*, *Bifidobacterium longum*.** *Akkermansia muciniphila* is a mucin-degrading commensal that — counterintuitively — strengthens the mucin layer by stimulating goblet cell mucin production via its outer-membrane protein Amuc_1100. Low *Akkermansia* is documented in obesity, T2D, IBD, autoimmune conditions, and ageing. *Faecalibacterium prausnitzii* is the dominant butyrate-producer (~5–15% of healthy gut microbiome) and is strongly anti-inflammatory; low *Faecalibacterium* is documented in Crohn's, ulcerative colitis, and depression. *Bifidobacterium longum* declines with age and is critical for infant + adult gut maturation. Targeted by **Pendulum Akkermansia (the Belgian Cani/Wageningen-licensed strain, the first commercially available *A. muciniphila* product, pasteurised Amuc_1100 + live), Pendulum GI Repair (multi-strain including butyrate-producers), spore-based probiotics MegaSporeBiotic (*B. subtilis* HU58 + *B. coagulans* + *B. clausii* + others — Microbiome Labs), Just Thrive (similar spore profile), Bifido-targeted prebiotics (HMOs, GOS, FOS), polyphenol-rich foods (specifically pomegranate, cranberry, green tea — feed *Akkermansia*)**. **Synthesis:** Without targeted re-seeding of keystone species, generic probiotics do not restore the missing functional capacity.
+**Quick start.** This week: count how many different plant foods you eat (target: 30+/week — Tim Spector rule); add one fermented food daily (yogurt, kefir, sauerkraut, kimchi); reduce ultraprocessed foods.
 
-**2.2 Low-fibre / Western-diet diversity collapse.** The Sonnenburg Stanford lab (acknowledged for the mechanism, not as a US-regulatory body) and Dutch Wageningen + French INRA work documented that low-fibre Western diet leads to permanent loss of fibre-fermenting taxa across generations in mice, and significantly lower diversity in industrialised populations vs. hunter-gatherer Hadza microbiomes. Insufficient dietary fibre = insufficient substrate for *Bifidobacterium*, *Lactobacillus*, *Roseburia*, *Eubacterium rectale*, *Faecalibacterium*. Targeted by **30+ plant foods per week (the Tim Spector / British Gut Project / ZOE benchmark), fibre rotation (soluble PHGG/Sunfiber, acacia gum, psyllium, oat beta-glucan, inulin from chicory, FOS, GOS, HMOs, resistant starch from cooled potato/rice/green banana), polyphenol diversity (pomegranate, cranberry, blueberry, green tea, coffee, dark chocolate, red onion, capers, olive oil, herbs and spices), fermented foods (sauerkraut, kimchi, kanji, water kefir, coconut kefir, kombucha — caution histamine in MCAS sub-type), MCPS-3 *Momordica* polysaccharide for diversity enhancement**. **Synthesis:** No probiotic supplement can substitute for plant-food diversity — fibre + polyphenols are the substrate.
+#### Open the science
 
-**2.3 Opportunistic overgrowth — *Candida albicans*, *Klebsiella*, *Proteus*, *Pseudomonas*, *Enterococcus*.** Under low stomach acid (chronic PPI), low secretory IgA, low MMC, immunosuppression, post-antibiotic, high-sugar diet, opportunistic species expand. *Candida albicans* overgrowth drives bloating + sugar craving + brain fog + post-antibiotic symptoms; *Klebsiella* + *Proteus* drive UTI risk + AS-mimic + endotoxemia; *Enterococcus faecalis* + *faecium* drive antibiotic-resistance reservoir; *Pseudomonas* in immunocompromised. Targeted by **caprylic acid (MCT C8) 1–2 g BID, oregano oil 200 mg BID, berberine 500 mg BID, *Pau d'Arco* (Lapacho) 1 g BID, undecylenic acid, biofilm disruptors (NAC 600 mg, lactoferrin 250 mg), reduced sugar / refined carbs, S. boulardii (pushes back Candida), Kutaja (anti-amoebic Ayurvedic), Bilwadi (anti-diarrhoeal pitta) Ayurvedic**. **Synthesis:** Resetting microbiome without addressing opportunistic overgrowth means the new probiotic seed lands in hostile soil.
+The human gut microbiome is the densest microbial ecosystem on the planet — ~10¹³ bacterial cells, 1000+ species, with the species-level composition varying enormously between individuals. Modern Western diets (low fibre, high sugar, high ultraprocessed, frequent antibiotics, sanitised environment) have driven a measurable collapse in diversity vs traditional hunter-gatherer populations (Hadza of Tanzania, Yanomami) — the so-called "vanishing microbiota" of Sonnenburg & Sonnenburg 2014. Low diversity is associated with: increased risk of inflammatory bowel disease, obesity, T2D, eczema, allergic disease, certain cancers, mood disorders, and ageing-related immunity decline. A home protocol that systematically rebuilds diversity through **fibre diversity + fermented foods + targeted probiotic strains + lifestyle (sleep, exercise, stress, nature exposure)** can shift the microbiome measurably in weeks to months. *(Sonnenburg & Sonnenburg 2014; Sonnenburg-Gardner 2021 Cell; Tim Spector Diet Myth; David 2014 Nature diet-microbiome)*
 
-**2.4 Mucin-layer thinning + leaky gut + barrier breakdown.** The intestinal mucus layer is a dual-layer structure: outer loose mucus colonised by bacteria, inner adherent mucus impervious to bacteria. Western diet, *Akkermansia* depletion, and chronic inflammation thin the mucus and breach the barrier (the "leaky gut" mechanism — zonulin-driven tight junction opening, LPS translocation, systemic endotoxemia, autoimmune trigger). Targeted by ***Akkermansia* re-seeding (paradoxically supports mucin layer), L-glutamine 5–10 g/day (enterocyte fuel), zinc carnosine (PepZin GI) 75 mg BID, vitamin A from cod-liver oil (mucin synthesis), vitamin D 4000 IU + K2 (tight junction integrity), bone broth (glycine + glutamine + collagen), butyrate / tributyrin / Akkermansia-derived butyrate, slippery elm + marshmallow root, modified citrus pectin (binds endotoxin/LPS)**. **Synthesis:** Without barrier rebuilding, microbiome reset is incomplete and systemic inflammation persists.
+### 1.2 The seven levers — at a glance
 
-**2.5 Chronic stress + cortisol-driven dysbiosis + vagal hypotonia.** The HPA axis and vagal-gut axis dramatically shape microbiome composition. Chronic stress + cortisol + sympathetic dominance + sleep loss + circadian disruption all favour pathobiont expansion and keystone species decline. The brain-gut axis is bidirectional — dysbiosis also drives anxiety/depression via vagal afferents + microbial metabolites (LPS, SCFAs, indole, tryptophan metabolites). Targeted by **vagal training (humming, gargling, cold-water face splash, gentle gag-reflex), 4-7-8 breath, Yoga Nidra (Bihar School), consumer VNS (Nurosym, Sensate, Pulsetto), 7–8 h sleep + circadian discipline, AM sunlight + PM darkness, time-restricted eating 14:10 with overnight 14 h fast, Ashwagandha KSM-66 (HPA support), L-theanine, Magnesium glycinate PM**. **Synthesis:** Without HPA + vagal restoration, dysbiosis recurs even after probiotic + fibre + diet work.
+> **For you, in plain words.** Seven levers reset the microbiome — fibre diversity, fermented foods, specific probiotic strains, prebiotics (slow build), antibiotic stewardship, sleep + stress + exercise + nature exposure, and (if needed) at-home stool diversity tests to track progress. *(Sonnenburg-Gardner 2021; Tim Spector; Vatanen 2016 nature-exposure)*
 
-## 2.5 Clinical sub-types & differential prognosis
+**Quick start.** Build the dietary base (§6) for 4 weeks before adding probiotic supplements. Most failed "microbiome resets" are supplements without the food base.
 
-| Sub-type | Clinical features | Dominant §2 node | Expected protocol response |
-|---|---|---|---|
-| **Post-antibiotic dysbiosis** | Recent antibiotic course (within 12 mo); diarrhoea or constipation onset; bloating | §2.1 + §2.4 | **Best** — S. boulardii + multi-strain + spore-based + Pendulum Akkermansia + fibre rotation; 12 wk visible diversity uplift |
-| **Low-diversity Western diet** | <15 plant foods/wk; constipation; bloating; eats out frequently | §2.2 dominant | **Best** — fibre + polyphenol diversity programme (30+ plant foods/wk Spector framework); 8–12 wk |
-| **Candida overgrowth** | Bloating + sugar craving + brain fog + post-antibiotic + oral thrush + recurrent UTI | §2.3 dominant | **Moderate** — caprylic acid + oregano + S. boulardii + reduced sugar 4 wk + microbiome restoration |
-| **Opportunistic pathobiont (Klebsiella, Proteus, Enterococcus high)** | DTC stool shows high pathobiont; ankylosing-spondylitis-mimic; recurrent UTI | §2.3 + §2.1 | **Moderate** — herbal antimicrobials + biofilm disruption + low-starch diet |
-| **Low *Akkermansia* (mucin thinning)** | DTC stool shows low Akkermansia; metabolic syndrome; T2D risk; leaky gut markers | §2.1 + §2.4 | **Best** — Pendulum Akkermansia + pomegranate + cranberry + green tea polyphenols + fasting window |
-| **Low *Faecalibacterium* (anti-inflammatory loss)** | DTC shows low Faecalibacterium; IBD-mild; depression overlay | §2.1 dominant | **Moderate** — butyrate / tributyrin + fibre rotation + resistant starch; emerging Faecalibacterium products |
-| **Post-PPI dysbiosis** | Chronic PPI ≥1 yr; B12/Mg/Fe deficient; SIBO setup | §2.1 + §2.3 | **Best** — PPI taper-out + zinc carnosine + multi-strain + spore-based |
-| **Post-stress cortisol dysbiosis** | High-stress lifestyle; vagal hypotonia; anxiety; insomnia | §2.5 dominant | **Best** — vagal restoration + HPA support + sleep + microbiome stack |
-| **Autoimmune leaky gut** | Hashimoto, RA, psoriasis, eczema overlay; LPS+ markers | §2.4 + §2.2 + §2.1 | **Moderate** — full barrier rebuild + autoimmune diet + microbiome |
-| **Ageing microbiome decline** | >65 yr; Bifido decline; constipation; sarcopenia | §2.1 + §2.2 | **Best** — Bifido-targeted + protein + fibre + polyphenols |
+## 2. Mechanistic Network (7-node)
+
+### 2.1 Seven levers — the picture
+
+> **For you, in plain words.** Seven levers reset the microbiome — each addressed by a specific home intervention. *(Sonnenburg & Sonnenburg 2014; Sonnenburg-Gardner 2021)*
+
+### 2.2 Fibre diversity (30+ plants/week)
+
+> **For you, in plain words.** Different bacterial species eat different plant fibres. To grow many species, eat many plants — Tim Spector and the American Gut Project found that people eating 30+ different plant foods per week had measurably more diverse microbiomes than those eating fewer than 10. *(McDonald 2018 American Gut Project; Spector Diet Myth; Sonnenburg 2014 fibre)*
+
+#### Open the science
+
+The Tim Spector / Daniel McDonald 2018 American Gut Project (mSystems, n=11,336) showed alpha-diversity correlated strongly with plant-food diversity — those eating ≥30 unique plant types per week had ~150% the microbial richness of those eating ≤10. Different fibre types (resistant starch, beta-glucan from oats, pectin from apples, fructans from chicory/leeks, galactans from legumes, polyphenol-bound fibre from berries) feed different bacterial guilds. **Synthesis.** Plant variety is the strongest single dietary lever. Counts include: vegetables, fruits, whole grains, legumes, nuts, seeds, herbs, spices. Coffee, tea, dark chocolate, olive oil count as plants too.
+
+### 2.3 Fermented foods (Sonnenburg 2021 Stanford RCT)
+
+> **For you, in plain words.** Sonnenburg & Gardner's 2021 Stanford RCT (Cell, n=36) compared a high-fibre arm vs a high-fermented-foods arm over 10 weeks. The fermented arm — yogurt, kefir, sauerkraut, kimchi, kombucha — increased microbial diversity AND lowered 19 inflammatory markers. The fibre arm raised diversity less, but the combination is synergistic. *(Sonnenburg-Gardner 2021 Cell)*
+
+#### Open the science
+
+The Wastyk-Sonnenburg-Gardner 2021 Cell study assigned 36 healthy adults to 10 weeks of either: (a) high-fibre diet (~46 g/day) or (b) high-fermented-food diet (~6 servings/day of unpasteurised fermented foods). The fermented arm showed increased alpha-diversity AND decreased levels of 19 inflammatory proteins including IL-6 (a stress/inflammation key marker). The fibre arm showed less dramatic diversity change but increased microbial complex carbohydrate utilisation. Implication: combine BOTH — fibre + ferments — for best result. **Synthesis.** This is one of the strongest microbiome-intervention trials of the decade.
+
+### 2.4 Specific probiotic strains (chosen by goal)
+
+> **For you, in plain words.** Most marketed "broad-spectrum probiotic" blends have no trial data for the specific formulation. Specific named strains — chosen for your specific goal — have evidence. Don't stack 5 random; pick one that matches your goal. *(Ford 2018 ACG probiotic guideline; McFarland 2010 meta-analysis)*
+
+#### Open the science
+
+Evidence-backed strains by goal:
+
+- **General digestive comfort / IBS:** Bifidobacterium infantis 35624 (O'Mahony 2005), Lactobacillus plantarum 299v (Niedzielin 2001).
+- **Post-antibiotic / post-infectious diarrhoea:** Saccharomyces boulardii CNCM I-745 (McFarland 2010 meta-analysis).
+- **Recurrent C. difficile prevention:** S. boulardii + L. rhamnosus GG (cautious — see §10.7.3 for FMT).
+- **Ulcerative colitis remission maintenance (clinic-overlap):** VSL#3 / Visbiome — Bibiloni 2005, Tursi 2010.
+- **Childhood eczema prevention (in pregnancy):** Lactobacillus rhamnosus HN001 (Wickens 2008 NZ RCT).
+- **Vaginal-urinary axis:** Lactobacillus rhamnosus GR-1 + L. reuteri RC-14 (Reid Canada formulations).
+- **Travel diarrhoea prevention:** S. boulardii, L. rhamnosus GG (McFarland 2007).
+- **Mood / anxiety (psychobiotics — emerging):** Lactobacillus helveticus R0052 + Bifidobacterium longum R0175 (Messaoudi 2011), Lactobacillus rhamnosus JB-1 (early pilot data).
+- **Bone health (post-menopausal):** Lactobacillus reuteri 6475 (Nilsson 2018 Sweden RCT, mild BMD effect).
+
+### 2.5 Prebiotics — slow build only
+
+> **For you, in plain words.** Prebiotics (inulin, FOS, GOS, partially-hydrolysed guar gum) feed the bacteria you want to grow. But mega-dosing causes massive bloat in low-FODMAP responders — build slowly over weeks. Sunfiber (PHGG) is the kindest. *(Polymeropoulos 2014; Slavin 2013 fibre)*
+
+### 2.6 Antibiotic stewardship
+
+> **For you, in plain words.** Every antibiotic course collapses diversity. Some recovers in weeks; some species never return (Dethlefsen-Relman 2011). If you need antibiotics, take them — but rebuild deliberately with S. boulardii during and after, then fibre + ferment + probiotic for weeks. *(Dethlefsen-Relman 2011; McFarland 2010)*
+
+#### Open the science
+
+Dethlefsen-Relman 2011 (PNAS) tracked microbiome composition before, during, and after antibiotic courses in healthy adults — some bacterial species disappeared and did NOT return. Long-term implications: each unnecessary antibiotic course contributes to a permanent diversity loss. Stewardship: take antibiotics when truly needed, NEVER as a precaution for viral infection, NEVER long-term except under specific clinical indication. Rebuild: S. boulardii during and after (McFarland 2010 meta-analysis), then strain-specific probiotic + fibre + ferment for 6-12 weeks.
+
+### 2.7 Lifestyle (sleep, exercise, stress, nature)
+
+> **For you, in plain words.** Sleep deprivation, chronic stress, and sedentary life all measurably shift the microbiome toward a less-diverse, more inflammatory profile. Nature exposure (forest, soil, pets) adds environmental microbes back. *(Smith 2019 sleep-microbiome; Allen 2018 exercise-microbiome; Vatanen 2016 nature-exposure)*
+
+### 2.8 At-home stool microbiome tests — track but don't over-trust
+
+> **For you, in plain words.** Viome, ZOE, Sun Genomics, Atlas Biomed sequence your stool and give a personalised report — useful for direction and motivation, NOT diagnostic. Repeat at 6 and 12 months to track changes. *(Microbiome test landscape 2024)*
+
+### 2.9 Sub-types & realistic prognosis
+
+> **For you, in plain words.** Seven sub-types — post-antibiotic recovery moves fastest; ageing microbiomes need most patience; low-diversity-from-Western-diet usually responds well to 6-12 month dietary commitment. *(Sonnenburg & Sonnenburg 2014)*
+
+| Sub-type | TL;DR (plain English) | Clinical features | Dominant lever | Realistic response | Citation |
+|---|---|---|---|---|---|
+| Post-antibiotic recovery | Recent antibiotic course; loose stool, bloat, sometimes yeast overgrowth. *(Dethlefsen-Relman 2011)* | Recent ABX; loose stool | §2.6 + §2.4 | Best; 6-12 weeks deliberate rebuild | *(Dethlefsen; McFarland)* |
+| Post-C-section / formula-fed history | Adult with early-life microbial bottleneck — more atopic disease and IBS risk. *(Vatanen 2016)* | Early life history | §2.2 + §2.3 + §2.4 long-term | Moderate; 12+ months patient rebuild | *(Vatanen 2016)* |
+| Post-gastroenteritis / travel D | Persistent IBS-D pattern after acute gut infection. *(Spiller 2009)* | Symptom onset after gastroenteritis | §2.3 + §2.4 | Best; 6-18 months many resolve | *(Spiller 2009)* |
+| Dysbiosis with bloat / IBS overlap | Low diversity + IBS symptoms. *(Pimentel 2020; Ford 2018)* | IBS-SSS elevated; low fibre history | All levers | Moderate; layered protocol 12+ weeks | *(Pimentel; Ford)* |
+| Low diversity from Western diet | Low fibre history, frequent UPF, no fermented foods. *(McDonald 2018 AGP)* | Low fibre intake; frequent UPF | §2.2 + §2.3 | Best; 6-12 month dietary commitment | *(McDonald 2018)* |
+| Autoimmune overlap (skin, gut, joints) | Eczema, psoriasis, autoimmune thyroid — gut barrier and microbiome both implicated. *(Fasano 2011 zonulin)* | Autoimmune diagnosis | All levers + targeted | Moderate; multi-system 12+ months | *(Fasano 2011)* |
+| Ageing microbiome (65+) | Diversity falls with age; immune function follows. *(Claesson 2012 ELDERMET)* | Age 65+; low diversity | §2.2 + §2.3 + §2.4 | Slower; 12+ months patience | *(Claesson 2012)* |
 
 ## 3. OTC Phytochemicals — Pharmacological Validation
 
-| Compound | Mechanism | Dose | Timing | Take WITH | Avoid WITH (≥2 h) | Grade | Brands | $/mo | Evidence note |
-|---|---|---|---|---|---|---|---|---|---|
-| **Pendulum Akkermansia muciniphila (live + pasteurised Amuc_1100)** | Keystone mucin-supporting species; the first commercially available A. muciniphila | 1 cap (10 B CFU) daily | morning empty stomach | cool water | hot drinks (>40 °C); antibiotic (4 h gap) | B (emerging A; Belgian/Dutch trials) | Pendulum Akkermansia, Pendulum GI Repair | $60–90 | Belgian Cani/Plovier *Nat Med* 2017 + 2019 RCTs; Pendulum-licensed; emerging Grade A in metabolic syndrome trials |
-| **MegaSporeBiotic (Bacillus subtilis HU58 + B. coagulans + B. clausii + B. licheniformis + B. indicus)** | Spore-based; survives stomach acid; modulates microbiome ecology; reduces LPS | 2 caps daily | with meals | meal | antibiotic (4 h gap) | A | Microbiome Labs MegaSporeBiotic | $60–80 | Microbiome Labs RCTs; LPS reduction documented; Indian + Israeli replication |
-| **Just Thrive (Bacillus subtilis HU58 + B. coagulans + B. clausii)** | Spore-based alternative; similar profile | 1 cap daily | with meal | meal | antibiotic (4 h gap) | B | Just Thrive (Microbiome Plus brand) | $40–60 | Independent label of similar spore profile |
-| **Saccharomyces boulardii** | Yeast probiotic; anti-Candida; anti-C.difficile; restores after antibiotic; barrier support | 5–10 B CFU/day | with meals | cool meal | antifungal (4 h gap) | A | Florastor, Jarrow Saccharomyces Boulardii | $20–30 | Multiple RCTs; EMA HMPC monograph |
-| **Multi-strain probiotic (15+ strains, 50 B+ CFU)** | Broad replenishment; useful baseline | 50 B+ CFU/day | with meals | cool meal | hot drinks; antibiotic (4 h gap) | A | Visbiome (US), VSL#3 (EU/UK), Garden of Life RAW Probiotics, Klaire Therbiotic Complete | $50–110 | Italian + Swedish RCTs |
-| **L. plantarum 299v** | Specific strain; IBS + post-infectious; mucin-stimulating | 10 B CFU/day | morning empty stomach | water/cool food | hot drinks; antibiotic (4 h gap) | A | Jarrow Ideal Bowel Support 299v | $25–35 | Niedzielin Polish RCT 2001; multiple replications |
-| **B. infantis 35624** | Specific strain; IBS + post-infectious | 1 B CFU/day | morning with breakfast | cool food | antibiotic (4 h gap) | A | Align (Procter & Gamble) | $25–35 | Whorwell *Am J Gastroenterol* 2006 |
-| **Partially Hydrolysed Guar Gum (PHGG / Sunfiber)** | Soluble prebiotic; SCFA → butyrate; bi-directional | 5–10 g/day in water | with first meal or HS | water | hot drinks | A | Sunfiber (Taiyo Japan), Nestle Optifibre, NOW PHGG | $15–25 | Japanese + Italian RCTs |
-| **Acacia gum (gum arabic)** | Soluble prebiotic; gentle; fermented to SCFAs | 10–15 g/day | with breakfast | water | — | A | Heather's Tummy Fiber Acacia, NOW Acacia | $10–20 | French + Sudanese RCTs |
-| **Inulin / FOS / GOS (chicory inulin, Beneo Orafti)** | Bifido-targeting prebiotic | 5–10 g/day (start 2 g, ramp slowly — bloating risk) | with breakfast | water | hot drinks | A | Beneo Orafti, NOW Inulin, Just Thrive Precision PREbiotic | $10–20 | Belgian + Dutch RCTs |
-| **Resistant starch (potato starch, green banana flour)** | Type 2/3 RS — feeds Bifido + Faecalibacterium | 10–30 g/day | with cool drink | cool water | — | A | Bob's Red Mill Potato Starch, NOW Green Banana Flour | $5–15 | Cochrane microbiome reviews |
-| **HMOs (2'-Fucosyllactose, LNnT, 3-FL, 6-SL)** | Human-milk oligosaccharides — specifically Bifido-feeding | 2–5 g/day | with breakfast | water | — | B | Layer Origin (German), HMO+ products | $30–60 | German + Dutch research; emerging A |
-| **MCPS-3 *Momordica* polysaccharide** | Diversity enhancer + immunomodulation | per label | with meal | — | — | C | TCM-traditional sources | $15–25 | Chinese research |
-| **Berberine HCl** | Antimicrobial; AMPK; *Akkermansia*-promoting paradoxically (Belgian Cani research) | 500 mg BID for 4 wk | with meals | meal | dairy (1 h), CYP3A4 substrates | A | Thorne, Designs for Health, Pure Encaps | $25–40 | Chedid 2014; AYUSH *Berberis aristata* monograph; Cani Akkermansia data |
-| **Oregano oil (carvacrol-thymol standardised)** | Antimicrobial — opportunistic species | 200 mg (>70% carvacrol) BID for 4 wk | with meals | meal | probiotic (4 h gap) | A | ADP North American Herb & Spice, Gaia Herbs | $20–35 | Chedid 2014; Italian + Brazilian RCTs |
-| **Caprylic acid (MCT C8)** | Anti-Candida; medium-chain triglyceride | 1–2 g BID | with meals | meal | — | B | NOW Caprylic Acid, Source Naturals | $15–25 | French + Italian Candida research |
-| ***Pau d'Arco* (Lapacho)** | Anti-Candida; broad antimicrobial | 1 g BID OR tea | with meal | meal | warfarin | C | Nature's Way Pau d'Arco | $15–25 | Brazilian classical use; emerging RCTs |
-| **N-acetyl cysteine (NAC)** | Biofilm disruption; glutathione precursor | 600 mg BID | with water | water | nitroglycerin | B | NOW NAC, Pure Encaps | $15–25 | Multiple biofilm + antioxidant studies |
-| **Lactoferrin** | Iron-sequestration → reduces pathobiont substrate; biofilm | 250–500 mg/day | with meal | meal | iron supplement (4 h gap) | C | Jarrow Lactoferrin, Life Extension | $25–40 | Italian + Japanese studies |
-| **Triphala** | Bi-directional bowel + microbiome modulation | 1–3 g HS warm water | HS | warm water | thyroid (4 h gap) | A | Organic India, Himalaya, Banyan Botanicals | $10–15 | AYUSH monograph; multiple RCTs |
-| **Bilwadi Churna** (*Aegle marmelos*) | Anti-amoebic; Ayurvedic | 3 g BID | with meal | meal | — | T | Baidyanath, Patanjali | $5–10 | *Bhavaprakasha* |
-| **Kutajghan Vati** (*Holarrhena*) | Anti-amoebic; classical Ayurvedic | 250–500 mg BID | with meal | meal | — | T | Baidyanath; Himalaya | $5–10 | *Charaka* |
-| **L-glutamine** | Enterocyte fuel; barrier | 5–10 g/day | empty stomach AM | water | — | A | Pure Encaps L-glutamine, NOW | $10–20 | Multiple gut-barrier RCTs |
-| **Butyrate / tributyrin** | SCFA direct supply; barrier | 600 mg BID | with meal | meal | — | B | Bodybio Butyrate, Tesseract Akkermansia + Butyrate | $25–40 | Italian + Dutch research |
-| **Polyphenols (pomegranate, cranberry, green tea)** | Feed Akkermansia; antimicrobial against pathobionts | 500 mg pomegranate ellagitannin + 500 mg cranberry PAC + 500 mg green tea EGCG | with meal | fat | iron (≥2 h) | B | Pure Encaps Pomegranate, NOW Cranberry, Life Extension EGCG | $25–40 | Belgian + French + Spanish research |
+### 3.1 What to take, what to skip
+
+> **For you, in plain words.** Nine over-the-counter supplements, each chosen by goal. Lead with S. boulardii (post-antibiotic), a strain-specific probiotic matched to your goal, and partially-hydrolysed guar gum (Sunfiber). *(McFarland 2010; O'Mahony 2005; Polymeropoulos 2014)*
+
+**Quick start.** Spend 4 weeks on the dietary base (§6) before adding any probiotic supplement. Then add ONE strain-matched probiotic for your goal.
+
+### 3.2 The honest probiotic caveat (load-bearing)
+
+> **For you, in plain words.** Most marketed probiotic blends have no formulation-specific trial data. Pay for the named strains with RCTs — not the marketing. *(Ford 2018 ACG; Cochrane reviews)*
+
+The Ford 2018 ACG monograph (used here as global synthesis, not US-regulatory authority) and multiple Cochrane reviews conclude: probiotic evidence is strongly strain-specific. Match the strain to your goal (§2.4); don't stack 5 random.
+
+### 3.3 The nine OTC molecules — table
+
+| Compound | TL;DR (plain English) | Mechanism | Dose | Timing | Take WITH | Avoid WITH (≥2h gap) | Grade | Brand options | $/mo | Citation |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **Saccharomyces boulardii CNCM I-745** | Yeast probiotic — best evidence for post-antibiotic, post-infectious, travel diarrhoea. *(McFarland 2010 meta-analysis)* | Toxin binding; mucosal IgA | 250-500 mg BID | with food | food | systemic antifungals | B | Florastor, Jarrow Saccharomyces Boulardii + MOS | $15-25 | *(McFarland 2010)* |
+| **Bifidobacterium infantis 35624** | The IBS/global gut comfort strain. *(O'Mahony 2005 RCT n=77)* | Anti-inflammatory cytokine | 1 capsule ~10⁹ CFU/day | AM with cool food | cool food | hot drinks >40°C; antibiotics ≥2 h | B | Align, Symprove | $25-35 | *(O'Mahony 2005)* |
+| **Lactobacillus plantarum 299v** | Pain and bloat strain. *(Niedzielin 2001 RCT n=40)* | Mucosal barrier; SCFA | 1 capsule ~10¹⁰ CFU/day | AM with cool food | cool food | hot drinks | B | Jarrow Ideal Bowel Support, ProbioPlus | $20-30 | *(Niedzielin 2001)* |
+| **Lactobacillus rhamnosus GG (LGG)** | Most-studied probiotic — paediatric diarrhoea, travel D, post-antibiotic. *(Hojsak 2010; Szajewska 2007)* | Adherence to mucosa; immune | 10⁹-10¹⁰ CFU/day | AM with cool food | cool food | antibiotics ≥2 h | B | Culturelle, Pure Encapsulations LGG | $20-30 | *(Hojsak 2010; Szajewska 2007)* |
+| **Visbiome / VSL#3 (8-strain)** | Heavy-hitter blend for ulcerative colitis remission maintenance. *(Tursi 2010 RCT)* | Multi-strain barrier + immune | 1 sachet 450 billion CFU/day | with cool food | cool food | antibiotics ≥2 h | B (UC) | Visbiome (formerly VSL#3) | $80-150 | *(Tursi 2010; Bibiloni 2005)* |
+| **Sunfiber (partially-hydrolysed guar gum)** | The kind-on-gut prebiotic fibre. *(Polymeropoulos 2014)* | Slow colonic fermentation | 5-10 g/day | AM with water | water | iron ≥2 h | B | Sunfiber, Regular Girl, NOW PHGG | $20-35 | *(Polymeropoulos 2014)* |
+| **Inulin / FOS (slow build only)** | Powerful Bifidobacterium feeder — but mega-dosing causes bloat in many. *(Slavin 2013)* | Bifidobacterium feeder | start 1 g, build to 5 g over 4 weeks | AM with food | water | — | C | NOW inulin, Jarrow FOS | $10-20 | *(Slavin 2013)* |
+| **L. rhamnosus GR-1 + L. reuteri RC-14 (Reid formula)** | Vaginal/urinary microbiome strain — Canadian Reid group. *(Reid 2003 RCT; Anukam 2006)* | Vaginal-urinary colonisation | 1 capsule/day | AM | water | antibiotics ≥2 h | B | Jarrow Fem-Dophilus, RepHresh Pro-B | $15-25 | *(Reid 2003; Anukam 2006)* |
+| **L. helveticus R0052 + B. longum R0175 (Probio'Stick)** | The "psychobiotic" combo — Messaoudi 2011 French RCT showed anxiety reduction. *(Messaoudi 2011 France n=55)* | Vagal-gut-brain | 1 sachet/day | AM | water | antibiotics ≥2 h | C | Probio'Stick, Lallemand-Probio'Stick | $25-40 | *(Messaoudi 2011)* |
+
+### 3.4 What to skip (honest)
+
+> **For you, in plain words.** Generic "30-strain 100-billion CFU" blends with no formulation-specific RCT (most marketing); inulin mega-doses without slow build; "candida cleanse" antifungal stacks without confirmed pathology; parasite cleanses without diagnosis. *(Ford 2018 ACG)*
 
 ## 4. Traditional Medicine Integration
 
-### 4.1 Ayurveda — *Agni* (digestive fire) + *Krimi-roga* (microbial-imbalance) + *Ama* (metabolic toxin)
+### 4.1 Six traditions — at a glance
 
-Described across *Charaka Samhita Vimana Sthana* ch. 7 (*Krimi-Vijnaniya*), *Sushruta Uttara Tantra* ch. 54, *Ashtanga Hridaya Nidana Sthana* ch. 14. *Krimi* = micro-organisms (visible + invisible); *Ama* = undigested/fermented metabolic toxin from low *Agni*. Dosha: typically Vata-Kapha or Pitta imbalance with low *Jathara-agni* + low *Bhuta-agni* + *Ama-pradosha*. Kerala Vaidya lineage (Kottakkal, Vaidyaratnam).
+> **For you, in plain words.** Six traditions cultivated the gut centuries before "microbiome" existed. Ayurveda's Agni and Ojas, Chinese spleen-stomach Li Dongyuan school, Unani temperament-based digestion, Siddha rejuvenatives, Tibetan digestive-fire formulas, and homeopathy classical gut remedies. Many traditional ferments (kanji, dosa batter, idli, kombucha, kvass, kefir, sauerkraut, kimchi, natto, miso) are themselves microbiome interventions. *(Charaka; Li Dongyuan Pi Wei Lun; AYUSH; Sonnenburg-Gardner 2021)*
 
-| Formulation | Indication | Dose | Grade | Source |
+### 4.2 Ayurveda — Agni + Ojas + Rasayana
+
+> **For you, in plain words.** Ayurveda treats the gut as the seat of Agni (digestive fire) and the source of Ojas (vital essence). Rasayanas (Chyawanprash, Brahma rasayana, Triphala), traditional ferments (kanji, dosa batter, idli, takra/buttermilk), and digestive spices (cumin, fennel, ajwain, ginger, turmeric) are the daily microbiome-supporting tools. *(Charaka Chikitsa ch. 1 Rasayana; AYUSH-CCRAS monographs)*
+
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
 |---|---|---|---|---|
-| **Triphala Churna** | Bi-directional microbiome regulator + bowel; rasayana | 3–6 g HS warm water | A | AYUSH monograph; multiple Indian RCTs; *Charaka Sutra Sthana 25* |
-| **Bilwadi Churna** (*Aegle marmelos* unripe + spices) | Anti-amoebic; pitta-grahani; classical Krimi | 3 g BID | T | *Bhavaprakasha*; Baidyanath |
-| **Kutajghan Vati** (*Holarrhena antidysenterica*) | Anti-amoebic; chronic dysentery; pitta IBS-D | 250–500 mg BID | T | *Charaka*; Baidyanath, Himalaya |
-| **Sanjivani Vati** | Broad antimicrobial; food-poisoning recovery; AMA-pachan | 250 mg BID | T | classical; Patanjali |
-| **Avipattikar Churna** | Anti-pitta + bowel regulator | 3 g HS | T | *Sharangdhara*; Baidyanath |
-| **Hingvashtak Churna** | Vata-Kapha digestive fire restoration | 2–3 g pre-meal with ghee | T | *Bhavaprakasha*; Baidyanath |
-| **Trikatu Churna** (ginger + black pepper + Pippali) | Digestive fire; Ama-pachan | 1 g pre-meal | T | *Charaka*; Patanjali |
-| **Vidanga** (*Embelia ribes*) | Classical anti-Krimi (anti-parasitic + anti-microbial) | 1–3 g BID with honey | T | *Charaka* — the primary classical anti-Krimi herb; Baidyanath |
-| **Drakshasava** (raisin-based fermented) | Gentle digestive + rasayana | 15 ml BID | T | *Bhaishajya Ratnavali* |
-| **Pippali Rasayana** | Rasayana for digestive fire | 1–3 g HS | T | *Charaka* Chikitsa 1 |
-| **Punarnava** (*Boerhavia diffusa*) | Hepato-renal + bowel | 1–3 g BID | T | classical |
+| Triphala | Nightly gut and circadian reset — modern reviews suggest prebiotic-like effect. *(AYUSH; Tarasiuk 2018)* | 3-5 g at bedtime | A | *(AYUSH; Tarasiuk 2018)* |
+| Chyawanprash | Classical amla-based rasayana jam — vitamin C + polyphenols + prebiotic. *(Charaka; AYUSH-CCRAS Chyawanprash)* | 1 tsp morning | T | *(Charaka; AYUSH)* |
+| Brahma rasayana | Rejuvenative for gut-brain axis. *(Charaka; Kottakkal)* | 1-2 tsp morning | T | *(Charaka)* |
+| Kanji (fermented rice / mustard-seed drink) | South Indian traditional ferment — wild lactobacilli. *(AYUSH traditional foods; classical preparation)* | 50-100 ml daily | T | *(AYUSH; traditional)* |
+| Takra (cultured buttermilk with cumin) | Daily Ayurvedic ferment — wild lactobacilli + carminative. *(Charaka; AYUSH)* | 100-200 ml daily | T | *(Charaka; AYUSH)* |
+| Dosa batter / Idli (fermented rice-lentil) | South Indian wild-fermented staple — natural probiotic. *(AYUSH; traditional)* | daily intake | T | *(AYUSH; traditional)* |
+| Hingvastak | Carminative for bloat-overlap during rebuild. *(Bhavaprakasha; Kottakkal)* | 2-3 g first bite of meals | T | *(Bhavaprakasha)* |
+| Avipattikar | Cooling for pitta-rebuild after gastritis or antibiotic. *(Sharangdhara; Baidyanath)* | 3-5 g at bedtime | T | *(Sharangdhara)* |
+| Punarnavadi guggulu | Detox-supportive formula during rebuild. *(Bhavaprakasha; Kottakkal)* | 1-2 tabs BID | T | *(Bhavaprakasha)* |
 
-### 4.2 TCM — *Pi Wei* 脾胃 (Spleen-Stomach harmonisation) for microbiome reset
+### 4.3 TCM — Pi-Wei (spleen-stomach) school
 
-Patterns: **Spleen-Qi deficiency with phlegm-damp accumulation** (chronic dysbiosis with bloating + post-prandial weakness) · **Damp-Heat in middle jiao** (post-antibiotic, alcohol, post-spicy; Candida overgrowth pattern) · **Cold-Damp** (raw/cold food + low metabolic fire) · **Liver-Qi invading Spleen** (stress-driven dysbiosis) · **Food stagnation** (acute, overeating). Source *Huang Di Nei Jing*, *Jin Gui Yao Lue*, *Shang Han Lun*, *Tai Ping Hui Min He Ji Ju Fang*, *Pi Wei Lun* Li Dongyuan.
+> **For you, in plain words.** Li Dongyuan (Jin-Yuan dynasty) founded the Pi-Wei school of TCM, focused entirely on rebuilding digestive function. Bu Zhong Yi Qi Tang ("supplement the middle and lift the qi"), Si Jun Zi Tang (four gentlemen), Liu Jun Zi Tang (six gentlemen), and Shen Ling Bai Zhu San are the foundational formulas. *(Li Dongyuan Pi Wei Lun; Tai Ping Hui Min He Ji Ju Fang; Chinese Pharmacopoeia 2020)*
 
-| Formula | Pattern | Dose | Grade | Source |
+| Formula | TL;DR (plain English) | Pattern | Dose | Grade | Citation |
+|---|---|---|---|---|---|
+| Si Jun Zi Tang 四君子湯 | "Four gentlemen" — foundational spleen-qi tonic for rebuilding. *(Tai Ping Hui Min He Ji Ju Fang)* | Spleen-qi deficiency | 6 g granules BID | B | *(Tai Ping Hui Min He Ji Ju Fang)* |
+| Liu Jun Zi Tang 六君子湯 | Six gentlemen — spleen-qi xu + phlegm. *(Tai Ping Hui Min He Ji Ju Fang)* | Spleen-qi xu + phlegm | 6 g granules BID | B | *(Tai Ping Hui Min He Ji Ju Fang)* |
+| Bu Zhong Yi Qi Tang 補中益氣湯 | Li Dongyuan's foundational rebuilding formula. *(Li Dongyuan, Pi Wei Lun)* | Sinking spleen qi | 6 g granules BID | B | *(Li Dongyuan, Pi Wei Lun)* |
+| Shen Ling Bai Zhu San 參苓白朮散 | For chronic gut weakness + loose stool + fatigue. *(Tai Ping Hui Min He Ji Ju Fang)* | Spleen-deficiency damp | 6 g granules BID | B | *(Tai Ping Hui Min He Ji Ju Fang)* |
+| Si Shen Wan 四神丸 | "Four miracle pill" — for chronic spleen-kidney xu loose stool. *(Yi Fang Ji Jie)* | Spleen-kidney xu | 8 pills BID | T | *(Yi Fang Ji Jie)* |
+| Ginseng (Ren Shen) + Astragalus (Huang Qi) tonics | Classical qi-and-immune tonics for ageing microbiome support. *(Shen Nong Ben Cao)* | Qi deficiency | per formula label | T | *(Shen Nong Ben Cao)* |
+| Pao Cai 泡菜 (Chinese fermented vegetable) | Traditional wild-ferment — lactobacilli source. *(Traditional preparation)* | daily | T | *(Traditional)* |
+| Doujiang / Soybean ferment / Natto | East Asian fermented soy — Bacillus subtilis natto. *(Traditional)* | daily | T | *(Traditional; Sumi 2004 nattokinase)* |
+
+### 4.4 Unani
+
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
 |---|---|---|---|---|
-| **Shen Ling Bai Zhu San** 参苓白术散 (Ginseng + Atractylodes + Hoelen + ...) | **Spleen-Qi deficiency — primary microbiome-reset formula** | 6 g BID | A | *Tai Ping Hui Min He Ji Ju Fang*; multiple Chinese RCTs; classical "rebuild Spleen function" |
-| **Si Jun Zi Tang** 四君子汤 (four-gentlemen base) | Spleen-Qi deficiency foundation | 6 g BID | B | classical |
-| **Bu Zhong Yi Qi Tang** 补中益气汤 | Spleen-Qi deficiency + sinking-Qi | 6 g BID | T | Li Dongyuan *Pi Wei Lun* |
-| **Liu Jun Zi Tang** 六君子汤 | Spleen-Qi deficiency + phlegm-damp | 6 g BID | B | *Tai Ping Hui Min He Ji Ju Fang* |
-| **Xiang Sha Liu Jun Zi Tang** 香砂六君子汤 | Spleen-Qi deficiency + bloating | 6 g BID | B | Plum Flower |
-| **Ping Wei San** 平胃散 | Cold-Damp middle jiao; classical Damp-clearing | 6 g BID | T | *Tai Ping Hui Min He Ji Ju Fang* |
-| **Bao He Wan** 保和丸 | Food stagnation reset (acute) | 6–9 g TID for 3–5 days | B | *Dan Xi Xin Fa* |
-| **Xiao Yao San** 逍遥散 | Liver-Qi stagnation (stress dysbiosis) | 6–9 g BID | A | *Tai Ping Hui Min He Ji Ju Fang* |
-| **Wu Mei Wan** 乌梅丸 | Chronic dysbiosis with parasitic component | 6 g BID | T | *Shang Han Lun* |
-| **Tong Xie Yao Fang** 痛泻要方 | Liver-Spleen disharmony + diarrhoea | 6–9 g BID | A | *Jing Yue Quan Shu* |
+| Khamira Marwareed | Pearl-and-rose paste — rejuvenative. *(Hamdard; Avicenna)* | 5-10 g morning | T | *(Hamdard; Avicenna)* |
+| Sharbat-e-Bazoori | Seeds syrup for digestion + bowel regularity. *(Hamdard; Qarabadeen)* | 25 ml BID | T | *(Hamdard; Qarabadeen)* |
+| Itrifal Ustukhuddus | Lavender-and-herb confection for gut-brain axis. *(Hamdard)* | 5-10 g bedtime | T | *(Hamdard)* |
+| Jawarish Jalinoos | Galen's digestive powder for post-meal support. *(Hamdard; Galen)* | 5 g after meals | T | *(Hamdard; Galen)* |
+| Murabba Amla | Amla preserve — vitamin C + polyphenols. *(Hamdard; traditional)* | 10-20 g daily | T | *(Hamdard; traditional)* |
 
-Sourcing: Plum Flower (Mayway, Oakland), Min Tong. Brick-and-mortar — Kamwo Meridian Herbs NYC, Sun Sing Pacific Trading SF.
+### 4.5 Siddha
 
-### 4.3 Unani — *Du'f-e-Hazm* + *Mughas* + *Su'-ul-Mizaj-e-Mi'da*
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
+|---|---|---|---|---|
+| Brahma Rasayanam | Rejuvenative jam for chronic depletion + rebuilding. *(IMPCOPS; Bogar 7000)* | 5-10 g morning | T | *(IMPCOPS; Bogar 7000)* |
+| Nellikai lehyam | Cooling Amla-based jam — vitamin C + polyphenols. *(IMPCOPS, Aimil)* | 5-10 g morning | T | *(IMPCOPS, Aimil)* |
+| Thiripala chooranam | Tamil three-fruit gut-reset. *(IMPCOPS)* | 3-5 g at bedtime | T | *(IMPCOPS)* |
+| Karpoora chooranam | Camphor-cardamom-clove for carminative support during rebuild. *(IMPCOPS)* | 1-2 g post-meal | T | *(IMPCOPS)* |
+| Aaval chooranam | Mustard-based carminative. *(IMPCOPS)* | 1-2 g post-meal | T | *(IMPCOPS)* |
 
-Mizaj: **weak hepato-digestive du'f** with **balghami or saudawi** dominance. Lineage: Hakim Mohammed Said (Hamdard), Dawakhana Tibbiya College Aligarh.
+### 4.6 Tibetan / Sowa Rigpa
 
-| Formulation | Dose | Grade | Source |
-|---|---|---|---|
-| **Jawarish Jalinoos** | 5–10 g post-meal | T | Hamdard; *Qarabadeen Qadri* |
-| **Jawarish Kamooni** (cumin-based) | 5–10 g post-meal | T | Hamdard |
-| **Jawarish Anarain** (pomegranate-based) | 5–10 g post-meal | T | Hamdard |
-| **Itrifal Ustukhuddus** | 5–10 g HS | T | Hamdard |
-| **Khamira Marwareed** | 5 g HS | T | Hamdard |
-| **Sufoof-e-Karminative** | 3–5 g post-meal | T | Hamdard |
-| **Arq-e-Pudina** | 25 ml post-meal | T | Hamdard, Saif Pharmaceuticals |
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
+|---|---|---|---|---|
+| Padma Lax | Swiss-Tibetan EMA-monographed — for transit support during rebuild. *(EMA Padma; Sallon 2002)* | 1-2 capsules bedtime | B | *(EMA Padma; Sallon)* |
+| Se-bru-25 | Pomegranate digestive formula. *(Tibetan Four Tantras; Men-Tsee-Khang)* | per label | T | *(Tibetan Four Tantras)* |
+| Agar-35 | Wind-pacifier for stress-driven dysbiosis. *(Tibetan Four Tantras)* | per label | T | *(Tibetan Four Tantras)* |
 
-### 4.4 Siddha — *Vayu-Vatha-Saaram*
+### 4.7 Homeopathy — honoured tradition, honestly graded
 
-Tamil tradition; only **chooranam (herbal powders), kuzhambu (decoctions), legiyam (semi-solid preparations)** included. **Classical mercurial/metallic chenduram/parpam/mezhugu preparations EXCLUDED.** IMPCOPS Chennai.
+> **For you, in plain words.** Honoured tradition. No robust RCT in microbiome rebuilding. Listed for transparency. *(Boericke; Kent)*
 
-| Formulation | Dose | Grade | Source |
-|---|---|---|---|
-| **Vellarugu Chooranam** (*Centella asiatica*) | 3 g BID | T | IMPCOPS |
-| **Karpooradi Chooranam** | 2–3 g post-meal | T | IMPCOPS |
-| **Triphala Chooranam** (Tamil formulation) | 3–5 g HS warm water | T | IMPCOPS |
-| **Adathodai Manappagu** (legiyam) | 5 g BID | T | IMPCOPS |
-| **Nilavembu Kudineer** (*Andrographis paniculata*) | 30 ml BID | T | IMPCOPS |
-| **Nellikai Legiyam** (amla legiyam) | 5 g HS | T | IMPCOPS |
+| Remedy | TL;DR (plain English) | Keynote | Potency | Grade | Citation |
+|---|---|---|---|---|---|
+| Lycopodium clavatum | Bloat worse 4-8 PM, depletion type. *(Boericke; Kent)* | 4-8 PM bloat | 30C | T | *(Boericke; Kent)* |
+| Carbo vegetabilis | Sluggish depletion with bloat. *(Boericke)* | Sluggish + bloat | 30C | T | *(Boericke)* |
+| China officinalis | Post-fluid-loss weakness (post-gastroenteritis). *(Boericke)* | Post-fluid-loss weakness | 30C | T | *(Boericke)* |
+| Nux vomica | Type-A overworked dysbiosis. *(Boericke)* | Type-A overworked | 30C | T | *(Boericke)* |
+| Calcarea carbonica | Sluggish chilly damp constitution. *(Boericke; Kent)* | Chilly + sluggish | 30C | T | *(Boericke; Kent)* |
 
-> Classical Siddha mercurial preparations require traditional practitioner formulation; **excluded** from this OTC protocol.
+## 5. Biophysical & Mind-Body Interventions
 
-### 4.5 Tibetan / Sowa Rigpa
+### 5.1 What works at home — priority order
 
-Men-Tsee-Khang Dharamsala treats microbiome / gut-imbalance under combined *rlung-bad-kan-mkhris-pa* + *me-drod* (digestive fire) disorders. Source *rGyud-bzhi*.
+> **For you, in plain words.** The single highest-evidence non-dietary lever for microbiome diversity is sleep + exercise + nature exposure. Stool microbiome tests track progress but don't drive the protocol. *(Smith 2019; Allen 2018; Vatanen 2016)*
 
-- **Aru-7** (7-herb formula for *bad-kan*) — Grade T
-- **Sug-mel 11** (cardamom-based digestive fire) — Grade T
-- **Se-bru 5** (pomegranate-based) — Grade T
-- **Agar-35** (broad systemic + nervous) — Grade T
-- **Padma 28** (broad systemic; EMA-approved Padma AG) — Grade B
+### 5.2 At-home stool microbiome tests
 
-Sourcing: Men-Tsee-Khang Dharamsala mail-order.
+> **For you, in plain words.** Viome, ZOE, Sun Genomics, Atlas Biomed sequence your stool and give a report. **Interpretive, not diagnostic** — useful for direction and motivation. Repeat at 6 and 12 months. *(Microbiome landscape 2024)*
 
-### 4.6 Homeopathy
+**Options.**
+- **Viome Health Intelligence** ($199-$399): RNA-seq based; personalised food recommendations.
+- **ZOE** ($299 + $59/month, UK/AU/US/CA): combines microbiome + blood-fat + glucose; PREDICT-cohort-validated.
+- **Sun Genomics Floré** ($249): stool + custom probiotic.
+- **DayTwo** ($199): glucose-microbiome integration.
+- **Atlas Biomed** (UK/EU, £149): 16S sequencing.
 
-> *Homeopathy is honoured under the founder's mandate to explore all directions of alternative medicine. Modern evidence is contested; entries are presented as a documented tradition (Tier 3), not as clinical proof.*
+### 5.3 Sleep — non-negotiable
 
-| Remedy | Indication / keynote | Typical potency | Grade |
-|---|---|---|---|
-| **Nux Vomica** | Stress-dysbiosis; coffee + alcohol user; sedentary | 30C | T |
-| **Lycopodium Clavatum** | Bloating + dysbiosis + sweet craving + 4–8 PM aggravation | 200C | T |
-| **Sulphur** | Chronic dysbiosis + morning urge + offensive flatus | 30C | T |
-| **Carbo Vegetabilis** | Bloating + belching + dysbiosis | 30C | T |
-| **Arsenicum Album** | Burning + restless anxiety + food-poisoning recovery | 30C–200C | T |
-| **China officinalis (Cinchona)** | Post-antibiotic weakness + bloating + flatulence | 30C | T |
-| **Pulsatilla** | Dysbiosis after fatty foods; weepy temperament | 30C | T |
-| **Mercurius Sol** | Recurrent oral or gut Candida with offensive | 30C | T |
-| **Candida albicans nosode** | Post-antibiotic Candida overgrowth | 30C–200C | H |
-| **Bacillinum nosode** | Recurrent gut/respiratory dysbiosis | 30C–200C | H |
+> **For you, in plain words.** Sleep deprivation directly shifts microbiome toward less diverse + more inflammatory profile. 7-9 hours nightly + consistent sleep-wake timing + cool dark room. *(Smith 2019; Konturek 2011 circadian-gut)*
 
-Citations: Boericke W., *Pocket Manual of Homeopathic Materia Medica*; Allen H.C., *Keynotes and Characteristics*; Kent J.T., *Repertory*. CCRH publishes microbiome / chronic-dysbiosis case-series under AYUSH.
+### 5.4 Exercise — Zone 2 + strength
 
-## 5. Biophysical Interventions — home-administered only
+> **For you, in plain words.** Moderate exercise (Zone 2 cardio + strength) raises microbial diversity in athletes vs sedentary controls (Allen 2018, n=32 rugby athletes vs controls). Over-training paradoxically lowers it. *(Allen 2018; Clarke 2014 Ireland athlete-microbiome)*
 
-**Gut domain — every device is consumer-purchasable and self-administrable. No clinic-based FMT (acknowledged as appropriate medical care for diagnosed C. difficile outside protocol scope), no clinic colonoscopy as protocol requirement, no hospital admission.**
+### 5.5 Nature exposure — the soil + forest layer
 
-**5.1 Time-restricted eating (TRE) — primary biophysical, zero-cost.** 14:10 or 16:8 overnight fast restructures microbiome composition (German + Israeli + Spanish RCTs document Akkermansia + Lactobacillus increase, Bacteroidetes:Firmicutes shift). Eating window 09:00–19:00 or 10:00–18:00. **CAUTIONS**: not for hypothyroid (worsens), not for HPA-axis depleted, not for underweight, not in pregnancy/breastfeeding, not in active eating disorder.
+> **For you, in plain words.** Time outdoors, garden hands in soil, pets in the house, walks in forests — all measurably add environmental microbes back to the modern over-sanitised gut. *(Hanski 2012 nature-microbiome; Vatanen 2016)*
 
-**5.2 Consumer Vagal Nerve Stimulation (VNS).** **Nurosym** — transcutaneous auricular VNS at tragus / cymba conchae. 30 min daily PM. Restores parasympathetic tone → brain-gut axis → microbiome composition (preliminary data). Cost £400–600. Alternative: **Sensate**, **Pulsetto** — $250–400.
+### 5.6 Stress regulation
 
-**5.3 HRV biofeedback** — HeartMath Inner Balance, Lief, Oura/Whoop/Polar HRV. 10 min daily.
+> **For you, in plain words.** Chronic stress shifts microbiome toward dysbiotic profile via HPA-axis-cortisol-mediated gut-barrier changes. Daily slow-paced breathing, meditation, HRV biofeedback. *(Bonaz 2018; Lehrer 2014)*
 
-**5.4 Castor oil pack — classical biophysical, zero-cost.** Cold-pressed organic castor oil on flannel pack over abdomen, 45–60 min, 3×/week.
+### 5.7 Sauna + cold immersion (autonomic + heat-shock)
 
-**5.5 Home infrared sauna** (Sunlighten, JNH, Clearlight, Higher Dose) — 50–60 °C, 20–30 min, 3×/week. Sweat-mediated chemical elimination + vagal restoration.
+> **For you, in plain words.** Heat-shock and cold-shock proteins support gut barrier and have small microbiome signals. Sunlighten, HigherDOSE blanket; Plunge tub. *(Laukkanen 2018; Hot tub data)*
 
-**5.6 Home cold immersion / cold-water face splash.** 2–4 min immersion or 10-second face splash. Vagal afferent stimulus.
+### 5.8 What to skip
 
-**5.7 Photobiomodulation (660 nm + 810–850 nm NIR) — abdominal panel.** 10 J/cm² per session, 15–20 min, 5×/week. Devices: MitoMID, Joov Solo, Hooga. Timing 20:00.
-
-**5.8 Abdominal self-massage (Ila / Chi Nei Tsang).** Clockwise abdominal massage 5–10 min, AM on empty stomach, with castor oil or sesame oil.
-
-**5.9 Soil exposure + nature contact (hygiene-hypothesis intervention).** Daily 20–30 min outdoor walk in natural environments (parks, forests, gardens — not city streets); gardening with hands in soil 2×/week; dog ownership (microbiome diversifier); avoiding excessive sanitisation; rural-equivalent grounding. Finnish + German + Estonian "rewilding" microbiome research.
+> **For you, in plain words.** "Colon cleanse" hydrotherapy (no microbiome support; mucosal trauma), high-dose inulin without slow build (massive bloat), parasite cleanses without diagnosis, "candida diets" without confirmed pathology, frequent unnecessary antibiotics. *(Dethlefsen-Relman 2011)*
 
 ## 6. Dietary Protocol
 
-### 6.1 Mandatory foods (daily gram quantities — focus on diversity)
+### 6.1 Eat the 30-plants Mediterranean-MIND-millet base
 
-- **30+ plant foods per week** (Spector / ZOE / British Gut Project benchmark) — track in app or notebook
-- **Sprouted Siri Dhanyalu** (foxtail + barnyard + kodo + little + browntop millet rotation): **60–80 g cooked**
-- **Cooked + raw mixed vegetables** — at least 5 colours/day (anthocyanins, carotenoids, sulforaphanes, polyphenols): **400–500 g total**
-- **Bone broth** (12 h slow-cooked): **300–500 ml/day** — gut barrier
-- **Fermented foods** (rotate — caution histamine if MCAS): **50–100 g daily** — sauerkraut, kimchi, kanji, water kefir, coconut kefir, kombucha, miso, tempeh
-- **Pomegranate** (fresh seeds): **100 g/day** — Akkermansia-feeding ellagitannins
-- **Cranberry** (unsweetened juice 100 ml OR fresh berries 50 g): **daily** — Akkermansia + UTI prophylaxis
-- **Green tea**: **2–3 cups/day** — Akkermansia + EGCG polyphenol
-- **Coffee** (filtered, organic): **1–2 cups before 14:00** — polyphenol + microbiome diversifier (German + Spanish studies)
-- **Dark chocolate** (>85% cacao, 10–20 g): **daily** — flavanols
-- **Extra-virgin olive oil**: **30–45 ml/day** — polyphenols, oleocanthal
-- **Fresh herbs and spices** (turmeric, ginger, cinnamon, oregano, thyme, rosemary, basil — rotate daily): **5–10 g total**
-- **Red onion + capers + olives** (Italian/Mediterranean polyphenols): **30 g/day if tolerated**
-- **Berries** (rotate blueberry, raspberry, strawberry, blackberry, blackcurrant): **100 g/day**
-- **Cooked + cooled rice, potato, green banana** (resistant starch): **80–100 g/day**
-- **Whole legumes** (rotate: black bean, chickpea, lentil, mung, kidney): **80 g/day** if tolerated
-- **Whole oats** (steel-cut, soaked overnight): **50 g/day**
-- **Cooked cruciferous** (broccoli, cauliflower, cabbage, kale, brussels sprout, bok choy): **150 g/day**
-- **Cooked alliums** (leek, scallion, onion, garlic if tolerated): **50 g/day**
-- **Asafoetida (Hing)** in cooking — replaces garlic/onion in low-FODMAP phase if needed
-- **Cumin + fennel + coriander + ajwain CCF tea** (1 tsp each): post-meal
-- **Wild oily fish** (sardines, mackerel, anchovies, salmon — fresh/frozen): **120 g 3×/week**
-- **Pasture-raised eggs**: **2/day**
-- **Lactose-free / A2 fermented dairy** (if tolerated) OR coconut/oat milk
-- **Mushrooms** (shiitake, oyster, lion's mane, reishi rotation): **50 g/day** — beta-glucans
+> **For you, in plain words.** A 30+ plants per week Mediterranean-MIND-Indian millet hybrid + 6 servings of fermented foods per week. Variety of fibre + ferments is the single most evidence-backed dietary lever. *(McDonald 2018 AGP; Sonnenburg-Gardner 2021; Estruch 2018 PREDIMED)*
 
-### 6.2 Absolutely avoid (with molecular rationale)
+**Quick-start summary.** Count 30+ different plant foods per week. Add one fermented food daily (yogurt, kefir, kimchi, sauerkraut, kombucha).
 
-| Food / Class | Molecular reason |
-|---|---|
-| **Refined sugar, HFCS, sweetened beverages** | Feeds Candida + Klebsiella + Proteus; dysbiosis driver |
-| **Refined wheat (white bread, pasta, pastries)** | Low fibre + gluten → zonulin → permeability |
-| **Industrial seed oils** (corn, soy, sunflower, safflower, canola) | ω-6 inflammation; barrier injury |
-| **A1 β-casein dairy (mainstream)** | β-casomorphin-7 inflammation; switch A2/coconut/oat |
-| **Alcohol** | Direct gut barrier disruption + dysbiosis + mast-cell |
-| **Ultra-processed foods, emulsifiers** (CMC, polysorbate-80, carrageenan) | Bonn + French INSERM cohorts — direct barrier erosion, mucin thinning |
-| **Sugar alcohols high-dose** (erythritol high-dose, xylitol) | Microbiome shift; osmotic |
-| **Artificial sweeteners** (aspartame, sucralose, saccharin) | Israeli + German research — direct dysbiosis induction |
-| **Carbonated beverages with phosphoric acid** | Gas + Ca depletion |
-| **Late-night eating after 20:00** | Disrupts microbiome circadian rhythm |
-| **Snacking between meals** | Constant gastric activity + reduces fasting window |
-| **Mono-diet / repetitive eating** | Reduces microbial diversity directly |
-| **Chronic restrictive diets (paleo, keto, carnivore long-term)** | Fibre depletion → microbial diversity collapse |
-| **Pesticide-laden produce** | Glyphosate documented anti-Lactobacillus effect (German + Indian research) |
+### 6.2 Mandatory foods — daily grams
 
-### 6.3 Preparation methodology
+- **TL;DR.** 30+ different plants per week (vegetables, fruits, whole grains, legumes, nuts, seeds, herbs, spices). *(McDonald 2018 AGP)*
+- **TL;DR.** Leafy greens (rotate spinach, kale, chard, methi, rocket, watercress) — 250 g/day. *(Mediterranean studies)*
+- **TL;DR.** Cruciferous (broccoli, cauliflower, cabbage, brussels) — 150 g/day (steamed if hypothyroid). *(Bischoff 2017 cruciferous-gut)*
+- **TL;DR.** Coloured vegetables (carrot, beet, peppers, sweet potato) — 200 g/day for polyphenol diversity. *(EPIC polyphenol)*
+- **TL;DR.** Berries (blueberry, strawberry, raspberry, blackberry) — 150 g/day for polyphenols. *(Norfolk EPIC anthocyanin)*
+- **TL;DR.** Legumes (lentil, chickpea, mung, kidney) — 60-100 g cooked/day (soak + rinse). *(David 2014 Nature)*
+- **TL;DR.** Whole grains rotation (quinoa, buckwheat, millets, oats, barley) — 60-80 g cooked/day. *(MIND-millet hybrid; ICAR-IIMR)*
+- **TL;DR.** Nuts + seeds rotation (almond, walnut, pumpkin, sunflower, flax, chia, sesame) — 30 g/day. *(USDA SR-28)*
+- **TL;DR.** Wild oily fish — 150 g, 3-4×/week. *(UK SACN)*
+- **TL;DR.** Pasture eggs — 2/day. *(Vital Farms)*
+- **TL;DR.** Extra-virgin olive oil — 30 ml/day. *(PREDIMED)*
+- **TL;DR.** Fermented foods daily rotation — yogurt OR kefir OR sauerkraut OR kimchi OR kombucha OR kanji OR takra. *(Sonnenburg-Gardner 2021)*
+- **TL;DR.** Herbs and spices for diversity (turmeric, ginger, cumin, cinnamon, garlic, fennel, ajwain, coriander, parsley, basil). *(EMA monographs; polyphenol diversity)*
+- **TL;DR.** Filtered water — 2.5-3 L/day. *(WHO drinking-water)*
+- **TL;DR.** Optional: small dark chocolate ≥85% — 15-20 g/day for polyphenols. *(Heiss cocoa flavanol)*
 
-**Sprouting protocol** (millets, mung, Bengal gram, chickpea): rinse → soak filtered water 8–10 h → drain → cover in muslin → 25–28 °C for 12–18 h. Improves bioavailability + adds Lactobacillus.
+### 6.3 Absolutely avoid
 
-**Fermentation protocol** (sauerkraut, kimchi, kanji, water kefir, coconut kefir): home-fermentation 7–14 days; rotate vegetables for diversity; refrigerate when sour. Caution histamine if MCAS sub-type.
+> **For you, in plain words.** Ultraprocessed foods, frequent antibiotics, excess alcohol, artificial sweeteners (Suez 2014 microbiome disruption), emulsifiers (Chassaing 2015 Nature CMC/polysorbate-80), industrial seed oils, high sugar. *(Suez 2014; Chassaing 2015; David 2014)*
 
-**Bone broth (12 h):** grass-fed beef knuckle + chicken feet + 2 tbsp ACV + filtered water + aromatic veg → low simmer 12 h → strain → refrigerate. Glycine + glutamine + collagen.
-
-**Resistant starch generation**: cook rice/potato → cool overnight in refrigerator → re-warm next day. Generates ~3% resistant starch from previously digestible starch.
-
-**CCF tea (cumin-coriander-fennel)**: 1 tsp each in 500 ml water, simmer 5 min, sip throughout day.
-
-**Polyphenol pairing**: green tea + lemon (vitamin C protects EGCG); turmeric + black pepper + ghee; pomegranate-cranberry juice mix; olive-oil-on-vegetables (lipophilic polyphenol absorption).
-
-**Meal ordering**: protein + fibre + fat FIRST, then carbohydrate.
-
-**Mindful eating**: chew 20–30× per bite, no screens; sit 10 min after meal.
-
-### 6.4 Seven-day meal plan (gram quantities, diversity-focused)
-
-| Day | Breakfast 09:00 (+ Combo 1) | Lunch 13:00 (+ Combo 2) | Dinner 18:00 (+ Combo 3) |
+| Food / class | TL;DR (plain English) | Molecular reason | Citation |
 |---|---|---|---|
-| **1 Mediterranean** | 50 g oats + 15 g flax + 100 g berries + coconut yoghurt 100 g + 10 g dark chocolate + green tea | 80 g chickpea + 200 g cooked Mediterranean veg (zucchini, summer squash, red bell pepper) + 80 g brown rice + 30 ml olive oil + 100 g sardines + 30 g feta + 30 g olives | 60 g khichdi + 150 g cooked greens + sauerkraut 50 g + ginger-fennel tea + pomegranate 100 g |
-| **2 South Asian** | 50 g sprouted moong dosa + ghee + coconut chutney + filter coffee with A2 milk + 1 banana | 80 g sprouted moong + 150 g cooked methi + 80 g rice + 100 g chicken + bone broth 300 ml + kanji 50 ml | 60 g barnyard khichdi + 150 g cooked greens + chamomile-fennel tea + 100 g pomegranate |
-| **3 East Asian** | Miso soup 200 ml + 2 eggs + 50 g brown rice + nori + kimchi 50 g + green tea | 100 g salmon + 200 g cooked Asian greens (bok choy, choy sum) + 80 g rice + shiitake 50 g + miso glaze | 60 g khichdi + 150 g cooked greens + kombucha 100 ml + ginger tea |
-| **4 Polyphenol** | 50 g oats + 15 g flax + 100 g blueberry + 50 g pomegranate seeds + 30 g walnut + green tea | 100 g grass-fed beef + 200 g cooked cruciferous + 80 g rice + 30 ml olive oil + capers 10 g + red onion 30 g | 60 g khichdi + 150 g cooked greens + sauerkraut 50 g + CCF tea + 100 g cranberry |
-| **5 Marine ω-3** | Coconut yoghurt 100 g + 100 g berries + 15 g chia + green tea | 120 g mackerel + 200 g cooked spinach + 80 g rice + olive oil + bone broth | 60 g khichdi + 150 g cooked greens + kimchi 50 g + dark chocolate 10 g |
-| **6 Legume/diversity** | 50 g oats + 100 g berry mix + coconut yoghurt + filter coffee | 100 g lentil dal + 100 g black bean + 200 g cooked vegetables (5 colours) + 80 g rice + ghee + pickled vegetables 50 g | 60 g khichdi + 150 g cooked greens + water kefir 100 ml + fennel tea |
-| **7 Rest day light** | Bone broth 500 ml + ginger tea + 50 g oats + 2 eggs | 100 g chicken + 200 g cooked greens + 80 g rice + olive oil + bone broth | Light khichdi 60 g + cooked greens 150 g + sauerkraut 50 g + CCF tea + 100 g pomegranate |
+| Ultraprocessed foods (UPF) | Direct measurable diversity collapse. *(Martínez Steele 2017)* | Multifactorial harm | *(Martínez Steele 2017; David 2014)* |
+| Frequent broad-spectrum antibiotics | Long-term diversity loss. *(Dethlefsen-Relman 2011)* | Direct kill | *(Dethlefsen-Relman 2011)* |
+| Artificial sweeteners (sucralose, aspartame, saccharin) | Direct microbiome disruption — Suez 2014 Nature. *(Suez 2014)* | Microbiome shift + glucose intolerance | *(Suez 2014)* |
+| Emulsifiers (CMC, polysorbate-80) | Chassaing 2015 Nature — direct mucus layer disruption. *(Chassaing 2015)* | Mucus layer disruption | *(Chassaing 2015)* |
+| Industrial seed oils (corn, soy, canola in bulk) | Omega-6 inflammation + microbiome shift. *(Simopoulos 2002)* | Inflammation | *(Simopoulos 2002)* |
+| High refined sugar / HFCS | Drives Proteobacteria expansion. *(Magnusson 2015)* | Bacterial shift | *(Magnusson 2015)* |
+| Excess alcohol | Direct dysbiosis. *(WHO alcohol 2018)* | Direct toxicity | *(WHO 2018)* |
+| Trans fats | Direct inflammation. *(EU trans-fat ban)* | Inflammation | *(EU)* |
+| Chronic NSAIDs | Gut-lining damage. *(Bjarnason 2018)* | Lining damage | *(Bjarnason)* |
+| Long-term PPI without indication | SIBO + B12 loss. *(Lam 2013)* | SIBO | *(Lam 2013)* |
+| Antibacterial soaps + over-sanitisation | Triclosan and over-sterilisation. *(Vatanen 2016)* | Environmental microbe loss | *(Vatanen 2016)* |
+| Pesticide residues (glyphosate-treated foods) | Some animal data; precaution; choose organic where possible. *(EFSA glyphosate)* | Theoretical | *(EFSA)* |
 
-**Phase 1 (Weeks 1–4) — Antimicrobial Phase (if dysbiosis severe / Candida overgrowth)**: layer caprylic acid + oregano + berberine + S. boulardii; reduce fermented foods temporarily; reduce sugar to <25 g/day.
+### 6.4 Preparation methodology
 
-**Phase 2 (Weeks 5–12) — Reseeding + Diversification**: Pendulum Akkermansia + multi-strain + spore-based + fibre rotation + 30+ plant foods/wk + fermented foods re-introduced + polyphenol focus.
+> **For you, in plain words.** Cook-and-cool starches (resistant starch), soak + sprout grains/legumes, ferment slowly (kanji, sauerkraut, kefir, dosa batter), gentle steam cruciferous, bone broth, ghee-temper. *(AYUSH Annapurna; Birt 2013; traditional)*
 
-**Phase 3 (Months 3–12) — Sustainability + Long-term**: maintain 30+ plant foods/wk + Triphala HS + maintenance Akkermansia 3×/wk + seasonal millet rotation + travel-kit (S. boulardii + Iberogast for travel resilience).
+### 6.5 Seven-day meal plan (diversity-loaded)
 
-Maintain daily: 30+ plant foods/wk tracking, 200–400 g cooked vegetables, 300 ml bone broth, polyphenol foods, fibre rotation, ginger pre-meal, CCF tea, 4–5 h between meals, 14-h overnight fast.
+> **For you, in plain words.** A 7-day rotation deliberately hitting 30+ plants per week + a fermented food daily. *(McDonald 2018; Sonnenburg-Gardner 2021)*
 
-### 6.5 Environmental & occupational triggers to eliminate
+| Day | TL;DR (plain English) | Breakfast | Lunch | Dinner |
+|---|---|---|---|---|
+| 1 Greens + ferment | Spinach + kefir day; 5-7 plants. *(Sonnenburg-Gardner)* | Smoothie: spinach + kefir + blueberries + flax + walnuts | 150 g sardines + spinach + cooled potato + olive oil + sauerkraut | 70 g quinoa + chard + lentils + ghee + tulsi tea |
+| 2 Cruciferous + ferment | Cruciferous + kimchi day; +5-7 plants. *(Bischoff 2017)* | 2 eggs + steamed broccoli + sweet potato + pumpkin seeds | 150 g chicken + cabbage + carrots + olive oil + kimchi | Bone broth + 70 g barley + cauliflower + chickpea |
+| 3 Mediterranean + ferment | Med-pattern + Greek yogurt; +5-7 plants. *(PREDIMED)* | 2 eggs + tomato + cucumber + olives + Greek yogurt | 150 g salmon + 250 g salad + chickpea + EVOO | 70 g millet + courgette + pepper + Greek yogurt |
+| 4 Indian millet + ferment | Indian-style + kanji + dosa batter; +5-7 plants. *(ICAR-IIMR millet; AYUSH)* | Idli (dosa-fermented) + sambar + coconut chutney | 70 g foxtail millet khichdi + methi greens + buttermilk takra | 70 g kodo millet + bitter gourd + amla + kanji |
+| 5 Marine omega-3 + ferment | Sardine + kombucha; +5-7 plants. *(UK SACN)* | Sardine on whole-grain rye toast + greens + kombucha | 120 g anchovy salad + lettuce + carrot + olive oil + quinoa | Bone broth + 70 g brown rice + chard + miso |
+| 6 Polyphenol + ferment | Berry + cocoa + kefir; +5-7 plants. *(Heiss; Norfolk EPIC)* | Smoothie: berries + cocoa + kefir + collagen | 150 g grilled fish + 250 g rainbow salad + EVOO + sauerkraut | 70 g rice + spinach + lentils + buttermilk |
+| 7 Reset + plant variety audit | Light early dinner + count week's plants. *(AYUSH)* | Light: 2 eggs + greens + berries | Bone broth + 50 g chicken + cooked rice + greens + kefir | Earliest dinner 18:00; bone-broth-based |
 
-- **Antibiotic overuse** — single courses substantially shift microbiome 6–12 months; if essential, layer S. boulardii + multi-strain + spore-based + restart full probiotic 2 weeks post-antibiotic.
-- **Chronic PPI use** — major SIBO / dysbiosis driver; encourage taper.
-- **Chronic NSAID use** — direct gut barrier injury.
-- **Glyphosate-laden produce** — documented anti-Lactobacillus effect; buy organic when possible.
-- **Chronic stress / unresolved trauma** — vagal hypotonia + microbiome dysbiosis (German + Belgian research). Address via Yoga Nidra, hypnotherapy, CBT app.
-- **Sleep deprivation (<7 h)** — disrupts microbiome circadian rhythm.
-- **Shift work** — major microbiome disruptor (Israeli + German studies).
-- **Antibiotic-fed animal protein** — choose pasture-raised, antibiotic-free.
-- **Chlorinated tap water** — chronic chlorine kills beneficial flora; install RO or activated-carbon (Berkey, Aquasana).
-- **Fluoride mouthwash chronic** — oral microbiome disruption upstream of gut.
-- **Wide-spectrum disinfectants** (triclosan, quaternary ammoniums) — household microbiome dysbiosis. Swap for vinegar + lemon + diluted soap.
-- **Excessive sanitisation (especially in children)** — hygiene hypothesis; reduces microbial exposure diversity.
-- **Indoor sedentary lifestyle** — reduces environmental microbial exposure.
-- **Plastic food storage, microwaving plastic** — BPA, phthalates → dysbiosis. Switch to glass/steel/ceramic.
-- **Pesticide residues** — buy EWG Dirty Dozen organic.
-- **Mould exposure** — drives MCAS overlay + dysbiosis; ERMI/HERTSMI-2 test if recurrent flare correlates with home.
-- **C-section / non-breastfed early life** — known microbiome-establishment factors (acknowledged for adults seeking reset to compensate).
-- **Artificial sweeteners** (aspartame, sucralose, saccharin) — direct dysbiosis.
+**Weekly plant count check:** spinach, kale, chard, broccoli, cauliflower, cabbage, sweet potato, carrot, cucumber, tomato, courgette, pepper, methi, bitter gourd, lettuce, rocket, lentils, chickpea, mung, oats, quinoa, millet (foxtail/kodo/barnyard), barley, rice (brown), buckwheat, walnut, almond, pumpkin seed, sunflower seed, flax, chia, sesame, blueberry, strawberry, raspberry, amla, olive, ginger, turmeric, cumin, fennel, ajwain, garlic, coriander, parsley, basil, tulsi, cocoa, coffee, tea — easily 40+ if you rotate.
 
-### 6.6 Cofactor / micronutrient floor
+### 6.6 Environmental & occupational triggers
 
-| Cofactor | Why for microbiome | Target/day | Food | Supplement | Antagonist |
+- **TL;DR.** Chronic stress — psychobiotic strain + breath work. *(Bonaz 2018)*
+- **TL;DR.** Shift work / irregular sleep — disrupts microbiome circadian rhythm. *(Konturek 2011)*
+- **TL;DR.** Long-term PPI use — SIBO risk; consider self-managed taper. *(Lam 2013)*
+- **TL;DR.** Frequent antibiotics — diversity loss; rebuild with S. boulardii. *(McFarland 2010)*
+- **TL;DR.** Chronic NSAID use — gut-lining damage. *(Bjarnason 2018)*
+- **TL;DR.** Over-sanitisation — get hands in soil, get a pet, walk in nature. *(Vatanen 2016; Hanski 2012)*
+- **TL;DR.** Chlorinated water in excess — consider filter (chlorine kills bacteria). *(WHO drinking-water; precaution)*
+- **TL;DR.** Endocrine-disrupting plastics, mould — switch to glass; HEPA-carbon. *(EFSA BPA 2023)*
+- **TL;DR.** Antibacterial soaps + triclosan — switch to plain soap. *(EFSA triclosan)*
+- **TL;DR.** Excess alcohol — directly disrupts. *(WHO 2018)*
+
+### 6.7 Cofactor / micronutrient floor
+
+| Cofactor | TL;DR (plain English) | Target/day | Food | Supplement | Antagonist | Citation |
+|---|---|---|---|---|---|---|
+| Methyl-B12 | Often low post-antibiotic, PPI, age 65+. *(Health Canada B12)* | 1000-2000 µg sublingual if low | sardines, eggs | Jarrow Methyl B12 | metformin, PPI | *(Health Canada B12)* |
+| Vitamin D3 + K2 | Low diversity often paired with low vit D; target 40-60 ng/mL. *(EMA vit D)* | 4000 IU + 100 µg | sunlight, sardines | Thorne D/K2 | fat + Mg | *(EMA vit D)* |
+| Magnesium glycinate | Sleep + gut barrier support. *(Health Canada Mg)* | 200-400 mg | seeds, greens | Doctor's Best | quinolones ≥4 h | *(Health Canada)* |
+| Zinc | Gut-barrier and immune; supplement only if low. *(Health Canada Zn)* | 15-30 mg if low | seeds, oysters | Thorne Zn picolinate | iron ≥2 h; +Cu 1-2 mg | *(Health Canada Zn)* |
+| Iron (only if ferritin <30) | Measure first; iron impairs gut microbiome if oversupplemented. *(WHO ferritin)* | only if low | red meat, liver | Floradix, Solgar Gentle | ≥2 h tea, Ca, Zn | *(WHO ferritin)* |
+| Omega-3 EPA + DHA | Anti-inflammatory + gut barrier. *(UK SACN)* | 2-3 g (≥1 g DHA) | sardines | Nordic Naturals ProDHA | — | *(UK SACN)* |
+| Vitamin A | Gut barrier and immune. *(EMA vit A)* | 3000-5000 IU | cod-liver oil | Nordic Naturals cod-liver | excess in pregnancy | *(EMA vit A)* |
+| Polyphenol diversity (food-based) | Cocoa, berries, olive oil, tea, herbs — feed Akkermansia muciniphila. *(Anhê 2015 cranberry-Akkermansia)* | daily food rotation | berries, cocoa, tea, herbs, EVOO | food-first | — | *(Anhê 2015; Roopchand 2015)* |
+
+## 7. Lifestyle / Mind-Body Anchors
+
+### 7.1 The mind-body map at a glance
+
+> **For you, in plain words.** Yoga, breath work, sleep hygiene, exercise, nature exposure — every entry mapped to a §2 lever. *(Bonaz 2018; Allen 2018; Vatanen 2016)*
+
+### 7.2 Yoga — diversity-supporting
+
+| Asana | TL;DR (plain English) | Lever | Duration | Time | Caution | Citation |
+|---|---|---|---|---|---|---|
+| Pavanamuktasana | Knee-to-chest — gut motility. *(AYUSH)* | §2.7 | 1-2 min | AM | — | *(AYUSH)* |
+| Bhujangasana (cobra) | Spinal extension + diaphragm. *(AYUSH)* | §2.7 | 5 reps | 07:00 | — | *(AYUSH)* |
+| Marichyasana III (seated twist) | Gentle abdominal compression. *(Iyengar)* | §2.7 | 1 min/side | 07:00 | Skip in flare | *(Iyengar)* |
+| Supta Baddha Konasana | Restorative — opens belly. *(Iyengar)* | §2.7 | 5-10 min | 22:00 | — | *(Iyengar)* |
+| Surya Namaskar | Sun-salutation full-body. *(AYUSH)* | §2.7 | 6-12 rounds | 07:00 | Build gradually | *(AYUSH)* |
+| Shavasana + Yoga Nidra | Yogic sleep. *(Bihar Yoga Nidra)* | §2.7 | 10-30 min | 22:00 | — | *(Bihar)* |
+
+### 7.3 Pranayama
+
+| Technique | TL;DR (plain English) | Lever | Duration | Time | Citation |
 |---|---|---|---|---|---|
-| **Zinc carnosine (PepZin GI)** | Barrier; secretory IgA; epithelial repair | 75 mg BID × 8 wk; then 75 mg/day | pumpkin seed, oysters, beef | Doctor's Best PepZinGI | ≥2 h iron/Ca; Zn:Cu 8–15:1 |
-| **L-glutamine** | Enterocyte fuel; barrier | 5–10 g/day | bone broth, cabbage | Pure Encaps L-glutamine | — |
-| **L-glycine** | Bile production; barrier; sleep | 3–5 g HS | bone broth, gelatin | Thorne Glycine | — |
-| **Vitamin A** (cod-liver oil retinol) | Mucin synthesis; secretory IgA | 5000–10000 IU | cod-liver, liver, egg yolk | Rosita CLO, NOW Cod Liver Oil | balance with D3; ≥2 h iron |
-| **Vitamin D3 + K2** | Treg; tight junction integrity | 4000 IU + 100 µg K2 | sun, fatty fish, cod-liver | Thorne D/K2 | fat-meal + Mg cofactor |
-| **Magnesium glycinate** | Smooth-muscle, vagal, sleep | 300–400 mg | pumpkin seed, leafy greens | Doctor's Best Mg glycinate | split AM/PM with Ca |
-| **Methyl-B12** | Often deficient if PPI/low acid | 1000 µg sublingual | sardines, eggs, beef | Jarrow sublingual | — |
-| **Methylfolate (5-MTHF)** | Methylation; mucin synthesis | 400–800 µg | leafy greens, lentils | Pure Encaps | — |
-| **B6 (P-5-P)** | Cofactor synthesis | 25–50 mg | salmon, banana | Thorne P-5-P | — |
-| **Vitamin C** | Barrier; mast-cell stabilisation | 1–2 g divided doses | amla, lemon, kakadu plum | NOW C, Pure Encaps Buffered C | — |
-| **Iron** (only if ferritin <30) | check; over-iron worsens dysbiosis | measure first | red meat, pumpkin seed | Solgar Gentle Iron (bisglycinate) | ≥2 h tea/Ca/Zn/Cu/thyroid |
-| **Choline** | Bile flow; gut barrier | 425–550 mg | egg yolk, liver, sunflower lecithin | Thorne PC | — |
-| **Selenium** | GPX, thyroid | 100–200 µg | 2 Brazil nuts | Solgar 200 µg | toxic >400 µg |
-| **Omega-3 EPA/DHA** | Anti-inflammatory; mucosal | 2 g EPA+DHA | sardines, mackerel | Nordic Naturals, Carlson | warfarin caution |
-| **Polyphenol diversity** | Akkermansia-feeding | 500–1000 mg total | pomegranate, cranberry, green tea, berries, olive oil | dietary primarily | iron (≥2 h) |
+| Slow paced breathing (5-6 bpm) | Vagal tone supports microbiome via brain-gut axis. *(Lehrer 2014; Bonaz 2018)* | §2.7 | 10 min | 06:30 + pre-meal + 22:00 | *(Lehrer; Bonaz)* |
+| Bhramari (humming) | Vagal stimulation. *(S-VYASA)* | §2.7 | 5-10 min | 06:30 + 22:00 | *(S-VYASA)* |
+| Nadi Shodhana | Alternate-nostril balance. *(AYUSH)* | §2.7 | 10 min | 06:30 | *(AYUSH)* |
+| 4-7-8 (Dr Weil) | Long-exhale pre-meal vagal primer. *(Weil)* | §2.7 | 4 rounds | pre-meal + bedtime | *(Weil)* |
 
-Always state: **measure first** for iron, copper, selenium, iodine, vitamin D, B12 using DTC labs.
+### 7.4 Meditation stack
 
-## 7. Lifestyle / Mind-Body Anchors (mapped to §2 mechanism nodes)
+- **TL;DR.** Gut-directed hypnotherapy (Nerva) — for IBS-overlap during rebuild. *(Whorwell 1984)*
+- **TL;DR.** MBSR body-scan — 20 min morning. *(Kabat-Zinn)*
+- **TL;DR.** Yoga Nidra — 30 min bedtime. *(Bihar)*
+- **TL;DR.** Mindful eating — pre-meal slow breath, 30+ chews. *(Tomita 2013)*
+- **TL;DR.** Forest bathing (shinrin-yoku) — Japanese 2 h/week nature walk supports microbiome AND immune NK-cell function. *(Li 2007 NK-cell)*
 
-### 7.1 Yoga (daily 25 min)
+### 7.5 Sleep & circadian
 
-| Asana | §2 Mechanism node | Duration | Time of day |
-|---|---|---|---|
-| **Pawanmuktasana** (wind-relieving) | §2.4 colon motility, gas dispersion | 2 min × 2 | 07:00 AM + post-meal |
-| **Vajrasana** (thunderbolt) — post-meal | §2.5 post-prandial digestion (only safe post-meal asana) | 5–10 min | post-each-meal |
-| **Bhujangasana** (cobra) | §2.4 abdominal organ stimulation | 5 reps | 07:00 AM |
-| **Dhanurasana** (bow) | §2.4 visceral compression | 3 × 30 s | 07:00 AM |
-| **Ardha Matsyendrasana** (half-spinal twist) | §2.4 liver/spleen/colon | 1 min each side | 07:00 AM |
-| **Mandukasana** (frog) | §2.4 pancreatic + abdominal | 1 min × 3 | 07:00 AM empty stomach |
-| **Apanasana** (knees-to-chest) | §2.4 colon | 2 min | as needed |
-| **Setu Bandhasana** (bridge) | §2.5 vagal + pelvic | 1 min × 3 | 07:00 AM |
-| **Marjariasana / Bitilasana** (cat-cow) | §2.4 spinal + abdominal | 10 reps | 07:00 AM |
-| **Shavasana** (corpse) | §2.5 parasympathetic | 10 min | end of session, 22:00 |
+> **For you, in plain words.** Lights-out 22:00; screens off 21:00; bedroom 18-20°C; morning sunlight; consistent sleep-wake timing. *(Health Canada melatonin; AYUSH)*
 
-### 7.2 Pranayama (daily 20 min)
+### 7.6 Nervous-system reset
 
-| Technique | §2 Mechanism node | Duration | Time of day |
-|---|---|---|---|
-| **Anulom Vilom** (alternate-nostril) | §2.5 HPA / vagal balance | 10 min | 06:30 AM |
-| **Bhramari** (humming bee) | §2.5 vagal nerve | 5 min | 06:30 AM + 22:00 PM |
-| **Kapalbhati** (cleansing) | §2.4 abdominal + sympathetic | 5 min | 06:30 AM — **contraindicated in HTN, pregnancy, ulcer, IBD-overlap, recent surgery** |
-| **Nadi Shodhana** | §2.5 autonomic balance | 10 min | as needed |
-| **Sheetali / Sheetkari** | §2.4 cooling | 5 min | midday in flare |
-| **Ujjayi** | §2.5 vagal tone | 5 min | during yoga |
-| **4-7-8 breath** | §2.5 vagal reset | 4 rounds | pre-each-meal |
+> **For you, in plain words.** Cold-water face splash, humming + gargling, 4-7-8 pre-meal, vagus device, daily symptom log + plant-variety tracker. *(Polyvagal; HeartMath)*
 
-### 7.3 Meditation
+### 7.7 Exercise periodization
 
-**Yoga Nidra 30 min** (Bihar School) at HS — vagal tone, sleep, microbiome shift; **gut-directed hypnotherapy** (Manchester / Monash protocols — Nerva, Mahana, Zemedy); **MBSR / MBCT** for stress/anxiety; **Tibetan Tonglen, Sufi Zikr, Christian centring prayer** optional.
+> **For you, in plain words.** Mon/Wed/Fri Zone-2 cardio, Tue/Thu strength, Sat tai chi/qigong, Sun nature walk (forest/garden). *(Allen 2018; BJSM)*
 
-### 7.4 Sleep & circadian
+**Weekly.** Zone 2 cardio 30-45 min, Mon/Wed/Fri; strength 30-45 min, Tue/Thu; tai chi 30 min Sat; nature walk 60-90 min Sun (forest, park, garden — get hands in soil weekly).
 
-Lights-out 22:30; blue-light cut-off 21:00; bedroom 18–20 °C, blackout; 5–10 min sunlight within 30 min of waking. Sleep <6 h disrupts microbiome circadian rhythm (Israeli + German studies). Sleep is non-negotiable for microbiome reset.
-
-### 7.5 Nervous-system reset — CRITICAL for §2.5
-
-- Cold-water face splash AM
-- **Humming + gargling 2 min, 3×/day**
-- **4-7-8 breath 4 rounds pre-each-meal**
-- Consumer VNS (Nurosym, Sensate, Pulsetto) 30 min PM
-- HRV biofeedback 10 min daily
-
-### 7.6 Exercise periodization (weekly + monthly)
-
-**Weekly cadence**
-- **Daily**: 10–15 min post-meal walks
-- **Mon / Wed / Fri** — Zone 2 cardio 30–45 min outdoor (microbiome diversity benefit + soil/environmental microbial exposure)
-- **Tue / Thu** — strength training 30–45 min
-- **Sat** — hike / sport / gardening (microbiome diversifier)
-- **Sun** — restorative yoga + 60–90 min nature walk
-
-**Monthly cadence**
-- **Week 1** — antimicrobial phase if pathobiont/Candida overgrowth (caprylic + oregano + berberine + reduced sugar)
-- **Week 2** — re-seeding focus (Pendulum Akkermansia + multi-strain + spore-based + fibre rotation)
-- **Week 3** — diversification (30+ plant foods, polyphenol focus)
-- **Week 4** — consolidation + 14:10 fasting + sleep + stress reset
-
-**Time-restricted eating window: 14:10 (eat 09:00–19:00, fast 19:00–09:00) — microbiome restructuring documented.** Not for hypothyroid, HPA-depleted, underweight, pregnancy, breastfeeding, eating disorder.
+**Monthly.** Week 1 — full intensity + TCM overlay. Week 2 — moderate. Week 3 — deload. Week 4 — full + TCM re-cycles.
 
 ## 8. Daily Unified Combos (≤10 caps/day)
 
-**Combo 1 — Morning Probiotic + Prebiotic (08:00, empty stomach):** **Pendulum Akkermansia 1 cap (10 B CFU)** + L. plantarum 299v 10 B CFU + L-glutamine 5 g (powder, cool water) + PHGG 5 g. Rationale: keystone + IBS-specific probiotic + barrier + soluble prebiotic; empty stomach to bypass acid.
+### 8.1 The three combos at a glance
 
-**Combo 2 — Mid-Day Spore + Multi-strain + Polyphenol (with lunch 13:00):** MegaSporeBiotic 2 caps + Multi-strain 50 B CFU (Visbiome) + Pomegranate ellagitannin 500 mg + Quercetin 500 mg (if mast-cell sub-type). Rationale: spore stability + broad replenishment + Akkermansia-feeding polyphenol + mast-cell.
+> **For you, in plain words.** Three timed combos. Goal-matched strain + Sunfiber + fibre-and-ferment-rich food are the cornerstones. *(O'Mahony 2005; Polymeropoulos 2014; Sonnenburg-Gardner 2021)*
 
-**Combo 3 — Evening Repair + Microbiome + Sleep (18:30 with dinner; 22:00 HS):** Triphala 1 g + Mg glycinate 400 mg + S. boulardii 5 B CFU + Ashwagandha KSM-66 600 mg + Zinc carnosine 75 mg. Rationale: gentle bowel + microbiome + barrier + HPA wind-down.
+### 8.2 Combo 1 — Rebuild base (08:00)
 
-**Daily total: ~9 caps + powders** + bone broth 300 ml + 30+ plant foods/wk + CCF tea + fermented foods + polyphenol focus + VNS 30 min PM + Yoga Nidra HS.
+- **TL;DR.** Goal-matched probiotic 1 cap + Sunfiber 5 g + Methyl-B trio + Vitamin D3 4000/K2 + omega-3 1 g — with cool food. 4-5 caps. *(O'Mahony 2005; UK SACN 2020)*
 
-**For antimicrobial / Candida phase (weeks 1–4 if needed):** add Caprylic acid 1 g BID + Oregano 200 mg BID + Berberine 500 mg BID; pull back Akkermansia + multi-strain until antimicrobials end; keep S. boulardii (yeast — antibacterial-resistant); 4-h gap between antimicrobials and probiotics. After week 4, antimicrobials drop and full re-seeding stack resumes.
+### 8.3 Combo 2 — Mid-day support (13:00)
 
-**TCM cycling (weeks 4–8 of reseeding phase):** *Shen Ling Bai Zhu San* (Spleen-Qi deficiency baseline) OR *Liu Jun Zi Tang* (with phlegm-damp) OR *Xiao Yao San* (stress dysbiosis) OR *Ping Wei San* (Cold-Damp) — granules 6 g BID — replaces some Combo 3 that week.
+- **TL;DR.** Magnesium 200 + omega-3 1 g + optional second probiotic strain if goal-stacking — with food. 2-3 caps. *(Health Canada Mg)*
+
+### 8.4 Combo 3 — Sleep + reset (21:00)
+
+- **TL;DR.** Mg glycinate 200 + Triphala 3-5 g + optional Chyawanprash 1 tsp + chamomile tea. 1-2 caps + 1 tsp. *(Health Canada; AYUSH Triphala; AYUSH Chyawanprash)*
+
+### 8.5 Post-antibiotic rebuild stack (during + 6-8 weeks after course)
+
+- **TL;DR.** S. boulardii 250 mg BID during ABX course + 2 weeks after → switch to B. infantis 35624 + L. rhamnosus GG 4-6 weeks + Sunfiber 5 g/day + Mediterranean-30-plants diet. *(McFarland 2010; Dethlefsen-Relman 2011)*
+
+### 8.6 TCM overlay (weeks 1 & 4)
+
+- **TL;DR.** Bu Zhong Yi Qi Tang or Si Jun Zi Tang or Shen Ling Bai Zhu San — pattern-matched 2 weeks/month. *(Li Dongyuan; Tai Ping Hui Min He Ji Ju Fang)*
+
+### 8.7 Pragmatic 10-cap envelope
+
+- **TL;DR.** Rotate probiotic strains every 3 months; drop Sunfiber on high-fibre meal days; alternate Chyawanprash and Triphala. *(Brand monographs)*
 
 ## 8.5 Master 24-Hour Day Plan
 
-Integrates supplements, meals, exercise, breathwork, light and sleep — resolves every §10 conflict.
+### Hour-by-hour (resolves every §10 conflict)
 
-| Hour | Action | Why / Conflicts resolved |
-|---|---|---|
-| **06:00** | Wake; 200 ml warm water + ginger; 5–10 min sunlight | Circadian + gentle MMC |
-| **06:15** | Cold-water face splash + humming 2 min + gargling | Vagal afferent activation |
-| **06:30** | Pranayama 15 min (Anulom Vilom 10 + Bhramari 5; Kapalbhati if no contra) | Vagal tone before food/supplement |
-| **07:00** | Yoga 25 min (§7.1) on empty stomach | Pre-breakfast prep |
-| **07:30** | Abdominal self-massage 5 min + 15-min fasted Zone 2 walk outdoor (environmental microbial exposure) | MMC + microbiome diversification |
-| **08:00** | **Combo 1** (Pendulum Akkermansia + L. plantarum 299v + L-glutamine + PHGG) — empty stomach, cool water | Probiotic viability; PHGG synergy |
-| **09:00** | Breakfast (§6.4) — eat slowly, chew 20×, no screens; 4-7-8 breath × 4 first; **eating window opens (14:10 TRE)** | 14-h overnight fast complete |
-| **09:30** | Vajrasana 10 min + 10–15 min walk | Post-prandial transit |
-| **10:00** | Green tea or filter coffee (≤2 cups, before 14:00) — polyphenol | Akkermansia-feeding |
-| **12:30** | 3.5-h gap since breakfast — methyl-B12 sublingual | MMC respect; no snacking |
-| **13:00** | Lunch (§6.4) — diverse plate, 5+ colours; 4-7-8 breath × 4 first; chew slowly | Diversity + vagal |
-| **13:00** | **Combo 2** (MegaSporeBiotic + Multi-strain + Pomegranate polyphenol + Quercetin) | Spore stability + cool food for multi-strain |
-| **13:30** | Vajrasana 10 min, then 10–15 min walk outdoor | Post-prandial transit + outdoor exposure |
-| **14:00** | **Caffeine cut-off** | Half-life 6 h |
-| **15:30** | CCF tea + abdominal castor oil pack 45 min (3×/wk) | Carminative + biliary flow |
-| **16:00** | Exercise (§7.6 — Zone 2 outdoor / strength) | Vagal + microbiome diversification |
-| **17:30** | Infrared sauna 20 min → cold immersion 2–3 min (3×/wk); electrolyte | Vagal + sympathetic-rebound |
-| **18:00** | Dinner — light, early (close eating at 19:00 for 14-h overnight fast); 4-7-8 breath × 4 first; fermented food serving | Microbiome + circadian |
-| **18:30** | **Combo 3** (Triphala + Mg + S. boulardii + KSM-66 + Zinc carnosine) — cool food for S. boulardii | Mg PM (Ca AM); Ashwa ≥2 h before bed |
-| **19:00** | **Eating closed.** Vajrasana 5 min + 15-min upright walk | Pre-sleep settling |
-| **20:00** | PBM abdominal 15 min OR Nurosym VNS 30 min | Visceral support + vagal restoration |
-| **20:30** | Restorative yoga or 20 min walk | Parasympathetic shift |
-| **21:00** | Blue-light cut-off; blockers; CCF tea or chamomile | Melatonin protection |
-| **22:00** | Bhramari 5 min + 4-7-8 breath + **Yoga Nidra 30 min (Bihar School) + Triphala 1 g HS** | Vagal close-out + microbiome circadian + bowel regulator |
-| **22:30** | Bedtime, 18–20 °C, blackout, left-side sleeping | Deep sleep + MMC sweep |
-| **02:00–06:00** | Sleep — no waking eating; 14-h fast continues | MMC + microbiome reset |
+> **For you, in plain words.** Hour-by-hour timetable resolving every conflict — probiotic with cool food (not hot drinks), fat-soluble with fat, fermented food daily, 30+ plants weekly. *(EMA monographs; Sonnenburg-Gardner 2021)*
 
-**If you are already on a prescription** (PPI, chronic NSAID, chronic antibiotic, antifungal Rx fluconazole/nystatin — discouraged in this protocol): keep your existing schedule and apply §10.1 gap rules. **PPI taper-out is the single most encouraged action for microbiome reset** — slowly, over 4–8 weeks. The pace is your call.
+| Hour | TL;DR (plain English) | Action | Why / conflicts resolved | Citation |
+|---|---|---|---|---|
+| 06:00 | Wake — water + lemon + pinch salt. *(AYUSH)* | Wake + hydration | Hydration | *(AYUSH)* |
+| 06:10 | 5-10 min sunlight. *(Health Canada melatonin)* | Sunlight | Body clock | *(Health Canada)* |
+| 06:15 | Cold face splash + humming (3 min). *(Polyvagal; S-VYASA)* | Vagal stack | Vagal | *(Polyvagal; S-VYASA)* |
+| 06:30 | 10 min slow paced breathing + 10 min alternate-nostril. *(Lehrer; AYUSH)* | Pranayama 20 min | Vagal | *(Lehrer; AYUSH)* |
+| 07:00 | 5 min abdominal self-massage; light Surya Namaskar 6 rounds. *(AYUSH)* | Yoga | Motility | *(AYUSH)* |
+| 07:30 | Sunfiber 5 g in water; small AM ferment (kefir 100 ml or kombucha 100 ml). *(Polymeropoulos 2014; Sonnenburg-Gardner)* | PHGG + ferment | Gentle fibre + ferment | *(Polymeropoulos; Sonnenburg-Gardner)* |
+| 08:00 | Breakfast — eggs + 3-5 plants + cooked-cooled starch + olive oil. *(Sonnenburg-Gardner)* | Breakfast | 30-plants base | *(Sonnenburg-Gardner)* |
+| 08:15 | Combo 1 with fat — probiotic with cool food (not hot drinks). *(O'Mahony 2005; EMA vit D)* | Combo 1 | Fat + cool food | *(O'Mahony; EMA)* |
+| 09:30 | Optional coffee/matcha — small AM dose. *(Boekema 1999)* | Caffeine | — | *(Boekema)* |
+| 10:00 | 15 min HRV biofeedback OR forest-bathing walk if available. *(Lehrer; Li 2007)* | HRV + nature | Vagal + microbiome | *(Lehrer; Li)* |
+| 11:30 | 5-min walk + 4-7-8. *(Weil)* | Walk + 4-7-8 | Vagal prime | *(Weil)* |
+| 12:30 | Slow paced breathing 5 min pre-lunch. *(Lehrer 2014)* | Pranayama | Pre-meal calm | *(Lehrer)* |
+| 13:00 | Lunch — 5-7 plants + protein + small ferment (sauerkraut 30 g or kimchi 30 g) + 10-min walk after. *(Sonnenburg-Gardner; Diabetes Care)* | Lunch + ferment + walk | Plants + ferment + motility | *(Sonnenburg-Gardner; Diabetes Care)* |
+| 13:15 | Combo 2 with food. *(Health Canada Mg; UK SACN)* | Combo 2 | — | *(Health Canada; UK SACN)* |
+| 14:00 | Last caffeine. *(Drake 2013)* | Caffeine cut-off | Sleep | *(Drake)* |
+| 14:00-16:00 | Cognitive work + 15 min hypno if IBS-overlap. *(Whorwell)* | Cognitive | — | *(Whorwell)* |
+| 16:00 | Exercise — Zone 2 or strength 30-45 min. *(BJSM; Allen 2018)* | Exercise | Microbiome boost | *(BJSM; Allen)* |
+| 17:30 | Optional sauna 20 min + cold splash 3×/week. *(Laukkanen)* | Sauna + cold | Heat-shock + autonomic | *(Laukkanen)* |
+| 18:00 | Slow paced breathing 5 min pre-dinner. *(Lehrer)* | Pranayama | Pre-meal calm | *(Lehrer)* |
+| 18:30 | Dinner — 5-7 plants + protein + ferment (yogurt 100 g or kanji 50 ml or miso) + 3 h pre-bed gap. *(Sonnenburg-Gardner; AYUSH)* | Dinner + ferment | Plants + ferment | *(Sonnenburg-Gardner)* |
+| 19:00 | Bone broth 200 ml — gut-lining repair overnight. *(Zhou 2019)* | Bone broth | Repair | *(Zhou)* |
+| 19:30 | 10 min HRV biofeedback. *(Lehrer; HeartMath)* | HRV | Vagal | *(HeartMath)* |
+| 20:00 | 15-min walk + 5-min humming. *(S-VYASA)* | Walk + humming | Parasympathetic close | *(S-VYASA)* |
+| 20:30 | Wind-down — restorative yoga (legs-up-wall, supta baddha). *(Iyengar)* | Wind-down | — | *(Iyengar)* |
+| 21:00 | Screens off; Combo 3 — Mg-glycinate + Triphala + Chyawanprash + chamomile tea. *(Health Canada; AYUSH)* | Combo 3 | Sleep + gut reset | *(Health Canada; AYUSH)* |
+| 21:30 | 5 min slow paced + 4-7-8 + 20 min Yoga Nidra. *(Lehrer; Bihar)* | Vagal close | — | *(Lehrer; Bihar)* |
+| 22:00-22:30 | Lights out, cool blackout room. *(Iliff 2012)* | Bedtime | Sleep + microbiome circadian | *(Iliff)* |
+
+**If you are on a prescription** (antibiotic course, PPI, NSAID, immunosuppressant): apply §10.1 gap rules. **This protocol prescribes none.**
 
 ## 9. Supplier Ecosystem + Monthly Cost
 
-| Channel | Sources | Brands |
-|---|---|---|
-| Amazon Prime (US/IN/UK), iHerb | Multi-strain probiotics, MegaSporeBiotic, S. boulardii, L. plantarum 299v, B. infantis 35624, PHGG, acacia, inulin, RS, polyphenol extracts, L-glutamine, Zinc Carnosine, Triphala | Microbiome Labs, Just Thrive, Florastor, Jarrow Ideal Bowel Support 299v, Align P&G, Visbiome / VSL#3, Thorne, NOW, Pure Encaps, Doctor's Best |
-| **Pendulum (direct)** | Pendulum Akkermansia muciniphila, Pendulum GI Repair, Pendulum Polyphenol Booster, Pendulum Glucose Control | pendulumlife.com |
-| Patel Brothers / Apna Bazaar | Sprouted millets, Triphala, Vidanga, Bilwadi, Kutajghan, Hing, CCF spices, fermented kanji starters — **Patel Brothers, 1610 Stoneridge Mall Rd, Pleasanton CA 94588**; **Apna Bazar, 100-04 Queens Blvd, Forest Hills NY** | Baidyanath, Patanjali, Organic India, Dabur, Himalaya |
-| Chinatown TCM pharmacy | *Shen Ling Bai Zhu San*, *Liu Jun Zi Tang*, *Xiao Yao San*, *Ping Wei San*, *Bao He Wan*, *Tong Xie Yao Fang* | Plum Flower (Mayway, Oakland) — **Sun Sing Pacific Trading, 1205 Stockton St, SF**; **Kamwo Meridian Herbs, 209 Grand St, NYC** |
-| Hamdard Dawakhana | Jawarish Jalinoos, Jawarish Anarain, Itrifal Ustukhuddus | Hamdard, Ajmal |
-| IMPCOPS Chennai (Siddha) | Vellarugu Chooranam, Nilavembu Kudineer, Triphala Chooranam | IMPCOPS, SKM |
-| Men-Tsee-Khang Dharamsala | Aru-7, Sug-mel 11, Agar-35, Padma 28 | Sowa Rigpa / Padma AG |
-| CCRH-affiliated homeo | Nux Vom, Lycopodium, Sulphur, Arsenicum, China, Candida nosode | SBL, Schwabe (IN), Boiron (FR) |
-| Whole Foods / Sprouts | Bone broth ingredients, ghee, organic produce, fermented foods, kefir | Bonafide, Wildbrine, Farmhouse Culture |
-| Local farmers market / CSA | Diverse seasonal produce — microbiome diversity foundation | Direct from farmers |
-| Mito Red Light / Joov / Hooga | PBM panels | Mito, Joov, Hooga |
-| Sunlighten / Higher Dose / Plunge | Home sauna + cold tub | One-time |
-| Nurosym / Sensate / Pulsetto | Consumer VNS | One-time £300–600 |
+### 9.1 Where to shop, in plain words
 
-**Monthly cost (USD)**
-- Combo 1 (Pendulum Akkermansia + L. plantarum 299v + L-glutamine + PHGG): **$120–180** (Akkermansia is the costly item)
-- Combo 2 (MegaSporeBiotic + Multi-strain + Pomegranate + Quercetin): **$120–180**
-- Combo 3 (Triphala + Mg + S. boulardii + KSM-66 + Zinc Carnosine): **$60–90**
-- Cofactor floor (D3/K2, Mg, B-complex, methyl-B12, methylfolate, P-5-P, C, choline, glycine, Se, ω-3, vit A): **$60–90**
-- Antimicrobial/Candida phase (Caprylic + Oregano + Berberine + Pau d'Arco — if needed): **$60–90** for 4 weeks
-- TCM overlay weeks 4–8: **$20–35**
-- Polyphenol extract supplements (Pomegranate, Cranberry, Green tea, Berberine for diversity): **$40–60**
-- Fermented foods + diverse produce + fish + nuts/seeds: **$200–350**
-- **Recurring total: $600–950/month** (Akkermansia is the cost driver; if budget-constrained, MegaSporeBiotic + diet alone runs $300–500)
+| Channel | TL;DR (plain English) | Sources | Brands | Citation |
+|---|---|---|---|---|
+| Amazon / iHerb | One-click for probiotic strains, Sunfiber, B12, Vit D, Mg, omega-3, Triphala. *(Brand monographs)* | Florastor, Align, Symprove, Culturelle, Jarrow Fem-Dophilus, Sunfiber, Triphala, Mg, B12, Vit D, omega-3 | Florastor, Align, Symprove, Culturelle, Jarrow, Sunfiber, Pure Encapsulations, Doctor's Best | *(Brand monographs)* |
+| EU / UK pharmacies | Symprove (UK), Visbiome (EU), Padma Lax (Switzerland). *(EMA)* | Symprove, Visbiome, Padma Lax | Symprove, Visbiome, Padma AG | *(EMA)* |
+| Patel Brothers / Apna Bazar | Chyawanprash, Triphala, Brahma rasayana, traditional ferments (kanji starter, dosa batter, idli). *(Patel Brothers 1610 Stoneridge Mall Rd, Pleasanton CA; Apna Bazar 100-04 Queens Blvd, Forest Hills NY)* | Chyawanprash, Triphala, Brahma rasayana, dosa batter, idli powder, takra-buttermilk culture, ajwain seeds | Baidyanath, Kottakkal, Organic India, Patanjali, Vaidyaratnam | *(AYUSH-GMP; addresses above)* |
+| Chinatown TCM | Si Jun Zi Tang, Liu Jun Zi Tang, Bu Zhong Yi Qi Tang, Shen Ling Bai Zhu San, Pao Cai. *(Sun Sing 1205 Stockton St SF; Kamwo 209 Grand St NYC)* | All | Plum Flower, Min Tong, Treasure of the East | *(NMPA)* |
+| Hamdard | Khamira Marwareed, Sharbat-e-Bazoori, Itrifal Ustukhuddus, Murabba Amla. *(Hamdard)* | All | Hamdard, Ajmal | *(Hamdard)* |
+| IMPCOPS | Brahma Rasayanam, Nellikai lehyam, Thiripala, Karpoora. *(IMPCOPS)* | All | IMPCOPS, SKM | *(IMPCOPS)* |
+| Men-Tsee-Khang | Padma Lax, Se-bru-25, Agar-35. *(Men-Tsee-Khang; EMA Padma)* | All | Men-Tsee-Khang, Padma AG | *(Men-Tsee-Khang; EMA)* |
+| CCRH homeo | Lycopodium, Carbo veg, China, Nux vomica, Calc carb. *(Boericke; CCRH)* | All | SBL, Schwabe India, Boiron | *(Boericke; CCRH)* |
+| Whole Foods / Sprouts | Wild fish, pasture eggs, olive oil, fermented foods (raw sauerkraut, kimchi, kombucha, kefir, yogurt). *(Vital Farms; Wild Brine)* | All | Vital Farms, Wild Brine, Wildbrine, GT's Kombucha, Maple Hill A2, Siggi's, Bubbies | *(Vital Farms; Wild Brine)* |
+| Local farmers' markets | Seasonal organic produce for 30-plants variety; raw ferments from local artisans. *(Local sourcing)* | Seasonal produce, local ferments | Local farmers | *(Local sourcing)* |
+| Stool test providers | Microbiome diversity tracking. *(Microbiome test landscape 2024)* | Stool sequencing | Viome, ZOE, Sun Genomics, Atlas Biomed, DayTwo | *(Microbiome test landscape)* |
+| Device suppliers | HRV, sauna, breath devices. *(Device monographs)* | All | HeartMath, Lief, Polar H10, Sunlighten, FoodMarble | *(Device monographs)* |
 
-**One-time devices**
-- Nurosym (consumer VNS): £400–600
-- HRV ring (Oura/Whoop): $300/yr
-- PBM panel: $249–749
-- Home infrared sauna: $1,800–4,500 (optional)
-- Cold tub: $0 (bathtub + ice) to $5,000 (Plunge)
-- Castor oil pack kit: $20–40 reusable
-- DTC microbiome stool test (16S / shotgun): $200–400/test
-- DTC SIBO/IMO breath test: $250/test
-- DTC labs baseline + Mo3 + Mo6 + Mo12: $120–200/round
+### 9.2 Monthly cost — broken down
+
+- **TL;DR.** Combo 1, 2, 3 — $130-240/month. *(EMA dose ranges)*
+- **TL;DR.** Cofactor floor — $25-45/month. *(Health Canada NHP)*
+- **TL;DR.** TCM overlay + Ayurveda Triphala/Chyawanprash/Brahma rasayana — $30-65/month. *(NMPA; AYUSH-GMP)*
+- **TL;DR.** Fresh-produce uplift for 30+ plants — $200-320/month. *(Mediterranean diet costing)*
+- **TL;DR.** Fermented foods uplift — $30-80/month. *(Sonnenburg-Gardner)*
+- **TL;DR (Recurring total).** $415-750/month full; budget version makes own ferments + uses generic probiotics.
+
+**One-time:** Stool microbiome test $149-399 (repeat at 6 and 12 mo) · HeartMath $179 · home sauna $650-4,500 · FoodMarble Aire 2 $249 (if SIBO suspected) · DTC labs $150-250/round · home fermentation jars + starter cultures $50-100.
 
 ## 10. Interaction Matrix
 
-### 10.1 Drug ↔ Supplement (for users ALREADY on conventional therapy — this dossier prescribes NONE)
+### 10.1 Drug ↔ Supplement (the protocol prescribes NONE of these drugs)
 
-Conventional pharmaceuticals you may already be on that affect microbiome (**discouraged in this protocol; listed for interaction safety only**): PPIs, H2 blockers, chronic antibiotics, antifungals (fluconazole, nystatin — Rx), TCAs, SSRIs, anticholinergics (oxybutynin, hyoscine — disrupt microbiome via anticholinergic effect), chronic NSAIDs, metformin (microbiome-modulating; generally favourable for Akkermansia paradoxically), GLP-1 agonists, oral contraceptives, glucocorticoids chronic, immunosuppressants.
+> **For you, in plain words.** Documents conflicts for users on antibiotics, PPIs, NSAIDs, immunosuppressants. **This protocol never recommends these drugs.** *(EMA; Health Canada NHP)*
 
-| Drug (you may be on) | Supplement in protocol | Risk | Mitigation (your own taper pace) |
-|---|---|---|---|
-| **PPIs** | Pendulum Akkermansia, multi-strain, S. boulardii, berberine | PPI = major dysbiosis driver; lower B12/Mg/Fe/Ca/Zn | **PPI taper-out is encouraged** — slowly over 4–8 weeks; layer DGL + zinc carnosine + L-glutamine; the pace is yours |
-| **Chronic antibiotics** | Multi-strain probiotic, S. boulardii, MegaSporeBiotic, Pendulum Akkermansia | Antibiotic kills probiotics | 4-h gap during antibiotic; full microbiome stack restart 2 weeks post-antibiotic; S. boulardii (yeast) is antibiotic-resistant so can run concurrent |
-| **Antifungals Rx (fluconazole, nystatin)** | S. boulardii (yeast), caprylic acid, oregano | Antifungal kills S. boulardii | 4-h gap; sequential preferred |
-| **Anticholinergics** (oxybutynin, hyoscine, TCAs) | Triphala, Mg, ginger | Anticholinergic disrupts ENS → microbiome | Layer prokinetics; review with prescriber |
-| **NSAIDs (chronic)** | Curcumin, omega-3, Boswellia, L-glutamine | Additive GI bleed risk if anticoagulated | Curcumin acceptable; reduce NSAID dose; protect with L-glutamine + zinc carnosine |
-| **Metformin** | Berberine, multi-strain, Akkermansia | Berberine + metformin = additive hypoglycaemia | Monitor BG; co-administration acceptable; Akkermansia + metformin synergistic |
-| **GLP-1 agonists** (semaglutide, liraglutide) | Probiotic, fibre, Iberogast | GLP-1 slows gastric emptying; bloating | Take probiotic + fibre with smaller meals; Iberogast helps |
-| **Glucocorticoids chronic** | Probiotic, L-glutamine, vit D, omega-3 | Steroids → microbiome shift + barrier disruption | Layer barrier + probiotic; review taper with prescriber |
-| **Immunosuppressants** | S. boulardii caution; multi-strain | Theoretical translocation risk in severely immunosuppressed | Coordinate with prescriber if on cyclosporine/tacrolimus/methotrexate/biologic |
-| **Oral contraceptives** | Multi-strain, berberine (CYP3A4) | Berberine may reduce OC effectiveness | Use barrier contraception backup |
-| **TCAs / SSRIs** | St John's Wort (excluded), 5-HTP (excluded), Ashwagandha | Serotonin syndrome | St John's Wort + 5-HTP excluded; Ashwa ≥3 h from SSRI |
-| **Warfarin / DOACs** | Ginger high-dose, Curcumin, NAC | INR shift / bleeding | Consistent dosing; monitor INR |
-| **Levothyroxine** | Iron, Ca, Mg, soy, fibre, slippery elm | T4 absorption block | Levo 60 min before food/Ca/Mg/iron/mucilage |
+| Drug (you may be on) | TL;DR (plain English) | Supplement | Risk / mechanism | Mitigation | Citation |
+|---|---|---|---|---|---|
+| Antibiotics (any) | ≥2 h gap from probiotics; S. boulardii (yeast) is the exception — can co-administer. *(McFarland 2010)* | Bacterial probiotics; S. boulardii | Direct kill (bacterial); yeast resistant | ≥2 h gap; S. boulardii OK to combine | *(McFarland 2010)* |
+| PPI long-term | Lowers acid → SIBO; B12 absorption falls. *(Lam 2013)* | B12, probiotics | B12 deficiency; SIBO | Methyl-B12; consider taper per §10.7 GERD dossier | *(Lam 2013)* |
+| NSAIDs chronic | Gut-lining damage; pair with probiotics + L-glutamine. *(Bjarnason 2018)* | Probiotic, glutamine | Lining damage | Probiotic + glutamine; reduce NSAID if possible | *(Bjarnason)* |
+| Immunosuppressants (post-transplant, autoimmune) | Probiotic safety controversial in severe immunocompromise. *(Boyle 2006)* | Live probiotics | Theoretical translocation risk | Discuss specific case if immunocompromised | *(Boyle 2006)* |
+| Chemotherapy | S. boulardii safe; bacterial probiotic safety case-by-case. *(McFarland 2010)* | S. boulardii vs bacterial | Variable | S. boulardii preferred | *(McFarland)* |
+| Anti-anxiety (benzodiazepines) | Ashwagandha + Mg additive sedation. *(Health Canada)* | Ashwagandha, Mg, melatonin | Sedation | Don't stack pre-bed | *(Health Canada)* |
+| SSRIs | Avoid SJW + 5-HTP. *(EMA SJW)* | SJW, 5-HTP | Serotonin syndrome | Avoid SJW | *(EMA SJW)* |
 
 ### 10.2 Drug ↔ Food
 
-| Drug | Food | Mechanism | Action |
-|---|---|---|---|
-| **PPIs** | High-protein meals | ↓ digestion → SIBO | PPI taper (§10.1) |
-| **Antibiotics** | Dairy / Ca-rich foods | Tetracyclines, quinolones, doxycycline absorption block | Take antibiotic 2 h apart from dairy |
-| **Antibiotics** | Fermented foods (probiotic) | Antibiotic kills probiotic component | 4 h gap |
-| **Metformin** | Alcohol | Lactic acidosis | Strict moderation |
-| **TCAs** | Alcohol, MAOI-rich | CNS / autonomic | Strict avoidance |
-| **SSRIs** | Tyramine-rich (less critical), tryptophan-rich excess | Serotonin syndrome theoretical | Moderate |
-| **Warfarin** | Vit-K greens consistent | INR shift | Consistent intake |
-| **Levothyroxine** | Coffee, soy, calcium, fibre | T4 absorption block | Levo 60 min before all |
-| **Statins** | Grapefruit | CYP3A4 inhibition | Avoid grapefruit |
-| **Antifungals (azoles)** | Grapefruit | CYP3A4 inhibition | Avoid grapefruit |
+| Drug | TL;DR | Food | Mechanism | Action | Citation |
+|---|---|---|---|---|---|
+| MAOI | Aged cheese, fermented foods, wine → hypertensive crisis. *(EMA)* | Aged cheese, kombucha, kimchi (any tyramine-rich ferment) | Tyramine | Avoid combination | *(EMA)* |
+| TCA + alcohol | CNS depression. *(Health Canada)* | Alcohol | CNS additive | Avoid | *(Health Canada)* |
+| Grapefruit + many | CYP3A4. *(EMA)* | Grapefruit | CYP3A4 | Avoid | *(EMA)* |
+| Iron + tea/coffee/dairy | Block. *(WHO)* | Tea, coffee, dairy | Block | 1-2 h gap | *(WHO)* |
 
-### 10.3 Supplement ↔ Food (the new layer)
+### 10.3 Supplement ↔ Food
 
-| Supplement | Food / Drink | Mechanism | Action |
-|---|---|---|---|
-| **Pendulum Akkermansia** | Hot drinks (>40 °C) | Kills viable strain | Cool water; empty stomach |
-| **Akkermansia + Pomegranate ellagitannins** | — | Synergy — polyphenol substrate for Akkermansia | **Beneficial pairing** |
-| **MegaSporeBiotic / Just Thrive (spore)** | Spores survive acid + hot food fairly well | More resilient than vegetative strains | OK with meals |
-| **Multi-strain (vegetative)** | Hot drinks (>40 °C) | Kills viable bacteria | Cool/room-temp only |
-| **S. boulardii (yeast)** | Antifungal Rx; very hot drinks | Antifungal kills yeast | 4 h from antifungal |
-| **L. plantarum 299v / B. infantis 35624** | Hot drinks | Kills viable bacteria | Cool/room-temp only |
-| **Antimicrobial herbs (Berberine, Oregano, Allicin, Caprylic) + probiotic** | Same meal | Antimicrobials kill probiotic | 4 h gap; or sequential phases |
-| **PHGG / Acacia / Inulin + probiotic** | — | Prebiotic feeds probiotic synergy | **Beneficial pairing** |
-| **Resistant starch (cooled rice/potato)** | Cool temperature for maintenance of RS | Re-warming destroys some RS but most retained | Cool to room-temp before eating |
-| **Berberine** | Dairy | ↓ berberine absorption | 1 h gap |
-| **Iron** (only if deficient) | Tea, coffee, wine (tannins); dairy, calcium | Polyphenol/divalent chelation | 1–2 h gap; pair vitamin C |
-| **Zinc Carnosine** | Iron, dairy, calcium | DMT1 transporter competition | ≥2 h gap |
-| **Calcium / Magnesium** | Same hour | Competition | **Ca AM, Mg PM** (§8.5) |
-| **Polyphenol supplements (pomegranate, cranberry, green tea EGCG)** | Iron-rich foods | Chelation | ≥1 h gap if iron needed |
-| **Fermented foods (sauerkraut, kimchi, kanji)** | MCAS sub-type | Histamine load | Avoid in MCAS phase 1 |
-| **Curcumin** | Dairy (1 h gap); needs piperine + fat | Bioavailability | 1 h from dairy; pair with black pepper + ghee |
-| **Fat-soluble vitamins A/D/E/K** | Low-fat meal | No micelle formation | Always with fat |
-| **Ashwagandha** | Alcohol | CNS depression | Skip alcohol |
-| **Adaptogens** (Rhodiola, Eleuthero) | Evening meal | Stimulating | **AM only** |
-| **Caprylic acid** | High-sugar meal | Sugar feeds Candida; defeats caprylic | Pair with low-sugar / protein meal |
-| **NAC** | Sulfur-rich foods (cabbage, broccoli, egg) | Cumulative sulfur load | OK; balanced |
+| Supplement | TL;DR | Food/Drink | Mechanism | Action | Citation |
+|---|---|---|---|---|---|
+| Probiotics | Hot food >40°C kills bacteria; cool food only. *(Probiotic monographs)* | Hot drinks | Heat death | Cool food only | *(Probiotic monographs)* |
+| Sunfiber | With water; slow build. *(Polymeropoulos)* | All food | Bulking | Slow build over 2 weeks | *(Polymeropoulos)* |
+| Inulin / FOS | Mega-dose causes bloat — slow build. *(Slavin 2013)* | All food | Fermentation | Start 1 g, build slowly | *(Slavin)* |
+| Vitamin D, K2, A, omega-3 | With fat. *(EMA)* | Low-fat | Fat-soluble | With fat | *(EMA)* |
+| Iron | Tea/coffee/dairy block. *(WHO)* | Tea, coffee, dairy | Block | 1-2 h gap | *(WHO)* |
+| Mg-glycinate | PM, sleep support. *(Health Canada)* | Heavy meal | — | PM with food | *(Health Canada)* |
+| Triphala | Mild laxative — at bedtime with warm water. *(AYUSH)* | All food | Bulking | Bedtime | *(AYUSH)* |
+| Chyawanprash | Morning with warm water or milk. *(AYUSH Chyawanprash)* | All food | — | Morning | *(AYUSH)* |
 
 ### 10.4 Supplement ↔ Supplement
 
-| A | B | Mechanism | Action |
-|---|---|---|---|
-| **Akkermansia + Polyphenols + Spore-based + Multi-strain** | — | Synergistic microbiome reset | **Beneficial pairing** — Combo 1 + 2 design |
-| **Antimicrobial herbs ↔ Probiotic (all types)** | — | Antimicrobial kills probiotic | 4 h gap; or sequential phases (antimicrobial weeks 1–4, probiotic weeks 5–12; S. boulardii antibiotic-resistant so can run concurrent) |
-| **Caprylic acid / Oregano ↔ S. boulardii** | — | Antifungal effect on yeast | OK — caprylic doesn't kill S. boulardii in typical dose |
-| **Berberine ↔ many herbs via CYP3A4 inhibition** | — | Concurrent CYP3A4-metabolised | Berberine cycling 4–6 wk on, 2 wk off |
-| **PHGG / Acacia / Inulin + Probiotic** | — | Prebiotic-probiotic synergy | **Beneficial pairing** |
-| **Zinc ↔ Copper** | — | Long-term Zn → Cu depletion | Maintain **8–15:1 Zn:Cu** |
-| **Iron ↔ Zn / Ca / Mg** | — | Divalent competition | ≥2 h gap |
-| **Vit A ↔ Vit D** | — | High-dose A competes with D receptor | Balance at floor |
-| **Magnesium ↔ Calcium** | Same hour | Competition | Ca AM, Mg PM (§8.5) |
-| **Polyphenol supplements ↔ Iron** | — | Chelation | ≥2 h gap |
-| **5-HTP ↔ SSRI/SNRI/MAOI/tramadol** | — | **Serotonin syndrome** | **Avoid combination** |
-| **St John's Wort ↔ everything** | Serotonin / CYP3A4 induction | Cleared by §10.6 | **Excluded** |
-| **NAC ↔ Nitroglycerin** | — | Hypotension | Avoid concurrent |
-| **Lactoferrin ↔ Iron supplement** | — | Lactoferrin binds iron | 4 h gap |
-| **Berberine ↔ Metformin** | — | Additive hypoglycaemia | Monitor BG; useful overlap in T2D users |
-| **Vitamin E (>800 IU) ↔ Vit K** | — | Antagonism | E ≤ 400 IU; K2 as MK-7 |
+| A | TL;DR | B | Mechanism | Action | Citation |
+|---|---|---|---|---|---|
+| Probiotic + antibiotic | ≥2 h gap (bacterial); S. boulardii is yeast — OK to combine. *(McFarland 2010)* | Antibiotic | Direct kill (bacterial) | ≥2 h gap (bacterial probiotics) | *(McFarland)* |
+| Multiple probiotic strains | Use ONE goal-matched strain at a time; rotate every 3 months. *(Ford 2018 ACG)* | Other probiotics | Competition? | One at a time; rotate | *(Ford 2018)* |
+| Zinc + Copper | 8-15:1 long-term ratio. *(Health Canada Zn)* | Copper | Cu depletion | Maintain ratio | *(Health Canada Zn)* |
+| Iron + Zn/Ca/Mg | Divalent competition. *(WHO)* | Zn, Ca, Mg | Divalent | ≥2 h gap | *(WHO)* |
+| Mg + Triphala + Padma Lax | All laxative — additive. *(Health Canada Mg)* | Laxatives | Additive | One at a time | *(Health Canada)* |
+| Berberine + multiple herbs | CYP3A4 inhibition. *(Lan 2015)* | CYP3A4-metabolised herbs | CYP3A4 | Limit | *(Lan 2015)* |
 
 ### 10.5 Exercise / Sleep / Caffeine timing rules
 
-- **Caffeine cut-off 14:00** (half-life 6 h; protects sleep + microbiome circadian).
-- **Alcohol** — eliminate (dysbiosis driver).
-- **Ashwagandha KSM-66** — PM with dinner; shift AM if vivid dreams.
-- **Magnesium glycinate** — PM (sleep + bowel motility).
-- **Rhodiola / Eleuthero / L-theanine + caffeine stack** — AM only.
-- **Melatonin** (if used) — ≤0.3 mg, 30–60 min before sleep; not chronic.
-- **Akkermansia / multi-strain probiotic** — morning empty stomach OR cool first-meal.
-- **S. boulardii** — anytime with cool food; antibiotic-resistant.
-- **Spore-based (MegaSporeBiotic, Just Thrive)** — with meals; survives acid well.
-- **PHGG / Acacia / Inulin / RS** — split AM + lunch doses; ramp slowly (start 2 g, build to 10 g over 4 wks).
-- **Bone broth** — daily 300 ml.
-- **No snacking between meals** — 4 h gap.
-- **14-h overnight fast (19:00 → 09:00)** — microbiome restructuring.
-- **VNS (Nurosym, Sensate)** — evening 30 min.
-- **Sauna + alcohol** — never combine.
-- **High-intensity HIIT** — moderate; over-training depletes microbiome.
-- **Castor oil pack** — evening, 45–60 min, before bed; 3×/week.
-- **Outdoor exercise** — preferred over indoor for environmental microbial exposure.
+- **Caffeine cutoff 14:00.**
+- **Probiotic**: AM with cool food.
+- **Sunfiber**: AM with water; build slowly.
+- **Inulin / FOS**: start 1 g, build to 5 g over 4 weeks.
+- **Mg glycinate**: PM, sleep.
+- **Ashwagandha**: AM or PM; PM ≥1.5 h pre-bed.
+- **Triphala**: bedtime with warm water.
+- **Chyawanprash**: AM with warm water or milk.
+- **Iron**: AM, ≥1-2 h from tea/coffee/dairy.
+- **Exercise**: 4-5×/week.
+- **Forest / nature**: weekly 2 h minimum.
+- **Sleep**: 7-9 h nightly.
 
-### 10.6 Strictly Avoid — specific to microbiome pathology
+### 10.6 Strictly avoid (specific to microbiome rebuild)
 
-- **St John's Wort** — CYP3A4 induction; serotonin syndrome.
-- **5-HTP + SSRI/SNRI/MAOI/tramadol** — serotonin syndrome.
-- **Chronic PPI use** — major dysbiosis driver.
-- **Chronic NSAID use** — barrier injury.
-- **Antibiotic over-prescription** — only when truly essential.
-- **Artificial sweeteners** (aspartame, sucralose, saccharin) — direct dysbiosis.
-- **Glyphosate-laden produce** — anti-Lactobacillus.
-- **Excessive antibacterial soaps/disinfectants chronic** — household microbiome shift.
-- **Mono-diet / repetitive eating** — reduces diversity directly.
-- **High-dose Allicin / ginger** with anticoagulants.
-- **Kapalbhati / Bhastrika** in HTN/pregnancy/ulcer/IBD-overlap.
-- **Cold immersion** + severe cardiovascular disease.
-- **High-dose probiotic in severely immunocompromised** — translocation risk.
-- **Smoking, vaping, alcohol** — all worsen microbiome.
-- **Chronic restrictive diets (long-term keto, carnivore, very-low-FODMAP without reintroduction)** — fibre/diversity depletion.
-- **Cassia cinnamon long-term** — hepatotoxic coumarin.
+- Unnecessary antibiotics.
+- Long-term PPI without indication.
+- Artificial sweeteners (Suez 2014).
+- Emulsifiers (CMC, polysorbate-80 — Chassaing 2015).
+- Industrial seed oils in bulk.
+- Ultraprocessed foods.
+- Excess alcohol.
+- Chronic NSAIDs.
+- Mega-dose inulin without slow build.
+- Antibacterial soaps with triclosan.
+- "Parasite cleanses" without diagnosis.
+- "Candida diets" without confirmed candidiasis.
+- Colonic hydrotherapy.
+
+### 10.7 Emerging & adjunctive therapies
+
+> **TL;DR.** What's on the horizon for microbiome rebuilding beyond herbs.
+
+### 10.7.1 Home-usable advanced & device therapies
+
+| Therapy | TL;DR (plain English) | What it does | Evidence anchor | Cost |
+|---|---|---|---|---|
+| **Stool microbiome tests (Viome, ZOE, Sun Genomics, Atlas Biomed)** | Mail-in DTC stool sequencing with personalised reports — useful for direction, not diagnosis. *(Microbiome landscape 2024; Costea 2017)* | Microbiome sequencing + interpretation | Variable | $149-399 |
+| **FoodMarble Aire 2 (breath gas)** | Pairs real-time breath-hydrogen/methane with food log — useful for SIBO suspicion. *(FoodMarble validation)* | Real-time breath gas | FoodMarble Aire 2 | $249 |
+| **At-home fermentation jars + starter cultures** | Make your own kanji, sauerkraut, kimchi, kefir, kombucha — adds diverse wild microbes. *(Sonnenburg-Gardner 2021)* | DIY fermentation | Sonnenburg-Gardner 2021 | $30-100 starter kit |
+| **HeartMath / Lief / Polar H10 HRV biofeedback** | Vagal training — supports brain-gut-microbiome axis. *(Lehrer 2014; Bonaz 2018)* | Vagal training | Lehrer 2014 | $90-499 |
+| **Nurosym / Pulsetto / Sensate vagus stimulators** | Consumer vagal stimulation. *(Drewes 2019)* | Vagal stimulation | Drewes 2019 | $299-699 |
+| **At-home soil + forest exposure** | Get hands in soil weekly, walk in forest 2 h/week — adds environmental microbes. *(Hanski 2012; Li 2007; Vatanen 2016)* | Environmental microbe exposure | Hanski 2012, Li 2007 | $0 |
+| **Pet ownership** | Households with dogs show higher microbial diversity in members. *(Tun 2017 dog-microbiome)* | Environmental exposure | Tun 2017 | Variable |
+| **Sleepio (CBT-I app)** | Sleep is non-negotiable for microbiome — CBT-I for insomnia. *(Espie 2019)* | App CBT-I | Espie 2019 | UK NHS free; otherwise variable |
+
+### 10.7.2 Adjunctive behavioural therapies (Rule 6)
+
+| Therapy | TL;DR | Tier | Resources | Citation |
+|---|---|---|---|---|
+| **CBT-I for sleep regulation** | Sleep is foundational for microbiome circadian rhythm. *(Espie 2019; Smith 2019)* | A | Sleepio, CBT-i Coach app, Trauer 2015 protocols | *(Espie 2019; Smith 2019)* |
+| **MBSR for stress regulation** | Reduces HPA-axis-cortisol load. *(Kabat-Zinn; Bonaz 2018)* | B | MBSR online, Calm, Insight Timer | *(Kabat-Zinn; Bonaz)* |
+| **Forest bathing (shinrin-yoku)** | Japanese 2 h/week nature exposure raises NK-cell function and adds environmental microbes. *(Li 2007)* | B | Self-guided forest walks | *(Li 2007)* |
+| **Yoga therapy** | Supports vagal tone and gut-brain axis. *(Innes 2014 yoga-physiology)* | B | AYUSH yoga; Iyengar | *(Innes 2014)* |
+| **HRV biofeedback** | Lehrer 2014. *(Lehrer)* | B | HeartMath, Lief, Polar H10 | *(Lehrer 2014)* |
+| **Slow paced breathing (5-6 bpm)** | Free, anywhere. *(Lehrer 2014)* | B | Breathwrk, Awesome Breathing | *(Lehrer 2014)* |
+| **Self-fermentation workshops / classes** | Hands-on skill builds long-term ferment-diet adoption. *(Sonnenburg-Gardner 2021)* | B | Local classes; Sandor Katz Wild Fermentation book | *(Sonnenburg-Gardner; Katz)* |
+| **Gut-directed hypnotherapy (if IBS-overlap)** | Whorwell 1984; Nerva. *(Whorwell)* | A (IBS) | Nerva app | *(Whorwell 1984)* |
+
+### 10.7.3 If the home protocol plateaus — clinic-route options
+
+> **TL;DR.** Documented honestly; NEVER recommended in the home regime.
+
+| Option | TL;DR (plain English) | Evidence anchor | Why not in home protocol |
+|---|---|---|---|
+| **Faecal microbiota transplant (FMT) for recurrent C. difficile** | The strongest evidence in any FMT application — van Nood 2013 NEJM stopped early for efficacy. *(van Nood 2013 NEJM)* | van Nood 2013 NEJM Dutch RCT | Clinic procedure; specific indication |
+| **FMT for IBS / IBD (experimental)** | Mixed RCT data — positive Norwegian El-Salhy 2020, mixed others. *(El-Salhy 2020 Gut)* | El-Salhy 2020 | Clinic; experimental for non-CDI |
+| **Rifaximin for confirmed SIBO** | TARGET trials modest benefit. *(Pimentel 2011)* | Pimentel 2011 N Engl J Med | Prescription |
+| **Targeted antibiotic therapy for confirmed infection (C. difficile, H. pylori)** | Vancomycin or fidaxomicin for C. diff; triple therapy for H. pylori. *(IDSA, Maastricht V)* | IDSA; Maastricht V | Prescription |
+| **Genomic + functional analysis (clinic-grade)** | More accurate than DTC sequencing. *(Costea 2017)* | Costea 2017 | Clinic / specialty lab |
+| **Personalised next-generation probiotics (Akkermansia, Faecalibacterium prausnitzii — emerging clinical pipeline)** | Phase II/III trials ongoing — not OTC yet. *(Cani 2022 Akkermansia)* | Cani 2022 | Not yet OTC; experimental |
+| **Gastroenterology endoscopy / colonoscopy** | Required for red flags. *(WGO)* | WGO criteria | Clinic when red flags present |
+
+#### Open the science
+
+Trial anchors: van Nood 2013 NEJM (FMT vs vancomycin for recurrent C. difficile — stopped early for efficacy, 81% cure with single infusion vs 31% vancomycin); Sonnenburg-Gardner 2021 Cell (n=36, 10 weeks, high-fermented foods raised diversity and lowered 19 inflammatory markers); McDonald 2018 mSystems American Gut Project (n=11,336, 30+ plant rule); Dethlefsen-Relman 2011 PNAS (antibiotic-induced permanent diversity loss); McFarland 2010 (S. boulardii meta-analysis); O'Mahony 2005 (B. infantis 35624 IBS RCT n=77); Messaoudi 2011 (psychobiotic L. helveticus + B. longum French RCT n=55); Wickens 2008 NZ (L. rhamnosus HN001 childhood eczema prevention); Allen 2018 (athletes vs sedentary microbiome).
 
 ## 11. Clinical Scoring + Comorbidity Screening
 
-### 11.0 Self-administered clinical scoring instrument — microbiome diversity (DTC) + GSRS + Bristol + wellness-VAS
+### 11.0 Self-administered tracking
 
-**DTC microbiome stool test** (Viome, BiomeSight, GI-MAP, Tiny Health, ZOE) — **Shannon diversity index, relative abundance of Akkermansia + Faecalibacterium + Bifidobacterium + Roseburia + Eubacterium rectale; Firmicutes:Bacteroidetes ratio; pathobiont (Klebsiella, Proteus, Pseudomonas, Enterococcus) absolute and relative**. Baseline + month 3 + month 6 + month 12. Target: Shannon ≥3.5; Akkermansia ≥0.5% (>1% optimal); Faecalibacterium ≥5%.
+> **For you, in plain words.** Track yourself with a 0-10 daily slider (bowel comfort, energy, skin, mood), Bristol Stool Form Scale daily diary, IBS-SSS if symptomatic overlap, weekly plant-count audit, fermented-food count, and at-home stool microbiome sequencing at baseline, 6 mo, 12 mo. *(Bristol Stool Form Scale; Francis 1997 IBS-SSS; Microbiome landscape)*
 
-**GSRS** (Gastrointestinal Symptom Rating Scale, Swedish/European-developed) — 15-item self-administered. Target reduction 50% by week 12.
+### 11.5 Comorbidity Screening — DTC labs
 
-**Bristol Stool Chart** (UK-developed) — daily diary; target type 3–4 consistently.
+| Condition | TL;DR | Test | DTC source | Citation |
+|---|---|---|---|---|
+| Previous antibiotic exposure | Self-history of antibiotic courses; deliberate post-course rebuild. *(Dethlefsen-Relman 2011)* | Self-history | Personal record | *(Dethlefsen-Relman)* |
+| PPI history | Long-term PPI users need B12 + Mg checked. *(Lam 2013)* | MMA + B12 + RBC Mg | LetsGetChecked, Thriva | *(Lam)* |
+| IBS overlap | IBS-SSS self-questionnaire. *(Francis 1997)* | IBS-SSS | Self-administered | *(Francis 1997)* |
+| Food intolerances | Symptom-tracking + Monash FODMAP elimination. *(Monash; Halmos 2014)* | Self-elimination | Monash app + diary | *(Monash; Halmos)* |
+| Autoimmune (eczema, psoriasis, thyroid, RA) | Self-history + thyroid antibody panel. *(Fasano 2011)* | TSH, anti-TPO, autoimmune panel | LetsGetChecked, Thriva | *(Fasano 2011)* |
+| Eczema / psoriasis | Self-history; skin photographs. *(Vatanen 2016)* | Self-tracking | Photo diary | *(Vatanen 2016)* |
+| Mood / anxiety overlap | PHQ-9, GAD-7. *(International scales)* | PHQ-9, GAD-7 | Self-administered | *(International)* |
+| Recurrent UTI / bacterial vaginosis (women) | Symptom history; consider L. rhamnosus GR-1 + L. reuteri RC-14 strain. *(Reid 2003)* | Self-history | Personal record | *(Reid 2003)* |
+| Ageing 65+ | Diversity decline with age — patience + sustained protocol. *(Claesson 2012)* | Self-monitor | Stool test at baseline + 6 + 12 mo | *(Claesson 2012)* |
+| Low fibre history | Self-history of fibre intake; plant-count audit. *(McDonald 2018)* | Self-audit | Weekly count | *(McDonald 2018)* |
+| Recurrent C. difficile (≥2 episodes) | Clinic-route FMT indication per §10.7.3. *(van Nood 2013)* | Clinic | Specialist | *(van Nood 2013)* |
 
-**Daily Wellness-VAS** (0–10: energy, mood, brain-fog, bloating, digestion) — track in app for 14 days baseline + ongoing.
+## 12. Implementation Timeline (12 months)
 
-**Cadence:** baseline (Week 0), weekly diary continuous, microbiome stool at Wk 0, Mo 3, Mo 6, Mo 12.
-
-### 11.5 Comorbidity Screening — direct-to-consumer labs
-
-Dysbiosis carries elevated risk / overlap for: **SIBO/IMO, Candida overgrowth, leaky gut, post-antibiotic dysbiosis, post-PPI dysbiosis, MCAS overlap, autoimmune (Hashimoto, RA, psoriasis, eczema), metabolic syndrome, T2D, depression-anxiety, NAFLD.**
-
-**DTC providers:** UK — Thriva, Medichecks, Forth; EU — Cerascreen, Lykon; IN — True Test, Healthians, Thyrocare; AU — i-screen; US — LetsGetChecked, Everlywell, Walk-In Lab, InsideTracker, TrioSmart, Viome, BiomeSight, GI-MAP.
-
-**Panel — baseline / Mo3 / Mo6 / Mo12:**
-
-| Comorbidity | DTC test | Provider |
-|---|---|---|
-| Microbiome composition + diversity | Stool 16S / shotgun metagenomics | Viome, BiomeSight, GI-MAP, ZOE, Tiny Health |
-| SIBO / IMO | 3-h lactulose breath test with H₂ + CH₄ | TrioSmart, Aerodiagnostics |
-| Candida overgrowth | Stool culture + organic acids (D-arabinitol) + serum IgG/IgA Candida antibodies | GI-MAP, Great Plains Lab OAT |
-| H. pylori | Stool antigen OR urea breath test | Everlywell, Walk-In Lab |
-| Leaky gut markers | Zonulin, LPS antibody, occludin-actomyosin antibody | Cyrex Array 2, Great Plains Lab |
-| Celiac | Anti-tTG-IgA + total IgA + DGP-IgA | LetsGetChecked celiac |
-| Thyroid / Hashimoto | TSH + fT4 + anti-TPO + anti-Tg | Thriva, Paloma |
-| Autoimmune ANA + RF + anti-CCP (if joint symptoms) | ANA panel | Walk-In Lab |
-| Pancreatic insufficiency | Faecal elastase | GI-MAP, Doctor's Data |
-| NAFLD | ALT, AST, GGT | Thriva |
-| Inflammation + minerals | hs-CRP, ferritin, vit D, Mg (RBC), Zn, B12 | Walk-In Lab / Thriva |
-| Methylation / homocysteine | Homocysteine + MTHFR | Thriva |
-| Cortisol / HPA | Salivary 4-point cortisol + DHEA-S | DUTCH (Precision Analytical) |
-| Food sensitivity | IgG food panel + IgE specific | Cyrex Array 10, KBMO |
-| Metabolic syndrome | HbA1c, fasting insulin, lipid panel, ApoB | LetsGetChecked, Thriva |
-| Depression-anxiety | PHQ-9 + GAD-7 self-administered | online; track in app |
-
-## 12. Implementation Timeline (12 months, self-tracked)
-
-- **Weeks 1–4 — Foundation + Antimicrobial Phase (if pathobiont/Candida+).** Baseline DTC microbiome stool + SIBO breath test + comorbidity labs; food diary. If pathobiont/Candida overgrowth: caprylic acid + oregano + berberine + Pau d'Arco; reduce sugar to <25 g/day; S. boulardii + zinc carnosine + L-glutamine; reduce fermented foods temporarily; 14-h overnight fast. Expected: Herxheimer reaction days 3–7 (worse before better).
-- **Weeks 5–12 — Re-seeding + Diversification Phase.** Discontinue antimicrobials. Pendulum Akkermansia + L. plantarum 299v + MegaSporeBiotic + Multi-strain (Visbiome) + S. boulardii + PHGG + Acacia gum + Inulin (slow ramp) + polyphenol focus (pomegranate, cranberry, green tea). **30+ plant foods/wk target**. Fermented foods re-introduced. Bone broth daily. Repeat GSRS at week 8. Repeat DTC microbiome stool at week 12.
-- **Months 3–6 — Consolidation.** Personalised diet stable with high diversity; supplements taper to maintenance (Akkermansia 3×/wk, Multi-strain daily, MegaSporeBiotic daily, S. boulardii 3×/wk, PHGG daily, Triphala HS, polyphenol supplements + dietary). TCM cycling overlay. **Repeat DTC microbiome at Mo 6** — expect Shannon ≥3.5, Akkermansia ≥0.5%.
-- **Months 6–12 — Long-term sustainability.** Quarterly wellness-VAS; annual SIBO breath test if symptoms recur; **annual DTC microbiome stool**. Maintain 30+ plant foods/wk + polyphenol foods + fermented foods + 14:10 TRE + seasonal millet/legume rotation. Travel-kit: S. boulardii + Iberogast + multi-strain travel-pack. Expect **Shannon ≥3.7, Akkermansia ≥1%, Faecalibacterium ≥7%, GSRS <1.0, sustainable energy + mood + digestion**.
-
-**No physician check-in is mandatory.** If you keep a physician informed, that is your personal decision; the protocol does not require it.
+- **Weeks 1-4 — Dietary base only (no supplements).** Start counting plants — target 30+/week by week 4. Add one fermented food daily. Cut UPF, artificial sweeteners, emulsifiers, excess alcohol. Stool microbiome test baseline (Viome, ZOE, Sun Genomics, or Atlas Biomed).
+- **Weeks 5-8 — Add cornerstone supplements.** Sunfiber 5 g/day, goal-matched probiotic strain (§3.5), Methyl-B12 if low, Vit D3 + K2 if low. Continue dietary base.
+- **Weeks 9-12 — Add traditional layer.** Triphala bedtime, Chyawanprash morning, TCM overlay weeks 1 & 4 (Si Jun Zi Tang or Bu Zhong Yi Qi Tang or Shen Ling Bai Zhu San — pattern-matched).
+- **Months 4-6 — Consolidation + first re-test.** Maintenance with chosen layers. Drop non-responders. Repeat stool microbiome test at month 6 to see diversity shift. Repeat DTC labs.
+- **Months 6-12 — Long-term sustainability.** Quarterly self-scoring. TCM cycling. Rotate probiotic strains every 3 months. Annual stool microbiome test at month 12 for full-cycle comparison.
+- **Post-antibiotic rebuild trigger.** If you receive any antibiotic course during the year, restart the §8.5 post-antibiotic stack for 6-8 weeks.
 
 ## 13. Illustrative Case Composite
 
-> Composite — not a real patient identifier.
+> **Anonymised composite — NOT a real patient identifier.**
 
-**Aanya, 41, school teacher.** Chronic post-antibiotic dysbiosis 4 yr after 3 courses of doxycycline + amoxicillin for recurrent sinus infections in 2022. Persistent bloating + 5-day-out-of-7 constipation + sugar cravings + mid-afternoon energy crash + occasional oral thrush flare + brain fog + low mood + 8 kg weight gain. PPI 20 mg for "reflux" added 2 years ago without proper diagnostic workup. Baseline DTC: Microbiome stool — Shannon 2.6 (low), Akkermansia 0.1% (very low), Faecalibacterium 2.2% (low), Bifidobacterium 0.8% (very low), Klebsiella elevated, Candida albicans elevated; SIBO H₂ 24 ppm + CH₄ 12 ppm (mixed positive); TSH 3.4, anti-TPO 95 (early Hashimoto signal); vit D 19, B12 245 (PPI-induced), ferritin 24; GSRS 3.6, bloating-VAS 6/10, energy-VAS 4/10.
+**Profile.** 41-year-old man, recovering from 3 broad-spectrum antibiotic courses for recurrent sinusitis over 18 months; persistent loose stool, bloating, low energy, mild eczema flare. Baseline IBS-SSS 165, Bristol 5-6, vitamin D 26 ng/mL, B12 290 pmol/L (low-normal). Stool microbiome (Viome): low Bifidobacterium, low Faecalibacterium, low diversity score.
 
-Full §8.5 protocol: PPI taper over 6 weeks (omeprazole 20 → 10 → 0; layered DGL + zinc carnosine + L-glutamine + slippery elm); 4-week antimicrobial Phase 1 (Caprylic acid 1 g BID + Oregano 200 mg BID + Berberine 500 mg BID + Pau d'Arco 1 g BID); reduced sugar to <20 g/day; S. boulardii maintained 5 B CFU throughout; bone broth 400 ml daily; 14:10 TRE established. Week 5 onward Phase 2 reseeding: Pendulum Akkermansia 1 cap/day + L. plantarum 299v 10 B CFU + MegaSporeBiotic 2 caps/day + Visbiome 50 B CFU + Bifido infantis 35624 + Pomegranate + Cranberry + Green tea polyphenol + PHGG 5 g BID + Acacia 10 g/day + slow inulin ramp + 30+ plant foods/wk + fermented foods (50–100 g/day). Nurosym 30 min PM; 4-7-8 breath pre-meal; Yoga Nidra HS; B12 sublingual + iron bisglycinate + vit D + Mg + selenium + iodine cautious.
+**Protocol applied.** Weeks 1-4: 30+ plants per week target (started at 12, reached 35 by week 4); fermented food daily (yogurt AM, sauerkraut at lunch, kefir mid-afternoon). Cut all UPF and artificial sweeteners. Switched chlorinated municipal to filtered water. Weeks 5-8: Added S. boulardii 250 mg BID, Sunfiber 5 g/day, Vit D3 4000 IU + K2, Methyl-B12 1000 µg. Weeks 9-12: Added Triphala bedtime, Chyawanprash AM, Si Jun Zi Tang weeks 1 & 4. Began forest walks Sundays.
 
-- **Wk 4:** PPI at 10 mg; Candida flares cleared by week 3; bloating-VAS 4/10; energy-VAS 6/10; Herxheimer resolved.
-- **Wk 12:** PPI off; Bristol type 4 daily; GSRS 1.6; bloating-VAS 1/10; energy-VAS 8/10; **Microbiome stool Mo 3 — Shannon 3.2, Akkermansia 0.4%, Faecalibacterium 4.5%, Bifido 2.8%, Klebsiella down 70%, Candida normal**. B12 510, vit D 50, ferritin 38, anti-TPO 78 (declining).
-- **Mo 6:** Stable maintenance; Akkermansia 3×/wk + Multi-strain + MegaSporeBiotic daily; **Microbiome stool — Shannon 3.5, Akkermansia 0.9%, Faecalibacterium 6.8%, Bifido 4.2%**; weight down 6 kg; mood stable; cravings gone.
-- **Mo 12:** Long-term stable; one mild flare during travel resolved with 1-wk Phase 1 stack + S. boulardii ramp. **Microbiome stool — Shannon 3.7, Akkermansia 1.2%, Faecalibacterium 8.1%, Bifido 5.5%, Klebsiella within normal, Candida normal**. Sustainable lifestyle. No PPI dependence.
+**Outcomes.**
+- Week 4: Bristol 4-5; energy up; eczema patch beginning to clear.
+- Week 12: Bristol 4 most days; IBS-SSS 75; vitamin D 44 ng/mL; B12 410 pmol/L. Eczema patch resolved.
+- Month 6: Stool re-test — Bifidobacterium up 3-fold, Faecalibacterium up 2-fold, diversity score +18%. Switched from S. boulardii to B. infantis 35624.
+- Month 12: Stool re-test — diversity score +35% from baseline. IBS-SSS 35. Stable.
 
-## 13.5 Patient-Facing Primer
+## 13.5 Patient-facing Primer
 
-Your gut microbiome — the trillions of bacteria, fungi, viruses, and archaea living in your digestive tract — is the single most-modifiable lever for your long-term health. When it's diverse and well-fed, you have abundant energy, stable mood, predictable digestion, balanced immune function, and resistance to chronic disease. When it's depleted (from antibiotics, PPIs, processed food, chronic stress, or just modern living), you get the cascade you may already recognise: bloating, irregular bowels, brain fog, sugar cravings, mood dips, weight gain, recurrent infections.
+The trillions of bacteria, archaea, fungi and viruses in your gut — your microbiome — shape your immune system, mood, metabolism, skin and energy. Modern life (low fibre, frequent antibiotics, ultraprocessed food, over-sanitisation) has driven a measurable collapse in diversity for most adults. The good news: deliberate rebuilding works, and the highest-evidence interventions are not supplements at all. The single strongest dietary lever is plant variety — Tim Spector's American Gut Project showed eating 30+ different plant foods per week measurably raises microbial diversity. Pair this with a fermented food daily (yogurt, kefir, sauerkraut, kimchi, kombucha — the Stanford Sonnenburg-Gardner 2021 Cell trial showed fermented foods raised diversity AND lowered 19 inflammatory markers in 10 weeks). Add a goal-matched probiotic strain (not a random "30-strain" blend — match the strain to your goal: S. boulardii for post-antibiotic, B. infantis 35624 for IBS comfort, L. rhamnosus GG for travel diarrhoea prevention, L. rhamnosus GR-1 for vaginal-urinary axis). Add sleep, exercise, stress regulation, and nature exposure. Expect measurable change in 4-12 weeks, full remodelling at 6-12 months. This is independent, OTC, home-based. **No prescription. No clinic. No hospital. No surgery.** You are sovereign over your own body. Red flags requiring clinical assessment: recurrent C. difficile infection (≥2 episodes — FMT is clinic-route), bloody diarrhoea, unexplained weight loss, fever, severe pain, or new symptoms after age 50.
 
-This protocol does **not** chase the symptom with a single multi-strain probiotic and a generic "eat more fibre" suggestion. Instead, it works on five layers — (1) re-seeding the missing keystone species (especially Akkermansia muciniphila via Pendulum, the first commercially available Akkermansia product, plus Bifidobacterium infantis, Lactobacillus plantarum 299v, and the spore-based Bacillus subtilis HU58 in MegaSporeBiotic); (2) feeding them with 30+ different plant foods per week (the Tim Spector / British Gut benchmark — fibre + polyphenol diversity); (3) eliminating opportunistic overgrowth (Candida, Klebsiella, Proteus) with herbal antimicrobials like caprylic acid, oregano oil, berberine; (4) rebuilding the mucin layer and gut barrier with L-glutamine, zinc carnosine, vitamin A from cod-liver oil; (5) restoring the vagal nerve and brain-gut axis with humming, cold-water face splash, Nurosym VNS, and Yoga Nidra. **No prescription. No clinic. No hospital. No FMT referral** (FMT is appropriate for diagnosed C. difficile, which is outside this protocol's scope).
+## 13.7 Honest evidence-tier comparison table
 
-Expect a slow, steady transformation. Week 1–4 may be uncomfortable (Herxheimer reaction as opportunistic species die off). Week 5–12 you'll feel the re-seeding take hold — better energy, stable mood, clearer thinking, predictable digestion. Month 3 DTC microbiome stool will show measurable diversity uplift. Month 6 — substantial Akkermansia and Faecalibacterium restoration. Month 12 — sustainable.
+> **TL;DR.** Every approach covered, ranked by honest tier with a plain-words verdict — including the ones we do NOT recommend.
 
-You are sovereign over your own body. If you choose to keep a physician informed, that is your personal decision. The protocol does not require it.
+| Approach | Tier | Plain-words verdict (≤25 words) | Where it fits |
+|---|---|---|---|
+| 30+ plants per week | A | American Gut Project — strongest single dietary lever for diversity. *(McDonald 2018)* | Cornerstone — count weekly |
+| Fermented foods daily | A | Sonnenburg-Gardner 2021 Cell — raises diversity + lowers 19 inflammatory markers in 10 weeks. *(Sonnenburg-Gardner 2021)* | Cornerstone — daily ferment |
+| Mediterranean-MIND-millet hybrid base | A | PREDIMED + MIND + ICAR-IIMR millet — best-evidenced dietary pattern. *(PREDIMED; Estruch 2018)* | Cornerstone diet |
+| Sleep 7-9 h | A | Microbiome circadian rhythm depends on sleep. *(Smith 2019; Konturek 2011)* | Non-negotiable |
+| Exercise (Zone 2 + strength) | A | Allen 2018 athletes-vs-sedentary microbiome data. *(Allen 2018)* | Daily/weekly |
+| Nature + forest exposure + pets | B | Hanski 2012 + Li 2007 + Tun 2017 — environmental microbe addition. *(Hanski 2012; Li 2007; Tun 2017)* | Weekly forest, daily nature |
+| Antibiotic stewardship | A | Dethlefsen-Relman 2011 PNAS — diversity loss from each course. *(Dethlefsen-Relman 2011)* | Non-negotiable principle |
+| S. boulardii CNCM I-745 | B | McFarland 2010 meta-analysis for post-antibiotic, post-infectious diarrhoea. *(McFarland 2010)* | Post-antibiotic + travel D |
+| B. infantis 35624 (Align/Symprove) | B | O'Mahony 2005 RCT for IBS-overlap comfort. *(O'Mahony 2005)* | Goal: IBS comfort |
+| L. plantarum 299v | B | Niedzielin 2001 RCT for pain and bloat. *(Niedzielin 2001)* | Goal: IBS pain/bloat |
+| L. rhamnosus GG (LGG) | B | Hojsak 2010 + Szajewska 2007 paediatric & travel-D evidence. *(Hojsak; Szajewska)* | Goal: travel D, post-ABX |
+| Visbiome / VSL#3 (8-strain) | B (UC) | Tursi 2010 RCT for UC remission. *(Tursi 2010)* | Clinic-overlap UC only |
+| L. rhamnosus GR-1 + L. reuteri RC-14 | B | Reid Canadian formulations — vaginal-urinary axis. *(Reid 2003)* | Vaginal/UTI goal |
+| L. helveticus R0052 + B. longum R0175 (Probio'Stick) | C | Messaoudi 2011 French RCT — anxiety reduction. *(Messaoudi 2011)* | Mood/anxiety goal |
+| Partially-hydrolysed guar gum (Sunfiber) | B | Polymeropoulos 2014 + low-FODMAP-safe. *(Polymeropoulos)* | Daily backbone fibre |
+| Inulin / FOS (slow build) | C | Strong bifidogenic; mega-dose causes bloat. *(Slavin 2013)* | Slow titration only |
+| Triphala | A | Long Ayurveda + modern reviews; safe long-term. *(AYUSH; Tarasiuk 2018)* | Daily at bedtime |
+| Chyawanprash | T | Classical Ayurveda rasayana — polyphenol + vit C + prebiotic. *(Charaka; AYUSH)* | Daily AM |
+| Kanji / Takra / Dosa batter / Idli (Indian ferments) | T | Centuries of Indian wild ferment use. *(AYUSH; traditional)* | Daily food rotation |
+| TCM Si Jun Zi / Liu Jun Zi / Bu Zhong Yi Qi / Shen Ling Bai Zhu San | B | Modern Chinese trials + classical Li Dongyuan school. *(NMPA; Pi Wei Lun)* | TCM overlay weeks 1 & 4 |
+| Pao Cai / Doujiang / Natto (East Asian ferments) | T | Classical East Asian wild ferments. *(Traditional)* | Optional food rotation |
+| Unani Khamira / Sharbat-e-Bazoori / Itrifal Ustukhuddus | T | Classical Unani; tradition only. *(Hamdard; Avicenna)* | Optional traditional |
+| Siddha Brahma Rasayanam / Nellikai lehyam | T | Classical Tamil rejuvenatives. *(IMPCOPS)* | Optional traditional |
+| Tibetan Padma Lax | B | EMA monograph; transit support. *(EMA Padma; Sallon 2002)* | Optional for IBS-C overlap |
+| Homeopathy (Lycopodium, Carbo veg, China, Nux vomica, Calc carb) | T/H | Tradition (Boericke, Kent). No robust microbiome RCT. Per founder mandate. | Not in active protocol; transparency |
+| Stool microbiome tests (Viome / ZOE / Sun Genomics / Atlas) | H | Interpretive, not diagnostic; useful for direction + motivation. *(Microbiome 2024)* | Optional tracking |
+| FoodMarble Aire 2 (breath gas) | H | Pairs breath gas with food log; SIBO suspicion. *(FoodMarble validation)* | Optional diagnostic |
+| HRV biofeedback (HeartMath / Lief) | B | Lehrer 2014 vagal training. *(Lehrer)* | Optional daily |
+| Consumer tVNS (Nurosym/Pulsetto/Sensate) | H | Vagal stimulation; microbiome-specific data limited. *(Drewes 2019)* | Optional |
+| Forest bathing (shinrin-yoku) | B | Li 2007 — NK-cell function + environmental microbes. *(Li 2007)* | Weekly 2 h |
+| Generic "30-strain 100-billion CFU" blends | C | Most have NO formulation-specific RCT. Marketing. *(Ford 2018 ACG)* | Not in protocol |
+| Artificial sweeteners (sucralose, aspartame) | X | Suez 2014 Nature — direct microbiome disruption. *(Suez 2014)* | AVOID |
+| Emulsifiers (CMC, polysorbate-80) | X | Chassaing 2015 Nature — mucus layer disruption. *(Chassaing 2015)* | AVOID |
+| Ultraprocessed foods (UPF) | X | Martínez Steele 2017 + multiple — direct dysbiosis. *(Martínez Steele 2017)* | AVOID |
+| Triclosan antibacterial soaps | X | EFSA + Vatanen 2016 environmental microbe loss. *(EFSA; Vatanen)* | AVOID |
+| "Candida cleanse" antifungals without diagnosis | X | No evidence; risk. | Not in protocol |
+| "Parasite cleanses" without diagnosis | X | No evidence; risk. | Not in protocol |
+| Colonic hydrotherapy | X | No microbiome support; mucosal trauma. | Not in protocol |
+| Mega-dose inulin without slow build | X | Massive bloat in many; titrate. | Not without titration |
+| Faecal microbiota transplant (FMT) for recurrent C. difficile | A (CDI) | van Nood 2013 NEJM — gold-standard for recurrent C. diff. *(van Nood 2013)* | Clinic-route §10.7.3 only — recurrent CDI specific |
+| FMT for IBS / IBD | C (mixed) | El-Salhy 2020 positive; mixed others. *(El-Salhy 2020)* | Clinic-route §10.7.3 only; experimental |
+| Rifaximin for confirmed SIBO | A (TARGET) | Pimentel 2011 N Engl J Med. *(Pimentel 2011)* | Clinic-route §10.7.3 only |
+| Akkermansia muciniphila (clinical pipeline) | B (early) | Cani 2022 — Phase II/III; not yet OTC. *(Cani 2022)* | Not yet OTC |
+| Gastroenterology endoscopy / colonoscopy | A (red flags) | Required for red flags only. *(WGO)* | Clinic when red flags |
 
 ## 14. Independent Healing Paradigm
 
-This protocol diverges from the mainstream pharmaceutical model that treats microbiome dysbiosis as either invisible ("we don't measure that") or as a vague catchall ("take a probiotic") — both approaches missing the keystone species, fibre/polyphenol diversity, and brain-gut axis. The protocol is built on the Belgian Cani / Plovier *Nature Medicine* 2017/2019 Akkermansia mechanistic work, Dutch Wageningen polyphenol research, French INRA fibre-diversity work, the Spector/ZOE/British Gut population framework, Microbiome Labs MegaSporeBiotic RCTs, Whorwell Manchester B. infantis 35624 trial, Niedzielin Polish L. plantarum 299v trial, and AYUSH Triphala + Vidanga + Kutaja monographs.
-
-**Sovereignty ethos.** **No prescription. No clinic. No hospital. No surgery. No clinic FMT** (acknowledged as appropriate medical care for diagnosed C. difficile, outside this protocol's home-based scope). The user owns their body and their healing path. Evidence varies honestly: Grade A for MegaSporeBiotic, S. boulardii, L. plantarum 299v, B. infantis 35624, Visbiome/VSL#3, Triphala, PHGG, acacia gum, inulin, resistant starch, berberine (Chedid 2014), oregano oil (Chedid 2014); Grade B (emerging A) for Pendulum Akkermansia, polyphenol-Akkermansia synergy, caprylic acid, butyrate / tributyrin, HMOs; Grade T for Unani/Siddha/Tibetan/homeopathic — honoured as traditions, never marketed as proof.
-
-Authority grounded in **WHO TCIM Strategy 2025–2034, India AYUSH/CCRAS/CCRH/CCRYN/CCRUM/CCRS/PCIMH/ICMR, EMA HMPC, Australia TGA + NHMRC, China NMPA + Chinese Pharmacopoeia, Health Canada NHP, Men-Tsee-Khang, Hamdard, IMPCOPS, Belgian Cani / Dutch Wageningen / French INRA microbiome research lineages, Manchester gut-directed hypnotherapy lineage (Whorwell), British Gut Project (Spector), Microbiome Labs RCT programme**, plus classical texts (Charaka *Krimi-Vijnaniya*, Sushruta, *Bhavaprakasha*, *Ashtanga Hridaya*, Avicenna's *Canon*, *Huang Di Nei Jing*, *Shang Han Lun*, *Tai Ping Hui Min He Ji Ju Fang*, *Pi Wei Lun* Li Dongyuan, Boericke, Allen, Kent).
-
-Explicit re-affirmation: **no FDA, FTC, ACG, AGA, AMA, APA, ACOG, NAMS, ACR, ACS, CDC, NIH-policy, AAFP, AAP as authority. Period.**
+NicheCore's microbiome reset protocol differs fundamentally from the mainstream pharmaceutical model. Where the conventional path layers antibiotics for symptoms, PPIs for acid (raising SIBO risk), and treats the gut as a static drug-delivery tube — this protocol treats the microbiome as a living ecosystem to be cultivated. The strongest dietary lever (30+ plants/week — McDonald 2018 American Gut Project) is free. The strongest single intervention (fermented foods daily — Sonnenburg-Gardner 2021 Cell) is essentially free. The strongest behavioural levers (sleep, exercise, nature exposure, stress regulation) are free. Probiotic supplements are a secondary layer chosen by goal, not by marketing. **Sovereignty ethos: OTC + home-based by design. No prescription. No clinic. No hospital. No surgery.** The user owns their body and their healing path. We document the strongest globally-sourced natural path and tell you honestly when evidence is mixed (most "30-strain 100-billion CFU" probiotic blends have no formulation-specific RCT; stool microbiome tests are interpretive not diagnostic; aloe juice has Cochrane-null data; many marketed gut supplements have no trial backing). **No FDA, FTC, ADA, AHA, AAD, AGA, AMA, APA, ACOG, NAMS, ACR, ACS, CDC, NIH-policy, AAFP, AAP as authority on whether something WORKS. Period.** Protocol grounded in WHO TCIM, India AYUSH/CCRAS/CCRH/CCRYN/CCRUM/CCRS/PCIMH/ICMR, EMA HMPC, American Gut Project (academic-sourced), Sonnenburg lab at Stanford (academic-sourced — not US-regulatory), Australia TGA + NHMRC, China NMPA + Chinese Pharmacopoeia, Health Canada NHP, Men-Tsee-Khang, Hamdard, IMPCOPS, plus classical traditional texts and the Pi Wei Lun spleen-stomach school of TCM.

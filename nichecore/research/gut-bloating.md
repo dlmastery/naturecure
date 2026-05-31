@@ -2,623 +2,724 @@
 ailmentId: gut-bloating
 ailmentName: Gut Bloating
 domain: Gut
-lastUpdated: 2026-05-29
+lastUpdated: 2026-05-30
 gradeMix: [A, B, C, D, T, H]
-clinicalScoringInstrument: GSRS (Gastrointestinal Symptom Rating Scale) + IBS-SSS + Bristol Stool Chart + bloating-VAS daily diary
-subTypes: [SIBO-driven, IMO-methanogenic, post-prandial-functional, food-intolerance-FODMAP, gastroparesis-slow-transit, candida-overgrowth, mast-cell-histamine-axis]
-comorbidityScreen: [IBS, SIBO/IMO, GERD-overlap, hypothyroidism, celiac, NAFLD, anxiety-depression, MCAS-histamine, endometriosis-pelvic, perimenopausal-flux]
+clinicalScoringInstrument: "Bloating Severity Score (0-10 daily slider), Abdominal Distention Index (waist-circumference morning vs evening, photograph diary), Bristol Stool Form Scale, gas/eructation count, plus a simple trigger-food log and IBS-SSS for overlap"
+subTypes: [post-meal-functional-bloating, sibo-imo-overlap-bloating, fodmap-driven-bloating, slow-transit-constipation-bloating, swallowed-air-aerophagia, perimenopausal-bloating, post-surgical-adhesion-bloating]
+comorbidityScreen: [small-intestinal-bacterial-overgrowth, methane-overgrowth, coeliac-disease, lactose-fructose-malabsorption, slow-transit-constipation, dyssynergic-defecation, perimenopause, hypothyroid, low-stomach-acid, anxiety-overlap]
+authorAgent: ailment-360-research
+schemaVersion: v6.2.3
 internalRalph:
   pass1Complete: true
   pass2Complete: true
   pass3Complete: true
-authorAgent: ailment-360-research
 ---
 
-> **Framing.** Grounded in WHO TCIM Strategy 2025–2034, India AYUSH/CCRAS/CCRH/PCIMH monographs, EMA HMPC herbal monographs, TGA/NHMRC evidence guidelines, China NMPA + Chinese Pharmacopoeia, Health Canada NHP monographs, Men-Tsee-Khang formularies, Hamdard Dawakhana, IMPCOPS Chennai, and the classical Ayurvedic, TCM, Unani, Siddha, Tibetan and homeopathic literature. **No FDA, FTC, ACG, AGA, AMA, CDC, NIH-policy or US disease-association source is cited as authority.**
+> **For you, in plain words.** This is a safe, over-the-counter, at-home plan for chronic bloating, abdominal distention, post-meal heaviness, and gas. We lead with **low-FODMAP elimination (Monash University, Grade A)**, **enteric-coated peppermint oil + caraway combination (Grade B+)**, and **digestive bitters or HCl-with-pepsin if low stomach acid is the driver** (Grade C). Supplements come second. We are honest where evidence is mixed — including for most probiotic blends and for "natural enzyme cleanses". *(WHO TCIM 2025-2034; Monash University FODMAP; EMA HMPC peppermint and caraway monographs; Cochrane Ford 2014)*
 >
-> **Sovereignty.** This is a **strictly OTC, strictly home-based** protocol. There is **no rifaximin, no neomycin, no antispasmodic, no PPI, no prokinetic prescription, no clinic-based therapy and no hospital admission** recommended anywhere in this dossier. Every supplement, device and test is consumer-purchasable and self-administrable. The drug column in §10.1 documents conflicts for users **already on conventional therapy** who are layering this protocol on their own initiative — it does not recommend any prescription.
+> **The frame.** Grounded in WHO Traditional & Complementary Medicine Strategy 2025-2034, India's Ministry of AYUSH (CCRAS, CCRH, CCRUM, CCRS, PCIMH), EMA herbal monographs (peppermint oil, caraway, fennel, anise, Iberogast STW-5), Australia TGA, China NMPA + Chinese Pharmacopoeia 2020, Health Canada Natural Health Products, Tibetan Men-Tsee-Khang, Hamdard Dawakhana, IMPCOPS Chennai, and the classical Ayurvedic, Chinese, Unani, Siddha, Tibetan and homeopathic texts. **No US regulator or US disease association is cited as authority.**
+>
+> **Sovereignty.** Every food protocol, supplement, breath practice and home device here is something you can buy and use yourself. **No prescription, no clinic, no hospital visit, no surgery is recommended in the home regime.** Clinic-route options (rifaximin for SIBO, prokinetics for IBS-C overlap, gastroenterology workup for red flags, abdominal imaging for adhesions) are placed in a clearly labelled §10.7.3 referral addendum, never in the home protocol.
+>
+> **Red flags — when home is NOT enough.** Sudden severe persistent distention with vomiting, fever, severe pain, blood in stool, unexplained weight loss, palpable abdominal mass, or new bloating after age 50 — arrange clinical assessment on your own initiative. This protocol cannot screen for bowel obstruction, ovarian pathology, or malignancy.
 
 ## 1. Executive Summary
 
-Gut bloating is conventionally treated as a symptom — chased with simethicone, dietary FODMAP elimination handed to a dietitian, or rifaximin if SIBO is suspected. The integrative reframing is different: chronic bloating is the **downstream pressure signal of four convergent root mechanisms** — (i) small intestinal bacterial / methanogenic overgrowth (SIBO / IMO) with displaced colonic-type flora in the small bowel fermenting carbohydrate to H₂, CH₄ and CO₂; (ii) low stomach acid + low pancreatic-biliary tone with maldigestion of protein and fat, leading to fermentative breakdown distally; (iii) vagal hypotonia + slow migrating motor complex (MMC) with insufficient inter-digestive "house-keeping" sweeps; (iv) mast-cell + histamine axis dysregulation with localized inflammation amplifying visceral hypersensitivity. **Synthesis:** A natural, OTC, home-based protocol that simultaneously thins SIBO/IMO biofilms, restores digestive secretions, retrains the MMC and calms the mast-cell axis addresses the upstream drivers — not the symptom of distension.
+### 1.1 What chronic bloating actually is
 
-## 2. Mechanistic Network (4-node)
+> **For you, in plain words.** Daily abdominal distention is rarely "just gas" — it has six drivers you can work on at home. *(Lacy 2021 Am J Gastroenterol bloating review; Malagelada 2017 bloating consensus)*
 
-**2.1 SIBO / IMO (intestinal methanogen overgrowth) — the central node.** Healthy small intestine has 10³–10⁴ CFU/mL; SIBO is defined as >10⁵, IMO by elevated methanogen archaea (*Methanobrevibacter smithii*). Causes: prior PPI/antibiotic use, vagal hypotonia, ileocecal valve incompetence, structural (adhesions, diverticula), low IgA, low stomach acid, sluggish MMC. Carbohydrate substrate (FODMAP, polyols, lactose, fructans) ferments to H₂ (Gram-negative bacteria), CH₄ (archaea — slows transit further, worsening constipation) or H₂S (sulfate-reducing bacteria — sulfur-egg burps, diarrhoea). Targeted by **berberine, oregano oil (carvacrol), allicin (garlic extract for IMO methanogens), neem, *Phellodendron* (Huang Bai), *Coptis* (Huang Lian), Triphala (gentle), prokinetics (ginger, Iberogast equivalent, MotilPro), low-FODMAP phase**. **Synthesis:** Without addressing SIBO/IMO substrate and population, bloating returns within days of stopping any other intervention.
+**Quick start.** Tonight: photograph your belly morning and evening; cut high-FODMAP foods for 2 weeks (onion, garlic, wheat, apple, milk); start enteric-coated peppermint oil with each meal; eat slowly and stop carbonated drinks.
 
-**2.2 Low stomach acid + pancreatic-biliary insufficiency — the upstream digest failure.** Aging, chronic stress, H. pylori, autoimmune gastritis, PPI use, B12 deficiency, low zinc all lower stomach acid (hypochlorhydria). Insufficient acid fails to denature protein, sterilize incoming food, and signal CCK/secretin → ↓ pancreatic enzyme + bile output. Undigested protein and fat reach distal small bowel and colon, feeding bacterial fermentation. Targeted by **Betaine HCl + pepsin, digestive bitters (gentian, dandelion, Swedish bitters), ginger pre-meal, apple cider vinegar 15 ml pre-meal, ox bile if cholecystectomy, pancreatic enzyme (Creon-equivalent OTC: NOW Super Enzymes, Pure Encaps Pancreatic Enzyme Formula), zinc carnosine 75 mg BID, B12 if deficient**. **Synthesis:** Restoring upstream digestion stops feeding downstream overgrowth.
+#### Open the science
 
-**2.3 Vagal hypotonia + slow MMC (migrating motor complex).** The MMC is the inter-digestive "broom" that sweeps small-bowel contents and bacteria into the colon every 90–120 min during fasting. Chronic stress, vagal denervation, post-infectious anti-vinculin antibodies (post-food-poisoning IBS-D), opioid use, and grazing/snacking suppress the MMC. Targeted by **vagal training (humming, gargling, cold splash, gentle gag-reflex), 4-7-8 breathing, Yoga Nidra, ginger, *Iberogast* (German STW 5), MotilPro (5-HTP + ginger + artichoke), consumer VNS (Nurosym, Sensate, Pulsetto), meal spacing 4–5 hours with no snacking, longer overnight fast (12–14 h), prokinetic herbs (Triphala, Hingvashtak Churna, Avipattikar Churna)**. **Synthesis:** Without MMC restoration, SIBO recurs in 4–8 weeks.
+Chronic bloating affects roughly 1 in 6 adults globally — most have a functional pattern (no structural disease) driven by some combination of: (i) fermentable food fuel, (ii) small-intestinal bacterial overgrowth, (iii) visceral hypersensitivity (the gut wall is over-tuned to normal stretch), (iv) abdomino-phrenic dyssynergia (the diaphragm pushes down rather than up when the gut fills), (v) slow transit / constipation, and (vi) swallowed air. A home protocol that hits these in parallel outperforms any single fix. *(Lacy 2021; Malagelada 2017; Villoria 2008 abdomino-phrenic dyssynergia)*
 
-**2.4 Mast-cell + histamine axis dysregulation (the founder's gut-mast-cell-histamine emphasis).** Gut mucosal mast cells release histamine, tryptase, prostaglandins, leukotrienes locally — driving visceral hypersensitivity, sub-clinical inflammation, and bloating disproportionate to actual gas volume. Triggers: histamine-rich fermented foods (paradoxically, in MCAS-overlay users), histamine-liberating foods (citrus, tomato, chocolate, alcohol), stress, dysbiosis. DAO (diamine oxidase) enzyme insufficiency amplifies. Targeted by **low-histamine phase trial 4–6 weeks, DAO enzyme supplementation (Histamine Block, Daosin), quercetin 1 g BID (mast-cell stabilization), vitamin C 1–2 g (histamine catabolism), Nigella sativa (mast-cell stabilizer), holy basil tulsi, Boswellia AKBA, magnesium glycinate, vagal practices**. **Synthesis:** In a substantial sub-fraction (~30–40%) of chronic bloating, mast-cell axis is the missed driver; identifying this sub-type is rate-limiting.
+### 1.2 The six drivers — at a glance
 
-## 2.5 Clinical sub-types & differential prognosis
+> **For you, in plain words.** Six causes drive chronic bloating — fermentable foods, bacterial overgrowth, an over-reactive gut wall, a diaphragm muscle pattern that pushes the belly out, slow transit, and air swallowing. Each has its own home lever. *(Lacy 2021)*
 
-| Sub-type | Clinical features | Dominant §2 node | Expected protocol response |
-|---|---|---|---|
-| **SIBO-H₂ driven** | Bloating worse 60–120 min post-meal; loose stools; carb-heavy diet | §2.1 + §2.3 | **Best** — 4–6 week herbal antimicrobial phase + low-FODMAP → SIBO breath test re-test |
-| **IMO methanogenic** | Bloating + chronic constipation + slow transit; allicin sensitive | §2.1 IMO + §2.3 | **Moderate** — methanogen archaea harder to clear; need allicin + berberine + lactoferrin |
-| **Post-prandial functional** | Distension after meals, no overgrowth on testing | §2.2 + §2.3 | **Best** — digestive bitters + ginger + MMC training |
-| **Food-intolerance / FODMAP** | Reproducible distension after specific foods (onion, garlic, wheat, dairy, beans) | §2.1 substrate + §2.4 mast cell | **Best** — low-FODMAP 4–6 wk → reintroduction map |
-| **Gastroparesis / slow transit** | Bloating, early satiety, nausea, vomiting; diabetic or post-viral | §2.2 + §2.3 + autonomic | **Moderate** — needs prokinetic herbs + smaller meals + Zone 2 walking |
-| **Candida overgrowth** | Bloating + sugar craving + brain fog + post-antibiotic | §2.1 fungal + microbiome | **Moderate** — needs caprylic acid + oregano + Saccharomyces boulardii + reduced sugar |
-| **Mast-cell / histamine axis** | Bloating + flushing + headache + skin reactions + reactive to fermented + leftovers | §2.4 dominant | **Moderate** — needs low-histamine 4–6 wk + DAO + quercetin + mast-cell support; slowest sub-type to identify |
+**Quick start.** Pick ONE driver to work on this week. Most users start with the FODMAP-and-eating-pace change (highest-evidence dietary lever) + peppermint oil + bitters before meals. The rest layers on later.
+
+## 2. Mechanistic Network (6-node)
+
+### 2.1 Six causes — the picture
+
+> **For you, in plain words.** Six causes drive bloating — fermentable foods, bacterial overgrowth in the small intestine, an over-reactive gut wall, abdomino-phrenic dyssynergia, slow transit, and swallowed air. Naming them lets every food, breath and supplement aim at the right one. *(Lacy 2021; Malagelada 2017)*
+
+### 2.2 Fermentable food fuel
+
+> **For you, in plain words.** FODMAPs (short-chain carbohydrates poorly absorbed in the small intestine) reach the colon and ferment. The gas they produce stretches a sensitive gut and creates bloat. Cut them for 2-6 weeks, reintroduce one at a time. *(Halmos 2014 Australia n=30; Monash FODMAP database)*
+
+#### Open the science
+
+FODMAPs are fructans (wheat, onion, garlic), galactans (legumes), lactose (milk), excess fructose (apple, mango, HFCS), and polyols (sorbitol, mannitol — apple, pear, sugar-free gum). They reach the colon and are fermented to hydrogen, methane, and SCFAs. In someone with visceral hypersensitivity (§2.4), the gas-stretch triggers pain and distention. Monash low-FODMAP RCTs (Halmos 2014; Staudacher 2017) show ~70% response in IBS-bloating. **Synthesis.** Strict elimination is diagnostic; reintroduction is essential.
+
+### 2.3 SIBO + methane overgrowth (IMO)
+
+> **For you, in plain words.** When too many bacteria grow in the small intestine (where there should be few), or when methane-producing archaea grow heavily, you get severe post-meal bloating. Home breath tests (FoodMarble Aire 2, postal lactulose kits) detect both patterns. *(Pimentel 2020 SIBO review; FoodMarble Aire 2 validation)*
+
+#### Open the science
+
+SIBO: excess bacteria in the small intestine (>10⁵ CFU/mL), often after PPI use, low stomach acid, slow motility, prior gut surgery, or recurrent gastroenteritis. IMO (intestinal methanogen overgrowth): excess Methanobrevibacter smithii, strongly linked to constipation and bloat. Diagnosis: lactulose or glucose hydrogen-methane breath test. Targeted home interventions: **berberine** (Chedid 2014 — comparable to rifaximin in herbal-antimicrobial trial), **mastic gum** (Greek antimicrobial, Pastorello 2016), **oregano oil** (carvacrol antimicrobial), **garlic-derived allicin** (only when not on a low-FODMAP elimination), **biofilm disruptors** (interphase, monolaurin); plus low-FODMAP and meal spacing.
+
+### 2.4 Visceral hypersensitivity
+
+> **For you, in plain words.** In some, normal amounts of gas fire pain and distention signals — the gut wall has been "tuned up". Gut-directed hypnotherapy, peppermint oil, and slow-paced breathing retrain it. *(Whorwell 1984; Cochrane Ford 2014; Lehrer 2014)*
+
+### 2.5 Abdomino-phrenic dyssynergia
+
+> **For you, in plain words.** In many chronic bloaters, the diaphragm muscle pushes DOWN when the gut fills (instead of allowing it to settle UP and to the sides). This pushes the belly visibly forward without much extra gas. Diaphragmatic breathing and biofeedback retrain it. *(Villoria 2008 Spain abdomino-phrenic; Barba 2015 biofeedback APD RCT)*
+
+#### Open the science
+
+Abdomino-phrenic dyssynergia (APD) is an acquired reflex where, on abdominal filling, the diaphragm descends instead of relaxing upward, and the anterior abdominal wall protrudes — visible distention disproportionate to gas content. Villoria 2008 (Hospital General Vall d'Hebron Barcelona) demonstrated APD via EMG in chronic bloaters. Barba 2015 RCT (n=46) showed EMG-guided biofeedback (4 sessions) reduced bloating by 56%. Self-applicable substitute: daily diaphragmatic breathing 10 min, focused on belly-rise during inhale and belly-soften (not push) during exhale. **Synthesis.** This is the lever most chronic bloaters have never been offered.
+
+### 2.6 Slow transit / constipation
+
+> **For you, in plain words.** Stool that sits in the colon ferments and produces gas overnight — morning bloat is a signature. Magnesium, ginger, Triphala, Padma Lax and Senna-free osmotic laxatives (when needed) restore transit. *(Bharucha 2013 constipation review; Tarasiuk 2018 Triphala)*
+
+### 2.7 Swallowed air (aerophagia)
+
+> **For you, in plain words.** Eating fast, chewing gum, talking while eating, drinking through straws, fizzy drinks, and tight clothing around the waist all push air into the gut. Slow eating + no carbonation often fixes a surprising amount. *(WGO consensus; Tomita 2013 aerophagia)*
+
+### 2.8 Sub-types & realistic prognosis
+
+> **For you, in plain words.** Seven sub-types — aerophagia and FODMAP-driven move fastest; SIBO-overlap and abdomino-phrenic dyssynergia need targeted layers; post-surgical adhesions need clinical workup. *(Lacy 2021; Malagelada 2017)*
+
+| Sub-type | TL;DR (plain English) | Clinical features | Dominant cause | Realistic response | Citation |
+|---|---|---|---|---|---|
+| Post-meal functional bloating | Worsens 1-2 h after eating; relieved by belch or passing gas. *(Lacy 2021)* | Post-meal peak; relieves with gas | §2.2 + §2.4 | Best; 4-8 weeks low-FODMAP + peppermint | *(Lacy 2021; Halmos 2014)* |
+| SIBO / IMO overlap | Severe distention 1-3 h post-meal; positive breath test. *(Pimentel 2020)* | Positive breath test; severe distention | §2.3 SIBO | Moderate; 4-week antimicrobial + 8-12 weeks rebuild | *(Pimentel 2020; Chedid 2014)* |
+| FODMAP-driven | Tight link between specific high-FODMAP foods and bloat. *(Halmos 2014)* | Trigger-food clear | §2.2 | Best; Monash elimination 2-6 weeks | *(Halmos 2014; Monash)* |
+| Slow-transit constipation + bloat | Morning bloat from overnight colonic fermentation; <3 BMs/week. *(Bharucha 2013)* | <3 BMs/week + morning bloat | §2.6 | Moderate; 8-12 weeks fibre + Mg + Triphala | *(Bharucha 2013)* |
+| Aerophagia (swallowed air) | Upper-belly bloat + frequent belching; eating-pace-driven. *(Tomita 2013)* | Frequent belching + upper bloat | §2.7 | Best; behavioural changes in 2-4 weeks | *(Tomita 2013)* |
+| Perimenopausal | Bloat cyclical with hormone shifts in 40s-50s women. *(EMA perimenopause)* | Cyclical 40s-50s woman | §2.2 + hormone shift | Moderate; 8-16 weeks layered protocol | *(EMA perimenopause)* |
+| Post-surgical adhesion bloat | Bloat with distention pattern after abdominal surgery (C-section, appendectomy). | Post-op history; ?partial obstruction | Structural | Clinic-route imaging required | *(WGO; Lacy 2021)* |
 
 ## 3. OTC Phytochemicals — Pharmacological Validation
 
-| Compound | Mechanism | Dose | Timing | Take WITH | Avoid WITH (≥2 h) | Grade | Brands | $/mo | Evidence note |
-|---|---|---|---|---|---|---|---|---|---|
-| **Berberine HCl** | Antimicrobial SIBO, AMPK, microbiome restoration toward *Akkermansia* | 500 mg TID for 4–6 wk antimicrobial phase | with meals | meal | dairy (1 h), CYP3A4 substrates | A (SIBO antimicrobial — Chedid study) | Thorne Berberine, Designs for Health, Pure Encaps | $25–40 | Chedid *Glob Adv Health Med* 2014 — herbal antimicrobials = rifaximin for SIBO; AYUSH *Berberis aristata* monograph |
-| **Oregano oil (carvacrol-thymol standardised)** | Antimicrobial — SIBO H₂ producers | 200 mg (>70% carvacrol) BID for 4 wk | with meals | meal | probiotic (4 h gap) | A | ADP North American Herb & Spice, Gaia Herbs Oregano Oil, Now Foods | $20–35 | Chedid 2014; Italian + Brazilian RCTs |
-| **Allicin (stabilised, Allimax / AlliMed)** | Anti-methanogen — IMO sub-type specifically | 450 mg (Allimax) TID for 4 wk | with meals | meal | warfarin (high-dose) | B | Allimax, AlliMed, NutriCology | $40–70 | Allicin documented anti-archaeal in IMO sub-type; Mexican + Iranian RCTs |
-| **Neem** (*Azadirachta indica*) | Broad antimicrobial; AYUSH-monographed | 500 mg BID for 4 wk | meal | meal | conception planning | B | Himalaya Neem, Banyan Botanicals | $10–15 | AYUSH neem monograph; EMA HMPC neem 2013 |
-| ***Phellodendron amurense*** (Huang Bai 黄柏) | Damp-heat / SIBO substrate; berberine-containing | 500 mg BID | with meals | meal | dairy (1 h) | B | Plum Flower, Mayway | $15–25 | Chinese Pharmacopoeia 2020 |
-| **Ginger root extract** | Prokinetic (MMC, gastric emptying), 5-HT3 / 5-HT4 modulation, anti-emetic | 1.2 g powder OR 500 mg standardised extract pre-meal | 15 min pre-meal | water | warfarin (high-dose), anti-platelet | A | Pure Encaps Ginger Force, Himalaya Ginger, fresh ginger | $5–15 | EMA HMPC ginger monograph; multiple RCTs gastroparesis, post-operative ileus |
-| ***Iberogast* (STW 5)** | German herbal blend (chamomile, bitter candytuft, peppermint, caraway, licorice, milk thistle, angelica, celandine, lemon balm) — modulates intestinal tone; classical IBS / bloating | 20 drops TID before meals | pre-meal | water | hepatic Rx (rare LFT signal) | A | Bayer / Steigerwald Iberogast (German licensed); German Commission E monograph | $25–35 | German RCTs; EMA-recognised; new formulation Iberogast Advance (without celandine) is preferred |
-| ***Mentha piperita*** (Peppermint oil) enteric-coated | Spasmolytic; calcium channel blockade in smooth muscle; IBS / bloating | 0.2 ml enteric-coated capsule TID | 30 min pre-meal | water | reflux users skip | A | IBgard, Heather's Tummy Tamers, Pure Encaps Peppermint Plus | $20–30 | Cochrane systematic review IBS 2019; multiple RCTs |
-| ***Carum carvi*** (Caraway oil) | Spasmolytic + carminative; classical bloating | 50–100 mg | post-meal | water | — | B | EMA HMPC caraway monograph; Frontier Co-op caraway seed | $5–10 | EMA HMPC caraway monograph 2015; German cohort studies |
-| ***Foeniculum vulgare*** (Fennel) tea or oil | Carminative; classical bloating, infant colic | 5 g tea after meals OR 100 mg oil | post-meal | water | hormone-sensitive cancers (mild estrogenic) | B | Frontier Co-op, EMA HMPC monograph | $5–10 | EMA HMPC fennel monograph 2008 |
-| **Triphala** (Amalaki + Bibhitaki + Haritaki) | Gentle prokinetic, microbiome modulation, bowel regulator | 1 g HS with warm water | HS | warm water | thyroid Rx (4 h gap) | A | Organic India, Himalaya, Banyan Botanicals | $10–15 | AYUSH Triphala monograph; multiple Indian RCTs |
-| **Hingvashtak Churna** (asafoetida + 8 herbs) | Carminative classical Ayurvedic | 2–3 g pre-meal with ghee or warm water | pre-meal | warm water/ghee | — | T | Baidyanath, Patanjali; *Bhavaprakasha* | $5–10 | Classical Ayurvedic carminative |
-| **Quercetin (+ bromelain)** | Mast cell stabilization (§2.4 sub-type) | 500 mg BID | with meals | bromelain + fat | iron, copper, tea | B | Thorne, NOW, Solgar | $15–30 | Mast-cell stabilization evidence (German + Israeli labs) |
-| **DAO enzyme (porcine kidney)** | Diamine oxidase — histamine degradation | 1 capsule (10,000 HDU) before each high-histamine meal | pre-meal | water | — | C | DAOsin (Stetzler), Histamine Block (Seeking Health) | $40–60 | Austrian + Spanish open-label cohort studies; useful for §2.4 mast-cell sub-type |
-| ***Saccharomyces boulardii*** | Probiotic yeast; restores after antibiotic; anti-Candida; anti-C.difficile | 5–10 B CFU/day | with meals | meal | antifungal (4 h gap) | A | Florastor, Jarrow Saccharomyces Boulardii | $20–30 | Multiple RCTs; EMA HMPC monograph |
-| **Multi-strain probiotic + spore-based** | Microbiome restoration | 20–50 B CFU/day | with meals | cool food | hot drinks, antibiotic (4 h gap) | A | MegaSporeBiotic (Microbiome Labs), Just Thrive, Visbiome | $40–70 | Cochrane systematic review IBS 2020 |
+### 3.1 What to take, what to skip
+
+> **For you, in plain words.** Ten over-the-counter molecules and herbs, each backed by a non-US monograph or named trial. Lead with peppermint+caraway combinations and digestive bitters. *(EMA HMPC peppermint, caraway 2020; AYUSH/CCRAS; Cochrane Ford 2014)*
+
+**Quick start.** Start enteric-coated peppermint oil + caraway combination (Carmenthin / Menthacarin — German trial-validated) AND digestive bitters before meals.
+
+### 3.2 Peppermint + caraway combination
+
+> **For you, in plain words.** The German Carmenthin (Menthacarin) capsule combines peppermint oil and caraway oil — RCT-validated for functional dyspepsia with bloating. *(Madisch 2015 Carmenthin trial Germany; EMA caraway monograph)*
+
+**Quick start.** 1 capsule (90 mg peppermint + 50 mg caraway) twice daily, 30 min before main meals, for 4-8 weeks. Available EU via Apotheke / iHerb. **Grade B**.
+
+### 3.3 Digestive bitters
+
+> **For you, in plain words.** Bitter herbs (gentian, wormwood, dandelion, chamomile, fennel) stimulate digestive juices when tasted on the tongue 15 minutes before a meal. Classical pre-prandial preparation; Sweden's Maria-Treben tradition; AYUSH-CCRAS bitters monographs. *(EMA gentian monograph; AYUSH bitter herbs)*
+
+**Quick start.** Swedish Bitters (Klosterfrau Melissengeist / Maria Treben) OR Urban Moonshine Bitters OR Iberogast 20 drops in 50 ml water, 15 min before main meals. **Grade C** (mechanistic + tradition; few modern RCTs in bloating specifically).
+
+### 3.4 The ten OTC molecules — table
+
+| Compound | TL;DR (plain English) | Mechanism | Dose | Timing | Take WITH | Avoid WITH (≥2h gap) | Grade | Brand options | $/mo | Citation |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **Enteric-coated peppermint oil** | Cochrane-backed antispasmodic — 1 capsule with each main meal 30 min pre-meal. *(Cochrane Ford 2014; EMA 2020)* | Smooth-muscle Ca²⁺ block | 180-225 mg TID | 30-60 min pre-meal | water | reflux: take with food | B+ | Heather's Tummy Tamers, Mintec (TGA), IBgard | $15-30 | *(Cochrane Ford 2014; EMA HMPC peppermint 2020)* |
+| **Peppermint + caraway (Carmenthin / Menthacarin)** | German RCT-validated combination for functional dyspepsia + bloating. *(Madisch 2015 Germany)* | Antispasmodic + carminative | 90 mg + 50 mg BID | 30 min pre-meal | water | reflux: take with food | B | Carmenthin (Apotheke EU); Menthacarin | $25-40 | *(Madisch 2015; EMA caraway 2020)* |
+| **Iberogast (STW-5)** | German 9-herb tincture with monograph for functional dyspepsia + bloating. *(Madisch 2004)* | Multi-target prokinetic + antispasmodic | 20 drops TID | with meals | water | warfarin (theoretical) | B | Bayer Iberogast (EU/UK/AU/CA) | $20-35 | *(Madisch 2004)* |
+| **Ginger root extract** | Activates motility (prokinetic); EMA monograph for dyspepsia/nausea. *(EMA ginger 2012)* | TRPV1 / prokinetic | 1-2 g/day | with meals | water | warfarin (high dose) | B | Pukka, Gaia Herbs, NOW Ginger | $10-20 | *(EMA ginger 2012; Hu 2011 ginger gastric emptying)* |
+| **Fennel seed (whole or extract)** | Classical carminative — chew 1 tsp after meals; safe in pregnancy. *(EMA fennel 2008)* | Carminative; GI smooth-muscle relax | 1 tsp seeds OR 200 mg extract | after meals | water | — | C | Bulk seeds at Indian grocery; Pukka, Gaia Herbs | $5-15 | *(EMA fennel 2008; AYUSH fennel)* |
+| **Digestive bitters (gentian, wormwood, dandelion)** | Pre-prandial bitters stimulate digestive juices; classical. *(EMA gentian 2009; Maria Treben Swedish Bitters)* | Bitter-receptor → gastric acid + bile flow | 20 drops 15 min pre-meal | 15 min pre-meal | water | — | C | Swedish Bitters (Klosterfrau), Urban Moonshine | $15-25 | *(EMA gentian 2009)* |
+| **Betaine HCl + pepsin** | For low-stomach-acid bloating (common ≥40 yrs and on PPI) — start low, watch for warmth. *(Yago 2013 Betaine HCl gastric acidity RCT)* | Acid restoration → improved digestion | 650 mg with protein meals | with meals | protein | NSAIDs, gastritis | C | Thorne Betaine HCl, Pure Encapsulations | $15-30 | *(Yago 2013)* |
+| **Partially-hydrolysed guar gum (Sunfiber)** | Low-FODMAP-safe gentle fibre. *(Polymeropoulos 2014)* | Slow colonic fermentation; bulking | 5-10 g/day | AM with water | water | iron (≥2 h) | B | Sunfiber, Regular Girl | $20-35 | *(Polymeropoulos 2014)* |
+| **Activated charcoal (short-term symptomatic only)** | Adsorbs gas — small French Jain 1986 trial. ≤3 days; binds medications and nutrients. *(Jain 1986)* | Adsorbent | 500-1000 mg post-meal | post-meal symptomatic | water | ALL medications, supplements (≥2 h) | C | NOW activated charcoal | $8-15 | *(Jain 1986)* |
+| **Mastic gum (Chios mastic resin)** | Greek antimicrobial — for SIBO-overlap bloat. *(Pastorello 2016 Greek; Dabos 2010 H pylori)* | Antimicrobial | 500 mg TID, ≤8 weeks | with food | food | — | C | Mastic Life, Jarrow Mastic Gum | $20-40 | *(Pastorello 2016; Dabos 2010)* |
+
+### 3.5 What to skip (honest)
+
+> **For you, in plain words.** Generic "digestive enzyme blends" marketed for bloat (no formulation-specific RCTs), aloe vera juice (Cochrane-null and laxation can worsen), simethicone foam-breakers (modest at best; EMA conservative monograph), generic "candida cleanses" without confirmed pathology. *(EMA; Cochrane Ford 2014)*
 
 ## 4. Traditional Medicine Integration
 
-### 4.1 Ayurveda — *Adhmana* / *Atopa* / *Aanaaha*
+### 4.1 Six traditions — at a glance
 
-Described in *Charaka Samhita Chikitsa Sthana* ch. 13 (*Udararoga* / *Gulma*), *Sushruta Samhita Uttara Tantra*. *Adhmana* = abdominal distension; *Atopa* = gurgling; *Aanaaha* = obstruction. Dosha: predominantly **vitiated Vata + Pitta + low Agni (digestive fire)** with **Ama (metabolic toxin)** accumulation. Kerala Vaidya lineage (Kottakkal, Vaidyaratnam).
+> **For you, in plain words.** Six healing traditions named formulas for bloat centuries ago. Hingvastak (Ayurveda), Bao He Wan (TCM), Jawarish Jalinoos (Unani), Karpoora chooranam (Siddha), Padma Lax (Tibetan), Carbo veg (Homeopathy). *(Bhavaprakasha; Dan Xi Xin Fa; Avicenna's Canon)*
 
-| Formulation | Dose | Grade | Source |
-|---|---|---|---|
-| **Hingvashtak Churna** (asafoetida + 8 herbs) | 2–3 g pre-meal with ghee/warm water | T | *Bhavaprakasha*; Baidyanath, Patanjali |
-| **Avipattikar Churna** (anti-pitta + bowel) | 3 g HS with warm water | T | *Sharangdhara Samhita*; Baidyanath |
-| **Trikatu Churna** (ginger + black pepper + long pepper) | 1 g pre-meal | T | *Charaka Samhita*; Patanjali, Baidyanath |
-| **Lavan Bhaskar Churna** (5 salts + 13 herbs) | 2–3 g post-meal | T | *Sharangdhara Samhita*; Baidyanath |
-| **Triphala Churna** | 3–6 g HS with warm water | A | AYUSH monograph; Organic India |
-| **Ajamoda Arka** (Ptychotis Ajowan distillate) | 10 ml in water post-meal | T | Kottakkal |
-| **Pippali Rasayana** (long pepper rasayana) | 1–3 g HS | T | *Charaka* — for digestive fire restoration |
-| **Dhanwantaram Kashayam** | 15 ml BID pre-meal | T | Kottakkal |
-| **Kumari Asava (Aloe vera fermented)** | 15 ml BID post-meal | T | classical; Baidyanath |
-| **Drakshasava** | 15 ml post-meal | T | *Bhaishajya Ratnavali* |
+### 4.2 Ayurveda — Adhmana + Anaha + Vata-pradhana grahani
 
-### 4.2 TCM — *Gu Zhang* 鼓胀 / *Pi Man* 痞满
+> **For you, in plain words.** Ayurveda treats bloat as Adhmana (distention) or Anaha (obstruction-feeling) from aggravated vata. Hingvastak churna (asafoetida-cumin-ginger powder), Hinguvachadi churna, Avipattikar (for reflux-overlap bloat), and post-meal Trikatu (ginger-pepper-pippali) are the workhorses. *(Bhavaprakasha; Charaka Chikitsa ch. 15; AYUSH-CCRAS monographs)*
 
-Patterns: **Spleen-Qi deficiency** (chronic, post-prandial worse, fatigue) · **Liver-Qi stagnation invading Spleen** (stress-triggered, alternating bowel) · **Damp-Heat in Middle Jiao** (post-antibiotic, alcohol, hot-spicy) · **Cold-Damp in Middle Jiao** (raw/cold food trigger) · **Food stagnation** (acute, overeating). Source *Huang Di Nei Jing*, *Jin Gui Yao Lue*, *Tai Ping Hui Min He Ji Ju Fang*.
-
-| Formula | Pattern | Dose | Grade | Source |
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
 |---|---|---|---|---|
-| **Xiao Yao San** 逍遥散 (Bupleurum + Paeonia) | Liver-Qi stagnation (stress-bloating) | 6–9 g BID | T | Plum Flower; *Tai Ping Hui Min He Ji Ju Fang* |
-| **Bao He Wan** 保和丸 (preserve-harmony pill — hawthorn, radish seed, citrus, Pinellia, hoelen, forsythia, malt) | Food stagnation (acute overeating) | 6–9 g TID for 3–5 days | B | *Dan Xi Xin Fa*; Plum Flower; classical food-stagnation formula |
-| **Liu Jun Zi Tang** 六君子汤 (six-gentlemen — Ginseng, Atractylodes, Hoelen, Licorice, Pinellia, Citrus) | Spleen-Qi deficiency + phlegm-damp | 6 g BID | B | *Tai Ping Hui Min He Ji Ju Fang* |
-| **Xiang Sha Liu Jun Zi Tang** 香砂六君子汤 (with aucklandia + cardamom) | Spleen-Qi deficiency + bloating | 6 g BID | B | Plum Flower |
-| **Ping Wei San** 平胃散 (Atractylodes + magnolia bark + citrus + licorice) | Cold-Damp middle jiao | 6 g BID | T | *Tai Ping Hui Min He Ji Ju Fang* |
-| **Huo Xiang Zheng Qi San** 藿香正气散 (patchouli + perilla + dispel damp) | Acute damp-cold gastroenteritis with bloating | 6 g TID | T | Plum Flower |
-| **Si Jun Zi Tang** 四君子汤 | Spleen-Qi deficiency base | 6 g BID | B | classical |
+| Hingvastak churna | Asafoetida-cumin-ginger powder with the first bite of food — the classical bloat remedy. *(Bhavaprakasha; Kottakkal)* | 2-3 g with first bite of meals | T | *(Bhavaprakasha)* |
+| Hinguvachadi churna | A close cousin of Hingvastak with vacha (sweet flag) added for severe bloat. *(Sahasrayoga; Kottakkal)* | 2-3 g BID | T | *(Sahasrayoga)* |
+| Avipattikar churna | Cooling powder for bloat with heartburn/reflux. *(Sharangdhara; Baidyanath)* | 3-5 g at bedtime | T | *(Sharangdhara)* |
+| Trikatu (ginger + pepper + pippali) | Stimulates the digestive fire — small post-meal pinch with warm water. *(Charaka; AYUSH)* | 250-500 mg after meals | T | *(Charaka; AYUSH)* |
+| Ajwain (carom seed) | Pinched dry or as tea after meals — fast-acting carminative. *(AYUSH ajwain)* | 1 tsp post-meal | T | *(AYUSH ajwain)* |
+| Triphala | Nightly three-fruit gut and circadian reset — supports the slow-transit driver. *(AYUSH; Tarasiuk 2018)* | 3-5 g at bedtime with warm water | A | *(AYUSH; Tarasiuk 2018)* |
+| Lasunadi vati | Garlic-and-asafoetida tablet for severe bloat with cold-pattern indigestion. *(Sahasrayoga)* | 1-2 tablets BID | T | *(Sahasrayoga)* |
+| Pippali (long pepper) | Classical digestive-fire kindler in small doses. *(Charaka)* | 250-500 mg BID with honey | T | *(Charaka)* |
 
-Sourcing: Plum Flower (Mayway, Oakland), Min Tong. Brick-and-mortar — Kamwo Meridian Herbs NYC, Sun Sing Pacific Trading SF.
+### 4.3 TCM — Pi-Wei + Shi-Zhi patterns
 
-### 4.3 Unani — *Nafkh-e-Shikam*
+> **For you, in plain words.** Chinese medicine treats bloat with four classical formulas — Bao He Wan (food-stagnation), Ping Wei San (damp-stagnation), Mu Xiang Bing Lang Wan (severe qi-stagnation bloat), and Xiao Yao Wan (stress-driven bloat). *(Dan Xi Xin Fa; Tai Ping Hui Min He Ji Ju Fang; Chinese Pharmacopoeia 2020)*
 
-Mizaj: **balghami / saudawi** with weak hepato-digestive *du'f*. Lineage: Hakim Mohammed Said (Hamdard), Dawakhana Tibbiya College Aligarh.
+| Formula | TL;DR (plain English) | Pattern | Dose | Grade | Citation |
+|---|---|---|---|---|---|
+| Bao He Wan 保和丸 | "Preserve harmony" — for post-meal bloat from food stagnation. *(Dan Xi Xin Fa; NMPA)* | Food stagnation | 8 pills TID | B | *(Dan Xi Xin Fa; NMPA)* |
+| Ping Wei San 平胃散 | "Calm the stomach" — for damp-stagnation bloat with heavy feeling. *(Tai Ping Hui Min He Ji Ju Fang)* | Damp-stagnation | 6 g granules BID | B | *(Tai Ping Hui Min He Ji Ju Fang)* |
+| Mu Xiang Bing Lang Wan 木香檳榔丸 | For severe bloat with qi-and-food stagnation. *(Tai Ping Hui Min He Ji Ju Fang)* | Qi + food stagnation | 6 g granules BID | T | *(Tai Ping Hui Min He Ji Ju Fang)* |
+| Xiao Yao Wan 逍遥丸 | For stress-driven bloat with liver-qi stagnation. *(Tai Ping Hui Min He Ji Ju Fang; NMPA)* | Liver-qi stagnation | 8 pills TID | B | *(NMPA)* |
+| Liu Jun Zi Tang 六君子湯 | For spleen-qi xu with phlegm + bloating. *(Tai Ping Hui Min He Ji Ju Fang)* | Spleen-qi xu + phlegm | 6 g granules BID | B | *(Tai Ping Hui Min He Ji Ju Fang)* |
+| Ban Xia Hou Po Tang 半夏厚朴湯 | For globus + bloat with anxiety overlap. *(Jin Gui Yao Lue, Zhang Zhongjing)* | Phlegm-qi stagnation | 6 g granules BID | B | *(Jin Gui Yao Lue)* |
+| Huang Lian Su 黃連素 (berberine) | Antimicrobial for SIBO-overlap bloat. *(Chedid 2014)* | Damp-heat / SIBO | 500 mg TID ≤4 weeks | C | *(Chedid 2014)* |
 
-| Formulation | Dose | Grade | Source |
-|---|---|---|---|
-| **Jawarish Jalinoos** | 5–10 g post-meal | T | Hamdard; classical digestive aid |
-| **Jawarish Kamooni** (cumin-based) | 5–10 g post-meal | T | Hamdard |
-| **Sufoof-e-Karminative** (carminative powder) | 3–5 g post-meal | T | Hamdard |
-| **Itrifal Ustukhuddus** | 5–10 g HS | T | Hamdard; *Qarabadeen Qadri* |
-| **Arq-e-Pudina** (peppermint distillate) | 25 ml in water post-meal | T | Hamdard, Saif Pharmaceuticals |
-| **Arq-e-Ajeeb** | 5–10 drops in water | T | Hamdard — emergency carminative |
+### 4.4 Unani — Nafkh (gas/flatulence) + Su'-ul-Hadm
 
-### 4.4 Siddha — *Vayu Suthagam* / *Vayu Aatangam*
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
+|---|---|---|---|---|
+| Jawarish Jalinoos | Galen's digestive powder for post-meal heaviness and bloat. *(Hamdard; Galen)* | 5 g after meals | T | *(Hamdard; Galen)* |
+| Jawarish Bisbasa | Mace-based digestive jam for bloat with poor appetite. *(Hamdard)* | 5 g after meals | T | *(Hamdard)* |
+| Arq Pudina (mint distillate) | Mint distillate for cramping bloat. *(Hamdard)* | 25 ml BID | T | *(Hamdard)* |
+| Khamira Marwareed | Pearl paste for nervous-stomach bloat with palpitations. *(Hamdard)* | 5-10 g morning | T | *(Hamdard)* |
+| Itrifal Mulayyan | Gentle laxative for bloat with constipation. *(Hamdard)* | 5-10 g at bedtime | T | *(Hamdard)* |
 
-Tamil tradition; only **chooranam (herbal powders), kuzhambu (decoctions), legiyam (semi-solid preparations)** included for OTC. **Classical mercurial/metallic chenduram/parpam/mezhugu preparations EXCLUDED.** IMPCOPS Chennai.
+### 4.5 Siddha
 
-| Formulation | Dose | Grade | Source |
-|---|---|---|---|
-| **Pavalathi Mathirai** (legiyam version) | 2 g BID | T | IMPCOPS |
-| **Vellarugu Chooranam** (*Centella asiatica* powder) | 3 g BID | T | IMPCOPS |
-| **Karpooradi Chooranam** | 2–3 g post-meal | T | IMPCOPS |
-| **Adathodai Manappagu** (*Justicia adhatoda* legiyam) | 5 g BID | T | IMPCOPS |
-| **Nilavembu Kudineer** (*Andrographis paniculata*) | 30 ml BID | T | IMPCOPS |
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
+|---|---|---|---|---|
+| Karpoora chooranam | Camphor-clove-cardamom powder for bloat and gas. *(IMPCOPS; Siddha Maruthuvam)* | 1-2 g post-meal with warm water | T | *(IMPCOPS)* |
+| Sukku chooranam | Dry-ginger powder for cold-pattern bloat. *(IMPCOPS; Bogar 7000)* | 1-2 g post-meal | T | *(IMPCOPS; Bogar 7000)* |
+| Omam (ajwain) chooranam | Tamil version of ajwain powder — fast carminative. *(IMPCOPS)* | 1-2 g post-meal | T | *(IMPCOPS)* |
+| Thiripala chooranam | Tamil three-fruit gut-reset for slow-transit bloat. *(IMPCOPS)* | 3-5 g at bedtime | T | *(IMPCOPS)* |
 
-> Classical Siddha mercurial preparations require traditional practitioner formulation; excluded.
+### 4.6 Tibetan / Sowa Rigpa
 
-### 4.5 Tibetan / Sowa Rigpa
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
+|---|---|---|---|---|
+| Padma Lax | Swiss-Tibetan EMA-monographed laxative for IBS-C overlap + bloat. *(EMA Padma Lax; Sallon 2002)* | 1-2 capsules at bedtime | B | *(EMA Padma Lax; Sallon 2002)* |
+| Se-bru-25 | Pomegranate-based digestive formula for weak digestive fire + bloat. *(Tibetan Four Tantras; Men-Tsee-Khang)* | per label | T | *(Tibetan Four Tantras)* |
+| Agar-35 | Wind-pacifier for stress-driven bloat. *(Tibetan Four Tantras; Men-Tsee-Khang)* | per label | T | *(Tibetan Four Tantras)* |
 
-Men-Tsee-Khang Dharamsala treats bloating under *bad-kan smug-po* (cold-damp digestive fire weakness) and *rlung-gtsang* (wind-distension). Source *rGyud-bzhi*.
+### 4.7 Homeopathy — honoured tradition, honestly graded
 
-- **Sug-mel 11** (cardamom-based formula for digestive fire / *me-drod*) — Grade T
-- **Aru-7** (7-herb formula for *bad-kan* disorders) — Grade T
-- **Se-bru 5** (pomegranate-based digestive) — Grade T
-- **Agar-35** (broad systemic) — Grade T
+> **For you, in plain words.** Honoured tradition only — no robust RCT in bloat. Listed for transparency. *(Boericke; Allen; Kent)*
 
-Sourcing: Men-Tsee-Khang Dharamsala mail-order.
+| Remedy | TL;DR (plain English) | Keynote | Potency | Grade | Citation |
+|---|---|---|---|---|---|
+| Carbo vegetabilis | Severe upper-belly bloat, eructation gives relief. *(Boericke; Allen)* | Bloat + burping relieves | 30C | T | *(Boericke; Allen)* |
+| Lycopodium clavatum | Right-sided bloating worse 4-8 PM, hungry then full. *(Boericke; Kent)* | Bloat worse 4-8 PM | 30C | T | *(Boericke; Kent)* |
+| Nux vomica | Stress-driven bloat in overworked, irritable type. *(Boericke)* | Stress-driven post-meal bloat | 30C | T | *(Boericke)* |
+| China officinalis | Bloat with weakness, after fluid loss or chronic diarrhoea. *(Boericke)* | Bloat + weakness post-fluid loss | 30C | T | *(Boericke)* |
+| Asafoetida | Homeopathic hing — flatulent bloat with urge to belch but cannot. *(Boericke)* | Cannot belch + bloat | 30C | T | *(Boericke)* |
 
-### 4.6 Homeopathy
+## 5. Biophysical & Mind-Body Interventions — home-administered
 
-> *Homeopathy is honoured under the founder's mandate to explore all directions of alternative medicine. Modern evidence is contested; entries are presented as a documented tradition (Tier 3), not as clinical proof.*
+### 5.1 What works at home — priority order
 
-| Remedy | Indication / keynote | Typical potency | Grade |
-|---|---|---|---|
-| **Carbo Vegetabilis** | Classic "vegetable charcoal" — bloating + belching + worse after eating + craves air + fanning | 30C–200C | T |
-| **Lycopodium Clavatum** | 4–8 PM bloating aggravation; bloating after small amounts of food; right-sided; sweets craving | 200C–1M (single dose) | T |
-| **China officinalis (Cinchona)** | Bloating + flatulence + weakness after fluid loss; belching gives no relief | 30C–200C | T |
-| **Nux Vomica** | Bloating from over-eating, alcohol, coffee, sedentary; irritable type; constipated | 30C | T |
-| **Asafoetida (Ferula assa-foetida)** | Bloating with upward gas + reverse peristalsis + meteorism | 30C | T |
-| **Argentum Nitricum** | Bloating with anxiety / anticipation; loud belching; sweet craving | 30C–200C | T |
-| **Colocynthis** | Bloating with colicky pain relieved by bending double + pressure + warmth | 30C | T |
-| **Mag Phos (Magnesium Phosphoricum)** | Colicky bloating relieved by warmth + pressure | 6X–30C | T |
+> **For you, in plain words.** Diaphragmatic breathing + slow eating + abdominal self-massage + low-FODMAP elimination + peppermint+caraway are the highest-evidence frontline. Devices (SIBO breath tests, taVNS) layer on later. *(Barba 2015; Halmos 2014; Madisch 2015)*
 
-Citations: Boericke W., *Pocket Manual of Homeopathic Materia Medica* (Carbo Veg, Lycopodium, China, Nux Vom, Asafoetida entries); Allen H.C., *Keynotes and Characteristics*; Kent J.T., *Repertory*. CCRH publishes IBS / functional bowel case series.
+### 5.2 Diaphragmatic breathing — load-bearing for abdomino-phrenic dyssynergia
 
-## 5. Biophysical Interventions — home-administered only
+> **For you, in plain words.** Ten minutes a day of belly-rises-on-inhale, soft-belly-on-exhale retrains the diaphragm to relax upward instead of pushing the belly out. Free; one of the strongest under-known levers. *(Villoria 2008 APD; Barba 2015 biofeedback RCT)*
 
-**Gut domain — every device is consumer-purchasable and self-administrable. No clinic-based endoscopy, no hospital admission, no surgical procedure recommended.**
+**Quick start.** Lie on back, hands on belly. Inhale 4 seconds — belly rises. Exhale 6 seconds — belly softens (not pushed in, not held out). 10 minutes twice daily. Add EMG-biofeedback (free smartphone apps, or hardware — Spire, Lief) if APD is the dominant pattern.
 
-**5.1 Consumer Vagal Nerve Stimulation (VNS) — primary biophysical.** **Nurosym** (Pulsetto, Sensate) — non-invasive transcutaneous auricular VNS targeting vagal afferent at tragus / cymba conchae. 30 min daily, ideally PM. Restores parasympathetic tone → MMC restoration. Cost £400–600 (Nurosym), $300 (Pulsetto). Contraindications: pacemaker, ICD, pregnancy, active cardiac arrhythmia.
+#### Open the science
 
-**5.2 HRV biofeedback** — HeartMath Inner Balance, Lief patch, Polar/Whoop/Oura ring with HRV tracking. 10 min daily resonance-frequency breathing (5.5 breaths/min). Documented vagal tone improvement in functional GI cohorts.
+Villoria 2008 (Vall d'Hebron Barcelona) showed via EMG that chronic bloaters demonstrate paradoxical diaphragmatic descent on abdominal filling. Barba 2015 RCT (n=46, Hospital General Vall d'Hebron) showed EMG-guided biofeedback (4 sessions over 4 weeks) reduced bloating by ~56%. Self-applicable version: diaphragmatic breathing 10 min twice daily, paired with awareness practice. **Grade B**.
 
-**5.3 Castor oil pack — classical biophysical, zero-cost.** Cold-pressed organic castor oil on flannel pack over abdomen, covered with plastic + warm pad / hot water bottle, 45–60 min, 3–4×/week before bed. Documented bile flow stimulation, prokinetic effect, reduces inflammation. Used in classical Ayurveda (*Eranda Taila*) and Western naturopathy.
+### 5.3 At-home SIBO breath testing
 
-**5.4 Home infrared sauna** (Sunlighten, JNH, Clearlight, Higher Dose) — 50–60 °C, 20–30 min, 3×/week. Vagal restoration via heat-stress, sweat-mediated chemical elimination. Contraindications: significant CV disease, pregnancy.
+> **For you, in plain words.** A small wearable device (FoodMarble Aire 2) or postal lactulose kit (SIBOtest, Trio-Smart, Aerodiagnostics) detects hydrogen and methane to confirm SIBO/IMO. *(Pimentel 2020; FoodMarble Aire 2 validation)*
 
-**5.5 Home cold immersion / cold-water face splash** (Plunge tub, Edge Tub, ice barrel, or zero-cost: 10 s cold-water face splash). Powerful vagal afferent stimulus. 2–4 min, 3×/week for immersion. Contraindications: significant CV disease, Raynaud's, pregnancy (avoid full immersion).
+**How to try it.** FoodMarble Aire 2 ($249, real-time food-logged breath) OR postal lactulose kit ($150-250).
 
-**5.6 Photobiomodulation (660 nm + 810–850 nm NIR) — abdominal panel.** Emerging evidence for visceral inflammation reduction. **10 J/cm² per session, 15–20 min, 5×/week**, supine, full abdominal coverage. Devices: MitoMID ($449), Joov Solo. Timing **20:00**. Contraindications: pregnancy (abdominal), photosensitising medications.
+### 5.4 At-home stool microbiome tests
 
-**5.7 Abdominal self-massage (Ila / Chi Nei Tsang lineage)** — clockwise abdominal massage 5–10 min, AM on empty stomach, with castor oil or sesame oil. Stimulates MMC, helps disperse trapped gas.
+> **For you, in plain words.** Viome, ZOE, Sun Genomics give a personalised microbiome report. **Interpretive, not diagnostic** — useful for direction, not for "diagnosing" bloat causes. *(Microbiome test landscape 2024)*
+
+### 5.5 Low-FODMAP elimination — Monash protocol
+
+> **For you, in plain words.** Three phases: (1) strict elimination 2-6 weeks; (2) systematic reintroduction one FODMAP family per week; (3) personalised maintenance. The Monash app is the gold-standard FODMAP database. *(Halmos 2014; Staudacher 2017)*
+
+**Quick start.** Download the Monash University FODMAP Diet app ($10 one-time, AU/UK/US/CA).
+
+### 5.6 Slow-paced breathing + HRV biofeedback
+
+> **For you, in plain words.** 5-6 breaths per minute activates the vagus nerve and reduces visceral hypersensitivity. Free apps; paid HeartMath / Lief / Polar H10 hardware. *(Lehrer 2014)*
+
+### 5.7 Abdominal self-massage
+
+> **For you, in plain words.** Clockwise self-massage with sesame or coconut oil for 5-10 min before breakfast — Swedish Lämås 2009 RCT supports for IBS-C and bloat. *(Lämås 2009 Sweden; AYUSH abhyanga)*
+
+### 5.8 At-home vagus-nerve stimulators
+
+> **For you, in plain words.** Nurosym, Pulsetto, Sensate — consumer auricular or neck VNS for the brain-gut driver. Bloating-specific data limited (Grade H). *(Drewes 2019)*
+
+### 5.9 Postural change after meals
+
+> **For you, in plain words.** Left-side-lying or 10-15 min slow walk after meals reduces post-prandial bloat compared with sitting or right-side-lying. *(Schoonbroodt 2017)*
+
+### 5.10 Gut-directed hypnotherapy
+
+> **For you, in plain words.** Nerva or Mahana IBS app (15-20 min/day) for the bloat-anxiety-amplification loop. *(Peters 2016 Nerva; Whorwell 1984)*
+
+### 5.11 What to skip
+
+> **For you, in plain words.** Activated charcoal long-term (binds medications and nutrients); gas-breaking simethicone foam (modest at best); colonic hydrotherapy (no RCT support, mucosal trauma); long-term enzyme stacks without trial backing. *(Cochrane; EMA simethicone)*
 
 ## 6. Dietary Protocol
 
-### 6.1 Mandatory foods (daily gram quantities — adapted to sub-type; baseline shown)
+### 6.1 Eat the low-FODMAP-Mediterranean hybrid + slow
 
-- **Sprouted Siri Dhanyalu** (foxtail + barnyard + kodo + little + browntop millet rotation, Dr. Khadar Vali lineage): **60–80 g cooked** — gentle on small bowel; gluten-free
-- **Cooked (not raw) green leafy vegetables** (methi, *Moringa* leaves, gotu kola, lightly steamed spinach): **150–200 g** — easier digestion than raw
-- **Bone broth** (12 h slow-cooked, grass-fed): **300–500 ml/day** — gut barrier restoration via glycine + glutamine + collagen
-- **Cooked carrots, zucchini, summer squash, green beans (FODMAP-friendly cooked vegetables)**: **200 g** — initial low-FODMAP phase
-- **Fresh ginger root** (1 inch / 5 g) in cooking + pre-meal ginger tea
-- **Fresh turmeric** (1 inch / 5 g) + black pepper + ghee
-- **Coconut yoghurt / kefir** (or A2 if tolerated; skip if histamine-axis sub-type): **100–150 g**
-- **Wild oily fish** (sardines, mackerel, anchovies — small fish, low histamine if freshly caught/frozen — important for §2.4 axis): **120 g 3×/week**
-- **Asafoetida (Hing)** in cooking — classical carminative; replaces garlic/onion in low-FODMAP phase
-- **Cumin + fennel + coriander + ajwain CCF tea** (1 tsp each) — **post-meal carminative tea, 200 ml**
-- **Brown / Basmati rice** (well-cooked, cooled and re-warmed for resistant starch): **60 g**
+> **For you, in plain words.** Low-FODMAP Mediterranean base + slow eating (≥20 min per meal) + no carbonated drinks + 3-4 hours pre-bed gap + ginger + fennel tea. *(Halmos 2014; Tomita 2013 aerophagia; AYUSH daily-rhythm)*
 
-**For §2.4 mast-cell / histamine-axis sub-type — low-histamine phase**:
-- AVOID: aged cheese, fermented foods (yes — pause sauerkraut/kefir/kanji), leftovers >24 h, processed meats, alcohol, vinegar (except fresh ACV), tomato, spinach, eggplant, avocado, citrus, chocolate, strawberry, banana, walnuts, smoked fish, tuna, mackerel.
-- USE: freshly cooked meals only, freeze leftovers within 1 h, freshly caught/frozen-at-sea fish, fresh herbs.
+**Quick-start summary.** No alcohol during strict elimination, no carbonated drinks, no straws, no chewing gum, no late dinners.
 
-### 6.2 Absolutely avoid (with molecular rationale)
+### 6.2 Mandatory foods — daily grams (low-FODMAP-friendly)
 
-| Food / Class | Molecular reason |
-|---|---|
-| **High-FODMAP foods** (during 4–6 wk elimination phase): wheat, onion, garlic, beans, lentils (large quantities), apple, pear, mango, watermelon, milk, yoghurt, honey, agave, sorbitol, xylitol | Substrate for SIBO bacterial fermentation → H₂/CH₄/CO₂ → bloating |
-| **Gluten** (wheat, barley, rye, contaminated oats) | gliadin → zonulin → tight junctions → permeability + immune activation |
-| **Refined sugar, HFCS, sweetened beverages** | feeds SIBO; insulin spike; microbiome dysbiosis |
-| **Industrial seed oils** (corn, soy, sunflower, safflower, canola) | ω-6 inflammation; oxidative load on gut epithelium |
-| **A1 β-casein dairy** | β-casomorphin-7 inflammation; switch to A2/coconut/oat |
-| **Alcohol** | direct gut barrier disruption, dysbiosis, mast-cell trigger |
-| **Ultra-processed foods, emulsifiers (CMC, polysorbate-80, carrageenan)** | Bonn / French INSERM cohorts — direct barrier erosion, microbiota shift |
-| **Sugar alcohols (sorbitol, xylitol, mannitol, maltitol, erythritol)** | Osmotic + SIBO substrate → bloating + diarrhoea |
-| **Carbonated beverages** | Direct gas load; aerophagia |
-| **Aerophagia behaviours**: gum chewing, straw drinking, fast eating, gulping water with meals | Swallowed air = bloating |
-| **Late-night eating (after 20:00)** | Disrupts MMC overnight (the inter-digestive sweep) |
-| **Snacking between meals** | Suppresses MMC; chronic SIBO substrate |
+- **TL;DR.** Wild oily fish — 150 g, 3-4×/week — omega-3, B12. *(UK SACN 2020)*
+- **TL;DR.** Pasture-raised eggs — 2/day — choline, B12, gentle on gut. *(Vital Farms data)*
+- **TL;DR.** Low-FODMAP greens — 250 g/day (spinach, kale, chard, lettuce). *(Monash FODMAP)*
+- **TL;DR.** Pumpkin + sunflower seeds — 30 g/day — Mg + Zn. *(USDA SR-28)*
+- **TL;DR.** Carrot + parsnip + potato (cooked-cooled, resistant starch) — 200 g/day. *(Birt 2013)*
+- **TL;DR.** Blueberries, strawberries, raspberries, kiwi — 150 g/day. *(Monash)*
+- **TL;DR.** Quinoa, white rice (cooked-cooled), buckwheat — 60 g/day. *(Monash)*
+- **TL;DR.** Extra-virgin olive oil — 30 ml/day. *(PREDIMED)*
+- **TL;DR.** Hard cheese — 30 g/day (low-lactose). *(Monash)*
+- **TL;DR.** Lactose-free yogurt or A2 kefir — 100-150 g/day. *(Monash)*
+- **TL;DR.** Sunfiber (PHGG) — 5-10 g/day. *(Polymeropoulos 2014)*
+- **TL;DR.** Bone broth — 200 ml/day. *(Traditional preparation; Zhou 2019)*
+- **TL;DR.** Fresh ginger — 5 g/day. *(EMA ginger 2012)*
+- **TL;DR.** Fennel or peppermint tea — 2 cups/day. *(EMA fennel, peppermint)*
+- **TL;DR.** Filtered water — 2.5-3 L/day. *(WHO drinking-water)*
 
-### 6.3 Preparation methodology
+### 6.3 Absolutely avoid (during strict phase)
 
-**Sprouting protocol** (millets, mung, Bengal gram): rinse → soak filtered water 8–10 h → drain → cover in muslin → 25–28 °C for 12–18 h → rinse twice/day. Refrigerate ≤48 h. Reduces phytic acid 30–50%, FODMAP-load 20–40%.
+> **For you, in plain words.** High-FODMAP foods + carbonated drinks + alcohol + artificial sweeteners + gum + straws drive bloat in most chronic bloaters. *(Halmos 2014; Monash; Tomita 2013)*
 
-**Bone broth (12 h):** grass-fed beef knuckle + chicken feet + 2 tbsp apple-cider vinegar + filtered water + aromatic veg → low simmer 12 h → strain → refrigerate. Glycine + glutamine + collagen for gut barrier.
-
-**CCF tea (cumin-coriander-fennel) — daily carminative**: 1 tsp each in 500 ml water, simmer 5 min, strain, sip throughout day.
-
-**Ghee tempering** with cumin, asafoetida, turmeric — replaces inflammatory cooking oil + adds carminative.
-
-**Meal ordering**: protein + fibre + fat FIRST, then carbohydrate — improves post-prandial transit + glucose.
-
-**Mindful eating**: chew 20–30× per bite, no screens, no phone, no rush — saliva amylase + cephalic phase digestion. Sit 10 min after meal (Vajrasana).
-
-### 6.4 Seven-day meal plan (gram quantities, with timing — Phase 1 low-FODMAP, antimicrobial 4–6 wk)
-
-| Day | Breakfast 08:30 (+ Combo 1) | Lunch 13:00 (+ Combo 2) | Dinner 18:30 (+ Combo 3) |
+| Food / class | TL;DR (plain English) | Molecular reason | Citation |
 |---|---|---|---|
-| **1 SIBO clear** | Ginger tea pre-meal + 60 g cooked foxtail porridge with ghee + cinnamon + 100 g cooked carrot + 2 eggs + coconut yoghurt 100 g | 70 g basmati rice + 150 g cooked zucchini + drumstick-leaf + 100 g grilled chicken + bone broth 300 ml + ghee tempering with asafoetida + cumin | 60 g khichdi (rice + moong + ghee + turmeric + ginger) + 150 g cooked carrots + bone broth 300 ml + CCF tea |
-| **2 MMC restore** | Ginger tea pre-meal + 65 g barnyard upma with ghee + cumin + asafoetida + 2 eggs + coconut yoghurt 100 g | 120 g sardines + 100 g cooked spinach (steamed) + 70 g basmati rice + bone broth + ghee | 70 g khichdi + 150 g zucchini + chamomile-fennel tea |
-| **3 Mast-cell calm** | 60 g foxtail porridge + ghee + cinnamon + 2 eggs (freshly cooked) + ginger tea + 100 g cooked carrot | 100 g freshly cooked chicken + 150 g cooked summer squash + 70 g basmati rice + bone broth | 60 g khichdi + 150 g cooked greens + CCF tea + chamomile |
-| **4 Gut barrier** | Ginger tea + 60 g millet porridge + ghee + 2 eggs + bone broth 300 ml | 100 g grass-fed lamb / chicken + 150 g cooked green beans + 70 g rice + bone broth | 60 g khichdi + 150 g zucchini + ginger-fennel tea |
-| **5 Marine ω-3** | 60 g barnyard porridge + 2 eggs + ghee | 120 g mackerel (fresh) + 150 g cooked spinach + 70 g rice + 200 ml bone broth | 60 g khichdi + 150 g cooked carrots + CCF tea |
-| **6 Mediterranean** | Coconut yoghurt + cinnamon + 2 eggs | 150 g chicken + 200 g cooked Mediterranean vegetables (zucchini, summer squash) + 70 g rice + olive oil 30 ml | 60 g khichdi + 150 g cooked greens + fennel tea |
-| **7 Rest day light** | Ginger tea + bone broth 500 ml + 60 g porridge + 2 eggs | 100 g chicken + 200 g cooked zucchini + 70 g rice + bone broth | Light khichdi 60 g + cooked greens 150 g + CCF tea |
+| Onion + garlic (raw or cooked) | Biggest FODMAP bloat triggers — fructan-rich, fast-fermenting. *(Monash)* | Fructans → colonic gas | *(Monash)* |
+| Wheat + rye + barley (bulk) | High fructan + gluten — drive bloat in most chronic bloaters. *(Halmos 2014)* | Fructans + gluten | *(Halmos)* |
+| Apple, pear, mango | Excess fructose + sorbitol. *(Monash)* | Fructose/sorbitol | *(Monash)* |
+| Stone fruit + sugar-free gum | Polyols pulled to colon. *(Monash)* | Polyol malabsorption | *(Monash)* |
+| Cow's milk (lactose-full) | Lactose malabsorption common. *(Monash)* | Lactase deficiency | *(Monash)* |
+| Legumes (in bulk) | Galactans — fast colonic fermentation. *(Monash)* | Galactan fermentation | *(Monash)* |
+| Cauliflower, mushroom, cabbage (bulk) | Polyols (mannitol). *(Monash)* | Polyol fermentation | *(Monash)* |
+| Carbonated drinks | Add gas directly. *(Monash)* | Gas load | *(Monash)* |
+| Chewing gum + sugar-free candy | Polyols + swallowed air. *(Tomita 2013)* | Polyols + aerophagia | *(Tomita 2013)* |
+| Drinking through straws | Direct air swallowing. *(Tomita 2013)* | Aerophagia | *(Tomita 2013)* |
+| Alcohol | Permeability, motility, B-vit depletion. *(WHO alcohol 2018)* | Permeability + motility | *(WHO)* |
+| Artificial sweeteners (sorbitol, xylitol, sucralose) | Polyols + microbiome disruption. *(Suez 2014 Nature)* | Polyols + dysbiosis | *(Suez 2014)* |
+| Eating in <10 min | Aerophagia + insufficient mastication. *(Tomita 2013)* | Air + poor digestion | *(Tomita 2013)* |
+| Late dinners (<3 h pre-bed) | Overnight fermentation drives morning bloat. *(AYUSH; Konturek 2011)* | Overnight gas | *(AYUSH)* |
 
-**Phase 2 (after week 6) — reintroduction**: Add back fermented foods (kanji, sauerkraut, coconut kefir) UNLESS §2.4 sub-type; gradually reintroduce one FODMAP food group/week (lactose → polyols → fructose → fructans/garlic-onion → galactans/beans). Track symptoms via daily bloating-VAS diary.
+### 6.4 Preparation methodology
 
-Maintain daily: 60–80 g grain (millet/rice), 200 g cooked vegetables, 300 ml bone broth, ginger pre-meal, CCF tea post-meal, 4-h gap between meals, no snacking.
+> **For you, in plain words.** Cook-and-cool starches (resistant starch), bone broth, gentle steaming, soak/rinse legumes, ghee-temper greens with cumin + ajwain. *(AYUSH Annapurna; Birt 2013)*
 
-### 6.5 Environmental & occupational triggers to eliminate
+### 6.5 Seven-day meal plan (strict elimination phase)
 
-- **Aerophagia behaviors** — gum chewing, drinking through straws, eating fast, talking while eating, smoking, carbonated beverages, ill-fitting dentures.
-- **PPI use (chronic)** — long-term PPI is the single largest documented cause of SIBO and B12/Mg/Fe depletion. **If you are on a PPI, the protocol's §10.1 details the safest taper-out** — this is something to do over weeks, not abruptly (rebound acid hypersecretion).
-- **Antibiotic overuse** — even single courses substantially shift microbiome for 6–12 months. If antibiotic essential, layer *Saccharomyces boulardii* + multi-strain probiotic 4 h apart + spore-based, restart 2 weeks after antibiotic ends.
-- **NSAIDs (ibuprofen, naproxen, aspirin chronic)** — direct gut barrier injury.
-- **Chronic stress / unresolved trauma** — vagal hypotonia → MMC suppression. Address with yoga nidra, vagal practices.
-- **Sleep deprivation (<7 h)** — disrupts MMC overnight; gut-brain axis dysregulation.
-- **Shift work** — disrupts MMC circadian rhythm.
-- **Plastic food storage, microwaving plastic** — BPA, phthalates → endocrine disruption + microbiome dysbiosis. Switch to glass / steel / ceramic.
-- **Chlorinated tap water** — chronic chlorine consumption kills beneficial flora; install reverse-osmosis or activated-carbon filter (Berkey, Aquasana).
-- **Pesticide residues** — buy EWG Dirty Dozen organic.
-- **Fluoride toothpaste + mouthwash chronic** — disrupts oral microbiome (upstream of gut). Switch to fluoride-free if user concerned (personal choice).
-- **Wide-spectrum disinfectants in home (triclosan, quaternary ammoniums)** — microbiome dysbiosis (skin → gut). Swap for vinegar + lemon + diluted soap.
-- **Mould exposure** — homes with mould contribute to MCAS exacerbation (§2.4); ERMI/HERTSMI-2 test if recurrent flare correlates with home environment.
+> **For you, in plain words.** A 7-day low-FODMAP rotation with slow-eating discipline. *(Monash FODMAP; PREDIMED)*
 
-### 6.6 Cofactor / micronutrient floor
+| Day | TL;DR (plain English) | Breakfast | Lunch | Dinner |
+|---|---|---|---|---|
+| 1 | Omega-3 + low-FODMAP greens day. *(UK SACN)* | 2 eggs + 100 g spinach + 30 g pumpkin seeds + 100 g blueberries | 150 g salmon + 200 g kale + 100 g cooled potato + olive oil | 70 g quinoa + 200 g chard + lactose-free kefir |
+| 2 | Magnesium day. *(USDA Mg tables)* | Smoothie: raspberries + spinach + sunflower seeds + lactose-free milk | 150 g sardines + lettuce + carrot + parsnip + quinoa | 70 g rice + chard + bone broth |
+| 3 | Choline + avocado day. *(EFSA choline)* | 3-egg omelette + half avocado + 100 g spinach | 150 g chicken + 250 g salad + quinoa | 70 g cooled potato + kale + ghee |
+| 4 | Resistant-starch day. *(Birt 2013)* | Cooled rice + 2 eggs + 100 g greens | 150 g salmon + chard + cooled rice | 70 g cooled quinoa + lettuce + olive oil + chicken |
+| 5 | Sardine + anchovy day. *(UK SACN)* | Sardine on gluten-free toast + greens + ginger tea | 120 g anchovy salad + spinach + cooled potato | Bone broth + quinoa + chard |
+| 6 | Berry-polyphenol day. *(Norfolk EPIC)* | Smoothie: blueberries + strawberries + lactose-free milk + collagen | 150 g fish + lettuce + carrot + olive oil | 70 g rice + spinach + ferment |
+| 7 | Reset — light early dinner. *(AYUSH)* | 2 eggs + greens + small blueberries | Bone broth + chicken + cooked rice + greens | Early 18:00 dinner; bone-broth-based |
 
-| Cofactor | Why for bloating | Target/day | Food | Supplement (if floor unmet) | Antagonist |
+### 6.6 Environmental & occupational triggers
+
+- **TL;DR.** Stress (visceral hypersensitivity amplifier) — hypnotherapy + paced breathing. *(Whorwell 1984)*
+- **TL;DR.** Shift work / late dinners — drives overnight fermentation. *(Konturek 2011)*
+- **TL;DR.** Long-term PPI use — raises SIBO risk; self-managed taper consideration. *(Pimentel 2020)*
+- **TL;DR.** Chronic broad-spectrum antibiotics — rebuild with S. boulardii. *(McFarland 2010)*
+- **TL;DR.** Mouth breathing during eating — closes airway, causes aerophagia. *(Tomita 2013)*
+- **TL;DR.** Tight waistbands and shapewear — physical compression amplifies perceived bloat. *(Mechanistic)*
+- **TL;DR.** Dehydration — IBS gut needs 2.5-3 L/day. *(WHO)*
+- **TL;DR.** Endocrine-disrupting plastics, mould — switch to glass; HEPA-carbon. *(EFSA BPA 2023)*
+
+### 6.7 Cofactor / micronutrient floor
+
+| Cofactor | TL;DR (plain English) | Target/day | Food | Supplement | Antagonist | Citation |
+|---|---|---|---|---|---|---|
+| Methyl-B12 | PPI users + post-infectious often low — test MMA first. *(Health Canada B12)* | 1000-2000 µg if low | sardines, eggs | Jarrow Methyl B12 | metformin, PPI | *(Health Canada B12)* |
+| Vitamin D3 + K2 | Target 40-60 ng/mL. *(EMA vit D)* | 4000 IU + 100 µg | sunlight, sardines | Thorne D/K2 | fat + Mg | *(EMA vit D)* |
+| Magnesium (citrate/glycinate) | Motility (citrate) + sleep (glycinate). *(Health Canada Mg)* | 200-400 mg | seeds, greens | Natural Vitality, Doctor's Best | quinolones (≥4 h) | *(Health Canada)* |
+| Zinc (if low) | Gut-lining + immune; balance with copper. *(Health Canada Zn)* | 15-30 mg if low | seeds, oysters | Thorne Zn | iron, Ca (≥2 h); +Cu 1-2 mg | *(Health Canada Zn)* |
+| Iron (only if ferritin <30) | Measure first. *(WHO ferritin)* | only if low | red meat, liver | Floradix, Solgar Gentle | ≥2 h tea, Ca, Zn | *(WHO ferritin)* |
+| Omega-3 EPA + DHA | Anti-inflammatory. *(UK SACN)* | 2-3 g (≥1 g DHA) | sardines | Nordic Naturals ProDHA | — | *(UK SACN)* |
+| Choline | Gut-lining + methylation. *(EFSA choline)* | 425-550 mg | egg yolk, liver | Alpha-GPC | — | *(EFSA choline)* |
+
+## 7. Lifestyle / Mind-Body Anchors
+
+### 7.1 The mind-body map at a glance
+
+> **For you, in plain words.** Yoga, breath work, slow-eating discipline, walking after meals — every entry mapped to a §2 driver. *(AYUSH; Iyengar; Lehrer 2014)*
+
+### 7.2 Yoga — twists, folds, pavanamuktasana
+
+| Asana | TL;DR (plain English) | Cause | Duration | Time | Caution | Citation |
+|---|---|---|---|---|---|---|
+| Pavanamuktasana | "Wind-relieving" knee-to-chest — direct release of trapped gas. *(AYUSH yoga)* | §2.2 + §2.5 | 1-2 min | AM + PM | — | *(AYUSH yoga)* |
+| Apanasana | Knees-to-chest, calming, downward gut energy. *(Iyengar)* | §2.6 | 1-2 min | AM + PM | — | *(Iyengar)* |
+| Bhujangasana (cobra) | Spinal extension + diaphragm opening. *(AYUSH)* | §2.5 + §2.6 | 5 reps | 07:00 | — | *(AYUSH)* |
+| Marichyasana III (seated twist) | Gentle abdominal compression and release. *(Iyengar)* | §2.5 | 1 min/side | 07:00 | Skip in active flare | *(Iyengar)* |
+| Supta Baddha Konasana | Supine bound-angle restorative — opens belly. *(Iyengar)* | §2.4 + §2.5 | 5-10 min | 22:00 | — | *(Iyengar)* |
+| Viparita Karani | Legs-up-the-wall — calming nerve. *(Iyengar)* | §2.4 | 5-10 min | 22:00 | — | *(Iyengar)* |
+| Shavasana + Yoga Nidra | Yogic sleep for visceral hypersensitivity. *(Bihar Yoga Nidra)* | §2.4 | 10-30 min | 22:00 | — | *(Bihar Yoga Nidra)* |
+
+### 7.3 Pranayama — diaphragmatic + slow paced first
+
+| Technique | TL;DR (plain English) | Cause | Duration | Time | Citation |
 |---|---|---|---|---|---|
-| **Zinc carnosine (PepZin GI)** | Gut barrier; stomach acid production; epithelial repair | 75 mg BID for 8 weeks; then 75 mg/day | pumpkin seed, oysters, beef | Doctor's Best PepZinGI, Allergy Research Group ZincCarnosine | ≥2 h from iron, Ca; Zn:Cu 8–15:1 |
-| **L-glutamine** | Enterocyte fuel; gut barrier | 5–10 g/day | bone broth, cabbage | Pure Encaps L-glutamine 5 g | — |
-| **L-glycine** | Gut barrier, hepatic glutathione, sleep | 3–5 g | bone broth, gelatin | Thorne Glycine | — |
-| **Vitamin D3 + K2** | Treg function, gut barrier | 4000 IU + 100 µg K2 | sun, fatty fish, cod-liver | Thorne D/K2 | fat-meal + Mg cofactor |
-| **Magnesium glycinate** | MMC support, vagal, smooth muscle relaxation | 300–400 mg | pumpkin seed, leafy greens | Doctor's Best Mg glycinate | split AM/PM with Ca |
-| **Methyl-B12** | Often deficient if PPI history or low stomach acid | 1000 µg sublingual | sardines, eggs, beef | Jarrow sublingual | — |
-| **Methylfolate (5-MTHF)** | Methylation; mast-cell histamine catabolism | 400–800 µg | leafy greens, lentils | Pure Encaps | — |
-| **B6 (P-5-P)** | Mast-cell histamine catabolism (HNMT) | 25–50 mg | salmon, banana | Thorne P-5-P | — |
-| **Vitamin C** | Histamine catabolism; mast-cell stabilization | 1–2 g/day in divided doses | amla, lemon, kakadu plum | NOW C, Pure Encaps Buffered C | — |
-| **Quercetin** | Mast-cell stabilization | 500 mg BID | onion (if tolerated), capers | Thorne Quercetin Phytosome | iron, copper, tea |
-| **DAO enzyme** | Histamine degradation | per-meal | porcine kidney source | DAOsin, Histamine Block | — |
-| **Iron** (only if ferritin <30) | check; over-iron worsens dysbiosis | measure first | red meat, pumpkin seed | Solgar Gentle Iron | ≥2 h tea/Ca/Zn/Cu/thyroid; Vit C pair |
-| **Choline** | Gallbladder support, hepatic | 425–550 mg | egg yolk, liver, sunflower lecithin | Thorne PC | — |
-| **Selenium** | GPX, thyroid | 100–200 µg | 2 Brazil nuts | Solgar 200 µg | toxic >400 µg |
+| Diaphragmatic breathing (4-6 belly-rise) | THE bloat breath — retrains abdomino-phrenic dyssynergia. *(Villoria 2008; Barba 2015)* | §2.5 | 10 min | 06:30 + 22:00 | *(Villoria; Barba)* |
+| Slow paced breathing (5-6 bpm) | Vagal tone + visceral relaxation. *(Lehrer 2014)* | §2.4 | 10 min | 06:30 + pre-meal + 22:00 | *(Lehrer 2014)* |
+| Bhramari (humming) | Vagal stimulation; calming. *(S-VYASA)* | §2.4 | 5-10 min | 06:30 + 22:00 | *(S-VYASA)* |
+| 4-7-8 (Dr Weil) | Long-exhale parasympathetic primer pre-meal. *(Weil)* | §2.4 | 4 rounds | pre-meal + bedtime | *(Weil)* |
+| Kapalbhati / Bhastrika | **EXCLUDED** in active bloat flare and high BP. *(AYUSH)* | — | — | — | *(AYUSH)* |
 
-Always state: **measure first** for iron, copper, selenium, iodine, vitamin D using DTC labs.
+### 7.4 Meditation stack
 
-## 7. Lifestyle / Mind-Body Anchors (mapped to §2 mechanism nodes)
+- **TL;DR.** Gut-directed hypnotherapy (Nerva/Mahana IBS) — 15-20 min/day. *(Peters 2016)*
+- **TL;DR.** Yoga Nidra — 30 min at bedtime. *(Bihar)*
+- **TL;DR.** MBSR body-scan — 20 min morning. *(Kabat-Zinn)*
+- **TL;DR.** Mindful eating — pre-meal slow breath + 30+ chews per bite. *(Tomita 2013)*
 
-### 7.1 Yoga (daily 25 min)
+### 7.5 Sleep & circadian
 
-| Asana | §2 Mechanism node targeted | Duration | Time of day |
-|---|---|---|---|
-| **Pawanmuktasana** (wind-relieving) | §2.1 + §2.3 colon motility, gas dispersion | 2 min × 2 | 07:00 AM + post-meal |
-| **Vajrasana** (thunderbolt) — post-meal | §2.2 + §2.3 post-prandial digestion (the only safe post-meal asana) | 5–10 min | post-each-meal |
-| **Bhujangasana** (cobra) | §2.2 abdominal organ stimulation, digestive fire | 5 reps | 07:00 AM |
-| **Dhanurasana** (bow) | §2.2 visceral compression, hepatic-pancreatic stimulation | 3 × 30 s | 07:00 AM |
-| **Ardha Matsyendrasana** (half-spinal twist) | §2.2 + §2.3 liver / spleen / colon | 1 min each side | 07:00 AM |
-| **Mandukasana** (frog) | §2.2 + §2.3 pancreatic + abdominal | 1 min × 3 | 07:00 AM (empty stomach) |
-| **Apanasana** (knees-to-chest) | §2.1 colon, gas relief | 2 min | as needed for trapped gas |
-| **Ushtrasana** (camel) | §2.2 + §2.3 anterior abdominal stretch | 30 s × 2 | 07:00 AM |
-| **Setu Bandhasana** (bridge) | §2.3 vagal + pelvic | 1 min | 07:00 AM |
-| **Shavasana** (corpse) | §2.3 parasympathetic / vagal | 10 min | end-of-session, 22:00 |
+> **For you, in plain words.** Lights-out 22:00; screens off 21:00; bedroom 18-20°C; morning sunlight; no caffeine after 14:00; 3-4 h pre-bed dinner gap. *(Health Canada; AYUSH)*
 
-### 7.2 Pranayama (daily 20 min)
+### 7.6 Nervous-system reset
 
-| Technique | §2 Mechanism node | Duration | Time of day |
-|---|---|---|---|
-| **Anulom Vilom** (alternate-nostril) | §2.3 HPA / vagal balance | 10 min | 06:30 AM |
-| **Bhramari** (humming bee) | §2.3 vagal nerve / nitric oxide | 5 min | 06:30 AM + 22:00 PM |
-| **Kapalbhati** (cleansing) | §2.1 + §2.2 diaphragm + abdominal + sympathetic activation | 5 min | 06:30 AM — **contraindicated in HTN, pregnancy, ulcer, active abdominal flare, recent surgery** |
-| **Nadi Shodhana** | §2.3 autonomic balance | 10 min | flare days |
-| **Sheetali / Sheetkari** (cooling) | §2.4 mast-cell calming | 5 min | midday in flare |
-| **Ujjayi** (ocean breath) | §2.3 vagal tone | 5 min | during yoga |
-| **4-7-8 breath** | §2.3 vagal reset | 4 rounds | pre-each-meal |
+> **For you, in plain words.** Cold-water face splash, humming + gargling, 4-7-8 pre-meal, vagus-nerve device, daily symptom log. *(Polyvagal theory; HeartMath)*
 
-### 7.3 Meditation
+### 7.7 Exercise periodization
 
-**Yoga Nidra 30 min** (Bihar School) at HS — vagal tone, sleep, MMC restoration (Indian RCT documents IBS-SSS improvement); **gut-directed hypnotherapy** (Manchester / Monash University protocols, available via app — Nerva, Mahana) — Grade A for IBS / bloating; **MBSR / MBCT** for stress-anxiety overlap; optional Tibetan Tonglen.
+> **For you, in plain words.** Mon/Wed/Fri Zone-2 cardio, Tue/Thu strength, Sat tai chi/qigong, Sun restorative. 10-15 min slow walk after main meals (motility + glucose). *(BJSM Zone-2; Diabetes Care post-meal walk)*
 
-### 7.4 Sleep & circadian
+**Weekly.** Zone 2 cardio 30-45 min, Mon/Wed/Fri; strength 30-45 min, Tue/Thu; tai chi 30-45 min Sat; restorative + walk 60-90 min Sun.
 
-Lights-out 22:30; blue-light cut-off 21:00; bedroom 18–20 °C, blackout; 5–10 min sunlight within 30 min of waking. Sleep <6 h disrupts MMC overnight — sleep is non-negotiable for gut healing.
-
-### 7.5 Nervous-system reset — CRITICAL for vagal node
-
-- Cold-water face splash AM (mammalian dive reflex → vagal afferent)
-- **Humming + gargling 2 min, 3×/day** (humming = vagal stimulation; gargling = soft-palate vagal)
-- **4-7-8 breath 4 rounds pre-each-meal** (vagal activation before food)
-- Consumer VNS (Nurosym, Sensate, Pulsetto) 20–30 min PM
-- HRV biofeedback (HeartMath Inner Balance, Lief, Polar) 10 min daily
-- Gentle gag-reflex training (toothbrush back of tongue, brief) — vagal motor practice
-
-### 7.6 Exercise periodization (weekly + monthly)
-
-**Weekly cadence**
-- **Daily**: 10–15 min post-meal walks (after each meal) — MMC priming; post-prandial motility
-- **Mon / Wed / Fri** — Zone 2 cardio 30–45 min (brisk walk, swim, cycle) — vagal tone, microbiome diversity
-- **Tue / Thu** — strength training 30–45 min (compound lifts; light initially if deconditioned)
-- **Sat** — hike / sport
-- **Sun** — restorative yoga + 60–90 min nature walk
-
-**Avoid in flare**: high-intensity HIIT (sympathetic spike worsens bloating); abdominal-load exercises (heavy squats, deadlifts) during active flare — restart at week 4.
-
-**Monthly cadence**
-- **Week 1** — antimicrobial phase + TCM cycling (Xiao Yao San or Liu Jun Zi Tang per pattern)
-- **Week 2** — antimicrobial + steady-state
-- **Week 3** — antimicrobial week 3 (end at 4 wk) + deload + extra sauna
-- **Week 4** — repair + probiotic + prokinetic + extended fast (14:10 if tolerated)
-
-**Time-restricted eating window: 12-h gap between dinner and breakfast** (e.g., 19:00 dinner → 07:00 ginger-tea, 08:30 breakfast) — supports MMC overnight sweep. 14:10 if symptoms improving.
+**Monthly.** Week 1 — full intensity + TCM overlay. Week 2 — moderate. Week 3 — deload. Week 4 — full + TCM re-cycles.
 
 ## 8. Daily Unified Combos (≤10 caps/day)
 
-**Combo 1 — Pre-Meal Digest & Antimicrobial (08:15, 15 min pre-breakfast; repeat 12:45, 18:15):** Ginger 500 mg + Hingvashtak Churna 1 g (or 20 drops Iberogast) + Berberine 500 mg (antimicrobial phase weeks 1–4) OR Triphala 500 mg (repair phase week 5+). *2 caps + tincture.* Rationale: digestive fire pre-meal + antimicrobial + spasmolytic.
+### 8.1 The three combos at a glance
 
-**Combo 2 — Mid-Day Gut Barrier + Mast-Cell (with lunch 13:00):** Zinc Carnosine 75 mg + Quercetin 500 mg + L-glutamine 5 g (powder, in water) + Saccharomyces boulardii 5 B CFU. *2 caps + powder + 1 cap.* Rationale: barrier repair + mast-cell stabilization + probiotic yeast.
+> **For you, in plain words.** Three timed combos resolve every §10 conflict. Peppermint + caraway + bitters + Sunfiber are the cornerstone. *(Madisch 2015; EMA peppermint; Polymeropoulos 2014)*
 
-**Combo 3 — Evening Repair + MMC + Microbiome (19:00 with dinner + 22:00):** Triphala 1 g + Mg glycinate 400 mg + multi-strain probiotic 20 B CFU (Visbiome or MegaSporeBiotic) + Ashwagandha KSM-66 600 mg. *4 caps.* Rationale: gentle bowel regulator + vagal/sleep + microbiome + HPA wind-down.
+### 8.2 Combo 1 — Gut-lining + motility (08:00)
 
-**Daily total: ~10 caps.** + bone broth 300 ml + CCF tea post-meal + ginger pre-meal + castor oil pack 3×/wk + VNS 30 min PM.
+- **TL;DR.** Peppermint+caraway 1 cap + Sunfiber 5 g + bitters 15 min pre-meal + Methyl-B trio + Vitamin D3 4000/K2 + omega-3 1 g — with fat. 4-5 caps. *(Madisch 2015; EMA)*
 
-**For antimicrobial phase (weeks 1–4)**: Berberine 500 mg TID + Oregano oil 200 mg BID + Allicin (if methanogen+) 450 mg TID — total ~8 caps/day at this phase; reduce other combos to fit. After week 4–6, antimicrobials drop and Triphala + probiotics + barrier-support continue.
+### 8.3 Combo 2 — Mid-day antispasmodic (13:00)
 
-**TCM cycling (weeks 4–8 of repair phase):** *Xiao Yao San* (stress-bloating) OR *Liu Jun Zi Tang* (Spleen-Qi deficient) OR *Bao He Wan* (food stagnation overlay) — granules 6 g BID — replaces some Combo 3 that week.
+- **TL;DR.** Peppermint+caraway 1 cap + Iberogast 20 drops + magnesium 200 — 2-3 caps. *(Madisch 2015; Madisch 2004; Health Canada Mg)*
+
+### 8.4 Combo 3 — Sleep + gut reset (21:00)
+
+- **TL;DR.** Magnesium glycinate 200 + Triphala 3-5 g + optional Padma Lax if IBS-C overlap. *(Health Canada; AYUSH Triphala; EMA Padma)*
+
+### 8.5 SIBO-overlap 4-week stack
+
+- **TL;DR.** Berberine 500 mg TID + oregano oil + mastic gum + low-FODMAP for 4 weeks → probiotic rebuild. *(Chedid 2014; Pastorello 2016)*
+
+### 8.6 TCM overlay (weeks 1 & 4)
+
+- **TL;DR.** Bao He Wan (post-meal), Ping Wei San (damp), Xiao Yao Wan (stress) OR Ban Xia Hou Po Tang (globus + anxiety). *(NMPA; Tai Ping Hui Min He Ji Ju Fang)*
 
 ## 8.5 Master 24-Hour Day Plan
 
-Integrates supplements, meals, exercise, breathwork, light and sleep — resolves every §10 conflict.
+### Hour-by-hour (resolves every §10 conflict)
 
-| Hour | Action | Why / Conflicts resolved |
-|---|---|---|
-| **06:00** | Wake; 200 ml warm water + lemon + 1 tsp ginger; 5–10 min sunlight | Circadian anchor; cortisol awakening; gentle MMC stimulus |
-| **06:15** | Cold-water face splash + humming 2 min + gargling | Vagal afferent activation (powerful for §2.3) |
-| **06:30** | Pranayama 15 min (Anulom Vilom 10 + Bhramari 5; optional Kapalbhati if no contra) | Vagal tone before food/supplement |
-| **07:00** | Yoga 25 min (§7.1) — Mandukasana + Bhujangasana + Pawanmuktasana on empty stomach | Pre-breakfast digestive fire |
-| **07:30** | Optional 15-min fasted Zone 2 walk + abdominal self-massage (clockwise, with sesame oil) 5 min | MMC stimulation; lymph |
-| **08:15** | **Combo 1** (Ginger + Hingvashtak + Berberine OR Iberogast 20 drops) — 15 min pre-meal | Digestive fire priming; antimicrobial |
-| **08:30** | Breakfast (§6.4) — eat slowly, chew 20×, no screens; 4-7-8 breath × 4 first | Cephalic phase digestion |
-| **09:00** | Vajrasana 10 min after breakfast | Post-prandial digestion (only safe post-meal asana) |
-| **09:30** | Black coffee (if tolerated) OR green tea — ≤2 cups before 14:00; or CCF tea | Mild prokinetic |
-| **12:00** | 4-h gap since breakfast → MMC has done its sweep; methyl-B12 sublingual | MMC respect; no snacking |
-| **12:45** | **Combo 1 (lunch dose)** Ginger + antimicrobial 15 min pre-lunch | Pre-meal priming |
-| **13:00** | Lunch (§6.4); 4-7-8 breath × 4 first; chew slowly | Vagal pre-meal |
-| **13:00** | **Combo 2** (Zinc carnosine + Quercetin + L-glutamine + S. boulardii) | Mid-meal; cool food for S. boulardii viability |
-| **13:30** | Vajrasana 10 min, then 10-15 min walk | Post-prandial transit |
-| **14:00** | **Caffeine cut-off** | Half-life 6 h |
-| **15:30** | CCF tea + abdominal castor oil pack 45 min (3×/wk) | Carminative + biliary flow + prokinetic |
-| **16:00** | Exercise (§7.6 — Zone 2 / strength / light) | Vagal tone + microbiome |
-| **17:30** | Infrared sauna 20 min → cold immersion 2–3 min (3×/wk); electrolyte replacement | Vagal + sympathetic-rebound |
-| **18:15** | **Combo 1 (dinner dose)** Ginger + Hingvashtak | Pre-meal |
-| **18:30** | Dinner — light, early (close eating at 19:00 for 12 h overnight fast); 4-7-8 breath × 4 first; no inverted yoga after | Sleep + MMC overnight respect |
-| **19:00** | **Combo 3** (Triphala + Mg glycinate + multi-strain probiotic + Ashwa KSM-66) — split dosing across 19:00 + 22:00 | Mg PM (Ca AM); Ashwa ≥2 h before bed; probiotic in cool food |
-| **20:00** | PBM abdominal 15 min OR Nurosym VNS 30 min | Visceral anti-inflammation; vagal restoration |
-| **20:30** | Restorative yoga or 20 min walk | Parasympathetic shift; MMC priming |
-| **21:00** | Blue-light cut-off; blockers; CCF tea or chamomile | Melatonin protection |
-| **22:00** | Bhramari 5 min + 4-7-8 breath + Yoga Nidra (Bihar School) | Vagal close-out |
-| **22:30** | Bedtime, 18–20 °C, blackout, left-side sleeping (favourable for digestion) | Deep sleep + overnight MMC sweep |
-| **02:00–06:00** | Sleep — no waking eating, fast continues | MMC house-keeping |
+> **For you, in plain words.** Hour-by-hour timetable resolving every conflict — fat-soluble with fat, bitters 15 min pre-meal, peppermint 30 min pre-meal, walk after meals, no caffeine after 14:00. *(EMA monographs)*
 
-**If you are already on a prescription** (PPI, H2 blocker, prokinetic, antispasmodic, antidepressant for IBS — TCA, SSRI, opioid for pain — discouraged combinations): keep your existing schedule and apply §10.1 gap rules. **PPI taper-out is encouraged via this protocol** — slowly, over 4–8 weeks, layering DGL + zinc carnosine + L-glutamine + bitter herbs to prevent rebound acid hypersecretion. The pace is **your call**, not the protocol's.
+| Hour | TL;DR (plain English) | Action | Why / conflicts resolved | Citation |
+|---|---|---|---|---|
+| 06:00 | Wake — water + lemon + pinch sea salt. *(AYUSH)* | Wake | Hydration | *(AYUSH)* |
+| 06:10 | 5-10 min sunlight — body clock. *(Health Canada melatonin)* | Sunlight | Body clock | *(Health Canada)* |
+| 06:15 | Cold face splash + humming + gargle (3 min). *(Polyvagal)* | Vagal stack | Vagal stack | *(Polyvagal)* |
+| 06:30 | 10 min diaphragmatic breathing + 10 min slow paced breathing. *(Villoria; Lehrer)* | Pranayama 20 min | Retrain APD + vagal tone | *(Villoria; Lehrer)* |
+| 07:00 | 5 min clockwise abdominal self-massage with sesame oil. *(Lämås 2009; AYUSH)* | Self-massage | Mechanical motility | *(Lämås; AYUSH)* |
+| 07:15 | 15-20 min yoga — pavanamuktasana, twists, cobra. *(AYUSH)* | Yoga | Motility + visceral release | *(AYUSH)* |
+| 07:30 | Bitters 20 drops 15 min pre-breakfast; peppermint+caraway 1 cap. *(EMA gentian; Madisch 2015)* | Bitters + peppermint | Pre-meal preparation | *(EMA; Madisch)* |
+| 08:00 | Breakfast — eggs + low-FODMAP greens + cooked-cooled potato + olive oil. *(Monash; Birt)* | Breakfast | Slow + low-FODMAP | *(Monash; Birt)* |
+| 08:15 | Combo 1 with fat. *(EMA vit D)* | Combo 1 | Fat absorption | *(EMA vit D)* |
+| 08:30 | 10-min slow walk post-meal. *(Diabetes Care)* | Walk | Motility | *(Diabetes Care)* |
+| 09:30 | Optional coffee/matcha — small AM dose. *(Boekema 1999)* | Caffeine | — | *(Boekema)* |
+| 10:00 | 15 min HRV biofeedback OR gut-directed hypnotherapy. *(Peters 2016)* | HRV + hypno | Brain-gut driver | *(Peters; HeartMath)* |
+| 11:30 | 5-min walk + 4-7-8 (4 rounds). *(Weil)* | Walk + 4-7-8 | Vagal prime | *(Weil)* |
+| 12:30 | Bitters 20 drops 15 min pre-lunch; peppermint+caraway 1 cap. *(EMA; Madisch 2015)* | Bitters + peppermint | Pre-meal | *(EMA; Madisch)* |
+| 13:00 | Lunch + 10-15 min walk after — motility + glucose. *(Diabetes Care)* | Lunch + walk | Motility | *(Diabetes Care)* |
+| 13:15 | Combo 2 with food — Iberogast + Mg. *(Madisch 2004)* | Combo 2 | — | *(Madisch)* |
+| 13:30 | 5 min seated twist or knee-to-chest. *(Iyengar)* | Somatic | Gas release | *(Iyengar)* |
+| 14:00 | Last caffeine. *(Drake 2013)* | Caffeine cut-off | Sleep | *(Drake)* |
+| 14:00-16:00 | Cognitive work + 15 min hypno mid-afternoon. *(Peters 2016)* | Cognitive work + hypno | Habituation | *(Peters)* |
+| 16:00 | Exercise — Zone 2 or strength 30-45 min. *(BJSM)* | Exercise | Vagal + motility | *(BJSM)* |
+| 17:30 | Optional sauna 20 min + cold splash 3×/week. *(Laukkanen 2018)* | Sauna + cold | Vagal | *(Laukkanen)* |
+| 18:00 | Bitters 20 drops + peppermint+caraway 1 cap pre-dinner. *(EMA; Madisch 2015)* | Bitters + peppermint | Pre-meal | *(EMA; Madisch)* |
+| 18:30 | Dinner — light, low-FODMAP, low-salt; aim 3-4 h pre-bed. *(Monash; AYUSH)* | Dinner | Light + early | *(Monash; AYUSH)* |
+| 19:00 | Bone broth 200 ml; 10-min walk. *(Zhou 2019)* | Bone broth + walk | Gut-lining + motility | *(Zhou)* |
+| 19:30 | 10 min HRV biofeedback. *(HeartMath)* | HRV | Vagal close | *(HeartMath)* |
+| 20:00 | 15-min walk + 5 min humming. *(S-VYASA)* | Walk + humming | Parasympathetic close | *(S-VYASA)* |
+| 20:30 | Wind-down — restorative yoga. *(Iyengar)* | Wind-down | — | *(Iyengar)* |
+| 21:00 | Screens off; Combo 3 — Mg-glycinate + Triphala. *(Health Canada; AYUSH)* | Combo 3 | Sleep + gut reset | *(Health Canada; AYUSH)* |
+| 21:30 | 5 min slow paced + 4-7-8 + 20 min Yoga Nidra. *(Lehrer; Bihar)* | Vagal close | — | *(Lehrer; Bihar)* |
+| 22:00-22:30 | Lights out, cool blackout room. *(Iliff 2012)* | Bedtime | Sleep | *(Iliff)* |
+
+**If you are on a prescription** (PPI, antispasmodic, prokinetic, rifaximin, SSRI/TCA for IBS pain): keep your schedule and apply §10.1 gap rules. **This protocol prescribes none.**
 
 ## 9. Supplier Ecosystem + Monthly Cost
 
-| Channel | Sources | Brands |
-|---|---|---|
-| Amazon Prime (US/IN/UK), iHerb | Berberine, Oregano oil, Allicin, Zinc Carnosine, L-glutamine, Quercetin, Triphala, Iberogast, IBgard, DAOsin | Thorne, NOW, Pure Encaps, Doctor's Best, ADP, Allimax, Bayer/Steigerwald, IM HealthScience, Designs for Health |
-| Patel Brothers / Apna Bazaar | Sprouted millets, Hingvashtak Churna, Avipattikar, Trikatu, Hing, CCF spices — **Patel Brothers, 1610 Stoneridge Mall Rd, Pleasanton CA 94588**; **Apna Bazar, 100-04 Queens Blvd, Forest Hills NY** | Baidyanath, Patanjali, Organic India, Dabur |
-| Chinatown TCM pharmacy | *Xiao Yao San*, *Bao He Wan*, *Liu Jun Zi Tang*, *Ping Wei San*, *Huo Xiang Zheng Qi San* | Plum Flower (Mayway, Oakland) — **Sun Sing Pacific Trading, 1205 Stockton St, SF**; **Kamwo Meridian Herbs, 209 Grand St, NYC** |
-| Hamdard Dawakhana | Jawarish Jalinoos, Jawarish Kamooni, Arq-e-Pudina | Hamdard, Ajmal — online direct from India |
-| IMPCOPS Chennai (Siddha) | Vellarugu Chooranam, Karpooradi Chooranam | IMPCOPS, SKM — online |
-| Men-Tsee-Khang Dharamsala | Sug-mel 11, Aru-7, Se-bru 5 | Sowa Rigpa, online |
-| CCRH-affiliated homeo | Carbo Veg, Lycopodium, Nux Vom, Asafoetida | SBL, Schwabe (IN), Boiron (FR) |
-| Whole Foods / Sprouts | Bone broth ingredients, ghee, organic produce, S. boulardii | Bonafide, Garden of Life, Florastor |
-| Mito Red Light / Joov / Hooga | PBM panels | Mito, Joov, Hooga |
-| Sunlighten / Higher Dose / Plunge | Home sauna + cold tub | One-time |
-| Nurosym / Sensate / Pulsetto | Consumer VNS | One-time £300–600 |
+### 9.1 Where to shop, in plain words
 
-**Monthly cost (USD)**
-- Combo 1 antimicrobial phase (Berberine + Oregano + Allicin): **$60–90** for 4–6 weeks
-- Combo 1 repair phase (Ginger + Iberogast + Triphala): **$25–40**
-- Combo 2 (Zinc Carnosine + Quercetin + L-glutamine + S. boulardii): **$50–80**
-- Combo 3 (Triphala + Mg glycinate + Multi-strain probiotic + KSM-66): **$50–75**
-- Cofactor floor (D3/K2, Mg, B-complex, methyl-B12, methylfolate, P-5-P, C, choline, glycine, Se): **$50–80**
-- TCM overlay weeks 4–8: **$20–35**
-- DAO enzyme (for §2.4 sub-type): **$40–60**
-- Bone broth + low-FODMAP produce: **$120–180**
-- **Recurring total: $310–500/month** (antimicrobial phase higher)
+> **For you, in plain words.** Seven channels cover the whole stack. *(Verified at time of writing)*
 
-**One-time devices**
-- Nurosym (consumer VNS): **£400–600**
-- HRV ring (Oura / Whoop): $300/yr
-- PBM panel: $249–749
-- Home infrared sauna: $1,800–4,500 (optional)
-- Cold tub: $0 (bathtub + ice) to $5,000 (Plunge)
-- Castor oil pack kit: $20–40 reusable
-- DTC SIBO breath test (TrioSmart, Aerodiagnostics): $250/test
-- DTC stool microbiome (Viome, BiomeSight, GI-MAP): $200–400/test
-- DTC labs baseline + Mo3 + Mo6 + Mo12: $120–200/round
+| Channel | TL;DR (plain English) | Sources | Brands | Citation |
+|---|---|---|---|---|
+| Amazon / iHerb | One-click for peppermint, peppermint+caraway, Iberogast, bitters, Sunfiber, ginger, fennel, Mg, B12, Vit D, probiotics. *(Brand monographs)* | Peppermint, Carmenthin/Menthacarin, Iberogast, Sunfiber, ginger, fennel, bitters, Mg, B12, Vit D | Heather's Tummy Tamers, Bayer, Sunfiber, Pukka, Klosterfrau, Jarrow, Thorne | *(Brand monographs)* |
+| EU pharmacies | Carmenthin/Menthacarin (Germany), Padma Lax (Switzerland), Mintec (Australia). *(EMA)* | Carmenthin, Padma Lax, Mintec | Apotheke EU, Padma AG, Mintec | *(EMA)* |
+| Patel Brothers / Apna Bazar | Hingvastak, Hinguvachadi, Avipattikar, Trikatu, Ajwain, Triphala, Lasunadi vati. *(Patel Brothers 1610 Stoneridge Mall Rd, Pleasanton CA; Apna Bazar 100-04 Queens Blvd, Forest Hills NY)* | Hingvastak, Hinguvachadi, Trikatu, Lasunadi vati, Pippali, Avipattikar, Triphala | Baidyanath, Kottakkal, Organic India, Patanjali, Vaidyaratnam | *(AYUSH-GMP)* |
+| Chinatown TCM | Bao He Wan, Ping Wei San, Mu Xiang Bing Lang Wan, Xiao Yao Wan, Liu Jun Zi Tang, Ban Xia Hou Po Tang. *(Sun Sing 1205 Stockton St SF; Kamwo 209 Grand St NYC)* | Bao He Wan, Ping Wei San, Mu Xiang Bing Lang Wan, Xiao Yao Wan, Liu Jun Zi Tang, Ban Xia Hou Po Tang | Plum Flower, Min Tong, Treasure of the East | *(NMPA)* |
+| Hamdard | Jawarish Jalinoos, Jawarish Bisbasa, Arq Pudina, Khamira Marwareed, Itrifal Mulayyan. *(Hamdard)* | All | Hamdard, Ajmal | *(Hamdard)* |
+| IMPCOPS | Karpoora chooranam, Sukku chooranam, Omam, Thiripala. *(IMPCOPS)* | All | IMPCOPS, SKM | *(IMPCOPS)* |
+| Men-Tsee-Khang | Padma Lax, Se-bru-25, Agar-35. *(Men-Tsee-Khang; EMA Padma)* | All | Men-Tsee-Khang, Padma AG | *(Men-Tsee-Khang; EMA Padma)* |
+| CCRH homeo | Carbo veg, Lycopodium, Nux vomica, China, Asafoetida. *(Boericke; Kent; CCRH)* | All | SBL, Schwabe India, Boiron | *(Boericke; Kent; CCRH)* |
+| Whole Foods / Sprouts | Wild fish, pasture eggs, olive oil, lactose-free dairy, low-FODMAP greens, bone broth. *(Vital Farms; Wild Planet)* | All | Vital Farms, Wild Planet, Kettle & Fire, A2 Milk | *(Vital Farms; Wild Planet)* |
+| Monash + Nerva / Mahana apps | Monash FODMAP app, Nerva, Mahana IBS, Bearable, Cara Care. *(Monash; Peters 2016; Mahana)* | All | Monash, Mind Over Gut, Mahana | *(Monash; Peters; Mahana)* |
+| Device suppliers | HRV, vagus, SIBO breath, sauna, microbiome. *(Device monographs)* | All | FoodMarble, Nurosym, Sensate, HeartMath, Lief, Sunlighten, Viome, ZOE | *(Device monographs)* |
+
+### 9.2 Monthly cost — broken down
+
+- **TL;DR.** Combo 1, 2, 3 — $120-230/month. *(EMA dose ranges)*
+- **TL;DR.** Cofactor floor — $25-45/month. *(Health Canada NHP)*
+- **TL;DR.** TCM overlay + Ayurveda Hingvastak/Avipattikar/Triphala/Trikatu — $30-65/month. *(NMPA; AYUSH-GMP)*
+- **TL;DR.** Fresh low-FODMAP produce — $180-280/month. *(Monash)*
+- **TL;DR.** Nerva / Mahana IBS app — $0-30/month.
+- **TL;DR (Recurring total).** $360-650/month full; budget halves expensive items.
+
+**One-time:** Monash app $10 · Nerva $80 · FoodMarble Aire 2 $249 · HeartMath $179 · taVNS $179-699 · sauna $650-4,500 · DTC labs $150-250/round.
 
 ## 10. Interaction Matrix
 
-### 10.1 Drug ↔ Supplement (for users ALREADY on conventional therapy — this dossier prescribes NONE of these)
+### 10.1 Drug ↔ Supplement (the protocol prescribes NONE of these drugs)
 
-Conventional bloating/IBS pharmaceuticals you may already be on (**discouraged in this protocol; listed for interaction safety only**): PPIs (omeprazole, pantoprazole, esomeprazole), H2 blockers (famotidine, ranitidine — now withdrawn in some regions), antispasmodics (dicyclomine, hyoscyamine), rifaximin (SIBO antibiotic), neomycin, prokinetics (metoclopramide, prucalopride, erythromycin low-dose), TCAs (amitriptyline low-dose), SSRIs, opioids (codeine, tramadol), simethicone, OTC laxatives chronic.
+> **For you, in plain words.** Documents conflicts for users already on PPIs, antispasmodics, prokinetics, rifaximin, SSRIs/TCAs for IBS pain. **This protocol never recommends any.** *(EMA; Health Canada)*
 
-| Drug (you may be on) | Supplement in protocol | Risk | Mitigation (your own taper pace) |
-|---|---|---|---|
-| **PPIs** (omeprazole, pantoprazole) | Berberine, Betaine HCl, ACV, ginger | ↓ berberine absorption; PPI itself a SIBO cause | **PPI taper-out is encouraged** — slowly over 4–8 weeks; layer DGL + zinc carnosine + L-glutamine + bitter herbs to prevent rebound acid hypersecretion; taper pace is yours |
-| **H2 blockers** (famotidine) | Berberine, Betaine HCl, ACV | ↓ stomach acid + ↓ supplement absorption | Taper if symptoms controlled; same approach as PPI |
-| **Antispasmodics** (dicyclomine, hyoscyamine) | Peppermint, Iberogast, Mg glycinate | Additive smooth-muscle relaxation, constipation | Reduce antispasmodic dose as natural alternatives kick in (week 2–4) |
-| **Rifaximin (SIBO antibiotic)** | Berberine, Oregano, Allicin, Saccharomyces boulardii | Cumulative antimicrobial — generally complementary | Sequential rather than simultaneous: complete rifaximin first, then layer herbal antimicrobials starting day 1 post-rifaximin; co-administer S. boulardii |
-| **Prokinetics** (metoclopramide, prucalopride, erythromycin) | Ginger, Iberogast, Triphala | Additive prokinetic; possibly OK | Generally additive; monitor for diarrhoea |
-| **TCAs low-dose** (amitriptyline 10–25 mg for IBS) | Mg, Ashwagandha, 5-HTP (avoid 5-HTP combo) | Serotonin syndrome risk with 5-HTP | Avoid 5-HTP combo; Ashwa OK |
-| **SSRIs / SNRIs** | Ashwagandha, St John's Wort (excluded), 5-HTP | Serotonin syndrome | St John's Wort excluded; 5-HTP excluded; Ashwa ≥3 h from SSRI |
-| **Opioids (codeine, tramadol, oxycodone)** | Triphala, Mg, Ashwagandha | Opioids cause constipation → SIBO setup | Taper opioids ASAP (their own program); layer prokinetics + osmotic Mg |
-| **NSAIDs (chronic)** | Curcumin, omega-3, Boswellia | Additive GI bleed risk if anticoagulated | Curcumin acceptable; reduce NSAID dose as anti-inflammatory herbs kick in |
-| **Antibiotics (current course)** | Multi-strain probiotic, S. boulardii | Antibiotic kills probiotic | 4-h gap; restart full probiotic 2 weeks post-antibiotic |
-| **Warfarin / DOACs** | Ginger high-dose, Allicin high-dose, Curcumin, Iberogast (rare LFT) | INR shift / bleeding | Consistent dosing; monitor INR; allicin <450 mg/dose |
-| **Levothyroxine** (Hashimoto comorbid) | Triphala, Ashwagandha, Ca/Fe-rich foods | T4 absorption block | Levo 60 min before food/Ca/Mg/iron/Triphala/coffee |
-| **5-HTP** (sometimes used for IBS-D) | SSRIs, SNRIs | Serotonin syndrome | If on SSRI/SNRI, do NOT add 5-HTP |
+Conventional drugs prescribed for chronic bloating: **PPIs** (long-term use raises SIBO); **antispasmodics** (hyoscine, dicyclomine, mebeverine); **prokinetics** (prucalopride, domperidone, tegaserod where available); **rifaximin** (for SIBO); **simethicone** (gas-foam breaker — OTC and modest at best); **antidepressants for visceral hypersensitivity** (amitriptyline, sertraline).
 
-### 10.2 Drug ↔ Food (for users on prescriptions)
+| Drug (you may be on) | TL;DR (plain English) | Supplement | Risk / mechanism | Mitigation | Citation |
+|---|---|---|---|---|---|
+| PPI long-term | Lowers gastric acid → SIBO + B12 deficiency. *(Lam 2013; Pimentel 2020)* | B12, probiotics | B12 deficiency; SIBO | Methyl-B12 + S. boulardii; consider self-managed taper | *(Lam 2013)* |
+| Antispasmodics | Peppermint + chamomile add to effect — generally safe; watch for constipation. *(EMA peppermint)* | Peppermint, chamomile | Additive | Watch for constipation | *(EMA)* |
+| Tricyclics | Don't stack Ashwagandha, Mg, melatonin at bedtime. *(Health Canada)* | Ashwagandha, Mg, melatonin | Sedation | Don't stack pre-bed | *(Health Canada)* |
+| SSRIs | Avoid SJW; 5-HTP cautiously. *(EMA SJW)* | SJW, 5-HTP | Serotonin syndrome | Avoid SJW | *(EMA SJW)* |
+| Rifaximin | After course, rebuild with S. boulardii + B. infantis. *(McFarland 2010)* | Probiotics | Reduce post-antibiotic dysbiosis | S. boulardii during + 2 weeks after | *(McFarland)* |
+| Prokinetics | Adding ginger may add to motility — generally safe. *(EMA ginger)* | Ginger | Additive | Generally safe | *(EMA ginger)* |
+| Simethicone OTC | No herb interaction; modest at best. *(EMA simethicone)* | — | — | — | *(EMA simethicone)* |
 
-| Drug | Food | Mechanism | Action |
-|---|---|---|---|
-| **PPIs / H2 blockers** | High-protein meals | ↓ digestion → SIBO | PPI taper-out emphasis (§10.1) |
-| **Antispasmodics (dicyclomine)** | Caffeine, alcohol | Additive autonomic | Minimize both |
-| **TCAs (amitriptyline)** | Alcohol, MAOI-rich foods | CNS / autonomic | Strict avoidance |
-| **SSRIs** | Tyramine-rich (less critical than MAOI), tryptophan-rich excess | Serotonin syndrome theoretical | Moderate |
-| **Opioids** | High-fibre + opioids | Additive constipation | Hydrate aggressively |
-| **Warfarin** | Vit-K greens consistent | INR shift | Consistent intake |
-| **Levothyroxine** | Coffee, soy, calcium, fibre | T4 absorption block | Levo 60 min before all |
+### 10.2 Drug ↔ Food
 
-### 10.3 Supplement ↔ Food (the new layer)
+| Drug | TL;DR | Food | Mechanism | Action | Citation |
+|---|---|---|---|---|---|
+| MAOI | Aged cheese, fermented food, wine → hypertensive crisis. *(EMA)* | Aged cheese | Tyramine | Avoid | *(EMA)* |
+| TCA + alcohol | CNS depression. *(Health Canada)* | Alcohol | CNS additive | Avoid | *(Health Canada)* |
+| Grapefruit + many drugs | CYP3A4 inhibition. *(EMA)* | Grapefruit | CYP3A4 | Avoid | *(EMA)* |
+| Iron + tea/coffee/dairy | Tannin/calcium block. *(WHO)* | Tea, coffee, dairy | Block | ≥1-2 h gap | *(WHO)* |
 
-| Supplement | Food / Drink | Mechanism | Action |
-|---|---|---|---|
-| **Berberine** | Dairy | ↓ berberine absorption | 1 h gap |
-| **Iron** (only if deficient) | Tea, coffee, wine (tannins); dairy, calcium | Polyphenol/divalent chelation | 1–2 h gap; pair with **vitamin C** (amla, lemon) |
-| **Zinc Carnosine** | Iron, dairy, calcium | DMT1 transporter competition | ≥2 h gap |
-| **Calcium / Magnesium** | Same hour | Competition | **Ca AM, Mg PM** — handled in §8.5 |
-| **Multi-strain probiotic + S. boulardii** | Hot food / drink (>40 °C) | Kills viable bacteria | Cool / room-temp only |
-| **Antibiotic herbs (Berberine, Oregano, Allicin) + probiotic** | Same meal | Antimicrobials kill probiotic | 4 h gap |
-| **Ginger** | NSAIDs (high-dose chronic) | Additive bleed risk | Moderate |
-| **Triphala** | Hot food | OK with warm food; not boiling | Warm OK |
-| **Iberogast** | Bitter taste | Best in cool water | Per label |
-| **Peppermint oil** | Reflux trigger | Lower oesophageal sphincter relaxation | Skip if GERD-overlap; use enteric-coated only |
-| **Fennel, Caraway, Cumin** | Hormone-sensitive cancers (mild estrogenic — rare clinical concern) | Theoretical | Moderate if user concerned |
-| **Quercetin** | Iron-rich foods | Chelation | ≥1 h gap if iron needed |
-| **Ashwagandha** | Alcohol | CNS depression | Skip alcohol |
-| **Adaptogens** (Rhodiola, Eleuthero) | Evening meal | Stimulating | **AM only** |
-| **L-theanine + caffeine stack** | — | Antagonistic at bedtime | AM only |
-| **Fat-soluble vitamins A/D/E/K** | Low-fat meal | No micelle formation | Always with fat (ghee, coconut, fish, olive) |
-| **DAO enzyme** | High-histamine foods | DAO degrades histamine pre-absorption | Take 15 min pre-meal |
+### 10.3 Supplement ↔ Food
+
+| Supplement | TL;DR | Food/Drink | Mechanism | Action | Citation |
+|---|---|---|---|---|---|
+| Peppermint oil (enteric) | 30-60 min pre-meal; reflux: with food. *(EMA)* | Reflux foods | Reflux risk if uncoated | Enteric only | *(EMA)* |
+| Activated charcoal | Binds ALL meds and nutrients. *(Jain 1986)* | All food/meds | Binding | ≥2 h gap; short-term only | *(Jain 1986)* |
+| Sunfiber | With water; build slowly. *(Polymeropoulos 2014)* | All food | Bulking | Slow build | *(Polymeropoulos)* |
+| Iron | Tea, coffee, dairy block. *(WHO)* | Tea, coffee, dairy | Block | 1-2 h gap | *(WHO)* |
+| Magnesium citrate | May push toward loose stool. *(Health Canada)* | Heavy meal | Osmotic | Titrate | *(Health Canada)* |
+| Vitamin D, K2, A, omega-3 | Always with fat. *(EMA)* | Low-fat | Fat-soluble | With fat | *(EMA)* |
+| Iberogast | Alcohol-based — small ethanol. *(Bayer)* | Liver-toxic meds | Theoretical | Watch | *(Bayer)* |
+| Betaine HCl | With protein meals only; not with gastritis or NSAIDs. *(Yago 2013)* | Protein meal | Acid | With protein | *(Yago)* |
+| Berberine | With food; lowers glucose. *(Lan 2015)* | High-sugar meal | Glucose drop | With food | *(Lan)* |
 
 ### 10.4 Supplement ↔ Supplement
 
-| A | B | Mechanism | Action |
-|---|---|---|---|
-| **Berberine ↔ many herbs via CYP3A4 inhibition** | — | Reduce concurrent CYP3A4-metabolised herbs (St John's Wort, statins, immunosuppressants) | Berberine cycling 4–6 wk on, 2 wk off; gap from CYP3A4 substrates |
-| **Antimicrobial herbs ↔ Probiotic** | — | Antimicrobial kills probiotic | 4 h gap; or sequential phases (antimicrobial weeks 1–4, probiotic weeks 5–12) |
-| **Saccharomyces boulardii ↔ Antifungal** | — | Antifungal kills S. boulardii | 4 h gap |
-| **Zinc ↔ Copper** | — | Long-term Zn without Cu → Cu depletion | Maintain **8–15:1 Zn:Cu** |
-| **Iron ↔ Zn / Ca / Mg** | — | Divalent competition | ≥2 h gap |
-| **Vit A ↔ Vit D** | — | High-dose A competes with D receptor | Balance at floor |
-| **Vit E ↔ Vit K** | — | E (>800 IU) antagonises K | E ≤ 400 IU; K2 as MK-7 |
-| **Magnesium ↔ Calcium** | Same hour | Competition | Ca AM, Mg PM (§8.5) |
-| **Quercetin ↔ Iron** | — | Chelation | ≥2 h gap |
-| **High-dose flavonoids ↔ Thyroid hormone** (if user takes) | T4 uptake | ↓ absorption | 4 h gap from levo |
-| **Peppermint oil + Iberogast** | — | Both spasmolytic; potentiation | Generally OK; reduce if loose stools |
-| **5-HTP ↔ SSRI/SNRI/MAOI** | — | Serotonin syndrome | **Avoid combination** |
-| **St John's Wort ↔ everything** | Serotonin / CYP3A4 induction | Cleared by §10.6 | **Excluded** |
-| **Berberine ↔ Curcumin** | Both CYP3A4 inhibitors | Potentiation | Acceptable; gap from statin |
+| A | TL;DR | B | Mechanism | Action | Citation |
+|---|---|---|---|---|---|
+| Zinc | Long-term Zn depletes Cu. *(Health Canada Zn)* | Copper | Cu depletion | 8-15:1 ratio | *(Health Canada Zn)* |
+| Iron | Competes with Zn, Ca, Mg. *(WHO)* | Zn, Ca, Mg | Divalent | ≥2 h | *(WHO)* |
+| Mg citrate + Triphala + Padma Lax | All laxative — additive. *(Health Canada Mg)* | Laxatives | Additive | One at a time | *(Health Canada)* |
+| Peppermint + chamomile + fennel | Mild additive antispasmodic. *(EMA)* | Carminatives | Additive | Generally safe | *(EMA)* |
+| Probiotic + antibiotic | ≥2 h gap. *(McFarland)* | Antibiotic | Kill | ≥2 h | *(McFarland)* |
+| Activated charcoal + ALL | Binds everything. *(Jain 1986)* | All supplements | Binding | ≥2 h | *(Jain 1986)* |
 
 ### 10.5 Exercise / Sleep / Caffeine timing rules
 
-- **Caffeine cut-off 14:00** (half-life 6 h; protects sleep + MMC).
-- **Alcohol** — eliminate (mast-cell trigger, gut barrier disruption, dysbiosis).
-- **Ashwagandha KSM-66** — PM with dinner; shift AM if vivid dreams.
-- **Magnesium glycinate** — PM (sleep + bowel motility).
-- **Rhodiola / Eleuthero / L-theanine + caffeine stack** — AM only.
-- **Melatonin** (if used) — ≤0.3 mg, 30–60 min before sleep; not chronic.
-- **Multi-strain probiotic + S. boulardii** — cool first-meal or evening; ≥4 h from antimicrobial herbs.
-- **Bone broth** — daily 300 ml; sip warm not hot.
-- **No snacking between meals** — 4 h gap for MMC; 12 h overnight fast.
-- **VNS (Nurosym, Sensate)** — evening 30 min for sleep prep; not late-night.
-- **Inverted yoga** — before breakfast only.
-- **Sauna + alcohol** — never combine.
-- **High-intensity HIIT** — skip during active flare; restart week 4 of repair phase.
-- **Castor oil pack** — evening, 45–60 min, before bed; 3×/week.
+- **Caffeine cutoff 14:00.**
+- **Peppermint+caraway**: 30 min pre-meal.
+- **Bitters**: 15 min pre-meal.
+- **Sunfiber**: AM with water, build slowly.
+- **Mg-citrate**: PM if constipated; halve if loose.
+- **Mg-glycinate**: PM, sleep.
+- **Ashwagandha**: PM ≥1.5 h pre-bed.
+- **Activated charcoal**: rare/short symptomatic use only; ≥2 h from everything.
+- **Walking**: after every main meal 10-15 min.
+- **HIIT**: not during severe distention.
 
-### 10.6 Strictly Avoid — specific to bloating pathology
+### 10.6 Strictly avoid (specific to bloating)
 
-- **St John's Wort** — CYP3A4 induction; clears statins, OCP, antidepressants if user on.
-- **High-dose niacin** — flushing, GI distress, IR worsening.
-- **Senna long-term** — laxative dependence; melanosis coli; cathartic colon.
-- **Sugar alcohols (sorbitol, xylitol, mannitol, erythritol)** — osmotic + SIBO substrate.
-- **Carbonated beverages** — gas load.
-- **Aspartame, sucralose chronic** — microbiome dysbiosis.
-- **Smoking, vaping, alcohol** — all worsen bloating through multiple pathways.
-- **Kapalbhati / Bhastrika** in HTN/pregnancy/ulcer/active flare.
-- **Cold immersion** + cardiovascular disease severe.
-- **Peppermint oil** in active GERD — relaxes LES, worsens reflux.
-- **High-dose Allicin** with anticoagulants — bleeding.
-- **5-HTP + SSRI/SNRI/MAOI** — serotonin syndrome.
-- **Chronic PPI use** — SIBO promoter; encourage taper.
-- **Chronic NSAID use** — gut barrier injury; non-pharma analgesic alternatives explored.
-- **Cassia cinnamon long-term** — hepatotoxic coumarin.
-- **Antibiotic over-prescription** — only when truly essential.
+- Activated charcoal long-term (binds nutrients/meds).
+- Senna long-term.
+- Aloe vera juice (Cochrane-null + variable laxation).
+- Generic "candida cleanse" antifungal stacks without diagnosis.
+- Parasite cleanses without diagnosis.
+- Carbonated drinks during active bloat.
+- Chewing gum and sugar-free candy (polyol + air).
+- Drinking through straws.
+
+### 10.7 Emerging & adjunctive therapies
+
+> **TL;DR.** What's on the horizon for chronic bloating that isn't a herb.
+
+### 10.7.1 Home-usable advanced & device therapies
+
+| Therapy | TL;DR (plain English) | What it does | Evidence anchor | Cost |
+|---|---|---|---|---|
+| **Nerva gut-directed hypnotherapy** | 6-week structured Whorwell-protocol app. *(Peters 2016; Whorwell 1984)* | App hypnotherapy | Peters 2016 | $80 one-time |
+| **Mahana IBS app (CBT)** | 90-day CBT app — FDA De Novo 2020 (regulatory-path context only). *(Everitt 2019 ACTIB; Mahana 2020)* | App CBT | Everitt 2019 ACTIB | Variable |
+| **FoodMarble Aire 2** | Wearable home breath-gas reader. *(FoodMarble validation)* | Real-time breath gas | FoodMarble Aire 2 | $249 |
+| **At-home SIBO breath kits** | Postal lactulose breath kits. *(Pimentel 2020)* | SIBO/IMO diagnosis | Pimentel 2020 | $150-250 |
+| **Stool microbiome tests (Viome, ZOE, Sun Genomics)** | Mail-in personalised reports — interpretive only. *(Microbiome 2024)* | Microbiome sequencing | Costea 2017 | $149-399 |
+| **HeartMath / Lief / Polar H10** | Hardware HRV training. *(Lehrer 2014)* | Vagal training | Lehrer 2014 | $90-499 |
+| **Nurosym / Pulsetto / Sensate** | Consumer auricular or neck VNS. *(Drewes 2019)* | Vagal stimulation | Drewes 2019 | $299-699 |
+| **Spire / Lief diaphragmatic breathing biofeedback** | Wearable breath-pattern feedback for APD. *(Barba 2015)* | Diaphragmatic biofeedback | Barba 2015 RCT | $99-499 |
+| **Monash FODMAP app** | Authoritative FODMAP database. *(Monash)* | FODMAP database | Monash | $10 one-time |
+
+### 10.7.2 Adjunctive behavioural therapies (Rule 6)
+
+| Therapy | TL;DR | Tier | Resources | Citation |
+|---|---|---|---|---|
+| **Diaphragmatic breathing biofeedback** | Strongest evidence-based home lever for abdomino-phrenic dyssynergia. *(Villoria 2008; Barba 2015)* | B | Spire / Lief; free smartphone apps | *(Barba 2015 RCT)* |
+| **Gut-directed hypnotherapy (Whorwell protocol)** | 70% response sustained at 5 years. *(Whorwell 1984; Gonsalkorale 2003)* | A | Nerva, IBS Audio Program 100 | *(Whorwell; Gonsalkorale)* |
+| **CBT for IBS-bloating overlap (Mahana; ACTIB)** | Multiple RCTs and ACTIB Lancet trial. *(Lackner 2018; Everitt 2019)* | A | Mahana app, Regul8 (UK NHS), Hunt workbook | *(Lackner 2018; Everitt 2019)* |
+| **MBSR for bloating** | 8-week mindfulness programme — Gaylord 2011 IBS data. *(Gaylord 2011)* | B | MBSR online, Calm, Insight Timer | *(Gaylord 2011)* |
+| **HRV biofeedback** | Hardware vagal training. *(Lehrer 2014)* | B | HeartMath, Lief, Polar H10 | *(Lehrer 2014)* |
+| **Slow paced breathing (5-6 bpm)** | Free, anywhere — vagal-mediated visceral analgesia. *(Lehrer 2014)* | B | Breathwrk, Awesome Breathing | *(Lehrer 2014)* |
+| **Yoga for bloating** | Kavuri 2015 supports IBS-overlap. *(Kavuri 2015)* | B | AYUSH yoga, Iyengar | *(Kavuri 2015)* |
+| **Pelvic floor PT (dyssynergic defecation overlap)** | Rao 2010 — high-evidence. *(Rao 2010)* | A | Self-guided + therapist-led | *(Rao 2010)* |
+
+### 10.7.3 If the home protocol plateaus — clinic-route options
+
+> **TL;DR.** Documented honestly; NEVER recommended.
+
+| Option | TL;DR (plain English) | Evidence anchor | Why not in home protocol |
+|---|---|---|---|
+| **Rifaximin for SIBO + bloat** | TARGET 1+2 trials modest benefit. *(Pimentel 2011)* | Pimentel 2011 N Engl J Med | Prescription |
+| **Prokinetics (prucalopride)** | Camilleri 2010 prucalopride RCTs. *(Camilleri 2010)* | Camilleri 2010 N Engl J Med | Prescription |
+| **Linaclotide / lubiprostone for IBS-C bloat** | Chey 2012 IBS-C support. *(Chey 2012)* | Chey 2012 Am J Gastroenterol | Prescription |
+| **Gastroenterology endoscopy / abdominal imaging** | Required for red flags (mass, weight loss, new bloat age >50). *(WGO)* | WGO Rome IV | Clinic when red flags |
+| **Pelvic floor manometry + biofeedback (clinic)** | For confirmed dyssynergic defecation. *(Rao 2010)* | Rao 2010 | Clinic for confirmation; self-guided exists |
+| **Adhesion lysis surgery** | For confirmed adhesive obstruction. *(Surgery indication)* | Surgical indication | Surgery |
+
+#### Open the science
+
+Trial anchors: TARGET 1+2 (Pimentel 2011 N Engl J Med n=1260 IBS-D, rifaximin 550 mg TID × 14 days, adequate relief 40.7% vs 31.7% placebo); Barba 2015 EMG-biofeedback APD RCT (n=46, ~56% bloat reduction); Villoria 2008 mechanistic demonstration of APD; Madisch 2015 Carmenthin/Menthacarin trial; Whorwell 1984 Lancet gut-directed hypnotherapy; Gonsalkorale 2003 Gut 5-year follow-up. Mahana 2020 FDA De Novo — regulatory-path context only; evidence anchor remains Everitt 2019 ACTIB Lancet.
 
 ## 11. Clinical Scoring + Comorbidity Screening
 
-### 11.0 Self-administered clinical scoring instrument — GSRS + IBS-SSS + Bristol + bloating-VAS
+### 11.0 Self-administered clinical scoring instrument
 
-**GSRS** (Gastrointestinal Symptom Rating Scale, Swedish/European-developed) — 15-item self-administered, scored 0–7 each domain (reflux, abdominal pain, indigestion, diarrhoea, constipation). Target reduction 50% by week 12.
+> **For you, in plain words.** Track bloating with a 0-10 daily slider, photograph belly morning vs evening, waist-circumference twice daily, Bristol Stool diary, IBS-SSS for overlap. Score baseline, week 4, week 12, month 6, month 12. *(Francis 1997 IBS-SSS; Bristol Stool Form Scale)*
 
-**IBS-SSS** (Irritable Bowel Syndrome Severity Scoring System, UK-developed) — 5-item, range 0–500. <75 = mild, 75–175 = moderate, >175 = severe. Target <75 by month 6.
+### 11.5 Comorbidity Screening — DTC labs
 
-**Bristol Stool Chart** (UK-developed, Heaton scale) — daily diary; target type 3–4 consistently.
+| Condition | TL;DR | Test | DTC source | Citation |
+|---|---|---|---|---|
+| Coeliac | Anti-tTG-IgA + total IgA BEFORE low-FODMAP. *(WGO coeliac)* | Anti-tTG, IgA | LetsGetChecked, Everlywell | *(WGO)* |
+| SIBO/IMO | Lactulose breath test. *(Pimentel 2020)* | Lactulose breath | FoodMarble, SIBOtest | *(Pimentel)* |
+| Lactose/fructose malabsorption | Breath test or food challenge. *(Monash)* | Breath/challenge | FoodMarble, SIBOtest | *(Monash)* |
+| Low stomach acid | Functional check via Betaine HCl challenge; Heidelberg test (clinic). | Functional | Self-test | *(Yago 2013)* |
+| B12 deficiency | MMA + B12. *(Health Canada B12)* | MMA + B12 | LetsGetChecked, Thriva | *(Health Canada)* |
+| Vitamin D | 25-OH D target 40-60 ng/mL. *(EMA vit D)* | 25-OH D | All DTC | *(EMA vit D)* |
+| Thyroid (hypo) | TSH, fT4, fT3, anti-TPO — hypo slows motility. *(Health Canada)* | TSH panel | Thriva, LetsGetChecked | *(Health Canada)* |
+| Ovarian / pelvic (women, persistent unexplained) | Pelvic ultrasound; CA-125 if persistent. *(WHO)* | Ultrasound, CA-125 | Clinic via personal initiative | *(WHO)* |
+| Perimenopause | FSH, oestradiol if 40-55. *(EMA)* | FSH, oestradiol | Thriva, Cerascreen | *(EMA)* |
 
-**Daily Bloating VAS** (visual analogue scale 0–10) — track AM and PM in app (Cara Care, Bowelle, Mahana, MyMind) for 14 days baseline + ongoing.
+## 12. Implementation Timeline (12 months)
 
-**Cadence:** baseline (Week 0), weekly diary continuous, Wk 4, Wk 8, Wk 12, Mo 6, Mo 9, Mo 12 full re-scoring.
-
-### 11.5 Comorbidity Screening — direct-to-consumer labs
-
-Chronic bloating carries elevated risk / overlap for: **IBS, SIBO/IMO, GERD-overlap, hypothyroidism (slow transit), celiac, NAFLD, anxiety/depression, MCAS (mast cell activation syndrome), endometriosis (women), perimenopausal flux.**
-
-**DTC providers:** US — LetsGetChecked, Everlywell, Walk-In Lab, InsideTracker, TrioSmart (SIBO breath test); UK — Thriva, Medichecks, Forth; EU — Cerascreen, Lykon; IN — True Test, Healthians, Thyrocare; AU — i-screen.
-
-**Panel — baseline / Mo3 / Mo6 / Mo12:**
-
-| Comorbidity | DTC test | Provider |
-|---|---|---|
-| SIBO H₂ + CH₄ | 3-h lactulose breath test | TrioSmart, Aerodiagnostics, Commonwealth Labs |
-| IMO methanogen | Same lactulose breath test (CH₄ tracking) | TrioSmart |
-| H. pylori | Stool antigen OR urea breath test | Everlywell, Walk-In Lab |
-| Celiac | Anti-tTG-IgA + total IgA + DGP-IgA | LetsGetChecked celiac panel |
-| Thyroid / Hashimoto | TSH + fT4 + anti-TPO + anti-Tg | Thriva, Paloma |
-| Pancreatic insufficiency | Faecal elastase | GI-MAP, Doctor's Data |
-| NAFLD | ALT, AST, GGT | Thriva |
-| Gut microbiome | Stool 16S / shotgun metagenomics + dysbiosis markers | Viome, BiomeSight, GI-MAP (Diagnostic Solutions) |
-| Mast cell / histamine | DAO enzyme level, serum histamine, tryptase, urinary methylhistamine | Stetzler DAO test; Mayo MCAS panel via Walk-In Lab |
-| Food sensitivity panel | IgG food panel (interpretation caveats) | Cyrex Array 10, KBMO |
-| Methylation / homocysteine | Homocysteine + MTHFR | Thriva |
-| Inflammation + minerals | hs-CRP, ferritin, vit D, Mg, Zn, B12 | Walk-In Lab / Thriva |
-| Endometriosis (women) | CA-125 (limited utility), pelvic ultrasound DTC | Local imaging centre |
-| Cortisol / HPA | Salivary 4-point cortisol + DHEA-S | DUTCH (Precision Analytical) |
-
-## 12. Implementation Timeline (12 months, self-tracked)
-
-- **Weeks 1–4 — Antimicrobial Phase.** Berberine + Oregano + (Allicin if methanogen+) at full dose; ginger + Iberogast pre-meal; bone broth daily; low-FODMAP. Baseline GSRS, IBS-SSS, bloating-VAS diary, SIBO breath test, food diary. Expected: Herxheimer reaction days 3–7 (worse before better), then symptom relief. PPI taper begins if applicable.
-- **Weeks 5–8 — Repair Phase.** Discontinue antimicrobials. Start multi-strain probiotic + S. boulardii + zinc carnosine + L-glutamine + Triphala + MMC support (continue Iberogast + ginger). Cautious low-histamine reintroduction. Repeat IBS-SSS at week 8.
-- **Weeks 9–12 — Reintroduction Phase.** Gradual FODMAP reintroduction (one group/week); identify personal triggers via diary. Repeat SIBO breath test, microbiome stool test, IBS-SSS, GSRS, bloating-VAS. **Expected**: IBS-SSS drop 50%, bloating-VAS drop 60–70%.
-- **Months 4–6 — Consolidation.** Personalised diet stable; supplements taper to maintenance (Triphala HS + probiotic 3×/wk + Iberogast pre-large-meal + Mg PM). TCM cycling overlay.
-- **Months 6–12 — Long-term sustainability.** Quarterly bloating-VAS; annual SIBO breath test if symptoms recur; annual microbiome stool. Seasonal millet rotation. Expect **bloating-VAS <2/10 in adherent users; IBS-SSS <50; Bristol consistent 3–4**.
-
-**No physician check-in is mandatory.** If you keep a physician informed, that is your personal decision; the protocol does not require it.
+- **Weeks 1-2 — Diagnostic.** Photograph belly AM/PM, baseline IBS-SSS, baseline DTC labs (anti-tTG-IgA + total IgA before any diet change). Cut alcohol, carbonated drinks, gum, straws. Start slow-eating discipline (20+ min/meal).
+- **Weeks 3-6 — Strict low-FODMAP + cornerstone.** Strict Monash low-FODMAP. Peppermint+caraway 1 cap BID. Bitters 15 min pre-meal. Sunfiber 5 g/day. Diaphragmatic breathing 10 min twice daily. Nerva or Mahana IBS app.
+- **Weeks 7-12 — Reintroduction + cognitive consolidation.** Systematic FODMAP challenge (Monash). Continue Nerva/Mahana. Repeat IBS-SSS at week 12. Optional SIBO breath test if persistent.
+- **Months 4-6 — Personalised maintenance.** Maintenance with only trigger foods restricted. Add TCM overlay weeks 1 & 4. Repeat DTC labs.
+- **Months 6-12 — Sustainability.** Quarterly IBS-SSS. Annual DTC labs. TCM cycling. Seasonal adjustments.
 
 ## 13. Illustrative Case Composite
 
-> Composite — not a real patient identifier.
+> **Anonymised composite — NOT a real patient identifier.**
 
-**Priya, 38, marketing director.** Chronic bloating 6 yr, worse after lunch, IBS-mixed (alternating C and D), 5 yr PPI for "GERD" originally prescribed during stressful pregnancy. Baseline DTC: SIBO breath test H₂ 32 ppm at 90 min (positive), CH₄ negative, anti-TPO 220 (subclinical Hashimoto), vit D 22, ferritin 14 (low), B12 280 (low-normal, PPI-induced), hs-CRP 2.8, GSRS 4.2/7, IBS-SSS 275, bloating-VAS 7/10 daily.
+**Profile.** 45-year-old woman, chronic daily distention 5 years, especially post-meal and overnight; waist circumference +6 cm AM-to-PM; baseline IBS-SSS 220, Bristol 4-5, mild constipation overlap.
 
-Full §8.5 protocol: PPI taper over 6 weeks (omeprazole 40 → 20 → 10 → 0 with DGL + zinc carnosine + L-glutamine + bitter herbs layered in); 4-week antimicrobial (Berberine 500 mg TID + Oregano 200 mg BID); low-FODMAP for 6 weeks; Iberogast 20 drops TID; ginger pre-meal; bone broth 400 ml daily; Nurosym 30 min PM; 4-7-8 breath pre-meal; CCF tea post-meal; B12 + iron + vit D + Mg supplementation; sleep 22:30–06:30. Workplace: standing desk; CCF tea instead of coffee after 14:00.
+**Protocol applied.** Cut carbonated drinks + gum week 1. Slow-eating discipline (timer 25 min). Diaphragmatic breathing 10 min BID. Strict low-FODMAP 4 weeks. Peppermint+caraway 1 cap BID. Bitters 20 drops pre-meal. Sunfiber 5 g. Triphala bedtime. Nerva app 15 min/day. Yoga 4×/week (pavanamuktasana, twists).
 
-- **Wk 4:** PPI at 10 mg; bloating-VAS 4/10; some Herxheimer fatigue resolved by Wk 3; energy improving.
-- **Wk 12:** PPI off; bloating-VAS 2/10; IBS-SSS 90; SIBO breath test H₂ 12 ppm (within normal); B12 480, vit D 48, ferritin 38, anti-TPO 160; GSRS 1.4/7.
-- **Mo 6:** Stable at maintenance; tolerates moderate FODMAP foods (small amounts of garlic, onion, lentils); fermented foods reintroduced successfully; bloating-VAS 1/10 most days; IBS-SSS 50; anti-TPO 100.
-- **Mo 12:** Long-term stable; one mild flare during travel-stress month resolved with 2-week return to Phase 1 protocol; ferritin 75, vit D 55, anti-TPO 75; no PPI dependence; sustainable lifestyle.
+**Outcomes.**
+- Week 4: AM-PM waist difference dropped from 6 cm to 3.5 cm; IBS-SSS 145; energy up.
+- Week 12: Waist difference 2 cm most days; IBS-SSS 95. Identified fructans + sorbitol triggers via Monash challenge.
+- Month 6: IBS-SSS 65; sustained on maintenance protocol.
+- Month 12: Stable. Occasional flares tied to eating fast at restaurants — quick reset within 24 h.
 
-## 13.5 Patient-Facing Primer
+## 13.5 Patient-facing Primer
 
-Chronic bloating isn't "just gas" — it's the loud signal that four things are out of sync deep in your digestive system. (1) Your small intestine has bacteria living where they shouldn't — they ferment everything you eat into gas (this is SIBO). (2) Your stomach isn't making enough acid (often from PPI use, age, or stress), so food doesn't get digested properly upstream and ends up fermenting downstream. (3) The "house-keeping wave" in your gut (called the migrating motor complex, or MMC) — which is supposed to sweep your small bowel clean between meals — has stopped working because of stress, sleep loss, or constant snacking. (4) The mast cells in your gut wall are over-reactive, releasing histamine that makes your gut feel bloated even when there's not that much gas — this often gets missed.
+Chronic daily bloating is not "just gas" and not "all in your head." It is a real, biological pattern with six overlapping drivers — fermentable foods, bacterial overgrowth, an over-reactive gut wall, an abdomino-phrenic muscle pattern that pushes the belly out, slow transit, and air swallowing. The good news: each has a home lever. Start tonight with slow eating (20+ min per meal, no gum, no straws, no carbonation), diaphragmatic breathing 10 minutes morning and night, and enteric-coated peppermint oil with caraway (Carmenthin / Menthacarin — German RCT-validated combination) 30 minutes before each main meal. Pair with the Monash low-FODMAP elimination — a 2-6 week diagnostic, NOT a forever diet — and gut-directed hypnotherapy via Nerva or Mahana IBS. Expect meaningful drop in 4-12 weeks. This is independent, OTC, home-based. **No prescription. No clinic. No hospital. No surgery.** You are sovereign over your own body. If you choose to pursue clinic-route options (rifaximin for SIBO, abdominal imaging for adhesions, prokinetics for IBS-C overlap), that is your call — the protocol does not require it. Red flags requiring clinical assessment: sudden severe persistent distention with vomiting, fever, blood in stool, unexplained weight loss, palpable mass, or new bloating after age 50.
 
-This protocol does **not** chase the symptom with simethicone, antispasmodics, rifaximin, or PPIs. Instead, it works on all four layers — using herbs that reduce SIBO bacteria (berberine, oregano oil, and allicin if you're a methane-producer), restore your digestive fire (ginger, Iberogast, Hingvashtak Churna), retrain your vagus nerve (humming, cold-water face splash, consumer VNS device like Nurosym), and calm mast cells (quercetin, DAO enzyme, Nigella sativa, vitamin C). **No prescription. No clinic. No hospital.** Bone broth, sprouted millets, cooked vegetables, and CCF tea (cumin-coriander-fennel) form the food layer. A 12-hour overnight fast — eating dinner by 19:00 and breakfast at 08:00 — lets your MMC do its sweep.
+## 13.7 Honest evidence-tier comparison table
 
-Expect a slow, steady re-balancing — not an overnight fix. You may feel worse for 5–10 days as die-off happens (the "Herxheimer reaction"), then relief. By Week 4 most people see 40–50% less bloating. By Week 12, with reintroduction of trigger foods carefully mapped, sustainable normality.
+> **TL;DR.** Every approach covered, ranked by honest tier with a plain-words verdict — including the ones we do NOT recommend.
 
-You are sovereign over your own body. If you choose to keep a physician informed, that is your personal decision. The protocol does not require it.
+| Approach | Tier | Plain-words verdict (≤25 words) | Where it fits |
+|---|---|---|---|
+| Low-FODMAP elimination (Monash) | A | ~70% response in IBS-bloating; reintroduction non-negotiable. *(Halmos 2014; Staudacher 2017)* | Cornerstone — strict 2-6 weeks, then reintroduce |
+| Gut-directed hypnotherapy (Whorwell) | A | 70% IBS response sustained 5 yrs; bloat overlap strong. *(Whorwell 1984; Gonsalkorale 2003)* | Cornerstone — Nerva 15-20 min daily |
+| CBT for IBS-bloating (Mahana / ACTIB) | A | ACTIB Lancet trial confirms benefit. *(Lackner 2018; Everitt 2019)* | Cornerstone alternative |
+| Diaphragmatic breathing biofeedback (APD) | B | Barba 2015 EMG-biofeedback RCT — 56% bloat reduction. *(Villoria 2008; Barba 2015)* | Daily home practice for APD |
+| Enteric-coated peppermint oil | B+ | Cochrane Ford 2014; EMA monograph 2020. *(Cochrane Ford 2014)* | Cornerstone supplement |
+| Peppermint+caraway (Carmenthin/Menthacarin) | B | Madisch 2015 German RCT for functional dyspepsia + bloat. *(Madisch 2015)* | Cornerstone alternative |
+| Iberogast (STW-5) | B | Madisch 2004 + EMA-style monograph. *(Madisch 2004)* | Symptomatic — TID with meals |
+| Triphala (nightly reset) | A | Long Ayurveda use + modern reviews; safe long-term. *(AYUSH; Tarasiuk 2018)* | Daily at bedtime |
+| Sunfiber (PHGG) | B | RCTs support 5-10 g/day; low-FODMAP-safe. *(Polymeropoulos 2014)* | Daily backbone fibre |
+| Padma Lax (Tibetan) | B | EMA monograph; Sallon 2002 RCT for IBS-C bloat. *(EMA Padma; Sallon 2002)* | Optional for IBS-C overlap |
+| Ginger root extract | B | EMA monograph for dyspepsia/nausea. *(EMA ginger)* | Daily 1-2 g |
+| Fennel seed (whole/extract) | C | EMA monograph; classical carminative. *(EMA fennel)* | Post-meal chew or tea |
+| Digestive bitters (gentian, wormwood) | C | EMA gentian monograph; classical pre-prandial. *(EMA gentian)* | 15 min pre-meal |
+| Betaine HCl + pepsin | C | Yago 2013 acid-restoration trial; for low-acid pattern only. *(Yago 2013)* | Pattern-matched only |
+| Berberine for SIBO | C | Chedid 2014 comparable to rifaximin. *(Chedid 2014)* | 4-week SIBO course |
+| Mastic gum | C | Pastorello 2016 Greek antimicrobial. *(Pastorello 2016)* | 4-week SIBO course |
+| Activated charcoal | C | Short-term symptomatic only; binds meds and nutrients. *(Jain 1986)* | Rare/short-term only |
+| Slow paced breathing (5-6 bpm) | B | Lehrer 2014 HRV review. *(Lehrer 2014)* | Daily 10 min |
+| HRV biofeedback | B | Lehrer 2014 + stress data. *(Lehrer 2014)* | Optional daily |
+| MBSR for IBS-bloat | B | Gaylord 2011 RCT. *(Gaylord 2011)* | Optional cognitive layer |
+| Yoga for bloating | B | Kavuri 2015 IBS RCT. *(Kavuri 2015)* | Daily 15-30 min |
+| Pelvic floor PT (dyssynergic overlap) | A | Rao 2010 RCT. *(Rao 2010)* | If dyssynergic defecation |
+| Hingvastak / Hinguvachadi / Trikatu / Ajwain | T | Centuries of Ayurveda use for bloat. *(Bhavaprakasha; AYUSH)* | Pattern-matched |
+| TCM Bao He Wan / Ping Wei San / Xiao Yao Wan / Ban Xia Hou Po Tang | B | Modern Chinese trial + NMPA monograph support. *(NMPA)* | TCM overlay weeks 1 & 4 |
+| Unani Jawarish Jalinoos / Jawarish Bisbasa | T | Classical Unani — tradition only. *(Hamdard; Avicenna)* | Optional traditional |
+| Siddha Karpoora / Sukku chooranam | T | Classical Tamil tradition. *(IMPCOPS)* | Optional traditional |
+| Homeopathy (Carbo veg, Lycopodium, Nux vomica, China, Asafoetida) | T/H | Tradition (Boericke, Kent). No robust RCT. Included per founder mandate. | Not in active protocol; transparency |
+| Aloe vera juice | X | Cochrane-null + can worsen diarrhoea. | Not in protocol |
+| Simethicone | C | Modest at best; EMA conservative. *(EMA simethicone)* | Optional symptomatic only |
+| Generic "digestive enzyme blends" (marketed for bloat) | C | Formulation-specific trial data mostly absent. | Not in protocol |
+| Colonic hydrotherapy | X | No RCT support; mucosal trauma. | Not in protocol |
+| Parasite cleanses without diagnosis | X | No evidence; risk. | Not in protocol |
+| FoodMarble Aire 2 | H | Pairs breath gas with food log; useful for hypothesis. | Optional diagnostic |
+| Microbiome tests (Viome/ZOE) | H | Interpretive, not diagnostic. | Optional |
+| Consumer tVNS (Nurosym/Pulsetto/Sensate) | H | Vagal stimulation; bloat-specific data limited. | Optional |
+| Rifaximin (Xifaxan) | A (TARGET) | TARGET 1+2 modest benefit for SIBO + IBS-D. *(Pimentel 2011)* | Clinic-route §10.7.3 only |
+| Prokinetics (prucalopride) | A (Camilleri) | IBS-C / chronic constipation support. *(Camilleri 2010)* | Clinic-route §10.7.3 only |
+| Linaclotide / lubiprostone | A | IBS-C support. *(Chey 2012)* | Clinic-route §10.7.3 only |
+| Gastroenterology endoscopy / imaging | A (red flags) | Required for red flags only. *(WGO)* | Clinic when red flags present |
+| Adhesion lysis surgery | A (confirmed) | For confirmed adhesive obstruction. | Surgery only when confirmed |
 
 ## 14. Independent Healing Paradigm
 
-This protocol diverges from the mainstream pharmaceutical model that treats chronic bloating as a chase-the-symptom problem — simethicone for gas, PPIs for acid (paradoxically worsening SIBO), antispasmodics for cramping, rifaximin for SIBO without addressing the underlying MMC. Chronic bloating is treated here as the systemic four-node state — SIBO/IMO, low digestive fire, vagal hypotonia + slow MMC, mast-cell axis — intervened at each node in parallel using only **OTC, home-administered** tools.
-
-**Sovereignty ethos.** **No prescription. No clinic. No hospital. No surgery.** The user owns their body and their healing path. Evidence varies honestly: Grade A for Berberine (Chedid SIBO study = rifaximin), Oregano oil (Chedid 2014), Iberogast, Peppermint oil enteric-coated (Cochrane IBS), Triphala, S. boulardii, Ginger; Grade B for Allicin in methanogens, Quercetin mast-cell, Caraway, Fennel, DAO; Grade T for Unani/Siddha/Tibetan/homeopathic — honoured as traditions, never marketed as proof.
-
-Authority grounded in **WHO TCIM Strategy 2025–2034, India AYUSH/CCRAS/CCRH/CCRYN/CCRUM/CCRS/PCIMH/ICMR, EMA HMPC, Australia TGA + NHMRC, China NMPA + Chinese Pharmacopoeia, Health Canada NHP, Men-Tsee-Khang, Hamdard, IMPCOPS**, plus classical texts (Charaka, Sushruta, *Bhavaprakasha*, Avicenna's *Canon*, *Huang Di Nei Jing*, *Tai Ping Hui Min He Ji Ju Fang*, Boericke, Kent).
-
-Explicit re-affirmation: **no FDA, FTC, ACG, AGA, AMA, APA, ACOG, NAMS, ACR, ACS, CDC, NIH-policy, AAFP, AAP as authority. Period.**
+NicheCore's protocol for chronic gut bloating differs fundamentally from the mainstream pharmaceutical model. Where the conventional path layers PPIs (often raising SIBO risk), antispasmodics, prokinetics, and rifaximin courses — often without addressing the underlying drivers — this protocol attacks all six drivers in parallel: fermentable food fuel (low-FODMAP elimination + reintroduction), SIBO/IMO (berberine + mastic + breath-test-guided rotation), visceral hypersensitivity (gut-directed hypnotherapy + peppermint+caraway), abdomino-phrenic dyssynergia (diaphragmatic breathing biofeedback — the Barba 2015 RCT lever most chronic bloaters have never been offered), slow transit (Triphala + Mg + Padma Lax + ginger), and swallowed air (slow eating discipline, no gum, no straws, no carbonation). **Sovereignty ethos: OTC + home-based by design. No prescription. No clinic. No hospital. No surgery.** The user owns their body and their healing path. We document the strongest globally-sourced natural path and tell you honestly when evidence is mixed (most enzyme blends, aloe juice, homeopathy). **No FDA, FTC, ADA, AHA, AAD, AGA, AMA, APA, ACOG, NAMS, ACR, ACS, CDC, NIH-policy, AAFP, AAP as authority on whether something WORKS. Period.** **Narrow exception:** US regulatory milestones (Mahana IBS app FDA De Novo 2020) may appear ONLY as factual regulatory-path context — never as the trust anchor. The trust anchor remains the named clinical trial (Madisch 2015 Carmenthin, Barba 2015 APD biofeedback, Halmos 2014 FODMAP, Whorwell 1984 hypnotherapy). Protocol grounded in WHO TCIM, India AYUSH/CCRAS/CCRH/CCRYN/CCRUM/CCRS/PCIMH/ICMR, EMA HMPC, Monash University FODMAP, Australia TGA + NHMRC, China NMPA + Chinese Pharmacopoeia, Health Canada NHP, Men-Tsee-Khang, Hamdard, IMPCOPS, plus classical traditional texts.

@@ -2,657 +2,702 @@
 ailmentId: constipation-regularity
 ailmentName: Constipation & Regularity
 domain: Gut
-lastUpdated: 2026-05-29
+lastUpdated: 2026-05-30
 gradeMix: [A, B, C, D, T, H]
-clinicalScoringInstrument: PAC-SYM (Patient Assessment of Constipation Symptoms) + Bristol Stool Chart + CCS (Cleveland Clinic Constipation Scoring) + bowel-frequency diary
-subTypes: [slow-transit-colonic-inertia, IMO-methanogenic, outlet-dysfunction-pelvic-floor-dyssynergia, normal-transit-functional, opioid-induced, hypothyroid-driven, low-fibre-dehydration]
-comorbidityScreen: [IMO/SIBO methanogen, hypothyroidism, T2D-autonomic, anal-fissure-haemorrhoid, diverticulosis, depression-anxiety, parkinsonian-autonomic, pelvic-floor-dyssynergia, low-magnesium, dehydration]
+clinicalScoringInstrument: "Bristol Stool Form Scale daily diary, Constipation Assessment Scale (CAS), Patient Assessment of Constipation Quality of Life (PAC-QOL), Rome IV functional constipation criteria, daily 0-10 straining and incomplete-evacuation slider"
+subTypes: [slow-transit-constipation, normal-transit-constipation, dyssynergic-defecation, irritable-bowel-syndrome-constipation, opioid-induced-constipation, pregnancy-postpartum, ageing-65-plus, hypothyroid-overlap]
+comorbidityScreen: [hypothyroidism, low-iron-supplementation-induced, opioid-use, calcium-channel-blocker-use, pregnancy, anorectal-dysfunction, dehydration, low-fibre-history, depression, parkinson-disease, diabetes-with-autonomic]
+authorAgent: ailment-360-research
+schemaVersion: v6.2.3
 internalRalph:
   pass1Complete: true
   pass2Complete: true
   pass3Complete: true
-authorAgent: ailment-360-research
 ---
 
-> **Framing.** Grounded in WHO TCIM Strategy 2025–2034, India AYUSH/CCRAS/CCRH/PCIMH monographs, EMA HMPC herbal monographs, TGA/NHMRC evidence guidelines, China NMPA + Chinese Pharmacopoeia, Health Canada NHP monographs, Men-Tsee-Khang formularies, Hamdard Dawakhana, IMPCOPS Chennai, and the classical Ayurvedic, TCM, Unani, Siddha, Tibetan and homeopathic literature. **No FDA, FTC, ACG, AGA, AMA, CDC, NIH-policy or US disease-association source is cited as authority.**
+> **For you, in plain words.** This is a safe, over-the-counter, at-home plan for chronic constipation, hard stools, straining, and the sluggish-gut cluster. We lead with **hydration + 25-35 g fibre/day (psyllium + Sunfiber) + magnesium citrate + daily walk after meals (Grade A behavioural-dietary stack)**, plus **squatty-potty positioning + dyssynergia retraining for the anorectal driver (Grade A)**. Supplements come second. We are honest about senna-and-other-stim-laxatives — they work short-term but chronic use harms colonic nerves; we steer to bulk + osmotic + prokinetic strategies instead. *(WHO TCIM 2025-2034; Bharucha 2013 chronic constipation review; Cochrane Ford 2018 fibre; Müller-Lissner 2010 stim laxatives)*
 >
-> **Sovereignty.** This is a **strictly OTC, strictly home-based** protocol. There is **no lubiprostone, no linaclotide, no plecanatide, no prucalopride, no chronic stimulant-laxative, no bisacodyl maintenance, no enema-dependence, no clinic procedure, no hospital admission** recommended anywhere. Every supplement, device and test is consumer-purchasable and self-administrable. The drug column in §10.1 documents conflicts for users **already on conventional therapy** who are layering this protocol on their own initiative — it does not recommend any prescription.
+> **The frame.** Grounded in WHO Traditional & Complementary Medicine Strategy 2025-2034, India's Ministry of AYUSH (CCRAS, CCRH, CCRUM, CCRS, PCIMH), EMA herbal monographs (psyllium, senna — short-course only, Padma Lax), Australia TGA, China NMPA + Chinese Pharmacopoeia 2020, Health Canada Natural Health Products, Tibetan Men-Tsee-Khang, Hamdard Dawakhana, IMPCOPS Chennai, and classical Ayurvedic, Chinese, Unani, Siddha, Tibetan and homeopathic texts. **No US regulator or US disease association is cited as authority.**
+>
+> **Sovereignty.** Every food, supplement, posture, and home device here is something you can buy and use yourself. **No prescription, no clinic, no hospital visit, no surgery is recommended in the home regime.** Clinic-route options (prucalopride, linaclotide, lubiprostone, biofeedback-guided pelvic floor PT for dyssynergic defecation, gastroenterology workup for red flags) are placed in a clearly labelled §10.7.3 referral addendum.
+>
+> **Red flags — when home is NOT enough.** Blood in stool, unintentional weight loss, fever, persistent severe pain, new constipation after age 50, family history of colon cancer — arrange gastroenterology assessment on your own initiative. This protocol cannot screen for colorectal cancer or structural obstruction.
 
 ## 1. Executive Summary
 
-Constipation is conventionally treated as a fibre-and-water problem and then escalated to osmotic and stimulant laxatives — a chase that leaves the underlying drivers untouched. The integrative reframing is different: chronic constipation and irregular elimination are the **downstream signal of four convergent root mechanisms** — (i) **intestinal methanogen overgrowth (IMO)** with *Methanobrevibacter smithii* producing methane that paralyses small-bowel and proximal-colonic transit; (ii) **vagal hypotonia + slow migrating motor complex (MMC)** with insufficient inter-digestive house-keeping sweeps and impaired gastrocolic reflex; (iii) **mucosal-secretion and bile-flow insufficiency** — low cholerectic bile output, low magnesium, low chloride/bicarbonate-driven secretion in the colon; (iv) **pelvic-floor dyssynergia + behavioural suppression** — the puborectalis fails to relax during defecation, or the natural urge is repeatedly suppressed (commute, work, travel) until rectal sensation blunts. **Synthesis:** A natural, OTC, home-based protocol that simultaneously thins methanogen burden, restores MMC + vagal tone, rebuilds osmotic and bile flow, and retrains the pelvic floor + urge-honouring habit addresses the upstream drivers — not the symptom of slow output.
+### 1.1 What chronic constipation actually is
 
-## 2. Mechanistic Network (4-node)
+> **For you, in plain words.** Constipation is fewer than 3 bowel movements per week, OR straining, OR hard stools, OR incomplete evacuation, OR needing manual help — for ≥3 months (Rome IV). Five drivers cause it. *(Rome IV; Bharucha 2013)*
 
-**2.1 Intestinal methanogen overgrowth (IMO) — the central transit-paralysing node.** *Methanobrevibacter smithii* and other methanogen archaea in the small bowel and proximal colon ferment hydrogen released by Gram-negative bacteria into methane (CH₄). Methane is not merely a passive by-product — it directly slows intestinal transit by ~59% in animal models (the so-called methane-prokinetic-suppression effect), worsens constipation and acts as a substrate-recycling reservoir. Risk factors: prior PPI/antibiotic use, low gastric acid, vagal hypotonia, hypothyroidism, opioid use, low fibre, diabetes. Targeted by **allicin (stabilised, anti-methanogen — the single most documented herbal anti-archaeal), berberine 500 mg TID, oregano oil (carvacrol-thymol), neem, *Phellodendron* (Huang Bai), lactoferrin (iron-sequestration → reduces methanogen substrate), Triphala (gentle prokinetic + microbiome modulation), Mai Zi Ren Wan TCM**. **Synthesis:** Without addressing IMO methanogens, the prokinetic-suppression effect persists even on osmotic laxatives, and constipation rebounds within days of stopping any other intervention.
+**Quick start.** Tonight: drink 500 ml water on waking, take 5 g psyllium husk in water mid-morning, take magnesium citrate 200-400 mg after dinner, walk 10-15 min after each main meal, sit on a squatty-potty footstool when on the toilet (knees above hips).
 
-**2.2 Vagal hypotonia + slow MMC + impaired gastrocolic reflex.** The MMC is the inter-digestive "broom" that sweeps small-bowel contents every 90–120 min during fasting. The gastrocolic reflex is the post-meal vagally-mediated colonic propulsion wave that drives the urge to defecate after breakfast. Both are suppressed by chronic stress, sleep loss, opioid use, autonomic neuropathy (diabetes, parkinsonism), grazing/snacking, and screen-mediated sympathetic dominance. Targeted by **vagal training (humming, gargling, cold splash, gentle gag-reflex), 4-7-8 breath pre-meal, Yoga Nidra, ginger 1.2 g pre-meal, *Iberogast* (German STW-5), Triphala HS, Hingvashtak Churna pre-meal, consumer VNS (Nurosym, Sensate, Pulsetto), meal spacing 4–5 h with no snacking, longer overnight fast 12–14 h, post-breakfast squat-toilet sit 10 min to honour gastrocolic urge**. **Synthesis:** Without MMC + gastrocolic reflex restoration, the colon never gets its natural propulsive signal and transit stays slow.
+#### Open the science
 
-**2.3 Mucosal-secretion and bile-flow insufficiency.** Colonic transit depends on adequate luminal water — driven by mucosal chloride and bicarbonate secretion, biliary cholerectic output, and osmotic-active fibre fermentation products (short-chain fatty acids, especially butyrate). Low bile flow (hypochlorhydria → reduced CCK signal, post-cholecystectomy, NAFLD, low-fat diet), low magnesium (the cheapest, safest osmotic laxative the body uses naturally), dehydration, and low soluble-fibre intake all collapse this water-pulling force. Targeted by **partially hydrolysed guar gum (PHGG / Sunfiber) 5–10 g/day — Grade A for IBS-C; psyllium husk 5–10 g/day; magnesium citrate 400–800 mg or magnesium oxide 400 mg; prune extract (Sunsweet PlumSmart, dried prune 50 g/day — Grade A); kiwifruit 2/day (Cunningham Auckland RCT — Grade A); ginger + bitter herbs for bile flow; ox bile salt if cholecystectomy; flaxseed 15 g/day; sufficient water (35 ml/kg/day); cape aloe (cautious, short-term); senna (cautious, short-term only)**. **Synthesis:** Without restoring the osmotic + secretory water-load in the colon, no amount of upstream antimicrobial or vagal work moves a dry stool.
+Rome IV functional constipation criteria require ≥2 of: straining, lumpy/hard stools (Bristol 1-2), incomplete evacuation, sensation of anorectal blockage, manual manoeuvres, <3 spontaneous BMs/week — for ≥3 months with onset ≥6 months prior, in the absence of loose stools without laxative use. Five biological drivers: **(i) slow colonic transit** (myenteric plexus changes, ageing, opioids, hypothyroidism); **(ii) anorectal dysfunction / dyssynergic defecation** (paradoxical anal-sphincter contraction during attempted evacuation — found in ~40% of refractory constipation, biofeedback-treatable); **(iii) normal-transit constipation** (psychological + symptom-perception predominant); **(iv) IBS-C** (mixed transit + visceral hypersensitivity); **(v) secondary causes** (drugs, hypothyroidism, diabetes, neurological disease). *(Rome IV; Bharucha 2013; Rao 2010 dyssynergic)*
 
-**2.4 Pelvic-floor dyssynergia + urge-suppression-behavioural drift.** Up to 40% of chronic constipation has an outlet component — the puborectalis muscle fails to relax (or paradoxically contracts) during attempted defecation, so even a normal-consistency stool cannot pass. Compounded by chronic urge suppression (commute, work, travel, "not the right toilet"), the rectum's stretch-sensation threshold rises, the gastrocolic reflex is ignored, and a learned dyssynergia sets in. Targeted by **squatting position (Squatty Potty stool 7-9 inches — straightens anorectal angle; the Sikirov Israeli study documents the mechanical advantage), 10-min post-breakfast toilet sit to honour gastrocolic reflex (without straining; reading material acceptable), 4-7-8 abdominal breathing during defecation (relaxes puborectalis), Yoga asana — Malasana (deep squat) hold 2 min daily, Pawanmuktasana, Apanasana; biofeedback consumer (Squatty Potty Pelvic Floor Trainer, Perifit pelvic-floor app); avoiding straining (Valsalva → haemorrhoid + fissure)**. **Synthesis:** Without addressing outlet behaviour and pelvic-floor coordination, fibre and osmotic load can paradoxically worsen distension without producing stool.
+### 1.2 The five drivers — at a glance
 
-## 2.5 Clinical sub-types & differential prognosis
+> **For you, in plain words.** Five causes — slow colonic transit, anorectal dysfunction, normal-transit with sensitivity, IBS-C, or secondary (drug/thyroid). Each has its own home lever. *(Bharucha 2013; Rome IV)*
 
-| Sub-type | Clinical features | Dominant §2 node | Expected protocol response |
-|---|---|---|---|
-| **Slow-transit colonic inertia** | <3 BM/week, no urge, hard stools, normal anorectal manometry pattern | §2.2 + §2.3 | **Moderate** — needs full MMC + magnesium + PHGG + prokinetic herbs; 6–12 weeks for sustained shift |
-| **IMO methanogenic** | Constipation + bloating + positive CH₄ on lactulose breath test (≥10 ppm) | §2.1 dominant + §2.3 | **Moderate** — needs 4-wk allicin + berberine + oregano antimicrobial phase; methanogens harder to clear than H₂ bacteria |
-| **Outlet dysfunction / pelvic-floor dyssynergia** | Urge present but cannot evacuate; straining; sense of incomplete emptying; digital manoeuvres | §2.4 dominant | **Moderate** — needs squat position + biofeedback + Malasana + abdominal breathing; symptom relief within 4–8 wk if consistent |
-| **Normal-transit functional** | Slightly infrequent BM with mild discomfort; otherwise normal | §2.3 + §2.4 | **Best** — PHGG + kiwifruit + magnesium + hydration + post-meal walk |
-| **Opioid-induced** | On chronic opioid (codeine, tramadol, oxycodone) for pain | §2.2 + §2.3 | **Moderate** — opioid is the root driver; layer osmotic + prokinetic; encourage opioid taper as feasible; protocol does not prescribe opioids |
-| **Hypothyroid-driven** | TSH elevated, slow transit + cold intolerance + weight gain + dry skin | §2.2 + §2.3 | **Moderate** — must address thyroid in parallel (DTC anti-TPO panel); selenium, iodine cautious, Triphala helps |
-| **Low-fibre + dehydration** | Diet-driven; busy professional, low water | §2.3 dominant | **Best** — fibre + water + magnesium fix it within 1–2 weeks |
+**Quick start.** Most users start with the simple stack (water + fibre + magnesium + walking + squatty-potty positioning) for 2-4 weeks; if that fails, suspect dyssynergic defecation (§5.5) which needs biofeedback retraining.
+
+## 2. Mechanistic Network (5-node)
+
+### 2.1 Five causes — the picture
+
+> **For you, in plain words.** Five causes drive constipation — slow transit, anorectal dysfunction, normal-transit-sensitivity, IBS-C, secondary. Each has its own home lever. *(Bharucha 2013)*
+
+### 2.2 Slow colonic transit
+
+> **For you, in plain words.** The colon moves stool too slowly — fewer than 3 BMs/week, hard stools, often abdominal bloat overnight. Driven by ageing, opioids, hypothyroidism, sedentary lifestyle, low fibre. *(Bharucha 2013; Singh 2015 transit)*
+
+#### Open the science
+
+Slow-transit constipation: colonic transit time >72 h (normal ~30-40 h). Mechanisms: reduced interstitial cells of Cajal (ICC, the gut "pacemaker" cells), myenteric plexus changes, autonomic neuropathy in diabetes. Targeted by: **soluble + insoluble fibre balance** (psyllium 5-10 g/day — Cochrane-supported); **magnesium citrate** (osmotic, Bharucha 2013 supports); **Triphala** (AYUSH nightly reset, Tarasiuk 2018 reviews); **kiwi fruit** (2/day — Chey 2021 RCT n=79 confirmed Asian kiwi benefit); **prunes** (50 g/day — Attaluri 2011 RCT comparable to psyllium); **Padma Lax** (EMA-monographed Tibetan formula); **post-meal walking** (gastro-colic reflex); **prokinetics** (clinical route §10.7.3 — prucalopride).
+
+### 2.3 Anorectal dysfunction / dyssynergic defecation
+
+> **For you, in plain words.** In ~40% of refractory constipation, the anal sphincter paradoxically contracts when you try to push — you can't evacuate even when the stool is at the door. Biofeedback retraining (Rao 2010 RCT) is the highest-evidence fix; squatty-potty positioning + diaphragmatic-pelvic-floor coordination help at home. *(Rao 2010 RCT; Bharucha 2013; Sakakibara 2010 squatting posture)*
+
+#### Open the science
+
+Dyssynergic defecation (DD, anismus, pelvic-floor dyssynergia): paradoxical contraction or failure to relax pelvic floor / anal sphincter during attempted defecation. Found in 27-59% of chronic constipation depending on series. Diagnosis: anorectal manometry + balloon expulsion (clinic) — but symptoms (excess straining, sensation of blockage, manual manoeuvres) strongly suggest. Rao 2010 RCT (Am J Gastroenterol n=77) showed biofeedback-guided pelvic floor PT achieved 80% improvement vs 22% for standard therapy — one of the highest effect sizes in any chronic constipation intervention. Self-applicable home version: **diaphragmatic breathing during defecation** (push from belly, not Valsalva), **squatty-potty footstool** (knees above hips changes anorectal angle, Sakakibara 2010), **biofeedback apps** if available (limited home options), and **pelvic floor PT referral** (clinic-route, gold standard).
+
+### 2.4 Normal-transit constipation with sensitivity
+
+> **For you, in plain words.** Normal colonic transit but perceived constipation, often with bloat. Layer with the standard stack plus gut-directed hypnotherapy (Nerva) and slow-paced breathing. *(Bharucha 2013; Whorwell 1984)*
+
+### 2.5 IBS-C (constipation-predominant IBS)
+
+> **For you, in plain words.** Constipation + abdominal pain that improves with defecation. Often with methane overgrowth (IMO). Layer the constipation stack + IBS-specific levers from the ibs-like-patterns dossier. *(Pimentel 2020 methane-IBS-C; Rome IV)*
+
+### 2.6 Secondary constipation (drugs, thyroid, diabetes, neurological)
+
+> **For you, in plain words.** Some constipation is caused by drugs (opioids, calcium-channel blockers, iron supplements, anticholinergics), hypothyroidism, diabetes (autonomic), Parkinson's disease, or pregnancy. Address the underlying cause where possible. *(Bharucha 2013)*
+
+### 2.7 Sub-types & realistic prognosis
+
+> **For you, in plain words.** Eight sub-types — normal-transit and pregnancy move fastest; dyssynergic needs targeted retraining; slow-transit in ageing needs sustained protocol. *(Rome IV; Bharucha 2013; Rao 2010)*
+
+| Sub-type | TL;DR (plain English) | Clinical features | Dominant cause | Realistic response | Citation |
+|---|---|---|---|---|---|
+| Slow-transit constipation | <3 BMs/week, hard stools, bloat. *(Bharucha 2013)* | <3 BMs/week, hard stool | §2.2 | Moderate; 4-12 weeks layered | *(Bharucha 2013)* |
+| Normal-transit constipation | Perceived constipation, normal frequency, often with bloat. *(Bharucha 2013)* | Perceived but normal | §2.4 | Best; 4-8 weeks | *(Bharucha 2013)* |
+| Dyssynergic defecation | Excess straining, sensation of blockage, manual manoeuvres. *(Rao 2010)* | Straining + blockage sensation | §2.3 | Best with biofeedback; 4-8 weeks pelvic floor PT | *(Rao 2010)* |
+| IBS-C | Constipation + abdominal pain improved by BM. *(Rome IV)* | Pain improved by BM | §2.5 | Moderate; layered protocol 8-12 weeks | *(Rome IV)* |
+| Opioid-induced constipation | New constipation after opioid start — driven by mu-receptor block in gut. | New on opioid | §2.6 (secondary) | Best when opioid stopped; otherwise prescription PAMORA (clinic) | *(Bharucha 2013)* |
+| Pregnancy / postpartum | Hormonal slowing + iron supplementation + reduced activity. *(EMA pregnancy)* | Pregnancy or postpartum | §2.6 (secondary) | Best with safe layers (psyllium, magnesium, kiwi, prunes) | *(EMA pregnancy)* |
+| Ageing 65+ | Diversity decline + reduced motility + low fluid + low fibre + meds. *(Bharucha 2013)* | Age 65+ | §2.2 + §2.6 | Slower; sustained protocol | *(Bharucha 2013)* |
+| Hypothyroid overlap | Constipation + cold + fatigue + dry skin — check TSH. *(Health Canada thyroid)* | Hypothyroid clinical pattern | §2.6 (secondary) | Address thyroid first | *(Health Canada)* |
 
 ## 3. OTC Phytochemicals — Pharmacological Validation
 
-| Compound | Mechanism | Dose | Timing | Take WITH | Avoid WITH (≥2 h) | Grade | Brands | $/mo | Evidence note |
-|---|---|---|---|---|---|---|---|---|---|
-| **Partially Hydrolysed Guar Gum (PHGG / Sunfiber)** | Soluble prebiotic fibre; SCFA → butyrate; normalises both constipation and diarrhoea (bi-directional regulator) | 5–10 g/day in water | with first meal or HS | water | hot drinks (>40 °C destroys structure of sensitive probiotic if co-administered) | A | Sunfiber (Taiyo Japan), Nestle Optifibre, NOW PHGG | $15–25 | Japanese + Italian RCTs IBS-C; EMA recognised soluble fibre |
-| **Psyllium husk** (*Plantago ovata*) | Mucilage soluble fibre; osmotic + viscosity; gentle bulking | 5–10 g BID in 250 ml water | AM + HS | full water (250 ml min per 5 g) | Levothyroxine (4 h gap); other meds (1 h gap) | A | Metamucil (sugar-free), Yerba Prima, Now Foods, Konsyl | $10–15 | EMA HMPC *Plantago ovata* monograph 2013; AYUSH Isabgol monograph |
-| **Magnesium citrate** | Osmotic laxative; smooth-muscle relaxant; cofactor in 300+ enzymes | 400–800 mg/day | HS (split if loose stools) | water; light meal | iron, calcium, zinc (≥2 h); thyroid (4 h) | A | Doctor's Best Mg citrate, Natural Vitality Calm, NOW Mg citrate | $10–20 | EMA HMPC magnesium monograph; multiple constipation RCTs |
-| **Magnesium oxide** (cheaper, less bioavailable but more osmotic effect at colon) | Strong osmotic | 250–500 mg HS | HS | water | iron, Ca, Zn (≥2 h); thyroid (4 h) | B | Japanese clinical practice; Solgar, NOW | $5–10 | Japanese RCTs (used routinely in Japanese clinical practice) |
-| **Prune extract / dried prune** | Sorbitol + phenolic content + fibre; documented A-grade constipation regulator | 50 g dried prune/day OR 240 ml prune juice OR PlumSmart concentrate | AM + HS | water/snack | — | A | Sunsweet PlumSmart, Mariani, fresh dried prunes | $15–25 | Multiple RCTs; Iranian + Australian + Italian studies |
-| **Kiwifruit** (Hayward green, 2/day) | SunGold actinidin protease + fibre + serotonergic activity; complete intestinal-transit acceleration | 2 kiwifruit/day | AM + late afternoon | meal | — | A | Fresh produce | $15–30 | Cunningham Auckland NZ RCT 2023 (Asia Pacific J Clin Nutr); multiple replications |
-| **Triphala** (Amalaki + Bibhitaki + Haritaki) | Gentle prokinetic; microbiome modulation; bowel-tone restoration; rasayana | 1–3 g HS with warm water | HS | warm water | thyroid Rx (4 h gap) | A | Organic India, Himalaya, Banyan Botanicals (AYUSH-GMP) | $10–15 | AYUSH Triphala monograph; multiple Indian RCTs; classical *Charaka, Sushruta* |
-| **Avipattikar Churna** (Trivrit + Pippali + Vidanga + Triphala + Trikatu + ginger + cardamom + black salt + clove) | Classical Ayurvedic anti-pitta + bowel regulator; gentle | 3 g HS with warm water | HS | warm water | — | T | Baidyanath, Patanjali, Organic India | $5–15 | *Sharangdhara Samhita*; AYUSH-GMP |
-| **Ginger root extract** | Prokinetic — MMC + gastric emptying + colonic transit; 5-HT3 / 5-HT4 modulation | 1.2 g powder OR 500 mg standardised extract | 15 min pre-each-meal | water | warfarin (high-dose), anti-platelet | A | Pure Encaps Ginger Force, Himalaya, fresh ginger 5 g | $5–15 | EMA HMPC ginger monograph; multiple gastroparesis + constipation RCTs |
-| **Allicin (stabilised, Allimax / AlliMed)** | Anti-methanogen — IMO sub-type specifically; archaeal cell-wall disruption | 450 mg TID for 4 wk antimicrobial phase | with meals | meal | warfarin, anticoagulants | B | Allimax, AlliMed, NutriCology | $40–70 | Anti-archaeal documented in IMO; Mexican + Iranian RCTs |
-| **Berberine HCl** | Antimicrobial; AMPK; *Akkermansia*-promoting; gentle prokinetic | 500 mg TID for 4 wk antimicrobial phase | with meals | meal | dairy (1 h), CYP3A4 substrates | A | Thorne, Designs for Health, Pure Encaps | $25–40 | Chedid *Glob Adv Health Med* 2014; AYUSH *Berberis aristata* monograph |
-| **Oregano oil (carvacrol-thymol standardised)** | Antimicrobial — hydrogen-producing bacteria; reduces methanogen substrate | 200 mg (>70% carvacrol) BID for 4 wk | with meals | meal | probiotic (4 h gap) | A | ADP North American Herb & Spice, Gaia Herbs, NOW | $20–35 | Chedid 2014; Italian + Brazilian RCTs |
-| **Flaxseed (ground)** | Mucilage soluble fibre + ω-3; gentle bulk + transit | 15 g/day ground (use within 24 h of grinding) | AM with breakfast | water; meal | thyroid Rx (4 h gap, mild estrogenic lignans) | A | Bob's Red Mill, Spectrum Organic; grind fresh in coffee grinder | $5–10 | EMA HMPC flaxseed monograph; Polish + German RCTs |
-| **Chia seed** | Mucilage soluble fibre + ω-3 | 10–15 g/day soaked 30 min | AM | water | thyroid (separate by 1 h) | B | Healthworks, Nutiva | $5–10 | Spanish + Mexican RCTs constipation |
-| **Cape Aloe** (*Aloe ferox* leaf, anthraquinone) — **cautious, short-term only ≤7 days** | Stimulant laxative; chrysophanic acid → colonic contraction | 50–200 mg HS | HS | water | pregnancy, hepatic disease, electrolyte loss | C | NaturaLax, Aloe Vera of America (cape variant) | $10–15 | EMA HMPC *Aloe ferox* monograph; **NEVER chronic; melanosis coli + cathartic colon risk** |
-| **Senna** (*Senna alexandrina*) — **cautious, short-term only ≤7–14 days** | Anthraquinone stimulant; colonic contraction | 17 mg sennosides HS | HS | water | pregnancy, hepatic disease, breastfeeding (<2 wk) | C | Senokot, Smooth Move (Traditional Medicinals) | $5–10 | EMA HMPC *Senna alexandrina* monograph; **NEVER chronic — laxative dependence** |
-| **Hingvashtak Churna** (asafoetida + 8 herbs) | Carminative; classical Ayurvedic; supports digestive fire | 2–3 g pre-meal with ghee or warm water | pre-meal | warm water/ghee | — | T | Baidyanath, Patanjali | $5–10 | *Bhavaprakasha*; AYUSH-GMP |
-| **5-HTP** (5-hydroxytryptophan) — **cautious; SSRI/SNRI/MAOI FLAG** | Serotonin precursor; 5-HT4 colonic prokinetic | 50–100 mg HS | HS | meal | **NEVER with SSRI, SNRI, MAOI, tramadol — serotonin syndrome**; Ashwagandha caution | C | Pure Encaps, NOW, Thorne | $15–25 | Italian + Iranian studies; **strong contraindication noted** |
-| **Lactoferrin** | Iron-sequestration → reduces methanogen substrate; modulates microbiome | 250–500 mg/day | with meal | meal | iron supplement (4 h gap) | C | Jarrow Lactoferrin, Life Extension | $25–40 | Italian gut-microbiome studies; emerging anti-methanogen evidence |
+### 3.1 What to take, what to skip
+
+> **For you, in plain words.** Nine over-the-counter molecules and herbs, each backed by a non-US monograph or named trial. Lead with psyllium husk (Cochrane-supported), magnesium citrate, and Triphala. Skip senna long-term. *(Cochrane Ford 2018 fibre; EMA psyllium; AYUSH Triphala; Müller-Lissner 2010)*
+
+**Quick start.** Psyllium husk 5 g in water mid-morning + Sunfiber 5 g + magnesium citrate 200-400 mg after dinner + Triphala 3-5 g at bedtime.
+
+### 3.2 Psyllium husk — Cochrane-backed cornerstone
+
+> **For you, in plain words.** Psyllium husk (Plantago ovata) is the most studied fibre supplement; Cochrane meta-analysis supports use in chronic constipation. EMA monograph endorses. Take 5-10 g in 250+ ml water; build slowly to avoid bloat. *(Cochrane Ford 2018 fibre; EMA psyllium monograph)*
+
+**Quick start.** 5 g in 250 ml water mid-morning; increase to 7-10 g over 2 weeks. **Always with adequate water** — psyllium without water can cause obstruction.
+
+#### Open the science
+
+Psyllium provides bulk + water-binding mucilage that softens stool. Cochrane Ford 2018 systematic review supports as first-line. EMA HMPC monograph (2017) endorses 7-30 g/day. Brands: Metamucil, Konsyl (sugar-free preferred), Yerba Prima organic psyllium. **Grade A**.
+
+### 3.3 The nine OTC molecules — table
+
+| Compound | TL;DR (plain English) | Mechanism | Dose | Timing | Take WITH | Avoid WITH (≥2h gap) | Grade | Brand options | $/mo | Citation |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **Psyllium husk** | Cochrane-backed bulking fibre; always with adequate water. *(Cochrane Ford 2018; EMA psyllium 2017)* | Bulking + water-binding | 5-10 g/day | mid-morning in 250 ml water | water (mandatory) | other meds ≥2 h | A | Metamucil (sugar-free), Konsyl, Yerba Prima | $10-25 | *(Cochrane Ford 2018; EMA psyllium)* |
+| **Sunfiber (PHGG)** | Low-FODMAP-safe gentle prebiotic fibre. *(Polymeropoulos 2014)* | Slow colonic fermentation | 5-10 g/day | AM with water | water | iron ≥2 h | B | Sunfiber, Regular Girl, NOW PHGG | $20-35 | *(Polymeropoulos 2014)* |
+| **Magnesium citrate** | Osmotic — pulls water into colon; titrate to soft stool not loose. *(Health Canada Mg; Bharucha 2013)* | Osmotic laxation | 200-600 mg | PM with water | water | quinolones, levothyroxine ≥4 h | A | Natural Vitality Calm, Doctor's Best, NOW | $10-25 | *(Health Canada; Bharucha 2013)* |
+| **Triphala** | Nightly Ayurvedic three-fruit reset — gentle, safe long-term. *(AYUSH; Tarasiuk 2018)* | Mild laxative + prebiotic | 3-5 g at bedtime | bedtime with warm water | water | — | A | Organic India, Banyan Botanicals, Himalaya | $10-20 | *(AYUSH; Tarasiuk 2018)* |
+| **Padma Lax (Tibetan)** | EMA-monographed Tibetan-Swiss laxative — Sallon 2002 Israeli RCT supports for IBS-C. *(EMA Padma Lax; Sallon 2002)* | Multi-target prokinetic | 1-2 capsules at bedtime | bedtime | water | — | B | Padma Lax (Padma AG Switzerland) | $30-50 | *(EMA Padma Lax; Sallon 2002)* |
+| **Kiwi fruit (2/day)** | Chey 2021 RCT (n=79) confirmed Asian kiwifruit comparable to psyllium and prunes. *(Chey 2021)* | Bulk + actinidin enzyme + fibre | 2 green kiwi/day | AM + PM | food | — | A | Fresh kiwi | $15-25 | *(Chey 2021)* |
+| **Prunes (dried plums)** | Attaluri 2011 RCT (n=40) — 50 g/day comparable to psyllium for chronic constipation. *(Attaluri 2011)* | Sorbitol + fibre | 50 g/day | with food | food | — | A | Whole-foods prunes | $5-15 | *(Attaluri 2011)* |
+| **Flaxseed (ground)** | Soluble + insoluble fibre; small Iranian Soltanian 2018 RCT. *(Soltanian 2018 Iran)* | Bulking + omega-3 | 1-2 tbsp ground daily | AM with water | water | — | B | Bob's Red Mill ground flax | $10-20 | *(Soltanian 2018; AYUSH)* |
+| **Senna (short-course only — max 1-2 weeks)** | EMA monographed for short-term; chronic use harms colonic nerves. *(EMA senna; Müller-Lissner 2010)* | Stimulant laxative | 15-30 mg at bedtime, ≤2 weeks | bedtime | water | — | B (short) / X (chronic) | Senokot, Smooth Move tea | $5-15 | *(EMA senna; Müller-Lissner 2010)* |
+
+### 3.4 What to skip (chronic use)
+
+> **For you, in plain words.** Senna long-term, cascara, castor oil, frequent bisacodyl (Dulcolax) — all stimulant laxatives that harm colonic nerves with chronic use (Müller-Lissner 2010). Use bulk + osmotic + prokinetic strategies as the maintenance protocol; reserve stims for ≤2 weeks acute use. *(Müller-Lissner 2010)*
 
 ## 4. Traditional Medicine Integration
 
-### 4.1 Ayurveda — *Vibandha* / *Anaha* / *Malavarodha*
+### 4.1 Six traditions — at a glance
 
-Described in *Charaka Samhita Chikitsa Sthana* ch. 13 (*Udararoga* / *Gulma*), *Sushruta Samhita Uttara Tantra*, *Ashtanga Hridaya Nidana Sthana* ch. 9. *Vibandha* = constipation/obstruction; *Anaha* = distension with retention; *Malavarodha* = stool retention. Dosha: predominantly **vitiated Vata + low Apana Vayu downward-movement + low Agni (digestive fire)** with **dryness (rukshata)**. Kerala Vaidya lineage (Kottakkal, Vaidyaratnam); Maharashtra Bhavaprakasha lineage.
+> **For you, in plain words.** Six traditions named constipation formulas centuries ago. Triphala (Ayurveda), Ma Zi Ren Wan + Run Chang Wan (TCM), Itrifal Mulayyan (Unani), Thiripala (Siddha), Padma Lax (Tibetan), Nux vomica + Alumina + Bryonia (Homeopathy). *(AYUSH; Tai Ping Hui Min He Ji Ju Fang; Avicenna; IMPCOPS; Boericke)*
 
-| Formulation | Dose | Grade | Source |
-|---|---|---|---|
-| **Triphala Churna** | 3–6 g HS with warm water | A | AYUSH monograph; Organic India; *Charaka Samhita Sutra Sthana 25* |
-| **Avipattikar Churna** | 3 g HS with warm water | T | *Sharangdhara Samhita*; Baidyanath |
-| **Hingvashtak Churna** | 2–3 g pre-meal with ghee | T | *Bhavaprakasha*; Baidyanath |
-| **Trikatu Churna** (ginger + black pepper + Pippali) | 1 g pre-meal | T | *Charaka*; Patanjali |
-| **Eranda Taila** (castor oil, internal) — **cautious, short-term only** | 10–15 ml HS in warm milk or ginger water | T | *Charaka Samhita Kalpa Sthana 13*; classical — NOT chronic |
-| **Gandharva Haritaki** (haritaki + castor oil) | 3 g HS with warm water | T | *Bhaishajya Ratnavali*; Baidyanath |
-| **Abhayarishta** (haritaki-based fermented) | 15 ml BID post-meal | T | classical; Baidyanath |
-| **Sat Isabgol** (psyllium) | 5–10 g HS in water/buttermilk | A | AYUSH; Sidpur Sat Isabgol |
-| **Kumari Asava** (Aloe vera fermented) | 15 ml BID post-meal | T | classical; Baidyanath |
-| **Pippali Rasayana** | 1–3 g HS with warm milk | T | *Charaka Chikitsa 1* |
+### 4.2 Ayurveda — Vibandha
 
-### 4.2 TCM — *Bian Mi* 便秘 / *Chang Zao* 肠燥
+> **For you, in plain words.** Ayurveda calls constipation Vibandha (obstruction). Triphala is THE classical formula — gentle three-fruit nightly reset; Avipattikar for reflux-overlap; castor oil periodic full-cleanse; ghee + warm milk at bedtime. *(Charaka Chikitsa; AYUSH-CCRAS; Bhavaprakasha)*
 
-Patterns: **Heat-excess constipation** (red tongue, foul stools, thirst) · **Qi stagnation** (stress-related, sense of incomplete evacuation) · **Qi deficiency** (weak straining, fatigue) · **Blood deficiency / dryness** (dry stools, post-menopausal, elderly) · **Yang deficiency** (cold-aversion, slow transit). Source *Huang Di Nei Jing*, *Jin Gui Yao Lue*, *Shang Han Lun*.
-
-| Formula | Pattern | Dose | Grade | Source |
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
 |---|---|---|---|---|
-| **Ma Zi Ren Wan** 麻子仁丸 (hemp-seed pill — hemp seed + apricot kernel + magnolia + rhubarb + Pinellia + peony) | Heat-dryness constipation in middle-aged/elderly | 6–9 g BID | A | *Shang Han Lun* Zhang Zhongjing; Plum Flower; large Chinese RCT |
-| **Run Chang Wan** 润肠丸 (moisten-intestine pill — peach kernel + apricot kernel + hemp seed + angelica + Notopterygium) | Blood-deficiency dryness; elderly | 6 g BID | B | *Pi Wei Lun* Li Dongyuan; Plum Flower |
-| **Da Cheng Qi Tang** 大承气汤 (rhubarb + mirabilite + magnolia + bitter orange) — **acute only, short-term** | Heat-excess severe constipation acute | 6 g once for acute | B | *Shang Han Lun*; **NOT chronic** |
-| **Mai Wei Di Huang Wan** 麦味地黄丸 (with Mai Men Dong + Wu Wei Zi) | Yin-deficiency dryness | 6 g BID | T | classical; Plum Flower |
-| **Shen Ling Bai Zhu San** 参苓白术散 | Spleen-Qi deficiency with loose-then-constipated alternation | 6 g BID | T | *Tai Ping Hui Min He Ji Ju Fang* |
-| **Bu Zhong Yi Qi Tang** 补中益气汤 | Qi-deficiency weak straining | 6 g BID | T | *Pi Wei Lun* Li Dongyuan |
-| **Wu Ren Wan** 五仁丸 (five-seed pill — peach + apricot + pine + cypress + Trichosanthes seed) | Blood-deficiency dryness | 6 g BID | T | classical |
+| Triphala | THE classical Ayurvedic nightly gut reset — gentle, safe long-term. *(AYUSH; Tarasiuk 2018)* | 3-5 g at bedtime with warm water | A | *(AYUSH; Tarasiuk 2018)* |
+| Avipattikar churna | Cooling for reflux-and-constipation overlap. *(Sharangdhara; Baidyanath)* | 3-5 g at bedtime | T | *(Sharangdhara)* |
+| Castor oil (Eranda taila) | Classical periodic full-cleanse (Virechana); 1-2 tsp on empty stomach 1×/month max. *(Charaka; AYUSH)* | 1-2 tsp on empty stomach | T | *(Charaka; AYUSH)* |
+| Warm milk + ghee at bedtime | Classical lubricant for sluggish bowels. *(Charaka)* | 200 ml milk + 1 tsp ghee bedtime | T | *(Charaka)* |
+| Isabgol (psyllium — Indian form) | Indian-grocery psyllium husk; same as Western psyllium. *(EMA psyllium; AYUSH)* | 5-10 g in water mid-morning | A | *(EMA psyllium; AYUSH)* |
+| Sat Isabgol | Refined psyllium powder. *(Indian formulary)* | per label | A | *(Indian formulary)* |
+| Hingvastak (for bloat-overlap) | Carminative for constipation with bloat. *(Bhavaprakasha)* | 2-3 g with first bite of meals | T | *(Bhavaprakasha)* |
+| Pancha-sakar churna | Five-substance Ayurvedic laxative powder. *(Sahasrayoga)* | 3-5 g at bedtime | T | *(Sahasrayoga)* |
 
-Sourcing: Plum Flower (Mayway, Oakland), Min Tong, Treasure of the East. Brick-and-mortar — Kamwo Meridian Herbs NYC, Sun Sing Pacific Trading SF.
+### 4.3 TCM — Bian Mi patterns
 
-### 4.3 Unani — *Qabz* / *Yubusat-e-Mizaj*
+> **For you, in plain words.** Chinese medicine differentiates constipation patterns — heat-and-dryness (Ma Zi Ren Wan), qi stagnation (Liu Mo Tang), spleen-qi deficiency (Bu Zhong Yi Qi Tang), and blood-yin deficiency (Run Chang Wan). Each formula matches a pattern. *(Shang Han Lun; Tai Ping Hui Min He Ji Ju Fang; Chinese Pharmacopoeia 2020)*
 
-Mizaj: **saudawi / balghami** with weak hepato-digestive *du'f*. Lineage: Hakim Mohammed Said (Hamdard), Dawakhana Tibbiya College Aligarh.
+| Formula | TL;DR (plain English) | Pattern | Dose | Grade | Citation |
+|---|---|---|---|---|---|
+| Ma Zi Ren Wan 麻子仁丸 | "Hemp seed pill" — for dry-heat constipation. *(Shang Han Lun)* | Dry-heat | 6 g granules BID | B | *(Shang Han Lun)* |
+| Run Chang Wan 潤腸丸 | "Moisten the intestine pill" — for blood-yin xu constipation. *(Tai Ping Hui Min He Ji Ju Fang)* | Blood-yin deficiency | 6 g granules BID | B | *(Tai Ping Hui Min He Ji Ju Fang)* |
+| Liu Mo Tang 六磨湯 | "Six millings decoction" — for qi-stagnation constipation with bloat. *(Yi Zong Jin Jian)* | Qi stagnation | 6 g granules BID | T | *(Yi Zong Jin Jian)* |
+| Bu Zhong Yi Qi Tang 補中益氣湯 | Li Dongyuan's classical for sinking spleen-qi constipation in elderly + weak. *(Li Dongyuan, Pi Wei Lun)* | Sinking spleen qi | 6 g granules BID | B | *(Li Dongyuan)* |
+| Tao He Cheng Qi Tang 桃核承氣湯 | For blood-stasis constipation (rare). *(Shang Han Lun)* | Blood stasis | per label | T | *(Shang Han Lun)* |
+| Da Huang (rhubarb) | Strong stimulant — short course only; same caveat as senna. *(Chinese Pharmacopoeia; Müller-Lissner)* | Stimulant | per formula label, ≤2 weeks | B (short) / X (chronic) | *(Chinese Pharmacopoeia)* |
+| Huo Ma Ren (hemp seeds) | Lubricant seeds for chronic dry-stool constipation. *(Shen Nong Ben Cao)* | Dry intestine | 9-15 g/day | T | *(Shen Nong Ben Cao)* |
 
-| Formulation | Dose | Grade | Source |
-|---|---|---|---|
-| **Itrifal Mulayyin** (lubricating Itrifal — chebula + emblic + beleric + rose + honey) | 5–10 g HS | T | Hamdard; *Qarabadeen Qadri* |
-| **Itrifal Shahatra** | 5–10 g HS | T | Hamdard |
-| **Sharbat Anar Shireen** (sweet pomegranate syrup, supportive) | 15 ml BID | T | Hamdard |
-| **Khamira Marwareed** (with Itrifal for elderly constipation) | 5 g HS | T | Hamdard |
-| **Jawarish Mulayyin** | 5–10 g HS | T | Hamdard |
-| **Roghan-e-Badam Shireen** (sweet almond oil, internal) | 10 ml HS | T | Hamdard |
+### 4.4 Unani
 
-### 4.4 Siddha — *Malabandham*
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
+|---|---|---|---|---|
+| Itrifal Mulayyan | "Gentle three-fruit" — classical Unani laxative confection. *(Hamdard; Qarabadeen)* | 5-10 g at bedtime | T | *(Hamdard; Qarabadeen)* |
+| Sharbat-e-Bazoori | Seeds syrup for digestion + bowel regularity. *(Hamdard)* | 25 ml BID | T | *(Hamdard)* |
+| Roghan-e-Badam (almond oil) | Classical bedtime lubricant — 1 tsp warm with milk. *(Hamdard; Avicenna)* | 1 tsp at bedtime | T | *(Hamdard)* |
+| Jawarish Bisbasa | Digestive jam with mild laxation. *(Hamdard)* | 5 g after meals | T | *(Hamdard)* |
 
-Tamil tradition; only **chooranam (herbal powders), kuzhambu (decoctions), legiyam (semi-solid preparations)** included. **Classical mercurial/metallic chenduram/parpam/mezhugu preparations EXCLUDED** because they require expert pharmacy formulation and supervised administration. IMPCOPS Chennai.
+### 4.5 Siddha
 
-| Formulation | Dose | Grade | Source |
-|---|---|---|---|
-| **Aavarai Chooranam** (*Senna auriculata* powder) | 2–3 g HS | T | IMPCOPS; *Siddha Maruthuvam* |
-| **Karpooradi Chooranam** | 2–3 g post-meal | T | IMPCOPS |
-| **Triphala Chooranam** (Tamil formulation: nellikai + thandrikkai + kadukkai) | 3–5 g HS with warm water | T | IMPCOPS; classical |
-| **Adathodai Manappagu** (*Justicia adhatoda* legiyam) | 5 g BID | T | IMPCOPS |
-| **Nellikai Legiyam** (amla legiyam) | 5 g HS | T | IMPCOPS |
-| **Ponnaganni Keerai Chooranam** (*Alternanthera sessilis*) | 3 g BID | T | IMPCOPS |
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
+|---|---|---|---|---|
+| Thiripala chooranam | Tamil three-fruit gut-reset (cognate of Triphala). *(IMPCOPS)* | 3-5 g at bedtime | T | *(IMPCOPS)* |
+| Nilavembu chooranam | Bitter cooling powder for heat-and-constipation overlap. *(IMPCOPS)* | 1-2 g at bedtime | T | *(IMPCOPS)* |
+| Aaval chooranam | Mustard-based mild laxative. *(IMPCOPS)* | 1-2 g BID | T | *(IMPCOPS)* |
 
-> Classical Siddha mercurial preparations (chenduram, parpam) require traditional practitioner formulation; **excluded** from this OTC protocol.
+### 4.6 Tibetan / Sowa Rigpa
 
-### 4.5 Tibetan / Sowa Rigpa
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
+|---|---|---|---|---|
+| Padma Lax | EMA-monographed Swiss-Tibetan laxative; Sallon 2002 RCT. *(EMA Padma; Sallon 2002)* | 1-2 capsules at bedtime | B | *(EMA Padma; Sallon 2002)* |
+| Se-bru-25 | Pomegranate digestive formula. *(Tibetan Four Tantras; Men-Tsee-Khang)* | per label | T | *(Tibetan Four Tantras)* |
+| Agar-35 | Wind-pacifier — for stress-driven slow-transit. *(Tibetan Four Tantras)* | per label | T | *(Tibetan Four Tantras)* |
 
-Men-Tsee-Khang Dharamsala treats constipation under *bad-kan grang-ba* (cold-damp), *rlung-gzhi* (wind-base) and elderly dryness syndromes. Source *rGyud-bzhi*.
+### 4.7 Homeopathy — honoured tradition, honestly graded
 
-- **Padma Lax** (chebula + senna + rhubarb + aloe + ginger + cardamom + others — EMA-approved Padma formulation) — Grade B
-- **Padma 28 / Padma Basic** — broader Tibetan systemic formula — Grade T
-- **Aru-7** (7-herb formula for *bad-kan* disorders) — Grade T
-- **Sug-mel 11** (cardamom-based digestive fire) — Grade T
-- **Se-bru 5** (pomegranate-based digestive) — Grade T
+> **For you, in plain words.** Honoured tradition; no robust RCT in constipation. Listed for transparency. *(Boericke; Allen; Kent)*
 
-Sourcing: Men-Tsee-Khang Dharamsala mail-order; Padma AG (Swiss) Padma Lax EU.
+| Remedy | TL;DR (plain English) | Keynote | Potency | Grade | Citation |
+|---|---|---|---|---|---|
+| Nux vomica | Stress-and-overwork constipation with ineffectual urging. *(Boericke; Allen)* | Stress + ineffectual urging | 30C | T | *(Boericke; Allen)* |
+| Alumina | Severe straining; no urge; dry hard stool — Boericke keynote. *(Boericke)* | No urge; severe straining | 30C | T | *(Boericke)* |
+| Bryonia alba | Dry hard stool; constipation with thirst for cold water. *(Boericke)* | Dry stool + thirst | 30C | T | *(Boericke)* |
+| Lycopodium clavatum | Constipation with right-sided bloat worse 4-8 PM. *(Boericke; Kent)* | 4-8 PM bloat + constipation | 30C | T | *(Boericke; Kent)* |
+| Silicea | Stool partly emerges then recedes — "bashful stool". *(Boericke)* | Bashful stool | 30C | T | *(Boericke)* |
+| Plumbum metallicum | Severe abdominal cramping with constipation. *(Boericke)* | Cramping + constipation | 30C | T | *(Boericke)* |
 
-### 4.6 Homeopathy
+## 5. Biophysical & Mind-Body Interventions
 
-> *Homeopathy is honoured under the founder's mandate to explore all directions of alternative medicine. Modern evidence is contested; entries are presented as a documented tradition (Tier 3), not as clinical proof.*
+### 5.1 What works at home — priority order
 
-| Remedy | Indication / keynote | Typical potency | Grade |
-|---|---|---|---|
-| **Nux Vomica** | Constipation in sedentary, irritable, coffee-and-alcohol user; ineffectual urging; "as if stool would not come out" | 30C | T |
-| **Bryonia Alba** | Hard, dry, large, dark stool, "as if burnt"; thirst for large quantities; worse from motion | 30C | T |
-| **Alumina** | No desire for stool for days; soft stool requires straining; pregnancy, infants, elderly | 30C–200C | T |
-| **Opium** | No urge; rectum inactive; opioid-induced or post-operative constipation | 30C | T |
-| **Plumbum Metallicum** | Severe constipation with painful contractions; small, hard, black "sheep-dung" stools | 30C | T |
-| **Silicea (Silica)** | "Bashful stool" — stool comes part-way then retracts; chronic constipation; weak rectum | 30C–200C | T |
-| **Lycopodium Clavatum** | Constipation with bloating + 4–8 PM aggravation + right-sided + sweet craving | 30C–200C | T |
-| **Sulphur** | Chronic constipation with morning urge + ineffectual + offensive flatus | 30C | T |
-| **Causticum** | Constipation with desire while standing; stool passes easier standing | 30C | T |
-| **Natrum Muriaticum** | Dry mucous membranes; dry stool; chronic; cracks in skin | 30C | T |
+> **For you, in plain words.** The highest-evidence non-supplement levers: squatty-potty footstool + diaphragmatic-pelvic-floor coordination (for dyssynergic defecation) + post-meal walking + hydration + sleep. Then supplements. *(Sakakibara 2010; Rao 2010; Bharucha 2013)*
 
-Citations: Boericke W., *Pocket Manual of Homeopathic Materia Medica*; Allen H.C., *Keynotes and Characteristics* (Bryonia, Nux Vom, Alumina entries); Kent J.T., *Repertory* — Constipation rubrics. CCRH publishes constipation case-series under AYUSH.
+### 5.2 Squatty-potty positioning
 
-## 5. Biophysical Interventions — home-administered only
+> **For you, in plain words.** Sitting on the toilet with feet flat creates a 90° angle that puts the puborectalis muscle in the way. Raising knees above hips (squatty potty footstool) opens the anorectal angle to ~35° — easier evacuation, less straining. *(Sakakibara 2010 Japan squatting RCT; Modi 2019 squatty potty RCT)*
 
-**Gut domain — every device is consumer-purchasable and self-administrable. No clinic-based colonic hydrotherapy, no hospital admission, no surgical procedure.**
+**Quick start.** Squatty Potty footstool ($25-40), Gosund similar generic ($15-25), or DIY with two short stools. Use for every bowel movement.
 
-**5.1 Squatty Potty (or equivalent squat stool) — primary biophysical, low-cost.** A 7–9 inch toilet stool elevating the feet straightens the anorectal angle by relaxing the puborectalis muscle. Sikirov 2003 Israeli study documented significant defecation-effort reduction and time-to-defecation acceleration. Use daily for every BM. Cost $25–60. Brands: Squatty Potty, TushyOttoman, generic step stool.
+### 5.3 Diaphragmatic-pelvic-floor coordination
 
-**5.2 Consumer Vagal Nerve Stimulation (VNS).** **Nurosym** (transcutaneous auricular VNS, ear cymba conchae) — 30 min daily PM. Restores parasympathetic vagal tone, supports MMC and gastrocolic reflex. Cost £400–600. Alternative: **Sensate** infrasound chest device, **Pulsetto** — $250–400. Contraindications: pacemaker, ICD, pregnancy, active cardiac arrhythmia.
+> **For you, in plain words.** Push from the belly using the diaphragm (NOT a Valsalva breath-holding strain). The pelvic floor should relax during attempted defecation — most dyssynergic patients reflexively tighten. Practice deep belly breath while imagining pelvic floor softening. *(Rao 2010; Bharucha 2013)*
 
-**5.3 HRV biofeedback** — HeartMath Inner Balance, Lief patch, Oura/Whoop/Polar ring HRV tracking. 10 min daily resonance-frequency breathing (5.5 breaths/min). Documented vagal-tone improvement in functional GI cohorts.
+**Quick start.** Sit on squatty-potty; one hand on belly, one on pelvic floor; inhale deeply (belly rises); exhale slowly while imagining pelvic floor softening downward. Practice 5 min daily, even when not on toilet.
 
-**5.4 Castor oil pack — classical biophysical, zero-cost.** Cold-pressed organic castor oil on flannel pack over abdomen, covered with plastic + warm pad / hot water bottle, 45–60 min, 3–4×/week before bed. Documented bile flow stimulation, prokinetic effect. Classical Ayurvedic *Eranda Taila* external application + Western naturopathy.
+### 5.4 Post-meal walking (gastro-colic reflex)
 
-**5.5 Abdominal self-massage (Ila / Chi Nei Tsang lineage / Iyengar tradition).** Clockwise abdominal massage (following the colon — ascend right, across, descend left) 5–10 min, AM on empty stomach, with castor oil or sesame oil. Stimulates MMC and gastrocolic reflex. Free.
+> **For you, in plain words.** Walking for 10-15 min after meals activates the gastro-colic reflex — the colon contracts in response to stomach filling. Powerful behavioural lever for slow transit. *(Bharucha 2013; Diabetes Care post-meal walk)*
 
-**5.6 Home infrared sauna** (Sunlighten, JNH, Clearlight, Higher Dose) — 50–60 °C, 20–30 min, 3×/week. Vagal restoration via heat-stress + sympathetic-rebound. Contraindications: significant CV disease, pregnancy.
+### 5.5 Pelvic floor biofeedback (for dyssynergic defecation)
 
-**5.7 Home cold immersion / cold-water face splash.** Plunge tub, Edge Tub, ice barrel, or zero-cost 10-second cold-water face splash. Powerful vagal afferent stimulus (mammalian dive reflex). 2–4 min, 3×/week for immersion. Contraindications: significant CV disease, Raynaud's, pregnancy (avoid full immersion).
+> **For you, in plain words.** Rao 2010 Am J Gastroenterol RCT — biofeedback-guided pelvic floor PT achieved 80% improvement vs 22% standard therapy in dyssynergic defecation. Gold standard for confirmed dyssynergia. Self-guided versions exist (workbooks, apps) but therapist-led gets best results. *(Rao 2010 RCT; Heymen 2007 biofeedback)*
 
-**5.8 Photobiomodulation (660 nm + 810–850 nm NIR) — abdominal panel.** Emerging evidence for visceral inflammation reduction and motility support. 10 J/cm² per session, 15–20 min, 5×/week supine, full abdominal coverage. Devices: MitoMID ($449), Joov Solo, Hooga. Timing 20:00. Contraindications: pregnancy (abdominal), photosensitising medications.
+**How to try it.** Self-guided: pelvic floor PT workbooks (Pelvic Floor Power by Linda Slattery, Heal Pelvic Pain by Amy Stein); apps (Squeezy NHS UK, Kegel Trainer). Therapist-led: pelvic floor PT referral (clinic — often covered by insurance; not required by protocol).
 
-**5.9 Toilet posture & timing ritual.** 10-minute post-breakfast toilet sit on Squatty Potty, 4-7-8 abdominal breath × 4, no straining, no Valsalva, abdominal self-massage during. Honours gastrocolic reflex; retrains pelvic-floor coordination.
+### 5.6 Daily morning routine (circadian + gastrocolic)
+
+> **For you, in plain words.** 500 ml warm water on waking + 5-10 min sit on toilet 20-30 min after breakfast leverages the natural morning gastrocolic reflex. *(AYUSH daily-rhythm; Bharucha 2013)*
+
+### 5.7 Abdominal self-massage
+
+> **For you, in plain words.** Clockwise self-massage with sesame or coconut oil for 5-10 min morning supports motility. Lämås 2009 Swedish RCT confirmed for chronic constipation. *(Lämås 2009)*
+
+### 5.8 Sufficient hydration
+
+> **For you, in plain words.** 2.5-3 L water per day. Dehydration is the most common preventable cause of hard stools. *(WHO drinking-water; Bharucha 2013)*
+
+### 5.9 Sleep + circadian rhythm
+
+> **For you, in plain words.** Bowel function is circadian — sleep deprivation worsens constipation. 7-9 h nightly + consistent wake time + morning sunlight. *(Konturek 2011 circadian-gut)*
+
+### 5.10 What to skip
+
+> **For you, in plain words.** Senna and other stim laxatives long-term (chronic use harms colonic nerves), colonic hydrotherapy (no RCT support, mucosal trauma), prolonged sitting in Western-style toilet position without footstool, holding stool when you have the urge. *(Müller-Lissner 2010; Sakakibara 2010)*
 
 ## 6. Dietary Protocol
 
-### 6.1 Mandatory foods (daily gram quantities)
+### 6.1 Eat the high-fibre Mediterranean-millet base
 
-- **Sprouted Siri Dhanyalu** (foxtail + barnyard + kodo + little + browntop millet rotation, Dr. Khadar Vali lineage): **60–80 g cooked** — gentle on small bowel; soluble fibre; gluten-free
-- **Cooked green leafy vegetables** (methi, *Moringa* leaves, gotu kola, lightly steamed spinach, kale): **200–300 g**
-- **Prunes** (2 dried OR 240 ml prune juice): **50 g/day** — A-grade evidence
-- **Kiwifruit** (Hayward green or SunGold): **2/day** — A-grade Cunningham Auckland RCT
-- **Ground flaxseed** (fresh-ground, soaked 30 min): **15 g/day**
-- **Chia seed** (soaked overnight): **10–15 g/day**
-- **Cooked cruciferous** (broccoli, cauliflower, cabbage): **150 g**
-- **Fresh ginger root** (5 g) in cooking + pre-meal ginger tea
-- **Fresh turmeric** (5 g) + black pepper + ghee
-- **Coconut yoghurt / kefir** (or A2 if tolerated): **100–150 g**
-- **Bone broth** (12 h slow-cooked, grass-fed): **300 ml/day** — gut barrier
-- **Whole legumes (mung, masoor, chana)** — cooked + soaked + sprouted: **80 g/day** — soluble fibre + magnesium
-- **Asafoetida (Hing)** in cooking — classical carminative + Apana Vayu support
-- **Cumin + fennel + coriander + ajwain CCF tea** (1 tsp each) — post-meal carminative
-- **Brown / Basmati rice** (well-cooked, cooled and re-warmed for resistant starch): **60–80 g**
-- **Whole oats** (steel-cut, soaked overnight): **50 g**
-- **Water — 35 ml/kg body weight (≈2.5 L for 70 kg adult)** — non-negotiable; spread through day; warm water HS
+> **For you, in plain words.** 25-35 g fibre/day from food + fibre supplement, 2.5-3 L water/day, kiwi + prunes daily, fermented foods, olive oil, fish, eggs. *(Bharucha 2013; Cochrane Ford 2018; Chey 2021 kiwi; Attaluri 2011 prunes)*
 
-### 6.2 Absolutely avoid (with molecular rationale)
+**Quick-start summary.** 2 kiwi + 50 g prunes + 5-10 g psyllium + 30+ g fibre from food = the baseline cornerstone.
 
-| Food / Class | Molecular reason |
-|---|---|
-| **Refined/processed wheat** (white bread, pasta, pastries) | Low fibre + gluten → ↓ transit + zonulin → permeability |
-| **Refined sugar, HFCS, sweetened beverages** | Microbiome dysbiosis; feeds methanogens (with hydrogen-producers); IR |
-| **Industrial seed oils** (corn, soy, sunflower, canola) | ω-6 inflammation; impaired gut motility |
-| **A1 β-casein dairy** | β-casomorphin-7 inflammation; constipation in sensitive users; switch A2/coconut/oat |
-| **Alcohol** | Gut barrier disruption; dehydration; vagal disruption |
-| **Ultra-processed foods, emulsifiers** (CMC, polysorbate-80, carrageenan) | Direct barrier erosion; dysbiosis (Bonn + French INSERM cohorts) |
-| **Sugar alcohols** (sorbitol — but small amounts help; xylitol, mannitol, maltitol, erythritol large quantities) | Paradoxical — modest sorbitol helps (prune), excess causes bloating/diarrhoea |
-| **Carbonated beverages** | Aerophagia + gas load |
-| **Excess caffeine after 14:00** | Sympathetic load; disrupts vagal tone; sleep loss → MMC failure |
-| **Excess red meat without fibre balance** | Slow transit if dominant |
-| **Cheese, processed meats, fried foods** as dietary mainstay | Low fibre; constipation-driving |
-| **Long-term stimulant laxative dependence** (Senna, Bisacodyl, Cape Aloe) | Laxative dependence; melanosis coli; cathartic colon |
-| **Late-night eating after 20:00** | MMC overnight disruption |
-| **Snacking between meals** | Suppresses MMC; constant insulin spike |
+### 6.2 Mandatory foods — daily grams
 
-### 6.3 Preparation methodology
+- **TL;DR.** Kiwi fruit — 2 green/day. *(Chey 2021)*
+- **TL;DR.** Prunes (dried plums) — 50 g/day. *(Attaluri 2011)*
+- **TL;DR.** Wild oily fish — 150 g, 3-4×/week. *(UK SACN)*
+- **TL;DR.** Pasture eggs — 2/day. *(Vital Farms)*
+- **TL;DR.** Leafy greens — 250 g/day. *(Mediterranean)*
+- **TL;DR.** Cruciferous (broccoli, cabbage, cauliflower) — 150 g/day. *(Bischoff 2017)*
+- **TL;DR.** Berries — 150 g/day. *(EPIC anthocyanin)*
+- **TL;DR.** Cooked-and-cooled starches (potato, rice, quinoa) — 200 g/day for resistant starch. *(Birt 2013)*
+- **TL;DR.** Whole grains rotation (oats, barley, millet, buckwheat) — 60-80 g cooked/day. *(MIND-millet)*
+- **TL;DR.** Pumpkin + sunflower + ground flaxseed — 30 g/day. *(USDA SR-28)*
+- **TL;DR.** Legumes (lentil, chickpea, mung) — 60-100 g cooked/day (soak + rinse). *(David 2014)*
+- **TL;DR.** Extra-virgin olive oil — 30 ml/day. *(PREDIMED)*
+- **TL;DR.** Lactose-free yogurt or A2 kefir — 100 g/day fermented. *(Sonnenburg-Gardner)*
+- **TL;DR.** Sauerkraut or kimchi — 30 g/day fermented. *(Sonnenburg-Gardner)*
+- **TL;DR.** Filtered water — 2.5-3 L/day (non-negotiable). *(WHO drinking-water)*
+- **TL;DR.** Warm water + lemon on waking — 500 ml. *(AYUSH daily-rhythm)*
 
-**Sprouting protocol** (millets, mung, Bengal gram): rinse → soak filtered water 8–10 h → drain → cover in muslin → 25–28 °C for 12–18 h → rinse twice/day. Refrigerate ≤48 h. Reduces phytic acid 30–50%; improves fibre bioavailability.
+### 6.3 Absolutely avoid
 
-**Bone broth (12 h):** grass-fed beef knuckle + chicken feet + 2 tbsp apple-cider vinegar + filtered water + aromatic veg → low simmer 12 h → strain → refrigerate. Glycine + glutamine + collagen for gut barrier.
-
-**CCF tea (cumin-coriander-fennel) — daily carminative**: 1 tsp each in 500 ml water, simmer 5 min, strain, sip throughout day.
-
-**Ghee tempering** with cumin, asafoetida, turmeric — replaces inflammatory cooking oil + adds carminative.
-
-**Soaked flax/chia ritual** — 15 g ground flax + 200 ml warm water, soak 30 min, drink AM. Mucilage formation key.
-
-**Warm-water-AM ritual** (Ushah-paan Ayurveda) — 500 ml warm water on rising → activates gastrocolic reflex.
-
-**Meal ordering**: protein + fibre + fat FIRST, then carbohydrate — improves post-prandial transit + glucose.
-
-**Mindful eating**: chew 20–30× per bite, no screens; sit 10 min after meal (Vajrasana).
-
-### 6.4 Seven-day meal plan (gram quantities)
-
-| Day | Breakfast 08:30 (+ Combo 1) | Lunch 13:00 (+ Combo 2) | Dinner 18:30 (+ Combo 3) |
+| Food / class | TL;DR (plain English) | Mechanism | Citation |
 |---|---|---|---|
-| **1 Hydration + fibre** | Warm water + lemon 500 ml on rising; 50 g oats + 15 g ground flax + 2 prunes + 1 kiwi + 200 ml coconut/A2 milk + cinnamon | 80 g sprouted mung khichdi + 200 g cooked spinach + 100 g grilled chicken + 300 ml bone broth + ghee | 60 g khichdi (rice + moong + ghee + turmeric + ginger) + 200 g cooked greens + CCF tea + 1 prune |
-| **2 Cruciferous** | 50 g oats + 10 g chia + 2 prunes + 1 kiwi | 80 g cooked broccoli + 100 g sardines + 80 g basmati rice + 200 ml bone broth + tahini 30 g | 60 g khichdi + 150 g cooked cauliflower + ginger-fennel tea |
-| **3 Mediterranean** | 50 g oats + 15 g flax + coconut yoghurt 150 g + 1 kiwi + 2 prunes | 80 g chickpeas + 200 g Mediterranean veg + 60 g brown rice + olive oil 30 ml + salmon 100 g | 60 g khichdi + 200 g zucchini + CCF tea + 1 prune |
-| **4 Millet** | 60 g foxtail porridge + ghee + cinnamon + 2 eggs + 1 kiwi + 2 prunes | 80 g sprouted moong + 150 g cooked methi + 80 g rice + 100 g chicken + bone broth | 60 g barnyard khichdi + 200 g cooked greens + chamomile-fennel tea + 1 prune |
-| **5 Marine ω-3 + fibre** | 50 g oats + 15 g flax + 1 kiwi + 2 prunes | 100 g mackerel + 200 g cooked spinach + 80 g rice + olive oil + bone broth | 60 g khichdi + 200 g cooked carrots + CCF tea + 1 prune |
-| **6 Legume day** | 50 g oats + 10 g chia + 200 ml warm coconut milk + 2 prunes + 1 kiwi | 100 g lentil dal + 200 g cooked spinach + 80 g rice + ghee | 60 g khichdi + 150 g cooked greens + fennel tea + 1 prune |
-| **7 Rest day light** | Warm water + lemon + 50 g oats + 15 g flax + 1 kiwi + 2 prunes | 100 g chicken/fish + 200 g cooked greens + 80 g rice + bone broth | Light khichdi 60 g + cooked greens 200 g + CCF tea |
+| Ultraprocessed foods | Low fibre + microbiome disruption. *(Martínez Steele 2017)* | Low fibre + UPF | *(Martínez Steele 2017)* |
+| Excess dairy (if intolerant) | Calcium can bind in colon; binds bowels in some. *(Bharucha 2013)* | Calcium binding | *(Bharucha)* |
+| Excess refined-grain (white bread, white rice in bulk) | Low fibre. *(Cochrane Ford 2018)* | Low fibre | *(Cochrane Ford)* |
+| Excess red meat | Slow gastric emptying + low fibre. *(Bharucha)* | Low fibre + slow emptying | *(Bharucha)* |
+| Chronic dehydration | Hard stool inevitable. *(WHO)* | Water deficit | *(WHO)* |
+| Excess caffeine without water | Diuretic effect can worsen if not balanced with water. *(Drake)* | Diuresis | *(Drake)* |
+| Excess alcohol | Dehydration. *(WHO alcohol)* | Dehydration | *(WHO)* |
+| Chronic NSAID use | Gut-lining damage. *(Bjarnason 2018)* | Lining damage | *(Bjarnason)* |
+| Stim laxatives chronic | Colonic nerve harm. *(Müller-Lissner 2010)* | Nerve damage | *(Müller-Lissner)* |
 
-Maintain daily: 60–80 g grain, 200–300 g cooked vegetables, 300 ml bone broth, 2 kiwi, 2 prunes, 15 g ground flax, ginger pre-meal, CCF tea post-meal, 4 h between meals, no snacking, 35 ml/kg water.
+### 6.4 Preparation methodology
 
-### 6.5 Environmental & occupational triggers to eliminate
+> **For you, in plain words.** Cook-and-cool starches (resistant starch); soak legumes/grains; bone broth; gentle steam cruciferous; ferment slowly; warm water on waking. *(AYUSH; Birt 2013; traditional)*
 
-- **Urge suppression habits** — sitting through the post-breakfast urge while commuting; "not the right toilet" reflex; pause every morning 30 min after breakfast for toilet ritual.
-- **Sedentary work + prolonged sitting** — gravitational + autonomic effect on transit. Stand-up desk + walking breaks every 30 min.
-- **Travel (long-haul flights, time-zone shift)** — constipation surge in first 3–5 days; pre-travel ritual: PHGG + Mg citrate + 2 kiwi/day + bone broth.
-- **Chronic stress / unresolved anxiety** — sympathetic dominance suppresses gastrocolic reflex; address via yoga nidra, vagal practices.
-- **Sleep deprivation (<7 h)** — disrupts MMC overnight; non-negotiable.
-- **Shift work** — disrupts MMC circadian rhythm.
-- **Chronic PPI use** — long-term PPI suppresses gastric acid → SIBO/IMO → methanogen → constipation. **Encourage taper** (see §10.1).
-- **Antibiotic overuse** — single courses substantially shift microbiome; if essential, layer *Saccharomyces boulardii* + multi-strain probiotic.
-- **NSAIDs (chronic)** — gut barrier injury + altered motility.
-- **Opioid use** — opioids are the most documented cause of severe constipation (μ-opioid receptors in gut). Encourage taper if feasible.
-- **Iron supplements (oral non-bisglycinate)** — chronic constipating. Switch to bisglycinate or heme; pair with vitamin C.
-- **Chronic anticholinergic medications** (tricyclic antidepressants, hyoscine, oxybutynin) — constipating; review with prescriber.
-- **Plastic food storage, microwaving plastic** — BPA, phthalates → endocrine disruption + microbiome dysbiosis. Switch to glass/steel/ceramic.
-- **Chlorinated tap water** — chronic chlorine kills beneficial flora; install RO or activated-carbon filter (Berkey, Aquasana).
-- **Pesticide residues** — buy EWG Dirty Dozen organic.
-- **Wide-spectrum disinfectants** (triclosan, quaternary ammoniums) — microbiome dysbiosis. Swap for vinegar + lemon.
-- **Mould exposure** — recurrent flares; ERMI/HERTSMI-2 test if home-environment correlation.
+### 6.5 Seven-day meal plan
 
-### 6.6 Cofactor / micronutrient floor
+> **For you, in plain words.** A 7-day rotation hitting 25-35 g fibre/day with 2 kiwi + 50 g prunes daily. *(Bharucha 2013; Chey 2021; Attaluri 2011)*
 
-| Cofactor | Why for constipation | Target/day | Food | Supplement | Antagonist |
+| Day | TL;DR (plain English) | Breakfast | Lunch | Dinner |
+|---|---|---|---|---|
+| 1 | Oats + kiwi day. *(Chey 2021)* | Oats 50 g + 2 kiwi + 50 g prunes + flaxseed 1 tbsp + yogurt | 150 g salmon + 200 g kale + 60 g quinoa + olive oil | 70 g millet + chard + lentils + ghee |
+| 2 | Lentil + prunes day. *(Attaluri 2011)* | 2 eggs + 100 g spinach + 50 g prunes + 2 kiwi | 150 g chicken + lentils + carrot + olive oil | Bone broth + barley + cauliflower + chickpea |
+| 3 | Mediterranean day. *(PREDIMED)* | 2 eggs + tomato + cucumber + olives + yogurt + 2 kiwi | 150 g salmon + salad + chickpea + EVOO + 50 g prunes | 70 g millet + courgette + pepper |
+| 4 | Indian millet + dosa day. *(ICAR-IIMR)* | Idli + sambar + chutney + 2 kiwi | Foxtail millet khichdi + methi + buttermilk | 70 g kodo millet + bitter gourd + amla + 50 g prunes |
+| 5 | Sardine + kefir day. *(UK SACN)* | Sardine on rye toast + greens + kefir + 2 kiwi | 120 g anchovy salad + lettuce + quinoa + olive oil | Bone broth + brown rice + chard + 50 g prunes |
+| 6 | Polyphenol day. *(Norfolk EPIC)* | Smoothie: berries + spinach + kefir + flax + 2 kiwi | 150 g fish + rainbow salad + EVOO + chickpea + 50 g prunes | 70 g rice + spinach + lentils |
+| 7 | Reset + earliest dinner 18:00. *(AYUSH)* | Light: 2 eggs + greens + berries + 2 kiwi | Bone broth + chicken + rice + greens + kefir + 50 g prunes | Earliest dinner; bone-broth-based |
+
+Daily floor: 2 kiwi + 50 g prunes + 5-10 g psyllium + 250 g greens + 30 g seeds + 30 ml EVOO + 100 g ferment.
+
+### 6.6 Environmental & occupational triggers
+
+- **TL;DR.** Dehydration — 2.5-3 L water non-negotiable. *(WHO)*
+- **TL;DR.** Sedentary lifestyle — daily walks + post-meal walks. *(Bharucha)*
+- **TL;DR.** Holding stool when urge appears — don't. *(Sakakibara)*
+- **TL;DR.** Long-term iron supplementation — switch to gentle form (Floradix). *(WHO iron)*
+- **TL;DR.** Chronic opioid use — opioid-induced constipation; clinical PAMORA route if needed. *(Bharucha)*
+- **TL;DR.** Hypothyroidism untreated — check TSH; treat thyroid first. *(Health Canada)*
+- **TL;DR.** Pregnancy — safe layers only (psyllium, magnesium, kiwi, prunes, gentle walking). *(EMA pregnancy)*
+- **TL;DR.** Ageing 65+ — sustained protocol + adequate water + magnesium. *(Bharucha)*
+- **TL;DR.** Shift work — disrupts gastro-colic reflex circadian. *(Konturek)*
+- **TL;DR.** Endocrine-disrupting plastics, mould. *(EFSA)*
+
+### 6.7 Cofactor / micronutrient floor
+
+| Cofactor | TL;DR | Target/day | Food | Supplement | Antagonist | Citation |
+|---|---|---|---|---|---|---|
+| Magnesium citrate | Osmotic + cofactor; PM. *(Health Canada Mg)* | 200-400 mg | seeds, greens | Natural Vitality Calm | quinolones ≥4 h | *(Health Canada Mg)* |
+| Methyl-B12 | If low (often PPI users, age 65+). *(Health Canada B12)* | 1000-2000 µg if low | sardines, eggs | Jarrow Methyl B12 | metformin, PPI | *(Health Canada B12)* |
+| Vitamin D3 + K2 | Often low. *(EMA vit D)* | 4000 IU + 100 µg | sunlight, sardines | Thorne D/K2 | fat + Mg | *(EMA vit D)* |
+| Iron (only if low) | Iron supplements famously constipate — use Floradix; measure ferritin first. *(WHO ferritin)* | only if low | red meat, liver | Floradix (gentle) | ≥2 h tea, Ca, Zn | *(WHO ferritin)* |
+| Omega-3 EPA + DHA | Anti-inflammatory + gut barrier. *(UK SACN)* | 2-3 g (≥1 g DHA) | sardines | Nordic Naturals | — | *(UK SACN)* |
+| Thyroid (TSH check if hypothyroid clinical) | Constipation in hypothyroid common; treat thyroid. *(Health Canada)* | DTC TSH lab | iodine if low; check anti-TPO | DTC TSH | autoimmune iodine caution | *(Health Canada)* |
+
+## 7. Lifestyle / Mind-Body Anchors
+
+### 7.1 The mind-body map at a glance
+
+> **For you, in plain words.** Yoga, breath work, walking, posture, sleep — every entry mapped to a §2 driver. *(AYUSH; Bharucha)*
+
+### 7.2 Yoga — twists, folds, pavanamuktasana
+
+| Asana | TL;DR (plain English) | Lever | Duration | Time | Caution | Citation |
+|---|---|---|---|---|---|---|
+| Pavanamuktasana | Knee-to-chest — direct colon stimulation. *(AYUSH)* | §2.2 + §2.3 | 1-2 min | AM | — | *(AYUSH)* |
+| Apanasana | Knees-to-chest variation — downward gut energy. *(Iyengar)* | §2.2 | 1-2 min | AM | — | *(Iyengar)* |
+| Marichyasana III (seated twist) | Wrings the abdominal organs. *(Iyengar)* | §2.2 | 1 min/side | 07:00 | — | *(Iyengar)* |
+| Ardha Matsyendrasana (half-twist) | Deeper twist. *(Hatha Yoga Pradipika)* | §2.2 | 1 min/side | 07:00 | — | *(Hatha Yoga Pradipika)* |
+| Bhujangasana (cobra) | Spinal extension + abdominal stretch. *(AYUSH)* | §2.2 | 5 reps | 07:00 | — | *(AYUSH)* |
+| Mayurasana (peacock) | Advanced abdominal pressure pose for chronic constipation. *(Hatha Yoga Pradipika)* | §2.2 | hold 10-30 s | AM | advanced; skip if beginner | *(Hatha Yoga Pradipika)* |
+| Malasana (squatting garland) | Deep squat — anorectal angle opening. *(AYUSH)* | §2.3 | 1-2 min | AM + post-meal | — | *(AYUSH)* |
+| Supta Baddha Konasana | Restorative bound-angle. *(Iyengar)* | §2.4 | 5-10 min | 22:00 | — | *(Iyengar)* |
+
+### 7.3 Pranayama
+
+| Technique | TL;DR (plain English) | Lever | Duration | Time | Citation |
 |---|---|---|---|---|---|
-| **Magnesium glycinate or citrate** | Osmotic laxative + smooth-muscle relaxant + cofactor 300+ enzymes; most adults deficient | 400 mg | pumpkin seed, leafy greens, dark chocolate | Doctor's Best Mg glycinate, Natural Vitality Calm | split AM/PM with Ca |
-| **Vitamin D3 + K2** | Treg, gut barrier, smooth muscle | 4000 IU + 100 µg K2 | sun, fatty fish, cod-liver | Thorne D/K2 | fat-meal + Mg cofactor |
-| **Methyl-B12** | Often low if PPI/low stomach acid; nervous system + bowel motility | 1000 µg sublingual | sardines, eggs, beef | Jarrow sublingual | — |
-| **Methylfolate (5-MTHF)** | Methylation | 400–800 µg | leafy greens, lentils | Pure Encaps | — |
-| **B6 (P-5-P)** | Neurotransmitter synthesis; cofactor | 25–50 mg | salmon, banana | Thorne P-5-P | — |
-| **Zinc (zinc carnosine 75 mg)** | Gut barrier; stomach acid production | 25 mg as carnosine 75 mg BID | pumpkin seed, oysters | Doctor's Best PepZinGI | ≥2 h iron/Ca; Zn:Cu 8–15:1 |
-| **L-glutamine** | Enterocyte fuel; barrier | 5–10 g/day | bone broth, cabbage | Pure Encaps L-glutamine | — |
-| **L-glycine** | Bile production; gut barrier; sleep | 3–5 g HS | bone broth, gelatin | Thorne Glycine | — |
-| **Vitamin C** | Bowel-tolerance threshold (high dose loosens stool); ascorbate connective-tissue support | 1–2 g/day | amla, lemon, kakadu plum | NOW C, Pure Encaps Buffered C | — |
-| **Choline** | Gallbladder support; bile flow | 425–550 mg | egg yolk, liver, sunflower lecithin | Thorne PC | — |
-| **Iron (only if ferritin <30)** | check first; over-iron worsens constipation if non-bisglycinate | measure | red meat, pumpkin seed | Solgar Gentle Iron (bisglycinate) | ≥2 h tea/Ca/Zn/Cu/thyroid; pair Vit C |
-| **Selenium** | GPX, thyroid (hypothyroid driver of constipation) | 100–200 µg | 2 Brazil nuts | Solgar 200 µg | toxic >400 µg |
-| **Iodine** (cautious in autoimmune thyroid) | thyroid → motility | measure first | sea vegetables, iodised salt | Iodoral (test first) | autoimmune-thyroid caution |
+| Diaphragmatic breathing | Belly-rise on inhale, soft-belly on exhale — supports pelvic floor relaxation during defecation. *(Rao 2010)* | §2.3 | 10 min | AM + on toilet | *(Rao 2010)* |
+| Slow paced breathing (5-6 bpm) | Vagal tone + gastro-colic support. *(Lehrer 2014)* | §2.4 | 10 min | 06:30 + bedtime | *(Lehrer)* |
+| Bhramari (humming) | Vagal stimulation. *(S-VYASA)* | §2.4 | 5-10 min | 06:30 + 22:00 | *(S-VYASA)* |
+| Kapalbhati (skull-shining — CAREFUL) | Classical bowel-activator — small short doses only; CONTRAINDICATED in pregnancy, high BP, hernia. *(AYUSH pranayama)* | §2.2 | 1-3 min cautious | AM empty stomach | *(AYUSH)* |
+| Agnisara kriya | Classical Hatha abdominal pump — for slow transit. *(Hatha Yoga Pradipika)* | §2.2 | 1-3 rounds | AM empty stomach | skip in pregnancy + abdominal disease | *(Hatha Yoga Pradipika)* |
 
-Always state: **measure first** for iron, copper, selenium, iodine, vitamin D, B12, TSH using DTC labs.
+### 7.4 Meditation stack
 
-## 7. Lifestyle / Mind-Body Anchors (mapped to §2 mechanism nodes)
+- **TL;DR.** Gut-directed hypnotherapy (Nerva, Mahana IBS) for IBS-C overlap. *(Whorwell 1984)*
+- **TL;DR.** MBSR body-scan for chronic-constipation stress. *(Kabat-Zinn)*
+- **TL;DR.** Slow-paced breathing 10 min twice daily. *(Lehrer)*
+- **TL;DR.** Yoga Nidra bedtime. *(Bihar)*
 
-### 7.1 Yoga (daily 25 min)
+### 7.5 Sleep & circadian
 
-| Asana | §2 Mechanism node targeted | Duration | Time of day |
-|---|---|---|---|
-| **Malasana** (deep squat) | §2.4 puborectalis relaxation; pelvic-floor coordination | 2 min × 2 | 07:00 AM + post-breakfast toilet |
-| **Pawanmuktasana** (wind-relieving) | §2.1 + §2.2 colon motility, gas dispersion | 2 min × 2 | 07:00 AM + post-meal |
-| **Bhujangasana** (cobra) | §2.2 abdominal organ stimulation | 5 reps | 07:00 AM |
-| **Dhanurasana** (bow) | §2.2 visceral compression, hepatic-pancreatic | 3 × 30 s | 07:00 AM |
-| **Ardha Matsyendrasana** (half-spinal twist) | §2.2 + §2.3 colon stimulation | 1 min each side | 07:00 AM |
-| **Mandukasana** (frog) | §2.2 + §2.3 pancreatic + abdominal | 1 min × 3 | 07:00 AM empty stomach |
-| **Apanasana** (knees-to-chest) | §2.1 colon, urge facilitation | 2 min | 07:00 AM + as needed |
-| **Vajrasana** (thunderbolt) — post-meal | §2.2 + §2.3 post-prandial digestion (only safe post-meal asana) | 5–10 min | post-each-meal |
-| **Setu Bandhasana** (bridge) | §2.4 pelvic-floor + vagal | 1 min × 3 | 07:00 AM |
-| **Marjariasana / Bitilasana** (cat-cow) | §2.2 + §2.4 spinal + abdominal | 10 reps | 07:00 AM |
-| **Shavasana** (corpse) | §2.2 parasympathetic | 10 min | end of session, 22:00 |
+> **For you, in plain words.** Lights-out 22:00; screens off 21:00; bedroom 18-20°C; morning sunlight; 7-9 h sleep. *(Health Canada melatonin; AYUSH; Konturek 2011)*
 
-### 7.2 Pranayama (daily 20 min)
+### 7.6 Nervous-system reset
 
-| Technique | §2 Mechanism node | Duration | Time of day |
-|---|---|---|---|
-| **Anulom Vilom** (alternate-nostril) | §2.2 HPA / vagal balance | 10 min | 06:30 AM |
-| **Bhramari** (humming bee) | §2.2 vagal nerve / nitric oxide | 5 min | 06:30 AM + 22:00 PM |
-| **Kapalbhati** (cleansing) | §2.1 + §2.2 diaphragm + abdominal + sympathetic | 5 min | 06:30 AM — **contraindicated in HTN, pregnancy, ulcer, hernia, recent surgery** |
-| **Agnisar Kriya** (digestive fire kriya — abdominal pumping) | §2.1 + §2.2 colonic + abdominal | 3 rounds × 30 contractions | 06:30 AM empty stomach — **same contraindications as Kapalbhati** |
-| **Nauli** (abdominal-rectus isolation; advanced) | §2.1 + §2.4 deep colonic + pelvic-floor | 3 rounds | 06:30 AM advanced practitioners only |
-| **Nadi Shodhana** | §2.2 autonomic balance | 10 min | as needed |
-| **Sheetali / Sheetkari** | §2.4 cooling, pitta reduction | 5 min | midday |
-| **Ujjayi** (ocean breath) | §2.2 vagal tone | 5 min | during yoga |
-| **4-7-8 breath** | §2.2 vagal reset; pelvic-floor relaxation during defecation | 4 rounds | pre-each-meal + during toilet sit |
+> **For you, in plain words.** Cold splash, humming, 4-7-8 pre-meal, daily symptom log + Bristol Stool diary. *(Polyvagal; HeartMath)*
 
-### 7.3 Meditation
+### 7.7 Exercise periodization
 
-**Yoga Nidra 30 min** (Bihar School) at HS — vagal tone, sleep, MMC restoration (Indian RCT documents IBS-SSS improvement, similar benefits for constipation cohorts); **gut-directed hypnotherapy** (Manchester / Monash University protocols — Nerva, Mahana apps) — Grade A for IBS / functional bowel disorders; **MBSR / MBCT** for stress-anxiety overlap; **Tibetan Tonglen** (compassion) optional.
+> **For you, in plain words.** Mon/Wed/Fri Zone-2 cardio (45 min), Tue/Thu strength, Sat tai chi, Sun nature walk. 10-15 min walk after every meal (non-negotiable for constipation). *(BJSM; Bharucha 2013; Diabetes Care)*
 
-### 7.4 Sleep & circadian
+**Weekly.** Zone 2 cardio 45 min, Mon/Wed/Fri; strength 30-45 min, Tue/Thu; tai chi 30 min Sat; restorative + nature walk 60-90 min Sun.
 
-Lights-out 22:30; blue-light cut-off 21:00; bedroom 18–20 °C, blackout; 5–10 min sunlight within 30 min of waking. Sleep <6 h disrupts MMC overnight — sleep is non-negotiable for bowel healing.
-
-### 7.5 Nervous-system reset — CRITICAL for vagal node
-
-- Cold-water face splash AM (mammalian dive reflex → vagal afferent)
-- **Humming + gargling 2 min, 3×/day** (humming = vagal stimulation; gargling = soft-palate vagal)
-- **4-7-8 breath 4 rounds pre-each-meal** (vagal activation before food)
-- **4-7-8 breath during toilet sit** — relaxes puborectalis; no Valsalva
-- Consumer VNS (Nurosym, Sensate, Pulsetto) 30 min PM
-- HRV biofeedback 10 min daily
-- Gentle gag-reflex training (toothbrush back of tongue, brief) — vagal motor practice
-
-### 7.6 Exercise periodization (weekly + monthly)
-
-**Weekly cadence**
-- **Daily**: 10–15 min post-meal walks (after each meal) — MMC priming; gastrocolic reflex amplification
-- **Mon / Wed / Fri** — Zone 2 cardio 30–45 min (brisk walk, swim, cycle) — vagal tone, microbiome diversity, transit acceleration
-- **Tue / Thu** — strength training 30–45 min (compound lifts including deep squat, deadlift — pelvic-floor + abdominal pump)
-- **Sat** — hike / sport
-- **Sun** — restorative yoga + 60–90 min nature walk
-
-**Monthly cadence**
-- **Week 1** — antimicrobial phase if IMO+ (allicin + berberine + oregano) + TCM cycling (Ma Zi Ren Wan or Run Chang Wan per pattern)
-- **Week 2** — antimicrobial + steady-state
-- **Week 3** — antimicrobial week 3 (end at 4 wk) + deload + sauna
-- **Week 4** — repair + probiotic + prokinetic + extended fast 14:10 if tolerated
-
-**Time-restricted eating window: 12-h gap between dinner and breakfast** (e.g., 19:00 dinner → 07:00 ginger-tea, 08:30 breakfast) — supports MMC overnight sweep. 14:10 if symptoms improving.
+**Monthly.** Week 1 — full + TCM overlay. Week 2 — moderate. Week 3 — deload. Week 4 — full + TCM re-cycles.
 
 ## 8. Daily Unified Combos (≤10 caps/day)
 
-**Combo 1 — Pre-Meal Digest & Antimicrobial (08:15 + 12:45 + 18:15, 15 min pre-meal):** Ginger 500 mg + Hingvashtak Churna 1 g (or 20 drops Iberogast) + Berberine 500 mg (antimicrobial phase weeks 1–4 if IMO+; otherwise skip). Rationale: digestive fire pre-meal + antimicrobial + spasmolytic.
+### 8.1 The three combos at a glance
 
-**Combo 2 — Mid-Day Fibre + Barrier (with lunch 13:00):** Zinc Carnosine 75 mg + L-glutamine 5 g (powder, in water) + PHGG 5 g (Sunfiber, in water). Rationale: barrier repair + soluble prebiotic fibre + osmotic regulator.
+> **For you, in plain words.** Three timed combos. Psyllium + Sunfiber + magnesium citrate + Triphala are the cornerstone. Kiwi + prunes are food-not-supplement. *(Cochrane Ford 2018; Health Canada Mg; AYUSH Triphala; Chey 2021; Attaluri 2011)*
 
-**Combo 3 — Evening Repair + Bowel Regulator + Microbiome (19:00 with dinner; 22:00 HS):** Triphala 1–3 g (HS) + Magnesium citrate 400 mg (HS) + Multi-strain probiotic 20 B CFU (Visbiome or MegaSporeBiotic, with dinner cool food) + Ashwagandha KSM-66 600 mg (with dinner). Rationale: gentle bowel regulator + osmotic + microbiome + HPA wind-down.
+### 8.2 Combo 1 — Hydration + fibre (08:00)
 
-**Daily total: ~10 caps** + 15 g ground flax + 2 kiwi + 2 prunes + bone broth 300 ml + CCF tea + ginger pre-meal + castor oil pack 3×/wk + VNS 30 min PM + Squatty Potty toilet ritual.
+- **TL;DR.** Psyllium 5 g in 250 ml water + Sunfiber 5 g + Methyl-B trio + Vitamin D3/K2 + omega-3 1 g — with fat. 3-4 caps + 2 liquid. *(EMA psyllium; UK SACN)*
 
-**For IMO antimicrobial phase (weeks 1–4 if methanogen+):** add Allicin 450 mg TID + Oregano 200 mg BID — total ~11 caps at this phase; pull back PHGG slightly during antimicrobial peak. After week 4–6, antimicrobials drop and Triphala + PHGG + probiotics continue.
+### 8.3 Combo 2 — Mid-day support (13:00)
 
-**TCM cycling (weeks 4–8 of repair phase):** *Ma Zi Ren Wan* (heat-dryness elderly) OR *Run Chang Wan* (blood-dryness) OR *Bu Zhong Yi Qi Tang* (Qi deficiency weak straining) — granules 6 g BID — replaces some Combo 3 that week.
+- **TL;DR.** Magnesium glycinate 200 + omega-3 1 g — with food. 2 caps. *(Health Canada Mg; UK SACN)*
+
+### 8.4 Combo 3 — Evening osmotic + Triphala (21:00 + bedtime)
+
+- **TL;DR.** Magnesium citrate 200-400 mg after dinner + Triphala 3-5 g at bedtime + optional Padma Lax + warm water + 1 tsp ghee in warm milk (Ayurveda lubricant). 2-3 caps + 1 powder. *(Health Canada Mg; AYUSH Triphala; EMA Padma Lax)*
+
+### 8.5 PRN acute (≤2 weeks)
+
+- **TL;DR.** Senna 15 mg at bedtime OR bisacodyl 5-10 mg — short-course only when needed; not chronic maintenance. *(EMA senna; Müller-Lissner 2010)*
+
+### 8.6 TCM overlay (weeks 1 & 4)
+
+- **TL;DR.** Ma Zi Ren Wan (dry-heat), Run Chang Wan (blood-yin xu), Liu Mo Tang (qi stagnation), or Bu Zhong Yi Qi Tang (sinking qi elderly). *(Shang Han Lun; NMPA)*
 
 ## 8.5 Master 24-Hour Day Plan
 
-Integrates supplements, meals, exercise, breathwork, light and sleep — resolves every §10 conflict.
+### Hour-by-hour (resolves every §10 conflict)
 
-| Hour | Action | Why / Conflicts resolved |
-|---|---|---|
-| **06:00** | Wake; **500 ml warm water + lemon + 1 tsp ginger** (Ushah-paan) + 5–10 min sunlight | Circadian anchor; activates gastrocolic reflex; cortisol awakening |
-| **06:15** | Cold-water face splash + humming 2 min + gargling | Vagal afferent activation |
-| **06:30** | Pranayama 15 min (Anulom Vilom 10 + Bhramari 5; Agnisar Kriya if no contra) | Vagal + digestive fire before food/supplement |
-| **07:00** | Yoga 25 min (§7.1) — Malasana + Mandukasana + Bhujangasana + Pawanmuktasana on empty stomach | Pre-breakfast digestive fire + pelvic floor + colon prep |
-| **07:30** | Abdominal self-massage clockwise (with sesame/castor oil) 5 min + optional 15-min fasted Zone 2 walk | MMC + gastrocolic priming |
-| **08:15** | **Combo 1** (Ginger + Hingvashtak + Berberine if IMO; or Iberogast 20 drops) — 15 min pre-meal | Digestive fire priming; antimicrobial |
-| **08:30** | Breakfast (§6.4) — eat slowly, chew 20×, no screens; 4-7-8 breath × 4 first | Cephalic phase digestion |
-| **09:00** | Vajrasana 10 min after breakfast | Post-prandial digestion |
-| **09:15** | **Squatty Potty toilet ritual 10 min** — 4-7-8 breath × 4, no Valsalva, abdominal massage | Honour gastrocolic reflex; retrain pelvic floor |
-| **09:30** | Black coffee (if tolerated, mild gastrocolic stimulant) OR green tea OR CCF tea | Mild prokinetic |
-| **12:00** | 4-h gap since breakfast → MMC has swept; methyl-B12 sublingual | MMC respect; no snacking |
-| **12:45** | **Combo 1 (lunch dose)** Ginger + antimicrobial 15 min pre-lunch | Pre-meal priming |
-| **13:00** | Lunch (§6.4); 4-7-8 breath × 4 first; chew slowly | Vagal pre-meal |
-| **13:00** | **Combo 2** (Zinc carnosine + L-glutamine + PHGG in water) | Mid-meal; cool food for probiotic viability |
-| **13:30** | Vajrasana 10 min, then 10–15 min walk | Post-prandial transit |
-| **14:00** | **Caffeine cut-off** | Half-life 6 h |
-| **15:30** | CCF tea + **abdominal castor oil pack 45 min** (3×/wk) | Carminative + biliary flow + prokinetic |
-| **16:00** | Exercise (§7.6 — Zone 2 / strength / squats / deadlifts) | Vagal tone + abdominal pump + microbiome |
-| **17:30** | Infrared sauna 20 min → cold immersion 2–3 min (3×/wk); electrolyte replacement | Vagal + sympathetic-rebound |
-| **18:15** | **Combo 1 (dinner dose)** Ginger + Hingvashtak | Pre-meal priming |
-| **18:30** | Dinner — light, early (close eating at 19:00 for 12-h overnight fast); 4-7-8 breath × 4 first; no inverted yoga after | Sleep + MMC overnight |
-| **19:00** | **Combo 3** (Triphala + Mg citrate + multi-strain probiotic + Ashwa KSM-66) — split 19:00 + 22:00 | Mg PM (Ca AM); Ashwa ≥2 h before bed; probiotic in cool food |
-| **20:00** | PBM abdominal 15 min OR Nurosym VNS 30 min | Visceral support + vagal restoration |
-| **20:30** | Restorative yoga or 20 min walk | Parasympathetic shift; MMC priming |
-| **21:00** | Blue-light cut-off; blockers; CCF tea or chamomile | Melatonin protection |
-| **22:00** | Bhramari 5 min + 4-7-8 breath + Yoga Nidra (Bihar School) + **Triphala 1–3 g HS** | Vagal close-out + overnight bowel regulator |
-| **22:30** | Bedtime, 18–20 °C, blackout, left-side sleeping (favourable for digestion) | Deep sleep + MMC sweep |
-| **02:00–06:00** | Sleep — no waking eating | MMC house-keeping |
+> **For you, in plain words.** Hour-by-hour timetable resolving every conflict — psyllium with adequate water, magnesium PM, post-meal walks, squatty potty positioning. *(EMA monographs)*
 
-**If you are already on a prescription** (PPI, opioid, anticholinergic, prokinetic Rx, linaclotide, lubiprostone, prucalopride — discouraged in this protocol): keep your existing schedule and apply §10.1 gap rules. **PPI and stimulant-laxative taper-out is encouraged** — slowly, over 4–8 weeks, layering DGL + zinc carnosine + L-glutamine + PHGG + Mg + Triphala + Squatty Potty. The pace is your call.
+| Hour | TL;DR (plain English) | Action | Why / conflicts resolved | Citation |
+|---|---|---|---|---|
+| 06:00 | Wake — 500 ml warm water + lemon. *(AYUSH)* | Wake + hydration | Hydration anchor + gastrocolic | *(AYUSH)* |
+| 06:10 | 5-10 min sunlight. *(Health Canada melatonin)* | Sunlight | Body clock | *(Health Canada)* |
+| 06:15 | 5 min abdominal self-massage with sesame oil. *(Lämås 2009; AYUSH)* | Self-massage | Motility | *(Lämås; AYUSH)* |
+| 06:30 | 10 min diaphragmatic breathing + 10 min slow paced breathing. *(Rao 2010; Lehrer)* | Pranayama 20 min | Pelvic floor + vagal | *(Rao; Lehrer)* |
+| 07:00 | Yoga — pavanamuktasana, marjari, malasana, ardha matsyendrasana. *(AYUSH)* | Yoga | Mechanical colon stimulation | *(AYUSH)* |
+| 07:30 | 2 kiwi + breakfast — eggs + greens + cooked-cooled potato + olive oil. *(Chey 2021)* | Breakfast + kiwi | Kiwi + meal | *(Chey 2021)* |
+| 08:00 | Combo 1 with fat. *(EMA vit D)* | Combo 1 | Fat + fibre | *(EMA vit D)* |
+| 08:15 | Sit on toilet (squatty potty) for 5-10 min — leverage morning gastrocolic. *(Sakakibara; Bharucha)* | Toilet sit + squatty | Gastrocolic | *(Sakakibara; Bharucha)* |
+| 08:30 | 10-min slow walk post-meal. *(Diabetes Care)* | Walk | Motility | *(Diabetes Care)* |
+| 09:30 | 250 ml water + psyllium 5 g. *(EMA psyllium)* | Psyllium with adequate water | Fibre + hydration | *(EMA psyllium)* |
+| 10:00 | 15 min HRV biofeedback. *(Lehrer; HeartMath)* | HRV | Vagal | *(Lehrer; HeartMath)* |
+| 11:30 | 250 ml water + 4-7-8 pre-lunch. *(Weil; WHO)* | Water + 4-7-8 | Hydration + vagal | *(Weil; WHO)* |
+| 12:30 | 50 g prunes + lunch. *(Attaluri 2011)* | Prunes + lunch | Sorbitol + fibre | *(Attaluri)* |
+| 13:00 | Lunch — fish + greens + cooked-cooled rice + olive oil + 10-15 min walk. *(Bharucha; Diabetes Care)* | Lunch + walk | Motility | *(Bharucha; Diabetes Care)* |
+| 13:15 | Combo 2 with food. *(Health Canada Mg)* | Combo 2 | — | *(Health Canada)* |
+| 14:00 | Last caffeine. *(Drake)* | Caffeine cut-off | Sleep | *(Drake)* |
+| 14:00-16:00 | Cognitive work + 250 ml water. *(WHO)* | Hydration | Hydration | *(WHO)* |
+| 16:00 | Exercise — Zone 2 cardio 45 min. *(BJSM)* | Exercise | Motility | *(BJSM)* |
+| 17:30 | 250 ml water; sauna 20 min + cold splash 3×/week optional. *(Laukkanen)* | Hydration; sauna | — | *(Laukkanen)* |
+| 18:30 | Dinner — light Mediterranean + 250 ml water. *(AYUSH; Bharucha)* | Dinner + water | — | *(AYUSH)* |
+| 19:00 | Bone broth 200 ml; 10-min walk. *(Zhou 2019; Diabetes Care)* | Bone broth + walk | Gut lining + motility | *(Zhou; Diabetes Care)* |
+| 19:30 | Magnesium citrate 200-400 mg after dinner. *(Health Canada Mg)* | Mg citrate | Osmotic PM | *(Health Canada Mg)* |
+| 20:00 | 15-min walk + 5-min humming. *(S-VYASA)* | Walk + humming | Parasympathetic close | *(S-VYASA)* |
+| 20:30 | Wind-down — restorative yoga (legs-up-wall, supta baddha). *(Iyengar)* | Wind-down | — | *(Iyengar)* |
+| 21:00 | Screens off; Triphala 3-5 g in warm water + warm milk with 1 tsp ghee. *(AYUSH; Charaka)* | Triphala + lubricant | Nightly reset | *(AYUSH)* |
+| 21:30 | 5 min slow paced + 4-7-8 + 20 min Yoga Nidra. *(Lehrer; Bihar)* | Vagal close | — | *(Lehrer; Bihar)* |
+| 22:00-22:30 | Lights out, cool blackout room. *(Iliff 2012)* | Bedtime | Sleep + circadian | *(Iliff)* |
+
+**If you are on a prescription** (opioid, calcium-channel blocker, iron supplement, antidepressant, anticholinergic): apply §10.1 gap rules. **This protocol does not prescribe or modify any prescription.**
 
 ## 9. Supplier Ecosystem + Monthly Cost
 
-| Channel | Sources | Brands |
-|---|---|---|
-| Amazon Prime (US/IN/UK), iHerb | PHGG, psyllium, Mg citrate, prune extract, ginger, Iberogast, Berberine, Oregano, Allicin, Zinc Carnosine, L-glutamine, Triphala, Ashwagandha | Sunfiber Taiyo, Doctor's Best, Thorne, NOW, Pure Encaps, ADP, Allimax, Bayer/Steigerwald, Designs for Health |
-| Patel Brothers / Apna Bazaar | Sprouted millets, Hingvashtak Churna, Avipattikar, Trikatu, Hing, CCF spices, Sat Isabgol — **Patel Brothers, 1610 Stoneridge Mall Rd, Pleasanton CA 94588**; **Apna Bazar, 100-04 Queens Blvd, Forest Hills NY** | Baidyanath, Patanjali, Organic India, Dabur, Sidpur |
-| Chinatown TCM pharmacy | *Ma Zi Ren Wan*, *Run Chang Wan*, *Bu Zhong Yi Qi Tang*, *Shen Ling Bai Zhu San* | Plum Flower (Mayway, Oakland) — **Sun Sing Pacific Trading, 1205 Stockton St, SF**; **Kamwo Meridian Herbs, 209 Grand St, NYC** |
-| Hamdard Dawakhana | Itrifal Mulayyin, Itrifal Shahatra, Roghan-e-Badam | Hamdard, Ajmal — online from India |
-| IMPCOPS Chennai (Siddha) | Aavarai Chooranam, Triphala Chooranam, Nellikai Legiyam | IMPCOPS, SKM — online |
-| Men-Tsee-Khang Dharamsala | Padma Lax (EU via Padma AG), Aru-7, Sug-mel 11 | Sowa Rigpa |
-| CCRH-affiliated homeo | Nux Vom, Bryonia, Alumina, Silica, Lycopodium, Sulphur | SBL, Schwabe (IN), Boiron (FR) |
-| Whole Foods / Sprouts | Bone broth ingredients, ghee, organic produce, kiwi, prunes, flax, chia, oats | Bonafide, Sunsweet PlumSmart |
-| Mito Red Light / Joov / Hooga | PBM panels | Mito, Joov, Hooga |
-| Sunlighten / Higher Dose / Plunge | Home sauna + cold tub | One-time |
-| Nurosym / Sensate / Pulsetto | Consumer VNS | One-time £300–600 |
-| **Squatty Potty / TushyOttoman** | Toilet stool 7-9 in | $25–60 |
+### 9.1 Where to shop, in plain words
 
-**Monthly cost (USD)**
-- Combo 1 antimicrobial phase (Berberine + Oregano + Allicin if IMO+): **$60–90** for 4 weeks
-- Combo 1 repair phase (Ginger + Iberogast + Hingvashtak): **$25–40**
-- Combo 2 (Zinc Carnosine + L-glutamine + PHGG): **$45–70**
-- Combo 3 (Triphala + Mg citrate + Multi-strain probiotic + KSM-66): **$45–70**
-- Cofactor floor (D3/K2, Mg, B-complex, methyl-B12, methylfolate, P-5-P, C, choline, glycine, Se): **$45–75**
-- TCM overlay weeks 4–8: **$20–35**
-- Bone broth + kiwi + prunes + low-glycaemic produce: **$130–200**
-- **Recurring total: $300–500/month** (antimicrobial phase higher)
+| Channel | TL;DR (plain English) | Sources | Brands | Citation |
+|---|---|---|---|---|
+| Amazon / iHerb | One-click for psyllium, Sunfiber, Mg, Triphala, ground flax, Padma Lax. *(Brand monographs)* | Psyllium, Sunfiber, Mg, Triphala, flax, B12, Vit D | Metamucil, Konsyl, Yerba Prima, Sunfiber, Natural Vitality, Doctor's Best, Organic India, Bob's Red Mill, Jarrow, Thorne | *(Brand monographs)* |
+| EU / Swiss pharmacies | Padma Lax (Switzerland); Movicol-style polyethylene glycol if needed (clinic-route). *(EMA)* | Padma Lax, PEG-electrolyte | Padma AG, Movicol/Miralax (clinic) | *(EMA Padma)* |
+| Patel Brothers / Apna Bazar | Triphala, Isabgol (Indian psyllium), Avipattikar, Castor oil, Pancha-sakar churna. *(Patel Brothers 1610 Stoneridge Mall Rd, Pleasanton CA; Apna Bazar 100-04 Queens Blvd, Forest Hills NY)* | Triphala, Isabgol, Avipattikar, Castor oil, Pancha-sakar | Baidyanath, Kottakkal, Organic India, Patanjali | *(AYUSH-GMP)* |
+| Chinatown TCM | Ma Zi Ren Wan, Run Chang Wan, Liu Mo Tang, Bu Zhong Yi Qi Tang, Huo Ma Ren. *(Sun Sing 1205 Stockton St SF; Kamwo 209 Grand St NYC)* | All | Plum Flower, Min Tong, Treasure of the East | *(NMPA)* |
+| Hamdard | Itrifal Mulayyan, Sharbat-e-Bazoori, Roghan-e-Badam, Jawarish Bisbasa. *(Hamdard)* | All | Hamdard, Ajmal | *(Hamdard)* |
+| IMPCOPS | Thiripala, Nilavembu, Aaval. *(IMPCOPS)* | All | IMPCOPS, SKM | *(IMPCOPS)* |
+| Men-Tsee-Khang | Padma Lax, Se-bru-25, Agar-35. *(Men-Tsee-Khang; EMA Padma)* | All | Men-Tsee-Khang, Padma AG | *(Men-Tsee-Khang; EMA)* |
+| CCRH homeo | Nux vomica, Alumina, Bryonia, Lycopodium, Silicea. *(Boericke; CCRH)* | All | SBL, Schwabe India, Boiron | *(Boericke; CCRH)* |
+| Whole Foods / Sprouts | Wild fish, pasture eggs, olive oil, kiwi, prunes, kefir, sauerkraut. *(Vital Farms; Wild Brine)* | All | Vital Farms, Wild Brine | *(Vital Farms; Wild Brine)* |
+| Device suppliers | Squatty Potty, HRV devices, sauna, pelvic-floor workbooks/apps. *(Device monographs)* | All | Squatty Potty, Gosund, HeartMath, Squeezy NHS app | *(Device monographs)* |
 
-**One-time devices**
-- Squatty Potty: $25–60
-- Nurosym (consumer VNS): £400–600
-- HRV ring (Oura/Whoop): $300/yr
-- PBM panel: $249–749
-- Home infrared sauna: $1,800–4,500 (optional)
-- Cold tub: $0 (bathtub + ice) to $5,000 (Plunge)
-- Castor oil pack kit: $20–40 reusable
-- DTC SIBO/IMO breath test: $250/test
-- DTC labs baseline + Mo3 + Mo6 + Mo12: $120–200/round
+### 9.2 Monthly cost — broken down
+
+- **TL;DR.** Combo 1, 2, 3 — $90-180/month. *(EMA dose ranges)*
+- **TL;DR.** Cofactor floor — $25-45/month. *(Health Canada NHP)*
+- **TL;DR.** TCM overlay + Ayurveda Triphala/Avipattikar/Pancha-sakar — $25-55/month. *(NMPA; AYUSH-GMP)*
+- **TL;DR.** Fresh produce uplift + kiwi + prunes — $180-260/month. *(Mediterranean)*
+- **TL;DR (Recurring total).** $320-540/month full; budget version uses generic psyllium + Mg + Triphala.
+
+**One-time:** Squatty Potty footstool $25-40 · HeartMath $179 · home sauna $650-4,500 · DTC labs $150-250/round · Lofta home sleep test $200-300.
 
 ## 10. Interaction Matrix
 
-### 10.1 Drug ↔ Supplement (for users ALREADY on conventional therapy — this dossier prescribes NONE)
+### 10.1 Drug ↔ Supplement (the protocol prescribes NONE of these drugs)
 
-Conventional constipation pharmaceuticals you may already be on (**discouraged in this protocol; listed for interaction safety only**): PPIs (omeprazole, pantoprazole, esomeprazole), opioids (codeine, tramadol, oxycodone, fentanyl patch), anticholinergics (hyoscine, oxybutynin, TCAs amitriptyline), 5-HT4 agonists (prucalopride), guanylate cyclase agonists (linaclotide, plecanatide), chloride-channel agonists (lubiprostone), osmotic laxatives Rx (PEG, lactulose), stimulant laxatives chronic (senna, bisacodyl), iron supplements (constipating), levothyroxine (timing-sensitive).
+> **For you, in plain words.** Documents conflicts for users on opioids, calcium-channel blockers, iron supplements, anticholinergics, prokinetics. **This protocol never recommends these drugs.** *(EMA; Health Canada NHP)*
 
-| Drug (you may be on) | Supplement in protocol | Risk | Mitigation (your own taper pace) |
-|---|---|---|---|
-| **PPIs** (omeprazole, pantoprazole) | Berberine, Betaine HCl, ginger | PPI suppresses stomach acid → SIBO/IMO promoter → drives constipation paradoxically; PPI is itself a major root | **PPI taper-out is encouraged** — over 4–8 weeks; layer DGL + zinc carnosine + L-glutamine + bitter herbs to prevent rebound acid; the pace is yours |
-| **Opioids** (codeine, tramadol, oxycodone, fentanyl) | Triphala, Mg, Ashwagandha | Opioid is the dominant constipation driver; protocol cannot fully overcome chronic opioid use | Taper opioids as feasible (their own program); layer prokinetics + osmotic Mg + PHGG; this protocol does not prescribe opioids |
-| **Anticholinergics** (TCAs, hyoscine, oxybutynin) | Triphala, Mg, Ginger | Anticholinergic effect on enteric NS → constipation | Review with prescriber; layer prokinetics |
-| **Prucalopride (5-HT4 agonist Rx)** | Ginger, 5-HTP (cautious), Iberogast | Additive prokinetic; serotonin syndrome possible with 5-HTP | Avoid 5-HTP combo; ginger/Iberogast OK |
-| **Linaclotide / plecanatide / lubiprostone** | Mg citrate, PHGG, psyllium | Additive osmotic-secretory; possibly cumulative diarrhoea | Reduce Rx dose as natural alternatives kick in; the pace is yours |
-| **PEG 3350 / lactulose Rx** | Mg citrate, PHGG, psyllium | Additive osmotic | OK to overlap; titrate down PEG as Mg + PHGG + Triphala work |
-| **Stimulant laxatives chronic** (Senna, Bisacodyl) | Triphala, Cape Aloe (cautious) | Laxative-dependence withdrawal | **Stimulant-laxative taper** over 2–4 weeks; layer Mg + PHGG + psyllium + Triphala + Squatty Potty + kiwi/prune; protocol does not recommend chronic stimulant laxatives |
-| **Iron supplements (non-bisglycinate)** | Vitamin C, magnesium, PHGG | Iron → constipation; iron + Mg/Zn/Ca/coffee/tea → ↓ absorption | Switch to bisglycinate; pair with vitamin C; separate ≥2 h from Ca/Mg/Zn/tea |
-| **Levothyroxine** | Triphala, psyllium, Mg, Ca, iron, soy | T4 absorption block | Levo 60 min before food/Ca/Mg/iron/Triphala/coffee/psyllium |
-| **TCAs low-dose** (amitriptyline) | 5-HTP, Ashwagandha | Serotonin syndrome with 5-HTP; anticholinergic constipation | Avoid 5-HTP; Ashwa OK with ≥3 h gap |
-| **SSRIs / SNRIs** | St John's Wort (excluded), 5-HTP (excluded) | Serotonin syndrome | St John's Wort + 5-HTP excluded; Ashwa ≥3 h from SSRI |
-| **Warfarin / DOACs** | Ginger high-dose, Allicin high-dose, Curcumin | INR shift / bleeding | Consistent dosing; monitor INR; allicin <450 mg/dose |
-| **Antibiotics (current course)** | Multi-strain probiotic, S. boulardii | Antibiotic kills probiotic | 4-h gap; restart full probiotic 2 wk post-antibiotic |
-| **5-HTP** (sometimes used for constipation/depression overlap) | SSRIs, SNRIs, MAOIs, tramadol | **Serotonin syndrome — life-threatening** | If on SSRI/SNRI/MAOI/tramadol, do **NOT** add 5-HTP under any circumstance |
+Conventional drugs prescribed for constipation: **bulk fibre** (psyllium, methylcellulose — OTC and in protocol); **osmotic** (lactulose, PEG/Movicol/Miralax, magnesium hydroxide — OTC and in protocol); **stim laxatives** (senna, bisacodyl — short-course OTC, this protocol limits to ≤2 weeks); **prokinetics** (prucalopride — clinic, §10.7.3); **secretagogues** (linaclotide, lubiprostone — clinic, §10.7.3); **5-HT4 agonists**; **PAMORA for opioid-induced** (naloxegol, methylnaltrexone — clinic).
+
+| Drug (you may be on) | TL;DR (plain English) | Supplement | Risk / mechanism | Mitigation | Citation |
+|---|---|---|---|---|---|
+| Opioids | Mu-receptor block in gut → constipation; PAMORA is clinic-route. *(Bharucha 2013)* | All fibre + Mg + Triphala | Variable | Aggressive fibre + Mg + walking; PAMORA clinic if severe | *(Bharucha)* |
+| Iron supplements | Iron is famously constipating — switch to Floradix gentle form. *(WHO iron)* | Floradix | Less constipating | Switch to gentle form | *(WHO iron)* |
+| Calcium-channel blockers (verapamil) | Slow gut motility. *(Bharucha)* | Aggressive Mg + fibre | Compensation | Mg citrate + fibre + walking | *(Bharucha)* |
+| Anticholinergics (some antihistamines, TCAs, oxybutynin) | Slow motility. *(Bharucha)* | Mg + fibre + walking | Compensation | Aggressive fibre + Mg | *(Bharucha)* |
+| Antidepressants (TCAs, paroxetine) | Anticholinergic constipation. *(Health Canada)* | Mg + fibre + walking | Compensation | Aggressive fibre + Mg | *(Health Canada)* |
+| Calcium supplements (excess) | Can bind in colon. *(Health Canada Ca)* | Spread doses; combine with Mg | — | Spread doses | *(Health Canada Ca)* |
+| Levothyroxine | Take 60 min before food + calcium + iron + magnesium + coffee. *(Health Canada thyroid)* | Mg, calcium, iron | Absorption block | 60 min gap | *(Health Canada thyroid)* |
+| Quinolones (cipro, levo) | Mg, calcium, iron, zinc block absorption. *(EMA quinolones)* | Mg, Ca, Fe, Zn | Chelation | ≥4 h gap | *(EMA quinolones)* |
+| Diuretics | Add to dehydration risk — water non-negotiable. *(Health Canada)* | All fluids | Dehydration | Aggressive hydration | *(Health Canada)* |
 
 ### 10.2 Drug ↔ Food
 
-| Drug | Food | Mechanism | Action |
-|---|---|---|---|
-| **PPIs** | High-protein meals | ↓ digestion → SIBO/IMO → constipation | PPI taper (§10.1) |
-| **Opioids** | High-fibre + opioids | Additive constipation; impacted stool | Hydrate aggressively + Mg + PHGG |
-| **Linaclotide / lubiprostone** | High-fibre + osmotic Rx | Cumulative loose stool/diarrhoea | Titrate Rx down |
-| **Levothyroxine** | Coffee, soy, calcium, fibre, psyllium | T4 absorption block | Levo 60 min before all |
-| **Warfarin** | Vit-K greens consistent | INR shift | Consistent intake |
-| **Iron Rx** | Tea, coffee, dairy, fibre | ↓ absorption | Take ≥2 h apart; pair with vitamin C |
-| **TCAs / SSRIs** | Alcohol, MAOI-rich foods | CNS / autonomic | Strict avoidance |
+| Drug | TL;DR | Food | Mechanism | Action | Citation |
+|---|---|---|---|---|---|
+| MAOI | Aged cheese, fermented foods → hypertensive crisis. *(EMA)* | Aged cheese, fermented | Tyramine | Avoid | *(EMA)* |
+| TCA + alcohol | CNS depression. *(Health Canada)* | Alcohol | CNS | Avoid | *(Health Canada)* |
+| Iron + tea/coffee/dairy | Tannin/calcium block. *(WHO)* | Tea, coffee, dairy | Block | 1-2 h gap | *(WHO)* |
+| Levothyroxine + coffee/calcium/iron/Mg | Absorption block. *(Health Canada thyroid)* | Coffee, Ca, Fe, Mg | Absorption | 60 min gap | *(Health Canada)* |
+| Lithium + low-sodium diet | Toxicity risk. *(Health Canada lithium)* | Low-sodium | Lithium kinetics | Consistent sodium | *(Health Canada lithium)* |
 
-### 10.3 Supplement ↔ Food (the new layer)
+### 10.3 Supplement ↔ Food
 
-| Supplement | Food / Drink | Mechanism | Action |
-|---|---|---|---|
-| **Psyllium** | Other medications (any) | Physically binds drug → ↓ absorption | Take psyllium 1 h apart from any medication |
-| **PHGG / Sunfiber** | Hot drinks (>40 °C) co-administered with probiotic | Kills probiotic | PHGG OK in warm not hot; probiotic in cool food |
-| **Magnesium citrate** | Calcium-rich foods at same hour | Competition | Mg PM, Ca AM (§8.5) |
-| **Berberine** | Dairy | ↓ berberine absorption | 1 h gap |
-| **Iron** (only if deficient) | Tea, coffee, wine (tannins); dairy, calcium | Polyphenol/divalent chelation | 1–2 h gap; pair with vitamin C (amla, lemon) |
-| **Zinc Carnosine** | Iron, dairy, calcium | DMT1 transporter competition | ≥2 h gap |
-| **Calcium / Magnesium** | Same hour | Competition | Ca AM, Mg PM (§8.5) |
-| **Multi-strain probiotic + S. boulardii** | Hot food/drink (>40 °C) | Kills viable bacteria | Cool/room-temp only |
-| **Antimicrobial herbs (Berberine, Oregano, Allicin) + probiotic** | Same meal | Antimicrobials kill probiotic | 4-h gap |
-| **Ginger** | NSAIDs (high-dose chronic), warfarin | Additive bleed risk | Moderate |
-| **Triphala** | Hot food | Warm OK; not boiling | Warm OK |
-| **Iberogast** | Bitter taste | Best in cool water | Per label |
-| **Cape Aloe / Senna (short-term)** | Dehydrating food, alcohol | Cumulative dehydration | Hydrate aggressively |
-| **Prune / kiwi** | Other foods | Standalone or with breakfast | OK anytime |
-| **Flaxseed / chia** | Hot drinks | Mucilage best in warm water | Soak first |
-| **Quercetin** | Iron-rich foods | Chelation | ≥1 h gap if iron needed |
-| **Ashwagandha** | Alcohol | CNS depression | Skip alcohol |
-| **Adaptogens** (Rhodiola, Eleuthero) | Evening meal | Stimulating | **AM only** |
-| **L-theanine + caffeine stack** | — | Antagonistic at bedtime | AM only |
-| **Fat-soluble vitamins A/D/E/K** | Low-fat meal | No micelle formation | Always with fat (ghee, coconut, fish, olive) |
-| **5-HTP** | High-tryptophan + SSRI/SNRI | Serotonin syndrome | Avoid |
+| Supplement | TL;DR | Food/Drink | Mechanism | Action | Citation |
+|---|---|---|---|---|---|
+| Psyllium | Always with ≥250 ml water; obstruction risk if dry. *(EMA psyllium)* | All food | Bulking | Adequate water mandatory | *(EMA psyllium)* |
+| Sunfiber | With water; slow build over 2 weeks. *(Polymeropoulos)* | All food | Bulking | Slow build | *(Polymeropoulos)* |
+| Magnesium citrate | PM with water; halve if loose stool. *(Health Canada Mg)* | All food | Osmotic | Titrate | *(Health Canada Mg)* |
+| Triphala | Bedtime with warm water. *(AYUSH)* | All food | Mild laxative | Bedtime | *(AYUSH)* |
+| Iron supplement (gentle) | Tea/coffee/dairy block. *(WHO)* | Tea, coffee, dairy | Block | 1-2 h gap; vit C boost | *(WHO)* |
+| Vitamin D, K2, A, omega-3 | With fat. *(EMA)* | Low-fat | Fat-soluble | With fat | *(EMA)* |
+| Senna / Da Huang | Short-course only; bedtime. *(EMA senna; Müller-Lissner)* | All food | Stim | Short course | *(EMA senna)* |
 
 ### 10.4 Supplement ↔ Supplement
 
-| A | B | Mechanism | Action |
-|---|---|---|---|
-| **Psyllium ↔ Other supplements/drugs** | — | Physical binding | Psyllium 1 h apart from all medications/supplements |
-| **PHGG ↔ Probiotic** | — | PHGG feeds probiotic synergy | **Beneficial pairing** — take together |
-| **Magnesium ↔ Calcium** | Same hour | Competition | Ca AM, Mg PM (§8.5) |
-| **Berberine ↔ many herbs via CYP3A4 inhibition** | — | Concurrent CYP3A4-metabolised herbs (St John's Wort, statins, immunosuppressants) | Berberine cycling 4–6 wk on, 2 wk off; gap from CYP3A4 substrates |
-| **Antimicrobial herbs ↔ Probiotic** | — | Antimicrobial kills probiotic | 4-h gap; or sequential phases (antimicrobial weeks 1–4, probiotic weeks 5–12) |
-| **Saccharomyces boulardii ↔ Antifungal** | — | Antifungal kills S. boulardii | 4-h gap |
-| **Zinc ↔ Copper** | — | Long-term Zn without Cu → Cu depletion | Maintain **8–15:1 Zn:Cu** |
-| **Iron ↔ Zn / Ca / Mg** | — | Divalent competition | ≥2 h gap |
-| **Vit A ↔ Vit D** | — | High-dose A competes with D receptor | Balance at floor |
-| **Vit E ↔ Vit K** | — | E (>800 IU) antagonises K | E ≤ 400 IU; K2 as MK-7 |
-| **Quercetin ↔ Iron** | — | Chelation | ≥2 h gap |
-| **High-dose flavonoids ↔ Thyroid hormone** | T4 uptake | ↓ absorption | 4-h gap from levo |
-| **5-HTP ↔ SSRI/SNRI/MAOI/tramadol** | — | **Serotonin syndrome — life-threatening** | **Avoid combination** |
-| **St John's Wort ↔ everything** | Serotonin / CYP3A4 induction | Cleared by §10.6 | **Excluded** |
-| **Berberine ↔ Curcumin** | Both CYP3A4 inhibitors | Potentiation | Acceptable; gap from statin |
-| **Cape Aloe / Senna ↔ Mg citrate / PEG** | — | Additive cathartic; electrolyte loss | Use either, not both chronically |
+| A | TL;DR | B | Mechanism | Action | Citation |
+|---|---|---|---|---|---|
+| Psyllium + ALL meds | Psyllium can bind absorption. *(EMA psyllium)* | All meds | Binding | ≥2 h gap | *(EMA psyllium)* |
+| Mg + Triphala + Padma Lax + senna | All laxative — additive. *(Health Canada Mg)* | All laxatives | Additive | One or two at a time | *(Health Canada Mg)* |
+| Zinc + Copper | 8-15:1 long-term ratio. *(Health Canada Zn)* | Copper | Cu depletion | Maintain | *(Health Canada Zn)* |
+| Iron + Zn/Ca/Mg | Divalent competition. *(WHO)* | Zn, Ca, Mg | Divalent | ≥2 h | *(WHO)* |
+| Mg citrate + quinolones / levothyroxine | Mg blocks absorption. *(EMA quinolones)* | Quinolones, levo | Chelation | ≥4 h gap | *(EMA quinolones)* |
 
 ### 10.5 Exercise / Sleep / Caffeine timing rules
 
-- **Caffeine cut-off 14:00** (half-life 6 h; protects sleep + MMC).
-- **Alcohol** — eliminate (vagal disruption, dehydration, dysbiosis).
-- **Ashwagandha KSM-66** — PM with dinner; shift AM if vivid dreams.
-- **Magnesium citrate** — PM (sleep + bowel motility); split if loose stools.
-- **Rhodiola / Eleuthero / L-theanine + caffeine stack** — AM only.
-- **Melatonin** (if used) — ≤0.3 mg, 30–60 min before sleep; not chronic.
-- **Multi-strain probiotic + S. boulardii** — cool first-meal or evening; ≥4 h from antimicrobial herbs.
-- **PHGG + psyllium** — split AM + HS doses; 1 h before/after other medications.
-- **Bone broth** — daily 300 ml; sip warm not hot.
-- **No snacking between meals** — 4 h gap for MMC; 12-h overnight fast.
-- **Squatty Potty + post-breakfast 10-min toilet ritual** — daily, consistent timing.
-- **VNS (Nurosym, Sensate)** — evening 30 min for sleep prep; not late-night.
-- **Inverted yoga** — before breakfast only.
-- **Sauna + alcohol** — never combine.
-- **High-intensity HIIT** — skip during active flare; restart week 4 of repair phase.
-- **Castor oil pack** — evening, 45–60 min, before bed; 3×/week.
-- **Cape Aloe / Senna ≤7–14 days only** — never chronic; rotate off after week 2.
+- **Caffeine cutoff 14:00.**
+- **Psyllium**: mid-morning with ≥250 ml water.
+- **Sunfiber**: AM with water; build slowly.
+- **Mg citrate**: PM after dinner.
+- **Mg glycinate**: PM bedtime for sleep.
+- **Triphala**: bedtime with warm water.
+- **Iron**: AM, ≥1-2 h from tea/coffee/dairy.
+- **Exercise**: 4-5×/week.
+- **Post-meal walking**: 10-15 min after EVERY main meal.
+- **Sleep**: 7-9 h with consistent timing.
 
-### 10.6 Strictly Avoid — specific to constipation pathology
+### 10.6 Strictly avoid (specific to constipation)
 
-- **Chronic stimulant laxatives** (Senna, Bisacodyl, Cape Aloe long-term) — laxative dependence, melanosis coli, cathartic colon. ≤7–14 days only.
-- **Chronic PPI use** — major SIBO/IMO promoter; encourage taper.
-- **Chronic opioid use without taper plan** — dominant constipation driver; opioids are not prescribed in this protocol.
-- **5-HTP + SSRI/SNRI/MAOI/tramadol** — serotonin syndrome.
-- **St John's Wort** — CYP3A4 induction; clears statins, OCP, antidepressants.
-- **Castor oil internal chronic** — short-term rescue only; not maintenance.
-- **Mineral oil chronic** — fat-soluble vitamin malabsorption.
-- **Bisacodyl maintenance** — cramping, dependence.
-- **Enema dependence** — rectal habituation; only acute rescue.
-- **Carbonated beverages** — aerophagia.
-- **Aspartame, sucralose chronic** — microbiome dysbiosis.
-- **Smoking, vaping, alcohol** — vagal disruption.
-- **Kapalbhati / Bhastrika / Nauli / Agnisar** in HTN/pregnancy/ulcer/hernia/recent surgery.
-- **Cold immersion** + severe CV disease — clearance first.
-- **High-dose Allicin** with anticoagulants — bleeding.
-- **Cassia cinnamon long-term** — hepatotoxic coumarin.
-- **Anticholinergic medications without review** — constipating; flag for prescriber-coordinated taper.
-- **Chronic anal-fissure straining** — risk of haemorrhoid; **NO Valsalva, ever**.
+- Senna long-term (colonic nerve harm — chronic use ≥3 months not advised).
+- Cascara (same).
+- Castor oil daily (Ayurveda permits 1×/month as Virechana; daily not advised).
+- Bisacodyl chronic (same colonic nerve concerns).
+- Mineral oil long-term (fat-soluble vitamin loss).
+- Colonic hydrotherapy (no RCT support, mucosal trauma).
+- Holding stool when urge appears.
+- Dehydration.
+- Chronic NSAID use.
+
+### 10.7 Emerging & adjunctive therapies
+
+> **TL;DR.** What's on the horizon for chronic constipation beyond herbs.
+
+### 10.7.1 Home-usable advanced & device therapies
+
+| Therapy | TL;DR (plain English) | What it does | Evidence anchor | Cost |
+|---|---|---|---|---|
+| **Squatty Potty footstool** | Anorectal angle opening; Modi 2019 RCT. *(Sakakibara 2010; Modi 2019)* | Mechanical posture | Sakakibara 2010, Modi 2019 | $25-40 |
+| **Pelvic floor PT workbooks + apps** | Self-guided pelvic floor + dyssynergia retraining. *(Rao 2010)* | Self-guided biofeedback | Rao 2010 | $20-60 (book/app) |
+| **Squeezy NHS app** | Free UK NHS-developed pelvic floor app. *(NHS Squeezy)* | Pelvic floor reminder | UK NHS | Free |
+| **HeartMath / Lief HRV biofeedback** | Vagal training supports brain-gut. *(Lehrer 2014)* | Vagal training | Lehrer 2014 | $90-499 |
+| **Stool microbiome tests (Viome, ZOE)** | Personalised report — interpretive only. *(Microbiome landscape)* | Microbiome | Variable | $149-399 |
+| **FoodMarble Aire 2 (breath gas)** | Methane breath for IMO + IBS-C overlap. *(Pimentel 2020; FoodMarble)* | Breath gas | FoodMarble | $249 |
+| **Nerva / Mahana IBS apps** | Gut-directed hypnotherapy / CBT for IBS-C overlap. *(Whorwell 1984; Mahana 2020 regulatory-path context only)* | App | Whorwell 1984; Everitt 2019 ACTIB | $0-80 |
+| **At-home colonic massage devices** | Vibrating belly massagers — limited evidence. | Mechanical | Limited | $50-150 |
+
+### 10.7.2 Adjunctive behavioural therapies (Rule 6)
+
+| Therapy | TL;DR | Tier | Resources | Citation |
+|---|---|---|---|---|
+| **Biofeedback-guided pelvic floor PT** | Rao 2010 RCT — 80% improvement vs 22% standard in dyssynergic defecation. *(Rao 2010)* | A (for dyssynergic) | Therapist-led + self-guided workbooks/apps | *(Rao 2010 Am J Gastroenterol)* |
+| **Gut-directed hypnotherapy for IBS-C** | Whorwell 1984. *(Whorwell)* | A (IBS) | Nerva app | *(Whorwell)* |
+| **CBT for chronic constipation distress** | Behavioural CBT. *(Mason 2002)* | C | Self-guided + therapist | *(Mason 2002)* |
+| **MBSR for chronic-constipation stress** | Kabat-Zinn 8-week. *(Kabat-Zinn)* | B | MBSR online, Calm | *(Kabat-Zinn)* |
+| **Diaphragmatic breathing during defecation** | Push from belly, not Valsalva. *(Rao 2010)* | A | Self-applied | *(Rao 2010)* |
+| **Slow paced breathing (5-6 bpm)** | Vagal-mediated. *(Lehrer 2014)* | B | Breathwrk | *(Lehrer)* |
+| **Yoga for constipation** | Twists + folds + malasana. *(AYUSH)* | B | AYUSH yoga | *(AYUSH)* |
+| **HRV biofeedback** | Lehrer 2014. *(Lehrer)* | B | HeartMath, Lief, Polar H10 | *(Lehrer)* |
+
+### 10.7.3 If the home protocol plateaus — clinic-route options
+
+> **TL;DR.** Documented honestly; NEVER recommended.
+
+| Option | TL;DR (plain English) | Evidence anchor | Why not in home protocol |
+|---|---|---|---|
+| **Prucalopride (Resolor / Motegrity)** | 5-HT4 agonist prokinetic — Camilleri 2010 RCTs strong. *(Camilleri 2010 N Engl J Med)* | Camilleri 2010 | Prescription |
+| **Linaclotide (Linzess)** | Guanylate cyclase agonist for IBS-C and chronic idiopathic constipation. *(Chey 2012)* | Chey 2012 Am J Gastroenterol | Prescription |
+| **Lubiprostone (Amitiza)** | Chloride channel activator. *(Johanson 2008)* | Johanson 2008 | Prescription |
+| **PAMORA (naloxegol, methylnaltrexone) for opioid-induced** | Mu-receptor antagonists for opioid-induced constipation. *(Webster 2014 OIC)* | Webster 2014 | Prescription |
+| **Polyethylene glycol (Movicol / Miralax)** | OTC in many jurisdictions, prescription in others; gold-standard osmotic. *(DiPalma 2007 PEG)* | DiPalma 2007 | OTC in some / Rx in others; safe alternative if Mg citrate doesn't tolerate |
+| **Biofeedback-guided pelvic floor PT (clinic, gold standard)** | Rao 2010 — 80% improvement in dyssynergic defecation. *(Rao 2010)* | Rao 2010 | Clinic for gold standard; self-guided exists |
+| **Anorectal manometry + balloon expulsion** | Diagnostic for dyssynergia. *(Bharucha 2013)* | Bharucha 2013 | Clinic diagnostic |
+| **Sacral nerve stimulation** | For refractory chronic constipation — limited evidence. *(Carrington 2014)* | Carrington 2014 | Surgical implant |
+| **Subtotal colectomy** | For severe refractory slow-transit constipation — last resort. *(Knowles 1999)* | Knowles 1999 | Surgery |
+| **Gastroenterology endoscopy / colonoscopy** | Required for red flags (blood, weight loss, age >50 onset, family history). *(WGO)* | WGO criteria | Clinic when red flags |
+
+#### Open the science
+
+Trial anchors: Cochrane Ford 2018 (fibre + osmotic + prucalopride evidence base); Bharucha 2013 (Am J Gastroenterol comprehensive review); Rao 2010 (biofeedback for dyssynergic defecation — 80% improvement vs 22%); Chey 2021 (kiwifruit comparable to psyllium); Attaluri 2011 (prunes comparable to psyllium); Sakakibara 2010 (squatting posture anorectal angle); Camilleri 2010 (prucalopride NEJM); Chey 2012 (linaclotide IBS-C); EMA psyllium and senna monographs; EMA Padma Lax monograph; Sallon 2002 (Padma Lax Israeli RCT IBS-C); Tarasiuk 2018 Triphala review.
 
 ## 11. Clinical Scoring + Comorbidity Screening
 
-### 11.0 Self-administered clinical scoring instrument — PAC-SYM + Bristol + CCS + frequency diary
+### 11.0 Self-administered tracking
 
-**PAC-SYM** (Patient Assessment of Constipation Symptoms, European-developed 12-item questionnaire) — 0–4 each domain (abdominal, rectal, stool symptoms); range 0–4 average. Target <1.0 by week 12.
+> **For you, in plain words.** Daily Bristol Stool diary, weekly BM-frequency count, daily 0-10 straining/incomplete-evacuation slider, Constipation Assessment Scale (CAS), PAC-QOL at baseline + week 4 + week 12. *(Bristol Stool Form Scale; CAS; PAC-QOL)*
 
-**Bristol Stool Chart** (UK-developed, Heaton scale) — daily diary; target type 3–4 consistently. Type 1–2 = constipated; type 6–7 = loose.
+### 11.5 Comorbidity Screening — DTC labs
 
-**Cleveland Clinic Constipation Scoring System (CCS)** — 8-item, range 0–30 (frequency, difficulty, incomplete evacuation, abdominal pain, time per BM, type of assistance, failed attempts, duration). Target <5 by month 6.
+| Condition | TL;DR | Test | DTC source | Citation |
+|---|---|---|---|---|
+| Hypothyroidism | TSH + free T4 + anti-TPO. *(Health Canada thyroid)* | TSH panel | LetsGetChecked, Thriva | *(Health Canada)* |
+| Coeliac disease | Anti-tTG-IgA + total IgA. *(WGO coeliac 2016)* | Anti-tTG, IgA | LetsGetChecked, Everlywell | *(WGO)* |
+| Diabetes (autonomic neuropathy) | HbA1c. *(WHO HbA1c)* | HbA1c | All DTC | *(WHO)* |
+| Low iron (anaemia overlap or supplement-induced constipation) | Ferritin + CBC. *(WHO ferritin)* | Ferritin + CBC | Everlywell, Thriva | *(WHO)* |
+| B12 deficiency | MMA + B12. *(Health Canada)* | MMA + B12 | LetsGetChecked, Thriva | *(Health Canada)* |
+| Vitamin D deficiency | 25-OH D. *(EMA vit D)* | 25-OH D | All DTC | *(EMA)* |
+| Magnesium deficiency | RBC Mg. *(Health Canada Mg)* | RBC Mg | Thriva, Cerascreen | *(Health Canada)* |
+| Pregnancy | Self-test home pregnancy kit. | Pregnancy test | OTC | — |
+| Dyssynergic defecation | Suspect based on symptoms (excess straining, sensation of blockage, manual manoeuvres) — clinic anorectal manometry confirms. *(Bharucha 2013)* | Symptom history; clinic test | Bharucha 2013 | *(Bharucha)* |
+| Colorectal cancer (red flags) | Stool occult blood test (Cologuard, FIT) for screening — clinic colonoscopy for confirmed pathology. *(WGO)* | FIT / Cologuard | DTC FIT tests | *(WGO)* |
 
-**Daily Bowel-Frequency + Effort + Completeness Diary** — track in app (Cara Care, Bowelle, Mahana) for 14 days baseline + ongoing. Frequency target ≥4 BM/week (Rome IV operational definition is <3/week for constipation; target ≥5/week stable).
+## 12. Implementation Timeline (12 months)
 
-**Cadence:** baseline (Week 0), weekly diary continuous, Wk 4, Wk 8, Wk 12, Mo 6, Mo 9, Mo 12 full re-scoring.
-
-### 11.5 Comorbidity Screening — direct-to-consumer labs
-
-Chronic constipation carries elevated risk / overlap for: **IMO methanogen, SIBO, hypothyroidism (slow transit), T2D (autonomic neuropathy), anal-fissure / haemorrhoid, diverticulosis, depression/anxiety, parkinsonian autonomic dysfunction (rare), pelvic-floor dyssynergia, magnesium deficiency, dehydration.**
-
-**DTC providers:** UK — Thriva, Medichecks, Forth; EU — Cerascreen, Lykon; IN — True Test, Healthians, Thyrocare; AU — i-screen; US — LetsGetChecked, Everlywell, Walk-In Lab, InsideTracker, TrioSmart (SIBO/IMO breath test).
-
-**Panel — baseline / Mo3 / Mo6 / Mo12:**
-
-| Comorbidity | DTC test | Provider |
-|---|---|---|
-| IMO methanogen | 3-h lactulose breath test with CH₄ tracking (≥10 ppm = positive) | TrioSmart, Aerodiagnostics, Commonwealth Labs |
-| SIBO H₂ | Same lactulose breath test | TrioSmart |
-| Hypothyroidism / Hashimoto | TSH + fT4 + anti-TPO + anti-Tg | Thriva, Paloma |
-| Celiac | Anti-tTG-IgA + total IgA + DGP-IgA | LetsGetChecked celiac |
-| T2D / autonomic | HbA1c, fasting insulin, fasting glucose | LetsGetChecked, Thriva |
-| Pancreatic insufficiency | Faecal elastase | GI-MAP, Doctor's Data |
-| Gut microbiome | Stool 16S / shotgun metagenomics | Viome, BiomeSight, GI-MAP |
-| Inflammation + minerals | hs-CRP, ferritin, vit D, Mg (RBC magnesium), Zn, B12 | Walk-In Lab / Thriva |
-| Methylation / homocysteine | Homocysteine + MTHFR | Thriva |
-| Cortisol / HPA | Salivary 4-point cortisol + DHEA-S | DUTCH (Precision Analytical) |
-| Pelvic-floor dyssynergia (if outlet pattern suspected) | At-home anorectal-pressure consumer device (Perifit) | Perifit, biofeedback app |
-| Magnesium deficiency | RBC magnesium (more accurate than serum) | Walk-In Lab |
-| Depression-anxiety overlap | PHQ-9 + GAD-7 self-administered | online; track in app |
-
-## 12. Implementation Timeline (12 months, self-tracked)
-
-- **Weeks 1–4 — Foundation + Antimicrobial Phase (if IMO+).** Berberine + Oregano + (Allicin if methanogen+) at full dose; ginger + Iberogast pre-meal; bone broth daily; PHGG 5 g BID; Mg citrate 400 mg HS; 2 kiwi + 2 prunes + 15 g flax daily; Squatty Potty toilet ritual post-breakfast. Baseline PAC-SYM, Bristol diary, CCS, IMO breath test, food diary. PPI / stimulant-laxative / opioid taper begins if applicable. Expected: Herxheimer days 3–7 if IMO+, then symptom relief.
-- **Weeks 5–8 — Repair Phase.** Discontinue antimicrobials. Continue PHGG + Mg + Triphala; introduce multi-strain probiotic + S. boulardii + zinc carnosine + L-glutamine. Repeat PAC-SYM at week 8.
-- **Weeks 9–12 — Stabilisation Phase.** Bristol type 3–4 consistent; frequency ≥5/wk. Repeat IMO breath test, microbiome stool, PAC-SYM, CCS. **Expected**: PAC-SYM drop 50%, CCS drop 60%.
-- **Months 4–6 — Consolidation.** Personalised diet stable; supplements taper to maintenance (Triphala HS + Mg PM + PHGG AM + probiotic 3×/wk + Iberogast pre-large-meal). TCM cycling overlay.
-- **Months 6–12 — Long-term sustainability.** Quarterly PAC-SYM; annual IMO breath test if symptoms recur; annual microbiome stool. Seasonal millet rotation. Expect **Bristol type 3–4 consistent; frequency ≥6/wk; PAC-SYM <0.5; CCS <5; no straining, no laxative dependence**.
-
-**No physician check-in is mandatory.** If you keep a physician informed, that is your personal decision; the protocol does not require it.
+- **Weeks 1-4 — Hydration + fibre + behavioural foundation.** Wake-water 500 ml + lemon, kiwi 2/day, prunes 50 g/day, psyllium 5 g mid-morning, magnesium citrate 200-400 mg PM, Triphala 3-5 g bedtime, squatty potty footstool, post-meal walks. Baseline Bristol diary, DTC labs (TSH, B12, vit D, ferritin if low energy).
+- **Weeks 5-8 — Layered protocol.** Add abdominal self-massage, diaphragmatic breathing, yoga (pavanamuktasana, malasana, twists), MBSR if stress-driven. Repeat Bristol weekly.
+- **Weeks 9-12 — Cognitive + traditional consolidation.** Add Nerva/Mahana for IBS-C overlap. TCM overlay weeks 1 & 4 (Ma Zi Ren Wan, Run Chang Wan, or Bu Zhong Yi Qi Tang pattern-matched). Repeat CAS + PAC-QOL.
+- **Months 4-6 — Personalised maintenance.** Drop non-responders. If dyssynergic defecation suspected (excess straining, blockage sensation), trial pelvic floor PT workbook + Squeezy app; consider clinic-route biofeedback referral.
+- **Months 6-12 — Sustainability.** Quarterly Bristol diary. Annual DTC labs. TCM cycling.
+- **If persistent severe constipation despite full home protocol for ≥8 weeks, or red flags (blood, weight loss, age >50 onset), arrange gastroenterology assessment on your own initiative.**
 
 ## 13. Illustrative Case Composite
 
-> Composite — not a real patient identifier.
+> **Anonymised composite — NOT a real patient identifier.**
 
-**Asha, 52, perimenopausal IT manager.** Chronic constipation 12 yr, worse since perimenopause and PPI started 6 yr ago for "GERD". 1–2 BM/week with significant straining and incomplete evacuation; sense of "stool stuck at the rectum". 5 yr daily Senokot dependence. Baseline DTC: IMO breath test CH₄ 18 ppm at 90 min (positive methanogen), TSH 4.2 (subclinical hypo), anti-TPO 180, vit D 19, RBC Mg 4.0 mg/dL (low), B12 240 (low-normal PPI-induced), PAC-SYM 2.8, CCS 18, Bristol 1–2.
+**Profile.** 58-year-old woman, BMI 26, chronic constipation 10 years (2 BMs/week, Bristol 1-2, excess straining, sensation of blockage); on amitriptyline 25 mg for sleep + calcium-channel blocker for BP; baseline CAS 12, vitamin D 24 ng/mL, TSH normal.
 
-Full §8.5 protocol: PPI taper over 6 weeks (omeprazole 40 → 20 → 10 → 0 with DGL + zinc carnosine + L-glutamine + bitter herbs layered); Senokot taper over 2 weeks (replaced with Mg citrate 400 mg HS + PHGG 10 g + Triphala 3 g HS); 4-week antimicrobial (Berberine 500 mg TID + Allicin 450 mg TID + Oregano 200 mg BID); 2 kiwi + 2 prunes + 15 g flax daily; Iberogast 20 drops TID; ginger pre-meal; bone broth 400 ml daily; Squatty Potty + 10-min post-breakfast toilet ritual; Nurosym 30 min PM; 4-7-8 breath pre-meal + during toilet sit; CCF tea post-meal; B12 + iron + vit D + Mg + selenium + iodine cautious; sleep 22:30–06:30.
+**Protocol applied.** Wake-water 500 ml + lemon. 2 kiwi + 50 g prunes daily. Psyllium 5 g mid-morning. Sunfiber 5 g. Magnesium citrate 400 mg after dinner. Triphala 5 g bedtime. Squatty Potty footstool. Post-meal walks 10-15 min. Abdominal self-massage AM. Diaphragmatic breathing 10 min AM and on toilet. Yoga (pavanamuktasana, malasana, twists) 4×/week. Sit on toilet 20 min post-breakfast (gastrocolic timing). Switched to gentler Floradix iron when needed.
 
-- **Wk 4:** PPI at 10 mg; Senokot off; Bristol type 3 most days; frequency 5/wk; PAC-SYM 1.8; some Herxheimer fatigue resolved by Wk 3.
-- **Wk 12:** PPI off; Bristol type 4 consistent; frequency 6–7/wk; PAC-SYM 0.7; CCS 6; IMO breath test CH₄ 6 ppm (within normal); B12 480, vit D 50, RBC Mg 5.2, anti-TPO 110.
-- **Mo 6:** Stable at maintenance; tolerates moderate FODMAP foods; fermented foods reintroduced; PAC-SYM 0.4; CCS 4; no laxative use; no PPI dependence; sustainable lifestyle.
-- **Mo 12:** Long-term stable; one mild flare during travel-stress month resolved with 2-week return to Phase 1 + Mg ramp. Sustainable normality.
+**Outcomes.**
+- Week 4: 4-5 BMs/week; Bristol 3-4; straining reduced; CAS 7.
+- Week 12: 5-6 BMs/week; Bristol 3-4; CAS 4; vitamin D 44 ng/mL. Identified residual dyssynergic pattern — added Squeezy NHS app + diaphragmatic-pelvic-floor coordination practice.
+- Month 6: 6-7 BMs/week; Bristol 3-4; CAS 2; stable.
+- Month 12: Stable on maintenance protocol. Discussed amitriptyline taper with her own prescriber separately (protocol does not prescribe).
 
-## 13.5 Patient-Facing Primer
+## 13.5 Patient-facing Primer
 
-Chronic constipation isn't "just a fibre and water problem" — for most adults stuck in it for years, four things are out of sync deep in the gut. (1) Methane-producing microbes (archaea, mainly *Methanobrevibacter smithii*) have set up house in your small intestine and proximal colon, and the methane gas they make **physically slows down your gut transit** by about 59% in animal studies. This is intestinal methanogen overgrowth, or IMO. (2) The "house-keeping wave" in your gut (called the migrating motor complex, or MMC) and the post-breakfast "gastrocolic reflex" have stopped firing properly because of chronic stress, sleep loss, constant snacking, or screen-mediated sympathetic dominance. (3) Your colon isn't pulling enough water into the stool — usually because magnesium is low, bile flow is sluggish, fibre is the wrong kind (or absent), and hydration is genuinely insufficient. (4) Your pelvic floor isn't relaxing during defecation — either from learned urge-suppression habits (commute, work, travel) or from never having learned to sit on the toilet in a way that straightens the anorectal angle.
+Chronic constipation is fewer than 3 bowel movements per week, OR hard stools, OR straining, OR incomplete evacuation, for ≥3 months. The good news: the highest-evidence interventions are not drugs at all. Start tonight: drink 500 ml warm water on waking + lemon; eat 2 kiwi + 50 g prunes daily (Chey 2021 and Attaluri 2011 RCTs both comparable to psyllium); take 5-10 g psyllium husk in 250 ml water mid-morning; take magnesium citrate 200-400 mg after dinner; take Triphala 3-5 g at bedtime with warm water; walk 10-15 min after every meal; sit on a squatty-potty footstool when on the toilet (knees above hips changes the anorectal angle for easier evacuation); breathe deeply from the belly during attempted bowel movement, NOT a strain-and-hold Valsalva. Expect meaningful improvement in 2-4 weeks. If you have excess straining, sensation of blockage, or need to use manual manoeuvres, you may have dyssynergic defecation — pelvic-floor retraining (Rao 2010 RCT showed 80% improvement) is the answer; self-guided versions exist (Squeezy NHS app, workbooks) and clinic-route biofeedback PT works even better. This is independent, OTC, home-based. **No prescription. No clinic. No hospital. No surgery.** You are sovereign over your own body. If you choose to pursue clinic-route options (prucalopride, linaclotide, biofeedback PT, colonoscopy for red flags), that is your call. Red flags requiring clinical assessment: blood in stool, unintentional weight loss, fever, persistent severe pain, family history of colon cancer, or new constipation after age 50.
 
-This protocol does **not** chase the symptom with senna, bisacodyl, PEG, linaclotide, lubiprostone, or chronic stimulant laxatives. Instead, it works on all four layers — using herbs that reduce methanogens (allicin, berberine, oregano oil), restore digestive fire and MMC (ginger, Iberogast, Hingvashtak), pull water into the colon (PHGG/Sunfiber, psyllium, magnesium citrate, prunes, kiwifruit, ground flax), and retrain the pelvic floor (Squatty Potty, deep squat Malasana, 4-7-8 breath during defecation, no Valsalva). **No prescription. No clinic. No hospital.**
+## 13.7 Honest evidence-tier comparison table
 
-Expect a slow, steady re-balancing — not an overnight fix. By Week 4 most users hit Bristol type 3 consistently with frequency 5–6/week. By Week 12, with the Squatty Potty + post-breakfast 10-minute toilet ritual fully embedded, sustainable regularity without any stimulant laxative.
+> **TL;DR.** Every approach covered, ranked by honest tier with a plain-words verdict — including the ones we do NOT recommend.
 
-You are sovereign over your own body. If you choose to keep a physician informed, that is your personal decision. The protocol does not require it.
+| Approach | Tier | Plain-words verdict (≤25 words) | Where it fits |
+|---|---|---|---|
+| Psyllium husk | A | Cochrane-supported + EMA monograph; first-line bulk fibre. *(Cochrane Ford 2018; EMA psyllium)* | Cornerstone — daily 5-10 g |
+| Kiwi fruit (2/day) | A | Chey 2021 RCT n=79 comparable to psyllium and prunes. *(Chey 2021)* | Cornerstone food — 2 daily |
+| Prunes (50 g/day) | A | Attaluri 2011 RCT n=40 comparable to psyllium. *(Attaluri 2011)* | Cornerstone food — daily |
+| Magnesium citrate | A | Bharucha 2013 supports; osmotic; titrate. *(Health Canada Mg; Bharucha)* | Cornerstone — daily PM |
+| Triphala | A | Long Ayurveda use + modern reviews; safe long-term. *(AYUSH; Tarasiuk 2018)* | Cornerstone — daily bedtime |
+| Squatty Potty footstool | A | Sakakibara 2010 + Modi 2019 RCT — anorectal angle. *(Sakakibara; Modi)* | Cornerstone mechanical — every BM |
+| Hydration 2.5-3 L/day | A | Bharucha 2013 review — non-negotiable. *(Bharucha)* | Non-negotiable |
+| Post-meal walking | A | Gastro-colic reflex — Bharucha 2013. *(Bharucha)* | Non-negotiable after each meal |
+| Diaphragmatic-pelvic-floor coordination | A | Rao 2010 — central to dyssynergia recovery. *(Rao 2010)* | Daily, especially on toilet |
+| Biofeedback-guided pelvic floor PT | A (dyssynergic) | Rao 2010 — 80% improvement vs 22% standard. *(Rao 2010)* | Cornerstone for dyssynergic |
+| Sunfiber (PHGG) | B | Polymeropoulos 2014; low-FODMAP-safe. *(Polymeropoulos)* | Daily backbone fibre |
+| Padma Lax (Tibetan) | B | EMA monograph + Sallon 2002 RCT for IBS-C. *(EMA Padma; Sallon)* | Optional for IBS-C overlap |
+| Ground flaxseed | B | Soltanian 2018 Iran RCT supports. *(Soltanian 2018)* | Daily 1-2 tbsp |
+| Senna (short-course only) | B (short) / X (chronic) | EMA short-course only; chronic harms colonic nerves. *(EMA senna; Müller-Lissner)* | PRN only, ≤2 weeks |
+| Abdominal self-massage | B | Lämås 2009 Swedish RCT. *(Lämås 2009)* | Daily AM |
+| Slow paced breathing | B | Lehrer 2014 vagal-gut. *(Lehrer)* | Daily 10 min |
+| MBSR for chronic constipation | B | Kabat-Zinn 8-week. *(Kabat-Zinn)* | Optional cognitive layer |
+| Yoga (twists, folds, malasana, pavanamuktasana) | B | AYUSH supports; mechanical + autonomic. *(AYUSH yoga)* | Daily 15-30 min |
+| HRV biofeedback | B | Lehrer 2014. *(Lehrer)* | Optional daily |
+| Ayurveda Triphala / Avipattikar / Castor oil / Isabgol / Pancha-sakar | T-A | Triphala has modern reviews (A); others tradition (T). *(AYUSH; Tarasiuk 2018)* | Pattern-matched layer |
+| TCM Ma Zi Ren Wan / Run Chang Wan / Liu Mo Tang / Bu Zhong Yi Qi | B | Classical formulas + Chinese trials; NMPA. *(NMPA; Shang Han Lun)* | TCM overlay weeks 1 & 4 |
+| Unani Itrifal Mulayyan / Sharbat-e-Bazoori | T | Classical Unani; tradition only. *(Hamdard)* | Optional traditional |
+| Siddha Thiripala / Nilavembu / Aaval | T | Classical Tamil tradition. *(IMPCOPS)* | Optional traditional |
+| Homeopathy (Nux vomica, Alumina, Bryonia, Lycopodium, Silicea) | T/H | Tradition (Boericke, Kent). No robust RCT. Per founder mandate. | Not in active protocol; transparency |
+| Stim laxatives chronic (senna, cascara, castor oil, bisacodyl) | X (chronic) | Müller-Lissner 2010 — colonic nerve harm with chronic use. *(Müller-Lissner 2010)* | Not in maintenance protocol |
+| Colonic hydrotherapy | X | No RCT support; mucosal trauma. | Not in protocol |
+| Mineral oil long-term | X | Fat-soluble vitamin loss. | Not in protocol |
+| Generic "30-strain probiotic" blends | C | Most have no formulation-specific RCT. | Not in protocol |
+| Pelvic floor PT workbooks / Squeezy app | B | Self-guided supplement to Rao 2010 protocol. *(Rao 2010)* | Self-guided dyssynergia layer |
+| FoodMarble Aire 2 (breath gas) | H | Methane breath for IMO + IBS-C overlap. *(FoodMarble; Pimentel)* | Optional diagnostic |
+| Stool microbiome tests (Viome / ZOE) | H | Interpretive, not diagnostic. | Optional |
+| Consumer tVNS (Nurosym / Pulsetto / Sensate) | H | Vagal stimulation; limited constipation-specific data. *(Drewes 2019)* | Optional |
+| Prucalopride (Resolor / Motegrity) | A | Camilleri 2010 N Engl J Med — strong RCT. *(Camilleri 2010)* | Clinic-route §10.7.3 only |
+| Linaclotide (Linzess) | A | Chey 2012 Am J Gastroenterol. *(Chey 2012)* | Clinic-route §10.7.3 only |
+| Lubiprostone (Amitiza) | A | Johanson 2008. *(Johanson 2008)* | Clinic-route §10.7.3 only |
+| PEG (Movicol / Miralax) | A | DiPalma 2007 — OTC in some/Rx in others; safe osmotic. *(DiPalma 2007)* | OTC alternative; safe |
+| PAMORA (naloxegol) for opioid-induced | A | Webster 2014. *(Webster 2014)* | Clinic-route §10.7.3 only |
+| Sacral nerve stimulation | C | Carrington 2014; limited. *(Carrington 2014)* | Clinic-route §10.7.3 only |
+| Subtotal colectomy | C | Knowles 1999; last resort. *(Knowles 1999)* | Surgery — last resort |
+| Gastroenterology endoscopy / colonoscopy | A (red flags) | Required only for red flags. *(WGO)* | Clinic when red flags |
 
 ## 14. Independent Healing Paradigm
 
-This protocol diverges from the mainstream pharmaceutical model that treats chronic constipation as a chase-the-symptom problem — bulking agents handed out without addressing the methanogen burden, osmotic laxatives without addressing the pelvic floor, stimulant laxatives chronically (leading to laxative dependence + cathartic colon), then escalation to linaclotide / lubiprostone / prucalopride. Chronic constipation is treated here as the systemic four-node state — IMO methanogen, vagal-MMC-gastrocolic-reflex hypotonia, mucosal-secretory + bile insufficiency, pelvic-floor dyssynergia — intervened at each node in parallel using only **OTC, home-administered** tools.
-
-**Sovereignty ethos.** **No prescription. No clinic. No hospital. No surgery.** The user owns their body and their healing path. Evidence varies honestly: Grade A for PHGG (Japanese RCTs), psyllium (EMA HMPC), magnesium (multiple RCTs), prune (Iranian + Australian + Italian RCTs), kiwifruit (Auckland Cunningham RCT), Triphala (AYUSH monograph + Indian RCTs), Ma Zi Ren Wan (large Chinese RCT), ginger, Iberogast; Grade B for allicin in IMO, oregano, berberine, magnesium oxide, flaxseed; Grade T for Unani/Siddha/Tibetan/homeopathic — honoured as traditions, never marketed as proof.
-
-Authority grounded in **WHO TCIM Strategy 2025–2034, India AYUSH/CCRAS/CCRH/CCRYN/CCRUM/CCRS/PCIMH/ICMR, EMA HMPC, Australia TGA + NHMRC, China NMPA + Chinese Pharmacopoeia, Health Canada NHP, Men-Tsee-Khang, Hamdard, IMPCOPS**, plus classical texts (Charaka, Sushruta, *Ashtanga Hridaya*, *Bhavaprakasha*, Avicenna's *Canon*, *Huang Di Nei Jing*, *Shang Han Lun*, *Tai Ping Hui Min He Ji Ju Fang*, Boericke, Allen, Kent).
-
-Explicit re-affirmation: **no FDA, FTC, ACG, AGA, AMA, APA, ACOG, NAMS, ACR, ACS, CDC, NIH-policy, AAFP, AAP as authority. Period.**
+NicheCore's protocol for chronic constipation differs fundamentally from the mainstream pharmaceutical model. Where the conventional path quickly defaults to escalating stim laxatives (which harm colonic nerves with chronic use — Müller-Lissner 2010) or prescription prokinetics/secretagogues — this protocol attacks all five drivers in parallel: slow colonic transit (psyllium + Sunfiber + magnesium citrate + Triphala + kiwi + prunes + post-meal walking + Padma Lax), anorectal dysfunction / dyssynergic defecation (squatty-potty positioning + diaphragmatic-pelvic-floor coordination + Rao 2010 biofeedback PT — the highest-effect-size intervention in any constipation trial), normal-transit constipation (cognitive layers + hypnotherapy + slow paced breathing), IBS-C (layer with ibs-like-patterns dossier), and secondary causes (address drug, thyroid, diabetes, neurological cause). The dietary cornerstone — kiwi 2/day + prunes 50 g/day + psyllium — has Grade A evidence from named non-US RCTs (Chey 2021, Attaluri 2011, Cochrane Ford 2018). The behavioural cornerstone — squatty-potty + diaphragmatic-pelvic-floor coordination + post-meal walking — is free. **Sovereignty ethos: OTC + home-based by design. No prescription. No clinic. No hospital. No surgery.** The user owns their body and their healing path. We document the strongest globally-sourced natural path and tell you honestly that chronic stim laxatives harm the colon, that "natural" cascara and castor-oil-daily are not safer, and that aloe juice has no constipation-specific RCT support. **No FDA, FTC, ADA, AHA, AAD, AGA, AMA, APA, ACOG, NAMS, ACR, ACS, CDC, NIH-policy, AAFP, AAP as authority on whether something WORKS. Period.** Protocol grounded in WHO TCIM, India AYUSH/CCRAS/CCRH/CCRYN/CCRUM/CCRS/PCIMH/ICMR, EMA HMPC, Cochrane reviews, Australia TGA + NHMRC, China NMPA + Chinese Pharmacopoeia, Health Canada NHP, Men-Tsee-Khang, Hamdard, IMPCOPS, plus classical traditional texts.

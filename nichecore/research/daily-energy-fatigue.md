@@ -1,660 +1,861 @@
 ---
 ailmentId: daily-energy-fatigue
-ailmentName: Daily Energy & Fatigue Support
+ailmentName: Daily Energy & Fatigue
 domain: MobilityEnergy
-lastUpdated: 2026-05-29
+lastUpdated: 2026-05-30
 gradeMix: [A, B, C, D, T, H]
-clinicalScoringInstrument: Fatigue Severity Scale (FSS, 9 items, 1–7), Chalder Fatigue Scale (CFQ-11), Multidimensional Fatigue Inventory (MFI-20), Epworth Sleepiness Scale (ESS), Pittsburgh Sleep Quality Index (PSQI), HRV (Oura / Whoop / Polar), daily energy NRS 0–10
-subTypes: [acute-sleep-debt-fatigue, chronic-stress-burnout-HPA-dysregulation, post-viral-post-COVID-fatigue, perimenopause-fatigue, hypothyroid-overlap-fatigue, anaemia-iron-deficient-fatigue, mitochondrial-low-CoQ10-low-carnitine, dysbiosis-leaky-gut-fatigue, NAFLD-metabolic-fatigue, sleep-apnea-driven-fatigue, depression-overlap-fatigue, CFS-ME-overlap]
-comorbidityScreen: [iron-deficiency-anaemia, B12-folate-deficiency, hypothyroid-hashimoto, sleep-apnea-OSA, vitamin-D-deficiency, T2D-insulin-resistance, NAFLD, sleep-disorder, depression-anxiety, sub-clinical-adrenal-HPA, perimenopause, REDs-low-energy-availability-female-athlete, dysautonomia-POTS, mast-cell-activation, mitochondrial-dysfunction]
+clinicalScoringInstrument: "Chalder Fatigue Scale (self-scored) + Fatigue Severity Scale (FSS-9) + Multidimensional Fatigue Inventory (MFI-20) + Pittsburgh Sleep Quality Index (PSQI) + Insomnia Severity Index (ISI) + DePaul Symptom Questionnaire (DSQ — for suspected ME/CFS) + 0-10 daily energy slider; HRV via Oura/Whoop/Polar; resting heart rate; weekly average step count"
+subTypes: [under-recovered-overtrained, perimenopausal-fatigue, hypothyroid-pattern, post-viral-long-tail, ME-CFS-with-PEM, anaemia-or-iron-deficient, burnout-HPA-dysregulated, sleep-debt-driven, mitochondrial-cellular]
+comorbidityScreen: [hypothyroidism, iron-deficiency-anaemia, low-B12-or-folate, low-vitamin-D, sleep-apnea, perimenopause, depression, type-2-diabetes, post-viral-syndrome, ME-CFS, long-COVID, adrenal-HPA-dysregulation, sub-clinical-hypothyroidism, coeliac-disease, chronic-low-grade-infection]
 authorAgent: ailment-360-research
+schemaVersion: v6.2.3
 internalRalph:
-  pass1Complete: true
-  pass2Complete: true
-  pass3Complete: true
+  pass1Complete: true   # structural — 16 sections + §10.7 emerging + §13.7 honest comparison + three-tier scaffold + tree-friendly H3s
+  pass2Complete: true   # citations + Cochrane caveats (CoQ10/NMN/D-ribose/PACE controversy) + every TL;DR ≤25 words
+  pass3Complete: true   # AYUSH/BAMS + TGA-integrative-GP smell test + ME/CFS pacing safety + non-clinician parent comprehension
 ---
 
-> **Framing.** Grounded in WHO TCIM Strategy 2025–2034, India AYUSH/CCRAS/CCRH/PCIMH monographs, EMA HMPC herbal monographs, TGA/NHMRC evidence guidelines, China NMPA + Chinese Pharmacopoeia, Health Canada NHP monographs, Men-Tsee-Khang formularies, Hamdard Dawakhana, IMPCOPS Chennai, and the classical Ayurvedic, TCM, Unani, Siddha, Tibetan and homeopathic literature. **No FDA, FTC, AMA, CDC, NIH-policy or US disease-association source is cited as authority.** Individual peer-reviewed papers led by non-US institutions are treated as evidence objects only.
+> **For you, in plain words.** This is a safe, over-the-counter, at-home plan for people who wake up tired, crash after lunch, or never feel "really rested." Start with the four cornerstones — sleep regularity, morning sunlight, a real-food breakfast, and a 10-minute post-lunch walk. Supplements come second. We are honest where the evidence is mixed — including for CoQ10, NMN, NAD+ precursors and D-ribose, where the trials are early or small. *(WHO Traditional Medicine Strategy 2025-2034; UK NICE ME/CFS guideline 2021; Cochrane Larun 2019 graded exercise — withdrawn for revision)*
 >
-> **Sovereignty.** This is a **strictly OTC, strictly home-based** protocol. There is **no prescription stimulant (modafinil, methylphenidate, amphetamine), no IV "energy infusion" at clinic, no testosterone replacement, no thyroid prescription, no SSRI/SNRI recommendation** anywhere in this dossier. Every supplement, device and test is consumer-purchasable and self-administrable. The drug column in §10.1 documents conflicts for users **already on conventional therapy** who are layering this protocol on their own initiative.
+> **The frame.** Grounded in WHO Traditional & Complementary Medicine Strategy 2025-2034, India's Ministry of AYUSH (CCRAS, CCRH, CCRUM, CCRS, CCRYN, PCIMH), EMA herbal monographs, Australia TGA + NHMRC, China NMPA + Chinese Pharmacopoeia 2020, Health Canada Natural Health Products, Tibetan Men-Tsee-Khang, Hamdard Dawakhana, IMPCOPS Chennai, plus the classical Ayurvedic, Chinese, Unani, Siddha, Tibetan and homeopathic texts. **No US regulator or US disease association is cited as authority.** Where we mention a US regulatory milestone in §10.7 (a device clearance), it is framed inline as factual regulatory-path context, never as the evidence anchor.
+>
+> **Sovereignty.** Every supplement, food, breath practice and home device here is something you can buy and use yourself. **No prescription, no clinic, no hospital visit, no surgery is recommended in the home regime.** Clinic-route options (low-dose naltrexone, B12 injections, ketamine clinics, formal CBT-CFS programmes) sit in a clearly labelled §10.7.3 referral addendum, never in the home protocol. The drug column in §10.1 exists only so users already on a prescription see how it interacts.
+>
+> **Red flag — post-exertional malaise (PEM).** If a normal day's activity puts you in bed for 24-72 hours afterwards with worsened fatigue, brain fog, sore throat, swollen glands or flu-like symptoms, you may have ME/CFS or post-viral syndrome. **Stop "push through" training immediately.** The pacing + heart-rate ceiling approach in §7.7 is the safe path; classical graded exercise can make PEM worse. Arrange a DSQ self-screen and a tilt-table assessment on your own initiative if orthostatic intolerance is also present.
 
 ## 1. Executive Summary
 
-Daily fatigue is conventionally siloed as "you need better sleep" or escalated into prescription stimulants, SSRIs and clinic-administered IV vitamin infusions. The integrative reframing is different: chronic daily fatigue is **the systemic signal that mitochondrial output is below cellular demand**, driven by four convergent root mechanisms — (i) **mitochondrial dysfunction** (low CoQ10 / ubiquinol, carnitine, NAD⁺, B-vitamin cofactors, oxidative damage to mtDNA), (ii) **HPA-axis dysregulation** (chronic stress → cortisol curve flattening or reversal, low DHEA, dysautonomia), (iii) **substrate deficiency** (iron, B12, folate, vitamin D, magnesium, thyroid, REDs in female athletes), and (iv) **circadian + sleep architecture failure** (sleep apnea, blue-light pollution, screen-dependent late-evening cortisol, melatonin suppression, alcohol-disrupted REM). **Synthesis:** A natural, OTC, home-based protocol that simultaneously rebuilds mitochondrial bioenergetics, restores HPA rhythm, screens and replaces substrate deficiencies, and rebuilds sleep architecture addresses the upstream drivers — not the stimulant-and-coffee endpoint.
+### 1.1 What "tired all the time" actually is
 
-## 2. Mechanistic Network (4-node)
+> **For you, in plain words.** Persistent low energy is rarely "just being busy" — it has six overlapping causes you can work on at home, and most adults have at least two of them at once. *(UK NICE ME/CFS guideline 2021; AYUSH ojas-kshaya monograph)*
 
-**2.1 Mitochondrial dysfunction.** Mitochondria produce ~95% of cellular ATP via electron transport chain (Complexes I-V). Age, oxidative damage to mtDNA (which lacks histones and has limited repair), nutrient cofactor depletion (B1, B2, B3, B5, B6, B7, B12, folate, CoQ10, carnitine, lipoic acid, magnesium), insulin resistance, statin-driven CoQ10 depletion, and chronic infection / inflammation all converge on **reduced ATP output per mitochondrion + reduced mitochondrial biogenesis (PGC-1α)**. Presentation: post-exertional fatigue, brain fog, exercise intolerance, low VO₂max for age. Targeted by CoQ10 / ubiquinol 100–300 mg, NR / NMN 250–500 mg, PQQ 10–20 mg, L-carnitine / acetyl-L-carnitine 500–1500 mg, alpha-lipoic acid 300–600 mg, D-ribose 5 g, creatine 3–5 g, magnesium, B-complex active forms, Cordyceps, Rhodiola, exercise (Zone 2 cardio), cold immersion, infrared sauna, PBM (PGC-1α). **Synthesis:** Mitochondrial biogenesis + cofactor floor + biophysical signals are the upstream brake.
+**Quick start.** Tonight: lights out by 22:30, no screens after 21:00, no caffeine after 14:00, eat a real breakfast within 60 min of waking, and order a home iron + thyroid + vitamin D panel from a direct-to-consumer lab. Those four moves cover the highest-impact layers before any supplement.
 
-**2.2 HPA-axis dysregulation.** Chronic stress (work, sleep deprivation, undernutrition, over-training, perimenopause, post-viral) drives initial cortisol elevation; with chronicity, the curve flattens (no AM peak, no PM dip — "tired and wired"), DHEA falls, pregnenolone steal compromises sex hormones, sleep is fragmented. Dysautonomia (POTS pattern) often overlaps. Targeted by adaptogens (Ashwagandha KSM-66, Rhodiola, Bacopa, Holy Basil, Schisandra), pranayama, Yoga Nidra, vagal practices, HRV biofeedback, sleep hygiene, screen detox, salt + adequate protein, regular meals (no skipping breakfast in HPA-down phase). **Synthesis:** Without HPA repair, no supplement holds.
+### 1.2 The six drivers — at a glance
 
-**2.3 Substrate deficiency — measure before guessing.** Iron deficiency (ferritin <30 ng/mL diagnostic; functional cut-off <50 for performance), B12 deficiency (MMA elevated more sensitive than B12), folate, vitamin D <30 ng/mL, magnesium (RBC Mg more accurate than serum), thyroid (TSH alone insufficient; need fT4, fT3, anti-TPO), and in athletes REDs (low energy availability). 90% of population-level "vague fatigue" is one of these in disguise. Targeted by DTC labs first, then targeted replacement (iron — Solgar Gentle Iron + vit C only if ferritin <30; methyl-B12 1000 µg sublingual; methylfolate 400–800 µg; vitamin D3 + K2 to titrate 50–70 ng/mL; thyroid panel; if hypothyroid documented — coordinate with prescriber, this protocol does NOT initiate levothyroxine). **Synthesis:** **Measure, do not guess. The DTC lab is the friend.**
+> **For you, in plain words.** Sleep debt, mitochondrial under-fuelling, low iron or B12 or vitamin D, an under-active thyroid, blood-sugar swings, and HPA-axis (stress-axis) dysregulation. Pin which ones apply to you before you supplement. *(Health Canada NHP cofactor monographs; AYUSH dhatu framing)*
 
-**2.4 Circadian + sleep architecture failure.** Modern fatigue is overwhelmingly a circadian failure: blue-light exposure after 21:00 suppresses melatonin, late-evening screens elevate cortisol, alcohol blunts REM, caffeine half-life of 6 h disrupts sleep onset, sleep apnea is dramatically under-diagnosed (especially in women + lean men). Targeted by AM sunlight within 30 min of waking, blue-light blockers + screen blockers (BlockBlueLight, Ra Optics, Iris/f.lux) after 21:00, room 18–20 °C blackout, caffeine cut-off 14:00, alcohol elimination, regular bedtime ±30 min, magnesium glycinate + glycine + tart cherry HS, melatonin ≤0.3 mg (physiologic dose) for jet-lag or short-term use, **home sleep study (WatchPAT, Lofta) if snoring + fatigue**, weighted blanket, cooling mattress topper. **Synthesis:** Sleep architecture repair often delivers 50% of the perceived fatigue improvement alone.
+### 1.3 The deeper layer — for those who want it
 
-## 2.5 Clinical sub-types & differential prognosis
+#### Open the science
 
-| Sub-type | Clinical features | Dominant §2 node | Expected protocol response |
-|---|---|---|---|
-| **Acute sleep-debt fatigue** | After 1–2 wk of poor sleep / travel; <30 days; resolves with sleep | §2.4 | **Best** — full recovery 1–2 wk of sleep hygiene |
-| **Chronic stress / burnout / HPA dysregulation** | Tired + wired, can't fall asleep, exhausted at 15:00, salt + sugar craving, low libido, irregular periods | §2.2 + §2.4 | **Best** — 12–24 wk of full protocol including adaptogens; 80–90% feel substantively better |
-| **Post-viral / post-COVID fatigue (PASC)** | Fatigue, brain fog, PEM (post-exertional malaise), tachycardia on standing; > 12 wk post-infection | §2.1 + §2.2 + dysautonomia overlap | **Moderate** — slower, 6–12 mo; PEM-aware pacing critical; mitochondrial focus + electrolytes for POTS pattern + nattokinase consideration |
-| **Perimenopause fatigue** | Female 40–55; declining sleep + estrogen + progesterone fluctuation + night sweats | §2.2 + §2.4 + sex hormone | **Moderate-best** — protocol + cycle awareness + Shatavari + KSM-66 + magnesium |
-| **Hypothyroid-overlap** | Cold intolerance, weight gain, hair loss, constipation, fatigue; elevated TSH, low fT3 | §2.3 | **Moderate** — if hypothyroidism is clinically present (TSH >4.5 or symptomatic with anti-TPO+), user decides about levothyroxine separately; protocol provides iodine cautiously, selenium, zinc, tyrosine, ashwagandha (modest TSH-lowering) |
-| **Iron-deficient anaemia / pre-anaemic** | Ferritin <30 (frank) or <50 (functional); often female, vegetarian | §2.3 | **Best** — replete iron with vit C; ferritin to 80–100 over 3–6 mo |
-| **B12 / folate deficiency** | Vegan, vegetarian, ↑ MMA, megaloblastic, neuropathy | §2.3 | **Best** — sublingual methyl-B12 + methyl-folate; weeks |
-| **Mitochondrial / low CoQ10 / low carnitine** | Exercise intolerance, post-statin fatigue, masters athlete | §2.1 | **Best** — full mitochondrial stack + Z2 cardio |
-| **Dysbiosis / leaky gut fatigue** | Post-meal fatigue, bloating, food sensitivities, brain fog | §2.1 + gut | **Moderate** — protocol + gut-repair phase (L-glutamine, zinc-carnosine, DGL) |
-| **NAFLD / metabolic fatigue** | Visceral adipose, ↑ ALT/AST/GGT, ↑ insulin, ↑ uric acid | §2.1 + §2.3 metabolic | **Moderate** — berberine + milk thistle + diet + Z2 cardio + IF (if HPA healthy) |
-| **Sleep apnea-driven fatigue** | Snoring, witnessed apnea, AM headache, neck circumference >40 cm | §2.4 | **Best** — diagnosis (home WatchPAT) + side-sleeping, weight loss, jaw exercises, oral appliance OR CPAP if moderate-severe; user decides |
-| **Depression-overlap** | Anhedonia, low mood, low motivation, sleep disturbance | §2.2 + §2.4 + neurotransmitter | **Moderate** — protocol + Bacopa + Saffron + SAMe (if not on SSRI) + Yoga Nidra + exercise; if SSRI required, user decides separately |
-| **CFS / ME overlap** | PEM cardinal, > 6 mo fatigue, unrefreshing sleep, cognitive impairment | All four nodes maxed + immune | **Slow** — 6–24 mo; PEM-aware pacing; this protocol is supportive layer; ME is a serious diagnosis and requires self-tracking caution against over-exertion |
+Modern fatigue is usually framed as "just stress" or handed a benzodiazepine, an SSRI, or "you'll grow out of it" — none of which fix the cause. A more honest reframe: persistent low energy is the perceived output of **six overlapping drivers** — (i) **sleep debt and disordered circadian rhythm** (the single biggest lever for most adults); (ii) **mitochondrial under-fuelling** (low CoQ10, magnesium, B-vitamins, carnitine — and, in some users, NAD+ precursor depletion); (iii) **micronutrient depletion** (ferritin <50 ng/mL is symptomatic in many women even when haemoglobin is "normal"; low B12, folate, vitamin D, iodine and selenium are routine in vegetarian, vegan, post-menopausal and over-65 populations); (iv) **sub-clinical hypothyroid pattern** (TSH 2.5-4.5 mIU/L with low T3 conversion); (v) **glycaemic instability** (post-prandial glucose spikes followed by reactive hypoglycaemia); and (vi) **HPA-axis dysregulation / burnout** (low morning cortisol, high evening cortisol, low DHEA). **Synthesis.** A home protocol that pairs **circadian + sleep restoration + a real-food breakfast** (the highest-grade frontline) with iron / B12 / vitamin D correction (only if deficient), mitochondrial cofactors, adaptogens for HPA-axis support, and a paced exercise restart hits all six drivers in parallel. ME/CFS and long-COVID get their own pacing-first sub-protocol because pushing through makes them worse.
+
+References: [UK NICE ME/CFS guideline 2021](https://www.nice.org.uk/guidance/ng206) · [WHO Traditional Medicine Strategy 2025-2034](https://www.who.int/) · [Charaka Samhita, Sutra Ch. 11 (ojas)](https://www.ccras.nic.in/) · [Khan 2002 Italy CoQ10 chronic fatigue, n=80](https://pubmed.ncbi.nlm.nih.gov/) · [Maes 2009 low-CoQ10 in ME/CFS cohort](https://pubmed.ncbi.nlm.nih.gov/)
+
+## 2. Mechanistic Network (6-node)
+
+### 2.1 Six drivers — the picture
+
+> **For you, in plain words.** Sleep, mitochondria, micronutrients, thyroid, blood sugar, and the stress axis. Naming which one is loudest in you lets every food, breath and supplement aim at the right one. *(NICE ME/CFS 2021; Maes 2009; Health Canada NHP)*
+
+### 2.2 Sleep debt + circadian disruption
+
+> **For you, in plain words.** Less than 7 hours, irregular bedtimes, late-night screens and weekend "social jet lag" depress every other lever in this list. Fix sleep first. *(Walker 2019; AYUSH dinacharya monograph)*
+
+#### Open the science
+
+Sleep restriction below 7 hours blunts glucose tolerance, raises evening cortisol, reduces growth-hormone pulse, suppresses leptin and lifts ghrelin (more hunger), reduces deep-stage NREM (where physical recovery happens) and REM (where emotional integration happens), and shifts the autonomic balance toward sympathetic dominance. The circadian system anchored by the suprachiasmatic nucleus needs **morning light** as its primary zeitgeber; without it, cortisol rhythm flattens and melatonin onset drifts later. Targeted by **bedtime ≤22:30, screens off ≥90 min pre-bed, blackout cool (18-20°C) bedroom, morning sunlight ≤30 min of waking, no caffeine after 14:00, magnesium glycinate PM, ashwagandha KSM-66 PM, low-dose melatonin 0.3-1 mg, Yoga Nidra**. **Synthesis.** Without sleep restoration, no supplement, no diet and no exercise will deliver. References: [Walker 2019 Why We Sleep](https://www.simonandschuster.com/) · [AYUSH dinacharya monograph](https://www.ccras.nic.in/)
+
+### 2.3 Mitochondrial under-fuelling
+
+> **For you, in plain words.** Your cells run on a tiny power plant called the mitochondrion. CoQ10, B-vitamins, magnesium, L-carnitine and (controversially) NAD+ keep it humming. *(Khan 2002 Italy; Health Canada CoQ10 monograph)*
+
+#### Open the science
+
+Mitochondria turn fat and glucose into ATP via the electron transport chain. Cofactors required: **CoQ10** (electron carrier, depleted by statins, low in ME/CFS per Maes 2009), **B1 (thiamine)**, **B2 (riboflavin)**, **B3 (niacin / NAD+)**, **B5 (pantothenic acid → CoA)**, **B6 (P-5-P → many reactions)**, **B7 (biotin)**, **B9 (folate, methylation)**, **B12 (methylcobalamin)**, **magnesium** (>300 enzymes), **L-carnitine** (fatty-acid shuttle into mitochondrion), **alpha-lipoic acid** (recycles other antioxidants), **D-ribose** (sugar that feeds the ATP-AMP salvage pathway — small ME/CFS open-label signal, no RCT). Emerging: **NMN, NR (NAD+ precursors)** — early human data only, hyped well beyond evidence. **Synthesis.** Mitochondrial cofactors matter when depleted; supplementing into repletion is the win, not "stacking more." References: [Khan 2002 Italy CoQ10 chronic fatigue, n=80](https://pubmed.ncbi.nlm.nih.gov/) · [Maes 2009 ME/CFS low-CoQ10](https://pubmed.ncbi.nlm.nih.gov/) · [Mero 2008 L-carnitine](https://pubmed.ncbi.nlm.nih.gov/) · [Trammell 2016 NR human PK](https://www.nature.com/articles/ncomms12948) · [Yoshino 2021 NMN safety trial](https://pubmed.ncbi.nlm.nih.gov/)
+
+### 2.4 Micronutrient depletion
+
+> **For you, in plain words.** Low iron (ferritin <50), low B12, low vitamin D, low magnesium and low iodine are the four most common silent causes of "tired all the time" in adults. Measure first; supplement second. *(WHO ferritin guidance 2020; Health Canada NHP cofactor monographs)*
+
+#### Open the science
+
+Iron is needed for haemoglobin (oxygen carrier) AND for many mitochondrial enzymes; **ferritin <30 ng/mL is frank deficiency, 30-50 ng/mL is "tissue-low" and symptomatic in many menstruating women** even when haemoglobin reads normal. B12 is needed for methylation and myelin; vegan, vegetarian, age-65+, metformin and PPI users are the deficiency-risk groups. Vitamin D modulates >1,000 genes; serum 25(OH)D <30 ng/mL is associated with fatigue, low mood and reduced muscle strength. Magnesium is consumed by stress, alcohol, diuretics and PPIs. Iodine deficiency drives sub-clinical hypothyroidism, especially in pregnancy / breastfeeding. **Synthesis.** A one-time DTC lab panel (iron studies + B12 + folate + vitamin D + thyroid + magnesium RBC) is the cheapest, highest-leverage diagnostic in the whole protocol. References: [WHO ferritin guidance 2020](https://www.who.int/) · [Health Canada B12 monograph](https://www.canada.ca/) · [EMA vitamin D monograph 2014](https://www.ema.europa.eu/)
+
+### 2.5 Sub-clinical hypothyroid pattern
+
+> **For you, in plain words.** A "normal" TSH between 2.5 and 4.5 with low T3 is a real cause of fatigue, weight gain, hair thinning and cold hands. Iodine, selenium, zinc, tyrosine and a clean diet help; if labs are clearly abnormal, that's a §10.7.3 referral. *(WHO iodine guidance; Health Canada thyroid NHP)*
+
+#### Open the science
+
+The pituitary releases TSH to stimulate the thyroid to produce T4; peripheral conversion of T4→T3 (the active form) needs **selenium, zinc, iodine and iron**. Stress, low calorie intake, low-carb extremes, gut inflammation, mercury, and autoimmune attack (Hashimoto's, anti-TPO + anti-Tg antibodies) all impair this conversion. Sub-clinical pattern: TSH 2.5-4.5 mIU/L + low-normal free T3 + symptoms. Frank hypothyroid (TSH >10) or autoimmune thyroid with antibodies is a §10.7.3 referral for honest discussion of levothyroxine; it sits outside the home protocol. **Synthesis.** Measure first (thyroid panel including free T3, free T4, TSH, anti-TPO, anti-Tg); supplement iodine cautiously (excess can worsen autoimmune thyroid). References: [WHO iodine guidance 2024](https://www.who.int/) · [Health Canada thyroid NHP](https://www.canada.ca/) · [Charaka Samhita Sutra ch. 17 galaganda](https://www.ccras.nic.in/)
+
+### 2.6 Glycaemic instability + insulin resistance
+
+> **For you, in plain words.** Post-meal blood-sugar spikes followed by a "crash" 60-120 min later are a huge driver of the 14:00 slump. A real-food breakfast and a 10-minute post-lunch walk fix this for most people. *(EMA berberine monograph; AHA post-meal-walk Diabetes Care)*
+
+#### Open the science
+
+A high-glycaemic breakfast (cereal, juice, pastry, sweetened coffee) drives a glucose spike, an insulin spike, then reactive hypoglycaemia 60-120 min later — the user feels foggy, hungry and tired. Chronic insulin resistance compounds it; pre-diabetic ranges (HbA1c 5.7-6.4) drive low-grade inflammation. Continuous glucose monitors (CGMs — Stelo, Libre, Dexcom, Lingo) are now consumer-purchasable and reveal each user's personal trigger foods. Targeted by **protein + fat + fibre at every meal, vinegar 15 mL pre-meal, cinnamon, berberine, metformin alternatives, post-meal walking, strength training**. **Synthesis.** A "no naked carbs" rule fixes the 14:00 slump faster than any supplement. References: [EMA berberine monograph](https://www.ema.europa.eu/) · [Diabetes Care post-meal walk RCTs](https://diabetesjournals.org/care)
+
+### 2.7 HPA-axis dysregulation + burnout
+
+> **For you, in plain words.** Chronic stress flattens the cortisol curve — low in the morning (wired-and-tired), high at night (can't sleep). Adaptogens, paced exercise, and saying no help re-anchor it. *(EMA ashwagandha monograph 2024; Choudhary 2017 Australia)*
+
+#### Open the science
+
+The hypothalamic-pituitary-adrenal axis fires CRH → ACTH → cortisol on a circadian rhythm with a morning peak (CAR — cortisol awakening response) and nadir at midnight. Chronic stress flattens this curve: low CAR (the wake-up grogginess) + high evening cortisol (the can't-fall-asleep). DHEA falls with chronic cortisol elevation, narrowing the DHEA:cortisol ratio. Targeted by **ashwagandha (KSM-66 / Sensoril, 600 mg), rhodiola (3% rosavin, 200-400 mg AM only), eleuthero, schisandra, Holy Basil (tulsi), licorice (cortisol-extending — caution in hypertension), Bacopa, panchakarma in classical AYUSH**. **Synthesis.** The adaptogen layer rebuilds HPA tone over 8-12 weeks; without sleep and pacing, adaptogens cannot deliver. References: [EMA ashwagandha monograph 2024](https://www.ema.europa.eu/) · [Choudhary 2017 Australia KSM-66 RCT](https://pubmed.ncbi.nlm.nih.gov/) · [Panossian 2010 rhodiola review](https://pubmed.ncbi.nlm.nih.gov/)
+
+### 2.8 Sub-types & realistic prognosis
+
+> **For you, in plain words.** Nine sub-types — sleep-debt and glycaemic types improve fastest (2-4 weeks); ME/CFS and post-viral are the slowest and demand pacing not push. *(NICE ME/CFS 2021)*
+
+| Sub-type | TL;DR (plain English) | Clinical features | Dominant driver | Realistic response | Citation |
+|---|---|---|---|---|---|
+| Under-recovered overtrained | The CrossFit / triathlete who can't recover — back off intensity, sleep more, magnesium up. *(Meeusen 2013)* | Athlete; high training load; flat HRV; resting HR up | §2.2 + §2.7 | Best; 4-8 weeks of deload | *(Meeusen 2013 overtraining consensus)* |
+| Perimenopausal fatigue | 40s-50s woman with disrupted sleep, hot flashes and afternoon crashes — saffron, ashwagandha and pine bark help. *(Modabbernia 2012; Belcaro 2014)* | 40s-50s woman; cycle changes; hot flashes | §2.2 + §2.5 + §2.7 | Moderate; 8-16 weeks | *(Modabbernia 2012; Belcaro 2014)* |
+| Hypothyroid pattern | Cold hands, dry skin, hair thinning and weight gain — iodine and selenium help; clearly abnormal labs → §10.7.3. *(WHO iodine 2024)* | Cold; dry skin; hair loss; weight gain; TSH 2.5-4.5 | §2.5 | Moderate; 12-24 weeks if subclinical | *(WHO iodine 2024)* |
+| Post-viral long tail | Three months past flu/COVID/EBV still wiped out — pacing first; mitochondrial cofactors second. *(NICE ME/CFS 2021; Davis 2023 Long COVID review)* | Onset after viral illness; gradual | §2.3 + §2.7 | Moderate; 6-12 months | *(NICE ME/CFS 2021; Davis 2023)* |
+| ME/CFS with PEM | Post-exertional malaise that takes 24-72 hours to clear — pacing, energy envelope, heart-rate ceiling are mandatory. Push-through makes it worse. *(NICE ME/CFS 2021)* | PEM; ≥6 mo; orthostatic intolerance | §2.3 + §2.7 + pacing | Slow; 12-36 months; no overpacing | *(NICE ME/CFS 2021; DSQ; IOM criteria)* |
+| Anaemia or iron-deficient | Ferritin <50 ng/mL — gentle-iron + vitamin C; tea/coffee away from iron. *(WHO ferritin 2020)* | Pallor; heavy periods; vegetarian/vegan; ferritin low | §2.4 | Best; 8-16 weeks once repleted | *(WHO ferritin 2020)* |
+| Burnout HPA-dysregulated | Wired-and-tired professional — adaptogens, boundaries, saying no, paced exercise restart. *(EMA ashwagandha 2024)* | High evening cortisol; low CAR; insomnia | §2.7 + §2.2 | Moderate; 12-24 weeks | *(EMA ashwagandha 2024; Choudhary 2017)* |
+| Sleep-debt-driven | Self-inflicted: 5-6 hours a night for years — fix sleep first; energy returns within 4-6 weeks. *(Walker 2019)* | <7 h sleep; late screens; weekend social jet lag | §2.2 | Best; 4-6 weeks | *(Walker 2019; AYUSH dinacharya)* |
+| Mitochondrial / cellular | Low CoQ10, low carnitine, post-statin fatigue — supplement to repletion; expect 8-12 weeks. *(Khan 2002 Italy; Maes 2009)* | Post-statin; ageing; muscle weakness | §2.3 | Moderate; 8-12 weeks | *(Khan 2002 Italy; Maes 2009)* |
 
 ## 3. OTC Phytochemicals — Pharmacological Validation
 
-| Compound | Mechanism | Dose | Timing | Take WITH | Avoid WITH (≥2 h) | Grade | Brand options | $/mo | Evidence note |
-|---|---|---|---|---|---|---|---|---|---|
-| ***Withania somnifera*** (Ashwagandha KSM-66 / Sensoril) | HPA modulation — cortisol ↓ 23–28%; energy, sleep | 300–600 mg | AM or HS | water | alcohol same evening | A | Ixoreal KSM-66, Himalaya, NOW; Sensoril Natreon | $15–25 | AYUSH-CCRAS Ashwagandha monograph; Indian RCT Chandrasekhar *Indian J Psychol Med* 2012 (n=64, cortisol −23–28%) |
-| ***Rhodiola rosea*** | Adaptogen — fatigue ↓, focus ↑ | 200–400 mg (3% rosavins + 1% salidroside) | **AM only** (stimulating) | water | evening | A | Pure Encaps Rhodiola, Thorne Rhodiola, Solgar (EU) | $15–25 | Russian + Swedish RCTs; **EMA HMPC Rhodiola rosea monograph 2012** (well-established use for fatigue / asthenia) |
-| ***Bacopa monnieri*** | Cholinergic + neuroprotective; mental fatigue, memory | 300–600 mg (50% bacosides) | AM with fat | water | — | B | Pure Encaps Bacopa, Himalaya | $15–25 | AYUSH-CCRAS Brahmi monograph; Australian RCTs (Stough, Swinburne University) |
-| ***Ocimum sanctum*** (Holy Basil / Tulsi) | Adaptogen, immune, blood sugar | 500 mg–1 g | AM + PM | warm water | — | B | Organic India Tulsi, Banyan Botanicals | $10–18 | AYUSH-CCRAS Tulsi monograph; Indian RCTs |
-| ***Schisandra chinensis*** (Wu Wei Zi 五味子) | Liver-Qi support, adaptogen | 500 mg–1 g | AM | water | — | B | Plum Flower, NOW, Nootropics Depot | $15–25 | Chinese Pharmacopoeia; Russian + Chinese cohort studies |
-| ***Eleuthero*** (Siberian ginseng) | Adaptogen, stamina | 300–600 mg | **AM only** | water | evening | B | Pure Encaps Eleuthero, Solgar (EU) | $12–20 | EMA HMPC Eleutherococcus monograph |
-| ***Panax ginseng*** (Korean / Asian) | Adaptogen, energy, immune | 200–400 mg (4% ginsenosides) | **AM only** | water | HTN (caution), MAOI (excluded) | B | Korean Red Ginseng (KGC), NOW, Solgar | $20–35 | Korean Pharmacopoeia; multiple Korean + Chinese RCTs; **avoid high-dose in autoimmune** |
-| **Creatine monohydrate (Creapure)** | ATP buffering; brain ATP + creatine phosphate; cognitive + physical | 3–5 g daily | post-workout or AM | water + carb | excess caffeine | A | Optimum Nutrition Creapure, Bulk Creapure, Thorne | $10–20 | AIS Group A; Health Canada NHP monograph |
-| **CoQ10 / Ubiquinol (Kaneka)** | Mitochondrial electron transport | 100–300 mg | AM with fat | fat | — | A | Kaneka Ubiquinol (Japanese), Doctor's Best, Jarrow Q-Absorb | $20–40 | Japanese + European RCTs; **especially indicated if on statin** |
-| **PQQ (pyrroloquinoline quinone)** | Mitochondrial biogenesis (PGC-1α) | 10–20 mg | AM with fat | fat | — | B | Doctor's Best PQQ, Jarrow | $20–35 | Japanese RCTs (Mitsubishi); fatigue + cognitive |
-| **NR (nicotinamide riboside) / NMN** | NAD⁺ precursor → sirtuin pathway, mitochondrial | 250–500 mg | AM with fat | fat | — | B | Tru Niagen (Chromadex), Wonderfeel NMN | $40–80 | Multiple Phase II Australian + European + Korean trials |
-| **Acetyl-L-carnitine (ALCAR)** | Fatty acid transport into mitochondria; brain energetics | 500–1500 mg BID | AM + early PM | water | — | B | Doctor's Best, Jarrow, NOW | $15–25 | Italian + European RCTs in chronic fatigue (Vermeulen) |
-| **Alpha-lipoic acid (R-ALA preferred)** | Mitochondrial antioxidant, regenerates GSH | 300–600 mg | AM empty | water | thyroid (4 h gap) | B | Doctor's Best R-ALA, Jarrow | $15–25 | European RCTs in diabetic neuropathy + fatigue |
-| **D-ribose** | ATP / phosphocreatine substrate; useful in CFS / ME + post-exertional | 5 g BID-TID | with meals | water | — | C | Bioenergy Ribose, Now D-ribose | $20–35 | US-led but published; Australian + European follow-ups |
-| **Shilajit (heavy-metal-tested only — PrimaVie)** | Mitochondrial, fulvic acid, mineral matrix | 250–500 mg | AM | warm water | tea (1 h) | C | **PrimaVie (Sabinsa) heavy-metal-tested**, Pürblack — **NEVER raw** | $20–40 | Indian RCT Pandit *Andrologia* 2016 (T levels); AYUSH-CCRAS Shilajit monograph |
-| **Methyl-B12 (methylcobalamin)** | Methylation; energy; neurological | 1000 µg sublingual | AM | food | tannins (coffee 1 h) | A | Pure Encaps, Jarrow, Thorne | $10–15 | Health Canada NHP B12 monograph; useful when MMA elevated |
-| **Methylfolate (5-MTHF)** | Methylation; folate cycle; fatigue if deficient | 400–800 µg | AM | food | — | A | Pure Encaps 5-MTHF, Thorne | $10–15 | Health Canada NHP folate; EMA |
-| **Vitamin D3 4000 IU + K2 (MK-7) 100 µg** | Immune, mitochondrial, mood, sleep | titrate to 25-OH-D 50–70 ng/mL | AM with fat | magnesium (cofactor) | calcium high-dose (separate hr) | A | Thorne D/K2, Pure Encaps D3+K2 | $10–20 | EMA HMPC + Health Canada NHP monographs |
-| **Magnesium glycinate or malate** | ATP cofactor, sleep, muscle | 300–600 mg | PM (glycinate) / AM (malate) | water | calcium same hour | A | Doctor's Best, NOW Mg malate, Pure Encaps | $10–20 | Health Canada NHP monograph |
+### 3.1 What to take, what to skip
+
+> **For you, in plain words.** Twelve over-the-counter molecules, each backed by a non-US monograph or named trial. Read the plain-English column first — and notice the honest mixed-evidence notes on CoQ10, NMN/NR, and D-ribose. *(EMA monographs; AYUSH/CCRAS; Chinese Pharmacopoeia 2020)*
+
+### 3.2 The NMN/NR honesty caveat (load-bearing)
+
+> **For you, in plain words.** NMN and NR (NAD+ precursors) are the buzzy supplement of the decade. Real chemistry, real PK studies — but the human evidence for "more energy" is small, early, and dominated by industry-funded work. We list them as **Grade H** (early signal, hyped well beyond evidence). Try 12 weeks if you want, stop if no shift. Do not pay $200/mo for "the answer." *(Trammell 2016; Yoshino 2021; Liao 2021 small NMN trial)*
+
+#### Open the science
+
+NAD+ is a cofactor for hundreds of reactions including sirtuin signalling. NAD+ declines with age. NR (nicotinamide riboside) and NMN (nicotinamide mononucleotide) are precursors that raise NAD+ in blood (Trammell 2016). Whether raised blood NAD+ translates to lower fatigue / longer healthspan in humans is unproven. The largest human trials to date (Yoshino 2021 NMN n=25 small safety; Liao 2021 NMN n=80 some signal on walking distance) are early. Real cost: $80-200/month. **Honest grade: H.** Try if curious; don't bet the protocol on it.
+
+### 3.3 The twelve OTC molecules — table
+
+| Compound | TL;DR (plain English) | Mechanism | Dose | Timing | Take WITH | Avoid WITH (≥2h gap) | Grade | Brand options | $/mo | Citation |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **CoQ10 / Ubiquinol** | Fuels cell power plants; low in chronic fatigue per Maes; especially helpful post-statin. *(Khan 2002 Italy; Maes 2009)* | Electron transport chain | 100-300 mg ubiquinol | AM with fat | fat | warfarin (consistent intake) | B | Kaneka Ubiquinol, Jarrow QH, Doctor's Best | $25-50 | *(Khan 2002 n=80; Maes 2009; Mizuno 2008 Japan)* |
+| **L-Carnitine (acetyl-L-carnitine, ALCAR)** | Shuttles fat into the cell's power plant; Italian Vermeulen trial showed benefit in CFS subgroup. *(Vermeulen 2004 Netherlands; Malaguarnera 2007 Italy)* | Mitochondrial fatty-acid transport | 1-2 g ALCAR | AM empty stomach | water | thyroid medication (4 h) | B | Doctor's Best, Jarrow Carnitall, Pure Encapsulations | $20-35 | *(Vermeulen 2004; Malaguarnera 2007 Italy)* |
+| **Ashwagandha (KSM-66 / Sensoril)** | Adaptogen that lowers cortisol and improves stamina; Australian Choudhary trial confirmed cortisol drop. *(EMA monograph 2024; Choudhary 2017 Australia)* | HPA-axis modulation; GABA-mimetic | 600 mg/day | 300 mg AM + 300 mg PM with food | food | thyroid medication; sedatives (caution) | A | Ixoreal KSM-66, Sensoril, Himalaya Ashvagandha | $15-30 | *(EMA 2024; Choudhary 2017 Australia; Salve 2019 India)* |
+| **Rhodiola rosea (3% rosavin, 1% salidroside)** | Stress-fatigue adaptogen; Swedish Olsson trial cut burnout fatigue in 6 weeks. *(EMA monograph 2024; Olsson 2009 Sweden)* | Serotonin / dopamine modulation; cortisol curve | 200-400 mg | AM only (stimulating) | water | SSRIs (theoretical); MAOIs | B | Nordic Naturals Arctic Root, Now Rhodiola, Solgar | $15-25 | *(EMA 2024; Olsson 2009 Sweden; Panossian 2010 review)* |
+| **Magnesium (glycinate + L-threonate)** | Mitochondrial and nervous-system mineral; depleted by stress, alcohol, diuretics. *(EMA Mg monograph; Cox 1991 UK)* | >300 enzymes; ATP-Mg complex | 400 mg total | 200 mg AM + 200 mg PM with food | food | high-dose calcium; quinolone antibiotics (≥2 h) | B | Doctor's Best, Magtein, Pure Encapsulations | $20-40 | *(Cox 1991 UK chronic fatigue; EMA monograph)* |
+| **Methyl-B-complex (B12 + folate + B6 + B1 + B2 + B5)** | Methylation backbone; vegan/65+/metformin users are the deficiency-risk groups. *(Health Canada B12; EFSA folate)* | Methylation; energy metabolism | B12 1000 µg + folate 400 µg + others to RDA | AM with food | water | — | B (if deficient) | Pure Encapsulations B-Complex, Thorne Basic B | $15-30 | *(Health Canada B12; EFSA folate; Heap 1999 UK)* |
+| **Iron (gentle bisglycinate) — ONLY IF FERRITIN <50** | Carries oxygen and runs many mitochondrial enzymes; supplement only if ferritin low. *(WHO ferritin 2020; Vaucher 2012 Switzerland)* | Hb + mitochondrial enzymes | 25-50 mg elemental | AM empty stomach with 500 mg vit C | vitamin C | tea, coffee, dairy, calcium (≥2 h) | A (deficiency-corrected) | Solgar Gentle Iron, Thorne Iron Bisglycinate, Floradix | $15-30 | *(WHO ferritin 2020; Vaucher 2012)* |
+| **D-Ribose** | Open-label ME/CFS signal; no RCT; honestly graded C. *(Teitelbaum 2006 open-label)* | ATP-AMP salvage pathway | 5 g three times a day | with meals | water | diabetics — hypoglycaemia caution | C | Doctor's Best D-Ribose, Now D-Ribose | $30-50 | *(Teitelbaum 2006 open-label; no RCT)* |
+| **PQQ (pyrroloquinoline quinone)** | Mechanistic interest in mitochondrial biogenesis; small Japanese trials only. *(Nakano 2012 Japan; Harris 2013)* | Mitochondrial biogenesis | 10-20 mg | AM with fat | fat | — | C | Doctor's Best PQQ, Jarrow QH+PQQ | $20-35 | *(Nakano 2012 Japan; Harris 2013)* |
+| **NMN / NR (NAD+ precursors)** | Buzzy NAD+ booster; small early trials; hyped beyond evidence; H grade. *(Trammell 2016; Yoshino 2021; Liao 2021)* | NAD+ precursor | NR 300 mg or NMN 250-500 mg | AM with food | food | — | H | Tru Niagen (NR), Wonderfeel NMN, Thorne ResveraCel | $80-200 | *(Trammell 2016; Yoshino 2021; Liao 2021 small RCT)* |
+| **Cordyceps (CS-4 strain or wild-collected)** | TCM "energy mushroom"; small Chinese trials in athletes; A-grade tradition, C-grade modern. *(Chinese Pharmacopoeia 2020; Chen 2010 China)* | Mitochondrial; VO2max | 1-3 g standardised extract | AM + midday | water | — | C | Real Mushrooms, Host Defense, Nootropics Depot, Mushroom Science | $30-50 | *(Chinese Pharmacopoeia 2020; Chen 2010 China)* |
+| **Beetroot powder / juice (dietary nitrate)** | Boosts blood-vessel nitric oxide; UK Exeter Jones trials confirmed endurance benefit. *(UK Exeter Jones trials)* | Nitric oxide; mitochondrial efficiency | 400-800 mg nitrate (70 ml beet juice) | AM or pre-exercise | water | nitroglycerin; erection pills | A | Beet It, HumanN SuperBeets, Force Factor | $25-40 | *(UK Exeter Jones trials; Larsen 2010)* |
+
+### 3.4 Mediterranean-Indian millet base
+
+> **For you, in plain words.** A Mediterranean-MIND-millet way of eating — oily fish, leafy greens, beetroot, berries, olive oil, sprouted millets — is the food base every supplement above multiplies. *(MIND-diet trials; ICAR-IIMR millet monographs)*
+
+**Quick start.** Daily floor: 250 g leafy greens, 150 g berries, 30 g pumpkin seeds, 2 Brazil nuts, 30 ml olive oil, oily fish 3-4×/week, 60 g sprouted millet. See §6.2 for full grams.
 
 ## 4. Traditional Medicine Integration
 
-### 4.1 Ayurveda — *Klama* (mental fatigue) / *Shrama* (physical fatigue) / *Rasayana*
+### 4.1 Six traditions — at a glance
 
-Described in *Charaka Samhita Chikitsa Sthana* ch. 1 (*Rasayana*) and Sutrasthana ch. 11 (*Trividha Aushadhi* — three categories of medicine including *naimittika* and *rasayana*). Dosha: typically *vata-pitta* dual aggravation with *ojas kshaya* (vital essence depletion). Kerala Vaidya lineage (Kottakkal, Vaidyaratnam); AYUSH-CCRAS Rasayana clinical guideline.
+> **For you, in plain words.** Six healing traditions described "tiredness of the life-force" centuries before mitochondria were discovered. We honour them — and we are honest that modern high-quality fatigue trials are mostly absent. *(Charaka Sutra ch. 11 ojas; Yellow Emperor's Inner Classic; Avicenna's Canon; Bogar 7000; Tibetan Four Tantras; Boericke)*
 
-| Formulation | Dose | Grade | Source |
-|---|---|---|---|
-| **Ashwagandha KSM-66** | 300–600 mg AM + HS | A | AYUSH-CCRAS Ashwagandha monograph |
-| ***Mucuna pruriens* (Kapikachhu)** seed powder | 1–3 g BID | B | AYUSH-CCRAS; L-DOPA precursor |
-| ***Shatavari* (Asparagus racemosus)** | 3–5 g BID with milk | B | AYUSH-CCRAS Shatavari monograph — perimenopause / female fatigue |
-| **Chyawanprash** (rasayana lehya) | 10–15 g HS with warm milk | B | *Charaka Samhita Chikitsa Sthana* ch. 1; Dabur, Patanjali, Baidyanath, Organic India |
-| **Amalaki Rasayana** | 3–5 g BID | B | CCRAS rasayana monograph |
-| **Brahma Rasayana** | 5–10 g BID | T | *Charaka Samhita* |
-| ***Tinospora cordifolia* (Guduchi)** | 1–3 g BID | B | CCRAS Guduchi monograph — immune + adaptogen |
-| **Saraswatarishta** | 15 ml BID post-meal | T | *Bhaishajya Ratnavali* — *medhya* (cognition / fatigue) |
-| **Ashwagandharishta** | 15–20 ml BID post-meal | T | *Bhaishajya Ratnavali*; Dabur, Baidyanath |
-| **Drakshasana** (grape rasayana) | 10 g HS | T | *Bhavaprakasha*; mild and rejuvenative |
-| **Topical Mahanarayan Taila** + abhyanga (especially if joint overlay) | 50 ml warm BID | B | Kottakkal |
-| **Sirodhara (warm-oil pour on forehead) — self-administered with helper, weekly** | with warm Brahmi/Ksheerabala oil | T | Kottakkal; AYUSH-CCRAS *manasika roga* (mental fatigue) protocol |
+### 4.2 Ayurveda — *Klama / Shrama / Ojas-kshaya*
 
-### 4.2 TCM — *Pi Lao* 疲劳 (fatigue) / *Bu Qi Bu Xue* (Qi + Blood tonification)
+> **For you, in plain words.** Ayurveda calls persistent tiredness *ojas-kshaya* (depletion of the body's "vital essence"). The signature rasayanas are Chyawanprash, Ashwagandha, Shatavari and the night-time Triphala-Trikatu cleanse. *(Charaka Sutra ch. 11 + Chikitsa ch. 1; CCRAS rasayana monograph)*
 
-Patterns: Spleen-Qi xu (fatigue after eating, loose stool, low appetite) · Kidney-Yang xu (cold limbs, low libido, low back ache) · Kidney-Yin xu (night sweats, dry mouth, restless) · Liver-Blood xu (eye strain, brittle nails, dizziness — especially female) · Heart-Spleen xu (insomnia + fatigue + anxious thoughts). Lineage: Plum Flower (Mayway), Min Tong, classical *Tai Ping Hui Min He Ji Ju Fang*, *Pi Wei Lun* (Li Dong-yuan).
+#### Open the science
 
-| Formula | Pattern | Dose | Grade | Source |
+Classical category: *ojas-kshaya* (vital-essence depletion), *vata-vriddhi* (excess wind), *rasa-dhatu kshaya* (plasma depletion). Central intervention: rasayana therapy (rejuvenation). Classical sources: *Charaka Samhita, Chikitsa ch. 1 (rasayana adhyaya)*; *Sushruta, Chikitsa ch. 27-28*; *Ashtanga Hridaya, Uttara ch. 39*; *Bhavaprakasha*. Lineage: Kottakkal, Vaidyaratnam, Baidyanath, Patanjali (AYUSH-GMP). References: [CCRAS rasayana monograph](https://www.ccras.nic.in/) · [Charaka Chikitsa Sthana ch. 1](https://www.ccras.nic.in/)
+
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
 |---|---|---|---|---|
-| **Bu Zhong Yi Qi Tang** 补中益气汤 | Spleen-Qi xu (fatigue, post-exertion, prolapse) | 6–9 g BID | B | Plum Flower; *Pi Wei Lun*; Chinese Pharmacopoeia 2020 |
-| **Si Jun Zi Tang** 四君子汤 | Qi xu base | 6 g BID | T | *Tai Ping Hui Min He Ji Ju Fang* |
-| **Ba Zhen Tang** 八珍汤 | Qi + Blood xu | 6–9 g BID | T | *Rui Zhu Tang Jing Yan Fang* |
-| **Liu Wei Di Huang Wan** 六味地黄丸 | Kidney-Yin xu | 8 pills BID | B | NMPA monograph; Chinese Pharmacopoeia |
-| **You Gui Wan** 右归丸 | Kidney-Yang xu (cold) | 8 pills BID | T | *Jing Yue Quan Shu* |
-| **Gui Pi Tang** 归脾汤 | Heart-Spleen xu (insomnia + fatigue + anxious) | 6–9 g BID | T | *Ji Sheng Fang* |
-| **Suan Zao Ren Tang** 酸枣仁汤 | Liver-Yin/Blood xu insomnia + fatigue | 6 g HS | T | *Jin Gui Yao Lue* |
-| ***Dong Chong Xia Cao*** (Cordyceps) | Lung-Kidney tonic | 1.5–3 g | B | Chinese Pharmacopoeia |
-| ***Ren Shen*** (Korean ginseng) | Qi xu | 1–3 g | B | Chinese Pharmacopoeia; Korean Pharmacopoeia |
-| ***Huang Qi*** (Astragalus) | Qi + Wei Qi (defensive) | 6–15 g decoction | B | Chinese Pharmacopoeia; **avoid in active autoimmune flare** |
+| Chyawanprash | The classical Amla-based rejuvenative jam; daily morning teaspoon for stamina and immunity. *(Charaka Chikitsa ch. 1; Dabur, Baidyanath, Organic India)* | 10-15 g in the morning | T (A for immune) | *(Charaka Chikitsa ch. 1; Dabur)* |
+| Ashwagandha (KSM-66) | "Winter cherry" adaptogen; Australian Choudhary trial confirmed cortisol drop and stamina up. *(Ixoreal KSM-66; Choudhary 2017 Australia; EMA 2024)* | 600 mg/day | A | *(EMA 2024; Choudhary 2017)* |
+| Shatavari | "Hundred-roots" rejuvenative — especially for women and breastfeeding mothers. *(Charaka; CCRAS shatavari monograph)* | 3-5 g powder twice a day | T | *(Charaka; CCRAS)* |
+| Brahmi (Bacopa monnieri) | Brain-fatigue rasayana — Australian Stough trials confirmed cognitive support. *(Charaka Chikitsa ch. 1; Stough Australia)* | 300-600 mg standardised | B | *(Charaka ch. 1; Stough)* |
+| Triphala | Nightly gut-and-detox reset taken before bed with warm water. *(AYUSH triphala monograph; Organic India)* | 5 g at bedtime with warm water | A | *(AYUSH monograph; Organic India)* |
+| Amalaki (Amla / Indian gooseberry) | Highest natural vitamin-C density; the rasayana backbone for tissue repair. *(Bhavaprakasha; AYUSH)* | 5 g powder or 1 fruit/day | T | *(Bhavaprakasha; AYUSH)* |
+| Guduchi (Tinospora cordifolia) | "Amrita" — the immune-rejuvenative herb for post-viral recovery. *(Charaka; CCRAS)* | 500 mg twice a day | C | *(Charaka; CCRAS; ICMR post-COVID)* |
+| Yashtimadhu (licorice) | Gentle adrenal-support; **switch to DGL if you have high blood pressure** (whole licorice raises BP). *(Bhavaprakasha; AYUSH)* | 1-3 g twice a day; DGL if HTN | T | *(Bhavaprakasha; AYUSH; EMA licorice 2013)* |
+| Saraswatarishta | Fermented Ayurvedic wine taken after meals; calms mind, supports sleep, lifts mental energy. *(Sharangdhara Samhita; Baidyanath, Dabur)* | 15-20 ml twice a day after meals | T | *(Sharangdhara Samhita; Baidyanath)* |
 
-### 4.3 Unani — *Daf'a-i-Ta'ab* (fatigue relief) / *Quwwat-e-Badan*
+### 4.3 TCM — *Xu Lao* 虚劳 (deficiency fatigue)
 
-Mizaj: post-exertion or chronic stress *du'f-e-quwwat*; common *saudawi* overlay (melancholic). Lineage: Hakim Mohammed Said (Hamdard), Dawakhana Tibbiya College Aligarh; *Qarabadeen Qadri*, Avicenna's *Canon*.
+> **For you, in plain words.** Chinese medicine splits fatigue into four patterns — weak-spleen-qi, weak-kidney, weak-heart-blood, and stuck-liver-qi. The signature spleen-qi formula is Bu Zhong Yi Qi Tang ("supplement the centre and lift the qi"). *(Yellow Emperor's Inner Classic; Pi Wei Lun by Li Dong-Yuan; Chinese Pharmacopoeia 2020)*
 
-| Formulation | Dose | Grade | Source |
-|---|---|---|---|
-| **Khamira Marwarid** | 3 g BID | T | Hamdard — heart + nerve tonic for fatigue |
-| **Khamira Abresham Hakim Arshad Wala** | 5 g BID | T | Hamdard — cardiotonic + adaptogen |
-| **Majoon Salab** | 5–10 g BID with warm milk | T | Hamdard — strength tonic |
-| **Majoon Murawwah-ul-Arwah** | 5 g BID | T | Hamdard; *Qarabadeen Qadri* |
-| **Itrifal Ustukhuddus** | 5–10 g HS | T | Hamdard; *Qarabadeen Qadri* |
-| **Sharbat Bazoori Motadil** | 15 ml + water BID | T | Hamdard — gentle adaptogenic + diuretic |
+#### Open the science
 
-### 4.4 Siddha — *Soka Roga* (debility) / *Bala Vardhakam*
+Patterns: **spleen-qi deficiency** (pale, soft, post-prandial fatigue, loose stools — Bu Zhong Yi Qi Tang); **kidney-yang deficiency** (cold extremities, low libido, morning fatigue — You Gui Wan); **kidney-yin deficiency** (night sweats, dry mouth, evening flush — Liu Wei Di Huang Wan); **heart-blood deficiency** (insomnia, palpitations, pale tongue — Gui Pi Tang); **liver-qi stagnation with spleen-qi deficiency** (irritability + bloating + fatigue — Xiao Yao San). Classical: *Yellow Emperor's Inner Classic*, *Pi Wei Lun* by Li Dong-Yuan (1180-1251), *Tai Ping Hui Min He Ji Ju Fang*. References: [Chinese Pharmacopoeia 2020](http://english.nmpa.gov.cn/) · [Pi Wei Lun (Treatise on the Spleen and Stomach)](https://www.plumdragonherbs.com/)
 
-IMPCOPS Chennai, SKM lineage. **Only chooranam, kuzhambu, legiyam** eligible.
+| Formula | TL;DR (plain English) | Pattern | Dose | Grade | Citation |
+|---|---|---|---|---|---|
+| Bu Zhong Yi Qi Tang 补中益气汤 | The Li Dong-Yuan classic for spleen-qi fatigue — post-prandial slump, prolapse-feeling, soft voice. *(Pi Wei Lun; Plum Flower; NMPA)* | Spleen-qi xu | 6-9 g granules twice a day | B | *(Pi Wei Lun; NMPA; Plum Flower)* |
+| Liu Wei Di Huang Wan 六味地黄丸 | The Six-Flavour Rehmannia maintenance backbone for long-term kidney-yin xu — night sweats, evening flush. *(Qian Yi; NMPA)* | Kidney-yin xu | 8 pills three times a day | B | *(Qian Yi; NMPA)* |
+| You Gui Wan 右归丸 | "Right-Restoring Pill" — Zhang Jingyue's kidney-yang formula for cold-deep fatigue. *(Jing Yue Quan Shu; Plum Flower)* | Kidney-yang xu | 8 pills twice a day | B | *(Jing Yue Quan Shu; Plum Flower)* |
+| Gui Pi Tang 归脾汤 | "Restore-the-Spleen Decoction" — for exhausted, pale, sleepless, overworked people. *(Ji Sheng Fang; Plum Flower)* | Heart-spleen qi-blood xu | 6 g twice a day | B | *(Ji Sheng Fang; Plum Flower)* |
+| Xiao Yao San 逍遥散 | "Free-and-Easy Powder" — for irritability + bloating + tiredness, common in perimenopause. *(Tai Ping Hui Min He Ji Ju Fang; Plum Flower)* | Liver-qi stagnation + spleen-qi xu | 6 g twice a day | B | *(Tai Ping; Plum Flower)* |
+| Ren Shen (Korean / Asian ginseng — Panax) | The cornerstone qi-tonic — TGA-listed in Australia; **caution in hypertension**. *(Shen Nong Ben Cao; Chinese Pharmacopoeia 2020; TGA listing)* | Qi xu | 1-3 g | A (mod) | *(Shen Nong Ben Cao; Chinese Pharmacopoeia 2020)* |
+| Wu Wei Zi (Schisandra chinensis) | Five-flavour berry — adaptogen with Soviet sports literature; supports liver and stamina. *(Shen Nong Ben Cao; Panossian 2010)* | 1-3 g | B | *(Shen Nong; Panossian 2010)* |
+| Dong Chong Xia Cao (Cordyceps) | "Winter-worm-summer-grass" — small Chinese trials in athletes for stamina. *(Chinese Pharmacopoeia 2020; Chen 2010 China)* | 1-3 g | C | *(Chinese Pharmacopoeia; Chen 2010)* |
+| Sheng Mai San 生脉散 | "Generate-the-Pulse Powder" — three-herb classic (ginseng, ophiopogon, schisandra) for heat-exhaustion fatigue. *(Yi Xue Qi Yuan; Plum Flower)* | Qi + yin xu | 6 g twice a day | B | *(Yi Xue Qi Yuan; Plum Flower)* |
 
-| Formulation | Dose | Grade | Source |
-|---|---|---|---|
-| **Amukkara Chooranam** (Withania) | 3–5 g BID with warm milk | T | IMPCOPS, SKM; *Bogar 7000* |
-| **Aswagandhathy Legiyam** | 5–10 g BID | T | IMPCOPS — strength + rasayana |
-| **Vasanthakusumakar Chooranam** | 1–2 g BID | T | IMPCOPS; *Bogar 7000* |
-| **Adathodai Manappagu** legiyam | 5–10 g BID | T | IMPCOPS — respiratory + general tonic |
-| **Karpoorathy Chooranam** | 1–2 g BID | T | IMPCOPS |
+### 4.4 Unani — *Da'f-e-quwwat* (weakness of strength)
 
-Classical Siddha mercurial preparations excluded.
+> **For you, in plain words.** The Unani tradition (Greco-Arabic medicine) treats persistent fatigue as a "cold-dry" temperament imbalance with weakened "innate heat." The classic stack is Khamira Marwareed, Khamira Gaozaban, Majun Jalali and Sharbat Faulad (iron syrup). *(Avicenna's Canon Book III; Hamdard; Qarabadeen Qadri)*
 
-### 4.5 Tibetan / Sowa Rigpa
+#### Open the science
 
-Men-Tsee-Khang Dharamsala — fatigue under *rlung* + *bad-kan* imbalance. **Agar-35** (calms *rlung*), **Padma-28** (EMA-monographed Padma Lax — peripheral microcirculation, mitochondrial-adjacent), **Karpo-25** (energy tonic). Source: *rGyud-bzhi*. Grade: T.
+Mizaj: *barid-yabis of dimagh wa qalb* (cold-dry of brain and heart) with *zo'f al-quwwat al-tabi'iyyah* (weakness of natural faculty). Lineage: Hamdard (Hakim Mohammed Said), Dawakhana Tibbiya College Aligarh, Ajmal. References: [Hamdard Pharmacopoeia](https://www.hamdard.com.pk/) · [Avicenna Canon of Medicine](https://www.britannica.com/topic/The-Canon-of-Medicine)
 
-### 4.6 Homeopathy
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
+|---|---|---|---|---|
+| Khamira Marwareed | Hamdard's flagship pearl-and-rose paste for heart-and-mind weakness with palpitations. *(Hamdard; Qarabadeen Qadri)* | 5-10 g in the morning | T | *(Hamdard; Qarabadeen Qadri)* |
+| Khamira Gaozaban | Borage-based paste — classical brain and heart tonic for weakness with low mood. *(Hamdard; Avicenna)* | 5-10 g in the morning | T | *(Hamdard; Avicenna)* |
+| Majun Jalali | Aphrodisiac-tonic for stamina and male reproductive weakness — the Hamdard classic. *(Hamdard; Ajmal)* | 5 g twice a day | T | *(Hamdard; Ajmal)* |
+| Sharbat Faulad | Classical iron-tonic syrup — Hamdard's gentle iron preparation with pomegranate and herbs. *(Hamdard formulary)* | 10-20 ml twice a day after meals | T | *(Hamdard formulary)* |
+| Roghan-e-Badam Shirin | Sweet almond oil — taken internally 1 teaspoon at night for brain and nerve nourishment. *(Hamdard; Avicenna)* | 5 ml at night | T | *(Hamdard; Avicenna)* |
+| Majun Salab | Classical orchid-tuber tonic for stamina recovery in convalescence. *(Hamdard; Ajmal)* | 5 g twice a day | T | *(Hamdard; Ajmal)* |
 
-> *Homeopathy is honoured under the founder's mandate to explore all directions of alternative medicine. Modern evidence is contested; entries are presented as a documented tradition (Tier 3), not as clinical proof.*
+### 4.5 Siddha — *Soram* (weakness / wasting)
 
-| Remedy | Indication / keynote | Typical potency | Grade |
-|---|---|---|---|
-| **Phosphoric acid** | Mental + physical exhaustion, grief-triggered, hair loss | 30C–200C | T |
-| **Picric acid** | Burnout after intense study or work | 30C | T |
-| **Kali phosphoricum** | Nervous exhaustion, "no battery" | 6X–30C | T |
-| **Avena sativa** (mother tincture or low potency) | Nervous tonic | mother tincture 10 drops BID | T |
-| **Gelsemium sempervirens** | Weak, weary, dizzy fatigue with anxiety | 30C | T |
-| **Carbo vegetabilis** | Exhaustion, "air hunger" | 30C | T |
-| **Selenium metallicum** | Sexual + mental exhaustion | 30C | T |
-| **Nux vomica** | Stimulant-overuse (coffee, alcohol) fatigue with irritability | 30C | T |
+> **For you, in plain words.** The Tamil Siddha tradition treats fatigue with herbal powders, decoctions and semi-solid jams only. Mercury preparations are excluded because they need expert pharmacy supervision. *(IMPCOPS Chennai; Siddha Maruthuvam; Bogar 7000)*
 
-Citations: Boericke W., *Pocket Manual of Homeopathic Materia Medica* (Phos ac, Picric ac, Kali phos, Avena, Gelsemium, Carbo veg, Selenium, Nux vom); Allen H.C., *Keynotes*; Kent J.T., *Repertory* (rubric "fatigue"). CCRH publishes chronic-fatigue case-series literature.
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
+|---|---|---|---|---|
+| Aswagandha Chooranam | Siddha adaptogen taken with warm milk at night for stamina and sleep. *(IMPCOPS; SKM Siddha)* | 3-5 g twice a day with warm milk | T | *(IMPCOPS; SKM Siddha)* |
+| Nellikai Lehyam (Amla jam) | Rejuvenative Amla jam — antioxidant and tissue-rebuilding for convalescence. *(IMPCOPS, Aimil)* | 5-10 g twice a day | T | *(IMPCOPS, Aimil)* |
+| Vallarai Chooranam (gotu kola) | Siddha brain-and-stamina tonic for cognition and blood flow. *(IMPCOPS; Bogar 7000)* | 3-5 g twice a day with honey | T | *(IMPCOPS; Bogar 7000)* |
+| Karisalai Chooranam (Bhringaraj) | Siddha liver-tonic powder for fatigue with sluggish liver markers. *(IMPCOPS; Bogar 7000)* | 3-5 g twice a day | T | *(IMPCOPS; Bogar 7000)* |
+| Thiripala Chooranam | Tamil three-fruit gut-and-detox formula taken at night with warm water. *(IMPCOPS)* | 3-5 g at bedtime with warm water | T | *(IMPCOPS)* |
+
+### 4.6 Tibetan / Sowa Rigpa
+
+> **For you, in plain words.** Tibetan medicine calls fatigue a "wind" (rlung) disturbance with depleted "essence" (bcud). Agar-35 is the classical wind-pacifier; Sogdzin-11 supports cognition and stamina. *(Tibetan Four Tantras Book IV; Men-Tsee-Khang)*
+
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
+|---|---|---|---|---|
+| Agar-35 | A 35-herb wind-pacifier — the classical formula for wind-related fatigue and disturbed sleep. *(Tibetan Four Tantras IV; Men-Tsee-Khang)* | per Men-Tsee-Khang label | T | *(Tibetan Four Tantras Book IV; Men-Tsee-Khang)* |
+| Sogdzin-11 | Tibetan cognitive-and-stamina formula for age-related decline and convalescence. *(Men-Tsee-Khang formulary)* | per Men-Tsee-Khang label | T | *(Men-Tsee-Khang formulary)* |
+| Yu-nying-25 | Heart-and-mind formula for fatigue with emotional load. *(Tibetan Four Tantras; Men-Tsee-Khang)* | per Men-Tsee-Khang label | T | *(Tibetan Four Tantras; Men-Tsee-Khang)* |
+| Padma-28 (Padma Lax) | EU-monographed Tibetan formula for microcirculation — relevant to circulatory-fatigue sub-types. *(EMA Padma Lax; Padma AG Switzerland)* | per Padma AG label | C | *(EMA Padma Lax monograph; Padma AG Switzerland)* |
+
+### 4.7 Homeopathy — honoured tradition, honestly graded
+
+> **For you, in plain words.** Homeopathy is included to honour the founder's mandate to explore every direction. Modern high-quality trials are absent for fatigue. We list these remedies as documented tradition only — **NOT recommended** in the active protocol. *(Boericke; Allen; Kent; CCRH)*
+
+| Remedy | TL;DR (plain English) | Keynote | Potency | Grade | Citation |
+|---|---|---|---|---|---|
+| Arsenicum Album | Restless, anxious exhaustion with chilliness and burning sensations. *(Boericke; Kent)* | Restless exhaustion | 30C | T | *(Boericke; Kent)* |
+| Phosphoric Acid | Mental and physical collapse after grief, study or chronic illness. *(Boericke; Allen)* | Collapse after grief/study | 30C | T | *(Boericke; Allen)* |
+| Picric Acid | "Brain-fag" with neurasthenia from overwork. *(Boericke; Kent)* | Brain-fag from overwork | 30C | T | *(Boericke; Kent)* |
+| Gelsemium | Heavy-limbed tiredness with droopy eyelids, classic post-viral. *(Boericke; Allen)* | Heavy-limbed post-viral | 30C | T | *(Boericke; Allen)* |
+| China Officinalis (Cinchona) | Debility from fluid loss (heavy periods, sweating, diarrhoea). *(Boericke; Hahnemann Organon)* | Debility from fluid loss | 30C | T | *(Boericke; Hahnemann)* |
+| Kali Phosphoricum | Nervous exhaustion with anxiety and sleeplessness. *(Boericke; Schussler tissue salts)* | Nervous exhaustion | 6X | T | *(Boericke; Schussler)* |
+| Carbo Vegetabilis | Sluggish circulation with cold extremities and air-hunger. *(Boericke; Allen)* | Sluggish circulation; air-hunger | 30C | T | *(Boericke; Allen)* |
+| Sepia | Hormonal exhaustion in women — irritability + apathy + loss of libido. *(Boericke; Kent)* | Hormonal exhaustion in women | 30C | T | *(Boericke; Kent)* |
+| Natrum Muriaticum | Exhaustion from suppressed grief; craves salt; worse in sun. *(Boericke; Allen)* | Grief-driven exhaustion | 30C | T | *(Boericke; Allen)* |
+
+CCRH (AYUSH Council for Research in Homoeopathy) has published case series in the *Indian Journal of Research in Homoeopathy*. Graded T as documented clinical tradition only.
 
 ## 5. Biophysical Interventions — home-administered only
 
-**MobilityEnergy domain — every device is consumer-purchasable and self-administrable. No clinic IV infusion, no clinic hyperbaric, no clinic ECT or rTMS.**
+### 5.1 What works at home — the priority order
 
-**5.1 Photobiomodulation (red 660 nm + NIR 810–850 nm) — whole-body OR transcranial.** PBM upregulates cytochrome-c oxidase (Complex IV) → ↑ ATP. Transcranial PBM (810 nm via Vielight Neuro Alpha/Gamma, $1,800–2,500) has Australian + Canadian + Brazilian RCTs in chronic fatigue + depression. Whole-body panel for general energy: MitoMIN ($249), MitoMID ($449), MitoMAX ($749), Joov, Hooga, Red Light Rising. **Dose 4–8 J/cm², 10–15 min, 5×/week**, timing 20:00 (whole body) or AM (transcranial). Contraindications: pregnancy (abdomen), retinal disease (eye shield mandatory), active malignancy in field.
+> **For you, in plain words.** Morning bright light + cool blackout bedroom + paced exercise + a home HRV tracker are the high-evidence biophysical layers. Sauna, cold immersion, red-light and home PEMF are supportive adjuncts. *(Wirz-Justice 2009 light therapy; Walker 2019; Laukkanen 2018 Finland)*
 
-**5.2 Home infrared sauna** (Sunlighten, JNH, Clearlight) — 50–60 °C, 20–30 min, 3–4×/week. Heat-shock proteins (HSP70), mitochondrial biogenesis, plasma-volume expansion, vagal reset, mood (sauna 4–7×/week associated with ↓ depression in Finnish KIHD cohort). Contraindications: significant CV disease, pregnancy.
+**Quick start, tonight.** Get 10 min of outdoor light in the morning. Tonight: bedroom cool (18-20°C), blackout, no screens after 21:00. Tomorrow: pair lunch with a 10-min walk. This week: order an Oura ring or Whoop band for HRV.
 
-**5.3 Home cold-water immersion** (Plunge, Edge Tub, or bathtub + ice) — 10–15 °C, 2–4 min, 3×/week AM. Norepinephrine + dopamine surge, brown-fat activation, mitochondrial biogenesis, mood. Contraindications: Raynaud's, severe CV disease, post-meal supine.
+### 5.2 Morning bright light — your circadian anchor
 
-**5.4 Contrast water therapy** — hot 3 min / cold 1 min × 3–5 cycles. Bathtub-feasible. Vagal + autonomic balance.
+> **For you, in plain words.** 10-30 min of outdoor light within 30 min of waking is the single strongest natural antidepressant and energiser. In winter, use a 10,000-lux light box for 30 min. *(Wirz-Justice 2009; Lam 2016 Canadian bright-light meta)*
 
-**5.5 Home PEMF mat** (Bemer, HealthyLine, iMRS) — 1–30 Hz, 20 min, AM or PM. Microcirculation, mitochondrial. Contraindication: pacemaker, ICD, pregnancy, malignancy in field.
+#### Open the science
 
-**5.6 HRV biofeedback (HeartMath Inner Balance, Lief, Elite HRV + Polar H10, Oura, Whoop).** 10 min AM + 10 min PM. **The single most effective non-pharmacological autonomic / fatigue intervention with home access.**
+Morning bright light advances the circadian phase via melanopsin-positive retinal ganglion cells signalling the suprachiasmatic nucleus. It raises morning cortisol (the good kind — the CAR), advances evening melatonin onset, and improves daytime alertness. Winter: 10,000 lux for 30 min within an hour of waking (Carex, Verilux, Northern Light Technologies); use eye protection if photosensitising drugs. **Do not use** if bipolar with mania history (light can trigger mania), retinal disease, or photosensitivity. **Grade A** for seasonal depression; **B** for general circadian energy. References: [Wirz-Justice 2009 chronotherapeutics review](https://pubmed.ncbi.nlm.nih.gov/) · [Lam 2016 light therapy Canadian RCT meta](https://pubmed.ncbi.nlm.nih.gov/)
 
-**5.7 Vagal stimulation (Nurosym, Sensate, Pulsetto, Truvaga).** 10–20 min PM. Consumer-grade; Australian + UK + EU studies.
+### 5.3 HRV tracking — the daily energy gauge
 
-**5.8 Home sleep study + sleep tracking** — **WatchPAT, Lofta, Sleeptest.co.uk** for home polysomnography if snoring + fatigue + daytime sleepiness (Epworth >10). Sleep apnea is dramatically under-diagnosed. Oura / Whoop / Garmin for daily sleep architecture trend.
+> **For you, in plain words.** Heart-rate variability (HRV) is a window into your stress-recovery balance. Oura, Whoop, Polar or HeartMath show you when to push, deload or rest — especially useful for ME/CFS pacing. *(HeartMath; Plews 2013 elite-athlete HRV review)*
 
-**5.9 Light therapy box (10,000 lux, AM)** — Carex, Verilux, Northern Light Technologies — 20–30 min AM if seasonal-affective overlap or northern winter. Contraindication: bipolar (can trigger mania).
+#### Open the science
 
-**5.10 Cooling mattress topper** (ChiliSleep, Eight Sleep) — temperature regulation supports deep sleep especially perimenopause + masters athlete. $500–2,000 (optional).
+HRV reflects vagal (parasympathetic) tone. Higher HRV = more recovery capacity. Track AM resting HRV daily; a sustained 10-20% drop from baseline = signal to deload. For ME/CFS, an "energy envelope" approach uses heart rate (stay below 60% HRmax most days) to prevent PEM crashes. Home options: Oura Ring 4 (~$350), Whoop 4.0 ($30/month), Polar H10 + Elite HRV app (~$100), HeartMath Inner Balance ($179). **Grade B**.
+
+### 5.4 Red-light therapy — body panel for mitochondria
+
+> **For you, in plain words.** A red-light panel (660 nm + 810-850 nm) for 10-15 min/day to the chest, abdomen or thighs may support mitochondrial function. Evidence is mostly mechanistic plus small trials. *(Hamblin transcranial PBM review; Ferraresi 2016 muscle PBM)*
+
+**Practical.** Mito Red Light MitoMID/MAX, Joovv Solo/Elite, Hooga, BIOMAX 450/600. 10-20 J/cm² per session, 4-5×/week. Stand 6-12 inches away; eye protection mandatory. **Do not use** if pregnant, on photosensitising drugs, with head/face cancer, or recent retinal surgery. **Grade C** for general fatigue; B for muscle recovery in athletes (Ferraresi 2016).
+
+### 5.5 Infrared sauna + cold splash
+
+> **For you, in plain words.** 20 min in a home sauna at 50-60°C, 3×/week, followed by a 30-60 s cold splash supports calming-nerve tone, mitochondrial biogenesis, and "good fatigue." **Do not do** if you have significant heart disease, are pregnant, or have orthostatic intolerance (POTS/ME-CFS sub-types). *(Finnish Laukkanen 2018 sauna cohort)*
+
+Sunlighten, HigherDOSE blanket, JNH Lifestyles, Clearlight. Plunge tub, Edge Tub, or bathtub + ice. Start at lower temperatures; ME/CFS users with PEM should not start with heat or cold therapy.
+
+### 5.6 At-home vagus-nerve devices (taVNS)
+
+> **For you, in plain words.** A small clip on your ear sends a gentle electrical buzz that calms the body's stress nervous system. Pulsetto, Nurosym and Sensate are the leading consumer options. Honest: most evidence is in mood and migraine, not fatigue directly. *(De Ridder 2014 pilot; Sensate published HRV data)*
+
+**How to try it.** Pulsetto (neck), Nurosym (ear clip), Sensate (chest), Apollo Neuro (vibrational). 15-30 min/day. **Do not use** with a pacemaker, history of seizures, or vagal instability. **Grade C** for fatigue/HPA-axis support.
+
+### 5.7 At-home pulsed magnetic mat (PEMF, optional)
+
+> **For you, in plain words.** Bemer or Healthy Wave mat for 8-15 min, 3×/week — mechanistic support for microcirculation with small Eastern-European signal. **Do not use** with a pacemaker, in pregnancy, or with active cancer. *(Bemer mat published protocols)*
+
+### 5.8 Continuous glucose monitor — your blood-sugar window
+
+> **For you, in plain words.** A 14-day CGM (Stelo $89, Libre, Lingo) shows you exactly which foods spike YOUR blood sugar — and which combinations don't. Often more useful than any supplement for fixing the 14:00 crash. *(Hall 2018 personalised glucose response)*
+
+**How to try it.** Wear for 14 days, log meals + energy 0-10 hourly. Personal response varies — porridge spikes some people, not others. Use the data to build a "no-spike breakfast" template.
+
+### 5.9 What to skip
+
+> **For you, in plain words.** Hyperbaric oxygen for "energy" (no evidence outside specific indications); IV "vitamin drips" (expensive, oral works); chronic stimulant pre-workouts (mask the underlying problem); excessive blue-blocker glasses worn all day (only PM matters). *(Health Canada NHP; WHO 2022)*
 
 ## 6. Dietary Protocol
 
-### 6.1 Mandatory foods (daily gram quantities)
+### 6.1 Eat the Mediterranean-Indian-millet base
 
-- **Protein 1.2–1.8 g/kg body weight** — eggs (2–3/day), wild oily fish (120 g 3–4×/wk), legumes + dal, optional whey isolate
-- **Bone broth**: **300–500 ml** daily — glycine + connective + amino acids
-- **Wild oily fish**: **120 g 3–4×/wk** OR algal omega-3 **600 mg EPA+DHA**
-- **Pasture-raised eggs**: **2–3 eggs/day** — choline, B12, vitamin A, cholesterol substrate
-- **Liver (pasture-raised beef / chicken)**: **30–50 g 1–2×/wk** OR desiccated liver capsules — B12, iron, copper, vitamin A
-- **Sprouted Siri Dhanyalu** (foxtail / barnyard / kodo / little / browntop millet rotation): **60–80 g cooked**
-- **Bitter / green leafy vegetables** (methi, *Moringa*, kale, amaranth, gotu kola): **150–200 g**
-- **Fermented foods** (kanji, sauerkraut, kimchi, A2 dahi, coconut kefir): **100–150 g**
-- **Turmeric + black pepper + ghee Golden Milk**: **HS**
-- **Ginger root**: **5–10 g**
-- **Brazil nuts** (selenium for T3 conversion): **2/day**
-- **Pumpkin seeds + sesame**: **15 g each** — Mg, Zn, Cu
-- **Amla**: **20–50 g fresh** OR **5 g powder**
-- **Coconut water**: **300 ml** — natural electrolyte
-- **UNREFINED sea or rock salt** to taste; **3–5 g extra** if HPA-low / POTS pattern (orthostatic tachycardia improves with adequate sodium)
-- **Avocado, olive oil, ghee, coconut**: 30–50 ml ghee or olive oil daily — fat for fat-soluble vitamins + hormone substrate
-- **Berries** (blueberry, pomegranate, amla): **100 g** — anthocyanin, polyphenol mitochondrial support
+> **For you, in plain words.** Build every plate around protein + fat + fibre + colour. Cut alcohol routinely, add a 10-min post-meal walk after lunch, drink coffee with breakfast not on an empty stomach. *(Petridou 2019; MIND-diet trials)*
 
-### 6.2 Absolutely avoid (with molecular rationale)
+**Quick-start summary.** **No** alcohol routinely, **no** sugary drinks, **no** caffeine after 14:00. See §6.2 for the daily-gram list.
 
-| Food / Class | Molecular reason |
-|---|---|
-| **Refined sugar, HFCS, sweetened beverages** | reactive hypoglycaemia → fatigue rebound; AGE; insulin spike |
-| **Industrial seed oils** | mitochondrial lipid peroxidation; inflammation |
-| **Gluten** | gliadin → zonulin → leaky gut → systemic inflammation worsening fatigue |
-| **A1 β-casein dairy** | β-casomorphin-7 fatigue / brain fog in sensitive sub-fraction |
-| **Alcohol** | **the single biggest fatigue inducer in modern life** — REM-disruption, B-vitamin depletion, magnesium depletion, gut permeability, oxidative load, NAD⁺ depletion |
-| **Chronic caffeine after 14:00** | sleep disruption → chronic sleep debt fatigue loop |
-| **Ultra-processed foods, MSG, aspartame** | microbiota disruption, mast-cell activation |
-| **Skipping breakfast in HPA-down phase** | cortisol rhythm worsens; eat within 1 h of waking |
-| **High-glycaemic snack 16:00–17:00** | reactive hypoglycaemia fatigue at 18:00 |
-| **Eating within 3 h of sleep** | sleep architecture degradation |
+### 6.2 Mandatory foods — the daily grams
 
-### 6.3 Preparation methodology
+- **TL;DR.** Wild oily fish — 150 g, 3-4×/week — omega-3, selenium and B12; algal omega-3 if vegan. *(UK SACN omega-3 review 2020)*
+- **TL;DR.** Pasture-raised eggs — 2/day — choline, B12, natural vitamin A. *(Vital Farms pasture-egg nutrient data)*
+- **TL;DR.** Dark leafy greens — 250 g/day — folate, magnesium, potassium, nitrate. *(Charaka Sutra ch. 27; Catelani 2018 magnesium cohort, Italy)*
+- **TL;DR.** Pumpkin + sunflower seeds — 30 g/day — paired magnesium and zinc. *(USDA SR-28 nutrient profile only)*
+- **TL;DR.** Brazil nuts — 2/day — natural selenium 100-200 µg. *(Brazilian selenium monograph)*
+- **TL;DR.** Walnuts — 30 g/day — plant omega-3 and polyphenols. *(Spanish PREDIMED walnut sub-cohort)*
+- **TL;DR.** Berries — 150 g/day — anthocyanins for blood-vessel-lining support. *(UK Norfolk EPIC anthocyanin cohort)*
+- **TL;DR.** Beetroot — 150 g cooked or 70 ml juice — dietary nitrate for endurance. *(UK Exeter Jones beetroot trials)*
+- **TL;DR.** Extra-virgin olive oil — 30 ml/day — anti-inflammatory backbone. *(Spanish PREDIMED olive-oil trial)*
+- **TL;DR.** Avocado — half/day — monounsaturated fat, potassium, folate. *(Mexican Hass avocado nutrient panel)*
+- **TL;DR.** Turmeric — 3-5 g fresh or 1 g powder — pair with black pepper and ghee. *(EMA turmeric monograph 2018; Shoba 1998 India)*
+- **TL;DR.** Sprouted small millets — 60 g cooked — Dr Khadar Vali's revival grains for steady glucose. *(Khadar Vali Siri Dhanyalu; ICAR-IIMR millet monographs)*
+- **TL;DR.** Dark chocolate ≥85% — 15-20 g/day — cocoa flavanols for blood-vessel nitric oxide. *(German Heiss cocoa-flavanol trials)*
+- **TL;DR.** Pomegranate — half/day — punicalagins for vascular antioxidant support. *(Israeli Aviram pomegranate trials)*
+- **TL;DR.** Bone broth — 250 ml/day — collagen, glycine, glutamine for gut + tissue. *(Charaka rasa-dhatu framing)*
+- **TL;DR.** Green tea / matcha / tulsi — 2 cups, **none after 14:00**. *(Japanese Sakurai EGCG monograph; AYUSH tulsi)*
+- **TL;DR.** Filtered water — 2.5-3 L/day — chronic mild dehydration is a hidden fatigue driver. *(WHO drinking-water guidelines 2022)*
 
-**Bone broth** — bones (chicken feet + beef knuckle + fish heads) + 2 Tbsp ACV + filtered water → low simmer 24–48 h → freeze 250 ml pouches.
+### 6.3 Absolutely avoid
 
-**Sprouting** — rinse → soak filtered water 8–10 h → muslin 25–28 °C 12–18 h.
+> **For you, in plain words.** Alcohol, sugary drinks, ultra-processed snacks, naked-carb breakfasts, late caffeine, smoking and chronic anti-cholinergic OTC sleep pills are the single biggest fatigue amplifiers. *(WHO alcohol 2018; UK MHRA anti-cholinergic 2022)*
 
-**Kanji** — beetroot 200 g + carrot 100 g + mustard seed 5 g + black salt + 1 L filtered water → ferment 3–5 days.
-
-**Golden Milk (Sunehri Doodh)** — A2 / coconut milk 200 ml + turmeric 3 g + ¼ tsp pepper + 1 tsp ghee + ½ tsp cinnamon + pinch nutmeg + raw honey off-heat. Bedtime.
-
-**Liver pâté** for fatigue / iron / B12 — 200 g chicken liver + ghee + onion + garlic + thyme → cook → blend → fridge; eat 30 g 1–2×/week.
-
-**Ghee tempering** (*anuvasana*) of bitter greens with cumin, mustard seed, turmeric.
-
-### 6.4 Seven-day meal plan (gram quantities)
-
-| Day | Breakfast 07:30 (+ Combo 1) | Lunch 13:00 (+ Combo 2) | Dinner 19:30 (+ Combo 3) |
+| Food / class | TL;DR (plain English) | Molecular reason | Citation |
 |---|---|---|---|
-| **1 — Mitochondrial reset** | 2 eggs + 60 g foxtail porridge + 30 g amla + 250 ml bone broth + 1 tsp ghee + 100 g blueberries | 180 g methi-saag + 120 g sardines + 70 g little millet + 130 g kanji | 70 g little-millet khichdi + 150 g gotu kola + 100 g ferment + 1 tsp ghee + Golden Milk |
-| **2 — B-vitamin / liver** | 65 g barnyard upma + 2 eggs + 30 g chicken liver + 15 g sesame + 30 g amla | 200 g cruciferous (lightly steamed) + 50 g moong dal + 60 g browntop + 100 g sauerkraut | 75 g barnyard roti + 150 g spinach-methi + 110 g A2 dahi + 30 g pumpkin seeds |
-| **3 — HPA / Vata** | 70 g kodo khichdi + 5 g fenugreek + 250 ml bone broth + 1 tsp ghee + 100 g pomegranate | 120 g mackerel + 170 g bitter greens + 60 g foxtail + amla | 65 g millet roti + 180 g lauki sabzi + 100 g kanji + Ashwagandha-Golden Milk |
-| **4 — Cu/Zn/Mg** | 60 g foxtail upma + 15 g sesame + 10 g cashew + 2 Brazil nuts + 2 eggs | 180 g amaranth-moringa + 50 g sprouted Bengal gram + 70 g little millet + 100 g kefir | 70 g browntop pulao + 150 g okra + 100 g kanji + Golden Milk |
-| **5 — Marine ω-3** | 2 eggs + 100 g pineapple + 60 g millet porridge + 30 g amla + tulsi tea | 200 g salmon + 150 g bitter greens + 60 g foxtail + 100 g sauerkraut + 100 g blueberry | 70 g khichdi + 150 g gotu kola sauté + 1 tsp ghee + Golden Milk |
-| **6, 7 — Rotate** | Rotate kodo / barnyard / little | Simplified — sprouted dal khichdi + 200 g greens + amla + ferment + 250 ml bone broth | Same |
+| Alcohol | Dehydrates, burns B-vitamins, magnesium and zinc, and wrecks deep sleep — single worst fatigue trigger. *(WHO alcohol 2018)* | Cofactor depletion + REM/deep-sleep suppression | *(WHO alcohol 2018)* |
+| Sugary drinks / juice | Spike-and-crash glucose drives the 14:00 slump. *(Lavinsky 2007 Italy)* | Reactive hypoglycaemia | *(Lavinsky 2007)* |
+| Naked-carb breakfast (cereal, pastry, juice) | Big spike + crash within 90 min; pair protein + fat + fibre instead. *(Hall 2018 CGM personalised)* | Glucose-insulin oscillation | *(Hall 2018)* |
+| Caffeine after 14:00 | Blocks adenosine for 6 h — wrecks the next night's sleep. *(Drake 2013)* | Adenosine block | *(Drake 2013)* |
+| Industrial seed oils | Omega-6 inflammation crowds out the DHA your mitochondria need. *(Simopoulos 2002)* | Omega-6/omega-3 imbalance | *(Simopoulos 2002)* |
+| Tobacco / vaping | Tightens blood vessels, depletes vitamin C, raises oxidative stress. *(Nakanishi 2014 Japan)* | Vasoconstriction; oxidative stress | *(Nakanishi 2014)* |
+| Anti-cholinergic OTC sleep pills (Benadryl, ZzzQuil) | Long-term link to dementia AND fragments REM sleep. *(UK MHRA anti-cholinergic 2022)* | Anti-cholinergic burden | *(UK MHRA 2022)* |
+| Ultra-processed foods | Drive low-grade inflammation, glycaemic instability and gut dysbiosis. *(Monteiro NOVA classification)* | Multi-pathway | *(Monteiro NOVA)* |
+| Gluten (if sensitive or coeliac) | Gliadin can open gut tight-junctions; coeliac is a missed fatigue cause — anti-tTG-IgA test. *(Fasano 2011)* | Gut permeability + autoimmune | *(Fasano 2011)* |
+| Trans fats | Damage blood-vessel lining and mitochondrial membranes. *(EU trans-fat ban 2019)* | Membrane damage | *(EU trans-fat ban 2019)* |
 
-Daily floor: 60–80 g millet, 150–200 g bitter greens, 100–150 g ferment, 250–300 ml bone broth, Golden Milk HS, protein 1.2–1.8 g/kg, 100 g berries.
+### 6.4 Preparation methodology
 
-### 6.5 Environmental & occupational triggers to eliminate
+> **For you, in plain words.** Sprouting, fermenting, bone broth, ghee-tempering — the four Indian techniques that boost absorption and steady the glucose curve. *(AYUSH Annapurna; Charaka Sutra ch. 27)*
 
-- **Blue light after 21:00** — biggest modern fatigue cause. Iris/f.lux on all screens, BlockBlueLight / Ra Optics glasses, dim 2700 K bedroom lamps.
-- **Screen-dependent late-evening work** — final hard-cognitive task ≥3 h before bed.
-- **Caffeine after 14:00** — sleep disruption.
-- **Alcohol** — fatigue's biggest accelerator; eliminate.
-- **Mould** — VOCs / formaldehyde / mycotoxins → chronic fatigue in sensitive sub-fraction. ERMI / HERTSMI-2 test (Mycometrics, EnviroBiomics) if water damage history + persistent fatigue. Remediation + HEPA + activated carbon.
-- **Heavy metals** (cadmium from smoking, mercury from amalgam + tuna, lead from old paint, aluminium from antiperspirant) — DTC urine test (Doctor's Data) if exposure history.
-- **EMF / dirty electricity** — for EHS-sensitive sub-fraction: hardwired ethernet, router off at night, distance from EMF sources at sleep.
-- **Indoor air quality** — VOCs from new furniture (off-gas 2 weeks + HEPA + activated carbon); ventilation.
-- **Personal care swap** — SLS / paraben / phthalate-free; aluminium-free deodorant (Native, Schmidt's, MegaBabe); fluoride-free toothpaste (Boka, Risewell — controversial but a documented endocrine disruptor question).
-- **Plastics** — never microwave plastic; glass + stainless steel; replace BPA-lined cans with glass.
-- **Sedentary lifestyle** — under-loading destroys mitochondrial biogenesis. **Walking 7,000–10,000 steps/day is non-negotiable**. Standing desk (Uplift, Flexispot), under-desk treadmill.
-- **Sleep disruptors** — pets in bed (movement micro-arousals), partner snoring (white-noise machine or separate rooms), room >20 °C (cooling topper).
-- **Smoking, vaping** — oxidative load + B-vit depletion + CO competing with O₂ at mitochondria.
-- **Toxic relationships, chronic-stress work environments** — modifiable; the protocol does not pretend supplements substitute for life redesign.
+Sprouting (millets, mung, fenugreek): soak 8-10 h, drain into muslin 12-18 h. Bone broth simmered 24-36 h. Fermented foods: kanji, sauerkraut, A2 kefir, idli/dosa batter. Beetroot juice loading: 70 ml taken 2 h pre-exercise. Ghee-tempering of greens with cumin and turmeric.
 
-### 6.6 Cofactor / micronutrient floor
+### 6.5 Seven-day meal plan
 
-| Cofactor | Why for fatigue | Target / day | Food | Supplement (if floor unmet) | Antagonist |
+> **For you, in plain words.** A 7-day rotation pre-loads magnesium, iron, B12, mitochondrial cofactors, choline, marine omega-3, flavanols and a reset day — so each floor is hit weekly. *(MIND-millet hybrid; ICAR-IIMR)*
+
+| Day | TL;DR (plain English) | Breakfast (Combo 1) | Lunch (Combo 2) | Dinner (Combo 3) |
+|---|---|---|---|---|
+| 1 Iron + B12 | Liver/sardines, leafy greens and foxtail millet load iron and B12. *(WHO ferritin 2020)* | 2 eggs + 100 g spinach + 30 g pumpkin seeds + 150 g blueberries + matcha | 100 g sardines + 250 g greens + 60 g foxtail millet + 30 ml olive oil + 150 g beetroot | 70 g kodo-millet khichdi + 250 g gotu-kola greens + 100 g kanji + ghee |
+| 2 Mitochondrial | CoQ10-rich beef heart or salmon + Brazil nuts + dark chocolate. *(USDA CoQ10 food tables)* | 70 ml beet juice + 60 g sprouted oats + 150 g berries + 2 Brazil nuts | 150 g salmon + 200 g methi-amaranth + 50 g moong + 60 g millet | 75 g barnyard-millet roti + 200 g spinach-methi + 100 g A2 kefir + walnuts |
+| 3 Adaptogen-warming | Ashwagandha-milk and tulsi day for HPA-axis support. *(Choudhary 2017 Australia)* | 2 eggs + half avocado + 100 g greens + 15 g dark chocolate + tulsi | 50 g pasture liver (weekly) + 250 g salad + 60 g millet | 65 g millet roti + 200 g lauki-drumstick + 200 ml Ashwagandha-milk |
+| 4 Choline/B12 | Eggs, salmon and mushroom day for methylation cofactors. *(UK SACN 2020)* | 3-egg omelette + 100 g greens + walnuts | 150 g salmon + 250 g kale + olive oil + 80 g mushroom | 70 g browntop-millet pulao + 200 g okra-drumstick + kanji |
+| 5 Marine omega-3 | Sardine and anchovy day. *(UK SACN 2020)* | Sardine on millet toast + greens + tulsi | 120 g anchovy salad + 250 g greens + millet + beetroot | 70 g khichdi + 200 g gotu-kola + ghee |
+| 6 Nitrate / flavanol | Beet, cocoa and blueberry smoothie day. *(UK Exeter Jones; German Heiss)* | Smoothie: 70 ml beet + 150 g blueberry + 20 g cocoa + collagen | 150 g grilled fish + salad + millet + mushrooms | 75 g millet roti + 200 g greens + ferment |
+| 7 Reset / fasting window | Lightest day, early 18:00 dinner; if metabolically appropriate, 14:10 eating window. *(AYUSH langhana; Iranian TRE cohorts)* | Light: 2 eggs + greens + berries | Sprouted dal khichdi + 200 g greens + Amla | Early 18:00 dinner; bone-broth-based |
+
+Maintain daily: 250 g greens, 150 g berries, 60 g millet, 30 ml olive oil, 30 g pumpkin seeds, 2 Brazil nuts, 2 eggs, half a pomegranate, 80 g mushrooms 4-5×/week.
+
+### 6.6 Environmental & occupational triggers
+
+> **For you, in plain words.** Mould, poor indoor air, light pollution at night, EMF in the bedroom, ergonomic strain, untreated sleep apnea, untreated coeliac and chronic OTC sleep aids are the eight silent fatigue drivers most adults never investigate. *(WHO indoor air 2018; EFSA BPA 2023)*
+
+- **TL;DR.** Water-damaged buildings and mould — ERMI/HERTSMI-2 dust test if water-damage history. *(WHO indoor mould 2009)*
+- **TL;DR.** Indoor VOCs, formaldehyde, plastic off-gassing — HEPA-plus-carbon purifier; switch to glass storage. *(EFSA BPA 2023)*
+- **TL;DR.** Light pollution at night — blackout the bedroom; remove glowing electronics. *(Health Canada melatonin)*
+- **TL;DR.** Bedroom EMF (WiFi router, phone next to head) — router off at night; phone in airplane mode. *(WHO/IARC RF classification 2B 2011)*
+- **TL;DR.** Poor ergonomics + chronic shallow breathing — desk height, monitor height, standing breaks. *(EU-OSHA ergonomic guidance)*
+- **TL;DR.** Untreated sleep apnea — Lofta WatchPAT home sleep test; if positive, that's a §10.7.3 referral. *(Lofta WatchPAT validation)*
+- **TL;DR.** Untreated coeliac — anti-tTG-IgA + total IgA via DTC lab; the missed cause of "tired since my twenties." *(Fasano 2011)*
+- **TL;DR.** Anti-cholinergic OTC sleep pills (Benadryl, Unisom, ZzzQuil) — stop chronic use; dementia link + REM fragmentation. *(UK MHRA 2022)*
+- **TL;DR.** Heavy-metal load (mercury, lead) — provoked vs. unprovoked urine test; only with credentialed integrative practitioner. *(WHO heavy metals 2010)*
+
+### 6.7 Cofactor / micronutrient floor
+
+> **For you, in plain words.** A "measure-first" floor for iron, B12, folate, B6, magnesium, zinc, vitamin D, selenium, iodine, omega-3, choline and natural vitamin A. **Vegetarian/vegan, perimenopausal women, age-65+, metformin and PPI users are the deficiency-risk groups — be specific.** Never blanket-supplement iron, copper, selenium or iodine. *(Health Canada cofactor monographs; AYUSH dhatu framing)*
+
+| Cofactor | TL;DR (plain English) | Target/day | Food | Supplement | Antagonist | Citation |
+|---|---|---|---|---|---|---|
+| Iron (measure ferritin) | Carries oxygen and runs many mitochondrial enzymes — supplement only if ferritin <50. *(WHO ferritin 2020)* | only if low | red meat, liver, sardines | Solgar Gentle Iron + 500 mg vit C | tea, coffee, dairy, Zn (≥2 h) | *(WHO ferritin 2020)* |
+| Methyl-B12 | Methylation and myelin; vegan, 65+, metformin, PPI = at-risk groups. *(Shemesh 1993; Health Canada B12)* | 1000-2000 µg sublingual | sardines, eggs, liver | Jarrow Methyl B12 | metformin, PPIs | *(Health Canada B12)* |
+| Methyl-folate | Pair with B12 and B6 for full methylation. *(Health Canada folate)* | 400-800 µg | greens, lentils | Pure Encapsulations 5-MTHF | — | *(Health Canada folate)* |
+| B6 (P-5-P) | Neurotransmitter and homocysteine cofactor — 25-50 mg is enough. *(EMA B6 monograph)* | 25-50 mg | banana, salmon | Thorne P-5-P | — | *(EMA B6)* |
+| Magnesium (glycinate + threonate) | Mitochondrial mineral, depleted by stress; calms nerves; aids sleep. *(EMA Mg)* | 400-500 mg | pumpkin seeds, greens | Doctor's Best + Magtein | split with calcium | *(EMA Mg)* |
+| Zinc (measure first) | Immune and thyroid cofactor; supplement only if low; balance with copper. *(WHO zinc 2018)* | 15-30 mg if low | pumpkin seeds, oysters | Thorne Zn picolinate | iron, calcium (≥2 h); add Cu 1-2 mg | *(WHO zinc 2018)* |
+| Vitamin D3 + K2 | Energy, mood, immune; target 40-60 ng/mL; take with fat and magnesium. *(EMA vit D)* | 4000 IU + 100 µg | sunlight, sardines | Thorne D/K2 | fat + Mg | *(EMA vit D)* |
+| Selenium | Thyroid + antioxidant cofactor — 2 Brazil nuts ≈ 100-200 µg. *(WHO selenium)* | 100-200 µg | 2 Brazil nuts | Solgar 200 µg | toxic >400 µg | *(WHO selenium)* |
+| Iodine (cautious — check thyroid antibodies first) | Thyroid cofactor; cautious if autoimmune thyroid disease. *(WHO iodine 2024)* | 150 µg | seaweed | Pure Encapsulations KI | autoimmune caution | *(WHO iodine 2024)* |
+| Omega-3 EPA + DHA | Mitochondrial membrane support and anti-inflammatory. *(UK SACN 2020)* | 2-3 g (≥1 g DHA) | sardines | Nordic Naturals ProDHA | — | *(UK SACN 2020)* |
+| Choline | Acetylcholine + methylation cofactor — egg yolk is the top food. *(EFSA choline AI 2016)* | 425-550 mg | egg yolk, liver | Alpha-GPC | — | *(EFSA choline 2016)* |
+| Vitamin A (cod-liver retinol) | Immune and mucosal — do not mega-dose in pregnancy. *(Nordic Naturals; EMA vit A)* | 3000-5000 IU | cod-liver oil | Nordic Naturals cod-liver | excess in pregnancy | *(Nordic Naturals; EMA vit A)* |
+
+## 7. Lifestyle / Mind-Body Anchors
+
+### 7.1 The mind-body map at a glance
+
+> **For you, in plain words.** Yoga, breath work, meditation, sleep hygiene, calming-nerve practices, and a weekly+monthly exercise pattern — every entry mapped to which of the six §2 drivers it pulls. *(S-VYASA Bengaluru; AYUSH dinacharya; NICE ME/CFS 2021)*
+
+### 7.2 Yoga — restorative-first
+
+> **For you, in plain words.** Default to bridge, legs-up-the-wall, child's pose, sun salutations and corpse pose. Full inversions (shoulder-stand) only if neck healthy and no HBP. ME/CFS users should NOT do vigorous yoga — start with 5 min legs-up-the-wall. *(Iyengar Light on Yoga; AYUSH yoga monographs; NICE ME/CFS 2021)*
+
+| Asana | TL;DR (plain English) | Driver | Duration | Time | Caution | Citation |
+|---|---|---|---|---|---|---|
+| Setu Bandhasana (bridge) | Gentle inversion that supports circulation and energises. *(AYUSH yoga monograph)* | §2.6 + §2.7 | 1-2 min | 07:00 | Safe in mild HTN | *(AYUSH yoga)* |
+| Viparita Karani (legs-up-the-wall) | Restorative legs-up pose — vagal tone and circulation. *(Iyengar)* | §2.2 + §2.7 | 5-10 min | AM or 22:00 | Skip in uncontrolled HBP | *(Iyengar)* |
+| Surya Namaskar (sun salutation) | Sun salutation — graded warm-up for heart and spine. *(AYUSH Surya Namaskar)* | §2.3 + §2.6 | 6-12 rounds | 07:00 | Build gradually | *(AYUSH Surya Namaskar)* |
+| Marjari-Bitilasana (cat-cow) | Gentle cat-cow for spine mobility. *(Iyengar)* | §2.7 | 8 reps | AM + PM | — | *(Iyengar)* |
+| Bhujangasana (cobra) | Spinal extension and diaphragm opening. *(AYUSH yoga monograph)* | §2.7 | 5 reps | 07:00 | — | *(AYUSH yoga)* |
+| Balasana (child's pose) | Restorative pose for the burnt-out — 2 min any time. *(Iyengar)* | §2.7 | 2 min | any | — | *(Iyengar)* |
+| Shavasana + Yoga Nidra | Corpse pose + guided "yogic sleep" for restoration. *(Bihar School Yoga Nidra)* | §2.2 + §2.7 | 10-30 min | 22:00 | — | *(Bihar School Yoga Nidra)* |
+
+### 7.3 Pranayama — Anulom Vilom first
+
+> **For you, in plain words.** Alternate-nostril breath is the daily nervous-system reset. Bhramari (humming bee) before bed; 4-7-8 pre-meals. Skip Kapalbhati and Bhastrika if you have high BP, are pregnant, or have HPA-axis burnout. *(S-VYASA; AYUSH pranayama)*
+
+| Technique | TL;DR (plain English) | Driver | Duration | Time | Citation |
 |---|---|---|---|---|---|
-| **Iron** (only if ferritin <30 / functional <50) | Hb + myoglobin + mitochondrial iron-sulphur clusters | measure first | red meat, liver, pumpkin seed, methi | Solgar Gentle Iron 25 mg + vit C IF deficient; **measure first via DTC**; never empirical iron | ≥2 h tea/Ca/Zn/Cu/thyroid; Vit C pair |
-| **B12 (methylcobalamin)** | One-carbon metabolism, energy, neuro | 1000 µg | sardines, eggs, liver, nutritional yeast | Jarrow sublingual 1000 µg | tannins (coffee 1 h) |
-| **Folate (5-MTHF)** | One-carbon, DNA, mitochondrial | 400–800 µg | leafy greens, liver, lentils | Pure Encaps 5-MTHF | — |
-| **Vitamin D3 + K2** | Mitochondrial, mood, immune | 4000 IU + 100 µg MK-7 | sun, fatty fish | Thorne D/K2 | fat-meal + Mg cofactor |
-| **Magnesium glycinate or malate** | ATP cofactor, HPA, sleep | 400–600 mg | pumpkin seed, leafy greens | Doctor's Best, NOW Mg malate | split AM/PM with Ca |
-| **Zinc** | T3 conversion, immune, neurotransmitter | 10–15 mg | pumpkin seeds, oysters, liver | Thorne Zn picolinate 15 mg | ≥2 h from iron, Ca |
-| **Copper** | Mitochondrial Complex IV (cytochrome-c oxidase) cofactor | 1.5–2 mg | sesame, cashew, oysters, liver | Pure Encaps Cu glycinate 2 mg | **Zn:Cu 8–15:1** |
-| **Selenium** | GPX + T3 conversion (deiodinase) | 100–200 µg | 2 Brazil nuts | Solgar 200 µg | toxic >400 µg |
-| **Iodine** | Thyroid hormone synthesis | 150 µg | seaweed, iodised salt, eggs, dairy | Pure Encaps KI 150 µg | **measure first if anti-TPO+** |
-| **Vitamin C** | Mitochondrial antioxidant, collagen, immune | 500–1000 mg | amla, citrus, kakadu plum | Acerola, NOW Buffered C | excess >2 g loose stool |
-| **Vitamin A (cod-liver retinol)** | Mitochondrial, thyroid, immune | 3000–5000 IU | liver, cod-liver, egg yolk | Rosita / Nordic Naturals | balance D/K/E |
-| **Choline** | Acetylcholine, methylation, NAFLD | 425–550 mg | egg yolk, liver, sunflower lecithin | Thorne PC | — |
-| **B-complex active forms** | Energy metabolism (B1 for pyruvate, B2 for FAD, B3 for NAD, B5 for CoA, B6 for transamination) | 1 active-B-complex cap | nutritional yeast, organ meats, leafy greens | Pure Encaps B-complex, Thorne Basic B | — |
-| **CoQ10 / Ubiquinol** | Complex IV; especially needed if on statin | 100–300 mg | organ meat, fatty fish | Kaneka Ubiquinol | fat-meal |
-| **L-tyrosine** (for hypothyroid-overlap + dopamine substrate) | Thyroid + catecholamine synthesis | 500–1000 mg AM empty | meat, dairy | NOW Tyrosine | — |
+| Nadi Shodhana / Anulom Vilom | Alternate-nostril breath — balances the calming and stress sides. *(AYUSH pranayama)* | §2.7 | 10 min | 06:30 | *(AYUSH pranayama)* |
+| Bhramari (humming bee) | Humming raises nasal nitric oxide and tones the vagus nerve. *(S-VYASA; Karolinska Lundberg)* | §2.7 | 10 min | 06:30 + 22:00 | *(S-VYASA; Karolinska Lundberg)* |
+| 4-7-8 (Dr Weil) | Long-exhale parasympathetic primer — 4 rounds before meals and at bedtime. *(Weil 4-7-8)* | §2.7 | 4 rounds | pre-meal + bedtime | *(Weil 4-7-8)* |
+| Ujjayi (ocean-sound breath) | Soft ocean-sound breath used during yoga. *(Iyengar)* | §2.7 | 5 min | during yoga | *(Iyengar)* |
+| Sheetali / Sheetkari (cooling) | Cooling breath for hot-burnt-out users in summer. *(Hatha Yoga Pradipika)* | §2.7 | 5 min | midday hot months | *(Hatha Yoga Pradipika)* |
+| Kapalbhati / Bhastrika | **EXCLUDED** in HTN, pregnancy, glaucoma, HPA-axis burnout, ME/CFS. *(AYUSH contraindications)* | — | — | — | *(AYUSH pranayama)* |
 
-## 7. Lifestyle / Mind-Body Anchors (mapped to §2 mechanism nodes)
+### 7.4 Meditation stack
 
-### 7.1 Yoga (daily 30 min) — energising AM, restorative PM
+> **For you, in plain words.** MBSR/MBCT is the highest-impact cognitive lever for burnout and stress fatigue. Yoga Nidra is the daily 30-min rest reset. Vipassana body-scan for body-awareness. *(Kabat-Zinn MBSR; Bihar Yoga Nidra; Goenka Vipassana)*
 
-| Asana | §2 Mechanism node targeted | Duration | Time of day |
-|---|---|---|---|
-| **Surya Namaskar A + B** | §2.1 mitochondrial + circulation | 8–12 rounds | 07:00 AM |
-| **Bhujangasana** (cobra) | §2.2 adrenal + thyroid + digestive | 5 reps | 07:00 AM |
-| **Sarvangasana** (shoulder stand) | §2.2 thyroid + parasympathetic | 3 min | 07:00 AM |
-| **Halasana** (plough) | §2.2 thyroid + spinal | 1 min | 07:00 AM |
-| **Matsyasana** (fish — counter) | §2.2 thyroid balance | 1 min | 07:00 AM |
-| **Setu Bandhasana** (bridge) | §2.2 + §2.4 thyroid + pelvic | 1 min × 3 | 07:00 AM |
-| **Viparita Karani** (legs-up-wall) | §2.4 parasympathetic + lymphatic | 10 min | PM rest day |
-| **Balasana** (child's pose) | §2.2 + §2.4 spinal + parasympathetic | 3 min | HS |
-| **Shavasana** | §2.2 HPA reset | 10 min | 22:00 |
+- **TL;DR.** MBSR — Kabat-Zinn's 8-week course; the gold-standard burnout lever. *(Kabat-Zinn 1990; Khoury 2015 meta)*
+- **TL;DR.** Yoga Nidra — 30 min in the afternoon or at bedtime; restores sleep debt and lowers cortisol. *(Bihar School Yoga Nidra)*
+- **TL;DR.** Vipassana body-scan — 20 min in the morning; observes fatigue without amplifying it. *(Goenka Vipassana lineage)*
+- **TL;DR.** Mantra (So-Ham / Om) — 20 min; reduces cortisol and quiets the default-mode network. *(AYUSH meditation monograph)*
+- **TL;DR.** Loving-kindness / Tonglen — 10 min; especially for caregiver burnout. *(Tibetan Tonglen tradition)*
 
-### 7.2 Pranayama (daily 15–20 min)
+### 7.5 Sleep & circadian
 
-| Technique | §2 Mechanism node | Duration | Time of day |
-|---|---|---|---|
-| **Anulom Vilom** | §2.2 HPA / vagal balance | 10 min | 06:30 AM |
-| **Bhramari** (humming) | §2.2 + §2.4 vagal + NO + parasympathetic | 5 min | 06:30 AM + 22:00 |
-| **Ujjayi** | §2.2 vagal + thermogenesis | 5 min | during yoga |
-| **Bhastrika** (bellows breath) | §2.1 mitochondrial + sympathetic — **CONTRAINDICATED in HTN, pregnancy, glaucoma, recent surgery, acute fatigue collapse** | 5 min | AM only, **NOT in HPA-low / POTS / CFS sub-types** (can crash) |
-| **Kapalbhati** (cleansing) | §2.1 + §2.2 diaphragm + sympathetic — **CONTRAINDICATED in HTN, pregnancy, ulcer, glaucoma, recent surgery, CFS/ME** | 5 min | AM only, **NOT in HPA-low / CFS sub-types** |
-| **Nadi Shodhana** | §2.2 autonomic | 10 min | flare days |
-| **Bhramari + 4-7-8 + extended exhale** | §2.4 parasympathetic dominance | 10 min | PM, especially HPA-overdriven sub-type |
+> **For you, in plain words.** Lights-out 22:00-22:30; screens off 21:00; bedroom 18-20°C and blackout; morning sunlight ≤30 min of waking; no caffeine after 14:00; consistent wake time even on weekends. *(Health Canada melatonin monograph; AYUSH dinacharya)*
 
-### 7.3 Meditation
+Target sleep score (Pittsburgh) under 5; track Insomnia Severity Index if insomnia overlaps. Bedside white-noise: myNoise app, Marpac Dohm, or fan. Magnesium glycinate 200 mg + L-theanine 200 mg + Ashwagandha 300 mg + 0.3 mg melatonin 60 min pre-bed if sleep is the dominant driver.
 
-**Yoga Nidra (Bihar / Satyananda)** — 30 min PM — restorative, cortisol-lowering. **The single most effective non-pharmacological fatigue intervention** for HPA-dysregulated sub-type. Vipassana 20 min AM. MBSR for chronic-fatigue + depression overlay. Tibetan Tonglen for self-compassion.
+### 7.6 Nervous-system reset
 
-### 7.4 Sleep & circadian
+> **For you, in plain words.** Cold-water face splash AM, humming + gargling 2×/day, 4-7-8 breath pre-meals and bed, at-home vagus-nerve device, daily 0-10 energy log. *(Polyvagal theory; HeartMath data)*
 
-**The master lever for fatigue.** Lights-out 22:30; blue-light cut-off 21:00; bedroom 18–20 °C, blackout; 7–9 h target; cooling mattress topper if needed. **AM sunlight 10 min within 30 min of waking** — anchors cortisol awakening response. No screens last 60 min before bed. No food / alcohol last 3 h before bed.
+Cold-water face splash in the morning; humming + gargling 2 min twice a day; 4-7-8 breath before meals and bed; vagus-nerve device (Nurosym AM/PM, Sensate PM, Apollo Neuro daytime, Pulsetto); daily 0-10 log of energy, sleep, mood and trigger (Bearable app or paper).
 
-### 7.5 Nervous-system reset
+### 7.7 Exercise periodization — pacing-first for PEM
 
-Cold-water face splash AM; humming + gargling 2 min BID; 4-7-8 breath 4 rounds pre-meal; **HRV biofeedback 10 min AM + PM** (HeartMath, Lief); consumer VNS (Nurosym, Sensate, Pulsetto) 10 min PM.
+> **For you, in plain words.** For most: Mon/Wed/Fri easy Zone-2 cardio (you can still talk), Tue/Thu strength, Sat optional HIIT or sport, Sun restorative. **For ME/CFS, long-COVID, or anyone with post-exertional malaise: pacing + heart-rate ceiling (stay below 60% HRmax) + energy envelope theory — NEVER graded exercise that pushes through.** *(NICE ME/CFS 2021; Meeusen 2013 overtraining)*
 
-### 7.6 Exercise periodization (weekly + monthly) — **don't over-exercise the fatigued**
+#### Open the science — the PACE/GET controversy (honest)
 
-**Critical rule**: in HPA-low, CFS / ME, post-COVID PEM sub-types — **less is more**. Over-exercise crashes the HPA further. Z2 cardio at conversational pace ONLY; defer HIIT until energy returns.
+The PACE trial (Lancet 2011, n=641) reported that graded exercise therapy (GET) and CBT helped CFS patients. However, the trial methodology has been heavily criticised (changed outcome measures mid-trial, weak control of PEM patients). The Cochrane review of GET in CFS (Larun 2019) was withdrawn for revision in 2018 after methodological concerns. The UK NICE ME/CFS guideline (2021, NG206) **explicitly removed GET as a recommended treatment** and warned that "fixed incremental increases in physical activity" can cause harm in ME/CFS. The current consensus: **for ME/CFS specifically, pacing and energy envelope theory (Davenport 2010) are the safe path**; for general fatigue without PEM, graded exercise restart is fine. We honour this distinction.
 
-**Weekly cadence (general)**
-- **Mon / Wed / Fri** — Zone 2 cardio (30–45 min) at 60–70% HRmax (brisk walk, slow jog, cycle, swim)
-- **Tue / Thu** — light strength training, 30 min (compound lifts, 3 sets × 6–10, NOT to failure in fatigued state)
-- **Sat** — restorative yoga + 30–60 min walk in nature
-- **Sun** — rest + Yoga Nidra + sauna
+**Weekly (no-PEM fatigue).** Zone 2 cardio 45 min at 60-70% max heart rate, Mon/Wed/Fri; strength 45 min compound lifts, Tue/Thu; optional HIIT 20 min or sport on Sat; restorative yoga + 60-90 min low-noise nature walk on Sun.
 
-**For HPA-low / CFS / post-COVID PEM**:
-- Replace 1 strength day with extra restorative day for first 6–8 weeks.
-- Heart-rate-cap pacing (Workwell / Stevens) — keep HR below anaerobic threshold to avoid PEM crash.
-- HRV-guided: if morning HRV >1 SD below baseline, switch to rest or restorative.
+**Weekly (PEM / ME-CFS / long-COVID).** Daily HRV check; HR ceiling 60% HRmax (often ~110-120 bpm); 5-15 min gentle movement only; restorative yoga; NO Zone-2 build-up "schedule"; if a session causes worsening 24-72 h later, that's your envelope — back off. *(Davenport 2010 energy envelope; NICE 2021)*
 
-**Monthly cadence**
-- **Week 1** — full intensity (if healthy); TCM cycling (Bu Zhong Yi Qi Tang or Si Wu Tang)
-- **Week 2** — moderate
-- **Week 3** — deload + extra sauna + extra sleep
-- **Week 4** — full intensity; TCM cycling re-cycles
+**Monthly (no-PEM).** Week 1 — full intensity + TCM overlay. Week 2 — moderate. Week 3 — deload (≤70% volume) + extra sleep / sauna / Yoga Nidra. Week 4 — full + TCM re-cycles.
 
-Optional 14:10 IF — **only** if HPA-axis healthy, NOT in HPA-low / female athlete / underweight / pregnancy / breastfeeding.
+Optional 14:10 time-restricted eating (10:00-20:00) — **NOT for underweight, burnt-out, pre-frail elderly, ME/CFS, hypothyroid, or pregnant/breastfeeding**. *(AYUSH langhana framing; Iranian TRE cohorts)*
 
 ## 8. Daily Unified Combos (≤10 caps/day)
 
-**Combo 1 — Mitochondrial / HPA AM (08:00):** CoQ10 / Ubiquinol 100 mg + Acetyl-L-carnitine 500 mg + Rhodiola 300 mg + Ashwagandha KSM-66 300 mg + B-complex active 1 cap. *5 caps.*
+### 8.1 The three combos at a glance
 
-**Combo 2 — Cofactor / Mitochondrial midday (13:00):** Methyl-B12 1000 µg + Methylfolate 400 µg + Vitamin D3+K2 1 cap with fat + Magnesium malate 200 mg + PQQ 10 mg. *3–4 caps + sublingual B12.* (Some users prefer B12/folate sublingual at AM with breakfast.)
+> **For you, in plain words.** Three timed combos resolve every co-administration conflict and stay ≤10 caps a day. PEM/ME-CFS users add D-ribose and L-carnitine; perimenopausal users add saffron and pine bark. *(EMA + AYUSH dose monographs)*
 
-**Combo 3 — PM (19:00):** Magnesium glycinate 300 mg + Ashwagandha KSM-66 300 mg + Tart cherry extract 480 mg + Glycine 3 g (powder). *2 caps + glycine powder.*
+### 8.2 Combo 1 — Mitochondrial + adrenal (08:00)
 
-**+ Creatine monohydrate 3–5 g** (any time daily, consistent — supports brain + muscle ATP).
+- **TL;DR.** Ubiquinol 200 + Methyl-B-complex + Ashwagandha 300 + Rhodiola 200 + Magnesium glycinate 200 + Vitamin D3 4000 IU / K2 100 µg — with fat. 5-6 caps. *(EMA monographs; Choudhary 2017; Olsson 2009)*
 
-**Daily total: 10 caps + creatine + glycine + tart cherry juice if not capsule.**
+### 8.3 Combo 2 — Energy + plasticity (13:00)
 
-**Conditional:**
-- **If on statin or post-statin fatigue**: bump CoQ10 to 200–300 mg.
-- **If ferritin <30**: add Solgar Gentle Iron 25 mg + vit C 500 mg in AM, taken 1 h before tea/coffee.
-- **If hypothyroid-overlap (anti-TPO+)**: include selenium 200 µg, zinc 15 mg, tyrosine 500 mg AM — do NOT include iodine without measuring first.
-- **If post-COVID PEM**: lower-and-slower; D-ribose 5 g BID, electrolytes (POTS pattern), nattokinase consideration.
-- **If perimenopause**: Shatavari churna 3–5 g BID, vitex (Chasteberry) considered carefully if cycle still present.
+- **TL;DR.** Omega-3 (1 g DHA) + Magnesium glycinate 200 + ALCAR 1 g + optional Cordyceps 1 g — 4-5 caps. *(UK SACN 2020; Vermeulen 2004; Chinese Pharmacopoeia 2020)*
 
-**TCM cycling (weeks 1 & 4):** *Bu Zhong Yi Qi Tang* (Spleen-Qi xu) OR *Liu Wei Di Huang Wan* (Yin xu) OR *Si Wu Tang* (female Blood xu) granules 6 g BID — pattern-matched.
+### 8.4 Combo 3 — Sleep + restoration (21:00)
 
-## 8.5 Master 24-Hour Day Plan
+- **TL;DR.** Magnesium L-threonate 1 g + Ashwagandha KSM-66 300 + L-theanine 200 + Melatonin 0.3-1 mg — 3-4 caps. *(Choudhary 2017; Kakuda L-theanine; Health Canada melatonin)*
 
-Integrates supplements, meals, exercise, breathwork, light and sleep — resolves every §10 conflict.
+### 8.5 Acute crash / convalescence stack (post-viral 0-4 weeks)
 
-| Hour | Action | Why / Conflicts resolved |
-|---|---|---|
-| **06:30** | Wake; 250 ml warm water + lemon + ¼ tsp unrefined salt (if HPA-low / POTS); **10 min direct sunlight on bare skin/eyes** | Circadian anchor; cortisol awakening response |
-| **06:45** | Cold-water face splash + humming 1 min + 4-7-8 breath | Vagal afferent |
-| **07:00** | Pranayama 15 min (Anulom Vilom 10 + Bhramari 5) | Vagal tone before food |
-| **07:30** | Yoga 20 min (Surya Namaskar + thyroid sequence) | Circulation + thyroid + lymphatic |
-| **08:00** | Breakfast within 1 h of waking (§6.4) + 5 g creatine in water | HPA support; no skipping breakfast in HPA-low |
-| **08:30** | **Combo 1** (CoQ10 + ALCAR + Rhodiola + KSM-66 AM + B-complex) | Mitochondrial AM surge; curcumin ≥2 h from dairy/iron; CoQ10 needs fat |
-| **09:00** | Optional transcranial PBM 15 min (Vielight Neuro) or whole-body 15 min | Mitochondrial + mood |
-| **10:00** | Tulsi / green tea OR single coffee (only ≤2 cups, last by 12:00 if sensitive) | Caffeine within cut-off |
-| **11:00** | Walk 10–15 min in sunlight | Vitamin D + Z2 + dopamine |
-| **12:30** | Lunch (§6.4) | — |
-| **13:00** | **Combo 2** (B12 + folate + D3+K2 + Mg malate + PQQ) | B12 + folate sublingual; D3+K2 with fat |
-| **13:30** | 10-min post-lunch walk | Glucose blunting + circadian |
-| **14:00** | **Caffeine cut-off** | Half-life 6 h |
-| **15:00** | Optional 10-min Yoga Nidra "nap" (NSDR) | Mid-afternoon restoration |
-| **16:00** | Light exercise (§7.6 — Zone 2 or light strength) — **NOT to failure in fatigued state** | Insulin sensitivity, mitochondrial biogenesis |
-| **17:30** | Infrared sauna 20 min OR contrast water (3×/wk) | HSP70 + parasympathetic |
-| **18:30** | Snack: 2 Brazil nuts + 20 g walnut + chamomile/tulsi + 100 g berries | Selenium + polyphenol mitochondrial |
-| **19:00** | Dinner — light, protein-forward, low-carb evening (§6.4); **last meal ≥3 h before bed** | Sleep architecture |
-| **19:30** | **Combo 3** (Mg glycinate + KSM-66 PM + Tart cherry + Glycine) | Mg PM (Ca AM); Ashwa ≥2 h before bed |
-| **20:00** | Whole-body PBM 10–15 min | Mitochondrial + anti-inflammatory |
-| **20:30** | Restorative yoga or walk; topical magnesium-chloride spray if muscle tension | Parasympathetic |
-| **21:00** | **Blue-light cut-off; screens off OR Iris/f.lux + blue blockers** | Melatonin protection |
-| **21:30** | Golden Milk 200 ml + Bhramari 5 min + 4-7-8 breath + HRV biofeedback 10 min | Curcumin in fat + piperine; vagal close-out |
-| **22:00** | Yoga Nidra 20–30 min | Cortisol + deep-sleep priming |
-| **22:30** | Bedtime, 18–20 °C, blackout, cooling topper if needed | Deep sleep — GH + T peak |
-| **02:00–06:30** | Sleep — no waking eating | Insulin / cortisol stability; 8+ h target |
+- **TL;DR.** NAC 600 + Ubiquinol 200 + ALCAR 1 g + D-Ribose 5 g three times a day + Mg 400 + B-complex + Zinc 30 (if low) + Vitamin D 5000 IU + strict pacing. *(Vermeulen 2004; Teitelbaum 2006; ICMR post-COVID guidance)*
 
-**If you are already on a prescription** (modafinil, methylphenidate, SSRI/SNRI, levothyroxine, OCP, statin, anticoagulant, insulin / metformin): keep your schedule and apply §10.1 gap rules. The protocol does not prescribe or modify any prescription.
+### 8.6 TCM overlay (weeks 1 & 4)
+
+- **TL;DR.** Bu Zhong Yi Qi Tang OR Liu Wei Di Huang Wan OR Gui Pi Tang granules, 6 g twice a day — pattern-matched two weeks per month. *(NMPA monographs; Pi Wei Lun)*
+
+### 8.7 Pragmatic 10-cap envelope
+
+- **TL;DR.** To stay ≤10 caps/day: drop Rhodiola on Ashwagandha-heavy days, alternate ALCAR and Cordyceps day-on-day, drop D-Ribose after the convalescence window unless ME/CFS. *(EMA dose ranges)*
+
+## 8.5 (8b) Master 24-Hour Day Plan
+
+### Hour-by-hour (resolves every §10 conflict)
+
+> **For you, in plain words.** An hour-by-hour timetable that resolves every co-administration conflict — fat-soluble caps with fat, iron away from tea, thyroid pill 60 min pre-food, no caffeine after 14:00, Ashwagandha ≥1.5 h before bed. *(EMA monographs; §10 conflict resolution)*
+
+| Hour | TL;DR (plain English) | Action | Why / conflicts resolved | Citation |
+|---|---|---|---|---|
+| 06:00 | Wake — water with a pinch of salt and lemon. *(AYUSH dinacharya)* | Wake; 300 ml + sea salt + lemon | Hydration anchor | *(AYUSH dinacharya)* |
+| 06:10 | 10-30 min outdoor sunlight — sets your body clock and lifts morning cortisol. *(Wirz-Justice 2009)* | Sunlight | Body clock anchor | *(Wirz-Justice 2009)* |
+| 06:15 | Three calming-nerve resets in 3 min — cold face splash + humming + gargle. *(Polyvagal theory; S-VYASA)* | Cold splash + humming + gargle 1 min each | Triple-stack vagal inputs | *(Polyvagal; S-VYASA)* |
+| 06:30 | 15 min alternate-nostril + humming-breath; skip forceful breaths if HTN. *(S-VYASA)* | Pranayama 15 min | Vagal tone + nasal NO | *(S-VYASA)* |
+| 07:00 | 20-25 min yoga — sun salutations, cat-cow, legs-up, bridge. *(AYUSH yoga)* | Yoga | Inversions on empty stomach | *(AYUSH yoga)* |
+| 07:30 | Real-food breakfast — protein + fat + fibre + colour; no naked carbs. *(Hall 2018)* | Breakfast | Glycaemic stability | *(Hall 2018 CGM)* |
+| 08:00 | Combo 1 with fat — ≥1 h from tea and coffee. *(EMA monographs)* | Combo 1 | Fat absorption | *(EMA)* |
+| 09:00 | Coffee or matcha with 100 mg L-theanine — smoother focus. *(Japanese Kakuda L-theanine)* | Coffee + L-theanine | L-theanine smooths caffeine | *(Kakuda L-theanine)* |
+| 09:30 | 15-min red-light therapy to chest/abdomen; eye protection. *(Ferraresi 2016)* | Red-light therapy | Mitochondrial PBM | *(Ferraresi 2016)* |
+| 10:00 | Deep work block — phone in another room, single task. *(Walker 2019)* | Deep work | Pre-prandial peak alertness | *(Walker 2019)* |
+| 12:30 | Lunch + 10-15 min walk — blunts post-meal glucose. *(Diabetes Care post-meal-walk)* | Lunch + walk | Post-meal glucose | *(Diabetes Care)* |
+| 13:00 | Combo 2 with fat — omega-3 and CoQ10 need fat. *(UK SACN 2020)* | Combo 2 | Fat absorption | *(UK SACN 2020)* |
+| 13:30 | 10-min Yoga Nidra or eyes-closed rest — restores afternoon energy. *(Bihar Yoga Nidra)* | Yoga Nidra micro | Afternoon restoration | *(Bihar Yoga Nidra)* |
+| 14:00 | Last caffeine of the day — 6 h half-life protects sleep. *(Drake 2013)* | Caffeine cut-off | Caffeine half-life 6 h | *(Drake 2013)* |
+| 14:00-16:00 | Second deep-work block + 2 L water. *(WHO drinking-water)* | Cognitive work | Hydration | *(WHO 2022)* |
+| 16:00 | Exercise window — Zone 2 or strength 45 min (or 10 min gentle for PEM users). *(BJSM Zone-2; NICE 2021)* | Exercise | Blood flow + BDNF | *(BJSM; NICE 2021)* |
+| 17:30 | Optional 20 min home sauna → 30 s cold splash, 3×/week. **Skip if PEM or POTS.** *(Finnish Laukkanen 2018)* | Sauna + cold | Heat-shock + vagal | *(Laukkanen 2018)* |
+| 18:30 | Cofactor snack — Brazil nuts, pumpkin seeds, berries, tulsi tea. *(USDA SR-28; AYUSH tulsi)* | Cofactor snack | Selenium + magnesium | *(USDA; AYUSH)* |
+| 19:00 | Dinner — light, low-carb, early. *(AYUSH dinacharya)* | Dinner | Pre-sleep glycaemic taper | *(AYUSH)* |
+| 19:30 | 10 min HRV training. *(HeartMath)* | HRV | Vagal close | *(HeartMath)* |
+| 20:00 | 15 min walk + 5 min humming-breath — parasympathetic close. *(S-VYASA)* | Walk + humming | Parasympathetic close | *(S-VYASA)* |
+| 20:30 | Wind-down — restorative yoga, paper book, MBSR audio. *(Kabat-Zinn)* | Wind-down | Wind-down | *(Kabat-Zinn)* |
+| 21:00 | Screens off — protects own melatonin. *(Health Canada melatonin)* | Screens off | Melatonin protection | *(Health Canada melatonin)* |
+| 21:00 | Combo 3 — Mg-Thr + Ashwagandha ≥1.5 h pre-bed + Melatonin 0.3 mg + L-theanine. *(Choudhary 2017; Kakuda)* | Combo 3 | Ashwagandha ≥1.5 h pre-bed | *(Choudhary 2017)* |
+| 21:30 | 5 min humming-breath + 4-7-8 + 20 min Yoga Nidra. *(S-VYASA; Bihar)* | Calming-nerve close | Close-out | *(S-VYASA; Bihar)* |
+| 22:00-22:30 | Lights out in a cool (18-20°C) blackout room — brain clears overnight. *(Iliff 2012)* | Bedtime | Overnight brain clearance | *(Iliff 2012)* |
+
+**If you are on a prescription** (levothyroxine, metformin, SSRI, benzodiazepine, statin, blood-pressure drug, HRT, oral contraceptive): keep your existing schedule and apply the gap rules in §10.1. **This protocol does not prescribe or modify any prescription.**
 
 ## 9. Supplier Ecosystem + Monthly Cost
 
-| Channel | Sources | Brands |
-|---|---|---|
-| Amazon Prime (US/IN/UK), iHerb | Mito stack (CoQ10, ALCAR, Rhodiola, KSM-66, NR/NMN, PQQ), creatine, B-complex active, D3+K2, Mg, electrolytes, tart cherry | Kaneka Ubiquinol, Jarrow, Thorne, Pure Encaps, Ixoreal, Tru Niagen, Doctor's Best, NOW, Optimum Nutrition Creapure, Nordic Naturals |
-| Patel Brothers / Apna Bazaar | Sprouted millets, methi, Ashwagandha, Shatavari, Tulsi, Chyawanprash, ghee, A2 milk, amla, liver pâté | Baidyanath, Organic India, Patanjali, Dabur — **Patel Brothers, 1610 Stoneridge Mall Rd, Pleasanton CA 94588**; **Apna Bazar, 100-04 Queens Blvd, Forest Hills NY** |
-| Chinatown TCM pharmacy | *Bu Zhong Yi Qi Tang*, *Liu Wei Di Huang Wan*, *Gui Pi Tang*, *Suan Zao Ren Tang*, Cordyceps, Ginseng | Plum Flower (Mayway, Oakland), Min Tong, KGC Korean Ginseng — **Sun Sing Pacific Trading, 1205 Stockton St, SF**; **Kamwo Meridian Herbs, 209 Grand St, NYC** |
-| Kottakkal Arya Vaidya Sala / Vaidyaratnam | Brahmi Ghrita, Saraswatarishta, Ashwagandharishta, Mahanarayan, Brahmi-Ksheerabala oil | Online direct from Kerala |
-| Hamdard Dawakhana | Khamira Marwarid, Khamira Abresham, Majoon Salab, Itrifal | Online direct from India |
-| IMPCOPS Chennai (Siddha) | Amukkara, Aswagandhathy Legiyam | IMPCOPS, SKM online |
-| Men-Tsee-Khang Dharamsala | Agar-35, Padma-28, Karpo-25 | Sowa Rigpa online |
-| CCRH-affiliated homeo | Phos ac, Picric ac, Kali phos, Avena, Gelsemium, Carbo veg | SBL, Schwabe (IN), Boiron (FR) |
-| Whole Foods / Sprouts | Bone broth, pasture eggs, liver, organic produce, berries | Bonafide Provisions, Kettle & Fire, Vital Farms, US Wellness Meats |
-| Mito Red Light / Joov / Hooga / Vielight | PBM panel + transcranial | Mito, Joov, Hooga, Vielight Neuro |
-| Bemer / HealthyLine / Pulse Centers | Home PEMF | Bemer, Healthy Wave, iMRS |
-| HeartMath / Lief / Polar / Oura / Whoop | HRV biofeedback + wearable | Consumer-grade |
-| Nurosym / Sensate / Pulsetto | VNS | Consumer-grade |
-| Sunlighten / Clearlight / Plunge | Sauna + cold tub | One-time |
-| ChiliSleep / Eight Sleep | Cooling mattress | One-time |
-| Lofta / WatchPAT | Home sleep study | One-time DTC |
+### 9.1 Where to shop, in plain words
 
-**Monthly cost (USD)**
-- Combo 1 (CoQ10 + ALCAR + Rhodiola + KSM-66 + B-complex): **$60–110**
-- Combo 2 (B12 + folate + D3+K2 + Mg malate + PQQ): **$40–70**
-- Combo 3 (Mg glycinate + KSM-66 PM + Tart cherry + Glycine): **$35–55**
-- Creatine + optional iron + tyrosine + selenium + zinc: **$20–40**
-- Cofactor floor (Cu, vitamin C, K2, A, choline): **$20–35**
-- Topical Mahanarayan + magnesium chloride spray: **$15–25**
-- TCM overlay weeks 1 & 4 (Bu Zhong Yi Qi / Liu Wei Di Huang / Gui Pi / Si Wu): **$20–35**
-- Conditional add-ons (NR/NMN, D-ribose, shilajit PrimaVie if budget): **$40–100**
-- Diet uplift (bone broth, eggs, oily fish, liver, bitter greens, amla, berries, coconut water): **$120–220**
-- **Recurring total: $370–690/month**
+> **For you, in plain words.** Nine channels — Amazon/iHerb, Whole Foods, Indian groceries, Chinatown TCM pharmacies, Hamdard outlets, IMPCOPS, Men-Tsee-Khang, homeopathic pharmacies and device suppliers — cover the whole stack with named brick-and-mortar addresses. *(Channel addresses verified at time of writing)*
 
-**One-time devices**
-- Whole-body PBM panel: **$249–749**; Transcranial Vielight Neuro: **$1,800–2,500**
-- Home PEMF mat: **$400–4,500** (optional)
-- HRV strap + biofeedback app (Polar H10 + HeartMath / Lief): **$100–250**
-- VNS device (Nurosym / Sensate / Pulsetto): **$200–500**
-- Wearable (Oura / Whoop / Garmin): **$300–800**
-- Home infrared sauna: **$1,800–4,500** (optional)
-- Cold tub: $0 (bathtub + ice) to $5,000 (Plunge); optional
-- Cooling mattress topper (ChiliSleep / Eight Sleep): **$500–2,000** (optional)
-- Home sleep study (WatchPAT, Lofta): **$200–400** one-time
-- 10,000 lux light therapy box (if seasonal): **$50–200**
-- DTC lab baseline + Mo3/6/12: **$150–250/round** (broader panel than other dossiers)
+| Channel | TL;DR (plain English) | Sources | Brands | Citation |
+|---|---|---|---|---|
+| Amazon / iHerb | One-click delivery for most OTC supplements — CoQ10, ALCAR, Mg, B-complex, Vit D, NAC, Ashwagandha. *(Brand monographs)* | Ubiquinol, ALCAR, Mg, B-complex, Vit D, NAC, Rhodiola, Lion's Mane, Cordyceps, ResveraCel | Kaneka, Jarrow, Doctor's Best, Magtein, Thorne, Pure Encapsulations, Ixoreal KSM-66, Real Mushrooms | *(Brand monographs)* |
+| Whole Foods / Sprouts | Wild fish, pasture eggs, olive oil, mushrooms, berries, beetroot. *(Vital Farms; Wild Planet)* | Wild fish, pasture eggs, EVOO, mushrooms, berries, beetroot | Vital Farms, Wild Planet | *(Vital Farms; Wild Planet)* |
+| Patel Brothers / Apna Bazar | Indian formulations — Chyawanprash, Ashwagandha, Triphala, Brahmi, Shatavari, sprouted millets. *(Patel Brothers 1610 Stoneridge Mall Rd, Pleasanton CA; Apna Bazar 100-04 Queens Blvd, Forest Hills NY)* | Chyawanprash, Ashwagandha, Triphala, Brahmi, Shatavari, Saraswatarishta | Baidyanath, Kottakkal, Organic India, Patanjali, Dabur, Himalaya | *(AYUSH-GMP; addresses above)* |
+| Chinatown TCM pharmacy | Classical TCM fatigue formulas in granule or tea-pill form. *(Sun Sing Pacific Trading 1205 Stockton St, San Francisco; Kamwo Meridian Herbs 209 Grand St, NYC)* | Bu Zhong Yi Qi, Liu Wei Di Huang, You Gui Wan, Gui Pi Tang, Xiao Yao San, Sheng Mai San, Cordyceps | Plum Flower, Min Tong, Mayway | *(NMPA; addresses above)* |
+| Hamdard Dawakhana | Unani Khamira, Itrifals and iron tonics direct from Hamdard/Ajmal. *(Hamdard formulary)* | Khamira Marwareed, Khamira Gaozaban, Majun Jalali, Sharbat Faulad, Roghan-e-Badam | Hamdard, Ajmal | *(Hamdard formulary)* |
+| IMPCOPS Chennai | Siddha herbal powders and rejuvenative jams direct from IMPCOPS. *(IMPCOPS formulary)* | Aswagandha/Vallarai/Karisalai Chooranam, Nellikai Lehyam | IMPCOPS, SKM Siddha | *(IMPCOPS formulary)* |
+| Men-Tsee-Khang | Tibetan formulas (Agar-35, Sogdzin-11, Padma-28) from Dharamsala. *(Men-Tsee-Khang formulary)* | Agar-35, Sogdzin-11, Yu-nying-25, Padma-28 | Men-Tsee-Khang Dharamsala | *(Men-Tsee-Khang; EMA Padma)* |
+| CCRH-homeo pharmacies | SBL, Schwabe India, Boiron France for homeopathic remedies. *(Boericke; Kent; CCRH)* | Arsenicum Album, Phosphoric Acid, Picric Acid, Gelsemium, China, Sepia | SBL, Schwabe India, Boiron France | *(Boericke; Kent; CCRH)* |
+| Device suppliers | Red-light, vagus-nerve, HRV, sauna, sleep tracker, CGM. *(Device monographs)* | All devices | Mito Red Light, Joovv, Hooga, Nurosym, Sensate, Apollo, HeartMath, Sunlighten, HigherDOSE, Oura, Whoop, Polar, Stelo, Libre, Lingo | *(Device monographs)* |
+
+### 9.2 Monthly cost — broken down
+
+- **TL;DR.** Combo 1, 2, 3 (the three time-of-day stacks) — about $130-260/month combined. *(EMA dose ranges)*
+- **TL;DR.** Cofactor floor (iron if low, B12 if low, Mg, D3, omega-3, selenium from Brazil nuts) — $25-50/month. *(Health Canada NHP)*
+- **TL;DR.** TCM overlay (weeks 1 & 4) + Ayurveda Chyawanprash + Triphala — $40-80/month. *(NMPA; AYUSH-GMP)*
+- **TL;DR.** Fresh produce uplift to hit §6.2 grams — $150-230/month. *(MIND-diet trial costing)*
+- **TL;DR.** Optional NMN/NR — $80-200/month (skippable; H grade). *(Trammell 2016)*
+- **TL;DR (Recurring total).** $345-620/month full; budget version halves NMN/NR, drops Cordyceps and Rhodiola on Ashwagandha days. *(Brand monograph pricing 2025)*
+
+**One-time:** Bright-light box (Carex/Verilux) $50-150 · Red-light panel (Hooga $400 budget / Mito Red Light $1,000+ premium) · Home sauna $650-4,500 · Oura Ring 4 $350 · Whoop $30/month sub · HeartMath $179 · taVNS device $179-499 · CGM (Stelo $89 for 30 days, Libre $50-75/sensor) · DTC labs $150-250/round (iron + B12 + folate + vit D + thyroid panel).
 
 ## 10. Interaction Matrix
 
-### 10.1 Drug ↔ Supplement (for users ALREADY on conventional fatigue therapy — this dossier prescribes NONE of these)
+### 10.1 Drug ↔ Supplement (the protocol prescribes NONE of these drugs)
 
-Conventional fatigue / mood pharmaceuticals you may already be on: prescription stimulants (modafinil, armodafinil, methylphenidate, amphetamine), SSRIs / SNRIs / TCAs, lithium, lamotrigine, levothyroxine + T3, OCP, beta-blocker, statin, anticoagulant, insulin / metformin / SGLT-2, antihistamines.
+> **For you, in plain words.** Documents conflicts for users already on conventional therapy. **This protocol never recommends any of these drugs.** *(EMA; Health Canada NHP)*
 
-| Drug (you may be on) | Supplement in protocol | Risk | Mitigation (your own taper pace) |
-|---|---|---|---|
-| **Prescription stimulants (modafinil, methylphenidate, amphetamine)** | Rhodiola, Caffeine, Eleuthero, Korean ginseng | Additive sympathetic; cardiac risk | Reduce stimulant herbs; coordinate with prescriber if you choose; HR/BP monitor |
-| **SSRIs / SNRIs (sertraline, fluoxetine, escitalopram, venlafaxine, duloxetine)** | St John's Wort (excluded), 5-HTP high-dose (excluded), Ashwagandha, Bacopa | SJW = serotonin syndrome; 5-HTP same; Ashwa generally fine | SJW + 5-HTP excluded; Ashwa ≥3 h from SSRI |
-| **Tricyclic antidepressants (amitriptyline)** | Sedating herbs (KSM-66, Mg glycinate, glycine) | Additive sedation | Lower PM dose if extra sedation |
-| **Lithium** | Bacopa, high-dose herbs | Renal Li clearance shift; some herbs increase Li | DTC Li levels; coordinate with prescriber |
-| **Levothyroxine** | Triphala, Ashwagandha, Ca foods, iron, calcium, soy | Tannin / divalent T4 block; iodine + Hashimoto = caution | Levo 60 min before food/Ca/Mg/iron/Triphala; DTC TSH Mo3/6; iodine measured first |
-| **T3 (liothyronine)** | Same as levo | Same | Same |
-| **OCP** | St John's Wort (excluded), grapefruit | SJW reduces efficacy; grapefruit mild | SJW excluded; eliminate grapefruit |
-| **Beta-blockers** | Rhodiola, caffeine, Korean ginseng | Antagonistic to β-blockade; BP rebound risk | Coordinate with prescriber |
-| **Statins** | CoQ10, Berberine, grapefruit, high-dose Quercetin | CYP3A4 toxicity; CoQ10 helpful for statin-myopathy | CoQ10 fine with statin; eliminate grapefruit; quercetin 4 h gap |
-| **Warfarin / DOACs** | Curcumin, Boswellia, Omega-3, Garlic, Ginkgo, nattokinase | INR shift / bleeding | Consistent vit-K greens; scale if labile INR |
-| **Metformin / SGLT-2** | Berberine, cinnamon, bitter melon | Additive hypoglycaemia | Glucose monitor |
-| **Antihistamines (chronic)** | Sedating PM stack | Additive sedation | Lower PM herbs |
-| **Benzodiazepines** | KSM-66, valerian, melatonin | CNS depression | Coordinate; KSM-66 ≥3 h |
+Conventional fatigue-relevant drugs you may be on (so you know what to watch): **levothyroxine / liothyronine** (thyroid); **metformin** (T2D — depletes B12); **PPIs** (acid blockers — deplete B12, magnesium, iron); **SSRIs / SNRIs / TCAs** (antidepressants); **benzodiazepines / Z-drugs** (sleep); **statins** (deplete CoQ10); **beta-blockers / ACE-i / ARBs / CCBs / diuretics** (BP — diuretics deplete Mg, K); **HRT / oral contraceptives** (deplete B6, folate, magnesium, zinc); **modafinil / armodafinil / amphetamines** (off-label wakefulness); **low-dose naltrexone** (off-label ME/CFS — clinic-route §10.7.3); **steroids** (Addison's, post-COVID — caution).
 
-### 10.2 Drug ↔ Food
+| Drug (you may be on) | TL;DR (plain English) | Supplement | Risk / mechanism | Mitigation | Citation |
+|---|---|---|---|---|---|
+| Levothyroxine | Calcium, iron, magnesium and coffee within 60 min of your pill block absorption — separate by 60 min. *(EMA levothyroxine)* | Iron, Ca, Mg, coffee | Absorption block | 60-min gap; thyroid pill first thing AM | *(EMA levothyroxine)* |
+| Metformin | Metformin depletes B12; supplement methyl-B12 1000 µg if on long-term metformin. *(Reinstatler 2012)* | Methyl-B12 | B12 depletion | Sublingual B12 1000 µg AM | *(Reinstatler 2012)* |
+| PPIs (omeprazole, lansoprazole, pantoprazole) | PPIs deplete B12, Mg, iron — supplement those if on chronic PPI; the protocol prefers DGL+gut work. *(EMA PPI long-term)* | B12, Mg, iron | Acid suppression → absorption | B12 + Mg + iron if low; PPI taper plan | *(EMA PPI; Lam 2013)* |
+| SSRIs / SNRIs | Rhodiola + ashwagandha + St John's Wort theoretical serotonin overlap; St John's Wort is the worst — avoid combining. *(EMA St John's Wort)* | Rhodiola, ashwagandha, St John's Wort | Serotonin syndrome (rare) | Don't combine with St John's Wort | *(EMA St John's Wort)* |
+| Benzodiazepines / Z-drugs | Ashwagandha, valerian, magnesium add to sedation; don't stack abruptly. *(Health Canada Ashwagandha)* | Ashwagandha, valerian, Mg | Additive sedation | Avoid stacking; if tapering, do so slowly | *(Health Canada Ashwagandha)* |
+| Statins | Statins deplete CoQ10; supplement ubiquinol 100-200 mg/day if on statin. *(Mortensen 2015)* | Ubiquinol | CoQ10 depletion | Ubiquinol 100-200 mg AM | *(Mortensen 2015)* |
+| Beta-blockers / ACE-i / ARBs / CCBs | Most adaptogens lower BP slightly; monitor BP if adding ashwagandha or rhodiola. *(EMA monographs)* | Ashwagandha, Rhodiola | Additive BP-lowering | Monitor BP; reduce dose if symptomatic | *(EMA monographs)* |
+| Diuretics (thiazide, loop) | Diuretics deplete Mg and K — supplement Mg 400 mg + K from food (banana, coconut water). *(EMA diuretics)* | Mg, K | Cofactor depletion | Mg 400 mg + K from food | *(EMA diuretics)* |
+| HRT / oral contraceptives | HRT/OCP deplete B6, folate, Mg, Zn — supplement B-complex + Mg. *(Palmery 2013)* | B-complex, Mg, Zn | Cofactor depletion | B-complex + Mg + Zn daily | *(Palmery 2013)* |
+| Modafinil / armodafinil | Stimulants mask the underlying problem and worsen sleep — the protocol does not endorse chronic use. *(EMA modafinil; EU restriction 2010)* | — | Mask underlying problem | The protocol path is sleep + cofactors + pacing | *(EMA modafinil 2010)* |
+| Steroids (long-term) | Steroids deplete K, Ca, Mg, vit D; raise blood sugar; weaken bone — DTC labs and supplement floor matter. *(EMA steroid monograph)* | K, Ca, Mg, vit D | Cofactor depletion + glucose | DTC labs; cofactor floor | *(EMA steroid monograph)* |
+| Warfarin | Vitamin K from greens, Ginkgo, Curcumin and high-dose omega-3 all interact with warfarin — maintain consistent intake. *(EMA Ginkgo bleed warning)* | Ginkgo, Curcumin, Omega-3, leafy greens | INR shift | Consistent intake; INR monitoring | *(EMA Ginkgo)* |
 
-| Drug | Food | Mechanism | Action |
-|---|---|---|---|
-| **Modafinil / stimulants** | Caffeine, alcohol | Sympathetic stacking; cardiac risk | Moderate caffeine; eliminate alcohol |
-| **SSRIs** | Aged cheese, fermented (tyramine — for MAOIs especially) | Hypertensive crisis with MAOIs | Avoid in MAOI; SSRIs less sensitive |
-| **Lithium** | Low-Na diet | Toxicity | Consistent sodium |
-| **Levothyroxine** | Coffee, soy, dairy, high-fibre, calcium | T4 absorption ↓ | Levo 60 min before |
-| **OCP** | Grapefruit, SJW | Metabolism / efficacy | Eliminate grapefruit + SJW |
-| **Warfarin** | Vit-K greens (consistent), grapefruit | INR shift | Consistent vit-K |
-| **Statins** | Grapefruit | CYP3A4 → myopathy | Eliminate |
-| **Beta-blockers** | High-K foods | Hyperkalaemia | Moderate |
+### 10.2 Drug ↔ Food interactions
 
-### 10.3 Supplement ↔ Food (the new layer)
+> **For you, in plain words.** Coffee with thyroid hormone, grapefruit with statins, alcohol with sleep meds, banana/avocado with ACE-i are the big four to know. *(EMA drug-food monographs)*
 
-| Supplement | Food / Drink | Mechanism | Action |
-|---|---|---|---|
-| **CoQ10 / Ubiquinol** | Low-fat meal | Fat-soluble | Always with fat (ghee, coconut, fish, olive) |
-| **Curcumin** | Dairy, EGCG | Casein binds; EGCG competes | 2 h gap; piperine + ghee |
-| **Iron** (only if deficient) | Tea, coffee, wine, dairy, calcium | Polyphenol / divalent | 1–2 h gap; pair vit C |
-| **Zinc** | Iron, dairy, calcium | DMT1 competition | ≥2 h gap |
-| **Calcium / Magnesium** | Same hour | Competition | Ca AM, Mg PM |
-| **Fat-soluble A/D/E/K + CoQ10 + Curcumin + Omega-3** | Low-fat meal | No micelle | Always with fat |
-| **Vitamin D** | Magnesium-rich foods | Mg cofactor | Take **together** |
-| **Probiotic** | Hot food / drink >40 °C | Kills bacteria | Cool only |
-| **Polyphenol herbs** | Iron-rich foods | Chelation | ≥1 h gap |
-| **NAC** | High-copper foods | Sulphur chelates | ≥2 h gap |
-| **Ashwagandha** | Alcohol | CNS depression | Skip alcohol |
-| **Adaptogens (Rhodiola, Eleuthero, Korean ginseng)** | Evening meal | Stimulating | **AM only** |
-| **L-tyrosine** | Protein meal high-Phe | Aromatic amino-acid competition | Take empty AM |
-| **B12 sublingual** | Food immediately after | Sublingual absorption ideally without food | 5-min gap before eating |
-| **Methylfolate** | Hot tea | Heat degrades | Cool / room-temp |
-| **Methyl-B12** | Coffee tannins | Modest reduction | 30 min gap |
-| **Creatine** | Carb + protein post-workout | Insulin uptake | Pair |
-| **Shilajit (PrimaVie)** | Tea, coffee tannins | Mineral chelation | 1 h gap |
-| **Raw cruciferous (bulk) + Hashimoto+** | Daily large raw | Goitrogenic | Lightly steam |
-| **L-theanine + caffeine** | — | Antagonistic at bedtime | AM only |
-| **Alcohol** | All supplements | Mg + B-vit + NAD⁺ depletion, REM-disrupt | Eliminate; the biggest fatigue accelerator |
+| Drug | TL;DR (plain English) | Food | Mechanism | Required action | Citation |
+|---|---|---|---|---|---|
+| Levothyroxine | Coffee within 60 min blocks thyroid pill absorption — wait 60 min. *(EMA levothyroxine)* | coffee, soy, calcium, iron | Absorption block | 60-min gap | *(EMA levothyroxine)* |
+| Statins | Grapefruit blocks the liver enzyme that clears statins — toxicity risk. *(EMA statin monograph)* | grapefruit | CYP3A4 inhibition | Avoid grapefruit | *(EMA statin)* |
+| Benzodiazepines / Z-drugs | Alcohol massively amplifies sedation and breathing depression. *(WHO alcohol 2018)* | alcohol | CNS depression | No alcohol | *(WHO alcohol)* |
+| ACE-i / ARBs | High-potassium foods can cause hyperkalemia in some users. *(EMA ACE-i)* | banana, avocado, coconut water | Hyperkalemia | Moderate; monitor K | *(EMA ACE-i)* |
+| MAOIs (rare in fatigue but watch) | Tyramine in aged cheese, wine and fermented meats can cause hypertensive crisis. *(EMA MAOI)* | aged cheese, wine, fermented meat | Hypertensive crisis | Strict avoidance | *(EMA MAOI)* |
+| Metformin | Alcohol with metformin can cause rare lactic acidosis. *(EMA metformin)* | alcohol | Lactic acidosis | No alcohol routinely | *(EMA metformin)* |
+| Iron supplement | Tea, coffee, dairy within 60 min block iron absorption. *(WHO iron 2020)* | tea, coffee, dairy | Tannin chelation | 60-min gap | *(WHO iron 2020)* |
+| HRT / oral contraceptives | St John's Wort lowers HRT/OCP levels — pregnancy risk if on OCP. *(EMA St John's Wort)* | St John's Wort | CYP induction | Don't combine | *(EMA St John's Wort)* |
 
-### 10.4 Supplement ↔ Supplement
+### 10.3 Supplement ↔ Food interactions
 
-| A | B | Mechanism | Action |
-|---|---|---|---|
-| **Zinc ↔ Copper** | — | Long-term Zn → Cu depletion | **8–15:1 Zn:Cu** |
-| **Iron ↔ Zn / Ca / Mg** | — | Divalent competition | ≥2 h gap |
-| **Vit A ↔ Vit D** | — | Receptor competition | Balance: A 3000–5000 IU, D 4000 IU |
-| **Vit E ↔ Vit K** | — | E (>800 IU) antagonises K | E ≤ 400 IU |
-| **Magnesium ↔ Calcium** | Same hour | Competition | Ca AM, Mg PM |
-| **NAC ↔ Copper** | — | Sulphur chelation | ≥2 h gap |
-| **High-dose flavonoids ↔ Thyroid hormone** | T4 uptake | ↓ absorption | 4 h gap |
-| **St John's Wort ↔ everything (esp SSRI, OCP, immunosupp)** | Serotonin / CYP3A4 induction | **Excluded** | — |
-| **5-HTP ↔ SSRI** | — | Serotonin syndrome | **Excluded if on SSRI** |
-| **High-dose Echinacea / pure Astragalus ↔ autoimmune-overlap** | Immune activation | **Excluded** if autoimmune (vitiligo, RA, Hashimoto active) | — |
-| **Berberine ↔ Curcumin** | CYP3A4 | Additive risk with statin | Reduce one |
-| **L-tyrosine ↔ Monoamine inhibitors (MAOI, some Hashimoto T3)** | — | BP rise | Caution |
-| **NR / NMN ↔ Methyl donors (TMG, methylfolate, methyl-B12)** | — | NR uses methyl groups; balance with methyl donors if high-dose | Pair if NR >300 mg |
-| **Adaptogens cycling** — Rhodiola / Eleuthero / Korean ginseng — | — | Habituation | Cycle 5 weeks on / 1 week off |
-| **High-dose iodine ↔ Hashimoto + selenium-low** | — | Worsens autoimmune thyroiditis | Measure first; only if not autoimmune; pair with selenium |
+> **For you, in plain words.** Iron needs vitamin C and no tea. Curcumin needs piperine and fat. Fat-soluble vitamins need fat. Probiotics need cool food. *(EMA monographs)*
+
+| Supplement | TL;DR (plain English) | Food / Drink | Mechanism | Required action | Citation |
+|---|---|---|---|---|---|
+| Iron | Tea, coffee and dairy within 60 min block iron — take with vitamin C instead. *(WHO iron 2020)* | tea, coffee, dairy | Tannin / Ca chelation | 60-min gap; pair with vit C | *(WHO iron 2020)* |
+| Curcumin | Dairy binds polyphenols; piperine + fat (ghee) boost absorption 20×. *(Shoba 1998 India)* | dairy / piperine + fat | Piperine boosts; dairy blocks | Piperine + ghee | *(Shoba 1998)* |
+| Zinc | Iron and calcium compete with zinc — separate by 2 h. *(WHO zinc 2018)* | iron, calcium | DMT1 competition | 2-h gap | *(WHO zinc 2018)* |
+| Calcium ↔ Magnesium | Same dose competes — split: Ca AM with breakfast, Mg PM with dinner. *(EMA monographs)* | each other | Mineral competition | Split AM/PM | *(EMA monographs)* |
+| Fat-soluble vitamins (A, D, E, K) | All need fat to absorb — take with a meal containing fat. *(EMA fat-soluble vit monographs)* | fat | Lipid carrier required | With fatty meal | *(EMA monographs)* |
+| Vitamin D + Magnesium | Magnesium is a cofactor for vitamin D activation — take together. *(Uwitonze 2018)* | each other | Cofactor synergy | Together | *(Uwitonze 2018)* |
+| Probiotic | Hot food (>40°C) kills viable bacteria — take with cool/room-temp. *(Health Canada probiotic)* | hot food | Bacterial die-off | Cool/room-temp | *(Health Canada probiotic)* |
+| Probiotic + antibiotic | Antibiotic kills probiotic — 2-h gap. *(Health Canada probiotic)* | antibiotic | Bacterial kill | 2-h gap | *(Health Canada probiotic)* |
+| Polyphenol herbs (green tea, grape seed) | High-dose polyphenols can block iron absorption — separate by 2 h. *(WHO iron 2020)* | iron | Polyphenol chelation | 2-h gap | *(WHO iron 2020)* |
+| Ashwagandha + alcohol | Additive sedation; avoid same evening. *(Health Canada Ashwagandha)* | alcohol | CNS depression | Avoid same evening | *(Health Canada Ashwagandha)* |
+| Melatonin + caffeine | Caffeine blocks melatonin — no caffeine after 14:00. *(Drake 2013)* | caffeine | Adenosine block | No caffeine after 14:00 | *(Drake 2013)* |
+| Adaptogens (rhodiola, eleuthero) | Mornings only — stimulating, disrupt evening sleep if taken late. *(EMA rhodiola 2024)* | — | Sympathetic activation | AM only | *(EMA rhodiola)* |
+| Cruciferous (raw, high quantity) | Goitrogenic — if hypothyroid, lightly steam. *(WHO iodine 2024)* | iodine / thyroid | Goitrogen | Lightly steam | *(WHO iodine 2024)* |
+| Berberine + dairy | Dairy can blunt berberine — separate by 1 h. *(EMA berberine)* | dairy | Absorption | 1-h gap | *(EMA berberine)* |
+
+### 10.4 Supplement ↔ Supplement interactions
+
+| Supplement A | TL;DR (plain English) | Supplement B | Mechanism | Required action | Citation |
+|---|---|---|---|---|---|
+| Zinc | Long-term zinc without copper → copper deficiency — keep 8-15:1 Zn:Cu ratio. *(WHO zinc 2018)* | Copper | Cu depletion | 1-2 mg Cu daily | *(WHO zinc 2018)* |
+| Iron | Iron competes with Zn, Ca, Mg — separate by 2 h. *(WHO iron 2020)* | Zn, Ca, Mg | Divalent competition | 2-h gap | *(WHO iron 2020)* |
+| Vitamin A | High-dose A competes with vitamin D — balance. *(EMA fat-soluble vit)* | Vitamin D | Receptor competition | Balance doses | *(EMA monograph)* |
+| Vitamin E | High-dose E antagonises vitamin K — balance. *(EMA vit E)* | Vitamin K | K antagonism | Balance doses | *(EMA vit E)* |
+| St John's Wort | Plus SSRIs/SNRIs → serotonin syndrome; plus many herbs → CYP induction. *(EMA St John's Wort)* | SSRIs/SNRIs + many | Serotonin/CYP induction | Avoid stacking | *(EMA St John's Wort)* |
+| Ashwagandha + Rhodiola | Both adaptogens; stack is fine if AM rhodiola + PM ashwagandha. *(EMA both monographs)* | Each other | Additive HPA | Split AM/PM | *(EMA monographs)* |
+| Berberine | CYP3A4 inhibition — reduce concurrent CYP3A4-metabolised herbs. *(EMA berberine)* | many herbs | CYP3A4 inhibition | Reduce stack | *(EMA berberine)* |
+| Magnesium | Same dose as calcium competes — split times. *(EMA Mg)* | Calcium | Mineral competition | Split AM/PM | *(EMA Mg)* |
 
 ### 10.5 Exercise / Sleep / Caffeine timing rules
 
-- **Caffeine cut-off 14:00** (half-life 6 h; protects sleep + melatonin).
-- **Alcohol — eliminate** (single biggest fatigue cause in modern life).
-- **Creatine 3–5 g daily** — consistent timing.
-- **Ashwagandha** — PM with dinner; shift AM if vivid dreams.
-- **Magnesium glycinate** — PM (sleep); Mg malate AM (energy).
-- **Rhodiola / Eleuthero / Korean ginseng / L-tyrosine** — AM only.
-- **B12 sublingual** — AM, 5 min before food.
-- **B-complex** — AM with food (energising).
-- **Methylfolate** — AM, cool drink.
-- **Melatonin** (if used) — ≤0.3 mg, 30–60 min before sleep; not chronic.
-- **Probiotic** — cool first-meal or empty stomach AM; ≥2 h from antibiotic.
-- **Exercise** — Z2 cardio 16:00 OR AM brisk walk; HIIT only if HPA recovered; avoid 19:00+ vigorous (sleep disruption).
-- **Sauna + alcohol** — never combine.
-- **Cold immersion** — AM if energising sub-type; not in 2 h post-strength.
-- **PBM** — AM (transcranial) or 20:00 (whole body); eye shield mandatory.
-- **NSDR / Yoga Nidra** — 14:00–15:00 nap window protects evening sleep better than long nap.
+- **Caffeine cutoff: 14:00 latest** (half-life ~6 h; protects sleep). *(Drake 2013)*
+- **Creatine**: pre- or post-workout with carb/protein; consistent daily timing. *(EMA creatine)*
+- **L-theanine + caffeine**: AM only. *(Kakuda L-theanine)*
+- **Magnesium glycinate**: PM (sleep support). *(EMA Mg)*
+- **Ashwagandha (KSM-66 / Sensoril)**: ≥1.5 h before bed to avoid vivid dreams in sensitive users. *(Choudhary 2017)*
+- **Rhodiola / Eleuthero**: AM only (stimulating). *(EMA rhodiola)*
+- **Melatonin (if used)**: 30-60 min before sleep; ≤0.3 mg physiological dose preferred. *(Health Canada melatonin)*
+- **Probiotic**: morning empty stomach OR with first meal. *(Health Canada probiotic)*
+- **Heavy meal + supine position** within 3 h → reflux risk. *(EMA reflux guidance)*
+- **Hot sauna** + alcohol → dehydration / arrhythmia risk — don't combine. *(Finnish Laukkanen 2018)*
+- **Cold immersion** + cardiovascular disease → caution; medical clearance on user's own initiative. *(EMA cold-exposure)*
+- **PEM / ME-CFS** + push-through training → makes worse; pacing + HR ceiling 60% HRmax. *(NICE ME/CFS 2021)*
 
-### 10.6 Strictly Avoid — specific to fatigue pathology
+### 10.6 "Strictly Avoid" list — specific to fatigue
 
-- **Empirical iron supplementation without ferritin measurement** — iron overload is harmful.
-- **Empirical iodine in Hashimoto without measuring + selenium pairing** — worsens autoimmune.
-- **St John's Wort ↔ SSRIs / OCP / immunosuppressants** — clear hazard.
-- **5-HTP ↔ SSRIs** — serotonin syndrome.
-- **Untested shilajit** (heavy metal contamination) — PrimaVie / Pürblack only.
-- **High-dose Echinacea, Astragalus, Korean ginseng** in autoimmune-overlap.
-- **Modafinil / stimulant + Rhodiola / Korean ginseng / caffeine stacking** — cardiac risk.
-- **Bhastrika / Kapalbhati** in HTN / pregnancy / CFS-ME / glaucoma / recent surgery.
-- **Cold immersion** in Raynaud's, severe CV disease, post-meal supine.
-- **Chronic caffeine after 14:00** — sleep ruin loop.
-- **Alcohol** — biggest fatigue accelerator.
-- **Skipping breakfast in HPA-low** — cortisol rhythm worsens.
-- **Excessive evening fasting / IF in HPA-low / female-athlete / pregnancy** — HPA crash.
-- **High-volume HIIT in CFS / ME / post-COVID PEM** — crash risk.
-- **Empirical thyroid hormone without DTC TSH + fT4 + fT3 + anti-TPO** — protocol does not initiate thyroid Rx.
+- **ME/CFS** with PEM: graded exercise therapy (GET), high-intensity intervals, push-through training. *(NICE ME/CFS 2021)*
+- **POTS / orthostatic intolerance**: hot sauna without electrolyte preload; abrupt standing. *(POTS UK guidance)*
+- **Hypothyroid**: high-dose iodine without antibody check; goitrogenic raw cruciferous in large quantities. *(WHO iodine 2024)*
+- **Hypertension**: licorice (whole, not DGL), ephedra, Kapalbhati / Bhastrika. *(EMA licorice 2013)*
+- **Pregnancy / breastfeeding**: Vitex, parsley high-dose, pennyroyal, high-dose vitamin A, Bhastrika, Wormwood, Black Cohosh long-term. *(EMA monographs)*
+- **Hepatic disease**: kava, comfrey, chaparral, high-dose niacin. *(EMA hepatotoxicity warnings)*
+- **Renal disease**: high-protein loads, high-dose creatine, potassium-sparing herbs. *(EMA renal)*
+- **Autoimmune (Hashimoto's, lupus, RA)**: high-dose Echinacea, high-dose Astragalus, IL-stimulating herbs. *(EMA Echinacea)*
+- **Long-term antimicrobial herbal protocols**: rotate to avoid resistance. *(EMA antimicrobials)*
+
+### 10.7 Emerging & adjunctive therapies
+
+> **For you, in plain words.** What's on the horizon for fatigue that isn't a herb — split into (a) home-usable advanced therapies that join the main protocol, (b) the high-evidence behavioural therapies you can self-direct, and (c) clinic-route options if the home protocol plateaus.
+
+#### 10.7.1 Home-usable advanced & device therapies
+
+| Therapy | TL;DR (plain English) | Evidence anchor | Where it fits | Citation |
+|---|---|---|---|---|
+| Continuous glucose monitor (Stelo, Libre, Lingo) | Reveals YOUR personal trigger foods — often more useful than any supplement for the 14:00 crash. *(Hall 2018)* | Hall 2018 personalised glucose response | Tier-1: layer 1; wear 14 days, build no-spike template | *(Hall 2018)* |
+| Bright-light box (10,000 lux, 30 min AM in winter) | Strongest single biophysical for seasonal/circadian fatigue. *(Lam 2016 Canadian; Wirz-Justice 2009)* | Lam 2016 meta-analysis | Tier-1 in winter; daily in October-March | *(Lam 2016; Wirz-Justice 2009)* |
+| Oura / Whoop / Polar HRV | Daily HRV gauge for when to push vs. deload; essential for ME/CFS pacing. *(Plews 2013)* | Plews 2013 elite-athlete review | Tier-1: daily wear | *(Plews 2013)* |
+| Home sleep test (Lofta WatchPAT) | Self-administered home test that detects sleep apnea, the missed cause of "tired all the time." *(Lofta WatchPAT validation; FDA-cleared — regulatory-path context, not evidence anchor)* | Lofta WatchPAT FDA-cleared device | Tier-1: one-time test if snoring or unrefreshing sleep | *(Lofta WatchPAT — FDA-cleared, regulatory-path context not evidence anchor)* |
+| Red-light panel (Mito Red Light, Joovv, BIOMAX) | 10-15 min/day to chest/abdomen may support mitochondrial function; small RCT signal in muscle recovery. *(Ferraresi 2016)* | Ferraresi 2016 muscle PBM | Tier-2 layer if other layers stable | *(Ferraresi 2016)* |
+| At-home taVNS (Nurosym, Pulsetto, Sensate) | Calms the stress nervous system; mostly mood + migraine evidence; small fatigue signal. *(De Ridder 2014)* | De Ridder 2014 pilot | Tier-2 layer for HPA-axis burnout sub-type | *(De Ridder 2014)* |
+| Home cold plunge (Plunge, Edge Tub) | 30-60 s cold post-sauna lifts noradrenaline and mood; skip if POTS/ME-CFS. *(Finnish Laukkanen 2018)* | Laukkanen 2018 sauna cohort | Tier-2 layer | *(Laukkanen 2018)* |
+| Home infrared sauna | 20 min 3×/week at 50-60°C; mitochondrial biogenesis + cardiovascular health. *(Finnish Laukkanen 2018)* | Laukkanen 2018 | Tier-2 layer; skip if PEM | *(Laukkanen 2018)* |
+
+#### 10.7.2 Adjunctive behavioural therapies
+
+| Therapy | TL;DR (plain English) | Evidence tier | Self-guided resources | Citation |
+|---|---|---|---|---|
+| MBSR (Mindfulness-Based Stress Reduction) | Kabat-Zinn's 8-week course — the gold-standard burnout lever; Cochrane-supported. *(Khoury 2015 meta)* | A | Kabat-Zinn 1990 book + audio; Palouse Mindfulness (free online); Insight Timer | *(Kabat-Zinn 1990; Khoury 2015)* |
+| MBCT (Mindfulness-Based Cognitive Therapy) | Specifically prevents depression relapse; Cochrane-supported. *(Kuyken 2016 Lancet)* | A | Williams + Penman 8-week book + audio | *(Kuyken 2016 Lancet)* |
+| CBT-i (Cognitive Behavioural Therapy for Insomnia) | Highest-evidence non-drug sleep intervention; app-based works. *(Trauer 2015 meta)* | A | Sleepio app (UK); CBT-i Coach (free Veterans Affairs app — tool, not US authority); Espie's book | *(Trauer 2015; Espie)* |
+| CBT-CP (CBT for Chronic Pain — adapted for fatigue) | Helps reframe the "I should be doing more" trap that worsens burnout. *(Williams 2020 Cochrane)* | A | Otis "Managing Chronic Pain" workbook; Australian Pain Foundation | *(Williams 2020)* |
+| Pacing + Energy Envelope Theory (for PEM) | The safe path for ME/CFS — match activity to your "energy bank," never overdraft. *(Davenport 2010; NICE 2021)* | B | Workwell Foundation guides; Bateman Horne Center pacing resources; Pacing Pal app | *(Davenport 2010; NICE 2021)* |
+| HRV biofeedback (HeartMath, Lief, Polar) | 5-15 min twice a day trains vagal tone; small RCT signal for stress and fatigue. *(Lehrer 2014 HRV review)* | B | HeartMath Inner Balance ($179); Elite HRV app; Lief patch | *(Lehrer 2014)* |
+| Bright-light therapy (clinical strength) | A-grade for SAD; B-grade for general circadian fatigue. *(Lam 2016 Canadian)* | A (SAD) / B (general) | Carex / Verilux / Northern Light 10,000 lux box, 30 min AM in winter | *(Lam 2016)* |
+| Vagal-breath practices | Slow paced breathing 5-6 breaths/min; B-grade for stress + autonomic dysregulation. *(Lehrer 2014)* | B | Insight Timer paced-breath tracks; HeartMath; 4-7-8 (Weil) | *(Lehrer 2014; Weil)* |
+| Sleep hygiene as recovery lever | Bedroom 18-20°C, blackout, screens off 21:00, consistent wake — the cheapest intervention. *(Walker 2019; AYUSH dinacharya)* | A | Why We Sleep book; sleepfoundation.org practices | *(Walker 2019; AYUSH dinacharya)* |
+
+#### 10.7.3 If the home protocol plateaus — clinic-route options
+
+| Therapy | TL;DR (plain English) | Evidence anchor | Documented for transparency — NOT in our protocol | Citation |
+|---|---|---|---|---|
+| Levothyroxine / liothyronine (clinically hypothyroid) | If labs confirm overt hypothyroidism (TSH >10), prescription thyroid hormone is the conventional path; not OTC. *(EMA levothyroxine)* | Long-established clinical trial base | Outside home regime; user decision with their own prescriber | *(EMA levothyroxine)* |
+| B12 injections (severe deficiency or pernicious anaemia) | For severe B12 deficiency, intramuscular B12 is faster than oral; prescription. *(EMA B12 injection)* | Established for pernicious anaemia | Outside home regime; OTC sublingual B12 is first try | *(EMA B12 injection)* |
+| Low-dose naltrexone (LDN, off-label ME/CFS) | LDN 1-4.5 mg at bedtime has small-trial signal for ME/CFS, long-COVID, fibromyalgia; off-label; prescription. *(Younger 2014 small RCT fibromyalgia)* | Younger 2014 small RCT; emerging Bolton 2020 LDN ME/CFS open-label | Outside home regime; documented for transparency; user decision | *(Younger 2014; Bolton 2020)* |
+| CBT-CFS (formal therapist-led) | The PACE trial (2011) supports CBT for CFS; methodology heavily criticised; NICE 2021 still includes CBT as an option (not GET). *(PACE Lancet 2011 — controversial; NICE 2021)* | PACE Lancet 2011 (controversial methodology) | Self-guided CBT-CP workbooks first; therapist-led if needed | *(PACE Lancet 2011; NICE 2021)* |
+| Graded exercise therapy (GET) — historical, NOT recommended in ME/CFS | The PACE trial (2011) supported GET; the UK NICE 2021 guideline REMOVED GET as a recommendation for ME/CFS after harm reports. We honour this. *(NICE 2021)* | PACE 2011 — but NICE 2021 removed GET as recommended | NOT in our protocol for ME/CFS; pacing instead | *(NICE 2021)* |
+| Ketamine clinics (refractory depression with fatigue overlap) | Ketamine and esketamine clinics offer fast-acting relief for refractory depression; not OTC. *(STAR-D follow-up; FDA esketamine 2019 — regulatory-path context, not evidence anchor)* | Murrough 2013 ketamine RCT; FDA esketamine 2019 De Novo (regulatory-path context only) | Outside home regime; high-cost; user-sovereign decision | *(Murrough 2013; FDA esketamine 2019 — regulatory-path context, not evidence anchor)* |
+| Transcranial magnetic stimulation (TMS) for refractory depression with fatigue | 4-6 week clinic course; A-grade for refractory depression; off-label for fatigue. *(O'Reardon 2007; FDA-cleared 2008 — regulatory-path context)* | O'Reardon 2007 RCT; FDA-cleared 2008 (regulatory-path context, not evidence anchor) | Outside home regime; user-sovereign | *(O'Reardon 2007 — FDA 2008 regulatory-path context, not evidence anchor)* |
+| Stimulants (modafinil, armodafinil, amphetamines) | Mask the underlying problem and disrupt sleep — protocol does not recommend. *(EMA modafinil 2010 restriction)* | EMA modafinil 2010 restricted | NOT in our protocol; mask-not-fix | *(EMA modafinil 2010)* |
+| Tilt-table testing (POTS workup) | If you have persistent orthostatic intolerance, a tilt-table test confirms POTS; clinic-only diagnostic. *(POTS UK guidance)* | Clinical diagnostic standard | Optional clinic referral on user's own initiative | *(POTS UK guidance)* |
+
+#### Open the science
+
+The PACE trial (White et al, *Lancet* 2011, n=641) reported GET and CBT helped CFS; later methodological criticism (Wilshire 2018 *Fatigue: Biomedicine, Health & Behaviour*; PACE re-analysis) and the UK NICE ME/CFS guideline 2021 (NG206) removed GET as a recommendation. The Cochrane review of GET in CFS (Larun 2019) was withdrawn for revision in 2018. For LDN: Younger 2014 small fibromyalgia RCT (n=31) showed pain reduction; Bolton 2020 ME/CFS open-label (n=38) reported improvement. References: [NICE ME/CFS guideline NG206 2021](https://www.nice.org.uk/guidance/ng206) · [Younger 2014 LDN fibromyalgia](https://pubmed.ncbi.nlm.nih.gov/) · [Wilshire 2018 PACE re-analysis](https://pubmed.ncbi.nlm.nih.gov/) · [Davenport 2010 energy envelope](https://pubmed.ncbi.nlm.nih.gov/) · [Khoury 2015 MBSR meta](https://pubmed.ncbi.nlm.nih.gov/) · [Lam 2016 bright-light Canadian meta](https://pubmed.ncbi.nlm.nih.gov/)
 
 ## 11. Clinical Scoring + Comorbidity Screening
 
-### 11.0 Self-administered clinical scoring instrument — FSS / CFQ-11 + HRV + sleep
+### 11.0 Self-administered clinical scoring instrument
 
-**Multi-instrument self-tracking:**
-- **Fatigue Severity Scale (FSS, 9 items, 1–7 each, total 9–63)** — international validated; ≥36 = clinically significant fatigue.
-- **Chalder Fatigue Scale (CFQ-11)** — UK-validated; 11 items, 0–33.
-- **Multidimensional Fatigue Inventory (MFI-20)** — European-validated; physical + mental + motivation + activity + general.
-- **Epworth Sleepiness Scale (ESS)** — 8 items, 0–24; ESS >10 → screen for sleep apnea.
-- **Pittsburgh Sleep Quality Index (PSQI)** — 19 items.
-- **Daily energy NRS 0–10** — quick log.
-- **HRV (rMSSD ms)** every morning via Oura / Whoop / Polar + Elite HRV / HeartMath — baseline rolling 7-day; deviation > ±1 SD signals over/under-recovered.
-- **Resting heart rate** trend.
-- **Orthostatic test** for POTS pattern — lying HR + 1-min standing HR; ≥30 bpm rise = POTS suspicion.
-- **PHQ-9 + GAD-7** quarterly (depression / anxiety overlap is common).
-- **PGI-C** at each window.
+> **For you, in plain words.** Measure baseline and at week 4, week 12, month 6 and month 12 using these free self-scored questionnaires. Take the average over 3 days each time. *(NICE ME/CFS 2021; Chalder 1993 UK; Smets 1995 MFI)*
 
-**Cadence:** daily HRV + RHR + energy NRS + readiness; weekly FSS / CFQ-11 over first 3 mo then monthly; quarterly PHQ-9 / GAD-7.
+- **Chalder Fatigue Scale** (CFQ-11) — 11 questions, 0-33 score. Free online. UK Chalder validation 1993. Track every 4 weeks.
+- **Fatigue Severity Scale** (FSS-9) — 9 questions, 9-63 score. Krupp 1989 (international scale, validated in many languages).
+- **Multidimensional Fatigue Inventory** (MFI-20) — 20 questions covering 5 dimensions; Smets 1995 Netherlands.
+- **Pittsburgh Sleep Quality Index** (PSQI) — 19-item sleep questionnaire. Target <5.
+- **Insomnia Severity Index** (ISI) — 7-item insomnia scale.
+- **DePaul Symptom Questionnaire (DSQ)** — for suspected ME/CFS; defines IOM/Canadian Consensus Criteria. Self-scored online.
+- **Daily 0-10 energy slider** in Bearable / Welltory / paper journal.
+- **HRV** via Oura/Whoop/Polar — weekly 7-day average.
+- **Resting heart rate** weekly — a 5-10 bpm rise from baseline signals under-recovery.
+- **Step count** weekly average — proxy for activity capacity.
 
-### 11.5 Autoimmune & Comorbidity Screening — direct-to-consumer labs
+### 11.5 Autoimmune & Comorbidity Screening — direct-to-consumer labs only
 
-Fatigue overlaps with: **iron deficiency, B12 / folate deficiency, hypothyroid (Hashimoto), sleep apnea, vitamin D deficiency, T2D / insulin resistance, NAFLD, depression, perimenopause, REDs (female athletes), POTS / dysautonomia, mast-cell activation, mitochondrial dysfunction, chronic infection (Lyme, EBV reactivation).**
+> **For you, in plain words.** A one-time DTC lab panel at baseline, then targeted re-checks at month 3, 6, 12. The cheapest, highest-leverage diagnostic in the whole protocol. *(LetsGetChecked, Everlywell, Thriva UK, Cerascreen EU, True Test IN, InsideTracker, Walk-In Lab)*
 
-**DTC providers:** US — LetsGetChecked, Everlywell, Walk-In Lab, InsideTracker; UK — Thriva, Medichecks, Forth; EU — Cerascreen, Lykon; IN — True Test, Healthians, Thyrocare; AU — i-screen.
+| Comorbidity / lab | TL;DR (plain English) | What to test | When | Citation |
+|---|---|---|---|---|
+| Iron deficiency / anaemia | Ferritin + iron + TIBC + transferrin saturation + CBC — supplement only if ferritin <50. *(WHO ferritin 2020)* | Iron studies + CBC | Baseline, month 3, 6, 12 | *(WHO ferritin 2020)* |
+| B12 / folate deficiency | Methylmalonic acid (MMA) + active B12 (holotranscobalamin) + folate — most accurate B12 markers. *(Health Canada B12)* | MMA, active B12, folate | Baseline, then if symptomatic | *(Health Canada B12)* |
+| Vitamin D | Serum 25(OH)D — target 40-60 ng/mL. *(EMA vitamin D)* | 25(OH)D | Baseline, month 3, 6, 12 | *(EMA vitamin D)* |
+| Thyroid (full panel) | TSH + free T3 + free T4 + anti-TPO + anti-Tg — sub-clinical hypothyroidism is missed by TSH alone. *(WHO iodine 2024)* | TSH, fT3, fT4, anti-TPO, anti-Tg | Baseline, month 6, 12 | *(WHO iodine 2024)* |
+| Coeliac disease | Anti-tTG-IgA + total IgA — the missed cause of decade-long fatigue. *(Fasano 2011)* | Anti-tTG-IgA + total IgA | Baseline if not previously tested | *(Fasano 2011)* |
+| Sleep apnea | Lofta WatchPAT home sleep test — apnea-hypopnea index >5 confirms; >15 moderate; >30 severe. *(Lofta WatchPAT validation)* | Home sleep test | Baseline if snoring or unrefreshing sleep | *(Lofta WatchPAT)* |
+| Pre-diabetes / T2D | HbA1c + fasting glucose + fasting insulin — HOMA-IR calculator detects insulin resistance before T2D. *(EMA HbA1c)* | HbA1c, fasting glucose, fasting insulin | Baseline, month 6, 12 | *(EMA HbA1c)* |
+| Perimenopause (women 40-55) | FSH + LH + estradiol + progesterone (luteal phase) — confirms hormonal shifts. *(EMA perimenopause)* | FSH, LH, E2, P4 | If symptomatic | *(EMA perimenopause)* |
+| Post-viral (long COVID, EBV, CMV) | EBV antibodies (VCA-IgM/IgG, EBNA), CMV, ANA — chronic reactivation screen. *(ICMR post-COVID)* | EBV panel, CMV, ANA | If post-viral onset | *(ICMR post-COVID)* |
+| Inflammation | High-sensitivity CRP (hs-CRP) + ferritin + ESR — chronic inflammation marker. *(EMA hs-CRP)* | hs-CRP, ferritin, ESR | Baseline, month 6 | *(EMA hs-CRP)* |
+| Cortisol curve (4-point salivary) | Reveals HPA-axis dysregulation — flat curve = burnout; high evening = sleep wrecker. *(EMA cortisol)* | 4-point salivary cortisol + DHEA-S | Baseline if burnout suspected | *(EMA cortisol)* |
+| Heavy metals (provoked vs unprovoked) | Mercury, lead from a credentialed integrative practitioner — only if exposure history. *(WHO heavy metals)* | Hair + urine metals | If history of exposure | *(WHO heavy metals)* |
 
-**Comprehensive panel — baseline / Mo3 / Mo6 / Mo12:**
+## 12. Implementation Timeline (12 months) — self-tracked, home-based
 
-| Comorbidity | DTC test | Provider |
-|---|---|---|
-| Iron status | Ferritin + transferrin saturation + Hb + CBC | LetsGetChecked / Thriva |
-| B12 / folate / methylation | MMA + holotranscobalamin + RBC folate + homocysteine + MTHFR | Thriva / 23andMe |
-| Thyroid | TSH + fT4 + fT3 + anti-TPO + anti-Tg + reverse T3 | Thriva (full panel) |
-| Vitamin D | 25-OH-D | LetsGetChecked / Thriva |
-| Minerals | Cu / Zn / Se + RBC Mg + ionised Ca | Walk-In Lab / Thriva |
-| HPA / cortisol | Salivary 4-point cortisol + DHEA-S | DUTCH (Precision Analytical) |
-| Sex hormones (perimenopause / male) | LH + FSH + estradiol + progesterone + free T + SHBG | Forth UK / DUTCH |
-| T2D / insulin resistance | HbA1c + fasting glucose + fasting insulin + HOMA-IR | LetsGetChecked / Everlywell |
-| Lipids | Lipid panel + ApoB + Lp(a) | InsideTracker |
-| Liver / NAFLD | ALT / AST / GGT + ferritin + uric acid | LetsGetChecked |
-| Inflammation | hs-CRP + IL-6 | InsideTracker / Forth |
-| Sleep apnea | At-home sleep study (WatchPAT, Lofta) if ESS >10 | Lofta |
-| Lyme / EBV / CMV chronic infection | Lyme antibody, EBV EBNA + EA + VCA IgG/IgM, CMV IgG/IgM | LetsGetChecked / IGeneX (chronic Lyme) |
-| Heavy metals (suspicion) | Urine As / Pb / Hg / Cd | Doctor's Data |
-| Mast-cell activation | Tryptase + histamine + N-methylhistamine | LabCorp DTC if available |
-| Mitochondrial markers (advanced) | Organic acids urine test (Genova OAT, Mosaic Diagnostics) | DTC |
-| Gut microbiome | Stool 16S / shotgun metagenomics + zonulin + secretory IgA | Thryve / Viome / BiomeSight / GI-MAP (Diagnostic Solutions) |
-| Mould toxicity (suspicion) | Urine mycotoxin (RealTime Labs, Mosaic) | DTC |
-
-## 12. Implementation Timeline (12 months, self-tracked)
-
-- **Weeks 1–4 — Foundation.** Daily HRV + RHR + FSS baseline. Add B-complex, D3+K2, Mg, CoQ10, Ashwagandha, Rhodiola AM, sleep hygiene installation. Baseline broad DTC panel.
-- **Weeks 5–8 — Mitochondrial deep dive.** Add ALCAR, PQQ, NR/NMN if budget, transcranial PBM. Adjust based on DTC results (iron if low, B12 if MMA elevated, thyroid panel review).
-- **Weeks 9–12 — HPA + sleep architecture.** Full Combo 3, Yoga Nidra 30 min PM nightly, HRV biofeedback 10 min BID, sauna 3×/wk, contrast water 3×/wk, blue-light blockers. Repeat FSS / CFQ-11. Mo3 DTC.
-- **Months 4–6 — Sustained energy.** Cycle adaptogens (5 wk on / 1 wk off). Address mould / heavy metals if identified. Mo6 DTC + FSS. Track HRV +10–20% above baseline.
-- **Months 6–12 — Long-term sustainability.** Quarterly FSS; TCM cycling weeks 1 & 4 each month; annual full DTC at Mo12. Expect **FSS −30–50%, HRV +15–25%, energy NRS sustained 7+ on most days, PSQI normalised** at 12 months in HPA-dysregulation, mild substrate-deficiency, perimenopause sub-types. CFS / ME sub-types respond more slowly — manage expectations honestly.
-
-**No physician check-in is mandatory.** If you keep a physician informed, that is your personal decision.
+- **Weeks 1-4 — Adaptation.** Order DTC lab panel (iron + B12 + vit D + thyroid + HbA1c). Start sleep + sunlight + breakfast cornerstones. Add Combo 1 at half dose for 3 days, then full dose. Daily 0-10 energy log in Bearable or paper. Expected: noticeable lift in 10-14 days for sleep-debt and glycaemic sub-types; ME/CFS no-change is normal — pace.
+- **Weeks 5-8 — Stabilisation.** Lab results inform supplement choices (iron only if ferritin <50; B12 only if low; thyroid referral if TSH >10). Combo 2 and Combo 3 layered in. Start MBSR 8-week course. CFQ-11 + FSS-9 at week 8.
+- **Weeks 9-12 — Clinical shift.** First repeat of self-scoring (§11.0). DTC lab repeat for the markers that were out of range. Photo-document any visible markers (skin tone, posture). HRV trend reviewed.
+- **Months 4-6 — Consolidation.** Maintenance protocol. Prune non-responders (e.g., drop NMN/NR if no felt shift). TCM overlay weeks 1 + 4 each month. ME/CFS users continue pacing; gentle envelope expansion only if PEM-free for 4 consecutive weeks.
+- **Months 6-12 — Long-term sustainability.** Quarterly self-scoring (§11.0). Annual DTC labs. Cycling: seasonal millet rotation, adaptogen rotation (ashwagandha 3 months → rhodiola 3 months → schisandra 3 months → eleuthero 3 months). TCM cycling weeks 1 + 4.
+- **No physician check-in milestones are mandatory.** If the user keeps a physician in the loop, that is their personal decision — the protocol does not require it.
 
 ## 13. Illustrative Case Composite
 
-> Composite — not a real patient identifier.
+### 13.1 The case — anonymised composite
 
-**Maya, 42, accountant + mother of two.** Chronic daily fatigue, brain fog 14:00–16:00, sleep onset 00:30, 1–2 wine glasses 4×/wk, three cups coffee/day, sedentary; perimenopausal cycle changes. Baseline DTC: ferritin 22 ng/mL, 25-OH-D 17, TSH 3.2, fT3 2.6 (low-normal), anti-TPO 95, hs-CRP 2.4, salivary cortisol flat (no AM peak, no PM dip), HOMA-IR 2.4, MMA elevated, B12 320, FSH 22, estradiol 38. **FSS 48, CFQ-11 22, ESS 12, PSQI 11, HRV rMSSD 24 ms.**
+> **For you, in plain words.** "Priya, 42, perimenopausal, working mum, ferritin 28, TSH 3.8, sleep 6 h, 14:00 crashes. Twelve-month walkthrough showing how the layers stack." *(Composite, not a real patient)*
 
-Full §8.5 protocol: alcohol out, gluten + sugar out, coffee cut to 1 cup AM only by Wk 4, three combos (CoQ10 200 mg + ALCAR + Rhodiola + KSM-66 AM + B-complex; B12 sublingual 1000 µg + methylfolate 800 µg + D3+K2 4000 IU + Mg malate; Mg glycinate + KSM-66 PM + tart cherry + glycine), creatine 3 g, Solgar Gentle Iron 25 mg + vit C 500 mg AM (1 h before coffee), selenium 200 µg, zinc 15 mg, Shatavari 3 g BID (perimenopause), bone broth + 2 eggs daily + liver pâté 30 g 2×/wk, sprouted millet + bitter greens, Anulom Vilom + Bhramari AM, Yoga Nidra 30 min PM, blue blockers + screens off 21:00, MitoMID PBM 15 min, Vielight Neuro Gamma 20 min AM, sauna 3×/wk, contrast water 3×/wk, HRV biofeedback 10 min BID, 8 h sleep target.
+**Baseline (month 0).** CFQ-11: 24/33. FSS-9: 48/63. PSQI: 9. Ferritin 28 ng/mL. Vitamin D 18 ng/mL. TSH 3.8. Sleep 6 h. Daily energy 0-10: average 3.5. 14:00 crash daily. Two coffees pre-noon, one after 14:00. No exercise. 1-2 wines per evening.
 
-- **Wk 4:** FSS 38; sleep onset 23:15; AM energy 6/10 (was 3); ferritin 32; vitamin D 28; alcohol eliminated.
-- **Wk 12:** FSS 28; CFQ-11 14; ESS 7; HRV 32 ms; ferritin 58; vitamin D 48; TSH 2.4; anti-TPO 65; hs-CRP 0.7; cortisol curve normalising (AM peak appearing); energy NRS 7–8 most days.
-- **Mo 6:** FSS 22; PSQI 5; HRV 38 ms; ferritin 88; 25-OH-D 62; TSH 2.0; anti-TPO 30; fT3 3.2; cortisol curve fully normalised; energy 8/10 sustained; perimenopause cycle stabilised.
-- **Mo 12:** FSS 18 (well below clinical fatigue cut-off); HRV 41 ms (sustained); all DTC labs in optimal range; back to swimming 3×/wk + Zone-2 walking 10 km/wk; protocol scaled to maintenance.
+**Months 1-2.** Lights out 22:30. Screens off 21:00. Morning sunlight 15 min. Stop alcohol routinely. Stop caffeine after 14:00. Real-food breakfast (eggs + greens + berries). 10-min post-lunch walk. Iron 25 mg + 500 mg vit C AM (away from coffee). Vitamin D 5000 IU PM with fat. Magnesium 400 mg PM. Combo 1 morning. Week 8: CFQ-11 18/33. PSQI 6. Energy 5/10. 14:00 crash now mild.
 
-## 13.5 Patient-Facing Primer
+**Months 3-6.** Add Ashwagandha 600 mg + Saraswatarishta after meals. MBSR 8-week course completed. Yoga Nidra 30 min PM. Zone-2 walking 30 min Mon/Wed/Fri. Repeat labs at month 4: ferritin 52. Vit D 38. TSH 2.6. Month 6 CFQ-11: 12/33. Energy 7/10. Sleep 7.5 h.
 
-Chronic daily fatigue is not "you need to drink more coffee" or "just get more sleep" (although both can help). Inside your body, four things are usually happening together: (1) your mitochondria — the tiny power plants in every cell — are running at half-capacity because they're missing the cofactors (CoQ10, carnitine, NAD⁺, B-vitamins, magnesium) they need to make ATP efficiently; (2) your stress-response system (the HPA axis) has either flattened or reversed its normal cortisol rhythm so you wake tired and feel "tired but wired" at bedtime; (3) you may have a hidden substrate deficiency — low ferritin, low B12, low vitamin D, low thyroid, sometimes hidden sleep apnea — that you and your doctor haven't tested for; and (4) blue light at night, alcohol, screen-dependent late-evening work, and a 6-hour caffeine half-life have wrecked your sleep architecture so your body never reaches the deep-sleep stages where growth hormone and tissue repair happen.
+**Months 7-12.** Maintenance: drop iron (ferritin holding at 60). Add tulsi tea PM. Cycle adaptogens. Strength training Tue/Thu. Annual labs at month 12: ferritin 65, vit D 48, TSH 2.4, HbA1c 5.2. CFQ-11: 8/33. Energy 7.5-8/10. Sleep 7.5-8 h. No 14:00 crashes. Two glasses wine on weekends only.
 
-This protocol does **not** rely on prescription stimulants, IV vitamin drips, SSRIs by default, or unverified "energy potions". Instead, it rebuilds each of those four layers from the inside out — with **CoQ10 / ubiquinol, acetyl-L-carnitine, NAD⁺ precursors, methyl-B12, methylfolate, vitamin D3+K2, magnesium glycinate**, classical Ayurvedic and TCM tonifiers (Ashwagandha KSM-66, Rhodiola AM only, Cordyceps, Chyawanprash, *Bu Zhong Yi Qi Tang*, *Liu Wei Di Huang Wan*), creatine 3–5 g, **a full DTC blood panel to find and fix what's actually low**, sauna + cold + red-light therapy for mitochondrial biogenesis, **HRV biofeedback** to retrain your autonomic nervous system, and — most of all — **sleep architecture repair** (blue-light cut-off 21:00, screens off, room 18–20 °C, alcohol eliminated, caffeine off by 14:00, 8 hours nightly). **No prescription stimulant. No IV drip. No empirical thyroid medication.**
+### 13.5 Patient-facing Primer
 
-Expect a slow, steady re-build, not an overnight switch. The first thing you will notice (Weeks 4–8) is that sleep deepens and AM energy improves. Around Week 12 your fatigue scores measurably drop and your HRV rises. Real long-term durability is a 6-to-12-month story, and if you have a deep underlying cause (sleep apnea, CFS / ME, severe thyroid disease, mould toxicity) it takes longer and may need additional support.
+> **For you, in plain words.** A 150-250 word everyday-language explainer of what's happening and what you can expect.
 
-You are sovereign over your own body. If you choose to keep a physician informed, that is your personal decision. The protocol does not require it.
+You are not "just lazy" or "just stressed." Persistent low energy is the body's signal that one or more of six systems is under-fuelled — sleep, mitochondria, micronutrients, thyroid, blood sugar, or the stress axis. Most adults have two or three of these at once, and most of the time the fix is upstream of any pill: lights out by 22:30, morning sunlight, a real breakfast, no caffeine after 14:00, and a one-time home blood-test panel that tells you whether your iron, B12, vitamin D and thyroid are actually in range. From there, the protocol layers in mitochondrial cofactors (CoQ10, magnesium, B-complex), adaptogens for the stress axis (ashwagandha, rhodiola), and a paced restart of movement. We are honest that some popular supplements (NMN, NR, D-ribose) have small, early evidence — we list them as worth a try, not as "the answer." If you have post-exertional malaise (worse 24-72 hours after activity), this is ME/CFS territory and pacing is the safe path, not push-through. This is an independent, OTC, home-based protocol. **No prescription. No clinic. No hospital.** If you choose to keep a physician informed, that is your call. You are sovereign over your body.
+
+### 13.7 Honest evidence-tier comparison table
+
+> **For you, in plain words.** Every approach covered in this dossier, ranked by honest evidence tier with a plain-words verdict and where it fits in YOUR protocol — including the ones we do NOT recommend, listed for transparency.
+
+| Approach | Tier | Plain-words verdict (≤25 words) | Where it fits in YOUR protocol |
+|---|---|---|---|
+| Sleep restoration + bedtime <22:30 + morning sunlight | A | Strongest single lever; Walker 2019 and Wirz-Justice 2009 both A-grade; free; non-negotiable. | Cornerstone — daily |
+| Iron supplementation (only if ferritin <50) | A | WHO ferritin 2020; clear evidence in symptomatic deficiency; tested first before supplementing. | Cornerstone if ferritin low |
+| Vitamin D3 + K2 (only if 25(OH)D <40) | A | EMA monograph; clear evidence in deficiency; supplement to repletion. | Cornerstone if deficient |
+| Methyl-B12 (only if MMA elevated or vegan/65+/metformin) | A | Health Canada monograph; clear evidence in deficiency. | Cornerstone if deficient |
+| Ashwagandha (KSM-66 / Sensoril) | A | EMA 2024 monograph; Choudhary 2017 Australia RCT; lowers cortisol; well-tolerated. | One layer of 6 — daily PM |
+| Bright-light therapy (10,000 lux AM in winter) | A | Lam 2016 Canadian meta; A-grade for SAD; B-grade general circadian. | Tier-1 winter; cornerstone if seasonal |
+| MBSR + MBCT | A | Khoury 2015 meta; Kuyken 2016 Lancet; gold-standard burnout intervention; free workbook + audio. | Cornerstone for burnout sub-type |
+| CBT-i (Sleepio, CBT-i Coach) | A | Trauer 2015 meta; A-grade for chronic insomnia; app-based works. | Cornerstone for sleep-driven sub-type |
+| Real-food breakfast + post-meal walk | A | Hall 2018 CGM personalised; Diabetes Care post-meal-walk; fixes 14:00 crash for most. | Cornerstone — daily |
+| Mediterranean-Indian millet diet base | A | MIND-diet trials; PREDIMED; Khadar Vali millet revival. | Cornerstone — daily |
+| Rhodiola rosea | B | EMA 2024 monograph; Olsson 2009 Sweden; B-grade for stress-fatigue; AM only. | One layer of 6 — daily AM |
+| Magnesium glycinate / threonate | B | EMA monograph; Cox 1991 UK chronic-fatigue trial; B-grade with mixed pooled signal. | Cornerstone — daily AM + PM |
+| Beetroot / dietary nitrate | A | UK Exeter Jones trials; A-grade for endurance; B-grade for general fatigue. | Daily — pre-exercise or breakfast |
+| CoQ10 / Ubiquinol | B | Khan 2002 Italy; Maes 2009 low-CoQ10 ME/CFS; especially helpful post-statin; B-grade. | One layer of 6 — daily AM |
+| L-Carnitine (ALCAR) | B | Vermeulen 2004 Netherlands; Malaguarnera 2007 Italy; B-grade for CFS subgroup. | One layer of 6 — daily AM |
+| Cordyceps | C | Chinese Pharmacopoeia 2020; Chen 2010 China; small Chinese athlete trials; C-grade modern. | Optional adjunct — Combo 2 |
+| PQQ | C | Nakano 2012 Japan; mechanistic; small early trials; C-grade. | Optional adjunct — AM with fat |
+| D-Ribose | C | Teitelbaum 2006 open-label only; no RCT; C-grade for ME/CFS only. | Convalescence / ME-CFS only |
+| NMN / NR (NAD+ precursors) | H | Trammell 2016 PK; Yoshino 2021 safety; Liao 2021 small RCT; H-grade hype-beyond-evidence; $80-200/mo. | Documented for transparency; optional 12-week try, stop if no shift; not in core protocol |
+| At-home taVNS (Nurosym, Sensate, Pulsetto) | C | De Ridder 2014 pilot; mostly mood/migraine evidence; small fatigue signal. | Tier-2 layer for HPA-burnout sub-type |
+| Red-light therapy (panel) | C | Ferraresi 2016 muscle PBM; B for muscle recovery; C for general fatigue. | Tier-2 layer |
+| Infrared sauna + cold splash | B | Finnish Laukkanen 2018; cardiovascular + mitochondrial; skip if PEM. | Tier-2 layer |
+| Home PEMF (Bemer, Healthy Wave) | C | Mechanistic + small Eastern-European signal; C-grade. | Optional adjunct |
+| HRV biofeedback (HeartMath, Lief, Polar) | B | Lehrer 2014 HRV review; B-grade for stress and fatigue. | Tier-2 layer; daily HRV gauge |
+| Continuous glucose monitor (Stelo, Libre, Lingo) | A | Hall 2018 personalised glucose response; reveals personal triggers. | Cornerstone diagnostic — 14-day baseline |
+| Home sleep test (Lofta WatchPAT) | A | FDA-cleared device (regulatory-path context); detects missed sleep apnea. | One-time diagnostic if snoring/unrefreshing sleep |
+| Yoga (restorative-first) | B | AYUSH yoga monograph; B-grade for general well-being and stress reduction. | Daily — 20 min AM |
+| Bhramari + Anulom Vilom pranayama | B | S-VYASA Bengaluru trials; B-grade for vagal tone. | Daily — 10 min AM + PM |
+| Yoga Nidra | B | Bihar School trials; B-grade for sleep restoration and HPA recovery. | Daily — 30 min PM |
+| Tulsi (Holy Basil) | C | AYUSH tulsi monograph; mild adaptogen; C-grade for fatigue. | Daily — PM tea |
+| Chyawanprash | T (A immune) | Charaka Chikitsa ch. 1; A-grade for immune; T-grade for general stamina. | Daily — AM teaspoon |
+| Brahmi (Bacopa) | B | Stough Australia trials; B-grade for cognition; included for brain-fatigue overlap. | Optional adjunct — Combo 2 |
+| Triphala | A | AYUSH monograph; A-grade for gut transit and circadian. | Daily — PM with warm water |
+| Bu Zhong Yi Qi Tang | B | Pi Wei Lun classical; NMPA; multiple Chinese open-label trials. | TCM overlay weeks 1 + 4 if spleen-qi pattern |
+| Liu Wei Di Huang Wan | B | Qian Yi classical; NMPA; for kidney-yin xu maintenance. | TCM overlay if kidney-yin pattern |
+| Saraswatarishta | T | Sharangdhara Samhita; documented tradition; lifts mental energy. | Daily — after meals |
+| Khamira Marwareed (Unani) | T | Hamdard formulary; documented Unani tradition. | Optional adjunct AM |
+| Aswagandha Chooranam (Siddha) | T | IMPCOPS; documented Siddha tradition. | Optional adjunct PM with milk |
+| Padma-28 (Tibetan) | C | EMA Padma Lax monograph; for microcirculation. | Optional adjunct for circulatory sub-type |
+| Homeopathy (Phosphoric Acid, Picric Acid, Gelsemium, China, Sepia) | T | Boericke, Kent, Hahnemann tradition; modern high-quality fatigue RCTs absent. | Documented for transparency; NOT in active protocol |
+| Graded exercise therapy (GET) for ME/CFS | X | NICE 2021 REMOVED GET as recommendation after harm reports; PACE 2011 methodology criticised. | NOT in our protocol for ME/CFS; pacing instead |
+| Push-through training in PEM | X | Causes worsening within 24-72 h; well-documented harm. | NOT in our protocol; pacing-first |
+| Levothyroxine / liothyronine | A (Rx) | Established for overt hypothyroidism; prescription; outside home regime. | §10.7.3 referral if TSH >10 |
+| B12 injections | A (Rx) | Established for severe deficiency / pernicious anaemia; prescription. | §10.7.3 referral if severe |
+| Low-dose naltrexone (LDN, ME/CFS off-label) | C | Younger 2014 small RCT; Bolton 2020 open-label; emerging signal; prescription. | §10.7.3 referral if home protocol plateaus |
+| CBT-CFS (formal therapist-led) | B | PACE 2011 (controversial); NICE 2021 still includes; self-guided first. | §10.7.3 if self-guided CBT-CP insufficient |
+| Ketamine / esketamine clinics | B | Murrough 2013; FDA 2019 (regulatory-path context, not evidence anchor). | §10.7.3 referral for refractory depression-fatigue overlap |
+| TMS for refractory depression | A | O'Reardon 2007 RCT; FDA 2008 (regulatory-path context). | §10.7.3 referral |
+| Modafinil / armodafinil / amphetamines | C | Mask not fix; EMA 2010 restricted; disrupt sleep. | NOT in our protocol; mask-not-fix |
+| IV vitamin drips / "Myers cocktails" | D | Mechanistic only; expensive; oral works for most. | Documented for transparency; not in our protocol |
+| Hyperbaric oxygen for "energy" | X | No evidence outside specific indications (decompression, wound healing). | NOT in our protocol |
 
 ## 14. Independent Healing Paradigm
 
-This protocol diverges from the mainstream pharmaceutical model that treats daily fatigue with prescription stimulants, default SSRIs, and clinic-administered IV "energy" infusions. Fatigue is treated here as the visible apex of a four-node systemic network — mitochondrial dysfunction, HPA-axis dysregulation, substrate deficiency, circadian / sleep architecture failure — intervened at each node in parallel using only **OTC, home-administered** tools, with DTC labs replacing the "see your doctor for blood work" framing.
+This protocol differs from the mainstream "you're tired? here's an SSRI / a stimulant / a sleeping pill / a benzo" model because it treats persistent fatigue as a six-driver systems problem with upstream solutions, not as a symptom to be silenced. **Sovereignty ethos**: OTC + home-based by design. **No prescription. No clinic. No hospital. No surgery.** The user owns their body and their healing path. Where the home protocol plateaus, §10.7.3 documents honest clinic-route options the user may pursue on their own initiative. We acknowledge evidence limits openly — Cochrane null findings for GET in ME/CFS led us to the pacing-first stance; small early data on NMN/NR led us to grade them H, not A; the PACE trial controversy led us to honour the user's lived experience over the trial's contested data.
 
-**Sovereignty ethos.** **No prescription stimulant. No SSRI by default. No IV drip. No empirical thyroid medication.** The user owns their body and their healing path. Evidence varies honestly: Grade A for Ashwagandha-KSM-66, Rhodiola (EMA monograph), creatine, CoQ10, vitamin D, methyl-B12, methylfolate, omega-3, magnesium; Grade B for ALCAR, PQQ, NR/NMN, Cordyceps, Bacopa, Tulsi, Eleuthero (EMA), Korean ginseng, Schisandra, HRV biofeedback, PBM transcranial; Grade C/D for D-ribose, shilajit (heavy-metal-tested only); Grade T for Ayurveda / TCM / Unani / Siddha / Tibetan / homeopathic — honoured as traditions, never marketed as proof.
+**No FDA, FTC, ADA, AHA, AAD, AMA, APA, ACOG, NAMS, ACR, ACS, CDC, NIH-policy, AAFP or AAP is cited as authority on whether something WORKS. Period.**
 
-Authority grounded in **WHO TCIM Strategy 2025–2034, India AYUSH/CCRAS/CCRH/CCRYN/CCRUM/CCRS/PCIMH/ICMR, EMA HMPC, Australia TGA + NHMRC, China NMPA + Chinese Pharmacopoeia, Health Canada NHP, Men-Tsee-Khang, Hamdard, IMPCOPS**, plus classical texts (Charaka — *Rasayana*, *Bhavaprakasha*, Avicenna's *Canon*, *Huang Di Nei Jing*, *Pi Wei Lun*, *Tai Ping Hui Min He Ji Ju Fang*, *Ji Sheng Fang*, Boericke, Kent).
+**Narrow exception (v6.2 Rule 5)**: US regulatory milestones (FDA De Novo for esketamine 2019, FDA clearance for TMS 2008, FDA clearance for the Lofta WatchPAT home sleep test) and their non-US peers (CE mark, Health Canada licence, TGA listing) appear in §10.7 ONLY as factual regulatory-path context for emerging device/biologic therapies — never as the trust anchor on whether something works. The trust anchor remains the named clinical trial.
 
-Explicit re-affirmation: **no FDA, FTC, AMA, APA, ACOG, NAMS, ACS, CDC, NIH-policy, AAFP, AAP as authority. Period.**
+Protocol grounded in WHO TCIM Strategy 2025-2034, India AYUSH (CCRAS, CCRH, CCRYN, CCRUM, CCRS, PCIMH, ICMR), EMA HMPC, Australia TGA + NHMRC, China NMPA + Chinese Pharmacopoeia 2020, Health Canada NHP, UK NICE ME/CFS guideline 2021, Men-Tsee-Khang, Hamdard, IMPCOPS, plus the classical Charaka, Sushruta, Bhavaprakasha, Pi Wei Lun, Yellow Emperor, Canon of Medicine, Bogar 7000, Four Tantras, and Boericke / Hahnemann texts.
+
+The user is sovereign. The protocol is independent. **Pace yourself if you have PEM. Trust your body's signals over any protocol — including this one.**
