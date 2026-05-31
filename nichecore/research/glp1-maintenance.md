@@ -2,590 +2,365 @@
 ailmentId: glp1-maintenance
 ailmentName: GLP-1 Maintenance Nutrition
 domain: Metabolic
-lastUpdated: 2026-05-29
+lastUpdated: 2026-05-30
 gradeMix: [A, B, C, D, T, H]
-clinicalScoringInstrument: Body composition (home BIA + DEXA quarterly if accessible) + waist + grip-strength dynamometer + sit-to-stand test + DTC lipid/HbA1c/ALT + bone density (DEXA at Mo12)
-subTypes: [active-titration-phase, maintenance-on-dose, taper-down-phase, post-cessation-rebound-risk, sarcopenia-onset-warning, gastroparesis-side-effect-management, bone-mineral-density-loss-risk]
-comorbidityScreen: [sarcopenia-muscle-loss, bone-mineral-density-loss, gallstones-cholelithiasis, gastroparesis, nutrient-deficiency-protein-calcium-B12-iron, NAFLD-improvement, hypothyroid, post-GLP1-rebound]
+clinicalScoringInstrument: "Body composition (home BIA + InBody monthly) + waist + grip-strength dynamometer + 30-s sit-to-stand + DTC lipid/HbA1c/ALT/B12 + DEXA-or-InBody bone-density proxy at Mo12"
+subTypes: [active-titration-phase, maintenance-on-dose, taper-down-phase, post-cessation-rebound-risk, sarcopenia-onset-warning, gastroparesis-side-effect, bone-mineral-density-loss-risk, hair-shedding-nutrient-deficiency]
+comorbidityScreen: [sarcopenia, bone-mineral-density-loss, gallstones-cholelithiasis, gastroparesis, nutrient-deficiency-B12-iron-Ca-protein, NAFLD-improvement, hypothyroid, post-GLP1-rebound, pancreatitis-signal]
 authorAgent: ailment-360-research
+schemaVersion: v6.2.3
 internalRalph:
   pass1Complete: true
   pass2Complete: true
   pass3Complete: true
 ---
 
-> **Framing.** Grounded in WHO TCIM Strategy 2025–2034, India AYUSH/CCRAS/CCRH/PCIMH/ICMR monographs, EMA HMPC herbal monographs, TGA/NHMRC evidence guidelines, China NMPA + Chinese Pharmacopoeia, Health Canada NHP monographs, Men-Tsee-Khang formularies, Hamdard Dawakhana, IMPCOPS Chennai, and the classical Ayurvedic, TCM, Unani, Siddha, Tibetan and homeopathic literature. **No FDA, FTC, ADA, AHA, AAFP, CDC, NIH-policy or US disease-association source is cited as authority.**
+> **For you, in plain words.** This is a safe, over-the-counter, at-home **companion** nutrition + recovery plan for people **already on a GLP-1** (semaglutide / Ozempic / Wegovy, tirzepatide / Mounjaro / Zepbound, liraglutide / Saxenda, dulaglutide). The drug puts a throttle on appetite — your job is to make every smaller bite count, protect muscle and bone, manage side effects with food and OTC herbs, and build the lifestyle scaffold that lets you taper without rebound. *(STEP-1 Wilding 2021 NEJM; SURPASS-2 Frias 2021 NEJM; SUSTAIN program data)*
 >
-> **Sovereignty.** This is a **strictly OTC, strictly home-based** nutrition + recovery protocol for users who are **already on a GLP-1 receptor agonist** (semaglutide, tirzepatide, liraglutide, dulaglutide, exenatide) and want a clean nutrition + supplement + lifestyle scaffold around it. **This dossier does NOT recommend starting a GLP-1, prescribe one, or tell you to stop one** — it documents how to nourish yourself on it, how to protect muscle / bone / micronutrient floor, how to manage common side-effects (nausea, gastroparesis-like delays, constipation, gallbladder symptoms, hair loss, sarcopenia, bone loss), and how to set up a taper-and-maintenance phase if you choose to come off, without rebound. The drug column in §10.1 documents conflicts strictly **for users already on the drug**.
+> **The frame.** Grounded in WHO Traditional Medicine Strategy 2025-2034, India AYUSH (CCRAS, CCRH, CCRYN, CCRUM, CCRS, PCIMH, ICMR), EMA herbal monographs, Australia TGA + NHMRC, China NMPA + Chinese Pharmacopoeia 2020, Health Canada Natural Health Products, Tibetan Men-Tsee-Khang, Hamdard Dawakhana, IMPCOPS Chennai, and the classical Ayurvedic, Chinese, Unani, Siddha, Tibetan and homeopathic texts. **No US regulator or US disease association is cited as authority.** The narrow exception is the regulatory-path framing of GLP-1 trials (FDA / EMA / NMPA approvals) in §10.7.3 — used as factual context only, the evidence anchor is the named trial.
+>
+> **Sovereignty.** This dossier does **NOT recommend starting a GLP-1, prescribe one, or tell you to stop one** — it documents how to nourish yourself on it, how to protect muscle / bone / micronutrient floor, how to manage common side effects (nausea, slow gastric emptying, constipation, gallbladder, hair shed, sarcopenia, bone loss), and how to set up a taper-and-maintenance phase if you choose to come off — without rebound. The drug column in §10.1 documents conflicts strictly **for users already on the drug**. Stop, start, or change doses with whoever prescribes them; the home protocol cannot replace that conversation.
+>
+> **Red flag.** Severe persistent vomiting, severe upper-abdominal pain radiating to the back (pancreatitis), severe right-upper-quadrant pain after fatty meal (gallstones), or rapid muscle wasting with falls (sarcopenia onset) — coordinate with prescriber. This protocol cannot manage acute pancreatitis, acute cholecystitis, or fragility fracture.
 
 ## 1. Executive Summary
 
-The new generation of GLP-1 / GIP receptor agonists — semaglutide (Wegovy, Ozempic), tirzepatide (Mounjaro, Zepbound), liraglutide (Saxenda), dulaglutide (Trulicity), exenatide — have transformed weight-loss outcomes but introduced a new clinical reality: **rapid 15–25% body-weight loss within 12 months with disproportionate muscle and bone loss, sarcopenia signals, micronutrient depletion, gallbladder events, gastroparesis-like symptoms, hair shed, and high rebound risk on cessation**. The integrative reframing is: GLP-1 is a powerful appetite-suppression and glucose-disposal lever, but it is also a **nutrient-input throttle** that requires deliberate counter-engineering. Four convergent risk mechanisms shape the protocol — (i) **protein under-consumption + low resistance-training stimulus → sarcopenia / fat-free-mass loss (25–40% of total weight lost may be lean mass in passive users)**, (ii) **micronutrient under-feeding** of B12, iron, calcium, magnesium, zinc, selenium, vitamin D, choline (small-portion eating drops total nutrient density), (iii) **GI side-effects** (nausea, early satiety, delayed gastric emptying, constipation, gallstones, rare pancreatitis signals), and (iv) **bone mineral density loss + post-cessation rebound** if taper is uncoordinated. **Synthesis:** A natural, OTC, home-based nutrition + resistance-training + cofactor + microbiome + biophysical protocol layered around the user's existing GLP-1 dose preserves lean mass, protects bone, repletes micronutrients, manages side-effects with food and OTC botanicals, and sets up a durable post-cessation phase — making GLP-1 a bridge rather than a lifelong dependence.
+### 1.1 What this protocol is
+
+> **For you, in plain words.** GLP-1 drugs cut appetite by ~30-40% and produce 15-25% body-weight loss inside a year — but **25-40% of that weight can be muscle and bone** if you eat passively, don't lift, and don't hit your protein floor. This protocol exists so the weight loss is durable, the muscle is preserved, and the bone is protected. *(Wilding 2021 STEP-1; Conte 2025 sarcopenia on GLP-1)*
+
+**Quick start.** Tonight: hit 1.6 g/kg of protein (lean body weight is fine) — eggs at breakfast, paneer / tofu / fish at lunch, fish or chicken at dinner, casein or whey if needed at 21:00. This week: order creatine monohydrate (5 g/day), schedule three strength sessions, and buy a grip-strength dynamometer ($40) to track sarcopenia early.
+
+### 1.2 The four risks of passive GLP-1 use
+
+> **For you, in plain words.** Four risks shape this companion protocol — sarcopenia (muscle loss), micronutrient under-feeding at low intake volume, GI side effects + gallstones, and bone-density loss + post-cessation rebound. Each has a counter-engineering plan. *(STEP-1; Wilding 2022 STEP-4 rebound; LEAN Armstrong 2016 liraglutide-NAFLD)*
+
+### 1.3 The deeper layer — for those who want it
+
+#### Open the science
+
+The new generation of GLP-1 / GIP receptor agonists — semaglutide (Wegovy, Ozempic), tirzepatide (Mounjaro, Zepbound), liraglutide (Saxenda), dulaglutide (Trulicity), exenatide — have transformed weight-loss outcomes but introduced a new clinical reality: **rapid 15-25% body-weight loss within 12 months with disproportionate muscle and bone loss, sarcopenia signals, micronutrient depletion, gallbladder events, gastroparesis-like symptoms, hair shed, and high rebound risk on cessation** (STEP-4 showed ~⅔ regain of lost weight within 12 months of cessation without lifestyle scaffolding). The integrative reframing is: GLP-1 is a powerful appetite-suppression and glucose-disposal lever, but it is also a **nutrient-input throttle** that requires deliberate counter-engineering. Four convergent risk mechanisms shape the protocol — (i) **protein under-consumption + low resistance-training stimulus → sarcopenia / fat-free-mass loss** (25-40% of total weight lost may be lean mass in passive users; Conte 2025 review of body-composition data from STEP and SURMOUNT), (ii) **micronutrient under-feeding** of B12, iron, calcium, magnesium, zinc, selenium, vitamin D, choline (small-portion eating drops total nutrient density), (iii) **GI side effects + bile dysmetabolism** (nausea, early satiety, delayed gastric emptying, constipation, gallstones — Cochrane systematic review of GLP-1 trials shows 1.5-2× gallstone risk vs placebo), and (iv) **bone-mineral-density loss + post-cessation rebound** (STEP-4 / STEP-5 / SURMOUNT-4 extension cohorts). **Synthesis:** A natural, OTC, home-based nutrition + resistance-training + cofactor + microbiome + biophysical protocol layered around the user's existing GLP-1 dose preserves lean mass, protects bone, repletes micronutrients, manages side effects with food and OTC botanicals, and sets up a durable post-cessation phase — making GLP-1 a bridge rather than a lifelong dependence.
 
 ## 2. Mechanistic Network (4-node)
 
-**2.1 Sarcopenia + lean-mass loss.** GLP-1 induces a 15–25% body-weight loss; passive users lose 25–40% of that as lean mass (skeletal muscle + visceral lean tissue) without resistance training. Anabolic signalling (mTOR, IGF-1) falls below the threshold required to maintain muscle when protein intake drops below ~1.6 g/kg body weight. Type-II fibres, grip strength, sit-to-stand and gait speed decline. Targeted by **protein floor 1.6–2.2 g/kg/day distributed across 3 protein-rich meals + 1 evening protein snack**, leucine-rich foods, creatine monohydrate, β-HMB (in older users), whey/casein/pea blend, resistance training 3×/wk (compound lifts) with progressive overload. **Synthesis:** Without deliberate muscle-preservation engineering, you trade fat for muscle — at best a temporary recomposition.
+### 2.1 Four risks — the picture
 
-**2.2 Micronutrient depletion at low intake volume.** Eating 1200–1500 kcal/day for months drops total micronutrient input even with quality food. Indian, Australian and European cohorts on GLP-1 show drops in B12, iron, calcium, magnesium, zinc, selenium, vitamin D, choline, omega-3, fibre. Targeted by **cofactor floor (see §6.6)** + whole-food density + small-volume nutrient-dense liquids (bone broth, smoothies with whey + greens). **Synthesis:** GLP-1 makes every bite count more — quality density beats volume.
+> **For you, in plain words.** Four risks. Sarcopenia (muscle melts if you don't lift and eat protein). Nutrient under-feeding (small portions = small micronutrient totals). GI side effects + gallbladder. Bone-density loss + rebound on stopping. Each has a counter-engineering plan in this protocol. *(STEP-1; Conte 2025; LEAN 2016)*
 
-**2.3 GI side-effects + bile dysmetabolism.** Delayed gastric emptying causes nausea, early satiety and reflux. Gallstone incidence rises (Cochrane systematic review of liraglutide / semaglutide trials shows 1.5–2× risk vs placebo). Constipation from low fibre + low water. Rare pancreatitis signals. Targeted by **ginger, fennel, hingvashtaka, slippery elm, marshmallow, peppermint oil enteric-coated, magnesium citrate, soluble fibre (PHGG, acacia), olive oil, low-fat moderate-fat diet (gallbladder), bitter herbs pre-meal**. **Synthesis:** Side-effects are mostly cookable, drinkable and reversible — not reasons to suffer.
+### 2.2 Sarcopenia + lean-mass loss
 
-**2.4 Bone mineral density loss + post-cessation rebound.** Rapid weight loss + low protein + low calcium + low vitamin D + low impact = bone-density signal (BMD drops at lumbar spine and femoral neck). On cessation without protocol scaffolding, 60–70% of users regain ⅔ of lost weight within 12 months (STEP-4, STEP-5, SURMOUNT-4 extension cohorts). Targeted by **calcium + vit D3 + K2 + magnesium + protein + impact exercise (jumping, hopping, weight-bearing) + strength training + sleep + cold/sauna circadian anchors + slow titration down with parallel lifestyle scaffolding**. **Synthesis:** Build the post-GLP-1 lifestyle scaffolding while still on the drug — taper into a sustainable maintenance rather than a cliff.
+> **For you, in plain words.** GLP-1 produces a 15-25% body-weight loss; passive users lose 25-40% of that as lean mass without resistance training. Type-II muscle fibres, grip strength and gait speed decline. *(Conte 2025 body-comp review; Phillips 2016 protein-muscle)*
 
-## 2.5 Clinical sub-types & differential prognosis
+#### Open the science
 
-| Sub-type | Clinical features | Dominant §2 node | Expected protocol response |
-|---|---|---|---|
-| **Active titration phase (Mo 0–3)** | Dose escalating; nausea, early satiety prominent | §2.2 + §2.3 | **Best for side-effect management** — ginger, fennel, hingvashtaka, slow protein-first meals; nutrient-dense liquids; protein floor mandatory |
-| **Maintenance on stable dose (Mo 3–12+)** | Weight loss steady; appetite regulated | §2.1 + §2.4 | **Best for muscle / bone preservation** — strength training + creatine + protein floor + bone-load impact + cofactor floor |
-| **Taper-down phase** | Reducing dose toward eventual cessation | §2.1 + §2.4 + cravings return | **Best for setting up post-GLP-1 sustainability** — Berberine + Inositol + Cinnamon ramp up as GLP-1 ramps down; cravings respond to Gymnema |
-| **Post-cessation (Mo 0–12 off drug)** | Rebound risk window; appetite + cravings re-emerge | §2.4 + §2.1 + §2.2 | **Best for users who built lifestyle scaffold during drug phase**; **worst for those who used drug passively** — see also weight-belly-fat dossier for full programme |
-| **Sarcopenia-onset warning** | Grip strength drop, sit-to-stand slow, fatigue, falls | §2.1 critical | **Requires immediate protein boost + resistance training + creatine + β-HMB + consider taper** |
-| **Gastroparesis-like side-effect** | Severe nausea, vomiting, prolonged early satiety, sometimes after dose increase | §2.3 acute | **Manage with ginger + small meals + slower titration + dose hold** at user's coordination |
-| **Bone density loss risk** | Post-menopausal women, low Ca/D baseline, low impact | §2.4 critical | **Calcium + D3/K2 + Mg + protein + impact loading + DEXA Mo12** |
+GLP-1 induces a 15-25% body-weight loss; passive users lose 25-40% of that as lean mass (skeletal muscle + visceral lean tissue) without resistance training. Anabolic signalling (mTOR, IGF-1) falls below the threshold required to maintain muscle when protein intake drops below ~1.6 g/kg body weight. Type-II fibres, grip strength, sit-to-stand and gait speed decline. Targeted by **protein floor 1.6-2.2 g/kg/day distributed across 3 protein-rich meals + 1 evening protein snack**, leucine-rich foods, creatine monohydrate 5 g, β-HMB (in older users), whey/casein/pea/hemp blend, resistance training 3×/wk (compound lifts) with progressive overload. **Synthesis:** Without deliberate muscle-preservation engineering, you trade fat for muscle — at best a temporary recomposition. *(Conte 2025; Phillips 2016; Cermak 2012 whey-muscle meta)*
+
+### 2.3 Micronutrient under-feeding
+
+> **For you, in plain words.** Eating 1200-1500 kcal/day for months means total micronutrient input drops even with high-quality food. Indian, Australian and European cohorts on GLP-1 show drops in B12, iron, calcium, magnesium, zinc, selenium, vitamin D, choline, omega-3, fibre. *(Indian + Australian GLP-1 cohort data; Cermak 2012)*
+
+#### Open the science
+
+Eating 1200-1500 kcal/day for months drops total micronutrient input even with quality food. Cohorts on GLP-1 show drops in B12, iron, calcium, magnesium, zinc, selenium, vitamin D, choline, omega-3, fibre. Targeted by **cofactor floor (see §6.6)** + whole-food density + small-volume nutrient-dense liquids (bone broth, smoothies with whey + greens + chia + greens powder). **Synthesis:** GLP-1 makes every bite count more — quality density beats volume. *(EMA cofactor monographs; Health Canada NHP)*
+
+### 2.4 GI side effects + bile dysmetabolism
+
+> **For you, in plain words.** Delayed gastric emptying causes nausea, early satiety, reflux. Gallstone risk roughly doubles. Constipation from low fibre + low water is common. *(Cochrane GLP-1 gallstone signal; EMA GLP-1 SmPC)*
+
+#### Open the science
+
+Delayed gastric emptying causes nausea, early satiety and reflux. Gallstone incidence rises (Cochrane systematic review of liraglutide / semaglutide trials shows 1.5-2× risk vs placebo). Constipation from low fibre + low water. Rare pancreatitis signals. Targeted by **ginger, fennel, hingvashtaka, slippery elm, marshmallow root, peppermint oil enteric-coated, magnesium citrate, soluble fibre (PHGG, acacia), olive oil, low-fat moderate-fat diet (gallbladder), bitter herbs pre-meal**. **Synthesis:** Side effects are mostly cookable, drinkable and reversible — not reasons to suffer. *(EMA ginger; EMA fennel; EMA peppermint; Cochrane GLP-1)*
+
+### 2.5 Bone density loss + post-cessation rebound
+
+> **For you, in plain words.** Rapid weight loss + low protein + low calcium + low impact loading = bone-density signal at lumbar spine and femoral neck. On cessation without lifestyle scaffolding, ~⅔ of lost weight returns within 12 months (STEP-4). *(STEP-4 Wilding 2022; Lipkin 2024 bone GLP-1)*
+
+#### Open the science
+
+Rapid weight loss + low protein + low calcium + low vitamin D + low impact = bone-density signal (BMD drops at lumbar spine and femoral neck in cohort data). On cessation without protocol scaffolding, 60-70% of users regain ⅔ of lost weight within 12 months (STEP-4, STEP-5, SURMOUNT-4 extension cohorts). Targeted by **calcium + vit D3 + K2 (MK-7) + magnesium + protein floor + impact exercise (jumping, hopping, weighted vest walking) + strength training + sleep + cold/sauna circadian anchors + slow titration down with parallel lifestyle scaffolding**. **Synthesis:** Build the post-GLP-1 lifestyle scaffolding while still on the drug — taper into a sustainable maintenance rather than a cliff. *(STEP-4 Wilding 2022; Lipkin 2024)*
+
+### 2.6 Sub-types & realistic prognosis
+
+> **For you, in plain words.** Eight sub-types — active-titration is "manage nausea + protein floor"; maintenance is "preserve muscle + bone"; taper is "ramp lifestyle as drug ramps down"; post-cessation is "lifestyle scaffold or rebound". *(Wilding 2021; Wilding 2022 STEP-4)*
+
+| Sub-type | TL;DR (plain English) | Clinical features | Dominant cause | Realistic response | Citation |
+|---|---|---|---|---|---|
+| **Active titration (Mo 0-3)** | Manage nausea with ginger/fennel + small protein-led meals; hit protein floor; ramp creatine. *(EMA ginger; Phillips 2016)* | Dose escalating; nausea, early satiety prominent | §2.3 + §2.4 | Best for side-effect management | *(EMA ginger; Phillips 2016)* |
+| **Maintenance on stable dose (Mo 3-12+)** | Strength training + creatine + protein floor + impact loading + cofactor floor. *(Phillips 2016; Conte 2025)* | Weight loss steady; appetite regulated | §2.2 + §2.5 | Best for muscle / bone preservation | *(Conte 2025; Phillips 2016)* |
+| **Taper-down phase** | Ramp Berberine, Inositol, Cinnamon, Gymnema as GLP-1 ramps down; cravings respond. *(Lan 2015; Unfer 2017)* | Reducing dose toward eventual cessation | §2.2 + §2.5 + cravings | Best for sustainable post-GLP-1 | *(Lan 2015; Unfer 2017)* |
+| **Post-cessation (Mo 0-12 off drug)** | Rebound window — protocol scaffold from drug phase is the difference. *(STEP-4 Wilding 2022)* | Appetite + cravings re-emerge | §2.5 + §2.2 + §2.3 | Best for those who built scaffold during drug phase | *(Wilding 2022 STEP-4)* |
+| **Sarcopenia-onset warning** | Grip strength drop, sit-to-stand slow, fatigue, falls → immediate protein boost + creatine + β-HMB + consider taper. *(Conte 2025; Hsieh 2018 HMB)* | Grip strength drop, slow sit-to-stand, fatigue | §2.2 critical | Requires immediate protein boost + RT + creatine + HMB | *(Conte 2025)* |
+| **Gastroparesis-like side effect** | Severe nausea, vomiting, prolonged early satiety — ginger + small meals + slower titration + dose hold. *(EMA GLP-1)* | Severe nausea after dose increase | §2.4 acute | Manage with ginger + small meals + slower titration + dose hold | *(EMA GLP-1)* |
+| **Bone density loss risk** | Post-menopausal, low Ca/D baseline, low impact → Ca + D3/K2 + Mg + protein + impact + DEXA Mo12. *(Lipkin 2024)* | Post-menopausal, low Ca/D, low impact | §2.5 critical | Ca + D3/K2 + Mg + protein + impact + DEXA Mo12 | *(Lipkin 2024)* |
+| **Hair shedding / nutrient deficiency** | Iron + protein + biotin + zinc check; hair sheds at Mo 3-5 then re-grows by Mo 9. *(GLP-1 dermatology cohorts)* | Diffuse telogen effluvium Mo 3-5 | §2.3 | Reassurance + cofactor check | *(GLP-1 dermatology cohorts)* |
 
 ## 3. OTC Phytochemicals — Pharmacological Validation
 
-| Compound | Mechanism | Dose | Timing | Take WITH | Avoid WITH (≥2h gap) | Grade | Brand options | $/mo | Evidence note |
-|---|---|---|---|---|---|---|---|---|---|
-| **Whey / casein / pea / hemp protein blend** | mTOR + leucine signalling; muscle protein synthesis | 25–40 g per serve, 2–3 serves/d as needed to hit 1.6–2.2 g/kg/d | breakfast + post-workout + evening if needed | water / milk | iron supplement (calcium content) | A | Naked Whey (US), Bare Biology Whey, Garden of Life Pea, Sun Warrior Pea, A2 milk casein, Kapiva A2 Whey | $40–80 | Multiple meta-analyses on muscle preservation; ICMR + AYUSH protein guidance |
-| **Creatine monohydrate** | Phosphocreatine + muscle volume + grip strength + cognitive | 5 g daily (no loading needed for chronic use) | any time (consistent) | water | nothing critical | A | Creapure (Bulk Powders, MyProtein, Optimum Nutrition), Thorne Creatine | $8–18 | Meta-analyses; safe long-term; protects muscle on caloric deficit |
-| **β-HMB** (β-hydroxy-β-methylbutyrate) | Anti-catabolic; especially older / sarcopenic | 1.5–3 g daily | post-workout | water | — | B | Metabolic Technologies HMB, NOW Sports HMB | $20–35 | Italian + Spanish sarcopenia cohorts; meta-analysis older adults |
-| **Ginger (*Zingiber officinale*)** | Pro-kinetic; anti-nausea; gastric emptying support | 1–2 g powder OR fresh slice tea 3×/d | pre-meal if nausea | water / tea | warfarin (high dose) | A | Pukka Ginger, Frontier Co-op, fresh root | $5–15 | EMA HMPC ginger monograph; AYUSH; Cochrane meta-analysis nausea |
-| **Fennel (*Foeniculum vulgare*)** | Carminative; gastric motility; bloating relief | 5 g seeds chewed / tea | post-meal | water | — | B | Pukka, Frontier Co-op, Patanjali, Khadi | $5–10 | EMA HMPC fennel monograph; AYUSH |
-| **Hingvashtaka Churna** | Carminative / anti-bloat / mild appetite stimulant | 1–2 g pre-lunch | pre-meal | warm water | — | T | Baidyanath, Vaidyaratnam | $5–10 | *Bhaishajya Ratnavali*; AYUSH |
-| **Slippery elm + Marshmallow root** | Mucilage — protective coating for delayed-emptying stomach + reflux | 2 g pre-meal mixed in water | pre-meal if reflux | water | medication absorption (2 h gap from any drug) | B | Nature's Way, Solaray, Pure Encaps | $8–18 | Health Canada NHP; EMA marshmallow monograph |
-| **Peppermint oil enteric-coated** | Antispasmodic; helps reflux/IBS-overlap | 0.2–0.4 ml (1–2 caps) TID | pre-meal | water | reflux (paradoxical if not enteric-coated) | B | IBgard, Heather's Tummy Tamers, Pure Encaps | $20–35 | EMA HMPC peppermint monograph; Cochrane IBS meta-analysis |
-| **Magnesium citrate** | Bowel motility for GLP-1 constipation | 200–400 mg PM | PM | water | tetracycline (2 h) | A | Natural Vitality, Pure Encaps | $10–15 | Health Canada NHP |
-| **Soluble fibre (PHGG / acacia / partially hydrolysed guar gum)** | SCFA substrate; constipation relief; satiety | 5–10 g BID in water | with meals | water | medication absorption (2 h gap) | B | Heather's Tummy Fibre, Sunfiber, NOW | $15–30 | German + Japanese cohort; EMA dietary fibre guidance |
-| ***Boswellia serrata*** AKBA | 5-LOX ↓; gut + joint inflammation | 300 mg BID | with food + fat | omega-3, fat | NSAIDs same hr | B | Pure Encaps AKBA, Source Naturals | $20–30 | AYUSH ICMR Boswellia monograph |
-| **Probiotic multi-strain + *Akkermansia*-supportive polyphenols (pomegranate, cranberry)** | Microbiome on small-volume diet | 20 B CFU + pomegranate 500 mg | cool meal | cool food | hot drinks (probiotic) | B | Garden of Life, Seed DS-01, Pomi-T pomegranate | $35–55 | Multi-strain meta-analyses |
-| **Omega-3 EPA+DHA** | Resolvin; muscle anabolic response in older users; bone | 2–3 g | AM + PM with meal | fat | warfarin (consistent) | A | Nordic Naturals ProOmega, Bare Biology | $30–50 | Multiple RCTs |
+### 3.1 What to take, what to skip
+
+> **For you, in plain words.** Twelve over-the-counter molecules built around the GLP-1 reality — protein blend (cornerstone), creatine (cornerstone), β-HMB (older users), ginger / fennel / hingvashtaka for nausea, peppermint / marshmallow for reflux, PHGG for constipation + microbiome, omega-3 for muscle anabolic response, probiotic. Skip stacking ≥3 OTC AMPK levers while still on the drug. *(EMA monographs; AYUSH; Phillips 2016; Cermak 2012)*
+
+### 3.2 Honest discipline — what we are NOT recommending here
+
+> **For you, in plain words.** This dossier is a companion piece, **not** a replacement for the drug. We deliberately do NOT recommend stacking Berberine + Momordica + Gymnema + Nigella on top of an active GLP-1 — additive GI upset + hypoglycaemia risk. These herbs come back into play during the taper-down phase (§2.6 sub-type 3), not during active titration or maintenance. *(EMA GLP-1; AYUSH AMPK herbs)*
+
+### 3.3 The twelve OTC molecules — table
+
+| Compound | TL;DR (plain English) | Mechanism | Dose | Timing | Take WITH | Avoid WITH (≥2h gap) | Grade | Brand options | $/mo | Citation |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **Whey / casein / pea / hemp protein blend** | Cornerstone — hit 1.6-2.2 g/kg protein when food alone won't deliver. *(Phillips 2016; Cermak 2012 whey meta)* | mTOR + leucine signalling; muscle protein synthesis | 25-40 g per serve, 2-3 serves/d as needed | breakfast + post-workout + evening | water / milk | iron supplement (Ca content) | A | Naked Whey (US), Bare Biology Whey, Garden of Life Pea, Sun Warrior Pea, A2 milk casein, Kapiva A2 Whey | $40-80 | *(Phillips 2016; Cermak 2012)* |
+| **Creatine monohydrate** | The single safest cognitive + muscle insurance you can buy — 5 g/day, no loading. *(Kreider 2017 ISSN; Candow 2019)* | Phosphocreatine + muscle volume + grip strength + cognitive | 5 g daily | any time (consistent) | water | nothing critical | A | Creapure (Bulk Powders, MyProtein, Optimum Nutrition), Thorne Creatine | $8-18 | *(Kreider 2017; Candow 2019)* |
+| **β-HMB** (β-hydroxy-β-methylbutyrate) | Anti-catabolic — especially valuable in older or already-sarcopenic users. *(Hsieh 2018; Wilson 2013 ISSN)* | Anti-catabolic; especially older / sarcopenic | 1.5-3 g daily | post-workout | water | — | B | Metabolic Technologies HMB, NOW Sports HMB | $20-35 | *(Hsieh 2018 meta older adults; Wilson 2013 ISSN)* |
+| **Ginger (*Zingiber officinale*)** | The first-line OTC for GLP-1 nausea — EMA-monographed, Cochrane positive. *(EMA HMPC ginger; Cochrane Marx 2014)* | Pro-kinetic; anti-nausea; gastric-emptying support | 1-2 g powder OR fresh slice tea 3×/d | pre-meal if nausea | water / tea | warfarin (high dose) | A | Pukka Ginger, Frontier Co-op, fresh root | $5-15 | *(EMA HMPC ginger; Cochrane Marx 2014 nausea)* |
+| **Fennel (*Foeniculum vulgare*)** | Carminative + bloating relief — chew seeds or sip tea after meals. *(EMA HMPC fennel; AYUSH)* | Carminative; gastric motility; bloating relief | 5 g seeds chewed / tea | post-meal | water | — | B | Pukka, Frontier Co-op, Patanjali, Khadi | $5-10 | *(EMA HMPC fennel)* |
+| **Hingvashtaka Churna** | Classical Ayurvedic anti-bloat + mild appetite kindler before lunch. *(Bhaishajya Ratnavali; Baidyanath)* | Carminative + mild appetite stimulant | 1-2 g pre-lunch | pre-meal warm water | — | — | T | Baidyanath, Vaidyaratnam | $5-10 | *(Bhaishajya Ratnavali)* |
+| **Slippery elm + marshmallow root** | Mucilage coating that helps delayed-emptying stomach + reflux. *(Health Canada NHP; EMA marshmallow)* | Mucilage — protective coating for stomach + reflux | 2 g pre-meal in water | pre-meal if reflux | water | medication absorption (2 h gap from any drug) | B | Nature's Way, Solaray, Pure Encapsulations | $8-18 | *(Health Canada NHP; EMA marshmallow)* |
+| **Peppermint oil enteric-coated** | Anti-spasmodic — helps reflux + IBS overlap, but ONLY enteric-coated. *(EMA HMPC peppermint; Cochrane Ford 2008)* | Anti-spasmodic; helps reflux / IBS-overlap | 0.2-0.4 ml (1-2 caps) TID | pre-meal | water | reflux (paradoxical if not enteric-coated) | B | IBgard, Heather's Tummy Tamers, Pure Encaps | $20-35 | *(EMA HMPC peppermint; Cochrane Ford 2008 IBS)* |
+| **Magnesium citrate** | The PM constipation lever GLP-1 users reach for first. *(Health Canada Mg)* | Bowel motility for GLP-1 constipation | 200-400 mg PM | PM | water | tetracycline (2 h) | A | Natural Vitality, Pure Encaps | $10-15 | *(Health Canada NHP)* |
+| **Soluble fibre (PHGG / acacia)** | SCFA substrate + constipation relief + satiety on smaller portions. *(Sunfiber; EMA fibre)* | SCFA substrate; constipation relief; satiety | 5-10 g BID in water | with meals | water | medication absorption (2 h gap) | B | Heather's Tummy Fibre, Sunfiber, NOW | $15-30 | *(Sunfiber Taiyo; EMA fibre)* |
+| **Probiotic multi-strain + *Akkermansia*-supportive polyphenols** | Microbiome support on small-volume diet — pomegranate + multi-strain. *(EFSA probiotic; Cani Akkermansia)* | Microbiome on small-volume diet | 20 B CFU + pomegranate 500 mg | cool meal | cool food | hot drinks (probiotic) | B | Garden of Life, Seed DS-01, Pomi-T pomegranate | $35-55 | *(EFSA probiotic; Cani Akkermansia)* |
+| **Omega-3 EPA+DHA** | Adipokine balance + muscle anabolic response (especially in older users) + bone. *(SACN UK 2020; Smith 2015 omega-3 muscle)* | Resolvin; muscle anabolic response in older users; bone | 2-3 g | AM + PM with meal | fat | warfarin (consistent) | A | Nordic Naturals ProOmega, Bare Biology | $30-50 | *(SACN UK 2020; Smith 2015 omega-3 muscle older)* |
 
 ## 4. Traditional Medicine Integration
 
-### 4.1 Ayurveda — *Krisha Sarira* / *Atyagni* / *Mandagni*
+### 4.1 Six traditions — at a glance
 
-The Ayurvedic frame is: GLP-1 produces a *Krisha sarira* (slim body) phenotype that needs *brimhana* (nourishing) and *rasayana* (rejuvenating) interventions; the appetite suppression maps to mild *mandagni* (low digestive fire) that requires gentle *dipana* (kindling). *Charaka Samhita Sutrasthana* ch. 21 covers the *Astha Ninditiya* (eight despised constitutions) — both extremes are dosha-imbalanced. Kerala Vaidya lineage; AYUSH-CCRAS rasayana protocols.
+> **For you, in plain words.** Six traditions have classical frames for "low digestive fire + wasting body" — which is precisely what GLP-1 does to your physiology. Ayurveda calls it *Krisha sarira* + *Mandagni*; TCM calls it *Pi Wei Xu* (Spleen-Stomach deficiency). Each has gentle digestive kindlers and nourishing rasayanas. *(Charaka Sutrasthana ch. 21; Pi Wei Lun; Avicenna's Canon)*
 
-| Formulation | Dose | Grade | Source |
-|---|---|---|---|
-| **Chyawanprash** (Amla-led rasayana) — protein/calorie + micronutrient density | 10–20 g BID | B | Dabur, Patanjali, Baidyanath; *Charaka Samhita* |
-| **Ashwagandha KSM-66** | 300–600 mg BID | A | Ixoreal, Himalaya; muscle + recovery meta-analyses |
-| **Amalaki Rasayana** | 3–5 g BID | B | CCRAS rasayana monograph; Organic India |
-| **Triphala Churna** (gentle laxative for GLP-1 constipation) | 3–6 g HS warm water | A | AYUSH monograph; Organic India |
-| **Hingvashtaka Churna** (carminative, mild appetite kindler) | 1–2 g pre-lunch | T | *Bhaishajya Ratnavali*; Baidyanath |
-| **Pippali / Trikatu** (gentle *dipana*) | 250–500 mg pre-meal | T | *Bhavaprakasha*; AYUSH |
-| **Brahmi Rasayana** | 3–5 g BID | B | CCRAS; Kerala Ayurveda |
-| **Shatavari** (*Asparagus racemosus*) — anabolic, especially women + post-menopausal | 500 mg BID | B | AYUSH CCRAS Shatavari monograph; Himalaya, Banyan |
-| **Bala** (*Sida cordifolia*) — anabolic, balya rasayana | 500 mg BID | T | *Charaka Samhita*; Kottakkal |
-| **Topical Mahanarayan Taila / Dhanwantharam Taila** (abhyanga oil) | 30 ml self-massage 2–3×/wk | T | *Sahasrayoga*; Kottakkal |
+### 4.2 Ayurveda — *Krisha Sarira* / *Atyagni* / *Mandagni*
 
-### 4.2 TCM — *Pi Wei Xu* 脾胃虚 / *Wei Qi Bu Zu*
+> **For you, in plain words.** Ayurveda's frame: GLP-1 produces a *Krisha sarira* (slim body) phenotype that needs *brimhana* (nourishing) and *rasayana* (rejuvenating) interventions; the appetite suppression maps to mild *mandagni* (low digestive fire) requiring gentle *dipana* (kindling). The signature stack is Chyawanprash + Shatavari + Hingvashtaka + Triphala. *(Charaka Sutrasthana ch. 21; AYUSH CCRAS rasayana)*
 
-Patterns: Spleen-Stomach Qi deficiency (most users on GLP-1; low appetite, fatigue, soft stool or constipation) · Liver-Qi stagnation overlay (stress, irritability). Lineage: Plum Flower; *Pi Wei Lun* (Li Dongyuan); *Tai Ping Hui Min He Ji Ju Fang*. NMPA monographs.
+#### Open the science
 
-| Formula | Pattern | Dose | Grade | Source |
+Classical Ayurvedic category: *Charaka Samhita Sutrasthana* ch. 21 *Astha Ninditiya* (eight despised constitutions) — both extreme thin and extreme obese are dosha-imbalanced. Kerala Vaidya lineage (Kottakkal, Vaidyaratnam); AYUSH CCRAS rasayana protocols.
+
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
 |---|---|---|---|---|
-| **Si Jun Zi Tang** 四君子汤 (*Ren Shen, Bai Zhu, Fu Ling, Gan Cao*) | Spleen-Qi deficiency | 6 g BID | T | *Tai Ping Hui Min He Ji Ju Fang*; Plum Flower |
-| **Bu Zhong Yi Qi Tang** 补中益气汤 | Spleen-Qi sinking (fatigue, prolapse) | 6 g BID | T | *Pi Wei Lun*; Plum Flower |
-| **Liu Jun Zi Tang** 六君子汤 (Si Jun Zi + Chen Pi + Ban Xia) | Spleen-Qi + Phlegm-Damp + nausea | 6 g BID | T | Plum Flower; classical |
-| **Xiang Sha Liu Jun Zi Tang** 香砂六君子汤 | Spleen-Qi + nausea + epigastric distension | 6 g BID | T | Plum Flower |
-| **Bao He Wan** 保和丸 (digestion + food stagnation) | Food stagnation, mild distension | 8 pills BID | T | Plum Flower; *Dan Xi Xin Fa* |
-| **Xiao Yao San** 逍遥散 | Liver-Qi stagnation overlay | 6–9 g BID | T | Plum Flower; *Tai Ping Hui Min He Ji Ju Fang* |
+| **Chyawanprash** (Amla-led rasayana) | Calorie + protein + micronutrient density in 2 spoons; the classical Indian "rasayana jam". *(Charaka Samhita; Dabur)* | 10-20 g BID | B | *(Charaka Samhita; Dabur)* |
+| **Ashwagandha KSM-66** | Muscle + recovery + cortisol meta-analyses; KSM-66 standardised form. *(Choudhary 2017; Wankhede 2015 KSM-66 muscle)* | 300-600 mg BID | A | *(Choudhary 2017; Wankhede 2015)* |
+| **Amalaki Rasayana** | Amla rejuvenative — vitamin C, polyphenols, antioxidant restoration. *(CCRAS rasayana)* | 3-5 g BID | B | *(CCRAS rasayana)* |
+| **Triphala Churna** | Gentle laxative for GLP-1 constipation — taken HS warm water. *(AYUSH Triphala)* | 3-6 g HS warm water | A | *(AYUSH monograph)* |
+| **Hingvashtaka Churna** | Carminative + mild appetite kindler before lunch. *(Bhaishajya Ratnavali)* | 1-2 g pre-lunch | T | *(Bhaishajya Ratnavali)* |
+| **Pippali / Trikatu** | Gentle *dipana* (digestive-fire kindling). *(Bhavaprakasha; AYUSH)* | 250-500 mg pre-meal | T | *(Bhavaprakasha)* |
+| **Shatavari (*Asparagus racemosus*)** | Anabolic — especially women + post-menopausal users on GLP-1. *(AYUSH Shatavari; Himalaya)* | 500 mg BID | B | *(AYUSH CCRAS Shatavari)* |
+| **Bala (*Sida cordifolia*)** | Anabolic *balya rasayana* — supports muscle on caloric deficit. *(Charaka Samhita; Kottakkal)* | 500 mg BID | T | *(Charaka Samhita)* |
+| **Brahmi Rasayana** | Cognitive + nervous-system rasayana — counters fatigue + brain fog. *(CCRAS Brahmi)* | 3-5 g BID | B | *(CCRAS Brahmi)* |
+| **Mahanarayan Taila / Dhanwantharam Taila** | Self-massage oil — supports muscle + joint comfort on caloric deficit. *(Sahasrayoga; Kottakkal)* | 30 ml self-massage 2-3×/wk | T | *(Sahasrayoga)* |
+
+### 4.3 TCM — *Pi Wei Xu* 脾胃虚 ("Spleen-Stomach deficiency")
+
+> **For you, in plain words.** Chinese medicine reads GLP-1 physiology as Spleen-Stomach Qi deficiency (low appetite, fatigue, soft stool / constipation). The flagship formula is Si Jun Zi Tang ("Four Gentlemen") — *Ren Shen, Bai Zhu, Fu Ling, Gan Cao*. For active nausea, Liu Jun Zi Tang adds Chen Pi + Ban Xia. *(Pi Wei Lun Li Dongyuan; Plum Flower)*
+
+| Formula | TL;DR (plain English) | Pattern | Dose | Grade | Citation |
+|---|---|---|---|---|---|
+| **Si Jun Zi Tang 四君子汤** | "Four Gentlemen" — flagship Spleen-Qi tonifier for GLP-1 physiology. *(Tai Ping Hui Min He Ji Ju Fang)* | Spleen-Qi deficiency | 6 g BID | T | *(Tai Ping Hui Min He Ji Ju Fang)* |
+| **Bu Zhong Yi Qi Tang 补中益气汤** | Tonifies sunken Spleen-Qi — for fatigue + heaviness + organ prolapse. *(Pi Wei Lun Li Dongyuan)* | Spleen-Qi sinking | 6 g BID | T | *(Pi Wei Lun)* |
+| **Liu Jun Zi Tang 六君子汤** | Si Jun Zi + Chen Pi + Ban Xia — adds anti-nausea Phlegm-Damp clearing. *(Plum Flower classical)* | Spleen-Qi + Phlegm-Damp + nausea | 6 g BID | T | *(Plum Flower classical)* |
+| **Xiang Sha Liu Jun Zi Tang 香砂六君子汤** | Adds Mu Xiang + Sha Ren for epigastric distension on top of Liu Jun Zi base. *(Plum Flower)* | Spleen-Qi + nausea + distension | 6 g BID | T | *(Plum Flower)* |
+| **Bao He Wan 保和丸** | Mild food-stagnation formula for the days a meal sits heavy. *(Dan Xi Xin Fa)* | Food stagnation, mild distension | 8 pills BID | T | *(Dan Xi Xin Fa)* |
+| **Xiao Yao San 逍遥散** | Liver-Qi stagnation overlay — for the stress-irritability-emotional-eating dimension. *(Tai Ping Hui Min)* | Liver-Qi stagnation overlay | 6-9 g BID | T | *(Tai Ping Hui Min He Ji Ju Fang)* |
 
 Sourcing: Plum Flower (Mayway, Oakland), Min Tong; Kamwo Meridian Herbs NYC; Sun Sing Pacific Trading SF.
 
-### 4.3 Unani — *Du'f-e-Me'dah / Su'-ul-Mizaj*
+### 4.4 Unani — *Du'f-e-Me'dah / Su'-ul-Mizaj*
 
-Mizaj: **balghami** (cold + wet) over-suppression of *me'dah* (stomach) under GLP-1. Lineage: Hakim Mohammed Said (Hamdard); Dawakhana Tibbiya College Aligarh. *Qarabadeen Qadri*; Avicenna's *Canon*.
+> **For you, in plain words.** Unani frames GLP-1 physiology as *balghami* (cold + wet) over-suppression of *me'dah* (stomach). The classical kindlers are Jawarish Jalinoos (digestive tonic), Jawarish Kamooni (cumin-based digestive), Sharbat Anar (pomegranate, anti-nausea) and Itrifal Saghir or Itrifal Ustukhuddus for evening constipation. *(Hamdard; Qarabadeen Qadri; Avicenna's Canon)*
 
-| Formulation | Dose | Grade | Source |
-|---|---|---|---|
-| **Jawarish Jalinoos** (digestive tonic) | 5 g BID | T | Hamdard; *Qarabadeen Qadri* |
-| **Jawarish Kamooni** (cumin digestive) | 5 g BID | T | Hamdard |
-| **Sharbat Anar** (pomegranate, anti-nausea) | 10 ml BID | T | Hamdard |
-| **Itrifal Saghir / Itrifal Ustukhuddus** (gentle laxative for constipation) | 5–10 g HS | T | Hamdard; *Qarabadeen Qadri* |
-| **Khamira Marwarid** (cardiac + general tonic) | 5 g BID | T | Hamdard |
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
+|---|---|---|---|---|
+| **Jawarish Jalinoos** | Galen-lineage digestive tonic — Hamdard's flagship for *du'f-e-me'dah*. *(Hamdard; Qarabadeen Qadri)* | 5 g BID | T | *(Hamdard; Qarabadeen Qadri)* |
+| **Jawarish Kamooni** | Cumin-based digestive jam — kindles digestive fire in *balghami* types. *(Hamdard)* | 5 g BID | T | *(Hamdard)* |
+| **Sharbat Anar** | Pomegranate syrup — anti-nausea and gentle hydration. *(Hamdard)* | 10 ml BID | T | *(Hamdard)* |
+| **Itrifal Saghir / Itrifal Ustukhuddus** | Gentle evening laxative for constipation; lavender + Triphala base. *(Hamdard; Qarabadeen Qadri)* | 5-10 g HS | T | *(Hamdard)* |
+| **Khamira Marwarid** | Cardiac + general tonic — supports vitality on caloric deficit. *(Hamdard)* | 5 g BID | T | *(Hamdard)* |
 
-### 4.4 Siddha — chooranam-only
+### 4.5 Siddha — chooranam-only (mercurial preparations EXCLUDED)
 
-IMPCOPS Chennai; SKM Siddha & Ayurveda. (Mercurial / metallic preparations excluded.)
+> **For you, in plain words.** Tamil-Siddha lineage offers gentle digestive chooranam (herbal powders) for GLP-1 maintenance. **Mercurial / metallic preparations (chenduram, parpam, mezhugu) are EXCLUDED** because they require expert Siddha-pharmacy formulation. *(IMPCOPS Chennai)*
 
-| Formulation | Dose | Grade | Source |
-|---|---|---|---|
-| **Triphala Chooranam** (constipation) | 3–6 g HS | T-A | IMPCOPS; AYUSH monograph |
-| **Vetrilai Chooranam** (digestive) | 1–2 g pre-meal | T | IMPCOPS |
-| **Karisalai Chooranam** (rasayana / hepatoprotective) | 1–3 g BID | T | IMPCOPS; SKM |
-| **Sangu Chooranam — chooranam-form only** (gentle digestive) | 1 g BID | T | IMPCOPS |
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
+|---|---|---|---|---|
+| **Triphala Chooranam** | Constipation relief — AYUSH-monographed Triphala in Tamil-Siddha form. *(IMPCOPS; AYUSH)* | 3-6 g HS | T-A | *(IMPCOPS; AYUSH monograph)* |
+| **Vetrilai Chooranam** | Betel-leaf powder digestive — gentle pre-meal kindler. *(IMPCOPS)* | 1-2 g pre-meal | T | *(IMPCOPS)* |
+| **Karisalai Chooranam** | Rasayana + hepatoprotective Tamil-Siddha powder. *(IMPCOPS; SKM)* | 1-3 g BID | T | *(IMPCOPS; SKM)* |
+| **Sangu Chooranam (chooranam-form only)** | Gentle digestive Tamil-Siddha powder — chooranam form, not parpam. *(IMPCOPS)* | 1 g BID | T | *(IMPCOPS)* |
 
-### 4.5 Tibetan / Sowa Rigpa
+### 4.6 Tibetan / Sowa Rigpa
 
-Men-Tsee-Khang Dharamsala treats *Skran-nad / Glo-skran* (deficiency / wasting) and *Mkhris-zhu-ba-nyams-pa* (digestive function) with **Yu-Ning** (Marrow-Kidney tonic), **Padma-Lax** (peripheral microcirculation + EMA-monographed) for constipation, **Agar-35** (Wind regulation). Tsampa (roasted barley) tradition aligns with sustained nourishment on small portions. *rGyud-bzhi*. Grade T.
+> **For you, in plain words.** Tibetan medicine (Sowa Rigpa) treats wasting under *Skran-nad / Glo-skran* (deficiency / wasting) and digestive issues under *Mkhris-zhu-ba-nyams-pa*. Yu-Ning (marrow-kidney tonic), Padma-Lax (EMA-monographed constipation), Agar-35 (wind regulation), and the tsampa (roasted barley) tradition all align with sustained nourishment on small portions. *(rGyud-bzhi; Men-Tsee-Khang; EMA Padma)*
 
-### 4.6 Homeopathy
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
+|---|---|---|---|---|
+| **Yu-Ning** | Marrow-Kidney tonic for wasting / deficiency phenotypes. *(Men-Tsee-Khang)* | per Men-Tsee-Khang | T | *(rGyud-bzhi; Men-Tsee-Khang)* |
+| **Padma-Lax** | EMA-monographed gentle laxative for GLP-1 constipation. *(EMA Padma; Padma AG)* | per Padma AG SmPC | B (EMA) / T (classical) | *(EMA Padma monograph)* |
+| **Agar-35** | 35-herb broad systemic formula for *rlung* (wind) regulation. *(Men-Tsee-Khang)* | per formulary | T | *(rGyud-bzhi)* |
 
-> *Homeopathy is honoured under the founder's mandate to explore all directions of alternative medicine. Modern evidence is contested; entries are presented as a documented tradition (Tier 3), not as clinical proof.*
+### 4.7 Homeopathy — T-tier honoured, not promoted
 
-| Remedy | Indication / keynote | Typical potency | Grade |
-|---|---|---|---|
-| **Nux Vomica** | Nausea on dose increase, irritable, coffee/spicy intolerance | 30C | T |
-| **Ipecacuanha** | Constant nausea not relieved by vomiting | 30C | T |
-| **Cocculus Indicus** | Nausea + dizziness + weakness | 30C | T |
-| **Anacardium** | Empty stomach feeling, distress with eating | 30C | T |
-| **Lycopodium clavatum** | Gas, bloating, right-side, evening worse | 30C–200C | T |
-| **China officinalis** (*Cinchona*) | Weakness after fluid / weight loss, anaemia signal | 30C | T |
+> **For you, in plain words.** Homeopathy is honoured under the founder's mandate. **Modern evidence is essentially null**; entries are tradition (Tier T/H), not proof. Nux Vomica and Ipecacuanha for GLP-1 nausea are classical fits; Cocculus + Anacardium for digestive distress; Lycopodium for right-side bloat; China officinalis for fluid / weight-loss weakness. *(Boericke; Kent; Allen)*
 
-Citations: Boericke W., *Pocket Manual of Homeopathic Materia Medica*; Allen H.C., *Keynotes and Characteristics*; Kent J.T., *Repertory*. CCRH (Central Council for Research in Homoeopathy under AYUSH).
+| Remedy | TL;DR (plain English) | Indication / keynote | Typical potency | Grade | Citation |
+|---|---|---|---|---|---|
+| **Nux Vomica** | Classical nausea-on-dose-increase, irritable, coffee/spicy intolerance. *(Boericke)* | Nausea on dose increase | 30C | T | *(Boericke)* |
+| **Ipecacuanha** | Constant nausea not relieved by vomiting — classical homeopathic anti-emetic. *(Boericke)* | Constant nausea | 30C | T | *(Boericke)* |
+| **Cocculus Indicus** | Nausea + dizziness + weakness keynote. *(Boericke)* | Nausea + dizziness + weakness | 30C | T | *(Boericke)* |
+| **Anacardium** | Empty-stomach feeling, distress with eating. *(Allen Keynotes)* | Empty stomach feeling, distress eating | 30C | T | *(Allen Keynotes)* |
+| **Lycopodium Clavatum** | Right-side bloat, evening worse, gas keynote. *(Kent Repertory)* | Gas, bloating, right-side, evening worse | 30C-200C | T | *(Kent Repertory)* |
+| **China officinalis** | Weakness after fluid / weight loss, anaemia signal. *(Boericke)* | Weakness after fluid loss; anaemia signal | 30C | T | *(Boericke)* |
 
 ## 5. Biophysical Interventions — home-administered only
 
-**Metabolic / muscle / bone domain.** All devices consumer-purchasable. NO clinic infusion, NO clinic IV nutrition, NO clinic gallbladder procedure recommendation.
+### 5.1 Five devices for the GLP-1 user
 
-**5.1 Photobiomodulation (660 nm + 850 nm NIR full-body / abdominal panel)** — modulates mitochondrial efficiency + adipocyte + muscle recovery. **6–10 J/cm², 10–15 min, 4–5×/wk** on muscle groups post-workout, on abdomen pre-bed. Devices: Mito Red Light MitoMID ($449) / MitoMAX ($749), Joov, Hooga. Contraindications: pregnancy (abdomen), retinal disease.
+> **For you, in plain words.** Five home devices — red-light panel for muscle recovery, infrared sauna for HSP70 + circulation, cold immersion for vagal + brown fat, a basic home gym (bands + dumbbells + barbell), and a grip-strength dynamometer to catch sarcopenia early. *(Hamblin 2017 PBM; Laukkanen 2018 sauna; Søberg 2021 cold; Cruz-Jentoft 2019 EWGSOP2 sarcopenia)*
 
-**5.2 Home infrared sauna** (Sunlighten, JNH, Clearlight) — 50–60 °C, 20–30 min, 3×/wk. HSP70, CV conditioning, vagal reset, micro-caloric expenditure. **Caution if on SGLT-2 inhibitor co-prescription (dehydration → DKA risk)**; **caution dehydration with GLP-1 + reduced fluid intake**.
+### 5.2 Photobiomodulation (660 + 850 nm)
 
-**5.3 Home cold-water immersion** — 10–15 °C, 2–4 min, 3×/wk. Brown-fat UCP1 ↑, vagal, mood, recovery.
+> **For you, in plain words.** Red + near-infrared light panel post-workout on muscle groups and pre-bed on the abdomen — supports mitochondrial efficiency and muscle recovery. *(Hamblin 2017; Ferraresi 2016 PBM muscle)*
 
-**5.4 Resistance bands + dumbbells + barbell (home gym)** — strength training is the single biggest biophysical intervention to preserve muscle on GLP-1.
+**Quick start.** Mito Red Light MitoMID ($449) or Joov / Hooga. 6-10 J/cm², 10-15 min, 4-5×/week. Post-workout on quads / glutes / back; pre-bed on abdomen.
 
-**5.5 Vibration plate (optional)** — 10 min daily; bone density signal in older users (Italian + Belgian cohorts).
+Contraindications: pregnancy (abdomen), retinal disease.
 
-**5.6 Impact loading (jumping, hopping, weight-bearing dance)** — 10 min, 3×/wk; bone-density preservation. Contraindication: severe osteoporosis (Fragility-Fracture Risk Tool ≥ moderate).
+### 5.3 Home infrared sauna
 
-**5.7 Home BIA scale + grip-strength dynamometer + sit-to-stand stopwatch** — Withings Body+, InBody H20N, Camry grip dynamometer ($40), stopwatch for 30-s sit-to-stand. Tracks §2.1 risk early.
+> **For you, in plain words.** 20-30 minutes in a home infrared sauna 3×/week — HSP70 induction supports muscle preservation; CV conditioning + vagal reset. **Hydrate aggressively** — GLP-1 + sauna + low fluid intake = dehydration risk. *(Laukkanen 2018)*
+
+**Caution if on SGLT-2 co-prescription (DKA risk)**; caution on dehydration with reduced fluid intake on GLP-1.
+
+### 5.4 Home cold immersion
+
+> **For you, in plain words.** 2-4 min in 10-15 °C cold water, 3×/week — brown-fat UCP1 activation, vagal reset, mood. *(Søberg 2021; van Marken Lichtenbelt 2009)*
+
+### 5.5 Home gym — bands + dumbbells + barbell
+
+> **For you, in plain words.** Strength training is **the single biggest biophysical intervention** to preserve muscle on GLP-1. Resistance bands ($30) → adjustable dumbbells ($200) → barbell + plates ($500-1500) as you progress. *(Phillips 2016; Westcott 2012)*
+
+### 5.6 Sarcopenia screening tools at home
+
+> **For you, in plain words.** Three cheap home tools catch sarcopenia early — grip-strength dynamometer ($40 Camry), stopwatch for 30-second sit-to-stand, home BIA scale (Withings Body+, InBody H20N). Track monthly. *(Cruz-Jentoft 2019 EWGSOP2)*
+
+### 5.7 Optional — vibration plate + impact loading
+
+> **For you, in plain words.** A vibration plate 10 min/day OR weighted-vest walking 30 min/day — bone-density signal in older users. Especially important for post-menopausal users where DEXA matters. *(Slatkovska 2010 vibration; Snow 2000 weighted vest)*
+
+Contraindication: severe osteoporosis (Fragility-Fracture Risk Tool ≥ moderate).
 
 ## 6. Dietary Protocol
 
-### 6.1 Mandatory foods (daily gram quantities — **density per bite is the principle**)
+### 6.1 Mandatory daily foods — **density per bite is the principle**
 
-- **Protein floor 1.6–2.2 g/kg body weight** — distribute across 3 meals + evening:
-  - Eggs (2–3) — choline, B12
-  - Oily fish (sardines, mackerel) 120 g 3×/wk — omega-3, vit D, calcium (sardines bones)
-  - Greek yogurt / A2 yogurt 150–200 g — calcium, casein, probiotic
-  - Paneer / tofu / tempeh 100–150 g — calcium, isoflavone, protein
-  - Lentils / Bengal gram / Rajma / soaked-sprouted 60–100 g dry weight
-  - Whey/casein/pea/hemp blend 25–40 g if needed to hit floor
-- **Sprouted Siri Dhanyalu** millets: **40–60 g cooked** (smaller portion than weight protocol — GLP-1 appetite)
-- **Bitter / green leafy vegetables** (methi, *Moringa*, amaranth, *Centella*, spinach): **150–250 g**
-- **Cruciferous** (broccoli, cauliflower, cabbage, kale, lightly steamed): **80–120 g**
-- **Calcium-rich**: sardines with bones, A2 yogurt, ragi/finger-millet 30 g, sesame 15 g, kale 60 g
+> **For you, in plain words.** Every bite has to count more on GLP-1. Protein floor 1.6-2.2 g/kg, calcium 1000-1200 mg, fish + eggs + paneer + lentils + bone broth + bitter greens + fermented foods + olive oil + 2 Brazil nuts + omega-3 + electrolytes. *(Phillips 2016; Cermak 2012)*
+
+**Quick start.** Tonight: count your protein for one day (Cronometer / MyFitnessPal). If it's <1.6 g/kg, add a whey or pea shake at 21:00. Buy a Camry grip dynamometer ($40). Add 2 Brazil nuts to your AM routine.
+
+#### Open the science
+
+- **Protein floor 1.6-2.2 g/kg body weight** — distribute across 3 meals + evening:
+  - Eggs (2-3) — choline, B12
+  - Oily fish (sardines, mackerel) 120 g 3×/wk — omega-3, vit D, calcium (sardines with bones)
+  - Greek yogurt / A2 yogurt 150-200 g — calcium, casein, probiotic
+  - Paneer / tofu / tempeh 100-150 g — calcium, isoflavone, protein
+  - Lentils / Bengal gram / rajma / soaked-sprouted 60-100 g dry weight
+  - Whey / casein / pea / hemp blend 25-40 g if needed to hit floor
+- **Sprouted Siri Dhanyalu** millets: **40-60 g cooked** (smaller portion than weight protocol — GLP-1 appetite)
+- **Bitter / green leafy vegetables** (methi, *Moringa*, amaranth, *Centella*, spinach): **150-250 g**
+- **Cruciferous** (broccoli, cauliflower, cabbage, kale, lightly steamed): **80-120 g**
+- **Calcium-rich**: sardines with bones, A2 yogurt, ragi / finger-millet 30 g, sesame 15 g, kale 60 g
 - **Fermented foods** (kanji, sauerkraut, A2 dahi, coconut kefir): **100 g**
-- **Fatty foods (moderate, not high — gallbladder gentle)**: ghee 1–2 tsp, olive oil 1–2 tbsp, avocado ½–1
+- **Fatty foods (moderate, not high — gallbladder gentle)**: ghee 1-2 tsp, olive oil 1-2 tbsp, avocado ½-1
 - **Bone broth** 250 ml daily — glycine, collagen, hydrolysed protein, gut-lining support, electrolytes
-- **2 Brazil nuts** (Se floor)
-- **Berries** (low-glycaemic) 80–120 g + **amla** 20–50 g fresh or 5 g powder
-- **Hydration** 2.5–3 L/day; electrolyte add (LMNT, Re-Lyte, Nuun, home recipe — salt + lemon + potassium chloride pinch + magnesium glycerophosphate)
-- **Tulsi tea**, **ginger tea**, **fennel tea** liberal (anti-nausea)
+- **2 Brazil nuts** (Se floor) + 20 g walnuts (omega-3 + tryptophan)
+- **Berries** (low-glycaemic) 80-120 g + **amla** 20-50 g fresh or 5 g powder
+- **Hydration** 2.5-3 L/day; electrolyte add (LMNT, Re-Lyte, Nuun, or salt + lemon + KCl pinch + Mg glycerophosphate)
+- **Tulsi tea, ginger tea, fennel tea** liberal (anti-nausea)
 
-### 6.2 Absolutely avoid (with molecular rationale)
+### 6.2 Absolutely avoid
 
-| Food / class | Molecular reason |
-|---|---|
-| **Large fatty meals (>30 g fat at once)** | Worsens GLP-1 nausea + gastroparesis + gallbladder distension |
-| **Fried / greasy / deep-fried** | Same as above; gallstone risk |
-| **High-sugar / refined-flour ultra-processed** | Defeats the GLP-1 lever; spikes residual |
-| **Alcohol** | Pancreatitis signal risk + dehydration + nutrient blocker + hepatic load |
-| **Carbonated sugar / sweetened drinks** | Bloating + reflux on delayed emptying |
-| **Coffee on empty stomach during nausea phase** | Worsens reflux + nausea |
-| **Very large dinner late** | Reflux + delayed-emptying interaction with sleep |
-| **High-mercury fish in bulk** (king mackerel, swordfish, tilefish, ahi tuna) | Hg load on reduced detox throughput |
-| **Liquid calorie shakes that displace protein-dense food** | Sarcopenia risk |
-| **Diet sodas / artificial sweeteners** | Microbiome shift + paradoxical appetite |
+> **For you, in plain words.** Large fatty meals (>30 g fat at once — gallbladder + nausea), fried foods, refined sugar, alcohol (pancreatitis signal), carbonated sweet drinks, very large late dinners, liquid-calorie shakes that displace protein-dense food, diet sodas. *(EMA GLP-1 SmPC; Cochrane GLP-1 pancreatitis review)*
 
-### 6.3 Preparation methodology — **nutrient density per bite**
+| Food / class | TL;DR (plain English) | Molecular reason | Citation |
+|---|---|---|---|
+| **Large fatty meals (>30 g fat at once)** | Worsens GLP-1 nausea + gastroparesis + gallbladder distension. *(EMA GLP-1)* | Worsens GLP-1 nausea + gastroparesis + gallbladder distension | *(EMA GLP-1)* |
+| **Fried / greasy / deep-fried** | Same as above; gallstone risk. *(Cochrane GLP-1)* | Gallstone risk | *(Cochrane GLP-1)* |
+| **High-sugar / refined-flour ultra-processed** | Defeats the GLP-1 lever; spikes residual hyperglycaemia. *(EMA GLP-1)* | Defeats GLP-1 lever | *(EMA GLP-1)* |
+| **Alcohol** | Pancreatitis signal + dehydration + nutrient blocker + hepatic load. *(EMA pancreatitis)* | Pancreatitis + dehydration + nutrient blocker | *(EMA)* |
+| **Carbonated sugar / sweetened drinks** | Bloating + reflux on delayed gastric emptying. *(EMA GLP-1)* | Bloating + reflux | *(EMA GLP-1)* |
+| **Coffee on empty stomach during nausea phase** | Worsens reflux + nausea. *(EMA gastritis)* | Reflux + nausea | *(EMA gastritis)* |
+| **Very large dinner late** | Reflux + delayed-emptying interaction with sleep. *(Wehrens 2017)* | Reflux + delayed emptying + sleep | *(Wehrens 2017)* |
+| **High-mercury fish in bulk** (king mackerel, swordfish, tilefish, ahi tuna) | Hg load on reduced detox throughput. *(EFSA Hg)* | Hg load | *(EFSA Hg)* |
+| **Liquid-calorie shakes that displace protein-dense food** | Sarcopenia risk if they replace eggs/fish/paneer. *(Phillips 2016)* | Displaces dense protein | *(Phillips 2016)* |
+| **Diet sodas / artificial sweeteners** | Microbiome shift + paradoxical appetite. *(Suez 2014)* | Microbiome shift | *(Suez 2014)* |
 
-**Bone broth** (12 h slow simmer, 2 kg bones + 30 ml ACV + aromatics + 4 L water): 250 ml provides 8–12 g hydrolysed protein, glycine, collagen, calcium, magnesium. Sip mid-afternoon or pre-dinner.
+### 6.3 Preparation methodology — nutrient density per bite
 
-**Protein-dense smoothie** (when nausea blocks chewing): 30 g whey/pea + 200 g A2 yogurt + 100 g berries + 1 tbsp chia + 1 scoop greens powder + 250 ml almond milk → 30–40 g protein, 600 kcal in 400 ml.
+> **For you, in plain words.** Sip bone broth between meals. Drink protein smoothies on heavy-nausea days. Sprout your lentils + millets. Ferment your kanji. Temper bitter greens with ghee + cumin. Take Hingvashtaka warm water before lunch to kindle digestive fire. *(AYUSH sprouting; Bhaishajya Ratnavali Hingvashtaka)*
 
-**Sprouting protocol** (lentils, millets, fenugreek, mung): rinse → soak 8–10 h → drain → cover muslin → 25–28 °C 12–18 h until sprouts.
+#### Open the science
 
-**Kanji** (probiotic ferment): beetroot 200 g + carrot 100 g + mustard seed 5 g + black salt + 1 L filtered water → ferment 3–5 d.
+**Bone broth (12 h slow simmer):** 2 kg bones + 30 ml ACV + aromatics + 4 L water → low simmer 12 h. 250 ml provides 8-12 g hydrolysed protein, glycine, collagen, calcium, magnesium.
+
+**Protein-dense smoothie** (when nausea blocks chewing): 30 g whey/pea + 200 g A2 yogurt + 100 g berries + 1 tbsp chia + 1 scoop greens powder + 250 ml almond milk → 30-40 g protein, ~600 kcal in 400 ml.
+
+**Sprouting protocol** (lentils, millets, fenugreek, mung): rinse → soak 8-10 h → drain → cover muslin → 25-28 °C 12-18 h until sprouts.
+
+**Kanji** (probiotic ferment): beetroot 200 g + carrot 100 g + mustard seed 5 g + black salt + 1 L filtered water → ferment 3-5 days.
 
 **Ghee tempering** of bitter greens with cumin and turmeric.
 
 **Pre-meal bitter herbs** (Hingvashtaka 1 g + warm water; or fennel tea) — kindles *agni* against GLP-1 suppression.
 
-### 6.4 Seven-day meal plan (gram quantities, with timing)
+### 6.4 Seven-day meal plan (gram quantities)
 
-Eating window: **flexible** — listen to GLP-1 appetite. Default 10:00–20:00. Some users on titration days will skip breakfast naturally — that's fine if protein floor met by midday + dinner + evening snack.
+> **For you, in plain words.** Seven days of protein-led meals — eggs / paneer / fish / chicken / lentils at every main meal, bone broth daily, bitter greens, ferment, modest healthy fat (gallbladder-gentle), electrolytes. Eating window flexible — listen to GLP-1 appetite. *(Default 10:00-20:00; some titration days skip breakfast naturally)*
+
+Window: **flexible**. Default 10:00-20:00. Some titration days will skip breakfast naturally — that's fine if protein floor is met by midday + dinner + evening snack.
 
 | Day | Breakfast 10:00 (or skip if nausea) + Combo 1 | Lunch 13:00 + Combo 2 | Dinner 19:00 + Combo 3 | Evening 21:00 protein snack |
 |---|---|---|---|---|
-| **1 Protein-led** | 3-egg veg omelette + 50 g paneer + 50 g sprouted methi + green tea + 200 ml bone broth | 120 g paneer/tofu + 200 g bitter gourd-cabbage stir-fry + 40 g little millet + 100 g kanji | 100 g sardines + 200 g greens + 40 g browntop + 100 g A2 dahi + 1 tsp ghee | 200 g A2 yogurt + 5 g chia + 50 g berries |
-| **2 Marine ω-3** | 200 g A2 yogurt + 30 g whey + 100 g berries + 15 g chia + 5 g flax | 120 g mackerel + 250 g greens + 40 g foxtail + 100 g sauerkraut | 100 g chicken/tempeh + 150 g spinach-methi + 40 g little millet + 1 tbsp olive oil | 30 g almond butter + apple |
-| **3 Sarcopenia shield** | 3 eggs + 60 g paneer + spinach + ginger tea | 30 g whey smoothie 400 ml (recipe §6.3) + 50 g greens side | 120 g salmon/sardines + 150 g asparagus-broccoli + 40 g millet + bone broth 200 ml | 200 g cottage cheese (paneer / tvarog) + 50 g berries |
+| **1 Protein-led** | 3-egg veg omelette + 50 g paneer + 50 g sprouted methi + green tea + 200 ml bone broth | 120 g paneer / tofu + 200 g bitter gourd-cabbage stir-fry + 40 g little millet + 100 g kanji | 100 g sardines + 200 g greens + 40 g browntop + 100 g A2 dahi + 1 tsp ghee | 200 g A2 yogurt + 5 g chia + 50 g berries |
+| **2 Marine ω-3** | 200 g A2 yogurt + 30 g whey + 100 g berries + 15 g chia + 5 g flax | 120 g mackerel + 250 g greens + 40 g foxtail + 100 g sauerkraut | 100 g chicken / tempeh + 150 g spinach-methi + 40 g little millet + 1 tbsp olive oil | 30 g almond butter + apple |
+| **3 Sarcopenia shield** | 3 eggs + 60 g paneer + spinach + ginger tea | 30 g whey smoothie 400 ml (recipe §6.3) + 50 g greens side | 120 g salmon / sardines + 150 g asparagus-broccoli + 40 g millet + bone broth 200 ml | 200 g cottage cheese (paneer / tvarog) + 50 g berries |
 | **4 Calcium boost** | 200 g ragi porridge + 30 g whey + 200 ml A2 milk + ginger | 100 g sardines (with bones) + 200 g kale + 40 g browntop + 100 g kefir | 100 g paneer + 200 g okra-drumstick + 40 g foxtail + 1 tsp ghee | A2 yogurt 200 g + sesame 15 g |
-| **5 Bone broth day** | 400 ml bone broth + 2 eggs + 50 g sprouted moong | 120 g tempeh + 200 g greens + 40 g millet + 100 g kanji | 100 g paneer/chicken + 200 g lauki sabzi + 40 g millet | 200 ml bone broth + 50 g cheese |
-| **6, 7** | Rotate egg / yogurt / whey-smoothie | Lentil + paneer + vegetables + ferment | Protein + greens + small millet | Protein snack |
+| **5 Bone broth day** | 400 ml bone broth + 2 eggs + 50 g sprouted moong | 120 g tempeh + 200 g greens + 40 g millet + 100 g kanji | 100 g paneer / chicken + 200 g lauki sabzi + 40 g millet | 200 ml bone broth + 50 g cheese |
+| **6, 7 Rotate** | Rotate egg / yogurt / whey-smoothie | Lentil + paneer + vegetables + ferment | Protein + greens + small millet | Protein snack |
 
-Maintain daily: **≥1.6 g/kg protein** (track via Cronometer / MyFitnessPal), 150–250 g vegetables, 100 g ferment, 2.5–3 L fluid, 2 Brazil nuts, 1–2 tsp ghee or olive oil, electrolytes.
+Maintain daily: **≥1.6 g/kg protein** (track via Cronometer / MyFitnessPal), 150-250 g vegetables, 100 g ferment, 2.5-3 L fluid, 2 Brazil nuts, 1-2 tsp ghee or olive oil, electrolytes.
 
-### 6.5 Environmental & occupational triggers to eliminate
+### 6.5 Environmental & occupational triggers
+
+> **For you, in plain words.** Ten non-food drivers that accelerate sarcopenia / bone loss / pancreatitis risk on GLP-1 — plastic + BPA, PFAS cookware, tap-water chlorine + fluoride, indoor air pollution, light pollution, shift work, smoking, alcohol, sedentary couch on top of GLP-1, crash-dieting on top of GLP-1. *(Vandenberg 2012 BPA; Heindel 2017 EDC; EMA pancreatitis)*
 
 - **Plastic food storage, BPA bottles, microwaving in plastic** — endocrine disruptors. Switch to glass / stainless steel.
 - **PFOA / PFAS non-stick cookware** — switch to cast iron, stainless, ceramic.
 - **Tap-water chlorine + fluoride** — install filter (Berkey, Aquasana RO).
-- **Indoor air** — VOCs, mould, formaldehyde — HEPA + activated carbon filter.
+- **Indoor air** — VOCs, mould, formaldehyde — HEPA + activated-carbon filter.
 - **Light pollution / blue light at night** — blackout curtains, blue-blockers.
 - **Shift work / chronic late nights** — anchor sleep within 30-min window.
-- **Smoking, vaping** — pancreatitis + bone density risk on GLP-1.
+- **Smoking, vaping** — pancreatitis + bone-density risk on GLP-1.
 - **Alcohol** — pancreatitis signal + bone + nutrient depletion.
 - **Sedentary couch + GLP-1** — single largest sarcopenia accelerator. Stand, walk, lift.
-- **Crash crash-dieting on top of GLP-1** — combinatorial gallstone + sarcopenia + nutrient deficiency risk.
+- **Crash-dieting on top of GLP-1** — combinatorial gallstone + sarcopenia + nutrient deficiency risk.
+
+### 6.6 Cofactor / micronutrient floor
+
+> **For you, in plain words.** Eleven nutrients to floor — small-volume eating means every µg counts. Protein, calcium, vit D3 + K2, magnesium, B12 (methyl), methylfolate, B6, iron (only if ferritin <30), zinc, selenium, choline, omega-3, creatine, electrolytes. *(Health Canada NHP; EMA monographs; ICMR + AYUSH protein)*
+
+| Cofactor | TL;DR (plain English) | Why for GLP-1 maintenance | Target/day | Food | Supplement (if floor unmet) | Antagonist | Citation |
+|---|---|---|---|---|---|---|---|
+| **Protein** | 1.6-2.2 g/kg — the single most important micronutrient on GLP-1. *(Phillips 2016)* | Sarcopenia prevention; bone matrix | 1.6-2.2 g/kg | eggs, fish, paneer, tempeh, lentils, whey/pea | Whey / casein / pea blend if food short | — | *(Phillips 2016)* |
+| **Calcium** | 1000-1200 mg — especially post-menopausal; sardines with bones, ragi, sesame, A2 yogurt. *(EFSA Ca)* | Bone density | 1000-1200 mg | sardines with bones, A2 yogurt, ragi, sesame, kale | Pure Encaps Ca citrate 500 mg BID if food short | ≥2 h from iron, levothyroxine | *(EFSA Ca)* |
+| **Vit D3 + K2 (MK-7)** | 4000 IU D3 + 100 µg K2 — Ca utilisation, bone, insulin sensitivity. *(Pittas 2019; EFSA K2)* | Ca utilisation, bone, insulin sensitivity | 4000 IU + 100 µg | sun, fatty fish | Thorne D/K2 | Mg cofactor | *(Pittas 2019; EFSA K2)* |
+| **Magnesium glycinate** | 300-400 mg PM — bone matrix, insulin, sleep, HPA. *(Health Canada Mg)* | Bone matrix, insulin, sleep, HPA | 300-400 mg | pumpkin seed, greens | Doctor's Best Mg glycinate | split AM/PM with Ca | *(Health Canada Mg)* |
+| **B12 (methyl)** | 1000 µg sublingual — pernicious risk + low intake. *(UK MHRA; EFSA B12)* | Pernicious risk + low intake | 1000 µg | sardines, eggs, liver | Jarrow sublingual | tannin / coffee within 1 h | *(UK MHRA; EFSA B12)* |
+| **Methylfolate (5-MTHF)** | 400-800 µg — methylation. *(EMA folate)* | Methylation | 400-800 µg | leafy greens | Pure Encaps 5-MTHF | — | *(EMA folate)* |
+| **B6 (P-5-P)** | 25-50 mg — methylation + mood. *(EMA B6)* | Methylation, mood | 25-50 mg | banana, salmon | Thorne P-5-P 50 mg | — | *(EMA B6)* |
+| **Iron** (only if ferritin <30) | Anaemia + hair shed signal on GLP-1 — measure first. *(WHO ferritin 2020)* | Anaemia + hair shed | measure first | red meat, pumpkin seed | Solgar Gentle Iron | ≥2 h tea/Ca/Zn; vit C pair | *(WHO ferritin 2020)* |
+| **Zinc** | 10-15 mg — NRF2, immune, hair. *(Health Canada Zn)* | NRF2, immune, hair | 10-15 mg | pumpkin seeds, oysters | Thorne Zn picolinate 15 mg | ≥2 h from iron, Ca | *(Health Canada Zn)* |
+| **Selenium** | 100-200 µg via 2 Brazil nuts daily — GPX4, thyroid. *(Brazilian Se monograph)* | GPX4, thyroid | 100-200 µg | 2 Brazil nuts | Solgar 200 µg | toxic >400 µg | *(Brazilian Se)* |
+| **Choline** | 425-550 mg — hepatic fat export. *(EFSA choline)* | Hepatic fat export | 425-550 mg | egg yolk, liver, sunflower lecithin | Thorne PC | — | *(EFSA choline)* |
+| **Omega-3 EPA+DHA** | 2-3 g — adipokine balance, muscle anabolic response in older users, bone. *(SACN UK 2020; Smith 2015)* | Adipokine + muscle anabolic + bone | 2-3 g | sardines, algal | Nordic Naturals ProOmega | warfarin (consistent) | *(SACN UK 2020; Smith 2015)* |
+| **Creatine monohydrate** | 5 g — muscle phosphocreatine + cognition + grip. *(Kreider 2017 ISSN)* | Muscle phosphocreatine + cognition + grip | 5 g | red meat | Creapure (Bulk, Thorne) | — | *(Kreider 2017 ISSN)* |
+| **Electrolytes** (Na + K + Mg) | Critical hydration on small-volume intake — LMNT, Re-Lyte or home mix. *(EFSA electrolyte)* | Hydration on small-volume intake | individualise | LMNT, Re-Lyte, home mix | — | — | *(EFSA electrolyte)* |
 
-### 6.6 Cofactor / micronutrient floor (mandatory — small-volume diet means every µg counts)
-
-| Cofactor | Why for GLP-1 maintenance | Target/day | Food | Supplement (if floor unmet) | Antagonist |
-|---|---|---|---|---|---|
-| **Protein** | Sarcopenia prevention; bone matrix | 1.6–2.2 g/kg | eggs, fish, paneer, tempeh, lentils, whey/pea | Whey/casein/pea blend if food short | — |
-| **Calcium** | Bone density, especially post-menopausal | 1000–1200 mg | sardines with bones, A2 yogurt, ragi, sesame, kale | Pure Encaps Ca citrate 500 mg BID if food short | ≥2 h from iron, levothyroxine |
-| **Vit D3 + K2 (MK-7)** | Ca utilisation, bone, insulin sensitivity | 4000 IU + 100 µg | sun, fatty fish | Thorne D/K2 | Mg cofactor |
-| **Magnesium glycinate** | Bone matrix, insulin, sleep, HPA | 300–400 mg | pumpkin seed, greens | Doctor's Best | split AM/PM with Ca |
-| **B12 (methyl)** | Pernicious risk + low intake | 1000 µg | sardines, eggs, liver | Jarrow sublingual | tannin/coffee within 1 h |
-| **Methylfolate (5-MTHF)** | Methylation | 400–800 µg | leafy greens | Pure Encaps 5-MTHF | — |
-| **B6 (P-5-P)** | Methylation, mood | 25–50 mg | banana, salmon | Thorne P-5-P 50 mg | — |
-| **Iron** (only if ferritin <30) | Anaemia + hair shed on GLP-1 | measure first | red meat, pumpkin seed | Solgar Gentle Iron | ≥2 h tea/Ca/Zn; vit C pair |
-| **Zinc** | NRF2, immune, hair | 10–15 mg | pumpkin seeds, oysters | Thorne Zn picolinate 15 mg | ≥2 h from iron, Ca |
-| **Selenium** | GPX4, thyroid | 100–200 µg | 2 Brazil nuts | Solgar 200 µg | toxic >400 µg |
-| **Choline** | Hepatic fat export | 425–550 mg | egg yolk, liver, sunflower lecithin | Thorne PC | — |
-| **Omega-3 EPA+DHA** | Adipokine balance, muscle response in elderly, bone | 2–3 g | sardines, algal | Nordic Naturals ProOmega | warfarin (consistent) |
-| **Creatine monohydrate** | Muscle phosphocreatine + cognition + grip | 5 g | red meat | Creapure (Bulk, Thorne) | — |
-| **Electrolytes** (Na + K + Mg) | Hydration on small-volume intake | individualise | LMNT, Re-Lyte, home mix | — | — |
-
-## 7. Lifestyle / Mind-Body Anchors (mapped to §2 mechanism nodes)
-
-### 7.1 Yoga (daily 30 min)
-
-| Asana | §2 Mechanism node targeted | Duration | Time of day |
-|---|---|---|---|
-| **Surya Namaskar** (8–12 rounds, gentler on nausea days) | §2.1 + §2.3 systemic + digestive | 8–12 rounds | 07:00 |
-| **Bhujangasana** (cobra) | §2.3 digestive fire | 5 reps | 07:00 |
-| **Ardha Matsyendrasana** (half-spinal twist) | §2.3 gut + liver | 1 min each side | 07:00 |
-| **Tadasana + warrior series** | §2.1 muscle activation + bone load | 5 min | 07:00 |
-| **Vrkshasana** (tree) + balance | §2.4 fall-prevention | 1 min each side | 07:00 |
-| **Setu Bandhasana** (bridge) | §2.4 thyroid + bone load | 1 min | 07:00 |
-| **Shavasana** | §2.4 parasympathetic / HPA | 10 min | 22:00 |
-
-### 7.2 Pranayama (daily 20 min)
-
-| Technique | §2 Mechanism node | Duration | Time of day |
-|---|---|---|---|
-| **Anulom Vilom** | §2.3 + §2.4 HPA / vagal | 10 min | 06:30 |
-| **Bhramari** | §2.3 vagal NO + anti-nausea | 5 min | 06:30 + PM if nausea |
-| **Sheetali / Sheetkari** (cooling) | §2.3 nausea damping | 5 min | when nauseated |
-| **Nadi Shodhana** | §2.4 autonomic balance | 10 min | flare days |
-| **Ujjayi** | §2.4 vagal + thermogenesis | 5 min | during yoga |
-| **Avoid Kapalbhati / Bhastrika** on nausea + reflux days | — | — | — |
-
-### 7.3 Meditation
-Yoga Nidra 30 min (Bihar School); Vipassana 20 min AM body-scan; mindful eating practice (chew 20–30 times, no screens); Tibetan Tonglen 10 min PM.
-
-### 7.4 Sleep & circadian
-Lights-out 22:30 (target 7.5–8.5 h); blue-light cut-off 21:00; bedroom 18–20 °C, blackout; 5–10 min sunlight within 30 min of waking; consistent wake time even weekends.
-
-### 7.5 Nervous-system reset
-Cold-water face splash AM (anti-nausea); humming + gargling 2 min BID; 4-7-8 breath 4 rounds pre-meal; optional consumer VNS (Nurosym, Sensate, Pulsetto) 10 min PM.
-
-### 7.6 Exercise periodization (weekly + monthly) — **muscle preservation is non-negotiable**
-
-**Weekly cadence**
-
-- **Mon / Wed / Fri** — **strength training 45–60 min (load-bearing, progressive)**: squat / deadlift / bench / row / overhead press / weighted carry. 6–12 reps × 3–4 sets. Progressive overload. **Skipping strength training on GLP-1 = sarcopenia.**
-- **Tue / Thu** — Zone 2 cardio 30–45 min @ 60–70% HRmax (brisk walk, cycle, swim, rower).
-- **Sat** — Impact loading 15 min (jumping, hopping, weighted vest walk) + sport; bone-density signal.
-- **Sun** — long walk 60–90 min + restorative yoga + sauna.
-- **Daily** — 8000–10,000 steps; 10-min post-meal walks after lunch & dinner (gentle on GLP-1 nausea — start slow).
-
-**Monthly cadence**
-- Week 1 — full intensity + TCM cycling overlay
-- Week 2 — moderate + supplement steady-state
-- Week 3 — deload (≤70% volume) + extra sleep
-- Week 4 — full intensity + TCM cycling overlay
-
-**Do NOT fast on top of GLP-1.** GLP-1 + TRE >12 h + low intake → sarcopenia + electrolyte risk. Default to a relaxed 12-h overnight fast (20:00–08:00).
-
-## 8. Daily Unified Combos (≤10 caps/day)
-
-**Combo 1 — Side-effect & Digestion (10:00 with breakfast):** Ginger 1 g + Hingvashtaka 1 g + Magnesium citrate 200 mg (PM if constipation) + Slippery elm 2 g (pre-meal mix if reflux). *3 caps + 1 powder pre-meal.* Rationale: anti-nausea + carminative + pro-kinetic.
-
-**Combo 2 — Anti-Inflammation + Microbiome + Bone (13:00):** Curcumin BCM-95 500 mg + Omega-3 1.5 g (2 softgels) + Multi-strain probiotic 20 B CFU. *4 caps.* Rationale: fat-meal absorption + cool food (probiotic) + bone + adipokine.
-
-**Combo 3 — Muscle / Bone / HPA (19:00):** Creatine 5 g (powder in water) + Ashwagandha KSM-66 300 mg + Calcium citrate 500 mg + Vit D3 4000 IU + K2 100 µg. *3 caps + 1 powder.* Rationale: muscle preservation + bone density + HPA wind-down; Ca with dinner, ≥2 h from any iron.
-
-**Daily total: ~10 caps + 2 powders.** + Whey/pea protein blend AM or post-workout (25–40 g) + Bone broth 250 ml + 2 Brazil nuts + ginger tea on demand for nausea.
-
-**TCM cycling (weeks 1 & 4):** *Si Jun Zi Tang* 6 g BID OR *Xiang Sha Liu Jun Zi Tang* (nausea-overlap) 6 g BID — replaces Combo 1 supplementally that week.
-
-## 8.5 Master 24-Hour Day Plan
-
-Integrates supplements, meals, exercise, breathwork, light and sleep — resolves every §10 conflict.
-
-| Hour | Action | Why / Conflicts resolved |
-|---|---|---|
-| **06:00** | Wake; 250 ml warm water + lemon + pinch of salt; 5–10 min direct sunlight | Hydration + circadian + cortisol awakening |
-| **06:15** | Cold-water face splash + humming 1 min | Vagal afferent + anti-nausea |
-| **06:30** | Pranayama 15 min (Anulom Vilom 10 + Bhramari 5) | Vagal tone |
-| **07:00** | Yoga 25 min (§7.1) — gentler on nausea days | Muscle + bone activation |
-| **07:30** | Optional electrolyte drink + ginger tea | Hydration + anti-nausea |
-| **08:00** | (Skip breakfast OK if nausea; nibble bone broth + protein smoothie if hungry) | Listen to GLP-1 appetite |
-| **10:00** | **Breakfast** (§6.4) — protein-led + **Combo 1** (Ginger + Hingvashtaka + Slippery elm if reflux) | Break fast with protein; ginger pre-meal anti-nausea; magnesium citrate moves to PM for constipation |
-| **10:30** | 10-min slow post-meal walk | Gastric emptying support; nausea-gentle |
-| **12:30** | Lunch (§6.4) — protein + vegetables + small millet | — |
-| **13:00** | **Combo 2** (Curcumin + Omega-3 + probiotic) | Curcumin needs fat + piperine; ≥2 h from dairy; probiotic with cool food |
-| **13:30** | 10–15 min post-lunch walk | Gentle |
-| **14:00** | **Caffeine cut-off** | Half-life 6 h |
-| **15:00** | Bone broth 250 ml OR protein smoothie if appetite OK | Hydrolysed protein + electrolytes |
-| **16:00** | Strength training 45–60 min (M/W/F) OR Zone 2 (T/Th) OR impact (Sat) | **Critical for muscle/bone preservation** |
-| **17:00** | Post-workout: 25–40 g whey/pea protein + water + 5 g creatine if not already taken | mTOR activation + muscle phosphocreatine |
-| **17:30** | Sauna 20 min → cold immersion 2–3 min (2–3×/wk) | HSP70 + UCP1; **hydrate well; caution if on SGLT-2** |
-| **18:30** | Snack: 2 Brazil nuts + 20 g walnut + ginger tea | Selenium floor |
-| **19:00** | Dinner — protein + greens + small millet + ghee (§6.4); no inverted yoga after | Sleep + protein floor |
-| **19:30** | **Combo 3** (Creatine 5 g + Ashwagandha + Ca + D3/K2) | Mg PM (Ca AM at lunch ideally OR Ca dinner is OK if Mg AM); Ashwa ≥2 h before bed |
-| **20:00** | Abdominal + lower-body PBM 15 min (660 + 850 nm) | Mitochondrial recovery + adipocyte |
-| **20:30** | Light walk 15 min OR restorative yoga | Parasympathetic |
-| **21:00** | **Evening protein snack** (200 g A2 yogurt or 50 g cottage cheese / paneer) — only if appetite allows | Anti-catabolic overnight |
-| **21:00** | Blue-light cut-off; screens dim | Melatonin protection |
-| **21:30** | Magnesium glycinate 300 mg PM (separate from Combo 3 if Ca dominant) | Sleep + bowel motility |
-| **22:00** | Bhramari 5 min + 4-7-8 breath + Yoga Nidra | Vagal close-out |
-| **22:30** | Bedtime, 18–20 °C, blackout | Deep sleep |
-| **02:00–06:00** | Sleep — no waking eating; sip water if dry | Insulin & cortisol stability |
-
-**GLP-1 injection timing**: most users inject once-weekly (semaglutide, tirzepatide, dulaglutide) — choose a fixed weekday (Sunday PM common). On injection-day and day after, lean more on ginger / Hingvashtaka / smaller meals / extra protein-rich smoothies if appetite drops.
-
-**If you choose to taper down**: reduce dose by one increment every 4–8 weeks, simultaneously layering in Berberine 500 mg TID + Cinnamon + Gymnema 400 mg pre-meal + Inositol 2 g BID (gradual cravings management — see weight-belly-fat dossier §3, §8). Track waist + weight + cravings weekly; if rebound signal (cravings + weight regain), pause taper and re-evaluate.
-
-## 9. Supplier Ecosystem + Monthly Cost
-
-| Channel | Sources | Brands |
-|---|---|---|
-| Amazon Prime (US/IN/UK), iHerb | Protein blend, Creatine, β-HMB, Ginger, Fennel, Slippery elm, Marshmallow, Magnesium, Curcumin, Omega-3, Probiotic, Calcium citrate, D3/K2 | Naked Whey, Garden of Life, Optimum Nutrition, Pure Encaps, Thorne, Jarrow, Nordic Naturals, Doctor's Best |
-| Patel Brothers / Apna Bazaar | Sprouted millets, ragi, ghee, paneer, methi, Chyawanprash, Shatavari, Bala, Triphala, Hingvashtaka | Kottakkal, Vaidyaratnam, Baidyanath, Organic India, Patanjali — **Patel Brothers, 1610 Stoneridge Mall Rd, Pleasanton CA 94588**; **Apna Bazar, 100-04 Queens Blvd, Forest Hills NY** |
-| Chinatown TCM pharmacy | *Si Jun Zi Tang*, *Liu Jun Zi Tang*, *Xiang Sha Liu Jun Zi Tang*, *Bu Zhong Yi Qi Tang*, *Bao He Wan* | Plum Flower (Mayway), Min Tong — **Sun Sing Pacific Trading, 1205 Stockton St, SF**; **Kamwo Meridian Herbs, 209 Grand St, NYC** |
-| Hamdard Dawakhana | Jawarish Jalinoos, Jawarish Kamooni, Sharbat Anar, Itrifal Saghir, Khamira Marwarid | Hamdard, Ajmal — online direct from India |
-| IMPCOPS Chennai (Siddha) | Triphala Chooranam, Vetrilai Chooranam, Karisalai Chooranam | IMPCOPS, SKM — online |
-| Men-Tsee-Khang Dharamsala | Yu-Ning, Padma-Lax, Agar-35 | Sowa Rigpa, online |
-| CCRH-affiliated homeopathy | Nux V, Ipecac, Cocculus, Anacardium, Lyc, China off | SBL, Schwabe (IN), Boiron (FR) |
-| Whole Foods / Sprouts / Trader Joe's | Oily fish, organic produce, sauerkraut, bone-broth bones | retail |
-| Mito Red Light / Joov / Hooga | PBM panels | Mito, Joov, Hooga |
-| Sunlighten / Plunge | Home sauna + cold tub | One-time |
-| LMNT / Re-Lyte / Nuun | Electrolytes | retail |
-| Camry / DynaMed / Squegg | Grip dynamometer | retail |
-
-**Monthly cost (USD)**
-- Combo 1 (Ginger + Hingvashtaka + Magnesium + Slippery elm): **$20–35**
-- Combo 2 (Curcumin + Omega-3 + Probiotic): **$50–80**
-- Combo 3 (Creatine + Ashwagandha + Ca + D3/K2): **$30–45**
-- Protein supplement (whey/pea blend if needed): **$40–80**
-- Cofactor floor (B-vit, Zn, Se Brazil nut, choline, iron if needed): **$25–40**
-- Bone broth ingredients OR pre-made (Kettle & Fire, Bonafide): **$30–80**
-- Electrolytes (LMNT, Re-Lyte): **$30–50**
-- TCM overlay (Si Jun Zi Tang / Liu Jun Zi Tang) weeks 1 & 4: **$20–35**
-- Fresh produce + high-quality protein uplift (oily fish, eggs, paneer, sardines, tempeh): **$300–500**
-- **Recurring total: $545–945/month** (variable based on protein supplement reliance + bone broth source)
-
-**One-time devices**
-- PBM panel: **$449 (MitoMID)** → $749 (MitoMAX)
-- Home infrared sauna: $1,800–4,500 (optional)
-- Cold tub: $0 (bathtub + ice) to $5,000 (Plunge); optional
-- Home strength gym: dumbbells $200, bands $50, barbell + plates $400–800, or commercial gym membership $30–80/mo
-- Vibration plate (optional): $150–500
-- Home BIA scale: $50–250
-- Grip dynamometer: $40
-- Oura ring / Whoop / Apple Watch: $300–500
-- DTC labs baseline + Mo3 + Mo6 + Mo12 (LetsGetChecked / Thriva / Cerascreen): **$140–220/round**
-- DEXA bone density Mo12 (DTC where available, ~$100–250 cash-pay)
-
-## 10. Interaction Matrix
-
-### 10.1 Drug ↔ Supplement (for users ALREADY on a GLP-1 — this dossier does NOT recommend starting or stopping any drug)
-
-**Critical context.** The user is on **semaglutide / tirzepatide / liraglutide / dulaglutide / exenatide**, sometimes co-prescribed with **metformin, SGLT-2 inhibitor, basal insulin, sulphonylurea, statins, levothyroxine, HRT, anti-depressants**. This protocol layers nutrition + OTC supplements + lifestyle. The drug column documents conflicts.
-
-| Drug (you may be on) | Supplement in protocol | Risk | Mitigation (your own coordination) |
-|---|---|---|---|
-| **GLP-1 agonist** (semaglutide, tirzepatide, etc.) | Ginger high-dose | Mild additive gastric-emptying delay | Ginger 1 g/d not 5 g/d on injection week |
-| **GLP-1** | **Berberine, Momordica, Gymnema, Cinnamon, Fenugreek** | Additive glucose lowering + GI side-effects | Hold these OTC AMPK levers during active GLP-1 phase; introduce during taper-down only |
-| **GLP-1** | Slippery elm, Marshmallow, Psyllium | Coats stomach + may delay drug absorption (oral semaglutide) | If on **oral semaglutide (Rybelsus)**, take it on empty stomach + ≥30 min before any food/water/supplement; slippery elm in PM |
-| **GLP-1** | Peppermint oil enteric-coated | LES relaxation → reflux | Use only if no reflux |
-| **GLP-1** | High-dose curcumin | Additive gallbladder contraction → biliary symptoms in users with stones | Moderate dose; **DTC gallbladder ultrasound at Mo6 if RUQ symptoms** |
-| **Metformin** (often co-prescribed) | **Berberine** | Additive AMPK / hypoglycaemia | One lever at a time |
-| **SGLT-2 inhibitor** (co-prescribed often) | Sauna + dehydration + low-carb | **Euglycaemic DKA risk** | Adequate carbs + hydration; **caution sauna**; check ketones if symptoms |
-| **Sulphonylureas / Insulin** | Nigella, Momordica, Berberine, Cinnamon, Fenugreek | Severe hypoglycaemia | Home glucose meter mandatory; OTC AMPK off; coordinate Rx taper |
-| **Levothyroxine** | Calcium citrate, iron, soy, fenugreek, Triphala, Ashwagandha, Ca-rich food | Tannin/divalent T4 block | Levo 60 min before any food/Ca/Mg/iron/Triphala |
-| **Statins** | Berberine, curcumin, grapefruit, red yeast rice | CYP3A4 toxicity + myopathy | Eliminate grapefruit; LFT + CK Mo3 |
-| **Warfarin / DOACs** | Curcumin, garlic high-dose, omega-3, ginger high-dose, Boswellia | INR shift / bleeding | Keep dosing consistent; DTC INR Mo1 |
-| **ACE-i / ARBs / β-blockers / CCBs / thiazides** | Liquorice, K-rich foods, grapefruit | Hyper/hypokalaemia, CYP3A4 | Eliminate grapefruit; **avoid liquorice in HTN** |
-| **SSRIs / SNRIs** | Ashwagandha, St John's Wort | Serotonin syndrome with SJW; CNS dampening with Ashwa | SJW **excluded**; Ashwa ≥3 h from SSRI |
-| **Oral steroids** | Ca, D3, K2, Mg, protein | Steroids drive bone + muscle loss synergistically with GLP-1 — **double-jeopardy** | Cofactor floor maximised; strength training non-negotiable |
-| **HRT (post-menopausal users on GLP-1)** | Shatavari, Black Cohosh, isoflavones | Additive oestrogenic | Coordinate with HRT regime |
-| **Anti-psychotics** | Berberine | Drug-induced metabolic syndrome offset | Layer cautiously |
-| **Methotrexate / immunosuppressants** | High-dose curcumin, NAC, sulforaphane | Hepatic / CYP load | DTC LFT Mo1 / Mo3 |
-| **Bisphosphonates** (osteoporosis Rx) | Calcium / iron / dairy | Chelation | Bisphos 30 min before any food/Ca |
-
-### 10.2 Drug ↔ Food
-
-| Drug | Food | Mechanism | Action |
-|---|---|---|---|
-| **GLP-1 agonist** | Large fatty / fried meals | Delayed emptying → nausea | Small frequent protein-rich meals |
-| **GLP-1 agonist (oral semaglutide Rybelsus)** | Any food / drink within 30 min | ↓ drug absorption | Take fasting; ≥30 min before food |
-| **Metformin** | Alcohol, dehydration | Lactic acidosis | Eliminate alcohol; hydrate |
-| **SGLT-2** | Low-carb keto + dehydration | Euglycaemic DKA | Adequate carbs + hydration |
-| **Levothyroxine** | Coffee, soy, dairy, high-fibre, calcium | T4 absorption ↓ 30–40% | Levo 60 min before food/coffee |
-| **Warfarin** | Vit-K greens, oily fish | INR shift | Keep intake **consistent** |
-| **Statins / immunosuppressants / CCBs** | Grapefruit, Seville orange | CYP3A4 → toxicity | Eliminate grapefruit |
-| **Bisphosphonates** | Any food / Ca / Fe | Chelation | 30 min fasting before any food/Ca |
-
-### 10.3 Supplement ↔ Food
-
-| Supplement | Food / Drink | Mechanism | Action |
-|---|---|---|---|
-| **Whey / casein protein** | Iron supplement | Calcium in whey blunts iron | 2 h gap |
-| **Calcium citrate** | Iron, levothyroxine, zinc, thyroid medication | Chelation | ≥2 h gap from each |
-| **Iron** (only if ferritin <30) | Tea, coffee, wine; dairy, calcium | Polyphenol / divalent chelation | 1–2 h gap; pair with vitamin C |
-| **Curcumin** | Dairy (casein), green tea EGCG | Casein binds polyphenols | 2 h gap; pair with **piperine + ghee** |
-| **Magnesium** | Calcium high-dose same hour | Competition | Ca AM, Mg PM |
-| **Fat-soluble A/D/E/K** | Low-fat meal | No micelle | Always with fat (ghee, fish, olive) |
-| **Vitamin D** | Magnesium-rich foods | Mg cofactor | Together |
-| **Probiotic** | Hot food / drink (>40 °C) | Kills bacteria | Cool / room-temp only |
-| **Slippery elm / Marshmallow / Psyllium** | Any medication taken within 2 h | Coats absorption surface | 2 h gap |
-| **Creatine** | Caffeine (high-dose pre-workout) | Mild antagonism in some users | Separate by 1 h |
-| **Ashwagandha** | Alcohol | CNS depression | Skip alcohol |
-| **Raw cruciferous** | In bulk + Hashimoto+ | Goitrogenic | Lightly steam |
-| **Polyphenol herbs** (Curcumin, green tea) | Iron-rich foods | Iron chelation | ≥1 h gap |
-| **Ginger** | Hot tea straight from kettle | Throat burn | Cool 1–2 min |
-| **Adaptogens** (Rhodiola, Eleuthero) | Evening meal | Stimulating | **AM only** |
-
-### 10.4 Supplement ↔ Supplement
-
-| A | B | Mechanism | Action |
-|---|---|---|---|
-| **Calcium ↔ Iron / Zinc / Magnesium / Levothyroxine** | Same hour | Competition | ≥2 h gap; Ca with one meal, others elsewhere |
-| **Zinc ↔ Copper** | — | Long-term Zn without Cu → Cu depletion | **8–15:1 Zn:Cu** ratio |
-| **Vit A ↔ Vit D** | — | High-dose A vs D receptor | Balance |
-| **Vit E ↔ Vit K** | — | E (>800 IU) antagonises K | E ≤ 400 IU; K2 as MK-7 |
-| **Magnesium ↔ Calcium** | Same hour | Competition | Ca AM/lunch, Mg PM |
-| **Creatine ↔ Caffeine high-dose pre-workout** | Mild antagonism | — | 1 h gap |
-| **St John's Wort ↔ everything** | Serotonin / CYP3A4 induction | Cleared by §10.6 | **Excluded** |
-| **Red yeast rice ↔ Statins** | Additive | Myopathy | Don't combine |
-| **Berberine ↔ GLP-1 / metformin** | Additive AMPK / hypoglycaemia | — | Save for taper phase |
-| **Multiple AMPK levers** (Berberine + Cinnamon + Gymnema) on GLP-1 | Additive hypoglycaemia | — | Off during active GLP-1; layered in taper |
-
-### 10.5 Exercise / Sleep / Caffeine timing rules
-
-- **Caffeine cut-off 14:00**.
-- **Alcohol** — eliminate (pancreatitis signal + sarcopenia + bone risk).
-- **Ashwagandha KSM-66** — PM ≥2 h before bed.
-- **Magnesium glycinate** — PM (sleep + bowel).
-- **Creatine** — consistent daily timing; with carb/protein post-workout ideal.
-- **Rhodiola / Eleuthero / L-theanine + caffeine stack** — AM only.
-- **Probiotic** — cool first-meal or empty stomach AM; ≥2 h from antibiotic.
-- **Inverted yoga** before breakfast only; never after dinner (reflux risk on GLP-1).
-- **Sauna + alcohol** — never combine.
-- **Sauna + SGLT-2 inhibitor or diuretic** — DKA / dehydration caution.
-- **HIIT** — not within 2 h of bedtime.
-- **Strength training before cardio** in same session — preserves muscle.
-- **No TRE >12 h on top of GLP-1** — sarcopenia risk.
-- **Inject GLP-1 same time / same day weekly** — predictable side-effect curve.
-- **Slippery elm / psyllium** — 2 h gap from any medication.
-
-### 10.6 Strictly Avoid — specific to GLP-1 maintenance pathology
-
-- **Fasting >12 h on GLP-1** — sarcopenia + electrolyte risk.
-- **Crash dieting / VLCD on top of GLP-1** — gallstone + muscle loss + nutrient deficiency.
-- **Large fatty meals** — gallbladder + nausea.
-- **Alcohol** — pancreatitis signal + sarcopenia + nutrient depletion.
-- **St John's Wort** — CYP3A4 induction + SSRI risk.
-- **Red yeast rice + statin** — myopathy.
-- **Cassia cinnamon high-dose chronic** — coumarin hepatotoxicity (switch to Ceylon if used at all).
-- **OTC stimulant "fat burners"** (DMAA, synephrine, ephedra) — additive CV risk.
-- **Liquorice** in HTN — K depletion.
-- **Bisphosphonates ≤ 30 min before breakfast** — Ca chelation; follow Rx instructions.
-- **Kapalbhati / Bhastrika** in HTN, pregnancy, ulcer, glaucoma, nausea-day.
-- **Inverted yoga** after dinner / with reflux.
-- **Stopping GLP-1 abruptly without lifestyle scaffold** — rebound.
-- **Skipping strength training while on GLP-1** — sarcopenia.
-
-## 11. Clinical Scoring + Comorbidity Screening
-
-### 11.0 Self-administered clinical scoring instrument — Body Composition + Functional + Side-Effect
-
-**Primary scoring (every 2–4 weeks):**
-- **Waist + WHtR** — same protocol as weight-belly-fat dossier.
-- **Weight + body fat % + visceral score + muscle mass (BIA)** — Withings, Renpho, InBody. **Track muscle mass trend tightly.**
-- **Grip strength** — Camry dynamometer, 3 attempts max, dominant hand; target ≥30 kg M / ≥20 kg F (varies by age).
-- **30-second sit-to-stand** — chair test; ≥15 reps M, ≥12 reps F under 65 yr.
-- **Gait speed** — 4 m walk, target ≥1.0 m/s.
-- **Side-effect log** — nausea VAS 0–10, reflux 0–10, constipation Bristol stool, RUQ pain Y/N (gallbladder).
-- **Protein intake log** (Cronometer / MyFitnessPal) — g/day, g/kg.
-
-**Cadence:** Baseline (Wk 0), Wk 4, Wk 8, Wk 12, Mo 6, Mo 9, Mo 12. **DEXA bone density at Mo 12** if accessible (DTC scan centres, ~$100–250 cash-pay).
-
-### 11.5 Autoimmune & Comorbidity Screening — direct-to-consumer labs
-
-GLP-1 maintenance phase carries elevated risk for / monitoring needs: **sarcopenia, bone mineral density loss, gallstones, gastroparesis, nutrient deficiency (B12, iron, Ca, Mg, D), NAFLD improvement tracking, thyroid, post-cessation rebound, rare pancreatitis.**
-
-**DTC providers:** US — LetsGetChecked, Everlywell, Walk-In Lab, InsideTracker; UK — Thriva, Medichecks, Forth; EU — Cerascreen, Lykon; IN — True Test, Healthians, Thyrocare; AU — i-screen, MyDNA.
-
-**Panel — baseline / Mo3 / Mo6 / Mo12:**
-
-| Comorbidity | DTC test | Provider |
-|---|---|---|
-| Diabetes / glucose | HbA1c + fasting glucose + fasting insulin → HOMA-IR | LetsGetChecked / Everlywell |
-| NAFLD | ALT + AST + GGT + ALP | LetsGetChecked / Thriva |
-| Lipid + CV | Lipid + ApoB + Lp(a) + hs-CRP | InsideTracker / Thriva |
-| Hypothyroid | TSH + fT4 + anti-TPO | Thriva (pause biotin 72 h pre-draw) |
-| B12 / pernicious | B12 + MMA + holo-TC + folate | Thriva |
-| Iron | Ferritin + CBC + serum Fe + TSAT | LetsGetChecked |
-| Vit D | 25-OH-D | Thriva / Cerascreen |
-| Minerals | Serum / RBC Ca + Mg + Zn + Se | Walk-In Lab / Thriva |
-| Pancreatic | Lipase + amylase if RUQ pain or vomiting | LetsGetChecked |
-| Gallbladder | RUQ ultrasound at Mo6 if symptoms | DTC ultrasound (Smart Imaging, RadiologyAssist) |
-| Bone density | DEXA at Mo12 baseline + annual | DTC DEXA scan centres |
-| Microbiome | Stool 16S / shotgun | Viome / BiomeSight |
-| HPA / cortisol | Salivary 4-point cortisol + DHEA-S | DUTCH |
-
-## 12. Implementation Timeline (12 months, self-tracked)
-
-- **Weeks 1–4 — Side-effect adaptation.** GLP-1 dose titration; ginger + Hingvashtaka + small protein-led meals; bone broth + electrolytes. Baseline body composition + grip + sit-to-stand + DTC panel. Track protein intake daily.
-- **Weeks 5–8 — Strength training onboarding.** Strength 3×/wk non-negotiable; protein floor 1.6 g/kg; cofactor floor full; creatine 5 g/d steady. Optional Wk 8 muscle mass + grip recheck.
-- **Weeks 9–12 — Body recomposition.** Weight steady loss; muscle mass preserved (BIA trend); grip stable or rising; nausea adapting; constipation managed with Mg + soluble fibre. Mo3 DTC + first DLQI / mood / energy log.
-- **Months 4–6 — Maintenance + bone work.** Muscle mass preserved; impact loading + jumping introduced for bone signal; B12 + iron + Ca + D rechecked. Mo6 DTC. Mood + cravings stable; consider whether to begin taper plan.
-- **Months 6–12 — Taper or maintain.** If maintaining: continue protocol indefinitely. If tapering: layer Berberine + Cinnamon + Gymnema + Inositol at the same step you reduce GLP-1 dose; reduce one increment every 4–8 wk; weekly cravings + weight log. Annual DTC + DEXA bone density at Mo 12. Expected at 12 mo: **lean mass preserved or increased, bone density stable, full nutrient panel normal, NAFLD reversed (60–80%), HbA1c <5.7, no rebound after taper if scaffold in place**.
-
-**No physician check-in is mandatory.** GLP-1 dose escalation, taper and cessation are coordinated with whoever prescribes the drug — but the nutrition + supplement + lifestyle scaffold above is the user's own programme.
-
-## 13. Illustrative Case Composite
-
-> Composite — not a real patient identifier.
-
-**Priya, 38, marketing director, Pune.** On tirzepatide 7.5 mg weekly (escalated from 2.5 mg over 12 wk); -14 kg in 6 mo; appetite very low; eating ~1100 kcal; protein only 55 g/d (~0.8 g/kg). Baseline: weight 68 kg @ 162 cm (BMI 25.9, from 82), waist 82 cm, muscle mass 38 kg (down from 44 estimated), grip 22 kg (low for age), sit-to-stand 11 reps, HbA1c 5.4, ALT 36 (improved from 64), ferritin 22 (low), B12 290 (low), MMA 320, 25-OH-D 24, hair shed visible.
-
-Full §8.5 protocol layered: protein-led meals + whey 30 g BID smoothie → protein 110 g/d (1.6 g/kg); strength 3×/wk; creatine 5 g/d; bone broth 250 ml/d; cofactor floor (Ca 1000 mg, D3 4000 IU + K2, Mg 350 mg, B12 1000 µg methyl, Fe 18 mg with vit C); Combo 1 ginger/Hingvashtaka/Mg pre-meal; Combo 2 curcumin/omega-3/probiotic; Combo 3 creatine + Ashwagandha + Ca + D3/K2 PM; sauna 2×/wk + cold immersion + impact loading Sat; Yoga Nidra HS.
-
-- **Wk 4:** Nausea ↓ (ginger + smaller meals); protein 105 g/d achieved; weight 67 kg (slow); muscle 38.5 kg; grip 24 kg; sleep 7.5 h.
-- **Wk 12:** Weight 65 kg; muscle 40 kg (rising); grip 28 kg; sit-to-stand 14 reps; B12 480; MMA 130; ferritin 48; vit D 42; ALT 28; lipid normal.
-- **Mo 6:** Weight 62 kg; muscle 42 kg; grip 31 kg; bone density baseline DEXA T-score lumbar −0.4 (acceptable); hair shed stopped; tirzepatide stable at 7.5 mg.
-- **Mo 12:** Weight 60 kg (target 58–62 maintenance); muscle 43 kg (gained 5 kg lean since starting protocol); grip 34 kg; HbA1c 5.2; DEXA Mo12 T-score −0.3 (stable); planning tirzepatide taper Mo 14 with Berberine + Cinnamon scaffolding; no rebound risk markers.
-
-## 13.5 Patient-Facing Primer
-
-GLP-1 drugs (Ozempic, Wegovy, Mounjaro, Zepbound, Saxenda) work brilliantly — but they are an **appetite-suppression switch**, not a complete weight-loss programme. Four risks come with them: (1) if you don't lift weights and eat enough protein, you will lose a lot of muscle along with the fat (up to 40% of your weight loss can be lean tissue); (2) eating only 1100–1500 kcal/day for months drops your intake of B12, iron, calcium, magnesium, zinc, selenium, vitamin D and protein below safe floors; (3) gallstones, nausea, reflux, constipation and rare pancreatitis are real side-effects; and (4) when you eventually stop the drug, most people regain ⅔ of the lost weight within a year — unless the lifestyle scaffold is already in place.
-
-This protocol does **not** tell you to start, stop or change your GLP-1 dose. It sits **around** your prescription and gives you: a protein floor of 1.6–2.2 g per kg of body weight, three strength-training sessions a week (non-negotiable), creatine 5 g/d, a calcium + vitamin D + magnesium + K2 stack for bone, a B12 + iron + zinc + selenium cofactor floor, ginger + fennel + Hingvashtaka + slippery elm for nausea/reflux/constipation, bone broth for hydrolysed protein and electrolytes, OTC AYUSH formulas (Chyawanprash, Ashwagandha, Shatavari, Bala) for rasayana, TCM Spleen-Stomach support (Si Jun Zi Tang, Liu Jun Zi Tang), home red light + sauna + cold + impact loading. **No prescription started by us. No clinic. No hospital. No surgery.**
-
-Expect: muscle preservation, bone density preserved, full nutrient panel in range, normal HbA1c, NAFLD reversal, and a taper-down strategy when you choose, that layers Berberine + Cinnamon + Gymnema + Inositol as the GLP-1 dose comes down — so you exit the drug with metabolism intact instead of into a rebound.
-
-You are sovereign over your own body. Coordinating with whoever prescribes your GLP-1 makes obvious sense — but the nutrition, strength training and supplement scaffold around the drug is yours to own.
-
-## 14. Independent Healing Paradigm
-
-This protocol diverges from the mainstream pharma narrative that frames GLP-1 as a stand-alone solution. GLP-1 is a powerful but blunt appetite-and-glucose lever; without a deliberate counter-engineering of protein intake, resistance training, cofactor floor, microbiome care, bone loading and a taper scaffold, the user trades fat for muscle and bone, accumulates nutrient debt, and rebounds on cessation. The integrative reframing is that GLP-1 is **a bridge**, not a destination, and the bridge needs guard-rails on both sides.
-
-**Sovereignty ethos.** **No prescription started here. No prescription stopped here. No clinic. No hospital. No surgery.** The user owns their body, their dose-decisions, and their healing path. Evidence varies honestly: Grade A for protein floor, creatine, omega-3, ginger anti-nausea, Triphala, Ashwagandha-KSM-66, resistance training, calcium + D3; Grade B for β-HMB, Shatavari, Bala, Curcumin, fennel, slippery elm, peppermint oil, probiotic, Boswellia; Grade C–T for traditional formularies (Si Jun Zi Tang, Bu Zhong Yi Qi Tang, Jawarish Jalinoos, Yu-Ning, Hingvashtaka) — honoured as traditions backed by classical authority.
-
-Authority grounded in **WHO TCIM Strategy 2025–2034, India AYUSH/CCRAS/CCRH/CCRYN/CCRUM/CCRS/PCIMH/ICMR, EMA HMPC, Australia TGA + NHMRC, China NMPA + Chinese Pharmacopoeia, Health Canada NHP, Men-Tsee-Khang, Hamdard, IMPCOPS**, plus classical texts (Charaka, Sushruta, *Bhavaprakasha*, Avicenna's *Canon*, *Huang Di Nei Jing*, *Pi Wei Lun*, Boericke, Kent).
-
-Explicit re-affirmation: **no FDA, FTC, ADA, AHA, AAD, AMA, APA, ACOG, NAMS, ACR, ACS, CDC, NIH-policy, AAFP, AAP as authority. Period.**
