@@ -24,7 +24,7 @@ function isActive(pathname: string, href: string) {
 }
 
 /** Routes that run their own DossierShell chrome — AppShell collapses to a thin top brand bar only. */
-const NON_APP_SHELL_TOP = new Set(["c", "skin", "hair", "weight", "metabolic", "gut", "sleep", "stress", "mood", "brain", "eyes", "joints", "recovery", "energy", "women", "fertility", "men", "ears", "immune", "respiratory", "oral", "heart", "liver", "longevity"]);
+const NON_APP_SHELL_TOP = new Set(["c", "skin", "hair", "weight", "metabolic", "gut", "sleep", "stress", "mood", "brain", "eyes", "joints", "recovery", "energy", "women", "fertility", "men", "ears", "immune", "respiratory", "oral", "heart", "liver", "longevity", "thyroid", "urinary"]);
 function isDossierRoute(pathname: string): boolean {
   if (pathname === "/skin/vitiligo") return true;
   // /<domain>/<slug> with exactly 2 segments where domain is in the dossier set
