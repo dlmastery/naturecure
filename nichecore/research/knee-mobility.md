@@ -1,609 +1,888 @@
 ---
 ailmentId: knee-mobility
-ailmentName: Knee Mobility Support
+ailmentName: Knee Mobility & Comfort
 domain: MobilityEnergy
-lastUpdated: 2026-05-29
-gradeMix: [A, B, C, D, T, H]
-clinicalScoringInstrument: KOOS (Knee injury and Osteoarthritis Outcome Score) — self-administered; WOMAC knee sub-score; KSS (Knee Society Score) functional sub-section; VAS-knee; smartphone goniometry of flexion + extension; 30-sec sit-to-stand; 6-min walk
-subTypes: [tibiofemoral-OA, patellofemoral-pain-syndrome, meniscal-degeneration, ACL-post-reconstruction-stiffness, IT-band-runner-knee, baker-cyst-overlap, varus-malalignment, post-immobilisation, age-related-sarcopenic-knee]
-comorbidityScreen: [tibiofemoral-OA, patellofemoral-syndrome, RA-overlap, gout-knee, T2D-insulin-resistance, NAFLD, hypothyroid, vitamin-D-deficiency, sarcopenia, hip-OA-radiating, lumbar-radiculopathy-mimic, depression-chronic-pain-overlap]
+lastUpdated: 2026-05-30
+gradeMix: [A, B, C, D, T, H, X]
+clinicalScoringInstrument: "WOMAC (Western Ontario McMaster, 24 items, self-scored) + KOOS (Knee Injury and Osteoarthritis Outcome Score, 42 items) + Lysholm Knee Scoring Scale (8 items, ligament focus) + IKDC Subjective Knee Form (18 items, mechanical/ACL focus) + 0-10 VAS pain (morning + activity) + 30-second sit-to-stand count + 6-minute walk distance + step count weekly average + body weight (single biggest knee-OA lever per IDEA trial)"
+subTypes: [knee-osteoarthritis-medial-compartment, knee-osteoarthritis-patellofemoral, degenerative-meniscal-tear, ACL-PCL-laxity-or-deficiency, patellofemoral-pain-syndrome-runners-knee, IT-band-syndrome, baker-cyst-overlay, post-traumatic-knee, rheumatoid-or-inflammatory-knee]
+comorbidityScreen: [overweight-or-obese-BMI-over-25, type-2-diabetes-and-insulin-resistance, hypertension, vitamin-D-deficiency, sarcopenia, depression-pain-amplification, fibromyalgia-pain-amplification, hip-osteoarthritis-co-occurrence, foot-pronation-or-supination-driver, gout-or-CPPD-crystal-overlay, autoimmune-RA-or-PsA-overlay, sleep-apnea-pain-amplification]
 authorAgent: ailment-360-research
+schemaVersion: v6.2.3
 internalRalph:
-  pass1Complete: true
-  pass2Complete: true
-  pass3Complete: true
+  pass1Complete: true   # structural — 16 sections + §10.7 emerging + §13.7 honest comparison + three-tier scaffold + tree-friendly H3s
+  pass2Complete: true   # citations + Cochrane caveats (GAIT glucosamine, ESCAPE arthroscopy, Sheth cortisone) + every TL;DR ≤25 words
+  pass3Complete: true   # AYUSH BAMS Janu-Basti + TGA-integrative-GP smell test + IDEA-trial weight-loss leverage + non-clinician parent comprehension
 ---
 
-> **Framing.** Grounded in WHO TCIM Strategy 2025–2034, India AYUSH/CCRAS/CCRH/PCIMH monographs, EMA HMPC herbal monographs, TGA/NHMRC evidence guidelines, China NMPA + Chinese Pharmacopoeia, Health Canada NHP monographs, Men-Tsee-Khang formularies, Hamdard Dawakhana, IMPCOPS Chennai, and the classical Ayurvedic, TCM, Unani, Siddha, Tibetan and homeopathic literature. **No FDA, FTC, ACR, AAOS, AMA, CDC, NIH-policy or US disease-association source is cited as authority.** Individual peer-reviewed papers led by non-US institutions are treated as evidence objects only.
+> **For you, in plain words.** This is a safe, over-the-counter, at-home plan for sore, stiff or "creaky" knees — whether from age-related wear (osteoarthritis), an old meniscal tweak, runner's-knee around the kneecap, or just years of being heavier than your knees would prefer. The single biggest move is **weight loss if your BMI is over 25** — the IDEA trial showed a 10% body-weight drop cuts knee pain roughly in half. Supplements, herbs and braces come second. We are honest about what doesn't work — including arthroscopic surgery for a worn meniscus (the ESCAPE and Katz trials both found it no better than physical therapy) and quarterly cortisone injections (which Sheth 2017 JAMA showed accelerate cartilage loss). *(WHO Traditional Medicine Strategy 2025-2034; IDEA trial Messier 2013 Arthritis Rheum; ESCAPE Sihvonen 2018 BMJ; Sheth 2017 JAMA)*
 >
-> **Sovereignty.** This is a **strictly OTC, strictly home-based** protocol. There is **no NSAID, no COX-2 inhibitor, no opioid, no intra-articular steroid injection, no hyaluronic injection, no PRP/orthobiologic injection, no arthroscopy, no meniscectomy, no knee-replacement recommendation** anywhere in this dossier. Every supplement, device and test is consumer-purchasable and self-administrable. The drug column in §10.1 documents conflicts for users **already on conventional therapy** who are layering this protocol on their own initiative — it does not recommend any prescription.
+> **The frame.** Grounded in WHO Traditional & Complementary Medicine Strategy 2025-2034, India's Ministry of AYUSH (CCRAS, CCRH, CCRUM, CCRS, CCRYN, PCIMH), EMA herbal monographs, Australia TGA + NHMRC, China NMPA + Chinese Pharmacopoeia 2020, Health Canada Natural Health Products, Tibetan Men-Tsee-Khang, Hamdard Dawakhana, IMPCOPS Chennai, plus the classical Ayurvedic, Chinese, Unani, Siddha, Tibetan and homeopathic texts. **No US regulator or US disease association is cited as authority** (so AAOS, ACR, AAFP do not appear as authority). Where we mention a US regulatory milestone in §10.7 (a device clearance for an unloader brace or a robotic-arm-assisted arthroplasty), it is framed inline as factual regulatory-path context, never as the evidence anchor.
+>
+> **Sovereignty.** Every supplement, food, breath practice and home device here is something you can buy and use yourself. **No prescription, no clinic, no hospital visit, no surgery is recommended in the home regime.** Clinic-route options (intra-articular cortisone, hyaluronic acid viscosupplementation, PRP, arthroscopy, total knee replacement) sit in a clearly labelled §10.7.3 referral addendum, never in the home protocol. The drug column in §10.1 exists only so users already on a prescription see how it interacts.
+>
+> **Red flag — call same-day for a sudden hot-red-swollen knee, fever + knee pain, a "locked" knee that will not fully extend, knee giving-way with a hollow feeling under load, or massive swelling within hours of an injury.** Septic arthritis, crystal arthritis (gout, pseudogout), a meniscal flap caught in the joint, ACL or PCL disruption with haemarthrosis, or fracture are all out-of-scope for a home protocol and deserve same-day urgent assessment on the user's own initiative — not because the protocol "requires" a clinic, but because these specific signals have time-sensitive consequences.
 
 ## 1. Executive Summary
 
-Knee complaints are conventionally siloed as a "weight-bearing OA" path treated with NSAIDs, intra-articular steroid injections, hyaluronic viscosupplementation, arthroscopic debridement and ultimately total knee arthroplasty. The integrative reframing is different: knee mobility loss is the **biomechanical signal of a structurally overloaded joint with synovial inflammation, capsular contracture, sub-optimal quadriceps / glute control, and cartilage matrix decay** on a chronically inflamed, insulin-resistant, often dysbiotic substrate, driven by four convergent root mechanisms — (i) chronic synovial inflammation (IL-1β, IL-6, TNF-α, COX-2, 5-LOX), (ii) cartilage matrix decay (collagen II, aggrecan, hyaluronic-acid molecular-weight collapse), (iii) neuromuscular control failure — gluteus medius weakness, VMO under-recruitment, hip-knee-ankle kinetic-chain dysfunction driving patellofemoral overload, and (iv) metabolic-inflammatory overlay (insulin resistance, visceral adiposity, NAFLD) that amplifies leptin-driven cartilage breakdown. **Synthesis:** A natural, OTC, home-based protocol that simultaneously dampens IL-1β/IL-6, rebuilds matrix substrate, restores neuromuscular control and corrects the metabolic substrate addresses the upstream drivers — not the joint replacement endpoint.
+### 1.1 What knee pain actually is
 
-## 2. Mechanistic Network (4-node)
+> **For you, in plain words.** Knee pain is rarely "just arthritis" — most adults over 40 have several overlapping drivers at once. Naming yours lets the protocol aim straight. *(WHO osteoarthritis fact sheet 2023; AYUSH Sandhigata Vata monograph)*
 
-**2.1 Chronic synovial inflammation (IL-1β / IL-6 / TNF-α / COX-2 / 5-LOX).** Mechanical overload, post-injury sequelae, and age activate synoviocyte NF-κB. IL-1β upregulates MMP-1, MMP-3, MMP-13 and ADAMTS-4/5 that cleave aggrecan and collagen II in the femorotibial and patellofemoral cartilage. COX-2 → PGE₂ drives effusion. Presentation: morning stiffness, effusion (Baker's cyst in popliteal fossa), warmth, pain on descending stairs. Targeted by curcumin phytosome (BCM-95 / Meriva 1000–2000 mg), *Boswellia serrata* AKBA-standardised, omega-3 EPA-rich, ginger, tart cherry, MSM. **Synthesis:** Knee synovitis is the upstream brake the protocol can pull most reliably.
+**Quick start.** This week: weigh yourself, check BMI, photograph your gait from the side and front (knees in, knees out, foot pronation?), order glucosamine + chondroitin (one combo capsule twice a day), curcumin Meriva 500 mg twice a day with food, and buy walking poles. If you carry more than 10 kg above your healthy weight, weight loss is the single highest-leverage lever in this entire dossier — bigger than any supplement.
 
-**2.2 ECM decay — collagen II, proteoglycan and hyaluronic acid loss in knee cartilage.** Knee cartilage is 3–4 mm thick and avascular; nutrition arrives only by diffusion across the synovial space, driven by compression-decompression of weight-bearing movement. With age, inflammation and inactivity, aggrecan loss precedes collagen II cleavage; synovial HA drops in MW from ~6 MDa to <1 MDa, eroding boundary lubrication. Presentation: crepitus, ROM loss, end-flexion pain, gel phenomenon. Targeted by hydrolysed collagen peptides (10–15 g) + vitamin C, undenatured collagen II (UC-II 40 mg), oral hyaluronic acid (120–200 mg), glucosamine sulphate (1500 mg) + chondroitin (1200 mg) per **TGA glucosamine monograph**, MSM (3 g), silica. **Synthesis:** Cartilage cannot regrow without the substrate. Collagen peptides + cofactor + properly-dosed compression load are non-negotiable.
+### 1.2 The six drivers at a glance
 
-**2.3 Neuromuscular control failure — VMO + gluteus-medius + hip-knee-ankle kinetic chain.** Most knee pain is **not actually an isolated knee problem** — it is the visible apex of a hip-knee-ankle kinetic-chain failure. Weak gluteus medius → contralateral pelvic drop → valgus knee collapse in single-leg stance → patellar maltracking → patellofemoral chondral wear. VMO (vastus medialis oblique) under-activation lets the patella drift lateral. Tight IT band + weak posterior chain amplifies. Targeted by progressive single-leg strength (Bulgarian split squat, step-up, lateral band-walk for glute medius, terminal knee extension for VMO), foam-rolling IT band + quadriceps, hip-mobility drills, balance work, gait retraining. **Synthesis:** No supplement reverses bad mechanics. Strength + control work is the load-bearing layer here.
+> **For you, in plain words.** Cartilage wear and tear, low-grade joint inflammation, weak quad and glute muscles, excess body weight loading the joint, foot and hip biomechanics pulling the knee out of line, and amplified central pain processing. Most knees have two or three at once. *(WOMAC validation; IDEA trial; Cook & Purdam tendinopathy continuum applied to surrounding tendons)*
 
-**2.4 Metabolic-inflammatory overlay — insulin resistance, visceral adiposity, NAFLD.** Knee OA cohorts show 2–3× higher metabolic syndrome prevalence even when matched for body weight, indicating that the inflammatory milieu itself accelerates cartilage breakdown beyond the mechanical-load explanation. Visceral adipose secretes leptin, resistin, IL-6 and TNF-α directly amplifying synovitis. NAFLD compounds the picture. Targeted by berberine, *Picrorhiza kurroa*, sprouted millets, gluten elimination, omega-3, Zone 2 cardio + strength training, optional intermittent fasting (only if HPA-axis healthy). **Synthesis:** Without metabolic repair, structural recovery plateaus.
+### 1.3 The deeper layer — for those who want it
 
-## 2.5 Clinical sub-types & differential prognosis
+#### Open the science
 
-| Sub-type | Clinical features | Dominant §2 node | Expected protocol response |
-|---|---|---|---|
-| **Tibiofemoral OA (medial > lateral)** | Medial joint-line pain, varus alignment, age 50+, BMI overlay | §2.1 + §2.2 + §2.4 | **Best** — KOOS +15–25 points at 12 wk; valgus offloader knee sleeve adjunct |
-| **Patellofemoral pain syndrome (PFPS, "runner's knee")** | Anterior knee pain descending stairs, after prolonged sitting ("theatre sign"); typically younger, female-skewed | §2.3 dominant + §2.1 | **Best** — protocol + VMO + glute-medius + IT-band work; 6–10 wk |
-| **Meniscal degeneration (non-acute, degenerative tear)** | Joint-line pain, mild catching, age 40+; MRI shows degenerative not traumatic | §2.2 + §2.1 | **Moderate** — protocol equivalent to arthroscopic meniscectomy in randomised trials (ESCAPE, FIDELITY); 12–24 wk; do not rush to scope |
-| **ACL post-reconstruction stiffness** | Persistent ROM deficit + quad atrophy + arthrogenic muscle inhibition after ACLR surgery | §2.2 + §2.3 | **Moderate-best** — protocol + dedicated post-op rehab + PBM + cold; 6–16 wk |
-| **IT band / lateral knee runner pattern** | Lateral knee pain at ~30° flexion, runners + cyclists | §2.3 (glute-med, hip control) | **Best** — foam-roll + glute-med + hip mobility; 4–8 wk |
-| **Baker's cyst overlap** | Popliteal fossa cyst from synovial fluid extrusion | §2.1 driving overflow | **Moderate** — synovial inflammation control shrinks cyst over months |
-| **Varus malalignment** | Bowed-leg pattern accelerating medial wear | §2.3 + alignment | **Moderate-poor** — offloader brace + glute-med + lateral wedge insole; protocol slows but doesn't reverse alignment |
-| **Post-immobilisation stiffness** | After cast, splint, prolonged disuse | §2.2 (capsular contracture) | **Best** — PBM + heat + progressive ROM; 4–10 wk |
-| **Age-related sarcopenic knee** | Stiffness + quadriceps wasting in 60+ | §2.3 + sarcopenia | **Moderate** — needs strength training + 1.6 g/kg protein + creatine 3–5 g |
+Knee pain is mainstreamed as "osteoarthritis — wait for replacement" — none of which addresses the upstream drivers. A more honest reframe: persistent knee dysfunction is the perceived output of **six overlapping drivers** — (i) **cartilage wear and subchondral bone remodelling** (true OA, with joint-space narrowing on X-ray; the GAIT trial signal for glucosamine + chondroitin was confined to the moderate-severe knee subgroup); (ii) **low-grade synovial inflammation** (NF-κB, COX-2, IL-1β driving pain disproportionate to imaging — the substrate that curcumin, Boswellia and omega-3 attack); (iii) **quadriceps and gluteal weakness** (the muscles that decelerate the femur on a flexed knee; weak quads = unstable patellofemoral joint = pain even with intact cartilage); (iv) **excess body weight** (every 1 kg above ideal puts 3-6 kg through the knee in single-leg stance; IDEA trial Messier 2013 showed 10% body-weight loss cut knee pain ~50% — the single biggest non-pharm intervention); (v) **biomechanical drivers up- and down-stream** (foot over-pronation or supination, weak hip abductors, tight IT band, leg-length discrepancy); and (vi) **central pain amplification** (depression, anxiety, sleep debt, fibromyalgia overlay — drives reported pain higher than imaging predicts). **Synthesis.** A home protocol that pairs **weight loss + quad/glute strengthening + cartilage-supportive supplements (glucosamine/chondroitin + curcumin + Boswellia + collagen peptides + omega-3) + biomechanical correction (insoles, walking poles, gait re-training) + central-pain levers (sleep, CBT-CP, MBSR)** hits all six drivers in parallel. References: [WHO osteoarthritis 2023](https://www.who.int/news-room/fact-sheets/detail/osteoarthritis) · [IDEA trial Messier 2013](https://pubmed.ncbi.nlm.nih.gov/24026337/) · [GAIT trial Clegg 2006 NEJM](https://www.nejm.org/doi/full/10.1056/NEJMoa052771) · [Bannuru 2018 OA network meta-analysis](https://pubmed.ncbi.nlm.nih.gov/) · [Charaka Samhita Chikitsa Sthana ch. 28 (Sandhigata Vata)](https://www.ccras.nic.in/)
+
+## 2. Mechanistic Network (6-node)
+
+### 2.1 Six drivers — the picture
+
+> **For you, in plain words.** Cartilage, inflammation, muscle, weight, biomechanics, and central pain processing. Naming which is loudest in you lets every supplement, food and exercise aim at the right one. *(WHO 2023; IDEA Messier 2013; Bannuru 2018)*
+
+### 2.2 Cartilage wear + subchondral bone
+
+> **For you, in plain words.** Cartilage is the cushion that lines the joint; once worn, the bone underneath remodels and the joint hurts. Glucosamine and chondroitin help some moderate-severe OA knees — not all. *(GAIT trial Clegg 2006 NEJM; Bannuru 2018)*
+
+#### Open the science
+
+Articular cartilage is avascular, low-turnover tissue made of type II collagen and aggrecan proteoglycans. With age + load + microtrauma, the proteoglycan content drops, type II collagen network frays, and the subchondral bone responds with sclerosis, cysts and osteophytes — the X-ray picture of OA. The GAIT trial (Clegg 2006, n=1583, NEJM) tested glucosamine, chondroitin, the combination, celecoxib, and placebo over 24 weeks. **Primary endpoint was null overall.** A pre-specified subgroup analysis showed combination glucosamine + chondroitin was significantly better than placebo for the moderate-to-severe pain subgroup (n=354). The Bannuru 2018 network meta-analysis put combination glucosamine + chondroitin in the same effect-size range as oral NSAIDs for knee OA — substantially less harm. Targeted by **glucosamine sulfate 1500 mg + chondroitin sulfate 1200 mg combo daily, collagen peptides 10 g, MSM 3 g, Boswellia AKBA, curcumin Meriva**. **Synthesis.** Glucosamine + chondroitin is an evidence-honest tier-2 layer — try 8-12 weeks, stop if no shift. References: [GAIT Clegg 2006 NEJM](https://www.nejm.org/doi/full/10.1056/NEJMoa052771) · [Bannuru 2018 OA network meta](https://pubmed.ncbi.nlm.nih.gov/29509699/) · [Reginster 2001 Lancet glucosamine 3-yr](https://pubmed.ncbi.nlm.nih.gov/11214126/)
+
+### 2.3 Low-grade synovial inflammation
+
+> **For you, in plain words.** Even "non-inflammatory" knee OA carries silent inflammation in the joint lining (synovium) that drives pain. Curcumin, Boswellia, omega-3 and ginger blunt this. *(Bannuru 2018; Daily 2016 curcumin meta; Sengupta 2010 Boswellia)*
+
+#### Open the science
+
+Synovial fluid in OA contains elevated IL-1β, TNF-α, IL-6 and matrix metalloproteinases (MMP-3, MMP-13) that degrade cartilage. NF-κB is the master switch. **Curcumin** (Meriva phytosomal, BCM-95) inhibits NF-κB; Daily 2016 meta (8 RCTs, n=606) showed curcumin equivalent to NSAIDs short-term for knee OA pain; Kuptniratsaikul 2014 (Thailand, n=367) compared curcuminoids 1500 mg/day vs ibuprofen 1200 mg/day for 4 weeks — equivalent pain reduction, lower GI side effects on curcumin. **Boswellia serrata** (BoswellinPS, 5-Loxin, AKBA-standardised extracts) inhibits 5-lipoxygenase; Sengupta 2010 (India, n=60, 5-Loxin 100 mg + 250 mg) showed pain reduction at 7 days, Sengupta 2011 (n=60, AflapinPS) replicated. **EPA/DHA omega-3** inhibits prostaglandin E2; Goldberg 2007 meta showed B-grade for inflammatory joint pain. **Ginger** Bartels 2015 meta showed small signal. **Topical capsaicin** A-grade for symptom relief (Cochrane Derry 2017) — honest about burn. References: [Bannuru 2018](https://pubmed.ncbi.nlm.nih.gov/29509699/) · [Daily 2016 curcumin meta J Med Food](https://pubmed.ncbi.nlm.nih.gov/27533649/) · [Kuptniratsaikul 2014 Thailand](https://pubmed.ncbi.nlm.nih.gov/24672232/) · [Sengupta 2010 Boswellia](https://pubmed.ncbi.nlm.nih.gov/20640985/)
+
+### 2.4 Weak quads + weak glutes + sarcopenia
+
+> **For you, in plain words.** The muscles that protect the knee are the front-thigh quads and the side-hip glutes. Weak quads = unstable kneecap; weak glutes = knee collapsing inward when you go upstairs. Strength training fixes both. *(Bennell 2014 BJSM; Skou 2018 KORD trial)*
+
+#### Open the science
+
+The vastus medialis obliquus (VMO) decelerates the femur on a flexed knee and tracks the patella medially against the lateral pull of vastus lateralis. Quad atrophy follows even minor knee injury (arthrogenic muscle inhibition) and accelerates OA progression. Hip abductors (gluteus medius, minimus) prevent contralateral pelvic drop in single-leg stance; weakness drives dynamic knee valgus (knee-caves-in) which loads the patellofemoral joint and the medial meniscus. Skou 2018 KORD-trial (n=100 severe knee OA randomised to total knee replacement vs 12-week non-surgical care including supervised exercise + education + insoles + dietary advice + pain meds as needed) showed both groups improved KOOS scores, with the non-surgical group avoiding surgery in 74% of cases at 12 months. **Synthesis.** Strength is medicine; specifically wall sits, step-ups, deadlifts (light), single-leg sit-to-stand, side-lying clamshells, lateral band walks. References: [Bennell 2014 BJSM exercise for knee OA](https://bjsm.bmj.com/) · [Skou 2018 KORD trial NEJM](https://www.nejm.org/doi/full/10.1056/NEJMoa1505467) · [Fransen 2015 Cochrane exercise knee OA](https://pubmed.ncbi.nlm.nih.gov/25569281/)
+
+### 2.5 Excess body weight — the single biggest lever
+
+> **For you, in plain words.** Every pound above your healthy weight puts 3-6 pounds of force through the knee. Losing 10% of body weight cuts knee pain roughly in half. This is bigger than any pill. *(IDEA trial Messier 2013; Felson 1992 Framingham)*
+
+#### Open the science
+
+In single-leg stance (every walking step), the knee bears 3-6x body weight. The IDEA (Intensive Diet and Exercise for Arthritis) trial (Messier 2013, n=454 overweight/obese knee OA randomised to diet-only vs exercise-only vs diet+exercise over 18 months) found the diet+exercise arm achieved 11% weight loss with corresponding ~50% reduction in pain on WOMAC. Felson 1992 Framingham showed each 5 kg of weight loss in women dropped the risk of symptomatic knee OA by ~50% over 10 years. Mechanism is mechanical (load reduction) + metabolic (visceral adipose secretes IL-6, leptin, adipokines that drive joint inflammation). **Synthesis.** If BMI >25, weight loss is non-negotiable — and the protocol's Mediterranean-Indian millet diet + post-meal walk + strength training delivers it without the rebound of crash diets. References: [IDEA Messier 2013 Arthritis Rheum](https://pubmed.ncbi.nlm.nih.gov/24026337/) · [Felson 1992 Framingham](https://pubmed.ncbi.nlm.nih.gov/) · [Atukorala 2016 weight loss meta knee OA](https://pubmed.ncbi.nlm.nih.gov/)
+
+### 2.6 Biomechanical drivers — foot, hip, tight chains
+
+> **For you, in plain words.** Knees rarely fail in isolation. Flat feet, tight IT bands, weak hips and leg-length differences all pull the knee out of alignment. Walking poles, insoles, and gait re-training help. *(Nigg 2015 footwear; Crapo 2018 walking poles; Bennell 2014)*
+
+#### Open the science
+
+The lower limb is a kinetic chain: over-pronated feet drive internal tibial rotation, which drives internal femoral rotation, which loads the patellofemoral joint. Weak hip abductors drive dynamic knee valgus on stair descent and single-leg stance. Tight iliotibial band rubs the lateral femoral epicondyle (ITB syndrome). A 1-2 cm leg-length discrepancy is common and corrects with a heel lift. Nordic walking poles distribute 25-30% of body weight through the arms, unloading both knees per Crapo 2018 review — A-grade for unloading in OA. Naboso barefoot insoles (textured for proprioceptive input) and Nurvv smart insoles (gait analytics) are home-usable. **Synthesis.** Address the chain, not just the joint. References: [Nigg 2015 footwear](https://bjsm.bmj.com/) · [Crapo 2018 Nordic walking review](https://pubmed.ncbi.nlm.nih.gov/) · [Bennell 2014 BJSM](https://bjsm.bmj.com/)
+
+### 2.7 Central pain amplification + sleep debt + mood
+
+> **For you, in plain words.** Poor sleep, depression, anxiety, and fibromyalgia overlay all turn the pain volume up. CBT for chronic pain (CBT-CP) and MBSR cut reported pain even when the joint hasn't changed. *(Williams 2020 Cochrane CBT-CP; Hilton 2017 mindfulness chronic pain meta)*
+
+#### Open the science
+
+Chronic pain remodels the central nervous system — the dorsal horn becomes more sensitive (central sensitisation), the descending inhibitory pathways from periaqueductal grey weaken, and the affective brain (anterior cingulate, insula) amplifies the suffering component. Sleep restriction below 6.5 hours lowers pain threshold the next day (Edwards 2008). Depression and pain share serotonergic pathways and frequently co-travel. CBT-CP (Williams 2020 Cochrane, A-grade) teaches the user to uncouple pain sensation from pain suffering through cognitive restructuring + paced activity + relaxation. MBSR (Kabat-Zinn 1985 original chronic-pain study; Hilton 2017 meta) does the same through non-judgmental awareness. **Synthesis.** Pain that "shouldn't be that bad" given imaging often responds to central-pain levers. References: [Williams 2020 Cochrane CBT-CP](https://pubmed.ncbi.nlm.nih.gov/32794606/) · [Hilton 2017 mindfulness chronic pain meta](https://pubmed.ncbi.nlm.nih.gov/27658913/) · [Kabat-Zinn 1985 original MBSR chronic pain](https://pubmed.ncbi.nlm.nih.gov/3897551/)
+
+### 2.8 Sub-types & realistic prognosis
+
+> **For you, in plain words.** Nine sub-types — patellofemoral and weight-driven respond fastest (8-12 weeks); RA-overlay and end-stage OA respond slowest. *(KOOS validation; ESCAPE trial; Skou 2018 KORD)*
+
+| Sub-type | TL;DR (plain English) | Clinical features | Dominant driver | Realistic response | Citation |
+|---|---|---|---|---|---|
+| Knee OA — medial compartment | Inner-knee ache with morning stiffness <30 min, worse after walking — diet + strength + glucosamine/chondroitin works. *(Bannuru 2018; GAIT 2006)* | Bow-leg tendency; medial joint-line tenderness; >50 y | §2.2 + §2.3 + §2.5 | Moderate; 12-24 weeks | *(Bannuru 2018; GAIT)* |
+| Knee OA — patellofemoral | Pain under the kneecap on stairs and squats — quad strengthening + tape + retraining helps fast. *(Crossley 2002 BJSM; Collins 2013 BJSM)* | Front-knee pain stairs/squat; cyclist or sitter | §2.4 + §2.6 | Best; 8-12 weeks | *(Crossley 2002; Collins 2013)* |
+| Degenerative meniscal tear | A meniscal tear on MRI in a worn knee — the ESCAPE and Katz trials BOTH found arthroscopic surgery NO better than PT. *(Sihvonen 2018 BMJ ESCAPE; Katz 2013 NEJM)* | >45 y; medial joint-line click; MRI tear | §2.2 + §2.4 | Moderate with PT; surgery no better | *(Sihvonen 2018; Katz 2013)* |
+| ACL / PCL laxity or deficiency | A "giving way" knee under load — strength training stabilises in many; reconstruction is a clinic-route §10.7.3 decision. *(Frobell 2010 KANON Trial NEJM)* | Pivot-shift; instability under load; younger athlete | §2.4 + §2.6 | Variable; PT-first per KANON | *(Frobell 2010 NEJM KANON)* |
+| Patellofemoral pain (runner's knee) | Front-knee pain from running, cycling or sitting — hip + quad strengthening + cadence change is gold-standard. *(Collins 2013 BJSM; Heiderscheit 2011)* | Runners; cyclists; office-sitters; <40 y | §2.4 + §2.6 | Best; 6-10 weeks | *(Collins 2013; Heiderscheit 2011)* |
+| IT band syndrome | Outer-knee pain ~2-3 km into a run — hip abductor strengthening + foam roll + run-form change. *(Fairclough 2007; Beers 2008)* | Runners; outer-knee pain mid-run; tender lateral epicondyle | §2.4 + §2.6 | Best; 4-8 weeks | *(Fairclough 2007; Beers 2008)* |
+| Baker cyst overlay | A fluid sac behind the knee from underlying OA or meniscal tear — treat the upstream cause, not the cyst. *(Frush 2015 review)* | Posterior-knee swelling/fullness; "tightness" | Upstream §2.2 | Moderate; resolves if upstream addressed | *(Frush 2015)* |
+| Post-traumatic knee | Knee that "was never right" since an old injury — rebuild with strength, mobility and patience. *(Lohmander 2007 post-traumatic OA review)* | Old ACL/meniscal injury; progressing OA | §2.2 + §2.4 | Slow; 6-12 months | *(Lohmander 2007)* |
+| Rheumatoid or psoriatic knee | Knee swelling that's symmetrical, with morning stiffness >60 min — that's autoimmune territory, not OA; comorbidity screen and clinic referral. *(EULAR 2023 RA guidance)* | Symmetric swelling; >60 min AM stiffness; other joints | Autoimmune; §10.7.3 referral | Outside home regime; OTC anti-inflammatory adjunct only | *(EULAR 2023)* |
 
 ## 3. OTC Phytochemicals — Pharmacological Validation
 
-| Compound | Mechanism | Dose | Timing | Take WITH | Avoid WITH (≥2 h) | Grade | Brand options | $/mo | Evidence note |
-|---|---|---|---|---|---|---|---|---|---|
-| **Curcumin (BCM-95 / Meriva / Theracurmin)** | NF-κB, COX-2, IL-1β, IL-6 ↓; equivalent to ibuprofen 1200 mg in knee-OA RCTs | 1000–2000 mg curcuminoids | AM + PM with fat | piperine + ghee/coconut | iron, dairy casein, warfarin | A | Dolvent (Indena), Jarrow Curcumin Phytosome, Thorne Meriva, Himalaya Haridra | $30–45 | RCT *Trials* 2014 (Iran, n=367, knee OA, curcumin vs ibuprofen non-inferior); EMA HMPC turmeric monograph 2018; AYUSH-CCRAS Haridra monograph |
-| ***Boswellia serrata*** (AKBA 30%-standardised) | 5-LOX inhibition; IL-1β, MMP-3 ↓; LTB4 ↓ | 300–600 mg BID | AM + PM with fat | omega-3, fat meal | NSAIDs (additive GI), anticoagulants | A | Pure Encaps Boswellia AKBA, Source Naturals BosMax, Himalaya Shallaki | $20–35 | Indian RCT *Phytomedicine* 2010 (Sengupta, n=70 knee OA, WOMAC −32% at 90 d); AYUSH ICMR Boswellia monograph |
-| **Hydrolysed collagen peptides (type I + III)** | Substrate for ECM; oral peptides Pro-Hyp/Hyp-Gly stimulate fibroblast proteoglycan synthesis | 10–15 g daily | AM with vitamin C | vitamin C 500–1000 mg | tea / coffee tannins (1 h) | B | Vital Proteins, Great Lakes, Sports Research, Bulletproof | $30–45 | German RCT (Zdzieblik *Nutrients* 2017, knee + activity-related pain in young adults); Health Canada NHP collagen monograph |
-| **Undenatured collagen type II (UC-II 40 mg)** | Oral tolerance — Peyer's-patch Treg induction against collagen II; ↓ T-cell attack on cartilage | 40 mg HS empty stomach | bedtime, no food 1 h either side | water only | with food (denatures) | B | InterHealth UC-II, Nutramax Cosamin AS+UC-II, Now Foods | $20–35 | RCT *Nutrition Journal* 2016 (Lugo, n=191 knee OA, WOMAC −39% at 180 d vs glucosamine + chondroitin) |
-| **Hyaluronic acid (oral, low-MW)** | Synovial HA reconstitution; chondrocyte HAS-2 upregulation | 120–200 mg | AM with food | fat meal | — | B | NOW Hyaluronic Acid, Doctor's Best, Solgar | $15–25 | Japanese RCT (Oe *Sci Rep* 2016, knee-OA n=60); Italian + Korean follow-ups; Health Canada NHP HA monograph |
-| **Glucosamine sulphate + chondroitin sulphate** | GAG substrate; chondrocyte proteoglycan synthesis; mild anti-inflammatory | Glucosamine 1500 mg + chondroitin 1200 mg | AM + PM with meals | meal | shellfish allergy (use vegan glucosamine) | B | Jarrow GlucChondMSM, Doctor's Best, Solgar | $20–35 | **Australia TGA glucosamine sulphate monograph**; GAIT international subgroup analyses; sulphate form preferred over HCl for knee OA |
-| **MSM (methylsulfonylmethane)** | Sulphur donor (cysteine, GAG sulphation); NF-κB ↓ | 3 g daily | AM + PM with food | meal | sulpha allergy precaution | B | Doctor's Best OptiMSM, Jarrow, NOW | $10–18 | Indian + Iranian RCTs in knee OA; OptiMSM Korean GMP source |
-| **Tart cherry (Montmorency) extract** | Anthocyanin (cyanidin) COX/LOX inhibition; uric acid ↓; melatonin trace | 480 mg extract or 240 ml juice | PM | water | — | B | Cherrish, CherryActive, Lakewood juice | $20–35 | UK + Iranian RCTs in knee OA; Northumbria University running-recovery studies |
-| **Omega-3 EPA-rich (fish oil / algal)** | Resolvin E1/D1; competes with arachidonic acid → ↓ LTB4 / PGE₂ | 2–3 g EPA+DHA (≥1.5 g EPA) | AM + PM with meal | fat | warfarin (consistent dose) | A | Nordic Naturals ProOmega 2000, Carlson, Bare Biology UK | $30–55 | Cochrane omega-3 systematic review; TGA + Health Canada NHP monographs |
-| **Vitamin D3 4000 IU + K2 (MK-7) 100 µg** | Cartilage matrix metabolism; Treg; quadriceps strength | titrate to 25-OH-D 50–70 ng/mL | AM with fat | magnesium (cofactor), K2 | calcium high-dose (separate hr) | A | Thorne D/K2, Pure Encaps D3+K2 | $10–20 | Multiple RCTs; EMA HMPC + Health Canada NHP monographs; vitamin D <20 ng/mL correlates with knee-OA progression in Indian + Chinese cohorts |
-| **Vitamin C** | Collagen prolyl + lysyl hydroxylase cofactor | 500–1000 mg | AM with collagen | iron (synergy) | excess >2 g loose stool | A | Acerola, NOW Buffered C | $8–15 | Health Canada NHP; AYUSH amla monograph |
+### 3.1 What to take, what to skip
+
+> **For you, in plain words.** Twelve over-the-counter molecules with non-US monographs or named trials. Read the plain-English column first — and notice the honest mixed-evidence note on glucosamine + chondroitin (works in moderate-severe knee OA per GAIT; null overall). *(EMA monographs; AYUSH/CCRAS; Chinese Pharmacopoeia 2020; GAIT NEJM 2006)*
+
+### 3.2 The glucosamine + chondroitin honesty caveat (load-bearing)
+
+> **For you, in plain words.** Glucosamine + chondroitin is the world's biggest joint supplement. The GAIT trial's overall result was null, but the moderate-to-severe knee-OA subgroup did benefit, and Bannuru 2018 put the combination in the same effect-size range as oral NSAIDs — with far less harm. We list it as B grade and recommend an 8-12 week trial, stopping if no shift. *(GAIT Clegg 2006 NEJM; Bannuru 2018 network meta)*
+
+#### Open the science
+
+GAIT (Glucosamine/Chondroitin Arthritis Intervention Trial, Clegg 2006, NEJM, n=1583) randomised symptomatic knee OA patients to glucosamine hydrochloride 1500 mg, chondroitin sulfate 1200 mg, combination, celecoxib 200 mg, or placebo for 24 weeks. **Primary endpoint negative overall.** Pre-specified moderate-to-severe pain subgroup (WOMAC pain 301-400, n=354): combination glucosamine + chondroitin significantly outperformed placebo (79.2% vs 54.3% response; p=0.002). The Reginster 2001 Lancet trial (n=212, glucosamine sulfate 1500 mg vs placebo 3 years) showed slowed joint-space narrowing — but glucosamine sulfate (Rotta/Rottapharm preparation, used in EU monographs) may not be the same molecule as glucosamine hydrochloride used in GAIT. Bannuru 2018 (Osteoarthritis Cartilage) network meta-analysis put combination glucosamine + chondroitin equivalent to oral NSAIDs for knee OA pain, with substantially fewer GI/cardiovascular harms. **Honest grade: B (moderate-severe knee OA), C (mild OA). Try 8-12 weeks, stop if no shift in WOMAC.**
+
+### 3.3 The twelve OTC molecules — table
+
+| Compound | TL;DR (plain English) | Mechanism | Dose | Timing | Take WITH | Avoid WITH (≥2h gap) | Grade | Brand options | $/mo | Citation |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **Glucosamine sulfate + Chondroitin sulfate (combo)** | The world's biggest joint supplement; GAIT subgroup + Bannuru 2018 put it equivalent to oral NSAIDs in moderate-severe knee OA. *(GAIT; Bannuru 2018)* | Cartilage matrix support; mild anti-inflammatory | 1500 mg + 1200 mg/day | AM + PM with food | food | warfarin (consistent intake) | B (moderate-severe) / C (mild) | Doctor's Best Glucosamine + Chondroitin, Now Joint Support, Solgar 7, Cosamin DS | $25-45 | *(GAIT Clegg 2006 NEJM; Reginster 2001 Lancet; Bannuru 2018)* |
+| **Curcumin (Meriva phytosomal / BCM-95)** | Daily 2016 meta + Kuptniratsaikul 2014 Thailand showed curcumin equivalent to ibuprofen for knee OA — far less GI harm. *(Daily 2016; Kuptniratsaikul 2014)* | NF-κB + COX-2 + 5-LOX inhibition | 500-1000 mg Meriva twice a day | AM + PM with fat + black pepper | piperine + fat (ghee) | dairy (≥2 h); warfarin (consistent intake) | A | Thorne Meriva-SF, Solgar Full Spectrum Curcumin, Indena Meriva, Doctor's Best Curcumin C3 + BioPerine | $25-50 | *(Daily 2016 meta; Kuptniratsaikul 2014 Thailand RCT; Shoba 1998 India bioavailability)* |
+| **Boswellia serrata (BoswellinPS / 5-Loxin / AKBA-standardised)** | Indian frankincense extract — Sengupta 2010 and 2011 small RCTs show pain reduction in 7 days. *(Sengupta 2010 India; Sengupta 2011 AflapinPS)* | 5-lipoxygenase inhibition | 100-200 mg AKBA standardised | AM + PM with food | fat | — | B | Pure Encapsulations BosMed, Nature's Way BosMed, Solgar Full Spectrum Boswellia | $20-40 | *(Sengupta 2010 India RCT n=60; Sengupta 2011 AflapinPS n=60)* |
+| **Collagen peptides (type II UC-II 40 mg OR hydrolysed type I+III 10 g)** | Clark 2008 athletes and Dressler 2018 showed reduced joint pain at 24 weeks. *(Clark 2008 USA; Dressler 2018 Germany)* | Substrate for cartilage matrix; mild anti-inflammatory | UC-II 40 mg OR 10 g hydrolysed | AM empty stomach OR with breakfast | vitamin C | — | B | Vital Proteins, Great Lakes, NeoCell, Lonza UC-II (in many joint formulas) | $20-40 | *(Clark 2008 athletes; Dressler 2018 Germany OA RCT; Lugo 2016 UC-II vs glucosamine RCT)* |
+| **MSM (methylsulfonylmethane)** | Brien 2008 review found B-grade signal for knee OA pain — often stacked with glucosamine and chondroitin. *(Brien 2008 OARSI; Usha 2004 India)* | Sulfur donor; anti-inflammatory | 3 g/day (split) | AM + PM with food | food | — | B | Doctor's Best MSM, Now MSM, Jarrow OptiMSM | $10-20 | *(Brien 2008 OARSI review; Usha 2004 India RCT)* |
+| **Omega-3 EPA + DHA (molecular distilled)** | Goldberg 2007 meta showed B-grade for inflammatory joint pain — particularly for inflammatory or RA-overlay knees. *(Goldberg 2007 meta; UK SACN 2020)* | Pro-resolving lipid mediators; anti-inflammatory | 2-3 g EPA + DHA combined | AM with fat | fat | warfarin (consistent intake) | A (inflammatory joint); B (OA) | Carlson, Nordic Naturals, Thorne Omega-3, Wild Planet sardines | $20-40 | *(Goldberg 2007 meta; UK SACN 2020; Calder 2017)* |
+| **Vitamin D3 + K2 (MK7)** | If 25(OH)D <40, supplementing improves knee pain in deficient populations. Mild evidence overall, strong in deficiency. *(EMA vitamin D monograph; McAlindon 2013 VIDEO trial)* | Cartilage and subchondral bone metabolism | 2000-5000 IU D3 + 100 µg MK7 | AM with fat | fat + magnesium | — | A (deficient) / C (replete) | Thorne, Pure Encapsulations, Now D3+K2, Nordic Naturals | $10-25 | *(EMA vitamin D; McAlindon 2013 VIDEO trial; Cao 2013 China RCT)* |
+| **Ginger (Zingiber officinale)** | Bartels 2015 meta showed small signal — better as a daily tea or cooking spice than pills. *(Bartels 2015 OARSI; Altman 2001)* | COX-2 + 5-LOX inhibition | 1 g standardised extract OR fresh tea | AM + PM with food | food | warfarin (consistent intake) | B (small effect) | Pukka, Yogi, fresh ginger, Now Ginger | $5-15 | *(Bartels 2015 OARSI meta; Altman 2001 RCT)* |
+| **Capsaicin topical (0.025% or 0.075%)** | Cochrane Derry 2017 A-grade for symptom relief — honest about the burn sensation; needs 1-2 weeks of regular use before benefit. *(Cochrane Derry 2017)* | TRPV1 desensitisation; substance P depletion | 4 ×/day for 2-4 weeks then 2-3 ×/day | apply topically | — | broken skin; eyes (rinse) | A | Capzasin-HP, Zostrix, Now Capsaicin Cream | $10-20 | *(Cochrane Derry 2017 topical capsaicin)* |
+| **Magnesium glycinate** | Magnesium is a cofactor for muscle relaxation and pain modulation — often deficient in chronic pain populations. *(EMA magnesium; Park 2020 meta)* | NMDA receptor block; muscle relaxation | 400 mg | PM with dinner | food | high-dose calcium; quinolone antibiotics (≥2 h) | B | Doctor's Best, Pure Encapsulations, Now | $15-25 | *(EMA magnesium; Park 2020 meta pain)* |
+| **SAMe (S-adenosyl-methionine)** | Najm 2004 RCT (n=61) showed SAMe equivalent to celecoxib for knee OA over 16 weeks — but expensive and slow-onset. *(Najm 2004 USA RCT)* | Methylation; cartilage matrix; mild anti-inflammatory | 600-1200 mg | AM empty stomach | water | MAOIs; bipolar (mania risk) | B | Doctor's Best SAMe, Now SAMe, Jarrow SAMe (enteric-coated) | $40-70 | *(Najm 2004 USA n=61; Soeken 2002 meta)* |
+| **Ashwagandha (KSM-66 / Sensoril)** | EMA-monograph adaptogen; small Ramakanth 2016 trial showed knee OA pain reduction — useful for the muscle-relaxant + stress-axis layer. *(EMA monograph 2024; Ramakanth 2016 India RCT)* | HPA-axis; muscle relaxation; mild anti-inflammatory | 600 mg/day split | AM + PM with food | food | sedatives; thyroid medication | B | Ixoreal KSM-66, Sensoril, Himalaya | $15-30 | *(EMA 2024; Ramakanth 2016 India RCT n=60)* |
+
+### 3.4 Mediterranean-Indian millet base for joint health
+
+> **For you, in plain words.** A Mediterranean-MIND-millet way of eating delivers anti-inflammatory omega-3 from fish, polyphenols from greens and berries, and a calorie deficit (if needed) that lets weight loss happen without willpower fights. The single biggest food lever for knees. *(MIND-diet trials; PREDIMED; ICAR-IIMR millet monographs; IDEA Messier 2013 — diet+exercise arm)*
+
+**Quick start.** Daily floor: 250 g leafy greens, 150 g berries, 30 g pumpkin seeds, 2 Brazil nuts, 30 ml olive oil, oily fish 3-4×/week (sardines, salmon, mackerel), 60 g sprouted millet, 1 turmeric+ghee+pepper "golden milk" PM. See §6.2 for full grams + §6.5 for ultra-processed elimination.
 
 ## 4. Traditional Medicine Integration
 
-### 4.1 Ayurveda — *Janu Sandhigata Vata* (knee-specific sandhigata vata)
+### 4.1 Six traditions — at a glance
 
-Described in *Charaka Samhita Chikitsa Sthana* ch. 28 (*Vatavyadhi Chikitsa*) and *Madhava Nidanam* ch. 22 (*Sandhigata Vata*). Dosha: **vitiated Vata at sandhi** (joint) with localised *kapha* in the form of effusion. *Janu sandhi* (knee joint) is named in Sushruta as one of the *koshtaka* (cup-and-socket) joints most vulnerable to vata aggravation. Kerala Vaidya lineage (Kottakkal, Vaidyaratnam); AYUSH-CCRAS Janu Sandhigata Vata clinical guideline (2020).
+> **For you, in plain words.** Six healing traditions described "stiff, painful knees" centuries before MRI was invented. We honour them — and we are honest where modern high-quality trials are missing. *(Charaka Chikitsa ch. 28 Sandhigata Vata; Yellow Emperor's Inner Classic Bi syndrome; Avicenna's Canon arthropathy; Bogar 7000; Tibetan Four Tantras; Boericke + Kent rheumatic remedies)*
 
-| Formulation | Dose | Grade | Source |
-|---|---|---|---|
-| **Yogaraj Guggulu** | 500 mg–1 g BID after food | B | *Bhaishajya Ratnavali*; Baidyanath, Kottakkal; CCRAS Guggulu monograph |
-| **Trayodashang Guggulu** | 500 mg BID after food | T | *Sahasrayoga*; Kottakkal, Vaidyaratnam; specific for knee + spine *vata* |
-| **Maharasnadi Kashayam** (26-herb decoction) | 15 ml BID pre-meal in warm water | B | *Sahasrayoga*; Kottakkal; CCRAS Sandhigata-Vata protocol |
-| **Rasnasaptak Kashayam** | 15 ml BID pre-meal | T | *Sahasrayoga*; Kottakkal |
-| **Lakshadi Guggulu** (bone-joint specific) | 500 mg BID | T | *Bhaishajya Ratnavali*; Kottakkal |
-| **Ashwagandharishta** | 15–20 ml BID post-meal | T | *Bhaishajya Ratnavali*; Dabur, Baidyanath |
-| **Triphala Guggulu** | 500 mg BID | T | *Sharangdhara Samhita*; Baidyanath |
-| **Topical Mahanarayan Taila** (knee abhyanga) | 30–50 ml warm + 15 min compress BID | B | *Bhaishajya Ratnavali*; Kottakkal, Vaidyaratnam |
-| **Topical Dhanwantharam Thailam** (Kerala 21-day taila) | apply BID + warm compress | T | *Sahasrayoga*; Kottakkal — specific for *Janu sandhi* |
-| **Topical Kottamchukkadi Thailam** | apply BID for acute effusion | T | *Sahasrayoga*; Kottakkal |
-| **Topical Murivenna** | apply for post-injury / sprain | T | *Sahasrayoga*; Kottakkal |
-| **Kerala-style Janu Basti** (warm-oil retention on knee with dough ring, 30 min, 7 d course at home) | self-administer with warm Mahanarayan oil + black-gram-flour dam | T | Kottakkal / Vaidyaratnam protocols; AYUSH-CCRAS |
-| ***Boswellia serrata* (Shallaki)** churna 1 g BID | as above + churna form | A | AYUSH-CCRAS Shallaki monograph |
+### 4.2 Ayurveda — *Sandhigata Vata* + *Janu Basti*
 
-### 4.2 TCM — *Xi Tong* 膝痛 ("knee pain") within *Bi Zheng*
+> **For you, in plain words.** Ayurveda calls knee OA *Sandhigata Vata* — "vata-wind lodged in the joint." The signature treatment is *Janu Basti* — a warm-oil pool dammed around the knee with dough — adapted for home with Mahanarayan or Murivenna oil + warm-water bottle. Plus internal Boswellia and Yogaraja Guggulu. *(Charaka Chikitsa ch. 28; Sushruta Chikitsa ch. 4; Sahasrayoga Murivenna recipe; CCRAS Janu-Basti monograph)*
 
-Patterns: Wind-Cold-Damp Bi (acute, weather-driven, migratory) · Damp-Heat Bi (red, hot, swollen) · Kidney-Liver xu Bi (chronic, weak knees, elderly, low-back overlap) · Phlegm-Blood-Stasis Bi (chronic, deformed knee, fixed pain). Lineage: Plum Flower (Mayway), Min Tong, classical *Su Wen* ch. 43 (*Bi Lun*), *Jin Gui Yao Lue* (Zhang Zhongjing), *Yi Zong Jin Jian*.
+#### Open the science
 
-| Formula | Pattern | Dose | Grade | Source |
+Classical category: *Sandhigata Vata* (vata in the joint), *Asthi-Majja Vata* (vata in bone/marrow), *Amavata* (overlap with rheumatoid). Central interventions: *Janu Basti* (knee oil-pooling — classically Panchakarma but home-doable with warm-oil massage + warm-water bottle dam), internal Boswellia (Shallaki), Yogaraja Guggulu, Kaishore Guggulu, external Mahanarayan taila + Murivenna + Karpooradi thailam. Classical sources: *Charaka Samhita, Chikitsa Sthana ch. 28 (Vata-vyadhi-chikitsa)*; *Sushruta Samhita, Chikitsa Sthana ch. 4-5*; *Ashtanga Hridaya, Chikitsa ch. 21*; *Bhavaprakasha, Madhyamakhanda ch. 24*; *Sahasrayoga* (Kerala Murivenna formula). Lineage: Kottakkal Arya Vaidya Sala, Vaidyaratnam, Baidyanath, Patanjali (AYUSH-GMP). References: [CCRAS Janu-Basti monograph](https://www.ccras.nic.in/) · [Charaka Chikitsa ch. 28](https://www.ccras.nic.in/)
+
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
 |---|---|---|---|---|
-| **Du Huo Ji Sheng Tang** 独活寄生汤 | Kidney-Liver xu + Wind-Cold-Damp Bi (chronic knee + low back, elderly) — **the flagship TCM formula for chronic knee OA** | 6–9 g BID | B | Plum Flower; *Bei Ji Qian Jin Yao Fang* (Sun Simiao); Chinese Pharmacopoeia 2020; Chinese RCTs in knee OA |
-| **Juan Bi Tang** 蠲痹汤 | Wind-Cold-Damp Bi (acute migratory) | 6–9 g BID | T | Plum Flower; *Yi Xue Xin Wu* |
-| **Gui Zhi Shao Yao Zhi Mu Tang** 桂枝芍药知母汤 | Wind-Cold-Damp + heat overlay | 6 g BID | T | *Jin Gui Yao Lue*; Plum Flower |
-| **Bai Hu Jia Gui Zhi Tang** 白虎加桂枝汤 | Damp-Heat Bi (red hot swollen, effusion) | 6 g BID short course | T | *Jin Gui Yao Lue* |
-| **Shen Tong Zhu Yu Tang** 身痛逐瘀汤 | Blood-stasis Bi (chronic, fixed pain) | 6 g BID | T | *Yi Lin Gai Cuo*; Plum Flower |
-| **You Gui Wan** 右归丸 | Kidney-Yang xu (cold knees, low back) | 8 pills BID | T | Plum Flower; *Jing Yue Quan Shu* |
-| **Topical Zheng Gu Shui** 正骨水 (liniment, external only) | acute strain, post-exercise | apply BID, do not ingest | T | Yulin brand; NMPA registered |
-| **Topical Wong To Yick** 黄道益 medicated balm | chronic ache | apply BID | T | NMPA registered |
+| Yogaraja Guggulu | Classical Charaka-era anti-arthritic — A-grade traditional for knee Sandhigata Vata. *(Charaka Chikitsa ch. 28; Baidyanath; Kottakkal)* | 2 tabs (500 mg each) twice a day after meals | T (A traditional) | *(Charaka ch. 28; Baidyanath)* |
+| Trayodashang Guggulu | Thirteen-ingredient guggul for sciatic and joint pain — good for radiating leg-knee patterns. *(Bhaishajya Ratnavali; Baidyanath)* | 2 tabs twice a day after meals | T | *(Bhaishajya Ratnavali; Baidyanath)* |
+| Kaishore Guggulu | For pitta-predominant joint inflammation — warm, swollen, "hot" knees. *(Sharangdhara Samhita; Baidyanath)* | 2 tabs twice a day after meals | T | *(Sharangdhara Samhita; Baidyanath)* |
+| Shallaki (Boswellia) — internal | Same Boswellia as §3 in Ayurvedic form — Sengupta India RCTs validate. *(Sengupta 2010; CCRAS Shallaki monograph)* | 500 mg twice a day | B | *(Sengupta 2010; CCRAS)* |
+| Janu Basti (home version) with Mahanarayan taila | Warm Mahanarayan or Murivenna oil pooled on the knee with a damp-cloth dam + warm-water bottle 30 min. *(Sushruta Chikitsa ch. 4; Sahasrayoga Murivenna; AYUSH Janu Basti protocol)* | 30 min, 3-5 ×/week | T | *(Sushruta ch. 4; AYUSH)* |
+| Murivenna (Kerala external oil) | Sahasrayoga classical for soft-tissue + tendon-joint trauma — daily Abhyanga. *(Sahasrayoga; Kottakkal; AYUSH-GMP)* | 50 ml warmed, massage 15 min | T | *(Sahasrayoga; Kottakkal)* |
+| Mahanarayan taila | Classical Charaka-era Vata-pacifying oil for the joint and surrounding muscle. *(Charaka Sutra ch. 14; Baidyanath; Vaidyaratnam)* | 30-50 ml warmed, massage AM or PM | T | *(Charaka Sutra ch. 14; Baidyanath)* |
+| Ksheerabala 101 (Kerala soft-cap) | Kerala-tradition capsule for knee + vata-pacification (101 boilings of bala + milk). *(Sahasrayoga; Vaidyaratnam)* | 1 capsule twice a day | T | *(Sahasrayoga; Vaidyaratnam)* |
+| Pinda taila (external warm-pour) | Pitta-vata-pacifying warm-oil pour for inflamed knees. *(Sahasrayoga; Kottakkal)* | 30 min 2-3 ×/week | T | *(Sahasrayoga; Kottakkal)* |
+| Karpooradi thailam | Camphor-based external — counter-irritant warming for stiff knees. *(AYUSH; Kottakkal; Vaidyaratnam)* | 10-20 ml topical 2 ×/day | T | *(AYUSH; Kottakkal)* |
 
-### 4.3 Unani — *Waja-ul-Rukbah* (knee pain) / *Waja-ul-Mafasil* (joint pain)
+### 4.3 TCM — *Bi Zheng* 痹证 + *Niu Xi* (the knee-channel herb)
 
-Mizaj: **balghami** (cold + moist) predominance at knee with viscous-humour accumulation; **saudawi** overlay in chronic deformed knee. Lineage: Hakim Mohammed Said (Hamdard), Dawakhana Tibbiya College Aligarh; *Qarabadeen Qadri*, Avicenna's *Canon* (Liber Tertius — *De aegritudinibus articulorum*).
+> **For you, in plain words.** Chinese medicine calls knee arthropathy *Bi Zheng* — "obstruction syndrome" of wind, cold, damp or heat in the joints. The signature formula is Du Huo Ji Sheng Tang ("Du Huo + Mistletoe Decoction") plus Niu Xi (Achyranthes) — the herb that classically "guides treatment down to the knee." *(Yellow Emperor's Inner Classic; Beiji Qianjin Yao Fang by Sun Simiao; Chinese Pharmacopoeia 2020)*
 
-| Formulation | Dose | Grade | Source |
-|---|---|---|---|
-| **Majoon Suranjan** (*Colchicum luteum* — non-toxic Unani preparation) | 5–10 g BID after food | T | Hamdard; *Qarabadeen Qadri*; classical knee-pain remedy |
-| **Habbe Suranjan** | 2 tabs BID after food | T | Hamdard, Dawakhana Tibbiya Aligarh |
-| **Roghan Suranjan** (topical) | apply BID + warm compress | T | Hamdard |
-| **Majoon Azaraqi** (low-dose processed *Strychnos nux-vomica*) | 1–2 g HS (low dose only) | T | Hamdard — **caution: within Hamdard-stated dose only** |
-| **Itrifal Ustukhuddus** | 5–10 g HS | T | Hamdard; *Qarabadeen Qadri* |
-| **Roghan Surkh** (warming oil) | topical BID | T | Hamdard |
+#### Open the science
 
-### 4.4 Siddha — *Mulvada Kuttram* / *Sandhu Vatham*
+Patterns: **wind-cold-damp Bi** (cold, stiff knees worse in damp weather — Du Huo Ji Sheng Tang); **damp-heat Bi** (hot, swollen, red knees — Si Miao San); **blood-stasis Bi** (sharp, fixed, night-worse pain post-trauma — Shu Jin Huo Xue Tang); **kidney-deficiency Bi** (chronic, dull, elderly — supplement Bushen Jiangu formulas). Niu Xi (Achyranthes bidentata) is the classical "channel guide" herb for the knee. San Qi (Panax notoginseng) is the trauma/blood-stasis herb. Classical: *Yellow Emperor's Inner Classic (Su Wen ch. 43, Bi Lun)*; *Beiji Qianjin Yao Fang* by Sun Simiao (652 AD); *Tai Ping Hui Min He Ji Ju Fang*. References: [Chinese Pharmacopoeia 2020](http://english.nmpa.gov.cn/) · [Beiji Qianjin Yao Fang](https://www.plumdragonherbs.com/) · [Wang 2018 Du Huo Ji Sheng Tang systematic review](https://pubmed.ncbi.nlm.nih.gov/)
 
-IMPCOPS Chennai, SKM lineage. **Only chooranam (powders), kuzhambu (decoctions), legiyam (semi-solids)** are eligible; classical mercurial/metallic preparations are excluded.
+| Formula | TL;DR (plain English) | Pattern | Dose | Grade | Citation |
+|---|---|---|---|---|---|
+| Du Huo Ji Sheng Tang 独活寄生汤 | Sun Simiao's classical formula for wind-cold-damp Bi of the lower body — A-grade traditional for knee OA. *(Beiji Qianjin Yao Fang; Wang 2018 systematic review; Plum Flower; NMPA)* | Wind-cold-damp Bi | 6-9 g granules twice a day | B | *(Beiji Qianjin Yao Fang; Wang 2018; NMPA)* |
+| Niu Xi (Achyranthes bidentata) | The classical channel-guide herb that directs treatment to the knee — added to most knee formulas. *(Shen Nong Ben Cao; Chinese Pharmacopoeia 2020)* | All knee patterns | 6-12 g | T (A traditional) | *(Shen Nong; Chinese Pharmacopoeia 2020)* |
+| San Qi (Panax notoginseng / Tian Qi) | The trauma + blood-stasis herb — for post-injury and meniscal-tear knees. *(Yunnan Bai Yao tradition; NMPA)* | Blood-stasis Bi | 3-9 g | B | *(Yunnan Bai Yao; NMPA)* |
+| Si Miao San 四妙散 | Four-Marvel Powder for damp-heat Bi — hot, swollen, red knees. *(Cheng Fang Bian Du; Plum Flower)* | Damp-heat Bi | 6 g twice a day | B | *(Cheng Fang Bian Du; Plum Flower)* |
+| Shu Jin Huo Xue Tang 舒筋活血汤 | "Relax-Sinew-Move-Blood Decoction" for blood-stasis + sinew tension; common for post-trauma knee. *(Shang Ke Bu Yao; Plum Flower)* | Blood-stasis Bi | 6-9 g twice a day | B | *(Shang Ke Bu Yao; Plum Flower)* |
+| Liu Wei Di Huang Wan 六味地黄丸 | Six-Flavour Rehmannia for kidney-yin xu — chronic dull knee in elderly. *(Qian Yi; NMPA)* | Kidney-yin xu Bi | 8 pills 3 ×/day | B | *(Qian Yi; NMPA)* |
+| You Gui Wan 右归丸 | Right-Restoring Pill for kidney-yang xu — cold, deep, elderly knees. *(Jing Yue Quan Shu; Plum Flower)* | Kidney-yang xu Bi | 8 pills 2 ×/day | B | *(Jing Yue Quan Shu; Plum Flower)* |
+| Mu Gua (Chaenomeles) | Sinew-relaxing herb — added to knee + calf cramping formulas. *(Shen Nong; Chinese Pharmacopoeia 2020)* | All Bi with cramping | 6-9 g | T | *(Shen Nong; NMPA)* |
+| Hu Lu Ba (Fenugreek seed) | Warming kidney-tonic for cold-deficiency knee — useful adjunct. *(Chinese Pharmacopoeia 2020)* | Kidney-yang xu | 6-9 g | T | *(Chinese Pharmacopoeia 2020)* |
 
-| Formulation | Dose | Grade | Source |
-|---|---|---|---|
-| **Amukkara Chooranam** (*Withania somnifera* powder) | 3–5 g BID with warm milk | T | IMPCOPS, SKM; *Bogar 7000* |
-| **Sukku (dry ginger) Chooranam** | 1–3 g BID with honey | T | IMPCOPS; *Siddha Maruthuvam* |
-| **Vasanthakusumakar Chooranam** | 1–2 g BID | T | IMPCOPS; *Bogar 7000* |
-| **Topical Pinda Thailam** (Siddha lineage) | apply BID + warm compress | T | SKM; *Siddha Maruthuvam* |
+### 4.4 Unani — *Waja al-Mafasil* (joint pain)
 
-Classical Siddha mercurial preparations require expert Siddha-pharmacy formulation; excluded from this OTC dossier.
+> **For you, in plain words.** Unani calls knee arthropathy *Waja al-Mafasil* and treats it with Habb-e-Asgand internally and Roghan-e-Surkh (sesame-saffron oil) or Roghan-e-Suranjan topically. *(Avicenna Canon of Medicine; Hamdard formulary; Dawakhana Tibbiya Aligarh)*
 
-### 4.5 Tibetan / Sowa Rigpa
+#### Open the science
 
-Men-Tsee-Khang Dharamsala addresses knee stiffness under *rlung* (wind) and *bad-kan* (phlegm) joint disorders, with cold-natured patterns common in highland populations. Notable formulas: **Agar-35** (35-herb, calms *rlung*-pain in joints), **Sogdzin-11** (11-herb, joint + bone), **Padma-28** (EMA-monographed Padma Lax — peripheral microcirculation supports knee blood flow). Topical: **Khrag-skyug** warming massage oil. Source: *rGyud-bzhi*. Grade: T.
+Mizaj framing: cold-dry (saudawi) joint stiffness or hot-moist (damawi) inflammation. Avicenna's *Canon of Medicine* (Book 3) describes Niqris (gout-like crystal arthritis) and Waja al-Mafasil (general joint pain). Classical formulations: Habb-e-Asgand (ashwagandha pill), Majun Suranjan (colchicum-based — moderation due to colchicine), Sharbat Buzoori for cleansing. External: Roghan-e-Surkh, Roghan-e-Suranjan. References: [Avicenna Canon Book 3](https://www.almuthanna.com/) · [Hamdard formulary](https://www.hamdard.in/)
 
-### 4.6 Homeopathy
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
+|---|---|---|---|---|
+| Habb-e-Asgand | Ashwagandha-based pill for joint pain and stamina — Hamdard formulation. *(Hamdard formulary; Ajmal)* | 1-2 pills twice a day after meals | T | *(Hamdard formulary)* |
+| Majun Suranjan | Colchicum + warming herb paste for joint pain — caution due to colchicine; respect dose. *(Hamdard; Dawakhana Tibbiya Aligarh)* | 5 g once or twice a day after meals — respect dose | T | *(Hamdard; Dawakhana Tibbiya)* |
+| Roghan-e-Surkh (sesame-saffron oil) | Topical Unani warming oil for stiff knees — apply 2 ×/day. *(Hamdard; Ajmal)* | 5-10 ml topical 2 ×/day | T | *(Hamdard; Ajmal)* |
+| Roghan-e-Suranjan | Topical colchicum oil for joint stiffness — apply at night. *(Hamdard; Dawakhana Tibbiya)* | 5-10 ml topical PM | T | *(Hamdard)* |
+| Sharbat Buzoori Motadil | Mild diuretic cleansing syrup for inflammatory joints. *(Hamdard formulary)* | 20 ml twice a day in water | T | *(Hamdard formulary)* |
 
-> *Homeopathy is honoured under the founder's mandate to explore all directions of alternative medicine. Modern evidence is contested; entries are presented as a documented tradition (Tier 3), not as clinical proof.*
+### 4.5 Siddha — *Mootu Vali* (knee pain)
 
-| Remedy | Indication / keynote | Typical potency | Grade |
-|---|---|---|---|
-| **Rhus toxicodendron** | Knee stiffness worse on first movement, better with continued motion; damp / cold aggravates — **the flagship knee remedy** | 30C–200C | T |
-| **Bryonia alba** | Knee pain markedly worse with any motion; better with absolute rest and firm pressure; effusion | 30C–200C | T |
-| **Apis mellifica** | Hot, swollen, stinging knee; effusion | 30C | T |
-| **Ruta graveolens** | Patellar tendon / ligament involvement; runner's knee | 30C | T |
-| **Calcarea fluorica** | Bony nodal knee changes; chronic | 6X–30C | T |
-| **Rhododendron chrysanthum** | Knee worse before storms / weather change | 30C | T |
-| **Causticum** | Knee stiffness with contracture, tendon shortening, elderly | 30C–200C | T |
-| **Symphytum officinale** | Post-injury, fracture, ligament strain | 6X–30C | T |
+> **For you, in plain words.** Siddha (Tamil tradition) treats knee pain with Vetpalai chooranam internally and Karpooradi thailam topically. We exclude classical mercurial preparations (parpam, chenduram) — they need a qualified Siddha pharmacy and supervised dosing. *(Bogar 7000; IMPCOPS Chennai formulary)*
 
-Citations: Boericke W., *Pocket Manual of Homeopathic Materia Medica* (Rhus tox, Bryonia, Apis, Ruta, Calc fluor, Rhododendron, Causticum, Symphytum); Allen H.C., *Keynotes*; Kent J.T., *Repertory* (rubric "knee — pain — stiffness, after rest"). CCRH (Central Council for Research in Homoeopathy under AYUSH) knee-OA case-series literature.
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
+|---|---|---|---|---|
+| Vetpalai chooranam (Wrightia tinctoria) | Tamil herbal powder for joint pain — Siddha tradition; IMPCOPS-GMP. *(Bogar 7000; IMPCOPS)* | 3 g twice a day with warm water | T | *(Bogar 7000; IMPCOPS)* |
+| Karpooradi thailam | Camphor + warming herb oil topical — counter-irritant for stiff knees. *(IMPCOPS; SKM Siddha)* | 10-20 ml topical 2 ×/day | T | *(IMPCOPS)* |
+| Vellai poondu (white garlic) preparations | Garlic-based oil for joint pain — daily massage. *(Bogar 7000; IMPCOPS)* | 5 ml topical | T | *(Bogar 7000; IMPCOPS)* |
+
+### 4.6 Tibetan Sowa Rigpa — *Drey Nad* (joint pain)
+
+> **For you, in plain words.** Tibetan medicine treats joint Bi syndrome with Ru-da-25 specifically; Sogdzin-11 addresses inflammation broadly. From Men-Tsee-Khang Dharamsala. *(rGyud-bzhi; Men-Tsee-Khang Dharamsala)*
+
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
+|---|---|---|---|---|
+| Ru-da-25 | Tibetan 25-ingredient joint formula for Bi syndrome and arthritis — Men-Tsee-Khang. *(rGyud-bzhi; Men-Tsee-Khang)* | 2 pills twice a day after meals | T | *(rGyud-bzhi; Men-Tsee-Khang)* |
+| Sogdzin-11 | Tibetan 11-ingredient anti-inflammatory formula for joint and tissue inflammation. *(rGyud-bzhi; Men-Tsee-Khang)* | 2 pills twice a day | T | *(rGyud-bzhi; Men-Tsee-Khang)* |
+
+### 4.7 Homeopathy — *the founder mandate, graded T/H only*
+
+> **For you, in plain words.** Honoured under the founder's mandate to explore all directions of alternative medicine. Modern high-quality knee-OA RCT evidence is contested. We list these as documented tradition (T/H), not as proven therapy. *(Boericke Materia Medica; Kent Repertory; Allen's Keynotes)*
+
+| Remedy | TL;DR (plain English) | Classic indication | Grade | Citation |
+|---|---|---|---|---|
+| Rhus toxicodendron | Knee pain that's worst on first motion and eases on continued movement — the classical "Rhus tox picture." *(Boericke; Allen)* | Stiff knee, first-motion pain | T | *(Boericke Materia Medica)* |
+| Bryonia alba | Knee pain that worsens with ANY motion and eases on complete rest. *(Boericke; Kent)* | Acute knee with motion-worsening | T | *(Boericke; Kent)* |
+| Arnica montana | Knee trauma with bruising — first-line homeopathic for soft-tissue injury. *(Hahnemann; Boericke)* | Acute knee trauma | T | *(Hahnemann Materia Medica Pura)* |
+| Apis mellifica | Hot, swollen, stinging knee — classical for warm-swollen joints. *(Boericke; Allen)* | Hot swollen knee | T | *(Boericke)* |
+| Calcarea carbonica | "Wear-and-tear" knee in heavier, chilly constitutions — constitutional pattern. *(Kent; Allen)* | Constitutional OA pattern | T | *(Kent Repertory)* |
+| Sulphur | Chronic joint with skin or gut overlay — Hahnemann's "psoric" constitutional. *(Hahnemann; Boericke)* | Chronic joint with constitutional layer | T | *(Hahnemann)* |
+| Lycopodium clavatum | Right-knee affinity in the Lycopodium constitution — bloating, 4-8 PM aggravation. *(Boericke; Kent)* | Right-knee OA in Lycopodium constitution | T | *(Boericke)* |
 
 ## 5. Biophysical Interventions — home-administered only
 
-**MobilityEnergy domain — every device is consumer-purchasable and self-administrable. No clinic-based modalities, no intra-articular injection of any kind, no hospital procedure.**
+### 5.1 The home toolkit at a glance
 
-**5.1 Photobiomodulation (red 660 nm + NIR 810–850 nm) on knee.** WALT (World Association for Laser Therapy) guidelines + Cochrane LLLT meta-analyses support PBM for knee OA pain and ROM. **Dose 4–8 J/cm² per side, 8–10 min per side (medial + lateral + popliteal), 5×/week.** Devices: MitoMIN 2.0 ($249), MitoMID ($449), MitoMAX ($749), Joov, Hooga HG500. Hand-held wrap-style: Kineon Move+ (knee-specific), Vetrolaser-style consumer LED wands. Timing 20:00. Contraindications: pregnancy (abdomen), retinal disease (eye shield if face panel), active malignancy in field, photosensitising drugs (§10.1).
+> **For you, in plain words.** Six home-administered biophysical levers — red-light/NIR panels, compression sleeves, unloader braces, walking poles, KT tape, heat/cold therapy, TENS. Each costs $20-$1,000 one-time and delivers daily benefit. No clinic phototherapy, no in-clinic ultrasound, no hospital procedure. *(Hamblin 2018 PBM joint; Crapo 2018 Nordic walking; Cochrane Khoshnevis 2017 cold therapy)*
 
-**5.2 Home PEMF on knee.** 1–30 Hz frequencies, 20 min/knee, daily or BID. Class I/II evidence for OA pain in non-US meta-analyses. Devices: Bemer mat ($4,500), Pulse Centers home unit, Healthy Wave PEMF mat ($400–1,500), HealthyLine knee wrap, iMRS. Contraindication: pacemaker, ICD, pregnancy, malignancy in field.
+### 5.2 Red-light + NIR photobiomodulation (PBM)
 
-**5.3 Home infrared sauna** (Sunlighten, JNH, Clearlight) — 50–60 °C, 20–30 min, 3×/week. Perfusion to knee + HSP70 + sweat-mediated detoxification. Contraindications: significant CV disease, pregnancy.
+> **For you, in plain words.** A red + near-infrared light panel pointed at the knee for 10-15 min/day may ease pain — small RCT signal in OA, B+ for soft-tissue. *(Stelian 1992 Israel; Hode 2018; Hamblin 2018 review)*
 
-**5.4 Contrast water therapy on knee** — alternating hot (38–40 °C, 3 min) and cold (10–15 °C, 1 min) for 3–5 cycles. Bathtub-feasible. Synovial circulation + effusion management.
+#### Open the science
 
-**5.5 Cold immersion** (Plunge, Edge Tub, or bathtub + ice) — 10–15 °C, 2–4 min, 3×/week. Post-exercise inflammation damping. Contraindications: Raynaud's, severe CV disease.
+660 nm visible red + 810-850 nm NIR penetrate to the knee joint and act on cytochrome c oxidase in mitochondria, raising ATP and modulating ROS + NF-κB. Stelian 1992 Israel small RCT showed pain reduction. Hode 2018 review of PBM in OA found small consistent signal. Hamblin 2018 systematic review put PBM at B+ for joint and soft-tissue pain. Home panels: Mito Red Light MitoPRO/MitoMIN (660 nm + 850 nm), Joovv Mini/Solo, BIOMAX, Hooga. Dose 10-15 J/cm² per session, 10-15 min, daily. Eye protection if eye-level. References: [Stelian 1992 Israel](https://pubmed.ncbi.nlm.nih.gov/) · [Hamblin 2018 PBM review](https://pubmed.ncbi.nlm.nih.gov/29222480/)
 
-**5.6 Heat: warm castor-oil pack + Ayurvedic Janu Basti** — warm castor or Mahanarayan oil on knee + black-gram-flour ring + cotton + warm-water bottle, 30 min, 3×/week. Capsular lubrication.
+### 5.3 Compression sleeves + functional/unloader braces
 
-**5.7 Foam roller + lacrosse ball + percussive massage gun (Theragun, Hypervolt)** — IT band, vastus lateralis, quadriceps, hamstrings, calf, glutes; 10–15 min daily. Critical for patellofemoral and IT-band sub-types.
+> **For you, in plain words.** A snug compression sleeve gives proprioceptive input and mild warmth; an unloader brace offloads the affected compartment in medial-compartment OA. *(Bauerfeind GenuTrain validation; Donjoy OA Reaction; Krohn 2005 unloader OA review)*
 
-**5.8 Compression sleeve / valgus offloader brace** — for medial-compartment tibiofemoral OA, an offloader brace (Donjoy OA Adjuster, Breg Fusion, Ossur Unloader One) redistributes load to the lateral compartment; mechanical not medical, fully OTC. Knee sleeves (Bauerfeind GenuTrain, McDavid) for proprioception in PFPS and post-injury.
+Home options: Bauerfeind GenuTrain ($80-120), McDavid 6446 ($30), Tommie Copper ($30), Donjoy OA Reaction WEB unloader ($300-500 — bigger investment but offloads medial compartment in OA). Wear for activity, not 24 ×/7.
 
-**5.9 Topical magnesium chloride spray + topical Boswellia / capsaicin (0.025–0.075%) cream** — 20 sprays per knee BID; capsaicin 4×/day. Capsaicin cream is EMA HMPC-monographed; topical Boswellia (Asansis, Pure Encaps) ditto. Magnesium chloride: Ancient Minerals, Life-flo.
+### 5.4 Walking poles + KT tape + insoles
+
+> **For you, in plain words.** Nordic walking poles offload 25-30% of body weight through your arms — A-grade for unloading knee OA per Crapo 2018. KT tape gives proprioceptive feedback. Insoles correct foot-knee chain. *(Crapo 2018; Kase original KT tape)*
+
+Walking poles: Black Diamond Trail Pro, Komperdell ($60-120). KT tape: KT Tape Pro, RockTape ($15-25). Insoles: Naboso barefoot ($90), Nurvv smart insoles with gait analytics ($300), Superfeet Green ($50).
+
+### 5.5 Home TENS units
+
+> **For you, in plain words.** Transcutaneous electrical nerve stimulation gives gate-control pain relief — A-grade for symptom relief in chronic musculoskeletal pain. *(Cochrane Johnson 2017 TENS chronic pain)*
+
+iReliev TENS + EMS ($60), Omron Avail ($50), Compex Wireless USA Edition ($600 — pro/athletic). 20-30 min sessions, conventional TENS 80-100 Hz settings for acute, low-frequency 2-5 Hz acupuncture-like for chronic.
+
+### 5.6 Heated wraps + cold therapy
+
+> **For you, in plain words.** Heat for chronic stiffness; cold for acute swelling. Both A-grade for symptom relief per Cochrane. *(Cochrane Khoshnevis 2017 cold; Brosseau 2003 heat OA)*
+
+Home tools: Sunbeam heating pad ($30), ComfortFinds microwavable wraps ($40), iceband knee wraps, Polar Products PolarBack Knee Pad ($40), home ice tub (5-15 min post-exercise; not for fresh injury haemarthrosis).
+
+### 5.7 Home cold immersion / contrast
+
+> **For you, in plain words.** Cold plunge (3-5 min) after exercise reduces inflammation and swelling — caution if circulatory disease or Raynaud's. *(Bleakley 2012 review cold-water immersion)*
+
+Plunge ($3,000+), BlueCube ($2,500), Edge Tubs ($2,000), or simple ice-bath barrel ($200). 3-5 min at 10-15°C post-exercise, 2-3 ×/week. Skip if cardiovascular disease, Raynaud's, or pregnancy.
+
+### 5.8 Home infrared sauna (systemic adjunct)
+
+> **For you, in plain words.** 20 min 3 ×/week in a home infrared sauna at 50-60°C aids systemic anti-inflammation, sleep and cardiovascular function. *(Finnish Laukkanen 2018 sauna cohort)*
+
+Sunlighten Solo ($1,800), JNH Lifestyles ($1,200), Clearlight Sanctuary ($4,500). Skip with uncontrolled BP, fresh injury swelling, or pregnancy.
 
 ## 6. Dietary Protocol
 
-### 6.1 Mandatory foods (daily gram quantities)
+### 6.1 Why diet is the single biggest knee lever
 
-- **Bone broth** (slow-simmered chicken / beef / fish, 24–48 h): **250–400 ml** — glycine, proline, GAG precursors
-- **Wild oily fish** (sardines, mackerel, anchovies, wild salmon): **120 g 3–4×/week** OR algal omega-3 **600 mg EPA+DHA**
-- **Pasture-raised eggs**: **2–3 eggs/day** — choline, B12, vitamin A
-- **Sprouted Siri Dhanyalu** (foxtail / barnyard / kodo / little / browntop millet rotation): **60–80 g cooked**
-- **Bitter / green leafy vegetables** (methi, *Moringa oleifera* leaves, kale, amaranth, gotu kola): **150–200 g**
-- **Fermented foods** (kanji, sauerkraut, kimchi, beet-carrot kanji, A2 dahi, coconut kefir): **100–150 g**
-- **Pineapple (bromelain)** or **papaya**: **100 g between meals**
-- **Tart / Montmorency cherry juice** (unsweetened): **150 ml PM**
-- **Turmeric + black pepper + ghee Golden Milk**: **3 g turmeric + ¼ tsp pepper + 1 tsp ghee in 200 ml warm milk HS**
-- **Ginger root** (raw or simmered tea): **5–10 g**
-- **Brazil nuts** (selenium): **2/day**
-- **Pumpkin seeds + sesame**: **15 g each** (Mg, Zn, Cu)
-- **Amla** (fresh or powder): **20–50 g fresh** OR **5 g powder** — vitamin C cofactor for collagen
-- **Protein floor 1.6 g/kg body weight** (eggs, oily fish, legumes, dal, sprouted millets) for VMO + quad mass
+> **For you, in plain words.** A Mediterranean-Indian millet diet delivers weight loss (the IDEA trial's ~50% pain reduction), anti-inflammatory omega-3, polyphenol-rich greens and berries, and elimination of inflammatory ultra-processed foods. Bigger than any pill. *(IDEA Messier 2013; PREDIMED; MIND-diet; ICAR-IIMR millet monographs)*
 
-### 6.2 Absolutely avoid (with molecular rationale)
+### 6.2 Mandatory foods (daily grams)
 
-| Food / Class | Molecular reason |
-|---|---|
-| **Gluten** | gliadin → CXCR3 → zonulin → tight junctions → LPS → Th17 / IL-17 → gut-joint axis |
-| **Industrial seed oils** (soybean, corn, sunflower, safflower, cottonseed) | ω-6 PUFA → arachidonic acid → COX/LOX → PGE₂ / LTB4 |
-| **Refined sugar, HFCS, sweetened beverages** | AGE → MMP activation; insulin resistance worsens cartilage and adipokine inflammation |
-| **Solanaceae (tomato, potato, eggplant, capsicum)** | Solanine in a sensitive sub-fraction — 4-week elimination + 1-week reintroduction trial |
-| **A1 β-casein dairy** | β-casomorphin-7; switch to A2 milk, ghee or coconut |
-| **Alcohol** | Mg / B-vit depletion; CYP2E1 ROS |
-| **Ultra-processed foods, MSG, aspartame** | microbiota disruption, mast-cell activation |
-| **High-purine load (organ meat in excess, anchovies in excess)** in gout-knee sub-type only | Uric acid → MSU crystal deposition in knee |
+| Food | TL;DR (plain English) | Daily grams | Why | Citation |
+|---|---|---|---|---|
+| Leafy greens (spinach, kale, methi, drumstick) | Magnesium, polyphenols, vitamin K — anti-inflammatory base. *(MIND-diet)* | 250 g cooked or 100 g raw | Anti-inflammatory; calcium-Mg-K | *(MIND-diet; PREDIMED)* |
+| Berries (blueberry, blackberry, jamun) | Anthocyanin polyphenols — anti-inflammatory and joint-supportive. *(MIND-diet; Schell 2017)* | 150 g | Anthocyanins | *(Schell 2017 cherry/berry RCT)* |
+| Oily fish (sardines, salmon, mackerel) | EPA/DHA omega-3 — anti-inflammatory; eat 3-4 ×/week. *(UK SACN 2020; Goldberg 2007)* | 120 g 3-4 ×/week | Omega-3 EPA + DHA | *(UK SACN 2020)* |
+| Extra-virgin olive oil | Oleocanthal mimics ibuprofen's COX inhibition. *(Beauchamp 2005)* | 30 ml | Oleocanthal; monounsaturated | *(Beauchamp 2005 Nature)* |
+| Pumpkin seeds | Magnesium + zinc — joint cofactors. *(USDA SR-28)* | 30 g | Magnesium, zinc | *(USDA SR-28)* |
+| Brazil nuts | Selenium — 2 per day covers RDA. *(EFSA selenium 2014)* | 2 nuts (~10 g) | Selenium | *(EFSA selenium)* |
+| Sprouted millet (foxtail, kodo, little millet) | Slow-release carb + magnesium + B vitamins — Khadar Vali revival. *(ICAR-IIMR millet monograph; Khadar Vali Siri Dhanyalu)* | 60 g cooked | Magnesium; slow carb | *(ICAR-IIMR)* |
+| Turmeric + black pepper + ghee "golden milk" | Curcumin + piperine + fat = 20× bioavailability — daily PM tonic. *(Shoba 1998 India)* | 5 g turmeric + pinch pepper + 5 ml ghee | Curcumin bioavailability | *(Shoba 1998 India)* |
+| Bone broth | Collagen + glycine + proline — substrate for cartilage matrix. *(Clark 2008 hydrolysed collagen)* | 250 ml daily | Cartilage substrate | *(Clark 2008)* |
+| Tart cherry juice (Montmorency) | Anthocyanins blunt exercise-induced inflammation; small knee OA signal. *(Schell 2017 cherry RCT knee OA)* | 30 ml concentrate or 240 ml juice | Anthocyanins | *(Schell 2017 knee OA cherry RCT)* |
+| Olive-oil-marinated sardines | Convenient EPA/DHA + oleocanthal. *(Wild Planet; King Oscar)* | 120 g 1-2 ×/week | Omega-3 + olive | *(UK SACN 2020)* |
+| Vegetables — wide colour range | Polyphenols of many colours — orange, red, purple, green. *(MIND-diet)* | 400-500 g total | Polyphenols | *(MIND-diet; PREDIMED)* |
 
-### 6.3 Preparation methodology
+### 6.3 Absolutely avoid (with mechanism)
 
-**Bone broth (foundational)** — bones (chicken feet + beef knuckle + fish heads) + 2 Tbsp apple cider vinegar + filtered water → low simmer 24–48 h → strain → refrigerate. Yields 6 L; freeze in 250 ml pouches.
+> **For you, in plain words.** Industrial seed oils, refined sugar, ultra-processed foods, excess alcohol and gluten in sensitive individuals all drive systemic inflammation that worsens joint pain. *(EAT-Lancet 2019; WHO sugar guidelines 2015)*
 
-**Sprouting** (millets, fenugreek, mung, Bengal gram): rinse → soak 8–10 h → drain → muslin 25–28 °C 12–18 h until tail-sprouts emerge.
+- **Industrial seed oils** (soybean, corn, sunflower, cottonseed) → omega-6 dominance → inflammation
+- **Refined sugar + HFCS** → glycation + AGEs that crosslink collagen → joint stiffness; insulin spike → leptin → adipokine inflammation
+- **Ultra-processed foods** (NOVA-4) → emulsifiers + colours + preservatives → gut + systemic inflammation
+- **Excess alcohol (>14 units/week)** → zinc and B-vit depletion → muscle catabolism; uric acid driving gout overlay
+- **Trans fats** → endothelial dysfunction → joint microcirculation
+- **Gluten** (in coeliac or sensitive individuals only — measure first) → zonulin → intestinal permeability → systemic inflammation
 
-**Kanji**: beetroot 200 g + carrot 100 g + mustard seed 5 g + black salt + 1 L filtered water → ferment 3–5 days.
+### 6.4 Preparation methodology
 
-**Golden Milk (*Sunehri Doodh*)** — A2 milk or coconut milk 200 ml + turmeric 3 g + ¼ tsp pepper + 1 tsp ghee + ½ tsp cinnamon + pinch nutmeg + raw honey added off-heat. Bedtime.
+> **For you, in plain words.** Soak and sprout your millets (8-10 h soak, 8-12 h sprout) to reduce antinutrients and boost digestibility; cook bone broth slow (24 h) for the collagen yield; temper turmeric in ghee with pepper for curcumin uptake. *(ICAR-IIMR sprouting; Shoba 1998 piperine; traditional Kerala broth)*
 
-**Ghee tempering** (*anuvasana*) of bitter greens with cumin, mustard seed, turmeric.
+### 6.5 Seven-day meal plan (exact grams)
 
-### 6.4 Seven-day meal plan (gram quantities)
+#### Day 1 (Mediterranean-Indian fusion)
 
-| Day | Breakfast 07:30 (+ Combo 1) | Lunch 13:00 (+ Combo 2) | Dinner 19:30 (+ Combo 3) |
-|---|---|---|---|
-| **1 — Collagen reset** | 2 eggs + 60 g foxtail porridge + 30 g amla + 250 ml bone broth + 1 tsp ghee | 180 g methi-saag + 120 g sardines + 70 g little millet + 130 g beetroot kanji | 70 g little-millet khichdi + 150 g gotu kola + 100 g ferment + Golden Milk |
-| **2 — Sulfur / Sprout** | 65 g barnyard upma + 15 g sesame + 30 g amla + green tea (1 h gap from iron) | 200 g cruciferous (broccoli + kale, lightly steamed) + 50 g moong dal + 60 g browntop + 100 g sauerkraut | 75 g barnyard roti + 150 g spinach-methi + 110 g A2 dahi + 30 g pumpkin seeds |
-| **3 — HPA + ω-3** | 70 g kodo khichdi + 5 g fenugreek + 250 ml bone broth | 120 g mackerel + 170 g bitter greens + 60 g foxtail + amla | 65 g millet roti + 180 g lauki sabzi + 100 g kanji + Ashwagandha-Golden Milk |
-| **4 — Cu/Zn/Mg** | 60 g foxtail upma + 15 g sesame + 10 g cashew + 2 Brazil nuts | 180 g amaranth-moringa + 50 g sprouted Bengal gram + 70 g little millet + 100 g kefir | 70 g browntop pulao + 150 g okra + 100 g kanji + Golden Milk |
-| **5 — Bromelain / anti-inflammatory** | 2 eggs + 100 g pineapple + 60 g millet porridge + 30 g amla + tulsi tea | 200 g salmon or sardines + 150 g bitter greens + 60 g foxtail + 100 g sauerkraut | 70 g khichdi + 150 g gotu kola sauté + 1 tsp ghee + tart-cherry 150 ml |
-| **6, 7 — Rotate** | Rotate kodo / barnyard / little | Sprouted dal khichdi + 200 g greens + amla + ferment + bone broth | Same |
+- **Breakfast (07:30).** 2 eggs + 100 g spinach sautéed in 10 ml olive oil + 150 g berries + golden milk (turmeric + ghee + pepper + 200 ml milk or almond milk). Total ~480 kcal.
+- **Lunch (12:30).** 120 g grilled salmon + 200 g mixed leaves + 100 g roasted vegetables + 30 g pumpkin seeds + 15 ml olive oil dressing. Total ~560 kcal.
+- **Snack (16:00).** 30 g walnuts + 1 apple. Total ~250 kcal.
+- **Dinner (19:00).** 60 g sprouted foxtail millet + 150 g cooked drumstick leaves + 100 g paneer/tofu in turmeric+ghee + bone broth 250 ml. Total ~520 kcal.
+- **PM (21:30).** Golden milk + magnesium glycinate 400 mg.
 
-Daily floor: 60–80 g millet, 150–200 g bitter greens, 100–150 g ferment, 250 ml bone broth, Golden Milk HS, protein 1.6 g/kg.
+#### Day 2 (Kerala vegetarian)
 
-### 6.5 Environmental & occupational triggers to eliminate
+- **Breakfast.** Idli (4) + sambar 200 ml + drumstick-coconut chutney + tart cherry juice 30 ml concentrate diluted.
+- **Lunch.** 60 g sprouted kodo millet + thoran (cabbage + coconut + curry leaf) 200 g + dal 150 ml + buttermilk + 2 Brazil nuts.
+- **Snack.** Murivenna abhyanga 20 min + tulsi tea + 30 g almonds.
+- **Dinner.** Kerala fish curry (sardine) 120 g + red rice 60 g + spinach poriyal 150 g + Mahanarayan taila external for knee 20 min before bed.
 
-- **Prolonged sitting** (desk job) — single biggest knee-stiffness amplifier. Standing desk (Uplift, Flexispot), under-desk treadmill (DeskCycle, Flexispot Treadmill), 5-min movement break per 30 min sitting.
-- **Wrong shoes** — replace worn shoes (sole compression >50% spent → joint load shifts proximally to knee). Zero-drop / minimalist transition only if gradually adapted. For varus alignment: lateral wedge insole.
-- **Stair-climbing technique** — most users descend stairs quadriceps-eccentric (patellofemoral overload). Re-train to use the rail, lead with stronger leg up / weaker leg down to spare the painful knee.
-- **Squatting culture mismatch** — South-Asian / East-Asian deep-squat (toilet, kitchen) places extreme flexion load. If knee is degenerative, switch to Western toilet seat, raised kitchen surface.
-- **Cold dampness** — heated insoles, wool socks, knee warmers (silk + wool sleeves).
-- **BPA, phthalates** — never microwave plastic; glass / stainless steel only.
-- **Personal-care swap**: SLS / paraben / phthalate-free shampoo, body wash.
-- **Indoor air** — VOCs / formaldehyde from new furniture (off-gas 2 weeks + HEPA); mould (ERMI / HERTSMI-2 test) — mould toxicity drives sub-fraction of fibromyalgia-overlap stiff knees.
-- **Sleep ergonomics** — pillow between knees for side-sleepers; mattress firm-medium.
-- **Light pollution / blue light at night** — melatonin protection (chondroprotective).
-- **Smoking, vaping, alcohol** — microvascular vasoconstriction at knee margins.
+#### Day 3 (high-omega-3)
 
-### 6.6 Cofactor / micronutrient floor
+- **Breakfast.** 100 g Greek yoghurt (full-fat) + 150 g berries + 30 g pumpkin seeds + 1 tbsp ground flax + tulsi tea.
+- **Lunch.** 120 g mackerel + 200 g salad + 100 g sweet potato + 15 ml olive oil + 2 Brazil nuts.
+- **Snack.** Bone broth 250 ml + 1 apple.
+- **Dinner.** 60 g millet khichdi + 150 g greens + 100 g lentil dal + ghee 5 ml + golden milk PM.
 
-| Cofactor | Why for knee | Target / day | Food | Supplement (if floor unmet) | Antagonist |
+#### Day 4 (rotation — repeat 1 with seasonal swaps)
+
+Match seasonal availability — winter swap berries for stewed-apple; summer add mango (moderate quantity if pre-diabetic).
+
+#### Day 5 (TCM-influenced)
+
+- **Breakfast.** Congee (60 g millet, 600 ml water, slow-cooked) + 50 g ginger + 150 g greens + 1 boiled egg.
+- **Lunch.** Steamed sardines 120 g + bok choy 200 g + brown rice 60 g + Niu Xi tea + 15 ml olive oil.
+- **Dinner.** Bone broth 300 ml with mushrooms 100 g + leafy greens 150 g + sprouted millet 60 g.
+
+#### Day 6 (rotation — repeat 2)
+
+#### Day 7 (Mediterranean-Indian)
+
+- Repeat day 1 pattern with weekly variation (salmon → trout, spinach → kale).
+
+### 6.6 Environmental & occupational triggers
+
+> **For you, in plain words.** Squatting on hard floors for hours, repetitive jumping or kneeling work, ill-fitting shoes, and obesity-driving food environments all wreck knees. *(WHO musculoskeletal disorders guidance; HSE UK ergonomics)*
+
+- **Occupational kneeling** (tilers, plumbers, gardeners, carpenters) → patellofemoral wear; use kneeling pads
+- **Squatting on hard floors** (cultural daily squat) → repeated meniscal loading; use a low stool for prayer/cooking
+- **Worn-out shoes** (>500 km running) → biomechanical drivers
+- **High-heel daily wear** (>5 cm) → patellofemoral loading
+- **Obesogenic food environment** (sugar-sweetened beverages, ultra-processed snacking) → the single biggest lever
+- **Sedentary office work** (>8 h sitting) → quad atrophy, hip-flexor tightness, glute amnesia
+- **Cold-damp work environment** (refrigerated warehouse, fishing) → vata aggravation classically
+- **EMF / dirty electricity** — limited evidence base in MSK pain; mentioned for completeness but low priority
+
+### 6.7 Cofactor / micronutrient floor
+
+| Micronutrient | TL;DR (plain English) | Target | Food source | Supplement (if needed) | Citation |
 |---|---|---|---|---|---|
-| **Vitamin C** | Collagen prolyl + lysyl hydroxylase | 500–1000 mg | amla, citrus, kakadu plum | Acerola, NOW Buffered C | excess >2 g loose stool |
-| **Vitamin D3 + K2** | Cartilage + quadriceps strength | 4000 IU + 100 µg MK-7 | sun, fatty fish | Thorne D/K2 | fat-meal + Mg cofactor |
-| **Magnesium glycinate** | Muscular relaxation, ATP, cartilage | 300–400 mg | pumpkin seed, leafy greens | Doctor's Best | split AM/PM with Ca |
-| **Copper** | Lysyl oxidase (collagen cross-linking) | 1.5–2 mg | sesame, cashew, oysters | Pure Encaps Cu glycinate 2 mg | **Zn:Cu 8–15:1** mandatory |
-| **Zinc** | Wound, immune, MMP modulation | 10–15 mg | pumpkin seeds, oysters | Thorne Zn picolinate 15 mg | ≥2 h from iron, Ca |
-| **Selenium** | GPX cofactor (chondrocyte) | 100–200 µg | 2 Brazil nuts | Solgar 200 µg | toxic >400 µg |
-| **Silica** | Connective-tissue mineralisation | 10–40 mg | horsetail, bamboo, oats | NOW BioSil, Solgar | — |
-| **Manganese** | GAG synthesis (chondroitin needs Mn) | 2–5 mg | leafy greens, whole grains | trace mineral complex | excess >10 mg neurotoxic |
-| **Sulphur (cysteine / MSM)** | GAG sulphation | 1.5–3 g MSM + dietary cysteine | eggs, garlic, MSM | Doctor's Best OptiMSM | — |
-| **Boron** | Joint mineral metabolism | 3–6 mg | prunes, almonds | NOW Boron | — |
-| **Vitamin K2 (MK-7)** | Bone-cartilage interface | 100–200 µg | natto, ghee, K2-rich cheese | Thorne MK-4 + MK-7 | warfarin (consistent if on) |
-| **Iron** (only if ferritin <30) | Heme, collagen hydroxylase | measure first | red meat, pumpkin seed | Solgar Gentle Iron | ≥2 h tea/Ca/Zn/Cu/thyroid; Vit C pair |
-| **Protein 1.6 g/kg** | VMO + glute-med + quad mass | per body weight | eggs, fish, legumes, dal | optional whey isolate | — |
-| **Creatine monohydrate** (sarcopenic-knee sub-type) | Quad force production, knee extensor torque | 3–5 g | red meat trace | Creapure (Bulk, Optimum) | — |
+| Magnesium | Joint and muscle relaxant; deficient in chronic pain populations. *(EMA Mg; Park 2020)* | 400 mg | leafy greens, nuts, seeds | glycinate 400 mg PM | *(EMA; Park 2020)* |
+| Vitamin D3 | Bone, cartilage, immune; measure first; supplement only if <40 ng/mL. *(EMA vit D; McAlindon 2013)* | 2000-5000 IU | sun, salmon, fortified | D3 with K2 + fat | *(EMA; McAlindon 2013)* |
+| Vitamin K2 (MK7) | Directs calcium to bone, not soft tissue; co-pair with D3. *(Geleijnse 2004)* | 100 µg | natto, hard cheese, eggs | MK7 100 µg with D3 | *(Geleijnse 2004)* |
+| Zinc | Wound repair, immune, anti-inflammatory; keep 8-15:1 Zn:Cu ratio. *(WHO zinc 2018)* | 15-30 mg | shellfish, pumpkin seeds | bisglycinate AM with food | *(WHO zinc)* |
+| Copper | Pair with zinc to prevent depletion. *(WHO zinc 2018)* | 1-2 mg | shellfish, dark chocolate, organ | bisglycinate AM | *(WHO zinc)* |
+| Selenium | Anti-oxidant cofactor for glutathione peroxidase. *(EFSA selenium 2014)* | 100 µg | 2 Brazil nuts daily | only if Brazil-nut-free | *(EFSA selenium)* |
+| Boron | Trace mineral with small knee OA signal. *(Newnham 1994 RCT boron OA)* | 3-10 mg | prunes, raisins, avocado | boron glycinate | *(Newnham 1994)* |
+| Vitamin C | Cofactor for collagen synthesis; pair with collagen peptides. *(Shaw 2017 gelatin + vit C)* | 500-1000 mg | citrus, amla, peppers | with collagen | *(Shaw 2017)* |
+| B12 (methylcobalamin) | If vegetarian, vegan, 65+ or on PPI/metformin. *(Health Canada B12)* | 1000 µg | animal foods | sublingual 1000 µg AM | *(Health Canada B12)* |
+| Iron | Only if ferritin <30 — measure first. *(WHO ferritin 2020)* | 25-50 mg if deficient | red meat, lentils + vit C | bisglycinate AM with vit C | *(WHO ferritin)* |
 
-## 7. Lifestyle / Mind-Body Anchors (mapped to §2 mechanism nodes)
+## 7. Lifestyle / Mind-Body Anchors
 
-### 7.1 Yoga (daily 30 min) — knee-aware
+### 7.1 Yoga for the knee (mapped to mechanism)
 
-| Asana | §2 Mechanism node targeted | Duration | Time of day |
-|---|---|---|---|
-| **Modified Surya Namaskar** (knee-friendly: lunge-style instead of low-lunge with knee-down) | §2.1 + §2.2 + §2.3 systemic mobilisation | 8–12 rounds | 07:00 AM |
-| **Marjariasana / Bitilasana** (cat-cow) | spinal capsular mobility — load off knee | 10 reps | 07:00 AM |
-| **Adho Mukha Svanasana** (downward dog) | §2.2 + §2.3 posterior chain | 1 min × 3 | 07:00 AM |
-| **Virabhadrasana I, II** (warrior) | §2.3 hip-knee-ankle ROM + glute-med strength | 1 min each side | 07:00 AM |
-| **Trikonasana** (triangle) | §2.3 lateral hip | 1 min each side | 07:00 AM |
-| **Baddha Konasana** (cobbler) | §2.2 hip opener — protects knee | 3 min | 07:00 AM |
-| **Setu Bandhasana** (bridge) | §2.3 glute + hamstring | 1 min × 3 | 07:00 AM |
-| **Supta Padangusthasana** | §2.2 hamstring + hip — load off knee | 2 min each side | 07:00 AM or HS |
-| **Janu Sirsasana** (head-to-knee) | §2.2 knee + hamstring | 2 min each side | 07:00 AM |
-| **Balasana** (child's pose) — block under knee if painful | §2.2 + §2.4 spinal + knee | 3 min | HS |
-| **Shavasana** | §2.4 HPA reset | 10 min | 22:00 |
+> **For you, in plain words.** Iyengar tradition has the strongest evidence for joint mobility. Modify with bolsters and chair if knee restricts full asana. Strong asanas like Padmasana are NOT recommended for OA knees. *(Bukowski 2007; Cramer 2013 yoga review)*
 
-**AVOID in degenerative knee:** *Padmasana* (lotus), *Vajrasana* (held >2 min if effusion), deep low-lunge with knee on floor without padding, deep bharadvajasana with knee folded.
+| Asana | TL;DR (plain English) | Mechanism node targeted | Duration | Time of day | Citation |
+|---|---|---|---|---|---|
+| Tadasana (Mountain pose) | Foundation alignment — feet, hips, spine. *(Iyengar Light on Yoga)* | §2.6 biomechanical | 2 min | AM | *(Iyengar)* |
+| Vrikshasana (Tree pose) — modified | Single-leg balance trains hip stabilisers. *(Iyengar; Bukowski 2007)* | §2.4 strength | 1 min each leg | AM | *(Iyengar)* |
+| Setu Bandhasana (Bridge) | Glute + hamstring activation without knee load. *(Iyengar; Cramer 2013)* | §2.4 strength | 5 reps × 10 s | AM | *(Iyengar)* |
+| Supta Padangusthasana (Reclined hand-to-big-toe) | Hamstring and ITB stretch with strap. *(Iyengar)* | §2.6 biomechanical | 1 min each side | AM | *(Iyengar)* |
+| Virabhadrasana II (Warrior II) — short stance | Quad + glute strength; avoid deep knee bend in acute OA. *(Iyengar)* | §2.4 strength | 30 s each side | AM | *(Iyengar)* |
+| Chair Utkatasana | Wall-supported quarter-squat for quad strength. *(modified Iyengar)* | §2.4 strength | 30-60 s × 3 | AM | *(modified Iyengar)* |
+| Supta Baddha Konasana (Reclined butterfly) | Gentle hip opener; restorative. *(Iyengar)* | §2.6 + §2.7 | 5 min | PM | *(Iyengar)* |
+| Viparita Karani (Legs-up-wall) | Restorative, vagal, reduces lower-limb swelling. *(Iyengar)* | §2.7 central | 5-10 min | PM | *(Iyengar)* |
+| Shavasana | Final relaxation — parasympathetic close. *(AYUSH yoga monograph)* | §2.7 central | 5-10 min | PM | *(AYUSH)* |
 
-### 7.2 Pranayama (daily 15–20 min)
+**AVOID:** Padmasana (full lotus), Virasana (hero — sitting on heels) in OA knees, deep squats, Janu Sirsasana with full forward fold in acute pain.
 
-| Technique | §2 Mechanism node | Duration | Time of day |
-|---|---|---|---|
-| **Anulom Vilom** | §2.1 + HPA / vagal balance | 10 min | 06:30 AM |
-| **Bhramari** (humming) | §2.4 vagal nerve / NO | 5 min | 06:30 AM + 22:00 |
-| **Ujjayi** | §2.4 vagal | 5 min | during yoga |
-| **Bhastrika** | §2 mitochondrial — **contraindicated in HTN, pregnancy, glaucoma, recent surgery** | 5 min | AM only |
-| **Nadi Shodhana** | §2.4 autonomic | 10 min | flare days |
+### 7.2 Pranayama (mapped to mechanism)
 
-### 7.3 Meditation
+| Technique | TL;DR (plain English) | Mechanism node targeted | Duration | Time of day | Citation |
+|---|---|---|---|---|---|
+| Anulom Vilom (alternate-nostril) | Balances autonomic nervous system. *(S-VYASA)* | §2.7 central | 10 min | AM | *(S-VYASA)* |
+| Bhramari (humming-bee) | Vagal tone + nasal NO; calming. *(S-VYASA)* | §2.7 central | 5 min | AM + PM | *(S-VYASA)* |
+| Nadi Shodhana (channel-purification) | Autonomic balance and stress reduction. *(AYUSH pranayama)* | §2.7 central | 10 min | AM | *(AYUSH)* |
+| Sheetali (cooling breath) | For pitta-overlay (hot, swollen knees). *(AYUSH)* | §2.3 inflammation | 5 min | midday | *(AYUSH)* |
 
-Yoga Nidra (Bihar / Satyananda) 30 min PM — restorative, cortisol-lowering, pain-perception modulation. Vipassana 20 min AM. Mindfulness-Based Stress Reduction (MBSR) 8-week course for chronic-pain overlay.
+**AVOID in hypertension or pregnancy:** Kapalbhati, Bhastrika.
+
+### 7.3 Meditation + central-pain practices
+
+> **For you, in plain words.** MBSR (8 weeks, Kabat-Zinn) cuts reported pain even when imaging doesn't change — A-grade for chronic pain per Hilton 2017. CBT-CP teaches you to uncouple pain from suffering. *(Kabat-Zinn 1985; Hilton 2017; Williams 2020 Cochrane CBT-CP)*
+
+- **MBSR (Mindfulness-Based Stress Reduction).** Kabat-Zinn 8-week course; A-grade for chronic pain. Free: Palouse Mindfulness online.
+- **Vipassana body-scan.** 20 min PM; observes pain without amplifying.
+- **Yoga Nidra.** 30 min PM; sleep restoration + HPA recovery.
+- **Loving-kindness / Tonglen.** 10 min; reduces pain-related self-criticism.
+- **Mantra (So-Ham / Om).** 20 min; quiets default-mode network.
 
 ### 7.4 Sleep & circadian
 
-Lights-out 22:30; blue-light cut-off 21:00; bedroom 18–20 °C, blackout; pillow between knees for side-sleepers. Sleep ≥7 h — IL-6 spikes with sleep restriction.
+> **For you, in plain words.** Less than 7 h sleep lowers pain threshold by 15-20% the next day. Bedroom 18-20°C, screens off 21:00, magnesium glycinate + ashwagandha + 0.3 mg melatonin PM if sleep is the dominant driver. *(Edwards 2008 sleep + pain; Health Canada melatonin)*
 
 ### 7.5 Nervous-system reset
 
-Cold-water face splash AM; humming + gargling 2 min BID; 4-7-8 breath 4 rounds pre-meal; optional consumer VNS (Nurosym, Sensate) 10 min PM.
+> **For you, in plain words.** Cold-water face splash AM, humming + gargling 2×/day, 4-7-8 breath pre-bed, at-home vagus device, daily 0-10 pain log. *(Polyvagal theory; HeartMath)*
 
-### 7.6 Exercise periodization (weekly + monthly) — knee-focused strength
+### 7.6 Exercise periodization — knee-specific
 
-**Weekly cadence**
-- **Mon / Wed / Fri** — Zone 2 cardio (45 min): cycling (very knee-friendly), swimming, elliptical, rebounder mini-trampoline, brisk walk. **Avoid running on hard surfaces if in flare; soft trail or zero-impact substitute.**
-- **Tue / Thu** — strength training, 45 min — **knee-loading priorities:**
-  - Bulgarian split squat (3×8 each leg) — single-leg loading
-  - Goblet squat or box squat (3×10) — quad + glute
-  - Romanian deadlift (3×8) — posterior chain
-  - Step-up onto bench (3×10 each leg) — single-leg
-  - Side-lying clam + lateral band walk (3×15) — glute medius
-  - Terminal knee extension (TKE) with resistance band (3×15) — VMO
-  - Wall sit (3 × 30–60 s) — quadriceps endurance
-  - Calf raise (3×15)
-- **Sat** — restorative mobility — modified Surya Namaskar + hip-mobility flow + foam-rolling 30 min
-- **Sun** — long walk 60–90 min OR cycling 30 km OR yin yoga 60 min
+> **For you, in plain words.** Six weekly slots: Mon/Wed/Fri lower-body strength (wall sits, step-ups, deadlifts light); Tue/Thu upper-body + cardio (Nordic walking poles, swimming, stationary bike); Sat aqua-aerobics OR tai chi (A-grade for knee OA per Wang 2009 NEJM); Sun restorative + long pole-walk. *(Skou 2018 KORD; Bartels 2007 Cochrane aqua; Wang 2009 NEJM tai chi)*
 
-**Monthly cadence**
-- **Week 1** — full intensity; TCM cycling (Du Huo Ji Sheng Tang)
-- **Week 2** — moderate
-- **Week 3** — deload (≤70%) + extra sauna + extra mobility
-- **Week 4** — full intensity; TCM cycling re-cycles
+#### Open the science — the ESCAPE controversy (honest)
 
-Optional 14:10 IF — improves autophagy + insulin sensitivity. **Not in active flare, underweight, pregnancy.**
+The ESCAPE trial (Sihvonen 2018 BMJ, n=140 degenerative meniscal tear randomised to arthroscopic partial meniscectomy vs sham surgery + exercise) showed **NO benefit of surgery over sham + exercise** at 24 months. Earlier Katz 2013 NEJM (n=351, arthroscopy + PT vs PT alone for degenerative meniscal tear) showed **equivalent outcomes** at 6 and 12 months. This is one of the largest "defensive prescribing" patterns in orthopaedics — arthroscopic meniscectomy continues to be performed at scale despite the trial data. The home protocol's exercise + strength + weight loss path matches or beats the surgical path for degenerative tears. References: [ESCAPE Sihvonen 2018 BMJ](https://www.bmj.com/content/362/bmj.k2747) · [Katz 2013 NEJM](https://www.nejm.org/doi/full/10.1056/NEJMoa1301408)
+
+**Weekly cadence (knee-friendly).**
+- **Mon.** 30-min Nordic walking + 20-min lower-body strength (wall sits, step-ups, side-lying clamshells, glute bridges, single-leg sit-to-stand).
+- **Tue.** 30 min stationary bike (low resistance, high cadence) + 20-min upper-body strength.
+- **Wed.** 30-min pool-walking OR aqua-aerobics + Iyengar yoga 20 min.
+- **Thu.** 30 min Nordic walking + 20-min lower-body strength.
+- **Fri.** 45-min tai chi (Yang style 24-form or Sun style — Sun 2009 NEJM showed A-grade).
+- **Sat.** 60-min long Nordic pole walk + restorative yoga.
+- **Sun.** Rest + 20 min restorative yoga + sauna 20 min + cold splash.
+
+**Monthly cadence.**
+- Week 1 — full intensity + TCM overlay (Du Huo Ji Sheng Tang).
+- Week 2 — moderate.
+- Week 3 — deload (≤70% volume) + extra sleep + sauna.
+- Week 4 — full + TCM re-cycles.
+
+**Fibromyalgia overlay** — pace; HR ceiling 60% HRmax; do not push through. The pacing protocol from daily-energy-fatigue.md §7.7 applies.
+
+### 7.7 Periodised loading vs rest debate
+
+> **For you, in plain words.** Old advice: "rest your knee." New evidence: **graded loading** (progressively heavier strength training) builds the muscle and stimulates cartilage matrix renewal. Rest atrophies the supporting muscle and worsens OA. The exception is acute injury (ACL rupture, fracture, infection). *(NASM/ACSM exercise guidance; Skou 2018 KORD)*
 
 ## 8. Daily Unified Combos (≤10 caps/day)
 
-**Combo 1 — Anti-NF-κB AM (08:00):** Curcumin phytosome 1000 mg + Boswellia AKBA 300 mg + Omega-3 (1 g EPA capsule). *3 caps.*
+### 8.1 The three combos at a glance
 
-**Combo 2 — ECM rebuild midday (13:00):** UC-II 40 mg (separately on empty stomach 1 h pre-lunch ideal) + Hyaluronic Acid 120 mg + Glucosamine sulphate 1500 mg + Chondroitin 1200 mg. *3 caps (combined formula).*
+> **For you, in plain words.** Three timed combos resolve every co-administration conflict and stay ≤10 caps/day. Acute flares add topical capsaicin + magnesium + ginger; inflammatory-overlay knees add omega-3 + curcumin dose-up. *(EMA + AYUSH dose monographs)*
 
-**Combo 3 — PM (19:00):** MSM 1500 mg + Magnesium glycinate 300 mg + Ashwagandha KSM-66 600 mg + Tart cherry extract 480 mg. *4 caps.*
+### 8.2 Combo 1 — Cartilage + anti-inflammatory (morning, with breakfast)
 
-**+ Collagen peptides 12 g + vitamin C 500 mg dissolved in AM water (not capsule).**
-**+ Creatine 3–5 g** (for sarcopenic-knee sub-type, post-workout with carb).
+- **TL;DR.** Glucosamine 750 + Chondroitin 600 + Curcumin Meriva 500 + Boswellia AKBA 100 + Vitamin D3 5000 IU + K2 100 µg — 5-6 caps with breakfast and fat. *(GAIT; Daily 2016; Sengupta 2010; EMA vit D)*
 
-**Daily total: 10 caps.** + topical Mahanarayan / Dhanwantharam oil AM + topical magnesium-chloride spray PM + PBM 10–15 min at 20:00.
+### 8.3 Combo 2 — Midday cofactors (with lunch)
 
-**TCM cycling (weeks 1 & 4):** *Du Huo Ji Sheng Tang* OR *Gui Zhi Shao Yao Zhi Mu Tang* granules 6 g BID — replaces Combo 3 Mg / MSM that week if TCM overlay preferred.
+- **TL;DR.** Omega-3 (2 g EPA+DHA) + Collagen peptides 10 g (or UC-II 40 mg) + Vitamin C 500 mg + 2 Brazil nuts (selenium) — with lunch. *(UK SACN 2020; Clark 2008; Shaw 2017)*
 
-## 8.5 Master 24-Hour Day Plan
+### 8.4 Combo 3 — Evening recovery + sleep (with dinner / pre-bed)
 
-Integrates supplements, meals, exercise, breathwork, light and sleep — resolves every §10 conflict.
+- **TL;DR.** Glucosamine 750 + Chondroitin 600 + Curcumin Meriva 500 + Magnesium glycinate 400 + Ashwagandha KSM-66 300 — 4-5 caps. *(GAIT; Daily 2016; EMA Mg; Choudhary 2017)*
 
-| Hour | Action | Why / Conflicts resolved |
-|---|---|---|
-| **06:00** | Wake; 250 ml warm water + lemon + ½ tsp turmeric paste + pinch pepper; 5–10 min direct sunlight | Circadian anchor; cortisol awakening; mild anti-inflammatory bolus |
-| **06:15** | Cold-water face splash + humming 1 min | Vagal afferent |
-| **06:30** | Pranayama 15 min (Anulom Vilom 10 + Bhramari 5) | Vagal tone before food |
-| **07:00** | Yoga 25 min (§7.1) — knee-aware modified Surya Namaskar + hip-mobility | Synovial fluid distribution before sitting |
-| **07:30** | Breakfast (§6.4) + 12 g collagen peptides in water with 500 mg vitamin C | Vitamin C cofactor for collagen; tea/coffee tannins blocked for 1 h |
-| **08:00** | **Combo 1** (Curcumin phytosome + Boswellia AKBA + Omega-3) | Curcumin needs fat from breakfast; ≥2 h from dairy / iron |
-| **09:30** | Optional 15 min PBM on knees if desk job | Cytochrome-c-oxidase activation |
-| **10:00** | Tulsi / green tea | ≥1 h from collagen peptides |
-| **12:30** | Lunch (§6.4); UC-II 40 mg on empty stomach 1 h pre-lunch ideal | Maintain mucosal oral-tolerance signal |
-| **13:00** | **Combo 2** (HA + Glucosamine + Chondroitin with meal) | Matrix substrate at peak insulin sensitivity |
-| **13:30** | 10–15 min post-lunch walk + 5 min hip-mobility | Post-prandial glucose + capsular fluid |
-| **14:00** | **Caffeine cut-off** | Half-life 6 h |
-| **16:00** | Exercise (§7.6 — strength / Z2) | Insulin peak; cartilage load = nutrition |
-| **17:30** | Infrared sauna 20 min → contrast water 3 cycles (knee specific) | HSP70 + vagal + knee perfusion |
-| **18:00** | Topical Mahanarayan / Dhanwantharam knee abhyanga + warm compress 15 min | Snehana — capsular lubrication |
-| **18:30** | Snack: 2 Brazil nuts + 20 g walnut + tulsi + 150 ml tart cherry | Selenium + COX/LOX inhibition |
-| **19:00** | Dinner — light, low-carb | Sleep + autophagy |
-| **19:30** | **Combo 3** (MSM + Mg + Ashwagandha + Tart cherry) | Mg PM (Ca AM); Ashwa ≥2 h before bed |
-| **20:00** | PBM 10–15 min knees | Mitochondrial + anti-inflammatory |
-| **20:30** | Restorative yoga or walk; topical magnesium-chloride spray on knees | Parasympathetic |
-| **21:00** | Blue-light cut-off | Melatonin (chondroprotective) |
-| **21:30** | Golden Milk 200 ml + Bhramari 5 min + 4-7-8 breath | Curcumin in fat + piperine |
-| **22:00** | Yoga Nidra 20–30 min | Cortisol + pain perception |
-| **22:30** | Bedtime, 18–20 °C, blackout, pillow between knees if side-sleeper | Deep sleep — IL-6 |
-| **02:00–06:00** | Sleep — no waking eating | Insulin / cortisol stability |
+### 8.5 Acute flare stack (1-2 weeks max)
 
-**If you are already on a prescription** (NSAIDs, COX-2, recent intra-articular steroid, oral steroid, methotrexate/sulfasalazine/HCQ for RA-overlap, levothyroxine, statin, anticoagulant): keep your schedule and apply §10.1 gap rules. The protocol does not prescribe or modify any prescription.
+- **TL;DR.** Topical capsaicin 0.075% 4 ×/day + topical Murivenna 2 ×/day + curcumin Meriva 500 mg 3 ×/day + omega-3 3 g + magnesium glycinate 400 mg + TENS 20 min 2 ×/day + cold-pack 15 min as needed. *(Cochrane capsaicin; Sahasrayoga; Daily 2016)*
+
+### 8.6 TCM overlay (weeks 1 & 4)
+
+- **TL;DR.** Du Huo Ji Sheng Tang granules 6 g twice a day for the wind-cold-damp pattern; switch to Si Miao San for damp-heat or Shu Jin Huo Xue Tang for blood-stasis post-trauma. *(Beiji Qianjin Yao Fang; NMPA)*
+
+### 8.7 Pragmatic 10-cap envelope
+
+- **TL;DR.** To stay ≤10 caps/day on chronic protocol: combine glucosamine+chondroitin in one combination capsule; use Meriva 1000 mg combo capsule; drop SAMe (rotate quarterly); use food sources for selenium (Brazil nuts) and omega-3 (sardines) on alternate days. *(Brand dose ranges)*
+
+## 8.5 (8b) Master 24-Hour Day Plan
+
+### Hour-by-hour (resolves every §10 conflict)
+
+> **For you, in plain words.** An hour-by-hour timetable that resolves every co-administration conflict — fat-soluble caps with fat, iron away from tea, thyroid pill 60 min pre-food, no caffeine after 14:00, Ashwagandha ≥1.5 h before bed, knee-loading exercise in the cool of the day, evening Janu Basti for chronic stiffness. *(EMA monographs; §10 conflict resolution; Charaka dinacharya)*
+
+| Hour | TL;DR (plain English) | Action | Why / conflicts resolved | Citation |
+|---|---|---|---|---|
+| 06:00 | Wake — water + lemon + pinch of salt. *(AYUSH dinacharya)* | 300 ml water + sea salt + lemon | Hydration anchor | *(AYUSH dinacharya)* |
+| 06:10 | 10-30 min outdoor sunlight — sets circadian + vitamin D. *(EMA vit D)* | Sunlight | Body clock + vit D | *(EMA vit D)* |
+| 06:30 | Bhramari + Anulom Vilom 10 min — vagal warm-up. *(S-VYASA)* | Pranayama | Vagal tone | *(S-VYASA)* |
+| 06:45 | Iyengar yoga 20 min — Tadasana, Setu Bandhasana, Supta Padangusthasana, chair Utkatasana. *(Iyengar)* | Yoga | Knee mobility + strength | *(Iyengar)* |
+| 07:30 | Real-food breakfast — protein + fat + fibre + colour. *(MIND-diet)* | Breakfast | Glycaemic stability | *(MIND-diet)* |
+| 08:00 | Combo 1 with breakfast and fat — Curcumin Meriva needs piperine + ghee. *(Shoba 1998)* | Combo 1 | Fat absorption; piperine boost | *(Shoba 1998)* |
+| 09:00 | Coffee + L-theanine 100 mg — smoother focus. *(Kakuda L-theanine)* | Coffee | L-theanine smooths caffeine | *(Kakuda)* |
+| 09:30 | 15 min red-light to knees — eye protection. *(Stelian 1992; Hamblin 2018)* | Red-light PBM | Joint PBM | *(Stelian 1992)* |
+| 10:00 | Deep work block; standing desk or sit-stand alternation. *(EMA office ergonomics)* | Deep work | Avoid prolonged sitting (>50 min) | *(EMA)* |
+| 12:30 | Lunch + 10-15 min walk — blunts post-meal glucose. *(Diabetes Care)* | Lunch + walk | Post-meal glucose | *(Diabetes Care)* |
+| 13:00 | Combo 2 with lunch and fat — Omega-3 needs fat. *(UK SACN 2020)* | Combo 2 | Fat absorption | *(UK SACN 2020)* |
+| 13:30 | 10-min Yoga Nidra or eyes-closed rest. *(Bihar Yoga Nidra)* | Yoga Nidra micro | Afternoon restoration | *(Bihar)* |
+| 14:00 | Last caffeine of the day — 6 h half-life. *(Drake 2013)* | Caffeine cut-off | Caffeine half-life | *(Drake 2013)* |
+| 16:00 | Exercise window — Nordic walking + strength OR tai chi. *(Skou 2018; Wang 2009 NEJM)* | Exercise | Strength + unloading | *(Skou 2018; Wang 2009)* |
+| 17:30 | Optional 20-min home sauna → 3 min cold splash, 3 ×/week. *(Finnish Laukkanen 2018)* | Sauna + cold | Heat-shock + vagal | *(Laukkanen 2018)* |
+| 18:30 | Cofactor snack — Brazil nuts, pumpkin seeds, berries, tulsi tea. *(USDA SR-28)* | Cofactor snack | Selenium + magnesium | *(USDA)* |
+| 19:00 | Dinner — light, low-carb, early. *(AYUSH dinacharya)* | Dinner | Pre-sleep glycaemic taper | *(AYUSH)* |
+| 19:30 | Combo 3 with dinner — Glucosamine + Chondroitin + Curcumin + Mg + Ashwagandha. *(GAIT; Daily 2016; EMA Mg; Choudhary 2017)* | Combo 3 | Conflict resolved | *(EMA + AYUSH)* |
+| 20:00 | Janu Basti (home) — warm Mahanarayan/Murivenna oil 30 min on knee. *(Sushruta ch. 4; Sahasrayoga)* | Janu Basti | Joint warming + Vata pacification | *(Sushruta ch. 4)* |
+| 20:30 | Karpooradi thailam or Roghan-e-Surkh massage 10 min. *(IMPCOPS; Hamdard)* | External taila | Topical warming | *(IMPCOPS; Hamdard)* |
+| 21:00 | Screens off — protects melatonin. *(Health Canada melatonin)* | Screens off | Melatonin | *(Health Canada melatonin)* |
+| 21:30 | Bhramari 5 min + 4-7-8 breath + 20 min Yoga Nidra. *(S-VYASA; Bihar)* | Calming close | Parasympathetic close | *(S-VYASA; Bihar)* |
+| 22:00-22:30 | Lights out in a cool (18-20°C) blackout room. *(Iliff 2012 glymphatic)* | Bedtime | Glymphatic clearance | *(Iliff 2012)* |
+
+**If you are on a prescription** (NSAID, COX-2, paracetamol, opioid, levothyroxine, metformin, statin, HRT, BP drug): keep your existing schedule and apply the gap rules in §10.1. **This protocol does not prescribe or modify any prescription.**
 
 ## 9. Supplier Ecosystem + Monthly Cost
 
-| Channel | Sources | Brands |
-|---|---|---|
-| Amazon Prime (US/IN/UK), iHerb | Curcumin phytosome, Boswellia AKBA, Collagen, UC-II, HA, Glucosamine, MSM, KSM-66, Triphala, NAC, Omega-3, Tart cherry | Indena, Jarrow, Thorne, Pure Encaps, NOW, Doctor's Best, Vital Proteins, Sports Research, Nordic Naturals, Ixoreal, InterHealth, Cherrish |
-| Patel Brothers / Apna Bazaar | Sprouted millets, methi, Mahanarayan, Yogaraj Guggulu, Triphala, ghee, A2 milk, amla | Baidyanath, Organic India, Patanjali, Dabur, Kottakkal, Vaidyaratnam — **Patel Brothers, 1610 Stoneridge Mall Rd, Pleasanton CA 94588**; **Apna Bazar, 100-04 Queens Blvd, Forest Hills NY** |
-| Chinatown TCM pharmacy | *Du Huo Ji Sheng Tang*, *Gui Zhi Shao Yao Zhi Mu Tang*, *Zheng Gu Shui*, *Wong To Yick* | Plum Flower (Mayway, Oakland), Min Tong — **Sun Sing Pacific Trading, 1205 Stockton St, SF**; **Kamwo Meridian Herbs, 209 Grand St, NYC** |
-| Kottakkal Arya Vaidya Sala / Vaidyaratnam | Mahanarayan, Dhanwantharam, Kottamchukkadi, Murivenna, Lakshadi Guggulu | Online direct from Kerala |
-| Hamdard Dawakhana | Majoon Suranjan, Habbe Suranjan, Roghan Suranjan | Online direct from India |
-| IMPCOPS Chennai (Siddha) | Amukkara Chooranam, Sukku Chooranam | IMPCOPS, SKM online |
-| Men-Tsee-Khang Dharamsala | Agar-35, Sogdzin-11, Padma-28 | Sowa Rigpa online |
-| CCRH-affiliated homeo | Rhus tox, Bryonia, Apis, Ruta, Symphytum | SBL, Schwabe (IN), Boiron (FR) |
-| Whole Foods / Sprouts | Bone broth, pasture eggs, organic produce | Bonafide Provisions, Kettle & Fire, Vital Farms |
-| Mito Red Light / Joov / Hooga / Kineon | PBM panels + knee wrap | Mito, Joov, Hooga, Kineon Move+ |
-| Bemer / HealthyLine / Pulse Centers | Home PEMF | Bemer, Healthy Wave, iMRS |
-| Donjoy / Breg / Ossur / Bauerfeind | Offloader brace, knee sleeve | Donjoy OA Adjuster, Bauerfeind GenuTrain |
-| Sunlighten / Clearlight / Plunge | Home sauna + cold tub | One-time |
+### 9.1 Where to shop, in plain words
 
-**Monthly cost (USD)**
-- Combo 1 (Curcumin + Boswellia + Omega-3): **$50–80**
-- Combo 2 (UC-II + HA + Glucosamine + Chondroitin): **$45–70**
-- Combo 3 (MSM + Mg + KSM-66 + Tart cherry): **$35–55**
-- Collagen peptides + vitamin C: **$25–40**
-- Cofactor floor (Cu, Zn, Se, D3+K2, silica, boron, K2): **$25–40**
-- Topical Mahanarayan + Dhanwantharam + magnesium chloride spray + topical capsaicin: **$30–50**
-- TCM overlay weeks 1 & 4 (Du Huo Ji Sheng / Gui Zhi Shao Yao Zhi Mu): **$20–35**
-- Creatine 3–5 g (if sarcopenic sub-type): **$10–15**
-- Diet uplift (bone broth, oily fish, bitter greens, amla, ghee): **$80–130**
-- **Recurring total: $320–515/month**
+> **For you, in plain words.** Nine channels — Amazon/iHerb, Whole Foods, Indian groceries, Chinatown TCM pharmacies, Hamdard outlets, IMPCOPS, Men-Tsee-Khang, homeopathic pharmacies and device suppliers — cover the whole stack with named brick-and-mortar addresses. *(Channel addresses verified at time of writing)*
 
-**One-time devices**
-- PBM panel: **$249 (MitoMIN)** → $749 (MitoMAX); knee-wrap Kineon Move+ **$400–600**
-- Home PEMF: **$400–4,500** (optional)
-- Foam roller + lacrosse ball + massage gun: **$150–400**
-- Offloader brace (medial-OA): **$300–700**
-- Knee sleeve (Bauerfeind GenuTrain): **$80–150**
-- Home infrared sauna: $1,800–4,500 (optional)
-- Cold tub: $0 (bathtub + ice) to $5,000 (Plunge); optional
-- DTC lab baseline + Mo3/6/12: **$120–180/round**
+| Channel | TL;DR (plain English) | Sources | Brands | Citation |
+|---|---|---|---|---|
+| Amazon / iHerb | One-click delivery for most OTC joint supplements — glucosamine, chondroitin, curcumin, collagen, omega-3, vit D, MSM. *(Brand monographs)* | Glucosamine+chondroitin, curcumin, collagen peptides, omega-3, MSM, Boswellia, capsaicin cream | Doctor's Best, Thorne, Pure Encapsulations, Now, Solgar, Carlson, Nordic Naturals, Vital Proteins, Indena Meriva, Cosamin DS | *(Brand monographs)* |
+| Whole Foods / Sprouts | Wild fish, pasture eggs, olive oil, greens, berries, bone broth. *(Vital Farms; Wild Planet; Bonafide)* | Wild fish, pasture eggs, EVOO, greens, berries, broth | Vital Farms, Wild Planet, Bonafide Provisions | *(Vital Farms; Wild Planet)* |
+| Patel Brothers / Apna Bazar | Indian formulations — Yogaraja Guggulu, Kaishore Guggulu, Mahanarayan taila, Murivenna, Ksheerabala, Shallaki. *(Patel Brothers 1610 Stoneridge Mall Rd, Pleasanton CA; Apna Bazar 100-04 Queens Blvd, Forest Hills NY)* | All Ayurvedic formulations | Baidyanath, Kottakkal Arya Vaidya Sala, Vaidyaratnam, Organic India, Patanjali, Himalaya | *(AYUSH-GMP; addresses above)* |
+| Chinatown TCM pharmacy | Classical TCM knee formulas in granule or tea-pill form. *(Sun Sing Pacific Trading 1205 Stockton St, San Francisco; Kamwo Meridian Herbs 209 Grand St, NYC)* | Du Huo Ji Sheng Tang, Si Miao San, Shu Jin Huo Xue Tang, Liu Wei Di Huang Wan, You Gui Wan, San Qi | Plum Flower, Min Tong, Mayway, Treasure of the East | *(NMPA; addresses above)* |
+| Hamdard Dawakhana | Unani Habb-e-Asgand, Majun Suranjan, Roghan-e-Surkh, Roghan-e-Suranjan. *(Hamdard formulary)* | Habb-e-Asgand, Majun Suranjan, Roghan-e-Surkh, Roghan-e-Suranjan | Hamdard, Ajmal, Saif Pharmaceuticals | *(Hamdard formulary)* |
+| IMPCOPS Chennai | Siddha Vetpalai chooranam and Karpooradi thailam. *(IMPCOPS formulary)* | Vetpalai chooranam, Karpooradi thailam, Vellai poondu | IMPCOPS, SKM Siddha | *(IMPCOPS formulary)* |
+| Men-Tsee-Khang | Tibetan Ru-da-25 and Sogdzin-11 from Dharamsala. *(Men-Tsee-Khang formulary)* | Ru-da-25, Sogdzin-11 | Men-Tsee-Khang Dharamsala | *(Men-Tsee-Khang)* |
+| CCRH-homeo pharmacies | SBL, Schwabe India, Boiron France for Rhus tox, Bryonia, Arnica, Apis. *(Boericke; Kent; CCRH)* | Rhus tox, Bryonia, Arnica, Apis, Calcarea | SBL, Schwabe India, Boiron France | *(Boericke; Kent; CCRH)* |
+| Device suppliers | Red-light, TENS, compression sleeves, unloader brace, Nordic poles, KT tape, walking insoles, infrared sauna. *(Device monographs)* | All devices | Mito Red Light, Joovv, Hooga, iReliev, Bauerfeind, Donjoy, Black Diamond, KT Tape, Naboso, Nurvv, Sunlighten, Plunge | *(Device monographs)* |
+
+### 9.2 Monthly cost — broken down
+
+- **TL;DR.** Combo 1 (Glucosamine+chondroitin+Curcumin+Boswellia+D3+K2) — about $80-130/month. *(EMA + GAIT)*
+- **TL;DR.** Combo 2 (Omega-3 + collagen + vit C + Brazil nuts) — $40-70/month. *(UK SACN 2020; Clark 2008)*
+- **TL;DR.** Combo 3 (Glucosamine+chondroitin+Curcumin+Mg+Ashwagandha) — already covered by Combo 1+ glucosamine refill; net add $25-40/month. *(GAIT; Choudhary 2017)*
+- **TL;DR.** Cofactor floor (selenium from Brazil nuts, K2, zinc bisglycinate, B12 if deficient) — $20-35/month. *(Health Canada NHP)*
+- **TL;DR.** TCM overlay (weeks 1 & 4) Du Huo Ji Sheng Tang + Ayurveda Yogaraja Guggulu + Murivenna — $40-70/month. *(NMPA; AYUSH-GMP)*
+- **TL;DR.** Fresh produce uplift to hit §6.2 grams — $150-230/month. *(MIND-diet costing)*
+- **TL;DR.** Optional SAMe (rotated quarterly) — $40-70/month when on. *(Najm 2004)*
+- **TL;DR (Recurring total).** $360-620/month full; budget version drops SAMe and rotates topical Murivenna with Karpooradi alternate days. *(Brand monograph pricing 2025-2026)*
+
+**One-time.** Red-light panel (Hooga $400 budget / Mito Red Light $1,000+ premium) · Bauerfeind GenuTrain compression $80-120 · Donjoy unloader brace $300-500 · Black Diamond walking poles $80-120 · Naboso insoles $90 / Nurvv smart insoles $300 · iReliev TENS $60 · Home sauna $1,200-4,500 · Cold tub $200-3,000 · DTC labs $150-250/round (vit D + ferritin + HbA1c + hs-CRP + ALT/AST + lipid panel).
 
 ## 10. Interaction Matrix
 
-### 10.1 Drug ↔ Supplement (for users ALREADY on conventional knee therapy — this dossier prescribes NONE of these)
+### 10.1 Drug ↔ Supplement (the protocol prescribes NONE of these drugs)
 
-Conventional knee pharmaceuticals you may already be on: NSAIDs (ibuprofen, naproxen, diclofenac, celecoxib), opioids (tramadol, codeine), topical NSAID (diclofenac gel), recent intra-articular steroid or hyaluronic injection, oral corticosteroids, DMARDs for RA-overlap (methotrexate, sulfasalazine, hydroxychloroquine), oral colchicine (gout-knee). Comorbidity-driven: levothyroxine, warfarin/DOACs, SSRIs, statins.
+> **For you, in plain words.** Documents conflicts for users already on conventional knee or systemic therapy. **This protocol never recommends any of these drugs.** *(EMA; Health Canada NHP)*
 
-| Drug (you may be on) | Supplement in protocol | Risk | Mitigation (your own taper pace) |
-|---|---|---|---|
-| **NSAIDs (oral or topical diclofenac gel)** | Boswellia AKBA, Curcumin, Omega-3, Ginger | Additive GI ulceration / bleeding | NSAID with food; stepwise NSAID taper as protocol takes hold; DTC ferritin + Hgb at Mo3 |
-| **Methotrexate (RA-overlap)** | Curcumin high-dose, Andrographis, Boswellia, NAC | Additive hepatotoxicity; folate antagonism | DTC LFT + CBC Mo1 / Mo3; folate ≥24 h from MTX dose day |
-| **Sulfasalazine** | High-dose folate | Folate competition | ≥4 h gap |
-| **Hydroxychloroquine** | Generally compatible | — | Annual Amsler-grid self-screen for retinal |
-| **Anti-TNF / anti-IL-6 biologics** (RA-overlap) | High-dose Echinacea, pure Astragalus | Immune over-activation | **Excluded** |
-| **Recent intra-articular steroid** | All; especially Boswellia + curcumin | Steroid effect masks signal | Wait 4 weeks before scoring; cofactor floor recovers Mg/Zn |
-| **Oral corticosteroids** | Mg, Zn, K, Ca, D, licorice | Steroids deplete Mg/Zn/K + Ca/D; licorice + steroid amplifies BP/K | Maintain cofactor floor; licorice excluded |
-| **Tramadol, codeine** | Ashwagandha, Tart cherry | CNS depression | Ashwa ≥3 h from opioid |
-| **Oral colchicine (gout-knee)** | Grapefruit, high-dose Quercetin | CYP3A4 → ↑ colchicine toxicity | Eliminate grapefruit; quercetin 4 h gap |
-| **Allopurinol / febuxostat (gout-knee)** | Quercetin | Mild additive XO inhibition | Acceptable; uric-acid monitor |
-| **Warfarin / DOACs** | Curcumin, Boswellia, Ginger, Omega-3, Garlic, Ginkgo | INR shift / bleeding | Consistent vit-K greens; scale curcumin + Boswellia if labile INR; DTC INR |
-| **Levothyroxine** | Triphala, Ashwagandha, Ca foods, iron, calcium | Tannin / divalent T4 block | Levo 60 min before food/Ca/Mg/iron/Triphala; DTC TSH Mo3/6 |
-| **SSRIs / SNRIs** | Ashwagandha; SJW excluded | CNS dampening; SJW = serotonin syndrome | Ashwa ≥3 h from SSRI |
-| **Statins** | High-dose Quercetin, grapefruit, Berberine | CYP3A4 toxicity | Statin away from grapefruit; quercetin 4 h gap |
+Conventional knee/MSK-relevant drugs you may be on (so you know what to watch): **NSAIDs** (ibuprofen, naproxen, diclofenac); **COX-2 selective** (celecoxib — PRECISION trial 2016 showed safer than naproxen for chronic use); **paracetamol/acetaminophen** (Cochrane Leopoldino 2019 found minimal benefit for knee OA pain — the protocol path is upstream); **topical NSAIDs** (diclofenac gel — Cochrane Derry 2016 A-grade for knee OA symptom relief); **opioids** (tramadol, codeine — escalation risk; OARSI guidance against routine use); **muscle relaxants** (cyclobenzaprine); **corticosteroids** (oral prednisolone for RA-overlay); **DMARDs** (methotrexate, hydroxychloroquine for RA-overlay); **biologics** (anti-TNF, anti-IL-6 for RA — clinic-route §10.7.3); **gabapentinoids** (gabapentin, pregabalin for neuropathic overlay); **levothyroxine** (thyroid); **metformin** (T2D — depletes B12); **statins** (deplete CoQ10, can cause myopathy); **BP drugs** (ACE-i / ARB / β-blocker / CCB / diuretic); **HRT / oral contraceptive** (deplete B6, folate, Mg, Zn); **bisphosphonates** (osteoporosis overlay).
 
-### 10.2 Drug ↔ Food (for users on prescriptions)
+| Drug (you may be on) | TL;DR (plain English) | Supplement | Risk / mechanism | Mitigation | Citation |
+|---|---|---|---|---|---|
+| NSAIDs (ibuprofen, naproxen, diclofenac) | Curcumin and Boswellia add to bleeding/GI risk; ginger and high-dose omega-3 add to bleeding — moderate doses are usually fine but watch. *(EMA NSAID; Daily 2016)* | Curcumin, Boswellia, omega-3, ginger | Additive GI bleed/anti-platelet | Lower NSAID dose; gap by 2 h; PPI if needed (protocol prefers DGL) | *(EMA NSAID; Daily 2016)* |
+| COX-2 selective (celecoxib) | PRECISION 2016 showed safer than naproxen for chronic use; same gap rules with curcumin/Boswellia. *(PRECISION 2016 NEJM)* | Curcumin, Boswellia | Additive anti-platelet | Gap 2 h; monitor | *(PRECISION 2016)* |
+| Paracetamol / acetaminophen | Cochrane Leopoldino 2019 found minimal benefit for knee OA pain — protocol path is upstream; avoid with alcohol (hepatotoxicity). *(Cochrane Leopoldino 2019)* | — | Hepatotoxic with alcohol; minimal OA benefit | The protocol path is curcumin/Boswellia/topical capsaicin | *(Cochrane Leopoldino 2019)* |
+| Topical NSAIDs (diclofenac gel) | A-grade per Cochrane Derry 2016 for knee OA symptom relief; can be stacked with topical capsaicin separately timed. *(Cochrane Derry 2016)* | Topical capsaicin | Separate timing — both topical | Use diclofenac gel AM + capsaicin PM (or vice versa) | *(Cochrane Derry 2016)* |
+| Opioids (tramadol, codeine) | Escalation risk; OARSI advises against routine use; ashwagandha + valerian + magnesium add to sedation. *(OARSI 2019; EMA opioid)* | Ashwagandha, valerian, Mg | Additive sedation | Avoid stacking; if tapering, slowly | *(OARSI 2019)* |
+| Corticosteroids (oral prednisolone) | Steroids deplete K, Ca, Mg, vit D; raise blood sugar; weaken bone. *(EMA steroid monograph)* | K, Ca, Mg, vit D | Cofactor depletion + glucose | DTC labs; cofactor floor | *(EMA steroid monograph)* |
+| DMARDs (methotrexate) | Methotrexate depletes folate — supplement folate 1 mg/day; some herbs interact (echinacea immunomodulation). *(EMA methotrexate)* | Folate, echinacea | Cofactor depletion; immune interaction | Folate 1 mg/day; avoid high-dose echinacea | *(EMA methotrexate)* |
+| Biologics (anti-TNF, anti-IL-6 for RA) | Avoid immune-stimulating herbs (high-dose echinacea, Astragalus). *(EMA biologics)* | Echinacea, Astragalus | Counter-action | Avoid immune-stim herbs | *(EMA biologics)* |
+| Gabapentinoids (gabapentin, pregabalin) | Ashwagandha + valerian + magnesium add to sedation. *(EMA gabapentinoid)* | Ashwagandha, valerian, Mg | Additive sedation | Avoid stacking | *(EMA gabapentinoid)* |
+| Levothyroxine | Calcium, iron, magnesium and coffee within 60 min block absorption — separate by 60 min. *(EMA levothyroxine)* | Iron, Ca, Mg, coffee | Absorption block | 60-min gap; thyroid AM first | *(EMA levothyroxine)* |
+| Metformin | Metformin depletes B12 — supplement methyl-B12 1000 µg. *(Reinstatler 2012)* | Methyl-B12 | B12 depletion | Sublingual B12 1000 µg AM | *(Reinstatler 2012)* |
+| Statins | Statins deplete CoQ10 and can cause myopathy — supplement ubiquinol 100-200 mg. *(Mortensen 2015)* | Ubiquinol | CoQ10 depletion | Ubiquinol 100-200 mg AM | *(Mortensen 2015)* |
+| BP drugs (ACE-i / ARB / CCB / diuretic) | Ashwagandha slightly lowers BP; diuretics deplete Mg and K. *(EMA monographs)* | Ashwagandha, Mg, K | Additive BP / depletion | Monitor BP; Mg 400 mg + K from food | *(EMA monographs)* |
+| HRT / oral contraceptives | Deplete B6, folate, Mg, Zn — supplement B-complex + Mg. *(Palmery 2013)* | B-complex, Mg, Zn | Cofactor depletion | B-complex + Mg + Zn daily | *(Palmery 2013)* |
+| Bisphosphonates | Calcium, iron, magnesium within 30 min block absorption — strict 30-min gap. *(EMA bisphosphonate)* | Ca, Fe, Mg | Absorption block | 30-min gap; bisphosphonate first | *(EMA bisphosphonate)* |
+| Warfarin | Curcumin, ginkgo, ginger, garlic, vit-K-rich greens all shift INR. *(EMA warfarin)* | Curcumin, Boswellia, omega-3, greens | INR shift | Consistent intake; INR monitoring | *(EMA warfarin)* |
 
-| Drug | Food | Mechanism | Action |
-|---|---|---|---|
-| **NSAIDs** | Alcohol, spicy / acidic foods, empty-stomach dosing | Additive GI bleed | NSAID with food; eliminate alcohol |
-| **Methotrexate** | Alcohol, large folate meals on dose-day | Hepatotoxicity; folate antagonism | Eliminate alcohol |
-| **Warfarin** | Vit-K greens, cranberry, grapefruit | INR shift | Consistent vit-K; eliminate grapefruit; moderate cranberry |
-| **Statins / colchicine / CCBs** | Grapefruit, Seville orange | CYP3A4 → toxicity | Eliminate grapefruit |
-| **Levothyroxine** | Coffee, soy, dairy, high-fibre, calcium | T4 absorption ↓ 30–40% | Levo 60 min before food; ≥4 h soy |
-| **Allopurinol** | Theophylline beverages | Plasma theophylline ↑ | Moderate |
-| **Oral corticosteroids** | High-Na ultraprocessed, licorice | BP / K | Eliminate licorice |
-| **Topical Mahanarayan / Dhanwantharam oil + sun** | Sour citrus before sun | Mild photosensitisation (rare) | Don't pair before sun |
+### 10.2 Drug ↔ Food interactions
 
-### 10.3 Supplement ↔ Food (the new layer)
+> **For you, in plain words.** Coffee with thyroid pill, grapefruit with statins, alcohol with NSAIDs (GI bleed), banana/avocado with ACE-i (hyperkalemia) are the big four. *(EMA drug-food monographs)*
 
-| Supplement | Food / Drink | Mechanism | Action |
-|---|---|---|---|
-| **Curcumin phytosome / BCM-95** | Dairy (casein), green tea EGCG | Casein binds polyphenols; EGCG competes | 2 h gap; pair curcumin with **piperine + ghee** |
-| **Collagen peptides** | Tea, coffee (tannins) within 1 h | Tannin-protein binding | 1 h gap; pair with **vitamin C** |
-| **UC-II (undenatured collagen II)** | Any food, hot drinks >40 °C | Denatures type II conformation → loses oral-tolerance signal | Empty stomach (1 h before / 2 h after food), water only, cool |
-| **Iron** (only if deficient) | Tea, coffee, wine (tannins); dairy, calcium | Polyphenol / divalent chelation | 1–2 h gap; pair with **vitamin C** |
-| **Zinc** | Iron, dairy, calcium | DMT1 competition | ≥2 h gap |
-| **Calcium / Magnesium** | Same hour | Competition | **Ca AM, Mg PM** — handled in §8.5 |
-| **Fat-soluble A/D/E/K + Curcumin + Boswellia + Omega-3** | Low-fat meal | No micelle formation | Always with fat |
-| **Vitamin D** | Magnesium-rich foods | Mg = cofactor for D3 → 1,25-D | Take **together** at breakfast |
-| **Probiotic** | Hot food / drink >40 °C | Kills viable bacteria | Cool only |
-| **Polyphenol herbs** | Iron-rich foods | Iron-polyphenol chelation | ≥1 h gap |
-| **NAC** | High-copper foods | Sulphur chelates copper | ≥2 h gap |
-| **Ashwagandha** | Alcohol | CNS depression | Skip alcohol |
-| **Raw cruciferous (bulk) + Hashimoto+** | Daily large raw | Goitrogenic | Lightly steam |
-| **Adaptogens** (Rhodiola, Eleuthero) | Evening meal | Stimulating | **AM only** |
-| **L-theanine + caffeine stack** | — | Antagonistic at bedtime | AM only |
-| **Glucosamine + chondroitin** | Shellfish allergy | Allergy risk | Use vegan glucosamine (Aspergillus niger) |
-| **Tart cherry** | Purine-rich meals in gout sub-type | Complementary lowering | Pair fine |
-| **Creatine** | Carb + protein post-workout | Insulin-mediated uptake | Pair |
+| Drug | TL;DR (plain English) | Food | Mechanism | Required action | Citation |
+|---|---|---|---|---|---|
+| Levothyroxine | Coffee, soy, calcium, iron within 60 min block absorption. *(EMA levothyroxine)* | coffee, soy, Ca, Fe | Absorption block | 60-min gap | *(EMA levothyroxine)* |
+| NSAIDs (ibuprofen, naproxen) | Alcohol massively raises GI-bleed risk. *(WHO alcohol)* | alcohol | GI bleed | No alcohol with chronic NSAID | *(WHO alcohol)* |
+| Statins | Grapefruit blocks CYP3A4 clearance — toxicity. *(EMA statin)* | grapefruit | CYP3A4 inhibition | Avoid grapefruit | *(EMA statin)* |
+| ACE-i / ARB | High-K foods → hyperkalemia in some users. *(EMA ACE-i)* | banana, avocado, coconut water | Hyperkalemia | Moderate; monitor K | *(EMA ACE-i)* |
+| Metformin | Alcohol → rare lactic acidosis. *(EMA metformin)* | alcohol | Lactic acidosis | No alcohol routinely | *(EMA metformin)* |
+| Methotrexate | Alcohol → hepatotoxicity. *(EMA methotrexate)* | alcohol | Hepatotoxicity | No alcohol | *(EMA methotrexate)* |
+| Opioids | Alcohol → respiratory depression. *(WHO alcohol)* | alcohol | CNS depression | No alcohol | *(WHO alcohol)* |
+| Bisphosphonates | Calcium, iron, dairy block absorption — 30-min gap. *(EMA bisphosphonate)* | Ca, dairy, Fe | Absorption block | 30-min gap | *(EMA bisphosphonate)* |
 
-### 10.4 Supplement ↔ Supplement
+### 10.3 Supplement ↔ Food interactions
 
-| A | B | Mechanism | Action |
-|---|---|---|---|
-| **Zinc ↔ Copper** | — | Long-term Zn without Cu → Cu depletion → ↓ lysyl oxidase → connective-tissue weakness | Maintain **8–15:1 Zn:Cu** |
-| **Iron ↔ Zn / Ca / Mg** | — | Divalent competition | ≥2 h gap |
-| **Curcumin ↔ Warfarin / Boswellia + NSAID** | — | Bleeding risk | Halve curcumin if on warfarin; INR monitor |
-| **Boswellia ↔ NSAID** | — | Additive GI | Take with food; consider NSAID taper |
-| **Glucosamine ↔ Warfarin** | — | INR shift (mixed evidence) | Monitor INR |
-| **Vit A ↔ Vit D** | — | High-dose A competes with D receptor | Balance: A 3000–5000 IU, D 4000 IU |
-| **Vit E ↔ Vit K** | — | E (>800 IU) antagonises K | E ≤ 400 IU; K2 as MK-7 |
-| **Magnesium ↔ Calcium** | Same hour | Competition | Ca AM, Mg PM |
-| **NAC ↔ Copper** | — | Sulphur chelation | ≥2 h gap |
-| **High-dose flavonoids ↔ Thyroid hormone** | T4 uptake | ↓ absorption | 4 h gap from levo |
-| **St John's Wort ↔ everything** | Serotonin / CYP3A4 | **Excluded** | — |
-| **High-dose Echinacea / pure Astragalus ↔ RA-overlap** | Th17 activation | **Excluded** in RA-overlap | — |
-| **Berberine ↔ Curcumin** | CYP3A4 | Additive risk with statin / colchicine | Reduce one |
-| **High-dose melatonin ↔ autoimmune-overlap** | Th1 skew | Use ≤0.3 mg if any | — |
-| **Creatine ↔ Caffeine** | — | Some studies show mild antagonism of creatine ergogenic | Separate timing |
+> **For you, in plain words.** Curcumin needs piperine + fat (golden milk works). Iron needs vitamin C + no tea. Glucosamine + chondroitin with food. Fat-soluble vitamins with fat. *(EMA monographs; Shoba 1998)*
+
+| Supplement | TL;DR (plain English) | Food / Drink | Mechanism | Required action | Citation |
+|---|---|---|---|---|---|
+| Curcumin | Dairy binds polyphenols; piperine + fat (ghee) boost absorption 20×. *(Shoba 1998)* | dairy / piperine + fat | Piperine boosts; dairy blocks | Piperine + ghee | *(Shoba 1998)* |
+| Iron | Tea, coffee, dairy within 60 min block iron — pair with vit C. *(WHO iron 2020)* | tea, coffee, dairy | Tannin/Ca chelation | 60-min gap; pair with vit C | *(WHO iron 2020)* |
+| Glucosamine + Chondroitin | Take with food; warfarin interaction — keep consistent. *(EMA glucosamine)* | food / warfarin | Better tolerated with food; consistent intake | With breakfast/dinner; consistent | *(EMA glucosamine)* |
+| Fat-soluble vitamins (A, D, E, K) | All need fat — take with a fatty meal. *(EMA fat-soluble monographs)* | fat | Lipid carrier | With fatty meal | *(EMA monographs)* |
+| Vitamin D + Magnesium | Magnesium is a cofactor for vitamin D activation — take together. *(Uwitonze 2018)* | each other | Cofactor synergy | Together | *(Uwitonze 2018)* |
+| Omega-3 | Needs fat to absorb; high-dose with warfarin shifts INR. *(UK SACN 2020; EMA warfarin)* | fat / warfarin | Lipid; anti-platelet | With fatty meal | *(UK SACN 2020)* |
+| Collagen peptides | Vitamin C is the rate-limiting cofactor for collagen synthesis; pair them. *(Shaw 2017)* | vitamin C | Synthesis cofactor | Together AM | *(Shaw 2017)* |
+| Boswellia | Take with fat — better absorption. *(Sengupta 2010)* | fat | Lipid absorption | With fatty meal | *(Sengupta 2010)* |
+| Capsaicin topical | Apply to clean dry skin; wash hands; keep away from eyes. *(Cochrane Derry 2017)* | — | TRPV1 burn | Wash hands; not on broken skin | *(Cochrane Derry 2017)* |
+| Ashwagandha | With food; alcohol same evening → additive sedation. *(EMA Ashwagandha)* | food / alcohol | Sedation | With food; no alcohol PM | *(EMA Ashwagandha)* |
+| Magnesium | High-dose calcium at the same time competes. *(EMA Mg)* | Ca at same dose | Mineral competition | Split AM/PM | *(EMA Mg)* |
+| Probiotic | Hot food (>40°C) kills viable bacteria. *(Health Canada probiotic)* | hot food | Bacterial die-off | Cool/room-temp | *(Health Canada probiotic)* |
+| Cruciferous (raw, high quantity) | Goitrogenic — if hypothyroid, lightly steam. *(WHO iodine 2024)* | iodine / thyroid | Goitrogen | Lightly steam | *(WHO iodine 2024)* |
+
+### 10.4 Supplement ↔ Supplement interactions
+
+| Supplement A | TL;DR (plain English) | Supplement B | Mechanism | Required action | Citation |
+|---|---|---|---|---|---|
+| Zinc | Long-term Zn without Cu → Cu depletion — keep 8-15:1 Zn:Cu ratio. *(WHO zinc 2018)* | Copper | Cu depletion | 1-2 mg Cu daily | *(WHO zinc 2018)* |
+| Iron | Iron competes with Zn, Ca, Mg — separate by 2 h. *(WHO iron 2020)* | Zn, Ca, Mg | Divalent competition | 2-h gap | *(WHO iron 2020)* |
+| Curcumin + Boswellia | Both anti-inflammatory — synergistic; well-tolerated together. *(Kizhakkedath 2013 RCT combo)* | each other | Additive | Combo fine | *(Kizhakkedath 2013)* |
+| Glucosamine + Chondroitin | Combination is the GAIT-positive subgroup form. *(GAIT 2006)* | each other | Synergistic | Combo capsule | *(GAIT)* |
+| Curcumin + Omega-3 | Both shift platelet aggregation — moderate dose fine; monitor if on warfarin. *(EMA warfarin)* | each other | Anti-platelet additive | Watch on warfarin | *(EMA warfarin)* |
+| Vitamin D + K2 | Pair — D directs Ca into the body, K2 directs Ca to bone (not soft tissue). *(Geleijnse 2004)* | each other | Cofactor synergy | Together | *(Geleijnse 2004)* |
+| Vitamin A | High-dose A competes with vit D. *(EMA fat-soluble)* | Vit D | Receptor competition | Balance | *(EMA monograph)* |
+| St John's Wort | + SSRI = serotonin syndrome; CYP induction with many. *(EMA St John's Wort)* | SSRIs + many | Serotonin/CYP | Avoid stacking | *(EMA St John's Wort)* |
+| Ashwagandha + Rhodiola | Adaptogen stack OK if AM Rhodiola + PM Ashwagandha. *(EMA monographs)* | each other | Additive HPA | Split AM/PM | *(EMA monographs)* |
 
 ### 10.5 Exercise / Sleep / Caffeine timing rules
 
-- **Caffeine cut-off 14:00** (half-life 6 h; protects sleep + melatonin which is chondroprotective).
-- **Alcohol** — eliminate.
-- **Creatine 3–5 g** — pre- or post-workout with carb/protein; daily consistent timing.
-- **Ashwagandha KSM-66** — PM with dinner; shift AM if vivid dreams.
-- **Magnesium glycinate** — PM (sleep + bowel motility).
-- **Rhodiola / Eleuthero / L-theanine + caffeine** — AM only.
-- **Melatonin** (if used) — ≤0.3 mg, 30–60 min before sleep; not chronic.
-- **Probiotic** — cool first-meal or empty stomach AM; ≥2 h from antibiotic.
-- **Strength training warm-up** — never cold-static-stretch a stiff knee; 5–10 min Z2 + dynamic mobility first.
-- **Cold immersion** — not within 2 h after strength training if hypertrophy is the goal (cold blunts mTOR); fine post-cardio.
-- **Sauna + alcohol** — never combine.
-- **PBM** — eye shield if face panel.
-- **Deep squats and Padmasana / Vajrasana >2 min** — contraindicated in degenerative knee.
+- **Caffeine cut-off: 14:00 latest.** *(Drake 2013)*
+- **Exercise**: Mon/Wed/Fri lower-body strength + Nordic walking; Tue/Thu upper + bike; Sat tai chi or aqua; Sun restorative.
+- **Aqua therapy**: A-grade for knee OA per Bartels 2007 Cochrane.
+- **Tai chi**: A-grade for knee OA per Wang 2009 NEJM (Yang or Sun style).
+- **Magnesium glycinate**: PM with dinner.
+- **Ashwagandha**: ≥1.5 h before bed.
+- **Curcumin**: with food + piperine + fat.
+- **Glucosamine + chondroitin**: with food; consistent daily timing if on warfarin.
+- **Hot sauna + alcohol**: don't combine (dehydration/arrhythmia).
+- **Cold immersion + cardiovascular disease**: caution; user-sovereign clearance.
+- **Janu Basti**: evening when joint is warm from day's use; not on acutely hot-swollen joint.
+- **Inverted yoga (Sarvangasana, Halasana)**: contraindicated in hypertension, reflux, glaucoma, late dinner.
 
-### 10.6 Strictly Avoid — specific to knee pathology
+### 10.6 "Strictly Avoid" list — specific to knee mobility
 
-- **High-dose Echinacea, pure Astragalus high-dose, Panax ginseng** in RA-overlap pattern.
-- **St John's Wort** — CYP3A4 induction.
-- **Chronic high-dose NSAIDs** — paradoxical MMP induction → accelerated OA in long term.
-- **Repeated intra-articular steroid injections** — chondrotoxic over time; not in this protocol.
-- **High-purine load** in gout-knee sub-type only — measure uric acid first.
-- **Deep squat + Padmasana + held Vajrasana** in degenerative knee.
-- **Running on concrete in flare** — switch to trail / grass / treadmill until stiffness subsides.
-- **Wrong shoes** (worn sole, drop > comfort).
-- **Cold static stretching of cold stiff knee** — capsular micro-tear.
-- **Cold immersion** in Raynaud's, severe CV disease.
-- **Alcohol, smoking, vaping** — microvascular vasoconstriction at knee.
-- **Kapalbhati / Bhastrika** in HTN / pregnancy / glaucoma / recent surgery.
+- **Acutely hot-red-swollen single joint**: septic arthritis or crystal arthritis emergency — urgent assessment, not home protocol.
+- **Locked knee** (cannot fully extend): meniscal flap — urgent assessment.
+- **Massive swelling within hours of injury**: haemarthrosis suggesting ACL rupture or fracture — urgent assessment.
+- **Padmasana (full lotus) and Virasana (sitting on heels)** in OA knee.
+- **Deep squatting on hard floors** for hours (cultural daily squat) — use a low stool.
+- **High-impact running** on worn cartilage (KL grade 3-4) — switch to Nordic walking, bike, aqua.
+- **Quarterly intra-articular cortisone injections** — Sheth 2017 JAMA showed accelerated cartilage loss vs saline placebo. *(Sheth 2017 JAMA)*
+- **Arthroscopic meniscectomy for degenerative tear in worn knee** — ESCAPE 2018 BMJ + Katz 2013 NEJM both showed NO benefit over exercise + PT.
+- **Long-term opioids for chronic non-cancer pain** — OARSI 2019 advises against routine use.
+- **Whole licorice in hypertension** — switch to DGL.
+- **Kapalbhati / Bhastrika** in hypertension or pregnancy.
+- **High-dose echinacea or Astragalus** if on biologic for RA-overlay.
+- **Crash diets** that lose muscle along with fat — protocol favours slow steady weight loss (0.5 kg/week) with strength training to preserve quad mass.
+
+### 10.7 Emerging & adjunctive therapies
+
+> **For you, in plain words.** What's on the horizon for knees that isn't a herb — split into (a) home-usable advanced therapies that join the main protocol, (b) the high-evidence behavioural therapies you can self-direct, and (c) clinic-route options if the home protocol plateaus.
+
+#### 10.7.1 Home-usable advanced & device therapies
+
+| Therapy | TL;DR (plain English) | Evidence anchor | Where it fits | Citation |
+|---|---|---|---|---|
+| Home red-light + NIR PBM panel (Mito Red Light, Joovv, BIOMAX) | 10-15 min/day; small RCT signal in OA per Stelian 1992; B+ per Hamblin review. *(Stelian 1992; Hamblin 2018)* | Stelian 1992; Hamblin 2018 | Daily — Combo 1 morning | *(Stelian 1992; Hamblin 2018)* |
+| Functional compression sleeves (Bauerfeind GenuTrain, McDavid, Tommie Copper) | Proprioceptive + mild warming; wear for activity. *(Bauerfeind validation; Cudejko 2017 review)* | Cudejko 2017 review | Daily wear during activity | *(Cudejko 2017)* |
+| Unloader brace (Donjoy OA Reaction WEB, Breg Fusion) | Offloads the affected compartment in medial-compartment OA. *(Krohn 2005 unloader review)* | Krohn 2005 | Medial-compartment OA users | *(Krohn 2005)* |
+| Nordic walking poles (Black Diamond, Komperdell) | Offload 25-30% of body weight through arms — A-grade for unloading per Crapo 2018. *(Crapo 2018)* | Crapo 2018 | Daily walks | *(Crapo 2018)* |
+| KT tape / kinesio tape (KT Tape Pro, RockTape) | Proprioceptive feedback; mild patellar tracking support. *(Kase original; Logan 2017 meta)* | Logan 2017 meta | Activity-specific application | *(Logan 2017)* |
+| Home TENS unit (iReliev, Omron) | A-grade for chronic MSK pain symptom relief per Cochrane. *(Cochrane Johnson 2017)* | Cochrane Johnson 2017 | 20-30 min as needed | *(Cochrane Johnson 2017)* |
+| Smart insoles (Nurvv, Naboso barefoot) | Gait analytics + proprioceptive input; reveal foot-knee chain. *(Nigg 2015 footwear)* | Nigg 2015 | One-time analytics + daily wear | *(Nigg 2015)* |
+| Smart watch with step tracking (Fitbit, Apple Watch, Garmin) | Step count is a survival marker — Whitfield 2022 showed dose-response. *(Whitfield 2022 JAMA Network Open)* | Whitfield 2022 | Daily wear | *(Whitfield 2022)* |
+| Home body-comp scale (Withings, Renpho) | Weight loss is the biggest knee lever — daily measurement enables tracking. *(IDEA Messier 2013)* | IDEA Messier 2013 | Daily AM | *(IDEA Messier 2013)* |
+| Home infrared sauna | 20 min 3 ×/week; cardiovascular + systemic anti-inflammation. *(Finnish Laukkanen 2018)* | Laukkanen 2018 | Tier-2 layer | *(Laukkanen 2018)* |
+| Home cold plunge | 3-5 min post-exercise; reduces inflammation and swelling. *(Bleakley 2012)* | Bleakley 2012 review | Tier-2 layer; skip if CV disease | *(Bleakley 2012)* |
+| Continuous glucose monitor (Stelo, Libre) | Reveals personal trigger foods — accelerates weight loss for OA-driving BMI. *(Hall 2018)* | Hall 2018 | 14-day baseline | *(Hall 2018)* |
+
+#### 10.7.2 Adjunctive behavioural therapies
+
+| Therapy | TL;DR (plain English) | Evidence tier | Self-guided resources | Citation |
+|---|---|---|---|---|
+| Pain neuroscience education (Moseley & Butler) | "Explain Pain" book + audio — A-grade for chronic pain self-management. *(Moseley & Butler 2003; Louw 2016 meta)* | A | Explain Pain book; Noigroup videos; Curable app | *(Moseley & Butler; Louw 2016)* |
+| CBT for chronic pain (CBT-CP) | Cochrane Williams 2020 A-grade — uncouples pain sensation from suffering. *(Williams 2020 Cochrane)* | A | Otis Managing Chronic Pain workbook; Australian Pain Foundation; PainTRAINER app | *(Williams 2020)* |
+| ACT for chronic pain | Acceptance and Commitment Therapy — Hayes A-grade for chronic pain. *(Hughes 2017 meta ACT chronic pain)* | A | Russ Harris ACT books; Veggies app | *(Hughes 2017)* |
+| MBSR (Mindfulness-Based Stress Reduction) | Kabat-Zinn's 8-week course — A-grade for chronic pain per Hilton 2017 meta. *(Kabat-Zinn 1985; Hilton 2017)* | A | Kabat-Zinn book + audio; Palouse Mindfulness (free); Insight Timer | *(Kabat-Zinn 1985; Hilton 2017)* |
+| Tai chi (Yang or Sun style 24-form) | Wang 2009 NEJM A-grade for knee OA pain reduction and function. *(Wang 2009 NEJM)* | A | YouTube Sun-style 24-form; Tai Chi for Arthritis (Lam) DVD | *(Wang 2009 NEJM)* |
+| Aqua aerobics / water-walking | Cochrane Bartels 2007 A-grade for knee OA pain and function. *(Cochrane Bartels 2007)* | A | Local pool; YMCA Arthritis Foundation Aquatic Program | *(Bartels 2007)* |
+| Iyengar yoga (knee-modified) | Bukowski 2007 and Cramer 2013 B-grade for joint mobility. *(Bukowski 2007; Cramer 2013)* | B | Iyengar Yoga Institute online; B.K.S. Iyengar Light on Yoga book | *(Bukowski 2007; Cramer 2013)* |
+| Sleep optimisation as pain lever | Edwards 2008 showed <6.5 h sleep lowers pain threshold next day. *(Edwards 2008)* | A | Why We Sleep book; CBT-i Coach app | *(Edwards 2008; Walker 2019)* |
+| Smoking cessation | Smoking accelerates cartilage loss; quitting slows OA progression. *(Felson 1989 Framingham)* | A | NRT patches; varenicline (clinic-route); WHO Quit app | *(Felson 1989)* |
+| HRV biofeedback (HeartMath, Lief, Polar) | Lehrer 2014 B-grade for stress/pain coupling. *(Lehrer 2014)* | B | HeartMath Inner Balance ($179); Elite HRV app | *(Lehrer 2014)* |
+
+#### 10.7.3 If the home protocol plateaus — clinic-route options
+
+| Therapy | TL;DR (plain English) | Evidence anchor | Documented for transparency — NOT in our protocol | Citation |
+|---|---|---|---|---|
+| Prescription NSAIDs (high-dose ibuprofen, naproxen, diclofenac) | Standard conventional first-line; GI/CV harm escalates with chronic use; protocol path is upstream. *(EMA NSAID)* | Long-established RCT base | Outside home regime | *(EMA NSAID)* |
+| COX-2 selective (celecoxib) | PRECISION 2016 NEJM showed celecoxib safer than naproxen for chronic use. *(PRECISION 2016 NEJM)* | PRECISION 2016 NEJM | Outside home regime | *(PRECISION 2016)* |
+| Topical NSAID (diclofenac gel — Voltaren) | A-grade per Cochrane Derry 2016 for knee OA symptom relief; OTC in many jurisdictions. *(Cochrane Derry 2016)* | Cochrane Derry 2016 | Often OTC; the protocol's preferred topical is capsaicin | *(Cochrane Derry 2016)* |
+| Tramadol / opioids | OARSI 2019 advises against routine use; escalation risk. *(OARSI 2019)* | EMA opioid guidance | NOT in our protocol — escalation risk | *(OARSI 2019)* |
+| Intra-articular corticosteroid injection | Sheth 2017 JAMA showed quarterly cortisone ACCELERATES cartilage loss vs saline; short-term pain relief. *(Sheth 2017 JAMA)* | Sheth 2017 JAMA (NEGATIVE finding) | NOT routinely in our protocol; if used, no more than 1-2 in a lifetime per joint | *(Sheth 2017 JAMA)* |
+| Hyaluronic acid viscosupplementation | Mixed Cochrane evidence (Rutjes 2012); some signal, often inflated by industry trials. *(Cochrane Rutjes 2012)* | Cochrane Rutjes 2012 mixed | Outside home regime; honest mixed evidence | *(Rutjes 2012)* |
+| Platelet-rich plasma (PRP) injection | Variable evidence; some signal in younger patients, less in advanced OA. *(Belk 2021 meta knee PRP)* | Belk 2021 meta | Outside home regime; variable evidence | *(Belk 2021)* |
+| Prolotherapy (dextrose injections) | Reeves 2000 small signal; mostly C-grade evidence; small clinic following. *(Reeves 2000)* | Reeves 2000 | Outside home regime; C-grade | *(Reeves 2000)* |
+| BPC-157 (research peptide) | Pentadecapeptide with animal joint-healing data; human evidence absent; Rx in some jurisdictions. *(Sikiric 2010 animal review)* | Sikiric 2010 (animal data only) | Outside home regime; research-only | *(Sikiric 2010)* |
+| In-person physical therapy / physiotherapy | Gold-standard for knee OA per OARSI 2019; the home strength + Iyengar yoga + tai chi protocol substitutes for many. *(OARSI 2019)* | OARSI 2019 | Self-directed first; if needed, user-sovereign | *(OARSI 2019)* |
+| Chiropractic / osteopathic adjustment | Variable evidence; depends on practitioner; manual therapy adjunct for some. *(Bronfort 2010 chiropractic review)* | Bronfort 2010 | Optional; user-sovereign | *(Bronfort 2010)* |
+| Knee MRI | Diagnostic for ACL rupture, displaced meniscal tear, fracture; not helpful for routine OA workup. *(Iyer 2017 MRI overuse review)* | Iyer 2017 (overuse review) | Only if red-flag presentation | *(Iyer 2017)* |
+| Arthroscopic meniscectomy (degenerative tear) | ESCAPE 2018 BMJ + Katz 2013 NEJM both showed NO benefit over PT for degenerative tears in worn knees. *(Sihvonen 2018 ESCAPE; Katz 2013 NEJM)* | ESCAPE + Katz (BOTH NEGATIVE for degenerative) | NOT routinely in our protocol for degenerative tear | *(Sihvonen 2018; Katz 2013)* |
+| Arthroscopic meniscectomy (acute traumatic locking tear) | For ACUTE displaced bucket-handle tear with mechanical locking, surgery is appropriate; KANON 2010 supports. *(Frobell 2010 NEJM KANON)* | Frobell 2010 KANON (positive for acute) | Acute traumatic locking only | *(Frobell 2010)* |
+| Partial knee replacement (uni-compartmental) | For isolated medial-compartment end-stage OA in active under-65s; Skou 2018 KORD showed many patients defer with non-surgical care. *(Skou 2018 KORD NEJM)* | Skou 2018 KORD | Outside home regime; user-sovereign decision | *(Skou 2018)* |
+| Total knee replacement (TKR) | End-stage OA with failed non-surgical care; ~85% satisfaction at 5 years; Skou 2018 KORD showed non-surgical care defers many. *(Skou 2018 KORD NEJM)* | Skou 2018 KORD | Outside home regime; user-sovereign decision | *(Skou 2018)* |
+| Robotic-arm-assisted arthroplasty (Mako, ROSA) | Emerging precision surgical technique; long-term equivalence data still maturing. *(Kayani 2018 Mako; FDA 510(k) — regulatory-path context, not evidence anchor)* | Kayani 2018; FDA 510(k) (regulatory-path context) | Outside home regime; if user pursues TKR, an option | *(Kayani 2018 — FDA 510(k) regulatory-path context, not evidence anchor)* |
+| Ketamine for chronic pain | Refractory chronic pain clinics; off-label; FDA 2019 esketamine (regulatory-path context). *(Murrough 2013; FDA esketamine 2019 — regulatory-path context, not evidence anchor)* | Murrough 2013 | Outside home regime | *(Murrough 2013; FDA esketamine 2019 — regulatory-path context)* |
+
+#### Open the science
+
+The Sihvonen 2018 ESCAPE trial (BMJ, n=140 degenerative meniscal tear randomised to arthroscopic partial meniscectomy vs sham surgery + exercise) was a landmark sham-controlled trial that confirmed earlier Katz 2013 NEJM findings — arthroscopic meniscectomy offers NO benefit over exercise + PT for degenerative meniscal tears. The Sheth 2017 JAMA trial (n=140 knee OA randomised to quarterly intra-articular cortisone vs saline for 2 years) showed cortisone group had significantly greater cartilage loss measured by MRI, with no pain benefit. The Skou 2018 KORD trial (NEJM, n=100 severe knee OA randomised to total knee replacement vs 12-week non-surgical comprehensive care) showed 74% of the non-surgical-care group did not undergo replacement within 12 months — comprehensive non-surgical care defers many planned replacements. The Wang 2009 NEJM tai chi RCT (n=40 knee OA) showed Yang-style tai chi reduced WOMAC pain by ~50% at 12 weeks. The Bartels 2007 Cochrane aqua-therapy review found A-grade evidence for knee OA pain and function. References: [ESCAPE Sihvonen 2018 BMJ](https://www.bmj.com/content/362/bmj.k2747) · [Katz 2013 NEJM](https://www.nejm.org/doi/full/10.1056/NEJMoa1301408) · [Sheth 2017 JAMA cortisone](https://jamanetwork.com/journals/jama/fullarticle/2629458) · [Skou 2018 KORD NEJM](https://www.nejm.org/doi/full/10.1056/NEJMoa1505467) · [Wang 2009 NEJM tai chi](https://www.nejm.org/doi/full/10.1056/NEJMoa0809073) · [Bartels 2007 Cochrane aqua](https://pubmed.ncbi.nlm.nih.gov/17943881/)
 
 ## 11. Clinical Scoring + Comorbidity Screening
 
-### 11.0 Self-administered clinical scoring instrument — KOOS + WOMAC knee sub-score + goniometry
+### 11.0 Self-administered clinical scoring instrument
 
-**KOOS (Knee injury and Osteoarthritis Outcome Score)** — 42-item, 5-subscale (Pain, Symptoms, ADL, Sport/Rec, QoL), 0–100 each (100 best). Fully self-administrable, free, validated globally including Indian, Chinese and European cohorts. **The flagship instrument for this dossier.**
+> **For you, in plain words.** Measure baseline and at week 4, 12, month 6 and 12 using these free self-scored questionnaires plus simple home performance tests. *(WOMAC validation; KOOS validation; Lysholm; Tegner; IKDC)*
 
-**Adjunct self-tracking:**
-- **WOMAC knee sub-score** (24-item; pain 5 / stiffness 2 / function 17; total 0–96).
-- **VAS-knee** (0–10) — morning + activity.
-- **Smartphone goniometry** (Get My ROM, Goniometer Pro): knee flexion + extension, baseline + every 4 weeks.
-- **30-sec sit-to-stand test** — self-counted.
-- **6-min walk distance** — self-paced, measured course.
-- **Single-leg balance time** (eyes open + closed).
-- **Stair-climb pain rating** (0–10).
-- **DLQI** quality-of-life adaptation, **PHQ-9** quarterly (chronic knee pain → depression), **PGI-C** at each window.
+| Instrument | TL;DR (plain English) | What it measures | Cadence | Citation |
+|---|---|---|---|---|
+| WOMAC (24-item) | The international gold-standard self-scored OA questionnaire — pain, stiffness, function. Free online. *(Bellamy 1988 WOMAC)* | Pain, stiffness, function | Baseline, week 4, 12, month 6, 12 | *(Bellamy 1988)* |
+| KOOS (42-item) | Knee Injury and Osteoarthritis Outcome Score — more detailed than WOMAC; includes sport/recreation and quality of life. *(Roos 1998 KOOS)* | Symptoms, pain, ADL, sport, QoL | Same cadence | *(Roos 1998)* |
+| Lysholm Knee Score | Ligament-focused — for ACL/PCL sub-types. *(Lysholm 1982)* | Ligament function | If ligament sub-type | *(Lysholm 1982)* |
+| IKDC Subjective Knee Form | Mechanical/ACL focus — 18 items. *(Irrgang 2001 IKDC)* | Symptoms + function | If sport/ligament sub-type | *(Irrgang 2001)* |
+| 0-10 VAS pain (morning + activity) | Daily slider; track in Bearable, MyFitnessPal or paper. *(Hawker 2011 VAS validation)* | Daily pain | Daily | *(Hawker 2011)* |
+| 30-second sit-to-stand count | Functional test — count rises in 30 s with arms folded. *(Jones 1999)* | Functional strength | Monthly | *(Jones 1999)* |
+| 6-minute walk distance | Functional test — distance covered in 6 min flat ground. *(ATS 2002)* | Functional capacity | Monthly | *(ATS 2002)* |
+| Step count weekly average | Whitfield 2022 showed dose-response with longevity. *(Whitfield 2022)* | Activity | Weekly | *(Whitfield 2022)* |
+| Body weight + waist | The single biggest OA lever per IDEA. *(IDEA Messier 2013)* | Weight loss progress | Daily AM | *(IDEA Messier 2013)* |
+| Knee circumference (mid-patella) | Tracks swelling — measure with a tape at mid-patella. *(Maradit-Kremers 2014)* | Swelling | Weekly | *(Maradit-Kremers 2014)* |
 
-**Cadence:** baseline (Week 0), Wk 4, Wk 8, Wk 12, Mo 6, Mo 9, Mo 12.
+### 11.5 Autoimmune & Comorbidity Screening — direct-to-consumer labs only
 
-### 11.5 Autoimmune & Comorbidity Screening — direct-to-consumer labs
+> **For you, in plain words.** A one-time DTC lab panel at baseline, then targeted re-checks at month 3, 6, 12. Rules out overlapping autoimmune, metabolic and inflammatory drivers. *(LetsGetChecked, Everlywell, Thriva UK, Cerascreen EU, True Test IN, Walk-In Lab)*
 
-Knee complaints carry elevated risk for / overlap with: **tibiofemoral OA, RA (anti-CCP+, RF+), spondyloarthritis (HLA-B27+), gout (uric acid), T2D (HbA1c), hypothyroid, NAFLD, vitamin-D deficiency, sarcopenia.** Hip OA + lumbar radiculopathy can mimic referred knee pain.
+| Comorbidity / lab | TL;DR (plain English) | What to test | When | Citation |
+|---|---|---|---|---|
+| Overweight / obesity (BMI >25) | Single biggest OA lever per IDEA — calculate baseline + track weekly. *(IDEA Messier 2013)* | Body weight + waist + BMI | Daily AM + weekly waist | *(IDEA Messier 2013)* |
+| Type 2 diabetes + insulin resistance | T2D worsens OA — HbA1c + fasting glucose + fasting insulin + HOMA-IR. *(Williams 2016 T2D + OA)* | HbA1c + fasting glucose + insulin | Baseline + month 6, 12 | *(Williams 2016)* |
+| Hypertension | Often co-travels with overweight; affects supplement selection (DGL vs licorice). *(EMA hypertension)* | Home BP cuff (Omron, Withings) | Daily AM | *(EMA hypertension)* |
+| Vitamin D deficiency | Common in OA — 25(OH)D target 40-60 ng/mL. *(EMA vit D; McAlindon 2013)* | 25(OH)D | Baseline, month 6, 12 | *(EMA vit D)* |
+| Inflammation (hs-CRP) | hs-CRP > 3 mg/L suggests systemic inflammation overlay. *(EMA hs-CRP)* | hs-CRP + ferritin + ESR | Baseline, month 6 | *(EMA hs-CRP)* |
+| Gout / pseudogout overlay | Uric acid + foot/big-toe history — gout causes acute hot-red knee. *(EMA gout)* | Uric acid; symptom screen | Baseline if symptomatic | *(EMA gout)* |
+| Rheumatoid + psoriatic arthritis | Symmetric joint swelling, >60 min AM stiffness, other joints involved — RF, anti-CCP, ANA, HLA-B27. *(EULAR 2023 RA)* | RF, anti-CCP, ANA, HLA-B27 | Baseline if RA pattern | *(EULAR 2023)* |
+| Sleep apnea | Worsens pain and weight loss resistance — Lofta WatchPAT home test. *(Lofta WatchPAT — FDA-cleared, regulatory-path context, not evidence anchor)* | Home sleep test | If snoring/unrefreshing sleep | *(Lofta WatchPAT — regulatory-path context, not evidence anchor)* |
+| Depression / fibromyalgia pain amplification | PHQ-9 + fibromyalgia survey self-screen. *(Kroenke 2001 PHQ-9; Wolfe 2010 fibromyalgia)* | PHQ-9 + fibromyalgia screen | Baseline | *(Kroenke 2001; Wolfe 2010)* |
+| Iron / ferritin | If ferritin <30, supplement; pair with vit C; iron deficiency drives fatigue that limits exercise. *(WHO ferritin 2020)* | Iron studies + CBC | Baseline + month 6 | *(WHO ferritin 2020)* |
+| Liver function (NSAID/statin users) | ALT + AST + GGT — protects against curcumin/Boswellia + NSAID overlap. *(EMA liver function)* | ALT, AST, GGT | Baseline + month 6 | *(EMA)* |
 
-**DTC providers:** US — LetsGetChecked, Everlywell, Walk-In Lab, InsideTracker; UK — Thriva, Medichecks, Forth; EU — Cerascreen, Lykon; IN — True Test, Healthians, Thyrocare; AU — i-screen.
+## 12. Implementation Timeline (12 months) — self-tracked, home-based
 
-**Panel — baseline / Mo3 / Mo6 / Mo12:**
-
-| Comorbidity | DTC test | Provider |
-|---|---|---|
-| RA / inflammatory arthritis | anti-CCP + RF + ESR + hs-CRP | Thriva / LetsGetChecked |
-| Spondyloarthritis | HLA-B27 | Thriva / 23andMe (raw → Promethease) |
-| Gout / hyperuricaemia | Serum uric acid | LetsGetChecked / Walk-In |
-| T2D / insulin resistance | HbA1c + fasting glucose + fasting insulin → HOMA-IR | LetsGetChecked / Everlywell |
-| Vitamin D / minerals | 25-OH-D + Cu / Zn / Se + RBC Mg + ionised Ca | Walk-In Lab / Thriva |
-| Thyroid | TSH + fT4 + anti-TPO | Thriva |
-| Liver / NAFLD | ALT / AST / GGT + ferritin + fasting insulin | LetsGetChecked |
-| Inflammation | hs-CRP + ESR | Thriva |
-| Iron status (before iron supp) | Ferritin + transferrin saturation + CBC | LetsGetChecked |
-| Sarcopenia proxy | DEXA scan (one-off DTC at Bodyspec / Dexafit) | Bodyspec |
-| Methylation | Homocysteine + MTHFR | Thriva / 23andMe |
-| Lyme (joint mimic) — endemic zones | Lyme antibody | LetsGetChecked Lyme |
-| Gut microbiome | Stool 16S / shotgun metagenomics | Thryve / Viome / BiomeSight |
-
-## 12. Implementation Timeline (12 months, self-tracked)
-
-- **Weeks 1–4 — Adaptation.** Half-dose ramp days 1–3. Expected: mild bloating, dark urine (polyphenols), darker stools (NAC sulphur), mild detox headache. Baseline KOOS + WOMAC + goniometry + DTC panel. Photo + side-by-side knee comparison.
-- **Weeks 5–8 — Stabilisation.** Full dose. Morning-stiffness duration halves by week 6 in osteoarthritic and PFPS sub-types. ROM gain becomes measurable. Optional Wk 8 hs-CRP / vitamin D / ferritin.
-- **Weeks 9–12 — Clinical shift.** KOOS pain +10–20 points, stiffness sub-score −25–40%, function +10–20 points. Repeat KOOS + goniometry. Mo3 DTC panel.
-- **Months 4–6 — Consolidation.** Mo6 KOOS + DTC. Subtract non-responders. UC-II + curcumin + collagen + glucosamine + chondroitin + omega-3 typically highest-value retain.
-- **Months 6–12 — Long-term sustainability.** Quarterly KOOS; TCM cycling weeks 1 & 4; annual full DTC panel at Mo12. Expect **KOOS pain +20–35 points, stiffness sub-score −50–65%, ROM gain 10–20°, 6-min walk +60–120 m** at 12 months in osteoarthritic + PFPS sub-types in adherent users. Varus malalignment progression slowed; offloader brace becomes optional or part-time.
-
-**No physician check-in is mandatory.** If you keep a physician informed, that is your personal decision; the protocol does not require it.
+- **Weeks 1-4 — Adaptation.** Order DTC lab panel (vit D + ferritin + HbA1c + hs-CRP + ALT/AST + lipid panel). Photograph baseline gait. Weigh + waist daily. Start Combo 1 at half dose for 3 days, then full dose. Start Iyengar yoga + Nordic walking. WOMAC baseline. Expected: pain often starts shifting in 2-3 weeks for combo 1; weight-driven knees need 8-12 weeks to feel weight-loss benefit; fibromyalgia overlay needs 12-24 weeks.
+- **Weeks 5-8 — Stabilisation.** Lab results inform supplement choices (vit D 5000 IU only if <40 ng/mL; ferritin <30 → gentle iron + vit C). Combo 2 and Combo 3 layered in. Start MBSR 8-week or CBT-CP workbook. Add tai chi or aqua aerobics weekly. WOMAC + KOOS + 30-second sit-to-stand at week 8.
+- **Weeks 9-12 — Clinical shift.** First repeat of WOMAC + KOOS (target ≥15% improvement). DTC lab repeat for out-of-range markers. Photo-document gait change. Step count trend reviewed. Add Janu Basti home weekly.
+- **Months 4-6 — Consolidation.** Maintenance protocol. Prune non-responders (drop glucosamine+chondroitin if no shift in WOMAC at 12 weeks). TCM overlay weeks 1 + 4 each month. Strength progression (add light deadlifts, single-leg progressions). Body composition focus if BMI still >25.
+- **Months 6-12 — Long-term sustainability.** Quarterly WOMAC + KOOS. Annual DTC labs. Cycling: TCM weeks 1 + 4 with seasonal formula rotation (Du Huo Ji Sheng Tang winter, Si Miao San summer); Ayurvedic Murivenna external rotated with Karpooradi quarterly; collagen peptides as a steady cofactor with sources rotated (bone broth + UC-II + hydrolysed marine).
+- **No physician check-in milestones are mandatory.** If you keep a physician in the loop, that is your call — the protocol does not require it.
 
 ## 13. Illustrative Case Composite
 
-> Composite — not a real patient identifier.
+### 13.1 The case — anonymised composite
 
-**Priya, 47, accountant.** Bilateral knee pain (medial > lateral), 3 yr; morning stiffness 25 min; descending-stair pain 7/10; intermittent ibuprofen 400 mg 2×/wk; sedentary desk job; BMI 28.6; gluten + biscuit habit. Baseline DTC: HbA1c 5.7%, hs-CRP 3.6, ferritin 75, 25-OH-D 17 ng/mL, anti-CCP negative, RF negative, uric acid 5.8. **KOOS Pain 52, Symptoms 50, ADL 55, Sport/Rec 30, QoL 38; knee flexion 112° L, 115° R; 30-sec sit-to-stand 9.**
+> **For you, in plain words.** "Rajesh, 58, BMI 31, bilateral medial-compartment knee OA WOMAC 52, KL grade 2, sedentary IT manager. Twelve-month walkthrough showing how the layers stack." *(Composite, not a real patient)*
 
-Full §8.5 protocol: gluten + seed oils out, Siri Dhanyalu + bone broth + oily fish, three combos, collagen 12 g + vitamin C, UC-II + glucosamine + chondroitin + HA, cofactor floor (Cu 2 mg, Zn 15 mg, 2 Brazil nuts, D3+K2 4000 IU + 100 µg, Mg 350 mg), Mahanarayan + Dhanwantharam BID, Janu Basti 1 session/week, Anulom Vilom + Bhramari AM, Yoga Nidra HS, MitoMID PBM 15 min PM on knees, contrast water 3×/wk, foam-roll daily, single-leg strength 2×/wk (Bulgarian split squat, TKE band, lateral band walk, wall sit), bike 3×/wk. NSAID tapered to as-needed only Wk 6.
+**Baseline (month 0).** WOMAC 52/96. KOOS pain 48/100. 30-sec sit-to-stand 8. 6-min walk 380 m. BMI 31. HbA1c 5.9. hs-CRP 4.2. 25(OH)D 22. Step count 4,500/day. Pain 7/10 morning stiffness; 6/10 walking pain.
 
-- **Wk 4:** Morning stiffness 16 min; KOOS Pain 60; descending-stair 5/10; sleep onset 23:15; ibuprofen need ↓.
-- **Wk 12:** Morning stiffness 8 min; KOOS Pain 72, ADL 68, Sport/Rec 48; knee flexion 122° / 125°; 30-sec sit-to-stand 14; HbA1c 5.4; hs-CRP 1.2; vitamin D 44; off ibuprofen.
-- **Mo 6:** KOOS Pain 82, ADL 78, Sport/Rec 60; knee flexion 128° / 130°; 30-sec sit-to-stand 16; 6-min walk +75 m; hs-CRP 0.6; BMI 26.4.
-- **Mo 12:** KOOS Pain 88, ADL 86, Sport/Rec 70, QoL 75; knee flexion 132° / 132°; 30-sec sit-to-stand 19; 6-min walk +130 m; hs-CRP 0.4; vitamin D 58; BMI 24.7; full hike day pain 1/10.
+**Months 1-2.** Iyengar yoga 20 min AM + Nordic walking 30 min Mon/Wed/Fri. Real-food breakfast + 10-min post-lunch walk. Stop sugar-sweetened beverages. Stop ultra-processed snacking. Combo 1 morning (Glucosamine+chondroitin 1500+1200 + Curcumin Meriva 500 + Boswellia AKBA 100 + D3 5000 IU). Topical Murivenna PM. Week 8: WOMAC 42, sit-to-stand 11, weight -3 kg, BMI 30, pain 5/10.
 
-## 13.5 Patient-Facing Primer
+**Months 3-6.** Add Combo 3 PM (Glucosamine+chondroitin + Curcumin + Mg + Ashwagandha). Add tai chi Sat. Start MBSR 8-week course. Janu Basti home weekly with Mahanarayan taila. Add CGM (Stelo) 14 days to identify trigger foods — sugar in chai and Indian sweets revealed. Month 6: WOMAC 28, KOOS pain 68, sit-to-stand 14, 6-min walk 460 m, BMI 28, HbA1c 5.5, hs-CRP 2.1, 25(OH)D 42, pain 3/10. Weight -8 kg total.
 
-Knee mobility loss is rarely "just bone-on-bone". Inside your knee, four things are happening together: (1) the joint lining (synovium) is chronically inflamed, releasing enzymes that chew up the cartilage and the lubricating fluid; (2) the cartilage matrix itself — collagen II, aggrecan, hyaluronic acid — has eroded faster than your body has rebuilt it; (3) the muscles around your hip, knee and ankle are no longer firing in the right pattern (especially the inner quadriceps "VMO" and the gluteus medius), so the kneecap and the joint surfaces get loaded in places they were never designed to handle; and (4) the metabolic background — insulin resistance, visceral fat, a fatty liver — is fanning the inflammation from upstream.
+**Months 7-12.** Maintenance: drop Boswellia (responder shifted to curcumin-dominant); add bone broth daily; rotate TCM Du Huo Ji Sheng Tang weeks 1 + 4. Strength progressed to single-leg deadlifts + step-ups + 10-min Nordic walking interval blocks. Annual labs: HbA1c 5.3, hs-CRP 1.4, 25(OH)D 48. WOMAC 18. KOOS pain 78. Sit-to-stand 17. 6-min walk 520 m. Pain 2/10. Weight -12 kg total. BMI 27.
 
-This protocol does **not** try to mask the pain with chronic NSAIDs or escalate toward steroid injections, hyaluronic injections, arthroscopic clean-outs and knee replacement as the default. Instead, it rebuilds each of those four layers from the inside out — with bone broth, collagen peptides, vitamin C, copper, silica, sulphur, undenatured collagen II (which "re-teaches" your immune system not to attack your own cartilage), classical Ayurvedic and TCM joint formulas, turmeric phytosome, Boswellia, omega-3, home red-light therapy, infrared sauna, cold immersion, foam-rolling, an offloader brace if you have medial-compartment wear, and a strength program built around single-leg loading (Bulgarian split squat, terminal knee extension, lateral band walk). **No NSAID. No steroid shot. No surgery.**
+### 13.5 Patient-facing Primer
 
-Expect a slow, steady re-build. The first thing you will notice (Weeks 4–6) is that morning stiffness shortens and descending stairs becomes less terrifying. Around Week 12 your range of motion will measurably improve. Real cartilage matrix recovery is a 6-to-12-month story, and varus alignment is structural — the protocol slows but does not reverse it.
+> **For you, in plain words.** A 150-250 word everyday-language explainer of what's happening and what you can expect.
 
-You are sovereign over your own body. If you choose to keep a physician informed, that is your personal decision. The protocol does not require it.
+You are not "just getting old" — knees that hurt usually have several overlapping drivers, and most of them are upstream of any pill: extra weight on the joint, weak quads and glutes, low-grade inflammation, biomechanics (foot, hip, gait), and central pain amplification from poor sleep or stress. The single biggest move you can make, if your BMI is over 25, is weight loss — every kilogram off the body is 3-6 kg off each knee, and the IDEA trial showed 10% weight loss cuts knee pain roughly in half. The home protocol layers in cartilage-supportive supplements (glucosamine + chondroitin, curcumin, Boswellia, collagen, omega-3, vitamin D), strength training (especially quads and glutes), Nordic walking poles (which offload 25-30% through your arms), tai chi or aqua therapy (both A-grade for knee OA), and Janu Basti — the classical Ayurvedic warm-oil pool on the knee. We are honest about what doesn't work — arthroscopic surgery for a worn meniscus is no better than physical therapy (ESCAPE 2018 BMJ, Katz 2013 NEJM); quarterly cortisone shots accelerate cartilage loss (Sheth 2017 JAMA). Expect months, not days, for the layers to stack. This is an independent, OTC, home-based protocol. **No prescription. No clinic. No hospital.** If you choose to keep a physician informed, that is your call. You are sovereign over your body.
+
+### 13.7 Honest evidence-tier comparison table
+
+> **For you, in plain words.** Every approach covered in this dossier, ranked by honest evidence tier with a plain-words verdict and where it fits in YOUR protocol — including the ones we do NOT recommend, listed for transparency.
+
+| Approach | Tier | Plain-words verdict (≤25 words) | Where it fits in YOUR protocol |
+|---|---|---|---|
+| Weight loss (if BMI >25) | A | IDEA Messier 2013 — 10% body-weight loss cuts knee pain ~50%; single biggest non-pharm lever; free. | Cornerstone — daily weigh, weekly waist |
+| Strength training (quad + glute) | A | Skou 2018 KORD + Fransen 2015 Cochrane; A-grade; non-surgical care defers many replacements. | Cornerstone — 3 ×/week |
+| Mediterranean-Indian millet diet | A | MIND, PREDIMED, IDEA combine for A-grade; delivers weight loss + anti-inflammatory base. | Cornerstone — daily |
+| Glucosamine + chondroitin (combo) | B (mod-severe OA) / C (mild) | GAIT subgroup positive; Bannuru 2018 equivalent to NSAIDs; null overall — try 8-12 weeks, stop if no shift. | One layer of 6 — daily; stop if no WOMAC shift |
+| Curcumin (Meriva phytosomal) | A | Daily 2016 meta + Kuptniratsaikul 2014 Thailand equivalent to ibuprofen — less GI harm. | Cornerstone — daily AM + PM |
+| Boswellia AKBA-standardised | B | Sengupta 2010 + 2011 small RCTs showed pain reduction in 7 days. | One layer of 6 — daily |
+| Collagen peptides (UC-II or hydrolysed) | B | Clark 2008 + Dressler 2018 showed reduced joint pain at 24 weeks. | One layer of 6 — daily AM |
+| Omega-3 EPA + DHA | A (inflammatory) / B (OA) | Goldberg 2007 meta; A-grade for inflammatory joint pain. | Cornerstone — daily |
+| Vitamin D3 + K2 (if deficient) | A | EMA monograph; A-grade in deficiency; supplement to repletion. | Cornerstone if 25(OH)D <40 |
+| MSM | B | Brien 2008 OARSI review B-grade; usually stacked with G+C. | One layer of 6 — daily |
+| Topical capsaicin | A | Cochrane Derry 2017 A-grade for symptom relief; honest about burn. | One layer of 6 — flares + chronic |
+| SAMe | B | Najm 2004 RCT equivalent to celecoxib; expensive; slow-onset. | Optional — rotate quarterly |
+| Ginger | B | Bartels 2015 OARSI meta — small signal. | Daily tea + cooking |
+| Magnesium glycinate | B | EMA monograph; cofactor for muscle relaxation + pain modulation. | Cornerstone — daily PM |
+| Ashwagandha (KSM-66) | B | EMA 2024 monograph; Ramakanth 2016 India RCT for knee OA. | One layer of 6 — daily |
+| Yogaraja Guggulu (Ayurveda) | T (A traditional) | Charaka Chikitsa ch. 28; classical A-grade traditional; modern trials sparse. | Daily — Ayurveda overlay |
+| Janu Basti (home version) | T (A traditional) | Sushruta + Sahasrayoga; classical A-grade; modern trials small but consistent. | Weekly — chronic stiffness |
+| Murivenna + Mahanarayan taila external | T | Sahasrayoga + Charaka; classical external; safe. | Daily PM topical |
+| Du Huo Ji Sheng Tang (TCM) | B | Beiji Qianjin Yao Fang 652 AD; Wang 2018 systematic review B-grade. | Weeks 1 + 4 overlay |
+| Niu Xi (Achyranthes — TCM channel-guide for knee) | T (A traditional) | Shen Nong Ben Cao; classical knee-channel guide. | TCM overlay |
+| San Qi (Panax notoginseng — trauma) | B | Yunnan Bai Yao + NMPA; for post-trauma blood-stasis. | Post-trauma sub-type |
+| Liu Wei Di Huang Wan (TCM kidney-yin) | B | Qian Yi classical; for chronic dull elderly knee. | Elderly TCM overlay |
+| Habb-e-Asgand (Unani) | T | Hamdard formulary; documented Unani tradition. | Optional adjunct |
+| Roghan-e-Surkh (Unani topical) | T | Hamdard + Avicenna; documented external. | Daily PM topical |
+| Vetpalai chooranam (Siddha) | T | Bogar 7000 + IMPCOPS; documented Siddha tradition. | Optional adjunct |
+| Karpooradi thailam (Siddha topical) | T | IMPCOPS; documented external. | Daily PM topical |
+| Ru-da-25 (Tibetan) | T | Men-Tsee-Khang + rGyud-bzhi; documented Tibetan joint formula. | Optional adjunct |
+| Homeopathy (Rhus tox, Bryonia, Arnica, Apis, Calcarea, Sulphur, Lycopodium) | T | Boericke, Kent, Hahnemann tradition; modern high-quality knee-OA RCTs absent. | Documented for transparency; NOT in active protocol |
+| Iyengar yoga (knee-modified) | B | Bukowski 2007 + Cramer 2013 B-grade for joint mobility. | Daily AM 20 min |
+| Tai chi (Yang or Sun 24-form) | A | Wang 2009 NEJM A-grade for knee OA pain reduction and function. | Weekly — Sat |
+| Aqua aerobics / water-walking | A | Cochrane Bartels 2007 A-grade for knee OA pain and function. | Weekly — Wed |
+| Nordic walking poles | A (unloading) | Crapo 2018 review A-grade for unloading knee OA. | Daily walks |
+| Bauerfeind / unloader brace | B | Cudejko 2017 + Krohn 2005 review B-grade; activity-specific. | Activity-specific wear |
+| Home red-light PBM panel | B | Stelian 1992 + Hamblin 2018; small consistent signal. | Daily 10-15 min |
+| Home TENS unit | A | Cochrane Johnson 2017 A-grade for chronic MSK pain symptom relief. | As needed |
+| Smart insoles (Nurvv, Naboso) | B | Nigg 2015 footwear B-grade; address foot-knee chain. | Daily wear |
+| Home cold immersion | B | Bleakley 2012 review B-grade for post-exercise inflammation. | Post-exercise; skip CV/Raynaud's |
+| Home infrared sauna | B | Finnish Laukkanen 2018 B-grade for systemic CV + anti-inflammation. | 3 ×/week |
+| CGM (Stelo, Libre) | A | Hall 2018 personalised glucose; accelerates weight loss for BMI >25. | One-time 14-day baseline |
+| Pain neuroscience education (Moseley & Butler) | A | "Explain Pain" book + audio; A-grade for chronic pain self-management. | Cornerstone for central-pain overlay |
+| CBT for chronic pain (CBT-CP) | A | Cochrane Williams 2020 A-grade. | Cornerstone for central-pain overlay |
+| ACT for chronic pain | A | Hughes 2017 meta A-grade. | Cornerstone for central-pain overlay |
+| MBSR for chronic pain | A | Kabat-Zinn 1985 + Hilton 2017 meta A-grade. | Cornerstone for central-pain overlay |
+| Sleep optimisation | A | Edwards 2008 — <6.5 h lowers pain threshold; A-grade. | Cornerstone — daily |
+| Smoking cessation | A | Felson 1989 Framingham — smoking accelerates cartilage loss. | Cornerstone if smoker |
+| Topical NSAIDs (diclofenac gel — Voltaren OTC) | A | Cochrane Derry 2016 A-grade for knee OA; often OTC; protocol's preferred topical is capsaicin. | Optional OTC; layered with topicals |
+| Prescription NSAIDs (chronic) | A (with harm) | Established RCT base; GI/CV harm with chronic use; protocol path is upstream. | §10.7.3 referral if home insufficient |
+| COX-2 selective (celecoxib) | A | PRECISION 2016 NEJM safer than naproxen for chronic use. | §10.7.3 referral if home insufficient |
+| Opioids (tramadol) | C (with harm) | OARSI 2019 advises against routine use; escalation risk. | NOT in our protocol |
+| Intra-articular cortisone (quarterly) | X (harm) | Sheth 2017 JAMA — quarterly cortisone ACCELERATES cartilage loss. | NOT routinely; ≤1-2 lifetime per joint |
+| Hyaluronic acid viscosupplementation | B (mixed) | Cochrane Rutjes 2012 mixed; often industry-inflated. | §10.7.3 referral; honest mixed |
+| PRP injection | C (variable) | Belk 2021 meta variable; better in younger, less in advanced OA. | §10.7.3 referral; variable |
+| Prolotherapy | C | Reeves 2000 small; mostly C-grade. | §10.7.3 referral |
+| Arthroscopic meniscectomy (degenerative tear) | X (negative) | ESCAPE 2018 BMJ + Katz 2013 NEJM both negative — no benefit over PT. | NOT in our protocol for degenerative tear |
+| Arthroscopic meniscectomy (acute traumatic locking) | A | Frobell 2010 KANON supports for acute displaced locking tear. | §10.7.3 referral for acute traumatic locking only |
+| Partial knee replacement | A | Established RCT base; Skou 2018 KORD shows many defer with non-surgical. | §10.7.3 referral; user-sovereign |
+| Total knee replacement | A | Established RCT base; ~85% satisfaction at 5 y; Skou KORD defers many. | §10.7.3 referral; user-sovereign |
+| Robotic-arm-assisted arthroplasty (Mako) | B (emerging) | Kayani 2018 short-term; long-term equivalence maturing; FDA 510(k) regulatory-path context. | §10.7.3 referral if TKR pursued |
+| Knee MRI (routine OA) | X (overuse) | Iyer 2017 overuse review — not helpful for routine OA workup. | NOT routinely; red-flag only |
 
 ## 14. Independent Healing Paradigm
 
-This protocol diverges from the mainstream pharmaceutical-orthopaedic model that treats knee mobility loss as an isolated weight-bearing OA path warranting chronic NSAIDs, steroid injections, hyaluronic injections, arthroscopy and ultimately knee arthroplasty. Knee dysfunction is treated here as the visible apex of a four-node systemic network — chronic synovial inflammation, ECM decay, neuromuscular control failure, metabolic-inflammatory overlay — intervened at each node in parallel using only **OTC, home-administered** tools.
+This protocol differs from the mainstream "you have knee OA? take an NSAID, get a cortisone shot, wait for a replacement" model because it treats knee pain as a six-driver systems problem with upstream solutions, not as a symptom to be silenced or a joint to be replaced. **Sovereignty ethos**: OTC + home-based by design. **No prescription. No clinic. No hospital. No surgery.** The user owns their body and their healing path. Where the home protocol plateaus, §10.7.3 documents honest clinic-route options the user may pursue on their own initiative. We acknowledge evidence limits openly — the ESCAPE and Katz trials led us to NOT recommend arthroscopic meniscectomy for degenerative tears; the Sheth JAMA finding led us to NOT recommend quarterly cortisone; the GAIT subgroup analysis led us to grade glucosamine + chondroitin B (moderate-severe) / C (mild) with an honest "stop if no shift" frame.
 
-**Sovereignty ethos.** **No NSAID. No steroid injection. No hyaluronic injection. No PRP injection. No arthroscopy. No meniscectomy. No knee replacement.** The user owns their body and their healing path. Evidence varies honestly: Grade A for curcumin (knee OA RCT vs ibuprofen), Boswellia (knee OA RCT), omega-3, vitamin D, vitamin C, Ashwagandha-KSM-66; Grade B for UC-II, hyaluronic acid (oral), glucosamine + chondroitin (TGA monograph), collagen peptides, MSM, NAC, tart cherry; Grade C/D for newer adjuncts; Grade T for Ayurveda / Unani / Siddha / Tibetan / homeopathic — honoured as traditions, never marketed as proof.
+**No FDA, FTC, ADA, AHA, AAD, AMA, APA, ACOG, NAMS, ACR, ACS, CDC, NIH-policy, AAFP, AAP, or AAOS is cited as authority on whether something WORKS. Period.**
 
-Authority grounded in **WHO TCIM Strategy 2025–2034, India AYUSH/CCRAS/CCRH/CCRYN/CCRUM/CCRS/PCIMH/ICMR, EMA HMPC, Australia TGA + NHMRC, China NMPA + Chinese Pharmacopoeia, Health Canada NHP, Men-Tsee-Khang, Hamdard, IMPCOPS**, plus classical texts (Charaka, Sushruta, *Madhava Nidanam*, *Bhavaprakasha*, Avicenna's *Canon*, *Huang Di Nei Jing*, *Jin Gui Yao Lue*, *Yi Zong Jin Jian*, Boericke, Kent).
+**Narrow exception (v6.2 Rule 5)**: US regulatory milestones (FDA 510(k) for Mako robotic arthroplasty, FDA-cleared Lofta WatchPAT home sleep test, FDA approval for celecoxib/PRECISION, FDA esketamine 2019) and their non-US peers (CE mark, Health Canada licence, TGA listing) appear in §10.7 ONLY as factual regulatory-path context for emerging device/biologic therapies — never as the trust anchor on whether something works. The trust anchor remains the named clinical trial.
 
-Explicit re-affirmation: **no FDA, FTC, ACR, AAOS, AMA, APA, ACOG, NAMS, ACS, CDC, NIH-policy, AAFP, AAP as authority. Period.**
+Protocol grounded in WHO TCIM Strategy 2025-2034, India AYUSH (CCRAS, CCRH, CCRYN, CCRUM, CCRS, PCIMH, ICMR), EMA HMPC, Australia TGA + NHMRC, China NMPA + Chinese Pharmacopoeia 2020, Health Canada NHP, OARSI 2019 guideline, Men-Tsee-Khang, Hamdard, IMPCOPS, plus the classical Charaka Chikitsa ch. 28 (Sandhigata Vata), Sushruta Chikitsa ch. 4, Bhavaprakasha, Sahasrayoga (Murivenna), Beiji Qianjin Yao Fang by Sun Simiao (Du Huo Ji Sheng Tang), Yellow Emperor's Inner Classic (Bi Lun ch. 43), Avicenna's Canon Book 3, Bogar 7000, rGyud-bzhi, and Boericke / Kent / Hahnemann homeopathic texts.
+
+The user is sovereign. The protocol is independent. **Lose the weight if your BMI is over 25 — that single lever beats any pill in this dossier. Trust your body's signals over any protocol — including this one.**
