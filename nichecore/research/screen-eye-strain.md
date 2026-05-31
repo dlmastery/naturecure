@@ -2,589 +2,838 @@
 ailmentId: screen-eye-strain
 ailmentName: Screen Eye Strain (Digital Eye Strain / Computer Vision Syndrome)
 domain: BrainEye
-lastUpdated: 2026-05-29
+lastUpdated: 2026-05-30
 gradeMix: [A, B, C, D, T, H]
-clinicalScoringInstrument: CVS-Q (Computer Vision Syndrome Questionnaire, 16-item, Spanish-validated, free); OSDI (Ocular Surface Disease Index, 12-item); subjective Eye Strain VAS 0–10
-subTypes: [accommodative-fatigue, dry-eye-evaporative-overlap, convergence-insufficiency, blue-light-sleep-disruption, refractive-uncorrected, headache-driven, posture-cervical-overlap]
-comorbidityScreen: [dry-eye-disease, uncorrected-refractive-error, presbyopia, convergence-insufficiency, cervicogenic-headache, migraine, sleep-deprivation, low-vitamin-D]
+clinicalScoringInstrument: "Computer Vision Symptom Scale (CVSS17 — Segui 2015 Spanish validation); overlay Ocular Surface Disease Index (OSDI) for tear-film comfort; Schirmer or tear-break-up-time if symptomatic; smartphone-photo redness tracking; daily symptom diary (blur, burning, dryness, gritty, tearing, headache, neck-shoulder tension)"
+subTypes: [accommodative-strain-near-work, dry-eye-driven-strain, refractive-uncorrected-strain, blue-light-sensitivity-overlap, post-LASIK-or-cataract-dry-overlap, convergence-insufficiency-overlap, ergonomic-driven-strain, contact-lens-overuse]
+comorbidityScreen: [uncorrected-refractive-error, dry-eye-disease, meibomian-gland-dysfunction, convergence-insufficiency, accommodative-dysfunction, contact-lens-overuse, sleep-deprivation, low-vitamin-D, perimenopause-induced-dry-eye, Sjögren-syndrome, autoimmune-dry-eye, blepharitis, demodex-blepharitis, sleep-apnea-with-floppy-eyelid]
 authorAgent: ailment-360-research
+schemaVersion: "v6.2.3"
 internalRalph:
-  pass1Complete: true
-  pass2Complete: true
-  pass3Complete: true
+  pass1Complete: true   # structural — 16 sections + tree-friendly H3 audit + plain-English-first scaffold + §10.7 emerging + §13.7 honest comparison
+  pass2Complete: true   # citations + Cochrane caveats (blue-light glasses NULL Singh 2023, omega-3 mixed DREAM trial, warm-compress B+ Wang 2020)
+  pass3Complete: true   # AYUSH BAMS + Australia TGA-integrative-GP + non-clinician parent comprehension test
 ---
 
-> **Framing.** Grounded in WHO TCIM Strategy 2025–2034, India AYUSH/CCRAS/CCRH/PCIMH monographs, EMA HMPC herbal monographs, TGA/NHMRC evidence guidelines, China NMPA + Chinese Pharmacopoeia, Health Canada NHP monographs, Men-Tsee-Khang formularies, Hamdard Dawakhana, IMPCOPS Chennai, and the classical Ayurvedic, TCM, Unani, Siddha, Tibetan and homeopathic literature. **No FDA, FTC, AAO, AOA, AMA, CDC, NIH-policy or US disease-association source is cited as authority.** Individual peer-reviewed papers led by non-US institutions are treated as evidence objects only.
+> **For you, in plain words.** This is a safe, over-the-counter, at-home plan for screen-induced eye strain — the dryness, burning, grit, blur, headaches, and neck-shoulder tension that come from 6-12 hours a day at a screen. We lead with the **highest-leverage non-pharm levers**: the **20-20-20 rule** (every 20 minutes, look 20 feet away for 20 seconds), correct **monitor positioning + ergonomics**, **blink-awareness training** (screen use drops blink rate by ~60%), **preservative-free artificial tears** (the one A-grade symptomatic intervention), warm compresses for meibomian-gland dysfunction, and a **comprehensive eye exam to rule out the single biggest hidden driver: uncorrected refractive error**. Supplements come second. We are honest where the science is mixed — including for **blue-light glasses** (Cochrane Singh 2023 found NULL for digital eye strain symptoms, even though they are heavily marketed; we present the honest evidence), **omega-3 for dry eye** (mixed — DREAM trial NULL, smaller trials positive), and the **clinic-route IPL, punctal plugs, cyclosporine drops** which are not OTC and sit in §10.7.3. *(WHO Traditional Medicine Strategy 2025-2034; Cochrane Singh 2023 blue-light glasses; Rosenfield 2011 20-20-20; AAO clinical position note — referenced for historical regulatory-context only, not as evidence anchor)*
 >
-> **Sovereignty.** This is a **strictly OTC, strictly home-based** protocol. There is **no prescription eye drop, no LASIK/PRK recommendation, no clinic IPL, no clinic punctal plug, no hospital infusion** recommended anywhere in this dossier. Every supplement, device and test is consumer-purchasable and self-administrable. The drug column in §10.1 documents conflicts for users **already on conventional therapy** who are layering this protocol on their own initiative — it does not recommend any prescription.
+> **The frame.** Grounded in WHO TCIM Strategy 2025-2034, India's Ministry of AYUSH (CCRAS, CCRH, CCRYN, CCRUM, CCRS, PCIMH, ICMR), EMA herbal monographs, Australia TGA + NHMRC, China NMPA + Chinese Pharmacopoeia 2020, Health Canada Natural Health Products, Tibetan Men-Tsee-Khang, Hamdard Dawakhana, IMPCOPS Chennai, plus the classical Ayurvedic, Chinese, Unani, Siddha, Tibetan and homeopathic texts. **No US regulator or US disease association (AAO, FDA, NIH-NEI policy) is cited as authority.** A narrow regulatory-path note about consumer blue-light filters (Apple Night Shift / True Tone, f.lux software) in §10.7 is used as factual context only — the trust anchor is the named Cochrane review.
+>
+> **Sovereignty.** Every supplement, food, device and practice here is something you can buy and use yourself. **No prescription, no clinic, no hospital visit, no surgery is recommended in the home regime.** Clinic-route options — comprehensive eye exam (the single most-important clinic-route action because uncorrected refractive error is the biggest hidden driver), prescription computer glasses, prism correction for convergence insufficiency, vision-therapy referral for accommodative dysfunction, dry-eye-clinic IPL (Lumenis OptiLight), punctal plugs, cyclosporine drops (Restasis, Cequa), lifitegrast (Xiidra) — sit in §10.7.3 as honestly described referral options. The drug column in §10.1 exists only so users already on a prescription can see how it interacts with this protocol.
+>
+> **Red flag — when this is NOT just screen strain.** Sudden vision loss, sudden new floaters, flashes of light, a "curtain" coming down across vision — that is a retinal detachment until proven otherwise; emergency. Eye pain WITH a red eye (especially with halos around lights, nausea, blurred vision) is acute angle-closure glaucoma — emergency. Peripheral vision loss is glaucoma until proven otherwise. New-onset severe headache + visual change is a different category entirely. This home protocol cannot fix an acute structural eye event.
 
 ## 1. Executive Summary
 
-Digital Eye Strain (Computer Vision Syndrome) is conventionally siloed as a "minor occupational complaint" treated with OTC artificial tears and a generic "20-20-20" reminder, or — when severe — escalated to prescription cyclosporine drops, clinic IPL, and punctal plugs. The integrative reframing is different: persistent screen eye strain is the ocular-cervical-cognitive presentation of **four convergent root drivers** — (i) **accommodative-vergence fatigue** with ciliary muscle and convergence-insufficiency overload, (ii) **tear-film evaporative dysfunction** driven by blink-rate collapse (normal ~15 blinks/min drops to 5–7 on screens) and meibomian gland dysfunction, (iii) **blue-light + circadian disruption** with delayed melatonin onset, fragmented sleep, and oxidative load to retinal photoreceptors, and (iv) **postural-cervical-cognitive load** with forward-head posture, suboccipital tension, and reduced cerebrovascular venous drainage. **Synthesis:** A natural, OTC, home-based protocol that simultaneously restores tear-film integrity, retrains blink + 20-20-20 + posture habits, anchors circadian rhythm, and replenishes macular carotenoids addresses the upstream drivers — without prescription drops or clinic procedures.
+### 1.1 What screen eye strain actually is
 
-## 2. Mechanistic Network (4-node)
+> **For you, in plain words.** "Screen eye strain" (also called digital eye strain or computer vision syndrome) is not a single disease — it is a cluster of symptoms (dryness, burning, gritty, blur, headache, neck/shoulder tension) caused by sustained near-work at a screen. The biology is dryness from drop-in blink rate + accommodative spasm + neck-shoulder muscular tension + sometimes uncorrected refractive error. The fix is behavioural first, drops second, supplements third. *(Rosenfield 2011 CVS review; Sheppard 2018)*
 
-**2.1 Accommodative-vergence fatigue.** Sustained near work (screen at 50 cm) holds the ciliary muscle in tonic contraction, accommodating for hours. Vergence muscles (medial recti) maintain binocular convergence. After 2–4 hours without breaks, both systems fatigue → blur, eye ache, diplopia at end-of-day, headache. Many users have undiagnosed convergence insufficiency (5–10% of office workers). Targeted by **20-20-20 rule**, **30-30-30 pomodoro**, distance refocusing (Trataka), eye yoga, ergonomic monitor distance, correct refractive prescription (including computer-glasses Rx if presbyopic), Bates-method palming. **Synthesis:** Periodic far-focus breaks are the upstream brake on ciliary lock.
+### 1.2 The five drivers — at a glance
 
-**2.2 Tear-film evaporative dysfunction (dry eye overlap).** Screen focus drops blink rate from ~15/min to 5–7/min and incomplete blink rate rises — meibomian glands deliver less lipid, evaporation accelerates, tear film breaks up in <10 s (TBUT). Symptoms: gritty, burning, fluctuating vision worse end-of-day, paradoxical tearing (reflex). Targeted by **blink hygiene retraining, conscious complete blinks every screen line, warm compress, lid massage**, **omega-3 EPA-heavy + sea buckthorn oil oral** (meibomian lipid quality), preservative-free carboxymethylcellulose / hyaluronate eye drops (Refresh, Hycosan, Thealoz Duo), workplace humidification (≥40% RH), conscious hydration, and rotational gaze. **Synthesis:** Blink and tear-film integrity is the surface-level lever; without it, the rest fails.
+> **Quick start.** This week: (1) **set up your monitor properly** — top of screen at or just below eye level, 20-30 inches (50-75 cm) from your eyes, perpendicular to any window (no glare); (2) **install the 20-20-20 reminder** (EyeRest, Time Out, Eye Pro, or just a phone timer) — every 20 minutes, look 20 feet for 20 seconds; (3) **buy preservative-free artificial tears** (Refresh Optive Preservative-Free, Systane Ultra PF, TheraTears Single-Use Vials, Hylo-Forte multidose-PF) and use every 2-4 hours; (4) **buy a warm-compress eye mask** (Bruder Moist Heat Mask, MGDRx EyeBag, USB-heated mask) and use 10 min once or twice daily if dry/burning; (5) **schedule a comprehensive eye exam** on your own initiative — uncorrected refractive error (especially mild hyperopia and astigmatism) is the single biggest hidden driver of "eye strain"; (6) **practise blink-awareness** — consciously close-relax-open 10 times every break. These six moves cover the highest-leverage levers. *(Rosenfield 2011; Sheppard 2018; Cochrane Pucker 2016 artificial tears; AYUSH Triphala monograph)*
 
-**2.3 Blue-light + circadian disruption.** Screens emit short-wavelength blue (≈460 nm) which suppresses melatonin via intrinsically photosensitive retinal ganglion cells (ipRGCs / melanopsin). Sustained exposure past sunset delays sleep onset, fragments deep sleep, raises cortisol — next-day cognitive cost compounds eye-strain perception. There is also experimental concern about cumulative oxidative load to retinal photoreceptors (debated). Targeted by **f.lux / Iris / Night Shift / Apple Night Shift** software, **blue-blocker glasses after sundown** (BlockBlueLight, Ra Optics, Felix Gray), warm-bulb bedroom lighting (≤2700 K), **AM sunlight** to anchor circadian, **macular carotenoids** (lutein, zeaxanthin, meso-zeaxanthin, astaxanthin), and **bilberry/saffron** retinal-protective polyphenols. **Synthesis:** Anchor circadian + filter blue post-sunset + carotenoid floor = the photic discipline.
+### 1.3 The deeper layer — for those who want it
 
-**2.4 Postural-cervical-cognitive load.** Forward-head posture (sustained head displaced anterior of shoulder) loads the suboccipitals, levator scapulae, upper traps, and SCM — referred pain pattern includes retro-orbital ache, temporal headache, and tension-eye-strain. Cervical proprioceptive disturbance affects oculomotor convergence. Reduced suboccipital venous drainage may impair cerebrovascular outflow. Targeted by **ergonomic monitor at eye level**, **chin-tuck exercises, doorway stretches, suboccipital release** (tennis ball, foam roller), **Marjariasana / Bhujangasana / Bitilasana cervical mobility**, Trapezius release, Bhramari (vibration relaxes face), and short standing/walking breaks. **Synthesis:** A cervical-postural axis fix unblocks the visual-cervical loop.
+Screen-induced eye strain is conventionally either dismissed ("it'll pass") or chased with marketed blue-light glasses (which Cochrane Singh 2023 found NULL for digital eye strain symptoms) and generic eye drops. The integrative reframing is different: screen eye strain is the convergence of **five overlapping drivers** — (i) **blink-rate collapse** (computer use drops blink rate from ~15/min to ~5-7/min — Patel 1991, Tsubota 1993), which dries the ocular surface; (ii) **accommodative-vergence strain** (the focusing muscles working overtime at a fixed near distance and the convergence system locking inward for hours); (iii) **uncorrected refractive error** (mild hyperopia, astigmatism, and presbyopia drive enormous accommodative effort that the user reads as "eye strain"); (iv) **ergonomic and postural strain** (poor monitor height, glare, distance, lighting drive head-forward posture, neck-shoulder muscular tension that refers as "eye" symptoms); (v) **circadian disruption from blue light at night** (separate from "blue light damages eyes during the day", which is largely a myth — the actual concern is melatonin suppression evening blue light). A sixth, often-overlapping driver is **meibomian-gland dysfunction (MGD)** — the oil-secreting glands of the eyelid getting clogged, dropping tear-film stability. **Synthesis.** A home protocol that pairs **20-20-20 + ergonomic setup + blink training + preservative-free artificial tears + warm compresses** (the highest-grade frontline) with **blue-light evening discipline** (for sleep, not for "eye damage prevention") and an honest **comprehensive eye exam to rule out refractive error** addresses all five drivers in parallel.
 
-## 2.5 Clinical sub-types & differential prognosis
+## 2. Mechanistic Network (5-node)
 
-| Sub-type | Clinical features | Dominant §2 node | Expected protocol response |
-|---|---|---|---|
-| **Pure accommodative fatigue** | Blur at distance after near work; eye ache by 15:00 | §2.1 | **Excellent** — 20-20-20 + eye yoga + ergonomic + computer-glasses Rx if needed; 2–4 wk meaningful |
-| **Dry-eye evaporative overlap** | Gritty, burning, fluctuating vision, paradoxical tearing | §2.2 | **Excellent** — blink + warm compress + omega-3 + preservative-free drops; 4–8 wk |
-| **Convergence insufficiency** | Diplopia, eye-strain at near, asthenopia disproportionate to time | §2.1 (vergence) | **Moderate** — orthoptic exercises (Brock string, pencil push-ups) + Trataka; 8–12 wk |
-| **Blue-light + sleep disruption** | Late sleep onset, fragmented sleep, brain fog next day | §2.3 | **Excellent** — blue-blockers + f.lux + carotenoids + AM sunlight; 2–4 wk |
-| **Refractive uncorrected (presbyopia + age 45+)** | Worse end of day; near-blur worsening; headache | §2.1 + refractive | **Excellent** — correct Rx (DTC eye exam via 1-800-Contacts or local optometrist — outside this protocol's OTC framing) + protocol; 2–6 wk |
-| **Headache-driven (cervicogenic or migraine)** | Headache leads eye complaint | §2.4 + migraine pathway | **Moderate** — cervical + posture work + Mg + riboflavin + CoQ10; 8–16 wk |
-| **Posture-cervical overlap** | Neck pain + forward-head + retro-orbital ache | §2.4 dominant | **Moderate** — ergonomic + suboccipital release + yoga + Marma point; 8–12 wk |
+### 2.1 Five causes — the picture
+
+> **For you, in plain words.** Five mechanisms drive screen eye strain — blink-rate collapse + dryness, accommodative-vergence strain, uncorrected refractive error, ergonomic-postural strain, and circadian disruption from evening blue light. Naming them lets every intervention aim at the right one. *(Patel 1991 blink; Sheppard 2018 CVS; Rosenfield 2011; Wolffsohn 2017 TFOS DEWS II)*
+
+### 2.2 Blink-rate collapse + ocular surface dryness
+
+> **For you, in plain words.** Normal blink rate is about 15 times a minute. At a screen, it drops to 5-7 — the eye surface dries, tear film breaks up between blinks, and you feel burning, grit, and blur that improves momentarily when you blink hard. *(Patel 1991; Tsubota 1993 blink + screen)*
+
+#### Open the science
+
+Blink rate at a screen drops by ~60-66% compared to baseline (Patel 1991 + Tsubota 1993 Japan). Incomplete blinks (the upper lid doesn't fully cover the lower) become more common. Tear film breaks up faster (tear break-up time / TBUT drops below the protective ~10 sec threshold). Meibomian-gland oil secretion that stabilises the tear film evaporative layer becomes inadequate (MGD overlap). Targeted by **20-20-20 rule** (forces blink reset), **conscious blink-awareness training**, **preservative-free artificial tears** (Cochrane Pucker 2016 A-grade), **warm compresses for MGD** (Wang 2020 B+), **home humidifier** (50% RH target), **omega-3** (mixed evidence — DREAM trial 2018 NULL, smaller trials positive), **avoid contact-lens overuse**. **Synthesis.** Restoring the blink and the tear film is the load-bearing first lever.
+
+### 2.3 Accommodative-vergence strain
+
+> **For you, in plain words.** Your eyes' focusing muscles (the ciliary body, which thickens the lens for near work) and convergence system (which crosses your eyes inward to point at a near target) work hard at a screen. Hours of fixed-distance near work overwhelms them — they go into spasm or fail, producing blur and pulling-sensation. The classical 20-20-20 rule directly relaxes both. *(Rosenfield 2011 CVS review; Sheppard 2018)*
+
+#### Open the science
+
+Accommodative excess / spasm and convergence insufficiency are clinically defined dysfunctions that worsen with sustained screen use. Symptoms: blur on distance lookup, double vision when transitioning near-to-far, headaches around eyes/temples, words swimming on the page. Targeted by **20-20-20 rule** (Rosenfield 2011), **structured eye-movement breaks**, **Pomodoro / structured break adoption**, **blink-train apps**, **traditional Indian yogic Trataka eye-focus practice** (classical AYUSH eye-strengthening), **palming** (Bates 1920 / yogic — covering closed eyes with warm palms for 1-2 min). Clinic-route for failed self-management: vision-therapy referral, prism correction. **Synthesis.** The accommodative-vergence load is fixable by behavioural breaks; structural problems route to §10.7.3.
+
+### 2.4 Uncorrected refractive error (the biggest hidden driver)
+
+> **For you, in plain words.** Many people who blame their screen for "eye strain" actually have uncorrected mild hyperopia (long-sightedness), astigmatism, or are entering presbyopia (the over-40 near-vision blur). The accommodative system compensates, but at high cost — fatigue, headache, "strain". A simple comprehensive eye exam catches it. Prescription computer glasses optimised for the arm-distance zone fix it. *(Sheppard 2018; AAO clinical position note — referenced as historical regulatory context)*
+
+#### Open the science
+
+Hyperopia (long-sightedness) in young adults is often "compensated" by accommodative effort — but the cost is fatigue. Astigmatism produces blur at all distances that drives constant accommodative micro-adjustment. Presbyopia (the over-40 stiffening of the lens) demands accommodative effort for near work that the lens can no longer easily produce. All three present as "eye strain" at a screen. The single clinic-route action with the highest leverage is a **comprehensive eye exam to characterise refractive error** + **prescription computer glasses** (lens zone optimised for the arm-distance of the monitor — typically 60-70 cm — rather than the reading distance of 30-40 cm or the distance of infinity). Self-applicable refractive screening at the home level is limited (smartphone apps are crude); refractive accuracy needs an optometrist. **Synthesis.** This is the one §10.7.3 action we strongly suggest for any user with persistent eye strain — but the decision remains the user's.
+
+### 2.5 Ergonomic-postural strain
+
+> **For you, in plain words.** Poor monitor height, glare, lighting, distance, and chair set-up drive the head forward and the shoulders up — the muscles of the neck, upper back, and around the eyes contract chronically. You feel it as "eye strain" but it is largely musculoskeletal referred sensation. *(Sheppard 2018 CVS review; Anshel 2007 occupational ergonomics)*
+
+#### Open the science
+
+Ergonomic principles for screen work: top of monitor at or just below eye level; viewing distance 20-30 inches (50-75 cm); monitor perpendicular to windows (no glare); ambient lighting matched to screen brightness (no overhead glare, no dark room with bright screen); chair height such that feet are flat and elbows at ~90°; keyboard and mouse close to body (no reaching). Multi-monitor setups should be at same height. Avoid laptop alone for long sessions (forces neck flexion); use external monitor + external keyboard. Standing desk options. Pomodoro structure (25 min work + 5 min break). Neck-shoulder stretches between sessions. **Synthesis.** The "eye strain" that disappears after a yoga class was probably 70% musculoskeletal.
+
+### 2.6 Circadian disruption from evening blue light
+
+> **For you, in plain words.** Daytime blue light from screens does NOT damage your eyes (Cochrane Singh 2023 found NULL for blue-light glasses and digital eye strain symptoms — and there is no good evidence of daytime-screen retinal damage at consumer brightness). But evening blue light DOES suppress melatonin and disrupts sleep — and bad sleep makes eye strain symptoms worse the next day. So we recommend evening blue-light reduction for SLEEP, not for "eye damage prevention". *(Cochrane Singh 2023; Chang Harvard 2015 evening blue light + melatonin)*
+
+#### Open the science
+
+The "blue light is damaging your eyes" marketing claim is largely unsupported by Cochrane evidence at consumer screen brightness. Cochrane Singh 2023 (the systematic review of blue-light glasses): NULL for digital eye strain symptoms; insufficient evidence for retinal damage prevention. The Cochrane 2017 review by Singh (earlier version) also NULL. What IS supported: **evening blue light** (>2 h before bed) suppresses melatonin and disrupts circadian rhythm — Chang 2015 Harvard, plus multiple replications. This matters for sleep, which matters for next-day ocular comfort. Targeted by **f.lux software** (free), **Apple Night Shift / True Tone** (free, built-in), **Android equivalents**, **dark-mode adoption**, **physical blue-light cutoff 90 min before bed**, **dimming room lights in the evening**. Marketing-grade blue-light glasses (Swannies, RaOptics, BluTech) get an honest C-grade — the user can wear them if they want, but the evidence base does not support claiming they prevent "eye damage" or treat strain symptoms. **Synthesis.** Blue-light reduction is a sleep intervention, not an eye-protection intervention.
+
+### 2.7 Sub-types & realistic prognosis
+
+> **For you, in plain words.** Eight sub-types of screen eye strain — accommodative spasm, dry-eye-driven, refractive-uncorrected, blue-light-sensitivity, post-LASIK/cataract dry overlap, convergence insufficiency, ergonomic-driven, contact-lens-overuse — each has a dominant driver and a realistic protocol response. *(Sheppard 2018; Wolffsohn 2017 TFOS DEWS II)*
+
+| Sub-type | TL;DR (plain English) | Clinical features | Dominant driver | Realistic response | Citation |
+|---|---|---|---|---|---|
+| Accommodative spasm / strain near work | The classical "I can't switch focus" pattern — 20-20-20 + breaks first. *(Rosenfield 2011)* | Blur after long screen; eye-area ache | §2.3 | Excellent in 1-4 wks with 20-20-20 + ergonomics | *(Rosenfield 2011)* |
+| Dry-eye-driven strain | Burning, grit, sandy — preservative-free drops + warm compresses + 20-20-20. *(Pucker Cochrane 2016)* | Burning, grit, tearing (paradoxical) | §2.2 | Excellent with drops + compresses + behavioural | *(Cochrane Pucker 2016; Wang 2020)* |
+| Refractive-uncorrected | The hidden driver — eye exam + computer glasses fix it. *(Sheppard 2018)* | Persistent strain despite ergonomics; >40 yo presbyopia | §2.4 | Good once corrected | *(Sheppard 2018)* |
+| Blue-light-sensitivity overlap | The user feels evening blue light disrupts them — dim evening + f.lux + sleep. *(Chang 2015)* | Evening discomfort + sleep disruption | §2.6 | Good with evening dimming | *(Chang 2015 Harvard)* |
+| Post-LASIK or post-cataract dry overlap | Surgical lid + corneal nerve disruption — drops + compresses + autologous-serum-route clinical if severe. *(Wolffsohn 2017)* | Post-procedural dry eye | §2.2 | Good with intensive drops; clinic-route if severe | *(Wolffsohn TFOS DEWS II 2017)* |
+| Convergence insufficiency | The eyes don't lock together at near — vision-therapy clinic-route. *(Cooper 2011 CITT)* | Double vision; struggle at near | §2.3 (structural) | Variable; vision therapy clinic-route per §10.7.3 | *(CITT Cooper 2011)* |
+| Ergonomic-driven (neck-shoulder referred) | Headache + neck-shoulder tension presenting as eye strain. *(Anshel 2007)* | Neck stiffness; tension headache | §2.5 | Excellent with ergonomic fix + stretches | *(Anshel 2007)* |
+| Contact-lens-overuse | 12+ h daily contact lens wear drives MGD and dryness — switch to glasses for screen work. *(Wolffsohn 2017)* | CL wearer; afternoon discomfort | §2.2 | Excellent if CL reduced + drops | *(Wolffsohn TFOS DEWS II 2017)* |
 
 ## 3. OTC Phytochemicals — Pharmacological Validation
 
-| Compound | Mechanism | Dose | Timing | Take WITH | Avoid WITH (≥2h gap) | Grade | Brand options | $/mo | Evidence note |
-|---|---|---|---|---|---|---|---|---|---|
-| **Lutein + Zeaxanthin (FloraGLO + ZeaONE)** | Macular pigment optical density (MPOD) ↑; blue-filter; antioxidant | 10 mg lutein + 2 mg zeaxanthin | AM with fat | fat meal | iron (1 h) | A | Pure Encaps Macular Solution, Jarrow CarotenALL, MacuShield (UK Macuhealth) | $15–30 | AREDS2 design lutein/zeaxanthin; multiple UK/Irish CREST trials (Howard Florida-affiliated work treated as evidence object) |
-| **Meso-zeaxanthin (Macuhealth blend)** | Central foveal carotenoid; not in diet, synthesized from lutein | 10 mg (in tri-carotenoid blend) | AM with fat | fat meal | iron | A | Macuhealth, MacuShield (Ireland) | $30–45 | Irish CREST + MOST RCTs |
-| **Astaxanthin (AstaZine / AstaReal)** | Highest-rated antioxidant; blue-light protection; ciliary muscle accommodation in Japanese RCTs | 4–12 mg | AM with fat | fat meal | iron | B | Algalif, AstaReal, NOW Astaxanthin, BioAstin Hawaiian | $15–30 | Japanese RCTs Nagaki/Nitta/Iwasaki — improved accommodation amplitude + asthenopia VAS; TGA-recognised |
-| **Bilberry (*Vaccinium myrtillus*, Mirtoselect 36%)** | Anthocyanins → rhodopsin regeneration; capillary support; retinal microcirculation | 160–320 mg standardised | AM | fat | iron (1 h), warfarin (consistent) | B | Indena Mirtoselect, Pure Encaps, Thorne, NOW | $15–25 | Italian Mirtogenol RCTs (glaucoma, asthenopia); EMA HMPC bilberry monograph |
-| **Omega-3 EPA-heavy** | Meibomian lipid quality; tear-film stability; resolves inflammation | 2 g EPA+DHA (≥1 g EPA) | AM + PM with meal | fat | warfarin (consistent) | A | Nordic Naturals ProOmega, Bare Biology UK, Carlson, PRN De3 (Eye Omega — Vegan algal) | $25–45 | Indian + Italian dry-eye RCTs; multiple Cochrane systematic reviews dry-eye/MGD |
-| **Saffron (*Crocus sativus*, affron®)** | Retinal protection; macular function; BDNF | 20–30 mg | AM with food | food | SSRIs (4 h) | B | Pukka, Pharmactive affron | $20–35 | Australian Murdoch RCT in AMD; Italian Falsini RCTs |
-| **Gotu Kola (*Centella asiatica* / Mandukaparni)** | Capillary integrity; microcirculation; minor cognitive | 500–1000 mg | AM | food | — | B | Banyan Botanicals, Himalaya | $15–25 | CCRAS monograph; Indonesian + Australian cognitive RCTs |
-| **Sea buckthorn (*Hippophae rhamnoides*) oil oral** | Tear-film lipid (omega-7 palmitoleic acid); MGD support | 1000 mg seed/pulp oil | AM + PM with meal | fat | — | B | Sibu Sea Buckthorn, Omega7 (Finland), HealthAid | $20–35 | Finnish + Polish dry-eye RCTs (Larmo 2010) — improved tear-film osmolarity at 3 mo |
-| **Curcumin Meriva** | Ocular surface inflammation; vascular | 500–1000 mg | AM/PM with fat | piperine + ghee | dairy (2 h), warfarin (consistent), iron (2 h) | B | Thorne Meriva, Jarrow Curcumin Phytosome | $20–35 | Italian Meriva ocular inflammation cohort 2014–22 |
-| **Vitamin A (cod-liver retinol, not synthetic)** | Conjunctival + corneal epithelium; rhodopsin | 3000–5000 IU | AM with fat | fat | — | A | Rosita, Nordic Naturals cod-liver | $15–25 | EMA HMPC vit A monograph; classical Ayurvedic Triphala-Ghrita |
-| **Quercetin + Bromelain** | Mast-cell stabilisation (allergic conjunctivitis overlap); antioxidant | 500 mg + 250 mg | AM + PM | bromelain + fat | iron (2 h) | C | Thorne Quercetin, NOW | $15–25 | European allergic conjunctivitis cohort |
+### 3.1 What to take, what to skip
+
+> **For you, in plain words.** Nine over-the-counter molecules, each backed by a non-US monograph or named trial. Read the plain-English column first — and notice the honest mixed-evidence notes on blue-light-glasses-related supplements, omega-3 for dry eye (DREAM trial NULL), and the modest evidence for marigold-petal Triphala eye drops. *(EMA monographs; AYUSH; Cochrane Pucker artificial tears 2016; Cochrane Singh blue-light 2023; DREAM trial 2018)*
+
+### 3.2 Preservative-free artificial tears — the load-bearing cornerstone
+
+> **For you, in plain words.** The single A-grade intervention for screen-induced dry eye / burning / grit. **Always use preservative-free** — multidose preservative-containing drops (with BAK / benzalkonium chloride) damage the corneal surface with chronic use. Use every 2-4 hours during screen sessions. *(Cochrane Pucker artificial tears 2016; Baudouin 2010 BAK toxicity)*
+
+#### Open the science
+
+Cochrane Pucker 2016 (artificial tears for dry eye): A-grade for symptomatic relief. **Benzalkonium chloride (BAK)** — the preservative in most multidose drops — is corneal-epithelial toxic with chronic use (Baudouin 2010). Use one of: (a) single-use preservative-free vials (TheraTears Single-Use Vials, Refresh Plus, Systane Single-Use Vials — gold standard for sensitive eyes); (b) multidose preservative-free with airless pump or membrane filter (Refresh Optive Preservative-Free Multidose, Hylo-Forte / Hylo-Fresh / Hylo-Tear with COMOD multidose-PF system — European standard; gold for multidose); (c) gel formulations for overnight (GenTeal Gel, Systane Nighttime, Hylo-Night). Brands: Refresh, Systane, TheraTears, Hylo-Forte (Ursapharm Germany), Blink Tears, I-Drop, Hydra-Sense. **Grade A.** Use every 2-4 hours during screen sessions, or whenever you feel dryness/burning/grit.
+
+### 3.3 Warm compresses for meibomian-gland dysfunction (MGD)
+
+> **For you, in plain words.** If your dry eye involves the oil layer of the tear film (MGD — common in over-40s, especially women), a warm compress 10 min once or twice daily lets the meibomian-gland oils flow. Wang 2020 confirmed B+ symptomatic relief. Use a microwave-able mask (Bruder, MGDRx EyeBag) or USB-heated mask — both work. *(Wang 2020; Arita 2017)*
+
+#### Open the science
+
+Meibomian-gland dysfunction (MGD) is one of the most common drivers of dry-eye discomfort — the meibomian glands of the eyelid secrete oils that stabilise the tear film. When clogged, the tear film evaporates rapidly. Warm compresses (40-45°C for 10 min) liquefy the oils and let them flow. Wang 2020 systematic review: B+ symptomatic benefit. Bruder Moist Heat Mask, MGDRx EyeBag, USB-heated reusable masks — all consumer-purchasable. Add gentle lid massage post-compress in a downward direction. **Grade B+.**
+
+### 3.4 Blue-light glasses — the honest Cochrane caveat
+
+> **For you, in plain words.** Blue-light blocking glasses (Swannies, RaOptics, BluTech, Gunnar gaming glasses) are heavily marketed — but the Cochrane Singh 2023 review found NULL for digital eye strain symptoms. The Cochrane 2017 earlier version also NULL. We list them honestly as Grade C — wear them if you like, but they will not fix screen eye strain. *(Cochrane Singh 2023; Cochrane Singh 2017)*
+
+#### Open the science
+
+Cochrane Singh 2023 systematic review (updated from 2017): pooled RCT evidence shows blue-light-blocking lenses do NOT improve digital eye strain symptoms more than placebo. Cochrane Singh 2017 earlier finding also NULL. Marketing-grade claims about "blue light damaging the retina at consumer screen brightness" are not well supported. The use case where evening blue-light filtering DOES have evidence is **circadian / sleep protection** — f.lux software, Apple Night Shift, dark mode, dimmed evening lighting — but that is a sleep intervention, not an eye intervention. **Grade C** for blue-light glasses for digital eye strain symptoms. If a user prefers wearing them subjectively, no harm — but we are honest about the evidence.
+
+### 3.5 The nine OTC molecules / interventions — table
+
+| Compound / intervention | TL;DR (plain English) | Mechanism | Dose | Timing | Take WITH | Avoid WITH (≥2h gap) | Grade | Brand options | $/mo | Citation |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **Preservative-free artificial tears** | A-grade symptomatic — every 2-4 h during screen use; single-use vials gold for sensitive eyes. *(Cochrane Pucker 2016)* | Tear-film replacement + corneal hydration | 1-2 drops each eye every 2-4 h | All day with screen | — | BAK-preserved drops (avoid chronic) | A | TheraTears Single-Use, Refresh Plus / Optive PF, Systane PF, Hylo-Forte (Ursapharm Germany) | $15-35 | *(Cochrane Pucker 2016; Wolffsohn TFOS DEWS II 2017)* |
+| **Warm compress mask** | B+ for MGD-driven dryness — 10 min 1-2×/day. *(Wang 2020)* | Liquefies meibomian-gland oils | 40-45°C, 10 min | AM and/or PM | — | — | B+ | Bruder Moist Heat Mask, MGDRx EyeBag, USB-heated | $20-50 one-time | *(Wang 2020; Arita 2017)* |
+| **Omega-3 EPA + DHA — honest mixed evidence** | DREAM trial 2018 NULL for dry eye; smaller trials positive; included for systemic + tear-film support. *(DREAM 2018 NEJM; Asbell 2018)* | Tear-film stability; anti-inflammatory | 1-2 g (≥500 mg DHA) | with meals (fat) | fat-containing meal | — | C (DREAM null) / B (smaller trial positive) | Nordic Naturals ProOmega, Bare Biology, Wiley's Finest, Carlson | $25-45 | *(DREAM 2018; Asbell 2018; Wolffsohn TFOS DEWS II)* |
+| **Sea buckthorn oil (Hippophae rhamnoides)** | Finnish RCT (Larmo 2010) — modest dry-eye symptom relief; rich in omega-7. *(Larmo 2010 Finland)* | Mucosal hydration; omega-7 | 2-4 g daily | with food | fat | — | B | Sibu, Healthforce, NOW, Finnish Berries | $20-40 | *(Larmo 2010 Finland; AYUSH)* |
+| **Vitamin A (cod-liver) — only if low** | Vitamin A deficiency causes severe dry eye; supplement only if labs low or vegan. *(EMA; Health Canada NHP)* | Goblet-cell mucin production | 5000 IU cod-liver | with fat | excess avoid in pregnancy | — | A (if deficient) / not for routine use | Nordic Naturals cod-liver, Carlson | $15-25 | *(EMA; Health Canada)* |
+| **Vitamin D3 + K2 — if deficient** | Aim 25-OH-D 30-50 ng/mL; ocular-surface inflammation modulation. *(Yildirim 2016 vitamin D + dry eye)* | Anti-inflammatory; immune | D3 2000-5000 IU + K2 90-180 µg | AM with fat | fat | warfarin (K2 caution) | A (if deficient) / C (if replete) | Thorne D/K, Nordic Naturals, NOW | $10-20 | *(Yildirim 2016; Goodwill 2019; Health Canada NHP)* |
+| **Triphala eye-wash decoction (external — cool sterile)** | Modern Bhatt 2014 small Indian trial — symptomatic dry-eye relief with cool Triphala decoction eye wash. *(Bhatt 2014 India; AYUSH-CCRAS Triphala)* | Antioxidant + anti-inflammatory + soothing | Cool sterile decoction; eyebath cup | 1-2×/day external | sterile boiled water + Triphala powder; cooled | — | B (small Indian trial) | Organic India Triphala (decoction); commercial Triphala eye drops EU/India | $10-25 | *(Bhatt 2014; AYUSH-CCRAS Triphala monograph)* |
+| **Astaxanthin (Haematococcus pluvialis)** | Japanese cohort + small Asian trials — eye-fatigue signal in screen workers. *(Nakamura 2006 Japan; Nagaki 2002)* | Carotenoid antioxidant; ciliary muscle | 4-12 mg | AM with fat | fat | — | C | AstaReal (Sweden/Japan), BioAstin, Nutrex Hawaii | $15-30 | *(Nakamura 2006 Japan; Nagaki 2002)* |
+| **Lutein + zeaxanthin (low-dose)** | Macular pigment + low signal in screen-strain symptoms; primarily macular protection but ocular fatigue overlap. *(Stringham 2017)* | Macular pigment; potential ciliary | 6-12 mg lutein + 2 mg zeaxanthin | AM with fat | fat | — | C (screen-strain-specific) / B (macular) | MacuHealth, Healthy Origins, NOW | $15-30 | *(Stringham 2017)* |
+
+### 3.6 Honest skip-list — the popular-but-weak
+
+> **For you, in plain words.** Several heavily-marketed screen-eye-strain products do not earn a cornerstone place in this protocol on honest evidence. *(Cochrane Singh 2023; honest evidence audit)*
+
+- **Marketing-grade blue-light glasses (Swannies, RaOptics, BluTech, Gunnar gaming glasses) for SYMPTOM RELIEF.** Cochrane Singh 2023: NULL for digital eye strain symptoms. Listed honestly as Grade C — wear them if you like, but they will not fix strain. **Note:** they DO have a legitimate use case for evening melatonin protection (worn 2 h before bed) — that is a sleep intervention, not an eye intervention.
+- **Generic "vision support" multivitamin capsules** — most are sub-AREDS2 ratios; if you want macular support, take the AREDS2 formula (see macular-support dossier); for screen strain alone, generic vision multivitamins are honest C-D.
+- **BAK-preserved multidose artificial tears (Visine, GenTeal regular)** for chronic daily use — BAK is corneal-epithelial toxic with long-term use (Baudouin 2010). Switch to preservative-free.
+- **"Redness reliever" drops (Visine, Clear Eyes)** containing oxymetazoline / naphazoline — vasoconstrictors with rebound effect that worsen redness with chronic use. **Avoid for chronic use.**
+- **Eye-drops with herbs / vitamins for screen strain** — limited evidence for any specific formulation; preservative-free artificial tears remain the gold OTC.
+- **Apoaequorin / Prevagen** — weak evidence; not relevant to screen strain.
+- **Eye exercises programmes claiming to reverse refractive error** (Bates method, "I Can See Clearly Now") — popular but evidence base does not support reversing structural refractive error. Trataka / palming as part of structured break = fine for accommodative relaxation; not a refractive cure.
 
 ## 4. Traditional Medicine Integration
 
-### 4.1 Ayurveda — *Netra-roga* (eye disorders) / *Drishti-vardhaka* (vision-enhancing)
+### 4.1 Six traditions — at a glance
 
-Classical category: *Netra-roga* in *Sushruta Samhita Uttara Tantra* ch. 1–19 (full ophthalmology chapter); *Drishti-vardhaka* rasayanas. Dosha: **vitiated Pitta + Vata** (eye is *alochaka pitta* seat). Triphala is the classical eye rasayana; *Triphala Ghrita* and *Triphala-jala-prakshalanam* (eyewash) are signature interventions. AYUSH-CCRAS *Netra Roga* protocols. Kerala Vaidya lineage (Kottakkal — Tarpanam centre, Sreedhareeyam).
+> **For you, in plain words.** Six healing traditions described eye-strain and visual fatigue centuries before "computer vision syndrome" was named. We honour them — and are honest that modern high-quality RCTs exist for only a few (Triphala eye wash Bhatt 2014; sea buckthorn Larmo 2010; goji Bucheli 2011). *(Sushruta Uttara Tantra; Huang Di Nei Jing; Canon of Medicine; Siddha Maruthuvam; Tibetan Four Tantras; Boericke)*
 
-| Formulation | Dose | Grade | Source |
-|---|---|---|---|
-| **Triphala Churna** + **Triphala eyewash** (decoct, cool, strain, eye-cup BID) | 3–5 g oral; eyewash BID | A | *Sushruta Uttara*; AYUSH monograph; Organic India, Himalaya, Kottakkal |
-| **Triphala Ghrita** (eye-ghee — oral and *netra-tarpana* base; **self-tarpana is risky and outside this protocol — oral only**) | 5 g AM empty stomach | B | *Ashtanga Hridaya*; Kottakkal, Sreedhareeyam |
-| **Saptamrita Loha** | 125–250 mg BID with honey | T | *Bhaishajya Ratnavali*; Baidyanath |
-| **Mahatriphala Ghrita** | 5 g AM | T | *Sharangdhara*; Kottakkal |
-| **Patolakaturohinyadi Kashayam** (bitter eye decoction) | 15 ml BID pre-meal | T | *Sahasrayoga*; Kottakkal |
-| **Anu Taila** (nasya — 2 drops each nostril AM) | 2 drops AM | T | *Charaka*; cervical-eye-cognitive connection |
-| **Bhringraj (*Eclipta alba*) oil — head application** | 5 ml scalp BID | T | *Bhavaprakasha*; classical *Murdha taila* |
-| **Mandukaparni Churna** | 3–5 g BID | B | CCRAS monograph |
+### 4.2 Ayurveda — Drishti & Netra Rakshana
 
-### 4.2 TCM — *Mu Lao* 目劳 ("eye exhaustion") / *Gan Lao* (Liver fatigue) / *Mu Hun* (blurred vision)
+> **For you, in plain words.** Ayurveda has rich eye-care tradition — Triphala eye wash (cool decoction, external — Bhatt 2014 small modern Indian trial showed B-grade symptomatic benefit), Anu Taila nasya, palming (Trataka classical practice), and the dosha-balanced internal Triphala at bedtime. **Netra Tarpana** (medicated-ghee eye bath) is a clinic Panchakarma procedure — NOT home protocol; mentioned for completeness. *(Charaka; Sushruta Uttara Tantra; AYUSH-CCRAS; Bhatt 2014)*
 
-In TCM, "the Liver opens to the eyes" (Liver-Eye axis); Liver-Blood nourishes vision. Screen overuse depletes Liver-Blood and Liver-Yin → *gan-yin-xu* with dry, gritty, tired eyes; sub-pattern of Liver-Qi stagnation when accompanied by frustration. Kidney-Essence depletion also affects vision in older users. Lineage: Plum Flower (Mayway), Min Tong, *Yi Zong Jin Jian Wai Ke Xin Fa* (ophthalmology), Chinese Pharmacopoeia 2020.
+#### Open the science
 
-| Formula | Pattern | Dose | Grade | Source |
+Sushruta's *Uttara Tantra* is the classical ophthalmology source. AYUSH-CCRAS has published Triphala monograph; Bhatt 2014 small Indian RCT showed symptomatic dry-eye relief with cool sterile Triphala decoction eye wash. Yashtimadhu (licorice) external eye-area application classical; Anu Taila nasya for head/eye area perfusion. **Important safety:** for any eye-bath application use STERILE WATER (boiled and cooled), strain through clean fine cloth, use clean dedicated eyebath cup, do not reuse decoction. Netra Tarpana (medicated-ghee eye bath under expert supervision) is a Panchakarma clinic procedure — excluded from this OTC home dossier.
+
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
 |---|---|---|---|---|
-| **Qi Ju Di Huang Wan** 杞菊地黄丸 (*Gou Qi Zi + Ju Hua + Liu Wei Di Huang*) | Liver-Kidney Yin xu with dry tired eyes — **classical screen-strain formula** | 8 pills TID | B | Plum Flower; *Yi Ji Bao Jian*; NMPA monograph |
-| **Ming Mu Di Huang Wan** 明目地黄丸 ("brighten-eye Liu Wei") | Liver-Kidney Yin xu, advanced eye support | 8 pills TID | T | Plum Flower; Chinese Pharmacopoeia |
-| **Liu Wei Di Huang Wan** 六味地黄丸 | Kidney-Yin xu (foundation) | 8 pills TID | B | NMPA monograph |
-| **Xiao Yao San** 逍遥散 | Liver-Qi stagnation overlay (stress-triggered eye fatigue) | 6–9 g BID | T | *Tai Ping Hui Min He Ji Ju Fang* |
-| **Long Dan Xie Gan Tang** 龙胆泻肝汤 (short course only; Aristolochia-free) | Liver-Gallbladder fire (red eye + headache + irritability) | 6 g BID short course | T | *Yi Zong Jin Jian* |
-| ***Ju Hua*** 菊花 (chrysanthemum tea — single herb) | Daily cool-Liver eye support | 3–5 g infusion 2–3 cups | B | Chinese Pharmacopoeia; widely consumed |
-| ***Gou Qi Zi*** 枸杞子 (*Lycium barbarum*) | Liver-Kidney tonic, eye + brain | 15–30 g/day berries or infusion | B | Chinese Pharmacopoeia; Australian + Chinese cognitive/eye RCTs |
-| ***Mi Meng Hua*** 密蒙花 (eye-specific) | Eye blur, photophobia | per-formula in TCM blend | T | Chinese Pharmacopoeia |
-| **Zhen Zhu Ming Mu Yan Yao Shui** 珍珠明目滴眼液 (pearl-eye-brightening drops) | Topical OTC eye drops — Chinese pharmacopeial product | 1–2 drops BID | T | NMPA; Chinese Pharmacopoeia; widely used |
+| Triphala eye wash (external — cool sterile decoction) | Bhatt 2014 small Indian RCT — symptomatic dry-eye + irritation relief. *(Bhatt 2014; AYUSH-CCRAS)* | Cool sterile decoction; eyebath cup 1-2×/day external | B (small Indian RCT) | *(Bhatt 2014; AYUSH-CCRAS Triphala)* |
+| Triphala (internal, nightly) | Foundational nightly antioxidant + gut reset that supports the brain-gut-eye axis. *(AYUSH; Charaka)* | 5 g powder at bedtime with warm water | A (gut+antioxidant) / B (eye-specific) | *(AYUSH; Charaka)* |
+| Yashtimadhu (licorice — external) | Soothing external eye-area application; DGL only internally if HTN. *(Bhavaprakasha; EMA Glycyrrhiza)* | external eye-area massage | T | *(Bhavaprakasha)* |
+| Anu Taila nasya (medicated nasal oil) | Daily 1-2 drops in each nostril AM — classical AYUSH head/eye-area perfusion support. *(Astanga Hridaya)* | 1-2 drops each nostril AM | T | *(Astanga Hridaya; Kottakkal)* |
+| Trataka (steady gazing classical practice) + Palming (Bates / yogic) | Eye-focus practice + warm-palm rest — accommodative relaxation. *(Hatha Yoga Pradipika; AYUSH)* | Trataka 5 min AM; palming 2 min × 3-5 daily | T | *(Hatha Yoga Pradipika; AYUSH yoga)* |
+| Saptamrita Lauha (iron-bearing — only if iron-deficient) | Classical "seven-nectar iron" eye formula; iron content; only if low ferritin. *(Bhaishajya Ratnavali; AYUSH)* | per practitioner; iron-deficient only | T | *(Bhaishajya Ratnavali; AYUSH)* |
+| Brahmi Taila (external scalp + temples massage) | Soothing classical oil massage for head/eye-area + cognition-vision overlap. *(Astanga Hridaya; Kottakkal)* | 5-10 ml external scalp + temples | T | *(Astanga Hridaya; Kottakkal)* |
 
-### 4.3 Unani — *Du'f-e-Basarat* (weakness of vision) / *Khushki-e-Chashm* (eye dryness)
+### 4.3 TCM — Liver-opens-into-the-eye
 
-Mizaj: **barid-yabis** (cold + dry) of *ru'h-e-basari* (visual spirit) with hepatic deficiency overlay. Avicenna's *Canon* Book III on diseases of the eye. Lineage: Hamdard, Dawakhana Tibbiya College Aligarh.
+> **For you, in plain words.** Chinese medicine treats screen eye strain as liver-blood deficiency unable to nourish the eye + heart-spleen qi-blood weakness from overwork. The classical formulas are Qi Ju Di Huang Wan (Wolfberry + Chrysanthemum + Rehmannia) and Ming Mu Di Huang Wan; the daily Gou Qi Zi (goji/wolfberry) + Ju Hua (chrysanthemum) tea is the simplest TCM at-home practice. *(Huang Di Nei Jing; Yi Zong Jin Jian; Yin Hai Jing Wei; Bucheli 2011 goji)*
 
-| Formulation | Dose | Grade | Source |
-|---|---|---|---|
-| **Itrifal Kishneezi** (coriander + Triphala) | 5 g HS | T | Hamdard; classical Unani eye tonic |
-| **Roghan-e-Kahu** (lettuce-seed oil topical to lids) | 1 drop each eye HS | T | Hamdard |
-| **Khamira Banafsha** (violet-flower confection) | 5 g BID | T | Hamdard |
-| **Surma (kohl)** — **modern caveat** | apply to lash line | T | Hamdard kohl; **use only certified-lead-free Surma; many traditional preparations contain lead → exclude unless verified lead-free** |
-| **Sharbat-e-Anjeer with Roghan-e-Badam** | 10 ml + 5 ml almond oil AM | T | Hamdard |
+#### Open the science
 
-### 4.4 Siddha — *Kan kuraivu* (eye weakness) / *Kan vali* (eye pain)
+Patterns: liver-blood deficiency unable to nourish the eye (*Gan xue bu zu*); heart-spleen qi-blood xu from overwork (*Xin pi liang xu*); kidney-yin deficiency in aging-overlap pattern. Classical sources: *Huang Di Nei Jing*; *Yi Zong Jin Jian* (Imperial Golden Mirror); *Yin Hai Jing Wei* (classical TCM ophthalmology text). Lineage: Plum Flower (Mayway), Min Tong, Treasure of the East, Chinatown TCM pharmacies. Gou Qi Zi (wolfberry/goji) Bucheli 2011 Korea n=150 — macular pigment density rise. Ju Hua (chrysanthemum) Chinese traditional eye-cooling tea.
 
-Only **chooranam, kuzhambu, legiyam** are eligible.
+| Formula | TL;DR (plain English) | Pattern | Dose | Grade | Citation |
+|---|---|---|---|---|---|
+| Gou Qi Zi + Ju Hua tea (daily) | Wolfberry + chrysanthemum tea — the simplest daily TCM at-home eye-care practice. *(Shen Nong Ben Cao; Bucheli 2011)* | Liver-yin xu eye | 10-15 g goji + 6-9 g chrysanthemum as tea daily | B (goji MPOD) / T | *(Shen Nong Ben Cao; Bucheli 2011; Chinese Pharm 2020)* |
+| Qi Ju Di Huang Wan 杞菊地黄丸 | Wolfberry + Chrysanthemum + Rehmannia — classical aging-eye formula; supports screen-fatigue overlap. *(Yi Zong Jin Jian; NMPA)* | Liver-kidney yin xu | 8 pills 3×/day OR 6 g granules 2×/day | B | *(Yi Zong Jin Jian; NMPA)* |
+| Ming Mu Di Huang Wan 明目地黄丸 | "Bright-Eye Rehmannia" — classical aging-eye + visual-fatigue formula. *(Yin Hai Jing Wei)* | Kidney-yin xu eye | 8 pills 2-3×/day | B | *(Yin Hai Jing Wei; NMPA)* |
+| Sang Ye (mulberry leaf) | Wind-clearing herb traditionally for eye irritation. *(Shen Nong Ben Cao)* | Wind-heat in eye | 6-12 g decoction | T | *(Shen Nong Ben Cao)* |
+| Mi Meng Hua (buddleia) | Classical eye herb for liver-deficiency visual complaints. *(Chinese Pharmacopoeia 2020)* | Liver-yin xu | 6-12 g decoction | T | *(Chinese Pharm 2020; Yin Hai Jing Wei)* |
+| Acupuncture (4 White / 球后 / Tai Yang points) | TCM acupuncture for screen eye strain — small Asian trials suggestive. *(Kim 2012)* | Multi-pattern | 6-10 sessions | T | *(Kim 2012; Huang Di Nei Jing)* |
 
-| Formulation | Dose | Grade | Source |
-|---|---|---|---|
-| **Thiripala Chooranam** (Siddha Triphala) | 3–5 g HS warm water | T | IMPCOPS; *Siddha Maruthuvam* |
-| **Vallarai Chooranam** (Mandukaparni) | 3–5 g BID with honey | T | IMPCOPS; *Bogar 7000* |
-| **Nellikai Lehyam** (Amla legiyam) | 5–10 g BID | T | IMPCOPS, Aimil |
-| **Brahmi Chooranam** | 3–5 g BID | T | IMPCOPS |
+### 4.4 Unani — eye and brain temperament
 
-### 4.5 Tibetan / Sowa Rigpa
+> **For you, in plain words.** Unani treats eye fatigue as cold-dry brain-and-eye temperament overlap. Modern eye-specific Unani formulary is small. Surma (kohl) is EXCLUDED from this OTC protocol because of lead/antimony contamination concerns; modern OTC alternatives only. *(Avicenna Canon; Hamdard formulary; lead-content honest caveat)*
 
-Men-Tsee-Khang Dharamsala. **Agar-35** (calms *rlung* — relevant when screen overuse aggravates wind constitution); **Aru-7** (cleansing for Liver-Blood stagnation pattern overlap); **Manu-4** (lymphatic-microcirculatory). Source *rGyud-bzhi* (Four Tantras), with specific eye-disorder chapters. Grade: T.
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
+|---|---|---|---|---|
+| Sharbat-e-Sandal | Sandalwood syrup — cooling for hot brain-eye temperament. *(Hamdard)* | 10-20 ml twice a day | T | *(Hamdard)* |
+| Roghan Banafsha (violet oil external) | Classical external cooling oil for eye-area. *(Hamdard)* | external; 1-2 drops eye-area massage | T | *(Hamdard)* |
+| Itrifal-e-Saghir | Classical Unani triphala-equivalent (gut + eye + brain). *(Hamdard; Qarabadeen Qadri)* | 5-10 g at bedtime | T | *(Hamdard; Qarabadeen Qadri)* |
+| **Surma / collyrium — EXCLUDED (lead-content caveat)** | Classical Surma kohl has documented heavy-metal content; **excluded** from this OTC protocol. *(Lead-content lab analyses)* | EXCLUDED | excluded — safety | *(Lead-content honest caveat)* |
 
-### 4.6 Homeopathy
+### 4.5 Siddha — Tamil eye-care formulations
 
-> *Homeopathy is honoured under the founder's mandate to explore all directions of alternative medicine. Modern evidence is contested; entries are presented as a documented tradition (Tier 3), not as clinical proof.*
+> **For you, in plain words.** Tamil Siddha tradition uses chooranam and external applications. Mercury and metallic preparations EXCLUDED. *(IMPCOPS; Siddha Maruthuvam; Bogar 7000)*
 
-| Remedy | Indication / keynote | Typical potency | Grade |
-|---|---|---|---|
-| **Ruta Graveolens** | Classical "screen / over-use eye-strain" remedy; eye-ache from close work; sprained-tendon feel | 30C | T |
-| **Euphrasia Officinalis** (eyebright) | Acrid lacrimation, conjunctival redness, bland nasal | 6C–30C | T |
-| **Natrum Muriaticum** | Asthenopia with dryness, salt craving, grief overlay | 30C | T |
-| **Argentum Nitricum** | Anticipatory anxiety + eye strain; reading-anxiety; sweet craving | 30C | T |
-| **Onosmodium Virginianum** | Eye-ache + impaired accommodation; "letters dance" | 30C | T |
-| **Physostigma** | Asthenopia, ciliary spasm, accommodation difficulty | 30C | T |
-| **Belladonna** | Acute red eye + throbbing headache (occasional flare) | 30C | T |
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
+|---|---|---|---|---|
+| Kasturi Manjal (wild turmeric) eye-area paste | External cooling paste for eye-area; turmeric anti-inflammatory. *(IMPCOPS; Siddha)* | external eye-area | T | *(IMPCOPS; Siddha Maruthuvam)* |
+| Triphala Chooranam (Siddha-prepared) | Same role as AYUSH Triphala (nightly internal antioxidant). *(IMPCOPS)* | 5 g at bedtime | A (gut/antioxidant) / T (eye-specific) | *(IMPCOPS)* |
+| Nellikai Chooranam (Amla) | Vitamin C + antioxidant Tamil powder. *(IMPCOPS)* | 3-5 g 2×/day | T+B | *(IMPCOPS)* |
 
-Citations: Boericke W., *Pocket Manual of Homeopathic Materia Medica*; Allen H.C., *Keynotes and Characteristics*; Kent J.T., *Repertory*. CCRH (Central Council for Research in Homoeopathy under AYUSH).
+### 4.6 Tibetan / Sowa Rigpa
 
-## 5. Biophysical Interventions — home-administered only
+> **For you, in plain words.** Tibetan medicine treats screen eye strain as a wind (rLung) disturbance from sustained focus; broader nervous-system tonics apply. *(rGyud-bzhi; Men-Tsee-Khang)*
 
-**Eye / cognitive domain — every device is consumer-purchasable and self-administrable. No clinic IPL, no clinic punctal plugs, no LASIK recommendation.**
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
+|---|---|---|---|---|
+| Agar-35 | 35-ingredient nervous-system + circulation tonic; supports screen-fatigue + sustained-attention overlap. *(Men-Tsee-Khang; rGyud-bzhi)* | 1-2 pills 2×/day | T | *(Men-Tsee-Khang)* |
+| Sogthig | Wind-pacifying Tibetan formula for sustained-focus exhaustion. *(Men-Tsee-Khang)* | 1-2 pills 2×/day | T | *(Men-Tsee-Khang)* |
 
-**5.1 Blink hygiene + 20-20-20 + 30-30-30.** **Foundation lever.** Every 20 min of screen, look at something 20 ft (6 m) away for 20 s. Better: **30-30-30** (every 30 min, 30 s, 30 ft) for sustained near work. Apps: **EyeLeo, Stretchly, Time Out (Mac), Workrave, Awareness, BreakTimer** — free; set 25-min Pomodoro with 5-min far-focus break. **Conscious complete blinks** every screen line — 2 firm blinks every paragraph.
+### 4.7 Homeopathy — honoured tradition, honestly graded
 
-**5.2 Warm compress + lid hygiene.** Warm compress (eye-mask, beanbag heated 20–30 s microwave, or commercial Bruder mask) at 40–42 °C **5–10 min BID** → melts meibomian lipid; follow with **lid massage** along gland line. Use OTC lid wipes (Optase, OcuSoft) or diluted baby shampoo for blepharitis overlap. Devices: Bruder Mask ($30), Heyedrate Heated Mask ($45), Posh Mask. **NO at-home electric IPL** marketed devices — efficacy uncertain, retinal-safety controversial.
+> **For you, in plain words.** Homeopathy is honoured under the founder's mandate. Modern evidence is contested; entries are documented tradition (Tier 3), not clinical proof. Euphrasia is the most-recognised classical eye remedy. *(Boericke; Kent; CCRH AYUSH)*
 
-**5.3 Workplace humidification + air control.** Target **≥40–50% relative humidity**. Devices: Levoit Classic 200S, Honeywell HCM-350, Boneco S250 — $50–150. Avoid direct airflow at face from AC vents (deflect with shield). Use a desktop air-quality monitor (Awair Element, $200).
+| Remedy | TL;DR (plain English) | Indication | Potency | Grade | Citation |
+|---|---|---|---|---|---|
+| Euphrasia officinalis (eyebright) | The most-classical homeopathic eye remedy — watering, burning, irritation. *(Boericke)* | Watery + burning eyes | 30C / 200C | T | *(Boericke; Kent's Repertory)* |
+| Ruta graveolens | Classical for eye strain from close work, accommodative fatigue. *(Boericke)* | Accommodative eye strain | 30C / 200C | T | *(Boericke)* |
+| Natrum muriaticum | Tearing in wind/sun; eye-strain with grief overlap. *(Boericke; Kent)* | Tearing + sun sensitivity | 30C / 200C | T | *(Boericke; Kent)* |
+| Sepia | Tired eyes from screen work in women — perimenopausal overlap. *(Boericke; Kent)* | Female-specific eye fatigue | 30C / 200C | T | *(Boericke)* |
+| Argentum nitricum | Accommodative strain; focus-shifting difficulty. *(Boericke)* | Accommodative strain | 30C / 200C | T | *(Boericke)* |
+| Phosphorus | Aging-eye + visual disturbance pattern; can overlap with screen strain. *(Boericke; Kent)* | Visual disturbance | 30C / 200C | T | *(Boericke)* |
 
-**5.4 Blue-light filtering at hardware + glasses level.** **Software: f.lux** (free, Mac/Win/Linux), **Iris**, **Apple Night Shift**, **Android Night Light** — gradual blue reduction 1–2 h before sunset. **Hardware**: matte screen filter (3M anti-glare), e-ink supplementary device (Boox, reMarkable) for reading. **Blue-blocker glasses**: clear yellow-tint for daytime (Felix Gray Reade — clear) or amber/red for after sundown (BlockBlueLight TrueDark Twilight, Ra Optics Sunset Lens). **Polarized + UV** sunglasses for outdoor.
+## 5. Biophysical & Behavioural Interventions — home-administered
 
-**5.5 Ergonomic monitor position.** Monitor at **arm's length (60–70 cm)**, top of screen at **eye level or slightly below**, no glare from windows/lights, **chin tucked / shoulders relaxed**. Standing desk option (Uplift, Fully) for posture rotation. Document holder beside screen if reading paper. Loupedeck / external monitor (24–27" 4K, 100 ppi minimum).
+### 5.1 What works at home — the priority order
 
-**5.6 Trataka (candle gazing) — Yoga ophthalmic practice.** Sit 60 cm from a steady candle flame in a dark room; gaze without blinking until eyes water; close eyes and visualize the flame. **5–10 min PM**. Tones ciliary muscle, trains far-near refocus, calms mind. **Caution**: photosensitive epilepsy.
+> **For you, in plain words.** Twelve home-administered interventions, ranked by honest evidence. **20-20-20 rule + ergonomic setup + blink-awareness top the list** (A-grade behavioural). Preservative-free artificial tears are the A-grade pharmaceutical-equivalent OTC. *(Rosenfield 2011; Pucker Cochrane 2016; Cochrane Singh 2023)*
 
-**5.7 Eye yoga + palming (Bates method foundation).** Daily 5-min routine: **palming** (rub palms warm, cup over closed eyes 1 min — dark + warm relaxes ciliary), **horizontal sweep** (eyes left-right 10 reps), **vertical sweep** (10 reps), **diagonal** (10 reps both directions), **circle** (10 reps both directions), **near-far focus** (thumb at 25 cm ↔ distant object 6 m, 10 reps), **figure-8** (10 reps).
+### 5.2 The 20-20-20 rule (cornerstone)
 
-**5.8 Cervical/postural release.** **Suboccipital release** with tennis ball (tennis ball at base of skull, lie supine, 60 s each side); **doorway pec stretch** 30 s × 2; **chin tuck** holds 10 s × 10; **upper-trap stretch** 30 s each side; **scapular retraction**. 5 min hourly.
+> **For you, in plain words.** Every 20 minutes, look 20 feet (6 m) away for 20 seconds. This relaxes the accommodative system, restores blink rate, and breaks the visual-fixation muscular tension. A free reminder app makes it automatic. *(Rosenfield 2011 CVS review; Anshel 2007)*
 
-**5.9 Photobiomodulation — optional, lid-only.** Some practitioners use low-dose 660 nm red light over closed lids for dry-eye / meibomian gland function. Devices: LumiBoost, JOVS Eye Pro — emerging consumer category. **Caution**: never apply NIR (>800 nm) to open eyes or unprotected; **eye shield mandatory** if PBM near face; lid-only red light still controversial — adopt cautiously.
+#### Open the science
+
+The 20-20-20 rule originated in ergonomic literature; Rosenfield 2011 CVS review describes it as the foundational behavioural intervention. Mechanism: forces ciliary muscle relaxation (focusing on distance = ciliary relaxation), restores blink rate (looking away from screen restores normal blink), breaks fixation-related muscular tension. Free reminder apps: EyeRest (macOS), Time Out (macOS), Eye Pro (Windows), eyeCare (Chrome extension), Pomodoro timers, smartwatch reminders, phone alarms every 20 min. **Grade A behavioural.**
+
+### 5.3 Ergonomic monitor setup
+
+> **For you, in plain words.** Top of monitor at or just below eye level. Viewing distance 20-30 inches (50-75 cm). No glare (monitor perpendicular to windows). Ambient light matched to screen brightness. Chair height for feet flat + elbows ~90°. Keyboard close. No laptop alone for long sessions. *(Anshel 2007; Sheppard 2018)*
+
+### 5.4 Blink-awareness training
+
+> **For you, in plain words.** Computer use drops your blink rate by ~60%. Conscious blink training during breaks — close-relax-open 10 times every 20-20-20 break — restores tear-film coverage. Free, takes 10 sec. *(Patel 1991; Tsubota 1993)*
+
+### 5.5 Comprehensive eye exam — clinic-route action (single highest leverage)
+
+> **For you, in plain words.** If your eye strain persists despite ergonomics + 20-20-20 + drops, schedule a comprehensive eye exam on your own initiative. Uncorrected refractive error (especially mild hyperopia and astigmatism, and the over-40 presbyopia) is the single biggest hidden driver. Prescription computer glasses optimised for the 60-70 cm arm-distance fix it. *(Sheppard 2018 CVS review)*
+
+### 5.6 Preservative-free artificial tears (covered §3.2)
+
+### 5.7 Warm compresses (covered §3.3)
+
+### 5.8 Home humidifier
+
+> **For you, in plain words.** Dry indoor air (especially winter heating, summer AC) drives ocular surface evaporation. A simple home humidifier (cool-mist preferred) bringing room humidity to ~50% reduces dry-eye symptoms. *(Industry; Wolffsohn TFOS DEWS II 2017)*
+
+### 5.9 Pranayama + palming + Trataka breaks
+
+> **For you, in plain words.** Indian yogic eye practices — Trataka (steady candle/dot gazing), palming (covering closed eyes with warm palms for 1-2 min), and Bhramari humming breath — are an accommodative-relaxation + vagal-tone bundle that fits naturally into the 20-20-20 break. *(Hatha Yoga Pradipika; AYUSH yoga monographs; Mooventhan 2014)*
+
+### 5.10 Pomodoro structured break adoption
+
+> **For you, in plain words.** The Pomodoro technique (25 min work + 5 min break) naturally enforces 20-20-20 plus longer movement breaks. Combine with neck-shoulder stretches. Free apps: Forest, Be Focused, Toggl Track. *(Cirillo Pomodoro method)*
+
+### 5.11 Evening blue-light reduction (FOR SLEEP, not for eyes)
+
+> **For you, in plain words.** f.lux software (free), Apple Night Shift / True Tone (free, built-in), Android equivalents, dark-mode adoption, dimmed evening lighting. The goal is protecting evening melatonin and sleep — NOT preventing "eye damage" (which is largely marketing). *(Chang 2015 Harvard; Cochrane Singh 2023)*
+
+### 5.12 Neck-shoulder stretches between sessions
+
+> **For you, in plain words.** Five-minute neck rolls, shoulder rolls, scapular squeezes, chin tucks, and upper trap stretches every 30-60 min. The "eye strain" that disappears after a yoga class was 70% musculoskeletal. *(Anshel 2007; Sheppard 2018)*
+
+### 5.13 What to skip
+
+- **Marketing-grade blue-light glasses for symptom relief** (Cochrane Singh 2023 NULL).
+- **BAK-preserved multidose tears for chronic use** (corneal toxicity).
+- **Redness-reliever drops with vasoconstrictors for chronic use** (rebound effect).
+- **Bates-method "reverse refractive error" programmes** (popular but evidence base does not support reversing structural refractive error).
 
 ## 6. Dietary Protocol
 
-### 6.1 Mandatory foods (daily gram quantities)
+### 6.1 Eat the Mediterranean-MIND-anti-inflammatory base
 
-- **Wild oily fish** (sardines, mackerel, salmon, anchovies) **120 g 3–4×/week** OR algal omega-3 600 mg EPA+DHA
-- **Pasture eggs** (lutein, zeaxanthin in yolk; 2 eggs ≈ 400 µg lutein) **2 daily**
-- **Dark leafy greens** (kale 100 g = 20 mg lutein; spinach, collards, methi, Brahmi greens) **200–250 g daily**
-- **Yellow/orange vegetables** (carrot, sweet potato, pumpkin, yellow capsicum, corn) **150 g daily** — beta-carotene + zeaxanthin
-- **Berries** (blueberry, bilberry seasonal, blackberry) **100 g daily** — anthocyanins
-- **Walnuts + flax + chia** for plant ALA **30 g combined**
-- **Brazil nuts** 2 nuts (Se 100 µg) daily
-- **Sea buckthorn berry or juice** 30 ml or supplement (omega-7) daily
-- **Citrus + amla** (Vit C 500–1000 mg target) — eye microvascular collagen
-- **Hydration 30–35 ml/kg** — minimum 2.5–3 L for office adult
-- **Chrysanthemum (*Ju Hua*) + Goji (*Gou Qi Zi*) tea** 2 cups daily — TCM eye support
-- **Sprouted Siri Dhanyalu millets** (foxtail, little, kodo) 50–70 g cooked
-- **Turmeric + black pepper + ghee** 1 tsp daily
-- **Avocado** ½ daily — lutein + MUFA
-- **Dark chocolate ≥85%** 15 g (flavanols)
+> **For you, in plain words.** The same Mediterranean-MIND-Eye plate as the macular dossier supports tear film and ocular surface comfort — oily fish, leafy greens, berries, nuts, olive oil, beans, whole grains. *(Merle 2019; Morris MIND 2015)*
 
-### 6.2 Absolutely avoid (with molecular rationale)
+### 6.2 Mandatory foods — the daily grams
 
-| Food/Class | Molecular reason |
-|---|---|
-| **Industrial seed oils** (soy, corn, canola, sunflower, safflower, cottonseed) | ω-6 → inflammation in lacrimal gland and ocular surface; displaces DHA from retinal membranes |
-| **Trans fats, ultra-processed foods** | Inflammation, AGE formation |
-| **Refined sugar, HFCS** | Glycation; vascular damage to choriocapillaris and retinal microvasculature |
-| **Alcohol** | Dehydration; tear-film disruption; sleep architecture (next-day eye-strain) |
-| **Caffeine after 14:00** | Sleep disruption → next-day eye fatigue |
-| **High-salt diet** | Tear-osmolarity issues; dry-eye exacerbation |
-| **Gluten** (in inflammatory phenotypes / autoimmune-dry-eye overlap) | Zonulin / inflammation |
-| **Aspartame, MSG excess** | Mild neuro-irritant in sensitives |
-| **Smoking / vaping** | Direct tear-film damage; macular oxidative load; circumstantial dry-eye driver |
-
-### 6.3 Preparation methodology
-
-**Sprouting** (millets, mung): soak 8–10 h, drain, muslin 12–18 h.
-
-**Carotenoid bioavailability rule**: lutein/zeaxanthin/beta-carotene are **fat-soluble** — **always cook greens with ghee or olive oil**; raw salad needs EVOO + avocado + nuts to be absorbed.
-
-**Triphala eyewash protocol**: 1 tsp Triphala in 250 ml filtered water, boil 10 min, cool to room temp, strain through fine muslin (twice), use eye-cup BID; refresh decoction daily. Classical *Sushruta Uttara* practice.
-
-**Chrysanthemum + Goji tea**: 5 dried chrysanthemum flowers + 1 tbsp Goji berries + 1 piece dried Gou Qi rou + hot water (90 °C) → steep 5 min → 2 cups/day.
-
-**Bone broth** for collagen + glycine — eye support + sleep.
-
-### 6.4 Seven-day meal plan (gram quantities, with timing)
-
-| Day | Breakfast 07:30 (+ Combo 1) | Lunch 13:00 (+ Combo 2) | Dinner 19:00 (+ Combo 3) |
+| Food group | Daily grams | TL;DR (plain English) | Citation |
 |---|---|---|---|
-| **1 Carotenoid load** | 2 eggs + 100 g sautéed kale (ghee) + ½ avocado + 100 g blueberries + chrysanthemum-goji tea | 150 g sardines + 250 g spinach-carrot salad + 60 g foxtail + 30 ml EVOO + 80 g sweet potato | 70 g kodo khichdi + 200 g methi sauté + 100 g kanji + 1 tsp ghee + sea buckthorn juice 30 ml |
-| **2 Omega-3** | 60 g overnight oats with chia/flax + 100 g berries + 30 g walnuts + Goji 1 tbsp | 150 g mackerel + 200 g methi-amaranth + 60 g millet | 75 g barnyard roti + 200 g spinach-methi + 100 g A2 kefir |
-| **3 Liver-Blood** (TCM) | 2 eggs + 100 g greens + 15 g chocolate + chrysanthemum tea | Pasture liver 50 g (weekly) + 250 g salad + 60 g millet, or fish | 65 g millet roti + 200 g lauki + carrots + ashwagandha-milk 200 ml |
-| **4 Lutein-egg** | 3 eggs omelette with herbs + 100 g kale + 30 g walnuts + chrysanthemum tea | 150 g salmon + 200 g kale-quinoa salad + 30 ml EVOO + 100 g pumpkin | 70 g browntop pulao + 200 g okra + drumstick + 100 g ferment |
-| **5 Marine ω-3** | Sardine on millet toast + 100 g greens + Goji tea | 120 g anchovy + 250 g greens + 60 g millet + 100 g carrot | 70 g khichdi + 200 g gotu kola + 1 tsp ghee |
-| **6 Anthocyanin** | Smoothie: 100 g blueberry + ½ avocado + chia + 30 g almond + collagen + Goji | 150 g grilled fish + 250 g salad + 60 g millet | 75 g millet roti + 200 g greens + 100 g ferment |
-| **7 Reset** | Light: 2 eggs + greens + berries | Sprouted dal khichdi + 200 g greens + amla + ferment | Early 18:00 dinner; lighter; bone-broth based |
+| Oily fish (salmon, sardines, mackerel, anchovies) | 100-150 g 2-3×/wk | DHA + EPA for tear-film stability + retinal photoreceptor. *(Wolffsohn TFOS DEWS II 2017)* | *(TFOS DEWS II 2017)* |
+| Leafy greens (kale, spinach, methi, drumstick, palak) | 150-200 g cooked | Antioxidants + lutein + zeaxanthin macular co-benefit. *(Morris MIND 2015)* | *(Morris 2015)* |
+| Berries (blueberries, blackberries, jamun, goji) | 80-120 g 4-7×/wk | Anthocyanins + vitamin C. *(Caselli 1985)* | *(Caselli 1985; Bucheli 2011)* |
+| Eggs | 1-2 daily | Bioavailable lutein + zeaxanthin from yolk. *(Vishwanathan 2009)* | *(Vishwanathan 2009)* |
+| Olive oil (extra-virgin) | 30-45 ml daily | Mediterranean cornerstone fat. *(Merle 2019)* | *(Merle 2019)* |
+| Nuts (almonds, walnuts) | 30-40 g daily | Vitamin E + magnesium + healthy fat. *(PREDIMED)* | *(PREDIMED 2018)* |
+| Water | 2-2.5 L | Direct tear-film and ocular hydration. *(Industry)* | *(Industry)* |
+| Goji berries (Gou Qi Zi) | 10-15 g daily | Major zeaxanthin source; classical TCM eye herb. *(Bucheli 2011; Shen Nong Ben Cao)* | *(Bucheli 2011)* |
+| Sea buckthorn (Hippophae rhamnoides) oil/berries — if available | 2-4 g/day or fresh berries | Omega-7 mucosal support; Larmo 2010 Finland dry-eye signal. *(Larmo 2010)* | *(Larmo 2010 Finland)* |
+| Turmeric (with black pepper + fat) | 1-3 g | Anti-inflammatory polyphenol. *(AYUSH)* | *(AYUSH)* |
 
-Maintain daily: 200 g greens, 100 g berries, 30 g walnuts/flax/chia, 2 Brazil nuts, 2 eggs, 150 g yellow-orange veg, 30 ml EVOO + ghee 1 tsp.
+### 6.3 Absolutely avoid
 
-### 6.5 Environmental & occupational triggers to eliminate
+- **Excess alcohol** — diuresis + dryness; cap ≤7 women / ≤14 men.
+- **High-caffeine + low water** — diuresis worsens dryness; pair coffee with water 1:1.
+- **Smoking** — direct ocular surface inflammation + tear-film disruption.
+- **Industrial trans fats + ultra-processed >20% of calories** — systemic inflammation.
+- **Refined sugar at scale** — glycation + systemic inflammation.
 
-- **Direct AC airflow at face** — deflect, reduce fan speed, reposition desk; office air vents are the #1 dry-eye amplifier.
-- **Low ambient humidity (<30%)** — desktop humidifier (target 40–50% RH); avoid forced-air heating without humidification.
-- **Glare from windows / overhead lighting** — matte anti-glare screen, indirect ambient lighting, blinds; **avoid placing monitor in front of/behind window**.
-- **Improper monitor height + distance** — top of screen at eye level; 60–70 cm distance; document holder beside, not below, screen.
-- **Forward-head posture** — ergonomic chair, lumbar support, standing desk option, hourly posture reset.
-- **Sustained bright blue lighting after sundown** — f.lux + blue-blockers + warm bulbs ≤2700K; bedroom red-amber bulbs only.
-- **Contact-lens overwear** — daily disposables preferred; remove for evening screen sessions; **never sleep in lenses**.
-- **Eye cosmetics with parabens, formaldehyde-releasers, oxybenzone** — switch to clean brands (RMS, Ilia, Burt's Bees, Inika).
-- **Lash extensions + tightlining** with mineral oil / pthalates near meibomian gland line — discontinue if dry-eye worsens.
-- **Smoke / vaping / wildfire smoke** — HEPA filter; N95 outdoors.
-- **Allergens** (cat dander, pollen, dust mite) in MCAS overlap — HEPA + mattress encasement + air purifier.
-- **Untreated uncorrected refractive error** — get an eye exam annually; correct with proper Rx including computer-specific glasses for sustained near work in presbyopia.
+### 6.4 Preparation methodology
 
-### 6.6 Cofactor / micronutrient floor
+- Leafy greens lightly sautéed in olive oil/ghee (carotenoid bioavailability).
+- Eggs lightly cooked (preserves carotenoids).
+- Triphala soaked in cool sterile water for external eye-wash decoction.
+- Goji berries dried — chew or in tea.
 
-| Cofactor | Why for eye strain | Target/day | Food | Supplement (if floor unmet) | Antagonist |
-|---|---|---|---|---|---|
-| **Vitamin A (retinol from cod-liver)** | Conjunctival + corneal epithelium; rhodopsin | 3000–5000 IU | cod-liver oil, liver, ghee | Rosita, Nordic Naturals | balance D, K, E |
-| **Lutein + Zeaxanthin + Meso-zeaxanthin** | Macular pigment; blue filter | 10 + 2 + 10 mg | kale, spinach, egg yolk | Macuhealth | fat for absorption |
-| **Astaxanthin** | Ciliary accommodation; antioxidant | 4–12 mg | krill, salmon | AstaReal | fat for absorption |
-| **Vit C** | Aqueous humor; collagen; capillaries | 500–1000 mg | amla, citrus, kiwi, capsicum | Quali-C Pure Encaps | — |
-| **Vit E (mixed tocopherols)** | Lipid antioxidant; tear-film | 200–400 IU | almonds, sunflower seeds | Solgar mixed toc | E ≤400; K2 cofactor |
-| **Vit D3 + K2** | Ocular surface; tear-film (Italian/Korean RCT signal) | 4000 IU + 100 µg | sun, sardines | Thorne D/K2 | fat + Mg cofactor |
-| **Zinc** | Vit-A metabolism (RBP); retinal | 10–15 mg | pumpkin seeds, oysters | Thorne Zn picolinate 15 mg | ≥2 h Fe/Ca; Cu cofactor |
-| **Copper** | Cu/Zn ratio | 1–2 mg | sesame, cashew, oysters | Pure Encaps Cu glycinate | Zn:Cu 8–15:1 |
-| **Selenium** | GPX; tear-film redox | 100 µg | 2 Brazil nuts | Solgar 100 µg | toxic >400 µg |
-| **Magnesium glycinate** | Sleep; ciliary smooth-muscle | 300–400 mg | pumpkin seeds, leafy | Doctor's Best | split AM/PM with Ca |
-| **Omega-3 EPA+DHA** | Meibomian + retina | 2 g | sardines, mackerel | Nordic Naturals ProOmega, PRN De3, Bare Biology | — |
-| **Omega-7 (palmitoleic, sea buckthorn)** | Meibomian lipid | 200–400 mg | sea buckthorn | Omega7 (Finland), Sibu | fat for absorption |
-| **Riboflavin (B2)** | Mitochondrial; corneal cross-link cofactor | 10–25 mg | dairy, eggs | Solgar | — |
-| **Methyl-B12 / Methyl-folate / B6** | Neuro-eye axis; Hcy | 1000 µg + 800 µg + 50 mg | sardines, greens | Pure Encaps | — |
+### 6.5 Seven-day meal plan
 
-## 7. Lifestyle / Mind-Body Anchors (mapped to §2 mechanism nodes)
+> **For you, in plain words.** Seven rotating Mediterranean-MIND days with exact grams — same plate as macular-support with extra emphasis on tear-film-supporting foods. *(Merle 2019; Morris MIND 2015)*
 
-### 7.1 Yoga (daily 20–25 min) — cervical + eye + vascular mapping
+**Day 1.** Breakfast: 2 eggs + 60 g sautéed spinach + 30 g walnuts + 80 g blueberries + black coffee + 2 glasses water. Mid-morning: 15 g goji + green tea + 1 glass water. Lunch: 120 g salmon + 200 g kale salad + 30 ml olive oil + 80 g foxtail millet + 50 g chickpeas. Snack: 30 g almonds + 1 apple + water. Dinner: 100 g lentil dal + 150 g drumstick sambar + 80 g brown rice + 1 tsp ghee + turmeric. Evening: chamomile + Triphala 5 g internal.
 
-| Asana | §2 Mechanism node | Duration | Time of day | Caution |
+**Day 2.** Breakfast: 80 g oats + 80 g blueberries + 30 g walnuts + 1 tbsp flax + 15 g goji + 1 tbsp olive oil. Mid-morning: 1 boiled egg + green tea + water. Lunch: 120 g sardines + 200 g spinach salad + 30 ml olive oil + 80 g chickpeas. Snack: 30 g walnuts + 1 orange. Dinner: 150 g grilled fish/tofu + 150 g kale + 80 g quinoa + olive oil. Evening: Ju Hua tea + Triphala.
+
+**Day 3.** Breakfast: 2 eggs poached + 60 g methi + 80 g jamun + 30 g almonds + filter coffee. Mid-morning: 15 g goji + 20 g walnuts. Lunch: 120 g mackerel curry + 80 g millet + 100 g okra + salad. Snack: 30 g groundnuts + green tea. Dinner: 100 g moong dal + 150 g palak + 80 g millet roti + ghee. Evening: turmeric tea + Triphala.
+
+**Day 4.** Breakfast: smoothie (200 ml almond milk + 80 g berries + 30 g spinach + flax + 30 g almonds + pea protein). Mid-morning: 1 apple + 20 g walnuts. Lunch: 100 g black beans + 200 g kale salad + 80 g brown rice + olive oil + 1 egg. Snack: hummus + carrot sticks. Dinner: 120 g lentil stew + 80 g millet + curd + 15 g goji. Evening: golden milk + Triphala.
+
+**Day 5.** Breakfast: 2 eggs + 80 g moong sprouts + onion-tomato-coriander. Mid-morning: 80 g jamun + 15 g goji. Lunch: 120 g fish curry + 80 g brown rice + 100 g drumstick leaves + raita. Snack: 30 g walnuts. Dinner: 100 g dal + 150 g palak + 80 g methi roti + ghee. Evening: ashwagandha + warm milk + Triphala.
+
+**Day 6.** Breakfast: 60 g Greek yogurt + 80 g berries + 30 g walnuts + honey + flax. Mid-morning: green tea + 1 egg. Lunch: 150 g chickpea stew + 200 g rocket-spinach + olive oil + bread. Snack: 30 g almonds + 1 orange. Dinner: 120 g salmon + 200 g roasted veg + 80 g quinoa. Evening: chamomile + Triphala.
+
+**Day 7.** Breakfast: 2 eggs + 60 g greens + 80 g berries + chai. Mid-morning: 80 g jamun + 20 g walnuts. Lunch: 100 g khichdi + 100 g vegetable + curd. Snack: 1 apple + 30 g almonds. Dinner: 100 g moong dal soup + 80 g kale + 60 g brown rice. Evening: golden milk + Triphala.
+
+### 6.6 Environmental & occupational triggers
+
+- **Dry indoor air** (winter heating, summer AC) — humidifier to ~50% RH.
+- **Direct AC airflow on face** — redirect vents.
+- **Smoking + secondhand smoke** — direct ocular surface inflammation.
+- **Dusty / particulate environments** without eye protection.
+- **Multi-screen office without ergonomic setup** — fix workstation.
+- **Contact-lens overuse >12 h/day** — switch to glasses for screen sessions.
+- **Endocrine disruptors** (BPA, phthalates) — switch to glass storage (systemic, less direct ocular).
+- **Sleep deprivation** — chronic short sleep worsens dry eye symptoms next-day.
+
+### 6.7 Cofactor / micronutrient floor
+
+| Nutrient | Daily target | Food sources | Supplement if needed | TL;DR (plain English) |
 |---|---|---|---|---|
-| **Marjariasana-Bitilasana** (cat-cow) | §2.4 cervical mobility | 10 reps | 07:00 AM + work breaks | — |
-| **Bhujangasana** (cobra) | §2.4 cervical extension; §2.2 gut-vagal | 5 reps | 07:00 AM | — |
-| **Balasana** (child's pose) | §2.4 suboccipital release | 1–2 min | between work blocks | — |
-| **Setu Bandhasana** (bridge) | §2.4 mild inversion + thyroid | 1–2 min | 07:00 AM | Safe in mild HTN |
-| **Adho Mukha Svanasana** (downward dog) | §2.4 cervical traction + perfusion | 1 min | 07:00 AM | — |
-| **Sarvangasana** (shoulder stand) | §2.4 cerebral + thyroid perfusion | 2 min | 07:00 AM, empty stomach | Only if HTN cleared; never after meal |
-| **Halasana** (plough) | §2.4 cervical decompression | 1 min | 07:00 AM | Only if HTN + cervical cleared |
-| **Matsyasana** (fish — counter-pose) | §2.4 cervical reset | 1 min | 07:00 AM | — |
-| **Tadasana + Vrikshasana** | Postural + balance | 30 s each | daily | — |
-| **Shavasana with palming** | §2.1 ciliary relaxation | 5 min | 22:00 | — |
+| Omega-3 EPA + DHA | 1-2 g (≥500 mg DHA) | Salmon, sardines, mackerel | High-DHA marine | Tear-film stability; honest mixed (DREAM null but smaller trials positive). *(DREAM 2018; Asbell 2018)* |
+| Omega-7 (palmitoleic acid) | 200-400 mg | Sea buckthorn, macadamia nuts | Sea buckthorn oil 2-4 g | Mucosal hydration. *(Larmo 2010 Finland)* |
+| Vitamin A | 700-900 µg RAE | Liver, egg yolk, leafy greens, cod-liver | Cod-liver only if deficient | Goblet-cell mucin; severe deficiency = xerophthalmia. *(EMA; Health Canada)* |
+| Vitamin D3 + K2 | 2000-5000 IU + 90-180 µg | Sunlight + fatty fish | D3 + K2 if deficient | Aim 30-50 ng/mL; ocular-surface inflammation modulation. *(Yildirim 2016)* |
+| Vitamin C | 100-200 mg | Amla, citrus, berries, peppers | Mostly from food | Antioxidant; corneal collagen. *(EMA)* |
+| Vitamin E | 15 mg mixed tocopherols | Sunflower seeds, almonds, olive oil | Mostly from food | Fat-soluble antioxidant. *(EMA)* |
+| Lutein + zeaxanthin | 10-20 mg + 2-4 mg | Kale, spinach, egg yolk, goji | Standalone if extra | Macular pigment + ciliary muscle co-benefit. *(Stringham 2017)* |
+| Magnesium | 320-420 mg | Pumpkin seeds, almonds, spinach | Glycinate 200-400 mg PM | Sleep + neuromuscular relaxation. *(EMA)* |
+| Zinc | 8-11 mg | Oysters, beef, pumpkin seeds | Mostly food | Tear-film + immune cofactor. *(AYUSH)* |
+| Iron | 8 mg M / 18 mg F pre-menopause | Red meat, lentils, spinach | Only if ferritin <30 ng/mL | Measure first. *(NHP)* |
+| Water | 2-2.5 L | Direct hydration | — | Most-undervalued ocular surface lever. *(Industry)* |
 
-### 7.2 Pranayama (daily 15 min)
+## 7. Lifestyle / Mind-Body Anchors
 
-| Technique | §2 Mechanism node | Duration | Time of day | Caution |
+### 7.1 The mind-body map at a glance
+
+> **For you, in plain words.** Six lifestyle anchors mapped to mechanism nodes. *(Charaka; AYUSH; Hatha Yoga Pradipika)*
+
+### 7.2 Yoga + ocular practices
+
+> **For you, in plain words.** Daily 20-30 min — gentle flow + Trataka + palming. Avoid aggressive inversions if HTN or glaucoma. *(Hatha Yoga Pradipika)*
+
+| Asana / practice | TL;DR (plain English) | Mechanism node targeted | Duration | Time of day |
 |---|---|---|---|---|
-| **Anulom Vilom** | §2.4 autonomic balance | 10 min | 06:30 AM | — |
-| **Bhramari** | §2.4 vagal + facial vibration → eye relaxation | 5 min | 06:30 AM + 22:00 PM | — |
-| **Nadi Shodhana** | §2.4 autonomic | 5 min | midday breaks | — |
-| **Kapalbhati** | §2.1 oxygenation | 3 min | AM | **Contraindicated in HTN, pregnancy, ulcer, recent abdominal surgery, glaucoma** |
-| **Ujjayi** | §2.4 vagal | 5 min | during yoga | — |
-| **4-7-8** | §2.4 vagal | 4 rounds pre-meal + at 14:00, 17:00 | meal-times + 2 work breaks | — |
+| Surya Namaskar | Full-body warm-up. *(Hatha Yoga Pradipika)* | §2.5 ergonomic | 6 rounds | AM |
+| Trataka (candle / dot gazing) | Classical yogic eye-focus practice. *(Hatha Yoga Pradipika)* | §2.3 accommodative | 5 min | AM |
+| Palming (Bates / yogic) | Warm-palm rest of closed eyes — accommodative relaxation. *(Bates 1920; AYUSH)* | §2.3 + §2.5 | 2 min × 3-5 | Throughout day |
+| Eye-yoga (slow movements up-down-sideways-circular) | Gentle ocular muscle movement during break. *(AYUSH yoga)* | §2.3 | 2 min | Each 20-20-20 break |
+| Setu Bandha (bridge) | Gentle circulation + spinal extension. *(Hatha Yoga Pradipika)* | §2.5 vascular | 1 min × 3 | AM/PM |
+| Viparita Karani (legs-up-the-wall — supported) | Gentle inversion; SKIP if advanced glaucoma. *(Hatha Yoga Pradipika)* | §2.5 vascular | 5-10 min | PM |
+| Cat-cow + shoulder rolls | Neck-shoulder release for ergonomic strain. *(Hatha Yoga Pradipika)* | §2.5 ergonomic | 2 min | Each break |
+| Shavasana | Parasympathetic + ocular muscle release. *(Hatha Yoga Pradipika)* | §2.2 + parasympathetic | 10 min | PM |
 
-### 7.3 Meditation + Trataka
+### 7.3 Pranayama
 
-**Trataka 5–10 min PM** (candle gazing — see §5.6) — primary ophthalmic *yoga* practice; tones ciliary, calms mind. Yoga Nidra 20 min HS for sleep restoration.
+| Technique | TL;DR (plain English) | Mechanism node targeted | Duration | Time of day |
+|---|---|---|---|---|
+| Bhramari (humming bee) | Vagal tone + nitric oxide. *(Mooventhan 2014)* | §2.5 + vagal | 5 min × 2 | AM + PM |
+| Nadi Shodhana | Autonomic rebalance. *(Hatha Yoga Pradipika)* | §2.5 + HPA | 10 min | AM |
+| 5-6 bpm coherent breathing | Highest-HRV breathing. *(Lehrer 2013)* | §2.5 + HPA | 10 min × 2 | AM + PM |
+| Kapalbhati — CONTRAINDICATED in HTN, glaucoma | Cleansing; SKIP if BP high, glaucoma. *(AYUSH)* | n/a (skip) | (skip) | (skip) |
 
-### 7.4 Sleep & circadian
+### 7.4 Meditation
 
-Lights-out **22:30**; blue-light cut-off **21:00** (f.lux + blockers); bedroom **18–20 °C, blackout**; 5–10 min AM sunlight within 30 min of waking; **caffeine cut-off 14:00**. 7.5–8.5 h sleep. **Eye-rest sleep is non-negotiable** — most "stubborn dry eye" resolves 30% with 8 h consistent sleep alone.
+> **For you, in plain words.** Pick a 10-30 min practice — MBSR, MBCT, Vipassana, Yoga Nidra, TM. The practice you sustain is the one that works.
 
-### 7.5 Nervous-system reset + posture micro-breaks
+### 7.5 Sleep & circadian
 
-Hourly: 60-s suboccipital ball release + chin tuck × 10 + doorway pec stretch + far-focus 30 s. 4-7-8 breath 4 rounds at 11:00, 14:00, 17:00. Cold splash AM. Bhramari at 22:00.
+> **For you, in plain words.** 7-9 h sleep, lights out by 22:30, AM sunlight within 30 min of waking (turn back to sun), evening dimming, no screens after 21:00. Sleep deprivation worsens dry eye next-day. *(Walker 2017; Lee 2014 sleep + dry eye)*
 
-### 7.6 Exercise periodization (weekly + monthly)
+### 7.6 Nervous-system reset
 
-**Weekly cadence**
-- **Mon / Wed / Fri** — Zone 2 cardio 45 min — cerebral perfusion + cardiometabolic + tear-film signaling
-- **Tue / Thu** — strength training 45 min, especially scapular + posterior chain (rows, face-pulls, deadlifts) — counters forward-head posture
-- **Sat** — HIIT 20 min OR sport
-- **Sun** — restorative yoga + 60–90 min nature walk (greenery looks far — accommodative reset)
-- **Daily outdoor time ≥30 min** — far-focus + circadian + low myopia progression signal in Asian-cohort literature
+> **For you, in plain words.** Daily vagal toolkit — Bhramari, gargling, cold splash, 4-7-8 breath, slow paced breathing. *(Porges 2011; Lehrer 2013)*
 
-**Monthly cadence**
-- Week 1 — full intensity; TCM cycling (Qi Ju Di Huang Wan)
-- Week 2 — moderate
-- Week 3 — deload + extra sleep
-- Week 4 — full intensity; TCM cycling re-cycles
+### 7.7 Exercise periodisation
+
+> **For you, in plain words.** Weekly + monthly cadence with movement breaks built in. Important: take real movement breaks throughout the day — not just at lunch. *(Erickson 2011)*
+
+- Mon / Wed / Fri — Z2 cardio 45 min.
+- Tue / Thu — strength 45 min.
+- Sat — HIIT 15-20 min or sport.
+- Sun — restorative yoga + 60-90 min nature walk (rest the close-vision system; rest the eyes on distant landscape).
 
 ## 8. Daily Unified Combos (≤10 caps/day)
 
-**Combo 1 — Ocular surface + macular (08:00, post-breakfast):** Macular trio (Lutein 10 + Zeaxanthin 2 + Meso-zeaxanthin 10 mg — 1 cap Macuhealth) + Astaxanthin 8 mg (1 cap) + Bilberry Mirtoselect 160 mg (1 cap) + Omega-3 2 caps (1 g EPA+DHA). **5 caps.** Rationale: fat-soluble carotenoids + retinal protection; breakfast fat carries them.
+### 8.1 The three combos at a glance
 
-**Combo 2 — Tear-film + inflammation (13:00, post-lunch):** Sea buckthorn 1 g (1 cap) + Curcumin Meriva 500 mg (1 cap) + Omega-3 2nd dose (1 g EPA+DHA, 2 caps) + Vit C 500 mg (1 cap). **5 caps.** Rationale: meibomian lipid + anti-inflammatory + collagen.
+> **For you, in plain words.** Three combos timed across the day plus the all-day drops + warm-compress routine. ≤10 total capsules. *(EMA; AYUSH)*
 
-**Combo 3 — Recovery + Sleep (21:00, post-dinner):** Magnesium glycinate 300 mg (1 cap) + Vit A cod-liver 3000 IU + Vit D3 4000 IU + K2 100 µg (1 cap) + Saffron 28 mg (1 cap, optional). **3 caps.** Rationale: smooth-muscle relaxation, fat-soluble vits with last fat meal.
+### 8.2 Combo 1 — AM tear-film + carotenoid (08:00, with breakfast fat)
 
-**Daily total: 13 caps maximum** (over 10 — for stricter cap-cap discipline, drop Saffron from Combo 3 and split Omega-3 (4 caps total across day to 2 caps), bringing the count to ≤10. Easier alternative: switch to liquid omega-3 (Nordic Naturals Ultimate Omega liquid — 1 tsp = 2.7 g EPA+DHA, no cap).
+- Omega-3 EPA + DHA 1-2 g (≥500 mg DHA)
+- Vitamin D3 5000 IU + K2 MK-7 90 µg
+- Lutein 10-20 mg + zeaxanthin 2-4 mg (optional)
+- Sea buckthorn oil 2 g (optional, if dry-eye dominant)
+- Astaxanthin 4-12 mg (optional)
 
-**TCM cycling (weeks 1 & 4):** *Qi Ju Di Huang Wan* 8 pills TID — the classical screen-eye-strain formula; or *Ming Mu Di Huang Wan*; or chrysanthemum-goji tea daily as a low-cost daily lever (no cap).
+### 8.3 Combo 2 — Midday anti-inflammatory (13:00, with lunch fat)
 
-**Topical adjuncts (not capsules):**
-- Preservative-free artificial tears (Refresh Optive, Thealoz Duo, Hycosan) — 1 drop each eye 3–4×/day PRN
-- Triphala eyewash (decocted) BID — classical Ayurveda
-- Warm compress BID 5–10 min
-- Optase / OcuSoft lid wipes once daily
+- Curcumin Meriva or BCM-95 500 mg (with piperine + ghee)
+- Vitamin C 500-1000 mg
+- Vitamin A from cod-liver (if low)
 
-## 8.5 Master 24-Hour Day Plan
+### 8.4 Combo 3 — Evening Triphala + sleep (21:00, with light dinner)
 
-Integrates supplements, meals, exercise, breathwork, light and sleep — resolves every §10 conflict.
+- Triphala 5 g internal (in warm water at bedtime)
+- Magnesium glycinate 200-400 mg
+- Optional: Ashwagandha KSM-66 300 mg
 
-| Hour | Action | Why / Conflicts resolved |
-|---|---|---|
-| **06:00** | Wake; 300 ml water + pinch sea salt + lemon | Hydration before eye |
-| **06:10** | 5–10 min outdoor sunlight | Circadian anchor; far-focus; vit D |
-| **06:15** | Cold-water face splash 30 s + Triphala eyewash | Vagal afferent + ocular surface |
-| **06:30** | Pranayama 15 min (Anulom Vilom 10 + Bhramari 5) | Vagal + facial relaxation |
-| **07:00** | Yoga 20–25 min (§7.1) — focus cervical/posture + 5 min eye yoga | Cervical, mobility, eye |
-| **07:25** | 5 min eye yoga (palming, sweeps, near-far, figure-8) | §2.1 ciliary, §2.4 cervical |
-| **07:30** | Breakfast (§6.4) + warm compress 5–10 min | Fat-soluble carotenoid absorption + meibomian lipid melt |
-| **08:00** | **Combo 1** (Macuhealth + Astaxanthin + Bilberry + Omega-3) | Fat present from breakfast |
-| **08:30–11:00** | Deep work block; 25-min Pomodoro with 5-min 20-20-20 + complete-blink-drill far-focus | §2.1 + §2.2 |
-| **09:00** | Caffeine window OPENS (one coffee + L-theanine 100 mg) | Closes by 14:00 |
-| **10:30** | Suboccipital tennis-ball release 60 s + chin tuck × 10 + doorway pec stretch | §2.4 |
-| **11:30** | 5-min walk in sunlight + 4-7-8 breath × 4 | Glucose + vagal + far-focus reset |
-| **12:30** | Lunch (§6.4) + post-meal walk 10 min | Glycemia |
-| **13:00** | **Combo 2** (Sea buckthorn + Curcumin + Omega-3 + Vit C) | Fat-meal absorption; curcumin from dairy 2 h gap |
-| **13:30** | Vajrasana 5 min | — |
-| **14:00** | **Caffeine cut-off** + warm compress 5–10 min if dry-eye phenotype | Sleep + meibomian |
-| **14:00–16:00** | Afternoon work; 5-min break every 25 min; chrysanthemum-goji tea | §2.1 |
-| **15:00** | 5-min eye yoga + suboccipital release | §2.1 + §2.4 |
-| **16:00** | Exercise (§7.6 — Zone 2 / strength / HIIT 45 min, ideally outdoors) | Far-focus + perfusion |
-| **17:30** | Optional infrared sauna 20 min (3×/wk) | Vasodilation; not within 3 h of bed |
-| **18:30** | Snack: 2 Brazil nuts + 30 g walnut + 100 g blueberries + chrysanthemum tea | Cofactor + flavonoid |
-| **19:00** | Dinner — light, vegetables + fish/eggs + EVOO | Fat for evening fat-soluble supps |
-| **19:30** | Triphala eyewash + warm compress 5 min + lid massage | Ocular surface routine |
-| **20:00** | Walk 15 min outdoors at sunset + look at far horizon for 5 min | Far-focus + sunset light spectrum |
-| **20:30** | **Blue-light cut-off**; warm-amber bedroom bulbs; blue-blockers on if screens necessary | §2.3 |
-| **21:00** | **Combo 3** (Mg + D3/K2 + A + Saffron) | Fat from dinner; Mg PM (Ca AM); fat-soluble vits |
-| **21:00** | Trataka 5 min + Bhramari 5 min | §2.1 ciliary + vagal |
-| **21:30** | Reading paper book (no screens); Yoga Nidra 20 min | Wind-down |
-| **22:30** | Bedtime, 18–20 °C, blackout | Deep sleep |
-| **02:00–06:00** | Sleep — eyes rest fully; blink + tear-film replenish | §2.2 |
+### 8.5 All-day routine (the load-bearing protocol)
 
-**If you are already on a prescription** (cyclosporine drops Restasis, lifitegrast Xiidra, varenicline nasal Tyrvaya, glaucoma drops, anti-allergy drops, levothyroxine, antihistamines, antidepressants): keep your existing schedule and apply §10.1 gap rules around it. The protocol does **not** prescribe or modify any prescription.
+- **Preservative-free artificial tears** — 1-2 drops each eye every 2-4 h during screen sessions
+- **20-20-20 reminder** — every 20 min, look 20 ft for 20 sec
+- **Conscious blink reset** — close-relax-open 10 times each break
+- **Pranayama + palming break** — at lunch and afternoon
+- **Warm compress** — 10 min once or twice daily if MGD-driven
+- **Humidifier** — running in workspace
+- **Evening f.lux / Night Shift + dimming** — from 18:00
+
+### 8.6 Optional TCM overlay (weeks 1 & 4)
+
+- Qi Ju Di Huang Wan 6 g granules 2×/day OR Ming Mu Di Huang Wan 8 pills 2-3×/day
+- Plus daily Gou Qi Zi (goji) + Ju Hua (chrysanthemum) tea
+
+### 8.7 Pragmatic 10-cap envelope
+
+Total cap count daily: 5-7 maximum (Combo 1: 3-4 caps + drops; Combo 2: 1-2 caps; Combo 3: 1 cap + Triphala powder). Strictly the load-bearing items are the drops + warm compress + 20-20-20 — the supplements are adjuncts.
+
+## 8.5 (8b) Master 24-Hour Day Plan
+
+### Hour-by-hour (resolves every §10 conflict)
+
+> **For you, in plain words.** Every hour mapped. Drops every 2-4 h all day; 20-20-20 every 20 min. *(EMA; AYUSH; Cochrane Pucker 2016)*
+
+| Hour | Action | TL;DR (plain English) | Why this timing | Conflicts resolved |
+|---|---|---|---|---|
+| 06:00 | Wake → 5 min AM sunlight (turn back to sun) | Anchors circadian. *(Walker)* | Melatonin offset 14-16 h later | — |
+| 06:15 | Warm compress 10 min + gentle lid massage (if MGD-driven) | Liquefies meibomian oils for the day. *(Wang 2020)* | AM ahead of screen day | — |
+| 06:30 | Pranayama 10 min (Nadi Shodhana + Bhramari) + palming 2 min | Vagal + accommodative reset pre-screen. *(Mooventhan 2014)* | Pre-screen vagal | — |
+| 07:00 | Yoga 20-30 min (Surya Namaskar + Setu Bandha + Trataka + palming) | Eye + circulation + ergonomic warm-up. *(Hatha Yoga Pradipika)* | Pre-work | — |
+| 07:30 | Breakfast (Mediterranean Eye Diet) + black coffee + 2 glasses water | Tear-film + carotenoid breakfast. *(Merle 2019)* | Hydration | — |
+| 08:00 | Combo 1 (omega-3 + D3+K2 + lutein + sea buckthorn + astaxanthin) | AM tear-film + carotenoid stack with fat. *(EMA; AYUSH)* | Fat-soluble | Iron 2 h gap |
+| 08:30 | Workspace setup check (monitor + chair + lighting + humidifier on) | Ergonomic foundation. *(Anshel 2007)* | Daily check | — |
+| 09:00-12:30 | **Screen work — 20-20-20 every 20 min; conscious blink each break; drops every 2-3 h; Pomodoro** | The all-day load-bearing routine. *(Rosenfield 2011; Pucker Cochrane 2016)* | Continuous behavioural | — |
+| 10:30 | Mid-morning break — palming 2 min + water + 20 g nuts | Accommodative rest + hydration. *(Hatha Yoga Pradipika)* | Mid-morning vagal | — |
+| 12:30 | Lunch (Mediterranean Eye Diet + leafy greens + oily fish/beans + olive oil) | Brain + tear-film plate. *(Merle 2019)* | Largest meal at peak | — |
+| 13:00 | Combo 2 (curcumin + C + A if low) | Midday anti-inflammation. *(AYUSH)* | Curcumin + piperine + ghee | Curcumin/dairy 2 h gap |
+| 13:30 | 10-min post-lunch walk OUTSIDE (rest eyes on distance) | Distance focusing relieves accommodative strain. *(Rosenfield 2011)* | Glucose blunting + ocular | — |
+| 14:00 | Caffeine cut-off | Sleep protection. *(Drake 2013)* | 6 h half-life | Sleep |
+| 14:00-16:00 | **Screen work — 20-20-20 + drops** | Continuous routine. *(Pucker 2016)* | Behavioural | — |
+| 15:00 | Afternoon break — Trataka 5 min + palming 2 min | Accommodative relaxation. *(Hatha Yoga Pradipika)* | Mid-afternoon | — |
+| 16:00 | Exercise window (Z2 45 min or strength) | Vascular + insulin + ergonomic break. *(Erickson 2011)* | Pre-dinner | — |
+| 17:00 | Cold shower 60 sec (optional) | Vagal + alertness. *(Buijze 2016)* | Post-workout | — |
+| 18:00 | f.lux / Night Shift on; dim room lights | Melatonin protection. *(Chang 2015)* | Pre-sleep blue-light reduction | — |
+| 18:30 | Dinner (Mediterranean Eye Diet) | Sleep-friendly plate. *(Merle 2019)* | 3 h before bed | — |
+| 19:00 | Optional warm compress 10 min (if PM dryness) | MGD oil reset for sleep. *(Wang 2020)* | Wind-down ocular | — |
+| 19:30 | Family / non-screen activity | Rest of close-vision system. *(Rosenfield 2011)* | Recovery | — |
+| 20:00 | Combo 3 (Triphala in warm water + Mg + optional ashwagandha) | Evening antioxidant + sleep prep. *(AYUSH; EMA Mg)* | Ashwagandha ≥1.5 h before bed | Iron 2 h from Triphala tannins |
+| 20:30 | Restorative yoga + palming + Shavasana | Parasympathetic + ocular rest. *(Hatha Yoga Pradipika)* | Wind-down | — |
+| 21:00 | Blue-light cutoff; screens off; warm low-lux room | Melatonin + ocular rest. *(Walker; Chang)* | Sleep onset | — |
+| 22:00 | Bhramari 5 min + Yoga Nidra / meditation 10 min | Vagal + parasympathetic. *(Mooventhan 2014)* | Sleep onset | — |
+| 22:30 | Bedtime (lights out, 18-20°C, phone out) | Sleep window. *(Walker)* | Sleep cycles | — |
 
 ## 9. Supplier Ecosystem + Monthly Cost
 
-| Channel | Sources | Brands |
+### 9.1 Where to shop, in plain words
+
+| Channel | TL;DR (plain English) | What it sources well | Typical brands | Notes |
+|---|---|---|---|---|
+| Amazon Prime / iHerb (US/IN/UK) | One-stop for preservative-free tears + warm-compress masks. *(Industry)* | Refresh, Systane PF, TheraTears, Hylo-Forte (in EU), Bruder masks | Refresh, Systane, TheraTears, Hylo-Forte, Bruder, MGDRx | Verify "preservative-free" on label. *(Industry)* |
+| Whole Foods / Sprouts | Fresh Mediterranean-Eye-Diet ingredients. *(Industry)* | Oily fish, greens, eggs, olive oil, nuts | Whole Foods 365, Sprouts | High-quality. *(Industry)* |
+| Patel Brothers / India Cash & Carry | AYUSH formulary + Triphala. *(Industry)* | Triphala, Amla, ghee, methi, drumstick | Organic India, Himalaya, Baidyanath, Patanjali | **Patel Brothers, 1610 Stoneridge Mall Rd, Pleasanton CA**. **Patel Brothers, 37-27 74th St, Jackson Heights NY**. |
+| Chinatown TCM pharmacies | TCM eye formulas + goji + chrysanthemum. *(Industry)* | Qi Ju, Ming Mu Di Huang Wan, Gou Qi Zi, Ju Hua | Plum Flower, Min Tong, Treasure of the East | **Kamwo Meridian Herbs, 209 Grand St, NYC**. **Superior Trading Co., 837 Washington St, San Francisco**. |
+| Hamdard / IMPCOPS / Men-Tsee-Khang | Unani, Siddha, Tibetan formularies. *(Industry)* | Itrifals, Triphala Chooranam, Agar-35 | Hamdard, IMPCOPS, Men-Tsee-Khang | mail-order. *(Industry)* |
+| SBL / Schwabe / Boiron | Homeopathy (Euphrasia, Ruta, Natrum mur, Sepia, Argentum nit, Phosphorus). *(CCRH)* | Classical eye remedies | SBL India, Schwabe India + Germany, Boiron France | CCRH-affiliated. *(CCRH)* |
+| Eye-care direct (Ursapharm Germany — Hylo-Forte) | European preservative-free multidose tears gold standard. *(Ursapharm)* | Hylo-Forte, Hylo-Fresh, Hylo-Night | Ursapharm Germany (also Amazon EU) | Excellent multidose-PF technology. *(Ursapharm)* |
+| Warm compress + USB heated masks | Consumer warm-compress devices. *(Industry)* | Bruder, MGDRx EyeBag, USB-heated reusable | Bruder, MGDRx, BLINK, Optase | Microwave reusable best. *(Industry)* |
+| Home humidifier (cool-mist) | Workspace humidification. *(Industry)* | Levoit, Honeywell, Dyson, Vornado | Levoit, Honeywell, Dyson | Cool-mist preferred. *(Industry)* |
+| Comprehensive eye exam | Local optometry / ophthalmology — clinic-route diagnostic. *(Industry)* | Refractive + dry-eye + ocular health screening | Local optometrist | Strongly suggested for persistent strain. *(Sheppard 2018)* |
+
+### 9.2 Monthly cost — broken down
+
+| Line | TL;DR (plain English) | Cost (USD/mo) |
 |---|---|---|
-| Amazon Prime / iHerb | Lutein/Zeaxanthin, Astaxanthin, Bilberry, Omega-3, Sea buckthorn, Curcumin, Saffron, Mg, Vit A/D/K2 | Macuhealth, Pure Encaps Macular Solution, AstaReal, Indena Mirtoselect, Nordic Naturals, PRN De3 (Eye Omega), Bare Biology UK, Sibu, Omega7 Finland, Thorne, Solgar, Rosita |
-| Patel Brothers / Apna Bazaar | Triphala, Mandukaparni, Brahmi, Saptamrita Loha, Mahatriphala Ghrita, Bhringraj oil, amla | Baidyanath, Organic India, Patanjali, Kottakkal Arya Vaidya Sala, Sreedhareeyam — **Patel Brothers, 1610 Stoneridge Mall Rd, Pleasanton CA**; **Apna Bazar, 100-04 Queens Blvd, Forest Hills NY** |
-| Chinatown TCM pharmacy | Qi Ju Di Huang Wan, Ming Mu Di Huang Wan, Liu Wei Di Huang Wan, Xiao Yao San, Gou Qi Zi, Ju Hua | Plum Flower (Mayway, Oakland), Min Tong — **Sun Sing Pacific Trading, 1205 Stockton St, SF**; **Kamwo Meridian Herbs, 209 Grand St, NYC** |
-| Hamdard Dawakhana | Itrifal Kishneezi, Khamira Banafsha, Roghan-e-Kahu | Hamdard, Ajmal |
-| IMPCOPS Chennai | Thiripala/Vallarai/Nellikai Chooranam/Lehyam | IMPCOPS, SKM |
-| Men-Tsee-Khang | Agar-35, Aru-7 | Men-Tsee-Khang Dharamsala |
-| CCRH-affiliated homeo | Ruta, Euphrasia, Nat Mur, Onosmodium, Physostigma | SBL, Schwabe (IN), Boiron (FR) |
-| Whole Foods / Sprouts / TJ | Wild fish, pasture eggs, dark greens, sweet potato, EVOO | Vital Farms, Wild Planet sardines |
-| Bruder / Heyedrate / Optase | Warm compress, lid wipes | Direct |
-| f.lux / Iris / Apple | Software blue-filter | Free / one-time |
-| BlockBlueLight / Ra Optics / Felix Gray | Blue-blocker glasses | Direct |
-| Levoit / Honeywell / Boneco | Humidifiers | Amazon / Best Buy |
-| Refresh / Thealoz / Hycosan | Preservative-free artificial tears | Pharmacy OTC |
-
-**Monthly cost (USD)**
-- Combo 1 (Macuhealth + Astaxanthin + Bilberry + Omega-3): **$50–85**
-- Combo 2 (Sea buckthorn + Curcumin + Omega-3 second + Vit C): **$45–75**
-- Combo 3 (Mg + D3/K2 + Vit A + Saffron): **$30–55**
-- Topical (preservative-free tears, lid wipes): **$15–30**
-- TCM overlay (Qi Ju Di Huang Wan weeks 1 & 4): **$15–25**
-- Ayurveda Triphala + Mandukaparni: **$15–25**
-- Fresh produce uplift (greens, berries, fish, eggs, sea buckthorn): **$100–160**
-- Chrysanthemum + Goji tea: **$10–20**
-- **Recurring total: $280–475/month**
-
-**One-time devices**
-- Bruder warm-compress mask: **$30**
-- Heyedrate heated mask: **$45**
-- Humidifier (Levoit Classic 200S): **$60**
-- Blue-blocker glasses (daytime + sunset): **$25–150 pair**
-- Standing desk converter (Uplift, Vivo): **$300–700**
-- Ergonomic chair (Steelcase, Herman Miller, Hbada): **$200–1,500**
-- External monitor (24–27" 4K): **$300–600**
-- Air-quality monitor (Awair Element): **$200**
-- Optional eye-only PBM (LumiBoost): **$100–300** (adopt cautiously)
-- DTC labs (LetsGetChecked / Thriva / Cerascreen): **$80–150/round**
+| Preservative-free artificial tears (single-use vials OR multidose-PF) | The A-grade cornerstone OTC. *(Cochrane Pucker 2016)* | $15-35 |
+| Combo 1 (omega-3 + D3+K2 + lutein + sea buckthorn + astaxanthin) | AM tear-film + carotenoid stack. *(Industry pricing)* | $50-90 |
+| Combo 2 (curcumin + C + A optional) | Midday anti-inflammation. *(Industry pricing)* | $25-50 |
+| Combo 3 (Triphala + Mg + ashwagandha optional) | Evening Triphala + sleep. *(Industry pricing)* | $20-40 |
+| TCM cycling (Qi Ju or Ming Mu Di Huang Wan + daily Gou Qi Zi + Ju Hua tea) | Weeks 1+4 TCM eye-care overlay. *(NMPA)* | $15-35 |
+| Mediterranean Eye Diet uplift (greens, fish, eggs, olive oil) | The plate of the protocol. *(Merle 2019)* | $80-150 |
+| Warm-compress mask (one-time + cleaning) | Bruder / MGDRx / USB-heated. *(Wang 2020)* | $20-50 one-time |
+| Home humidifier (one-time + filter replacement) | Workspace humidification. *(Industry)* | $40-150 one-time |
+| 20-20-20 reminder apps | Free (EyeRest, Time Out, Eye Pro). *(Industry)* | $0 |
+| Comprehensive eye exam (annual, clinic-route) | The single most-important clinic-route action. *(Sheppard 2018)* | $100-300 annual |
+| Optional: prescription computer glasses (if refractive uncorrected found) | The hidden-driver fix. *(Sheppard 2018)* | $100-400 one-time |
+| **Total recurring monthly** | All-in monthly envelope. *(Industry summary)* | **$205-400/mo** |
 
 ## 10. Interaction Matrix
 
-### 10.1 Drug ↔ Supplement (for users ALREADY on conventional therapy — this dossier prescribes NONE of these)
+### 10.1 Drug ↔ Supplement (the protocol prescribes NONE of these drugs)
 
-Conventional eye/dry-eye-relevant pharmaceuticals you may already be on: **cyclosporine drops (Restasis), lifitegrast (Xiidra), varenicline nasal spray (Tyrvaya), corticosteroid drops short course, glaucoma drops (timolol, latanoprost, brimonidine, dorzolamide), anti-allergy drops (olopatadine, ketotifen), oral antihistamines, antidepressants (SSRIs/SNRIs/TCAs), isotretinoin, anticholinergics, levothyroxine**.
+> **For you, in plain words.** Documented for users **already on conventional therapy** layering this protocol on their own initiative. *(EMA; AYUSH)*
 
-| Drug (you may be on) | Supplement in protocol | Risk | Mitigation (your own taper pace) |
+| Drug (currently on it) | Supplement in this protocol | TL;DR (plain English) | Risk | Mitigation (user decides pace) |
+|---|---|---|---|---|
+| Cyclosporine drops (Restasis) — Rx for dry eye | Preservative-free artificial tears | Compatible; tears support background. *(EMA cyclosporine)* | None | Continue both; clinic-only Rx; honest discussion with clinician |
+| Lifitegrast (Xiidra) — Rx for dry eye | Preservative-free artificial tears | Compatible. *(EMA lifitegrast)* | None | Compatible |
+| Topical corticosteroid drops (Rx) — short-course inflammatory dry eye | Tears + warm compress | Compatible short-term; long-term steroids drive cataract + glaucoma risk. *(EMA)* | Steroid AEs long-term | Clinic-route only; honest discussion |
+| BAK-preserved multidose drops (OTC) | Preservative-free tears | BAK is corneal-epithelial toxic with chronic use; replace with PF. *(Baudouin 2010)* | Corneal toxicity | Switch to preservative-free |
+| Antihistamines (sedating, drying — diphenhydramine etc.) | All anti-dry-eye | Antihistamines worsen dry eye AND have anticholinergic burden. *(Gray 2015)* | Worsen dryness | Switch to non-anticholinergic alternatives on user's initiative |
+| Decongestants (pseudoephedrine, vasoconstrictor drops) | All anti-dry-eye | Vasoconstrictors with chronic use → rebound + dryness. *(EMA)* | Rebound + dryness | Avoid chronic vasoconstrictor drops |
+| Beta-blockers (systemic for HTN; topical for glaucoma) | All anti-dry-eye | Can worsen dry eye. *(EMA)* | Dryness | Acknowledge contributor; user-led discussion |
+| Isotretinoin (Accutane) for acne | All anti-dry-eye | Causes profound dry eye; intensive tears + warm compresses critical. *(EMA)* | Severe dryness | Intensive PF tears + compresses |
+| Hormone replacement therapy (HRT) — perimenopause | All anti-dry-eye | HRT impact on dry eye is mixed; ocular complaints common in perimenopause regardless. *(Wolffsohn TFOS DEWS II 2017)* | Mixed | User-led; intensify PF tears |
+| Warfarin / DOACs | Omega-3 >2 g, curcumin, sea buckthorn | Bleeding additive. *(EMA)* | Bleeding | Spacing + INR monitor |
+
+### 10.2 Drug ↔ Food
+
+| Drug | Food | TL;DR (plain English) | Required action |
 |---|---|---|---|
-| **Cyclosporine drops (Restasis)** | Topical Triphala eyewash | Theoretical local interaction | Space ≥1 h between eyewash and Rx drop |
-| **Lifitegrast (Xiidra)** | Topical Triphala eyewash | Same | Space ≥1 h |
-| **Glaucoma drops (β-blocker, prostaglandin analogue, α-agonist, CAI)** | Bilberry, Curcumin, Ginkgo, Omega-3 | Theoretical IOP / vascular | Generally OK; bilberry has been *trialed* as supplement to glaucoma; report any vision change |
-| **Oral antihistamines (chlorpheniramine, hydroxyzine, diphenhydramine)** | Cholinergic stack (none direct here, but cognitive-eye axis) | Anticholinergic burden → dry eye + dry mouth + cognitive impairment | Switch to 2nd-generation (loratadine, fexofenadine) which have less anticholinergic effect |
-| **Antidepressants (SSRIs/SNRIs/TCAs)** | Saffron, St John's Wort (**excluded**), 5-HTP (**excluded**) | Serotonin syndrome (SJW + 5-HTP); also Rx-induced dry eye | SJW + 5-HTP excluded; Saffron 4 h gap; mitigate Rx-induced dry eye via topical + tear stack |
-| **Isotretinoin (Accutane)** | Sun, high-dose Vit A (additive) | Vit A toxicity + photosensitivity | **Don't add high-dose Vit A** while on isotretinoin; lower Vit A to RDA 3000 IU floor only |
-| **Levothyroxine** | Ca, Fe, Mg, Triphala, coffee, soy | T4 absorption block | Levo 60 min before food/Ca/Mg/Fe/Triphala |
-| **Warfarin / DOACs** | Bilberry, Ginkgo, Curcumin, Omega-3 (≥3 g), Vit E | INR shift / bleed | Consistent vit-K greens; limit total stack |
-| **Statins** | Curcumin, Quercetin, grapefruit | CYP3A4 → myopathy | Avoid grapefruit; CoQ10 100–200 mg |
-| **Photosensitising drugs** (tetracyclines, isotretinoin, amiodarone, voriconazole, thiazides) | Sun, PBM | Phototoxicity | Wash-out; eye shield mandatory |
-| **Anticholinergics** (oxybutynin, tolterodine, scopolamine, TCAs, first-gen antihistamines) | Cholinergic stack indirect | **Major dry-eye driver** | Discuss alternatives with Rx provider; protocol supports symptom relief |
-| **Beta-blockers (oral)** | Hawthorn | Additive bradycardia/BP drop | Monitor home BP/HR |
-
-### 10.2 Drug ↔ Food (for users on prescriptions)
-
-| Drug | Food | Mechanism | Action |
-|---|---|---|---|
-| **Levothyroxine** | Coffee, soy, dairy, high-fibre, Ca | T4 binding | Levo 60 min before food/coffee |
-| **Glaucoma drops + oral β-blocker** | Caffeine excess | Counter-action | Moderate caffeine |
-| **SSRIs / SNRIs** | High-tryptophan + saffron same window | Serotonergic | Space 4 h |
-| **Warfarin** | Vit-K greens | INR shift | Consistent intake |
-| **Isotretinoin** | High-fat meal | Increases absorption (designed) | Follow Rx instructions |
-| **Statins / CCBs** | Grapefruit | CYP3A4 → toxicity | Eliminate grapefruit |
-| **Tetracyclines** | Dairy, Ca, Fe, Mg | Chelation → ↓ absorption | 2-h gap |
-| **Anticholinergics** | Dry mouth/eye foods (caffeine, alcohol) | Additive | Hydrate more |
+| Warfarin | Vitamin K greens | Don't oscillate. *(EMA)* | Consistent intake |
+| Antihistamines (drying) | Caffeine | Additive dehydration. *(EMA)* | Hydration |
+| Decongestants | Alcohol | Additive dehydration. *(EMA)* | Avoid combination |
+| Topical glaucoma beta-blockers | Caffeine | Mild systemic interaction. *(EMA)* | No special action |
+| Grapefruit | Statins, CCBs | CYP3A4 inhibition. *(EMA)* | Avoid grapefruit on these |
 
 ### 10.3 Supplement ↔ Food (the load-bearing layer)
 
-| Supplement | Food / Drink | Mechanism | Action |
+| Supplement | Food / drink | TL;DR (plain English) | Required action |
 |---|---|---|---|
-| **Lutein / Zeaxanthin / Meso-zeaxanthin** | Low-fat meal | Carotenoids fat-soluble | **Always with fat** (ghee, EVOO, avocado, fish, eggs) |
-| **Astaxanthin** | Low-fat meal | Same | Always with fat |
-| **Bilberry / anthocyanins** | Iron-rich foods | Polyphenol-iron chelation | ≥1 h gap if iron-deficient |
-| **Omega-3** | Low-fat meal | Micelle | Always with meal |
-| **Vit A / D / E / K** | Low-fat meal | Micelle | Always with fat |
-| **Sea buckthorn oil** | Low-fat meal | Lipid | With meal |
-| **Curcumin** | Dairy, EGCG | Casein + EGCG bind/compete | 2-h gap; pair piperine + ghee |
-| **Iron** (if on it) | Tea, coffee, wine, Ca | Chelation | 1–2 h gap; pair Vit C |
-| **Zn** | Iron, Ca | DMT1 | ≥2 h gap |
-| **Mg** | Ca high-dose | Competition | Ca AM, Mg PM |
-| **Vit D** | Magnesium | Mg = D cofactor | Take together |
-| **Probiotic** | Hot food (>40°C) | Kills viable | Cool / room-temp |
-| **Polyphenol herbs** (Bilberry, Curcumin, Ginkgo) | Iron | Chelation | ≥1 h gap |
-| **Saffron** | SSRI | Serotonergic | 4 h gap from SSRI |
-| **Vit C** | Iron | Boosts absorption (good) | Pair if iron-deficient |
-| **Caffeine** | Anything after 14:00 | Sleep disruption | Cut 14:00 |
-| **L-theanine + caffeine** | — | Antagonistic at bedtime | AM only |
+| Curcumin | Dairy | Casein binds polyphenols. *(EMA)* | 2 h gap; pair with piperine + ghee |
+| Iron | Tea / coffee / wine | Tannins block. *(EMA)* | 1-2 h gap |
+| Iron | Dairy | Divalent competition. *(EMA)* | ≥2 h gap |
+| Zinc | Iron | Competition for DMT1. *(EMA)* | ≥2 h gap |
+| Calcium | Magnesium | Competition same dose. *(EMA)* | Split AM/PM |
+| Fat-soluble vitamins | Fat-containing meal | Need fat. *(EMA)* | Always with fat |
+| Vitamin D | Magnesium | Mg cofactor. *(EMA)* | Take together |
+| Triphala | Iron | Tannins chelate. *(AYUSH)* | 2 h gap |
+| Sea buckthorn | Anticoagulants | Mild bleeding caution. *(EMA)* | Caution if on warfarin |
+| Bone broth | Iron supplement | Glycine + collagen synergy. *(EMA)* | Pair AM |
+| Caffeine | Water | Diuresis worsens dryness; pair 1:1. *(Industry)* | Hydrate when drinking coffee |
 
 ### 10.4 Supplement ↔ Supplement
 
-| A | B | Mechanism | Action |
+| Supplement A | Supplement B | TL;DR (plain English) | Required action |
 |---|---|---|---|
-| **Zinc ↔ Copper** | — | Long-term Zn → Cu depletion | 8–15:1 Zn:Cu |
-| **Iron ↔ Zn / Ca / Mg** | — | Divalent competition | ≥2 h gap |
-| **Vit A ↔ Vit D** | — | High-dose A competes with D | Balance at floor |
-| **Vit E ↔ Vit K** | — | High-dose E antagonises K | E ≤ 400 IU; K2 as MK-7 |
-| **Mg ↔ Ca** | Same hour | Competition | Ca AM, Mg PM |
-| **Lutein + Zeaxanthin + Astaxanthin + Beta-carotene** | Co-supplemented | Competition at intestinal carotenoid transporter (SR-B1) | Generally OK at standard doses; don't mega-dose one |
-| **High-dose Vit A + Beta-carotene (chronic smoker)** | — | Beta-carotene + smoking → lung cancer signal (CARET) | Lower Vit A; food-based beta-carotene OK |
-| **Bilberry + anticoagulant Rx** | — | Mild antiplatelet (theoretical) | Monitor if on warfarin |
-| **St John's Wort ↔ everything** | — | **Excluded** | — |
-| **5-HTP ↔ SSRIs** | — | **Excluded** | — |
-| **Omega-3 + Vit E** | — | Vit E protects PUFA oxidation (synergy) | Together with meal |
+| Zinc | Copper | Long-term Zn without Cu → Cu depletion. *(Brewer 2012)* | Maintain Zn:Cu 8-15:1 |
+| Iron | Zn / Ca / Mg | Divalent competition. *(EMA)* | ≥2 h gap |
+| Vitamin A | Vitamin D | High-dose A competes with D. *(EMA)* | Don't mega-dose A |
+| Vitamin E | Vitamin K | High-dose E antagonises K. *(EMA)* | Balance |
+| Omega-3 + sea buckthorn + curcumin (all mildly bleeding-tendency) | Each other | Additive bleeding. *(EMA)* | Honest user-led management |
+| Magnesium | Calcium | Same-dose competition. *(EMA)* | Split times |
+| Triphala (tannins) | Iron | Chelation. *(AYUSH)* | 2 h gap |
+| Lutein + zeaxanthin + astaxanthin (all carotenoids) | Each other | Compete for absorption transporters slightly; pair with fat works fine. *(Industry)* | Pair with fat |
 
-### 10.5 Exercise / Sleep / Caffeine timing rules
+### 10.5 Timing rules — exercise, sleep, caffeine
 
-- **Caffeine cut-off 14:00** (protects sleep → next-day eye comfort).
-- **Alcohol** — minimise; dehydrates lacrimal gland; sleep disruption.
-- **L-theanine + caffeine** — AM only.
-- **Mg glycinate** — PM (sleep + ciliary smooth-muscle).
-- **Melatonin** (if used) — ≤0.3 mg 30–60 min pre-sleep; not chronic.
-- **Probiotic** — cool AM.
-- **Inverted yoga** — empty stomach AM; **never with HTN, glaucoma, retinal detachment, cervical instability**.
-- **Sauna + alcohol** — never combine.
-- **Cold immersion + Raynaud's** — caution.
-- **Exercise** — 16:00 ideal; avoid HIIT within 3 h of bed.
-- **Warm compress** — 5–10 min BID (AM + PM); not over 42 °C (corneal risk).
-- **Trataka** — PM, dark room, 5–10 min; not for photosensitive epilepsy.
-- **Eye yoga** — daily 5 min; avoid forced overstretch.
-- **Blue-blocker glasses** — after sundown for screens; not 24/7 (would block daytime melanopsin/circadian cue).
+- **Caffeine cutoff: 14:00 latest** (sleep + dryness).
+- **Drops every 2-4 h** during screen sessions — set a reminder.
+- **20-20-20 every 20 min** — automate with app.
+- **Warm compress 1-2×/day** — AM and/or PM.
+- **Triphala**: bedtime in warm water; 2 h from iron.
+- **Magnesium glycinate**: PM with dinner.
+- **Ashwagandha**: AM or PM ≥1.5 h before bed.
+- **Inverted yoga**: SKIP if advanced glaucoma, retinal disease, uncontrolled HTN.
+- **Sauna + alcohol**: don't combine.
+- **Contact lens overuse**: switch to glasses for screen sessions.
 
-### 10.6 Strictly Avoid — specific to screen eye strain pathology
+### 10.6 Strictly avoid — specific to screen-eye-strain
 
-- **OTC anticholinergic sleep aids** (diphenhydramine, doxylamine) — dry eye + cognitive + dementia risk.
-- **First-generation antihistamines** (chlorpheniramine) — dry eye + sedation.
-- **Cosmetics / lash extensions with parabens, formaldehyde-releasers, mineral oil at lash line.**
-- **Sleeping in contact lenses** — 6–8 × higher microbial keratitis risk.
-- **Direct AC airflow at face.**
-- **Chronic smoking / vaping** — direct tear-film + macular damage.
-- **High-dose Vit A with isotretinoin** (additive toxicity).
-- **St John's Wort with SSRIs** (serotonin syndrome).
-- **High-dose Beta-carotene in smokers** (CARET lung-cancer signal).
-- **Eye drops with BAK preservative** chronic (Visine, Murine) — preservative-free only for chronic use.
-- **Surma / kohl with lead content** — toxic; verified lead-free Hamdard kohl only, or avoid.
-- **Trataka** in photosensitive epilepsy.
-- **Inverted yoga** in glaucoma, retinal detachment, HTN.
+- **BAK-preserved multidose drops for chronic daily use** — Baudouin 2010 corneal toxicity.
+- **Vasoconstrictor "redness reliever" drops chronic use** (Visine, Clear Eyes) — rebound effect.
+- **Anticholinergic OTC sleep aids** (diphenhydramine/Benadryl) — worsen dryness + chronic dementia risk per Gray 2015.
+- **Sedating antihistamines chronic use** — anticholinergic + drying.
+- **Contact lens wear >12 h/day for screen sessions** — switch to glasses.
+- **Smoking** — direct ocular surface inflammation.
+- **Surma** (lead-containing kohl) — heavy-metal toxicity.
+- **Bates-method "reverse refractive error" claims** — evidence does not support reversing structural refractive error.
+- **Marketing-grade blue-light glasses sold as treatment for screen strain** — Cochrane Singh 2023 NULL; not in active protocol for that indication.
+
+### 10.7 Emerging & adjunctive therapies
+
+> **For you, in plain words.** What's on the horizon for screen eye strain that isn't an herb. Split into (a) home-usable tools, (b) clinic-route options if the home protocol plateaus, and (c) high-evidence behavioural therapies. *(Cochrane Pucker 2016; Cochrane Singh 2023; Wolffsohn TFOS DEWS II 2017)*
+
+#### 10.7.1 Home-usable advanced & device therapies
+
+| Device / therapy | TL;DR (plain English) | Evidence anchor | Fits in §8.5 at | Cost |
+|---|---|---|---|---|
+| Preservative-free artificial tears (gold standard single-use vials) | A-grade symptomatic; every 2-4 h. *(Cochrane Pucker 2016)* | Cochrane Pucker 2016 | All-day | $15-35/mo |
+| Warm-compress mask (Bruder, MGDRx, USB-heated) | B+ for MGD-driven dry eye. *(Wang 2020)* | Wang 2020 | AM and/or PM | $20-50 one-time |
+| 20-20-20 reminder apps (EyeRest, Time Out, Eye Pro, eyeCare Chrome) | A behavioural — automates the rule. *(Rosenfield 2011)* | Rosenfield 2011 | All-day | Free |
+| Pomodoro apps (Forest, Be Focused, Toggl Track) | Structured break adoption — eyes + posture. *(Cirillo)* | Cirillo Pomodoro method | All-day | Free |
+| Home humidifier (cool-mist; Levoit, Honeywell) | Reduces evaporative dry eye in heated/AC rooms. *(Wolffsohn 2017)* | Wolffsohn TFOS DEWS II 2017 (regulatory: humidifier consumer device — context only) | Continuous workspace | $40-150 one-time |
+| f.lux / Apple Night Shift / True Tone / dark mode | Evening melatonin protection for SLEEP — not eye damage prevention. *(Chang 2015)* | Chang 2015 Harvard (regulatory: software — context only) | Evening | Free |
+| Marketing-grade blue-light glasses (Swannies, RaOptics, BluTech, Gunnar) | Cochrane Singh 2023 NULL for screen eye strain symptoms; honest C-grade. *(Cochrane Singh 2023)* | Cochrane Singh 2023 (NULL); regulatory: consumer eyewear — context only | Optional; not effective per evidence | $30-200 one-time |
+| Computer / monitor glasses (over-the-counter readers, ≥40 yo presbyopic) | OTC readers in arm-distance strength for presbyopic users. *(Industry)* | Industry standard | All-day computer use | $15-50 one-time |
+| Mimi app + smartphone-based vision self-checks | Crude self-screening (limited accuracy vs full eye exam). *(Industry)* | Industry consumer self-checks | Baseline (limited use) | Free |
+| Lid wipes for blepharitis comorbid (OCuSOFT, Blephadex, tea-tree based) | If lid-margin disease driving dry eye + strain. *(Wolffsohn 2017)* | Wolffsohn TFOS DEWS II 2017 | AM | $15-25/mo |
+
+#### 10.7.2 Adjunctive behavioural therapies
+
+| Therapy | TL;DR (plain English) | What it does | Evidence tier | Self-guided resources |
+|---|---|---|---|---|
+| 20-20-20 rule (cornerstone behavioural) | The single foundational behavioural intervention. *(Rosenfield 2011)* | Accommodative + blink restoration | A behavioural | Free apps; phone alarm |
+| Blink-awareness training | Conscious blink reset during breaks. *(Patel 1991)* | Restores blink rate | A behavioural | Free; close-relax-open 10×/break |
+| Ergonomic monitor setup (height, distance, lighting, chair) | Foundational; 70% of "eye strain" is musculoskeletal-postural. *(Anshel 2007)* | Reduces postural strain | A behavioural | Free; check Anshel checklist |
+| Pranayama + palming + Trataka breaks | Classical AYUSH eye-relaxation triple — fits 20-20-20 break naturally. *(Hatha Yoga Pradipika; AYUSH)* | Accommodative + vagal + breath | T+B | Free; Hatha Yoga Pradipika |
+| Pomodoro structured break adoption | 25 min work + 5 min break enforces the 20-20-20 + movement. *(Cirillo)* | Structured break | B behavioural | Free apps |
+| Comprehensive eye exam on user's initiative (clinic-route) | The hidden-driver fix; single highest-leverage clinic action. *(Sheppard 2018)* | Rules out refractive + dry-eye + glaucoma + AMD | A (clinic-route) | Local optometrist |
+| MBSR / MBCT (8-week mindfulness) | Reduces stress-amplified perception of strain. *(Kabat-Zinn)* | Stress reduction | A-B | Palouse Mindfulness (free); Healthy Minds (free) |
+| HRV biofeedback (HeartMath) | Vagal + parasympathetic lift. *(Lehrer 2013)* | Autonomic balance | B | HeartMath Inner Balance |
+| Neck-shoulder physiotherapy stretches | Addresses musculoskeletal component. *(Anshel 2007)* | Postural + muscular | B | Free YouTube; Bob & Brad |
+
+#### 10.7.3 If the home protocol plateaus — clinic-route options
+
+> **For you, in plain words.** Documented honestly, NEVER recommended, NEVER folded into the home regime. The **single most-important clinic-route action is a comprehensive eye exam** to characterise refractive error + dry-eye disease + rule out other ocular pathology. The user is sovereign over the choice. *(Sheppard 2018; Wolffsohn TFOS DEWS II 2017)*
+
+| Clinic-route option | TL;DR (plain English) | Evidence anchor | Honest risk/benefit |
+|---|---|---|---|
+| **Comprehensive eye exam** on user's initiative | Single most-important clinic-route action — characterises refractive error + dry-eye + ocular health. *(Sheppard 2018)* | Industry standard | Strongly suggested for persistent strain |
+| **Prescription computer glasses** (lens zone optimised for arm-distance ~60-70 cm) | The "hidden driver" fix when uncorrected refractive error is found. *(Sheppard 2018)* | Sheppard 2018 | High benefit if refractive error present |
+| **Prism correction for convergence insufficiency** | For convergence-insufficiency sub-type. *(CITT Cooper 2011)* | CITT Cooper 2011 | Effective if CI present |
+| **Vision-therapy referral for accommodative dysfunction** | Structured optometric vision therapy program. *(CITT)* | CITT | Effective if structural dysfunction present |
+| **Dry-eye-clinic IPL (Intense Pulsed Light — Lumenis OptiLight)** | For severe MGD-driven dry eye refractory to warm compresses. *(Toyos 2015; Optimed 2020)* | Toyos 2015; Optimed 2020 (regulatory-path: FDA cleared 2021 — context only) | Effective for severe MGD; clinic-only sessions |
+| **Punctal plugs** (silicone or dissolvable) | Block tear drainage — for severe aqueous-deficient dry eye. *(Wolffsohn TFOS DEWS II 2017)* | Wolffsohn TFOS DEWS II 2017 | Effective; reversible; clinic procedure |
+| **Cyclosporine A drops (Restasis 0.05%, Cequa 0.09%)** | Rx for chronic moderate-severe dry eye. *(Sall 2000 Restasis)* | Sall 2000 Restasis (regulatory-path: FDA 2003 — context only) | Modest benefit over months; clinic Rx |
+| **Lifitegrast 5% (Xiidra)** | Rx for dry eye signs/symptoms — LFA-1/ICAM-1 inhibitor. *(OPUS-1, OPUS-2, OPUS-3 trials)* | OPUS trials (regulatory-path: FDA 2016 — context only) | Modest benefit; some users find dysgeusia disturbing |
+| **Tacrolimus / pimecrolimus topical** (off-label severe dry eye) | Off-label for severe Sjögren's/autoimmune dry eye. *(EMA)* | Off-label | Clinic-route niche only |
+| **Autologous serum tears** (clinic-route) | For severe refractory dry eye — blood-derived tears. *(Wolffsohn TFOS DEWS II 2017)* | Wolffsohn TFOS DEWS II 2017 | Effective for severe; clinic-prepared |
+| **LASIK / SMILE refractive surgery** (for non-presbyopic refractive correction) | Eliminates need for glasses/contacts; honest dry-eye-risk discussion. *(Wolffsohn 2017)* | Industry standard | Effective; some develop chronic dry eye post-procedure |
+| **Cataract surgery** (when visually significant cataract present) | Restores clear optic; refractive choice during surgery. *(Industry)* | Industry standard | Effective; honest discussion of post-surgical dry eye |
+| **Scleral contact lenses for severe dry eye** | Severe dry-eye specialty lenses that hold tear reservoir. *(Wolffsohn 2017)* | Wolffsohn TFOS DEWS II 2017 | Effective for severe; specialty fit |
+| **Acupuncture (clinical TCM)** | TCM acupuncture for dry eye + screen strain — small trials suggestive. *(Kim 2012)* | Kim 2012 | Modest; clinic-route TCM |
+
+#### Open the science
+
+Citations: Rosenfield 2011 *Ophthalmic Physiol Opt* CVS review (20-20-20 origin); Patel 1991 + Tsubota 1993 Japan blink-rate-drop; Sheppard 2018 *BMJ Open Ophthalmol* CVS review; Anshel 2007 occupational ergonomics; Cochrane Pucker 2016 artificial tears — A-grade; Cochrane Singh 2023 (updated 2017) blue-light glasses — NULL for digital eye strain symptoms; Baudouin 2010 BAK corneal toxicity; Wang 2020 warm compresses for MGD — B+; Arita 2017 MGD; DREAM 2018 *NEJM* omega-3 for dry eye — NULL; Asbell 2018 DREAM analysis; Larmo 2010 Finland sea buckthorn dry eye; Bhatt 2014 India Triphala eye wash; Yildirim 2016 vitamin D + dry eye; Stringham 2017 lutein + visual fatigue; Nakamura 2006 Japan astaxanthin eye fatigue; Nagaki 2002 astaxanthin; Bucheli 2011 Korea goji + MPOD; Wolffsohn TFOS DEWS II 2017 (the gold-standard global dry-eye consensus); CITT Cooper 2011 convergence insufficiency treatment trial; Toyos 2015 IPL for MGD; Sall 2000 Restasis; OPUS-1, OPUS-2, OPUS-3 lifitegrast; Chang 2015 Harvard evening blue light + melatonin; Lee 2014 sleep + dry eye; Charaka; Sushruta Uttara Tantra; Yi Zong Jin Jian; Yin Hai Jing Wei; Hatha Yoga Pradipika; AYUSH-CCRAS Triphala monograph; Kim 2012 acupuncture for screen eye strain. **Regulatory-path mentions** (FDA dates for cyclosporine 2003, lifitegrast 2016, IPL Lumenis 2021) are factual context only — not evidence anchors; the evidence anchors are the named clinical trials.
 
 ## 11. Clinical Scoring + Comorbidity Screening
 
-### 11.0 Self-administered clinical scoring instrument
+### 11.1 What to measure, in plain words
 
-Primary: **CVS-Q (Computer Vision Syndrome Questionnaire)** — 16-item, Spanish-validated (Seguí 2015), free, self-administer in 5 min; score 0–32; **≥7 indicates CVS**. Use at baseline / Wk 4 / Wk 12 / Mo 6 / Mo 12.
+> **For you, in plain words.** A self-administered screen-strain scoring instrument (CVSS17), plus daily symptom diary, plus annual comprehensive eye exam if persistent. *(Segui CVSS17 2015; Wolffsohn TFOS DEWS II 2017)*
 
-Secondary: **OSDI (Ocular Surface Disease Index)** — 12-item, free, self-administer; score 0–100; >12 mild, >22 moderate, >32 severe dry-eye overlap. Baseline / Mo3 / Mo6 / Mo12.
+### 11.2 Self-administered scoring
 
-Tertiary: **DEQ-5 (Dry Eye Questionnaire 5)** — 5-item Spanish-validated; quick weekly tracking.
+| Instrument | TL;DR (plain English) | What it measures | Cadence | Citation |
+|---|---|---|---|---|
+| **Computer Vision Symptom Scale (CVSS17 — Segui 2015)** | Spanish-validated 17-item self-administered screen-strain symptom scale. *(Segui 2015)* | Screen-strain symptoms | Baseline + monthly | *(Segui 2015 Spain)* |
+| Ocular Surface Disease Index (OSDI) | Self-administered dry-eye severity index. *(Schiffman 2000)* | Dry-eye severity | Baseline + monthly | *(Schiffman 2000)* |
+| Daily symptom diary (blur, burning, dryness, grit, tearing, headache, neck-shoulder) | Subjective daily self-track. *(Industry)* | Symptom pattern | Daily | *(Self-tracking)* |
+| Smartphone photo of redness | Subjective visible redness tracking. *(Industry)* | Conjunctival redness | Weekly | *(Self-tracking)* |
+| Tear break-up time at home (consumer kits — limited accuracy) | At-home TBUT screening with fluorescein strip if available. *(Wolffsohn 2017)* | Tear film stability | If available | *(Wolffsohn TFOS DEWS II 2017)* |
+| Sleep tracking (Oura/Whoop/PSQI) | Sleep deprivation worsens dry eye next-day. *(Lee 2014; Walker 2017)* | Sleep quality | Continuous | *(Lee 2014; Walker 2017)* |
 
-Subjective: **Eye Strain VAS 0–10 daily** in journal.
+### 11.3 Comorbidity & lab screening (direct-to-consumer + clinic-route)
 
-Cadence: **baseline → Wk 4 → Wk 8 → Wk 12 → Mo 6 → Mo 12.**
-
-### 11.5 Autoimmune & Comorbidity Screening — direct-to-consumer labs
-
-Screen eye strain elevates risk for / co-occurs with: **dry eye disease, uncorrected refractive error, presbyopia (>40), convergence insufficiency, cervicogenic headache, migraine, sleep deprivation, low vitamin D, Sjögren's syndrome (autoimmune dry eye)**.
-
-**DTC providers:** LetsGetChecked, Everlywell, Walk-In Lab (US); Thriva, Medichecks, Forth (UK); Cerascreen (EU); True Test (IN); i-screen (AU).
-
-**Panel — baseline / Mo3 / Mo6 / Mo12:**
-
-| Comorbidity | Test | Provider |
-|---|---|---|
-| Refractive error / presbyopia | Eye exam | Local optometrist (Specsavers, OPSM, Pearle Vision, 1-800-Contacts; falls outside this OTC framing but is non-Rx) |
-| Convergence insufficiency | Self-test (Brock string) + optometrist binocular exam | Brock string kit ($10 Amazon); local optometrist |
-| Vitamin D | 25-OH-D | Cerascreen / LetsGetChecked |
-| Thyroid (cognitive + dry eye) | TSH + fT4 + anti-TPO + anti-Tg | Thriva |
-| Sjögren's (if severe dry eye + dry mouth + fatigue) | ANA + Ro/SSA + La/SSB + RF | Thriva / Medichecks |
-| Iron (women, eye fatigue) | Ferritin | LetsGetChecked |
-| Sleep apnea | Epworth + home sleep test (Lofta, WatchPAT) | Lofta |
-| Migraine workup | Mg RBC + CoQ10 markers if relevant | Walk-In Lab |
-| Diabetes (vascular eye risk) | HbA1c + FBG | LetsGetChecked |
+| Comorbidity / lab | TL;DR (plain English) | Direct-to-consumer test | Cadence | Action threshold |
+|---|---|---|---|---|
+| Uncorrected refractive error | The hidden driver — comprehensive eye exam catches it. *(Sheppard 2018)* | Local optometrist (clinic-route) | Annual | Prescription computer glasses |
+| Dry-eye disease severity | Wolffsohn TFOS DEWS II 2017 grading. *(Wolffsohn 2017)* | OSDI + clinic eye exam | Annual | Intensive PF tears + compresses |
+| Meibomian-gland dysfunction (MGD) | Most-common dry-eye driver; warm compresses are the home fix. *(Wang 2020)* | Clinic dilated slit-lamp | Annual | Warm compresses + lid hygiene |
+| Convergence insufficiency | Structural binocular vision dysfunction. *(CITT Cooper 2011)* | Clinic optometry | Annual if symptomatic | Vision therapy referral §10.7.3 |
+| Blepharitis / Demodex blepharitis | Lid-margin disease driver of dry eye. *(Wolffsohn 2017)* | Clinic slit-lamp | Annual | Lid wipes + warm compresses |
+| Sjögren's syndrome (autoimmune dry eye) | Severe dry eye + dry mouth + joint pain triad. *(Wolffsohn 2017)* | Anti-SSA/Ro + anti-SSB/La + clinic | Once if symptomatic | Clinic-route management |
+| Perimenopause / menopause | Hormonal driver of dry eye in 40-55 yo women. *(Wolffsohn 2017)* | Self-assessment + hormonal labs if wanted | Annual | Intensify PF tears + omega-3 |
+| Vitamin D deficiency | Modulates ocular surface inflammation. *(Yildirim 2016)* | 25-OH vitamin D | Annual | 30-50 ng/mL target |
+| Sleep apnea / floppy eyelid syndrome | Sleep apnea associated with floppy eyelid + dry eye. *(Wolffsohn 2017)* | Home sleep test (Lofta WatchPAT) if snore | If symptomatic | User-led CPAP discussion |
+| Contact-lens overuse | Direct driver of MGD + dry eye. *(Wolffsohn 2017)* | Self-audit | Continuous | Switch to glasses for screen sessions |
+| Anticholinergic OTC drug burden | Antihistamines + sleep aids worsen dryness. *(Gray 2015)* | Self-audit + ACB Calculator | Annual | Switch alternatives |
+| Smoking | Direct ocular surface inflammation. *(Wolffsohn 2017)* | Self-audit | Continuous | Quit on user's initiative |
 
 ## 12. Implementation Timeline (12 months, self-tracked)
 
-- **Weeks 1–2 — Foundation.** Install f.lux + 20-20-20 reminder + blue-blockers + ergonomic monitor adjustment + start warm compress BID + start Combo 1 + Combo 2 (half-dose ramp days 1–3). **Baseline CVS-Q + OSDI + DEQ-5 + Eye Strain VAS.** Schedule eye exam if not in last year.
-- **Weeks 3–4 — Behavior lock.** Add Combo 3 + Trataka + eye yoga + cervical release routine + posture micro-breaks. Expected: ~30% reduction in end-of-day eye fatigue; sleep onset improves with blue-blockers.
-- **Weeks 5–8 — Stabilisation.** Full dose stack. Macular pigment density (MPOD) begins to rise (8–12 wk timeline from carotenoid literature); meibomian function improves (sea buckthorn + omega-3 take 8–12 wk). Wk 8 vit D / hs-CRP DTC re-check.
-- **Weeks 9–12 — Clinical shift.** Most users report CVS-Q drop by 5–10 points and OSDI drop by 8–15 points. Photo-document score trends. Repeat OSDI + CVS-Q.
-- **Months 4–6 — Consolidation.** Maintenance dosing. TCM cycling Qi Ju Di Huang Wan weeks 1 & 4. Re-evaluate refractive Rx (presbyopia progression in 40+). Mo6 DTC.
-- **Months 6–12 — Long-term sustainability.** Quarterly CVS-Q + OSDI. Chrysanthemum-goji tea daily continues. Annual eye exam. **Realistic expectation: CVS-Q stays <7 with discipline; OSDI <12; eye strain VAS 1–2; sustained 60–80% reduction in symptom burden vs baseline.**
+### 12.1 The year, in plain words
 
-**No physician check-in is mandatory** beyond a routine eye exam (which is non-prescription if no Rx is initiated). If you keep a physician informed, that is your personal decision.
+> **For you, in plain words.** A 12-month self-tracked progression. Ergonomic + 20-20-20 + drops begin week 1 — symptoms lift in 2-4 weeks for most users. Supplements layer in weeks 5-12. Clinic-route comprehensive eye exam on user's initiative within month 1-2 if symptoms persist after behavioural setup. *(Rosenfield 2011; Pucker 2016; Sheppard 2018)*
+
+- **Weeks 1-4 — Adaptation.** Ergonomic monitor setup. Install 20-20-20 reminder. Buy preservative-free artificial tears + warm compress mask + humidifier. Begin daily use. Begin Mediterranean Eye Diet base. Begin Triphala nightly. CVSS17 + OSDI baseline. If symptoms persist after week 2-3, schedule comprehensive eye exam on user's initiative.
+- **Weeks 5-8 — Stabilisation.** Add Combo 1 (omega-3 + D3+K2 + lutein + sea buckthorn). Add Combo 2 (curcumin + C). PHQ-9 if stress overlap. Repeat CVSS17 + OSDI.
+- **Weeks 9-12 — First reassessment.** Repeat CVSS17 + OSDI. Add Combo 3 (Triphala + Mg + ashwagandha optional). Begin TCM cycling weeks 1 + 4 (Qi Ju or Ming Mu Di Huang Wan + daily goji + chrysanthemum tea).
+- **Months 4-6 — Consolidation.** Maintenance protocol. Prune non-responders. Annual comprehensive eye exam if not done.
+- **Months 6-12 — Long-term sustainability.** CVSS17 + OSDI quarterly. Repeat sleep tracking. Year-end review.
+- **No physician check-in milestones are mandatory.** Annual comprehensive eye exam on user's initiative is strongly suggested if persistent symptoms.
 
 ## 13. Illustrative Case Composite
 
-> Composite — not a real patient identifier.
+### 13.1 Ashish, 36 — in plain words
 
-**Anjali, 36, UX designer.** 9 h screen daily. End-of-day eye-ache + headache + fluctuating vision; sleep onset 00:30; CVS-Q 18; OSDI 28 (moderate); DEQ-5 9. Vit D 19 ng/mL; ferritin 32 ng/mL; HbA1c 5.4; anti-TPO normal. Forward-head posture, suboccipital tenderness +.
+> **For you, in plain words.** A composite software engineer walking through the 12-month protocol. Not a real patient. *(Composite; Sheppard 2018; Pucker 2016)*
 
-Full §8.5 protocol: ergonomic monitor adjustment, f.lux + amber blockers, 25-min Pomodoro with 5-min 20-20-20 + complete-blink-drill, warm compress BID, preservative-free Thealoz drops 4×/day, Combo 1 + 2 + 3 with omega-3 2 g and lutein/zeaxanthin/astaxanthin, Triphala eyewash BID, Trataka 5 min PM, eye yoga + cervical release hourly, humidifier at 45% RH, computer glasses (anti-reflective + blue-light tint) from optometrist.
+**Profile.** Ashish, 36, software engineer, 10-12 h/day at screen, mild hyperopia (-0.50 in one eye, +0.75 in the other — never corrected), dry eye symptoms × 6 months, OSDI 35 (moderate), CVSS17 36, sleep 6 h/night, daily 4-5 cups coffee, no smoking. Subjective: "By 3 pm my eyes burn and I get tension headaches. By dinner I can't focus on my partner."
 
-- **Wk 2:** Eye Strain VAS 6 → 4; sleep onset 23:30.
-- **Wk 4:** CVS-Q 11; OSDI 16; vit D 32; headache load -50%.
-- **Wk 12:** **CVS-Q 5**; **OSDI 8**; vit D 48; ferritin 65; end-of-day comfort restored.
-- **Mo 6:** CVS-Q 3; OSDI 6; sustained.
-- **Mo 12:** Stable; new role with 6 h screen — symptoms only on extended-deadline weeks.
+### 13.2 The four milestones
+
+- **Week 4.** Ergonomic setup (monitor at eye level, perpendicular to window, humidifier). 20-20-20 reminder running. Preservative-free TheraTears every 3 h. Bruder warm compress AM and PM. Mediterranean Eye Diet begun. Triphala nightly. Sleep extended to 7 h. OSDI 22. CVSS17 24. Subjective: "First time in months my eyes don't burn in the afternoon."
+- **Week 12.** Combo 1 + 2 + 3 fully on. Comprehensive eye exam done on user's initiative — prescription computer glasses fitted (mild hyperopic + astigmatic correction in arm-distance zone). OSDI 14. CVSS17 16. Headaches resolved.
+- **Month 6.** Full protocol steady. Qi Ju Di Huang Wan weeks 1 + 4. Daily Gou Qi Zi + Ju Hua tea. Caffeine moderated to 2 cups + water 1:1. Sleep 7.5 h. OSDI 8 (normal range). CVSS17 12.
+- **Month 12.** Sustained. OSDI 6. CVSS17 10. Continues full home protocol + annual eye exam.
 
 ## 13.5 Patient-Facing Primer
 
-Screen eye strain is not "just from too much computer time" — it is four things happening together: (1) the focus muscles inside your eye (ciliary + convergence) lock up after hours of near work; (2) your blink rate drops from 15/min to 5–7/min when you stare at screens, so your tear film evaporates and your eyes get gritty by 3 PM; (3) the blue light from screens after sunset suppresses melatonin and fragments your sleep, which makes tomorrow's eye-strain worse; and (4) the forward-head posture you adopt at the keyboard loads your neck, refers pain behind the eyes, and reduces blood drainage from your skull.
+### Read this first if you read nothing else
 
-This protocol does **not** chase prescription drops (cyclosporine Restasis, lifitegrast Xiidra) or LASIK. Instead, it rebuilds each of those four layers from the inside out — with foods (oily fish, kale, eggs, sea buckthorn, blueberries, sweet potato), OTC botanicals (lutein, zeaxanthin, astaxanthin, bilberry, Triphala eyewash, chrysanthemum-goji tea), warm compresses + lid hygiene, the 20-20-20 break habit, eye yoga + Trataka, ergonomic fixes, blue-blockers + f.lux after sunset, posture work, and disciplined sleep. **No prescription. No clinic. No hospital.**
+> **For you, in plain words.** Screen eye strain is not a disease — it is the cluster of dryness, burning, blur, headache and neck-shoulder tension that comes from 6-12 hours a day at a screen. The biggest moves are not in a bottle — they are: set up your monitor properly, install a 20-20-20 reminder, use preservative-free artificial tears every 2-4 hours, warm-compress if dry-eye-driven, and schedule a comprehensive eye exam to rule out the hidden driver of uncorrected refractive error. *(Rosenfield 2011; Pucker Cochrane 2016; Sheppard 2018)*
 
-Expect a fast lift — the behavioral pieces (20-20-20, blink hygiene, blue-blockers, warm compress, posture) deliver 30–50% improvement in **2–4 weeks**. The supplement stack (especially macular carotenoids and omega-3 for meibomian function) takes **8–12 weeks** to fully load. Real durable comfort is a 3-to-6-month story.
+Screen eye strain runs on five drivers — (1) blink-rate collapse + ocular surface dryness (screen use drops your blink rate by 60%); (2) accommodative-vergence strain (focusing muscles work overtime at fixed near distance); (3) uncorrected refractive error (the hidden driver — mild hyperopia, astigmatism, and over-40 presbyopia all present as "eye strain"); (4) ergonomic-postural strain (poor monitor height + glare + distance drive neck-shoulder tension that refers as eye symptoms); (5) circadian disruption from evening blue light (matters for sleep, not for direct eye damage).
 
-You are sovereign over your own body. If you choose to keep an optometrist or physician informed, that is your personal decision.
+This protocol does **not** chase strain with heavily-marketed blue-light glasses (Cochrane Singh 2023 found NULL for digital eye strain symptoms — we present this honestly). It builds the home protocol — (a) **behavioural** — 20-20-20 rule every 20 min, conscious blink-awareness, Pomodoro structured breaks; (b) **ergonomic** — monitor at eye level, 50-75 cm distance, no glare, ambient lighting matched, chair height correct, keyboard close, breaks every 30-60 min; (c) **drops + compresses** — preservative-free artificial tears every 2-4 h (single-use vials gold standard; multidose-PF with COMOD system / Hylo-Forte excellent), warm compress mask 10 min once or twice daily; (d) **supplements** — Mediterranean Eye Diet plate, omega-3, sea buckthorn for dry eye, vitamin D if low, Triphala nightly. **No prescription. No clinic. No hospital. No surgery in the home regime.**
+
+Expect a fast lift. Behavioural + ergonomic + drops produces measurable symptom relief in 2-4 weeks for most users. The single most-important clinic-route action — if symptoms persist after that — is a **comprehensive eye exam on your own initiative** to rule out uncorrected refractive error (the hidden driver) and to characterise dry-eye disease severity. Prescription computer glasses optimised for the arm-distance fix the refractive driver definitively. The §10.7.3 clinic-route options (IPL for severe MGD, punctal plugs, cyclosporine drops, lifitegrast, vision-therapy referral) exist for the small subset who plateau on the home protocol — never folded into the home regime.
+
+**Two exceptions.** (1) **Sudden vision loss, sudden new floaters, flashes of light, or a "curtain" coming down across vision** is a retinal detachment until proven otherwise — emergency. (2) **Eye pain WITH a red eye + halos around lights + nausea** is acute angle-closure glaucoma — emergency. This home protocol cannot fix an acute structural eye event.
+
+About **blue-light glasses**: the marketing claims that they prevent retinal damage and treat screen eye strain are not supported by the Cochrane evidence. We list them honestly as Grade C. They DO have a legitimate use case — worn evening as a sleep-protection intervention to reduce melatonin suppression — but for that, free software (f.lux, Night Shift) does the same job.
+
+You are sovereign over your own body. If you keep an eye-care practitioner informed (and we strongly suggest annual eye exams for chronic screen workers), that remains your call; the protocol does not require it.
+
+## 13.7 Honest Evidence-Tier Comparison
+
+### 13.7.1 What the best evidence actually says
+
+> **For you, in plain words.** A candid table — some things have great evidence (20-20-20, ergonomic setup, preservative-free tears, warm compresses for MGD, comprehensive eye exam). Some have honest mixed evidence (omega-3 for dry eye — DREAM null but smaller positive). Some have very little (blue-light glasses Cochrane NULL, generic vision multivitamins, Bates-method refractive cure claims). Some are clinic-route only (IPL, punctal plugs, cyclosporine, lifitegrast). *(Cochrane reviews; TFOS DEWS II 2017; Sheppard 2018)*
+
+| Approach | Evidence tier (A/B/C/D/T/H/X) | Plain-words verdict (≤25 words) | Where it fits in YOUR protocol |
+|---|---|---|---|
+| **20-20-20 rule (cornerstone behavioural)** | A behavioural | The single foundational rule for screen work. *(Rosenfield 2011)* | Cornerstone — every 20 min, all-day |
+| **Ergonomic monitor setup (height, distance, lighting, chair)** | A behavioural | 70% of "eye strain" is musculoskeletal-postural. *(Anshel 2007)* | Cornerstone — daily check |
+| **Blink-awareness training (close-relax-open 10× per break)** | A behavioural | Restores blink rate; free, takes 10 sec. *(Patel 1991)* | Cornerstone — every break |
+| **Preservative-free artificial tears (single-use vials gold standard)** | A | The A-grade pharmaceutical-equivalent OTC. *(Cochrane Pucker 2016)* | Cornerstone — every 2-4 h |
+| **Warm-compress mask for MGD (Bruder, MGDRx)** | B+ | Wang 2020 systematic review — symptomatic for MGD-driven dry eye. *(Wang 2020)* | Cornerstone if MGD; AM + PM |
+| **Comprehensive eye exam on user's initiative (clinic-route)** | A (clinic-route diagnostic) | Single most-important clinic action — rules out hidden refractive error. *(Sheppard 2018)* | Strongly suggested clinic-route — user's initiative |
+| **Prescription computer glasses (if refractive uncorrected found)** | A | The hidden-driver fix. *(Sheppard 2018)* | Cornerstone if refractive correction needed |
+| **Home humidifier (cool-mist; ~50% RH)** | B | Reduces evaporative dry eye in heated/AC rooms. *(TFOS DEWS II 2017)* | Cornerstone in dry indoor environments |
+| **Pomodoro structured break adoption** | B behavioural | Enforces 20-20-20 + movement breaks. *(Cirillo)* | Cornerstone — all-day |
+| **Pranayama + palming + Trataka breaks** | T+B behavioural | Classical AYUSH eye-relaxation triple — fits 20-20-20 naturally. *(Hatha Yoga Pradipika; AYUSH)* | Cornerstone — at each break |
+| **Neck-shoulder stretches between sessions** | B behavioural | Addresses musculoskeletal driver. *(Anshel 2007)* | Cornerstone — every 30-60 min |
+| **Triphala (internal, nightly)** | A (gut + antioxidant) / B (eye-specific) | Pan-tradition nightly antioxidant + gut reset. *(AYUSH; Charaka; Sharma 2013)* | Cornerstone — nightly |
+| **Triphala eye-wash decoction (cool sterile external)** | B (small Indian RCT) | Bhatt 2014 small Indian RCT — symptomatic dry-eye relief. *(Bhatt 2014)* | Optional traditional adjunct |
+| **Sleep restoration (7-9 h)** | A | Sleep deprivation worsens next-day dry eye. *(Walker 2017; Lee 2014)* | Cornerstone — daily |
+| **MBSR / MBCT (8-week mindfulness)** | A-B | Reduces stress-amplified perception of strain. *(Kabat-Zinn)* | Optional — stress overlap |
+| **HRV biofeedback (HeartMath)** | B | Vagal + parasympathetic lift. *(Lehrer 2013)* | Optional — stress overlap |
+| **Sea buckthorn oil (Hippophae rhamnoides 2-4 g)** | B | Finnish Larmo 2010 — modest dry-eye symptom relief; omega-7. *(Larmo 2010)* | One layer in Combo 1 |
+| **Omega-3 EPA + DHA for dry eye (1-2 g)** | C (DREAM null) / B (smaller positive trials) | DREAM 2018 NULL; smaller earlier trials positive — included for systemic + Mediterranean pattern. *(DREAM 2018)* | One layer in Combo 1 |
+| **Vitamin D3 + K2 (if deficient)** | A (if deficient) / C (if replete) | Ocular surface inflammation modulation. *(Yildirim 2016)* | Cornerstone if <30 ng/mL |
+| **Vitamin A from cod-liver (if deficient)** | A (if deficient) | Severe deficiency = xerophthalmia. *(EMA)* | Cornerstone if low |
+| **Lutein + zeaxanthin (low-dose)** | C (screen-strain-specific) / B (macular) | Some signal in ciliary muscle + macular overlap. *(Stringham 2017)* | Optional Combo 1 layer |
+| **Astaxanthin** | C | Japanese cohort + small Asian trials — eye-fatigue signal. *(Nakamura 2006)* | Optional Combo 1 layer |
+| **Mediterranean Eye Diet** | B+ | Dietary pattern that supports tear-film + macular co-benefits. *(Merle 2019)* | Cornerstone plate |
+| **Goji (Gou Qi Zi) 10-15 g daily** | B | Bucheli 2011 — macular pigment density rise; classical TCM eye herb. *(Bucheli 2011)* | Cornerstone food + TCM overlay |
+| **Curcumin Meriva / BCM-95** | C (screen-strain-specific) / B (anti-inflammatory) | General anti-inflammatory; not screen-strain-specific. *(Cox 2015)* | One layer in Combo 2 |
+| **TCM (Qi Ju Di Huang Wan, Ming Mu Di Huang Wan, Gou Qi + Ju Hua tea)** | B (Qi Ju Di Huang, Ming Mu) / T (others) | Premier classical TCM eye-care formulas + daily goji + chrysanthemum tea. *(Yi Zong Jin Jian; NMPA; Bucheli 2011)* | Adjunct TCM cycling overlay |
+| **Ayurveda (Triphala eye wash + Anu Taila nasya + palming + Trataka)** | A (internal Triphala) / B (Triphala eye wash) / T (others) | Foundational AYUSH eye-care; Bhatt 2014 small RCT. *(Charaka; Sushruta; AYUSH-CCRAS; Bhatt 2014)* | Cornerstone for internal Triphala + behavioural |
+| **Unani (Itrifals + Sharbat-e-Sandal + Roghan Banafsha external)** | T | Honoured tradition; modern RCTs absent. *(Hamdard)* | Optional tradition layer |
+| **Siddha (Triphala Chooranam + Nellikai + Kasturi Manjal external)** | T | Honoured tradition. *(IMPCOPS)* | Optional tradition layer |
+| **Tibetan (Agar-35, Sogthig)** | T | Honoured tradition. *(Men-Tsee-Khang)* | Optional adjunct |
+| **Homeopathy (Euphrasia, Ruta, Natrum mur, Sepia, Argentum nit, Phosphorus)** | T | No high-quality screen-strain RCT; honoured tradition only. *(Boericke; CCRH)* | NOT in active protocol — listed for transparency |
+| **Marketing-grade blue-light glasses for screen eye strain symptoms** | C (NULL per Cochrane) | Cochrane Singh 2023 NULL for digital eye strain symptoms. *(Cochrane Singh 2023)* | NOT in active protocol for that indication |
+| **f.lux / Night Shift / True Tone for evening sleep protection** | B (sleep) | Free software that protects evening melatonin — sleep intervention not eye intervention. *(Chang 2015)* | Cornerstone — evening, for sleep |
+| **OTC reading glasses (presbyopic users for computer)** | B | Useful for over-40 presbyopic users at the arm-distance. *(Industry)* | Useful starter pre-Rx eye exam |
+| **BAK-preserved multidose drops (Visine, GenTeal regular) chronic use** | D (HARM signal) | BAK is corneal-epithelial toxic with chronic use. *(Baudouin 2010)* | NOT for chronic use — switch to PF |
+| **Vasoconstrictor "redness reliever" drops chronic use** | D | Rebound effect worsens redness with chronic use. *(EMA)* | NOT for chronic use |
+| **Anticholinergic OTC sleep aids (diphenhydramine)** | D (HARM signal) | Worsens dry eye AND chronic dementia risk per Gray 2015. *(Gray 2015)* | NOT in protocol — switch alternatives |
+| **Bates-method "reverse refractive error" claims** | D | Popular but evidence does not support reversing structural refractive error. *(Industry)* | NOT in protocol — but palming + Trataka as accommodative relaxation = fine |
+| **Generic "vision support" multivitamins** | C-D | Most generic; if you want macular protection use AREDS2 (see macular-support dossier). *(AREDS2 2013)* | NOT cornerstone |
+| **Apoaequorin / Prevagen** | D | Weak evidence; not screen-strain-specific. *(Industry)* | NOT in protocol |
+| **IPL (Intense Pulsed Light — Lumenis OptiLight) for severe MGD** | B | Toyos 2015 — effective for severe MGD refractory to warm compresses; clinic-only. *(Toyos 2015)* | Clinic-route — §10.7.3 only |
+| **Punctal plugs (silicone or dissolvable)** | B | Effective for severe aqueous-deficient dry eye; clinic procedure. *(Wolffsohn TFOS DEWS II 2017)* | Clinic-route — §10.7.3 only |
+| **Cyclosporine A drops (Restasis 0.05%, Cequa 0.09%)** | B (modest) | Modest benefit over months for chronic moderate-severe dry eye. *(Sall 2000)* | Clinic-route Rx — §10.7.3 only |
+| **Lifitegrast 5% (Xiidra)** | B (modest) | Modest benefit for dry eye signs/symptoms; some users find dysgeusia disturbing. *(OPUS trials)* | Clinic-route Rx — §10.7.3 only |
+| **Vision-therapy referral (CITT for convergence insufficiency)** | A (CITT for CI) | Effective if convergence insufficiency present. *(CITT Cooper 2011)* | Clinic-route — §10.7.3 only |
+| **Prism correction for convergence insufficiency** | A (if CI present) | Effective if CI present. *(CITT)* | Clinic-route per eye exam |
+| **Scleral contact lenses for severe dry eye** | B (severe) | Effective for severe; specialty fit; clinic-route. *(Wolffsohn TFOS DEWS II 2017)* | Clinic-route — §10.7.3 only |
+| **Autologous serum tears** | B (severe) | For severe refractory dry eye; blood-derived; clinic-prepared. *(Wolffsohn 2017)* | Clinic-route — §10.7.3 only |
+| **Acupuncture (TCM clinic-route)** | T+C | Small Asian trials suggestive for dry eye + screen strain. *(Kim 2012)* | Optional clinic-route TCM |
 
 ## 14. Independent Healing Paradigm
 
-This protocol diverges from the mainstream pharmaceutical model that treats screen eye strain either as a minor nuisance (lubricating drops only) or — when it escalates — with prescription topical immunomodulators (cyclosporine, lifitegrast), nasal varenicline, clinic IPL, and punctal plugs. Screen eye strain is treated here as the ocular-cervical-cognitive apex of a four-node network — accommodative-vergence fatigue, tear-film evaporation, blue-light + circadian disruption, postural-cervical load — intervened at each node in parallel using only **OTC, home-administered** tools.
+### 14.1 The closing position
 
-**Sovereignty ethos.** **No prescription. No clinic. No hospital. No surgery.** The user owns their body and their healing path. Evidence varies honestly: Grade A for Lutein/Zeaxanthin/Meso-zeaxanthin, Omega-3, Vit A, Triphala; Grade B for Astaxanthin, Bilberry, Sea buckthorn, Saffron, Curcumin, Mandukaparni, Qi Ju Di Huang Wan, Gou Qi Zi, Ju Hua; Grade C for Quercetin (eye-specific); Grade T for Unani / Siddha / Tibetan / homeopathic — honoured as traditions, never marketed as proof.
+> **For you, in plain words.** A sovereign, over-the-counter, at-home path that works on all five drivers in parallel — graded honestly, citing only WHO, AYUSH, EMA, TGA, NMPA, Health Canada, Men-Tsee-Khang, Hamdard, IMPCOPS and classical texts plus named non-US peer-reviewed trials. **No US authority (FDA, AAO, NIH-NEI policy) is cited as the trust anchor.** *(WHO Traditional Medicine Strategy 2025-2034; Cochrane; EMA; AYUSH; NMPA; TFOS DEWS II 2017)*
 
-Authority grounded in **WHO TCIM Strategy 2025–2034, India AYUSH/CCRAS/CCRH/CCRYN/CCRUM/CCRS/PCIMH/ICMR, EMA HMPC, Australia TGA + NHMRC, China NMPA + Chinese Pharmacopoeia, Health Canada NHP, Men-Tsee-Khang, Hamdard, IMPCOPS**, plus classical texts (Charaka, Sushruta Uttara Tantra, *Bhavaprakasha*, Avicenna's *Canon*, *Yi Zong Jin Jian*, Boericke, Kent).
+This protocol diverges from the mainstream "marketed blue-light glasses + generic vision multivitamins" model. Screen eye strain is treated as a five-part system (blink-rate collapse + dryness, accommodative-vergence strain, uncorrected refractive error, ergonomic-postural strain, evening blue-light circadian disruption) intervened at every home-administrable layer using only **over-the-counter, home-based** tools — the 20-20-20 rule, ergonomic setup, blink-awareness, preservative-free artificial tears, warm compresses, humidifier, evening blue-light reduction for sleep, the Mediterranean Eye Diet, supplementation, classical AYUSH + TCM eye-care practices. Clinic-route options (comprehensive eye exam, prescription computer glasses, prism correction, vision-therapy referral, IPL for MGD, punctal plugs, cyclosporine drops, lifitegrast, autologous serum tears, scleral contact lenses) sit in §10.7.3 as honestly described referral-only options. The **comprehensive eye exam is the single most-important clinic-route action** because uncorrected refractive error is the most-common hidden driver of persistent strain.
 
-Explicit re-affirmation: **no FDA, FTC, AAO, AOA, AMA, ADA, AHA, CDC, NIH-policy, AAFP, AAP as authority. Period.**
+**Sovereignty ethos. No prescription. No clinic. No hospital. No surgery in the home regime.** Evidence varies honestly: Grade A for 20-20-20 rule (Rosenfield 2011), ergonomic setup (Anshel 2007), blink-awareness training (Patel 1991), preservative-free artificial tears (Cochrane Pucker 2016), comprehensive eye exam (clinic-route diagnostic — Sheppard 2018), prescription computer glasses if refractive uncorrected found (Sheppard 2018), sleep restoration (Walker 2017), MBSR/MBCT (Kabat-Zinn), Mediterranean Eye Diet, internal Triphala (gut + antioxidant), vitamin A if deficient, vitamin D if deficient, CITT prism / vision therapy if CI present (clinic-route); Grade B+ for warm-compress mask (Wang 2020), Pomodoro structured break, home humidifier (TFOS DEWS II 2017), Mediterranean Eye Diet pattern (Merle 2019); Grade B for sea buckthorn (Larmo 2010 Finland), Triphala eye wash external (Bhatt 2014 small Indian RCT), goji (Bucheli 2011 Korea), HRV biofeedback, Qi Ju / Ming Mu Di Huang Wan, OTC reading glasses for presbyopic computer users, IPL for severe MGD (Toyos 2015), cyclosporine + lifitegrast modest (clinic-route); Grade C for omega-3 alone for dry eye (DREAM 2018 NULL; smaller trials positive), astaxanthin, lutein + zeaxanthin (screen-strain-specific), curcumin (screen-strain-specific), Padma-28; Grade D for BAK-preserved multidose tears chronic use (Baudouin 2010 corneal toxicity), vasoconstrictor "redness reliever" drops chronic use, anticholinergic OTC sleep aids (Gray 2015), Bates-method refractive-cure claims, generic non-AREDS2 vision multivitamins, Apoaequorin/Prevagen, marketing-grade blue-light glasses for screen-strain symptom relief (Cochrane Singh 2023 NULL); Grade T for Ayurvedic, Unani, Siddha, Tibetan and classical TCM formulas — honoured as traditions, not marketed as proof. **Homeopathy not recommended for active use.** **Surma (classical lead-containing kohl) EXCLUDED for safety.**
+
+**Dr Oz, Tim Ferriss and Andrew Huberman are cultural references, not trust anchors.** Where their public picks overlap with this protocol, the actual evidence cited comes from the Rosenfield CVS group, the Cochrane Pucker artificial-tears review, the Wolffsohn TFOS DEWS II 2017 dry-eye consensus, the Italian Caselli bilberry group, the Finnish Larmo sea buckthorn group, the Indian Bhatt Triphala eye-wash trial, the Korean Bucheli goji group, the Japanese Nakamura + Nagaki astaxanthin trials, the Spanish Segui CVSS17 validation, AYUSH-CCRAS, the Chinese TCM Yi Zong Jin Jian + Yin Hai Jing Wei lineage, Men-Tsee-Khang, Hamdard, IMPCOPS, and the classical texts.
+
+Authority grounded in WHO Traditional Medicine Strategy 2025-2034, Cochrane systematic reviews (Pucker 2016 artificial tears, Singh 2023 + Singh 2017 blue-light glasses — NULL for digital eye strain), TFOS DEWS II 2017 global dry-eye consensus, India AYUSH councils, EMA herbal monographs, Australia TGA + NHMRC, China NMPA + Chinese Pharmacopoeia 2020 + Yi Zong Jin Jian + Yin Hai Jing Wei ophthalmology lineage, Health Canada NHP, Tibetan Men-Tsee-Khang, Hamdard, IMPCOPS, plus the named non-US trials (Rosenfield 2011, Wang 2020 warm compresses, DREAM 2018 omega-3, Larmo 2010 sea buckthorn, Bhatt 2014 Triphala eye wash, Bucheli 2011 goji, Nakamura 2006 astaxanthin, Sall 2000 Restasis, OPUS-1/2/3 lifitegrast, Toyos 2015 IPL, CITT Cooper 2011 convergence insufficiency, Segui 2015 CVSS17).
+
+The narrow factual exception to the US-authority exclusion is the regulatory-path mention of FDA approval dates for cyclosporine drops (Restasis 2003), lifitegrast (Xiidra 2016), IPL (Lumenis OptiLight 2021) and consumer eyewear / software (f.lux, Apple Night Shift) — these are factual regulatory-path context only, never as the evidence anchor. The evidence anchor in every case remains the named clinical trial.
+
+Explicit re-affirmation: **no FDA, FTC, AAO (American Academy of Ophthalmology), NIH-NEI policy, AHA, AAD, AMA, ACOG, NAMS, ACR, ACS, CDC policy positions are cited as trust authority on whether something WORKS. Period.**
