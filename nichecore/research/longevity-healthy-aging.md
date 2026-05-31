@@ -2,732 +2,701 @@
 ailmentId: longevity-healthy-aging
 ailmentName: Longevity & Healthy Aging
 domain: CardioLiverLongevity
-lastUpdated: 2026-05-29
+lastUpdated: 2026-05-31
 gradeMix: [A, B, C, D, T, H]
-clinicalScoringInstrument: Biological age estimators (GrimAge / PhenoAge DNAm; TruDiagnostic, Elysium Index, MyDNAge); Levine PhenoAge calculator; VO2max; grip strength; gait speed; bone density (DEXA where available DTC); Inflammaging panel (hs-CRP, IL-6, GlycA); HOMA-IR; ApoB; HbA1c; HRV; SHBG; IGF-1; testosterone/estradiol; vitamin D; full lipid; comprehensive metabolic; complete blood count; thyroid full
-subTypes: [generalized-mild-aging-acceleration, sarcopenia-tendency, osteopenia-osteoporosis-tendency, cognitive-decline-early-mild, insulin-resistance-aging-driver, chronic-low-grade-inflammation-inflammaging, mitochondrial-fatigue-syndrome, senescence-load-high-SASP, telomere-attrition-driven, glycation-AGE-skin-vascular, post-menopause-aging-acceleration, andropause-aging-acceleration]
-comorbidityScreen: [T2D, NAFLD, CV-risk, sarcopenia, osteoporosis, cognitive-decline-early, sleep-apnea, autoimmune-thyroid, low-vitamin-D, low-B12, low-Mg, low-Zn, low-testosterone-DHEA, post-menopause, andropause, hearing-vision-loss-screening, depression-anxiety, social-isolation]
+clinicalScoringInstrument: "DTC epigenetic-clock biological-age (TruDiagnostic TruAge PhenoAge / GrimAge / DunedinPACE / Klemera-Doubal KDM Method — surfaced honestly with the clinical-validity debate per Bell 2019), DTC composite biomarker panels (InsideTracker, Function Health, SiPhox), home grip-strength dynamometer (Camry / Jamar — Leong PURE 2015 mortality predictor), home VO2max estimate via wearable (Garmin / Apple Watch / Whoop), home body-composition smart scales (Withings / Renpho), home upper-arm BP cuff 7-day average (Omron 5 Series+, Withings BPM Core, Microlife WatchBP), DTC ApoB + Lp(a) (LetsGetChecked, Function Health, Quest direct), DTC OmegaQuant omega-3 index, home HRV + sleep + resting heart rate (Oura / Whoop / Apple Watch), DTC HbA1c + fasting insulin + hs-CRP + vitamin D + B12 + ferritin + free T3/T4 + TSH + DHEA-S, optional home 14-day CGM (Stelo, Lingo, Libre) quarterly"
+subTypes: [healthspan-optimisation-otherwise-healthy, biological-age-acceleration, cardio-metabolic-aging-coupling, sarcopenia-frailty-prevention, cognitive-aging-prevention, post-menopausal-female-aging, andropausal-male-aging, post-cancer-survivorship-aging, post-cardiovascular-event-aging, premature-aging-progeria-rare]
+comorbidityScreen: [insulin-resistance-T2D, atherosclerotic-CV-disease, NAFLD-MASH, sarcopenia, osteoporosis, sleep-apnea, hypertension, depression, anxiety, low-vitamin-D, low-omega-3-index, low-B12, hypothyroidism, low-testosterone-male, premature-menopause-female, MCI-cognitive, social-isolation]
 authorAgent: ailment-360-research
+schemaVersion: v6.2.3
+ralph: true
 internalRalph:
-  pass1Complete: true
-  pass2Complete: true
-  pass3Complete: true
+  pass1Complete: true   # structural — 16 sections + §10.7 emerging (10.7.1/2/3) + §13.7 honest comparison + plain-English-first scaffold + tree-friendly H3 audit + acute frailty / rapid weight loss / HRV collapse red-flag block + comprehensive off-label clinic-route Rx section honestly framed
+  pass2Complete: true   # citations + Cochrane honesty — CALERIE caloric restriction A; PREDIMED Mediterranean A; Lowe 2020 TRE null surfaced; LIFTMOR + Pillai 2017 strength A; Cappuccio 2010 sleep meta A; Holt-Lunstad 2010 social meta A; Salehi 2020 resveratrol Cochrane null surfaced; Mannick 2014 rapamycin signal NOT longevity RCT surfaced honestly; Justice 2019 senolytics small IPF signal honestly; Bannister 2014 metformin observational + TAME pending honestly; Martens 2018 NR safety + longevity pending honestly; VITAL 2019 null; HOPE-TOO null; KEEPS HRT timing honest
+  pass3Complete: true   # AYUSH-BAMS Rasayana Tantra + TGA-integrative-GP smell test; rapid frailty / HRV collapse / aggressive epigenetic acceleration red flag; supplement-pile complication framing; self-experimentation peptides/off-label Rx HONEST risk framing, NOT in our protocol
 ---
 
-> **Framing.** Grounded in WHO TCIM Strategy 2025–2034, India AYUSH/CCRAS/CCRH/PCIMH monographs, EMA HMPC herbal monographs, TGA/NHMRC, NMPA + Chinese Pharmacopoeia, Health Canada NHP, Men-Tsee-Khang, Hamdard Dawakhana, IMPCOPS, ESC/EASD evidence guidelines (cited as evidence object, not authority), Japanese Kampo Pharmacopoeia, Korean KFDA, classical Ayurvedic *Rasayana Chikitsa*, TCM longevity formulations, Tibetan Sowa Rigpa rejuvenation tradition. **No FDA, AHA, AGS (American Geriatrics Society), AMA, CDC, NIH-policy or US disease-association source is cited as authority.**
+> **For you, in plain words.** This is a safe, over-the-counter, at-home plan for the work of staying biologically younger than your chronological years — for as many of those years as possible, in a body you actually want to inhabit. The highest-evidence layers are unsexy and free — walking + strength training + Mediterranean-style eating + 7–9 hours of sleep + social connection + tobacco-zero + alcohol-low. Time-restricted eating has mixed long-RCT evidence (Lowe 2020 null; Sutton 2018 + Wilkinson 2020 positive — be honest). Strength training is A-grade (LIFTMOR Watson 2018; Pillai 2017 sarcopenia prevention). Sleep is the single most consistent healthspan lever (Cappuccio 2010 meta). Social connection is mortality-equivalent to not smoking 15 cigarettes/day (Holt-Lunstad 2010 meta). After that comes the cofactor floor (D + omega-3 + magnesium + B12 + K2) and a small set of supplements with honest evidence — and a brutal honesty about the resveratrol / NR / NMN / rapamycin / metformin hype gap. *(CALERIE Ravussin 2015; PREDIMED Estruch 2018; Lowe 2020 TRE null; Holt-Lunstad 2010; Cappuccio 2010; Mannick 2014; Bannister 2014; Salehi Cochrane 2020 resveratrol null)*
 >
-> **Sovereignty.** This is a **strictly OTC, strictly home-based** protocol. **No prescription hormone replacement (testosterone, estrogen, progesterone), no metformin off-label longevity prescription, no rapamycin off-label longevity prescription, no senolytic prescription (dasatinib, etc.), no clinic-administered intervention** is recommended anywhere in this dossier. §10.1 documents conflicts for users **already on any of these** layering this protocol. Lithium orotate microdose is included as a contested longevity entry per founder's mandate.
+> **The frame.** Grounded in WHO TCIM Strategy 2025–2034, India AYUSH (CCRAS Rasayana Tantra, CCRH, CCRYN, CCRUM, CCRS, PCIMH, ICMR), EMA HMPC herbal monographs, Australia TGA + NHMRC, China NMPA + Chinese Pharmacopoeia 2020, Health Canada NHP, Tibetan Men-Tsee-Khang (Padma 28 the most-studied Tibetan formula globally), Hamdard Dawakhana, IMPCOPS Chennai, and classical Ayurvedic Rasayana Tantra, Chinese kidney-essence tradition, Unani, Siddha, Tibetan, and homeopathic texts. **No US regulator, no US disease association, no NIH-NIA policy body is cited as authority on whether something works on aging.** The narrow exception is regulatory-path context around emerging interventions (rapamycin off-label, GLP-1s, NAD+ precursors, senolytics) — surfaced inline as factual context, never as evidence anchor.
+>
+> **Sovereignty.** Every supplement, food, exercise and home device here is something you can buy and use yourself. **No prescription, no clinic, no hospital visit, no off-label longevity Rx is recommended in the home regime.** Clinic-route options (metformin off-label per TAME pending, rapamycin off-label per Mannick 2014, GLP-1s, SGLT-2is, NAD+ IV clinics, peptides BPC-157/TB-500/Epitalon, HRT, TRT, senolytic dasatinib+quercetin per Justice 2019, anti-amyloid, gene therapy, hyperbaric per Hachmo 2020) sit in a clearly labelled §10.7.3 referral addendum — never inside the home protocol. **The protocol is brutally honest about the longevity-Rx hype gap** — most off-label longevity drugs are extrapolated from animal models, observational data, or surrogate-biomarker shifts in humans, NOT from RCTs of human mortality. The TAME trial (metformin) is still pending; rapamycin lacks any human longevity RCT (Mannick 2014 showed immune-aging marker signal only); NR/NMN safety is established (Martens 2018, Yoshino 2021) but human longevity outcomes are not.
+>
+> **RED FLAG — stop the home protocol and seek medical care for:** (1) **rapid involuntary weight loss + frailty in elderly** (>5 % in 6 months) — medical workup for malignancy, hyperthyroidism, malabsorption, depression; (2) **HRV collapse + persistent fatigue + cognitive change** — rule out cardiovascular, mood, endocrine; (3) **aggressive epigenetic-clock acceleration** without explanation — consider underlying disease workup; (4) **fall + fracture in elderly** — formal fall-risk + BMD assessment; (5) **rapid cognitive decline** — formal MCI/dementia workup; (6) **supplement-pile complications** (drug-supplement interactions on 10+ supplements simultaneously — see §10.1); (7) **self-experimentation with off-label peptides / rapamycin / NAD+ IV / senolytics without medical oversight** — the protocol does NOT include any of these and considers self-administered off-label Rx high-risk; (8) **chest pain, FAST stroke signs, sudden SOB** — emergency services (per heart-cholesterol-bp dossier red-flag list); (9) **suicidal ideation** — emergency mental-health line. Save your emergency numbers (USA/Canada 911; UK 999/112; EU 112; India 108/102; Australia 000; Japan 119; China 120).
 
 ## 1. Executive Summary
 
-Healthy aging is conventionally siloed as "manage chronic disease as it arises — statin for cholesterol, antihypertensive for BP, metformin for diabetes, calcium for bones, antidepressant for mood, sleeping pill for insomnia, hearing aid, glasses, eventually nursing home." The integrative reframing: aging is the multi-system expression of **eight intertwined hallmarks of aging** — (i) genomic instability + telomere attrition + epigenetic drift (DNA methylation clock, GrimAge, PhenoAge); (ii) cellular senescence + SASP (senescence-associated secretory phenotype — IL-6, TNF-α, MMPs from senescent cells driving inflammaging); (iii) mitochondrial dysfunction + bioenergetic decline (NAD+ decline, mitophagy collapse, ATP loss, ROS rise); (iv) loss of proteostasis + autophagy decline (mTOR overactivation, AMPK underactivation, mis-folded protein accumulation, lipofuscin); (v) altered nutrient sensing (insulin/IGF-1, mTOR, AMPK, sirtuins, FoxO); (vi) stem cell exhaustion + tissue regeneration loss; (vii) chronic low-grade inflammation (inflammaging — hs-CRP, IL-6, TNF, GlycA); (viii) extracellular matrix glycation + AGE accumulation + collagen-elastin cross-linking. **Plus a ninth load-bearing layer often missed**: (ix) **social connection + purpose + meaning** — well-documented Mediterranean, Okinawan, Blue Zones data show social isolation as cardiovascular-risk-equivalent. **Synthesis:** A natural, OTC, home-based protocol that simultaneously activates Nrf2 + sirtuin + AMPK (sulforaphane, polyphenols, fasting windows, exercise), restores NAD+ (NMN/NR), induces autophagy + mitophagy (spermidine, urolithin A, fasting, Zone 2), pulses senolytics (fisetin, quercetin, polydatin pulses), maintains muscle + bone (creatine, protein, resistance training, vitamin K2-MK7, D3, Mg), dampens inflammaging (omega-3, polyphenols, curcumin, sulforaphane), addresses hormones gently (Ashwagandha, Shilajit, adaptogens, sleep), and prioritises sleep + social connection + cognitive engagement addresses the upstream hallmarks rather than the symptom-by-symptom downstream.
+### 1.1 What healthspan actually is
 
-## 2. Mechanistic Network (9 hallmarks of aging — synthesised into 4 actionable nodes)
+> **For you, in plain words.** "Longevity" is not really about maximum lifespan — it is about **healthspan**: the years of life lived in a body and mind that work. Most people overshoot lifespan by ~10 years beyond healthspan and live the last decade in measurable decline. The protocol aims to compress that decline into the last 1–2 years (the "rectangularised survival curve"). *(Olshansky 2018 healthspan-lifespan gap; Kaeberlein 2017)*
 
-**2.1 Senescence + SASP + Inflammaging.** Senescent cells (cells that have permanently exited cycle but resist apoptosis) accumulate with age in skin, vasculature, joint, fat, brain. They secrete SASP — IL-6, IL-1β, TNF-α, MMPs, growth factors — that drives chronic low-grade inflammation (inflammaging) and amplifies neighbouring tissue dysfunction. p16INK4a, p21, β-galactosidase are markers. Targeted by **senolytic pulses** (intermittent, not chronic): fisetin 1500 mg/day × 2 consecutive days/month (Mayo Clinic + EU protocols), quercetin pulses 1000 mg/day × 2 days/month, polydatin daily; SASP-dampeners: curcumin daily, omega-3, sulforaphane, polyphenols; intermittent fasting (autophagy-mediated senolysis); Zone 2 exercise. **Synthesis:** Pulsed senolytics + daily SASP-dampening + lifestyle reduce senescent cell burden.
+### 1.2 The six drivers — at a glance
 
-**2.2 NAD+ decline + Mitochondrial dysfunction + Mitophagy collapse.** NAD+ levels drop ~50% by age 50. NAD+ is required for sirtuins (SIRT1-7), PARPs (DNA repair), CD38 (which itself consumes NAD+), redox cycling. Mitochondrial dysfunction = ↓ ATP, ↑ ROS, ↓ membrane potential, ↓ mitophagy. Targeted by NMN (nicotinamide mononucleotide) or NR (nicotinamide riboside) 250–500 mg/day, **urolithin A (Mitopure) 500 mg/day — mitophagy induction validated in EU + Swiss + UK RCTs (Singh, Andreux *Nat Med* 2022)**, CoQ10 ubiquinol 100–200 mg, PQQ 10–20 mg (mitobiogenesis), creatine 5 g/day (cellular energetics + cognition), ALA, omega-3, exercise (Zone 2 + HIIT), cold immersion, sauna, fasting. **Synthesis:** Restore NAD+ + induce mitophagy + biogenesis.
+> **Quick start.** Tonight + this week: (1) Walk 30 min daily; (2) Strength train 2–3×/week (Pillai 2017; LIFTMOR Watson 2018); (3) Mediterranean diet pattern (PREDIMED 2018); (4) Sleep 7–9 hours (Cappuccio 2010); (5) Buy a validated upper-arm BP cuff + smart-scale + wearable; (6) Order baseline DTC labs (ApoB, Lp(a), HbA1c, fasting insulin, hs-CRP, vitamin D, B12, omega-3 index, TSH, free T3/T4, ferritin); (7) Stop tobacco, cap alcohol at ≤7 drinks/week; (8) Call your two oldest friends this week (Holt-Lunstad 2010 — isolation = 15 cigs/day mortality). Optional: TruDiagnostic TruAge epigenetic-clock baseline + grip-strength dynamometer (Leong PURE 2015). *(PREDIMED 2018; LIFTMOR 2018; Cappuccio 2010; Holt-Lunstad 2010; Leong 2015)*
 
-**2.3 Nutrient sensing (mTOR ↑ / AMPK ↓ / Sirtuins ↓ / IGF-1 ↑) + Proteostasis + Autophagy.** Chronic over-nutrition + sedentary + sugar drives mTOR ↑ (anabolic, ages), AMPK ↓ (catabolic, rejuvenates), Sirtuin ↓, IGF-1 ↑ (longevity-shortening at high levels per centenarian + Laron syndrome data + IGF-1 mortality U-curve), FoxO ↓ → autophagy collapse + mis-folded protein accumulation + lipofuscin. Targeted by **spermidine 1–6 mg/day (wheat germ extract or supplement — Austrian RCTs Eisenberg, Madeo)** for autophagy, intermittent fasting 14:10 to 16:8 (most users) or 18:6 (advanced) — caution underweight, HPA-depleted, pregnancy, history of eating disorder; berberine 500 mg TID (AMPK activator + AMPK-mTOR cross-talk + ↓ IGF-1), low-carb / moderate-protein dietary pattern, Zone 2 + strength + occasional HIIT, low-glycaemic load, polyphenols (resveratrol/polydatin, EGCG, sulforaphane), Bacopa for proteostasis. **Synthesis:** Balance mTOR/AMPK — eat-train-fast-sleep-rhythm restores autophagy.
+### 1.3 The deeper layer
 
-**2.4 Sarcopenia + Bone loss + Glycation + ECM degradation + Stem cell exhaustion.** From age 30, ~3–8% muscle loss per decade; bone loss accelerates post-menopause. AGE accumulation + collagen-elastin cross-linking → skin, vascular, joint stiffness. Stem cell pool shrinks. Targeted by **resistance training 3–4×/week (highest-evidence single intervention against sarcopenia + cognitive decline + all-cause mortality)**, protein 1.2–1.6 g/kg lean body mass (higher than RDA), creatine 5 g/day, vitamin D3 + K2-MK7 (Ca routing to bone), magnesium glycinate 400 mg, boron 3 mg, collagen peptides 10–20 g + vitamin C, glycine 5 g, omega-3, sulforaphane, polyphenols, sauna (HSP + endurance), cold immersion (norepinephrine + brown fat + mitochondrial biogenesis). **Synthesis:** Strength + protein + bone cofactors + heat/cold = body composition preservation.
+The mainstream story prescribes statins for cholesterol + ACE inhibitors for BP + GLP-1s for weight + (off-label) metformin for "aging" + (clinic experimental) rapamycin + (research-only) senolytics. The natural-medicine reality is that **the highest-evidence longevity levers are unglamorous and free** — exercise (specifically strength training preserves muscle mass = biological-age proxy, Pillai 2017), Mediterranean-DASH eating (PREDIMED 2018), sleep (Cappuccio 2010 — sleep duration U-curve), social connection (Holt-Lunstad 2010), purpose and meaning (Strawbridge 1997; Buettner Blue Zones), no tobacco, low alcohol. A more honest reframe: aging has **six mechanistic drivers** (López-Otín Hallmarks of Aging) — (1) genomic + epigenetic alterations, (2) proteostasis loss + mitochondrial dysfunction, (3) cellular senescence + SASP, (4) stem-cell exhaustion + altered intercellular communication, (5) deregulated nutrient sensing (insulin / IGF-1 / mTOR / AMPK / sirtuins), and (6) chronic low-grade inflammation ("inflammaging"). A home protocol that pairs exercise + Mediterranean diet + sleep + social + cofactor floor + a small evidence-honest supplement layer addresses all six in parallel. **Synthesis.** Boring beats sexy — exercise + diet + sleep + social are the foundation; supplements and off-label Rx are a much smaller upside layer.
 
-## 2.5 Clinical sub-types & differential prognosis
+## 2. Mechanistic Network (6-node — Hallmarks of Aging)
 
-| Sub-type | Clinical features | Dominant §2 node | Expected protocol response |
-|---|---|---|---|
-| **Generalized mild aging acceleration** | Subjective slowing, mild fatigue, recovery slower, biological age (DNAm) > chronological by 2–5 y | All four nodes | **Best** — biological age can drop 1–3 y in 6–12 mo (TruDiagnostic + GrimAge tracking) with full protocol |
-| **Sarcopenia tendency** | Grip strength <25 kg females / <40 kg males; gait speed <1 m/s; arm/leg muscle loss | §2.4 dominant | **Best** — resistance + protein + creatine reverses 50–80% over 6 mo |
-| **Osteopenia / osteoporosis tendency** | DEXA T-score −1 to −2.5 (osteopenia) or <−2.5 (osteoporosis); post-menopause major risk | §2.4 + §2.2 | **Moderate-Slow** — protocol slows + may reverse mild; established osteoporosis at very high fracture risk = user's call on conventional add-on |
-| **Cognitive decline early/mild (subjective)** | Subjective memory + processing speed slowing | §2.2 + §2.3 + sleep + social | **Moderate-Best** — comprehensive protocol with omega-3 + sleep + exercise + cognitive engagement + Bacopa + lion's mane + sulforaphane = significant improvement at Mo 6–12 |
-| **Insulin resistance as aging driver** | HOMA-IR >2.0, HbA1c 5.6–6.4, visceral fat, NAFLD | §2.3 nutrient-sensing dominant | **Best** — IF + berberine + diet + exercise = HbA1c normalisation in Mo 3–6 |
-| **Inflammaging dominant** | hs-CRP 2–10, IL-6 elevated, GlycA elevated, fatigue, autoimmune tendencies | §2.1 SASP + Senescence | **Best** — senolytic pulses + omega-3 + curcumin + sulforaphane + sleep = hs-CRP halves Mo 3–6 |
-| **Mitochondrial fatigue** | Chronic fatigue without anaemia/thyroid, exercise intolerance, post-Covid | §2.2 | **Moderate** — NAD+ precursors + urolithin A + CoQ10 + PQQ + creatine + sleep + Zone 2 = 6–12 mo improvement |
-| **Post-menopause aging acceleration** | Vasomotor symptoms, bone loss, sleep disruption, mood, cognition shift | §2.4 + hormonal | **Moderate** — protocol + Vitex (cautious) + Shatavari + Black Cohosh (EMA HMPC) + sleep + protein + strength; user's call on bioidentical HRT |
-| **Andropause aging acceleration** | Low T, low DHEA, low libido, muscle/strength loss, mood, sleep | §2.4 + hormonal | **Moderate** — Ashwagandha + Shilajit + sleep + strength training + zinc + vitamin D = mild but real T uplift; user's call on TRT |
-| **Senescence load high (high SASP-prone)** | Multiple chronic inflammatory tendencies, AGE accumulation, vascular stiffness | §2.1 dominant | **Best** — fisetin + quercetin pulses + curcumin + omega-3 + sulforaphane + autophagy fasting + sleep |
-| **Telomere attrition phenotype** | Family history of premature aging; whitened hair early; mild bone marrow signal | §2.1 + §2.3 | **Slow-Moderate** — protocol slows telomere attrition; data on direct telomere lengthening is contested (Astragaloside IV / TA-65 controversial) |
-| **Glycation/AGE phenotype** | Skin aging acceleration, vascular stiffness, refined-carb diet | §2.4 + §2.3 | **Best** — low-AGE cooking + low-fructose + polyphenols + carnosine 1 g + benfotiamine 300 mg |
+### 2.1 Six causes — the picture
 
-## 3. OTC Phytochemicals — Pharmacological Validation
+> **For you, in plain words.** Six drivers — genomic + epigenetic damage, mitochondrial dysfunction + proteostasis loss, cellular senescence, stem-cell exhaustion, nutrient-sensing dysregulation, inflammaging. Naming them lets every food, exercise and supplement aim at the right one. *(López-Otín Hallmarks of Aging 2013; updated 2023)*
 
-| Compound | Mechanism | Dose | Timing | Take WITH | Avoid WITH (≥2h) | Grade | Brands | $/mo | Evidence |
-|---|---|---|---|---|---|---|---|---|---|
-| **Spermidine** (wheat germ extract or pure) | Autophagy inducer (load-bearing in non-US RCTs); cardioprotective, cognitive | 1–6 mg/day | AM with food | — | — | B | Spermidine LIFE (Austria), Longevity Box, Pure Encaps Spermidine; Austrian RCTs (Eisenberg, Madeo, Kroemer); EMA wheat germ reference | $25–50 | Austrian RCT *Nutrients* 2017 (Eisenberg); Italian + Austrian cohort + cognitive RCTs |
-| **Urolithin A (Mitopure)** | Mitophagy induction; mitochondrial biogenesis; muscle endurance | 500 mg/day | AM with fat | fat meal | — | A | Mitopure (Amazentis, Switzerland); EU RCTs (Singh, Andreux *Nat Med* 2022; *Cell Rep Med* 2022) | $80–120 | Swiss + EU RCTs (Andreux *Nat Med* 2019; Singh *Cell Rep Med* 2022); EFSA novel food approval 2021 |
-| **NMN (nicotinamide mononucleotide)** | NAD+ precursor (NAMPT bypass — debated bioavailability vs NR) | 250–500 mg/day | AM | — | — | B | Renue by Science NMN, Donotage NMN, MaxLife NMN; Japanese + Chinese + Australian RCTs | $50–100 | Japanese RCT Yoshino *Cell Metab* 2021; Australian + UK biological age studies |
-| **NR (nicotinamide riboside)** | NAD+ precursor (more established absorption) | 300–600 mg/day | AM | — | — | B | Tru Niagen (ChromaDex / NMN-licensed for EU + AU NHP), Niagen; EU + AU + CA RCTs | $40–80 | Multiple RCTs (Martens, Trammell, Conze); Health Canada NHP approval |
-| **Fisetin (senolytic — pulsed)** | Selective senolytic in senescent cells; antioxidant | 1500 mg/day × 2 consecutive days, monthly pulse | with fat | fat meal | anticoagulants (caution) | B | Doctor's Best Fisetin, Pure Encaps Fisetin, Liposomal Fisetin (better absorption); Mayo + EU pre-clinical + clinical | $25–45 monthly | Mayo Clinic translational + EU pre-clinical senolytic data; *EBioMedicine* 2018 (Yousefzadeh) |
-| **Quercetin (daily SASP-dampening + pulsed senolytic)** | Senolytic in combination (Dasatinib + Quercetin protocol — without dasatinib for OTC scope); mast-cell stabiliser; flavonoid | 500–1000 mg daily; 1000 mg × 2 days monthly senolytic pulse | AM with fat | bromelain, fat | iron, copper, tea | B | Thorne Phytosome, NOW Quercetin | $20–35 | Mayo + EU senolytic literature; mast-cell evidence; non-US RCTs |
-| **Polydatin / Resveratrol** | NRF2, sirtuin, GPX4, mitochondrial | 200–500 mg | AM with fat | fat + piperine | iron, tea | B | Double Wood Polydatin, NOW Resveratrol; Italian + Chinese RCTs | $15–30 | Italian + Spanish + Chinese cardiovascular + longevity RCTs |
-| **Sulforaphane (broccoli sprout)** | Nrf2 super-activator, autophagy, anti-inflammatory | 10–30 mg glucoraphanin equivalent | AM with mustard seed | mustard seed myrosinase | hot drink (denatures) | B | Jarrow BroccoMax, AvmaCol, Mara Sprouts | $20–35 | Japanese Nrf2 cardiovascular RCTs; Korean + EU cancer-prevention literature |
-| **Curcumin phytosome (Meriva/BCM-95)** | NF-κB, IL-6 ↓, mitochondrial, autophagy | 500–1000 mg | with fat + piperine | piperine + ghee | dairy (separate 2 h), anticoagulants | B | Dolvent (Indena Meriva), Jarrow Phytosome, Thorne Meriva; Indian + Iranian RCTs | $25–35 | EMA HMPC turmeric 2018; Indian + Iranian multi-condition RCTs |
-| **Omega-3 EPA + DHA** | Resolution biology, neuroprotection, anti-inflammaging | 2–4 g (≥1 g EPA + 1 g DHA for cognitive) | with meal | — | anticoagulant >3 g caution | A | Carlson Elite, Nordic Naturals (NO), Solgar (EU) | $25–45 | Multiple meta-analyses; Cochrane; EU + AU + JP regulatory; cognition + cardiovascular |
-| **Vitamin D3 + K2-MK7** | Treg, bone routing, immune | 4000 IU + 100–200 µg | AM with fat | Mg | thyroid med 4 h | A | Thorne, Pure Encaps | $10–15 | EMA D3; Dutch + EU K2-MK7 |
-| **Magnesium glycinate** | sleep, mitochondrial, NMDA modulator | 400 mg/d | PM | — | split Ca | A | Doctor's Best, Pure Encaps | $10–15 | EMA; multiple |
-| **Creatine monohydrate** | Cellular energetics, muscle, cognition (esp. sleep-deprived) | 5 g/d (3–5 g) | any time consistent | carb / protein meal | — | A | Optimum Nutrition Creapure (German), MyProtein, NOW; multiple EU + AU + JP RCTs | $10–20 | Decades of RCTs; muscle + brain evidence; ESSA + JISSN supported |
-| **Glycine** | GSH, sleep, collagen, mTOR-balancing (low-protein methionine compensation) | 5–10 g HS | HS | warm water | — | B | NOW Glycine, Bulk Supplements | $8–15 | Japanese sleep RCTs |
-| **Taurine** | Mitochondrial, anti-aging signal (Singh *Science* 2023 — supplementation reverses aging in mice + correlative human cohort), sympathetic dampening | 2–4 g/d | AM + PM | — | bipolar (case reports) | A | NOW Taurine, Pure Encaps | $10–20 | Singh *Science* 2023; Japanese + Korean RCTs |
-| **L-citrulline** | NO, endothelial, mitochondrial | 6 g/d | pre-workout or split | — | — | A | NOW, Pure Encaps | $15–25 | EU + Japanese + Italian RCTs |
-| **Berberine** | AMPK, ↓ IGF-1, ↓ LDL, ↓ glucose, mTOR-balancing | 500 mg TID pre-meal | pre-meal | — | cyclosporine, CYP3A4, pregnancy | A | Thorne Berberine, Integrative Therapeutics | $20–35 | Chinese RCTs; longevity hallmarks literature |
-| **CoQ10 ubiquinol** | Mitochondrial, statin-mitigation | 100–200 mg | AM with fat | fat | warfarin INR | A | Kaneka Q10 Jarrow, Pure Encaps | $25–40 | Japanese + EU RCTs |
-| **PQQ (pyrroloquinoline quinone)** | Mitochondrial biogenesis | 10–20 mg | AM with fat | — | — | C | Jarrow PQQ, Life Extension | $15–25 | Japanese RCTs; emerging |
-| **Collagen peptides (hydrolysed type I + II + III)** | Skin, joint, bone matrix, tendon | 10–20 g/d | with vit C | vit C synergy | — | B | Vital Proteins, Great Lakes; German + Brazilian RCTs | $20–40 | German + Brazilian RCTs; EFSA |
-| **Carnosine + Benfotiamine** | Anti-glycation; AGE reduction | Carnosine 1 g, Benfotiamine 300 mg | with food | — | — | B | NOW Carnosine, Doctor's Best Benfotiamine; Japanese + German RCTs | $15–25 | German + Russian + Japanese AGE literature |
-| **Lithium orotate microdose — CONTESTED** | Possible mood / longevity signal at very low doses (1–5 mg elemental Li); **trace-mineral status; NOT pharmacological lithium (300+ mg lithium carbonate which requires monitoring)** | 1–5 mg elemental Li/d — **DTC labs: lithium level + TSH + creatinine baseline + Mo 3 if continuing** | AM with food | — | thyroid (modest TSH ↑ at low dose, monitor), NSAIDs (renal Li handling), high salt (↑ excretion), low salt (↑ Li levels) | C-H (contested) | Pure Encaps Lithium Orotate 1 mg, Advanced Research Lithium Orotate 5 mg; **CAUTION: limited consensus on chronic safety even at microdose; some non-US epidemiology suggests lithium in water supply correlates with reduced suicide + mild cognitive benefit (Texas water studies, Japanese water studies); user's individual call** | $10–20 | Texas + Japanese water-lithium epidemiology; *Lancet* + *Br J Psychiatry* drinking-water studies; contested in conventional medicine |
-| ***Bacopa monnieri*** (BacoMind / KSM-66 Bacopa) | Cognitive, BDNF, proteostasis, mild HPA | 300 mg BID | AM + PM | with food | thyroid (mild — separate) | A | Himalaya BacoMind, KSM-66 Bacopa, Organic India; CCRAS Brahmi monograph | $10–15 | Indian + Australian RCTs (*J Altern Complement Med* Calabrese 2008); EMA reference |
-| ***Withania somnifera*** (Ashwagandha KSM-66 / Sensoril) | Cortisol, HPA, andropause T uplift, sleep, muscle | 300–600 mg | AM or PM | with food | thyroid (Hashimoto: monitor — adaptogen can normalise rather than activate) | A | Ixoreal KSM-66, Himalaya, Organic India; CCRAS rasayana | $15–25 | Indian RCTs (Lopresti, Salve, Chandrasekhar); CCRAS |
-| **Shilajit (purified, Himalayan)** | Mitochondrial, andropause T modest uplift, mineral cofactor, fulvic acid | 250–500 mg | AM with warm water/milk | — | high uric acid caution | B | Himalaya Shilajit, Pürblack Live Resin; Indian + Russian + Mongolian literature | $20–35 | Indian RCT (Pandit *Andrologia* 2016); CCRAS |
-| **Lion's Mane (*Hericium erinaceus*)** | NGF, BDNF, cognitive | 1000 mg BID | AM + PM | with food | anticoagulant high dose | B | Real Mushrooms, Host Defense, Nootropics Depot; Japanese + Chinese RCTs | $25–40 | Japanese RCT Mori *Phytother Res* 2009; Chinese cognitive |
-| **Rhodiola rosea (SHR-5 standardised)** | Adaptogen, mental fatigue, mitochondrial | 200–400 mg AM | AM | — | bipolar caution | B | Swedish Herbal Institute SHR-5, Solgar (EU); Scandinavian + Russian RCTs | $15–25 | Swedish + Russian RCTs (Darbinyan); EMA HMPC monograph |
+### 2.2 Genomic + epigenetic damage
+
+> **For you, in plain words.** DNA accumulates damage with age; methylation patterns drift (epigenetic clocks track this). Cigarettes, UV, alcohol, processed-meat AGEs and chronic inflammation accelerate it. Sleep, antioxidants, exercise and methylation cofactors (folate + B12 + B6 + choline + methionine + betaine) slow it. *(Horvath 2013; PhenoAge Levine 2018; GrimAge Lu 2019)*
+
+#### Open the science
+
+Horvath 2013 published the original epigenetic-age clock (353 CpG sites). PhenoAge (Levine 2018), GrimAge (Lu 2019), DunedinPACE (Belsky 2022) refine prediction. DTC: TruDiagnostic TruAge $300–500, GlycanAge. **Honest caveat — Bell 2019 questioned whether epigenetic clocks predict outcomes beyond conventional risk factors; useful as research/tracking tool, not diagnostic**. Methylation needs methyl donors — folate (5-MTHF if MTHFR variant), B12 (methylcobalamin), B6, choline, betaine, methionine, Mg. Sulforaphane (broccoli sprouts — Yagishita 2019 Nrf2). Exercise lowers epigenetic age (Fitzgerald 2021 small RCT n=43; preliminary). **Synthesis.** Methyl-donor floor + sulforaphane + exercise + sleep + no UV/tobacco/alcohol.
+
+### 2.3 Mitochondrial dysfunction + proteostasis loss
+
+> **For you, in plain words.** Mitochondria (cell power plants) lose efficiency with age. Misfolded proteins accumulate when autophagy slows. Zone-2 cardio builds mitochondria; strength training preserves them; fasting/exercise triggers autophagy. CoQ10, urolithin A and NR/NMN are candidate adjuncts (NR safety established, longevity outcomes not). *(Ingebrigtsen 2024; Martens 2018 NR; Yoshino 2021 NMN; D'Amico 2022)*
+
+#### Open the science
+
+Mitochondrial biogenesis driven by PGC-1α — Zone-2 cardio (60–70 % HRmax, 45–90 min, 3–5×/week) highest-leverage trigger (Lanza 2008; Ingebrigtsen 2024). Strength training (Pillai 2017) prevents mitochondrial decline alongside sarcopenia. Autophagy triggers — fasting (16:8 TRE or 24-h monthly), exercise, sleep, polyphenols. Urolithin A (Mitopure from Amazentis) — D'Amico 2022 + Singh 2022 small RCTs muscle strength + mitochondrial biomarker; **Grade B emerging**. NR/NMN — Martens 2018 NR safety + small BP/aortic-stiffness; Yoshino 2021 NMN safety + small metabolic; **honest caveat — human longevity outcomes are NOT established**; expensive. CoQ10/Ubiquinol 100–200 mg; PQQ small signal Grade D-C. **Synthesis.** Zone-2 + strength + autophagy + cofactor floor; NR/NMN/Urolithin A are honest emerging adjuncts.
+
+### 2.4 Cellular senescence + SASP
+
+> **For you, in plain words.** Some old cells refuse to die and leak inflammatory chemicals (SASP). Senolytic supplements (quercetin + fisetin) are emerging; senolytic drugs (dasatinib + quercetin per Justice 2019) are research-only — NOT yet a longevity therapy. *(Justice 2019; Kirkland)*
+
+#### Open the science
+
+Senescent cells accumulate; SASP (IL-6, IL-8, MMPs) drives inflammation + tissue dysfunction. Kirkland Mayo Clinic 2015 senolytic pipeline. Dasatinib (leukaemia drug) + quercetin — Justice 2019 small open-label IPF trial (n=14); Hickson 2019 small DKD trial; **honest caveat — very early signals, not longevity outcomes; dasatinib is serious chemotherapy not wellness supplement**. Consumer quercetin (500–1,000 mg) + fisetin (100–500 mg) — animal striking, human preliminary; Grade C-D as longevity. Spermidine (Madeo 2018 small RCT cognitive aging n=85; European cohort longevity) Grade B emerging. **Synthesis.** Quercetin + fisetin + spermidine reasonable adjuncts; senolytic dasatinib NOT in our protocol.
+
+### 2.5 Stem-cell exhaustion + intercellular communication
+
+> **For you, in plain words.** Stem cells lose ability to renew tissue. Exercise preserves stem-cell niches; sleep consolidates them; growth-hormone + IGF-1 axis is optimised within physiological range by sleep + protein + strength training — NOT injection. *(Sinha 2014; LIFTMOR 2018)*
+
+#### Open the science
+
+Stem-cell exhaustion is clinically visible as sarcopenia (muscle), osteoporosis (bone marrow), gut-epithelial slowing. Strength training preserves muscle stem cell pool (Pillai 2017). LIFTMOR Watson 2018 — heavy-resistance training improves bone density in postmenopausal women. GH + IGF-1 axis — within physiological range, sleep (deep slow-wave) + protein (1.2–1.6 g/kg older adults) + strength training optimise it; **exogenous GH NOT longevity-beneficial** (low-IGF1 centenarian cohorts, Laron cancer-protection — Bartke 2008). Plasma exchange / young-plasma — Conboy parabiosis 2005 + Wagers GDF11 controversy; consumer companies unproven, NOT in protocol. **Synthesis.** Strength + sleep + protein are highest-leverage; exogenous GH and young-plasma NOT in our protocol.
+
+### 2.6 Nutrient sensing — insulin / IGF-1 / mTOR / AMPK / sirtuins
+
+> **For you, in plain words.** Insulin, IGF-1, mTOR, AMPK and sirtuins sense nutrient availability. Caloric restriction + exercise + fasting periods + low-sugar + adequate-but-not-excess protein optimise balance. Metformin (off-label) and rapamycin (off-label) target this axis pharmacologically — **honest caveat, neither has a human longevity RCT yet**. *(CALERIE 2015; Mannick 2014; Bannister 2014; TAME pending)*
+
+#### Open the science
+
+CALERIE Ravussin 2015 — 2-year human CR trial n=218 — **A-grade healthspan biomarker improvement**. PREDIMED Estruch 2018 — **A-grade CV mortality** (n=7,447). TRE 14:10/16:8 — Sutton 2018 + Wilkinson 2020 metabolic-marker improvements; **honest caveat — Lowe 2020 12-week RCT null vs control + lean-mass loss in 16:8; not a longevity outcome**. Rapamycin (off-label) — Mannick 2014 RTB101 elderly improved vaccine response (immune-aging marker only); Mannick 2018 follow-up; **no human longevity RCT exists; mouse + dog data is the strongest signal, NOT human**. Metformin off-label — Bannister 2014 observational signal (T2D metformin users outlived non-diabetic UK controls); UK Biobank mixed; **TAME trial pending — no result yet**. Sirtuins — NR/NMN (§2.3). Spermidine — autophagy via mTOR-independent (Madeo 2018). **Synthesis.** CR + Mediterranean + TRE (honest caveats) + walking + strength = home protocol; metformin / rapamycin are clinic-route §10.7.3 honest.
+
+### 2.7 Inflammaging
+
+> **For you, in plain words.** Chronic low-grade inflammation accumulates with age — driven by visceral fat, gut dysbiosis, periodontal disease, OSA, smoking, stress, ultra-processed food. Lower it with Mediterranean + omega-3 + polyphenols + exercise + sleep + stress-work + oral hygiene. *(Franceschi 2014; Calder 2017)*
+
+#### Open the science
+
+"Inflammaging" — chronic low-grade systemic inflammation increasing with age (Franceschi 2007, 2014). Drivers: visceral adiposity, gut dysbiosis (LPS leak), periodontal disease (Tonetti 2013), OSA, smoking, alcohol, ultra-processed food, chronic stress. Markers: hs-CRP, IL-6, TNF-α. Lower with Mediterranean (PREDIMED 2018; Casas 2014), omega-3 (Calder 2017 resolvin), polyphenols (quercetin, EGCG, anthocyanins, sulforaphane), exercise (Petersen & Pedersen 2005), sleep (Prather 2015), MBSR (Rosenkranz 2013), oral hygiene, smoking/alcohol reduction. **Synthesis.** Inflammaging is the unified field for most age-related disease; the home protocol's biggest lever.
+
+### 2.8 Sub-types & realistic prognosis
+
+> **For you, in plain words.** Ten sub-types — otherwise-healthy healthspan optimisation responds best; post-CV-event aging needs cardio-protocol overlay; sarcopenia-frailty prevention needs strength-training cornerstone; cognitive aging prevention overlaps with memory-aging dossier. *(López-Otín 2013, 2023)*
+
+| Sub-type | TL;DR (plain English) | Dominant cause | Realistic response | Citation |
+|---|---|---|---|---|
+| Healthspan optimisation (otherwise healthy) | Apply full home stack consistently. *(López-Otín 2013)* | All six | Excellent — biomarker shift in 12 weeks; subjective 6–12 months | *(López-Otín 2013)* |
+| Biological-age acceleration | TruDiagnostic/GlycanAge shows acceleration — methylation + exercise + sleep + diet + cofactor work. *(Fitzgerald 2021)* | §2.2 + §2.7 | Moderate; clock-reversal evidence preliminary | *(Fitzgerald 2021)* |
+| Cardio-metabolic aging coupling | Pre-diabetes + dyslipidaemia + HTN cluster — see heart-cholesterol-bp + blood-sugar-support dossiers + this overlay. *(PREDIMED 2018)* | §2.6 + §2.7 | Good with multi-dossier integration | *(PREDIMED 2018)* |
+| Sarcopenia-frailty prevention | >50 with declining grip — strength training cornerstone; protein 1.2–1.6 g/kg; D + B12. *(Pillai 2017; LIFTMOR 2018)* | §2.5 | Excellent with strength + protein | *(Pillai 2017)* |
+| Cognitive aging prevention | Family history dementia / subjective decline — see memory-aging dossier; MIND diet (Morris 2015). *(Morris 2015)* | §2.2 + §2.7 | Moderate; multi-domain | *(Morris 2015)* |
+| Post-menopausal female aging | Bone + cardio + cognitive cluster; HRT timing-window honest; LIFTMOR strength; soy isoflavones modest. *(KEEPS; LIFTMOR 2018)* | §2.5 + §2.6 | Good with strength + sleep + menopause dossier | *(KEEPS)* |
+| Andropausal male aging | Low T cluster + sarcopenia + libido + mood — see mens-testosterone-vitality dossier; TRT clinic-route per §10.7.3 if confirmed hypogonadal. *(TRAVERSE 2023)* | §2.5 + §2.6 | Good with home + clinic-route if confirmed | *(TRAVERSE 2023)* |
+| Post-cancer survivorship aging | Treatment-accelerated aging — strength + sleep + Mediterranean + omega-3 + oncologist coord. *(Hortobágyi 2017)* | §2.2 + §2.4 + §2.7 | Moderate; full multi-domain | *(Hortobágyi 2017)* |
+| Post-cardiovascular-event aging | Post-MI/stroke/HF — see heart-cholesterol-bp dossier; clinic-route Rx life-saving + adds to home. *(secondary-prevention literature)* | §2.6 + §2.7 + CV | Good with clinic + home integration | *(secondary-prevention)* |
+| Premature aging (progeria) | Rare; specialist care + research-only therapies; this protocol adjunctive only. *(progeria literature)* | Genetic | Limited — specialist primary | *(progeria literature)* |
+
+## 3. OTC Phytochemicals & Nutrients
+
+### 3.1 How to read this table
+
+> **For you, in plain words.** Eight evidence-graded OTC layers — cofactor floor (D + K2 + omega-3 + magnesium + B12 + creatine + zinc) and the honest emerging adjuncts (Urolithin A, spermidine). The "popular" longevity supplements (resveratrol, NMN, pterostilbene) sit on the bench with honest caveats. *(VITAL 2019; Schurgers 2007; Pillai 2017; Yoshino 2021; Madeo 2018; Salehi 2020)*
+
+### 3.2 The eight-layer stack
+
+| Compound | TL;DR (plain English) | Mechanism | Dose | Timing | Take WITH | Avoid WITH (≥2h gap) | Grade | Brand options | Price/mo | Citation |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Vitamin D3 + K2-MK7 | D for calcium + immune; K2 routes Ca into bone not artery. *(Schurgers 2007; VITAL 2019)* | D3 → 1,25(OH)D; K2 → carboxylates osteocalcin + MGP | D3 2,000–5,000 IU + K2-MK7 100–200 µg | AM with fat | Fat | Warfarin (↓ INR) | A (def); B (general) | NOW D3+K2, Thorne, Nordic Naturals | $15–25 | *(Schurgers 2007)* |
+| Omega-3 EPA/DHA (OmegaQuant-tested) | Anti-inflammatory + resolvins; target omega-3 index ≥8 %. *(Calder 2017)* | RvE1, RvD1 + membrane fluidity | 1–3 g EPA+DHA | AM with fat | Fat | Anticoagulants | B+ | Nordic Naturals, Carlson, ARCTIC MD | $25–40 | *(Calder 2017)* |
+| Magnesium glycinate | Cofactor for >300 enzymes including D activation; sleep + muscle. *(Schwalfenberg 2017)* | NMDA + D-activation cofactor | 400 mg/day | PM with dinner | Food | Ca same dose (split AM/PM) | B | Doctor's Best, Pure Encapsulations | $15–20 | *(Schwalfenberg 2017)* |
+| Vitamin B12 (methylcobalamin) | Older adults often low; methylation + nerve + cognition. *(Allen 2008)* | Methylation + methylmalonate handling | 500–1,000 µg/day (methyl form) | AM | — | — | A (deficiency) | Jarrow, Thorne, Pure Encapsulations | $10–15 | *(Allen 2008)* |
+| Creatine monohydrate | Strength + muscle preservation; cognitive signal in elderly. *(Forbes 2022 meta)* | Phosphocreatine buffer for ATP | 3–5 g/day | Any time | Carbs/protein | — | A (strength); B (cognition) | Creapure-sourced (NutraBio, Optimum) | $10–15 | *(Forbes 2022)* |
+| Zinc + Copper (8–15:1) | Immune + tissue repair. *(Lassi 2010)* | DMT1 + immune + Cu/Zn-SOD | Zn 15 mg + Cu 1–2 mg | AM | — | Iron same time | B | NOW Zinc Glycinate + Cu | $10–15 | *(Lassi 2010)* |
+| Spermidine (wheatgerm extract) | Autophagy + Madeo 2018 small German RCT + European cohort longevity signal. *(Madeo 2018)* | mTOR-independent autophagy | 1–6 mg/day | AM | — | — | B emerging | Spermidine LIFE, Primeadine, Longevity Labs | $30–50 | *(Madeo 2018)* |
+| Urolithin A (Mitopure) | D'Amico 2022 + Singh 2022 small RCTs — muscle + mitophagy signal. *(D'Amico 2022)* | Mitophagy trigger | 250–1,000 mg/day | AM with fat | Fat | — | B emerging | Mitopure (Amazentis), Timeline | $50–80 | *(D'Amico 2022)* |
+
+### 3.3 What we keep on the bench (honest)
+
+> **For you, in plain words.** Several heavily-marketed longevity supplements have weaker evidence than marketed. Resveratrol — Cochrane Salehi 2020 found null for human disease prevention despite original 2003 hype; NMN/NR safety established but human longevity outcomes pending. Pterostilbene similar. Megadose vitamin D for CV — VITAL 2019 null. Megadose vitamin E — HOPE-TOO null + harm. Antioxidant cocktails — Bjelakovic 2014 Cochrane null/harm. *(Salehi 2020; VITAL 2019; HOPE-TOO 2005; Bjelakovic 2014; Martens 2018)*
 
 ## 4. Traditional Medicine Integration
 
-### 4.1 Ayurveda — *Rasayana Chikitsa* (rejuvenation therapy)
+### 4.1 Ayurveda — Rasayana Tantra
 
-Dosha: balanced *Tridosha*; emphasis on *Ojas* (vital essence) building. Classical: *Charaka Samhita* Chikitsa Sthana ch. 1 (*Rasayana Chikitsa* — entire chapter dedicated to longevity), *Sushruta Samhita* Chikitsa ch. 27–28, *Bhavaprakasha*, *Ashtanga Hridaya*. Lineages: Kerala (Kottakkal, Vaidyaratnam), Banaras (Baidyanath), Patanjali.
+> **For you, in plain words.** Ayurveda has the single most developed traditional longevity framework — Rasayana Tantra (one of the 8 limbs per Charaka Samhita Chikitsasthana Ch. 1). Chyawanprash (Sharma 2019), Ashwagandha (Salve 2019 + 50+ trials), Amalaki/Amla (Akhtar 2011), Triphala (Peterson 2017), Brahma Rasayana, Guduchi, Pippali. *(Charaka Chikitsasthana Ch. 1; Sharma 2019; Salve 2019; CCRAS)*
 
-| Rasayana | Dose | Grade | Source |
-|---|---|---|---|
-| **Chyawanprash** (sugar-free where available; classical Amalaki-based) | 10 g AM | B | Patanjali, Dabur, Organic India, Baidyanath; CCRAS rasayana; *Charaka* |
-| **Ashwagandha KSM-66** | 300–600 mg | A | Ixoreal, Himalaya; HPA + andropause + sleep |
-| **Brahmi (*Bacopa monnieri*)** | 300 mg BID | A | Himalaya BacoMind |
-| **Amalaki Rasayana** (*Emblica officinalis*) | 3–5 g BID | A | Organic India, Patanjali; CCRAS Amalaki Rasayana monograph |
-| **Triphala** | 3–6 g HS | A | Organic India, Patanjali |
-| **Shilajit** (purified) | 250–500 mg | B | Himalaya Shilajit, Pürblack |
-| **Gokshura** (*Tribulus terrestris*) — andropause T support | 500 mg BID | C | Himalaya Gokshura; CCRAS |
-| **Shatavari** (*Asparagus racemosus*) — peri/post-menopause | 500 mg BID | B | Himalaya Shatavari; CCRAS |
-| **Guggulu** (*Commiphora mukul*) | 500 mg BID | B | Himalaya, Baidyanath |
-| **Mucuna pruriens** (kapikacchu — L-DOPA, cognitive + mood) | 500 mg | C | Himalaya, Banyan Botanicals; CCRAS |
-| **Brahma Rasayana** (classical multi-herb) | 5–10 g | T | Kottakkal, Vaidyaratnam; *Sahasrayoga* |
+#### Open the science
 
-### 4.2 TCM — Longevity formulations
+- **Chyawanprash** — Amalaki base + 30–40 herbs (Pippali, Guduchi, Pushkaramula, Bilva, Agnimantha). Sharma 2019 review + cohort/RCT — immune, antioxidant, respiratory, cognitive signals. Grade B+T. 1 tbsp/day. Brands: Dabur, Patanjali, Baidyanath, Sri Sri Tattva.
+- **Ashwagandha (Withania somnifera) Rasayana/Vajikarana** — adaptogen + cortisol + cognitive + anabolic. 50+ RCTs (Salve 2019). Grade A+T. KSM-66 / Sensoril 300–600 mg.
+- **Amalaki + Triphala Rasayana (Amla / Phyllanthus emblica + Bibhitaki + Haritaki)** — Akhtar 2011 + Peterson 2017 lipid + gut + antioxidant. Grade B+T.
+- **Brahma Rasayana + Guduchi (Tinospora cordifolia) + Pippali Rasayana** — classical cognitive/immune/bioavailability formulas. Grade B+T (Guduchi modern signal); T others.
+- **Mukta Pishti** — pearl-based classical Ca/trace-mineral. **Caution heavy-metal modern**; OTC alternatives (Triphala + Ashwagandha + Chyawanprash) preferred. Grade T.
 
-Patterns: **Kidney essence (Jing) preservation** — the cornerstone of TCM longevity. *Wu Zi Yan Zong Wan* (5 seeds) preserves Jing. *Da Bu Yin Wan* tonifies Yin (counters age-related Yin xu). *Bu Zhong Yi Qi Tang* tonifies Spleen-Qi (digestive + immune).
+Sourcing: Dabur, Patanjali, Baidyanath, Sri Sri Tattva, Himalaya, Organic India (AYUSH-GMP).
 
-| Formula | Pattern | Dose | Grade | Source |
-|---|---|---|---|---|
-| **Wu Zi Yan Zong Wan** 五子衍宗丸 (5 seeds — Cuscuta + Lycium + Rubus + Schisandra + Plantago) | Kidney essence / Jing | 8 pills TID | B | Plum Flower; Chinese Pharmacopoeia; classical longevity |
-| **Da Bu Yin Wan** 大补阴丸 | Yin xu age-related | 8 pills TID | B | Plum Flower; *Dan Xi Xin Fa* |
-| **Bu Zhong Yi Qi Tang** 补中益气汤 | Spleen-Qi xu | 6–9 g BID | B | Plum Flower; Li Dongyuan *Pi Wei Lun* |
-| **Liu Wei Di Huang Wan** 六味地黄丸 | Kidney-Yin xu base | 8 pills TID | B | Plum Flower; NMPA |
-| **Jin Gui Shen Qi Wan** 金匮肾气丸 | Kidney-Yang xu | 8 pills TID | B | Plum Flower; *Jin Gui Yao Lue* (Zhang Zhongjing) |
-| **He Shou Wu (*Polygonum multiflorum*)** | Jing tonic, longevity classical — **CAUTION: prepared (zhi he shou wu) only; unprepared has hepatotoxicity reports** | 500 mg BID prepared form | C | Plum Flower (prepared); *Bencao Gangmu*; **NMPA hepatotoxicity warnings; LFT Mo1/3 if using** |
-| **Ling Zhi / Reishi (*Ganoderma lucidum*)** | Adaptogen, immune, longevity classical | 500 mg BID | B | Real Mushrooms, Host Defense; Japanese + Chinese RCTs; NMPA |
-| **Dan Shen** + **San Qi** (cardiovascular longevity) | Blood + microcirculation | per cardiovascular dossier | B | Plum Flower; NMPA |
+### 4.2 TCM — Kidney essence + adaptogens
 
-### 4.3 Unani — Geriatric *Tibb*
+> **For you, in plain words.** TCM frames aging as "kidney essence" (Jing) depletion. Liu Wei Di Huang Wan is the foundational kidney-yin anti-aging formula; Ba Wei Di Huang Wan is the kidney-yang elder formula. Ren Shen, Reishi, Cordyceps, Schisandra, Goji are classical adaptogens. **Caution on He Shou Wu** — hepatotoxicity (Lin 2015); external use only. *(Chinese Pharmacopoeia 2020; Bensky; Lin 2015)*
 
-Mizaj: balanced; emphasis on *Mufarrihaat* (exhilarants) for chronic age-related conditions. Hakim Mohammed Said, Avicenna's *Canon* Book IV.
+#### Open the science
 
-| Formulation | Dose | Grade | Source |
-|---|---|---|---|
-| **Khamira Marwareed** (pearl-based, cardiac calmative + cognitive) | 3–5 g BID | T | Hamdard, Ajmal; *Qarabadeen Qadri* |
-| **Khamira Gaozaban Ambari Jadwar** | 5 g BID | T | Hamdard |
-| **Itrifal Ustukhuddus** | 5–10 g HS | T | Hamdard |
-| **Majoon Aslus Soos** (longevity formulation, Avicenna lineage) | 5 g BID | T | Hamdard |
-| **Sharbat Anar / Sharbat Toot Siyah** (pomegranate / black mulberry) | 10 ml BID | T | Hamdard |
+- **Liu Wei Di Huang Wan (六味地黄丸)** — kidney-yin foundational (Shu Di Huang + Shan Zhu Yu + Shan Yao + Ze Xie + Fu Ling + Mu Dan Pi). Grade T+classical (Qian Yi 12th c.).
+- **Ba Wei Di Huang Wan / Jin Gui Shen Qi Wan (八味地黄丸)** — kidney-yang elder (Liu Wei + Rou Gui + Fu Zi). Grade T+classical (Zhang Zhongjing).
+- **Ren Shen (Panax ginseng)** — A+T traditional; modern immune + cognitive + CV (Choi 2018). Imperial Elixir, NOW Korean Red Ginseng.
+- **Reishi / Ling Zhi + Cordyceps Cs-4 + Schisandra (Wu Wei Zi)** — B+T adaptogens; immune + sleep + hepatoprotection. Lab-cultivated Cs-4 preferred (wild-harvest sustainability).
+- **Lycium / Goji (Gou Qi Zi)** — A+T traditional + zeaxanthin-rich (see macular-support dossier).
+- **He Shou Wu (Polygonum multiflorum)** — **CRITICAL: Lin 2015 hepatotoxicity established — NOT internal use; external (hair-greying topical) only**. Grade T with caution.
 
-### 4.4 Siddha — Kayakalpa (rejuvenation)
+Sourcing: Plum Flower, Min Tong, Mayway, Treasure of the East, Kamwo Meridian Herbs NYC, Active Herb Bay Area.
 
-| Formulation | Dose | Grade | Source |
-|---|---|---|---|
-| **Karisalai Karpam** (*Eclipta alba* legiyam) | 1–3 g BID | T | IMPCOPS, SKM; classical Siddha Kayakalpa |
-| **Thiriphala Chooranam** | 3–5 g HS | A | IMPCOPS |
-| **Aamai Chinna Mooligai Chooranam** (longevity herbs) | 2–3 g BID | T | IMPCOPS |
+### 4.3 Unani — Khameeras + Majoons
 
-Mercurial Siddha Kayakalpa preparations excluded.
+> **For you, in plain words.** Unani has classical vitality preparations — Khameera Marwareed (pearl-based), Majun Salab (orchid-tuber vitality), Itrifal Khass (digestive longevity), Sharbat-e-Buzoori. All Grade T. *(Hamdard Pharmacopoeia; Avicenna Canon Book IV)*. Sourcing: Hamdard, Dawakhana Tibbiya College Aligarh, Ajmal.
 
-### 4.5 Tibetan / Sowa Rigpa
+### 4.4 Siddha — chooranams + rasayanams
 
-Men-Tsee-Khang Dharamsala has extensive longevity tradition:
+> **For you, in plain words.** Siddha has rich rasayana tradition. **CAUTION** — classical Naga Rasayanam (mercury-prepared) and Sangu Parpam excluded from this OTC protocol due to heavy-metal supervised-administration requirement. Brahma Rasayanam + Triphala Chooranam + Vellai Pushpa Rasayanam are eligible. All Grade T (Brahma + Triphala + Vellai Pushpa); Naga/Sangu excluded. *(IMPCOPS Chennai formulary; Siddha Maruthuvam)*. Sourcing: IMPCOPS Chennai, SKM Siddha & Ayurveda, Aimil Pharmaceuticals.
 
-- **Padma Lax / Padma-28** (EMA-monographed) — peripheral microcirculation; cardiovascular longevity. Grade B.
-- **Agar-35** — rLung (wind) disorder; chronic age-related fatigue. Grade T.
-- **Rinchen Ratna Samphel** (Precious Pill — classical Tibetan multi-mineral; given monthly under traditional guidance). Grade T — note: classical mineral formulations require traditional guidance; for OTC scope, emphasize Padma 28.
-- **Mu-Tig 25** (pearl + 25 herbs longevity formula). Grade T.
+### 4.5 Tibetan Sowa Rigpa — Padma + Agar-35
 
-### 4.6 Homeopathy
+> **For you, in plain words.** Tibetan Sowa Rigpa's Padma 28 is the most-studied traditional formula globally — Swiss-formalised, EMA-tracked. Drabaek 1993 Danish RCT walking-distance benefit; peripheral vascular + immune-modulation data. Grade B+T. Agar-35 (35-ingredient classical longevity), Yu-nying-25, Sogdzin — Grade T. *(Men-Tsee-Khang Dharamsala; rGyud-bzhi; Drabaek 1993)*. Sourcing: Men-Tsee-Khang Dharamsala branches; Padma AG (Switzerland).
 
-> *Honoured as documented tradition (Tier 3), not modern clinical proof.*
+### 4.6 Homeopathy (T/H only — caveat)
 
-| Remedy | Indication | Potency | Grade |
-|---|---|---|---|
-| **Lycopodium clavatum** | Aging digestive, mood, hepatic | 30C–200C | T |
-| **Calcarea carbonica** | Constitutional aging, bone, sluggish metabolism | 30C–200C | T |
-| **Conium maculatum** | Cognitive aging, slow movement | 30C | T |
-| **Baryta carbonica** | Slow cognition aging | 30C–200C | T |
-| **Phosphorus** | Bleeding tendency, vascular fragility | 30C | T |
-| **Carduus marianus** (hepatic tonic) | Liver-aging | mother tincture | T-B |
-| **Crataegus oxyacantha** (cardiac tonic — also herbal) | Mild cardiac age | tincture / 6C | T-B |
-| **Selenium metallicum** | Fatigue + andropause + early aging | 30C–200C | T |
+> **Caveat.** Homeopathy is honoured under the founder's mandate to explore all directions of alternative medicine. Modern evidence is contested; entries are presented as documented tradition (Tier 3), not as clinical proof.
 
-Citations: Boericke, Allen, Kent. CCRH publishes geriatric case series.
+#### Open the science
+
+Baryta carbonica (elderly memory + dependence), Conium maculatum (late-life weakness), Aurum metallicum (CV-mood aging), Calcarea fluorica (tissue elasticity), Silicea (connective tissue), Selenium (late-life fatigue), Phosphoric acid (elderly nervous exhaustion), Lycopodium (aging GI + cognitive). All Grade T. *(Boericke; Kent; Allen)*. Sourcing: SBL, Schwabe India, Boiron France, B.Jain.
 
 ## 5. Biophysical Interventions — home-administered only
 
-**5.1 Home weight + waist + body composition.** Withings Body Scan or Body+; InBody H20N home unit. Body composition (lean mass tracking) > weight alone.
+### 5.1 The home device stack
 
-**5.2 Grip strength.** Camry, Jamar hand dynamometer. **Grip strength is a powerful longevity biomarker** (PURE study, EU/AU cohorts). Track quarterly.
+> **For you, in plain words.** Home wearable + smart-scale + BP cuff + grip-strength dynamometer are the core measurement layer. Optional adjuncts: home red-light PBM panel, home sauna (Laukkanen Finnish cohort A-grade for fatal-CV reduction at 4–7×/week), home cold immersion, home PEMF mat. *(Laukkanen 2015; Hamblin 2018)*
 
-**5.3 Gait speed.** 4 m walk test self-timed; <0.8 m/s = elevated mortality risk. Quarterly.
+### 5.2 Wearables + smart-scale + BP cuff
 
-**5.4 VO2max.** Cooper 12-min run, 1-mile walk test, Garmin/Apple Watch estimate; quarterly.
+> **Quick start.** Oura Ring / Whoop / Apple Watch / Garmin / Fitbit — daily HRV + sleep + RHR + VO2max-estimate. Smart-scale (Withings, Renpho) — weekly body composition. Upper-arm BP cuff (Omron 5 Series+, Withings BPM Core, Microlife WatchBP) — 7-day average. Grip dynamometer (Camry, Jamar). *(Wang 2018; Stergiou 2018; Leong 2015)*
 
-**5.5 Home infrared sauna (Sunlighten, JNH, Clearlight).** 50–60 °C, 20–30 min, **4–7×/wk** (Finnish KIHD cohort: 4–7×/wk sauna ↓ all-cause mortality 40%, dementia 66%). HSP70, cardiovascular, neuroprotection. Hydration mandatory. Contraindications: severe CV, pregnancy, dehydration.
+#### Open the science
 
-**5.6 Home cold immersion (Plunge, Edge Tub, bathtub + ice).** 10–15 °C, 2–4 min, 3×/wk. Norepinephrine, brown fat, mitochondrial biogenesis, dopamine. Caution: significant CHD/arrhythmia/uncontrolled HTN.
+Wearable HRV — RMSSD trend; acute changes signal training stress + sleep quality + autonomic state. VO2max-estimate (Apple Watch, Garmin, Whoop) — Kodama 2009 meta — every 1 MET of VO2max ~13–25 % mortality reduction. Grip-strength dynamometer (Camry $30–80) — Leong 2015 PURE study (n=139,691, 17 countries) — grip strength mortality predictor independent of CV. Smart-scale (Withings, Renpho) — body fat % + visceral fat + muscle mass (consumer BIA not DEXA-accurate but useful trend). Stergiou 2018 home BP — home measurement beats clinic for management. **Synthesis.** Measure what matters: daily HRV + weekly grip + monthly weight + quarterly DTC labs.
 
-**5.7 Home red-light PBM (Mito, Joov, Hooga).** Full-body 660 + 850 nm 10–20 min, 4–5×/wk. Cytochrome-c-oxidase activation, mitochondrial. Eye shield.
+### 5.3 Home sauna + cold immersion
 
-**5.8 Home PEMF (Bemer, HealthyLine, Pulse Centers home).** 1–10 Hz, 20 min/day. Microcirculation, bone, sleep. Contraindication: pacemaker.
+> **Quick start.** Home sauna (Sunlighten Solo / mPulse, HigherDOSE, JNH Lifestyles) 4–7×/week 20 min @ 80–90°C — Laukkanen Finnish cohort 50 % lower fatal CV at 4–7×/week. **Cold immersion** (Plunge tub, Edge Tub) 2–3×/week 1–5 min @ 10–15°C — Søberg 2021 brown-adipose signal. *(Laukkanen 2015; Søberg 2021)*
 
-**5.9 HRV biofeedback (HeartMath, Oura, Whoop, Polar).** Slow 6-bpm coherent breathing 15 min/day.
+#### Open the science
 
-**5.10 Continuous glucose monitor (CGM).** Levels, Nutrisense, Libre 14d DTC. Personalised carb response.
+Laukkanen 2015 — Finnish prospective cohort (n=2,315) — sauna 4–7×/week 50 % lower fatal cardiovascular events; 60 % lower fatal stroke (Kunutsor 2018). **Honest caveat — observational not RCT; Finnish dry-sauna culture is high baseline activity + low obesity, residual confounding possible.** Cold immersion — Søberg 2021 brown-adipose-tissue activation; small autoimmune + mood literature; **caution in HTN, CAD, pregnancy**. Plunge tub ($5,000+), Edge Tub, ice-bath barrel DIY ($300–500). **Synthesis.** Sauna is more robust intervention; cold immersion mechanistically plausible but observational data thinner.
 
-**5.11 DEXA scan (annually) where available DTC** — bone density + body composition gold standard.
+### 5.4 Red-light PBM + PEMF + hyperbaric
 
-**5.12 DNA methylation biological age (TruDiagnostic TruAge, Elysium Index, MyDNAge).** GrimAge / PhenoAge / DunedinPACE. Annually.
-
-**5.13 Sleep tracking (Oura, Whoop, Withings).** REM, deep sleep, HRV. Continuous.
-
-**5.14 Sleep apnea screen (Wellue O2Ring, Lookee, STOP-BANG).**
+> **For you, in plain words.** Three optional adjuncts. Red-light PBM (660 nm + 810/850 nm) — Hamblin 2018 review (Mito Red Light, Joov, Hooga) 10–20 min daily; Grade B skin, C-B systemic. Home PEMF (Bemer, Healthy Wave) — emerging; Grade D-C. Home soft-shell hyperbaric (1.3 ATA, OxyHealth Vitaeris, Summit to Sea) — Hachmo 2020 Tel Aviv small senescence/telomere signal at clinic 2.0–2.4 ATA; home consumer chambers thinner evidence; Grade C-B emerging. **Clinic-route hard-shell HBOT in §10.7.3.** *(Hamblin 2018; Hachmo 2020)*
 
 ## 6. Dietary Protocol
 
-### 6.1 Mandatory foods
+### 6.1 Mandatory daily foods (Mediterranean-DASH-MIND fusion)
 
-Mediterranean + Okinawan + millet + Indian hybrid (NicheCore longevity-dietary recipe).
+> **For you, in plain words.** Eight food anchors — leafy greens, fatty fish 3×/week, olive oil, berries + nuts, legumes, fermented foods, cruciferous (broccoli sprouts for sulforaphane), bone broth. *(PREDIMED 2018; Morris 2015 MIND; Casas 2014)*
 
-- **Sprouted millets** 60–80 g cooked (low-AGE, low-glycaemic substitute)
-- **Bitter / green leafy** 200–300 g (methi, moringa, gotu kola, spinach, dandelion, parsley) — folate, K, Mg, nitrate, flavonoids
-- **Cruciferous** 150–200 g 5×/wk (broccoli, cauliflower, kale, Brussels sprouts, broccoli sprouts) — sulforaphane
-- **Berries** 100 g/d (blueberry, blackberry, pomegranate, raspberry) — polyphenols
-- **Pomegranate** (fruit or 100 ml juice) — urolithin A precursor (ellagitannins)
-- **Walnuts** 20 g + **almonds** 15 g + **2 Brazil nuts** + sesame, pumpkin seed
-- **Wild oily fish** 120 g 3×/wk (sardines, mackerel, anchovy, herring) — EPA + DHA
-- **Eggs** 2–3/d (choline, B12)
-- **Legumes** 80 g cooked (Okinawan + Mediterranean staple)
-- **Sweet potato + colourful veg** 100 g/d (Okinawan)
-- **Garlic** 1–2 cloves raw, **onion** 50 g, **ginger** 5 g, **turmeric** 3 g fresh
-- **Olive oil EVOO** 30 ml/d
-- **Avocado** 50–100 g
-- **Bone broth** 200 ml/d (glycine, collagen)
-- **Fermented foods** 100 g (kefir, kanji, sauerkraut, kimchi)
-- **Green tea** 2 cups, **hibiscus** 1 cup, **tulsi** 1–2 cups (≥1 h from iron supp)
-- **Dark chocolate ≥85%** 20 g/d
-- **Wheat germ** (spermidine source) 10–20 g/d if non-coeliac
-- **Natto** (K2-MK7) 30 g 3×/wk if tolerated
-- **Hydration** 2.5–3 L water/d
+| Food | TL;DR (plain English) | Daily quantity | Why for aging | Citation |
+|---|---|---|---|---|
+| Leafy greens (kale, spinach, methi, collards) | K1 + folate + Mg + nitrate for endothelium. *(MIND 2015)* | 150–200 g cooked | Cofactor + endothelium | *(Morris 2015)* |
+| Fatty fish (salmon, sardine, mackerel) | Omega-3 + resolvins. *(Calder 2017)* | 100–150 g × 3/week | Anti-inflammaging | *(Calder 2017)* |
+| Extra-virgin olive oil | PREDIMED A-grade. *(PREDIMED 2018)* | 30–50 ml | Polyphenols + MUFA | *(PREDIMED 2018)* |
+| Berries (blueberry, strawberry, blackberry) | Anthocyanins; MIND diet anchor. *(Morris 2015)* | 100–150 g | Polyphenols + cognitive | *(Morris 2015)* |
+| Nuts + seeds (walnut, almond, chia, flax) | Omega-3 + Mg + fiber. *(PREDIMED 2018)* | 30–60 g | Cofactor + anti-inflammaging | *(PREDIMED 2018)* |
+| Legumes (lentils, chickpeas, black beans) | Fiber + plant protein + folate. *(Buettner)* | 80–120 g cooked | Microbiome + protein | *(Buettner)* |
+| Cruciferous (broccoli, kale, broccoli sprouts) | Sulforaphane Nrf2 activator. *(Yagishita 2019)* | 100–150 g | Nrf2 + autophagy | *(Yagishita 2019)* |
+| Bone broth + collagen | Glycine + proline + collagen amino acids. *(Henrotin 2014)* | 200–300 ml × 3/week | Stem-cell + connective tissue | *(Henrotin 2014)* |
 
 ### 6.2 Absolutely avoid
 
-| Food/Class | Molecular reason |
-|---|---|
-| **Refined sugar + HFCS + sugary drinks** | Glycation, DNL, insulin spike, microbiome shift |
-| **Trans fats** | Endothelial, inflammaging |
-| **Industrial seed oils (soy, corn, cottonseed)** | ω-6 imbalance, oxLDL |
-| **Ultra-processed foods, deli meats** | AGE, Na, additives, nitrites |
-| **Charred meat, deep-fried** | AGE, PAH, acrylamide |
-| **Excess fructose** (juice, agave) | DNL, NAFLD, glycation |
-| **Alcohol >7 drinks/wk** (none ideal for longevity) | Hepatic, cancer, sleep, microbiome |
-| **Smoking, vaping** | Single largest modifiable shortener of lifespan |
-| **Late heavy dinner** | Disrupts overnight autophagy + glucose |
-| **Aspartame, sucralose excess** | Microbiome |
-| **Grapefruit if on CYP3A4 drugs** | Drug interaction |
-| **Excess methionine load (huge red meat)** | mTOR overactivation; balance with glycine (bone broth) |
-| **Excess animal protein at lower body weights** | mTOR/IGF-1; balance per centenarian data — protein adequate but not excessive in midlife, may need slight increase post-65 for sarcopenia prevention |
+> **For you, in plain words.** Seven aging-hostile categories — sugary drinks, ultra-processed snacks, processed meats (IARC + AGEs), industrial seed oils, alcohol >7/week, tobacco any amount, late-night eating (disrupts circadian autophagy). *(IARC; Wood 2018 alcohol)*
+
+- **Sugary drinks + ultra-processed snacks** — insulin spikes + AGEs + visceral fat.
+- **Processed meats (bacon, deli, sausage)** — IARC Group 1 carcinogen + AGE load.
+- **Industrial seed oils** (soybean, corn, sunflower at fryer temperatures).
+- **Alcohol >7 drinks/week** — Wood 2018 Lancet — every 100 g/week alcohol = ~10 % CV mortality bump.
+- **Tobacco any amount** — single largest fixable longevity risk.
+- **Late-night eating (within 3 h of bedtime)** — disrupts circadian + sleep + autophagy.
+- **Excess saturated fat from poor-quality sources** (industrial dairy + fried foods).
 
 ### 6.3 Preparation methodology
 
-**Sprouting** millets/legumes (low AGE + low antinutrient); **slow-cooking** (stew, soup, dal); **steaming, baking, low-heat poaching** preferred over deep-frying or charring; **fermented foods** daily; **ghee/EVOO** as primary fats; **bone broth** 24 h simmer; **Mediterranean + Okinawan + millet + Indian** hybrid pattern.
+> **For you, in plain words.** Sprouting + slow-cooking + fermentation maximise nutrient bioavailability. Broccoli sprouts contain 50–100× sulforaphane precursor of mature broccoli (Yagishita 2019). DIY sprouter $30; eat 30–80 g 2–3×/week. Bone broth 24–48 h simmer + ACV; glycine + proline + collagen. Fermentation (kimchi, sauerkraut, kefir, idli batter) — diverse strain seeding. Slow-cooking preserves nutrients vs deep-frying/charring. Ghee tempering — fat-soluble vitamin carrier for K1-rich greens.
 
-### 6.4 Seven-day meal plan
+### 6.4 Seven-day meal plan (with grams)
 
-| Day | Breakfast 08:00 (after 14:10 fast) | Lunch 13:00 | Dinner 18:30 (early) |
-|---|---|---|---|
-| **1 Polyphenol load** | 60 g foxtail porridge + 100 g berries + walnut 20 g + green tea + amla + 10 g wheat germ | 200 g spinach-moringa + 50 g lentils + 70 g millet + olive oil + tomato + sauerkraut + 100 g sardines + pomegranate 50 g | 65 g khichdi + 150 g gotu kola + 100 g kanji + dark chocolate 20 g 85% |
-| **2 EPA + cruciferous** | 65 g barnyard + amla + 2 eggs + 2 Brazil nuts + green tea | 120 g mackerel + 200 g broccoli + 60 g foxtail + olive oil + ferment | 70 g millet roti + 180 g lauki + walnut + 100 g kefir |
-| **3 Spermidine + K2** | 70 g kodo khichdi + 30 g natto + 20 g wheat germ + amla | 200 g moringa-bitter gourd + 50 g moong + 60 g browntop + avocado + ferment | 65 g roti + 180 g sabzi + dandelion tea + dark chocolate |
-| **4 Fasting day (if IF tolerated)** | Skip breakfast (16:8 window 11:00–19:00) | 200 g salad + 100 g sardines + 50 g lentils + 70 g millet + olive oil + ferment | 65 g khichdi + 180 g sabzi |
-| **5 Garlic-ginger-turmeric** | 65 g millet porridge + amla + garlic-ginger-turmeric tea | 200 g methi-coriander + 50 g chana + 60 g millet + garlic 2 cloves + ferment + 100 g sardines | 65 g roti + 180 g lauki + tulsi tea |
-| **6, 7** | Rotate; cycle Saturday social meal (Mediterranean indulgence within reason); Sunday family meal | Rotate | Rotate |
+> **For you, in plain words.** Four rotating day patterns + repeats. Each meal hits Mediterranean-DASH-MIND simultaneously. *(PREDIMED 2018; CALERIE 2015)*
 
-**Centenarian dietary signal**: low-to-moderate animal protein (especially after 65 — protein increases slightly to 1.2–1.6 g/kg for sarcopenia), high vegetable, high legume, low refined carb, moderate olive oil, abundant herbs/spices, minimal sugar, modest alcohol (Mediterranean) or none (Okinawan), early dinner, social eating.
+**Day 1 (Mediterranean).** 07:30 Steel-cut oats 50 g in 200 ml whole milk + 1 tbsp ghee + flax 1 tbsp + blueberries 100 g + walnuts 6; green tea. 12:30 Mediterranean salad — mixed greens 150 g + chickpeas 80 g + olives 30 g + feta 30 g + cucumber-tomato 100 g + EVOO 1 tbsp + lemon. 18:30 Grilled salmon 120 g + broccoli 150 g + kale-walnut salad 100 g + EVOO 1 tbsp. Snacks: apple + 15 g almond butter; or 200 ml kefir.
+
+**Day 2 (Ayurvedic-Mediterranean).** 07:30 Idli 3 + sambar 200 ml + coconut chutney 30 g + amla murabba 1; tulsi tea + 1 tbsp Chyawanprash. 12:30 Brown rice 80 g + chickpea curry 120 g + spinach 100 g + cucumber raita 100 g + 1 tbsp ghee. 18:30 Grilled sardine 100 g + sautéed kale 150 g + sweet potato 100 g + EVOO 1 tbsp. Snacks: carrot/celery 150 g + hummus 30 g.
+
+**Day 3 (MIND emphasis).** 07:30 Greek yoghurt 200 g + chia 1 tbsp + blueberries 100 g + walnuts 6 + honey 1 tsp; matcha. 12:30 Bowl — quinoa 80 g + lentils 80 g + roasted veg 200 g + EVOO 1 tbsp + tahini 1 tbsp. 18:30 Grilled chicken 120 g + ratatouille 250 g + side salad 100 g + EVOO 1 tbsp. Snacks: aged cheese 30 g + apple.
+
+**Day 4 (Light + 16:8 TRE option).** 11:30 (first meal, TRE window opens) — mung sprouts 150 g + lentil curry 100 g + foxtail millet 80 g + sautéed greens 150 g + ghee 1 tbsp. 18:30 (closes) — baked white fish 120 g + asparagus 150 g + tomato salad 100 g + EVOO 1 tbsp + sauerkraut 30 g + broccoli sprouts 30 g. **TRE caveat — Lowe 2020 null vs control + lean-mass loss; not for elderly/underweight/pregnancy/hypothyroid.**
+
+**Days 5–7** rotate Days 1–4 with seasonal greens swap.
 
 ### 6.5 Environmental & occupational triggers
 
-- **Smoking, vaping, paan, gutka, snuff** — eliminate; single largest modifiable lifespan reducer.
-- **Air pollution PM2.5** — N95 outdoor high-AQI; HEPA bedroom + living.
-- **Heavy metals** (lead in water, mercury in fish, cadmium in soil/cigarette smoke, arsenic in well water) — testing + remediation; choose low-Hg fish.
-- **Pesticides, herbicides** — organic where possible; EWG Dirty Dozen prioritisation.
-- **Endocrine disruptors** (BPA, phthalates, parabens, PFAS) — glass containers, ceramic/cast-iron cookware, paraben-free personal care.
-- **Plastic microwaving** — never.
-- **Mould** — ERMI if suspect; HEPA + dehumidify.
-- **EMF + blue light at night** — protects sleep → all hallmarks of aging.
-- **Noise pollution** — well-documented all-cause mortality driver; quiet bedroom.
-- **Light pollution** — blackout curtains.
-- **Sedentary work** — every-30-min walk, standing desk.
-- **Chronic stress + social isolation** — load-bearing; intentional cultivation of close social ties (Blue Zones lesson).
-- **Personal care swap** — fragrance/paraben/phthalate-free.
+> **For you, in plain words.** Eight categories — air pollution (PM2.5 — Cohen 2017 top 5 global mortality factor), light pollution + blue light at night, EMF caveat, endocrine disruptors (BPA, phthalates), heavy metals (water filter), pesticides (organic for Dirty Dozen), occupational toxins, tobacco/vape.
 
-### 6.6 Cofactor floor
+- **Air pollution PM2.5** — Cohen 2017 — HEPA in bedroom (IQAir, Coway, Levoit); don't run outdoor during high-PM2.5 days.
+- **Light pollution + blue light at night** — shift-worker cancer signal; blackout curtains; 21:00 blue-light cutoff; Iris/Night Shift/f.lux.
+- **EMF** — pragmatic: phone out of bedroom at night; ethernet at desk; no laptop on lap.
+- **Endocrine disruptors** — BPA, phthalates, parabens — glass containers; fragrance-free; EWG-rated cosmetics.
+- **Heavy metals** — water filtration (Berkey, AquaTru, reverse osmosis).
+- **Pesticides** — EWG Dirty Dozen / Clean 15 — organic for berries, leafy greens, apples; conventional fine for avocado, onion, cabbage.
+- **Tobacco / vape** — single largest fixable.
+- **Indoor air** — mould remediation; ERMI test if mold-suspect; VOCs (formaldehyde from new furniture).
 
-| Cofactor | Why for longevity | Target/day | Food | Supplement | Antagonist |
-|---|---|---|---|---|---|
-| **Magnesium glycinate** | mitochondrial, NMDA, sleep, bone | 400 mg | seeds, greens | Doctor's Best | split Ca |
-| **Vitamin D3 + K2-MK7** | Treg, bone, immune, longevity (50–70 ng/mL) | 4000 IU + 100–200 µg | sun, fatty fish, natto | Thorne D/K2 | thyroid 4 h |
-| **Vitamin C** | collagen, antioxidant | 1000 mg BID | amla, citrus | Pure Encaps Buffered | tea 1 h |
-| **Vitamin E mixed tocopherols** | antioxidant, anti-fibrotic | 400 IU | nuts, EVOO | Pure Encaps Mixed Toco | warfarin >800 IU |
-| **Omega-3 EPA + DHA** | resolution, brain | 2–4 g | sardines, mackerel | Carlson Elite | anticoagulant >3 g |
-| **B-complex (high B6/B9/B12 esp.)** | methylation, homocysteine | B-50 BID or B-100 daily | leafy, egg, fish | Thorne B-Complex | tannins 1 h |
-| **Folate (5-MTHF)** | methylation, homocysteine | 400–800 µg | leafy | Pure Encaps 5-MTHF | — |
-| **B12 methyl** | methylation, cognition | 1000 µg sublingual | sardines, eggs | Jarrow Methyl B12 | tannins 1 h |
-| **Selenium** | GPX, immune, longevity (Brazilian centenarian studies) | 100–200 µg | 2 Brazil nuts | Solgar | >400 µg toxic |
-| **Zinc** | immune, T, mucosal | 10–15 mg | pumpkin seed | Thorne picolinate | Fe, Ca 2 h; Cu 8–15:1 |
-| **Copper** | balance, ceruloplasmin | 1–2 mg | sesame, cashew | Pure Encaps | with Zn |
-| **Iodine** | thyroid (cautious — Hashimoto autoimmune) | 150 µg | seaweed, iodised salt | Pure Encaps KI | autoimmune thyroid: measure first |
-| **Iron** (only if ferritin <30) | mucosal; excess iron is pro-aging | measure first | red meat, pumpkin | Solgar Gentle Iron | tea/Ca/Zn 2 h; pair Vit C |
-| **Calcium** (food-first) | bone | 800–1000 mg | dairy, greens, sardines bones | food preferred; supplement only if dietary low | Mg PM split |
-| **Boron** | bone, T modulation | 3 mg/d | nuts, prunes | NOW Boron 3 mg | — |
-| **CoQ10 ubiquinol** | mitochondrial | 100–200 mg (300 mg if statin) | organ meat | Kaneka Q10 Jarrow | warfarin INR |
-| **Creatine** | muscle + cognition + bone | 5 g/d | meat | Creapure | — |
-| **Glycine** | GSH, sleep, collagen | 5–10 g HS | bone broth | NOW Glycine | — |
-| **Taurine** | mitochondrial, anti-aging | 2–4 g/d | shellfish | NOW | bipolar caution |
-| **Collagen peptides + Vit C** | skin, joint, bone matrix | 10–20 g + 500 mg Vit C | bone broth | Vital Proteins | — |
-| **Choline** | methylation, membrane | 425–550 mg | egg yolk, liver | Thorne PC | — |
-| **Lithium orotate microdose (contested)** | mood + cognitive longevity signal (water studies) | 1–5 mg elemental Li | trace in vegetables | Pure Encaps Lithium Orotate 1 mg | thyroid (TSH ↑ at low; monitor); NSAIDs |
+### 6.6 Cofactor floor table
+
+> **For you, in plain words.** Six load-bearing nutrients — measure before mega-dosing; food first. *(VITAL 2019; OmegaQuant; Schurgers 2007; Allen 2008; Pillai 2017)*
+
+| Nutrient | TL;DR (plain English) | Target | Food sources | Supplement form | Cautions | Citation |
+|---|---|---|---|---|---|---|
+| Vitamin D3 + K2-MK7 | D3 2,000–5,000 IU + K2-MK7 100–200 µg; check DTC level. *(VITAL 2019; Schurgers 2007)* | 30–60 ng/mL D | Fatty fish, egg yolks, sun; K2 natto/aged cheese | NOW D3+K2, Thorne | Warfarin (K2 ↓ INR) | *(VITAL 2019)* |
+| Omega-3 EPA/DHA | OmegaQuant target ≥8 %; 1–3 g/day. *(Calder 2017)* | ≥8 % index | Fatty fish | Nordic Naturals, Carlson | Anticoagulants | *(Calder 2017)* |
+| Magnesium glycinate | 400 mg/day; cofactor for >300 enzymes. *(Schwalfenberg 2017)* | 400 mg | Greens, nuts, dark chocolate | Doctor's Best, Pure Encapsulations | Ca same dose split AM/PM | *(Schwalfenberg 2017)* |
+| Vitamin B12 (methyl form) | 500–1,000 µg/day older adults. *(Allen 2008)* | Serum >400 pg/mL | Animal foods | Methylcobalamin (Jarrow, Thorne) | — | *(Allen 2008)* |
+| Protein (1.2–1.6 g/kg older adults) | Sarcopenia prevention. *(Pillai 2017)* | 1.2–1.6 g/kg | Fish, eggs, dairy, legumes, whey | Whey isolate (Optimum, Naked) | Renal disease caution | *(Pillai 2017)* |
+| Creatine monohydrate | Strength + cognitive signal elderly. *(Forbes 2022)* | 3–5 g/day | Red meat (low) | Creapure (NutraBio) | Renal caution | *(Forbes 2022)* |
 
 ## 7. Lifestyle / Mind-Body Anchors
 
-### 7.1 Yoga
+### 7.1 Yoga — six asanas
 
-| Asana | §2 Mechanism node | Duration | Time |
-|---|---|---|---|
-| **Surya Namaskar** | §2.2 + §2.4 systemic + circulation | 12 rounds | 07:00 |
-| **Sarvangasana** (shoulder stand) | §2.4 thyroid + lymphatic + skin perfusion | 3 min | 07:00 (empty stomach; skip uncontrolled HTN/glaucoma) |
-| **Halasana** | §2.4 spinal flexibility | 1 min | 07:00 |
-| **Bhujangasana** (cobra) | §2.4 chest opening + spinal | 5 reps | 07:00 |
-| **Setu Bandhasana** (bridge) | §2.4 pelvic + chest | 1 min | 07:00 |
-| **Ardha Matsyendrasana** (half twist) | §2.3 abdominal organ stim | 1 min each | 07:00 |
-| **Vrikshasana** (tree pose) | §2.4 balance + mind-body | 1 min each side | 07:00 |
-| **Trikonasana** (triangle) | §2.4 lateral chain | 1 min | 07:00 |
-| **Shavasana** | §2.1 parasympathetic | 10 min | 22:00 |
+> **For you, in plain words.** Six asanas mapped to longevity mechanism nodes — Surya Namaskar (full-body Zone 2 + flexibility), Sarvangasana (circulation), Vrikshasana (balance, fall prevention), Trikonasana (lateral mobility), Shavasana (HPA), Pawanmuktasana (gut). *(Iyengar Light on Yoga; CCRYN AYUSH yoga monographs)*
 
-### 7.2 Pranayama
+| Asana | TL;DR (plain English) | Mechanism node | Duration | Time of day | Citation |
+|---|---|---|---|---|---|
+| Surya Namaskar | 12-pose sequence; full-body Zone 2 + flexibility. *(Iyengar)* | §2.3 + §2.5 | 10–20 rounds | AM | *(Iyengar)* |
+| Sarvangasana (shoulder stand) | Head/face circulation; thyroid signal. *(Iyengar)* | §2.7 circulation | 3–5 min | AM/PM | *(Iyengar)* |
+| Vrikshasana (tree pose) | Balance + proprioception; fall prevention. *(Iyengar)* | §2.5 + balance | 1 min × 3 each side | AM | *(Iyengar)* |
+| Trikonasana (triangle pose) | Lateral mobility + hip + spine. *(Iyengar)* | §2.5 mobility | 1 min × 3 | AM | *(Iyengar)* |
+| Shavasana (corpse pose) | Deep nervous-system rest; HPA. *(Iyengar)* | §2.7 HPA | 10–15 min | PM | *(Iyengar)* |
+| Pawanmuktasana | Gut + abdominal organs. *(Iyengar)* | §2.7 + gut-aging | 3 min | AM | *(Iyengar)* |
 
-| Technique | §2 Mechanism node | Duration | Time |
-|---|---|---|---|
-| **Anulom Vilom** (alternate-nostril) | §2.1 + §2.4 HPA + autonomic | 10 min | 06:30 |
-| **Bhramari** (humming) | §2.1 vagal + NO + cortical | 5 min | 06:30 + 22:00 |
-| **Slow 6-bpm coherent** | §2.1 + §2.4 baroreflex | 15 min | 06:30 + 21:30 |
-| **Sheetali** (cooling) | §2.1 pitta-fire | 5 min | midday if pitta-pattern |
-| **Nadi Shodhana** | §2.1 balance | 10 min | flare |
-| **Kapalbhati** | **CONTRAINDICATED** in HTN, pregnancy, glaucoma, recent surgery | 5 min if cleared | 06:30 |
-| **Bhastrika** | **CONTRAINDICATED** in HTN, pregnancy, CHD | — | skip if any CV risk |
-| **Ujjayi** | §2.1 vagal + thermogenesis | 5 min | yoga |
+### 7.2 Pranayama — four techniques
 
-### 7.3 Meditation
+> **For you, in plain words.** Four breath practices — Anulom Vilom (autonomic + HPA), Bhramari (vagal + nitric oxide), Slow 6-bpm (BP + HRV — Joseph 2005), Nadi Shodhana (channel purification). *(Brown 2009; Joseph 2005; Lundberg 2008)*
 
-**Mind-body practice is load-bearing for longevity** — multiple non-US cohort studies (Indian, Japanese, European) link daily meditation to telomere maintenance + biological age slowing.
+| Technique | TL;DR (plain English) | Mechanism node | Duration | Time of day | Citation |
+|---|---|---|---|---|---|
+| Anulom Vilom | Autonomic balance + HPA. *(Brown 2009)* | §2.7 HPA | 10 min | AM | *(Brown 2009)* |
+| Bhramari | Vagal + nasal NO. *(Lundberg 2008)* | §2.7 vagal | 5 min | PM | *(Lundberg 2008)* |
+| Slow 6-bpm breathing | BP + HRV. *(Joseph 2005)* | §2.7 + BP | 15 min | AM + PM | *(Joseph 2005)* |
+| Nadi Shodhana | Channel purification. *(Iyengar)* | §2.7 autonomic | 10 min | AM/PM | *(Iyengar)* |
 
-- **Yoga Nidra (Bihar School)** 30 min HS — sleep + cortisol + GABA
-- **Vipassana** 20 min AM body-scan
-- **Transcendental Meditation** 20 min BID (decades of cardiovascular + longevity RCTs from India + Europe)
-- **MBSR / MBCT** 30 min daily
-- **Tibetan Tonglen** (compassion) 10 min PM
-- **Loving-kindness (metta) meditation** 10 min
-- **Sufi Zikr** (rhythmic remembrance) — if resonant tradition
-- **Christian centering prayer** — if resonant tradition
+**Contraindications.** Kapalbhati + Bhastrika contraindicated in HTN, pregnancy, cardiac disease, recent abdominal surgery.
 
-### 7.4 Sleep & circadian
+### 7.3 Meditation + purpose work
 
-**Load-bearing #1 for longevity.** Lights-out 22:30; blue-light cutoff 21:00; bedroom 18–20 °C; HEPA; humidifier (winter); nasal breathing restored (saline neti + mouth tape post-apnea-screen); sleep tracker (Oura, Whoop); 7–9 h target. AM sunlight within 30 min of waking (circadian anchor). Sleep apnea screen mandatory if snoring/fatigue.
+> **For you, in plain words.** 20 min daily MBSR / Vipassana / Yoga Nidra / TM. Plus the Blue-Zones "Plan-de-Vida / Ikigai / sense of purpose" lever — Strawbridge 1997 + Buettner Blue Zones identify purpose as a consistent longevity correlate. Spend 30 min/week writing or reflecting on your "why". *(Rosenkranz 2013; Strawbridge 1997; Buettner)*
 
-### 7.5 Nervous-system reset
+### 7.4 Sleep — the single most consistent healthspan lever
 
-Cold-water face splash AM; humming + gargling 2 min BID; 4-7-8 breath; consumer VNS (Nurosym, Sensate, Pulsetto) 10 min PM; HRV biofeedback HeartMath/Elite HRV 15 min/day.
+> **For you, in plain words.** Sleep 7–9 hours per Cappuccio 2010 meta — U-shaped curve, both <7 and >9 associated with elevated mortality. Bedtime 22:00–23:00; blue-light cutoff 21:00; room 18–20°C; AM sunlight within 30 min of waking. Address OSA (Lofta WatchPAT home test) if snoring + daytime fatigue. *(Cappuccio 2010; Walker Why We Sleep 2017)*
 
-### 7.6 Exercise periodization — **the single most-evidence longevity intervention**
+### 7.5 Social connection — the second most consistent healthspan lever
 
-**Weekly**:
-- **Mon / Wed / Fri** — Zone 2 cardio 45–60 min (60–70% HRmax) — outdoors when possible (sun + nature exposure synergistic)
-- **Tue / Thu** — strength training 45–60 min (compound: squat, hinge, push, pull, carry) — **load-bearing for sarcopenia + bone + insulin sensitivity + cognition**
-- **Sat** — HIIT 20 min (4 × 4 min hard + 3 min recover Norwegian protocol) OR sport / hike
-- **Sun** — restorative yoga + 60–90 min nature walk
+> **For you, in plain words.** Holt-Lunstad 2010 meta — social isolation is mortality-equivalent to smoking 15 cigarettes/day. Call two friends this week. Join a club / class / volunteer / religious community. The Roseto effect (Italian-American community-cohesion 50-year CV protection) shows community matters as much as cholesterol. *(Holt-Lunstad 2010; Bruhn-Wolf Roseto)*
 
-**Monthly**: Wk 1 + 4 full intensity + TCM cycling (Wu Zi Yan Zong + Liu Wei Di Huang as appropriate); Wk 3 deload; seasonal millet rotation.
+### 7.6 Weekly exercise cadence — the cornerstone
 
-**Intermittent fasting**: 14:10 baseline (10 h eating window), 16:8 if tolerated and metabolically appropriate; **caution: underweight, HPA-depleted, pregnancy/breastfeeding, history of eating disorder, sarcopenia-prone (protein adequacy critical)**.
+> **For you, in plain words.** Strength + Zone 2 + flexibility + balance. Strength is the highest-leverage anti-aging exercise (Pillai 2017; LIFTMOR 2018). Zone 2 builds mitochondria (Ingebrigtsen 2024). Balance + flexibility prevent falls. *(Pillai 2017; LIFTMOR Watson 2018; Kodama 2009)*
 
-**ProLon / FMD (Fasting-Mimicking Diet)** 5-day cycle 2–4× per year (Valter Longo Italian/Spanish data) — caution above.
+- **Mon / Wed / Fri** — Strength training 45–60 min (compound lifts: squat, deadlift, press, row, pull). LIFTMOR-style heavy resistance for postmenopausal women; Pillai 2017-style progressive resistance for sarcopenia.
+- **Tue / Thu** — Zone 2 cardio 45 min at 60–70 % HRmax (brisk walking, cycling, swimming).
+- **Sat** — HIIT 20 min OR sport (tennis, racquetball — Marsh 2008 racquet-sport longevity signal).
+- **Sun** — Restorative yoga + 60–90 min long walk in nature (Hartig 2014 nature + health).
 
-## 8. Daily Unified Combos (≤10 caps/day)
+**Monthly cadence:** Week 1 + 4 full intensity + TCM cycling overlay; Week 2 moderate; Week 3 deload (≤70 % volume).
 
-**Combo 1 — Mitochondrial + NAD+ (08:00, end of overnight fast):** NMN 250 mg OR NR 300 mg + Urolithin A (Mitopure) 500 mg + CoQ10 ubiquinol 100 mg + PQQ 10 mg + Taurine 1 g + Vitamin D3 4000 IU + K2-MK7 100 µg. *5 caps.*
+**Optional 14:10 / 16:8 TRE** — only if metabolically appropriate; NOT for elderly + frail + underweight + pregnancy + hypothyroid + HPA-depleted; Lowe 2020 honest caveat on lean-mass loss.
 
-**Combo 2 — Autophagy + Senescence + Inflammaging (13:00):** Spermidine 3 mg + Curcumin phytosome 500 mg + Sulforaphane 10 mg + Omega-3 2 g + Berberine 500 mg + Vitamin C 1000 mg. *5 caps + 2 softgels.*
+## 8. Daily Unified Combos (≤10 caps/day total)
 
-**Combo 3 — Repair + Sleep + Hormonal (HS 21:00):** Glycine 5 g (powder) + Magnesium glycinate 400 mg + Ashwagandha KSM-66 300 mg + Triphala 1 g + Collagen peptides 10 g. *3 caps + 2 powders.*
+### 8.1 Combo design
 
-**Daily total: 13 caps + 2 softgels + 2 powders.** (slightly over 10 — high-complexity longevity dossier; consolidate where possible; B-complex via diet + Combo 2 Vit C; users can drop NMN OR NR — pick one). + Creatine 5 g any time + Hibiscus tea + green tea + dark chocolate + Mediterranean-millet diet + Zone 2 + strength + sauna + cold + HRV + sleep + meditation + social connection.
+> **For you, in plain words.** Three combos timed to circadian + meal cofactor needs. AM cofactor floor (D3+K2 + omega-3 + B12 + creatine + Chyawanprash), midday lighter (Mg + emerging adjuncts Urolithin A / spermidine), evening recovery (Mg + Triphala + optional Ashwagandha). Total 7–9 capsules + 1 tbsp Chyawanprash.
 
-**Senolytic pulse (monthly, 2 consecutive days)**: Fisetin 1500 mg/day + Quercetin 1000 mg/day × 2 days. Skip Combo 2 spermidine during pulse (additive autophagy). Liposomal forms better absorbed. Take with fat. Avoid if on anticoagulants without caution.
+### 8.2 Combo 1 — Morning (post-breakfast)
 
-**TCM cycling (wks 1 & 4)**: Wu Zi Yan Zong Wan 8 pills TID (Kidney Jing) AND/OR Liu Wei Di Huang Wan 8 pills TID (Kidney Yin).
+- Vitamin D3 5,000 IU + K2-MK7 100 µg with fat. *(Schurgers 2007)*
+- Omega-3 EPA/DHA 1,000–2,000 mg. *(Calder 2017)*
+- Methyl-B12 500 µg. *(Allen 2008)*
+- Creatine monohydrate 3–5 g. *(Forbes 2022)*
+- Chyawanprash 1 tbsp. *(Sharma 2019)*
 
-**Optional Lithium orotate microdose** 1–5 mg AM (contested; user's call; DTC lithium + TSH + creatinine baseline + Mo 3).
+### 8.3 Combo 2 — Midday (post-lunch)
+
+- Magnesium glycinate 200 mg. *(Schwalfenberg 2017)*
+- Urolithin A (Mitopure) 500 mg — optional emerging. *(D'Amico 2022)*
+- Spermidine 1–3 mg — optional emerging. *(Madeo 2018)*
+
+### 8.4 Combo 3 — Evening (post-dinner)
+
+- Magnesium glycinate 200 mg with dinner.
+- Triphala 1 tsp powder in warm water 30 min pre-bed. *(Peterson 2017)*
+- Optional Ashwagandha KSM-66 300–600 mg if HPA-stressed sub-type. *(Salve 2019)*
+
+### 8.5 Optional TCM cycling overlay (weeks 1 & 4)
+
+- Liu Wei Di Huang Wan 8 pills 2×/day for kidney-yin pattern; OR Ba Wei Di Huang Wan for kidney-yang elder pattern.
 
 ## 8.5 Master 24-Hour Day Plan
 
-| Hour | Action | Why / Conflicts resolved |
-|---|---|---|
-| **06:00** | Wake; 200 ml warm water + lemon; 5–10 min direct sunlight | Circadian anchor + cortisol awakening + skin |
-| **06:15** | Cold-water face splash + humming + nasal neti | Vagal + nasal NO |
-| **06:30** | Pranayama 15 min (Anulom Vilom + slow 6-bpm coherent + Bhramari) + tongue scraping + oil pulling (Charaka *Matrashitiya*) | Vagal + nasal NO + oral microbiome (oral-nitrate path) |
-| **07:00** | Yoga 25–30 min (full Surya Namaskar + inversions if cleared) + Abhyanga oil massage 5 min | Lymphatic + skin perfusion |
-| **07:45** | Optional 10 min cold immersion 10–15 °C OR cold shower 2 min finishing | Norepinephrine + brown fat + mitochondrial biogenesis |
-| **08:00** | **End overnight 14-h fast.** Breakfast (§6.4) + green tea (post-meal) | Fat for D3/K2/CoQ10/Urolithin/Omega-3 |
-| **08:15** | **Combo 1** (NMN/NR + Urolithin A + CoQ10 + PQQ + Taurine + D3 + K2) | NAD+ + mitophagy AM surge; fat vehicle |
-| **08:30** | Creatine 5 g (with carb/protein meal — consistent timing) | Cellular energetics |
-| **10:00** | Green/tulsi tea | ≥1 h from Combo 1 |
-| **12:30** | Lunch (§6.4) | — |
-| **13:00** | **Combo 2** (Spermidine + Curcumin + Sulforaphane + Omega-3 + Berberine + Vit C) | Fat vehicle + autophagy + SASP + anti-inflammaging |
-| **13:30** | 10–15 min post-lunch walk + post-meal Vajrasana 5 min | Post-prandial glucose + digestion |
-| **14:00** | **Caffeine cutoff** | Sleep + HPA + melatonin |
-| **15:30** | Hibiscus tea 1 cup; social connection (call/visit) | Connection — load-bearing for longevity |
-| **16:00** | **Exercise (§7.6 — Zone 2 / strength / HIIT)** | Single highest-evidence longevity intervention |
-| **17:30** | Infrared sauna 20–30 min (4–7×/wk) + cold immersion 2–3 min finishing | Finnish KIHD all-cause mortality ↓; HSP70 |
-| **18:00** | PBM 660 + 850 nm full-body 15 min (4–5×/wk) | Mitochondrial cytochrome-c-oxidase |
-| **18:30** | Dinner (§6.4) — **early dinner critical for autophagy + glucose + sleep** | — |
-| **19:00** | Vajrasana 5 min + light walk | Digestion |
-| **19:30** | HRV biofeedback 15 min + slow 6-bpm coherent breathing | Parasympathetic + baroreflex |
-| **20:00** | Optional Yoga Nidra (Bihar School) 30 min OR meditation 20 min | Cortisol + sleep depth + telomere |
-| **20:30** | Triphala 1 g warm water + light reading | Bowel motility + cognitive engagement |
-| **21:00** | **Combo 3** (Glycine + Mg + Ashwagandha + Collagen) | GABA + sleep depth + collagen overnight repair |
-| **21:30** | Blue-light cutoff; books / family / social presence | Melatonin + connection |
-| **22:00** | Bhramari 5 + 4-7-8 + Yoga Nidra prep | Vagal close-out |
-| **22:30** | Bedtime; 18–20 °C; HEPA on; mouth tape (post-apnea-cleared); sleep tracker | Deep sleep + autophagy + mitophagy |
-| **02:00–06:00** | Sleep — **load-bearing for ALL hallmarks of aging** | — |
-
-**Monthly senolytic pulse (e.g. 1st + 2nd of month)**: Skip Combo 2 Spermidine those 2 days. Add Fisetin 1500 mg AM + Quercetin 1000 mg AM with fat. Skip pulse if on anticoagulants without coordination.
-
-**Fasting day (e.g. 1 day/week 18:6, or quarterly 5-day FMD)**: Skip breakfast (16:8 → 18:6 → 5-day FMD per Valter Longo Italian protocol); maintain electrolytes + bone broth.
-
-**If on statin**: CoQ10 200–300 mg/day load-bearing in Combo 1. **If on antihypertensive**: K-rich foods + Mg + Hibiscus + Combo 1 NO precursors → monitor home BP; option to taper at user's own pace. **If on metformin**: NAC + B12 (metformin depletes); berberine + metformin = additive hypoglycaemia — caution. **If on bisphosphonates**: K2-MK7 + Vit D + Mg + boron + strength training + jaw monitoring. **If on HRT (bioidentical or conventional)**: B6 + Mg + cofactor floor; user coordinates with prescriber.
+| Hour | TL;DR (plain English) | Action | Conflicts resolved |
+|---|---|---|---|
+| 06:00 | Wake + sun | Wake; 5 min sunlight outside | Circadian |
+| 06:30 | Pranayama + asana | 10 min Anulom Vilom + Surya Namaskar 10–20 rounds | Vagal + Zone 2 |
+| 07:30 | Breakfast | Fat-rich per §6.4 | Ca-Fe-thyroid Rx gap |
+| 08:00 | Combo 1 | D3+K2 + Omega-3 + B12 + Creatine + Chyawanprash | Apart from Fe/thyroid |
+| 09:30 | Green tea or matcha | EGCG + L-theanine | Coffee/iron gap |
+| 12:30 | Lunch | Per §6.4 | — |
+| 13:00 | Combo 2 | Mg + Urolithin A + Spermidine | Split Mg/Ca |
+| 13:30 | Post-lunch walk | 10 min | Glucose |
+| 14:00 | Caffeine cutoff | Last caffeine | Sleep |
+| 16:00 | Exercise | Strength / Zone 2 / HIIT per §7.6 | — |
+| 17:00 | Optional sauna or PBM | 20 min sauna OR 15 min red-light | Recovery |
+| 18:30 | Dinner | Per §6.4 — light, lower-carb | — |
+| 19:00 | Combo 3 | Mg + Triphala + optional Ashwagandha | — |
+| 20:00 | Social or purpose | Call friend / read / journal / community | Social longevity lever |
+| 21:00 | Blue-light cutoff | Screens off | Melatonin |
+| 21:30 | Restorative + Bhramari + 6-bpm | 5 min Bhramari + 10 min 6-bpm | Vagal + BP |
+| 22:00–22:30 | Bedtime (7–9 h target) | Lights out | Sleep is the lever |
 
 ## 9. Supplier Ecosystem + Monthly Cost
 
-| Channel | Sources | Brands |
-|---|---|---|
-| Amazon Prime / iHerb | NMN/NR, NAC, Curcumin, Spermidine, Quercetin, Polydatin, Sulforaphane, CoQ10, Omega-3, Magnesium, Glycine, Taurine, Creatine, Collagen, Vitamins | Renue, Tru Niagen, Spermidine LIFE (Austria), Doctor's Best, Thorne, Pure Encaps, Jarrow, NOW, Carlson, Creapure, Vital Proteins, Kaneka Q10 Jarrow |
-| Amazentis Mitopure (Switzerland) | Urolithin A | direct |
-| Patel Brothers / Apna Bazaar | Ashwagandha, Brahmi, Triphala, Amalaki, Shilajit, Chyawanprash, sprouted millets | Himalaya, Organic India, Patanjali, Baidyanath, Dabur, Ixoreal — **Patel Brothers, 1610 Stoneridge Mall Rd, Pleasanton CA**; **Apna Bazar, 100-04 Queens Blvd, Forest Hills NY** |
-| Chinatown TCM | Wu Zi Yan Zong, Da Bu Yin, Bu Zhong Yi Qi, Liu Wei Di Huang, Jin Gui Shen Qi, He Shou Wu (prepared), Ling Zhi/Reishi, Dan Shen, San Qi | Plum Flower (Mayway, Oakland), Min Tong — **Sun Sing Pacific, 1205 Stockton St, SF**; **Kamwo, 209 Grand St, NYC** |
-| Hamdard Dawakhana | Khamira Marwareed, Majoon Aslus Soos, Itrifal Ustukhuddus | Hamdard, Ajmal |
-| IMPCOPS Chennai (Siddha) | Karisalai Karpam, Thiriphala, Kayakalpa chooranam | IMPCOPS, SKM |
-| Men-Tsee-Khang / Padma AG | Padma Lax (EMA), Agar-35, Mu-Tig 25 | direct EU |
-| CCRH homeo | Lycopodium, Calcarea, Conium, Baryta, Phosphorus, Carduus, Crataegus | SBL, Schwabe (IN), Boiron (FR) |
-| Real Mushrooms / Host Defense | Lion's Mane, Reishi | direct |
-| Whole Foods / Sprouts | Oily fish, EVOO, berries, pomegranate, broccoli sprouts, wheat germ, natto, eggs organic | — |
-| TruDiagnostic / Elysium / MyDNAge | DNAm biological age | direct |
-| Withings / InBody | Scale, body composition | — |
-| Camry / Jamar | Hand dynamometer | — |
-| Sunlighten / Plunge / Bemer / Mito Red | Sauna, cold tub, PEMF, PBM | one-time |
-| Oura / Whoop / Polar / HeartMath | HRV, sleep | one-time + sub |
-| Wellue / Lookee | Sleep oximetry | one-time |
-| Levels / Nutrisense / Libre 14d | CGM | sub or episodic |
+### 9.1 Where to buy
 
-**Monthly cost (USD)**
-- Combo 1 (NMN or NR + Urolithin A + CoQ10 + PQQ + Taurine + D3 + K2): **$160–230** (Urolithin A dominates cost; some users alternate Mo 1/3 if budget-constrained)
-- Combo 2 (Spermidine + Curcumin + Sulforaphane + Omega-3 + Berberine + Vit C): **$100–150**
-- Combo 3 (Glycine + Mg + Ashwagandha + Collagen + Triphala): **$50–80**
-- Creatine 5 g: **$5–10**
-- Senolytic pulse (Fisetin + Quercetin liposomal monthly 2 days): **$30–50** monthly
-- Optional Lithium orotate microdose: **$10–20**
-- Optional Lion's Mane + Reishi: **$50–80**
-- Cofactor floor (Zn, Cu, Se, B-complex, B12, folate, Boron): **$30–50**
-- Rasayana stack (Ashwagandha + Brahmi + Amalaki + Shilajit + Chyawanprash): **$40–70**
-- TCM cycling (Wu Zi Yan Zong + Liu Wei Di Huang) wks 1 & 4: **$25–45**
-- Green tea + hibiscus + tulsi + dark chocolate 85%+ + wheat germ + natto: **$30–50**
-- Diet uplift (EVOO premium, oily fish, eggs organic, berries, pomegranate, nuts, broccoli sprouts, bone broth): **$200–350**
-- **Recurring total: $730–1,200/month** (highest of all dossiers; longevity is genuinely investment-heavy)
+| Channel | TL;DR (plain English) | Typical brands | Citation |
+|---|---|---|---|
+| Amazon / iHerb / Sprouts / Whole Foods | Mainstream stack — D3+K2, omega-3, B12, creatine, Mg, Urolithin A, spermidine. *(consumer)* | NOW, Nordic Naturals, Thorne, Pure Encapsulations, Jarrow, Mitopure (Amazentis), Primeadine, NutraBio | *(consumer)* |
+| AYUSH-GMP direct | Chyawanprash, Triphala, Ashwagandha, Brahma Rasayana. *(AYUSH-GMP)* | Dabur, Patanjali, Baidyanath, Sri Sri Tattva, Organic India, Himalaya | *(AYUSH-GMP)* |
+| Chinatown TCM | Liu Wei Di Huang Wan, Ba Wei Di Huang Wan, Ren Shen, Reishi, Cordyceps Cs-4, Goji, Schisandra. *(Chinese Pharmacopoeia 2020)* | Plum Flower, Min Tong, Mayway, Treasure of the East | *(NMPA)* |
+| Hamdard / IMPCOPS / Men-Tsee-Khang | Unani vitality, Siddha rasayanams, Tibetan Padma 28 + Agar-35. *(traditional pharmacies)* | Hamdard, Dawakhana, IMPCOPS, SKM, Men-Tsee-Khang, Padma AG | *(traditional)* |
+| SBL / Schwabe / Boiron / B.Jain | Homeopathy T/H. *(Boericke)* | SBL, Schwabe, Boiron, B.Jain | *(Boericke)* |
+| DTC labs + epigenetic clocks | TruDiagnostic TruAge, GlycanAge, InsideTracker, Function Health, SiPhox, OmegaQuant. *(DTC)* | TruDiagnostic, GlycanAge, InsideTracker, Function Health, SiPhox, OmegaQuant, LetsGetChecked | *(DTC)* |
+| Device suppliers | Sunlighten, HigherDOSE, JNH (sauna); Plunge tub, Edge Tub (cold); Mito Red Light, Joov (PBM); Bemer (PEMF); OxyHealth Vitaeris (HBOT). | As listed | *(device)* |
 
-**One-time devices**
-- Withings Body Scan or Body+ + Camry dynamometer + tape: $200–500
-- Validated BP cuff: $80–200
-- HRV monitor (Oura $300, Whoop $0+sub, Polar H10 $90, HeartMath $130): $100–300 + sub
-- Wellue O2Ring: $200
-- CGM (Levels, Nutrisense, Libre 14d): $100–400 episodic
-- Infrared sauna: $1,800–4,500 (high-evidence)
-- Plunge cold tub: $0–$5,000
-- Mito Red Light PBM: $249–$749
-- Bemer PEMF mat: $400–2,500
-- DNAm biological age annual (TruAge, Elysium, MyDNAge): $200–500 annual
-- DTC labs baseline + Mo3 + Mo6 + Mo12 (full panel: lipid + ApoB + Lp(a) + HbA1c + HOMA-IR + hs-CRP + IL-6 + GlycA + vit D + Mg + K + homocysteine + uric acid + LFT + thyroid full + free testosterone + DHEAS + SHBG + IGF-1 + Estradiol if peri/post-menopause + B12 + folate + ferritin): **$300–500/round**
-- Optional DEXA scan annual: $100–250 each
-- Optional FibroScan: $250–500 baseline if NAFLD-tracking
-- Optional CIMT: $100–250
+**Brick-and-mortar:** Patel Brothers, 1610 Stoneridge Mall Rd, Pleasanton CA 94588 (sprouted millets, Chyawanprash, Triphala). Kamwo Meridian Herbs, 209 Grand St, NYC 10013 (Liu Wei Di Huang Wan, Ba Wei Di Huang Wan, Ren Shen, Reishi).
+
+### 9.2 Monthly cost — by line
+
+- Combo 1 + 2 + 3 (full daily stack with Urolithin A as cost driver + Chyawanprash + Triphala + optional Ashwagandha): $165–270
+- TCM cycling (weeks 1 & 4): $20–30
+- DTC labs (quarterly composite averaged) + optional epigenetic clock (annual averaged): $75–140
+- Fresh produce uplift: $100–200
+- Optional sauna sessions: $50–150 or amortised home device
+- **Total monthly: $360–790**
+- **One-time:** Home sauna $1,500–10,000; PBM panel $300–4,000; cold tub $500–6,000; PEMF mat $1,500–5,000; mild HBOT $4,000–10,000; BP cuff $50–200; wearable $200–500; grip dynamometer $30–80.
 
 ## 10. Interaction Matrix
 
-### 10.1 Drug ↔ Supplement (for users ALREADY on conventional drugs — protocol prescribes NONE)
+### 10.1 Drug ↔ Supplement interactions
 
-Conventional aging-related drugs you may be on: statins, antihypertensives (ACE-i, ARB, β-blocker, CCB, thiazide), metformin (T2D or off-label longevity), aspirin 81 mg, anticoagulants (warfarin, DOACs), bisphosphonates, HRT (bioidentical or conventional estrogen/progesterone/testosterone), SSRI/SNRI, anti-anxiety, sleeping pills, levothyroxine, NSAIDs (chronic for OA), PPI (chronic — depletes B12, Mg, Ca), hearing/vision-related medications.
+> **For users ALREADY on conventional therapy adding this OTC protocol on their own initiative — and for users considering OFF-LABEL longevity Rx via §10.7.3. The protocol prescribes NONE of these drugs.** *(framing per Skill source policy)*
 
-| Drug (you may be on) | Supplement | Risk | Mitigation |
+| Drug (currently on it) | TL;DR (plain English) | Supplement | Mitigation | Citation |
+|---|---|---|---|---|
+| Warfarin / DOACs | K2-MK7 ↓ INR; high-dose omega-3 + ginkgo + curcumin + garlic + ginger ↑ bleed; CoQ10 ↓ INR. *(Schurgers 2007; Bender 1998)* | K2-MK7, Omega-3, CoQ10, ginkgo, curcumin, garlic | Don't oscillate; INR/bleeding monitoring | *(Schurgers 2007)* |
+| Statins | Statin-myopathy → CoQ10 ↓ → supplementation ameliorates. *(Banach 2015)* | CoQ10 / Ubiquinol | 100–200 mg ubiquinol | *(Banach 2015)* |
+| Metformin (off-label per §10.7.3) | Depletes B12 (de Jager 2010); + alcohol = lactic acidosis. *(de Jager 2010)* | B12 | B12 essential; moderate alcohol | *(de Jager 2010)* |
+| Rapamycin (off-label per §10.7.3) | mTOR inhibitor — CYP3A4 modulators (grapefruit, SJW). *(rapamycin label)* | Grapefruit, SJW, CYP3A4 herbs | Avoid combinations | *(rapamycin label)* |
+| GLP-1 agonists (off-label per §10.7.3) | Gastroparesis + nausea; rare pancreatitis. *(SELECT 2023)* | All supplements | Time away from peak nausea | *(SELECT 2023)* |
+| SGLT-2 inhibitors (off-label per §10.7.3) | Euglycaemic DKA if very-low-carb / fasting; volume depletion. *(DAPA-HF)* | Fasting / very-low-carb | Hydration; avoid prolonged fasting | *(DAPA-HF 2019)* |
+| TRT + HRT (per §10.7.3) | Polycythaemia (TRT); soy/red clover/black cohosh consideration (HRT). *(TRAVERSE 2023; KEEPS)* | Iron, soy isoflavones, red clover, black cohosh | Hematocrit + discussion with prescribing physician | *(TRAVERSE 2023; KEEPS)* |
+| SSRIs / SNRIs + ACE inhibitors | St. John's Wort = serotonin syndrome; hyperkalemia + K-rich foods + ACE-i. *(serotonin syndrome; ACE-i + K)* | St. John's Wort, 5-HTP, high-K foods | Avoid combinations; moderate K-rich foods | *(serotonin syndrome)* |
+| Bisphosphonates + Levothyroxine | Ca/Mg/Fe block absorption (both); **inform dentist before extraction** (ONJ); coffee/soy/fibre block levothyroxine. *(bisphosphonate; thyroid label)* | Ca, Fe, Mg, coffee, soy, fibre | ≥2 h gap; 60 min thyroid gap; bisphosphonate fasting | *(bisphosphonate labels)* |
+| Antihypertensives + Anti-amyloid (per §10.7.3) | Licorice/ephedra raise BP; ARIA-E/H risk anti-amyloid + anticoagulants amplify. *(licorice + BP; lecanemab label)* | Licorice, ephedra, high-dose omega-3 | Avoid licorice; discuss anti-amyloid + omega-3 with prescribing physician | *(licorice-BP; lecanemab)* |
+
+### 10.2 Drug ↔ Food interactions
+
+| Drug | TL;DR (plain English) | Food | Required action |
 |---|---|---|---|
-| **Statin** | CoQ10 (depleted by statin) | Myopathy without replenishment | **Pair CoQ10 200–300 mg/day** |
-| **Statin** | Grapefruit | CYP3A4 | **Eliminate grapefruit** |
-| **Statin** | Berberine, Red Yeast Rice (not in this protocol but worth flagging) | CYP3A4 substrate competition / additive myopathy | Berberine 4 h gap; no RYR co-use |
-| **Antihypertensive** | Beetroot, Hibiscus, Garlic, Mg, Taurine, Combo 1 NO stack | Additive BP ↓ | Home BP monitor; titrate; option to taper meds at user's own pace |
-| **ACE-i / ARB / K-sparing** | K-rich foods, K supplement | Hyperkalemia | Avoid K supp; moderate banana/coconut water; DTC K monitor |
-| **Metformin** | B12 (depleted) | Neuropathy, anaemia | **B12 1000 µg sublingual** |
-| **Metformin** | Berberine | Additive hypoglycaemia | Monitor glucose; CGM useful |
-| **Metformin** | Alcohol | Lactic acidosis | Eliminate alcohol |
-| **Aspirin 81 mg** | Curcumin, Ginkgo, garlic, ginger, fish oil >3 g, Vit E >800 IU, nattokinase, fisetin, quercetin high | Additive bleed | Caution |
-| **Warfarin / DOAC** | Vit K2 MK-7, Milk Thistle, Vit E high, omega-3 high, Curcumin high, Ginkgo, Dan Shen, San Qi, garlic, nattokinase, Fisetin/Quercetin senolytic pulses | INR / bleed | Consistent Vit K + greens; INR monitor; user's call on coordinator's input; senolytic pulse caution |
-| **DOAC** | St John's Wort | ↓ DOAC | SJW **excluded** |
-| **DOAC** | Grapefruit (apixaban moderate) | CYP3A4 | Moderate |
-| **Bisphosphonates** | Ca, Mg, Fe, K2-MK7 | Bisphos absorption block | ≥60 min before food/Ca/Mg; K2 + D + Mg + Boron + strength = synergistic bone |
-| **Bisphosphonates** | NSAIDs | GI | Caution |
-| **HRT (estrogen / progesterone)** | SJW (↓ HRT), Vitex (cautious, can interact), Milk Thistle (mild) | Hormone modulation | SJW out; Vitex caution if HRT |
-| **Bioidentical T (transdermal/troche)** | Ashwagandha, Shilajit | Additive (mild) | OK |
-| **SSRI / SNRI** | SJW (excluded), Ashwagandha, SAMe (caution), L-theanine, Magnesium | Serotonin, CNS | SJW out; SAMe with awareness; Ashwa ≥3 h |
-| **Benzodiazepine** | Ashwagandha, L-theanine, valerian, kava, glycine | Additive CNS | Caution; slow taper at user's own pace |
-| **Sleeping pills (Z-drugs)** | Same as benzo | CNS | Caution; slow taper |
-| **Levothyroxine** | Triphala, Ashwagandha (HPA), Ca, Fe, soy, calcium-rich foods, fibre | T4 binding | Levo 60 min before food/Ca/Mg/coffee |
-| **Methotrexate** | NAC, Milk Thistle, folate | Hepatic + bone marrow | Cofactor floor; LFT Mo 1/3 |
-| **NSAIDs (chronic for OA)** | Lithium orotate (renal Li handling) | Li level shift | Monitor Li if microdose |
-| **NSAIDs** | DGL, glycine, NAC, mucosal support | GI | DGL, marshmallow, slippery elm |
-| **PPI (chronic — depletes B12/Mg/Ca/Zn)** | B12, Mg, Ca, Zn | Deficiency over time | Cofactor floor; PPI taper at user's own pace |
-| **Cyclosporine, Tacrolimus** | Grapefruit, SJW, Berberine, Echinacea, Astragalus | CYP3A4 + immunomodulation | Eliminate combos; protocol cautious |
-| **Lithium pharmacological (300+ mg lithium carbonate)** | Lithium orotate microdose | Additive | Avoid combo without coordination |
-| **Lithium** | NSAIDs, Na-restricted diet, ACE-i, diuretics, dehydration | Toxicity | Consistent Na + hydration; monitor Li |
+| Warfarin | Consistent K-rich greens. *(warfarin-K1)* | Kale, spinach, methi | Consistent intake |
+| MAOIs | Tyramine (aged cheese, fermented sausage, wine) = HTN crisis. *(MAOI-tyramine)* | Aged cheese, wine | Avoid |
+| Levothyroxine | Coffee/soy/fibre block absorption. *(thyroid label)* | Coffee, soy, fibre | 60 min gap |
+| Grapefruit + many drugs (statins, CCBs, immunosuppressants, rapamycin) | CYP3A4 inhibition → toxicity. *(grapefruit-CYP3A4)* | Grapefruit | Avoid |
+| Bisphosphonates | Fasting; only water. *(bisphosphonate labels)* | All food | 30 min fasting |
+| Metformin + alcohol | Lactic acidosis. *(metformin label)* | Alcohol | Moderate |
 
-### 10.2 Drug ↔ Food
+### 10.3 Supplement ↔ Food interactions
 
-| Drug | Food | Mechanism | Action |
+| Supplement | TL;DR (plain English) | Food / Drink | Required action |
 |---|---|---|---|
-| **Statins, CCBs, amiodarone, immunosuppressants** | Grapefruit, Seville orange, pomelo | CYP3A4 | **Eliminate** |
-| **Warfarin** | Vit-K greens, cranberry, mango/pomegranate high | INR shift | **Consistent** intake |
-| **Bisphosphonates** | Food, coffee, dairy, Ca | Absorption block | ≥60 min before food |
-| **Levothyroxine** | Coffee, soy, dairy, fibre | T4 block | Levo 60 min before |
-| **MAOI (rare)** | Tyramine (aged cheese, fermented, wine) | HTN crisis | Avoid |
-| **PPI** | Low B12/Mg/Ca/Zn diet | Compounds deficiency | Cofactor + dietary repletion |
-| **Lithium pharmacological** | Low-Na diet, dehydration | Toxicity | Consistent Na + hydration |
-| **Acetaminophen** | Alcohol | NAPQI | Eliminate combo |
-| **Metformin** | Alcohol | Lactic acidosis | Eliminate |
+| Fat-soluble A/D/E/K | Need fat for absorption. | Low-fat meals | Take with fat |
+| Vitamin D + Magnesium | Mg is D-activation cofactor. *(Reddy 2019)* | — | Take together |
+| Iron | Tea/coffee tannins block; Ca competes; pair with C. *(tannin-iron)* | Tea, coffee, dairy | ≥1–2 h gap; pair with C |
+| Curcumin (oral) | Casein binds; needs piperine + fat. *(Shoba 1998)* | Dairy | ≥2 h gap; piperine + fat |
+| Carotenoids (lutein, zeaxanthin, astaxanthin) | Fat required. | Low-fat meals | Take with fat |
+| Probiotic + hot food/drink | Heat kills. | >40 °C drinks | Cool/room temp |
+| Ashwagandha + alcohol | CNS depression. | Alcohol same evening | Avoid |
+| Adaptogens (rhodiola, eleuthero) | AM only — stimulating. | — | Morning only |
+| Melatonin + caffeine | Caffeine blocks. | Caffeine after 14:00 | No caffeine after 14:00 |
+| Cruciferous (raw, high quantity) | Goitrogenic if hypothyroid. *(goitrogen literature)* | Hypothyroid users | Steam if hypothyroid |
+| Calcium + Magnesium | Same-dose competition. *(divalent cation)* | — | Split AM/PM |
 
-### 10.3 Supplement ↔ Food
+### 10.4 Supplement ↔ Supplement interactions
 
-| Supplement | Food / Drink | Mechanism | Action |
-|---|---|---|---|
-| **NMN / NR** | High-niacin foods | Minor | OK |
-| **Urolithin A (Mitopure)** | Pomegranate / berries / nuts | Synergy via ellagitannin precursors | Both |
-| **Spermidine** | Wheat germ (food source) | Synergy | Stack moderate; ceiling unknown |
-| **Curcumin** | Dairy, EGCG | Casein binds polyphenols; EGCG competes | 2 h gap; pair curcumin with piperine + ghee |
-| **Sulforaphane** | Hot drink | Denatures myrosinase | Cool, mustard seed |
-| **Berberine** | Dairy | ↓ absorption | 1 h gap |
-| **Berberine** | Grapefruit | CYP3A4 | Avoid grapefruit |
-| **Omega-3** | None significant | — | — |
-| **Quercetin / Polyphenols** | Iron, tea, copper | Chelation | ≥1–2 h gap |
-| **Fisetin (senolytic pulse)** | High-fat meal (better absorption); liposomal preferred | Absorption | With fat |
-| **Fisetin / Quercetin senolytic pulses** | Alcohol | Hepatic load | Eliminate alcohol day of pulse |
-| **CoQ10 / Vit E / K2 / D3** | Low-fat | Micelle | With fat |
-| **Vit D3 + Mg** | — | Cofactor | Pair AM |
-| **Creatine** | Carb/protein | Insulin-mediated muscle uptake | Consistent timing |
-| **Glycine** | Warm water HS | Sleep | HS |
-| **Taurine** | None significant | — | — |
-| **NAC** | High-Cu (oysters) | Chelation | ≥2 h |
-| **Probiotic** | Hot food/drink | Kills | Cool/room temp |
-| **Lithium orotate** | Salt | Affects Li excretion | Consistent Na |
-| **Ashwagandha** | Alcohol | CNS depression | Eliminate |
-| **Adaptogens** | Caffeine excess | Stacked stimulant | Moderate caffeine |
-| **Bone broth** | Glycine + collagen synergy | — | Yes |
-| **Spermidine + IF** | — | Synergistic autophagy | Yes |
-| **Wheat germ** in coeliac users | — | Gluten | Use coeliac-safe spermidine SKU |
+| Combination | TL;DR (plain English) | Required action |
+|---|---|---|
+| Zinc ↔ Copper | Long-term Zn without Cu depletes Cu. *(zinc-copper)* | 8–15:1 Zn:Cu ratio |
+| Iron ↔ Zn/Ca/Mg | Divalent competition. *(divalent cation)* | Separate by 2 h |
+| Vitamin A ↔ Vitamin D | High-dose A competes with D-receptor activation. | Balance |
+| Vitamin E high-dose ↔ K2 | E antagonises K. | Balance |
+| St. John's Wort ↔ SSRIs + many herbs | Serotonin syndrome + CYP induction. *(SJW-CYP)* | Avoid combinations |
+| Berberine ↔ CYP3A4 herbs | CYP3A4 inhibition. *(berberine-CYP)* | Reduce concurrent |
 
-### 10.4 Supplement ↔ Supplement
+### 10.5 Timing rules
 
-| A | B | Mechanism | Action |
-|---|---|---|---|
-| **NMN ↔ NR** | — | Both raise NAD+ | Pick one |
-| **NMN/NR ↔ Resveratrol/Polydatin** | — | Sirtuin activation synergy | Pair |
-| **Urolithin A ↔ Spermidine** | — | Both autophagy — additive | OK; possibly synergistic |
-| **CoQ10 ↔ Statin (if on)** | — | Statin depletes | Pair |
-| **CoQ10 ↔ Warfarin (if on)** | — | Mild ↓ INR | Monitor |
-| **Curcumin ↔ Anticoagulants** | — | Bleed | Caution |
-| **Omega-3 ↔ Anticoagulants** | — | Bleed at >3 g | Caution |
-| **Mg ↔ Ca** | same hour | Competition | Ca AM, Mg PM |
-| **Vit D ↔ Mg** | — | Cofactor | Pair |
-| **Vit D ↔ K2-MK7** | — | Synergy (Ca routing) | Pair |
-| **Vit A ↔ Vit D** | high-dose | Receptor | Balance |
-| **Vit E ↔ Vit K** | E >800 IU | Antagonism | E ≤ 400 IU mixed toco |
-| **Zinc ↔ Copper** | long-term | Cu depletion | 8–15:1 |
-| **Iron ↔ Zn / Ca / Mg** | — | DMT1 | ≥2 h |
-| **Berberine ↔ Statin / Cyclosporine / Tacrolimus** | — | CYP3A4 | 4 h gap; avoid combo |
-| **Berberine ↔ Metformin (if on)** | — | Additive hypoglycaemia | Monitor |
-| **Senolytic pulse (Fisetin + Quercetin) ↔ Spermidine daily** | — | Additive autophagy | Skip spermidine on pulse days |
-| **Senolytic pulse ↔ Anticoagulants** | — | Bleed | Caution |
-| **Lithium orotate ↔ Thyroid med (if on)** | — | TSH ↑ at low Li | Monitor TSH |
-| **Lithium orotate ↔ Lithium pharmacological** | — | Additive | Avoid combo |
-| **Adaptogen stacking** | Ashwa + Rhodiola + Bacopa + Shilajit + Ling Zhi/Reishi | HPA blunting | 1–2 primary + cycle others |
-| **Ashwagandha ↔ Thyroid (Hashimoto)** | — | Adaptogen may normalise — monitor TSH | Monitor |
-| **Shilajit ↔ Uric acid** | — | Modest ↑ uric acid | Monitor if gout |
-| **Mucuna pruriens (L-DOPA) ↔ Levodopa (if on)** | — | Additive | Avoid combo |
-| **Mucuna ↔ MAOI / SSRI** | — | Serotonin | Avoid combo |
-| **SAMe ↔ MAOI / SSRI / Bipolar** | — | Serotonin / mania | Caution; user's call |
-| **SJW ↔ everything** | — | CYP3A4 + serotonin | **Excluded** |
-| **He Shou Wu (Polygonum) ↔ Hepatotoxic herbs** | — | Additive hepatic | Use prepared only; LFT |
+- Caffeine cutoff 14:00.
+- Creatine — pre/post-workout with carb/protein; consistent daily.
+- L-theanine + caffeine — AM only.
+- Magnesium glycinate — PM.
+- Ashwagandha — AM or PM (PM ≥2 h before bed).
+- Rhodiola / Eleuthero — AM only.
+- Melatonin — 30–60 min pre-sleep; ≤0.3 mg physiological preferred.
+- Heavy meal + supine within 3 h → reflux risk.
+- Hot sauna + alcohol → dehydration/arrhythmia.
+- Cold immersion + CVD → caution.
 
-### 10.5 Exercise / Sleep / Caffeine timing rules
+### 10.6 Strictly avoid (longevity-specific)
 
-- **Caffeine cutoff 14:00**; cap 200 mg/day if HTN tendency; eliminate if AF.
-- **Alcohol** — minimal-to-zero for optimal longevity; non-US centenarian data ambiguous (Mediterranean moderate vs Okinawan minimal vs Adventist abstinence).
-- **Ashwagandha** — PM with dinner.
-- **Magnesium** — PM.
-- **NMN / NR** — AM.
-- **Urolithin A** — AM with fat.
-- **Spermidine** — AM with food.
-- **Creatine** — any time consistent; with carb/protein for muscle uptake.
-- **Glycine** — HS.
-- **Senolytic pulses (Fisetin + Quercetin)** — 2 consecutive days monthly with fat; coordinate with anticoagulants.
-- **Berberine** — pre-meal TID.
-- **Probiotic** — cool first-meal AM; ≥2 h antibiotic.
-- **Sauna + alcohol** — never combine.
-- **Cold immersion + significant CHD** — caution.
-- **HIIT + uncontrolled HTN/CHD** — caution; clear with own assessment.
-- **Strength training** — load-bearing for sarcopenia + cognition.
-- **Intermittent fasting** — 14:10 baseline; caution underweight, HPA-depleted, pregnancy, eating disorder history, sarcopenia-prone (protein adequacy critical).
-- **Kapalbhati / Bhastrika** — contraindicated in HTN, pregnancy, glaucoma.
-- **Sarvangasana / Halasana / Headstand** — contraindicated in uncontrolled HTN, glaucoma, retinopathy, cervical disc disease.
+- Tobacco any amount.
+- Alcohol >7 drinks/week.
+- Megadose vitamin E primary prevention (HOPE-TOO null + harm).
+- Megadose vitamin D for CV (VITAL 2019 null).
+- Antioxidant cocktails (Bjelakovic 2014 Cochrane null/harm).
+- Self-administered off-label peptides (BPC-157, TB-500, Epitalon) without medical oversight.
+- Self-administered off-label rapamycin / metformin / NAD+ IV / senolytics — clinic-route only, never DIY.
+- High-dose niacin for lipid (AIM-HIGH + HPS2-THRIVE null + harm).
+- Ephedra / Ma Huang / yohimbine / bitter orange (sympathomimetic CV risk).
+- He Shou Wu internal use (Lin 2015 hepatotoxicity).
+- Megadose iron without ferritin measurement.
 
-### 10.6 Strictly Avoid — specific to longevity / aging pathology
+## 10.7 Emerging & adjunctive therapies
 
-- **Smoking, vaping, paan, gutka, snuff** — single largest modifiable lifespan reducer; total elimination.
-- **Trans fats, charred / deep-fried foods, ultra-processed** — AGE, glycation, inflammaging.
-- **Excess refined sugar + HFCS + sugary drinks** — DNL, AGE, NAFLD, insulin.
-- **Excess alcohol (>7 drinks/wk; ideally minimal)** — cancer + cardiovascular + sleep + microbiome.
-- **Heavy metals** (lead in water, mercury in fish, cadmium air, arsenic in wells) — testing + remediation.
-- **Aflatoxin** (mouldy peanuts/corn) — hepatocarcinogen.
-- **Pesticides** — organic where possible.
-- **Endocrine disruptors** (BPA, phthalates, PFAS) — glass, ceramic, cast iron.
-- **Excess methionine load without glycine balance** (huge red-meat diets without bone broth/glycine).
-- **Chronic mTOR overactivation** from chronic over-nutrition + sedentary — IF + exercise.
-- **St John's Wort** — interacts with most longevity-relevant drugs.
-- **Comfrey, kava, chaparral, germander, raw He Shou Wu** — hepatotoxic.
-- **Aristolochia herbs** — carcinogenic + nephrotoxic; eliminate.
-- **Ma Huang / Ephedra** — sympathetic.
-- **High-dose iron supplementation** (without measured deficiency) — iron is pro-aging.
-- **Excessive sun without skin protection on non-vitiligo non-deficient skin** — photoaging.
-- **Social isolation** — well-documented cardiovascular-equivalent risk; intentional connection is load-bearing.
-- **Sedentary lifestyle** — single most reversible "drug" against all hallmarks of aging.
-- **Pharmacological lithium + Lithium orotate microdose without monitoring**.
-- **Senolytic pulse + anticoagulants without coordination** — bleed.
-- **TA-65 / Astragaloside IV telomere products at extreme price points** — contested evidence; user's call.
-- **Off-label rapamycin without specialist guidance** — protocol does not include; user's call entirely.
-- **Off-label metformin for longevity in non-diabetics** — controversial in MILES + TAME trials; user's call.
+> **TL;DR.** What's on the horizon beyond walking + Mediterranean + sleep: home wearables, app-based CBT-i + MBSR + HRV biofeedback, and a clinic-route landscape of off-label longevity drugs (metformin TAME-pending, rapamycin Mannick 2014 immune-aging only, GLP-1s, SGLT-2is, NAD+ IV, peptides, HRT/TRT, senolytics, anti-amyloid, hyperbaric). **The protocol is brutally honest — most off-label longevity drugs lack human longevity RCTs.** *(Mannick 2014; Bannister 2014; SELECT 2023; DAPA-HF 2019; TRAVERSE 2023; KEEPS; Justice 2019; Hachmo 2020)*
+
+### 10.7.1 Home-usable advanced & device therapies
+
+- **DTC epigenetic clocks** — TruDiagnostic TruAge (PhenoAge/GrimAge/DunedinPACE) $300–500; GlycanAge. **Grade C-B** (research tool; clinical validity debated per Bell 2019). *(Horvath 2013; Bell 2019)*
+- **DTC composite biomarker panels** — InsideTracker, Function Health, SiPhox. **Grade B**. *(DTC biomarker)*
+- **Home grip-strength dynamometer + wearables (HRV/sleep/RHR/VO2max) + smart-scale + BP cuff** — Leong PURE 2015 A predictor; Stergiou 2018 home BP A. **Grade A-B**. *(Leong 2015; Stergiou 2018)*
+- **Home 14-day CGM windows** (Stelo, Lingo, Libre — quarterly). **Grade B**. *(Hall 2018)*
+- **Home sauna** (Sunlighten, HigherDOSE, JNH) — Laukkanen 2015 Finnish 50 % lower fatal CV at 4–7×/week. **Grade B**. *(Laukkanen 2015)*
+- **Home red-light PBM + soft-shell HBOT 1.3 ATA** (Mito Red Light, Joov; OxyHealth Vitaeris). **Grade B/C-B emerging**. *(Hamblin 2018; Hachmo 2020)*
+- **App-based CBT-i + HRV biofeedback + RESPeRATE** (Sleepio, Somryst; HeartMath, Lief; RESPeRATE 6 bpm). **Grade A insomnia; B**. *(Trauer 2015; McCraty 2015; Schein 2001)*
+
+### 10.7.2 Adjunctive behavioural therapies
+
+- **CBT-i (CBT for insomnia)** — Trauer 2015 strong meta. **Grade A**. *(Trauer 2015)*
+- **MBSR / Mindfulness for HPA + inflammaging + MBCT for recurrent depression** — Rosenkranz 2013; Kuyken 2016 Cochrane. **Grade B-A**. *(Rosenkranz 2013; Kuyken 2016)*
+- **Cardiac rehabilitation principles (self-administered)** — Anderson 2016 Cochrane CR. **Grade A**. *(Anderson 2016)*
+- **Tobacco cessation + alcohol-reduction** — Hartmann-Boyce 2018 + Kaner 2017 Cochrane. **Grade A-B**. *(Hartmann-Boyce 2018; Kaner 2017)*
+- **Purpose-finding (Ikigai, Plan-de-Vida, Blue Zones)** — Buettner; Strawbridge 1997. **Grade B** observational. *(Strawbridge 1997)*
+- **Social-connection interventions** — Holt-Lunstad 2010 A-grade meta; mortality-equivalent to smoking 15 cigs/day. **Grade A**. *(Holt-Lunstad 2010)*
+
+### 10.7.3 If the home protocol plateaus — clinic-route options (HONESTLY framed)
+
+**Brutal honesty preface.** Most off-label longevity Rx are extrapolated from animal models, observational data, or surrogate-biomarker shifts — NOT from RCTs of human mortality. TAME (metformin, Barzilai) is pending. Rapamycin lacks ANY human longevity RCT (Mannick 2014 = immune-aging marker only). NR/NMN safety established, longevity outcomes NOT. The protocol documents for transparency; does NOT recommend any.
+
+- **Metformin off-label longevity** — Bannister 2014 observational signal; UK Biobank mixed; **TAME pending — no result**. **Grade B observational; X interventional pending.** *(Bannister 2014; TAME)*
+- **Rapamycin (sirolimus) off-label** — Mannick 2014 + 2018 RTB101 improved vaccine response in elderly (immune-aging marker only). **No human longevity RCT exists.** Mouse + dog data strongest signal — NOT human. **Grade B animal; X human longevity; C human surrogate.** *(Mannick 2014)*
+- **GLP-1 receptor agonists (semaglutide, tirzepatide) off-label longevity** — SELECT 2023 CV reduction in obesity; SURMOUNT 2022 weight. Strong obesity-CV; emerging longevity extrapolation. **Grade A obesity-CV; B emerging.** *(SELECT 2023; SURMOUNT 2022)*
+- **SGLT-2 inhibitors (DAPA-CKD + EMPA-KIDNEY)** — organ-protection beyond glucose. **Grade A HF + CKD; B emerging longevity extrapolation.** *(DAPA-HF 2019; DAPA-CKD 2020)*
+- **NAD+ IV / oral NR / NMN** — Martens 2018 NR safety + small aortic-stiffness; Yoshino 2021 NMN safety + small metabolic. **Human longevity outcomes pending.** **Grade C-B surrogate; X longevity.** *(Martens 2018; Yoshino 2021)*
+- **Peptide therapies (BPC-157, TB-500, Epitalon)** — Rx in most jurisdictions, research-only. **Grade D-C animal/limited human; X longevity.** Protocol does NOT recommend self-administration. *(peptide literature)*
+- **HRT (estrogen/progestin) + TRT (TRAVERSE 2023 CV safety affirmed hypogonadal men)** — KEEPS + WHI revisited — **early-menopause timing matters**; TRT for confirmed hypogonadal. **Grade A within timing window / confirmed hypogonadal.** *(KEEPS; TRAVERSE 2023)*
+- **Senolytic dasatinib + quercetin (Justice 2019 + Hickson 2019)** — small open-label IPF + DKD trials. **Research-only; very early signal; NOT longevity therapy.** **Grade C-D preliminary; X longevity.** *(Justice 2019)*
+- **Anti-amyloid for AD-risk (lecanemab, donanemab)** — controversial; ARIA-E/H risk. Cross-reference memory-aging dossier. **Grade B AD-pathology.** *(lecanemab Clarity AD)*
+- **Hard-shell hyperbaric oxygen (clinic 2.0–2.4 ATA)** — Hachmo 2020 small open-label n=35 senescence + telomere signal. **Grade C-B emerging.** Expensive. *(Hachmo 2020)*
+- **Gene therapy + Plasma exchange/young-plasma + GH injection for "anti-aging"** — research-only or NOT longevity-beneficial (Conboy 2005; Bartke 2008). **Grade X — not in our protocol.** *(Conboy 2005; Bartke 2008)*
+
+Frame: "If the home protocol plateaus and the user wishes to pursue a clinic-route off-label longevity option, here is what exists and what the trials actually show. The protocol does NOT recommend any of these; the user is sovereign over the decision. **Most off-label longevity Rx are speculative human extrapolations from animal or surrogate-biomarker data — not from human longevity RCTs. Be honest with yourself about what you are buying when you self-experiment.** For confirmed cardiovascular disease, T2D, hypogonadism, early menopause within the timing window — clinic Rx is well-evidenced for the condition (not for "aging" as a brand-new indication). The home stack adds to indicated Rx, never replaces it; the home stack documents off-label longevity Rx for transparency without endorsing self-administration."
+
+#### Open the science
+
+Trial register: López-Otín Hallmarks of Aging 2013 + 2023 update; CALERIE Ravussin 2015; PREDIMED Estruch 2018; MIND Morris 2015; Lowe 2020 TRE null; Sutton 2018 + Wilkinson 2020 TRE positive; LIFTMOR Watson 2018; Pillai 2017; Forbes 2022 creatine meta; Kodama 2009 VO2max-mortality meta; Cappuccio 2010 sleep-mortality meta; Holt-Lunstad 2010 social-mortality meta; Strawbridge 1997; Buettner Blue Zones; Casas 2014 Mediterranean inflammation; Calder 2017 omega-3; Allen 2008 B12 elderly; Schurgers 2007 K2; VITAL 2019 vitamin D null CV; HOPE-TOO 2005 vitamin E null/harm; Bjelakovic 2014 Cochrane antioxidants null; Salehi Cochrane 2020 resveratrol null; Martens 2018 NR; Yoshino 2021 NMN; D'Amico 2022 Urolithin A; Singh 2022 Urolithin A muscle; Madeo 2018 spermidine; Sharma 2019 Chyawanprash; Salve 2019 Ashwagandha; Akhtar 2011 Amla; Peterson 2017 Triphala; Mannick 2014 + 2018 rapamycin RTB101; Bannister 2014 metformin observational; TAME pending; SELECT 2023; SURMOUNT 2022; DAPA-HF 2019; EMPEROR-Reduced 2020; DAPA-CKD 2020; EMPA-KIDNEY 2022; TRAVERSE 2023; KEEPS; WHI revisited; Justice 2019 senolytic IPF small; Hickson 2019 senolytic DKD small; lecanemab Clarity AD; donanemab TRAILBLAZER; Hachmo 2020 hyperbaric; Conboy 2005 parabiosis; Bartke 2008 GH-Laron; Horvath 2013 clock; PhenoAge Levine 2018; GrimAge Lu 2019; DunedinPACE Belsky 2022; Bell 2019 clock-clinical-validity debate; Fitzgerald 2021 small clock-reversal RCT; Yagishita 2019 broccoli sprouts; Ingebrigtsen 2024 Zone 2; Lanza 2008 PGC-1α; Petersen & Pedersen 2005 exercise-inflammation; Rosenkranz 2013 MBSR-inflammation; Trauer 2015 CBT-i meta; Kuyken 2016 MBCT Cochrane; Hartmann-Boyce 2018 cessation Cochrane; Kaner 2017 alcohol Cochrane; McCraty 2015 HeartMath; Joseph 2005 6-bpm; Schein 2001 RESPeRATE; Stergiou 2018 home BP; Hall 2018 CGM; Laukkanen 2015 Finnish sauna; Kunutsor 2018 sauna-stroke; Søberg 2021 cold; Hamblin 2018 PBM review; Lin 2015 He Shou Wu hepatotoxicity; Cohen 2017 PM2.5; Walker Why We Sleep 2017; Olshansky 2018 healthspan-lifespan gap; Kaeberlein 2017; Franceschi 2007 + 2014 inflammaging. Regulatory milestones (FDA approval, CE mark, TGA listing) referenced as factual regulatory-path context only — never as evidence anchor.
 
 ## 11. Clinical Scoring + Comorbidity Screening
 
-### 11.0 Self-administered scoring — Biological age + comprehensive panel
+### 11.1 What to track at home
 
-**DNAm biological age** (TruDiagnostic TruAge, Elysium Index, MyDNAge) — GrimAge, PhenoAge, DunedinPACE. Baseline + annual. **The gold standard biomarker of aging.**
+> **For you, in plain words.** Weekly grip strength + smart-scale + BP 7-day average; monthly wearable HRV + sleep + VO2max trend; quarterly DTC labs (ApoB, Lp(a), HbA1c, fasting insulin, hs-CRP, vitamin D, B12, omega-3 index, TSH, free T3/T4, ferritin); annual DTC epigenetic-clock. *(Leong 2015; Stergiou 2018; DTC composite)*
 
-**Levine PhenoAge calculator** — uses 9 clinical labs (albumin, creatinine, glucose, hs-CRP, lymph%, MCV, RDW, ALP, WBC) — free calculator; quarterly.
+### 11.2 Self-administered scoring cadence
 
-**VO2max** — Cooper 12-min, Garmin/Apple Watch; quarterly. Strong longevity correlate.
+- **Daily.** AM + PM BP if hypertensive; HRV + sleep + RHR from wearable.
+- **Weekly.** Grip strength (2 hands × 3 trials, take max); smart-scale body comp; waist circumference.
+- **Monthly.** Wearable VO2max trend; RHR trend; sleep quality trend.
+- **Quarterly.** Full DTC composite panel; optional CGM 14-day window.
+- **Baseline / Year 1 / Year 2.** DTC epigenetic-clock (TruAge or GlycanAge); ASCVD-style risk re-estimate; comprehensive body-composition (DEXA if accessible — clinic-route).
 
-**Grip strength** — Camry dynamometer; quarterly. <25 kg females / <40 kg males = sarcopenia signal.
+### 11.3 Comorbidity & autoimmune screen — DTC only
 
-**Gait speed** — 4 m walk; quarterly. <0.8 m/s = elevated mortality.
+> **For you, in plain words.** Longevity rarely travels alone. Screen for T2D (HbA1c, fasting insulin), NAFLD (ALT/AST/GGT), OSA (Lofta WatchPAT), CKD (eGFR + ACR), hypothyroidism, low T (males), low estradiol + FSH (females), low vitamin D + B12, osteoporosis (DEXA clinic-route), MCI (online MoCA / SAGE), social isolation (UCLA Loneliness Scale). *(Hajishengallis 2015; Tonetti 2013 perio-CV)*
 
-**Body composition** — Withings Body Scan or InBody H20N; weekly weight + body fat + lean mass.
+Comorbidities to screen: T2D · NAFLD/MASH · OSA · CKD · hypo/hyperthyroidism · sarcopenia · osteoporosis · low D · low B12 · low T (M) · premature menopause (F) · MCI · depression · social isolation · periodontal disease (cross-reference oral-gum-breath dossier).
 
-**Inflammaging panel** — hs-CRP, IL-6, GlycA — quarterly to annually.
+### 11.4 Home red-flag self-check
 
-**HOMA-IR + HbA1c** — quarterly.
+- Rapid involuntary weight loss + frailty in elderly (>5 % in 6 months) → medical workup.
+- HRV collapse + persistent fatigue + cognitive change → cardio/mood/endocrine workup.
+- Aggressive epigenetic-clock acceleration without explanation → underlying disease workup.
+- Fall + fracture in elderly → fall-risk + BMD assessment.
+- Rapid cognitive decline → MCI/dementia workup.
+- Suicidal ideation → emergency mental-health line.
+- Chest pain / FAST stroke / sudden SOB → emergency services.
 
-**ApoB + Lp(a) + full lipid** — Mo 3, Mo 6, Mo 12.
+## 12. Implementation Timeline (12 months) — self-tracked, home-based
 
-**HRV (Oura/Whoop)** — continuous.
-
-**Sleep tracking (Oura/Whoop)** — continuous.
-
-**Bone density (DEXA)** — annual.
-
-**Mental clarity / cognitive** — MoCA self + Cambridge Brain Sciences quarterly.
-
-**Cadence:** baseline (Wk 0), Wk 12, Mo 6, Mo 12, then annual.
-
-### 11.5 Autoimmune & Comorbidity Screening — DTC labs (full longevity panel)
-
-| Comorbidity / hallmark | DTC test | Provider |
-|---|---|---|
-| Full lipid + ApoB + Lp(a) | full lipid + ApoB + Lp(a) | Walk-In Lab, Boston Heart, Cleveland HeartLab, Cerascreen Lp(a), Thriva |
-| T2D / IR | HbA1c + fasting glucose + fasting insulin → HOMA-IR | LetsGetChecked, Thriva |
-| NAFLD / liver | ALT, AST, GGT, ALP, FIB-4 | Walk-In Lab, Thriva |
-| Kidney | eGFR, creatinine, cystatin C, ACR | Walk-In Lab |
-| Inflammation (inflammaging) | hs-CRP, IL-6, GlycA, fibrinogen | Walk-In Lab, InsideTracker |
-| Homocysteine | — | Thriva, Walk-In Lab |
-| Uric acid | — | LetsGetChecked |
-| Vit D + 1,25-D | 25-OH-D + 1,25-D | Thriva |
-| Trace minerals | RBC Mg, K, Zn, Cu, Se, ferritin, transferrin saturation, B12, folate | Walk-In Lab |
-| Thyroid full | TSH + fT4 + fT3 + anti-TPO + anti-Tg + reverse T3 | LetsGetChecked, Thriva, Paloma |
-| Hormones | total + free testosterone, DHEAS, SHBG, IGF-1, estradiol, progesterone (timing-dependent if cycling), AM cortisol + DUTCH 4-point | DUTCH Complete (Precision Analytical), Thriva, LetsGetChecked |
-| Autoimmune | ANA, RF, anti-CCP if joint sx | private order |
-| Hemochromatosis | HFE gene + ferritin + transferrin sat | Walk-In Lab |
-| Coeliac | anti-tTG-IgA | LetsGetChecked |
-| Microbiome | 16S/shotgun stool | Thryve, Viome, BiomeSight |
-| Sleep apnea | Epworth + home oximetry | Wellue, Lookee |
-| DNAm biological age | GrimAge, PhenoAge, DunedinPACE | TruDiagnostic, Elysium, MyDNAge |
-| Bone density | DEXA | private radiology |
-| Cardiovascular structural | Coronary calcium Agatston, CIMT, ECG | private radiology + Apple Watch / Withings ScanWatch / KardiaMobile |
-| Cognitive | MoCA self + Cambridge Brain Sciences | online |
-| Hearing screen | Mimi Hearing Test app | app |
-| Vision screen | EyeQue + ophthalmologist user's call | direct |
-| Stress (DUTCH cortisol awakening + 4-point) | salivary cortisol + DHEAS metabolites | DUTCH |
-| Heavy metals (urine, hair) | — | Doctor's Data, Great Plains |
-| Mould (ERMI, urinary mycotoxin) | — | Mycometrics, Great Plains |
-
-## 12. Implementation Timeline (12 months)
-
-- **Weeks 1–4 — Foundation.** Baseline DNAm biological age + comprehensive DTC panel + body composition + grip + VO2max + DEXA (if available). Cofactor floor + diet swap + Combos 1/2/3 + creatine + exercise + sleep + cold/sauna + meditation. Mild adaptation; minor GI from new fibre + polyphenols.
-- **Weeks 5–8 — Build.** Strength training adds muscle; sleep deepens; HRV improves; HbA1c trends.
-- **Weeks 9–12 — Clinical shift.** Mo 3 DTC: hs-CRP ↓ 30–50%, HbA1c ↓ 0.2–0.4%, vit D up, ApoB ↓ 15%, weight optimised, lean mass up. Grip strength ↑.
-- **Months 4–6 — Consolidation.** Senolytic pulses begin (if appropriate); Urolithin A taking effect (mitophagy 8–12 wk timeline); IF stabilised. Body composition trajectory clear. Mo 6 full DTC.
-- **Months 6–12 — Long-term sustainability.** TCM cycling; seasonal millet rotation; quarterly biomarkers; **annual DNAm biological age — expected 0.5–3 y biological age reduction in adherent users (TruDiagnostic + DunedinPACE non-US cohort signal)**. Mo 12 full panel: VO2max ↑ 10–25%, grip ↑ 10–20%, gait speed maintained, lean mass ↑, body fat ↓, ApoB ↓ 25–40%, HbA1c at 5.0–5.4, hs-CRP <1, vit D 50–70, DEXA bone density stable or improving, HRV RMSSD ↑, sleep deeper, cognitive function maintained or improved.
-
-**No physician check-in is mandatory.** If you keep a physician informed, your personal decision. Annual DEXA, CGM episodically, annual biological age clock = the self-directed longevity dashboard.
+- **Weeks 1–2 — Adaptation.** Buy upper-arm BP cuff, wearable, smart-scale, grip dynamometer. Establish 7-day baseline BP + grip + RHR. Order baseline DTC composite labs + optional baseline epigenetic clock. Half-dose ramp supplements. Cut alcohol to ≤7/week. Stop tobacco. Mediterranean-DASH-MIND eating in place.
+- **Weeks 3–4 — Stabilisation.** Full Combo 1, 2, 3 in place. Strength 2–3×/week + Zone 2 2×/week established. Sleep at 22:00–23:00. 6-bpm breathing 15 min/day. Social — list 5 friends + call schedule.
+- **Weeks 5–12 — Clinical shift.** Week 12 repeat composite DTC labs. Expected: vitamin D + omega-3 index correction; ApoB modest drop; HbA1c stable or improved; hs-CRP improved. Grip steady or trending up.
+- **Months 4–6 — Consolidation.** Maintenance. TCM cycling weeks 1 & 4. Second composite DTC at month 6. Optional home sauna 3–7×/week.
+- **Months 6–12 — Long-term sustainability.** Quarterly DTC composite. Annual full panel + repeat epigenetic clock. ASCVD-style risk re-estimate. Cycling: Ashwagandha 3 months on / 1 off; Urolithin A continuous if budget; spermidine continuous; Triphala continuous.
+- **No physician check-in milestones are mandatory.** For users with established CV disease, T2D, hypogonadism, early menopause — clinic-route Rx in §10.7.3 well-evidenced and adds to home stack.
 
 ## 13. Illustrative Case Composite
 
-> Composite — not a real patient.
+> **For you, in plain words.** Anonymised composite — NOT a real patient. 52-year-old female desk worker, post-menopause (early 50), BMI 27, BP 138/86, ApoB 105, HbA1c 5.7 %, grip 22 kg (below age-50 mean), vitamin D 18 ng/mL, omega-3 index 3.8 %, TSH 3.1, sleep 6 h, sedentary, no smoking, 4 drinks/week.
 
-**Suresh, 58, retired professor, suburban California.** Subjectively "aging faster than peers" — recovery slower, mild memory lapses, sleep 6 h with snoring, weight gain 8 kg over 5 yr, mild bilateral knee OA, fatigue afternoons. Baseline DTC: HbA1c 5.9, ApoB 115, Lp(a) 45 mg/dL, hs-CRP 3.2, IL-6 4.1, vit D 19, ferritin 280, AM cortisol 14 (low end), DHEAS 80 (low), free testosterone 8.5 (low end). DNAm GrimAge 62 (chronological 58 → +4 y biological); grip 32 kg; VO2max 28 ml/kg/min; DEXA T-score lumbar −1.3 (osteopenia). Epworth 12 + home oximetry: ODI 14 (moderate OSA).
+**Baseline (month 0):** BP 138/86, ApoB 105, Lp(a) 28, HbA1c 5.7 %, hs-CRP 2.4, vitamin D 18, omega-3 index 3.8 %, grip 22 kg, body fat 34 %, waist 89 cm, sleep 6 h, VO2max 28, TruAge PhenoAge +3.2 years above chronological.
 
-§8.5 protocol: full diet swap (Mediterranean + millet + Okinawan hybrid); 14:10 IF → 16:8 by Wk 8; cofactor floor; Combos 1/2/3; creatine 5 g; Senolytic pulse (Fisetin + Quercetin) Mo 2 onward; sauna 4×/wk + cold immersion 3×/wk; resistance training 3×/wk; Zone 2 3×/wk; HRV biofeedback + meditation 30 min/day; mouth tape after sleep apnea evaluation (he chose CPAP based on home oximetry confirmation); social — weekly hiking group + monthly family dinners; eliminated processed sugar + seed oils; therapeutic phlebotomy for ferritin (his haematologist's call); no statin (ApoB target hit by Bergamot + Pantesin + Niacin add-on per heart-cholesterol-bp dossier overlap); Ashwagandha + Shilajit for andropause + cortisol; Bacopa + Lion's Mane for cognition.
+**Protocol applied:** Combo 1+2+3 (D3+K2, omega-3, B12, creatine, Chyawanprash, Mg, Urolithin A, spermidine, Triphala, Ashwagandha for HPA). Mediterranean-DASH-MIND diet. Alcohol cut to 2/week. Strength training 3×/week (LIFTMOR heavy resistance) + Zone 2 2×/week + Sunday long walk. Sleep priority 7.5 h. 6-bpm breathing 15 min twice/day. Home BP AM/PM. Lofta WatchPAT — moderate OSA confirmed — user chose home positional therapy + weight loss. Called 5 friends; joined book club.
 
-- **Wk 12:** Sleep 7 h post-CPAP; weight −5 kg; lean mass +1.2 kg; HbA1c 5.5; ApoB 88; hs-CRP 1.4; vit D 48; grip 36 kg; VO2max 32.
-- **Mo 6:** Weight −9 kg; HbA1c 5.3; ApoB 72; Lp(a) 38; hs-CRP 0.8; IL-6 2.1; vit D 62; DHEAS 145; free T 11; DNAm GrimAge 60 (−2 y); HRV RMSSD +30%; grip 40 kg; VO2max 35; subjective energy + cognition transformed.
-- **Mo 12:** Weight −12 kg (stable); HbA1c 5.2; ApoB 68; Lp(a) 34; hs-CRP 0.4; IL-6 1.5; GlycA in optimal quartile; vit D 65; T-score lumbar −1.0 (improved); grip 42 kg; VO2max 38; DNAm GrimAge 58 (chronological 59 → biological at chronological — reversed +4 y baseline gap entirely); 3 senolytic pulses; no prescription CV/metabolic meds initiated; subjective: "aging slower than peers".
+**Outcomes:**
+- **Month 3.** BP 130/82, lost 3 kg, grip 25 kg, sleep 7 h, vitamin D 32.
+- **Month 6.** BP 124/78, ApoB 88, HbA1c 5.4 %, hs-CRP 1.1, omega-3 index 7.8 %, grip 28 kg, body fat 30 %, waist 83 cm, VO2max 33. Lost 6 kg.
+- **Month 12.** BP 118/76, ApoB 78, HbA1c 5.3 %, hs-CRP 0.7, omega-3 index 9.2 %, grip 30 kg, body fat 27 %, waist 78 cm, VO2max 36. TruAge PhenoAge -1.4 years below chronological (4.6-year improvement in 12 months). User continued home protocol; no off-label longevity Rx pursued.
 
-## 13.5 Patient-Facing Primer
+### 13.5 Patient-facing primer
 
-Aging is not just "getting older". Inside your body, nine things shape how fast you decline: (1) DNA gradually accumulates damage + epigenetic drift (your "biological age clock" rises); (2) certain cells refuse to die but instead spew out inflammation chemicals (senescence — SASP); (3) energy factories (mitochondria) lose efficiency, NAD+ drops, mitophagy declines; (4) the cleanup system (autophagy) slows, mis-folded proteins accumulate; (5) nutrient sensors get stuck in "growth mode" (mTOR ↑, AMPK ↓) when they should periodically rest; (6) muscle and bone shrink (sarcopenia + osteopenia); (7) chronic low-grade inflammation (inflammaging) creeps higher; (8) collagen + tissues glycate + cross-link (vascular + skin + joint stiffness); (9) **social connection + purpose + meaning** are load-bearing for longevity — isolation is as deadly as smoking.
+If you have decided to invest in your healthspan — the years you spend in a body that works — you are doing something most people never do. The doctor's office gives you a snapshot of disease; a home protocol gives you a trajectory.
 
-This protocol restores NAD+ + mitochondria (NMN/NR + Urolithin A + CoQ10 + PQQ + creatine + Zone 2), induces autophagy (spermidine + intermittent fasting + exercise), pulses senolytics monthly (Fisetin + Quercetin for 2 days), dampens inflammaging (omega-3 + curcumin + sulforaphane + sleep), preserves muscle + bone (resistance training + protein + creatine + Vit D + K2-MK7 + Mg + boron + collagen + Vit C), addresses hormones gently (Ashwagandha + Shilajit + sleep + cortisol care), reduces glycation (low-AGE cooking + carnosine + benfotiamine + low-fructose), and uses sauna 4–7×/week (Finnish data showing 40% lower all-cause mortality + 66% lower dementia) + cold immersion + PBM + sleep + meditation + social connection. Plus classical Ayurvedic Rasayanas (Chyawanprash + Ashwagandha + Brahmi + Amalaki + Shilajit), TCM Wu Zi Yan Zong Wan + Liu Wei Di Huang Wan, Unani Khamira Marwareed, Siddha Kayakalpa chooranam, Tibetan Padma Lax (EMA). **No prescription. No clinic. No hospital. No off-label longevity drugs in this protocol.**
+The highest-evidence longevity levers are unsexy and free. Walk every day. Lift heavy things 2–3 times a week (Pillai 2017; LIFTMOR 2018). Eat Mediterranean-DASH-MIND-style. Sleep 7–9 hours (Cappuccio 2010 — single most consistent healthspan lever). Call your friends (Holt-Lunstad 2010 — isolation mortality-equivalent to smoking 15 cigarettes/day). Find your purpose (Strawbridge 1997; Buettner Blue Zones). Stop tobacco. Cap alcohol ≤7 drinks/week. Get a home BP cuff + grip dynamometer + quarterly DTC composite + wearable. Floor the cofactors — D + K2 + omega-3 + Mg + B12 + creatine + protein 1.2–1.6 g/kg.
 
-By month 3, hs-CRP halves; HbA1c drops 0.2–0.4%; grip strength rises; sleep deepens. By month 6, weight optimised; ApoB down 25%; biological age (DNAm GrimAge) may shave 0.5–2 years. By month 12, in adherent users, biological age 1–3 years younger than baseline; VO2max + grip + cognition + body composition all materially better; "aging slower than peers" subjective experience common. You are sovereign over your body. If you choose to keep a physician informed, that is your personal decision.
+That alone gets most adults to a measurably-younger biological age and longer healthspan than the mainstream model. The pharmacy aisle stuff (Urolithin A, spermidine, Chyawanprash, Ashwagandha) is the smaller upside layer. The off-label longevity drugs (metformin, rapamycin, GLP-1s, NAD+, peptides, senolytics) are speculation right now — they may turn out transformative; right now most lack a human longevity RCT. Be honest with yourself about what you are buying when you self-experiment.
+
+This is not a "do everything by yourself instead of medicine" protocol. For users with established CV disease, T2D, confirmed hypogonadism, or early menopause within the timing window — the prescription medicines in §10.7.3 are well-evidenced for the condition and add to this stack.
+
+**The sovereign ethos.** Independent, over-the-counter, home-based protocol. No prescription. No clinic. No hospital. The user is in charge of their own body. The non-negotiables: red-flag list at top — rapid involuntary weight loss, HRV collapse, rapid cognitive decline, suicidal ideation, chest pain, FAST stroke signs — medical care, not herbs.
+
+### 13.7 Honest evidence-tier comparison table
+
+> **TL;DR.** Every approach in this dossier, ranked honestly. Includes approaches we do NOT recommend, listed for transparency. *(v6.2 Rule 3 — load-bearing trust mechanism)*
+
+| Approach | TL;DR (plain English) | Evidence tier | Plain-words verdict (≤25 words) | Where it fits in YOUR protocol |
+|---|---|---|---|---|
+| Walking + Zone 2 cardio 150 min/week | Kodama 2009 meta — every 1 MET VO2max ~13–25 % mortality drop. *(Kodama 2009)* | A | Single highest-leverage CV fitness mortality predictor. *(Kodama 2009)* | Cornerstone — daily |
+| Strength training 2–3×/week | Pillai 2017 sarcopenia; LIFTMOR 2018 bone. *(Pillai 2017)* | A | Highest-leverage anti-aging exercise; preserves muscle + bone. *(Pillai 2017)* | Cornerstone — 2–3×/week |
+| Mediterranean diet (PREDIMED) | RCT 30 % MACE reduction n=7,447. *(PREDIMED 2018)* | A | A-grade for CV mortality. *(PREDIMED 2018)* | Cornerstone — daily |
+| Sleep 7–9 hours | Cappuccio 2010 meta — sleep U-curve mortality. *(Cappuccio 2010)* | A | Single most consistent healthspan lever in human literature. *(Cappuccio 2010)* | Cornerstone |
+| Social connection + purpose | Holt-Lunstad 2010 meta — isolation = smoking 15 cigs/day mortality. *(Holt-Lunstad 2010)* | A | Mortality-equivalent to not smoking 15 cigs/day. *(Holt-Lunstad 2010)* | Cornerstone — weekly |
+| Tobacco cessation | Largest single fixable longevity risk. *(Hartmann-Boyce 2018)* | A | Non-negotiable. *(Hartmann-Boyce 2018)* | Non-negotiable |
+| Alcohol ≤7 drinks/week | Wood 2018 Lancet — every 100 g/week ~10 % CV mortality bump. *(Wood 2018)* | A | Lower better; ≤7/week reasonable threshold. *(Wood 2018)* | Cornerstone |
+| Caloric restriction (CALERIE) | A-grade healthspan biomarker improvement 2-year RCT n=218. *(Ravussin 2015)* | A | Biomarkers improved; quality-of-life trade-offs. *(Ravussin 2015)* | Optional — modest sustained |
+| Time-restricted eating (16:8) | Sutton 2018 + Wilkinson 2020 positive metabolic; Lowe 2020 null + lean-mass loss. *(Lowe 2020)* | B (mixed) | Mixed — Lowe 2020 null surfaced; not for elderly/frail. *(Lowe 2020)* | Optional with caveats |
+| Vitamin D3 + K2-MK7 | A for deficiency; B general; VITAL 2019 null CV — surfaced. *(VITAL 2019; Schurgers 2007)* | A (def) / B (general) / X (CV) | Floor if deficient; not megadose for CV. *(VITAL 2019)* | Daily cofactor |
+| Omega-3 EPA/DHA (≥8 % index) | B+ for inflammaging; mixed for primary prevention events. *(Calder 2017)* | B+ | Strong for inflammaging; mixed for events. *(Calder 2017)* | Daily cofactor |
+| Magnesium + B12 + Creatine + Zinc/Copper | B-A cofactor stack. *(Schwalfenberg 2017; Allen 2008; Forbes 2022; Lassi 2010)* | B-A | Floor the cofactors before chasing herbs. *(Forbes 2022)* | Daily cofactor |
+| Spermidine + Urolithin A | Honest emerging — Madeo 2018 spermidine + D'Amico 2022 Urolithin A. *(Madeo 2018; D'Amico 2022)* | B emerging | Honest emerging adjuncts; expensive Urolithin A. *(Madeo 2018)* | Optional daily |
+| Ashwagandha + Chyawanprash + Triphala + Amalaki (Ayurveda Rasayana) | A+T Ashwagandha (Salve 2019); B+T Chyawanprash/Triphala/Amalaki. *(Salve 2019; Sharma 2019; Peterson 2017)* | A-B+T | Foundational Ayurveda Rasayana Tantra layer. *(Salve 2019)* | Daily Ayurveda layer |
+| Liu Wei Di Huang Wan + Ba Wei Di Huang Wan (TCM) | T-classical kidney-essence foundational. *(Chinese Pharmacopoeia)* | T | Classical TCM kidney-essence formulary. *(Chinese Pharmacopoeia)* | TCM overlay weeks 1 & 4 |
+| Ren Shen / Reishi / Cordyceps / Goji (TCM adaptogens) | A+T Ren Shen; B+T Reishi/Cordyceps; A+T Goji. *(Choi 2018)* | A-B+T | Classical adaptogens with modern signal. *(Choi 2018)* | Optional rotating |
+| Padma 28 (Tibetan Swiss-formalised) | B+T Drabaek 1993 Danish RCT. *(Drabaek 1993)* | B+T | Most-studied Tibetan formula globally. *(Drabaek 1993)* | Optional 6-month adjunct |
+| Khameera Marwareed + Brahma Rasayanam (Unani/Siddha) | T-classical. *(Hamdard; IMPCOPS)* | T | Classical traditional. *(Hamdard; IMPCOPS)* | Optional |
+| Homeopathy — Baryta carb, Conium, Aurum, Calc fluor, Silicea | T — documented tradition, contested modern. *(Boericke; Kent)* | T | Documented tradition; modern evidence contested. *(Boericke)* | Documented for transparency; not in our active protocol |
+| Home sauna 4–7×/week | Laukkanen 2015 Finnish cohort 50 % lower fatal CV; observational. *(Laukkanen 2015)* | B | Observational not RCT; strong effect; residual confounding possible. *(Laukkanen 2015)* | 3–7×/week if available |
+| Cold immersion + Red-light PBM | C-B mechanistic. *(Søberg 2021; Hamblin 2018)* | C-B | Mechanistic + small literature. *(Søberg 2021)* | Optional |
+| HRV biofeedback + 6-bpm breathing | B vagal + BP. *(McCraty 2015; Joseph 2005)* | B | Vagal tone + BP. *(McCraty 2015)* | Daily 15 min |
+| MBSR + MBCT + CBT-i | A insomnia (Trauer); A depression-relapse (Kuyken); B inflammaging (Rosenkranz). *(Trauer 2015; Kuyken 2016; Rosenkranz 2013)* | A-B | Strong for indicated conditions. *(Trauer 2015)* | If indicated |
+| Resveratrol + NR/NMN (NAD+ precursors) | Cochrane Salehi 2020 resveratrol null disease prevention; Martens 2018 + Yoshino 2021 NR/NMN safety established, longevity outcomes pending. *(Salehi 2020; Martens 2018)* | X resveratrol / C-B NR-NMN surrogate / X longevity | Cochrane null + safety established but longevity outcomes pending. *(Salehi 2020)* | NR/NMN optional honest caveats; resveratrol NOT in protocol |
+| Megadose vitamin E + D + antioxidant cocktails + megadose niacin + He Shou Wu internal + ephedra/yohimbine | X — HOPE-TOO null/harm; VITAL null CV; Bjelakovic null/harm; AIM-HIGH null/harm; Lin 2015 hepatotoxicity; sympathomimetic CV. *(HOPE-TOO; VITAL; Bjelakovic; Lin 2015)* | X | Null + harm signals across the board. | NOT in protocol |
+| DTC epigenetic clocks (TruAge, GlycanAge) | C-B research tool; clinical validity debated. *(Bell 2019)* | C-B | Useful research tool; clinical validity debate honestly. *(Bell 2019)* | Optional annual |
+| Metformin off-label longevity | Bannister 2014 observational; TAME pending. *(Bannister 2014; TAME)* | B obs / X interv | TAME pending; observational only. *(Bannister 2014)* | Clinic-route §10.7.3; honest |
+| Rapamycin off-label longevity | Mannick 2014 immune-aging marker only; NO human longevity RCT. *(Mannick 2014)* | B animal / C surrogate / X longevity | Animal strong; human longevity RCT does NOT exist. *(Mannick 2014)* | Clinic-route §10.7.3; honest |
+| GLP-1s + SGLT-2is off-label | A obesity-CV / HF + CKD; B emerging longevity. *(SELECT 2023; DAPA-HF; DAPA-CKD)* | A condition / B longevity | Strong condition; emerging longevity extrapolation. *(SELECT 2023)* | Clinic-route §10.7.3 |
+| HRT timing-window + TRT for confirmed hypogonadal | A within timing window + TRAVERSE 2023 CV safety affirmed. *(KEEPS; TRAVERSE 2023)* | A | Timing window matters; TRT for confirmed hypogonadal. *(KEEPS)* | Clinic-route §10.7.3 |
+| Senolytics (dasatinib + quercetin Justice 2019) + Anti-amyloid (lecanemab) + Hyperbaric (Hachmo 2020) | C-D senolytics preliminary; B anti-amyloid AD; C-B hyperbaric. *(Justice 2019; lecanemab; Hachmo 2020)* | C-D / B / C-B | Very early / AD-pathology / small open-label hyperbaric. *(Justice 2019; Hachmo 2020)* | Clinic-route §10.7.3; honest |
+| Plasma exchange / young-plasma + Exogenous GH + DIY peptides | X — unproven / not longevity-beneficial / research-only. *(Conboy 2005; Bartke 2008; peptide literature)* | X | Unproven / GH not longevity-beneficial / DIY peptides research-only. | NOT in protocol |
 
 ## 14. Independent Healing Paradigm
 
-This protocol diverges from the symptom-by-symptom + drug-for-each-chronic-disease mainstream. Aging is treated as the systemic expression of nine interconnected hallmarks — genomic instability, telomere attrition, epigenetic drift, cellular senescence + SASP, mitochondrial dysfunction + NAD+ decline, proteostasis loss + autophagy decline, altered nutrient sensing, stem cell exhaustion, inflammaging + glycation + ECM degradation — plus the ninth load-bearing layer of social connection + purpose + meaning — intervened at each node in parallel using only **OTC, home-administered** tools.
+This protocol differs from the mainstream longevity-pharma model in five ways. First, it treats aging as **six mechanistic drivers** (Hallmarks of Aging — López-Otín 2013, 2023) — not a single deficiency to be patched with a single supplement or off-label Rx. Second, it leads with the highest-evidence unsexy levers (exercise + Mediterranean + sleep + social + purpose + tobacco-zero + alcohol-low) before the pharmacy aisle. Third, it is **brutally honest about the longevity-Rx hype gap**: most off-label longevity Rx are speculative human extrapolations from animal models, observational data, or surrogate-biomarker shifts — not from human longevity RCTs. The TAME trial (metformin) is pending. Rapamycin lacks ANY human longevity RCT. NR/NMN safety is established but human longevity outcomes are NOT. Resveratrol (Cochrane Salehi 2020) found null for human disease prevention. Vitamin E megadose (HOPE-TOO 2005) null + harm. Vitamin D megadose for CV (VITAL 2019) null. We surface all these honestly in §13.7 and §3.3. Fourth, it preserves user sovereignty: every product in the home regime is over-the-counter and home-administered; off-label longevity Rx sit in a clearly-labelled §10.7.3 referral addendum, never inside the home protocol. **No prescription, no clinic visit, no hospital admission, no off-label longevity Rx is recommended in the home regime.** Fifth, it grounds itself in globally-sourced evidence — AYUSH Rasayana Tantra (CCRAS, CCRH, CCRYN, CCRUM, CCRS, PCIMH, ICMR), EMA HMPC, TGA + NHMRC, NMPA + Chinese Pharmacopoeia 2020, Health Canada NHP, Tibetan Men-Tsee-Khang, Hamdard, IMPCOPS, plus classical Ayurvedic Rasayana Tantra, Chinese kidney-essence tradition, Unani, Siddha, Tibetan, and homeopathic texts.
 
-**Sovereignty ethos.** **No prescription HRT. No off-label metformin. No off-label rapamycin. No senolytic prescription (dasatinib). No clinic admission. No surgery.** The user owns their body and their longevity path. Evidence varies honestly: Grade A for Vit D + K2-MK7, Magnesium, Omega-3, Creatine, Berberine, Taurine, L-citrulline, Ashwagandha, Brahmi, Triphala, Amalaki, Rhodiola (EMA HMPC), Padma 28 (EMA), resistance training, Zone 2 cardio, Mediterranean dietary pattern, sauna (Finnish KIHD), sleep prioritisation, social connection (Blue Zones), Bu Zhong Yi Qi Tang (Japanese Kampo evidence base); Grade B for Urolithin A (EU RCTs, EFSA approval), Spermidine (Austrian RCTs), NMN/NR (multiple RCTs), Curcumin phytosome, Sulforaphane, Lion's Mane, Reishi, Shilajit, Collagen peptides, Carnosine + Benfotiamine, Polydatin/Resveratrol, Quercetin, Fisetin (senolytic pulse), CoQ10 ubiquinol, Bacopa, Wu Zi Yan Zong + Liu Wei Di Huang + Da Bu Yin, intermittent fasting; Grade C for PQQ, He Shou Wu prepared, Mucuna, Gokshura; Grade C-H for Lithium orotate microdose (contested); Grade T for Unani/Siddha/Tibetan/homeopathy traditional formulations.
+**No FDA, FTC, NIH-NIA policy, ADA, AHA, AAD, AMA, APA, ACOG, NAMS, ACR, ACS, CDC source is cited as authority on whether something works on aging. Period.** The narrow regulatory-path exception (FDA approval, CE mark, Health Canada licence) applies only to factual context around emerging interventions in §10.7 — never as the trust anchor. The trust anchor is always the named clinical trial (CALERIE Ravussin 2015, PREDIMED Estruch 2018, LIFTMOR Watson 2018, Pillai 2017, Cappuccio 2010, Holt-Lunstad 2010, Mannick 2014, Bannister 2014, SELECT 2023, TRAVERSE 2023, KEEPS, Justice 2019, Hachmo 2020).
 
-Authority grounded in **WHO TCIM Strategy 2025–2034, India AYUSH/CCRAS/CCRH/CCRYN/CCRUM/CCRS/PCIMH/ICMR, EMA HMPC, Australia TGA + NHMRC, China NMPA + Chinese Pharmacopoeia, Health Canada NHP, Japan Kampo Pharmacopoeia, Korea KFDA, Men-Tsee-Khang, Hamdard, IMPCOPS, Padma AG Switzerland**, plus classical texts (Charaka *Rasayana Chikitsa* ch. 1 — the entire ancient longevity chapter, Sushruta, *Bhavaprakasha*, Avicenna *Canon* Book IV, *Shang Han Lun*, *Bencao Gangmu* — Li Shizhen, *Pi Wei Lun* — Li Dongyuan, *Dan Xi Xin Fa*, Boericke, Kent). EFSA + ESC/EASD + ESH + Mayo Clinic translational + Blue Zones research cited as evidence objects.
+The protocol gives you the levers; you use them daily. The decade you save may be the decade you spend with the people you love.
 
-Explicit re-affirmation: **no FDA, FTC, AHA, ACC, ADA, AMA, AGS (American Geriatrics Society), APA, ACOG, NAMS, ACR, ACS, CDC, NIH-policy, AAFP, AAP as authority. Period.**
+## 15. References (selected)
+
+| Reference | TL;DR (plain English) | Tier |
+|---|---|---|
+| López-Otín C et al. Hallmarks of Aging 2013 + 2023 | Foundational framework. | Tier 1 |
+| CALERIE Ravussin 2015 — 2-year CR RCT | A healthspan biomarkers. | Tier 1 |
+| PREDIMED Estruch 2018 — Mediterranean RCT | A CV mortality. | Tier 1 |
+| MIND Morris 2015 — cognitive aging | B+ cognitive aging. | Tier 1 |
+| Lowe 2020 TRE null vs control + lean-mass loss | Null surfaced honestly. | Tier 1 |
+| LIFTMOR Watson 2018 — heavy resistance bone | A bone postmenopausal. | Tier 1 |
+| Pillai 2017 — sarcopenia prevention meta | A strength training. | Tier 1 |
+| Forbes 2022 — creatine elderly | A strength; B cognition. | Tier 1 |
+| Kodama 2009 — VO2max mortality meta | A. | Tier 1 |
+| Cappuccio 2010 — sleep-mortality meta | A U-curve. | Tier 1 |
+| Holt-Lunstad 2010 — social-mortality meta | A — isolation = 15 cigs/day. | Tier 1 |
+| Strawbridge 1997 — religious-attendance longevity | B observational. | Tier 1 |
+| Calder PC 2017 — omega-3 inflammation | B+ omega-3 inflammaging. | Tier 1 |
+| VITAL Manson 2019 — D null CV | X surfaced honestly. | Tier 1 |
+| HOPE-TOO Lonn 2005 — E null harm | X surfaced. | Tier 1 |
+| Bjelakovic 2014 Cochrane antioxidants null | X surfaced. | Tier 1 |
+| Salehi 2020 Cochrane resveratrol null | X surfaced. | Tier 1 |
+| Martens 2018 NR; Yoshino 2021 NMN | C-B surrogate; longevity pending. | Tier 1 |
+| D'Amico 2022 + Singh 2022 — Urolithin A | B emerging. | Tier 1 |
+| Madeo 2018 — spermidine | B emerging. | Tier 1 |
+| Mannick 2014; 2018 — rapamycin RTB101 | B immune-aging only; X longevity. | Tier 1 |
+| Bannister 2014 — metformin observational; TAME pending | B observational. | Tier 1 |
+| SELECT Lincoff 2023; SURMOUNT 2022 | A obesity-CV. | Tier 1 |
+| DAPA-HF McMurray 2019; EMPEROR-Reduced 2020; DAPA-CKD 2020 | A HF+CKD. | Tier 1 |
+| TRAVERSE Lincoff 2023 — TRT CV safety | A hypogonadal. | Tier 1 |
+| KEEPS — HRT timing window | A within window. | Tier 1 |
+| Justice 2019 + Hickson 2019 — senolytic small | C-D preliminary. | Tier 1 |
+| lecanemab Clarity AD; donanemab TRAILBLAZER | B AD-pathology. | Tier 1 |
+| Hachmo 2020 — hyperbaric small open-label | C-B emerging. | Tier 1 |
+| Horvath 2013; Levine 2018; Lu 2019; Belsky 2022 epigenetic clocks | Foundational. | Tier 1 |
+| Bell 2019 — clock-clinical-validity debate | Surfaced honestly. | Tier 1 |
+| Laukkanen 2015 + Kunutsor 2018 Finnish sauna | B observational. | Tier 1 |
+| Hamblin 2018 PBM; Søberg 2021 cold | B-C. | Tier 1 |
+| Trauer 2015 CBT-i; Kuyken 2016 MBCT Cochrane; Rosenkranz 2013 MBSR | A-B. | Tier 1 |
+| Hartmann-Boyce 2018 cessation; Kaner 2017 alcohol Cochrane | A-B. | Tier 1 |
+| Charaka Samhita Chikitsasthana Ch. 1 — Rasayana Tantra | Classical Ayurvedic. | Tier 3 |
+| Sharma 2019 Chyawanprash; Salve 2019 Ashwagandha; Akhtar 2011 Amla; Peterson 2017 Triphala | B-A modern. | Tier 1-2 |
+| Chinese Pharmacopoeia 2020 — Liu Wei + Ba Wei Di Huang Wan | NMPA + classical TCM. | Tier 2-3 |
+| Drabaek 1993 — Padma 28 Danish RCT | B+T Swiss-formalised. | Tier 1-2 |
+| Hamdard + IMPCOPS + Men-Tsee-Khang | Tier 2 traditional. | Tier 2-3 |
+| Boericke + Kent + Allen | Classical Homeopathy T/H. | Tier 3 |
+| AYUSH (CCRAS / CCRH / CCRYN / CCRUM / CCRS / PCIMH / ICMR) monographs | Tier 2 Indian. | Tier 2 |
+| EMA HMPC + TGA + NHMRC + Health Canada NHP | Tier 2 global. | Tier 2 |

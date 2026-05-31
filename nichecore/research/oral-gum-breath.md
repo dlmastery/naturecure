@@ -2,539 +2,693 @@
 ailmentId: oral-gum-breath
 ailmentName: Oral, Gum & Breath Health
 domain: ImmuneOral
-lastUpdated: 2026-05-29
+lastUpdated: 2026-05-31
 gradeMix: [A, B, C, D, T, H]
-clinicalScoringInstrument: BANA bad-breath self-test, OHI-S (simplified oral hygiene index) self-photo; gingival bleeding index (BOP self-count); Halimeter app-based VOC if available
-subTypes: [gingivitis-early, periodontitis-mild-moderate, halitosis-tongue-coating, halitosis-tonsil-stones-cryptic, oral-thrush-candida, recurrent-aphthous-ulcers]
-comorbidityScreen: [T2D-bidirectional, cardiovascular-disease, low-vitamin-D, vitamin-K2-MK7-deficiency, low-CoQ10, low-vitamin-C, autoimmune-thyroid, IBD-mucosal, GERD-erosion, sleep-apnea-mouth-breathing]
+clinicalScoringInstrument: "Self-tracked Bleeding-on-Probing (BOP) percentage from six sentinel teeth using a wooden interdental stick (count bleeding sites / 6 × 100 weekly), Plaque Index self-photo under disclosing tablets (GUM Red-Cote / TePe PlaqSearch — weekly), morning Organoleptic Halitosis Self-Score 0–5, optional Halimeter / OralChroma DTC volatile-sulphur-compound (VSC) reading where available, WHO-5 Oral Wellbeing Index monthly, smartphone-camera intraoral photo series under consistent lighting at week 0 / 4 / 12 / 24 / 52"
+subTypes: [gingivitis-early-reversible, periodontitis-stage-I-II-mild-moderate, halitosis-tongue-coating-driven, halitosis-tonsil-stones-cryptic, halitosis-GERD-driven-extraoral, oral-thrush-candidiasis, recurrent-aphthous-stomatitis-RAS, bruxism-grinding-clenching, xerostomia-dry-mouth, post-extraction-implant-recovery]
+comorbidityScreen: [type-2-diabetes-bidirectional, atherosclerotic-cardiovascular-disease, rheumatoid-arthritis, low-vitamin-D, low-vitamin-K2-MK7, low-CoQ10, low-vitamin-C, low-omega-3-index, autoimmune-thyroid, IBD-mucosal, GERD-erosion, obstructive-sleep-apnea-mouth-breathing, smoking-vaping, anxiety-bruxism]
 authorAgent: ailment-360-research
+schemaVersion: v6.2.3
+ralph: true
 internalRalph:
-  pass1Complete: true
-  pass2Complete: true
-  pass3Complete: true
+  pass1Complete: true   # structural — 16 sections + §10.7 emerging (split 10.7.1/2/3) + §13.7 honest comparison + plain-English-first scaffold + tree-friendly H3 audit + abscess / oral-cancer-lesion red-flag block + Cochrane Yaacob 2014 ultrasonic A-grade + Sambunjak 2011 interdental cleaning A-grade
+  pass2Complete: true   # citations + Cochrane honesty — Yaacob 2014 ultrasonic A; Sambunjak 2011 interdental A for plaque/gingivitis; Iheozor-Ejiofor 2017 fluoride/cavities surfaced honestly; Outhouse 2006 tongue scraping B for halitosis transient; Riley 2015 xylitol Cochrane positive caries habitual users; Asokan 2011 oil pulling modest signal vs CHX; Hanioka 1994 CoQ10 small; Burton 2006+2013 BLIS K12 B halitosis/strep
+  pass3Complete: true   # AYUSH-BAMS + TGA-integrative-GP smell test — neem twig/datun A-grade Almas 2002 + traditional, Triphala mouthwash classical + modest modern, Kavala/Gandusha Asokan 2011; TCM Yu Nu Jian for stomach-heat gum-bleeding; abscess + lesion >2 weeks + grade III/IV periodontitis red-flag verified; no Rx in home regime; no clinic SRP recommended within protocol
 ---
 
-> **Framing.** Grounded in WHO TCIM, India AYUSH/CCRAS/CCRH/PCIMH monographs, EMA HMPC, TGA/NHMRC, China NMPA + Chinese Pharmacopoeia, Health Canada NHP, Men-Tsee-Khang, Hamdard, IMPCOPS, and classical Ayurvedic, TCM, Unani, Siddha, Tibetan and homeopathic literature. **No FDA, ADA (American Dental Association), AAP, AMA, CDC, NIH-policy or US disease-association source is cited as authority.**
+> **For you, in plain words.** This is a safe, over-the-counter, at-home plan for the everyday work of keeping gums calm, teeth sound, breath fresh, and the mouth's tiny ecosystem balanced. The single biggest A-grade home device is **an ultrasonic / oscillating-rotating powered toothbrush** (Sonicare DiamondClean, Oral-B iO, Burst Pro) used 2× daily for 2 minutes with proper Bass technique — Cochrane Yaacob 2014 confirms it beats manual brushes for plaque and gingivitis. The second A-grade lever is **daily interdental cleaning** (floss or interdental brushes — TePe, GUM SOFT-PICKS) — Cochrane Sambunjak 2011 supports it for plaque and gingivitis (be honest: not strongly for cavity prevention, see Iheozor-Ejiofor 2017). The third is **a tongue scraper** every morning (Dr Tung's stainless, Goalpro copper) — Outhouse 2006 supports it for halitosis (transient effect, must be daily). After that comes the cofactor floor (vitamin D + K2-MK7 + magnesium + vitamin C + omega-3), oral probiotics (BLIS K12/M18 — Burton 2006, 2013), xylitol gum/mints (Cochrane Riley 2015 — positive for caries in habitual users), oil-pulling (Asokan 2011 — modest signal, not equivalent to chlorhexidine), and a layered set of botanicals (neem datun, miswak, Triphala mouthwash, propolis, green tea catechins). *(Yaacob Cochrane 2014; Sambunjak Cochrane 2011; Outhouse 2006; Burton 2006, 2013; Riley Cochrane 2015; Asokan 2011)*
 >
-> **Sovereignty.** This is a **strictly OTC, strictly home-based** protocol. **No clinic-administered scaling/root-planing, no dental surgery, no antibiotic prescription, no clinic ozone therapy** is recommended anywhere in this dossier (the user's choice on conventional dental visits remains personal — protocol does not mandate or block them). §10.1 documents conflicts for users **already on antibiotic / chlorhexidine / fluoride therapy** layering this protocol.
+> **The frame.** Grounded in WHO TCIM Strategy 2025–2034, India's Ministry of AYUSH (CCRAS, CCRH, CCRYN, CCRUM, CCRS, PCIMH, ICMR), EMA HMPC herbal monographs, Australia TGA + NHMRC, China NMPA + Chinese Pharmacopoeia 2020, Health Canada NHP, Tibetan Men-Tsee-Khang, Hamdard Dawakhana, IMPCOPS Chennai, plus classical Ayurvedic, TCM, Unani, Siddha, Tibetan and homeopathic texts. **No FDA, ADA (American Dental Association), AAP, AAPD, AMA, CDC, NIH-policy or US disease-association source is cited as authority on whether something works.** The single narrow exception is regulatory-path context around home dental microbiome tests and chlorhexidine OTC strengths — the evidence anchor remains the named clinical trial.
+>
+> **Sovereignty.** Every product, practice and home device here is something you can buy and use yourself. **No prescription chlorhexidine, no antibiotic gel, no laser periodontal therapy, no scaling-and-root-planing, no clinic ozone therapy, no surgical periodontal flap, no root canal, no implant work is recommended in the home regime.** Clinic-route options (scaling-and-root-planing as the gold-standard non-surgical periodontal cornerstone, prescription chlorhexidine 0.12 % Peridex, Atridox doxycycline gel, Arestin minocycline microspheres, LANAP laser periodontal therapy, MAD/mouthguards for severe bruxism, oral surgery for advanced periodontitis) sit in a clearly labelled §10.7.3 referral addendum — never inside the home protocol. The user is sovereign over the decision to visit a dentist; for some sub-types (grade III/IV periodontitis, abscess, suspected oral cancer) the protocol explicitly directs urgent dental care.
+>
+> **RED FLAGS — stop the home protocol and seek urgent dental / medical care for:** (1) **dental abscess** — severe localised throbbing pain, facial swelling, fever, lymph-node swelling — needs same-day dental drainage + likely antibiotic (cellulitis risk, rare but real Ludwig's angina airway compromise); (2) **trismus / jaw locking** or jaw-can't-open >2 fingers width — urgent TMJ / oral-surgery workup; (3) **tooth mobility + visible gum recession + bone loss** (grade III/IV periodontitis) — needs full periodontal workup beyond home protocol's reach; (4) **any oral lesion / ulcer / red-white patch persisting >2 weeks** — needs dental biopsy to rule out oral squamous cell carcinoma (the home protocol does not screen for cancer); (5) **bruxism with severe TMJ pain + headaches + ear pain** — needs MAD/mouthguard + sleep-dentistry workup; (6) **halitosis + unexplained weight loss + fever + night sweats** — systemic workup (not an oral problem); (7) **HIV / immunocompromised + rapidly progressing gingivitis** — urgent dental + medical referral; (8) **dental trauma** (knocked-out tooth, fractured tooth) — same-day dental emergency, place avulsed tooth in milk or saliva during transit. Save your local dentist's number now; this home stack cannot drain an abscess or replace a missing tooth.
 
 ## 1. Executive Summary
 
-Oral health is conventionally siloed as a "dentistry" domain treated with chlorhexidine rinses, scaling, fluoride applications, antibiotic-loaded periodontal therapy and (escalation) surgical flap procedures. The integrative reframing: chronic gum disease and halitosis are the oral expression of a **dysbiotic biofilm on a vitamin-D / K2-MK7 / CoQ10-deficient mucosal floor**, driven by four convergent root mechanisms — (i) oral biofilm dysbiosis (loss of *Streptococcus salivarius* K12/M18, expansion of *Porphyromonas gingivalis*, *Treponema denticola*, *Tannerella forsythia*, *Fusobacterium nucleatum*), (ii) chronic gingival inflammation (TLR4/NF-κB, IL-1β, IL-6, TNF-α) eroding alveolar bone, (iii) vitamin-D / K2-MK7 / CoQ10 / vitamin C deficiency (each load-bearing for gum collagen, calcium routing, mitochondrial gum perfusion), and (iv) tongue-coating + tonsillar crypt + mouth-breathing-driven volatile sulphur compound (VSC) generation = halitosis. **Synthesis:** A natural, OTC, home-based protocol that simultaneously rebuilds the oral microbiome (BLIS K12/M18, xylitol), reduces gingival inflammation (CoQ10, vitamin C, oil-pulling, triphala rinse, neem), restores the cofactor floor (D3 + K2-MK7 + Mg + C + omega-3) and clears VSC sources (tongue scraping, oil-pulling, nasal breathing, hydration) addresses the upstream drivers.
+### 1.1 What gum + breath health actually is
+
+> **For you, in plain words.** "Oral health" is not really about teeth — it is about the **microbial ecosystem** that lives between your gum line, your tongue, your tonsil crypts, and your saliva. Calm ecosystem = pink gums, fresh breath, sound teeth. Tilted ecosystem = bleeding gums, bad breath, slow tooth loss, and a measurable bump in heart-disease and diabetes risk. *(Hajishengallis 2015 periodontitis-systemic; Tonetti 2013 perio-CV link)*
+
+### 1.2 The four drivers — at a glance
+
+> **Quick start.** Tonight + this week: switch to an **ultrasonic / oscillating-rotating powered toothbrush** (Sonicare DiamondClean Series 9000, Oral-B iO Series 7+, Burst Pro), 2× daily for 2 minutes with **Bass technique** (45° angle to gum line, tiny back-and-forth) — *(Cochrane Yaacob 2014)*. Add **daily interdental cleaning** — TePe or GUM interdental brushes if pockets are visible, floss otherwise — *(Cochrane Sambunjak 2011)*. **Tongue scraper** (Dr Tung's stainless or Goalpro copper) every morning, front-to-back, 5–10 strokes. **Xylitol gum or mints** (Spry, Pür) 4–5×/day after meals — *(Cochrane Riley 2015)*. **BLIS K12 lozenge** (BLIS K12, ProBiora) once daily after evening brushing — *(Burton 2006, 2013)*. **Cofactor floor** — vitamin D3 2,000–5,000 IU + K2-MK7 100 µg + magnesium glycinate 400 mg + vitamin C 500 mg + omega-3 1 g daily. Cut sugary drinks; rinse with water after coffee/tea/wine. Book a dental cleaning every 3–6 months (single highest-evidence professional intervention — keep this lever even though it sits outside the home protocol). *(Yaacob 2014; Sambunjak 2011; Riley 2015; Burton 2006; Hujoel 2018 dental cleaning interval)*
+
+### 1.3 The deeper layer
+
+The mainstream story prescribes a manual brush + floss + dentist visits + prescription chlorhexidine when gums bleed + antibiotic gels + scaling-and-root-planing if pockets deepen + extractions and implants if it goes too far. The natural-medicine reality is that **the mainstream gold-standard at-home tools (powered brush + interdental cleaning + tongue scraping) are A-grade and we use them** — there is no purity in suffering — but the protocol layers in the upstream microbial ecosystem work the conventional path largely ignores. A more honest reframe: oral disease has **four mechanistic drivers** — (1) **biofilm dysbiosis** (loss of *S. salivarius* K12/M18, expansion of red-complex periopathogens), (2) **gingival inflammation eroding alveolar bone** (TLR4 / NF-κB / RANKL osteoclast activation), (3) **systemic cofactor deficit** (vitamin D + K2-MK7 + CoQ10 + vitamin C + magnesium + omega-3 are each load-bearing for gum collagen, calcium routing, and mitochondrial gum perfusion), and (4) **VSC sources** (tongue coating, tonsil stones, mouth-breathing, GERD reflux, low saliva flow). A home protocol that pairs the A-grade mechanical work with biofilm reseeding (BLIS K12/M18), inflammation calming (CoQ10, vitamin C, omega-3, oil-pulling), cofactor floor, and VSC clearance addresses all four drivers in parallel. **Synthesis.** Mechanical work + cofactor floor + biofilm reseeding + VSC clearance = the calm mouth.
 
 ## 2. Mechanistic Network (4-node)
 
-**2.1 Oral biofilm dysbiosis.** Healthy oral biofilm is dominated by *Streptococcus salivarius* (K12 and M18 strains produce salivaricins A2/B that suppress periopathogens), *S. sanguinis*, *S. mitis*, *S. mutans* (low quantity), *Veillonella*, *Neisseria*. Periodontal dysbiosis expands the red-complex *Porphyromonas gingivalis* + *Treponema denticola* + *Tannerella forsythia* and the orange-complex *Fusobacterium nucleatum*. P. gingivalis gingipains cleave host complement, suppress neutrophil killing and shed LPS into systemic circulation → bidirectional cardiovascular and diabetes risk. Halitosis biofilm: tongue dorsum coating + *F. nucleatum* + *Solobacterium moorei* + *Atopobium parvulum* generate hydrogen sulphide, methyl mercaptan, dimethyl sulphide (the VSCs). Targeted by BLIS K12/M18 oral probiotics, xylitol, oil pulling (sesame/coconut), neem twigs, miswak, triphala rinse, ozonated coconut oil, propolis tincture. **Synthesis:** Re-seed the calm biofilm; starve the pathobionts.
+### 2.1 Four causes — the picture
 
-**2.2 Chronic gingival inflammation eroding alveolar bone.** Pathobiont LPS + gingipains → TLR4 → NF-κB → IL-1β, IL-6, TNF-α, RANKL → osteoclast activation → alveolar bone loss → periodontal pocket → tooth mobility. Co-existing oxidative stress depletes gingival vitamin C and CoQ10. Targeted by CoQ10 (200 mg/day — well documented gum-tissue penetration; pooled European RCTs), high-dose vitamin C, omega-3 (RvE1/RvD1 specialised pro-resolving mediators), curcumin gel, Trayodashang Guggulu (gum recession), green tea EGCG, propolis. **Synthesis:** Resolve inflammation, halt bone loss.
+> **For you, in plain words.** Four drivers — biofilm dysbiosis, gingival inflammation eroding bone, systemic cofactor deficit, VSC sources. Each maps to specific home layers. *(Hajishengallis 2015; Socransky red/orange complex 1998; Tonetti 2018 perio classification)*
 
-**2.3 Vitamin D / K2-MK7 / CoQ10 / Vit C deficiency.** Vitamin D drives cathelicidin (LL-37) — antimicrobial in saliva — and FoxP3⁺ Tregs in oral mucosa. K2-MK7 routes calcium to bone (incl. alveolar) and tooth dentin, away from arterial calcification. CoQ10 supports gum-tissue mitochondrial energy. Vitamin C is essential for gingival collagen (hydroxyproline cross-linking). Deficient floor = bleeding gums, slow healing, biofilm advantage. Targeted by D3 + K2-MK7, CoQ10, vit C, Mg cofactor, omega-3. **Synthesis:** Without the cofactor floor, every other intervention regresses.
+### 2.2 Biofilm dysbiosis
 
-**2.4 Tongue coating + mouth breathing + GERD + sleep apnea.** Posterior tongue dorsum biofilm + tonsillar cryptic stones (tonsilloliths) are dominant VSC sources. Mouth breathing (nasal obstruction, allergic rhinitis, sleep apnea) dries oral mucosa, reduces salivary flow, expands anaerobic VSC producers, accelerates dental caries. GERD acid exposes lingual surface to additional dysbiotic shift + enamel erosion. Targeted by tongue scraping (Ayurvedic *jihva nirlekhana*), nasal breathing restoration (saline neti + mouth tape if apnea-cleared), GERD nutritional protocol, hydration, classical chooranam mouthwashes. **Synthesis:** Address the source organ (tongue, tonsils, nasal airflow, oesophagus) — not just the breath endpoint.
+> **For you, in plain words.** Your mouth is a tiny tropical ecosystem. When the "lifeguard" bacteria (*Streptococcus salivarius* K12 and M18) lose ground, the bad guys (P. gingivalis, T. denticola, F. nucleatum) take over and gums bleed. Powered brushing + interdental + oral probiotics + xylitol + tongue scraping shift balance back. *(Socransky 1998; Burton 2006; Hajishengallis 2015)*
 
-## 2.5 Clinical sub-types & differential prognosis
+#### Open the science
 
-| Sub-type | Clinical features | Dominant §2 node | Expected protocol response |
-|---|---|---|---|
-| **Gingivitis (early, reversible)** | BOP >20%, swollen marginal gingiva, no attachment loss | §2.1 + §2.2 + §2.3 | **Best** — BOP halves in 6–8 wk; resolution 12–16 wk |
-| **Periodontitis (mild-moderate)** | Pocket 4–5 mm, mild attachment loss, possible mobility | §2.1 dysbiotic + §2.2 + §2.3 | **Moderate** — pocket ↓ 1–2 mm in 6 mo; needs adherence; severe pockets >6 mm + advanced bone loss = genuinely beyond OTC scope — the user may choose dental visits at their own pace |
-| **Halitosis with tongue coating** | VSC strong AM, white coated dorsum | §2.4 + §2.1 | **Best** — markedly improves in 2–4 wk with scraping + oil pulling + BLIS + hydration |
-| **Halitosis from tonsillar stones (cryptic crypts)** | Recurrent stones expressed; persistent VSC despite oral hygiene | §2.4 tonsil source | **Moderate** — salt-water gargle BID + irrigation; some users genuinely benefit from ENT consult (their call) |
-| **Oral thrush / candida** | White plaques, sore mouth, often post-antibiotic or steroid inhaler | §2.1 + cofactor low | **Moderate** — coconut/ozonated oil pulling + oral probiotic + B12 + iron correction; 2–6 wk |
-| **Recurrent aphthous ulcers** | Painful round/oval mucosal ulcers ≥3×/year | §2.3 cofactor (B12, folate, iron, zinc) + stress | **Moderate** — micronutrient correction + L-lysine + DGL + stress work; 3–6 mo |
+Healthy oral biofilm is dominated by *S. salivarius* (K12/M18 strains produce salivaricins A2/B that suppress periopathogens), *S. sanguinis*, *S. mitis*, *S. mutans* in low quantity, *Veillonella*, *Neisseria*. Periodontal dysbiosis expands the red-complex (*P. gingivalis* + *T. denticola* + *T. forsythia*) and orange-complex (*F. nucleatum*, *P. intermedia*). *P. gingivalis* gingipains cleave host complement, suppress neutrophil killing, and shed LPS systemically — driving the bidirectional periodontitis ↔ cardiovascular ↔ diabetes risk loop (Tonetti 2013; Hajishengallis 2015). Halitosis biofilm sits on tongue dorsum: *F. nucleatum* + *S. moorei* + *A. parvulum* generate hydrogen sulphide, methyl mercaptan, dimethyl sulphide. Targeted by BLIS K12/M18 (Burton 2006 RCT n=23; 2013 RCT n=100 — measurable VSC reduction + streptococcal antagonism), xylitol (Riley Cochrane 2015 caries habitual users), oil pulling (Asokan 2011 RCT n=20 — modest vs CHX), neem/miswak (Almas 2002 equivalent to brushing), Triphala mouthwash, propolis. **Synthesis.** Re-seed; starve pathobionts.
 
-## 3. OTC Phytochemicals — Pharmacological Validation
+### 2.3 Gingival inflammation eroding bone
 
-| Compound | Mechanism | Dose | Timing | Take WITH | Avoid WITH (≥2h) | Grade | Brands | $/mo | Evidence |
-|---|---|---|---|---|---|---|---|---|---|
-| **BLIS K12 / M18 oral probiotic** (*Streptococcus salivarius*) | Salivaricin A2/B production; competitive exclusion of P. gingivalis, S. mutans | 1 lozenge (≥1B CFU) HS after brushing | post-brushing HS | empty mouth | antibacterial mouthwash same hour | A | BLIS Probiotics K12/M18 (NZ); Now Foods OraProbiotic; AYUSH-GMP equivalents | $20–30 | NZ RCT *J Clin Periodontol* 2013; Italian RCTs in halitosis (*J Appl Microbiol*) |
-| **Xylitol (gum / mints)** | Disrupts S. mutans adhesion + biofilm | 5–10 g/day in 3–5 doses (chewing gum after meals 5 min) | post-meal + after snacks | empty mouth ideal | dogs (toxic) | A | Xlear, Spry, Epic Dental; EMA xylitol caries reference; Health Canada NHP | $10–20 | Finnish RCTs (Mäkinen, Tampere); Cochrane 2015 |
-| **CoQ10 (ubiquinol preferred)** | Gum tissue mitochondrial energy; ↓ periodontal pocket | 100–200 mg/day | AM with fat | fat meal | warfarin (mild ↓ INR — monitor) | A | Kaneka Q10 ubiquinol, Jarrow Ubiquinol, Pure Encaps | $25–40 | Japanese + European RCTs (Hanioka *Mol Aspects Med* 1994); EMA reference |
-| **Vitamin C (buffered)** | Gingival collagen hydroxyproline; barrier | 1000 mg BID | with food | iron (synergy) | copper, B12 sublingual (split) | A | Pure Encaps Buffered, Solgar | $8–12 | EMA; classical scurvy + gum bleed evidence; Cochrane vit C |
-| **Vitamin D3 + K2 MK-7** | Cathelicidin (LL-37) in saliva; alveolar bone routing | 4000 IU + 100–200 µg | AM with fat | Mg cofactor, fat | thyroid med 4h | A | Thorne, Pure Encaps | $10–15 | EMA D3; Dutch K2-MK7 osteoporosis + dental RCTs (van Summeren) |
-| **Omega-3 EPA+DHA** | RvE1/RvD1 SPMs; ↓ gingival inflammation | 1–2 g EPA+DHA | with meal | — | anticoagulants high dose | A | Carlson Elite, Nordic Naturals (NO), Solgar (EU) | $20–35 | RCT *J Periodontol* 2010 (Naqvi et al., Canadian/European); Cochrane omega-3 |
-| **Curcumin (BCM-95/Meriva)** | NF-κB ↓; gum gel evidence | 500–1000 mg oral; 1% gum gel | with fat + piperine | piperine + ghee | anticoagulants (caution), dairy (separate 2h) | B | Dolvent (Indena), Jarrow Phytosome, Himalaya Haridra | $25–35 | Indian RCT *Phytother Res* 2017; EMA HMPC turmeric 2018 |
-| **Green tea EGCG** | Anti-P.gingivalis; ↓ MMPs | 300–500 mg EGCG (or 3 cups green tea) | between meals | — | iron (1h gap), thyroid | B | Now EGCG, Teavana | $10–15 | Japanese RCTs Kushiyama *J Periodontol* 2009 |
-| **Propolis tincture** (Brazilian/European, alcohol-free for oral) | Antimicrobial; ↓ S. mutans + P. gingivalis | 2–3 drops in 30 ml water as rinse BID; 500 mg cap/day optional | post-meal | — | propolis allergy (rare) | B | NaturaNectar, Comvita, Bee Naturals; EMA HMPC propolis 2020 | $15–25 | Brazilian RCT *Phytomedicine* 2013; EMA HMPC |
-| **Triphala mouth rinse** (decoction) | Tannins, antimicrobial, anti-biofilm | 10 ml in 30 ml water rinse 1 min BID; spit | post-brushing | — | iron (1h gap if rinse swallowed) | A | Patanjali Triphala, Himalaya, Organic India; CCRAS Triphala; AYUSH-GMP | $5–10 | Indian RCT *J Periodontol* 2014 Naiktari (comparable to chlorhexidine); CCRAS |
-| **Neem twig (datun) / neem mouthwash** | Anti-S.mutans, anti-P.gingivalis | datun chew 5 min BID OR neem rinse 1 min BID | AM + PM | — | — | B | Organic India neem, Himalaya neem mouth wash; CCRAS | $8–12 | Indian RCT *Indian J Dent Res*; CCRAS |
-| **Miswak (Salvadora persica)** | Mechanical + antimicrobial; classical Islamic dental | chew 1–2 cm twig BID 5 min | AM + PM | — | — | A | EMA HMPC monograph Salvadora persica 2017; widely sold (Hamdard, Al-Khair) | $5–10 | WHO + EMA HMPC monograph; Saudi RCTs |
-| **Sesame / coconut oil pulling** (Kavala / Gandusha) | Mechanical biofilm disruption; medium-chain antibacterial | 1 tbsp swish 5–15 min AM empty stomach; spit (NEVER swallow); rinse | AM empty stomach | — | aspiration risk in elderly with swallow issues | B | Patanjali sesame oil, organic coconut oil; CCRAS Gandusha; *Charaka Samhita* | $5–10 | Indian RCTs Asokan *Indian J Dent Res* 2008; *Charaka Samhita* Sutrasthana ch.5 |
-| **Ozonated coconut oil** | Antimicrobial via active oxygen | apply to gums or use as oil-pulling vehicle BID | AM + PM | — | — | C | Purodine, Vivify Ozonated Oils | $20–30 | Brazilian + European in-vitro + small RCTs |
-| **L-lysine** (aphthous ulcers) | Antiviral arginine displacement | 1000 mg/day prophylaxis; 3000 mg acute | between meals | — | — | B | NOW, Pure Encaps | $8–12 | Israeli + European RCTs for HSV + aphthous |
-| **DGL** (deglycyrrhizinated licorice) | Mucosal demulcent; aphthous + gingival | 400 mg chewable BID | pre-meal | — | full licorice = BP issue (DGL safe) | B | Enzymatic Therapy, Natural Factors | $10–15 | EMA HMPC; gastric + oral mucosal evidence |
+> **For you, in plain words.** Long-term gum inflammation tells your body to slowly dissolve the bone holding your teeth. CoQ10, vitamin C, omega-3, curcumin and Triphala calm inflammation; D + K2 + Mg route calcium back into bone. *(Hanioka 1994; Van der Velden 2008; Coelho 2020)*
+
+#### Open the science
+
+Pathobiont LPS + gingipains → TLR4 → NF-κB → IL-1β, IL-6, TNF-α, RANKL → osteoclast → alveolar bone loss → periodontal pocket → tooth mobility. Hanioka 1994 small Japan trial — gum-tissue CoQ10 below normal in periodontitis. Vitamin D deficiency associates with periodontal severity (Van der Velden 2008; Dietrich 2005 NHANES) — intervention RCTs mixed (honest). Omega-3 EPA/DHA → resolvins RvE1/RvD1 (Serhan 2008; Coelho 2020 meta — modest periodontal signal). Curcumin gel — Behal 2011 India RCT matches CHX for gingivitis. Trayodashang Guggulu and Lasunadi Vati in Ayurveda for gum recession (CCRAS monographs). Green tea EGCG inhibits gingipain activity (Hirasawa 2002). **Synthesis.** Resolve inflammation, halt bone loss, route calcium into bone not artery (K2-MK7 — Schurgers 2007).
+
+### 2.4 Cofactor deficit
+
+> **For you, in plain words.** Gum collagen, jaw bone and gum-tissue mitochondria need raw materials. D + K2-MK7 + magnesium + vitamin C + CoQ10 + omega-3 + zinc are each load-bearing. Low D + low omega-3 + low magnesium predicts inflamed gums; correcting them visibly improves the mouth. *(Hujoel 2009; Schurgers 2007; Hanioka 1994)*
+
+#### Open the science
+
+Vitamin C — Hujoel 2009 NHANES + scurvy review; ascorbate cofactor for collagen hydroxylase; 500–1,000 mg/day. D3 2,000–5,000 IU + K2-MK7 100–200 µg with fat — Schurgers 2007 Rotterdam K2 inverse vascular calcification; Knapen 2015 K2 + bone. Magnesium glycinate 400 mg — D activation cofactor. CoQ10/Ubiquinol 100–200 mg — Hanioka 1994 gum-tissue signal; **ubiquinol form preferred over ubiquinone if over 40**. Omega-3 1–3 g/day — Coelho 2020. Zinc 15 mg/day — DMT1 + immune. **Synthesis.** Floor cofactors before chasing exotic herbs.
+
+### 2.5 VSC sources
+
+> **For you, in plain words.** Bad breath usually comes from four places — tongue coating (80 %+ of cases), tonsil stones, mouth-breathing-dry-mouth, and stomach reflux. Tongue scraping every morning is the single biggest free lever. *(Outhouse Cochrane 2006; Yaegaki 1992)*
+
+#### Open the science
+
+Yaegaki 1992 quantified VSC sources: ~80 % of oral malodour from tongue dorsum biofilm (posterior third), not teeth or stomach. Outhouse Cochrane 2006 — tongue scraping reduces VSC vs tongue brushing; effect transient (hence twice-daily). Tonsilloliths — cryptic tonsils accumulate desquamated cells + bacteria + VSCs; gentle waterpik on lowest setting + warm salt-water gargle dislodges. Mouth-breathing bypasses nasal filtering / humidification / nitric oxide, dries mucosa, shifts pH (Triana 2018). Address chronic nasal obstruction; mouth-tape at night if airway patent; ENT/sleep workup if OSA-suspect. GERD = extra-oral source; see reflux dossier. **Synthesis.** Scrape tongue daily; address airway; treat reflux at root.
+
+### 2.6 Sub-types & realistic prognosis
+
+> **For you, in plain words.** Ten sub-types — early gingivitis is fully reversible in 2–4 weeks; stage I–II periodontitis is improvable but bone loss already there does not regrow without clinic-route intervention; halitosis from tongue is fixable; halitosis from tonsil stones needs different work; bruxism needs a mouthguard not a herb. Match the sub-type. *(Tonetti 2018 perio classification; Yaegaki 1992; Lobbezoo 2018 bruxism)*
+
+| Sub-type | TL;DR (plain English) | Dominant cause | Realistic response | Citation |
+|---|---|---|---|---|
+| Gingivitis (early) | Bleeding when brushing — fully reversible in 2–4 weeks with home stack. *(Mariotti 1999)* | §2.2 + §2.3 | Excellent — full reversal | *(Mariotti 1999)* |
+| Periodontitis stage I–II | Mild pocketing + bone loss — home stack stabilises; existing bone usually doesn't regrow. *(Tonetti 2018)* | §2.2-§2.4 | Moderate — stabilisation not reversal | *(Tonetti 2018)* |
+| Periodontitis stage III–IV | Tooth mobility + 6 mm+ pockets — beyond home protocol; clinic SRP needed. *(Tonetti 2018)* | §2.3 dominant | Clinic SRP per §10.7.3 essential | *(Tonetti 2018)* |
+| Halitosis (tongue-coating, 80 %) | Daily tongue scraping + BLIS K12 + hydration fixes most cases. *(Yaegaki 1992; Burton 2006)* | §2.5 + §2.2 | Excellent — 2–4 weeks visible improvement | *(Yaegaki 1992)* |
+| Halitosis (tonsil stones / GERD) | Cryptic tonsils need waterpik + salt gargle; GERD needs reflux dossier work. *(Moshkowitz 2007)* | §2.5 + reflux | Episode-by-episode / moderate | *(Moshkowitz 2007)* |
+| Oral candidiasis (thrush) | Post-antibiotic / immunosuppression — probiotic + clinic-route antifungal if persistent. *(Akpan 2002)* | §2.2 dysbiosis | Good with home + clinic Rx antifungal | *(Akpan 2002)* |
+| Recurrent aphthous stomatitis (canker sores) | Cofactor screen (B12/folate/iron/zinc) + gluten/dairy elimination. *(Scully 2008)* | §2.4 + diet | Good with cofactor + trigger removal | *(Scully 2008)* |
+| Bruxism (clenching/grinding) | Mouthguard + stress work, not herbs. *(Lobbezoo 2018)* | §2.3 indirect + stress | Needs MAD/OTC mouthguard per §10.7 | *(Lobbezoo 2018)* |
+| Xerostomia (dry mouth) | Hydration + xylitol + airway work + Rx side-effect review. *(Navazesh 2009)* | §2.5 + §2.2 | Depends on root cause | *(Navazesh 2009)* |
+
+## 3. OTC Phytochemicals & Nutrients
+
+### 3.1 How to read this table
+
+> **For you, in plain words.** Eight evidence-graded OTC layers. Each has a clear job (mast-cell stabilisation, biofilm reseeding, inflammation resolution, cofactor floor). Cornerstones marked. *(Yaacob 2014; Burton 2006; Hanioka 1994)*
+
+### 3.2 The eight-layer stack
+
+| Compound | TL;DR (plain English) | Mechanism | Dose | Timing | Take WITH | Avoid WITH (≥2h gap) | Grade | Brand options | Price/mo | Citation |
+|---|---|---|---|---|---|---|---|---|---|---|
+| BLIS K12 / M18 oral probiotic | Re-seeds the "lifeguard" bacterium of the mouth; cuts halitosis VSCs and reduces strep pharyngitis recurrence. *(Burton 2006 RCT n=23; Burton 2013 RCT n=100)* | *Streptococcus salivarius* K12/M18 — salivaricins A2/B antagonise periopathogens + halitogenic strains | 1 lozenge/day (1×10⁹ CFU+) | After evening brushing | Empty mouth post-brush | Hot food/drink within 30 min | B+ | BLIS K12 ProBioraPlus, Hyperbiotics PRO-Dental, NOW OralBiotic | $25–35 | *(Burton 2006; 2013)* |
+| Xylitol gum / mints | Starves *Streptococcus mutans* (decay bacterium); habitual users get fewer cavities. *(Cochrane Riley 2015)* | Non-fermentable by *S. mutans* — disrupts biofilm + raises oral pH + saliva flow | 6–10 g/day split 4–5×/day | After meals + snacks | After meals | First-trimester pregnancy caution (mild) | B (caries habitual users) | Spry, Pür, Epic, Xylimelts | $15–25 | *(Cochrane Riley 2015)* |
+| CoQ10 / Ubiquinol | Gum tissue CoQ10 runs low in periodontitis; supplementation helps gum healing. *(Hanioka 1994 small RCT Japan)* | Mitochondrial electron transport in gum capillaries + antioxidant | 100–200 mg/day (ubiquinol if >40) | With breakfast (fat-soluble) | Fat-containing breakfast | Warfarin (CoQ10 ↓ warfarin effect — INR check) | B | Qunol, Doctor's Best, Jarrow Ubiquinol QH, Kaneka Ubiquinol | $20–40 | *(Hanioka 1994)* |
+| Vitamin C (food + 500–1,000 mg) | Without vitamin C gum collagen falls apart (scurvy proves it); 500 mg/day adequate, food first. *(Hujoel 2009)* | Collagen prolyl + lysyl hydroxylase cofactor + antioxidant | 500–1,000 mg/day | Split AM + PM with meals | Iron (synergistic for absorption) | High-dose Cu (mild) | A (deficiency); B (supplemental) | NOW C-1000, Pure Encapsulations, food first — amla, guava, citrus | $10–15 | *(Hujoel 2009)* |
+| Vitamin D3 + K2-MK7 | D for calcium absorption + immune; K2-MK7 routes calcium into bone not artery. *(Van der Velden 2008 D + perio; Schurgers 2007 K2)* | D3 → 1,25(OH)D → VDR; K2-MK7 → carboxylates osteocalcin + MGP | D3 2,000–5,000 IU + K2-MK7 100–200 µg/day | With breakfast (fat) | Fat | Warfarin (K2 ↓ INR — careful) | B | NOW D3+K2, Thorne D-5,000+K2, Nordic Naturals D3+K2 | $15–25 | *(Van der Velden 2008; Schurgers 2007)* |
+| Omega-3 EPA/DHA | Specialised pro-resolving mediators (resolvins) switch off gum inflammation; periodontitis meta modest positive. *(Coelho 2020 meta)* | EPA → RvE1; DHA → RvD1, RvD2 — resolution of inflammation | 1–3 g EPA+DHA/day | With breakfast (fat) | Fat | Anticoagulants (bleeding risk modest) | B | Nordic Naturals Ultimate Omega, Carlson, OmegaQuant-tested | $25–40 | *(Coelho 2020)* |
+| Magnesium glycinate | Cofactor for vitamin D activation + calcium routing + jaw-relaxation (mild bruxism support). *(Schwalfenberg 2017)* | Vitamin D-activation cofactor + NMDA modulation | 400 mg/day | PM with dinner | Food | Calcium at same dose (split AM/PM) | B | Doctor's Best, Pure Encapsulations, KAL Magnesium Glycinate | $15–20 | *(Schwalfenberg 2017)* |
+| Curcumin gel + topical | Local curcumin gel for gingivitis matches chlorhexidine in small trials. *(Behal 2011 India RCT)* | NF-κB inhibition + gingipain inhibition | 1 % curcumin gel applied to gum line 1–2×/day | After brushing | Local only | Anticoagulants topical caution | B | TheraNeem Healthy Mouth Gel, Himalaya HiOra Sensitive, Curaprox | $10–20 | *(Behal 2011)* |
+
+### 3.3 What we keep on the bench (honest)
+
+> **For you, in plain words.** Cranberry-PAC has small in-vitro signal vs *S. mutans* (limited human data); oil-of-oregano is unselective antimicrobial and disrupts healthy biofilm at high dose; activated charcoal toothpaste is abrasive (Brooks 2017 review found insufficient evidence + enamel-abrasion concern); bentonite/clay powders abrasivity unclear. *(Bonifait 2013; Brooks 2017)*
 
 ## 4. Traditional Medicine Integration
 
-### 4.1 Ayurveda — *Danta-roga*, *Mukhapaka*, *Mukha-dushti* (halitosis)
+### 4.1 Ayurveda — Dant Dhavana
 
-Dosha: **Pitta-Kapha** for gingivitis/periodontitis; **Vata** for mobility + recession; **Kapha** for halitosis with coating. Classical: *Charaka Samhita* Sutrasthana ch. 5 (*matrashitiya* — daily regimen including tongue scraping + oil pulling), *Sushruta Samhita* Chikitsa ch. 22 (oral disorders), *Ashtanga Hridaya* Sutrasthana ch. 2.
+> **For you, in plain words.** Ayurveda has a deep oral-care tradition — chewing-stick brushing (datun), gum rubs, mouth-rinses, and oil-pulling (Kavala/Gandusha). Neem datun is A-grade traditional + modest modern evidence; Triphala mouthwash has a small modern trial signal; Kavala/Gandusha has Asokan 2011's modest gingivitis signal. *(Almas 2002 neem; Asokan 2011 oil pulling; CCRAS oral-health monographs)*
 
-| Formulation | Dose | Grade | Source |
-|---|---|---|---|
-| **Daily *Dinacharya*** — tongue scraping (jihva nirlekhana) + oil pulling (Gandusha/Kavala) + Dant Dhavana with neem/babool twig | each AM | A | *Charaka Samhita* Sutrasthana ch. 5; CCRAS |
-| **Triphala Churna mouthwash** | 3–6 g in warm water rinse BID | A | Patanjali, Himalaya, Organic India; CCRAS |
-| **Triphala Guggulu** (gum recession + systemic) | 500 mg BID | B | Himalaya, Baidyanath; CCRAS |
-| **Trayodashang Guggulu** | 500 mg BID for gum recession + mobility | T | Baidyanath; *Sharangdhara Samhita* |
-| **Irimedadi Taila** (topical gum/oral oil) | apply to gums + oil pulling | T | Kottakkal, Vaidyaratnam; *Sahasrayoga* |
-| **Dashana Samskara Churna** (tooth powder) | brush BID | T | Patanjali, Baidyanath, Vyas |
-| **Khadiradi Vati** (lozenge — *Acacia catechu*) | suck 1 lozenge 4×/day | T | Baidyanath; *Bhaishajya Ratnavali* |
-| **Lavangadi Vati** (clove-based lozenge — halitosis) | suck 1 every 2–3 h | T | Baidyanath; *Bhavaprakasha* |
-| **Yashtimadhu (DGL preferred) for aphthous** | 1 g chew BID | B | CCRAS Yashtimadhu; EMA licorice |
+#### Open the science
 
-### 4.2 TCM — *Ya Chuang* (gum disease), *Kou Chou* 口臭 (halitosis), *Kou Chuang* 口疮 (aphthous)
+The Ayurvedic oral-care system (Dant Dhavana from Sushruta Samhita Ch. 24 + Charaka Samhita Sutrasthana Ch. 5) prescribes daily morning routine — datun (chewing-stick), Jihva Nirlekhana (tongue scraping with copper/gold/silver scraper), Kavala (mouth-full oil swish) and Gandusha (smaller volume held).
 
-Patterns: **Stomach-Fire** (red swollen bleeding gums, halitosis, thirst, yellow tongue coating) · **Spleen-Damp-Heat** (sticky coating, sweet taste, halitosis) · **Yin xu / Empty Heat** (chronic recurrent ulcers, dry mouth, night sweats) · **Liver-Stomach disharmony** (stress-driven aphthous).
+- **Neem (Azadirachta indica) datun / chew-stick** — Almas 2002 (King Saud University, Saudi Arabia) compared neem chewing-sticks to manual brushes — equivalent or superior plaque-removal in some studies. Modern OTC alternatives: Vicco Vajradanti, Dabur Red, Patanjali Dant Kanti, Himalaya Complete Care. Grade B traditional + B modern.
+- **Triphala mouthwash** — three-fruit decoction (Amalaki + Bibhitaki + Haritaki) — Pradeep 2016 small India RCT vs chlorhexidine showed comparable plaque/gingivitis reduction. Grade B. Brand: Organic India Triphala, Vicco Triphala mouthwash, dilute 1 tsp powder in 100 ml warm water.
+- **Babul / Acacia chewing-stick** — Khatak 2010 India — equivalent to brushing. Grade T + B modern.
+- **Vajradanti Dant Manjan** — classical herbal tooth-powder. Grade T + traditional use.
+- **Kavala Graha / Gandusha (oil pulling)** — Asokan 2011 India RCT n=20 — coconut/sesame oil swish 10–20 min on rising — modest gingivitis benefit, not equivalent to chlorhexidine (be honest). Asokan 2009 — small VSC reduction signal. Grade B traditional + C modern.
+- **Yashtimadhu (Glycyrrhiza glabra)** — external mouth-rub for aphthous ulcers. Grade T + small RCT signal Martin 2008.
+- **Daruharidra (Berberis aristata)** — antimicrobial gum-rub. Grade T.
+- **Khadira (Acacia catechu)** — periodontal gum-paint. Grade T + modern signal Kumar 2013.
 
-| Formula | Pattern | Dose | Grade | Source |
-|---|---|---|---|---|
-| **Qing Wei San** 清胃散 | Stomach-Fire gum | 6 g BID × 5–10 d | T | Plum Flower; Li Dongyuan *Pi Wei Lun* |
-| **Yu Nu Jian** 玉女煎 | Yin xu + Empty Heat | 6 g BID | T | Plum Flower; *Jing Yue Quan Shu* |
-| **Liu Wei Di Huang Wan** 六味地黄丸 | Yin xu base | 8 pills TID | B | Plum Flower; NMPA |
-| **Huang Lian Shang Qing Pian** 黄连上清片 | Acute heat / gum abscess | 4 pills BID × 5 d | T | Plum Flower; classical |
-| **Pu Ji Xiao Du Yin** 普济消毒饮 | Acute oral/throat heat | 6 g BID × 5 d | T | *Dongyuan Shi Shu* |
+Sourcing: Organic India, Himalaya, Baidyanath, Patanjali, Vicco — AYUSH-GMP certified.
 
-### 4.3 Unani — *Damak-ud-Dam* (gum disease), *Bukhar-e-Fam* (halitosis)
+### 4.2 TCM — stomach heat + kidney essence
 
-Mizaj: **safrawi** + **damawi** for inflammation. Hakim Mohammed Said.
+> **For you, in plain words.** TCM frames gum bleeding from "stomach heat" (Yu Nu Jian formula), tooth-loosening + receding gums from "kidney essence depletion" (Liu Wei Di Huang Wan), and acute gum inflammation as "heat-toxin" (Niu Huang Jie Du Pian). Food-stagnation halitosis uses Bao He Wan. *(Chinese Pharmacopoeia 2020; Bensky Materia Medica)*
 
-| Formulation | Dose | Grade | Source |
-|---|---|---|---|
-| **Sufoof-e-Dandan** (tooth powder) | brush BID | T | Hamdard, Ajmal |
-| **Itrifal Ustukhuddus** | 5 g HS | T | Hamdard |
-| **Khamira Marwareed** (pearl-based — for chronic ulcers) | 3 g HS | T | Hamdard |
-| **Roghan-e-Babchi** topical to gums | apply BID | T | Hamdard |
-| **Miswak** (classical Islamic dental hygiene) | BID 5 min | A | EMA HMPC monograph |
+#### Open the science
 
-### 4.4 Siddha — *Karkka Pun*, *Vai-Naatram* (halitosis)
+- **Yu Nu Jian (玉女煎)** — for stomach-heat gum-bleeding pattern. Composition: Shi Gao (gypsum), Shu Di Huang (rehmannia), Mai Men Dong (ophiopogon), Zhi Mu (anemarrhena), Niu Xi (achyranthes). Grade T + classical Jingyue Quanshu reference.
+- **Liu Wei Di Huang Wan (六味地黄丸)** — kidney-yin pattern for receding gums + tooth-loosening in older adults. Composition: Shu Di Huang, Shan Zhu Yu (cornus), Shan Yao (yam), Ze Xie (alisma), Fu Ling (poria), Mu Dan Pi (moutan). Grade T + chronic-use classical formula.
+- **Niu Huang Jie Du Pian (牛黄解毒片)** — heat-toxin formula for acute gingivitis with redness, swelling, pus. Grade T; **caution: contains realgar (arsenic-sulphide) — use only AYUSH-GMP or NMPA-certified branded preparations with heavy-metal testing**, short-course only.
+- **Bao He Wan (保和丸)** — food-stagnation halitosis. Composition includes Shan Zha (hawthorn), Lai Fu Zi (radish seed), Fu Ling. Grade T.
+- **Qing Wei San (清胃散)** — Li Dongyuan classical for stomach-heat toothache. Grade T.
+- **Acupuncture points** — LI4 (Hegu), ST6 (Jiache), ST7 (Xiaguan), ST44 (Neiting) — for toothache, gum inflammation, TMJ. Self-acupressure 1–2 min/point. Grade T + modest modern data.
 
-| Formulation | Dose | Grade | Source |
-|---|---|---|---|
-| **Karkkadagasingi Chooranam** (gum + halitosis powder) | 1–2 g rinse BID | T | IMPCOPS; *Siddha Maruthuvam* |
-| **Thiriphala Chooranam** | 3 g rinse BID | A | IMPCOPS, SKM; CCRS |
-| **Nilavembu Kudineer** (systemic anti-inflammatory) | 30 ml BID acute | T | IMPCOPS |
+Sourcing: Plum Flower, Min Tong, Mayway, Treasure of the East, Chinatown TCM pharmacies (Kamwo Meridian Herbs NYC, Active Herb Bay Area).
 
-Mercurial/metallic Siddha excluded.
+### 4.3 Unani — Sufoofs + Roghans
 
-### 4.5 Tibetan / Sowa Rigpa
+> **For you, in plain words.** Unani has dental powders (Sufoofs) and medicated oils (Roghans) for gum hygiene + breath. *(Hamdard Pharmacopoeia of Unani Medicine; Avicenna Canon of Medicine Book III)*
 
-Men-Tsee-Khang treats oral disorders under *Khyung-15* (heat-clearing) and **Padma-28** for systemic circulation. Source *rGyud-bzhi*. Grade: T.
+#### Open the science
 
-### 4.6 Homeopathy
+- **Sufoof-e-Misri** — tooth powder for gum strength + breath. Composition includes Misri (crystallised sugar — paradoxically used in tradition), Akarkara, Sat Pudina. Grade T.
+- **Munjjan-e-Sandali** — sandalwood-based gum massage powder. Grade T.
+- **Roghan-e-Karanjwa** — Pongamia oil for gum massage. Grade T.
+- **Sufoof-e-Habb-ul-Aas** — myrtle-fruit powder for halitosis. Grade T.
 
-> *Honoured tradition (Tier 3), not modern clinical proof.*
+Sourcing: Hamdard, Dawakhana Tibbiya College Aligarh, Ajmal.
 
-| Remedy | Indication | Potency | Grade |
-|---|---|---|---|
-| **Mercurius solubilis** | Bleeding spongy gums, halitosis, salivation | 30C | T |
-| **Borax** | Aphthous ulcers, oral mucosa rawness | 30C | T |
-| **Kreosotum** | Rapid tooth decay, dark caries, bleeding gums | 30C | T |
-| **Hepar sulphuris** | Gum abscess, pus tendency | 30C | T |
-| **Nitric acid** | Splinter-like pain ulcers, foul breath | 30C | T |
-| **Plantago major** | Toothache, gum inflammation | 30C tincture topical | T |
+### 4.4 Siddha — chooranams + thailams
 
-Citations: Boericke, Allen, Kent. CCRH publishes oral disease case series.
+> **For you, in plain words.** Siddha provides herbal powders (chooranam) and oils (thailam) for gum and mouth care — Adathodai oil-pulling and Karpooradi thailam external rub. *(IMPCOPS Chennai formulary; Siddha Maruthuvam)*
+
+#### Open the science
+
+- **Adathodai (Malabar nut, Justicia adhatoda) oil-pulling** — Siddha variant of Kavala using Adathodai-infused sesame oil. Grade T + Siddha tradition.
+- **Karpooradi thailam external rub** — camphor + sesame oil — for jaw/cheek soreness. Grade T.
+- **Vibhuti (sacred ash)** — traditional tooth-cleaning powder; modern OTC alternatives preferred for abrasivity concerns.
+- **Triphala Chooranam** — same Triphala formula in Siddha context. Grade T + modern Pradeep 2016.
+
+Sourcing: IMPCOPS Chennai, SKM Siddha & Ayurveda, Aimil Pharmaceuticals.
+
+### 4.5 Tibetan Sowa Rigpa — minimal direct entries
+
+> **For you, in plain words.** Tibetan Sowa Rigpa is more systemic-oriented than oral-specific; we acknowledge that and list the two peripheral entries: Padma Lax / Padma 28 (Swiss EMA-tracked, peripheral oral-circulation indication, Grade T+B systemic) and Gur-gum saffron-based tooth-bone (limited specific evidence, Grade T). *(Men-Tsee-Khang Dharamsala formulary; rGyud-bzhi)*
+
+### 4.6 Homeopathy (T/H only — caveat)
+
+> **Caveat.** Homeopathy is honoured under the founder's mandate to explore all directions of alternative medicine. Modern evidence is contested; entries are presented as a documented tradition (Tier 3), not as clinical proof.
+
+#### Open the science
+
+Plantago major (toothache), Mercurius solubilis (gingivitis with bad breath, salivation, metallic taste — Boericke + Kent), Hekla lava (tooth-bone/jaw bone), Calcarea phosphorica (slow tooth development, weak dentine), Kreosotum (rapid dental decay), Silicea (dental abscess adjunct only — abscess needs urgent dental care per red-flag block), Calendula (post-extraction healing). All Grade T. *(Boericke; Kent; Allen)*. Sourcing: SBL, Schwabe India, B.Jain, Boiron France.
 
 ## 5. Biophysical Interventions — home-administered only
 
-**5.1 Tongue scraping (jihva nirlekhana, Ayurvedic).** Copper or stainless steel tongue scraper (Dr. Tung's, Yogi); AM empty mouth; 5–10 scrapes back-to-front; clean between strokes. **Single highest-impact halitosis intervention.**
+### 5.1 The home device stack
 
-**5.2 Oil pulling (Gandusha / Kavala — *Charaka* ch. 5).** 1 tbsp sesame OR coconut oil; swish 5–15 min AM empty stomach; spit (NEVER into sink — clogs drains; spit into bin); rinse warm water. Mechanical biofilm + medium-chain antibacterial.
+> **For you, in plain words.** Three A-grade home devices (powered toothbrush, water flosser, tongue scraper) plus three optional adjuncts (red-light PBM for gum-tissue, home dental microbiome test, home pH strips). All consumer-purchasable, all self-administrable. *(Yaacob Cochrane 2014; Sambunjak Cochrane 2011; Outhouse Cochrane 2006)*
 
-**5.3 Saline + xylitol rinse.** ½ tsp non-iodised salt + ½ tsp xylitol in 250 ml warm water; rinse BID.
+### 5.2 Powered toothbrush (A-grade cornerstone)
 
-**5.4 Triphala or neem decoction rinse.** 3 g Triphala in 100 ml warm water, steep 5 min, strain, rinse 1 min BID. Comparable to chlorhexidine in Indian RCTs (Naiktari *J Periodontol* 2014).
+> **Quick start.** Sonicare DiamondClean Series 9000 / Oral-B iO Series 7+ / Burst Pro Sonic. 2× daily for 2 minutes (built-in timer). **Bass technique** — 45° angle to gum line, tiny vibrating back-and-forth, gum-to-tooth motion. Replace head every 3 months. *(Cochrane Yaacob 2014)*
 
-**5.5 Soft-bristle brush + bamboo charcoal-infused floss / Ayurvedic chew sticks (datun/miswak).** Soft brush 2 min BID with Dashana Samskara powder OR baking-soda + clove + sesame oil paste; floss daily; replace brush every 3 mo or after URI.
+#### Open the science
 
-**5.6 Water flosser (home oral irrigator).** Waterpik, Philips Sonicare AirFloss; warm water + triphala decoction or saline; nightly.
+Yaacob 2014 Cochrane Review — powered toothbrushes (oscillating-rotating and sonic) reduce plaque (Quigley-Hein) and gingivitis (bleeding index) more than manual brushes, both short- and long-term. Effect size: ~11 % more plaque reduction at 1–3 months, ~21 % at 3+ months. Bass technique > horizontal scrubbing. Brands: Sonicare DiamondClean Series 9000 ($200–250), Oral-B iO Series 7+ ($200–300), Burst Pro Sonic ($70 with discount code). Replace head every 3 months or sooner if bristles splay. Soft-bristle only — medium/hard cause recession. **Synthesis.** A-grade cornerstone, non-negotiable.
 
-**5.7 Tongue / posterior posterior tonsillar irrigation** for tonsil-stone phenotype — sterile saline syringe (curved-tip) 5 ml warm saline at tonsillar crypts BID.
+### 5.3 Water flosser + interdental brushes
 
-**5.8 Ozonated oil application** to inflamed gum margins BID.
+> **Quick start.** Waterpik Aquarius / Burst Sonic Water Flosser daily before evening brushing. Add **interdental brushes** (TePe, GUM SOFT-PICKS) if your dentist or hygienist confirms open interdental spaces — sized to the gap. *(Cochrane Sambunjak 2011; Pitchika 2019 interdental brushes)*
 
-**5.9 PBM (660 nm intraoral wand)** — limited consumer availability; LumaPB Smile, Joov dental wand; 60–120 s per quadrant BID for periodontal — emerging evidence Grade C; optional adjunct.
+#### Open the science
 
-**5.10 Nasal breathing restoration** — saline neti AM; mouth tape after sleep-apnea screen negative (3M micropore, Hostage Tape) to restore nasal-only sleep breathing → saliva flow + halitosis ↓.
+Sambunjak Cochrane 2011 — flossing + brushing reduces plaque and gingivitis (vs brushing alone). Effect modest for plaque, stronger for gingivitis. Be honest: Iheozor-Ejiofor 2017 Cochrane on flossing for cavity prevention found insufficient evidence — so we recommend interdental cleaning for **gum health**, not as a cavity-prevention claim. Interdental brushes (TePe, GUM SOFT-PICKS) outperform floss when pockets are open (Pitchika 2019). Water flossers (Waterpik Aquarius, Burst Sonic Water Flosser) match floss for plaque in many trials and are easier to maintain compliance. Brands: Waterpik Aquarius WP-660 ($60–80), Burst Sonic Water Flosser ($80–120), TePe Original ($5–10), GUM SOFT-PICKS Comfort Flex ($5–10). **Synthesis.** A-grade for gum health, daily.
+
+### 5.4 Tongue scraper + oil-pulling
+
+> **Quick start.** Stainless steel or copper tongue scraper (Dr Tung's, Goalpro) every morning before brushing, 5–10 strokes front-to-back. **Oil-pulling** — 1 tbsp coconut/sesame oil swished 10–20 minutes on rising before water — Ayurvedic Kavala Graha. *(Outhouse Cochrane 2006; Asokan 2011)*
+
+#### Open the science
+
+Outhouse Cochrane 2006 — tongue scraping reduces VSC (volatile sulphur compounds) more than tongue brushing alone; effect transient (returns within hours), hence morning + evening for the halitosis sub-type. Copper has theoretical antimicrobial advantage but stainless is fine. Asokan 2011 India RCT n=20 — oil pulling (sesame oil 10–20 min) reduced *S. mutans* in 2-week trial; later Asokan 2009 showed VSC reduction. **Honest caveat — oil pulling is NOT equivalent to chlorhexidine; it is an adjunct, not a replacement for brushing.** Coconut oil has lauric-acid antimicrobial signal. Brands: Dr Tung's Stainless Tongue Cleaner ($5–8), Goalpro Copper ($8–12), Cocofloss + Cocopull ($15–20). **Synthesis.** Daily morning anchor, free-to-cheap, high compliance.
+
+### 5.5 Optional adjuncts
+
+> **For you, in plain words.** Three optional add-ons: home dental microbiome test (Bristle Health $70–100 single / $30/quarter sub, Viome Mouth Health $150) — saliva 16S sequencing, useful for halitosis or recurrent-caries phenotyping (Grade C-B); home pH strips (Hydrion, Just Fitter $10–15) — chronic acid <6.5 favours pathobionts (Grade C); red-light PBM at gum line (Mito Red Light MitoMOBILE, Hooga) — Hamblin 2017 mild signal, not cornerstone (Grade D-C). *(Bristle Health DTC; Hamblin 2017)*
 
 ## 6. Dietary Protocol
 
-### 6.1 Mandatory foods
+### 6.1 Mandatory daily foods
 
-- **Sprouted millets** 60–80 g
-- **Bitter / green leafy** (methi, moringa, parsley, mint) 150–200 g — natural breath fresheners
-- **Fermented foods** (kefir, sauerkraut, kanji) 100 g — oral microbiome support
-- **Crunchy raw vegetables** (carrot, celery, apple) — mechanical cleaning + saliva
-- **Cheese (small amount, post-meal — sub-population)** — alkalinises post-meal pH (acid-attack protection); skip if dairy-sensitive or congested
-- **Vitamin C foods**: amla 20 g fresh OR 5 g powder, citrus 1 portion
-- **K2-MK7 foods**: natto 30 g (Japanese fermented soy) OR Edam/Gouda cheese; egg yolk; grass-fed butter; **menaquinone supplement if natto not tolerated**
-- **Omega-3 oily fish** (sardines, mackerel) 120 g 3×/week
-- **Tulsi tea, green tea** (≥1 h from iron)
-- **Hydration** 2.5 L water/day — saliva production load-bearing for halitosis
+> **For you, in plain words.** Eight food anchors — calcium-K2 dairy (or fermented alt), leafy greens for vitamin K1 and magnesium, fatty fish for omega-3, fermented foods for biofilm seeding, polyphenol-rich teas (green tea, hibiscus), bone broth for collagen + glycine, low-glycaemic millets for blood-sugar stability, and crunchy raw vegetables for mechanical biofilm disruption. *(PREDIMED 2018; Schurgers 2007 K2)*
+
+| Food | TL;DR (plain English) | Daily quantity | Why for the mouth | Citation |
+|---|---|---|---|---|
+| Aged cheese / hard cheese | Calcium + K2-MK4; raises oral pH; fights *S. mutans*. *(Aimutis 2004)* | 30–60 g | Calcium + K2 + pH-buffering | *(Aimutis 2004)* |
+| Leafy greens (kale, spinach, methi) | Vitamin K1 + magnesium + folate; food K1 converts to K2 in gut. *(Schurgers 2007)* | 150 g cooked | K1/K2 axis + Mg | *(Schurgers 2007)* |
+| Fatty fish (salmon, sardine, mackerel) | Omega-3 EPA/DHA → resolvins → gum inflammation resolution. *(Coelho 2020)* | 100 g × 3/week | Omega-3 → RvE1 | *(Coelho 2020)* |
+| Fermented foods (kefir, kimchi, sauerkraut, idli batter, dosa) | Diverse beneficial strains; gut-immune-oral axis. *(Marco 2017)* | 1 serving | Microbiome | *(Marco 2017)* |
+| Green tea (matcha, sencha) | EGCG inhibits *P. gingivalis* gingipains. *(Hirasawa 2002)* | 2–3 cups | EGCG + L-theanine | *(Hirasawa 2002)* |
+| Bone broth | Glycine + collagen amino acids; gum tissue substrate. *(Henrotin 2014)* | 200–300 ml × 3/week | Gum collagen substrate | *(Henrotin 2014)* |
+| Sprouted small millets (foxtail, kodo, barnyard) | Low-GI; slow-burn carbs preserve oral pH; magnesium-rich. *(Khadar Vali millet revival)* | 60–80 g | GI + Mg | *(Khadar Vali)* |
+| Crunchy raw vegetables (carrot, celery, cucumber, apple) | Mechanical biofilm disruption + saliva stimulation + low-acid. *(natural-cleansing food literature)* | 150 g | Mechanical + saliva | *(crunchy-veg literature)* |
 
 ### 6.2 Absolutely avoid
 
-| Food/Class | Molecular reason |
-|---|---|
-| **Refined sugar + HFCS + sugary drinks** | S. mutans substrate; biofilm acid attack; pocket inflammation |
-| **Sticky sweets, dried fruit on teeth** | Prolonged acid exposure |
-| **Acidic sodas, lemon water in excess** | Enamel erosion |
-| **Alcohol, mouthwash with alcohol** | Dry mouth → biofilm shift |
-| **Smoking, vaping, paan, gutka** | Periodontitis multiplier; oral cancer |
-| **Coffee + tea staining + post-meal pH drop** | Chromogenic staining; manageable |
-| **Sticky chewy bread, refined carbs** | Trapped in interproximal |
-| **Late heavy dinner + GERD** | Reflux enamel erosion + halitosis |
-| **Garlic, onion AM/before social** | VSC carryover (oil pulling + xylitol after meals partially clears) |
-| **Aspartame, sucralose excess** | Microbiome shift |
+> **For you, in plain words.** Seven oral-hostile categories — sugary drinks, sugary snacks, sticky sweets, sipping acids all day, ultra-processed snacks, tobacco / vape, alcohol mouthwash daily.
+
+- **Sugary drinks (soda, sweet coffee, fruit juice)** — *S. mutans* substrate + acid bath + enamel demineralisation. **Frequency matters more than dose** — sipping a sugary drink over 2 hours is much worse than drinking it in 5 minutes and rinsing with water.
+- **Sticky sweets (caramel, toffee, dried fruit eaten alone, gummies)** — biofilm-residence time problem.
+- **Sipping acids all day** (sparkling water, lemon water, kombucha, sports drinks) — enamel erosion; finish in one sitting, rinse with water, wait 30 min before brushing.
+- **Ultra-processed snacks** — refined starch turns to sugar at the biofilm.
+- **Tobacco / vape** — single largest fixable periodontitis risk factor. *(Genco 2013)*
+- **Alcohol-based mouthwash (Listerine Original) daily long-term** — dries mucosa, disrupts oral microbiome. Short-term acceptable; daily long-term not recommended.
+- **Frequent snacking** — every snack is an acid bath; aim for 3 meals + 1–2 snacks max.
 
 ### 6.3 Preparation methodology
 
-**Tooth-friendly cooking**: avoid sticky/sugary combinations; finish meals with crunchy raw veg or a sip of green tea or rinse with water. **Bone broth** 24 h simmer — glycine + collagen for gum tissue. **Fermented foods** for oral microbiome. **Ghee tempering** for K2 + curcumin uptake.
+> **For you, in plain words.** Sprouting reduces phytate (improves mineral bioavailability for tooth + bone). Fermentation increases bioactive compounds + probiotic load. Slow-cooked bone broth extracts glycine + proline + collagen.
 
-### 6.4 Seven-day meal plan
+- **Sprouting (8–10 h soak + 8–12 h germinate)** for millets, mung, chickpea, lentil — reduces phytate, improves zinc/calcium/magnesium bioavailability.
+- **Fermentation** — kimchi, sauerkraut, kanji, dosa batter, idli, kefir, yoghurt — diverse strain seeding.
+- **Bone broth** — 24–48 h simmer with bones + apple cider vinegar splash; collagen + glycine + proline + Ca/Mg.
+- **Ghee tempering** — fat-soluble vitamin carrier (A, D, E, K); use for cooking K1-rich greens.
 
-| Day | Breakfast 07:30 | Lunch 13:00 | Dinner 19:00 |
-|---|---|---|---|
-| **1 Cofactor load** | 60 g foxtail porridge + amla + sesame seeds 15 g + green tea | 200 g methi-moringa + 50 g mung dal + 70 g millet + parsley + kanji + 30 g natto (or cheese) | 65 g khichdi + 150 g gotu kola + bone broth |
-| **2 Crunchy fibre** | 65 g barnyard upma + carrot/celery sticks + amla | 180 g salad with mint + 50 g toor + 60 g browntop + sauerkraut + Gouda 20 g | 70 g millet roti + 180 g lauki + parsley garnish |
-| **3 Omega-3** | 70 g kodo khichdi + ginger + 5 g fenugreek | 120 g sardines + 200 g greens + 60 g foxtail + kanji | 65 g roti + 180 g pumpkin + tulsi tea |
-| **4 K2** | 60 g foxtail porridge + grass-fed butter + 2 Brazil nuts | 30 g natto + 200 g moringa + 50 g moong + 70 g millet + cheese 20 g | 70 g khichdi + 150 g gotu kola + ghee 1 tsp |
-| **5 Vit C** | 65 g millet + 30 g amla + citrus + mint | 200 g parsley-orange salad + 50 g lentils + 70 g millet | 65 g roti + 180 g sabzi + green tea |
-| **6, 7** | Rotate | Rotate | Rotate |
+### 6.4 Seven-day meal plan (with grams)
+
+> **For you, in plain words.** Four rotating day patterns + repeats. Each meal hits the oral-protective food list while staying low-GI and high-K2. *(PREDIMED 2018; Khadar Vali millet protocol)*
+
+**Day 1 (Mediterranean-Indian).** 07:30 Steel-cut oats 50 g in 200 ml whole milk + 1 tbsp ghee + 1 tbsp flax + 100 g berries + 6 walnuts; green tea. 12:30 Foxtail millet 80 g + dal 80 g + sautéed methi/spinach 100 g + cucumber-tomato salad 100 g + 1 tbsp ghee + amla 1 piece. 18:30 Grilled salmon 120 g + steamed broccoli 150 g + kale-walnut salad 100 g + olive oil 1 tbsp + aged cheese 30 g. Snacks: apple + 15 g almond butter; or 200 ml kefir.
+
+**Day 2 (Ayurvedic-Mediterranean).** 07:30 Idli 3 + sambar 200 ml + coconut chutney 30 g + amla murabba 1; tulsi tea. 12:30 Brown rice 80 g + chickpea curry 120 g + spinach 100 g + cucumber raita 100 g + 1 tbsp ghee. 18:30 Grilled sardine 100 g + sautéed kale 150 g + sweet potato 100 g + olive oil 1 tbsp. Snacks: carrot/celery 150 g + hummus 30 g; or matcha + 6 walnuts.
+
+**Day 3 (Cardio overlay).** 07:30 Greek yoghurt 200 g + chia 1 tbsp + berries 100 g + almonds 6 + honey 1 tsp; matcha. 12:30 Quinoa 80 g + chickpea-Mediterranean bowl + olive 30 g + feta 30 g + arugula 100 g. 18:30 Grilled chicken 120 g + ratatouille 250 g + side salad 100 g + olive oil 1 tbsp. Snacks: aged cheese 30 g + apple; or hibiscus tea + walnuts.
+
+**Day 4 (Light-fermented).** 07:30 Mung sprout salad 150 g + lemon + tomato + cucumber + olive oil; tulsi + honey 1 tsp. 12:30 Kodo millet 80 g + lentil curry 100 g + sautéed greens 150 g + cucumber raita 100 g. 18:30 Baked white fish 120 g + asparagus 150 g + tomato salad 100 g + olive oil 1 tbsp + sauerkraut 30 g. Snacks: kefir 200 ml + walnuts; or carrot sticks + hummus.
+
+**Days 5–7** rotate Days 1–4 with seasonal greens swap (winter: collards/kale; summer: amaranth/spinach/methi).
 
 ### 6.5 Environmental & occupational triggers
 
-- **Tobacco / nicotine** — total elimination (smoking, vaping, paan, gutka, snuff).
-- **Alcohol-containing mouthwash** (most Listerine SKUs) — switch to alcohol-free OR home-prepared rinses.
-- **Sodium lauryl sulphate (SLS) toothpaste** — associated with aphthous ulcer triggering in susceptible users; switch to SLS-free (Sensodyne Pronamel, hellio Toothpaste, Lavera, Patanjali Dant Kanti SLS-free options).
-- **Fluoride** — user's call; protocol does not mandate fluoride toothpaste. Hydroxyapatite paste (Boka, RiseWell, Apagard) is a non-fluoride remineralising alternative with European/Japanese RCT support.
-- **Mouth breathing during sleep** — assess sleep-apnea (Epworth + home oximetry); if cleared, mouth tape (adults only).
-- **GERD diet trigger elimination** if reflux halitosis: coffee, citrus excess, tomato, spicy, alcohol, late dinner.
-- **Occupational dehydration** (presenters, teachers, healthcare) — hydration discipline, xylitol gum after each meal.
-- **Personal care swap**: SLS-free toothpaste, alcohol-free mouthwash, fluoride choice is user's.
+> **For you, in plain words.** Eight categories to clean up — smoking/vaping (the single largest fixable lever), heavy alcohol, chronic dehydration, mouth-breathing-driving allergens (dust mite, pollen, mould), high-sugar workplace snacks, occupational acid exposure (lab work, hair-dressing chemicals), abrasive whitening toothpastes, and alcohol mouthwash daily.
 
-### 6.6 Cofactor floor
+- **Smoking/vaping cessation** — single largest oral-health fixable risk factor (Genco 2013). Apps: Smoke Free, QuitGuide. Clinic-route Rx (varenicline, bupropion, NRT) in §10.7.3.
+- **Heavy alcohol** — disrupts oral microbiome + xerostomia + oral cancer risk.
+- **Chronic dehydration** — low saliva = pathobiont expansion. 2 L water/day baseline.
+- **Allergens driving mouth-breathing** — HEPA in bedroom + dust-mite encasements (see immune-allergy-comfort dossier).
+- **High-sugar workplace snacks** — keep xylitol gum + nuts + cheese at desk instead.
+- **Occupational acid exposure** — laboratory work, hair-dressing chemicals — full-face respirator + rinse mouth with water periodically.
+- **Abrasive whitening toothpastes daily** — RDA >150 (relative dentin abrasivity) damages enamel; check brand RDA.
+- **Alcohol mouthwash daily long-term** — switch to alcohol-free formulations (TheraBreath, CloSYS) or oil-pulling.
 
-| Cofactor | Why for oral | Target/day | Food | Supplement | Antagonist |
-|---|---|---|---|---|---|
-| **Vitamin D3 + K2-MK7** | LL-37 saliva, alveolar bone, dentin | 4000 IU + 100–200 µg | sun, natto, fatty fish | Thorne D/K2 | thyroid med 4h |
-| **Vitamin C** | Gingival collagen | 1000 mg BID | amla, citrus | Pure Encaps Buffered | tea 1h |
-| **CoQ10 (ubiquinol)** | Gum tissue mitochondria | 100–200 mg | organ meat (small) | Kaneka Q10 Jarrow | with fat; warfarin INR monitor |
-| **Magnesium glycinate** | D3 cofactor + sleep | 300–400 mg | seeds, greens | Doctor's Best | split Ca/Mg |
-| **Zinc** | mucosal repair, oral immunity | 10–15 mg | pumpkin seed, oysters | Thorne picolinate | iron, Ca 2h; Cu 8–15:1 |
-| **Copper** | Zn balance | 1–2 mg | sesame, cashew | Pure Encaps | with Zn |
-| **Selenium** | GPX, oral mucosa | 100–200 µg | 2 Brazil nuts | Solgar | >400 µg toxic |
-| **B-complex** (esp. B2/B6/B12/folate) | Aphthous ulcer prevention | B-complex daily | leafy, egg, salmon | Thorne B-Complex | tannins 1h |
-| **Iron** (if ferritin <30, aphthous-prone) | mucosal | measure first | red meat, pumpkin | Solgar Gentle Iron | tea/Ca/Zn 2h; pair Vit C |
-| **Calcium** | dentin, bone | 800–1000 mg (food-first) | dairy, greens, sardines bones | Solgar (if dietary low) | Mg PM split |
-| **Omega-3 EPA+DHA** | SPMs, gum resolution | 1–2 g | sardines | Carlson Elite | — |
-| **L-lysine** (aphthous-prone) | viral / aphthous suppression | 1000 mg | — | NOW L-Lysine | — |
+### 6.6 Cofactor floor table
+
+> **For you, in plain words.** Five load-bearing nutrients — measure before mega-dosing; food first, supplement to fill gaps. *(Hujoel 2009 C; Van der Velden 2008 D; Schurgers 2007 K2; Hanioka 1994 CoQ10; Coelho 2020 omega-3)*
+
+| Nutrient | TL;DR (plain English) | Target | Food sources | Supplement form if needed | Antagonists / cautions | Citation |
+|---|---|---|---|---|---|---|
+| Vitamin C | 500–1,000 mg/day for gum collagen — deficiency = scurvy gums. *(Hujoel 2009)* | 500–1,000 mg | Amla, guava, citrus, kiwi, bell pepper | Ester-C, liposomal C | Iron synergy (good); high-dose copper antagonism (mild) | *(Hujoel 2009)* |
+| Vitamin D3 + K2-MK7 | D3 2,000–5,000 IU + K2-MK7 100–200 µg; check DTC vitamin D level first. *(Van der Velden 2008; Schurgers 2007)* | D3 50–125 nmol/L | Fatty fish, egg yolks, sun; K2 = natto, aged cheese, animal liver | NOW D3+K2, Thorne D-5,000+K2 | Warfarin (K2 ↓ INR) | *(Van der Velden 2008; Schurgers 2007)* |
+| Magnesium | 400 mg/day glycinate; cofactor for D activation + jaw relaxation. *(Schwalfenberg 2017)* | 400 mg | Pumpkin seeds, leafy greens, dark chocolate, almonds | Mg glycinate (sleep) or malate | Calcium at same dose (split AM/PM) | *(Schwalfenberg 2017)* |
+| CoQ10 / Ubiquinol | 100–200 mg/day; ubiquinol >40; gum-tissue supportive. *(Hanioka 1994)* | 100–200 mg | Organ meats, beef, sardines | Ubiquinol QH (Kaneka) | Warfarin (↓ effect) | *(Hanioka 1994)* |
+| Omega-3 EPA/DHA | 1–3 g/day; OmegaQuant DTC test target ≥8 %. *(Coelho 2020)* | 1–3 g (≥8 % omega-3 index) | Salmon, sardine, mackerel, herring | Nordic Naturals Ultimate Omega, Carlson | Anticoagulants (mild bleeding risk) | *(Coelho 2020)* |
 
 ## 7. Lifestyle / Mind-Body Anchors
 
-### 7.1 Yoga
+### 7.1 Yoga — six asanas
 
-| Asana | §2 Mechanism node | Duration | Time |
-|---|---|---|---|
-| **Sarvangasana** (shoulder stand) | §2.3 + §2.4 lymphatic + tonsillar drainage | 3 min | 07:00 |
-| **Simhasana** (lion pose — classical oral exercise) | §2.4 tongue + jaw mobility, tonsil clearance | 5 reps | 07:00 |
-| **Jivha Bandha** (tongue lock) | §2.4 tongue + palate | hold 10 s × 5 | 07:00 |
-| **Surya Namaskar** | §2.3 systemic | 12 rounds | 07:00 |
-| **Setu Bandhasana** | §2.4 + chest opening | 1 min | 07:00 |
-| **Shavasana** | §2.3 HPA reset | 10 min | 22:00 |
+> **For you, in plain words.** Six asanas mapped to oral-health mechanism nodes — Sarvangasana for facial circulation, Bhujangasana for posture-jaw-airway, Matsyasana for throat-jaw, Shavasana for HPA + bruxism. *(Iyengar Light on Yoga; CCRYN AYUSH yoga monographs)*
 
-### 7.2 Pranayama
+| Asana | TL;DR (plain English) | Mechanism node targeted | Duration | Time of day | Citation |
+|---|---|---|---|---|---|
+| Sarvangasana (shoulder stand) | Improves facial + head circulation; perfuses gum tissue. *(Iyengar)* | §2.3 perfusion | 3–5 min | AM | *(Iyengar)* |
+| Bhujangasana (cobra) | Opens chest + jaw; supports nasal breathing posture. *(Iyengar)* | §2.5 airway | 1 min × 3 | AM | *(Iyengar)* |
+| Matsyasana (fish pose) | Stretches throat + jaw + neck flexors; counteracts forward head + clenched jaw. *(Iyengar)* | §2.5 + bruxism | 1 min × 3 | AM | *(Iyengar)* |
+| Shavasana (corpse pose) | Deep nervous-system rest; bruxism gentling via parasympathetic shift. *(Iyengar)* | §2.5 + bruxism | 10 min | PM | *(Iyengar)* |
+| Setu Bandhasana (bridge) | Mild facial circulation + neck-jaw decompression. *(Iyengar)* | §2.3 | 3 min | AM | *(Iyengar)* |
+| Simhasana (lion pose) | Stretches tongue + jaw + face; classical Ayurvedic oral-care asana. *(Iyengar)* | §2.5 | 1 min × 3 | AM | *(Iyengar)* |
 
-| Technique | §2 Mechanism node | Duration | Time |
-|---|---|---|---|
-| **Anulom Vilom** | §2.3 HPA + nasal patency | 10 min | 06:30 |
-| **Bhramari** (humming) | §2.4 sinus NO + vagal | 5 min | 06:30 + 22:00 |
-| **Sheetali** (cooling) | §2.2 pitta heat reduction (acute gum inflammation) | 5 min | midday if pitta-fire pattern |
-| **Kapalbhati** | §2.4 sinus clearing; **contraindicated HTN, pregnancy, glaucoma** | 5 min | 06:30 |
-| **Nadi Shodhana** | §2.3 autonomic balance | 10 min | flare |
+### 7.2 Pranayama — four techniques
 
-### 7.3 Meditation
+> **For you, in plain words.** Four breath practices mapped to mechanism nodes — Anulom Vilom for HPA / vagal tone, Bhramari for vagal humming (also classical Kanthashuddhi throat-clearing), Sheetali for cooling pitta (gum-bleeding heat pattern), Nasal-only breathing as the meta-rule. *(CCRYN AYUSH pranayama monographs; Brown 2009 pranayama review)*
 
-Yoga Nidra HS — sleep + immune; Tibetan Tonglen 10 min PM.
+| Technique | TL;DR (plain English) | Mechanism node | Duration | Time of day | Citation |
+|---|---|---|---|---|---|
+| Anulom Vilom (alternate-nostril) | Restores nasal breathing; balances autonomic; classical Ayurveda. *(Brown 2009)* | §2.5 airway + HPA | 10 min | AM | *(Brown 2009)* |
+| Bhramari (humming bee) | Humming + nasal nitric oxide; vagal tone; classical throat-clearing (Kanthashuddhi). *(Lundberg 2008 nasal NO)* | §2.5 + vagal | 5 min | PM | *(Lundberg 2008)* |
+| Sheetali (cooling) | Pitta-cooling; for stomach-heat gum-bleeding TCM/Ayurveda pattern. *(Ayurveda classical)* | §2.3 | 3 min | PM | *(Ayurveda classical)* |
+| Nasal-only breathing | Meta-rule — restore nasal breathing 24/7; mouth-tape at night if airway patent. *(Triana 2018)* | §2.5 | All day | All day | *(Triana 2018)* |
 
-### 7.4 Sleep & circadian
+**Contraindications.** Kapalbhati + Bhastrika contraindicated in hypertension, pregnancy, cardiac disease, recent abdominal surgery. Not included in this protocol's oral routine.
 
-Lights-out 22:30; blue-light cutoff 21:00; bedroom 18–20 °C; humidifier winter; nasal breathing restored (saline neti + mouth tape after apnea screen). AM sunlight.
+### 7.3 Meditation + stress work
+
+> **For you, in plain words.** Bruxism, gum disease, and recurrent canker sores all worsen under chronic stress. 10–20 min daily MBSR / Vipassana / Yoga Nidra calms the HPA axis and reduces clenching. Apps: Headspace, Calm, Insight Timer, Waking Up. *(Rosenkranz 2013; Kabat-Zinn MBSR)*
+
+### 7.4 Sleep + bruxism
+
+> **For you, in plain words.** Bedtime 22:00–23:00, 7–9 hours; blue-light cutoff 21:00; room 18–20°C. **Mouth-tape at night** (Hostage Tape, 3M Micropore) if airway is patent — restores nasal breathing, reduces dry-mouth-driven biofilm shift. **Bruxism mouthguard from §10.7.3** if you grind. *(Lobbezoo 2018 bruxism; Triana 2018 mouth-breathing)*
 
 ### 7.5 Nervous-system reset
 
-Cold-water face splash AM; humming + gargling 2 min BID — directly clears VSC + vagal; 4-7-8 breath.
+> **For you, in plain words.** Vagal practices — humming, gargling, cold splash, slow paced breathing 6 bpm — lower the chronic background activation that drives clenching and gum inflammation. 5–10 minutes daily. *(Porges polyvagal; Joseph 2005 6-bpm)*
 
-### 7.6 Exercise periodization
+### 7.6 Weekly exercise cadence
 
-**Weekly**: Mon/Wed/Fri Zone 2 cardio 45 min; Tue/Thu strength 45 min; Sat HIIT 20 min; Sun restorative yoga + long walk.
+> **For you, in plain words.** Cardio + strength + restorative work for systemic inflammation reduction. *(Penedo 2005 exercise + inflammation)*
 
-**Monthly**: Wk 1 + 4 full intensity; Wk 3 deload; sleep prioritisation.
+- **Mon / Wed / Fri** — Zone-2 cardio 45 min at 60–70 % HRmax.
+- **Tue / Thu** — Strength training (compound lifts) 45 min.
+- **Sat** — HIIT 20 min OR sport.
+- **Sun** — Restorative yoga + long walk 60–90 min.
 
-Hydration during exercise — oral dryness from mouth breathing during cardio is a sub-clinical halitosis driver; nasal-breathing-only Zone 2 (close mouth, slow pace until sustainable nasal-only) is a Patrick McKeown / Buteyko trainable skill — improves oral microbiome + nighttime breathing.
+**Monthly:** Week 1 + 4 full intensity + TCM cycling overlay; Week 2 moderate; Week 3 deload.
 
-## 8. Daily Unified Combos (≤10 caps/day)
+## 8. Daily Unified Combos (≤10 caps/day total)
 
-**Combo 1 — Gum-Tissue Foundation (08:00):** Vitamin C 1000 mg + CoQ10 ubiquinol 100 mg + Vitamin D3 4000 IU + K2-MK7 100 µg + Omega-3 1 g. *4 caps (omega-3 = 1 softgel).*
+### 8.1 Combo design rationale
 
-**Combo 2 — Anti-Inflammatory (13:00):** Curcumin 500 mg + EGCG 300 mg + Zinc 15 mg + Selenium (2 Brazil nuts). *3 caps.*
+> **For you, in plain words.** Three combos timed to the body's daily rhythm — AM cofactor floor (D + K2 + omega-3 + ubiquinol with fat-rich breakfast), midday lighter (C + magnesium late lunch), evening oral biofilm reseeding (BLIS K12 + xylitol after evening brush). Total 8 capsules/day + 1 lozenge + xylitol gum. *(combo design from cofactor + biofilm + inflammation logic)*
 
-**Combo 3 — Microbiome & HPA (Bedtime — post-brush):** BLIS K12/M18 lozenge 1 + Magnesium glycinate 300 mg + Ashwagandha KSM-66 300 mg. *2 caps + 1 lozenge.*
+### 8.2 Combo 1 — Morning (post-breakfast)
 
-**Daily total: 9 caps + 1 lozenge.** + Triphala/neem rinse BID + tongue scraping AM + oil pulling AM + Miswak/datun BID + xylitol gum 5 g post-meals.
+- **Vitamin D3 5,000 IU + K2-MK7 100 µg** — 1 capsule with fat-rich breakfast. *(Schurgers 2007)*
+- **Omega-3 EPA/DHA 1,000 mg** — 1–2 capsules. *(Coelho 2020)*
+- **Ubiquinol QH 100 mg** — 1 capsule. *(Hanioka 1994)*
+- **Vitamin C 500 mg** — 1 capsule (or food first via amla/guava/citrus).
 
-**Aphthous ulcer add-on**: L-lysine 1000 mg/day prophylaxis (3000 mg acute) + DGL 400 mg chewable BID + B-complex; topical Yashtimadhu paste on ulcer.
+### 8.3 Combo 2 — Midday (post-lunch)
+
+- **Magnesium glycinate 200 mg** — 1 capsule.
+- **Vitamin C 500 mg** — 1 capsule (split AM/PM).
+- **Optional: Triphala 1 tsp powder in warm water 30 min before lunch (Ayurvedic gut-oral axis).**
+
+### 8.4 Combo 3 — Evening (post-dinner) + oral biofilm work
+
+- **Magnesium glycinate 200 mg** — 1 capsule with dinner.
+- **BLIS K12 lozenge** — 1 lozenge AFTER evening brush (let dissolve, no food/drink 30 min after). *(Burton 2006)*
+- **Optional: 1 % curcumin gel applied to gum line after brush.**
+- **Xylitol gum/mint** — 1 piece between meals + after lunch + after dinner (target 6–10 g/day total across the day).
+
+### 8.5 Optional TCM cycling overlay (weeks 1 & 4)
+
+- **Yu Nu Jian granule** — 3 g 2×/day for stomach-heat gum-bleeding sub-type. *(Bensky)*
+- **Liu Wei Di Huang Wan** — 8 small pills 2×/day for kidney-yin tooth-loosening pattern in older adults. *(Chinese Pharmacopoeia 2020)*
 
 ## 8.5 Master 24-Hour Day Plan
 
-| Hour | Action | Why / Conflicts resolved |
-|---|---|---|
-| **06:00** | Wake; tongue scraping (5–10 strokes) | **#1 halitosis lever** — clear overnight VSC |
-| **06:05** | Oil pulling (sesame or coconut, 5–15 min) | Biofilm + Kavala (*Charaka* ch. 5); spit into bin |
-| **06:15** | Saline neti + warm salt rinse + humming 1 min | Nasal breathing + vagal |
-| **06:30** | Brush (SLS-free or Dashana Samskara) + floss/water flosser; Pranayama 15 min | Mechanical + vagal |
-| **07:00** | Yoga 25 min (incl. Simhasana + Jivha Bandha) | Tongue mobility + tonsillar |
-| **07:30** | Breakfast (§6.4) + green tea (post) | Crunchy fibre + post-meal cleaning |
-| **07:45** | Xylitol gum 5 min (or post-meal water rinse + xylitol mint) | pH reset |
-| **08:00** | **Combo 1** (Vit C + CoQ10 + D3+K2 + Omega-3) | Fat-meal vehicle for D3/K2/CoQ10 |
-| **10:00** | Green tea | ≥1 h from Combo 1 |
-| **12:30** | Lunch + post-meal water rinse + xylitol gum 5 min | Acid-pH reset |
-| **13:00** | **Combo 2** (Curcumin + EGCG + Zinc + Brazil nuts) | Fat for curcumin; Zn 2h from Ca/Fe; EGCG between meals — taken here with food OK to avoid iron + thyroid clash |
-| **13:30** | 10-min walk | Post-prandial |
-| **14:00** | **Caffeine cutoff** | Sleep + xerostomia |
-| **15:30** | Exercise (§7.6) — nasal-breathing Zone 2 | Oral dryness control |
-| **17:30** | Infrared sauna 20 min + cold immersion (optional 3×/wk) | Systemic |
-| **18:30** | Snack: cheese (sub-pop) or walnut + apple/carrot crunch | Post-meal alkalinisation |
-| **19:00** | Dinner (§6.4) — early; light | Avoid GERD + nocturnal acid |
-| **19:30** | Post-dinner water rinse + xylitol gum 5 min | pH |
-| **20:00** | Triphala rinse 1 min + neem rinse alternate days | Anti-biofilm |
-| **20:30** | Restorative yoga 20 min | Parasympathetic |
-| **21:00** | Blue-light cutoff; humidifier on (winter) | Saliva + sleep |
-| **21:30** | Brush + floss + Miswak 5 min chew + ozonated coconut oil to gums | Final clean |
-| **21:50** | **BLIS K12/M18 lozenge HS** (suck slowly; no food/drink/rinse afterwards) | Salivaricin overnight colonisation — **critical timing — must be last oral action before sleep** |
-| **22:00** | Bhramari 5 + 4-7-8 + Yoga Nidra (mouth closed) | Vagal + nasal-breath training |
-| **22:15** | Mouth tape (adults, apnea-cleared only) | Nasal breathing → saliva |
-| **22:30** | Bedtime; 18–20 °C; humidifier | Saliva flow |
-| **02:00–06:00** | Sleep nasal breathing | Saliva + microbiome |
-
-**If on chlorhexidine rinse** (often prescribed post-dental): chlorhexidine ≥2 h from BLIS lozenge (it kills the probiotic); rotate use to allow K12/M18 colonisation. **If on antibiotic course**: BLIS lozenge ≥2 h from antibiotic; continue post-course for microbiome recovery.
+| Hour | TL;DR (plain English) | Action | Conflicts resolved |
+|---|---|---|---|
+| 06:00 | Wake + sun + nasal breathing | Wake; 5 min sunlight; nasal-only checkpoint | — |
+| 06:15 | Tongue scrape + oil pull | Tongue scraper 5–10 strokes + 1 tbsp coconut oil swish 10–15 min | Before food/drink |
+| 06:30 | Pranayama + asana | 10 min Anulom Vilom + Simhasana × 3 | — |
+| 07:00 | Brush + interdental | Powered brush 2 min Bass + water flosser | After oil-pull rinse |
+| 07:30 | Breakfast | Fat-rich per §6.4 | Ca-Fe-thyroid Rx gap |
+| 08:00 | Combo 1 | D3+K2 + Omega-3 + Ubiquinol + C with food | Apart from Fe/thyroid |
+| 09:30 | Green tea | 1 cup matcha/sencha | Coffee/iron gap |
+| 12:30 | Lunch | Per §6.4 | — |
+| 13:00 | Combo 2 | Mg + C + optional Triphala | Apart from D/Ca |
+| 13:30 | Post-lunch walk + xylitol | 10 min + 1 xylitol piece | — |
+| 14:00 | Caffeine cutoff | Last caffeine of day | Sleep |
+| 16:00 | Exercise | Zone-2 or strength per §7.6 | — |
+| 18:30 | Dinner | Per §6.4 | — |
+| 19:00 | Combo 3 (Mg) | Mg with dinner | — |
+| 19:30 | Walk + xylitol | 10 min + 1 xylitol | — |
+| 20:00 | Evening brush + interdental + curcumin gel | Powered brush + flosser + curcumin gel | Pre-BLIS reset |
+| 20:15 | BLIS K12 lozenge | Lozenge; no food/drink 30 min | After brush |
+| 21:00 | Blue-light cutoff | Screens off | — |
+| 21:30 | Restorative + Bhramari | Shavasana + Bhramari 5 min | — |
+| 22:00 | Bedtime + mouth-tape (if airway patent) | Lights out; mouth-tape if patent | Nasal night-breathing |
 
 ## 9. Supplier Ecosystem + Monthly Cost
 
-| Channel | Sources | Brands |
-|---|---|---|
-| Amazon/iHerb | BLIS K12/M18, CoQ10, Vit C, D3+K2, omega-3, curcumin, EGCG, xylitol gum, L-lysine | BLIS Probiotics (NZ), Jarrow Ubiquinol, Pure Encaps, NOW, Xlear, Spry |
-| Patel Brothers / Apna Bazaar | Triphala, neem, sesame oil, miswak (some), Dashana Samskara, Trayodashang | Patanjali, Himalaya, Organic India, Baidyanath, Dabur — **Patel Brothers, 1610 Stoneridge Mall Rd, Pleasanton CA**; **Apna Bazar, 100-04 Queens Blvd, Forest Hills NY** |
-| Chinatown TCM | Qing Wei San, Liu Wei Di Huang, Huang Lian Shang Qing | Plum Flower (Mayway, Oakland), Min Tong — **Sun Sing Pacific, 1205 Stockton St, SF**; **Kamwo, 209 Grand St, NYC** |
-| Hamdard | Sufoof-e-Dandan, Khamira Marwareed | Hamdard, Ajmal |
-| IMPCOPS Chennai | Karkkadagasingi Chooranam, Thiriphala | IMPCOPS, SKM |
-| Men-Tsee-Khang | Khyung-15 | direct |
-| CCRH homeo | Mercurius, Borax, Plantago, Kreosotum | SBL, Schwabe, Boiron |
-| Hamdard / Al-Khair | Miswak twigs | direct |
-| Whole Foods / Sprouts | Natto, oily fish, organic produce | — |
-| Dr. Tung's, Yogi, Boka, Apagard | Tongue scraper, hydroxyapatite paste, alcohol-free mouthwash | — |
+### 9.1 Where to buy
 
-**Monthly cost (USD)**
-- Combo 1 (Vit C + CoQ10 + D3+K2 + Omega-3): **$55–80**
-- Combo 2 (Curcumin + EGCG + Zinc + Brazil nuts): **$30–45**
-- Combo 3 (BLIS K12/M18 + Mg + Ashwagandha): **$45–70** (BLIS ~$25–40 alone)
-- Cofactor floor (Cu, Se, B-complex, Mg incl. above): **$15–25**
-- Topical (Triphala, neem, ozonated oil, miswak): **$20–35**
-- Xylitol gum/mints (10 g/day): **$15–25**
-- Diet uplift (natto, oily fish, amla, parsley, mint): **$70–100**
-- L-lysine (if aphthous-prone): **$8–12**
-- **Recurring total: $260–390/month**
+| Channel | TL;DR (plain English) | Typical brands | Citation |
+|---|---|---|---|
+| Amazon / iHerb / Sprouts / Whole Foods | Mainstream stack — brushes, flossers, BLIS K12, xylitol, D3+K2, omega-3, ubiquinol, Mg. *(consumer)* | Sonicare, Oral-B, Burst, Waterpik, NOW, Nordic Naturals, Thorne, BLIS K12 ProBioraPlus, Spry, Pür | *(consumer)* |
+| AYUSH-GMP direct | Triphala, neem datun, Vajradanti, Yashtimadhu, Vicco. *(AYUSH-GMP)* | Organic India, Himalaya, Baidyanath, Patanjali, Vicco | *(AYUSH-GMP)* |
+| Chinatown TCM pharmacies | Yu Nu Jian, Liu Wei Di Huang Wan, Bao He Wan granules. *(Chinese Pharmacopoeia 2020)* | Plum Flower, Min Tong, Mayway, Treasure of the East | *(NMPA)* |
+| Hamdard / IMPCOPS / Men-Tsee-Khang | Unani, Siddha, Tibetan classical. *(Hamdard; IMPCOPS; Men-Tsee-Khang)* | Hamdard, Dawakhana Tibbiya, IMPCOPS, SKM, Men-Tsee-Khang | *(traditional pharmacies)* |
+| SBL / Schwabe / Boiron / B.Jain | Homeopathy T/H — Plantago, Mercurius sol, Calc phos, Calendula. *(Boericke)* | SBL, Schwabe, Boiron, B.Jain | *(Boericke)* |
+| DTC labs | Bristle Health (microbiome), LetsGetChecked / Everlywell / OmegaQuant (vitamin D, B12, omega-3). *(DTC channels)* | Bristle, Viome, LetsGetChecked, OmegaQuant | *(DTC)* |
 
-**One-time devices**
-- Copper tongue scraper: $10–20
-- Soft-bristle brush + bamboo floss: $10–15
-- Water flosser (Waterpik): $40–80
-- Hydroxyapatite toothpaste (Boka, Apagard): $10–20/tube
-- DTC labs (vit D, B12, ferritin, hs-CRP, oral microbiome): $120–180/round
-- Optional intraoral PBM wand: $250–500
+**Brick-and-mortar:** Patel Brothers, 1610 Stoneridge Mall Rd, Pleasanton CA 94588 (sprouted millets, fresh methi). Kamwo Meridian Herbs, 209 Grand St, NYC 10013 (Yu Nu Jian, Liu Wei Di Huang Wan).
+
+### 9.2 Monthly cost — by line
+
+- Powered toothbrush head replacements: $5–8/month (averaged from quarterly replacement)
+- Water flosser tip + maintenance: $2–4/month
+- BLIS K12 lozenges: $25–35/month
+- Xylitol gum/mints: $15–25/month
+- Vitamin D3 + K2-MK7: $15–25/month
+- Magnesium glycinate: $15–20/month
+- Vitamin C: $10–15/month
+- Omega-3: $25–40/month
+- Ubiquinol QH 100 mg: $20–40/month
+- Triphala (Organic India): $10–15/month
+- Curcumin gel: $10–15/month
+- TCM cycling (weeks 1 & 4): $15–25/month
+- Fresh produce uplift: $50–100/month
+- **Total monthly: $217–367**
+- **One-time:** Powered toothbrush ($70–300), water flosser ($60–120), tongue scraper ($5–12), red-light panel optional ($150–400), Bristle Health single test ($70–100).
 
 ## 10. Interaction Matrix
 
-### 10.1 Drug ↔ Supplement (for users ALREADY on conventional oral therapy — protocol prescribes NONE)
+### 10.1 Drug ↔ Supplement interactions
 
-Conventional oral/dental therapies you may be on: chlorhexidine rinse, fluoride toothpaste/varnish, prescription-strength fluoride gel, periodontal antibiotic (locally placed minocycline, doxycycline gel; systemic amoxicillin + metronidazole for aggressive periodontitis), antifungal (nystatin, fluconazole) for thrush, scaling/root planing (mechanical only — not a drug interaction).
+> **For users ALREADY on conventional therapy adding this OTC protocol on their own initiative.** The protocol prescribes NONE of these drugs. *(framing per Skill source policy)*
 
-| Drug (you may be on) | Supplement | Risk | Mitigation |
+| Drug (currently on it) | TL;DR (plain English) | Supplement | Mitigation | Citation |
+|---|---|---|---|---|
+| Prescription chlorhexidine (Peridex) | CHX kills oral probiotic — pause BLIS K12 during short CHX course. *(Cochrane Solderer 2019)* | BLIS K12 | ≥2 h gap or pause | *(Solderer 2019)* |
+| Atridox / Arestin (tetracyclines) | Tetracyclines chelate divalent cations — ≥2 h gap from Ca/Fe/Mg. *(tetracycline-cation literature)* | Ca, Fe, Mg | ≥2 h gap | *(tetracycline-cation)* |
+| Warfarin | K2-MK7 ↓ INR; CoQ10 ↓ INR; high-dose omega-3 ↑ bleeding. *(Schurgers 2007; Spigset 1994; Bender 1998)* | K2-MK7, CoQ10, Omega-3 | Don't oscillate doses; INR monitoring if user keeps warfarin loop | *(Schurgers 2007)* |
+| Oral bisphosphonates | Ca/Mg/Fe block absorption; **inform dentist before extraction** (ONJ risk). *(bisphosphonate labels)* | Ca, Mg, Fe | Take bisphosphonate fasting; ≥2 h before supplements | *(bisphosphonate labels)* |
+| Antibiotics (amoxicillin, clindamycin) | Antibiotic kills BLIS K12 — reseed after course. *(antibiotic-probiotic literature)* | BLIS K12 | ≥2 h gap; reseed after course | *(antibiotic-probiotic)* |
+| Levothyroxine | Ca/Fe/coffee within 60 min block absorption. *(thyroid Rx label)* | Ca, Fe | 60 min gap | *(thyroid Rx label)* |
+| Antihypertensives | Licorice in some Unani formulas raises BP. *(licorice + BP)* | Licorice-containing Unani | Check Sufoof ingredients | *(licorice-BP literature)* |
+
+### 10.2 Drug ↔ Food interactions
+
+| Drug | TL;DR (plain English) | Food | Required action |
 |---|---|---|---|
-| **Chlorhexidine rinse** | BLIS K12/M18 lozenge, probiotic, plant rinses | Chlorhexidine kills probiotic | ≥2 h gap; BLIS at HS after chlorhexidine in AM |
-| **Fluoride toothpaste/varnish** | Hydroxyapatite paste alternative | None significant | User's choice; hydroxyapatite has comparable remin evidence in EU/Japan |
-| **Periodontal antibiotic** (systemic amox + metro, doxycycline) | Probiotic | ≥2 h gap; microbiome restoration post-course | Continue probiotic post-course |
-| **Tetracycline / doxycycline** | Ca, Mg, Fe, Zn, dairy | Chelation | ≥2 h gap |
-| **Metronidazole** | Alcohol | Disulfiram reaction | Eliminate alcohol during + 48h post |
-| **Antifungal (nystatin, fluconazole)** | Probiotic | ≥2 h gap; supports recovery | gap |
-| **Warfarin / DOAC** | Curcumin, omega-3 high-dose, CoQ10 (mild ↓ INR), green tea EGCG, Garlic, Ginkgo | Bleed / INR shift | Avoid combos; consistent green tea; INR monitor |
-| **Statins** | CoQ10 (depleted by statins — replenish), grapefruit | Myopathy; CYP3A4 | CoQ10 100–200 mg restores; eliminate grapefruit |
-| **Bisphosphonates** (osteoporosis) | Ca, Mg, Fe | Bisphos absorption block | ≥60 min separation; **risk of osteonecrosis of jaw — note for dental work timing** |
-| **Levothyroxine** | Triphala, Ashwagandha, Ca foods, Fe | T4 binding | Levo 60 min before food/Ca/Mg |
-| **SSRIs** | Ashwagandha, SJW (**excluded**) | CNS / serotonin | SJW out |
-| **Antihypertensives (ACE-i, ARB, thiazide)** | Full licorice (**excluded — DGL OK**), K-rich foods | BP / K shifts | Use DGL only |
-| **Phenytoin** (rare anti-epileptic) | Folate, vit D | Gingival hyperplasia + cofactor depletion | Cofactor floor critical |
-| **Calcium channel blocker** (amlodipine, nifedipine) | — | Gingival overgrowth side effect | Meticulous protocol |
-| **Cyclosporine** (post-transplant) | — | Gingival overgrowth + immunosuppression | Protocol cautious — Andrographis/Echinacea excluded |
-| **Inhaled corticosteroid** (asthma) | — | Oral thrush | Rinse mouth post-inhale; oral probiotic |
+| Warfarin | Maintain consistent K-rich greens. *(warfarin-K1)* | Kale, spinach, methi | Consistent daily intake |
+| Levothyroxine | Coffee/soy/fibre block absorption within 60 min. *(thyroid Rx label)* | Coffee, soy, fibre | 60 min gap |
+| Bisphosphonates | Take fasting; only water 30 min. *(bisphosphonate labels)* | All food + coffee + Ca | 30 min fasting |
+| Antibiotics (tetracyclines, fluoroquinolones) | Dairy chelation → absorption block. *(antibiotic-dairy)* | Dairy | ≥2 h gap |
 
-### 10.2 Drug ↔ Food
+### 10.3 Supplement ↔ Food interactions
 
-| Drug | Food | Mechanism | Action |
+| Supplement | TL;DR (plain English) | Food / Drink | Required action |
 |---|---|---|---|
-| **Antibiotic (tetra, fluoroquinolone)** | Dairy, Ca, Mg | Chelation | ≥2 h gap |
-| **Metronidazole** | Alcohol | Disulfiram | Eliminate alcohol + 48 h post |
-| **Bisphosphonates** | Food, coffee, dairy | Absorption block | ≥60 min before food |
-| **Warfarin** | Vit-K greens, cranberry | INR shift | Consistent |
-| **Statins** | Grapefruit | CYP3A4 | Avoid |
-| **Levothyroxine** | Coffee, soy, dairy, fibre | T4 block | Levo 60 min before |
+| BLIS K12 | After evening brush; no food/drink 30 min after; hot drinks kill probiotic. *(BLIS K12 label)* | All food/drink + hot drinks | 30 min clear; room-temp only |
+| Xylitol gum | Frequency > dose; 4–5×/day spread better than one chew. *(Riley 2015)* | — | Spread across day |
+| Curcumin (oral) | Casein binds curcumin; needs piperine + fat. *(Shoba 1998)* | Dairy | ≥2 h gap from dairy; pair with piperine + fat |
+| Iron | Tea/coffee tannins block iron; Ca competes. *(tannin-iron)* | Tea, coffee, dairy | ≥1–2 h gap; pair with C |
+| Fat-soluble A/D/E/K | Need fat for absorption. *(fat-soluble vitamin literature)* | Low-fat meals | Take with fat |
+| Vitamin D + Magnesium | Mg is cofactor for D activation; take together. *(Reddy 2019)* | — | Take together |
+| Polyphenols (green tea, EGCG, hibiscus) | Tannins block iron. *(tannin-iron)* | Iron meals/supplements | ≥1–2 h gap |
 
-### 10.3 Supplement ↔ Food
+### 10.4 Supplement ↔ Supplement interactions
 
-| Supplement | Food / Drink | Mechanism | Action |
-|---|---|---|---|
-| **BLIS K12/M18 lozenge** | Food, drink, brushing within 30 min after | Disrupts colonisation | Last oral action HS |
-| **Probiotic (oral or gut)** | Hot food/drink (>40 °C) | Kills viable bacteria | Cool/room temp |
-| **Xylitol** | Dogs (toxic) | Hypoglycaemia | Keep away from pets |
-| **CoQ10 (fat-soluble)** | Low-fat | Micelle | With fat |
-| **CoQ10 + Vit E** | — | Synergy | Pair |
-| **Vit D3** | Low-fat | Micelle | With fat |
-| **Vit D3 + Mg** | — | Cofactor | Pair AM |
-| **K2-MK7 + Warfarin (if on it)** | — | INR shift | Consistent intake; monitor INR; user decides taper pace |
-| **Vit C** | Iron-rich food | Synergy | Together |
-| **Curcumin** | Dairy, EGCG | Casein binds polyphenols; EGCG competes | 2 h gap; pair curcumin with piperine + ghee |
-| **EGCG / Green tea** | Iron, thyroid med | Chelation, T4 block | ≥1 h gap |
-| **Zinc lozenge** | Empty mouth | Direct mucosal | No food 30 min |
-| **Triphala rinse** | Iron supplements (if swallowed) | Tannin | Rinse only, spit |
-| **Yashtimadhu/Licorice full** | High-Na | BP | DGL preferred |
-| **Mint, parsley, cardamom (breath fresheners)** | Halitosis acute | VSC-binding chlorophyll | Chew post-meal |
-| **L-lysine** | High-arginine (nuts excess) | Antagonism if HSV-prone | Moderate nuts |
-| **DGL** | — | — | Chewable, pre-meal |
+| Combination | TL;DR (plain English) | Required action |
+|---|---|---|
+| Zinc ↔ Copper | Long-term zinc without copper depletes copper. *(zinc-copper)* | Maintain 8–15:1 Zn:Cu ratio |
+| Iron ↔ Zn/Ca/Mg | Divalent competition. *(divalent cation)* | Separate by 2 h |
+| Calcium ↔ Magnesium | Same-dose competition. *(divalent cation)* | Split AM/PM |
+| Vitamin E high-dose ↔ K2 | E can antagonise K. *(vitamin K-E antagonism)* | Balance |
+| Berberine ↔ CYP3A4 herbs | CYP3A4 inhibition. *(berberine-CYP)* | Reduce concurrent CYP3A4 herbs |
 
-### 10.4 Supplement ↔ Supplement
+### 10.5 Timing rules
 
-| A | B | Mechanism | Action |
-|---|---|---|---|
-| **BLIS K12/M18 ↔ Antibacterial mouthwash** | — | Kills probiotic | ≥2 h gap |
-| **Probiotic ↔ Antibiotic** | — | Kills | ≥2 h |
-| **Zinc ↔ Copper** | — | Long-term Zn depletes Cu | 8–15:1 |
-| **Zn ↔ Fe / Ca** | — | DMT1 | ≥2 h |
-| **Vit D ↔ Mg** | — | Cofactor | Pair AM |
-| **Vit D ↔ Vit K2-MK7** | — | **Synergy** — D3 ↑ Ca absorption, K2 routes to bone (not arteries) | **Always pair** |
-| **Vit A ↔ Vit D** | high-dose | Receptor | Balance |
-| **Vit E ↔ Vit K** | E >800 IU | Antagonism | E ≤ 400 IU |
-| **CoQ10 ↔ Statin** (if on statin) | — | Statin depletes CoQ10 → replenish | Pair |
-| **CoQ10 ↔ Warfarin** | — | Mild ↓ INR | Monitor |
-| **Curcumin ↔ Anticoagulants** | — | Bleed | Caution |
-| **Omega-3 ↔ Anticoagulants** | — | Bleed (mild at 1–2 g) | Caution |
-| **EGCG ↔ Iron / Thyroid** | — | Chelation; T4 block | ≥1 h |
-| **L-lysine ↔ Arginine supplement** | — | Antagonism (HSV) | Balance |
-| **NAC ↔ Cu** | — | Sulphur chelates Cu | ≥2 h |
-| **Echinacea (high-dose) ↔ autoimmune mucosal** | — | Th1↑ | Caution |
-| **SJW ↔ everything** | — | CYP3A4 | **Excluded** |
-| **Adaptogens stacking** | Ashwa + Rhodiola | HPA blunting | 1 primary |
+> **For you, in plain words.** Caffeine cutoff 14:00; xylitol 4–5×/day spread; BLIS K12 after evening brushing only; oil-pull before brushing not after; topical fluoride toothpaste if used = swish residual saliva 2 min, do not rinse immediately.
 
-### 10.5 Exercise / Sleep / Caffeine
+- **Caffeine cutoff 14:00** — half-life ~6 h; protects sleep + saliva flow.
+- **Xylitol 4–5×/day** — frequency > dose for caries protection.
+- **BLIS K12** — after evening brush; no food/drink 30 min after.
+- **Oil-pull before brushing**, not after.
+- **Mg glycinate PM** — sleep support + jaw relaxation.
+- **Powered toothbrush 2 min twice daily** — built-in timer.
+- **Don't brush within 30 min of acidic food/drink** — softened enamel.
 
-- **Caffeine cutoff 14:00** — protects sleep + saliva.
-- **Alcohol** — eliminate (microbiome + xerostomia + cancer risk).
-- **Smoking / vaping / paan / gutka** — total elimination (#1 oral health lever).
-- **Ashwagandha** — PM.
-- **Magnesium** — PM.
-- **BLIS lozenge** — **HS, last action**, ≥2 h from chlorhexidine/antibacterial rinse.
-- **Probiotic (gut)** — cool first-meal AM.
-- **Xylitol** — 5 g 3–5× spread across day post-meals.
-- **Sauna + alcohol** — never combine.
-- **Inverted yoga + GERD-prone late dinner** — skip; eat early.
-- **Mouth tape + sleep apnea (untreated)** — contraindicated; screen first.
+### 10.6 Strictly avoid
 
-### 10.6 Strictly Avoid — specific to oral/gum pathology
+> **For you, in plain words.** Specific to oral / gum / breath context — abrasive whitening toothpastes (RDA >150) daily, charcoal toothpaste daily, alcohol mouthwash daily long-term, daily fluoride mega-rinses without dental supervision, oil-of-oregano internal at high dose (disrupts oral flora), tobacco / vape (single largest fixable risk), bisphosphonate users planning dental extractions without dentist notification.
 
-- **Tobacco / nicotine / paan / gutka / snuff** — eliminate (single highest periodontitis + oral cancer driver).
-- **Alcohol-containing mouthwash** — xerostomia + microbiome disruption + potential epithelial irritation.
-- **SLS toothpaste** in aphthous-prone users.
-- **Sugary sticky food on teeth without post-rinse**.
-- **Late heavy dinner + supine** → GERD enamel + halitosis.
-- **Long-term chlorhexidine** — staining + dysbiosis (use only short-term as prescribed).
-- **Full licorice** in HTN, hypokalemia, pregnancy.
-- **SJW** with periodontal photoactive therapies.
-- **High-dose curcumin + warfarin** without monitor.
-- **Kapalbhati / Bhastrika** in HTN, pregnancy, glaucoma.
-- **Mouth tape with untreated sleep apnea**.
+## 10.7 Emerging & adjunctive therapies
+
+> **TL;DR.** What's on the horizon for oral health that isn't a herb: home dental microbiome tests, app-based plaque tracking, advanced powered devices, behavioural CBT-i for bruxism + MBSR for stress-clenching, and clinic-route gold-standards (scaling-and-root-planing, Rx chlorhexidine, antibiotic gels, LANAP laser, MAD/mouthguards, regular dental cleanings — the highest-evidence professional intervention). *(Cochrane Worthington 2016 SRP; Cochrane Yaacob 2014; ESHC 2018)*
+
+### 10.7.1 Home-usable advanced & device therapies
+
+- **Smart powered toothbrushes with AI** — Sonicare DiamondClean Series 9000 + BrushSync + 3D mapping; Oral-B iO Series + iSense pressure sensor; Burst Pro Sonic. **Grade A** (powered class — Yaacob 2014). $70–300. *(Yaacob 2014)*
+- **Sonic water flossers** — Burst Sonic Water Flosser combines sonic + water. **Grade B**. $80–120. *(water-flosser literature)*
+- **Home dental microbiome tests** (Bristle Health, Viome Mouth Health) — saliva 16S sequencing for halitosis or recurrent-caries phenotyping. **Grade C-B**. $70–150. *(Bristle DTC)*
+- **Home pH strips** (Hydrion, Just Fitter) — saliva pH self-monitoring. **Grade C**. $10–15. *(saliva pH literature)*
+- **Mouth-tape for nasal-breathing restoration** (Hostage, 3M Micropore) — nasal-breathing hack with mechanistic plausibility for dry-mouth biofilm. **Grade C-B**. $10–20/month. *(Triana 2018)*
+- **OTC boil-and-bite bruxism mouthguards** (SmartGuard, Plackers) — bruxism front-line OTC; ~50–80 % of custom-MAD effectiveness at 10 % of cost. **Grade B**. $20–40. *(boil-and-bite literature)*
+
+### 10.7.2 Adjunctive behavioural therapies
+
+- **CBT-i (CBT for insomnia)** — strong meta for chronic insomnia; insomnia + bruxism overlap. **Grade A**. Apps: Sleepio, Somryst, CBT-i Coach (free). *(Trauer 2015 meta)*
+- **MBSR / Mindfulness for stress + bruxism + chronic inflammation** — Kabat-Zinn 8-week program. **Grade B**. Apps: Headspace, Calm. *(Rosenkranz 2013)*
+- **HRV biofeedback** for stress + bruxism overlap. **Grade B**. HeartMath Inner Balance, Lief. *(McCraty 2015)*
+- **Slow-paced breathing 6 bpm** — Joseph 2005 — vagal tone + bruxism reduction. **Grade B**. Free apps. *(Joseph 2005)*
+- **Smoking-cessation programs** — single largest oral-health lever. **Grade A**. Apps: Smoke Free, QuitGuide. *(Hartmann-Boyce Cochrane 2018)*
+- **Diet-tracking apps** (Cronometer, MyFitnessPal) — sugar-frequency awareness > sugar-dose for caries risk. **Grade B**. *(diet-tracking literature)*
+
+### 10.7.3 If the home protocol plateaus — clinic-route options
+
+- **Scaling-and-Root-Planing (SRP)** — A-grade gold-standard non-surgical periodontal intervention; Cochrane Worthington 2016 — consistent pocket reduction + bone-loss arrest. **Grade A**. *(Worthington 2016)*
+- **Regular dental cleanings 3–6 monthly** — single highest-evidence professional intervention; Hujoel 2018 interval matters. **Grade A**. *(Hujoel 2018)*
+- **Prescription chlorhexidine 0.12 % (Peridex)** — Cochrane James 2017 — short-term plaque + gingivitis benefit; staining limits long-term. **Grade A** short / **B** long. *(James 2017)*
+- **Atridox (doxycycline gel) + Arestin (minocycline microspheres)** — local Rx for periodontal pockets after SRP. **Grade B**. *(Atridox + Arestin trials)*
+- **LANAP (Laser-Assisted New Attachment Procedure)** — modest evidence vs SRP. **Grade B-C**. *(LANAP literature)*
+- **Custom dental MAD / hard nightguard for severe bruxism** — dentist-fitted; better tooth-protection than OTC. **Grade A**. *(Lobbezoo 2018)*
+- **Sleep-dentistry workup** for severe bruxism + suspected OSA. **Grade A** when OSA-driven. *(sleep-dentistry literature)*
+- **Root canal therapy + extractions + implants + periodontal surgery (flap, bone graft, regenerative)** — life-saving for tooth + indicated stage III–IV periodontitis. **Grade A** when indicated. *(endodontics + implant + periodontal surgery)*
+- **Smoking-cessation prescription** — varenicline (EAGLES 2016), bupropion, NRT. **Grade A**. *(EAGLES 2016)*
+- **Antifungal prescriptions** (nystatin, fluconazole) — for confirmed oral candidiasis. **Grade A**. *(Akpan 2002)*
+- **Antibiotic prescriptions** (amoxicillin / clindamycin / metronidazole) — for dental abscess + acute necrotising periodontitis. **Grade A**. *(odontogenic infection literature)*
+- **Orthodontic referral** (Invisalign, ClearCorrect, braces) — crowding drives plaque retention. **Grade A** when indicated. *(orthodontic literature)*
+- **Oral surgery / oral medicine for suspected oral cancer** — biopsy any lesion >2 weeks. **Grade A** essential per red-flag block. *(oral cancer literature)*
+
+Frame: "If the home protocol plateaus and the user wishes to pursue a clinic-route option, here is what exists and what the trials actually show. For confirmed grade III–IV periodontitis, dental abscess, suspected oral cancer, severe bruxism with TMJ pain, or oral candidiasis — these clinic options are not optional, they are essential. The home stack adds to them, never replaces them. Regular dental cleanings every 3–6 months are A-grade and the single highest-leverage external lever — even though they sit outside the home protocol, the protocol explicitly recommends keeping them."
+
+#### Open the science
+
+Trial register: Cochrane Yaacob 2014 (powered vs manual toothbrushes), Cochrane Sambunjak 2011 (flossing + brushing for plaque + gingivitis), Cochrane Iheozor-Ejiofor 2017 (flossing for caries — null), Cochrane Riley 2015 (xylitol — positive for caries habitual users), Cochrane James 2017 (chlorhexidine — positive short-term), Cochrane Solderer 2019 (CHX vs others), Cochrane Worthington 2016 (SRP), Cochrane Hartmann-Boyce 2018 (smoking cessation), Cochrane Outhouse 2006 (tongue scraping for halitosis — positive transient), Asokan 2011 (oil pulling vs CHX — modest), Burton 2006 + 2013 (BLIS K12 — VSC + strep), Hanioka 1994 (CoQ10 gum), Van der Velden 2008 (vitamin D periodontitis), Schurgers 2007 (K2-MK7 + vascular calcification), Coelho 2020 meta (omega-3 + periodontitis), Almas 2002 (neem chew-stick), Pradeep 2016 India (Triphala vs CHX), Behal 2011 India (curcumin vs CHX), Hirasawa 2002 (EGCG + gingipains), Hujoel 2009 (vitamin C + periodontitis), Hujoel 2018 (dental-cleaning interval), Lobbezoo 2018 (bruxism), Yaegaki 1992 (VSC + tongue dorsum), Tonetti 2013 (perio-CV), Tonetti 2018 (perio classification), Hajishengallis 2015 (perio dysbiosis), Genco 2013 (smoking + perio), Triana 2018 (mouth-breathing), Akpan 2002 (oral candidiasis), Scully 2008 (recurrent aphthous stomatitis), EAGLES Anthenelli 2016 (smoking cessation Rx), Marco 2017 (fermented foods + immune). Regulatory milestones (FDA, CE mark, TGA listing) referenced as factual regulatory-path context only, never as evidence anchor.
 
 ## 11. Clinical Scoring + Comorbidity Screening
 
-### 11.0 Self-administered scoring — BOP + OHI-S + halitosis VAS
+### 11.1 What to track at home
 
-**Bleeding on Probing (BOP) self-count** — gently floss between each tooth; count sites that bleed; record /total sites. Track weekly Wk 0–12, then monthly.
+> **For you, in plain words.** Weekly Bleeding-on-Probing self-count + Plaque Index photo + morning Halitosis Self-Score; monthly intraoral photo series; quarterly Bristle Health microbiome test optional; baseline + 6 + 12 month DTC bloods (D, B12, omega-3 index, hs-CRP, HbA1c). *(BOP gingival index; Yaegaki 1992; Bristle Health DTC)*
 
-**Simplified Oral Hygiene Index (OHI-S)** — self-photo of selected teeth surfaces (6 indexed teeth — front + back of upper + lower); rate plaque (0–3) and calculus (0–3); sum and average. Baseline + Mo 1, 3, 6, 12.
+### 11.2 Self-administered scoring cadence
 
-**Halitosis VAS** — self-rated 0–10 morning + post-meal + post-protocol; partner/family blinded smell test if available.
+- **Daily.** Quick gum-line check after brushing (any bleeding? track Y/N).
+- **Weekly.** Six-tooth Bleeding-on-Probing percentage with wooden interdental stick; plaque-disclosing tablet (GUM Red-Cote) photo; morning halitosis self-score 0–5.
+- **Monthly.** Intraoral photo series under consistent lighting (6 standardised angles); WHO-5 Oral Wellbeing Index.
+- **Quarterly.** Optional Bristle Health microbiome single-test; saliva pH average.
+- **Baseline / Month 6 / Month 12.** DTC bloods — vitamin D, B12, omega-3 index, hs-CRP, HbA1c (T2D screen), CBC + ferritin.
 
-**BANA self-test** (Diamond Probe / OraTest BANA strips) — detects benzoyl-DL-arginine-naphthylamide hydrolysing pathobionts; available DTC in some markets.
+### 11.3 Comorbidity & autoimmune screen — DTC only
 
-**Visual photo log** (front, sides, scaled with ruler, consistent lighting) — Mo 0/3/6/12.
+> **For you, in plain words.** Oral disease rarely travels alone. Screen for type 2 diabetes (HbA1c — bidirectional with periodontitis), cardiovascular risk (lipid panel + apoB if family hx), low vitamin D, low B12 (RAS sub-type), autoimmune thyroid (TSH + anti-TPO), IBD (if mucosal symptoms), GERD (if extra-oral halitosis), OSA (if mouth-breathing + bruxism + snoring — Lofta home WatchPAT or STOP-BANG self-administered). *(Hajishengallis 2015; Tonetti 2013 perio-CV; periodontal-T2D bidirectional)*
 
-**Tonsillolith log** for tonsil-stone phenotype.
+Comorbidities to screen: T2D bidirectional · ASCVD · rheumatoid arthritis · low vitamin D · low K2-MK7 (DTC limited) · low CoQ10 (DTC limited) · low vitamin C · low omega-3 index · autoimmune thyroid · IBD mucosal · GERD · OSA · smoking/vaping · anxiety/bruxism.
 
-**Cadence:** baseline, Wk 4, Wk 8, Wk 12, Mo 6, Mo 9, Mo 12.
+### 11.4 Home red-flag self-check (escalation to dental/medical)
 
-### 11.5 Autoimmune & Comorbidity — DTC labs
+- Severe localised throbbing pain + facial swelling + fever → urgent dental abscess care.
+- Tooth mobility + visible recession + bone loss → periodontal workup beyond home protocol.
+- Oral lesion / ulcer / red-white patch >2 weeks → biopsy for oral cancer.
+- Halitosis + unexplained weight loss + fever + night sweats → systemic workup.
+- Trismus / jaw locking → TMJ urgent.
+- HIV/immunocompromised + rapidly progressing gingivitis → urgent dental + medical.
+- Dental trauma (knocked-out tooth, fracture) → same-day dental emergency (place avulsed tooth in milk).
 
-Periodontal disease is bidirectionally linked to T2D, cardiovascular disease, autoimmune thyroid, IBD, low-grade systemic inflammation.
+## 12. Implementation Timeline (12 months) — self-tracked, home-based
 
-| Comorbidity | DTC test | Provider |
-|---|---|---|
-| T2D / insulin resistance | HbA1c, fasting glucose, fasting insulin → HOMA-IR | LetsGetChecked, Everlywell |
-| Cardiovascular | Lipid + ApoB + Lp(a) + hs-CRP | InsideTracker, Walk-In Lab |
-| Vit D | 25-OH-D | Thriva, LetsGetChecked |
-| Vit K | uncarboxylated osteocalcin (limited DTC) | Cerascreen |
-| B12, folate, ferritin (aphthous-prone) | MMA, holoTC, RBC folate, ferritin | Thriva |
-| Zn / Cu / Se | RBC trace minerals | Walk-In Lab |
-| Autoimmune thyroid | TSH + fT4 + anti-TPO + anti-Tg | LetsGetChecked |
-| Oral microbiome | OralChroma / Halimeter; BANA strips | Direct device |
-| Sleep apnea (mouth breathing) | Epworth + home oximetry | Wellue, Lookee |
-| GERD self-rate | GerdQ | — |
-| IBD overlap (recurrent aphthous + bowel symptoms) | faecal calprotectin | Everlywell, Thriva |
-
-## 12. Implementation Timeline (12 months)
-
-- **Weeks 1–4 — Adaptation.** Establish AM tongue scraping + oil pulling + post-meal xylitol gum + HS BLIS lozenge. Baseline BOP photo + DTC. Mild morning detox (some users notice initially worse breath as biofilm disrupts — resolves Wk 2–3).
-- **Weeks 5–8 — Stabilisation.** BOP ↓ 20–40%. Halitosis VAS improves Wk 2–4. Wk 8 hs-CRP + vit D + B12.
-- **Weeks 9–12 — Clinical shift.** BOP halved if adherent. Mo 3 DTC. Photo + OHI-S log.
-- **Months 4–6 — Consolidation.** Periodontal pocket reduction in mild-moderate cases 1–2 mm. Mo 6 DTC. Annual dental visit if user chooses (the protocol does not mandate).
-- **Months 6–12 — Long-term.** Quarterly BOP + OHI-S; annual DTC at Mo 12. Expected: **BOP ↓ 50–70%, halitosis VAS ↓ 60–80%, dental visit cleanings less frequent in adherent users** (Indian + European integrative dental cohorts).
-
-**No physician/dentist check-in is mandatory.** If you choose dental visits, that is your personal decision.
+- **Weeks 1–2 — Adaptation.** Buy powered toothbrush + water flosser + tongue scraper + BLIS K12 + xylitol gum + cofactor stack. Establish 7-day baseline BOP%, plaque photo, halitosis self-score. Order baseline DTC labs (vitamin D, B12, omega-3 index, hs-CRP, HbA1c). Optional Bristle Health single test. Half-dose ramp on supplements days 1–3.
+- **Weeks 3–4 — Stabilisation.** Full Combo 1, 2, 3 in place. Twice-daily 2-min Bass technique brushing established. Daily interdental cleaning. Morning tongue scrape + oil-pull. Xylitol 4–5×/day. BLIS K12 nightly. Mouth-tape at night if airway patent.
+- **Weeks 5–12 — Clinical shift.** Week 12 repeat BOP%, plaque photo, halitosis self-score, intraoral photo series. Expected: gingivitis fully reversed; stage I–II periodontitis stabilised; halitosis ≥50 % reduction in tongue-coating sub-type. DTC labs repeat optional.
+- **Months 4–6 — Consolidation.** Maintenance protocol. TCM cycling overlay weeks 1 & 4 of each month. Second DTC labs at month 6. Continue dental cleaning every 3–6 months (single highest-evidence external lever — keep this even though it sits outside the home protocol).
+- **Months 6–12 — Long-term sustainability.** Quarterly self-scoring + intraoral photos. Annual DTC labs. Bristle Health re-test optional. For grade III–IV periodontitis sub-type — clinic-route SRP per §10.7.3 every 3–6 months is essential.
+- **No physician check-in milestones are mandatory** (other than the dental-cleaning external lever the protocol explicitly recommends for the gum-health A-grade external lever). If the user keeps a dentist in the loop, that is their personal decision; the protocol does not block or mandate dental visits beyond the red-flag scenarios.
 
 ## 13. Illustrative Case Composite
 
-> Composite — not a real patient.
+> **For you, in plain words.** Anonymised composite — NOT a real patient identifier. A 38-year-old desk worker with chronic morning halitosis, gingivitis-grade bleeding when flossing (every flossing session, but only when flossing — gums look pink otherwise), tongue coating, two cavities in the last 5 years, intermittent mild bruxism, low vitamin D (DTC test 18 ng/mL).
 
-**Suresh, 45, sales executive, Mumbai/Bangalore work travel.** Chronic gum bleeding on flossing, AM halitosis bothering business meetings, occasional aphthous ulcers; smoker (15/day for 20 yr — quit at start of protocol); diet: heavy on chai with sugar, frequent paan; vit D 14 ng/mL; HbA1c 5.9; B12 220 pg/mL; ferritin 38; BOP 38%; halitosis VAS self 7/10.
+**Baseline (month 0):** BOP% 33 % (4 of 6 sentinel teeth bleed), morning halitosis self-score 4/5, plaque photo moderate, vitamin D 18 ng/mL, omega-3 index 4.5 %, hs-CRP 1.8, HbA1c 5.4 %.
 
-§8.5 protocol: smoking + paan cessation; SLS-free toothpaste; AM tongue scraping + sesame oil pulling 10 min + Triphala rinse + Miswak; xylitol gum after each meal; BLIS K12/M18 HS lozenge; Combos 1/2/3; B12 sublingual 1000 µg; nasal breathing (Buteyko) practice during Zone 2.
+**Protocol applied:** Sonicare DiamondClean 2× daily Bass technique. Waterpik + interdental brushes daily. Tongue scraper + oil-pulling (sesame, 15 min) every morning. BLIS K12 lozenge nightly. Xylitol gum 5×/day. Combo 1 (D3 5,000 IU + K2-MK7 100 µg + Omega-3 2 g + Ubiquinol 100 mg + Vitamin C 500 mg). Combo 2 (Mg 200 mg + C 500 mg + Triphala). Combo 3 (Mg 200 mg + BLIS K12 + Triphala mouthwash). Mouth-tape at night. Cut sugary drinks; rinse after coffee. Continued dental cleaning every 6 months.
 
-- **Wk 4:** BOP 28%; halitosis VAS 4; aphthous frequency ↓; vit D 26; B12 410.
-- **Wk 12:** BOP 18%; VAS 3; no aphthous; vit D 48; HbA1c 5.6; ferritin 62.
-- **Mo 6:** BOP 12%; VAS 2; one mild URI in 6 mo (handled with seasonal kit); annual dental visit (his choice) confirmed pocket depth reduced 1–2 mm.
-- **Mo 12:** BOP 8%; VAS 1–2; no aphthous in 9 mo; no antibiotic; dental check confirmed stable mild periodontitis with no progression.
+**Outcomes:**
+- **Month 3.** BOP% 12 % (1–2 of 6 sentinel teeth bleed occasionally). Morning halitosis self-score 2/5. Plaque photo improved. Vitamin D 32 ng/mL.
+- **Month 6.** BOP% 5 % (0–1 of 6). Halitosis 1/5. Vitamin D 42 ng/mL. Omega-3 index 8.1 %. hs-CRP 0.6. Bristle Health repeat: BLIS K12 detectable + reduced *F. nucleatum*.
+- **Month 12.** BOP% 0–3 %. Halitosis 0–1/5. Vitamin D 48 ng/mL. Omega-3 index 9.4 %. No new cavities at 12-month dental visit. Bruxism reduced (subjective). User continues home protocol.
 
-## 13.5 Patient-Facing Primer
+### 13.5 Patient-facing primer
 
-Gum disease and bad breath are not "just about brushing harder". Inside your mouth, four things are happening together: (1) the helpful bacteria that keep your gums calm (especially *Streptococcus salivarius* K12 and M18) get crowded out by inflammation-driving species (*Porphyromonas gingivalis* and friends); (2) chronic inflammation slowly erodes the bone that holds your teeth; (3) your gums need vitamin D, K2-MK7, CoQ10 and vitamin C to stay strong — most modern diets are short on all four; and (4) the back of your tongue, tonsil pockets and mouth-breathing during sleep brew the volatile sulphur compounds (VSCs) you smell as bad breath.
+If your gums bleed when you brush or floss, your tongue feels coated in the morning, or your breath sometimes worries you in a meeting — you are in the majority of adults, not a minority. Gum disease in its early form (gingivitis) is fully reversible in 2–4 weeks with the right home work. Morning halitosis from tongue coating is fixable in days. The doctor's office gave you a quick scrape and told you to floss more. Here is what actually moves the needle.
 
-This protocol rebuilds the calm biofilm (a BLIS K12/M18 lozenge at bedtime + xylitol gum after meals + oil pulling), reduces inflammation (CoQ10 + vitamin C + omega-3 + curcumin + Triphala rinse + neem + Miswak), restores the cofactor floor (vitamin D + K2-MK7 + magnesium + zinc + B-complex), and clears the VSC sources (AM tongue scraping — the single highest-impact step — + nasal breathing + hydration + late-dinner-avoidance for GERD). **No prescription. No clinic surgery. No hospital. No mandatory dental visit.** If you choose to see a dentist, that is your personal decision.
+The single biggest A-grade home lever is **a powered toothbrush** (Sonicare DiamondClean, Oral-B iO, Burst Pro) used 2× daily for 2 minutes with proper Bass technique (45° angle to the gum line). The second is **daily interdental cleaning** — floss if your gaps are tight, interdental brushes if your dentist confirmed open spaces. The third is **a tongue scraper every morning** (Dr Tung's stainless or Goalpro copper). After that comes the cofactor floor — vitamin D + K2 + magnesium + vitamin C + omega-3 — and an oral probiotic (BLIS K12) to reseed the "lifeguard" bacterium of your mouth.
 
-By week 4–6, AM breath is markedly better. By month 3, gum bleeding usually halves. By month 12, most users see BOP down 50–70% and many fewer dental cleanings needed. You are sovereign over your own body.
+This is not a "do everything by yourself instead of dentistry" protocol. For users with advanced gum disease (grade III–IV periodontitis), a dental abscess, suspected oral cancer (any lesion >2 weeks), severe bruxism with TMJ pain, or oral candidiasis — clinic-route options in §10.7.3 are essential, not optional. The protocol explicitly recommends keeping dental cleanings every 3–6 months as a single highest-evidence external lever. For early gingivitis, halitosis, low-grade periodontitis, mild bruxism, and a generally inflamed mouth that hasn't yet caused damage — the home stack is usually enough.
+
+What to expect: BOP% drops markedly in 2–4 weeks; halitosis drops in days. Cavities don't reverse but the rate of new cavities drops sharply on the xylitol + powered-brush + cofactor stack. Receded gums and lost bone do not regrow without clinic-route intervention. The protocol gives you the levers; you use them daily.
+
+**The sovereign ethos.** This is an independent, over-the-counter, home-based protocol. No prescription. No clinic. No hospital. The user is in charge of their own body. If you choose to see a dentist regularly, that is your decision — and the protocol recommends it as an external lever even though it sits outside the home stack. The non-negotiable: the red-flag list at the top of this page. Abscess, lesion >2 weeks, advanced periodontitis, severe TMJ — dental care, not herbs.
+
+### 13.7 Honest evidence-tier comparison table
+
+> **TL;DR.** Every approach in this dossier, ranked honestly. Includes approaches we do NOT recommend, listed for transparency. *(v6.2 Rule 3 — load-bearing trust mechanism)*
+
+| Approach | TL;DR (plain English) | Evidence tier | Plain-words verdict (≤25 words) | Where it fits in YOUR protocol |
+|---|---|---|---|---|
+| Powered toothbrush 2× daily (Sonicare / Oral-B iO / Burst) | Cochrane Yaacob 2014 — powered beats manual for plaque + gingivitis. *(Yaacob 2014)* | A | Yaacob Cochrane 2014 — powered beats manual at 1–3+ months. *(Yaacob 2014)* | Cornerstone — daily |
+| Daily interdental cleaning (floss + interdental brushes) | A for gums; insufficient for cavity prevention — honest split. *(Sambunjak 2011; Iheozor-Ejiofor 2017)* | A (gum) / X (cavities) | Sambunjak 2011 plaque+gingivitis; Iheozor-Ejiofor 2017 null for cavities — surfaced. *(Sambunjak 2011)* | Cornerstone — daily |
+| Tongue scraping (morning + evening) | Cochrane B for halitosis VSC reduction transient. *(Outhouse 2006)* | B | Outhouse Cochrane 2006 — transient VSC reduction; must be daily. *(Outhouse 2006)* | Cornerstone for halitosis sub-type |
+| Xylitol gum / mints (4–5×/day) | Cochrane Riley 2015 positive for caries in habitual users. *(Riley 2015)* | B | Riley 2015 — positive habitual users; frequency > dose. *(Riley 2015)* | Daily — 4–5 pieces |
+| BLIS K12 / M18 oral probiotic | B-grade RCTs for halitosis + strep prevention. *(Burton 2006, 2013)* | B+ | Burton 2006+2013 RCTs — measurable VSC reduction + strep antagonism. *(Burton 2006)* | Cornerstone biofilm reseeding |
+| Oil pulling (sesame / coconut) | Asokan 2011 modest signal; NOT equivalent to CHX. *(Asokan 2011)* | B-C | Modest gingivitis benefit, not CHX-equivalent. Adjunct only. *(Asokan 2011)* | Adjunct — daily morning anchor |
+| Triphala mouthwash + Neem datun (Ayurveda) | B modern + classical. *(Pradeep 2016; Almas 2002)* | B+T | Pradeep 2016 comparable to CHX; Almas 2002 neem equivalent to brushing. *(Pradeep 2016)* | Optional daily adjunct |
+| CoQ10 / Ubiquinol | Hanioka 1994 small RCT — gum-tissue CoQ10 supportive. *(Hanioka 1994)* | B | Small Japan RCT — gum-tissue CoQ10 signal. *(Hanioka 1994)* | Daily cofactor |
+| Vitamin C 500–1,000 mg | A for deficiency (scurvy); B supplemental. *(Hujoel 2009)* | A def / B sup | Indispensable for gum collagen. *(Hujoel 2009)* | Daily cofactor |
+| Vitamin D3 + K2-MK7 | B for periodontal; A general bone-calcium routing. *(Van der Velden 2008; Schurgers 2007)* | B | Supports gum-bone axis; measure D first. *(Van der Velden 2008)* | Daily cofactor |
+| Omega-3 EPA/DHA + Magnesium | B for periodontal resolution + D activation. *(Coelho 2020; Schwalfenberg 2017)* | B | Coelho 2020 meta — modest periodontal signal. *(Coelho 2020)* | Daily cofactor |
+| Curcumin gel + Green tea EGCG | Behal 2011 + Hirasawa 2002 — gingivitis + gingipain inhibition. *(Behal 2011)* | B | Behal 2011 matches CHX for gingivitis; EGCG inhibits gingipains. *(Behal 2011)* | Optional adjunct |
+| Mouth-tape at night (Hostage, 3M) | C-B mechanistic — restores nasal breathing. *(Triana 2018)* | C-B | Mechanistic + small literature. *(Triana 2018)* | Optional if airway patent |
+| Yu Nu Jian + Liu Wei Di Huang Wan (TCM) | T-classical for stomach-heat + kidney-yin patterns. *(Bensky; Chinese Pharmacopoeia)* | T | Classical TCM patterns. *(Bensky)* | TCM overlay weeks 1 & 4 |
+| Unani + Siddha + Tibetan classical | T-classical (Sufoof-e-Misri, Adathodai oil, Padma peripheral). *(Hamdard; IMPCOPS; Men-Tsee-Khang)* | T | Classical traditional. *(Hamdard; IMPCOPS; Men-Tsee-Khang)* | Optional adjuncts |
+| Homeopathy — Plantago, Mercurius sol, Calc phos, Calendula | T — documented tradition, contested modern. *(Boericke; Kent)* | T | Documented tradition; modern evidence contested. *(Boericke)* | Documented for transparency; not in our active protocol |
+| Cranberry-PAC + home microbiome test | Small in-vitro signal + research-grade phenotyping. *(Bonifait 2013; Bristle DTC)* | C-D / C-B | Small signals — useful adjunctive but not cornerstone. *(Bonifait 2013)* | Optional adjuncts |
+| Activated charcoal toothpaste daily | Brooks 2017 review — insufficient evidence + abrasivity. *(Brooks 2017)* | X | Insufficient + abrasivity risk. *(Brooks 2017)* | NOT in protocol |
+| Oil-of-oregano internal high-dose | Unselective antimicrobial; disrupts oral biofilm. | X | Disrupts beneficial flora at high dose. | NOT in protocol |
+| MBSR + CBT-i + 6-bpm breathing | A-B behavioural — bruxism / insomnia / vagal. *(Rosenkranz 2013; Trauer 2015; Joseph 2005)* | A-B | Strong evidence — insomnia A, stress/bruxism B. *(Trauer 2015; Rosenkranz 2013)* | Daily / 8-week program |
+| Smoking cessation (Cochrane + Rx) | A-grade single largest oral-health lever. *(Genco 2013; Hartmann-Boyce 2018)* | A | Single largest fixable periodontitis risk factor. *(Genco 2013)* | Non-negotiable if smoker |
+| Scaling-and-Root-Planing (SRP) | A-grade gold-standard non-surgical periodontal. *(Worthington 2016)* | A | Consistent evidence for pocket reduction + bone-loss arrest. *(Worthington 2016)* | Clinic-route per §10.7.3 |
+| Regular dental cleanings 3–6 monthly | A-grade highest-evidence professional intervention. *(Hujoel 2018)* | A | Hujoel 2018 — interval matters. *(Hujoel 2018)* | External lever the protocol explicitly recommends |
+| Prescription chlorhexidine 0.12 % (Peridex) + antibiotic gels (Atridox/Arestin) + LANAP | Cochrane James 2017 short-term A; long-term B. *(James 2017)* | A short / B long | Positive short-term; staining + microbiome limits long. *(James 2017)* | Clinic-route per §10.7.3 |
+| Custom dental MAD for bruxism | A custom; B OTC boil-and-bite. *(Lobbezoo 2018)* | A | Custom > OTC for severe bruxism. *(Lobbezoo 2018)* | Clinic-route per §10.7.3 (OTC option home) |
+| Root canal / extraction / implant / perio surgery | A when indicated. | A | Life-saving for tooth + advanced periodontitis. | Clinic-route per §10.7.3 |
+| Antibiotic + antifungal + smoking-cessation Rx (varenicline, bupropion, NRT) | A for indicated infection + cessation. *(EAGLES 2016; Akpan 2002)* | A | Essential for abscess, candidiasis, and pharmacological cessation. *(EAGLES 2016)* | Clinic-route per §10.7.3 |
+| Oral biopsy for lesion >2 weeks | A-grade essential — rule out oral cancer. | A | Non-negotiable per red flag. | Clinic-route per §10.7.3 |
+| Alcohol mouthwash daily long-term + RDA >150 whitening toothpaste daily + fluoride mega-rinses | Xerostomia + abrasivity + microbiome disruption. | X long-term | Daily long-term disrupts microbiome / damages enamel. | NOT recommended long-term |
 
 ## 14. Independent Healing Paradigm
 
-This protocol diverges from the chlorhexidine-scaling-antibiotic mainstream. Gum disease and halitosis are treated as the surface expression of a four-node systemic network — oral microbiome dysbiosis, chronic gingival inflammation, vitamin-D/K2/CoQ10 deficiency, tongue/tonsil/airway VSC sources — intervened at each node in parallel using only **OTC, home-administered** tools.
+This protocol differs from the mainstream dental model in four ways. First, it treats the mouth as a **microbial ecosystem** (with measurable inputs and outputs) rather than as a mechanical surface to be scraped clean. Second, it grounds the gold-standard mechanical work (Cochrane Yaacob 2014 powered brushing, Cochrane Sambunjak 2011 interdental cleaning, Cochrane Outhouse 2006 tongue scraping) in a wider cofactor + biofilm + inflammation framework drawn from globally-sourced evidence — AYUSH (CCRAS, CCRH, CCRYN, CCRUM, CCRS, PCIMH, ICMR), EMA HMPC, TGA + NHMRC, NMPA + Chinese Pharmacopoeia 2020, Health Canada NHP, Men-Tsee-Khang, Hamdard, IMPCOPS, plus classical Ayurvedic, Chinese, Unani, Siddha, Tibetan and homeopathic texts. Third, it preserves user sovereignty: every product is over-the-counter and home-administered. **No prescription chlorhexidine, no antibiotic gel, no laser periodontal therapy, no scaling-and-root-planing, no surgical periodontal flap, no root canal, no extraction, no implant work is recommended in the home regime.** Fourth, it tells the truth about evidence — including null Cochrane findings (Iheozor-Ejiofor 2017 flossing for caries — null), mixed signals (vitamin D + periodontitis intervention RCTs mixed), and approaches we document for transparency but do NOT recommend (charcoal toothpaste daily, oil-of-oregano internal, homeopathy graded T only).
 
-**Sovereignty ethos.** **No prescription. No mandated dental visit. No clinic surgery. No hospital. No biologic.** Evidence: Grade A for BLIS K12/M18, xylitol, CoQ10, Vit C, Vit D + K2-MK7, omega-3, Miswak, Triphala rinse, oil pulling (classical + modern); Grade B for curcumin, EGCG, propolis, neem, sesame oil pulling RCTs; Grade C for ozonated oil; Grade T for Unani/Siddha/Tibetan/homeopathy.
+**No FDA, ADA (American Dental Association), AAP, AAPD, AMA, CDC, NIH-policy or US disease-association source is cited as authority on whether something works. Period.** The single narrow exception is regulatory-path context around home dental microbiome tests and prescription chlorhexidine OTC strengths — surfaced inline as factual regulatory-path context, never as evidence anchor. The evidence anchor is always the named trial (Yaacob 2014, Sambunjak 2011, Outhouse 2006, Riley 2015, Burton 2006, Asokan 2011, Pradeep 2016, Behal 2011, Hanioka 1994, Coelho 2020).
 
-Authority: **WHO TCIM Strategy 2025–2034, India AYUSH/CCRAS/CCRH/CCRYN/CCRUM/CCRS/PCIMH/ICMR, EMA HMPC, Australia TGA + NHMRC, China NMPA + Chinese Pharmacopoeia, Health Canada NHP, Men-Tsee-Khang, Hamdard, IMPCOPS**, plus classical texts (*Charaka Samhita* — daily oral hygiene matrashitiya, *Sushruta Samhita*, *Bhavaprakasha*, Avicenna, *Pi Wei Lun*, Boericke, Kent). Acharya Sushruta's dental hygiene principles — *dant dhavana*, *jihva nirlekhana*, *gandusha*, *kavala* — anchor the daily regimen, validated by modern RCTs.
+The protocol explicitly recommends keeping **regular dental cleanings every 3–6 months** as an external lever — even though that sits outside the strict OTC-home-based scope, it is the single highest-evidence professional intervention for gum health (Hujoel 2018) and the user is sovereign over the decision to use it.
 
-Explicit re-affirmation: **no FDA, FTC, ADA (American Dental Association), AAP, AHA, AAD, AMA, APA, ACOG, NAMS, ACR, ACS, CDC, NIH-policy, AAFP, IDSA as authority. Period.**
+## 15. References (selected)
+
+| Reference | TL;DR (plain English) | Tier |
+|---|---|---|
+| Yaacob M et al. Cochrane 2014 — powered vs manual brushes | A — plaque + gingivitis cornerstone. | Tier 1 |
+| Sambunjak D et al. Cochrane 2011 — flossing + brushing | A for plaque + gingivitis. | Tier 1 |
+| Iheozor-Ejiofor Z et al. Cochrane 2017 — flossing for cavities | Null — surfaced honestly. | Tier 1 |
+| Outhouse TL et al. Cochrane 2006 — tongue scraping | B halitosis transient. | Tier 1 |
+| Riley P et al. Cochrane 2015 — xylitol | B caries habitual users. | Tier 1 |
+| Cochrane James 2017 — chlorhexidine | A short-term, B long-term. | Tier 1 |
+| Cochrane Worthington 2016 — SRP | A non-surgical periodontal. | Tier 1 |
+| Cochrane Hartmann-Boyce 2018 — smoking cessation | A largest fixable lever. | Tier 1 |
+| Burton JP 2006 + 2013 — BLIS K12 | B halitosis + strep. | Tier 1 |
+| Hanioka T 1994 — CoQ10 + gum | B gum-tissue signal. | Tier 1 |
+| Van der Velden 2008 — vitamin D + periodontitis | B association. | Tier 1 |
+| Schurgers LJ 2007 Rotterdam — K2 + calcification | B calcium routing. | Tier 1 |
+| Coelho RG 2020 — omega-3 + periodontitis meta | B modest signal. | Tier 1 |
+| Almas K 2002 — neem chew-stick | B equivalent to brushing. | Tier 1 |
+| Pradeep AR 2016 — Triphala vs CHX | B comparable to CHX. | Tier 1 |
+| Asokan S 2009, 2011 — oil pulling | C-B modest signal. | Tier 1 |
+| Behal R 2011 — curcumin gel vs CHX | B matches CHX. | Tier 1 |
+| Hirasawa M 2002 — EGCG + gingipains | B inhibition. | Tier 1 |
+| Hujoel PP 2009 + 2018 — vitamin C + cleaning interval | A deficiency + A interval. | Tier 1 |
+| Yaegaki K 1992 — VSC + tongue dorsum | Mechanistic landmark. | Tier 1 |
+| Hajishengallis G 2015; Tonetti 2013/2018 — perio dysbiosis + CV + classification | Mainstream landmarks. | Tier 1 |
+| Genco RJ 2013 — smoking + perio | Largest risk factor. | Tier 1 |
+| Lobbezoo F 2018 — bruxism consensus | Mainstream consensus. | Tier 1 |
+| Triana BG 2018 — mouth-breathing | Mechanistic. | Tier 1 |
+| EAGLES Anthenelli RM 2016 — cessation Rx | A. | Tier 1 |
+| Sushruta Samhita Ch. 24 + Charaka Sutrasthana Ch. 5 | Classical Ayurveda Dant Dhavana. | Tier 3 |
+| Chinese Pharmacopoeia 2020 + Bensky Formulas & Strategies | NMPA + TCM standards. | Tier 2-3 |
+| Avicenna Canon Book III + Hamdard Pharmacopoeia Unani | Classical + Tier 2 Unani. | Tier 2-3 |
+| IMPCOPS Chennai + Siddha Maruthuvam | Tier 2 Siddha. | Tier 2-3 |
+| Men-Tsee-Khang Dharamsala + rGyud-bzhi | Tier 2 Tibetan. | Tier 2-3 |
+| Boericke + Kent + Allen | Classical Homeopathy T/H. | Tier 3 |
+| AYUSH (CCRAS / CCRH / CCRYN / CCRUM / CCRS / PCIMH / ICMR) monographs | Tier 2 Indian standards. | Tier 2 |
+| EMA HMPC + TGA + NHMRC + Health Canada NHP | Tier 2 global standards. | Tier 2 |
