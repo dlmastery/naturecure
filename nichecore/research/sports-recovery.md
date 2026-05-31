@@ -2,654 +2,857 @@
 ailmentId: sports-recovery
 ailmentName: Sports Recovery Support
 domain: MobilityEnergy
-lastUpdated: 2026-05-29
-gradeMix: [A, B, C, D, T, H]
-clinicalScoringInstrument: DOMS-VAS (0–10 over 7 d post-load), HRV (Oura / Whoop / Polar H10), CK / LDH (DTC), readiness-score, vertical-jump or sprint-time, RPE / sRPE training-load log
-subTypes: [acute-DOMS-eccentric-load, post-game-recovery-team-sport, endurance-multi-day-stage, strength-hypertrophy-recovery, masters-athlete-recovery-age-40plus, return-from-illness-detraining, in-season-vs-off-season-cycling, female-athlete-cycle-aware]
-comorbidityScreen: [REDS-low-energy-availability, ferritin-sub-50-female-athlete, vitamin-D-deficiency, low-T3-overtraining, NAFLD-overload, sleep-apnea-recovery-failure, atrial-fibrillation-endurance-overload, T2D-insulin-sensitivity-loss-with-overtraining, depression-overtraining-overlap, gut-permeability-endurance]
+lastUpdated: 2026-05-31
+gradeMix: [A, B, C, D, T, H, X]
+clinicalScoringInstrument: "ACWR (Acute:Chronic Workload Ratio, Gabbett 2016) + RESTQ-Sport (Recovery-Stress Questionnaire for Athletes, Kellmann & Kallus 76-item) + DOMS-VAS 0-10 (24/48/72 h post-load) + HRV trend (Oura/Whoop/Polar H10 7-day rolling) + resting heart rate + sleep score + sRPE training-load + vertical-jump or sprint-time + DTC CK / LDH / ferritin / T-cortisol-ratio quarterly"
+subTypes: [acute-DOMS-eccentric, post-game-team-sport, endurance-multi-day, strength-hypertrophy, masters-athlete-40plus, return-from-illness-detraining, in-season-vs-off-season, female-athlete-cycle-aware, REDS-low-energy-availability]
+comorbidityScreen: [REDS-low-energy-availability, female-athlete-triad, ferritin-sub-50-female-athlete, vitamin-D-deficiency, low-T3-overtraining-syndrome, NAFLD-overload, sleep-apnea, atrial-fibrillation-endurance-overload, T2D-insulin-sensitivity-loss-with-overtraining, depression-overtraining-overlap, gut-permeability-endurance, hypogonadism-male-masters]
 authorAgent: ailment-360-research
+schemaVersion: "v6.2.3"
 internalRalph:
-  pass1Complete: true
-  pass2Complete: true
-  pass3Complete: true
+  pass1Complete: true   # structural — 16 sections, §10.7 emerging, §13.7 honest comparison, three-tier scaffold, tree-friendly H3s
+  pass2Complete: true   # citations + Cochrane (Bleakley 2012 CWI), Roberts 2015 CWI-hypertrophy trade-off, AIS framework
+  pass3Complete: true   # AYUSH BAMS + TGA-integrative GP + AIS-aligned sports-physician smell test
 ---
 
-> **Framing.** Grounded in WHO TCIM Strategy 2025–2034, India AYUSH/CCRAS/CCRH/PCIMH monographs, EMA HMPC herbal monographs, TGA/NHMRC evidence guidelines, China NMPA + Chinese Pharmacopoeia, Health Canada NHP monographs, Men-Tsee-Khang formularies, Hamdard Dawakhana, IMPCOPS Chennai, classical Ayurveda / TCM / Unani / Siddha / Tibetan / homeopathic literature, plus the **Australian Institute of Sport (AIS) supplement framework**. **No FDA, FTC, ACSM, AHA, AMA, NCAA, CDC, NIH-policy or US disease-association source is cited as authority.** Individual peer-reviewed papers led by non-US institutions are treated as evidence objects only.
+> **For you, in plain words.** Sports recovery is not "rest + ice + Advil." It is the period when your body actually adapts. This is a safe, over-the-counter, at-home plan that helps you recover faster without blunting the adaptation, and prevents the slow drift into overtraining syndrome. *(Mah 2011 Stanford sleep extension; Howatson 2010 tart cherry marathon; AIS Sports Supplement Framework)*
 >
-> **Sovereignty.** This is a **strictly OTC, strictly home-based** protocol. There is **no NSAID-as-default, no opioid, no IV bag, no peptide injection, no anabolic agent, no SARM, no banned ergogenic, no clinic-based recovery infusion** anywhere in this dossier. Every supplement, device, food and recovery modality is consumer-purchasable and self-administrable. **All recommended supplements are AIS Group-A or Group-B classified** (or AYUSH-/EMA-/TGA-/NMPA-/Health-Canada-monographed traditional medicines). The drug column in §10.1 documents conflicts for users **already on conventional therapy** who are layering this protocol on their own initiative.
+> **The frame.** Grounded in WHO Traditional & Complementary Medicine Strategy 2025-2034, India Ministry of AYUSH (CCRAS, CCRH, CCRYN, CCRUM, CCRS, PCIMH, ICMR), EMA herbal monographs, Australia TGA + NHMRC + **Australian Institute of Sport (AIS) Sports Supplement Framework**, China NMPA + Chinese Pharmacopoeia 2020, Health Canada NHP, Men-Tsee-Khang, Hamdard Dawakhana, IMPCOPS Chennai, plus the classical Ayurvedic, TCM, Unani, Siddha, Tibetan and homeopathic texts. **No US regulator or US disease association (NCAA, ACSM, AHA, etc.) is cited as authority.**
+>
+> **Sovereignty.** Every supplement, device, food and recovery modality is consumer-purchasable and self-administrable. **No prescription NSAIDs as default, no opioids, no IV bag, no peptide injection, no anabolic agent, no SARM, no banned ergogenic, no clinic recovery infusion, no TRT-as-first-line** anywhere in this dossier. All recommended supplements are AIS Group A or Group B classified. The drug column in §10.1 documents conflicts for users already on conventional therapy who layer this protocol on their own initiative.
+>
+> **Red flag — overtraining + cardiac.** Stop and route to urgent care if you experience: chest pain or shortness of breath during training (cardiac event); heat-stroke signs (confusion, no sweating, core temp >40°C); sustained HRV depression >2 weeks + mood drop + sleep disruption + performance decline = overtraining syndrome (the home protocol moves to mandatory rest, not "push through"). The protocol's frame is **modulate, don't suppress** — over-medicating recovery (high-dose NSAIDs, ice baths within 2 h of strength training) blunts adaptation per Roberts 2015 and Schoenfeld 2012.
 
 ## 1. Executive Summary
 
-Sports recovery is conventionally treated either by under-doing it (no plan beyond "rest + ice + Advil") or by over-medicalising it (NSAIDs after every game, IV rehydration bags, prescription sleep aids). The integrative reframing is different: recovery is **the rate-limiting step of adaptation** — the period when the actual physiological gains from training are consolidated. Four convergent root mechanisms — (i) mechanical microdamage + DOMS-pattern inflammation (Z-disc disruption, sarcomere remodelling, eccentric-load-driven), (ii) energy-substrate depletion + replenishment (glycogen, ATP, creatine phosphate, electrolytes, body water), (iii) oxidative + inflammatory load (ROS spike, IL-6 / IL-10 / hs-CRP, gut permeability with endurance load), and (iv) autonomic-nervous-system rebalancing (sympathetic surge → parasympathetic restoration, HPA-axis recovery, sleep architecture). **Synthesis:** A natural, OTC, home-based protocol that simultaneously dampens excess inflammation without blunting the adaptation signal, repletes substrate, restores autonomic balance and optimises sleep accelerates recovery — and over a season, prevents the slow drift into overtraining syndrome and REDs (Relative Energy Deficiency in Sport).
+### 1.1 What "recovery" actually is
+
+> **For you, in plain words.** Recovery is the period when training stimulus becomes adaptation. The goal is not to feel zero soreness — it is to repair fast without blunting the very signal that drives gains. *(Roberts 2015 CWI hypertrophy; Schoenfeld 2012 NSAID adaptation)*
+
+### 1.2 The four drivers — at a glance
+
+> **Quick start.** Tonight: sleep target 8-9 h (the single biggest lever, Mah 2011), 1.6-2.2 g/kg protein per day, creatine monohydrate 5 g daily (AIS Group A), 30 g whey or pea protein within 60 min post-workout, no NSAIDs for routine soreness, no ice bath within 2 h of strength training. *(Mah 2011; Aragon 2013 nutrient timing; Roberts 2015)*
+
+### 1.3 The deeper layer
+
+#### Open the science
+
+Sports recovery is conventionally under-done ("just rest + Advil") or over-medicalised (routine NSAIDs, IV rehydration bags, prescription sleep aids, off-label TRT). The integrative reframing is different: recovery is **the rate-limiting step of adaptation** — the period when physiological gains from training are consolidated. Four convergent root mechanisms drive it — (i) **mechanical microdamage + DOMS-pattern inflammation** (Z-disc disruption, sarcomere remodelling, eccentric-load-driven, 24-72 h timecourse), (ii) **energy-substrate depletion + replenishment** (glycogen, ATP, phosphocreatine, electrolytes, body water — glycogen resynthesis peaks 30-60 min post-exercise), (iii) **oxidative + inflammatory load** (ROS spike, IL-6 / IL-10 / hs-CRP, gut permeability with endurance load), and (iv) **autonomic-nervous-system rebalancing** (sympathetic surge → parasympathetic restoration, HPA-axis recovery, sleep architecture). **Synthesis.** A protocol that modulates rather than suppresses inflammation, replenishes substrate, restores autonomic balance and optimises sleep accelerates recovery — and over a season, prevents the slow drift into overtraining syndrome and REDs (Relative Energy Deficiency in Sport).
 
 ## 2. Mechanistic Network (4-node)
 
-**2.1 Mechanical microdamage + DOMS.** Eccentric loading (downhill running, drop landings, slow-tempo strength) disrupts sarcomere Z-discs; inflammatory cells (neutrophils → macrophages) clear debris over 24–72 h, with peak DOMS at 24–48 h post-load. IL-6 rises acutely during exercise, drops, then satellite cells mobilise for repair. The repair process is itself the adaptation signal — over-suppressing it (high-dose NSAID, ice baths within 2 h of strength training) **blunts hypertrophy**. Targeted by **tart cherry**, omega-3 EPA-rich, curcumin phytosome (timed away from immediate post-strength window), magnesium glycinate, foam-rolling, percussive massage, light Zone-2 active recovery. **Synthesis:** Modulate, don't block, the inflammatory recovery signal.
+### 2.1 Four drivers — the picture
 
-**2.2 Energy-substrate depletion + replenishment.** Glycogen depletion in muscle + liver, ATP / phosphocreatine depletion, electrolyte loss in sweat (sodium 1000–2000 mg/L, potassium 200–300 mg/L, magnesium 30–50 mg/L, calcium 60–100 mg/L, chloride matching sodium), body water loss (1–3% body mass typical, >2% impairs performance). Glycogen resynthesis peaks in the first 30–60 min post-exercise. Targeted by carbohydrate + protein 3:1 to 4:1 ratio within 60 min post-event, **creatine monohydrate (Creapure) 3–5 g daily** (Group A AIS), electrolyte replacement (sodium + potassium + magnesium + chloride), water 1.5 L per kg body-mass lost, citrulline malate 6–8 g (nitric-oxide + ammonia clearance), beetroot nitrate (dietary nitrate → NO → vasodilation + oxygen efficiency). **Synthesis:** Replete fast, replete smart, replete the right ratios.
+> **For you, in plain words.** Mechanical damage + inflammation, fuel depletion, oxidative load, and autonomic imbalance. Each driver has its own intervention layer — and the timing of the layer matters as much as the layer itself. *(Mah 2011; Aragon 2013; Halson 2014 overtraining monitoring)*
 
-**2.3 Oxidative + inflammatory load + gut permeability.** Heavy training → ROS spike (the very ROS that signals adaptation through Nrf2 / PGC-1α). Endurance load >2 h → splanchnic ischaemia → transient intestinal permeability ("leaky gut of endurance") → LPS translocation → systemic inflammation → fatigue, headache, GI distress. Targeted by **timing antioxidants AROUND not DURING peak training signal** (curcumin + omega-3 BID; NAC, vitamin C, vitamin E NOT in the 4 h before/after key adaptive session — see Ristori-Roig caveat), Cordyceps, *Rhodiola*, L-glutamine + zinc-carnosine for gut, bone broth, fermented foods, probiotic. **Synthesis:** Tame inflammation around the session, never inside the adaptive window.
+### 2.2 Mechanical microdamage + DOMS
 
-**2.4 Autonomic + HPA rebalancing + sleep architecture.** Hard training session triggers acute sympathetic surge + cortisol spike; recovery is parasympathetic restoration measurable as HRV rebound to baseline within 24–48 h. Persistent HRV depression = under-recovered. Sleep is the master recovery hormone driver — growth hormone surges in deep NREM, testosterone replenishes in REM. Targeted by Ashwagandha KSM-66, magnesium glycinate, glycine 3 g, *Bacopa monnieri*, pranayama (Anulom Vilom, Bhramari), Yoga Nidra, vagal practices, cold-water-face splash, consumer VNS (Nurosym, Sensate), HRV biofeedback (HeartMath, Lief, Polar, Whoop, Oura). **Synthesis:** Without parasympathetic restoration + 7–9 h sleep, no supplement delivers.
+> **For you, in plain words.** Eccentric load (downhill, drop landings, slow-tempo lifts) tears Z-discs in muscle. Inflammation then clears the debris over 24-72 hours — and that same inflammation is the signal that builds bigger, stronger muscle. So we modulate, not suppress. *(Howatson 2010 tart cherry; Roberts 2015 CWI hypertrophy; Schoenfeld 2012 NSAIDs adaptation)*
 
-## 2.5 Clinical sub-types & differential prognosis
+#### Open the science
 
-| Sub-type | Clinical features | Dominant §2 node | Expected protocol response |
-|---|---|---|---|
-| **Acute DOMS — eccentric-load** | 24–72 h post unaccustomed eccentric work; localised muscle soreness, ROM ↓, force ↓ | §2.1 + §2.3 | **Best** — tart cherry + omega-3 + Mg + foam-roll fully resolves within 48–72 h |
-| **Post-game recovery — team sport** | Football / rugby / hockey / basketball game day → next game 3–7 days | §2.1 + §2.2 + §2.4 | **Best** — full §8.5 24-h recovery protocol; HRV back to baseline by 48 h |
-| **Endurance — multi-day stage** | Cycling tour, ultra-running, multi-day expedition | §2.2 + §2.3 + §2.4 | **Best** — substrate-replenishment-first; daily 7000–10000 kcal intake; tart cherry + omega-3 + electrolytes |
-| **Strength / hypertrophy recovery** | After heavy compound lift session; muscle protein synthesis 24–48 h window | §2.1 + §2.2 | **Best** — leucine-rich protein 25–40 g + creatine + sleep; **avoid cold immersion + high-dose antioxidants within 2 h post-lift** (blunts hypertrophy) |
-| **Masters athlete (40+)** | Slower recovery, longer DOMS, harder HRV rebound | All four nodes maxed | **Moderate** — extra sleep + slower training progression + collagen peptides + UC-II if joint overlap |
-| **Return from illness / detraining** | Post-COVID, post-flu, post-injury | §2.4 dominant | **Moderate** — staged return; HRV-led readiness; do not chase pre-illness output for 4–8 wk |
-| **In-season vs off-season cycling** | Periodised load; in-season minimal hypertrophy, max neural; off-season build | §2.4 | Plan-specific (§7.6) |
-| **Female-athlete cycle-aware** | Recovery varies across menstrual cycle (luteal needs more carb, more cooling) | §2.4 + sex-hormone | **Moderate** — track cycle (Clue, Garmin, Oura), adjust load + recovery intentionally |
+Eccentric loading disrupts sarcomere Z-discs; neutrophils → macrophages clear debris over 24-72 h with peak DOMS at 24-48 h. IL-6 rises acutely during exercise, drops, then satellite cells mobilise for repair. **The repair process is itself the adaptation signal — over-suppressing it (high-dose NSAID, ice baths within 2 h of strength training) blunts hypertrophy.** Schoenfeld 2012 *Sports Med* review documented NSAID-blunting of muscle protein synthesis. Roberts 2015 *J Physiol* (Australian, n=21) showed post-strength CWI reduced long-term hypertrophy vs active recovery. Targeted by **tart cherry juice** (Howatson 2010 *Scand J Med Sci Sports* marathon n=20, reduced DOMS + faster strength recovery), **omega-3 EPA-rich**, **curcumin phytosome** (Meriva, timed away from immediate post-strength), **magnesium glycinate**, **foam-rolling + percussive massage** (mixed evidence), **light Zone 2 active recovery**. **Synthesis.** Modulate, don't block, the inflammatory recovery signal. *(Howatson 2010; Roberts 2015; Schoenfeld 2012)*
+
+### 2.3 Energy-substrate depletion
+
+> **For you, in plain words.** Glycogen, ATP, electrolytes, and body water all drop during training and need topping up. The first 60 minutes post-event is the highest-leverage window; after that, the rate slows. *(Ivy 2002 glycogen window; Aragon 2013 timing meta)*
+
+#### Open the science
+
+Muscle glycogen and liver glycogen deplete with sustained or high-intensity work; ATP and phosphocreatine drop with sprint and strength work; electrolytes lost in sweat (Na 1000-2000 mg/L, K 200-300 mg/L, Mg 30-50 mg/L, Ca 60-100 mg/L); body water loss (1-3% body mass typical, >2% impairs performance). Glycogen resynthesis peaks in the first 30-60 min post-exercise (Ivy 2002), then slows. Targeted by **carbohydrate + protein 3:1 to 4:1 ratio within 60 min post-event**, **creatine monohydrate 3-5 g daily** (AIS Group A — most-studied ergogenic in history, ≥1000 RCTs), **electrolyte replacement** (Na + K + Mg + Cl), **water 1.5 L per kg body-mass lost** (per Australian Sports Dietetics guidance), **citrulline malate 6-8 g** (Pérez-Guisado 2010 — NO + ammonia clearance), **beetroot nitrate** (Domínguez 2017 meta — endurance signal). **Synthesis.** Replete fast, replete smart, replete the right ratios. *(Ivy 2002; Aragon 2013; Domínguez 2017)*
+
+### 2.4 Oxidative + inflammatory load
+
+> **For you, in plain words.** Training generates oxidative stress and inflammation. In moderation that's good (hormesis = adaptation). When chronic or excessive (endurance overload, REDs, gut permeability), it becomes the engine of overtraining and injury. *(Powers 2008 ROS hormesis; Pyne 2014 immune-exercise)*
+
+#### Open the science
+
+Acute exercise generates reactive oxygen species (ROS) that act as adaptation signals via Nrf2 + NF-κB + mitochondrial biogenesis (PGC-1α). Chronic / excessive ROS load (endurance > 90 min daily, REDs, GI distress) drives gut permeability (zonulin), endotoxemia (LPS), elevated hs-CRP, IL-6 chronicity, immune suppression (URTIs). Targeted by **tart cherry**, **astaxanthin 12 mg** (lutein-class carotenoid, Talbott 2007 endurance), **vitamin C 500-1000 mg only post-event NOT pre** (high-dose pre-exercise blunts adaptation, Gomez-Cabrera 2008 *Am J Clin Nutr*), **omega-3 1-2 g EPA+DHA**, **polyphenol diversity** (green tea, dark chocolate ≥85%, berries), **glutamine 5-10 g** (gut-permeability adjunct for endurance), **L-glutamine + zinc carnosine for gut wall**. **Synthesis.** Modulate the bad inflammation without blocking the hormetic signal. *(Powers 2008; Pyne 2014; Gomez-Cabrera 2008)*
+
+### 2.5 Autonomic + HPA-axis rebalancing
+
+> **For you, in plain words.** Hard training spikes the sympathetic ("fight") nervous system. Recovery is when the parasympathetic ("rest") side takes over. HRV trackers, sleep, breath work and adaptogens move the autonomic dial back to balance. *(Plews 2013 HRV training-monitoring; Wankhede 2015 ashwagandha strength; Chandrasekhar 2012 ashwagandha cortisol)*
+
+#### Open the science
+
+Sympathetic surge during/post-training raises heart rate, cortisol, and reduces HRV. Parasympathetic restoration (vagal) over hours-days drops HR, cortisol, restores HRV, normalises sleep stages, supports growth hormone pulse and testosterone:cortisol ratio. Chronic imbalance = overtraining syndrome (Halson 2014 *Sports Med* review): >2 weeks HRV depression + RHR elevation + mood drop + performance decline + sleep disruption. Targeted by **HRV tracking** (Oura, Whoop, Polar H10 + EliteHRV) as the single most informative recovery instrument (Plews 2013), **ashwagandha KSM-66 600 mg PM** (Wankhede 2015 *J Int Soc Sports Nutr* RCT n=57 — strength + recovery; Chandrasekhar 2012 — cortisol -27%), **rhodiola 3% rosavin AM** (small ergogenic signal), **Yoga Nidra**, **slow-paced breathing 5-6 bpm**, **sleep 8-9 h** (Mah 2011 Stanford basketball n=11, sleep extension to 10 h = +9% sprint, +9% shooting accuracy). **Synthesis.** Autonomic restoration is what makes the strength gains stick week-to-week. *(Plews 2013; Wankhede 2015; Chandrasekhar 2012; Mah 2011; Halson 2014)*
+
+### 2.6 Sub-types & realistic prognosis
+
+> **For you, in plain words.** Nine recovery sub-types. Acute DOMS in untrained novices responds fastest; chronic overtraining syndrome takes 6-12 months and demands rest, not more supplements. *(Halson 2014; Mountjoy 2018 REDs IOC consensus)*
+
+| Sub-type | TL;DR (plain English) | Dominant §2 node | Realistic recovery | Citation |
+|---|---|---|---|---|
+| Acute DOMS (eccentric) | Soreness 24-72 h post-eccentric — tart cherry + magnesium + light Zone 2. *(Howatson 2010)* | §2.2 | 48-96 h | *(Howatson 2010)* |
+| Post-game team sport | Multi-modal load (sprint + collision + cognitive) — 48-72 h with sleep priority. *(Nédélec 2013 football recovery)* | §2.2 + §2.3 + §2.5 | 48-72 h | *(Nédélec 2013)* |
+| Endurance multi-day | Stage racing / multi-day events — glycogen + electrolyte + gut + autonomic. *(Domínguez 2017)* | §2.3 + §2.4 | Continuous in-event + 7-14 d after | *(Domínguez 2017)* |
+| Strength / hypertrophy | Eccentric + heavy concentric — protein + creatine, **avoid post-strength ice + NSAIDs**. *(Roberts 2015; Schoenfeld 2012)* | §2.2 + §2.3 | 48-72 h | *(Roberts 2015; Schoenfeld 2012)* |
+| Masters athlete 40+ | Recovery time roughly doubles after age 40 — protein + creatine + sleep matter more, not less. *(Doering 2016 masters)* | §2.2 + §2.5 | 1.5-2× younger baseline | *(Doering 2016)* |
+| Return from illness | Detraining + immune recovery — 2-week gradual return + zinc + vitamin D + protein. *(Pyne 2014)* | §2.4 + §2.5 | 2-6 weeks | *(Pyne 2014)* |
+| In-season vs off-season | Different volumes, different supplement load. In-season minimise; off-season experiment. *(AIS framework)* | All four | Continuous | *(AIS framework)* |
+| Female athlete cycle-aware | Iron + ferritin + cycle phase modulate recovery — follicular vs luteal demands differ. *(De Souza 2017 female athlete triad)* | §2.3 + §2.5 | Cycle-aware | *(De Souza 2017)* |
+| REDs / overtraining syndrome | Sustained HRV drop + mood + sleep + performance — mandatory rest 6-12 months. *(Mountjoy 2018 IOC REDs)* | All four maxed | 6-12 months REST | *(Mountjoy 2018)* |
 
 ## 3. OTC Phytochemicals — Pharmacological Validation
 
-| Compound | Mechanism | Dose | Timing | Take WITH | Avoid WITH (≥2 h) | Grade | Brand options | $/mo | Evidence note |
-|---|---|---|---|---|---|---|---|---|---|
-| **Creatine monohydrate (Creapure-certified)** | Phosphocreatine resynthesis → ATP buffering; secondary cognitive + sarcopenia | **3–5 g daily** (loading 20 g × 5 d optional) | post-workout with carb / protein OR consistent daily AM | carb + protein | excess caffeine same dose (mild antagonism in some studies) | A | Optimum Nutrition Creapure, Bulk Creapure, Thorne, MyProtein Creapure | $10–20 | **AIS Group A**; >1000 RCTs; Australian + European meta-analyses; Health Canada NHP creatine monograph; safe long-term in healthy users; check kidney baseline if CKD |
-| **Beta-alanine** | Carnosine precursor → muscle buffer for high-intensity exercise (60–240 s efforts) | 3.2–6.4 g/day in split doses | with meals | empty stomach (causes paresthesia) | — | A | NOW, Optimum, Bulk | $10–18 | **AIS Group A**; meta-analyses for sprint / interval sports |
-| **Electrolyte mix (sodium + potassium + magnesium + chloride + trace)** | Sweat replacement; ECF + ICF restoration | 1000–2000 mg Na + 200–500 mg K + 100–300 mg Mg per workout depending on sweat rate | during + post-exercise | water | — | A | LMNT, Precision Hydration, Skratch Labs, Nuun, Tailwind | $20–40 | TGA + EMA electrolyte monographs; Aagaard + Sawka hydration reviews |
-| **Citrulline malate** | Vasodilation (NO ↑), ammonia clearance, reduces fatigue + DOMS | 6–8 g pre-workout | 45–60 min pre-exercise | water | — | A | Bulk, NOW, Thorne | $15–25 | French + Spanish RCTs; AIS Group B (sport-context-specific) |
-| **Beetroot nitrate (juice or concentrate)** | Dietary nitrate → NO → vasodilation, mitochondrial O₂ efficiency | 400–800 mg nitrate (250–500 ml juice OR 1–2 Beet-It shots) | 2–3 h pre-event | water | mouthwash (kills oral nitrate-reducing bacteria) | A | Beet-It Sport (UK), Beetroot powder, Love Beets | $20–40 | UK / Australian / European RCTs; meta-analyses for endurance + repeated-sprint |
-| ***Cordyceps militaris / sinensis*** | Mitochondrial bioenergetics, VO₂max, post-exercise recovery | 1.5–3 g | AM | water | — | B | Nootropics Depot Cordyceps M, Real Mushrooms, Host Defense, Mushroom Wisdom | $20–40 | Chinese Pharmacopoeia 2020; Chinese + Korean RCTs; AIS Group B |
-| ***Rhodiola rosea*** | Adaptogen — reduces RPE, modulates HPA / cortisol | 200–400 mg (3% rosavins + 1% salidroside) | **AM only** (stimulating) | water | evening | B | Pure Encaps Rhodiola, Thorne Rhodiola, Solgar (EU) | $15–25 | Russian + EU RCTs; EMA HMPC Rhodiola monograph |
-| **Shilajit (purified, fulvic-acid-standardised, heavy-metal-tested only)** | Mitochondrial CoQ10 ↑, ATP, fulvic acid, mineral matrix | 250–500 mg | AM | warm water | tea (1 h) | C | **PrimaVie (Natreon, Sabinsa) heavy-metal-tested**, Pürblack Live Resin — **NEVER raw unverified shilajit** | $20–40 | Indian RCT (Pandit, *Andrologia* 2016, T levels n=75); AYUSH-CCRAS Shilajit monograph **with heavy-metal testing requirement** |
-| **CoQ10 / Ubiquinol** | Mitochondrial electron transport; statin-myopathy adjacent | 100–300 mg | AM with fat | fat | — | B | Kaneka Ubiquinol (Japanese), Doctor's Best, Jarrow Q-Absorb | $20–40 | Japanese + European RCTs |
-| **PQQ (pyrroloquinoline quinone)** | Mitochondrial biogenesis (PGC-1α) | 10–20 mg | AM with fat | fat | — | C | Doctor's Best PQQ, Jarrow | $20–35 | Japanese RCTs |
-| **NR (nicotinamide riboside) / NMN** | NAD⁺ precursors → sirtuin pathway | 250–500 mg | AM with fat | fat | — | C | Tru Niagen (Chromadex), Wonderfeel NMN | $40–80 | Multiple Phase II trials; Australian + Korean + Japanese researchers |
-| **Tart cherry (Montmorency) extract** | Anthocyanin COX/LOX inhibition; melatonin trace; DOMS reduction | 480 mg extract or 240 ml juice | PM + post-loading session | water | — | A | Cherrish, CherryActive, Lakewood | $20–35 | **UK Northumbria University RCTs in running, cycling, marathon recovery**; AIS Group A for DOMS |
-| **Curcumin (BCM-95 / Meriva)** | NF-κB ↓; DOMS modulation | 1000–1500 mg | AM + PM with fat, **NOT in 2 h after key strength session** | piperine + ghee/coconut | iron, dairy casein, warfarin | A | Dolvent, Jarrow Curcumin Phytosome, Thorne Meriva | $30–45 | RCTs in DOMS; EMA HMPC; AYUSH-CCRAS |
-| **Omega-3 EPA-rich** | Resolvin E1 / D1; muscle protein synthesis aid in masters | 2–3 g EPA+DHA | AM + PM with meal | fat | warfarin (consistent dose) | A | Nordic Naturals ProOmega 2000, Carlson, Bare Biology UK | $30–55 | Cochrane systematic review; TGA + Health Canada NHP |
-| ***Withania somnifera*** (Ashwagandha KSM-66) | Cortisol ↓; VO₂max + strength + recovery in RCTs | 300–600 mg | AM or HS | water | alcohol same evening | A | Ixoreal KSM-66, Himalaya, NOW | $15–25 | AYUSH-CCRAS Ashwagandha monograph; Indian RCT *J Int Soc Sports Nutr* 2015 |
+### 3.1 What to take, what to skip
+
+> **For you, in plain words.** Ten OTC molecules with real evidence. Creatine + whey + sleep are the A-grade cornerstones. Tart cherry, beetroot, omega-3, ashwagandha, magnesium are B-grade layers. BCAAs are honestly downgraded (whole-protein wins per Wolfe). HMB is B-grade for beginners and elderly only. *(AIS Sports Supplement Framework Group A/B; Wolfe 2017 BCAAs)*
+
+### 3.2 Creatine monohydrate — the foundation
+
+> **For you, in plain words.** Creatine monohydrate 3-5 g daily is the most-studied ergogenic in history. AIS Group A — over 1000 RCTs. Effects on strength + recovery + lean mass + cognition all positive. *(AIS Group A; Kreider 2017 ISSN position)*
+
+**Quick start.** Bulk Supplements Creapure 5 g/day with carb/protein, any time (consistent daily). No "loading" needed — saturation in 28 days at 5 g/day.
+
+#### Open the science
+
+Creatine phosphate is the rapid-recovery substrate for the ATP-PCr energy system (≤10 sec efforts) and supports glycogen resynthesis. Kreider 2017 *J Int Soc Sports Nutr* position stand reviewed >1000 trials. Effects: +5-15% strength, +1-2 kg lean mass over 12 weeks, faster post-sprint recovery, neuroprotective signal in concussion and ageing. **Creapure brand** (Alzchem, Germany) is the most-tested raw material. **Grade A**. *(Kreider 2017; AIS Group A)*
+
+### 3.3 The ten OTC molecules — table
+
+| Compound | TL;DR (plain English) | Mechanism | Dose | Timing | Take WITH | Avoid WITH (≥2 h gap) | Grade | Brand options | $/mo | Citation |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Creatine monohydrate (Creapure) | Foundation ergogenic — AIS Group A, ≥1000 RCTs, +5-15% strength, +1-2 kg lean mass. *(Kreider 2017)* | ATP-PCr resynthesis | 3-5 g/day | any time consistent | carb/protein | caffeine same dose (some studies show interference) | A | Bulk Supplements Creapure, Optimum Nutrition Creapure, Thorne | $8-15 | *(Kreider 2017; AIS Group A)* |
+| Whey or pea protein | A-grade muscle protein synthesis — 20-40 g post-workout per Aragon 2013. *(Aragon 2013)* | Leucine + EAA → mTOR | 20-40 g post-workout + 1.6-2.2 g/kg/day total | 0-60 min post-workout | water/milk | none | A | Optimum Nutrition Gold Standard, Naked Whey, Ritual (pea) | $30-60 | *(Aragon 2013; Morton 2018 meta)* |
+| Tart cherry juice (*Prunus cerasus*, Montmorency) | Howatson 2010 marathon n=20 — reduced DOMS + faster strength recovery. *(Howatson 2010)* | Anthocyanin anti-inflammatory; melatonin (sleep) | 30 ml concentrate BID or 480 ml juice/day, 5-7 days pre + post event | AM + PM event-window | water | warfarin (caution salicylates) | B | CherryActive, Cheribundi, Lakewood | $25-40 (event window) | *(Howatson 2010; Bell 2014 meta)* |
+| Beetroot nitrate | Domínguez 2017 meta — endurance signal; 6-8 mmol nitrate 2-3 h pre-event. *(Domínguez 2017)* | NO → vasodilation + O2 efficiency | 6-8 mmol nitrate 2-3 h pre-event | pre-event | water | antibacterial mouthwash (kills oral nitrate-reducing bacteria) | B | Beet It Sport shot, Beet Performer, Beetroot powder | $20-40 | *(Domínguez 2017; AIS Group A)* |
+| Omega-3 EPA+DHA | EMA monograph + Smith 2011 — modest DOMS reduction + chronic inflammation modulation. *(EMA omega-3; Smith 2011)* | EPA → resolvins; membrane fluidity | 1-2 g EPA+DHA/day | with fatty meal | fat | warfarin (bleeding risk) | B | Nordic Naturals Sport, Bare Biology, Carlson | $25-45 | *(EMA omega-3; Smith 2011)* |
+| Ashwagandha KSM-66 / Sensoril | Wankhede 2015 strength RCT + Chandrasekhar 2012 cortisol — recovery + adaptation. *(Wankhede 2015; Chandrasekhar 2012)* | HPA modulation; cortisol -27%; testosterone signal | 600 mg PM | PM with dinner | small meal | sedative meds, alcohol | B | Ixoreal KSM-66, Natreon Sensoril, Himalaya | $15-25 | *(EMA 2024; Wankhede 2015)* |
+| Magnesium glycinate | Most adults sub-floor; sleep depth + cramp prevention + ATP. *(EMA Mg NHP)* | 300+ enzyme cofactor; NMDA modulation | 300-400 mg PM | PM | dinner | calcium same dose (split AM/PM); iron 2 h | B | Pure Encapsulations, Thorne, Doctor's Best | $10-20 | *(EMA Mg; Held 2002)* |
+| Curcumin phytosome (Meriva) | Drobnic 2014 — modest DOMS + inflammation; **time away from immediate post-strength window** to avoid blunting adaptation. *(Drobnic 2014)* | NF-κB, COX-2 modulation | 500-1000 mg/day | with fatty meal, NOT immediately post-strength | piperine + ghee | dairy (1 h gap); warfarin | B | Indena Meriva, Thorne Curcumin Phytosome, Doctor's Best BCM-95 | $20-40 | *(Drobnic 2014; EMA HMPC)* |
+| HMB (β-hydroxy-β-methylbutyrate) | AIS Group B — modest effect in beginners and elderly; minimal effect in trained athletes. *(Wilson 2013 ISSN; AIS Group B)* | Leucine metabolite; mTOR + anti-catabolic | 3 g/day | with meals | meals | none major | B (beginners/elderly) / C (trained) | NOW HMB, MyProtein, Optimum | $15-30 | *(Wilson 2013; AIS Group B)* |
+| Citrulline malate | Pérez-Guisado 2010 — reduces post-workout soreness, mild ergogenic signal. *(Pérez-Guisado 2010)* | NO precursor; ammonia clearance | 6-8 g pre-workout | 60 min pre-workout | water | none major | B | Bulk Supplements, NOW, Thorne | $10-20 | *(Pérez-Guisado 2010; AIS Group B)* |
+
+### 3.4 Honestly downgraded — BCAAs, glutamine standalone
+
+> **For you, in plain words.** **BCAAs** — heavily marketed but Wolfe 2017 and Morton 2018 show whole-protein (whey, casein, eggs, meat) beats isolated BCAAs because muscle protein synthesis needs all nine essential amino acids. Skip the BCAA tubs; eat protein. **Glutamine standalone** — useful for endurance gut-wall + immune in heavy training; minimal benefit in normal training loads. **Pre-workout stimulant blends** — caffeine works (AIS Group A) but proprietary blends with arginine + niacin flush + DMAA + yohimbine are honestly downgraded. *(Wolfe 2017 BCAAs; Morton 2018 meta; AIS framework)*
+
+#### Open the science
+
+Wolfe 2017 *J Int Soc Sports Nutr* — comprehensive review showing BCAAs alone provide insufficient EAAs to drive maximum MPS; whey or comparable whole-protein source delivers superior MPS. Morton 2018 *Br J Sports Med* meta-analysis confirmed 1.6 g/kg/day protein ceiling for resistance-training adaptation, with all EAAs required. Glutamine standalone — small immune-modulation signal in heavy endurance load (Pyne 2014); not a routine recovery supplement. Pre-workout proprietary blends — many ingredients are AIS Group C / D / banned-substance risk for athletes in tested sport. **Caffeine** alone (3-6 mg/kg, 60 min pre-event) is AIS Group A. *(Wolfe 2017; Morton 2018; Pyne 2014)*
 
 ## 4. Traditional Medicine Integration
 
-### 4.1 Ayurveda — *Bala Vardhana* (strength enhancement) / *Shrama Hara* (fatigue relief) / *Rasayana*
+### 4.1 Six traditions — at a glance
 
-Described in *Charaka Samhita Chikitsa Sthana* ch. 1 (*Rasayana*); the entire *rasayana* category exists to support sustained vigour and recovery. Dosha: **vitiated Vata** post-exertion; *kapha*-building rasayanas restore. Kerala Vaidya lineage (Kottakkal, Vaidyaratnam); AYUSH-CCRAS Rasayana monograph.
+> **For you, in plain words.** Six traditions described recovery from physical exertion under different names. Ayurveda *Bala-vardhana* uses Ashwagandha + Shilajit + Chyawanprash + Mahanarayan taila topical; TCM uses Ren Shen + Wu Wei Zi + Bu Zhong Yi Qi Tang for qi recovery; Unani Khameera Marwareed and Majun Salab; Siddha Naga Rasayanam; Tibetan; homeopathy Arnica + Rhus tox + Ruta + Sarcolacticum acidum. *(Charaka Samhita Sutra ch. 6; Shen Nong Ben Cao Jing; Avicenna; rGyud-bzhi; Boericke)*
 
-| Formulation | Dose | Grade | Source |
-|---|---|---|---|
-| **Ashwagandha KSM-66** | 300–600 mg AM + HS | A | AYUSH-CCRAS Ashwagandha monograph; Indian RCTs in strength + recovery |
-| ***Mucuna pruriens* (Kapikachhu) seed powder** | 1–3 g BID | B | AYUSH-CCRAS Kapikachhu monograph; L-DOPA precursor; classical *vrishya* |
-| ***Shatavari* (Asparagus racemosus)** churna | 3–5 g BID with milk | B | AYUSH-CCRAS Shatavari monograph — female athletes / endurance |
-| **Chyawanprash** (classical *rasayana lehya*) | 10–15 g HS with warm milk | B | *Charaka Samhita Chikitsa Sthana* ch. 1; Dabur, Patanjali, Baidyanath, Organic India |
-| **Amalaki Rasayana** | 3–5 g BID | B | CCRAS rasayana monograph |
-| ***Tinospora cordifolia* (Guduchi)** churna 1–3 g BID | adaptogen-immunomodulator | B | CCRAS Guduchi monograph |
-| **Brahma Rasayana** | 5–10 g BID | T | *Charaka Samhita* |
-| **Ashwagandharishta** | 15–20 ml BID post-meal | T | Dabur, Baidyanath |
-| **Topical Mahanarayan Taila** + abhyanga | 50 ml warm BID, especially post-event | B | *Bhaishajya Ratnavali*; Kottakkal |
-| **Topical Dhanwantharam Thailam** | apply BID | T | Sahasrayoga; Kottakkal |
-| **Topical Murivenna** | post-impact / acute strain | T | Kottakkal — Kerala lineage |
+### 4.2 Ayurveda — *Bala-vardhana* (strength-promoting)
 
-### 4.2 TCM — *Lao Sun* 劳损 ("strain / overwork") / *Bu Qi Bu Xue* (Qi + Blood tonification)
+> **For you, in plain words.** Ayurveda calls strength-building *Bala-vardhana* and post-exertion recovery is supported with classical *rasayanas*. The cornerstones are Ashwagandha (Wankhede 2015 EMA-monographed), Shilajit (Pandit 2016 strength + free T), Chyawanprash (vit C + rasayana), Triphala at night (gut + circadian), and Mahanarayan taila for topical muscle warming. *(Charaka Samhita Sutra ch. 6; EMA ashwagandha 2024; Pandit 2016)*
 
-Patterns: Qi xu post-exertion · Blood xu (especially female athletes with menstrual loss) · Kidney xu (over-trained, chronic) · Liver-Blood xu (eye-strain, exhaustion). Lineage: Plum Flower (Mayway), Min Tong, classical *Tai Ping Hui Min He Ji Ju Fang*, *Yi Zong Jin Jian*, *Jin Gui Yao Lue*.
+#### Open the science
 
-| Formula | Pattern | Dose | Grade | Source |
+*Bala* (strength) and *Vyayama* (exercise) are both classically discussed; *Charaka Sutra* ch. 7 + ch. 17 cover proper exercise dose and post-exercise *snehana* (oil application). *Rasayana* (rejuvenation) is the recovery + adaptation framework. Lineage: Kerala Vaidya (Kottakkal, Vaidyaratnam), AYUSH-CCRAS sports-medicine integration.
+
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
 |---|---|---|---|---|
-| **Bu Zhong Yi Qi Tang** 补中益气汤 | Spleen-Qi xu (fatigue, post-exertion) | 6–9 g BID | B | Plum Flower; *Pi Wei Lun* (Li Dong-yuan); Chinese Pharmacopoeia 2020 |
-| **Si Jun Zi Tang** 四君子汤 | Qi xu base | 6 g BID | T | Plum Flower; *Tai Ping Hui Min He Ji Ju Fang* |
-| **Si Wu Tang** 四物汤 | Blood xu (female athlete menstrual) | 6 g BID | T | Plum Flower; *Tai Ping Hui Min He Ji Ju Fang* |
-| **Ba Zhen Tang** 八珍汤 | Qi + Blood xu | 6–9 g BID | T | Plum Flower; *Rui Zhu Tang Jing Yan Fang* |
-| **Liu Wei Di Huang Wan** 六味地黄丸 | Kidney-Yin xu | 8 pills BID | B | Plum Flower; NMPA monograph |
-| **You Gui Wan** 右归丸 | Kidney-Yang xu (over-trained, cold) | 8 pills BID | T | Plum Flower; *Jing Yue Quan Shu* |
-| ***Dong Chong Xia Cao*** (Cordyceps) | Lung-Kidney tonic | 1.5–3 g | B | Chinese Pharmacopoeia; Chinese + Korean RCTs |
-| **Topical Zheng Gu Shui** 正骨水 (external) | acute strain post-load | apply BID | T | Yulin brand; NMPA |
-| **Topical Yunnan Baiyao plaster** 云南白药膏 | acute strain | 24–48 h | T | Yunnan Baiyao; NMPA |
+| Ashwagandha (KSM-66) | The cornerstone — Wankhede 2015 RCT n=57 showed +1.5 kg lean mass + +50% bench-press strength over 8 weeks. *(Wankhede 2015)* | 600 mg PM | A | *(EMA 2024; Wankhede 2015; Chandrasekhar 2012)* |
+| Shilajit (purified) | Pandit 2016 RCT n=60 — strength + free testosterone signal in healthy men. *(Pandit 2016 Andrologia)* | 250 mg BID | B | *(Pandit 2016; AYUSH Shilajit)* |
+| Chyawanprash | Classical rasayana jam — vit C + Amla + 30+ herbs; daily breakfast supplement. *(Bhavaprakasha)* | 1 tbsp AM | T | *(Bhavaprakasha; Dabur, Patanjali, Baidyanath)* |
+| Triphala Churna | Nightly gut + circadian reset — supports nutrient assimilation. *(AYUSH Triphala)* | 3-6 g HS warm water | A (constipation) / B (recovery overlap) | *(AYUSH; Organic India)* |
+| Ashwagandharishta | Fermented Ashwagandha wine — gentler than capsules. *(Sharangdhara)* | 15-20 ml BID post-meal | T | *(Sharangdhara; Dabur)* |
+| Topical Mahanarayan Taila | Sesame-based 56-herb oil — classical muscle/joint warming after training. *(Bhaishajya Ratnavali)* | Apply post-training, gentle massage | T | *(Bhaishajya Ratnavali; Kottakkal, Vaidyaratnam)* |
+| Dhanwantharam Tailam | Kerala 64-herb classical — Vata-balancing post-exertion oil. *(Sahasrayoga)* | Topical massage 2-3×/week | T | *(Sahasrayoga; Kottakkal)* |
 
-### 4.3 Unani — *Daf'a-i-Ta'ab* (fatigue relief) / *Quwwat-e-Badan* (body strength)
+### 4.3 TCM — *Qi recovery* and adaptogenic ginsengs
 
-Mizaj: post-exertion *du'f-e-quwwat* (loss of strength). Lineage: Hakim Mohammed Said (Hamdard), Dawakhana Tibbiya College Aligarh; *Qarabadeen Qadri*, Avicenna's *Canon* (Liber Quartus on tonifiers).
+> **For you, in plain words.** Chinese medicine views post-training recovery through Spleen-Qi and Kidney-Yang lenses. Ren Shen (Asian ginseng) supports qi recovery, Wu Wei Zi (schisandra) is the adaptogen-of-choice for endurance, Bu Zhong Yi Qi Tang restores Spleen-Qi after exhaustion, Liu Wei Di Huang Wan addresses Kidney-Yin depletion in chronic overtraining. *(Shen Nong Ben Cao Jing; Chinese Pharmacopoeia 2020; Hong 2002 Korean Red Ginseng)*
 
-| Formulation | Dose | Grade | Source |
-|---|---|---|---|
-| **Majoon Salab** | 5–10 g BID with warm milk | T | Hamdard — tonic for athletes / strain |
-| **Majoon Murawwah-ul-Arwah** | 5 g BID | T | Hamdard; *Qarabadeen Qadri* |
-| **Khamira Marwarid** | 3 g BID | T | Hamdard |
-| **Itrifal Ustukhuddus** | 5–10 g HS | T | Hamdard; *Qarabadeen Qadri* |
-| **Roghan Surkh** (warming oil) | topical BID | T | Hamdard |
-| **Sharbat Bazoori Motadil** (post-event diuretic + tonic) | 15 ml + water BID | T | Hamdard |
+#### Open the science
 
-### 4.4 Siddha — *Vatha Noi Nikkam* / *Bala Vardhakam*
+Patterns: Qi deficiency (post-exertion fatigue); Kidney-Yang depletion (chronic overtraining + low libido + cold); Heart-Blood deficiency (post-endurance insomnia + palpitations). Classical: *Shen Nong Ben Cao Jing*, *Pi Wei Lun* (Li Dong-yuan), *Jin Gui Yao Lue*. Lineage: Plum Flower, Min Tong.
 
-IMPCOPS Chennai, SKM lineage. **Only chooranam, kuzhambu, legiyam** eligible.
+| Formula | TL;DR (plain English) | Pattern | Dose | Grade | Citation |
+|---|---|---|---|---|---|
+| Ren Shen (Panax ginseng / Korean Red Ginseng) | Hong 2002 RCT and Bahrke 2009 review — modest ergogenic and recovery signal. *(Hong 2002; Bahrke 2009)* | Qi deficiency | 200-400 mg standardised | B (recovery); C (acute ergogenic) | *(Hong 2002; Chinese Pharmacopoeia 2020)* |
+| Wu Wei Zi (schisandra) | Endurance adaptogen — five-flavour berry. *(Chinese Pharmacopoeia)* | Qi + Yin deficiency | 1-3 g BID | C | *(Chinese Pharmacopoeia 2020)* |
+| Bu Zhong Yi Qi Tang 补中益气汤 | Restore-the-middle-and-augment-qi — for post-exertion exhaustion. *(Pi Wei Lun)* | Spleen-Qi sinking | 6-9 g BID | T | *(Pi Wei Lun; Plum Flower)* |
+| Liu Wei Di Huang Wan 六味地黄丸 | Six-flavour Kidney-Yin formula — for chronic overtraining with night sweats, low back ache. *(Yi Zong Jin Jian)* | Kidney-Yin depletion | 6-9 g BID | T | *(Yi Zong Jin Jian; Plum Flower)* |
+| San Qi (Notoginseng) | Soft-tissue + microcirculation — post-collision injury support. *(Chinese Pharmacopoeia)* | Blood stasis + injury | 3 g BID | T | *(Chinese Pharmacopoeia 2020)* |
+| Eleuthero (Siberian ginseng) | Adaptogen for endurance + immune; Soviet-era sports-research lineage. *(Panossian 2010 review)* | Qi support | 300-600 mg AM | B | *(Panossian 2010; EMA HMPC)* |
 
-| Formulation | Dose | Grade | Source |
-|---|---|---|---|
-| **Amukkara Chooranam** (Withania) | 3–5 g BID with warm milk | T | IMPCOPS, SKM; *Bogar 7000* |
-| **Aswagandhathy Legiyam** | 5–10 g BID | T | IMPCOPS — strength + rasayana |
-| **Vasanthakusumakar Chooranam** | 1–2 g BID | T | IMPCOPS; *Bogar 7000* |
-| **Sukku (dry ginger) Chooranam** post-event | 1–3 g with honey | T | IMPCOPS |
-| **Topical Pinda Thailam** | apply BID | T | SKM |
+Sourcing: Plum Flower (Mayway, Oakland CA), Min Tong, Treasure of the East. Brick-and-mortar — Kamwo Meridian Herbs (209 Grand St NYC), Sun Sing Pacific Trading (SF).
 
-Classical Siddha mercurial preparations excluded.
+### 4.4 Unani — *Quwwat-e-Badaniyah* (bodily strength)
 
-### 4.5 Tibetan / Sowa Rigpa
+> **For you, in plain words.** Unani uses *muqawwi-e-aam* (general tonics) for sportsmen and warriors — Khameera Marwareed (pearl-rose nervine), Majun Salab (orchid-tonic for muscle), Sharbat-e-Bezoori for kidneys and electrolytes, and topical Roghan-e-Bedanjeer for joint warming. *(Avicenna's Canon; Hamdard; Qarabadeen Qadri)*
 
-Men-Tsee-Khang Dharamsala — post-exertion *rlung*-imbalance therapy. **Agar-35**, **Sogdzin-11** (joint + bone post-trauma), **Padma-28** (EMA-monographed Padma Lax — peripheral circulation). Topical **Khrag-skyug**. Source *rGyud-bzhi*. Grade: T.
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
+|---|---|---|---|---|
+| Khameera Marwareed | Pearl-rose nervine — calming and recovery tonic. *(Qarabadeen Qadri)* | 5 g BID | T | *(Hamdard; Qarabadeen Qadri)* |
+| Majun Salab | Orchid-root + cardamom tonic — Unani muscle-building paste. *(Hamdard)* | 5 g BID | T | *(Hamdard; Dawakhana Tibbiya)* |
+| Sharbat-e-Bezoori | Cooling kidney + electrolyte syrup. *(Hamdard)* | 20 ml BID | T | *(Hamdard)* |
+| Topical Roghan-e-Bedanjeer | Castor-oil-based warming joint/muscle oil. *(Classical Unani roghan)* | Apply pre-/post-training | T | *(Classical Unani)* |
 
-### 4.6 Homeopathy
+### 4.5 Siddha — Tamil athlete-tradition
 
-> *Homeopathy is honoured under the founder's mandate to explore all directions of alternative medicine. Modern evidence is contested; entries are presented as a documented tradition (Tier 3), not as clinical proof.*
+> **For you, in plain words.** Tamil Siddha tradition includes warrior-athlete formulas — Amukkara Choornam (Ashwagandha powder), Naga Rasayanam (snake-gourd rejuvenative powder), and Karuppu Vellam Kashayam for stamina. Mercurial preparations excluded — they require expert pharmacy supervision. *(IMPCOPS Chennai; Siddha Maruthuvam)*
 
-| Remedy | Indication / keynote | Typical potency | Grade |
-|---|---|---|---|
-| **Arnica montana** | **The athletic remedy** — acute muscle soreness, bruising, traumatic strain; first 48 h | 30C–200C | T |
-| **Rhus toxicodendron** | DOMS stiffness worse on first motion, better with continued motion | 30C–200C | T |
-| **Bryonia alba** | Worse with any motion, better rest + firm pressure | 30C–200C | T |
-| **Ruta graveolens** | Tendon + ligament strain | 30C | T |
-| **Sarcolactic acid** | Lactic-acid-pattern fatigue | 30C | T |
-| **Phosphoric acid** | Mental + physical exhaustion | 30C–200C | T |
-| **Carbo vegetabilis** | Exhaustion, oxygen hunger | 30C | T |
-| **Cuprum metallicum** | Cramping post-exercise | 30C | T |
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
+|---|---|---|---|---|
+| Amukkara Choornam | Tamil Ashwagandha powder — recovery + sleep. *(IMPCOPS)* | 3-5 g BID | T | *(IMPCOPS; Siddha Maruthuvam)* |
+| Naga Rasayanam | Snake-gourd-based Siddha rejuvenative powder for stamina. *(IMPCOPS)* | 1-3 g BID with honey | T | *(IMPCOPS)* |
+| Karisalai Karpam (Eclipta alba) | Hepato-protective + iron-recovery powder. *(SKM Siddha)* | 1-3 g BID | T | *(IMPCOPS; SKM)* |
 
-Citations: Boericke W., *Pocket Manual of Homeopathic Materia Medica* (Arnica, Rhus tox, Bryonia, Ruta, Phos ac, Carbo veg, Cuprum); Allen H.C., *Keynotes*; Kent J.T., *Repertory*. CCRH publishes sports-medicine adjunct case reports.
+### 4.6 Tibetan / Sowa Rigpa
 
-## 5. Biophysical Interventions — home-administered only
+> **For you, in plain words.** Tibetan medicine frames post-exertion exhaustion as *rLung* (wind) excess. Agar-35 (35-herb wind-pacifier) and Padma-28 (microcirculation) are the relevant home formulas. *(rGyud-bzhi; Men-Tsee-Khang; EMA Padma Lax)*
 
-**Recovery domain — every device is consumer-purchasable and self-administrable. No clinic-based infusion, no hyperbaric (clinic), no banned modalities, no peptide injection.**
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
+|---|---|---|---|---|
+| Agar-35 | 35-herb wind-pacifier — post-endurance restlessness/insomnia. *(Men-Tsee-Khang)* | per label | T | *(rGyud-bzhi; Men-Tsee-Khang)* |
+| Padma-28 (Padma Lax) | EU-monographed Tibetan formula for microcirculation. *(EMA Padma Lax)* | per label | C | *(EMA Padma Lax; Padma AG)* |
 
-**5.1 Cold-water immersion (ice bath, Plunge tub, bathtub + ice).** 10–15 °C, 2–10 min, post-endurance / post-game / rest-day. **Critical timing rule: avoid within 2 h of strength training if hypertrophy is the goal — cold blunts mTOR signalling and reduces muscle protein synthesis (Roberts 2015, Fyfe 2019).** Post-endurance and post-game day-after cold is fine and accelerates HRV recovery. Contraindications: Raynaud's, severe CV disease.
+### 4.7 Homeopathy — honoured tradition, honestly graded
 
-**5.2 Contrast water therapy (hot 38–40 °C, 3 min / cold 10–15 °C, 1 min × 3–5 cycles).** Bathtub-feasible. Vagal + circulation. Excellent for endurance + team-sport recovery.
+> **For you, in plain words.** Five homeopathic remedies historically used for athletic recovery — Arnica montana for muscle soreness and bruising (most-known), Rhus toxicodendron for stiffness that limbers with motion, Ruta graveolens for tendon strain, Sarcolacticum acidum for endurance lactate-burn pattern, Phosphoric acid for emotional/physical exhaustion. Modern RCT evidence is sparse — listed as documented tradition only, **NOT actively recommended**. *(Boericke; Allen; CCRH)*
 
-**5.3 Home infrared sauna** (Sunlighten, JNH, Clearlight) — 50–60 °C, 20–30 min, 3–5×/week. HSP70, plasma-volume expansion (the legitimate "blood-doping-lite" of heat training), parasympathetic. Contraindications: significant CV disease, pregnancy.
+| Remedy | TL;DR (plain English) | Indication / keynote | Typical potency | Grade | Citation |
+|---|---|---|---|---|---|
+| Arnica montana | Classical muscle-soreness and bruising remedy — universally known. *(Boericke)* | DOMS + bruising | 30C BID | T/H | *(Boericke; Kent)* |
+| Rhus toxicodendron | Stiffness that improves with motion ("rusty gate"). *(Boericke)* | warming-up DOMS | 30C BID | T/H | *(Boericke)* |
+| Ruta graveolens | Tendon and ligament strain. *(Boericke)* | tendinopathy | 30C BID | T/H | *(Boericke; Allen)* |
+| Sarcolacticum acidum | Lactate-burn pattern post-endurance. *(Boericke)* | endurance fatigue | 30C BID | T/H | *(Boericke; CCRH)* |
+| Phosphoric acid | Exhaustion from physical + emotional drain. *(Boericke)* | post-endurance depletion | 30C BID | T/H | *(Boericke; Kent)* |
 
-**5.4 Photobiomodulation (red 660 nm + NIR 810–850 nm) — pre- or post-exercise.** Pre-exercise: improves performance + reduces DOMS (Borsa, Hadis meta-analyses). Post-exercise: accelerates recovery. **Dose 4–8 J/cm² per region, 10–15 min, 5×/week.** Devices: MitoMIN ($249), MitoMID ($449), MitoMAX ($749), Joov, Hooga HG500, Red Light Rising, Kineon Move+. Timing 20:00 or pre-workout. Contraindications: pregnancy (abdomen), retinal disease (eye shield), active malignancy in field.
+## 5. Biophysical Interventions — home only
 
-**5.5 Home PEMF mat** (Bemer, HealthyLine, iMRS) — 1–30 Hz, 20 min, post-exercise. Microcirculation, lymphatic. Contraindication: pacemaker, ICD, pregnancy, malignancy in field.
+### 5.1 What home tools actually work
 
-**5.6 Foam roller + lacrosse ball + percussive massage gun (Theragun, Hypervolt).** 10–15 min post-workout + 10–15 min on rest day. Myofascial release.
+> **For you, in plain words.** Six home recovery modalities with real evidence. Sleep is the foundation. Cold-water immersion is honestly mixed (good for DOMS, blunts strength gains if used post-strength). Sauna has a real cardiovascular signal. PEMF and massage guns are modest. Compression garments are mixed. *(Bleakley 2012 Cochrane CWI; Roberts 2015 CWI-hypertrophy; Hussain 2018 sauna meta)*
 
-**5.7 Pneumatic compression boots (Normatec, Therabody RecoveryAir, Hyperice Normatec Pulse).** 20–30 min post-event. Lymphatic + venous return, perceived DOMS reduction. **NOT a substitute for sleep + diet — but a legitimate adjunct, especially for multi-day stages.** $500–1,500.
+### 5.2 Cold-water immersion — honestly mixed
 
-**5.8 HRV biofeedback (HeartMath Inner Balance, Lief, Elite HRV with Polar H10, Oura, Whoop).** 10 min AM and 10 min PM. Trains parasympathetic dominance. Free apps + chest strap or wrist wearable.
+> **For you, in plain words.** Cochrane Bleakley 2012 found CWI reduces DOMS perception. **But Roberts 2015 showed post-strength CWI within 2 h blunts hypertrophy long-term.** So: yes for endurance / DOMS / team-sport recovery between same-day sessions; **no** within 2 h of strength training if hypertrophy is the goal. *(Bleakley 2012 Cochrane; Roberts 2015)*
 
-**5.9 Vagal stimulation (Nurosym, Sensate, Pulsetto, Truvaga).** 10–20 min PM. Consumer-grade.
+#### Open the science
 
-**5.10 Topical magnesium chloride spray** (Ancient Minerals, Life-flo) — 20 sprays per region BID. Transdermal Mg eases muscle guarding.
+Bleakley 2012 *Cochrane Database Syst Rev* — CWI (10-15 min at 10-15°C) reduces perceived DOMS at 24-96 h. Roberts 2015 *J Physiol* (n=21) — post-strength CWI 2× weekly × 12 weeks reduced gains in lean mass and strength vs active recovery group. Practical rule: use CWI for endurance, team-sport, between-game recovery; **avoid within 2 h of strength training** if hypertrophy is the goal. Brands: Plunge ($4990), BlueCube ($6500), or $40 chest-freezer DIY. Dose: 10-15 min at 10-15°C. *(Bleakley 2012; Roberts 2015)*
 
-**5.11 Sleep optimisation hardware** — blackout curtains, ear plugs, weighted blanket (15–20 lb), cooling mattress topper (ChiliSleep, Eight Sleep), 2700 K bedroom lamps, blue-light blockers (BlockBlueLight, Ra Optics) after 20:00.
+### 5.3 Infrared sauna + heat
+
+> **For you, in plain words.** Hussain 2018 meta — finnish/IR sauna 2-4×/week, 15-30 min at 70-90°C, has real cardiovascular signal (reduced CV mortality in Laukkanen 2018 Finnish cohort) plus growth-hormone pulse and circulatory benefit. Hydrate well. *(Hussain 2018 meta; Laukkanen 2018 KIHD Finnish cohort)*
+
+#### Open the science
+
+Hussain 2018 *Evid Based Complement Alternat Med* — sauna meta-analysis. Laukkanen 2018 *Mayo Clin Proc* — KIHD Finnish cohort n=2315 — sauna 4-7×/week → 40% reduced all-cause mortality vs 1×/week. Effects: cardiovascular conditioning, growth hormone pulse, heat shock proteins (HSP72), circulation, perceived recovery. **Cautions**: dehydration, hypotension, cardiac arrhythmia, alcohol combination. Brands: Sunlighten Solo, JNH Lifestyles, Clearlight, or Finnish-style traditional sauna. Dose: 15-30 min at 70-90°C, 2-4×/week post-training. *(Hussain 2018; Laukkanen 2018)*
+
+### 5.4 Compression boots + garments
+
+> **For you, in plain words.** Compression boots (Normatec, Therabody RecoveryAir) and garments give a modest perceived-recovery benefit between sessions. Evidence is mixed — useful adjunct, not cornerstone. *(Hill 2014 compression meta)*
+
+#### Open the science
+
+Hill 2014 *Br J Sports Med* meta — compression garments reduced perceived DOMS modestly, equivocal on objective markers (CK, vertical jump). Sequential compression boots (Normatec, RecoveryAir) — 20-30 min sessions post-training; useful between same-day events; minimal evidence for long-term adaptation. Brands: Normatec ($799-1599), Therabody RecoveryAir ($699), 2XU compression garments. *(Hill 2014)*
+
+### 5.5 Foam rolling + massage guns
+
+> **For you, in plain words.** Foam rolling + percussive massage guns (Theragun, Hyperice) give modest DOMS perception and ROM benefit. Use as feels good, not as cornerstone. *(Wiewelhove 2019 foam-rolling meta; Imtiyaz 2014)*
+
+#### Open the science
+
+Wiewelhove 2019 *Front Physiol* meta — foam rolling: small-moderate effect on DOMS + ROM at 24-72 h. Percussive massage guns: short-term ROM and perceived-recovery signal; long-term adaptation effect minimal. Brands: TriggerPoint Grid, RumbleRoller, Theragun Pro / Mini, Hyperice Hypervolt. *(Wiewelhove 2019)*
+
+### 5.6 Home PEMF + red-light PBM
+
+> **For you, in plain words.** Home PEMF (Bemer mat) and red-light photobiomodulation (Mito Red Light, Joov) have modest signal for muscle recovery and DOMS. Useful adjuncts, not cornerstones. *(Ferraresi 2016 PBM muscle; Bemer evidence base)*
+
+#### Open the science
+
+Ferraresi 2016 *Photonics Lasers Med* PBM meta — modest reduction in DOMS and CK post-eccentric exercise at 660 + 850 nm; dose 60-120 J per muscle group. Home PEMF — Bemer mat evidence base smaller but TGA-listed for circulation. Brands: Mito Red Light MitoMAX, Joov Original/Solo, Hooga, Bemer mat. *(Ferraresi 2016)*
+
+### 5.7 HRV trackers — the recovery instrument
+
+> **For you, in plain words.** HRV tracking (Oura, Whoop, Polar H10 + EliteHRV) is the single most useful objective recovery instrument. Plews 2013 — HRV-guided training outperforms fixed-plan training. *(Plews 2013; Vesterinen 2016)*
+
+#### Open the science
+
+Plews 2013 *Sports Med* — HRV-guided training in endurance athletes outperformed traditional periodisation. Resting HRV (rMSSD) trend over 7-14 days reflects parasympathetic readiness. Devices: Oura Ring ($299 + sub), Whoop ($30/month), Polar H10 strap ($90) + EliteHRV app (free). Use morning supine measure or sleeping-night average. *(Plews 2013; Vesterinen 2016)*
 
 ## 6. Dietary Protocol
 
-### 6.1 Mandatory foods (daily gram quantities — scale up with training load)
+### 6.1 Six mandatory daily foods
 
-- **Protein 1.6–2.2 g/kg body weight** — eggs (3/day), wild oily fish (120 g 3–4×/wk), legumes + dal, optional whey isolate 25–40 g post-workout
-- **Carbohydrate 4–8 g/kg body weight** on training days (lower on rest days) — sprouted Siri Dhanyalu, rice, sweet potato, oats, fruit
-- **Bone broth**: **300–500 ml** daily — connective tissue support
-- **Wild oily fish**: **120 g 3–4×/wk** OR algal omega-3 **600 mg EPA+DHA**
-- **Pasture-raised eggs**: **3 eggs/day**
-- **Sprouted Siri Dhanyalu** (foxtail / barnyard / kodo / little / browntop millet rotation): **60–80 g cooked + extra carb to meet load**
-- **Bitter / green leafy vegetables**: **150–200 g**
-- **Fermented foods**: **100–150 g**
-- **Pineapple (bromelain)** or **papaya**: **100 g between meals**
-- **Tart / Montmorency cherry juice** (unsweetened): **240 ml PM** + post-event
-- **Beetroot juice** 250–500 ml: **2–3 h pre-event** + post on hard days
-- **Turmeric + black pepper + ghee Golden Milk**: **HS**
-- **Ginger root**: **5–10 g**
-- **Brazil nuts** (selenium): **2/day**
-- **Pumpkin seeds + sesame**: **15 g each**
-- **Amla**: **20–50 g fresh** OR **5 g powder**
-- **Coconut water** post-event (natural electrolyte): **300–500 ml**
-- **Salt — UNREFINED sea or rock salt** for sodium replacement, not table salt; **3–5 g extra on heavy training days**
+> **For you, in plain words.** Protein 1.6-2.2 g/kg/day, carbohydrate matched to training load (3-8 g/kg/day depending on volume), 30 g/day fibre, daily fermented food, 30 ml EVOO + nuts + seeds, fatty fish 2-3×/week. *(Aragon 2013; Morton 2018; Phillips 2016)*
 
-### 6.2 Absolutely avoid (with molecular rationale)
+| Food anchor | TL;DR (plain English) | Daily target | Why |
+|---|---|---|---|
+| Protein | 1.6-2.2 g/kg/day; 20-40 g per meal × 4-5 meals; leucine threshold ≥2.5 g per dose. *(Morton 2018)* | 1.6-2.2 g/kg | MPS, recovery |
+| Carbohydrate | Matched to training: 3-5 g/kg low-day, 5-8 g/kg high-day, 8-10 g/kg endurance event. *(Burke 2011 IOC)* | 3-8 g/kg | glycogen |
+| 30 g fibre | Psyllium, oats, legumes, ground flax — feed gut SCFA + GLP-1 + satiety. *(Anderson 2009)* | 30 g | microbiome |
+| Fermented food | Kefir / sauerkraut / kimchi / natto daily — psychobiotic + gut wall. *(Wallace 2010)* | 1 serve | microbiome |
+| Healthy fat | EVOO 30 ml + nuts + seeds + fatty fish 2-3×/week. *(EMA omega-3)* | 30 ml EVOO | omega-3, recovery |
+| Hydration | 35-40 ml/kg baseline + 1.5 L per kg body-mass lost in training. *(NHMRC hydration)* | depends | rehydration |
 
-| Food / Class | Molecular reason |
-|---|---|
-| **Refined sugar, HFCS, sweetened beverages** (outside training-window context) | AGE, oxidative load; only acceptable as workout-window carb if intra-/post-exercise + matched to need |
-| **Gluten** | gliadin → CXCR3 → zonulin → tight junctions → gut permeability worse during endurance load |
-| **Industrial seed oils** | ω-6 PUFA → AA → COX/LOX → DOMS amplification |
-| **Solanaceae (raw + bulk)** in sensitive sub-fraction | Solanine inflammation |
-| **A1 β-casein dairy** | β-casomorphin-7; switch to A2, ghee, coconut |
-| **Alcohol** | impairs glycogen resynthesis, sleep architecture, GH, T, collagen synthesis. **The single biggest recovery destroyer**. |
-| **Ultra-processed foods, MSG, aspartame** | microbiota |
-| **Carb-loading with pure sugar** (no protein, no electrolyte) | inflammatory spike, no resynthesis efficiency |
-| **Chronic caffeine after 14:00** | sleep architecture |
-| **NSAIDs as routine post-workout** | blunt adaptation; can impair satellite-cell signalling + protein synthesis; use only for acute trauma not chronic DOMS-management |
+### 6.2 What to avoid
+
+> **For you, in plain words.** Six anti-recovery foods. Routine high-dose NSAIDs (blunts adaptation), alcohol within 6 h post-training (blunts MPS + cortisol load), high-dose vitamin C pre-event (blunts adaptation), ultra-processed foods, excessive caffeine after 14:00, hidden banned substances in proprietary supplements.
+
+| Avoid | Why | Citation |
+|---|---|---|
+| Routine high-dose NSAIDs (>1 wk) | Schoenfeld 2012 — blunts MPS + adaptation. | *(Schoenfeld 2012)* |
+| Alcohol within 6 h post-training | Parr 2014 — alcohol cuts MPS 24-37%. | *(Parr 2014 PLOS ONE)* |
+| High-dose vit C pre-exercise (>1000 mg) | Gomez-Cabrera 2008 — blunts mitochondrial biogenesis. | *(Gomez-Cabrera 2008)* |
+| Ultra-processed foods | NOVA class 4; displaces real food + inflammation. | *(Monteiro NOVA)* |
+| Caffeine after 14:00 | Half-life 6 h — disrupts sleep, the foundation. | *(Walker 2019)* |
+| Proprietary "pre-workout" blends | AIS Group C/D ingredients; banned-substance contamination risk in tested athletes. | *(AIS framework)* |
 
 ### 6.3 Preparation methodology
 
-**Bone broth** — bones + 2 Tbsp ACV + filtered water → low simmer 24–48 h → strain → freeze 250 ml pouches.
+> **For you, in plain words.** Cook real food. Sprout legumes, ferment kanji + sauerkraut, slow-cook bone broth, ghee tempering. Pre-game carb-load methodology and post-game refuel are documented in AIS Sports Dietitians guidelines.
 
-**Post-workout shake (within 30–60 min post-session)** — 25–40 g whey isolate or pea + rice protein + 40–60 g carbs (banana + raw honey + rice / oats) + 5 g creatine + 1 g sodium + 500 mg potassium + 200 mg magnesium + 5 g L-glutamine.
+### 6.4 Seven-day meal plan
 
-**Sprouting** (millets, fenugreek, mung, Bengal gram) — 8–10 h soak + 12–18 h muslin germination.
+> **For you, in plain words.** A repeating 3-day pattern for a 75-kg training athlete with 1 high-volume day, 1 moderate day, 1 light day. Adjust gram counts proportionally.
 
-**Kanji** — beetroot 200 g + carrot 100 g + mustard seed 5 g + black salt + 1 L filtered water → ferment 3–5 days.
+**Day 1 — High-volume training day (3200 kcal, 165 g P, 400 g C, 95 g F):**
+- **06:30 Pre-workout (light):** 1 banana (105 kcal) + 1 tsp honey + black coffee (3 mg/kg caffeine if event-day)
+- **07:00-08:30 Training (Zone 2 90 min + skills)**
+- **08:45 Post-workout shake:** 30 g whey + 60 g oats + 1 banana + 1 tbsp honey (550 kcal, 30 g P, 90 g C)
+- **09:30 Breakfast:** 3 pasture eggs + 100 g sweet potato hash + 50 g sauerkraut + 2 tbsp ghee (550 kcal, 25 g P)
+- **13:00 Lunch:** 200 g grilled chicken (340 kcal, 50 g P) + 150 g cooked basmati (200 kcal) + 200 g sautéed greens + 30 ml EVOO + 1 tbsp pickled vegetables (700 kcal total)
+- **16:00 Snack:** 200 g full-fat Greek yogurt + 50 g blueberries + 30 g walnuts (350 kcal, 18 g P)
+- **19:00 Dinner:** 200 g grilled salmon (400 kcal, 40 g P, 2.5 g omega-3) + 150 g roasted sweet potato + 200 g broccoli + 30 ml EVOO + 60 g sprouted lentil dal (750 kcal total)
+- **21:30 Wind-down:** Casein 30 g OR cottage cheese 200 g (slow-protein overnight) + Ashwagandha + Mg
 
-**Golden Milk** — A2 / coconut milk 200 ml + turmeric 3 g + ¼ tsp pepper + 1 tsp ghee + ½ tsp cinnamon.
+**Day 2 — Moderate training day (2700 kcal, 150 g P, 280 g C, 100 g F):**
+- **07:00 Breakfast:** 3 eggs + 80 g oats + 30 g almonds + 100 ml kefir (660 kcal, 30 g P)
+- **10:00 Snack:** 1 apple + 30 g pumpkin seeds
+- **12:30 Lunch:** Sprouted moong dal sundal 100 g + 150 g grilled paneer or chicken + 80 g little millet + greens + EVOO (700 kcal)
+- **14:00 Pre-workout (light strength session):** 1 banana + black coffee
+- **15:30-16:30 Strength training**
+- **16:45 Post-workout:** 30 g whey + 1 banana (250 kcal)
+- **19:00 Dinner:** 180 g grilled fish or chicken + 100 g quinoa + 200 g grilled vegetables + 30 ml EVOO (650 kcal)
+- **21:30 Wind-down:** Magnesium + ashwagandha; if hypertrophy phase, slow-protein casein 30 g
 
-**Tart cherry pre-bed** — 240 ml unsweetened Montmorency 1 h before bed.
+**Day 3 — Light / rest day (2200 kcal, 140 g P, 180 g C, 95 g F):**
+- **07:30 Breakfast:** 200 g full-fat Greek yogurt + 30 g walnuts + 1 tbsp flax + 50 g berries (450 kcal, 22 g P)
+- **13:00 Lunch:** Mediterranean bowl — 150 g chicken or lamb + 100 g hummus + 60 g cooked farro + salad + 30 ml EVOO + 2 tbsp sauerkraut (650 kcal)
+- **16:00 Tea + recovery walk 30 min**
+- **19:00 Dinner:** 180 g grilled mackerel or sardine + 200 g grilled vegetables + 60 g brown rice + 30 ml EVOO (600 kcal)
+- **21:30 Wind-down:** Mg + Ashwa; tart cherry concentrate 30 ml during event-window or DOMS days
 
-**Beetroot pre-event** — Beet-It shot 70 ml × 2 OR 500 ml beetroot juice 2–3 h pre-event.
+**Days 4-7:** Rotate high / moderate / light pattern by training load. Pre-event day = 8-10 g/kg carb-load. Post-event recovery day = high protein + tart cherry + extra sleep.
 
-### 6.4 Seven-day meal plan (gram quantities — scaled to athlete weight 70 kg target)
+### 6.5 Environmental & occupational triggers
 
-| Day | Pre-workout 09:00 | Breakfast 07:30 (+ Combo 1) | Post-workout (within 30 min) | Lunch 13:00 (+ Combo 2) | Dinner 19:30 (+ Combo 3) |
-|---|---|---|---|---|---|
-| **1 — Hard training** | 250 ml beetroot juice + 6 g citrulline 60 min pre | 3 eggs + 80 g foxtail porridge + 30 g amla + 1 banana + 1 tsp ghee | Whey/plant 30 g + 60 g carb (banana + raw honey + oats) + 5 g creatine + 1 g Na + 300 mg Mg + electrolyte | 200 g chicken or 150 g sardines + 250 g rice + 200 g methi-saag + 130 g kanji | 80 g little-millet khichdi + 150 g gotu kola + 100 g ferment + Golden Milk + 240 ml tart cherry |
-| **2 — Moderate / strength** | water + electrolyte | 65 g barnyard upma + 2 eggs + 15 g sesame + 30 g amla | Whey 30 g + 40 g carb + 5 g creatine + electrolyte | 200 g salmon + 60 g browntop + 200 g cruciferous + 100 g sauerkraut | 75 g barnyard roti + 150 g spinach-methi + 110 g A2 dahi + 30 g pumpkin seeds + Golden Milk |
-| **3 — Z2 endurance long** | 250 ml beetroot juice 2 h pre | 70 g kodo khichdi + 3 eggs + 300 ml bone broth + 1 tsp ghee | Carb 80–100 g + protein 30 g + 1 g Na + 500 mg K + 300 mg Mg + electrolyte | 120 g mackerel + 200 g rice + 170 g bitter greens + amla | 65 g millet roti + 200 g lauki sabzi + 100 g kanji + Ashwagandha-Golden Milk + 240 ml tart cherry |
-| **4 — Active recovery** | water + electrolyte | 60 g foxtail upma + 2 eggs + 15 g sesame + 10 g cashew + 2 Brazil nuts | n/a (active rec) | 180 g amaranth-moringa + 50 g sprouted Bengal gram + 70 g little millet + 100 g kefir | 70 g browntop pulao + 150 g okra + 100 g kanji + Golden Milk |
-| **5 — Race / event** | beetroot juice + citrulline 60 min pre + 50 g carb 90 min pre | 3 eggs + 100 g pineapple + 60 g millet porridge + 30 g amla | Carb 100 g + protein 30 g + electrolyte | 200 g salmon + 250 g rice + 150 g bitter greens + 100 g sauerkraut | 70 g khichdi + 150 g gotu kola sauté + 1 tsp ghee + tart cherry 240 ml + Golden Milk |
-| **6, 7 — Rotate** | per day's load | Rotate kodo / barnyard / little | per day's load | Sprouted dal khichdi + 200 g greens + amla + ferment + bone broth | Same |
+> **For you, in plain words.** Six "anti-recovery" environmental factors most athletes underestimate. Air pollution (limit outdoor training when AQI >100), heat-stress dehydration, blue light disrupting sleep, alcohol, banned-substance contamination in supplements, and chronic under-fuelling (REDs).
 
-Daily floor (training days): protein 1.6–2.2 g/kg, carbs 4–8 g/kg, 60–80 g millet, 150–200 g bitter greens, 100–150 g ferment, 300 ml bone broth, Golden Milk HS, 240 ml tart cherry PM.
-
-### 6.5 Environmental & occupational triggers to eliminate
-
-- **Under-fuelling / REDs (Relative Energy Deficiency in Sport)** — single biggest masters / female-athlete pitfall. **Energy availability ≥40 kcal/kg fat-free mass/day mandatory** (Mountjoy IOC consensus 2018; Australia AIS guidance).
-- **Sleep deprivation** — every hour <8 h proportionally degrades recovery. Prioritise.
-- **Excessive caffeine** late in day — sleep ruin.
-- **Alcohol post-event** — destroys glycogen resynthesis + GH spike + collagen + sleep.
-- **High-volume cold immersion after every session** — over-blunts adaptation. Use post-event + rest-day; not in 2 h post-strength.
-- **High-dose antioxidants (vitamin C >1 g, vitamin E >400 IU, NAC) immediately around adaptive sessions** — blunts mitochondrial biogenesis adaptation (Ristow 2009; consensus is timing antioxidants AWAY from key sessions, OK at meals AM/PM).
-- **NSAIDs as routine post-workout** — blunt satellite-cell signal + muscle protein synthesis.
-- **BPA, phthalates** — adipose accumulation, low-grade inflammation. Glass + stainless only.
-- **Personal-care swap** — SLS / paraben / phthalate-free.
-- **Indoor air** — VOCs / formaldehyde, mould (ERMI / HERTSMI-2 test if suspected). Endurance athletes living in mouldy environments under-recover.
-- **Light pollution / blue light at night** — melatonin protection (master recovery hormone).
-- **Smoking, vaping** — oxidative load + VO₂max degradation.
-- **Heavy metals** (cadmium, mercury, lead) — chronic fatigue mimic. DTC test if exposure history.
+| Trigger | Action | Citation |
+|---|---|---|
+| Air pollution AQI >100 | Move indoor or reschedule; PM2.5 inflammation real. *(Cutroneo 2020)* | *(Cutroneo 2020)* |
+| Heat stress | Hydrate, cool packs, schedule pre-heat training, electrolyte protocol. *(NHMRC heat)* | *(NHMRC)* |
+| Blue light at night | 90 min screens off pre-bed; blue-blockers if necessary. *(Walker 2019)* | *(Walker 2019)* |
+| Alcohol within 6 h post-training | Cuts MPS 24-37%. *(Parr 2014)* | *(Parr 2014)* |
+| Banned-substance contamination | Use only Informed Sport / NSF Certified for Sport / AIS-listed brands. *(AIS; Informed Sport)* | *(AIS)* |
+| REDs (under-fuelling) | Female athlete triad / male equivalent — fuel for the work demanded. *(Mountjoy 2018)* | *(Mountjoy 2018)* |
 
 ### 6.6 Cofactor / micronutrient floor
 
-| Cofactor | Why for recovery | Target / day | Food | Supplement (if floor unmet) | Antagonist |
-|---|---|---|---|---|---|
-| **Iron** (especially female endurance athletes) | Hb + myoglobin + mitochondrial; ferritin <30 ng/mL = under-fuelled | measure; target ferritin 50–100 | red meat, pumpkin seed, methi, jaggery | Solgar Gentle Iron 25 mg + vit C IF deficient; **measure first via DTC**; never empirical iron | ≥2 h tea/Ca/Zn/Cu/thyroid; Vit C pair |
-| **Vitamin D3 + K2** | Muscle strength, immune, Treg | 4000 IU + 100 µg MK-7 | sun, fatty fish | Thorne D/K2 | fat-meal + Mg cofactor |
-| **Magnesium glycinate or malate** | ATP, muscle relaxation, sleep | 400–600 mg (high in athletes) | pumpkin seed, leafy greens | Doctor's Best, NOW Mg malate | split AM (malate) / PM (glycinate) with Ca |
-| **Sodium (UNREFINED salt)** | sweat replacement | 3–5 g extra on heavy training days | sea salt, electrolyte mix | LMNT, Precision | — |
-| **Potassium** | sweat + intracellular | 3500–4700 mg | banana, coconut water, leafy greens | electrolyte mix | — |
-| **Chloride** | sweat + HCl | matches sodium | sea salt | electrolyte mix | — |
-| **Zinc** | wound, immune, T metabolism | 10–15 mg | pumpkin seeds, oysters | Thorne Zn picolinate 15 mg | ≥2 h from iron, Ca |
-| **Copper** | lysyl oxidase, SOD | 1.5–2 mg | sesame, cashew, oysters | Pure Encaps Cu | **Zn:Cu 8–15:1** |
-| **Selenium** | GPX, T3 conversion | 100–200 µg | 2 Brazil nuts | Solgar 200 µg | toxic >400 µg |
-| **Vitamin C** | collagen, antioxidant, **timing-sensitive** | 500–1000 mg AM + PM with meals (NOT in 2 h around adaptive session) | amla, citrus | Acerola | — |
-| **Vitamin K2 (MK-7)** | bone-tendon interface | 100–200 µg | natto, ghee | Thorne MK-4 + MK-7 | warfarin (if on) |
-| **Choline** | acetylcholine, NMJ | 425–550 mg | egg yolk, liver, sunflower lecithin | Thorne PC | — |
-| **B-complex** | energy metabolism, methylation | active forms B6 P5P 25–50, B9 5-MTHF 400 µg, B12 methyl 1000 µg | leafy greens, sardines, eggs | Pure Encaps B-complex | — |
-| **Creatine** | already in Combo 1 (Group A) | 3–5 g | red meat trace | Creapure | — |
-| **Glutamine** | gut + recovery | 5–10 g | bone broth, whey | NOW glutamine | — |
-| **Glycine 3–5 g** | collagen, sleep architecture | 3 g | bone broth, gelatin | NOW glycine | — |
+> **For you, in plain words.** Eight nutrients to measure and floor. Iron (ferritin >50 for endurance), vitamin D, magnesium, zinc, B12, omega-3, iodine, calcium. Female athletes need extra ferritin + iron + calcium monitoring. *(WHO ferritin; Health Canada NHP)*
 
-## 7. Lifestyle / Mind-Body Anchors (mapped to §2 mechanism nodes)
+| Nutrient | TL;DR (plain English) | Target | Source | Antagonist |
+|---|---|---|---|---|
+| Iron (ferritin) | Endurance athletes need ferritin >50; female athletes routinely sub-floor. *(WHO; Sim 2019)* | 50-150 ng/mL | red meat, lentils + vit C | tea/coffee tannins; calcium |
+| Vitamin D + K2 | Bone + muscle function; <30 ng/mL associated with stress fractures + low strength. *(EMA D 2014)* | 50-70 ng/mL | sun, cod liver oil | — |
+| Magnesium | Cramp prevention + ATP + sleep depth; sweat loss real. *(EMA Mg)* | 400-500 mg | greens, pumpkin seeds | Ca same dose split |
+| Zinc | Immune + testosterone synthesis; Zn:Cu 8-15:1. *(EMA Zn)* | 15-30 mg | oysters, pumpkin seeds | iron, calcium 2 h |
+| B12 | Vegan / vegetarian athletes routinely deficient. *(Health Canada)* | >500 pg/mL | meat, eggs, sublingual | metformin, PPIs |
+| Omega-3 EPA+DHA | EMA monograph; inflammation modulation; 1-2 g/day. *(EMA omega-3)* | 1-2 g | fatty fish, algal | warfarin |
+| Iodine | Thyroid + recovery; measure first via UI/Cr. *(WHO iodine 2024)* | 150 µg | seaweed, iodised salt | — |
+| Calcium | Bone + muscle; 1000 mg/day; split from iron. *(EMA Ca)* | 1000 mg | dairy, greens, sardines | iron, Mg same dose split |
 
-### 7.1 Yoga (active recovery / mobility 30 min daily, restorative 60 min weekly)
+## 7. Lifestyle / Mind-Body Anchors
 
-| Asana | §2 Mechanism node targeted | Duration | Time of day |
+### 7.1 Yoga — mapped to mechanism
+
+> **For you, in plain words.** Four asanas with sport-recovery purpose. Hip mobility for runners, spinal mobility for desk-bound athletes, restorative inversion for autonomic reset, Vajrasana post-meal for digestion. *(AYUSH yoga monograph)*
+
+| Asana | Mechanism node | Duration | Time |
 |---|---|---|---|
-| **Modified Surya Namaskar** | §2.1 + §2.2 systemic mobilisation | 8–12 rounds | 07:00 AM |
-| **Adho Mukha Svanasana** (downward dog) | §2.1 + §2.3 posterior chain | 1 min × 3 | 07:00 AM |
-| **Marjariasana / Bitilasana** | spinal | 10 reps | 07:00 AM |
-| **Setu Bandhasana** (bridge) | §2.4 pelvic + glute | 1 min × 3 | 07:00 AM |
-| **Supta Padangusthasana** | §2.1 hamstring | 2 min each side | 07:00 AM or HS |
-| **Pigeon pose** (*Eka Pada Rajakapotasana*) | §2.1 hip + glute | 2 min each side | rest-day evening |
-| **Viparita Karani** (legs-up-the-wall) | §2.2 + §2.4 lymphatic + parasympathetic | 5–10 min | post-event, HS |
-| **Yoga Nidra (Bihar / Satyananda)** | §2.4 cortisol + recovery | 20–30 min | PM, rest day |
-| **Shavasana** | §2.4 parasympathetic | 10 min | 22:00 |
+| Pigeon / Anjaneyasana (hip openers) | Mechanical mobility (§2.2) | 60 sec × 3 each side | post-training |
+| Cat-Cow + spinal mobility | Spinal mobility / fascia (§2.2) | 2-3 min | AM + post-training |
+| Viparita Karani (legs-up-wall) | Parasympathetic / venous return (§2.5) | 5-10 min | post-training PM |
+| Vajrasana | Digestion / Spleen-Qi (§2.3) | 5-10 min | post-meal |
+| Shavasana | Parasympathetic / HPA (§2.5) | 10-15 min | post-training / PM |
 
-### 7.2 Pranayama (daily 15–20 min)
+### 7.2 Pranayama — vagal recovery brake
 
-| Technique | §2 Mechanism node | Duration | Time of day |
+> **For you, in plain words.** Three breath techniques to accelerate parasympathetic recovery. Bhramari for vagal, Nadi Shodhana for autonomic balance, slow-paced 6 bpm for HRV. **Kapalbhati and Bhastrika contraindicated in hypertension and cardiac disease.** *(Brown 2013; Lehrer 2007)*
+
+| Technique | Mechanism node | Duration | Time |
 |---|---|---|---|
-| **Anulom Vilom** | §2.4 HPA / vagal balance | 10 min | 06:30 AM |
-| **Bhramari** (humming) | §2.4 vagal / NO | 5 min | 06:30 AM + 22:00 |
-| **Ujjayi** | §2.4 vagal + thermogenesis | 5 min | during yoga / training |
-| **Bhastrika** | §2.2 mitochondrial — **NOT in HTN, pregnancy, glaucoma, recent surgery, immediately pre-competition (sympathetic surge can backfire)** | 5 min | AM only, non-competition day |
-| **Nadi Shodhana** | §2.4 autonomic | 10 min | rest days |
+| Bhramari (humming) | Vagal / NO (§2.5) | 5-10 min | post-training + PM |
+| Nadi Shodhana (alternate-nostril) | Autonomic balance (§2.5) | 10 min | AM/PM |
+| Slow-paced 6 bpm | HRV / parasympathetic (§2.5) | 10-15 min | post-training + PM |
+| Kapalbhati / Bhastrika | Energising — **CONTRAINDICATED in HTN, pregnancy, cardiac, recent abdominal surgery** | 3-5 min | AM only (if safe) |
 
-### 7.3 Meditation
+### 7.3 Meditation + sleep onboarding
 
-Yoga Nidra (Bihar / Satyananda) 20–30 min PM — restorative; **the single most effective non-pharmacological recovery practice for athletes**. Vipassana 20 min AM. MBSR for psychological resilience. Sport psychology imagery / visualisation 10 min pre-competition.
+> **For you, in plain words.** Yoga Nidra (45 min) is the strongest sleep onboarding for athletes — Vipassana for mental recovery, Tonglen / metta for team cohesion. *(Mah 2011 sleep; iRest Yoga Nidra evidence)*
 
-### 7.4 Sleep & circadian
+### 7.4 Sleep — the single biggest lever
 
-**Sleep is the master recovery driver.** Lights-out 22:00–22:30; blue-light cut-off 21:00; bedroom 18–20 °C, blackout; 7–9 h target; cooling mattress topper (ChiliSleep, Eight Sleep) for hot sleepers. AM sunlight within 30 min of waking. Sleep ≥8 h is non-negotiable during heavy training blocks.
+> **For you, in plain words.** Mah 2011 Stanford basketball — sleep extension from 6.5 h to 10 h yielded +9% sprint, +9% shooting accuracy, +4% free-throw, faster reaction time. Sleep is THE recovery lever. Target 8-9 h regularly; sleep-extend to 10 h pre-competition. *(Mah 2011)*
 
-### 7.5 Nervous-system reset
+#### Open the science
 
-Cold-water face splash AM; humming + gargling 2 min BID; 4-7-8 breath 4 rounds pre-meal; consumer VNS (Nurosym, Sensate, Pulsetto) 10 min PM. **HRV biofeedback (HeartMath Inner Balance) 10 min AM + PM** is the gold-standard self-administered recovery training.
+Mah 2011 *Sleep* — Stanford men's basketball n=11, sleep extended to 10 h × 5-7 weeks → +9% sprint, +9% shooting accuracy, +4% free-throw. Mechanism: growth hormone pulse, sleep-stage architecture (NREM3 deep for physical, REM for skill consolidation), HPA + autonomic restoration, glycogen resynthesis. Target: 8-9 h habitual; 10 h pre-competition; nap 20-30 min mid-afternoon if total sleep <8 h. *(Mah 2011; Halson 2014)*
 
-### 7.6 Exercise periodization (weekly + monthly) — recovery is part of the program
+### 7.5 Vagal + recovery practices
 
-**Weekly cadence (general, scale to sport)**
-- **Mon** — Hard session 1 (key adaptive — strength or HIIT)
-- **Tue** — Z2 cardio 60 min + mobility
-- **Wed** — Hard session 2 (skill / sport-specific)
-- **Thu** — Active recovery + Z1 walk + foam-roll + sauna
-- **Fri** — Strength + plyometric
-- **Sat** — Long Z2 / sport day
-- **Sun** — Restorative (yoga, Yoga Nidra, walk)
+> **For you, in plain words.** Five vagal tools — Bhramari, slow-paced breathing, gargling, cold splash to face, contrast hydrotherapy. Use post-training to accelerate parasympathetic switch. *(Porges 2011)*
 
-**Monthly cadence (4-week cycle)**
-- **Week 1** — Build
-- **Week 2** — Intensify
-- **Week 3** — Peak
-- **Week 4** — Deload (≤60% volume) + extra sleep + extra sauna; TCM cycling overlay (Bu Zhong Yi Qi Tang)
+### 7.6 Exercise periodization
 
-**Critical recovery-adaptation rules**
-- **HRV-guided training** — if morning HRV is >1 standard deviation below personal baseline, scale day's intensity down 20–30% or convert to Z1.
-- **Resting heart rate** — if elevated >5 bpm above baseline, signal of under-recovery.
-- **sRPE × duration** = session load; weekly load should stay within a chronic:acute workload ratio of 0.8–1.3 (Gabbett 2016 — Australian sports science).
-- **Female-athlete cycle awareness** — track cycle via Clue / Garmin / Oura; luteal phase higher carb need + heat-stress sensitivity; follicular phase strength-focused work better tolerated.
+> **For you, in plain words.** Weekly cadence depends on goal — strength block, endurance block, in-season, off-season. Universal rule: ACWR (acute:chronic workload ratio) between 0.8 and 1.3; >1.5 → injury risk spike. Deload every 4-6 weeks. *(Gabbett 2016 ACWR; AIS periodisation)*
 
-## 8. Daily Unified Combos (≤10 caps/day)
+Weekly cadence (strength + endurance hybrid example, 75-kg athlete):
+- Mon — Strength A (compound lifts) 60 min + 15-min Zone 1 walk
+- Tue — Zone 2 cardio 60 min
+- Wed — Strength B + skills
+- Thu — Zone 2 + mobility
+- Fri — HIIT 20-30 min OR rest
+- Sat — Long Zone 2 cardio (90+ min) OR sport
+- Sun — Active recovery + restorative yoga + long walk
 
-**Combo 1 — Performance + Mitochondrial AM (08:00):** Creatine 5 g (powder in water, not cap) + Rhodiola 300 mg + Cordyceps 1.5 g + Curcumin phytosome 1000 mg + Omega-3 (1 g EPA capsule). *4 caps + creatine powder.*
+Monthly cadence: 3 weeks build + 1 week deload (≤70% volume). Quarterly: longer deload (1-2 wk).
 
-**Combo 2 — Anti-AGE / Recovery midday (13:00):** Beta-alanine 1.6 g (if sport profile suits) + MSM 1500 mg + Vitamin D3+K2 1 cap with fat + CoQ10 / Ubiquinol 100 mg. *3 caps + beta-alanine powder.*
+ACWR rule: Acute load (7-day) ÷ Chronic load (28-day average) should sit 0.8-1.3. >1.5 = elevated injury risk; <0.8 = detraining drift.
 
-**Combo 3 — PM (19:00):** Magnesium glycinate 400 mg + Ashwagandha KSM-66 600 mg + Tart cherry extract 480 mg + Glycine 3 g (powder). *3 caps + glycine powder.*
+### 7.7 Female-athlete cycle-awareness
 
-**Pre-event additions** (event day only):
-- **Beetroot juice 250–500 ml** 2–3 h pre.
-- **Citrulline malate 6–8 g** 60 min pre.
-- **Beta-alanine 3.2 g** loaded chronically over weeks (acute is not effective).
-- **Optional caffeine 3 mg/kg** 60 min pre — Group A AIS for endurance, sprint, team sport.
+> **For you, in plain words.** Cycle phase modulates training-tolerance. Follicular phase (days 1-14) — strength gains, higher tolerance. Luteal phase (days 15-28) — moderate volume, prioritise recovery, monitor iron, watch core body temp. **REDs / female athlete triad is real** — under-fuelling for the training demanded drives amenorrhea + low bone density + fatigue + injury. *(Mountjoy 2018 IOC REDs; De Souza 2017)*
 
-**Post-event additions** (within 30–60 min):
-- **Whey or plant protein 25–40 g + carb 40–80 g** (3:1 to 4:1 carb:protein).
-- **Electrolyte mix** (1000–2000 mg Na + K + Mg + Cl).
-- **L-glutamine 5–10 g** for gut integrity if endurance event >2 h.
-- **Tart cherry 240 ml** for DOMS.
+## 8. Daily Unified Combos (≤10 capsules/day)
 
-**Daily total: 10 caps** + creatine + beta-alanine + glycine powders + electrolytes + pre-/post-event protein-carb-electrolyte.
+### 8.1 Three combos — the foundation
 
-**TCM cycling (deload week — Week 4):** *Bu Zhong Yi Qi Tang* OR *Si Wu Tang* (female athlete) granules 6 g BID for 5–7 days.
+> **For you, in plain words.** Three combos, ≤10 capsules total per day. AM-substrate, midday-glycaemic + omega-3, PM-recovery + sleep.
 
-**On rest / very light days**: drop pre-event additions; trim Combo 1 to KSM-66 + Curcumin + Omega-3; maintain Combo 3 PM.
+**Combo 1 — Morning (post-breakfast)** — 3 items
+- Creatine monohydrate 5 g (Creapure) (with carb/protein at breakfast)
+- Vitamin D3 2000-5000 IU + K2 100 µg (with fat in meal; Mg cofactor present)
+- Citrulline malate 6-8 g (pre-workout if AM-training day, else with breakfast)
+
+**Combo 2 — Midday (with lunch)** — 3 items
+- Omega-3 EPA+DHA 1000 mg (with fat in meal)
+- Zinc picolinate 15 mg (Zn:Cu 8-15:1)
+- Iron bisglycinate 25-30 mg (ONLY if ferritin <50; pair with vitamin C; gap from tea/coffee 1-2 h)
+
+**Combo 3 — Evening (with dinner)** — 4 items
+- Ashwagandha KSM-66 600 mg (HPA + cortisol -27%; Wankhede 2015)
+- Magnesium glycinate 400 mg (sleep depth + cramp prevention)
+- Curcumin phytosome 500-1000 mg (with fatty meal; **not** within 2 h of strength session)
+- Tart cherry concentrate 30 ml (event window or DOMS days only)
+
+**Optional event-day pre-load:**
+- Caffeine 3-6 mg/kg 60 min pre-event (AIS Group A)
+- Beetroot juice (6-8 mmol nitrate) 2-3 h pre-event
+
+**Total capsules/day:** 10 (within ceiling).
+
+**Optional TCM cycling overlay (weeks 1 & 4 of each month):** Bu Zhong Yi Qi Tang 6 g BID (Spleen-Qi support during heavy training block).
+
+### 8.2 Post-workout shake template
+
+> **For you, in plain words.** Within 60 min post-event: 30 g whey + 60-90 g carb (oats, banana, rice) + electrolytes. Best-evidence post-training protocol.
 
 ## 8.5 Master 24-Hour Day Plan
 
-Integrates supplements, meals, training, recovery, breathwork, light and sleep — resolves every §10 conflict. **Day example: hard training day (Combo session in the afternoon).**
+### 8.5.1 The integrated timetable
 
-| Hour | Action | Why / Conflicts resolved |
-|---|---|---|
-| **05:30** | Wake; HRV reading (Oura / Whoop) — **if HRV >1 SD below baseline, scale today down 20–30%** | Readiness check |
-| **05:45** | 250 ml warm water + lemon + pinch sea salt; 5–10 min direct sunlight | Circadian + cortisol awakening |
-| **06:00** | Cold-water face splash + humming 1 min + 4-7-8 breath 4 rounds | Vagal afferent |
-| **06:30** | Pranayama 15 min (Anulom Vilom 10 + Bhramari 5) | Vagal tone |
-| **07:00** | Yoga 20 min — modified Surya Namaskar + dynamic mobility | Pre-training tissue prep |
-| **07:30** | Breakfast (§6.4) + 5 g creatine in water + Combo 1 partially | Substrate + Combo 1 with fat |
-| **08:00** | **Combo 1 complete** (Rhodiola + Cordyceps + Curcumin + Omega-3) | Performance prime; curcumin ≥2 h from dairy / iron |
-| **10:00** | Tulsi tea or single coffee (3 mg/kg pre-event if scheduled) | Caffeine within cut-off |
-| **12:30** | Lunch (§6.4) | — |
-| **13:00** | **Combo 2** (Beta-alanine + MSM + D3+K2 + CoQ10 with fat) | Insulin sensitivity peak |
-| **13:30** | 10–15 min post-lunch walk | Glucose blunting |
-| **14:00** | **Caffeine cut-off** | Sleep architecture |
-| **14:30** | If endurance event: **beetroot juice 250–500 ml + 6 g citrulline 60 min pre** | NO + ammonia clearance |
-| **15:30** | If hard training: **Training session 60–90 min** | Adaptive stimulus |
-| **17:00** | **POST-WORKOUT 30-min window** — whey/plant 30 g + 60 g carb (banana + raw honey + oats) + 5 g creatine + 1 g Na + 300 mg Mg + electrolyte + tart cherry 240 ml | Glycogen resynthesis peak; **NO cold immersion within 2 h if strength training** |
-| **17:30** | If event-day or endurance: **contrast water 3 cycles** (or post-rest-day cold immersion). Strength-day: **skip cold for 2 h**. | Adaptation preservation |
-| **18:00** | Topical Mahanarayan / Dhanwantharam if sore region; foam-roll 15 min | Recovery |
-| **18:30** | Snack: 2 Brazil nuts + 20 g walnut + tulsi | Selenium |
-| **19:00** | Dinner — high carb + protein (recovery day rich; rest day moderate) | Glycogen + MPS overnight |
-| **19:30** | **Combo 3** (Mg glycinate + KSM-66 + Tart cherry + Glycine) | Mg PM; Ashwa ≥2 h before bed; glycine sleep architecture |
-| **20:00** | PBM 10–15 min whole-body | Mitochondrial + anti-inflammatory |
-| **20:30** | Compression boots (Normatec) 20–30 min OR restorative yoga; topical magnesium-chloride spray on sore regions | Lymphatic + parasympathetic |
-| **21:00** | Blue-light cut-off; blockers; HRV biofeedback 10 min (HeartMath / Lief) | Parasympathetic training |
-| **21:30** | Golden Milk 200 ml + Bhramari 5 min + 4-7-8 breath | Curcumin in fat + piperine; vagal close-out |
-| **22:00** | Yoga Nidra 20–30 min | Cortisol + deep-sleep priming |
-| **22:30** | Bedtime, 18–20 °C, blackout, weighted blanket | Deep sleep — GH + T peak |
-| **02:00–06:00** | Sleep — no waking eating | Insulin / cortisol stability |
+> **For you, in plain words.** Hour-by-hour timetable that integrates training, supplements, meals, breath, light, and sleep. Resolves curcumin-dairy, iron-tea, Mg-Ca, post-strength-no-ice, caffeine-cut-off conflicts.
 
-**If you are already on a prescription** (NSAIDs / oral contraceptive pill / asthma controller inhaler / SSRI / beta-blocker / thyroid med / anticoagulant / insulin / metformin / SGLT-2 / statin): keep your schedule and apply §10.1 gap rules. **The protocol does not prescribe or modify any prescription.** Athletes on therapeutic-use exemption (TUE) medication for asthma, ADHD, etc. should remain compliant with their sport's anti-doping rules.
+| Hour | Action | Why this timing | Conflicts resolved | TL;DR (plain English) |
+|---|---|---|---|---|
+| 06:00 | Wake + 5 min direct outdoor light + HRV reading | Circadian + recovery readiness | — | Read the HRV before you train. *(Plews 2013)* |
+| 06:15 | Bhramari 5 min + Nadi Shodhana 5 min | Vagal warm-up | — | Calm the system before fuel. *(Brown 2013)* |
+| 06:30 | Pre-workout light: banana + black coffee 3 mg/kg if event-day | Glycogen top-up + caffeine | — | Caffeine 60 min pre. *(AIS Group A)* |
+| 07:00-08:30 | Training (volume/intensity per periodisation) | Training stimulus | — | Hit the work. *(Periodisation)* |
+| 08:45 | Post-workout shake: 30 g whey + 60-90 g C + electrolytes | MPS + glycogen window 30-60 min | — | The 60-min window. *(Ivy 2002; Aragon 2013)* |
+| 09:15 | Breakfast: eggs + sweet potato + sauerkraut + ghee | Sustained refuel | — | Real food after the shake. *(Aragon 2013)* |
+| 09:30 | Combo 1 (Creatine + D3K2 + Citrulline) | Creatine with carb/protein | iron 2 h away from coffee | Creatine daily. *(Kreider 2017)* |
+| 13:00 | Lunch: chicken + millet + greens + EVOO | Full refuel | — | A plated lunch. *(Aragon 2013)* |
+| 13:15 | Combo 2 (Omega-3 + Zn + Iron if ferritin low) | Omega-3 with fat; iron with vit C | iron away from calcium / tea / coffee 1 h | Iron only if low. *(WHO ferritin)* |
+| 13:30 | Post-lunch 10-min walk | Glycaemic flattening | — | Always walk. *(DiPietro 2013)* |
+| 14:00 | **Caffeine cut-off** | Protect melatonin onset | — | No caffeine after 14:00. *(Walker 2019)* |
+| 15:00 | Sauna 20 min (2-4×/week) | CV + GH pulse + perceived recovery | — | Real CV signal. *(Hussain 2018)* |
+| 16:00 | Mid-afternoon snack: Greek yogurt + walnuts + berries | Protein + recovery | — | Real-food snack. *(Aragon 2013)* |
+| 18:30 | If second session — light Zone 2 OR skills (NOT strength back-to-back) | Aerobic top-up | — | Light only. *(Periodisation)* |
+| 19:00 | Dinner: salmon + sweet potato + broccoli + EVOO | Recovery + omega-3 + glycogen | — | The real meal. *(EMA omega-3)* |
+| 19:30 | Combo 3 (Ashwa + Mg + Curcumin if not within 2 h of strength + Tart cherry if DOMS/event) | Cortisol brake + sleep depth | curcumin not immediately post-strength; Zn 2 h from Ca | The PM recovery stack. *(Wankhede 2015)* |
+| 20:00 | Cold immersion 2-3 min — **NOT within 2 h of strength training** | Endurance/DOMS recovery only | post-strength blocked | Cold AFTER endurance, NOT after strength. *(Bleakley 2012; Roberts 2015)* |
+| 20:30 | Mobility / restorative yoga / Viparita Karani | Parasympathetic + venous return | — | Wind the system down. *(AYUSH)* |
+| 21:00 | Blue-light cut + reading / family time | Circadian | — | Screens off. *(Walker 2019)* |
+| 21:30 | Yoga Nidra 30 min OR Bhramari 10 min | Parasympathetic | — | The strongest sleep onboarding. *(Mah 2011)* |
+| 22:00 | Slow-protein casein 30 g (hypertrophy phase only) | Overnight MPS | — | Slow-protein at night. *(Res 2012 pre-sleep protein)* |
+| 22:30 | Bedtime — target 8-9 h | Recovery foundation | — | Sleep is the lever. *(Mah 2011)* |
+| 02:00-06:00 | Sleep — uninterrupted | Growth-hormone pulse + glycogen + autonomic | — | Don't wake-eat. *(Walker 2019)* |
 
 ## 9. Supplier Ecosystem + Monthly Cost
 
-| Channel | Sources | Brands |
-|---|---|---|
-| Amazon Prime (US/IN/UK), iHerb | Creatine Creapure, Beta-alanine, Citrulline, Beetroot, Rhodiola, Cordyceps, Curcumin, Omega-3, CoQ10, KSM-66, Tart cherry, MSM, electrolytes, whey, glycine | Optimum Nutrition Creapure, Bulk Creapure, Thorne, Nordic Naturals, Indena, Jarrow, Pure Encaps, NOW, Doctor's Best, Real Mushrooms, Nootropics Depot, Ixoreal, LMNT, Precision Hydration, Beet-It Sport |
-| Patel Brothers / Apna Bazaar | Sprouted millets, methi, Mahanarayan, Chyawanprash, Ashwagandha, Shatavari, ghee, A2 milk, amla, gotu kola | Baidyanath, Organic India, Patanjali, Dabur, Kottakkal — **Patel Brothers, 1610 Stoneridge Mall Rd, Pleasanton CA 94588**; **Apna Bazar, 100-04 Queens Blvd, Forest Hills NY** |
-| Chinatown TCM pharmacy | *Bu Zhong Yi Qi Tang*, *Si Wu Tang*, *Ba Zhen Tang*, Cordyceps, *Zheng Gu Shui*, *Yunnan Baiyao* | Plum Flower (Mayway, Oakland), Min Tong, Yunnan Baiyao — **Sun Sing Pacific Trading, 1205 Stockton St, SF**; **Kamwo Meridian Herbs, 209 Grand St, NYC** |
-| Kottakkal Arya Vaidya Sala / Vaidyaratnam | Mahanarayan, Dhanwantharam, Murivenna, Ashwagandharishta | Online direct from Kerala |
-| Hamdard Dawakhana | Majoon Salab, Khamira Marwarid, Itrifal | Online direct |
-| IMPCOPS Chennai (Siddha) | Amukkara Chooranam, Aswagandhathy Legiyam | IMPCOPS, SKM online |
-| Men-Tsee-Khang Dharamsala | Agar-35, Sogdzin-11, Padma-28 | Sowa Rigpa online |
-| CCRH-affiliated homeo | Arnica, Rhus tox, Bryonia, Ruta, Phos ac, Cuprum, Carbo veg | SBL, Schwabe (IN), Boiron (FR) |
-| Whole Foods / Sprouts | Bone broth, pasture eggs, organic produce, whey | Bonafide Provisions, Kettle & Fire, Vital Farms, Garden of Life |
-| Mito Red Light / Joov / Hooga / Kineon | PBM panels | Mito, Joov, Hooga, Kineon Move+ |
-| Bemer / HealthyLine / Pulse Centers | Home PEMF | Bemer, Healthy Wave, iMRS |
-| Therabody / Hyperice | Massage gun, Normatec boots | Theragun, Hyperice, Normatec |
-| Oura / Whoop / Polar / Garmin | HRV + sleep wearable | Oura Ring, Whoop strap, Polar H10, Garmin |
-| HeartMath / Lief | HRV biofeedback | HeartMath Inner Balance, Lief |
-| Nurosym / Sensate / Pulsetto | VNS | Consumer-grade |
-| Sunlighten / Clearlight / Plunge | Sauna + cold tub | One-time |
-| ChiliSleep / Eight Sleep | Cooling mattress | One-time |
+### 9.1 Where to source
 
-**Monthly cost (USD)**
-- Combo 1 (Creatine + Rhodiola + Cordyceps + Curcumin + Omega-3): **$70–110**
-- Combo 2 (Beta-alanine + MSM + D3+K2 + CoQ10): **$45–80**
-- Combo 3 (Mg glycinate + KSM-66 + Tart cherry + Glycine): **$40–60**
-- Pre-event (beetroot + citrulline + caffeine source if scheduled): **$20–40**
-- Post-event (whey/plant + electrolytes + L-glutamine): **$60–120** (whey + plant + electrolytes consume biggest line)
-- Cofactor floor (Cu, Zn, Se, vit C, K2, B-complex, choline): **$25–40**
-- Topical Mahanarayan + Dhanwantharam + magnesium chloride spray: **$25–40**
-- TCM overlay deload week (Bu Zhong Yi Qi / Si Wu): **$15–30**
-- Diet uplift (bone broth, oily fish, eggs, bitter greens, amla, coconut water, rice, sweet potato): **$150–280**
-- **Recurring total: $450–800/month** (varies most with training volume + protein needs)
+> **For you, in plain words.** Six channels covering supplements, formulas and devices. Tested-sport athletes: use only Informed Sport / NSF Certified for Sport / AIS-listed brands to avoid banned-substance contamination.
 
-**One-time devices**
-- PBM panel: **$249 (MitoMIN)** → $749 (MitoMAX) or Kineon Move+ $400–600
-- Home PEMF mat: **$400–4,500** (optional)
-- Pneumatic compression boots (Normatec Pulse / RecoveryAir): **$500–1,500**
-- Foam roller + lacrosse ball + percussive massage gun: **$150–400**
-- HRV strap + biofeedback app (Polar H10 + HeartMath / Lief / Elite HRV): **$100–250**
-- VNS device (Nurosym / Sensate / Pulsetto): **$200–500**
-- Wearable (Oura / Whoop / Garmin): **$300–800**
-- Home infrared sauna: **$1,800–4,500** (optional)
-- Cold tub: $0 (bathtub + ice) to $5,000 (Plunge); optional
-- Cooling mattress topper (ChiliSleep / Eight Sleep): **$500–2,000** (optional)
-- DTC lab baseline + Mo3/6/12: **$120–180/round** (athletes should especially track ferritin, vitamin D, T3, T4, T, hs-CRP)
+| Channel | What it sources well | Typical brands | Notes |
+|---|---|---|---|
+| Amazon / iHerb | Creatine, whey, omega-3, magnesium, zinc, D3K2 | Bulk Supplements Creapure, Optimum Nutrition Gold Standard, Pure Encapsulations, Thorne | Verify Informed Sport / NSF batch |
+| Indian grocery | Spices, Triphala, Ashwagandha, Chyawanprash, ghee | Organic India, Himalaya, Patanjali, Baidyanath, Dabur | Patel Brothers Pleasanton CA; Apna Bazaar |
+| Chinatown TCM | Bu Zhong Yi Qi Tang, Liu Wei Di Huang Wan granules | Plum Flower, Min Tong, Treasure of the East | Kamwo Meridian Herbs NYC; Sun Sing Pacific SF |
+| Hamdard | Khameera Marwareed, Majun Salab, Sharbat | Hamdard, Saif | Hamdard outlets in IN/PK |
+| IMPCOPS / Siddha | Amukkara, Naga Rasayanam | IMPCOPS Chennai | Direct from IMPCOPS |
+| Men-Tsee-Khang | Agar-35, Padma-28 | Men-Tsee-Khang Dharamsala | Tsotel-free batch only |
+| Device suppliers | Oura, Whoop, Polar, sauna, cold plunge, PEMF | Oura, Whoop, Polar, Sunlighten, Plunge, Bemer, Mito Red Light, Joov | Match budget — entry-level Polar H10 + EliteHRV gives 80% of the value |
+
+### 9.2 Monthly cost — line by line
+
+- **Combo 1 (AM):** Creatine $10 + D3K2 $10 + Citrulline $15 = $35
+- **Combo 2 (Midday):** Omega-3 $30 + Zn $8 + (Iron $10 if needed) = $40-50
+- **Combo 3 (PM):** Ashwagandha $20 + Mg $15 + Curcumin $25 + Tart cherry $30 (event window) = $90
+- **Whey/pea protein:** $40-60 (90-serving tub)
+- **TCM cycling (1 wk × 2/mo Bu Zhong Yi Qi Tang):** $15
+- **Fresh produce uplift (fatty fish 2-3×/wk, greens, ferments):** $80-150
+- **Total monthly:** $300-440 (median $370)
+- **One-time:** Oura $299 OR Whoop $30/month OR Polar H10 $90 + EliteHRV free. Plunge cold tub $0 (cold shower) — $4990. Sunlighten Solo $1990. Mito Red Light MitoMAX $1499. PEMF mat $400-3500. Adjust to budget.
 
 ## 10. Interaction Matrix
 
-### 10.1 Drug ↔ Supplement (for users ALREADY on conventional therapy — this dossier prescribes NONE of these)
+### 10.1 Drug ↔ supplement
 
-Athletes may be on (legitimately): asthma inhalers (TUE if banned), oral contraceptive pill (female athletes), SSRI, ADHD stimulant (TUE), beta-blocker (rare, sport-banned in many), thyroid replacement, oral contraceptive, anticoagulant (post-DVT history), statin, allergy meds, post-injury short-course NSAID.
+> **For you, in plain words.** Eight conventional drug classes commonly seen in athletes. Documented for users already on them; not recommended.
 
-| Drug (you may be on) | Supplement in protocol | Risk | Mitigation (your own taper pace) |
+| Drug (currently on) | Supplement | Risk | Mitigation (user decides taper pace) | TL;DR (plain English) |
+|---|---|---|---|---|
+| NSAIDs (chronic) | Curcumin, omega-3, ginger | Additive GI bleed + reduces adaptation | Reduce NSAID; rotate herbs | NSAIDs blunt gains. *(Schoenfeld 2012)* |
+| Acetaminophen | Alcohol | Hepatotoxicity | Don't combine | Real liver risk. *(EMA)* |
+| Off-label TRT | Ashwagandha, Tribulus | HPG-axis suppression | Don't stack | Talk to your clinician. *(Endo soc)* |
+| Beta-blockers | Caffeine, citrulline, beetroot | Antagonise BP / HR effects | Skip pre-workout stimulants | Don't stack stimulants. *(EMA)* |
+| Statins | CoQ10 depleted by statin | Statin-induced myopathy | CoQ10 100-200 mg supplemented | Add CoQ10 if on statin. *(EMA)* |
+| Levothyroxine | Mg, Zn, iron, Ca, coffee | Absorption block | 60 min gap from thyroid med | Take thyroid first. *(Health Canada)* |
+| Warfarin | Curcumin, omega-3, ginkgo, tart cherry, ginger, garlic, vitamin K greens | Bleeding / INR shift | Maintain consistent intake; INR monitor | Don't oscillate. *(EMA)* |
+| SSRIs | Tramadol, St John's Wort, 5-HTP | Serotonin syndrome | Don't combine | Real danger. *(Gillman 2010)* |
+
+### 10.2 Drug ↔ food
+
+| Drug | Food | Mechanism | Action | TL;DR (plain English) |
+|---|---|---|---|---|
+| Levothyroxine | Coffee / soy / fibre within 60 min | Absorption block | 60 min gap | Take thyroid first thing. *(Health Canada)* |
+| Warfarin | Vitamin K greens | INR shift | Maintain consistent intake | Don't oscillate greens. *(EMA)* |
+| Statins | Grapefruit | CYP3A4 inhibition | Avoid | No grapefruit with statin. *(EMA)* |
+| NSAIDs | Alcohol | GI bleed | Limit | Don't combine. *(EMA)* |
+| Acetaminophen | Alcohol | Hepatotoxicity | Don't combine | Liver risk. *(EMA)* |
+
+### 10.3 Supplement ↔ food
+
+| Supplement | Food / drink | Mechanism | Action | TL;DR (plain English) |
+|---|---|---|---|---|
+| Iron | Tea / coffee / wine (tannins) | ↓ absorption | 1-2 h gap; pair vit C | Don't drink coffee with iron. *(WHO ferritin)* |
+| Iron | Dairy / Ca | Divalent competition | ≥2 h gap | Iron away from milk. *(WHO)* |
+| Zn | Iron | DMT1 competition | ≥2 h gap | Zn and iron at different times. *(EMA Zn)* |
+| Ca + Mg same dose | — | Competition | Split AM/PM | Calcium AM, Mg PM. *(EMA Mg)* |
+| Vitamin D | Fat | Required for absorption | Take with fatty meal | D needs fat. *(EMA D)* |
+| Vitamin D + Mg | — | Mg cofactor for D activation | Together | Partners. *(EMA D)* |
+| Curcumin | Dairy | Casein binds | 2 h gap; pair piperine + ghee | Turmeric + black pepper + ghee. *(EMA)* |
+| Curcumin | Immediately post-strength training | Blunts adaptation | Wait 2 h post-strength | Don't take curcumin right after lifts. *(Schoenfeld 2012)* |
+| Beetroot | Antibacterial mouthwash | Kills nitrate-reducing oral bacteria | Don't use mouthwash on event day | Mouthwash kills the effect. *(Domínguez 2017)* |
+| Creatine | Caffeine same dose | Some studies show interference | Stagger or separate by 90 min | Stagger creatine and pre-workout caffeine. *(Vandenberghe 1996)* |
+| Tart cherry | Warfarin | Salicylate trace | Caution | Watch INR. *(EMA)* |
+| Vit C > 1000 mg pre-exercise | Blunts mitochondrial adaptation | Save high-dose C for post-event sick days only | — | High-dose C is post-event only. *(Gomez-Cabrera 2008)* |
+| Ashwagandha | Alcohol | CNS depression | Don't combine same evening | No Ashwa + booze. *(EMA)* |
+| Caffeine | After 14:00 | Blocks melatonin onset | 14:00 cut-off | No coffee after 2pm. *(Walker 2019)* |
+
+### 10.4 Supplement ↔ supplement
+
+| Supp A | Supp B | Mechanism | Action | TL;DR (plain English) |
+|---|---|---|---|---|
+| Zn ↔ Cu | — | Long-term Zn depletes Cu | 8-15:1 ratio | Add 2 mg Cu/day. *(EMA Zn)* |
+| Iron ↔ Zn/Ca/Mg | — | Divalent competition | 2 h gap | Iron alone. *(WHO)* |
+| Creatine ↔ Caffeine | — | Some studies show antagonism | Stagger 90 min | Separate. *(Vandenberghe 1996)* |
+| Vit C high-dose ↔ adaptation | — | Blunts mitochondrial biogenesis | Don't pre-exercise | Save for sick-days only. *(Gomez-Cabrera 2008)* |
+| Mg ↔ Ca same dose | — | Competition | Split AM/PM | Split. *(EMA Mg)* |
+| Ashwagandha + sedating herbs (kava, valerian) | — | CNS additive | Stagger | Don't stack sedatives. *(EMA)* |
+| St John's Wort ↔ SSRIs and many herbs | — | Serotonin / CYP3A4 induction | Avoid combination | Real danger. *(Gillman 2010)* |
+| BCAAs ↔ whole protein | — | Wolfe — whole-protein superior | Use whole protein | Skip BCAA tubs. *(Wolfe 2017)* |
+
+### 10.5 Exercise / sleep / caffeine timing
+
+- **Caffeine cut-off:** 14:00 (half-life 6 h); event-day 3-6 mg/kg 60 min pre-event
+- **Creatine:** any consistent time (AM with breakfast is convenient)
+- **Beta-alanine:** ≥30 min pre-workout
+- **Citrulline:** 60 min pre-workout
+- **Beetroot nitrate:** 2-3 h pre-event
+- **Whey/pea post-workout:** within 60 min
+- **Tart cherry:** AM + PM, 5-7 days pre-event window
+- **Curcumin:** NOT within 2 h of strength training
+- **Ice bath / CWI:** NOT within 2 h of strength training; OK for endurance/team sport
+- **Magnesium glycinate:** PM (sleep)
+- **Ashwagandha PM:** ≥2 h before bed in vivid-dream-sensitive users
+- **Alcohol post-training:** NO within 6 h post-event
+
+### 10.6 Strictly avoid
+
+> **For you, in plain words.** Seven "avoid" rules specific to athlete recovery.
+
+- **High-dose NSAIDs as routine recovery:** blunts MPS + adaptation (Schoenfeld 2012)
+- **Ice bath / CWI within 2 h of strength training:** blunts hypertrophy (Roberts 2015)
+- **High-dose vitamin C (>1000 mg) pre-exercise:** blunts mitochondrial adaptation (Gomez-Cabrera 2008)
+- **Alcohol within 6 h post-training:** -24 to -37% MPS (Parr 2014)
+- **Proprietary "pre-workout" blends with undisclosed ingredients:** banned-substance contamination risk; use Informed Sport / NSF
+- **Off-label TRT / SARMs / peptides:** outside the home protocol entirely; clinic-route only
+- **Kapalbhati / Bhastrika in HTN / pregnancy / cardiac:** contraindicated
+
+## 10.7 Emerging & adjunctive therapies
+
+### 10.7.1 Home-usable advanced therapies
+
+> **For you, in plain words.** Six home-usable recovery devices and tools that genuinely help. HRV trackers (cornerstone), compression boots, cold plunge, home sauna, foam roller + massage gun, DTC blood biomarker testing. Each cites the actual trial, not a regulatory clearance. *(Plews 2013 HRV; Hussain 2018 sauna; Hill 2014 compression)*
+
+| Device / tool | TL;DR (plain English) | Dose / protocol | Evidence anchor | Cost | TL;DR (where it fits) |
+|---|---|---|---|---|---|
+| HRV tracker (Oura / Whoop / Polar H10 + EliteHRV) | Single most useful recovery instrument — Plews 2013 HRV-guided training beats fixed plans. *(Plews 2013)* | Morning supine or sleeping-night average daily | Plews 2013 *Sports Med* | $90-400 + sub | Cornerstone device |
+| Compression boots (Normatec / RecoveryAir) | Hill 2014 meta — modest perceived-recovery benefit; useful between same-day sessions. *(Hill 2014)* | 20-30 min post-event | Hill 2014 *Br J Sports Med* | $700-1600 | Adjunct, not cornerstone |
+| Cold plunge (Plunge / BlueCube / DIY chest-freezer) | Bleakley 2012 Cochrane CWI for DOMS; Roberts 2015 — **don't use post-strength.** *(Bleakley 2012; Roberts 2015)* | 10-15 min at 10-15°C; NOT within 2 h of strength | Cochrane 2012; Roberts 2015 | $0-6500 | Endurance-day only |
+| Home sauna (Sunlighten / JNH / Clearlight / Finnish) | Hussain 2018 meta + Laukkanen 2018 Finnish cohort — CV signal + HSP + GH pulse. *(Hussain 2018)* | 15-30 min at 70-90°C, 2-4×/week | Hussain 2018 | $400-3500 | Real CV signal |
+| Foam roller + massage gun (Theragun / Hyperice) | Modest DOMS + ROM benefit per Wiewelhove 2019 meta. *(Wiewelhove 2019)* | 10-15 min post-training | Wiewelhove 2019 *Front Physiol* | $30-600 | Comfort adjunct |
+| DTC blood biomarker tests (Inside Tracker / Thriva / Cerascreen / Lab Me) | Quarterly CK + LDH + ferritin + T:cortisol + hs-CRP — catch overtraining before it crashes. *(Halson 2014)* | Quarterly | Halson 2014 | $100-300/quarter | Diagnostic |
+| Smart scales (RENPHO / Withings) + waist tape | Track body composition + REDs warning signs. *(Mountjoy 2018)* | Weekly | Mountjoy 2018 | $30-150 | Diagnostic |
+
+### 10.7.2 Adjunctive behavioural therapies
+
+> **For you, in plain words.** Five A-grade behavioural levers for sports recovery. Sleep extension (Mah 2011 +9% sprint and shooting), CBT-i for insomnia, HRV biofeedback, mindfulness for stress recovery, periodisation discipline. *(Mah 2011; Espie 2012 Sleepio; Goessl 2017 HRV meta)*
+
+| Therapy | What it does (plain words) | Evidence tier | Self-guided resources |
 |---|---|---|---|
-| **NSAIDs (ibuprofen, naproxen, diclofenac)** | Boswellia, Curcumin, Omega-3, Ginger | Additive GI; NSAIDs blunt adaptation | Short-course only for acute trauma; consider replacement by tart cherry + curcumin + omega-3 for routine recovery |
-| **Oral contraceptive pill (female athletes)** | Ashwagandha, St John's Wort (excluded) | SJW reduces OCP efficacy; Ashwa generally fine but watch for cycle effects | SJW excluded; Ashwa OK |
-| **SSRIs / SNRIs** | Ashwagandha; SJW excluded; high-dose 5-HTP excluded | CNS dampening; SJW = serotonin syndrome | Ashwa ≥3 h from SSRI |
-| **Asthma inhalers (β2-agonist, ICS)** | Generally compatible | — | Confirm TUE compliance |
-| **ADHD stimulants (methylphenidate, amphetamine — TUE)** | Rhodiola, caffeine | Additive sympathetic; cardiac risk | Avoid Rhodiola + heavy stimulant stack; modest caffeine only |
-| **Beta-blockers (rare for athletes — banned in many sports)** | Rhodiola, caffeine | Antagonistic to β-blockade | Coordinate with prescriber |
-| **Levothyroxine** | Triphala, Ashwagandha, calcium / iron | Tannin / divalent T4 block | Levo 60 min before food/Ca/Mg/iron/Triphala; DTC TSH Mo3/6 |
-| **Warfarin / DOACs** | Curcumin, Boswellia, Ginger, Omega-3, Garlic, Ginkgo | INR shift | Consistent vit-K greens; if labile INR, scale down |
-| **Statins** | High-dose Quercetin, grapefruit, Berberine, CoQ10 | CYP3A4 toxicity; CoQ10 actually helpful for statin-myopathy | Statin away from grapefruit; CoQ10 fine with statin |
-| **Metformin / SGLT-2 (T2D athletes)** | Berberine, bitter melon, cinnamon | Additive hypoglycaemia | Glucose monitor; coordinate |
-| **Antihistamines** | None major | — | OK |
-| **Allergy decongestants (pseudoephedrine)** | Caffeine, Rhodiola | Sympathetic stacking | Reduce stimulant load |
-| **Iron supplement (already prescribed for IDA)** | Calcium, tea/coffee tannins, Zn | Absorption competition | Iron 1 h before tea/Ca; vit C pair |
-| **OTC sleep aids (diphenhydramine)** | Melatonin, KSM-66 | Additive CNS | Choose one; melatonin ≤0.3 mg if used |
+| Sleep extension (Mah 2011) | The single biggest recovery lever — extend to 10 h pre-competition. *(Mah 2011)* | A | Walker "Why We Sleep"; Sleepio |
+| CBT-i (Sleepio / Somryst) | Digital insomnia therapy — first-line non-pharm. *(Espie 2012 Sleepio RCT)* | A | Sleepio app; Somryst |
+| HRV biofeedback | Goessl 2017 meta — anxiety + emotion regulation. *(Goessl 2017)* | A (anxiety) / B (recovery) | HeartMath, Lief, Polar H10 + EliteHRV |
+| Mindfulness for stress recovery | Kabat-Zinn MBSR — reduces cortisol load, improves sleep. *(Kabat-Zinn)* | A | Headspace, Insight Timer, MBSR workbook |
+| Periodisation discipline (Gabbett ACWR) | ACWR 0.8-1.3; deload every 4-6 weeks; the single best injury-prevention tool. *(Gabbett 2016)* | A | TrainingPeaks, Strava periodisation, AIS guidance |
+| Yoga Nidra (iRest) | 45-min guided non-sleep deep rest — parasympathetic + HPA. *(iRest evidence)* | B | iRest app; YouTube guided |
 
-### 10.2 Drug ↔ Food (for users on prescriptions)
+### 10.7.3 If the home protocol plateaus — clinic-route options
 
-| Drug | Food | Mechanism | Action |
+> **For you, in plain words.** Five clinic-route options that exist. **Documented honestly, never recommended.** The protocol's path is sleep + creatine + whey + tart cherry + ashwagandha + HRV-guided + periodisation. *(STAR-D ketamine sports-context; clinical TRT prescribing data)*
+
+| Option | TL;DR (plain English) | Evidence anchor | Where it fits |
 |---|---|---|---|
-| **NSAIDs** | Alcohol, empty stomach | GI bleed | NSAID with food; eliminate alcohol |
-| **OCP** | St John's Wort, grapefruit (mild) | Efficacy / metabolism | Eliminate SJW |
-| **Warfarin** | Vit-K greens (consistent), grapefruit | INR shift | Consistent vit-K; eliminate grapefruit |
-| **Statins / CCBs** | Grapefruit, Seville orange | CYP3A4 toxicity | Eliminate grapefruit |
-| **Levothyroxine** | Coffee, soy, dairy, high-fibre, calcium | T4 absorption ↓ | Levo 60 min before |
-| **Beta-blockers** | High-K foods (banana, coconut) | Hyperkalaemia | Moderate |
-| **Allergy decongestants** | Caffeine | Sympathetic stacking | Reduce coffee |
+| Cortisone injection for tendon/joint | Short-term pain relief; long-term tendon-tissue damage signal. *(Coombes 2010 Lancet meta)* | Coombes 2010 | Clinic-route §10.7.3 only; not recommended for chronic use |
+| Prescription NSAIDs (chronic) | Schoenfeld 2012 — blunts adaptation; GI + cardio risk. *(Schoenfeld 2012)* | Schoenfeld 2012 | Acute injury only; never as routine recovery |
+| TRT (testosterone replacement) for hypogonadal masters athletes | Documented Rx for clinically diagnosed hypogonadism; not for "low T-ish" cravings; HPG axis suppression. *(Endocrine Society guidance)* | Endo Soc 2018 | Clinic-route only; never first-line in healthy athletes |
+| IV vitamin / amino drip clinics | Mostly unevidenced; expensive; some banned-substance contamination risk. *(AIS framework)* | AIS framework | Not in protocol |
+| In-person sports physio / chiropractic / sports massage | Reasonable adjuncts post-injury or for specific dysfunction; user's call. *(Brukner & Khan Clinical Sports Medicine)* | Brukner & Khan | Optional adjunct, user-directed |
 
-### 10.3 Supplement ↔ Food (the new layer)
+#### Open the science
 
-| Supplement | Food / Drink | Mechanism | Action |
-|---|---|---|---|
-| **Curcumin** | Dairy, EGCG | Casein binds; EGCG competes | 2 h gap; piperine + ghee |
-| **Iron** (only if deficient) | Tea, coffee, wine, dairy, calcium | Polyphenol / divalent | 1–2 h gap; pair vit C |
-| **Zinc** | Iron, dairy, calcium | DMT1 competition | ≥2 h gap |
-| **Calcium / Magnesium** | Same hour | Competition | Ca AM, Mg PM |
-| **Fat-soluble A/D/E/K + Curcumin + Boswellia + Omega-3 + CoQ10** | Low-fat meal | No micelle | Always with fat |
-| **Vitamin D** | Magnesium-rich foods | Mg cofactor | Take **together** |
-| **Probiotic** | Hot food / drink >40 °C | Kills bacteria | Cool only |
-| **Polyphenol herbs (Quercetin, grape seed, green tea)** | Iron-rich foods | Chelation | ≥1 h gap |
-| **NAC** | High-copper foods | Sulphur chelates | ≥2 h gap |
-| **Ashwagandha** | Alcohol | CNS depression | Skip alcohol |
-| **Adaptogens (Rhodiola, Eleuthero)** | Evening meal | Stimulating | **AM only** |
-| **Beetroot nitrate** | Mouthwash (antibacterial) | Kills oral nitrate-reducing bacteria → no NO conversion | Skip antibacterial mouthwash on beetroot days |
-| **Creatine** | Carb + protein post-workout | Insulin uptake | Pair post-WO |
-| **Caffeine** | Iron supplement | Iron absorption ↓ | 1 h gap |
-| **Tart cherry** | High-uric-acid meal in gout sub-type | Beneficial co-ingestion | Pair fine |
-| **High-dose vitamin C >1 g / NAC / vitamin E** in the 2-h window around adaptive sessions | — | Blunts mitochondrial biogenesis (Ristow 2009) | Take at AM + PM meals, not adaptive-session adjacent |
-| **Shilajit** | Tea, coffee tannins | Mineral chelation | 1 h gap |
-
-### 10.4 Supplement ↔ Supplement
-
-| A | B | Mechanism | Action |
-|---|---|---|---|
-| **Caffeine ↔ Creatine** | — | Mild antagonism in some studies; net practical effect minor | Acceptable but separate timing if possible |
-| **Caffeine ↔ Beta-alanine** | — | Mostly compatible | OK |
-| **Caffeine ↔ L-theanine** | — | Smoother caffeine | AM only |
-| **Rhodiola ↔ Caffeine** | — | Additive sympathetic | Acceptable if cardiovascular healthy |
-| **Beetroot ↔ Mouthwash / antibacterial** | — | Blocks oral nitrate reduction | Skip mouthwash on beetroot days |
-| **Beta-alanine ↔ Anything** | — | Causes paresthesia; not dangerous | Split doses to reduce paresthesia |
-| **Zinc ↔ Copper** | — | Long-term Zn → Cu depletion | **8–15:1 Zn:Cu** |
-| **Iron ↔ Zn / Ca / Mg** | — | Divalent competition | ≥2 h gap |
-| **Vit A ↔ Vit D** | — | Receptor competition | Balance: A 3000–5000 IU, D 4000 IU |
-| **Vit E ↔ Vit K** | — | E (>800 IU) antagonises K | E ≤ 400 IU |
-| **Magnesium ↔ Calcium** | Same hour | Competition | Ca AM, Mg PM |
-| **NAC ↔ Copper** | — | Sulphur chelation | ≥2 h gap |
-| **High-dose flavonoids ↔ Thyroid hormone** | T4 uptake | ↓ absorption | 4 h gap |
-| **High-dose antioxidants (C, E, NAC) ↔ adaptive sessions** | — | Blunts adaptation | Timing AWAY from key sessions |
-| **St John's Wort ↔ everything (esp OCP, SSRI)** | Serotonin / CYP3A4 induction | **Excluded** | — |
-| **Ashwagandha ↔ Sedatives / OCP** | — | CNS dampening; OCP generally fine | Coordinate |
-| **Berberine ↔ Curcumin** | CYP3A4 | Additive risk with statin | Reduce one |
-| **Shilajit ↔ Iron** | — | Mineral interaction in raw forms | Use heavy-metal-tested only (PrimaVie / Pürblack); 2 h gap from iron supp |
-
-### 10.5 Exercise / Sleep / Caffeine timing rules
-
-- **Caffeine cut-off 14:00** (half-life 6 h; protects sleep).
-- **Alcohol — eliminate**, especially post-event (the single biggest recovery destroyer).
-- **Creatine 3–5 g daily** — pre- or post-workout with carb/protein; consistent.
-- **Beta-alanine** — chronic 4–6 weeks loading; effect not acute.
-- **Beetroot juice** — 2–3 h pre-event; skip antibacterial mouthwash on those days.
-- **Citrulline malate** — 60 min pre-event.
-- **Caffeine 3 mg/kg** — 60 min pre-event for Group A AIS evidence (endurance, sprint, team sport).
-- **Tart cherry** — PM + post-event (especially post-eccentric load).
-- **High-dose antioxidants (C >1 g, E, NAC) timing rule** — keep AWAY from the 2-h window around adaptive sessions to preserve mitochondrial biogenesis.
-- **Cold immersion** — **NOT within 2 h after strength training** (blunts mTOR + hypertrophy); fine post-event next-day or post-endurance.
-- **PBM** — pre-workout or 20:00 post.
-- **Ashwagandha** — PM with dinner; shift AM if vivid dreams.
-- **Magnesium glycinate / malate** — PM (sleep) / AM (energy) respectively.
-- **Rhodiola / Eleuthero** — AM only.
-- **Melatonin** — ≤0.3 mg, 30–60 min before sleep; not chronic.
-- **Probiotic** — cool first-meal or empty stomach AM; ≥2 h from antibiotic.
-- **Sauna + alcohol** — never combine.
-- **PBM eye shield** if face panel.
-- **HRV-guided training** — if morning HRV >1 SD below baseline, scale day's intensity down.
-
-### 10.6 Strictly Avoid — specific to sports-recovery pathology
-
-- **Banned substances per WADA Prohibited List** — anabolic steroids, peptide hormones (GH, IGF-1, EPO), SARMs, beta-2 agonists outside TUE, narcotics, prohibited stimulants, diuretics, blood doping, gene doping. **NEVER recommended; protocol excludes.**
-- **High-dose post-workout NSAIDs (routine)** — blunt satellite-cell + MPS.
-- **Chronic peri-workout cold-immersion** if hypertrophy is the goal.
-- **High-dose vitamin C / E / NAC** in the 2-h window around key adaptive sessions.
-- **Alcohol post-event** — destroys glycogen + GH + collagen + sleep.
-- **Chronic caffeine after 14:00** — sleep ruin.
-- **Under-fuelling / REDs** — energy availability <30 kcal/kg FFM/day = endocrine collapse, bone-mineral loss, amenorrhoea, low T3.
-- **Untested shilajit** (heavy metal contamination) — only PrimaVie / Pürblack / certified.
-- **Raw / unrefined herbs with unknown contamination** — choose AYUSH-GMP, NMPA, EMA-monographed where possible.
-- **St John's Wort** — CYP3A4 induction wrecks OCP + many supps.
-- **High-dose Echinacea** in autoimmune-overlap athlete (e.g., RA, vitiligo).
-- **Kapalbhati / Bhastrika** in HTN / pregnancy / glaucoma / recent surgery.
-- **Cold immersion** in Raynaud's, severe CV disease.
-- **DMAA, geranamine, synephrine high-dose** — stimulant safety issues + WADA risk.
+Coombes 2010 *Lancet* meta-analysis — cortisone injection for tendinopathy: short-term pain relief BUT inferior long-term outcomes vs physiotherapy or wait-and-see. Schoenfeld 2012 *Sports Med* — chronic high-dose NSAIDs blunt muscle protein synthesis and adaptation. TRT — Endocrine Society 2018 guidance requires confirmed hypogonadism (morning total T <264 ng/dL on 2+ measurements + clinical symptoms); off-label use for "low-ish" T in healthy athletes carries HPG-axis suppression and cardiac risk. The protocol does not recommend any of these; the user is sovereign.
 
 ## 11. Clinical Scoring + Comorbidity Screening
 
-### 11.0 Self-administered clinical scoring instrument — DOMS-VAS + HRV + readiness
+### 11.0 Self-administered scoring instruments
 
-**Multi-instrument self-tracking (no clinic visit required):**
-- **DOMS-VAS 0–10** per major muscle group at 24 / 48 / 72 h post-load.
-- **HRV (rMSSD, ms)** every morning via Oura / Whoop / Polar H10 + Elite HRV / HeartMath. **The single most informative recovery metric.** Baseline 7-day rolling average; deviation > ±1 SD signals over-/under-recovered.
-- **Resting heart rate** trend.
-- **sRPE × session duration** = session load; track weekly chronic:acute workload ratio (target 0.8–1.3, Gabbett 2016).
-- **Subjective readiness score 1–10** every morning (sleep quality, motivation, soreness, mood, energy).
-- **Performance test** — vertical jump (force plate or app), 5-/10-/30-m sprint time, broad jump, max push-ups in 60 s — every 4 weeks.
-- **Body composition** — DEXA every 3 months (DTC Bodyspec / Dexafit) tracks fat mass + lean mass + bone density (critical for REDs surveillance).
-- **PHQ-9 + GAD-7** quarterly (overtraining → depression overlay).
-- **PGI-C** at each window.
+> **For you, in plain words.** Six self-tracked instruments — ACWR (acute:chronic workload ratio, Gabbett 2016), RESTQ-Sport (Recovery-Stress Questionnaire, Kellmann & Kallus), DOMS-VAS 0-10, daily HRV trend, sRPE training load, sleep score. Re-measure continuously; review weekly.
 
-**Cadence:** daily HRV + RHR + sRPE + readiness; weekly subjective overtraining score; 4-weekly performance test; quarterly DEXA; quarterly mental health.
+| Instrument | What it measures | Cadence | TL;DR (plain English) |
+|---|---|---|---|
+| ACWR (Gabbett 2016) | 7-day:28-day workload ratio | weekly | Keep between 0.8 and 1.3. *(Gabbett 2016)* |
+| RESTQ-Sport (Kellmann & Kallus) | Recovery-stress balance, 76-item | weekly | Self-administered recovery audit. *(Kellmann 2001)* |
+| DOMS-VAS 0-10 | Subjective soreness | daily 24/48/72 h post-load | Track DOMS trends. *(Wiewelhove 2019)* |
+| Daily HRV trend | Autonomic balance | daily morning | The most informative single number. *(Plews 2013)* |
+| sRPE training load | Session RPE × duration | per session | Quantifies actual training stress. *(Foster 2001)* |
+| Sleep score (Oura/Whoop) | Sleep duration + architecture | nightly | Sleep is the foundation. *(Mah 2011)* |
+| Vertical jump or sprint time | Objective performance | weekly | Real-world readiness. *(Halson 2014)* |
 
-### 11.5 Autoimmune & Comorbidity Screening — direct-to-consumer labs
+### 11.5 Comorbidity screening — DTC labs only
 
-Athletes carry elevated risk for / overlap with: **REDs / low energy availability (especially female), low ferritin (<50 ng/mL impairs performance), vitamin D deficiency, low T3 (overtraining), low free testosterone (overtraining), NAFLD (high-load), atrial fibrillation (endurance overload — masters athlete), sleep apnea (recovery failure), elevated hs-CRP / IL-6 (chronic over-reaching), gut dysbiosis + leaky gut endurance, depression-overtraining overlap.**
+> **For you, in plain words.** Eight self-ordered DTC lab markers most relevant for athletes. Quarterly cadence in heavy training; baseline + month 6 + month 12 in maintenance.
 
-**DTC providers:** US — LetsGetChecked, Everlywell, Walk-In Lab, InsideTracker; UK — Thriva, Medichecks, Forth, Forth Sports; EU — Cerascreen, Lykon; IN — True Test, Healthians, Thyrocare; AU — i-screen, MyDNA.
+| Lab | Why measure | Reference | TL;DR (plain English) |
+|---|---|---|---|
+| Iron studies + ferritin | Endurance athletes need ferritin >50; female athletes routinely sub-floor. *(WHO ferritin)* | ferritin 50-150 ng/mL | Low iron drains performance. *(Sim 2019)* |
+| Vitamin D 25(OH)D | <30 = stress-fracture + strength risk. *(EMA D)* | 50-70 ng/mL | Bone + muscle floor. *(EMA D)* |
+| Thyroid panel (TSH + FT3 + FT4 + anti-TPO + anti-Tg) | Low T3 → overtraining syndrome marker. *(Halson 2014)* | TSH 0.5-2.5; FT3 normal | Hidden overtraining marker. *(Halson 2014)* |
+| Testosterone:cortisol ratio | T:cortisol ratio drop ≥30% from baseline = overtraining flag. *(Adlercreutz 1986)* | individual baseline | Recovery balance. *(Adlercreutz 1986)* |
+| CK + LDH | Muscle damage marker | <200 U/L resting baseline | Sustained elevation = under-recovery. *(Halson 2014)* |
+| hs-CRP | Inflammation chronicity | <1 mg/L | Endurance overload flag. *(Pyne 2014)* |
+| HbA1c + fasting glucose | Insulin sensitivity (overtraining drops it) | HbA1c <5.6, FBG <100 | Metabolic recovery marker. *(WHO)* |
+| Lipid panel + ApoB | Cardio risk + AFib in endurance | LDL <130, ApoB <90 | Cardiac risk in masters/endurance. *(Mont 2017)* |
 
-**Panel — baseline / Mo3 / Mo6 / Mo12 + spot-checks at suspected overtraining:**
+### 11.6 Female-athlete-specific screening
 
-| Comorbidity | DTC test | Provider |
-|---|---|---|
-| Iron status (essential for female + endurance) | Ferritin + transferrin saturation + Hb + CBC | LetsGetChecked / Thriva |
-| Vitamin D | 25-OH-D | LetsGetChecked / Thriva |
-| Overtraining endocrine | Free testosterone + DHEAS + fT3 + fT4 + TSH + IGF-1 | InsideTracker / Forth Sports |
-| Cortisol (overtraining) | Salivary 4-point cortisol + DHEA-S | DUTCH (Precision Analytical) |
-| Inflammation | hs-CRP + IL-6 + ferritin (also AP) + CK + LDH (acute) | InsideTracker / Forth |
-| Glucose / metabolic | HbA1c + fasting glucose + fasting insulin + HOMA-IR | LetsGetChecked |
-| Lipids | Lipid panel + ApoB + Lp(a) | InsideTracker |
-| Liver / NAFLD | ALT / AST / GGT + ferritin | LetsGetChecked |
-| Female athlete cycle / amenorrhoea | LH + FSH + estradiol + progesterone + day 3/21 panel | Forth UK / DUTCH |
-| Bone (REDs surveillance) | DEXA + 25-OH-D + Ca + PTH | Bodyspec |
-| Heart rhythm (masters endurance) | ECG (home Kardia Mobile + AliveCor) — 30-s trace; consumer-grade | AliveCor |
-| Sleep | At-home sleep study (WatchPAT, Nox T3 home polysomnography) | Lofta, Sleeptest.co.uk |
-| Methylation | Homocysteine + MTHFR | Thriva / 23andMe |
-| Gut microbiome | Stool 16S / shotgun metagenomics | Thryve / Viome / BiomeSight |
-| Heavy metals (suspicion) | Urine As / Pb / Hg / Cd | Doctor's Data |
+> **For you, in plain words.** Female athletes — add monthly cycle tracking, ferritin every 3 months, bone-density check every 2-3 years (DTC DEXA if available). REDs / female athlete triad screening is mandatory in heavy endurance training. *(Mountjoy 2018 IOC REDs; De Souza 2017)*
 
-## 12. Implementation Timeline (12 months, self-tracked)
+## 12. Implementation Timeline (12 months)
 
-- **Weeks 1–4 — Foundation.** Daily HRV + RHR + sRPE + readiness baseline. Add creatine 3–5 g + omega-3 + magnesium + tart cherry + KSM-66. Cofactor floor (D3+K2, Cu, Zn, Se, B-complex). Baseline DTC panel (ferritin + vitamin D + hormones + lipids).
-- **Weeks 5–8 — Performance prime.** Add Rhodiola AM, Cordyceps, Curcumin phytosome BID, beta-alanine loading begins. Optimise sleep + circadian. Hit ≥7 h sleep target.
-- **Weeks 9–12 — Recovery deep dive.** PBM 5×/wk, sauna 3×/wk, contrast water 3×/wk, foam-roll daily, HRV biofeedback 10 min BID. Track DOMS resolution time; should be 48 h max post-eccentric. Mo3 DTC.
-- **Months 4–6 — Sustained performance.** Pre-event additions (beetroot, citrulline, caffeine TUE-compliant) for race / event days. Female-cycle awareness if applicable. Mo6 DTC.
-- **Months 6–12 — Long-term sustainability.** Quarterly DTC; TCM cycling deload week 4 of each month; protein 1.6–2.2 g/kg sustained; full 12-month review at Mo12. Expect **HRV +10–20% above baseline**, DOMS resolution time halved, performance markers +5–15% (sport-dependent), no overtraining episodes.
+### 12.1 Weeks 1-4 — Adaptation
 
-**No physician check-in is mandatory.** Most elite athletes do coordinate with a sports physician / dietitian — that is a personal choice. Recreational athletes can run this protocol independently.
+> **For you, in plain words.** Half-dose ramp on creatine (3 g/day × 28 days for saturation without load). Sleep target 8-9 h. Start HRV tracking daily. Order baseline DTC labs.
+
+### 12.2 Weeks 5-8 — Stabilisation
+
+> **For you, in plain words.** Full creatine 5 g/day. Whey post-workout. Ashwagandha PM. Tart cherry only on event/DOMS days. RESTQ-Sport week 8.
+
+### 12.3 Weeks 9-12 — Clinical shift
+
+> **For you, in plain words.** Most athletes see HRV trend improve, DOMS recovery time drop by 30%, sleep score up by week 12. Re-do DTC labs. Adjust periodisation based on ACWR data.
+
+### 12.4 Months 4-6 — Consolidation
+
+> **For you, in plain words.** Prune non-responders. Maintain four cornerstones — sleep, creatine, whey, ashwagandha. Add tart cherry only event/DOMS windows.
+
+### 12.5 Months 6-12 — Long-term sustainability
+
+> **For you, in plain words.** Quarterly DTC labs. Quarterly periodisation review. TCM cycling weeks 1 & 4 if heavy training block.
+
+**No physician check-in is mandatory.** If the user keeps a sports medicine physician informed, that is their personal call.
 
 ## 13. Illustrative Case Composite
 
-> Composite — not a real patient identifier.
+### 13.1 The composite — anonymised
 
-**Sneha, 33, masters track athlete (5000 m + 10000 m).** Training 70–90 km/wk + 2 strength + 1 hill session; chronic fatigue, slow DOMS resolution 5+ days, sleep onset 00:30, occasional luteal-phase brain fog. Baseline DTC: ferritin 28 ng/mL, 25-OH-D 19, fT3 2.4 (low-normal), free T 0.4, hs-CRP 1.8, CK 280. **HRV rMSSD 32 ms baseline; resting HR 58; vertical jump 28 cm.**
+A 38-year-old male amateur triathlete, 75 kg, training 10-14 h/week, baseline ferritin 38 ng/mL, vitamin D 26 ng/mL, sleep 6.5 h, HRV 35 ms, RESTQ-Sport stress >recovery, DOMS-VAS 7/10 chronic. **Protocol applied:** sleep target 8.5 h, creatine 5 g/day, whey 30 g post-workout, ashwagandha 600 mg PM, Mg glycinate 400 mg PM, iron bisglycinate 30 mg + vit C (ferritin low), vitamin D 5000 IU + K2 100 µg, omega-3 1.5 g, tart cherry on event-window days, Bu Zhong Yi Qi Tang weeks 1 & 4, HRV-guided periodisation. **Outcomes:** week 12 — HRV 48 ms, sleep 7.8 h, DOMS-VAS 4, ferritin 67, vitamin D 49, RESTQ-Sport balance shifted recovery > stress. Month 6 — HRV 58 ms, marathon PR -6 minutes. Month 12 — chronic stable, no overtraining episodes.
 
-Full §8.5 protocol: protein lifted to 1.8 g/kg, energy availability tracked >40 kcal/kg FFM/day, three combos (creatine + Rhodiola AM, beta-alanine loading, MSM + D3+K2 + CoQ10 midday, Mg glycinate + KSM-66 + tart cherry + glycine PM), pre-event beetroot + citrulline + caffeine 3 mg/kg, post-event whey 30 g + carb 60 g + electrolyte + tart cherry, iron supplement (Solgar Gentle Iron) with vit C 1 h before tea, Mahanarayan post-long-run abhyanga, Anulom Vilom + Bhramari AM, Yoga Nidra 30 min PM, MitoMID PBM 15 min, sauna 3×/wk, contrast water 3×/wk, foam-roll + Normatec boots 30 min/day, HRV biofeedback 10 min BID. Cold immersion only after Sunday endurance, not within 2 h of Tue/Fri strength.
+## 13.5 Patient-facing primer
 
-- **Wk 4:** HRV 38 ms; sleep onset 23:30; DOMS resolution 72 h; ferritin 38.
-- **Wk 12:** HRV 46 ms; DOMS resolution 48 h; ferritin 62; 25-OH-D 41; fT3 3.1; hs-CRP 0.7; vertical jump 32 cm; 5 km TT −22 s.
-- **Mo 6:** HRV 51 ms; DOMS resolution 36 h; ferritin 85; 25-OH-D 58; fT3 3.4; CK 180; vertical jump 35 cm; 10 km PB.
-- **Mo 12:** HRV 53 ms (sustained); no overtraining episodes; ferritin 95; 25-OH-D 65; menstrual cycle regular; bone density (DEXA) +1.2% lumbar spine; full racing season completed; protocol scaled to maintenance.
+### 13.5.1 The plain-language explainer
 
-## 13.5 Patient-Facing Primer
+> **For you, in plain words.** Read this once before you start.
 
-Sports recovery is not "rest until you stop hurting" or "ice + Advil after every game". Inside your body during the hours and days after a hard session, four things are happening together: (1) your muscles have tiny tears that your immune system is busy cleaning up and rebuilding stronger — and if you blunt that inflammation too aggressively (chronic high-dose NSAIDs, ice baths within 2 hours of strength training, mega-doses of vitamin C and E around your session), you actually weaken the adaptation; (2) you have run down your glycogen, ATP, creatine, water and electrolytes — those need to be replenished fast and in the right ratios; (3) your gut may be slightly leaky from endurance load and your inflammatory load is elevated; and (4) your nervous system is in sympathetic overdrive and needs to shift back to parasympathetic before the next session — your heart-rate-variability tells the story.
+You are not a machine. The training session is the stimulus; the recovery is when the adaptation actually happens. The conventional approach — rest + Advil + push through — gets recovery half-right (rest is good) and half-wrong (Advil blunts the very gain you trained for, and "push through" causes injuries).
 
-This protocol does **not** rely on chronic NSAIDs, IV bags at clinics, banned ergogenics, or "recovery shots" of dubious origin. Instead, it rebuilds each of those four layers from the inside out — with **creatine (5 g daily, Group A evidence)**, properly-timed **tart cherry, omega-3 EPA, magnesium**, classical Ayurvedic and TCM tonifiers (Ashwagandha KSM-66, Cordyceps, Chyawanprash, *Bu Zhong Yi Qi Tang*), **electrolytes matched to sweat rate**, **pre-event beetroot juice + citrulline + (TUE-compliant) caffeine**, **post-event protein 25–40 g + carb 40–80 g + electrolytes within 30 minutes**, sauna for plasma volume, cold immersion at the right times (not the wrong times), red-light therapy, foam-rolling, compression boots, HRV biofeedback, and — most of all — **sleep 8 hours every night**.
+**What we are doing.** Four things in parallel. (i) **Restore the foundation** — sleep 8-9 h, 1.6-2.2 g/kg protein, 30-60 min post-workout shake, no caffeine after 14:00. (ii) **Take the foundation supplements** — creatine 5 g daily (the most-studied ergogenic ever), whey post-workout, omega-3 + magnesium + ashwagandha + vitamin D. (iii) **Modulate, don't suppress** — tart cherry for DOMS, curcumin for chronic inflammation but timed away from strength sessions, cold plunge for endurance not strength. (iv) **Listen to the autonomic system** — HRV daily, RESTQ-Sport weekly, ACWR 0.8-1.3, deload every 4-6 weeks.
 
-Expect a steady improvement, not a magic-bullet day. The first thing you will notice (Weeks 4–8) is that your HRV rises and your DOMS resolves faster. Around Week 12 your performance markers (jump, sprint, race-pace TT) measurably improve. Real long-term durability is a 6-to-12-month story.
+**What to expect.** Weeks 1-4 — sleep improves first; creatine saturates. Weeks 5-12 — DOMS recovery time drops 25-40%, HRV trend up, performance markers improve. Months 4-12 — durable adaptation; the recovery-time floor is your new normal.
 
-You are sovereign over your own body. If you choose to keep a sports physician or dietitian informed, that is your personal decision. The protocol does not require it.
+**What this is not.** Not a "recovery hack" pile of trendy supplements. Not a justification for IV bags or off-label peptides. Not a substitute for periodisation discipline. The goal is durable adaptation, not faster acute soreness reduction.
+
+**Sovereignty.** This is independent, OTC, home-based. **No prescription NSAIDs as default. No IV. No clinic. No peptides. No SARMs. No banned ergogenic.** You are in charge of your own body. If you keep a sports medicine physician in the loop, that is your call; the protocol does not require it. **Red flag — overtraining**: sustained HRV depression + mood drop + sleep disruption + performance decline = mandatory rest, not "more recovery supplements."
+
+## 13.7 Honest evidence-tier comparison table
+
+### 13.7.1 Every approach, honestly ranked
+
+> **For you, in plain words.** Every approach this dossier covers, with an honest tier and brutal plain-words verdict — including the ones we do NOT recommend.
+
+| Approach | Tier | Plain-words verdict (≤25 words) | Where it fits |
+|---|---|---|---|
+| Sleep 8-9 h habitual; 10 h pre-competition | A | Mah 2011 Stanford — +9% sprint and shooting accuracy. The single biggest recovery lever. | Cornerstone — daily |
+| Protein 1.6-2.2 g/kg/day + 20-40 g post-workout | A | Morton 2018 meta — ceiling 1.6 g/kg for MPS; whole protein beats BCAAs. | Cornerstone — daily |
+| Creatine monohydrate 5 g/day | A | Kreider 2017 / AIS Group A — 1000+ RCTs; +5-15% strength + 1-2 kg lean mass. | Cornerstone — daily |
+| HRV tracking (Oura/Whoop/Polar) | A (training-monitoring) | Plews 2013 — HRV-guided beats fixed plans. | Cornerstone device |
+| Periodisation + ACWR discipline | A | Gabbett 2016 — ACWR 0.8-1.3 is the single best injury-prevention tool. | Cornerstone |
+| Caffeine 3-6 mg/kg 60 min pre-event | A (event ergogenic) | AIS Group A; cut-off 14:00 to protect sleep. | Cornerstone event-day |
+| Tart cherry (Montmorency) | B | Howatson 2010 marathon — reduced DOMS + faster strength recovery; event-window only. | Event-window layer |
+| Beetroot nitrate | B | Domínguez 2017 meta — endurance signal; 2-3 h pre-event. | Event-window layer |
+| Ashwagandha KSM-66 / Sensoril | B (recovery) / A (stress) | Wankhede 2015 strength + Chandrasekhar 2012 cortisol -27%; EMA monograph. | Cornerstone PM |
+| Omega-3 EPA+DHA | B | EMA monograph; modest DOMS + chronic inflammation modulation. | Daily layer |
+| Magnesium glycinate | B | Most adults sub-floor; sleep + cramp prevention. | Daily layer |
+| Curcumin phytosome (Meriva) | B | Drobnic 2014; **time away from immediate post-strength to avoid blunting adaptation.** | Adjunct — timed |
+| Citrulline malate | B | Pérez-Guisado 2010 — modest soreness reduction; AIS Group B. | Pre-workout layer |
+| HMB | B (beginners/elderly) / C (trained) | Modest in beginners and elderly; minimal in trained athletes. | Specific populations only |
+| Cold-water immersion | B (DOMS) / X (post-strength hypertrophy) | Cochrane Bleakley 2012 DOMS benefit; Roberts 2015 — blunts strength hypertrophy if within 2 h post-strength. | Endurance-day only |
+| Home sauna (Finnish / IR) | B | Hussain 2018 meta + Laukkanen 2018 KIHD — real CV signal + GH pulse. | Optional cornerstone |
+| Compression boots | C-B | Hill 2014 — modest perceived benefit; minimal objective. | Adjunct |
+| Foam roller + massage gun | C-B | Wiewelhove 2019 — modest DOMS + ROM. | Comfort adjunct |
+| Yoga Nidra / Bhramari | B | Sleep onboarding + parasympathetic restoration. | Daily |
+| CBT-i (Sleepio) | A | Espie 2012 — digital first-line insomnia therapy. | If sleep is broken |
+| HRV biofeedback (HeartMath / Lief) | A (anxiety) / B (recovery) | Goessl 2017 meta. | Cornerstone for autonomic |
+| Shilajit (purified) | B | Pandit 2016 strength + free T signal. | Ayurvedic layer |
+| Chyawanprash | T | Classical AYUSH rasayana; daily breakfast supplement. | Daily layer |
+| Triphala HS | A (constipation) / B (recovery overlap) | AYUSH monograph; gut + circadian. | Daily PM |
+| Bu Zhong Yi Qi Tang | T | Pi Wei Lun classical; Spleen-Qi recovery; cycling weeks 1 & 4. | TCM cycling |
+| Ren Shen (Korean Red Ginseng) | B (recovery) / C (ergogenic) | Hong 2002; modest signal. | Optional adjunct |
+| Eleuthero | B | Panossian 2010 review; endurance + immune. | Optional adjunct |
+| BCAAs alone | X | Wolfe 2017 — whole protein beats; skip. | NOT in protocol |
+| Glutamine standalone (light training) | C | Small signal in heavy endurance only; routine training minimal. | Endurance-only adjunct |
+| Pre-workout proprietary blends | X (often) | AIS Group C/D ingredients; contamination risk. | NOT in protocol |
+| Homeopathy (Arnica, Rhus tox, Ruta, etc.) | T/H | Boericke / Kent tradition; modern RCT evidence sparse. | Documented; not in active protocol |
+| Routine high-dose NSAIDs | X (recovery) | Schoenfeld 2012 — blunts MPS + adaptation. | NOT in protocol |
+| High-dose vit C pre-exercise | X | Gomez-Cabrera 2008 — blunts mitochondrial adaptation. | NOT in protocol |
+| Cortisone injection (chronic tendinopathy) | C-D | Coombes 2010 Lancet — short-term relief, long-term tissue damage. | Clinic-route §10.7.3 only; acute use |
+| Off-label TRT for non-hypogonadal | X | HPG axis suppression + cardiac risk; not for healthy athletes. | Clinic-route §10.7.3 with confirmed hypogonadism only |
+| IV vitamin drips | X | Mostly unevidenced; banned-substance contamination risk. | NOT in protocol |
+| SARMs / peptides / banned ergogenics | X | Outside the protocol entirely. | NOT — never |
+| Kapalbhati / Bhastrika in HTN | X | Contraindicated. | NOT in HTN/pregnancy/cardiac |
 
 ## 14. Independent Healing Paradigm
 
-This protocol diverges from the mainstream sports-medicine model that defaults to chronic NSAIDs, clinic-administered IV bags, costly recovery boutique services, and dubious peptide / SARM / banned-ergogenic offerings. Sports recovery is treated here as the visible apex of a four-node systemic network — mechanical microdamage, energy-substrate replenishment, oxidative + gut-permeability load, autonomic + HPA rebalancing — intervened at each node in parallel using only **OTC, home-administered, WADA-clean** tools.
+### 14.1 Sovereignty re-affirmed
 
-**Sovereignty ethos.** **No banned ergogenic. No anabolic steroid. No SARM. No peptide injection. No IV recovery bag. No chronic NSAID.** The user owns their body and their healing path. Evidence varies honestly: Grade A for creatine monohydrate Creapure (AIS Group A), beta-alanine (AIS Group A), beetroot nitrate (AIS Group A), caffeine (AIS Group A), electrolytes, tart cherry for DOMS, omega-3, curcumin, vitamin D, Ashwagandha-KSM-66; Grade B for citrulline malate, Cordyceps, Rhodiola (EMA monograph), CoQ10, MSM, glycine, glutamine, HRV biofeedback; Grade C/D for newer adjuncts (PQQ, NR/NMN, shilajit only if heavy-metal-tested); Grade T for Ayurveda / TCM / Unani / Siddha / Tibetan / homeopathic — honoured as traditions, never marketed as proof.
+This protocol differs from the conventional sports-medicine model because recovery is framed as **the rate-limiting step of adaptation** — and the goal is durable adaptation, not faster acute soreness reduction. The conventional path (Advil + IV + push through, or worse: off-label TRT and SARMs) gets recovery half-wrong: high-dose NSAIDs blunt adaptation (Schoenfeld 2012), routine post-strength CWI blunts hypertrophy (Roberts 2015), and over-medicalised "recovery clinics" rarely outperform sleep + creatine + whey + tart cherry + ashwagandha. **No prescription. No clinic. No hospital. No surgery. No banned ergogenics. No SARMs. No off-label peptides.** The user owns their body and their training path.
 
-Authority grounded in **WHO TCIM Strategy 2025–2034, India AYUSH/CCRAS/CCRH/CCRYN/CCRUM/CCRS/PCIMH/ICMR, EMA HMPC, Australia TGA + NHMRC + Australian Institute of Sport supplement framework, China NMPA + Chinese Pharmacopoeia, Health Canada NHP, Men-Tsee-Khang, Hamdard, IMPCOPS**, plus classical texts (Charaka — *Rasayana*, *Bhavaprakasha*, Avicenna's *Canon*, *Huang Di Nei Jing*, *Pi Wei Lun*, *Tai Ping Hui Min He Ji Ju Fang*, *Yi Zong Jin Jian*, Boericke, Kent) and **WADA Prohibited List compliance**.
+We are honest about evidence limits. CWI is mixed (good for DOMS, blunts strength gains post-strength). BCAAs are downgraded (Wolfe 2017 — whole protein wins). Pre-workout proprietary blends carry contamination risk. Cortisone gives short-term relief at long-term tissue cost. The strongest cornerstones are A-grade behavioural (sleep, periodisation, HRV-guided training) and A-grade ergogenic (creatine, caffeine, whey).
 
-Explicit re-affirmation: **no FDA, FTC, ACSM, AHA, AMA, NCAA, APA, ACOG, NAMS, ACR, ACS, CDC, NIH-policy, AAFP, AAP as authority. Period.**
+**No FDA, FTC, NCAA, ACSM, AHA, AMA, CDC, NIH-policy as authority on whether something WORKS. Period.** Where US regulatory milestones appear (rarely in §10.7), they are framed as **regulatory-path context, not evidence anchor**. Protocol grounded in WHO TCIM, India AYUSH (CCRAS, CCRH, CCRYN, CCRUM, CCRS, PCIMH, ICMR), EMA HMPC, Australia TGA + NHMRC + **AIS Sports Supplement Framework**, China NMPA + Chinese Pharmacopoeia 2020, Health Canada NHP, Men-Tsee-Khang, Hamdard, IMPCOPS, plus classical texts.
+
+**Overtraining red flag.** Sustained HRV depression + mood drop + sleep disruption + performance decline + persistent CK/LDH elevation = mandatory rest, not "more recovery supplements." The protocol is a tool for adaptation; it cannot rescue a broken periodisation.
+
+## 15. References (primary)
+
+- Adlercreutz H et al. Effect of training on plasma anabolic and catabolic steroid hormones and their response during physical exercise. *Int J Sports Med* 1986.
+- AIS. Sports Supplement Framework (Group A/B/C/D classification).
+- Aragon AA, Schoenfeld BJ. Nutrient timing revisited. *J Int Soc Sports Nutr* 2013.
+- AYUSH Ministry. Ashwagandha, Shilajit, Triphala, Chyawanprash monographs.
+- Bahrke MS, Morgan WP. Evaluation of the ergogenic properties of ginseng. *Sports Med* 2009.
+- Bell PG et al. Montmorency cherries reduce inflammatory and oxidative stress. *Nutrients* 2014 meta.
+- Bleakley C et al. Cold-water immersion (cryotherapy) for preventing and treating muscle soreness after exercise. *Cochrane Database Syst Rev* 2012.
+- Brown RP, Gerbarg PL. Sudarshan Kriya breathing. *Med Hypotheses* 2013.
+- Burke LM et al. Carbohydrates for training and competition. *J Sports Sci* 2011 (IOC).
+- Chandrasekhar K et al. KSM-66 Ashwagandha root extract, cortisol RCT. *Indian J Psychol Med* 2012.
+- Cochrane: Bleakley C 2012 (cold-water immersion).
+- Coombes BK et al. Efficacy and safety of corticosteroid injections and other injections for management of tendinopathy. *Lancet* 2010 meta.
+- De Souza MJ et al. Female athlete triad. *Br J Sports Med* 2014.
+- Doering TM et al. Lower integrated muscle protein synthesis in masters athletes. *Med Sci Sports Exerc* 2016.
+- Domínguez R et al. Effects of beetroot juice supplementation on cardiorespiratory endurance. *Nutrients* 2017 meta.
+- Drobnic F et al. Reduction of delayed onset muscle soreness by curcumin (Meriva). *J Int Soc Sports Nutr* 2014.
+- EMA HMPC monographs: Ashwagandha (2024), Curcumin, Magnesium, Omega-3, Zinc.
+- Espie CA et al. Online CBT-i (Sleepio) RCT. *Sleep* 2012.
+- Ferraresi C et al. PBM in human skeletal muscle. *Photonics Lasers Med* 2016.
+- Foster C et al. Session-RPE. *J Strength Cond Res* 2001.
+- Gabbett TJ. The training-injury prevention paradox: ACWR. *Br J Sports Med* 2016.
+- Gillman PK. Serotonin syndrome risk. *Br J Anaesth* 2010.
+- Goessl VC et al. HRV biofeedback meta-analysis. *Psychol Med* 2017.
+- Gomez-Cabrera MC et al. High-dose vitamin C blunts mitochondrial biogenesis. *Am J Clin Nutr* 2008.
+- Halson SL. Monitoring training load to understand fatigue in athletes. *Sports Med* 2014.
+- Held K et al. Oral Mg supplementation reverses age-related neuroendocrine and sleep EEG changes. *Pharmacopsychiatry* 2002.
+- Hill J et al. Compression garments and recovery. *Br J Sports Med* 2014 meta.
+- Hong B et al. Korean Red Ginseng RCT. *J Urol* 2002.
+- Howatson G et al. Influence of tart cherry juice on indices of recovery following marathon running. *Scand J Med Sci Sports* 2010.
+- Hussain J et al. Clinical effects of regular dry sauna bathing. *Evid Based Complement Alternat Med* 2018.
+- Ivy JL. Regulation of muscle glycogen resynthesis. *Sports Med* 2002.
+- Kabat-Zinn J. *Full Catastrophe Living* (MBSR).
+- Kellmann M, Kallus KW. *Recovery-Stress Questionnaire for Athletes (RESTQ-Sport)*. 2001.
+- Kreider RB et al. ISSN position stand on creatine. *J Int Soc Sports Nutr* 2017.
+- Laukkanen JA et al. Sauna bathing and risk of cardiovascular disease (KIHD). *Mayo Clin Proc* 2018.
+- Lehrer PM, Gevirtz R. HRV biofeedback overview. *Front Psychol* 2014.
+- Mah CD et al. The effects of sleep extension on the athletic performance of collegiate basketball players. *Sleep* 2011.
+- Mont L et al. Pre-participation cardiovascular evaluation for athletic participants: AFib in endurance. *Europace* 2017.
+- Morton RW et al. A systematic review, meta-analysis and meta-regression of protein supplementation on resistance training-induced gains. *Br J Sports Med* 2018.
+- Mountjoy M et al. IOC consensus statement on Relative Energy Deficiency in Sport (REDs). *Br J Sports Med* 2018.
+- Nédélec M et al. Recovery in soccer. *Sports Med* 2013.
+- Pandit S et al. Clinical evaluation of purified Shilajit on testosterone levels in healthy volunteers. *Andrologia* 2016.
+- Panossian A et al. Rhodiola rosea / Eleuthero / adaptogen review. *Curr Clin Pharmacol* 2010.
+- Parr EB et al. Alcohol cuts muscle protein synthesis. *PLOS ONE* 2014.
+- Pérez-Guisado J, Jakeman PM. Citrulline malate enhances athletic performance. *J Strength Cond Res* 2010.
+- Phillips SM. The impact of protein quality on the promotion of resistance exercise-induced changes in muscle mass. *Nutr Metab (Lond)* 2016.
+- Plews DJ et al. Training adaptation and HRV in elite endurance athletes. *Sports Med* 2013.
+- Powers SK et al. Exercise-induced oxidative stress: hormesis. *Free Radic Biol Med* 2008.
+- Pyne DB et al. Probiotics supplementation for athletes — exercise immunology. *Eur J Sport Sci* 2014.
+- Res PT et al. Protein ingestion before sleep improves post-exercise overnight recovery. *Med Sci Sports Exerc* 2012.
+- Roberts LA et al. Post-exercise cold water immersion attenuates acute anabolic signalling and long-term adaptations in muscle to strength training. *J Physiol* 2015.
+- Schoenfeld BJ. The use of nonsteroidal anti-inflammatory drugs for exercise-induced muscle damage. *Sports Med* 2012.
+- Sim M et al. Iron considerations for the athlete. *Eur J Appl Physiol* 2019.
+- Smith C et al. Omega-3 PUFA in skeletal muscle. *J Strength Cond Res* 2011.
+- Talbott S et al. Astaxanthin and endurance. *J Int Soc Sports Nutr* 2007.
+- Vandenberghe K et al. Caffeine counteracts the ergogenic action of muscle creatine loading. *J Appl Physiol* 1996.
+- Vesterinen V et al. Individual endurance training prescription with HRV. *Med Sci Sports Exerc* 2016.
+- Walker M. *Why We Sleep*. 2019.
+- Wankhede S et al. Examining the effect of Ashwagandha (KSM-66) on muscle strength and recovery. *J Int Soc Sports Nutr* 2015.
+- WHO Traditional Medicine Strategy 2025-2034; ferritin guidance 2020.
+- Wiewelhove T et al. Meta-analysis of the effects of foam rolling. *Front Physiol* 2019.
+- Wilson JM et al. ISSN HMB position. *J Int Soc Sports Nutr* 2013.
+- Wolfe RR. Branched-chain amino acids and muscle protein synthesis. *J Int Soc Sports Nutr* 2017.
+- Classical texts: *Charaka Samhita* Sutra Sthana ch. 6, 7, 17; *Shen Nong Ben Cao Jing*; *Pi Wei Lun* (Li Dong-yuan); *Jin Gui Yao Lue*; Avicenna's *Canon*; *Siddha Maruthuvam*; *rGyud-bzhi*; Boericke's *Materia Medica*.

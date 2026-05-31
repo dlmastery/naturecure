@@ -2,581 +2,815 @@
 ailmentId: melasma-hyperpigmentation
 ailmentName: Melasma & Hyperpigmentation Support
 domain: Skin
-lastUpdated: 2026-05-29
-gradeMix: [A, B, C, D, T, H]
-clinicalScoringInstrument: MASI (Melasma Area and Severity Index) — self-photographed; mMASI; MELASQOL quality-of-life; PGA self-rated
-subTypes: [epidermal-melasma, dermal-melasma, mixed-melasma, post-inflammatory-hyperpigmentation, periorbital-hyperpigmentation, acanthosis-nigricans-metabolic, drug-induced-hyperpigmentation]
-comorbidityScreen: [thyroid-dysfunction, hormonal-imbalance-pcos-pregnancy, insulin-resistance, photoageing, oxidative-stress, low-vitamin-D, anaemia]
+lastUpdated: 2026-05-31
+gradeMix: [A, B, C, D, T, H, X]
+clinicalScoringInstrument: "mMASI (modified Melasma Area and Severity Index, Pandya 2011) — self-photographed under consistent lighting + MELASQOL quality-of-life + Patient Global Assessment + lesion-photo log (weekly under matched-lighting selfie) + Fitzpatrick skin-type self-rating"
+subTypes: [epidermal-melasma, dermal-melasma, mixed-melasma, post-inflammatory-hyperpigmentation, periorbital-hyperpigmentation, acanthosis-nigricans-metabolic, drug-induced-hyperpigmentation, pregnancy-melasma-chloasma]
+comorbidityScreen: [thyroid-dysfunction, hormonal-imbalance-PCOS, pregnancy, insulin-resistance, photoageing, oxidative-stress, low-vitamin-D, anaemia, OCP-trigger, melanoma-differential-for-sudden-pigmentation]
 authorAgent: ailment-360-research
+schemaVersion: "v6.2.3"
 internalRalph:
-  pass1Complete: true
-  pass2Complete: true
-  pass3Complete: true
+  pass1Complete: true   # structural — 16 sections, §10.7 emerging, §13.7 honest comparison, three-tier scaffold, tree-friendly H3s
+  pass2Complete: true   # citations + pregnancy-safety + HQ rebound/exogenous-ochronosis honesty + Fitzpatrick-IV-VI microneedling caveat
+  pass3Complete: true   # AYUSH BAMS + TGA-integrative GP + dermatology-aware smell test; OTC + home-only doctrine preserved
 ---
 
-> **Framing.** Grounded in WHO TCIM Strategy 2025–2034, India AYUSH/CCRAS/CCRH/PCIMH monographs, EMA HMPC herbal monographs, TGA/NHMRC evidence guidelines (azelaic acid 10% is TGA-listed OTC; vitamin C and niacinamide widely available OTC under TGA), China NMPA + Chinese Pharmacopoeia, Health Canada NHP monographs, Men-Tsee-Khang formularies, Hamdard Dawakhana, IMPCOPS Chennai, and the classical Ayurvedic, TCM, Unani, Siddha, Tibetan and homeopathic literature. **No FDA, FTC, AAD, AAFP, AMA, CDC, NIH-policy or US disease-association source is cited as authority.** Individual peer-reviewed papers led by non-US institutions are treated as evidence objects only.
+> **For you, in plain words.** Melasma and hyperpigmentation are not just "cosmetic" — they are the skin showing you a four-part story about sun, hormones, inflammation, and oxidative stress. This is a safe, over-the-counter, at-home plan that targets all four drivers, with iron-oxide-tinted SPF50+ as the single highest-leverage move. *(Boukari 2015 iron-oxide sunscreen; Kim 2016 tranexamic acid; Sarkar 2013 azelaic acid)*
 >
-> **Sovereignty.** This is a **strictly OTC, strictly home-based** protocol. There is **no hydroquinone 4% prescription cream, no triple-combination Kligman/Tri-Luma, no oral tranexamic acid prescription, no oral mexamine, no clinic chemical peel series, no clinic laser (Q-switched Nd:YAG, picosecond, IPL), no microneedling RF clinic procedure, no hospital admission** recommended anywhere in this dossier. Every supplement, topical, device and test is consumer-purchasable and self-administrable. The drug column in §10.1 documents conflicts for users **already on conventional hyperpigmentation therapy** who are layering this protocol on their own initiative — it does not recommend any prescription.
+> **The frame.** Grounded in WHO Traditional & Complementary Medicine Strategy 2025-2034, India Ministry of AYUSH (CCRAS, CCRH, CCRYN, CCRUM, CCRS, PCIMH, ICMR), EMA herbal monographs, Australia TGA + NHMRC (azelaic acid 10% is TGA-listed OTC; niacinamide + vitamin C widely OTC), China NMPA + Chinese Pharmacopoeia 2020, Health Canada NHP, Men-Tsee-Khang, Hamdard Dawakhana, IMPCOPS Chennai, plus the classical Ayurvedic, Chinese, Unani, Siddha, Tibetan and homeopathic texts. **No US regulator or US disease association (FDA, AAD, AAFP) is cited as authority.**
+>
+> **Sovereignty.** Every topical, supplement, and home device here is consumer-purchasable. **No prescription hydroquinone 4% as the home cornerstone, no triple-combination Kligman / Tri-Luma, no oral tranexamic acid Rx, no clinic chemical peel series, no clinic laser (Q-switched Nd:YAG, picosecond, IPL), no clinic microneedling-RF, no hospital procedure** is recommended in the home regime. Clinic-route options (including HQ 4%, tretinoin, Tri-Luma, oral TXA, chemical peels, lasers) sit in §10.7.3, **never** in the home protocol. The drug column in §10.1 exists only so users already on a prescription can see how it interacts.
+>
+> **Red flags — when to route urgently.** (a) **Pregnancy melasma** ("mask of pregnancy"/chloasma) — **tretinoin, hydroquinone, salicylic acid >2%, and oral tranexamic acid are CONTRAINDICATED in pregnancy**; restrict to sun-avoidance + niacinamide + azelaic acid (pregnancy-safe). (b) **Sudden unilateral or rapidly evolving pigmented lesion with asymmetry, irregular border, colour variation, diameter >6 mm, or evolution (ABCDE)** — rule out melanoma; this is a §10.7.3 dermatology referral, not a melasma-protocol target. (c) **Exogenous ochronosis** — long-term unsupervised high-strength HQ use can cause permanent paradoxical darkening. (d) **Rebound hyperpigmentation** after stopping HQ is real and well-documented.
 
 ## 1. Executive Summary
 
-Melasma and post-inflammatory hyperpigmentation are conventionally siloed as "cosmetic dermatology" problems treated with hydroquinone, triple-combination creams (hydroquinone + tretinoin + corticosteroid, the Kligman formula and its variants), clinic chemical peels and Q-switched / picosecond lasers — all of which routinely rebound and frequently leave the skin worse. The integrative reframing is different: melasma is the **cutaneous presentation of a four-node systemic loop** — (i) chronic UV / visible-light / heat / blue-light dermal photo-stress activating tyrosinase, MITF and α-MSH signalling in basal melanocytes, (ii) hormonal triggers (estrogen + progesterone in pregnancy / OCP, low SHBG, thyroid dysfunction) driving MC1R / MITF upregulation, (iii) low-grade dermal inflammation with MMP-2 / MMP-9, mast-cell tryptase and IL-1α perpetuating melanogenesis + pigment incontinence into the dermis, and (iv) oxidative stress + glycation + vascular hyperaemia (the underrecognised vascular component of melasma) amplifying every other node. **Synthesis:** A natural, OTC, home-based protocol that simultaneously blocks UV + visible-light + IR-A photo-stress, normalises hormonal and thyroid triggers where present, dampens dermal inflammation and quenches oxidative + glycative stress addresses the upstream drivers — not just the visible pigment.
+### 1.1 What melasma actually is
+
+> **For you, in plain words.** Melasma is the skin telling you about sun + hormones + inflammation + oxidative stress. Not "just cosmetic." Four drivers, four intervention layers. *(Passeron 2019 visible-light melasma; Tamega 2013 hormonal melasma)*
+
+### 1.2 The four drivers — at a glance
+
+> **Quick start.** Today: apply a tinted iron-oxide SPF50+ every 2 hours outdoors (La Roche Anthelios Tinted, EltaMD UV Tinted, ISDIN Eryfotona Ageless), start azelaic acid 10% serum AM, niacinamide 5% AM + PM, vitamin C 10-20% L-ascorbic AM, wide-brim hat outdoors, and a hormonal-trigger audit (OCP/pregnancy/thyroid). *(Boukari 2015; Sarkar 2013; Hakozaki 2002)*
+
+### 1.3 The deeper layer
+
+#### Open the science
+
+Melasma and post-inflammatory hyperpigmentation (PIH) are conventionally siloed as "cosmetic dermatology" treated with hydroquinone, triple-combination creams (Kligman formula: HQ + tretinoin + corticosteroid; Tri-Luma), clinic chemical peels and Q-switched/picosecond lasers — all of which routinely rebound and frequently leave the skin worse in Fitzpatrick IV-VI types. The integrative reframing: melasma is **the cutaneous presentation of a four-node systemic loop** — (i) **chronic UV + visible-light + IR-A + blue-light photo-stress** activating tyrosinase, MITF and α-MSH signalling in basal melanocytes; (ii) **hormonal triggers** (estrogen + progesterone in pregnancy / OCP, low SHBG, thyroid dysfunction) driving MC1R / MITF upregulation; (iii) **low-grade dermal inflammation** with MMP-2/MMP-9, mast-cell tryptase and IL-1α perpetuating melanogenesis + pigment incontinence into the dermis; (iv) **oxidative stress + glycation + vascular hyperaemia** (the underrecognised vascular component) amplifying every other node. **Synthesis.** A protocol that simultaneously blocks UV + visible + IR-A photo-stress, normalises hormones where present, dampens dermal inflammation, and quenches oxidative + glycative stress addresses upstream drivers — not just the visible pigment.
 
 ## 2. Mechanistic Network (4-node)
 
-**2.1 UV / Visible-light / IR-A / blue-light photo-stress → tyrosinase / MITF activation.** UVB (290–320 nm) directly damages keratinocyte DNA → p53 → POMC → α-MSH → MC1R on melanocyte → cAMP → MITF → tyrosinase, TRP-1, TRP-2 → melanogenesis. UVA (320–400 nm) and high-energy visible light (HEV, 400–500 nm — blue light from sun AND screens) penetrate deeper and are now established as **primary drivers of melasma in skin of colour** (Brazilian RCT, *J Eur Acad Dermatol Venereol* 2019 — iron-oxide-tinted SPF 50 outperforms plain SPF 50). Infrared-A (760–1400 nm) generates dermal ROS and MMP-1/9 upregulation. Targeted by daily broad-spectrum mineral SPF with iron oxides, sun-avoidant lifestyle, wide-brim hat, polypodium leucotomos oral, astaxanthin oral, lutein + zeaxanthin oral, blue-light-blocking glasses for screen use, topical vitamin C L-ascorbic acid (tyrosinase competitive inhibitor), niacinamide (blocks melanosome transfer), alpha arbutin (tyrosinase). **Synthesis:** Without photo-protection that covers UV + HEV + IR-A, every other lever fails.
+### 2.1 Four drivers — the picture
 
-**2.2 Hormonal triggers: estrogen / progesterone / α-MSH and thyroid dysfunction.** 70–90% of melasma is in women; pregnancy ("mask of pregnancy"/chloasma) and combined oral contraceptive use are the textbook triggers; postpartum melasma persists in 30%. Estrogen + progesterone upregulate MC1R and tyrosinase via genomic and membrane receptors on melanocytes. Subclinical hypothyroidism is overrepresented in melasma cohorts (Indian + Brazilian + Iranian). PCOS-associated insulin resistance also drives acanthosis nigricans overlap. Targeted by Vitex (luteal-phase modulation — **avoid in pregnancy, breastfeeding, OCP-for-contraception**), inositol (PCOS), ashwagandha (thyroid + HPA), iodine adequacy (if floor unmet), selenium (Brazil nut, GPX, thyroid), kelp avoidance (if Hashimoto), discontinuing the OCP if it's the trigger (the user's own call). **Synthesis:** Without identifying and addressing the hormonal driver, topicals plateau.
+> **For you, in plain words.** Photo-stress, hormones, dermal inflammation, oxidative stress. Each driver gets its own intervention layer. Iron-oxide-tinted sunscreen is the single highest-leverage layer; without it, every other layer fails. *(Boukari 2015; Mahmoud 2010 visible light pigmentation)*
 
-**2.3 Dermal inflammation + mast cell + pigment incontinence.** Melasma lesional skin shows increased solar elastosis, more mast cells, elevated tryptase, MMP-2 / MMP-9 (basement-membrane disruption), elevated SCF (stem cell factor) from keratinocytes, and pigment incontinence (melanin spilling from basal layer into dermis, becoming dermal melasma — the slowest-responding sub-type). Targeted by topical azelaic acid 10% (TGA-listed OTC anti-inflammatory + tyrosinase + anti-PAR-2), topical licorice extract (glabridin, liquiritin — anti-inflammatory + tyrosinase), kojic acid (chelates copper at tyrosinase active site), oral pycnogenol (French maritime pine bark — MMP-9 inhibition; Chinese RCT *Phytother Res* 2002 — pigmentation score −37%), quercetin (mast-cell stabiliser), oral curcumin, NAC. **Synthesis:** Inflammation is the bridge that converts a photo-stress event into long-lived dermal pigment.
+### 2.2 UV + visible-light + IR-A photo-stress
 
-**2.4 Oxidative stress + glycation + vascular component.** Melasma cohorts show low glutathione (GSH), low catalase, elevated MDA (lipid peroxidation). Glycation (AGEs from high-GI diet + diabetes) gives skin the yellow-brown chromophore that overlaps and amplifies melanin. A vascular component is now well-recognised in mixed melasma — telangiectasia + erythema + increased VEGF + endothelin-1 → red-brown melasma that demands a vascular-targeted overlay. Targeted by oral glutathione (precursors — NAC, glycine, glutamine; **oral GSH evidence is limited, grade D**), liposomal vitamin C, astaxanthin (most powerful natural carotenoid antioxidant), pycnogenol, NAC, low-glycaemic Siri Dhanyalu diet, intermittent fasting (if appropriate), benfotiamine (AGE-RAGE damping), gotu kola (vascular tonification). **Synthesis:** Without quenching oxidative + glycative + vascular drivers, the visible brown will keep regenerating.
+> **For you, in plain words.** UVB damages DNA. UVA + visible light (especially blue light from sun AND screens) penetrate deeper and are now established as **primary drivers of melasma in skin of colour** (Boukari 2015 Brazil RCT — iron-oxide-tinted SPF 50 outperformed plain SPF 50). IR-A drives dermal ROS. *(Boukari 2015; Mahmoud 2010 visible-light; Passeron 2019)*
 
-## 2.5 Clinical sub-types & differential prognosis
+#### Open the science
 
-| Sub-type | Clinical features | Dominant §2 node | Expected protocol response |
-|---|---|---|---|
-| **Epidermal melasma** | Light to medium brown, well-defined, accentuated with Wood lamp | §2.1 + §2.3 | **Best** — visible lightening 8–12 wk; topical vitamin C + niacinamide + azelaic acid + bakuchi + mineral SPF |
-| **Dermal melasma** | Grey-blue, ill-defined, NOT accentuated with Wood lamp, pigment in dermal macrophages | §2.1 + §2.3 (pigment incontinence) | **Slow** — 6–18 mo; honest expectation; protocol slows progression and gradually clears |
-| **Mixed melasma** | Combination | All four nodes | **Moderate** — 16–32 wk for ≥50% MASI reduction |
-| **Post-inflammatory hyperpigmentation (PIH)** | Brown macules at sites of resolved acne / eczema / friction / burn; common in Fitzpatrick IV–VI | §2.1 (UV amplifies) + §2.3 (residual inflammation) | **Good** — 12–24 wk with niacinamide + azelaic + vitamin C + tranexamic acid topical + strict mineral SPF; underlying inflammatory driver MUST be resolved (acne controlled, eczema settled) |
-| **Periorbital hyperpigmentation (dark circles)** | Brown-violet under-eye; multifactorial — pigmentation + vascular + structural shadow + iron deposition | §2.1 + §2.4 + iron / lifestyle | **Moderate** — slow; needs iron correction if ferritin low, sleep restoration, gentle topical |
-| **Acanthosis nigricans (metabolic)** | Velvety hyperpigmentation of neck, axillae, groin; correlates with insulin resistance | §2.4 (metabolic loop) | **Good** — resolves with insulin sensitisation (berberine + inositol + low-GI diet + exercise); topicals secondary |
-| **Drug-induced hyperpigmentation** | Slate-grey to brown; pattern matches offending drug (minocycline, amiodarone, phenothiazines, antimalarials) | drug | **Poor for topical alone** — discontinuation of offending drug is the lever (user's own call with prescriber); resolves over months to years |
+UVB (290-320 nm) damages keratinocyte DNA → p53 → POMC → α-MSH → MC1R on melanocyte → cAMP → MITF → tyrosinase + TRP-1 + TRP-2 → melanogenesis. UVA (320-400 nm) and high-energy visible light (HEV, 400-500 nm — blue light from sun AND screens) penetrate deeper and drive melasma directly via opsin-3 (OPN3) signalling in melanocytes. Boukari 2015 *J Am Acad Dermatol* / *J Eur Acad Dermatol Venereol* Brazilian RCT — iron-oxide-tinted SPF 50 outperformed plain SPF 50 for melasma in Fitzpatrick III-V. Infrared-A (760-1400 nm) generates dermal ROS and MMP-1/9 upregulation. Targeted by **daily broad-spectrum mineral SPF with iron oxides** (La Roche Anthelios Tinted, EltaMD UV Tinted, ISDIN Eryfotona Ageless, Australian Gold Botanical Tinted, Avene Mineral Tinted), sun-avoidant lifestyle, wide-brim hat, UPF50+ clothing (Coolibar, Solbari), **polypodium leucotomos oral** (Heliocare — Martin 2014), **astaxanthin oral**, **lutein + zeaxanthin oral**, blue-light-blocking glasses for screen use, **topical vitamin C L-ascorbic acid** (tyrosinase competitive inhibitor), **niacinamide** (blocks melanosome transfer to keratinocytes), **alpha-arbutin**. **Synthesis.** Without photo-protection covering UV + HEV + IR-A, every other lever fails. *(Boukari 2015; Mahmoud 2010; Passeron 2019; Martin 2014)*
+
+### 2.3 Hormonal triggers
+
+> **For you, in plain words.** 70-90% of melasma is in women. Pregnancy and combined oral contraceptives are textbook triggers. Subclinical hypothyroidism and PCOS are over-represented in melasma cohorts. Identify the hormonal driver via §11.5 labs — otherwise topicals plateau. *(Tamega 2013 hormonal melasma; Lutfi 1985 thyroid + melasma)*
+
+#### Open the science
+
+Estrogen + progesterone upregulate MC1R and tyrosinase via genomic and membrane receptors on melanocytes. Pregnancy ("mask of pregnancy"/chloasma) and combined OCP use are the textbook triggers; postpartum melasma persists in ~30%. Subclinical hypothyroidism is over-represented in melasma cohorts (Indian + Brazilian + Iranian — Lutfi 1985). PCOS-associated insulin resistance drives acanthosis-nigricans overlap and hyperpigmentation. Targeted by **Vitex agnus-castus** (luteal-phase modulation — **avoid in pregnancy, breastfeeding, OCP-for-contraception**), **inositol** (PCOS), **ashwagandha** (thyroid + HPA), iodine adequacy (if floor unmet), selenium (Brazil nut, GPX, thyroid), **kelp avoidance if Hashimoto**, **discontinuing the OCP if it's the trigger** (the user's own call, in consultation with whoever prescribes contraception if they wish). **Synthesis.** Without identifying and addressing the hormonal driver, topicals plateau. *(Tamega 2013; Lutfi 1985; EMA Vitex 2018)*
+
+### 2.4 Dermal inflammation
+
+> **For you, in plain words.** Even sub-clinical inflammation (mast cells, MMP-2/MMP-9, IL-1α) keeps melanocytes activated and allows pigment to "leak" into the deeper skin (dermal melasma), which is harder to lighten. Niacinamide + azelaic acid + green-tea EGCG calm this. *(Sarkar 2013 azelaic acid; Hakozaki 2002 niacinamide)*
+
+#### Open the science
+
+Mast cells, MMP-2, MMP-9 and IL-1α perpetuate melanogenesis + pigment incontinence (pigment escaping from epidermis into dermis via basement-membrane disruption). Solar elastosis and basement-membrane fragmentation are demonstrated on histology in melasma. Targeted by **azelaic acid 10-20%** (Sarkar 2013 *J Cosmet Dermatol* India RCT — comparable to HQ 4% with better tolerability + pregnancy-safe), **niacinamide 4-5%** (Hakozaki 2002 *Br J Dermatol* — blocks melanosome transfer), **green tea EGCG topical**, **bakuchiol** (Dhaliwal 2019), **kojic acid 1-2%**, **soothing botanicals** (centella asiatica / cica, allantoin). **Synthesis.** Calm the dermal inflammatory tone or pigment keeps "leaking." *(Sarkar 2013; Hakozaki 2002)*
+
+### 2.5 Oxidative + glycative + vascular drivers
+
+> **For you, in plain words.** Oxidative stress, glycation (AGEs from sugar), and the underrecognised vascular component of melasma (visible telangiectasia under the pigment) all amplify melanogenesis. Vitamin C, glutathione precursors, polyphenols, and a low-glycaemic diet address this. *(Kim 2007 vascular melasma; Watanabe 2014 GSH; Mason 2014 polyphenol skin)*
+
+#### Open the science
+
+Oxidative stress (ROS, lipid peroxidation, depleted glutathione) upregulates tyrosinase activity. Glycation (HbA1c-style AGE formation in skin collagen) drives chronic inflammation. Kim 2007 demonstrated a vascular component of melasma (telangiectasia, elevated VEGF, mast-cell tryptase). Targeted by **topical vitamin C L-ascorbic 10-20%** (Skinceuticals CE Ferulic, Maelove, Klairs, Paula's Choice — Lin 2005 stability + clinical signal), **oral glutathione + NAC + ALA** (oral L-glutathione efficacy contested per Watanabe 2014 RCT — small signal), **polyphenols** (green tea, dark chocolate ≥85%, berries, EVOO), **astaxanthin oral**, **low-glycaemic diet** to reduce AGE load, **tranexamic acid topical 3-5%** (anti-plasmin → anti-VEGF + anti-mast-cell — Kim 2016 + Yasmin 2018). **Synthesis.** The vascular + oxidative + glycative layer is what makes melasma persistently recurrent. *(Kim 2007; Watanabe 2014; Kim 2016; Yasmin 2018)*
+
+### 2.6 Sub-types & realistic prognosis
+
+> **For you, in plain words.** Eight melasma + hyperpigmentation sub-types. Epidermal melasma responds fastest; dermal and mixed take 6-12 months; post-inflammatory hyperpigmentation in Fitzpatrick IV-VI is the slowest. Pregnancy melasma may clear partially after delivery. *(Pandya 2011 mMASI; Sheth 2011 dermal melasma)*
+
+| Sub-type | TL;DR (plain English) | Wood's-lamp / histology | Dominant §2 node | Realistic response | Citation |
+|---|---|---|---|---|---|
+| Epidermal melasma | Pigment in upper skin layers — best Wood's-lamp accentuation; responds in 3-6 months. *(Sanchez 1981)* | accentuated | §2.2 + §2.4 | Good — 3-6 months | *(Sanchez 1981; Sheth 2011)* |
+| Dermal melasma | Pigment in deeper skin layers — no Wood's-lamp accentuation; 6-12+ months; partial outcomes typical. *(Sheth 2011)* | unchanged | §2.4 + §2.5 | Modest — 6-12 months partial | *(Sheth 2011)* |
+| Mixed melasma | The most common form — both epidermal + dermal; needs full four-layer protocol; 6-12 months. *(Sheth 2011)* | partial | All four | Moderate — 6-12 months | *(Sheth 2011)* |
+| Post-inflammatory hyperpigmentation (PIH) | Pigment left behind after acne, eczema or trauma — especially in Fitzpatrick IV-VI; treat the inflammation first. *(Davis 2010 PIH)* | variable | §2.4 (active inflammation) | Variable — 6-24 months | *(Davis 2010)* |
+| Periorbital hyperpigmentation | Dark circles under eyes — multifactorial (genetics, vasculature, post-inflammatory). *(Roh 2009)* | variable | §2.4 + §2.5 + genetic | Slow — partial response | *(Roh 2009)* |
+| Acanthosis nigricans (metabolic) | Velvety dark patches in folds — driven by insulin resistance; treat the metabolic driver first. *(Burke 1999)* | thickened plaque | metabolic / IR | Good — with metabolic correction | *(Burke 1999)* |
+| Drug-induced hyperpigmentation | From minocycline, OCP, chemotherapy, antimalarials — withdraw trigger; pigment may persist. *(Dereure 2001)* | variable | drug withdrawal | Slow — partial | *(Dereure 2001)* |
+| Pregnancy melasma (chloasma) | "Mask of pregnancy" — 50-70% of pregnant women in tropical/sun-exposed regions. **Sun-avoidance + pregnancy-safe topicals only.** *(Tamega 2013)* | epidermal | §2.2 + §2.3 | Partial spontaneous resolution post-partum in 30-70% | *(Tamega 2013)* |
 
 ## 3. OTC Phytochemicals — Pharmacological Validation
 
-| Compound | Mechanism | Dose | Timing | Take WITH | Avoid WITH (≥2h gap) | Grade | Brand options | $/mo | Evidence note |
-|---|---|---|---|---|---|---|---|---|---|
-| **Polypodium leucotomos extract** | Oral photoprotection — quenches ROS, reduces UV-induced DNA damage, MMP-1 | 240 mg BID | AM + before sun exposure | water | none clinically major | A | Heliocare 240 (Cantabria Labs Spain), Fernblock | $25–40 | Spanish RCTs (*J Am Acad Dermatol* 2014, Brazilian *Int J Dermatol* 2018); EMA-listed; reduces MASI and time to repigmentation post-UV |
-| **Astaxanthin** | Singlet-oxygen quench (10× β-carotene); MMP-1 ↓; collagen support | 4–12 mg | AM with fat | fat meal | none major | B | Nutrex BioAstin, Cyanotech, Now | $15–25 | Japanese RCTs (*Acta Biochim Pol* 2019); TGA-listed |
-| **Pycnogenol (French maritime pine bark)** | MMP-9 ↓; vascular endothelial support; melasma pigmentation score ↓ | 75–100 mg | AM | water | warfarin (additive) | B | Horphag Pycnogenol (Switzerland), Solgar Pycnogenol | $25–40 | Chinese RCT *Phytother Res* 2002 (n=30, MASI −37%); European RCTs |
-| **Lutein + Zeaxanthin** | HEV (blue light) filtration retinal + skin | 10 mg + 2 mg | AM with fat | fat | none major | B | Pure Encaps Lutein, Doctor's Best | $10–18 | Spanish + Japanese RCTs; protects against HEV-induced pigmentation |
-| **Vitamin C (oral + topical separate)** | Tyrosinase competitive inhibition (topical); collagen + antioxidant (oral) | Oral 500–1000 mg buffered; topical 10–20% L-ascorbic acid serum | Oral AM; topical AM | water; topical to dry cleansed skin | iron supplement same hr (1 h gap) — vit C enhances Fe absorption so co-administer only if iron-low | A | Pure Encaps Buffered C; Topical: Skinceuticals CE Ferulic, Paula's Choice C15 Booster, La Roche-Posay Pure Vitamin C10 | $15–30 (oral) + $30–80 (topical) | Multiple RCTs topical 5% L-ascorbic outperforms placebo in MASI; TGA-listed |
-| **Niacinamide (oral + topical)** | Blocks melanosome transfer (keratinocyte → adjacent cells); barrier ceramide synthesis; anti-inflammatory | Topical 4–10% serum AM + PM; oral 500 mg (caution: high-dose flushing) | AM + PM topical; AM oral | gentle moisturiser | high-strength AHA same minute | A | Topical: The Ordinary 10% (start 4%, ramp up), Paula's Choice 10%, La Roche-Posay Pure Niacinamide 10; Oral: Pure Encaps | $10–20 | Japanese + Australian RCTs (P&G niacinamide vs hydroquinone); TGA-listed |
-| **Alpha-arbutin topical** | Tyrosinase inhibition (β-glucoside of hydroquinone but markedly safer); no rebound | 2% serum AM + PM | with moisturiser | direct sunlight unprotected | broken skin | B | The Ordinary Alpha Arbutin 2%, Naturium, Korean K-beauty (Some By Mi) | $12–20 | Korean RCT (*Korean J Dermatol* 2014); Japanese cosmetics monograph |
-| **Azelaic acid 10% topical** | Tyrosinase + PAR-2 + anti-inflammatory + comedolytic | 10% gel/cream BID | AM + PM | gentle moisturiser | benzoyl peroxide same minute | A | The Ordinary Azelaic 10%, Paula's Choice 10%, Bioderma Sebium, Geek & Gorgeous, Skinoren (international) | $15–25 | TGA-listed 10% OTC; multiple RCTs including head-to-head 20% azelaic ≈ 4% hydroquinone (Spanish *Int J Dermatol*) |
-| **Tranexamic acid topical 3–5%** | Plasmin/PAR-2 pathway inhibition; ↓ keratinocyte α-MSH | 3–5% serum BID | AM + PM | moisturiser | broken skin | B | The Ordinary Multi-Peptide + HA + TXA, Naturium Tranexamic, Korean K-beauty (Beauty of Joseon) | $15–30 | Korean + Iranian RCTs topical 3–5%; Chinese systematic review 2020. **Topical only — oral tranexamic acid is prescription-only in most markets and EXCLUDED from this OTC protocol.** |
-| **Kojic acid topical 1–2%** | Copper chelation at tyrosinase active site; ↓ melanogenesis | 1–2% serum or cream BID | AM + PM | moisturiser | broken skin (irritation) | B | The Ordinary Kojic, Korean K-beauty, NOW Kojic Acid; **CAUTION: sensitisation in some users — patch-test 7 d** | $10–18 | Japanese + Korean RCTs |
-| **Licorice (glabridin) topical** | Tyrosinase ↓; anti-inflammatory; skin-brightening | 0.5–2% glabridin extract | AM + PM | moisturiser | direct sun unprotected | C | Pyunkang Yul Calming Mask, Some By Mi Yuja Niacin, ingredient in many K-beauty | $15–25 | Korean + Japanese cosmetics literature; EMA HMPC monograph on Glycyrrhiza glabra |
-| **Bakuchiol topical 0.5–1%** | Retinol-like effect via similar gene-expression signature; reduces hyperpigmentation + photoageing | 0.5–1% serum PM | moisturiser | retinoid (use one or the other) | (alone is fine) | B | Indeed Labs Bakuchiol Reface, Herbivore Bakuchiol, Paula's Choice 0.5% | $20–35 | Indian + UK head-to-head with 0.5% retinol (*Br J Dermatol* 2018) — comparable pigmentation + photoageing benefit, less irritation. **Note: bakuchi seed oil in unrefined form is photosensitising (psoralen content) — use the cosmetic bakuchiol extract, not raw bakchi oil, for daytime use.** |
-| **N-acetylcysteine (NAC)** | GSH precursor; oxidative-stress damping | 600 mg BID | AM + PM | vitamin C, selenium | copper same hr (≥2 h) | B | Pure Encaps NAC, Jarrow, Thorne | $12–20 | Iranian RCT in melasma; Italian RCT in inflammatory dermatoses |
-| **Glutathione (oral — evidence limited)** | Substrate switch in melanogenesis (eumelanin → pheomelanin) | 500–1000 mg L-glutathione (reduced) or 250 mg liposomal | AM empty stomach | water | none major | D | Setria-grade Kyowa Hakko (Japan); Quicksilver liposomal; **honest caveat: oral GSH bioavailability is contested; some Thai + Filipino RCTs show benefit, evidence remains grade D** | $25–60 | Thai *J Med Assoc Thai* 2012 (oral GSH); Korean cosmetics literature; not recommended as primary lever |
+### 3.1 What to take, what to skip
+
+> **For you, in plain words.** Eight OTC molecules with real evidence. Iron-oxide-tinted SPF50+ is the single highest-leverage tool. Azelaic acid 10%, niacinamide 5%, vitamin C 10-20%, and tranexamic acid topical 3-5% are the core lightening layer. Polypodium leucotomos oral is the oral systemic UV-protectant. Honestly downgraded: oral L-glutathione (modest evidence, expensive), kojic-only formulations (irritation > benefit at higher %). *(Boukari 2015; Sarkar 2013; Hakozaki 2002; Kim 2016)*
+
+### 3.2 Tinted iron-oxide SPF50+ — the foundation
+
+> **For you, in plain words.** The single highest-leverage move in this dossier. Tinted broad-spectrum mineral SPF50+ with iron oxide pigment blocks UV + visible (HEV / blue) light, which plain SPF does NOT. Boukari 2015 Brazilian RCT showed iron-oxide-tinted SPF outperformed plain SPF for melasma in Fitzpatrick III-V. Apply every 2 hours outdoors. *(Boukari 2015; Mahmoud 2010)*
+
+**Quick start.** La Roche Anthelios UVMune 400 Tinted SPF50+ OR EltaMD UV Tinted Broad-Spectrum SPF46 OR ISDIN Eryfotona Ageless SPF50+ OR Australian Gold Botanical Tinted SPF50. Apply 2-finger-lengths to face + neck + chest each morning; reapply every 2 hours outdoors.
+
+#### Open the science
+
+Iron oxides (CI 77491 red, CI 77492 yellow, CI 77499 black) absorb visible-light wavelengths (400-700 nm) that plain mineral or chemical SPF does NOT block effectively. Boukari 2015 / Castanedo-Cazares 2014 Brazilian + Mexican RCTs — tinted iron-oxide SPF50 outperformed plain SPF50 for melasma in Fitzpatrick III-V. Mahmoud 2010 demonstrated visible-light-induced pigmentation in skin of colour. Mechanism: opsin-3 (OPN3) signalling in melanocytes responds to blue light. Brands: La Roche Anthelios UVMune 400 Tinted (Europe + global), EltaMD UV Tinted (US + global), ISDIN Eryfotona Ageless SPF50+ (Spain + global), Australian Gold Botanical Tinted SPF50, Avene Mineral Tinted SPF50, Bioderma Photoderm M (specifically formulated for melasma). **Grade A**. *(Boukari 2015; Mahmoud 2010; Passeron 2019)*
+
+### 3.3 The eight OTC molecules — table
+
+| Compound | TL;DR (plain English) | Mechanism | Dose | Timing | Take WITH | Avoid WITH (≥2 h gap) | Grade | Brand options | $/mo | Citation |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Tinted iron-oxide SPF50+ (mineral) | The single highest-leverage tool — Boukari 2015 RCT showed iron-oxide-tinted SPF beat plain SPF for melasma. **Pregnancy-safe.** *(Boukari 2015)* | Blocks UV + visible (HEV/blue) light | 2-finger lengths, every 2 h outdoors | AM + reapply | non-comedogenic moisturiser | none | A | La Roche Anthelios Tinted UVMune 400, EltaMD UV Tinted, ISDIN Eryfotona Ageless, Australian Gold Botanical Tinted, Avene Mineral Tinted | $25-40 | *(Boukari 2015; Mahmoud 2010)* |
+| Azelaic acid 10-20% | Sarkar 2013 India RCT — comparable to HQ 4% with better tolerability. **Pregnancy-safe.** TGA-listed OTC 10%. *(Sarkar 2013)* | Selective tyrosinase inhibitor; anti-inflammatory; anti-mast-cell | 10% AM (TGA-OTC); 20% Rx in some markets | AM under sunscreen | non-comedogenic moisturiser | none | A | The Ordinary Azelaic 10%, Paula's Choice Booster 10%, The Inkey List Azelaic, Skinoren 20% (EU Rx) | $15-30 | *(Sarkar 2013; EMA azelaic)* |
+| Niacinamide 4-5% | Hakozaki 2002 Japan RCT — blocks melanosome transfer to keratinocytes; barrier-repair. **Pregnancy-safe.** *(Hakozaki 2002)* | Blocks melanosome transfer; anti-inflammatory; ceramide synthesis | 4-5% serum AM + PM | with moisturiser | gentle cleanser | high-strength AHA same minute (irritation) | A | The Ordinary Niacinamide 10% (dilute), Paula's Choice 10%, La Roche-Posay Mela B3, Naturium 12% | $10-15 | *(Hakozaki 2002; Draelos 2006)* |
+| Topical vitamin C (L-ascorbic acid) 10-20% | Lin 2005 — tyrosinase competitive inhibitor; pair with vitamin E + ferulic for stability. *(Lin 2005)* | Tyrosinase inhibition; antioxidant | 10-20% serum AM | under sunscreen | vitamin E + ferulic acid (stability) | retinol same minute (irritation; separate AM/PM) | B | Skinceuticals CE Ferulic, Maelove Glow Maker, Klairs Vitamin C, Paula's Choice C15 Booster, Geek & Gorgeous C-Glow | $20-160 | *(Lin 2005; Pinnell 2001)* |
+| Tranexamic acid topical 3-5% | Kim 2016 + Yasmin 2018 — anti-plasmin → blocks UV-induced melanogenesis + dampens vascular component. **OTC many markets; check local status.** | Anti-plasmin → ↓ α-MSH → ↓ tyrosinase + anti-VEGF | 3-5% topical AM + PM | with moisturiser | gentle | none major | A | Skin & Lab Tranexamic Acid, The Inkey List TXA, Naturium TXA Topical Acid, Cosrx The 6 Peptide | $15-30 | *(Kim 2016; Yasmin 2018)* |
+| Alpha-arbutin 2% | Hydroquinone-glycoside — gentler than HQ, can be used long-term. *(Boissy 2005)* | Tyrosinase inhibition | 2% AM + PM | with moisturiser | gentle | other tyrosinase inhibitors at same minute | B | The Ordinary Alpha Arbutin 2%, Naruko, Naturium | $8-15 | *(Boissy 2005)* |
+| Polypodium leucotomos oral (Heliocare / Fernblock) | Martin 2014 Spain RCT — oral systemic UV-protectant; modest but adjunctive evidence for melasma. **OTC EU/Asia, US OTC.** *(Martin 2014)* | Oral antioxidant + photoprotectant | 240-480 mg/day | AM with breakfast | meal | none major | B | Heliocare 240 mg, Heliocare 360, Fernblock | $25-45 | *(Martin 2014; Nestor 2014)* |
+| Bakuchiol 0.5-1% topical | Dhaliwal 2019 — plant retinoid alternative; **pregnancy-safe**; gentler than retinol for hyperpigmentation. *(Dhaliwal 2019)* | Retinoid-like gene-expression signature | 0.5-1% PM | moisturiser | retinol (use one or the other) | retinol same minute | B | Indeed Labs Bakuchiol, Herbivore Bakuchiol, Paula's Choice Bakuchiol | $20-35 | *(Dhaliwal 2019 Br J Dermatol)* |
+
+### 3.4 Honestly downgraded — oral glutathione, high-dose kojic, IV glutathione drips
+
+> **For you, in plain words.** Three "popular" melasma supplements that the evidence does not support as cornerstones. **Oral L-glutathione** — Watanabe 2014 small RCT showed modest signal but Cochrane-grade evidence is weak; expensive. **High-dose kojic acid (>2%)** — irritation rate climbs above 2% and can trigger PIH (paradoxical worsening). **IV glutathione drips** — heavily marketed in Asian medi-spas; minimal evidence; case reports of Stevens-Johnson and renal toxicity at high doses. **Excluded from active protocol.** *(Watanabe 2014; FDA-Philippines warning IV-GSH)*
+
+#### Open the science
+
+Watanabe 2014 *Clin Cosmet Investig Dermatol* — oral L-glutathione 500 mg/day × 4 weeks in Asian women showed modest melanin-index reduction; effect partial and short-lived. Sonthalia 2018 review — IV glutathione evidence for skin lightening lacks RCT support; FDA-Philippines issued warnings about IV use 2011 + 2019. Kojic acid >2% has irritation rates climbing rapidly, especially in Fitzpatrick IV-VI, leading to PIH (the opposite of the goal). Excluded as cornerstones; permitted as low-dose topical adjuncts only. *(Watanabe 2014; Sonthalia 2018)*
 
 ## 4. Traditional Medicine Integration
 
-### 4.1 Ayurveda — *Vyanga* / *Nilika* / *Yauvana Pidaka* (overlap)
+### 4.1 Six traditions — at a glance
 
-Described in *Sushruta Samhita Nidana Sthana* ch. 13 and *Bhavaprakasha Madhyam Khanda Ch. 61* as *Vyanga* (facial pigmentation, "stains") and *Nilika* (bluish dermal pigment). Dosha: **vitiated Pitta** (sun + heat) + disturbed *rakta dhatu* + *bhrajaka pitta* (skin lustre / melanin). Kerala Vaidya lineage (Kottakkal, Vaidyaratnam, Kerala Ayurveda Pharmacy); AYUSH-CCRAS Vyanga treatment protocol.
+> **For you, in plain words.** Six traditions described melasma + hyperpigmentation under different names. Ayurveda *Vyanga* uses Yashtimadhu + Manjishtha + Kumkumadi Tailam; TCM *Gan Ban* uses Si Wu Tang + Liu Wei Di Huang Wan; Unani uses sandalwood + curd + turmeric paste; Siddha uses Kasturi Manjal (wild turmeric); Tibetan Manu-4; homeopathy Sepia + Berberis aquifolium + Thuja + Pulsatilla. *(Sushruta Nidana ch. 13; Yi Zong Jin Jian; Avicenna; Siddha Maruthuvam; rGyud-bzhi; Boericke)*
 
-| Formulation | Dose | Grade | Source |
-|---|---|---|---|
-| **Manjishtadi Kashayam** (*Rubia cordifolia* + 14 herbs) | 15 ml BID pre-meal | T | *Sahasrayoga* (*raktashodhaka*); Kottakkal |
-| **Khadirarishta** (*Acacia catechu* fermented) | 15–20 ml BID post-meal | T | *Sharangdhara Samhita*; Baidyanath, Dabur |
-| **Triphala Churna** | 3–6 g HS with warm water | A | AYUSH monograph; Organic India, Himalaya |
-| **Chyawanprash** (Amla-based rasayana) | 10 g AM | T | *Charaka Samhita*; Dabur, Patanjali, Baidyanath — vitamin C + rasayana |
-| **Amalaki Rasayana** | 3–5 g BID | B | CCRAS rasayana monograph; Organic India |
-| **Saraswatarishta** | 15 ml BID post-meal | T | classical Ayurveda — supports skin lustre + cognition |
-| **Topical: Kumkumadi Tailam** (saffron-led oil, 16+ herbs) | apply HS thin layer | T | *Ashtanga Hridaya*; Kottakkal, Vaidyaratnam, Kama Ayurveda — classical Vyanga remedy |
-| **Topical: Multani Mitti + rose-water + Sandalwood mask** | 2×/wk | T | Folk + classical *lepa* tradition; Forest Essentials, Khadi |
-| **Topical: Nalpamaradi Keram** (4-banyan-bark oil) | apply HS thin layer | T | Kerala classical — skin lustre |
-| **Topical: Aloe vera + turmeric paste (*haldi-chandan*)** | BID | T | classical Ayurveda |
+### 4.2 Ayurveda — *Vyanga* (facial pigmentation)
 
-### 4.2 TCM — *Gan Ban* 肝斑 ("liver spots") / *Mian Chen* 面尘 ("facial dust")
+> **For you, in plain words.** Ayurveda calls melasma *Vyanga* — a vitiated Pitta + Vata imbalance with disturbed *rakta dhatu* (blood). Classics include Yashtimadhu (licorice — glabridin is a well-studied tyrosinase inhibitor), Manjishtha (*Rubia cordifolia* blood-purifier), Triphala at night, Haridra (turmeric) mask, and Kumkumadi Tailam (saffron-led classical night oil — Singh 2017 evidence). *(Sushruta Nidana ch. 13; Bhavaprakasha; AYUSH CCRAS Vyanga; Yokota 1998 glabridin)*
 
-Patterns: Liver-Qi stagnation (premenstrual flares, irritability, jawline + cheek symmetry) · Liver-Kidney Yin deficiency (postpartum, peri-menopausal, malar dark patches) · Blood Stasis (dark grey-brown, fixed, chronic) · Spleen-Qi deficiency with damp (yellowish hue, fatigue, loose stool). Lineage: Plum Flower (Mayway), Min Tong; classical *Yi Zong Jin Jian Wai Ke Xin Fa* and *Wai Ke Zheng Zong*. Chinese Pharmacopoeia 2020 monographs.
+#### Open the science
 
-| Formula | Pattern | Dose | Grade | Source |
+Described in *Sushruta Samhita Nidana Sthana* ch. 13 and *Ashtanga Hridaya* as *Vyanga* — Pitta + Vata-vitiated facial discoloration with disturbed *rakta dhatu*. Kerala Vaidya lineage (Kottakkal, Vaidyaratnam); AYUSH-CCRAS *Vyanga* protocol. Glabridin from licorice root is one of the most-studied natural tyrosinase inhibitors (Yokota 1998 *Pigment Cell Res*).
+
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
 |---|---|---|---|---|
-| **Xiao Yao San** 逍遥散 (*Bupleurum, Paeonia*) | Liver-Qi stagnation (premenstrual, stress) | 6–9 g BID | T | Plum Flower; *Tai Ping Hui Min He Ji Ju Fang* |
-| **Liu Wei Di Huang Wan** 六味地黄丸 | Liver-Kidney Yin deficiency (postpartum, peri-menopausal) | 8 pills BID | T | *Xiao Er Yao Zheng Zhi Jue*; Plum Flower |
-| **Tao Hong Si Wu Tang** 桃红四物汤 | Blood Stasis (chronic dark fixed patches) | 6 g BID | T | Plum Flower; classical formula |
-| **Si Wu Tang** 四物汤 | Blood-Deficiency overlay | 6 g BID | T | classical; Plum Flower |
-| **Gui Pi Tang** 归脾汤 | Spleen-Qi + Heart-Blood deficiency (fatigue + insomnia + pigment) | 8 pills BID | T | Plum Flower; classical |
-| **Topical: Pearl powder (Zhen Zhu Mo 珍珠末) + honey mask** | 2×/wk | T | Chinese Pharmacopoeia 2020 |
-| **Topical: White peony + Sheng Di Huang decoction wash** | per-formula | T | Chinatown TCM pharmacies |
+| Yashtimadhu / Licorice (*Glycyrrhiza glabra*) | Glabridin is a well-studied natural tyrosinase inhibitor — oral 1-3 g + topical extract. **Caution in hypertension; 6-week courses.** *(Yokota 1998)* | 1-3 g BID, ≤6 weeks | B | *(Yokota 1998; EMA licorice; AYUSH)* |
+| Manjishtha (*Rubia cordifolia*) | Classical blood-purifier — internal + topical anti-pigmentation. *(Bhavaprakasha)* | 1-3 g BID | T/B | *(Bhavaprakasha; AYUSH)* |
+| Triphala Churna | Nightly three-fruit gut + circadian reset — supports systemic detoxification. *(AYUSH)* | 3-6 g HS | A (gut) / B (skin overlap) | *(AYUSH; Organic India)* |
+| Haridra / turmeric mask | Curcumin + sandalwood + milk paste — classical home topical for pigmentation. *(Bhavaprakasha)* | 2-3×/week | T/B | *(Bhavaprakasha; AYUSH Haridra)* |
+| Kumkumadi Tailam | Saffron-led classical night oil — Singh 2017 evidence for pigmentation. *(Ashtanga Hridaya; Singh 2017)* | Apply HS thin layer | B | *(Ashtanga Hridaya; Singh 2017; Kottakkal, Vaidyaratnam)* |
+| Khadirarishta | Fermented Acacia-catechu wine — supports skin and rakta dhatu. *(Sharangdhara)* | 15-20 ml BID post-meal | T | *(Sharangdhara; Baidyanath, Dabur)* |
+| Topical Eladi keram / Nalpamaradi | Kerala classical anti-pigmentation oils. *(Sahasrayoga)* | Apply HS | T | *(Sahasrayoga; Kottakkal)* |
 
-Sourcing: Plum Flower (Mayway, Oakland), Min Tong, Treasure of the East. Brick-and-mortar — Kamwo Meridian Herbs NYC, Sun Sing Pacific Trading SF.
+### 4.3 TCM — *Gan Ban* 肝斑 / *Hei Ban* 黑斑
 
-### 4.3 Unani — *Kalaf* / *Namash* (facial discolouration)
+> **For you, in plain words.** Chinese medicine frames melasma as Liver-Qi stagnation + Blood Stasis (the "liver spots"), Kidney-Yin deficiency (post-menopausal pigmentation), and Spleen-Damp accumulation. Classical formulas: Si Wu Tang (Four-Substance, blood-nourishing base), Liu Wei Di Huang Wan (Kidney-Yin), Xiao Yao San (Liver-Qi-stagnation for stress-driven melasma), Tao Hong Si Wu Tang (blood stasis). *(Yi Zong Jin Jian Wai Ke Xin Fa; Tai Ping Hui Min)*
 
-Mizaj: **saudawi** (melancholic — cool/dry, hepatic congestion) predominance; hepatic *du'f* (weakness) + sun + emotional stress. Lineage: Hakim Mohammed Said (Hamdard), Dawakhana Tibbiya College Aligarh; classical *Qarabadeen Qadri*, Avicenna's *Canon*.
+#### Open the science
 
-| Formulation | Dose | Grade | Source |
-|---|---|---|---|
-| **Majoon Ushba** (Indian sarsaparilla compound) | 5–10 g BID | T | Hamdard; *Qarabadeen Qadri* |
-| **Itrifal Shahatra** (fumitory-based) | 5–10 g HS | T | Hamdard — *musaffi-e-dam* |
-| **Habb-e-Mussafi Khoon** (blood-purifier tablet) | 2 tabs BID after food | T | Hamdard, Ajmal |
-| **Sharbat Sandal** (sandalwood syrup) | 25 ml BID | T | Hamdard — cooling |
-| **Topical: Marham-e-Gulabi (rose ointment)** | apply BID | T | Hamdard, Saif Pharmaceuticals |
-| **Topical: Sandal Safed (white sandalwood) + Rose-water paste** | apply HS | T | Classical Unani *zimad* |
+Patterns: Liver-Qi stagnation + Blood Stasis; Kidney-Yin deficiency; Spleen-Damp. Classical: *Yi Zong Jin Jian*, *Tai Ping Hui Min*, *Pi Wei Lun*. Lineage: Plum Flower (Mayway), Min Tong.
 
-### 4.4 Siddha — *Karunkalai Padarpan* / *Karu Mugham*
+| Formula | TL;DR (plain English) | Pattern | Dose | Grade | Citation |
+|---|---|---|---|---|---|
+| Si Wu Tang 四物汤 | Four-substance blood-nourishing base — the classical TCM melasma starting point. *(Tai Ping Hui Min)* | Blood Deficiency | 6-9 g BID | T | *(Tai Ping Hui Min; Plum Flower)* |
+| Liu Wei Di Huang Wan 六味地黄丸 | Six-flavour Kidney-Yin formula — for post-menopausal pigmentation and night sweats. *(Yi Zong Jin Jian)* | Kidney-Yin deficiency | 6-9 g BID | T | *(Yi Zong Jin Jian; Plum Flower)* |
+| Xiao Yao San 逍遥散 | Free-and-easy stress formula — for premenstrual/stress-driven melasma in women. *(Tai Ping Hui Min)* | Liver-Qi stagnation | 6-9 g BID | T | *(Plum Flower; Tai Ping Hui Min)* |
+| Tao Hong Si Wu Tang 桃红四物汤 | Peach-kernel + safflower added to Si Wu Tang — for blood-stasis (dermal melasma, deeper pigment). *(Yi Zong Jin Jian)* | Blood Stasis | 6 g BID | T | *(Plum Flower; Yi Zong Jin Jian)* |
+| Bai Zhi (Angelica dahurica) | Angelica root — classical TCM brightening herb in topical pastes. *(Chinese Pharmacopoeia 2020)* | local stagnation | topical paste | T | *(Chinese Pharmacopoeia 2020)* |
+| Bai Fu Ling (Poria cocos) | Traditional Chinese cosmetic mask ingredient — Empress Wu's recipe. *(Folk + classical)* | dampness | topical paste | T | *(Folk TCM)* |
 
-Tamil tradition; only **chooranam (herbal powders), kuzhambu (decoctions), legiyam (semi-solid preparations)** included for OTC self-administration. **Classical mercurial / metallic preparations EXCLUDED.** IMPCOPS Chennai, SKM lineage.
+Sourcing: Plum Flower (Mayway, Oakland CA), Min Tong, Treasure of the East. Brick-and-mortar — Kamwo Meridian Herbs (209 Grand St NYC), Sun Sing Pacific Trading (SF).
 
-| Formulation | Dose | Grade | Source |
-|---|---|---|---|
-| **Karisalai Karpam** (*Eclipta alba* chooranam) | 1–3 g BID with honey | T | IMPCOPS, SKM — hepato-protective + skin lustre |
-| **Nellikai Lehyam** (Amla legiyam) | 5 g BID | T | IMPCOPS — vitamin C rasayana |
-| **Manjal Karpam** (*Curcuma longa* chooranam) | 1–2 g BID with milk (oat milk if dairy-out) | T | IMPCOPS |
-| **Topical: Manjal + Vetiver + rose-water paste (*patru*)** | apply HS | T | classical home Siddha *patru* |
-| **Topical: Pungan oil (*Pongamia pinnata*)** | apply HS thin | T | IMPCOPS, Aimil Pharmaceuticals |
+### 4.4 Unani — *Kalaf* / *Namash*
 
-### 4.5 Tibetan / Sowa Rigpa
+> **For you, in plain words.** Unani frames melasma as *Kalaf* — *safrawi* (bile) excess or hepatic congestion. The classical home topicals are sandalwood + curd + turmeric paste, rosewater + saffron compress, and almond-oil + milk evening massage. *(Avicenna's Canon; Hamdard; Qarabadeen Qadri)*
 
-Men-Tsee-Khang Dharamsala treats hyperpigmentation under blood / bile (*mKhris-pa*) imbalance + sun + liver-qi disturbance. Source *rGyud-bzhi*. Notable formulations:
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
+|---|---|---|---|---|
+| Sandal Safed + curd + Haridra paste | Sandalwood + yogurt + turmeric — classical Unani brightening mask. *(Qarabadeen Qadri)* | 3×/week | T | *(Qarabadeen Qadri; folk Unani)* |
+| Rose attar + Saffron compress | Rose-water + saffron evening compress — traditional Unani night-treatment. *(Hamdard)* | nightly | T | *(Hamdard; classical zimad)* |
+| Sharbat-e-Anjeer / Itrifal Shahatra | Internal blood-purifying syrups + jams. *(Hamdard)* | 10-20 ml / 5-10 g | T | *(Hamdard; Qarabadeen Qadri)* |
+| Roghan-e-Badam Shirin (almond oil) | Sweet almond oil — gentle evening massage; vitamin E source. *(Hamdard)* | nightly | T | *(Hamdard)* |
 
-- **Drangsong-15** (15-herb blood + bile formula) — Grade T
-- **Tig-ta 8** (*Swertia chirata* hepatic compound) — Grade T
-- **Padma-28 / Padma Lax** (EMA-monographed for peripheral circulation — adjunct for vascular melasma component) — Grade B (EMA) / T (classical)
+### 4.5 Siddha — Kasturi Manjal + Tamil home remedies
 
-Sourcing: Men-Tsee-Khang Dharamsala mail-order; Padma AG (Switzerland).
+> **For you, in plain words.** Tamil Siddha uses Kasturi Manjal (wild turmeric, *Curcuma aromatica* — gentler than culinary turmeric, doesn't stain skin as long), Manjishta internal, and gram-flour + curd + milk-cream masks. Mercurial preparations excluded — require expert supervision. *(IMPCOPS Chennai; Siddha Maruthuvam)*
 
-### 4.6 Homeopathy
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
+|---|---|---|---|---|
+| Kasturi Manjal (*Curcuma aromatica*) paste | Wild turmeric — Tamil tradition, gentler than culinary turmeric on skin. *(IMPCOPS)* | thin paste 2×/week | T | *(IMPCOPS; Siddha Maruthuvam)* |
+| Manjishta internal + topical | Tamil-Siddha blood-purifier — internal capsule + topical paste. *(SKM Siddha)* | 1-3 g BID + topical | T | *(IMPCOPS; SKM)* |
+| Gram-flour + curd + milk-cream mask | Tamil home brightening mask — gentle exfoliation + hydration. *(Folk Tamil)* | 2-3×/week | T | *(Folk Siddha; family tradition)* |
+| Karisalai Karpam (Eclipta alba) | Hepato-protective — supports hepatic detoxification load. *(SKM Siddha)* | 1-3 g BID | T | *(IMPCOPS; SKM)* |
 
-> *Homeopathy is honoured under the founder's mandate to explore all directions of alternative medicine. Modern evidence is contested; entries are presented as a documented tradition (Tier 3), not as clinical proof.*
+### 4.6 Tibetan / Sowa Rigpa
 
-| Remedy | Indication / keynote | Typical potency | Grade |
-|---|---|---|---|
-| **Sepia officinalis** | Hormonal pigmentation; postpartum / peri-menopausal melasma; indifference, "saddle of pigment" across nose | 30C–200C | T |
-| **Pulsatilla nigricans** | Melasma in mild, tearful, hormonal females; premenstrual flare; thirstless | 30C–200C | T |
-| **Lycopodium clavatum** | Hepatic-pattern pigmentation; right-sided; gas + bloating; afternoon-worse fatigue | 30C–200C | T |
-| **Thuja occidentalis** | Pigmentation with warty growths; vaccination history; pigmented patches | 30C–200C | T |
-| **Sulphur** | Constitutional; offensive perspiration; hot, itchy skin; pigment with seborrhoeic overlay | 30C–200C | T |
-| **Caulophyllum thalictroides** | Postpartum melasma with menstrual irregularity | 30C | T |
-| **Cadmium Sulphuricum** | Solar-pattern brown patches over cheek + nose | 30C | T |
-| **Argentum Nitricum** | Pigmentation with anxiety, anticipation, sweet cravings | 30C | T |
+> **For you, in plain words.** Tibetan medicine frames pigmentation as *mKhris-pa* (bile) excess. Manu-4 decoction and Padma-28 for microcirculation are the relevant home formulas. *(rGyud-bzhi; Men-Tsee-Khang; EMA Padma Lax)*
 
-Citations: Boericke W., *Pocket Manual of Homeopathic Materia Medica*; Allen H.C., *Keynotes and Characteristics*; Kent J.T., *Repertory*. CCRH publishes melasma case series.
+| Formulation | TL;DR (plain English) | Dose | Grade | Citation |
+|---|---|---|---|---|
+| Manu-4 decoction | Four-herb Tibetan heat-clearer for *mKhris-pa* excess. *(Men-Tsee-Khang)* | per label | T | *(Men-Tsee-Khang; rGyud-bzhi)* |
+| Padma-28 (Padma Lax) | EU-monographed Tibetan formula for microcirculation. *(EMA Padma Lax)* | per label | C | *(EMA Padma Lax; Padma AG)* |
 
-## 5. Biophysical Interventions — home-administered only
+### 4.7 Homeopathy — honoured tradition, honestly graded
 
-**Skin domain — every device is consumer-purchasable and self-administrable. No clinic chemical peel, no clinic laser (Q-switched Nd:YAG, picosecond, IPL), no clinic microneedling RF, no hospital procedure.**
+> **For you, in plain words.** Five homeopathic remedies described for melasma — Sepia for hormonal pigmentation (the most-prescribed melasma remedy classically), Argentum nitricum for facial pigmentation with anxiety, Berberis aquifolium for chloasma, Thuja occidentalis for hyperpigmented patches, Pulsatilla for hormonal-cycle-linked pigmentation. Modern high-quality melasma RCT evidence is sparse — listed as documented tradition only, **NOT actively recommended**. *(Boericke; Kent; CCRH case series)*
 
-**5.1 Daily strict photo-protection (the single highest-yield intervention in melasma — non-negotiable).** Broad-spectrum mineral SPF 50+ with **iron oxides** (mandatory for visible-light protection — plain SPF without iron oxides does NOT block HEV / visible light → does NOT halt melasma). Tinted iron-oxide mineral SPF: ISDIN Eryfotona Ageless / Actinica, Avène Mineral SPF 50 Tinted, La Roche-Posay Anthelios Mineral Tinted SPF 50, Heliocare 360 Color, Korean K-beauty (Beauty of Joseon, Round Lab, Innisfree). Reapply every 2 h outdoor, every 4 h indoor with screen exposure. Wide-brim hat (UPF 50+) + UV-blocking sunglasses outdoor.
+| Remedy | TL;DR (plain English) | Indication / keynote | Typical potency | Grade | Citation |
+|---|---|---|---|---|---|
+| Sepia officinalis | The "hormonal pigmentation" remedy — chloasma, post-pregnancy melasma. *(Boericke)* | chloasma + hormonal | 30C BID | T/H | *(Boericke; Kent)* |
+| Argentum nitricum | Facial pigmentation with anticipation anxiety. *(Boericke)* | brown-yellow facial pigmentation | 30C BID | T/H | *(Boericke)* |
+| Berberis aquifolium | The classical "chloasma + acne" remedy — Boericke specifically names melasma. *(Boericke)* | hyperpigmentation + acne overlap | mother tincture topical + 30C oral | T/H | *(Boericke; CCRH)* |
+| Thuja occidentalis | Hyperpigmented patches + warty pigmented growths. *(Boericke)* | localised pigmentation | 30C weekly | T/H | *(Boericke; Allen)* |
+| Pulsatilla nigricans | Hormonal-cycle-linked pigmentation + premenstrual flare. *(Boericke)* | cyclic hormonal pigmentation | 30C BID | T/H | *(Boericke; Kent)* |
 
-**5.2 Photobiomodulation 660 nm + 830 nm NIR (CAREFUL: low-dose only; HIGH-DOSE PBM CAN PARADOXICALLY WORSEN MELASMA via dermal heat + IR-A).** **6–10 J/cm² per session, 8–10 min, 3×/week**, target face after cleansing. Devices: Omnilux Contour Face ($395) — gentle, well-tolerated in melasma cohorts; MitoMID ($449) lowest setting; CurrentBody LED Mask. **Skip if you notice any worsening at the 4-wk mark.** Eye shield mandatory. Avoid IR-A-heavy panels; avoid clinic IPL entirely (rebound risk).
+## 5. Biophysical Interventions — home only
 
-**5.3 NO clinic IPL, NO clinic Q-switched / picosecond laser, NO clinic chemical peel.** These routinely rebound, leave PIH (especially in Fitzpatrick IV–VI), and are excluded by the OTC + home-based scope of this protocol. If a user chooses to layer clinic procedures, that is their personal call — the protocol does not recommend or require them.
+### 5.1 What home tools actually work
 
-**5.4 Home cold-water face splash AM + cold compress on warmth flares.** Vasoconstriction reduces visible vascular melasma overlay; vagal afferent. Gua sha (rose-quartz or jade) along jaw and neck PM to drain lymphatic stagnation (5 min, gentle pressure — never on inflamed acne or active dermatitis).
+> **For you, in plain words.** Five home interventions. UPF50+ clothing + wide-brim hat are the highest-leverage. Home red-light PBM is gentle. Home microneedling 0.5 mm carries rebound-PIH risk in Fitzpatrick IV-VI. Cold compress for daytime relief. Home infrared sauna with caution (heat can flare melasma — counter-intuitively). *(Coolibar / Solbari UPF guidance; Ferraresi 2016 PBM; Hwang 2018 microneedling Fitzpatrick IV-VI)*
 
-**5.5 Microneedling — HOME 0.25–0.5 mm derma-roller / stamp ONLY, NOT clinic 1.5–2.5 mm.** Home stamp 0.25 mm 1×/week max, sterile, with vitamin C + tranexamic acid serum penetration. **NOT during pregnancy.** **NOT in melasma with vascular component** (worsens). **DO NOT exceed 0.5 mm home-needling**; deeper needling on melanin-rich skin can trigger PIH. Brands: Beauty Bio GloPRO, Banish Beauty 0.25 mm. **Many specialists avoid microneedling on melasma altogether — if uncertain, skip.**
+### 5.2 UPF50+ clothing + wide-brim hats
 
-**5.6 Home steam (face steam 5 min) 1×/week max — optional.** Loosens debris; **CAUTION in melasma with vascular component — heat aggravates erythema.** Skip if vascular melasma. Always finish with cool-water rinse + niacinamide + mineral SPF.
+> **For you, in plain words.** The most underrated melasma tool. UPF50+ clothing (Coolibar, Solbari, Sun Precautions) blocks 98% of UV. Wide-brim hat (≥10 cm brim) provides shade-equivalent SPF 5-10. The Japanese/Korean/Indian parasol culture is evidence-based. *(Boukari 2015; Wang 2013 hat-UPF)*
 
-**5.7 Blue-light-blocking glasses for screen use (HEV protection).** Daytime amber/clear filter (BlockBlueLight, Felix Gray, Gunnar). Reduces HEV exposure to face from monitor / phone.
+#### Open the science
 
-For each device above: wavelength (nm) / dose, session duration, frequency, brand options (consumer-grade only), price, timing in §8.5, contraindications.
+UPF50+ fabric blocks ≥98% UV regardless of perspiration / movement / cosmetic absorption variability. Wide-brim hats (≥10 cm) provide effective additional protection. Coolibar (Minnesota), Solbari (Australia), Sun Precautions, Athleta UPF50, Patagonia Sun Stretch — all TGA + AS/NZS 4399 certified. Combine with tinted SPF50+ + parasol. *(Wang 2013; AS/NZS 4399)*
+
+### 5.3 Home photobiomodulation (red + NIR)
+
+> **For you, in plain words.** Home red-light panels (660 nm) and NIR (810-850 nm) at low-moderate doses have anti-inflammatory + collagen-supportive benefits. Use **gentle protocols** for melasma (heat is paradoxically a trigger). 5-10 minutes 2-3×/week, low-mid power. *(Ferraresi 2016; Avci 2013 PBM dermatology)*
+
+#### Open the science
+
+PBM at 660 nm (visible red) + 810-850 nm (NIR) supports dermal collagen + anti-inflammatory mediators (Nrf2 + reduced IL-6) without thermal damage at moderate doses. **Caution for melasma**: high-power / high-heat sessions can paradoxically flare pigmentation; use gentle protocols. Brands: Mito Red Light MitoMIN/MID, Joov Solo, Hooga HG500. Dose: 5-10 min at 25-50 mW/cm² 2-3×/week, 30 cm distance. *(Ferraresi 2016; Avci 2013)*
+
+### 5.4 Home microneedling — Fitzpatrick caveat
+
+> **For you, in plain words.** Home microneedling 0.25-0.5 mm with derma-rollers carries a **real risk of rebound post-inflammatory hyperpigmentation (PIH)** in Fitzpatrick IV-VI. If you have darker skin, skip home microneedling for melasma — clinic-route only (§10.7.3). *(Hwang 2018; Cassiano 2022 microneedling melasma)*
+
+#### Open the science
+
+Microneedling (0.5-1.0 mm) combined with topical tranexamic acid is documented in dermatology literature (Budamakuntla 2013 *J Cutan Aesthet Surg* India RCT) but performed in clinical settings with controlled depth, sterile technique, and titrated TXA solution. Home derma-rollers in Fitzpatrick IV-VI carry rebound PIH risk that can worsen melasma. **Documented for transparency**; not recommended in home protocol for darker skin types. *(Hwang 2018; Cassiano 2022; Budamakuntla 2013)*
+
+### 5.5 Cold compress + thermal caution
+
+> **For you, in plain words.** Heat is a melasma trigger. Avoid hot saunas, very hot showers, and cooking-station heat on face. Cold compress (chilled green tea bag, cold spoon) for daytime soothing is fine. *(Mahmoud 2010; Passeron 2019 visible-light + heat)*
+
+#### Open the science
+
+Infrared and thermal stress activate dermal MMPs and can flare melasma. Counter-intuitively, the home infrared sauna common to other skin domains is **not** indicated for melasma; if used for systemic CV benefit, keep face shielded with a cool cloth. Cooking stations + welding + furnaces are documented occupational triggers. *(Mahmoud 2010; Passeron 2019)*
 
 ## 6. Dietary Protocol
 
-### 6.1 Mandatory foods (daily gram quantities)
+### 6.1 Six mandatory daily foods
 
-- **Sprouted Siri Dhanyalu** (foxtail + barnyard + kodo + little + browntop millet rotation): **60–80 g cooked** — low GI, anti-glycation
-- **Bitter / green leafy vegetables** (methi, *Moringa oleifera* leaves, amaranth, *Centella asiatica*, dandelion): **150–200 g**
-- **Vitamin C-rich foods**: amla **20–50 g fresh** or **5 g powder**, kakadu plum if available, citrus 100 g (if tolerated), bell pepper 100 g
-- **Carotenoid-rich foods** (carrot, sweet potato, kale, spinach, butternut, papaya): **150–250 g**
-- **Lycopene-rich** (cooked tomato + olive oil): **100 g** — endogenous photo-protection
-- **Astaxanthin-rich**: wild salmon, sardines, krill (or supplement) **120 g 3×/week**
-- **Pomegranate seeds / juice (unsweetened)**: **100 g seeds or 100 ml juice** — polyphenols + ellagic acid
-- **Fermented foods** (kanji, sauerkraut, kimchi, coconut kefir): **100–150 g**
-- **Walnuts** 20 g + **Brazil nuts** 2 (selenium, GPX + thyroid)
-- **Bone broth** 200 ml — collagen + glycine + glutamine
-- **Tulsi tea** 2 cups, **green tea** 2 cups (EGCG anti-tyrosinase)
-- **Olive oil (extra-virgin, polyphenol-rich)**: **30–45 ml/day**
-- **Filtered water** 2–3 L/day (hydration → skin barrier)
+> **For you, in plain words.** Six food anchors that quietly support skin lightening — polyphenol diversity (green tea, dark chocolate ≥85%, berries), tomato/lycopene (oral photo-protectant signal), fatty fish 2-3×/week, leafy greens, EVOO, 30 g/day fibre. *(Stahl 2007 lycopene; EMA omega-3)*
 
-### 6.2 Absolutely avoid (with molecular rationale)
+| Food anchor | TL;DR (plain English) | Daily target | Why |
+|---|---|---|---|
+| Green tea | EGCG topical + oral antioxidant; supports tyrosinase modulation. *(Hsu 2005)* | 2-3 cups | EGCG antioxidant |
+| Dark chocolate ≥85% / berries | Polyphenol diversity supports antioxidant + microcirculation. *(Mason 2014)* | 30 g / 100 g | polyphenols |
+| Tomato + lycopene | Stahl 2007 — oral lycopene 10-16 mg/day modest oral photo-protectant signal. *(Stahl 2007)* | 200 g cooked tomato OR 1 tbsp tomato paste | lycopene |
+| Fatty fish 2-3×/week | Omega-3 inflammation modulation. *(EMA omega-3)* | 2-3×/week | EPA + DHA |
+| Leafy greens | Vitamin C, folate, polyphenols. *(EMA leafy)* | 150 g/day | C + folate |
+| EVOO 30 ml | Mediterranean dietary pattern, oleocanthal anti-inflammatory. *(Beauchamp 2005)* | 30 ml | polyphenol fat |
+| 30 g fibre | Gut microbiome → SCFA → skin-gut axis. *(Salem 2018 skin-gut)* | 30 g | microbiome |
 
-| Food / Class | Molecular reason |
-|---|---|
-| **Refined sugar, HFCS, sweetened beverages** | AGE formation → yellow-brown skin chromophore + glycation amplifies melanin; insulin spike → MITF |
-| **High-glycaemic-load grains** (white rice, white bread, instant cereal) | Insulin/IGF-1 surge → MITF |
-| **A1 β-casein dairy + whey isolate** | IGF-1; pigmentation cohort signal |
-| **Industrial seed oils** | ω-6 inflammation → MMP-9 upregulation |
-| **Trans fats, ultra-processed foods** | Multi-mechanism inflammation + AGEs |
-| **Alcohol** | Hepatic CYP load, Zn / B-vit depletion, glutathione depletion, gut barrier — all worsen melasma |
-| **Iodine excess** (high-dose kelp, iodised-salt overload) | Thyroid disruption in susceptible |
-| **Smoking, vaping** | Oxidative load + glycation acceleration + skin AGE accumulation |
-| **Excess caffeine (>2 cups)** | Vasoconstriction-rebound; sleep disruption → cortisol → MITF |
-| **Charred / grilled meats high in heterocyclic amines** | AGE / oxidative load |
+### 6.2 What to avoid
+
+> **For you, in plain words.** Six pro-melasma foods. High-glycaemic load (drives AGE formation + insulin), alcohol (vasodilation + liver-load), excess dairy whey (mTOR + IGF-1), ultra-processed (inflammation), high-sugar (glycation), hot spicy food in flare (vasodilation).
+
+| Avoid | Why | Citation |
+|---|---|---|
+| High-glycaemic load | AGE formation + insulin-driven MITF upregulation. *(Melnik 2015)* | *(Melnik 2015)* |
+| Alcohol | Vasodilation + hepatic load + B-vit depletion. *(WHO alcohol)* | *(WHO)* |
+| Excess dairy whey | mTOR + IGF-1 driver. *(Melnik 2015)* | *(Melnik 2015)* |
+| Ultra-processed foods | NOVA-4 inflammation. *(Monteiro NOVA)* | *(Monteiro NOVA)* |
+| High-sugar (refined) | Glycation → AGEs → chronic inflammation. *(Mason 2014)* | *(Mason 2014)* |
+| Hot/spicy food in flare | Vasodilation can flare vascular component. *(Kim 2007)* | *(Kim 2007)* |
 
 ### 6.3 Preparation methodology
 
-**Sprouting protocol** as standard.
+> **For you, in plain words.** Cook tomato (lycopene bioavailability rises 4-fold after cooking + oil). Sprout legumes. Ferment kanji + kefir + sauerkraut. Use ghee + EVOO + sesame oil for tempering. Avoid high-heat charring (AGEs).
 
-**Cooked-tomato + olive oil** for lycopene bioavailability (raw tomato has 2–3× less bioavailable lycopene than slow-cooked with EVOO).
+### 6.4 Seven-day meal plan
 
-**Steamed bitter greens** with cumin + turmeric + ghee — fat-soluble carotenoid + curcumin absorption.
+> **For you, in plain words.** A 3-day rotating pattern with rotation days 4-7. Polyphenol diversity + tomato + greens + EVOO daily. Limit alcohol; limit dairy whey; no ultra-processed.
 
-**Green tea brewing:** 1 tsp loose-leaf in 80 °C water (NOT boiling — destroys catechins), steep 3 min, 2 cups/day. ≥1 h from iron-rich meal/supplement.
+**Day 1** — Mediterranean-anchor
+- **07:00 Breakfast (450 kcal):** 3 pasture eggs (210 kcal, 18 g P) + 150 g sautéed greens + 1/2 avocado (120 kcal) + 1 cup green tea + 1 tbsp ground flax (45 kcal) + 50 g blueberries (30 kcal)
+- **13:00 Lunch (550 kcal):** 150 g grilled chicken (260 kcal, 30 g P) + 200 g tomato-pepper-onion ratatouille (in 20 ml EVOO) + 60 g cooked quinoa (80 kcal) + 2 tbsp sauerkraut + 1 square 85% dark chocolate (35 kcal)
+- **16:00 Tea + craving-tool:** Heliocare 240 mg + 1 cup green tea + 30 g almonds (170 kcal)
+- **19:00 Dinner (450 kcal):** 150 g grilled salmon (300 kcal, 32 g P, 2 g omega-3) + 200 g grilled broccoli + 60 g sprouted lentil dal + 30 ml EVOO drizzle
+- **21:30 Wind-down:** Kumkumadi Tailam thin layer + Magnesium glycinate + Bhramari 5 min
 
-**Kumkumadi tailam evening application:** decant 5–10 drops, warm between palms, dab onto pigmented areas after PM serum routine, leave overnight; weekly skin glow.
+**Day 2** — Indian-tradition day
+- **07:00 Breakfast (440 kcal):** Moong-dal chilla 2 pieces (220 kcal) + 100 g curd/dahi (60 kcal) + 1 boiled egg (75 kcal) + 1 cup masala chai (no sugar; 5 g jaggery if needed)
+- **13:00 Lunch (520 kcal):** Sprouted moong sundal 80 g (170 kcal, 12 g P) + 150 g sautéed methi greens + 60 g little-millet rice + 100 g grilled fish or paneer (180 kcal, 20 g P) + cucumber-tomato salad + 1 tbsp ghee
+- **16:00 Tea:** Yashtimadhu 1 g + 1 cup tulsi + 30 g roasted chana
+- **19:00 Dinner (450 kcal):** Vegetable + lentil dal + sautéed greens + 1 chapati from sprouted wheat + 2 tbsp homemade kanji
+- **21:30 Wind-down:** Kumkumadi Tailam + Ashwagandharishta 15 ml + Bhramari 5 min
 
-### 6.4 Seven-day meal plan (gram quantities)
+**Day 3** — Asian-Korean day
+- **07:00 Breakfast (450 kcal):** Korean egg-and-rice bowl — 2 eggs + 60 g brown rice + sauteed spinach + kimchi + 1 tsp sesame oil + 1 cup green tea
+- **13:00 Lunch (550 kcal):** Bibimbap — 100 g grilled beef OR tofu + assorted vegetables (carrot/zucchini/spinach/mushroom) + 60 g rice + gochujang sparingly + sesame oil + kimchi (8 g P from kimchi alone)
+- **19:00 Dinner (480 kcal):** Grilled mackerel + miso-broth with seaweed + sautéed bok choy + small portion brown rice + natto (if tolerated)
 
-| Day | Breakfast 07:30 (+ Combo 1) | Lunch 13:00 (+ Combo 2) | Dinner 19:00 (+ Combo 3) |
-|---|---|---|---|
-| **1 Antioxidant load** | 60 g sprouted foxtail porridge + 30 g amla + 100 g papaya + 2 Brazil nuts + green tea | 180 g methi-moringa + 100 g cooked tomato/EVOO + 50 g mung dal + 70 g little millet + 130 g kanji | 70 g little-millet khichdi, 150 g gotu kola + amaranth, 100 g kefir, 1 tsp ghee |
-| **2 Carotenoid** | 65 g barnyard upma + 100 g sweet potato + amla + tulsi tea | 200 g kale-amaranth + 50 g toor dal + 60 g browntop + 100 g sauerkraut + 100 g pomegranate | 75 g barnyard roti + 150 g spinach-methi + 1 tsp olive oil drizzle |
-| **3 Salmon ω-3 + astaxanthin** | 70 g kodo khichdi + 30 g amla + ghee + green tea | 120 g wild salmon + 200 g bitter greens + 60 g foxtail + 100 g kanji | 65 g millet roti + 180 g lauki sabzi + 100 g coconut kefir |
-| **4 Vit C max** | 60 g foxtail upma + 50 g amla + 100 g bell pepper + Brazil nuts | 180 g amaranth-moringa + 50 g Bengal-gram sprouted + 70 g little millet + 100 g pomegranate | 70 g browntop pulao + 150 g okra + drumstick + 100 g kanji |
-| **5 Lycopene** | 65 g millet porridge + 30 g amla + cooked tomato + EVOO | 120 g sardines + 200 g bitter greens + 100 g cooked tomato + 60 g foxtail | 70 g khichdi + 150 g gotu kola + 1 tsp ghee |
-| **6, 7 Rotate** | Rotate kodo / barnyard with amla + carotenoid | Bone-broth khichdi base + 200 g greens + amla + ferment | Light evening khichdi + greens |
+**Days 4-7:** Rotate Day 1 / Day 2 / Day 3 patterns. Limit alcohol to ≤2 drinks/week if any; no dairy whey shakes; no ultra-processed.
 
-Maintain daily: 60–80 g millet, 150–200 g bitter greens, 100–150 g ferment, 20–50 g amla, 2 cups green tea + tulsi tea.
+### 6.5 Environmental & occupational triggers
 
-### 6.5 Environmental & occupational triggers to eliminate
+> **For you, in plain words.** Seven triggers most melasma users miss. Sun (UV + visible/blue), heat (cooking stations, welding, infrared saunas on face), cosmetic-triggers (essential oils, perfume, fragranced products), OCP/HRT review, blue light from screens, light pollution / dirty electricity (sensitive types), specific cosmetic ingredients (high-strength alpha-hydroxy acids can flare in IV-VI).
 
-- **Unprotected sun + visible light + HEV (#1 driver)** — **iron-oxide-tinted mineral SPF 50+ EVERY morning, reapply every 2 h outdoor and every 4 h indoor with screen use.** UPF-50 wide-brim hat outdoor. UV-blocking sunglasses.
-- **Window-sun exposure** — driving, near a sunny window — UVA and HEV pass through glass. UV-filter window film (3M Crystalline, Llumar) for car + home.
-- **Hot environments — sauna, hot yoga, hot showers ≥40 °C, kitchen heat, blow-dryer on full heat near face** — thermal stress upregulates MMP and pigmentation.
-- **Bedside / desk LED screens** — HEV exposure; blue-light-blocking glasses + screen temperature filter (Night Shift, f.lux, Iris).
-- **Combined oral contraceptive (OCP) + hormone replacement** — if melasma started or worsened with these, the user may decide their own taper or switch (their personal call with prescriber). **Note: do NOT abruptly stop OCP without considering pregnancy prevention.**
-- **Fragranced cosmetics, photosensitising essential oils (bergamot, lemon, lime, parsley, fig, dill, angelica)** in leave-on day products — phototoxic reaction → PIH; restrict to PM only or eliminate.
-- **Lemon juice on skin** — folk remedy that is photosensitising and pH-shocks barrier; **do NOT use**.
-- **Cinnamon + nutmeg topical "natural" masks** — pigmentation-triggering; do NOT use.
-- **PPD hair dyes, formaldehyde keratin treatments** — contact + systemic load.
-- **Smoking, vaping** — oxidative + glycative + vascular load.
-- **Endocrine disruptors** (BPA, phthalates, parabens) — store food in glass; fragrance-free personal care.
-- **High-iodine kelp powder if Hashimoto** — thyroid amplification of melasma in Hashimoto subset.
-- **Stress without recovery** — cortisol drives α-MSH; non-negotiable HPA repair via §7.
+| Trigger | Action | Citation |
+|---|---|---|
+| Direct sun + visible light | Tinted iron-oxide SPF50+ every 2 h + UPF50+ + wide-brim hat. *(Boukari 2015)* | *(Boukari 2015)* |
+| Heat (cooking, welding, IR sauna) | Cool cloth on face; shield face during cooking. *(Passeron 2019)* | *(Passeron 2019)* |
+| Fragranced products | Switch to fragrance-free skincare. *(Draelos 2010 sensitive skin)* | *(Draelos 2010)* |
+| OCP / HRT trigger | Audit with prescriber (user's call); consider non-hormonal options. *(Tamega 2013)* | *(Tamega 2013)* |
+| Screen blue-light | Blue-blocking glasses (TheraSpecs, Felix Gray); tinted SPF indoors near windows. *(Mahmoud 2010)* | *(Mahmoud 2010)* |
+| High-strength AHAs/peels OTC | In Fitzpatrick IV-VI can flare PIH; use ≤8% glycolic at home or polyhydroxy acids (gentler). *(Hwang 2018)* | *(Hwang 2018)* |
+| Essential oils (bergamot, citrus oils) | Phototoxic; can trigger PIH. *(Naganuma 1985 bergapten)* | *(Naganuma 1985)* |
 
 ### 6.6 Cofactor / micronutrient floor
 
-| Cofactor | Why for melasma | Target/day | Food | Supplement (if floor unmet) | Antagonist |
-|---|---|---|---|---|---|
-| **Vitamin C** | Tyrosinase inhibition (topical), collagen, antioxidant | 500–1000 mg | amla, citrus, kakadu plum, bell pepper | Pure Encaps Buffered C | none major |
-| **Vitamin E (mixed tocopherols + tocotrienols)** | Lipid-phase antioxidant; synergistic with vit C | 200–400 IU | almond, sunflower seed | Pure Encaps Tocotrienol/Tocopherol mix | iron (low gap) |
-| **Glutathione precursors (NAC + glycine + glutamine)** | GSH; eumelanin→pheomelanin substrate switch | NAC 600 mg BID + glycine 3 g HS + glutamine 5 g | bone broth | NOW, Pure Encaps | copper (≥2 h) |
-| **Selenium** | GPX, anti-oxidative, thyroid (Hashimoto overlap) | 100–200 µg | 2 Brazil nuts | Solgar 200 µg | toxic >400 µg |
-| **Zinc** | Anti-inflammatory, melanocyte modulation | 15–30 mg | pumpkin seed, oyster | Thorne Zn picolinate 30 mg | ≥2 h iron, Ca; Zn:Cu 8–15:1 |
-| **Copper** | Zn balance, tyrosinase cofactor (but body needs trace, not excess); melanin requires Cu — **DO NOT mega-dose Cu** | 1–2 mg | sesame, cashew | Pure Encaps Cu glycinate 2 mg | NAC ≥2 h |
-| **Vitamin D3 + K2** | Treg, hormonal, skin homeostasis | 2000–4000 IU + 100 µg | sun (§5.1 is sun-avoidance — so supplement), fatty fish | Thorne D/K2 | Ca high-dose separate hr |
-| **Magnesium glycinate** | HPA, sleep, vitamin D activation | 300–400 mg | pumpkin seed, greens | Doctor's Best | Ca AM / Mg PM split |
-| **B12 (methyl) + B9 (methyl folate)** | Methylation — clears pigment-related estrogens | 1000 µg + 400–800 µg | sardines, greens | Pure Encaps 5-MTHF / Jarrow B12 | tannins reduce |
-| **Iron** (only if ferritin <30) | Periorbital dark-circle pigment in iron-deficiency; otherwise feeds inflammation | measure first | red meat, pumpkin seed | Solgar Gentle Iron | ≥2 h tea/Ca/Zn/Cu; pair vit C |
-| **Iodine** (only if Hashimoto-negative + floor unmet) | Thyroid | 150 µg | seafood, seaweed (cautious) | Pure Encaps Iodine 150 µg | Hashimoto — avoid high-dose |
+> **For you, in plain words.** Eight nutrients to measure and floor. Vitamin D, iron (ferritin), B12, folate, magnesium, zinc, omega-3, vitamin C (oral). Most melasma sufferers are sub-floor on at least two. *(WHO ferritin; Health Canada NHP)*
 
-## 7. Lifestyle / Mind-Body Anchors (mapped to §2 mechanism nodes)
+| Nutrient | TL;DR (plain English) | Target | Source | Antagonist |
+|---|---|---|---|---|
+| Vitamin D + K2 | <30 ng/mL associated with melasma severity in Indian cohorts. *(Rostami 2017)* | 50-70 ng/mL | sun (caution!), cod liver oil, supplement | — |
+| Iron (ferritin) | Anaemia worsens pallor + apparent pigmentation contrast. *(WHO ferritin)* | 50-150 ng/mL | red meat, lentils + vit C | tea/coffee tannins; Ca |
+| B12 (methylcobalamin) | Low B12 drives pigmentation in some patients (B12-deficiency hyperpigmentation). *(Aaron 2005)* | >500 pg/mL | meat, eggs, sublingual | metformin, PPIs |
+| Folate (methylfolate) | Folate deficiency hyperpigmentation documented. *(Aaron 2005)* | normal RBC folate | leafy greens, lentils | — |
+| Magnesium | Cofactor for D + antioxidant defences. *(EMA Mg)* | 320-400 mg | greens, pumpkin seeds | Ca same dose split |
+| Zinc | Cofactor + barrier; Zn:Cu 8-15:1. *(EMA Zn)* | 15-30 mg | oysters, pumpkin seeds | iron 2 h; Ca |
+| Omega-3 EPA+DHA | EMA monograph; anti-inflammatory. *(EMA omega-3)* | 1-2 g | fatty fish, algal | warfarin |
+| Vitamin C (oral) | Co-factor for collagen + antioxidant cycling. *(EMA C)* | 500-1000 mg | citrus, kiwi, peppers, supplement | — |
 
-### 7.1 Yoga (daily 30 min — gentle in melasma, avoid hot yoga)
+## 7. Lifestyle / Mind-Body Anchors
 
-| Asana | §2 Mechanism node targeted | Duration | Time of day |
+### 7.1 Yoga — mapped to mechanism
+
+> **For you, in plain words.** Four asanas mapped to a §2 mechanism node. Sarvangasana (inverted) for thyroid + circulation; Setu Bandhasana for hormonal-pelvic; Shavasana for HPA; cooling Sheetali to dampen Pitta. **Caution in pregnancy.** *(AYUSH yoga monograph)*
+
+| Asana | Mechanism node | Duration | Time |
 |---|---|---|---|
-| **Surya Namaskar (slow, 6 rounds, indoors)** | §2.4 systemic mobilisation, insulin | 8 min | 07:00 AM |
-| **Sarvangasana** (shoulder stand) | §2.2 thyroid + endocrine | 3 min | 07:00 AM |
-| **Halasana** (plough) — counter | §2.2 thyroid + lymphatic | 1 min | 07:00 AM |
-| **Bhujangasana** (cobra) | §2.3 digestive fire + spinal | 5 reps | 07:00 AM |
-| **Paschimottanasana** (seated forward bend) | §2.4 cooling pitta | 2 min | 07:00 AM |
-| **Baddha Konasana** (bound angle) | §2.2 pelvic + endocrine | 2 min | 07:00 AM |
-| **Shavasana** | §2.4 parasympathetic | 10 min | end of session + 22:00 |
-| **AVOID hot yoga, Bikram, intensely heating sun-salutations outdoor** | heat amplifies melasma | — | always |
+| Sarvangasana (shoulder stand) | Thyroid + skin perfusion (§2.3) | 3-5 min | AM (caution in HTN, pregnancy) |
+| Setu Bandhasana (bridge) | Pelvic + hormonal (§2.3) | 1-2 min × 3 | AM |
+| Sheetali (cooling sit pose) | Pitta reduction (§2.4 + §2.5) | 5-10 min | midday + on flare |
+| Shavasana (corpse) | HPA / parasympathetic (§2.4) | 10-15 min | PM |
 
-### 7.2 Pranayama (daily 20 min)
+### 7.2 Pranayama — for Pitta + vascular component
 
-| Technique | §2 Mechanism node | Duration | Time of day |
+> **For you, in plain words.** Three breath techniques for Pitta-cooling and parasympathetic restoration. Sheetali / Sheetkari (cooling), Bhramari (vagal), Anulom Vilom (autonomic). **Kapalbhati / Bhastrika contraindicated in HTN + pregnancy.** *(Brown 2013)*
+
+| Technique | Mechanism node | Duration | Time |
 |---|---|---|---|
-| **Anulom Vilom** | §2.4 HPA / vagal | 10 min | 06:30 AM |
-| **Sheetali / Sheetkari** (cooling) | §2.1 + §2.3 pitta + heat reduction | 5 min | midday + 18:30 + after sun exposure |
-| **Bhramari** (humming) | §2.4 vagal / NO | 5 min | 06:30 AM + 22:00 |
-| **Nadi Shodhana** | §2.4 autonomic balance | 10 min | flare days |
-| **Kapalbhati** | §2.4 — **contraindicated in HTN, pregnancy, ulcer, glaucoma** | 5 min | 06:30 AM (caution) |
+| Sheetali / Sheetkari (cooling) | Pitta + vascular (§2.5) | 5-10 cycles | midday + on flare |
+| Bhramari (humming) | Vagal / NO (§2.4) | 5 min × 2 | AM + PM |
+| Anulom Vilom (alternate-nostril) | HPA + autonomic (§2.4) | 10 min | AM |
+| Kapalbhati / Bhastrika | Energising — **CONTRAINDICATED in HTN, pregnancy, cardiac** | 3-5 min | AM only (if safe) |
 
-### 7.3 Meditation
+### 7.3 Meditation + stress reduction
 
-Yoga Nidra 30 min PM (Bihar School) — cortisol reduction (cortisol → α-MSH → pigment); Vipassana 20 min AM body-scan; Tibetan Tonglen 10 min PM — self-compassion for body-image distress (melasma has significant MELASQOL impact); MBSR 8-week course.
+> **For you, in plain words.** Three meditation approaches — Vipassana for clarity, Yoga Nidra for HPA restoration, mindfulness-based stress reduction (MBSR) for chronic-stress-driven melasma. *(Kabat-Zinn MBSR; iRest)*
 
-### 7.4 Sleep & circadian
+### 7.4 Sleep hygiene
 
-Lights-out 22:30; blue-light cut-off 21:00 (Iris/f.lux, BlockBlueLight); 18–20 °C bedroom; blackout; AM sunlight 5–10 min within 30 min of waking — through window with iron-oxide SPF already applied (you still get circadian benefit without UV/HEV face exposure). **Sleep ≥7.5 h** — sleep restriction raises cortisol → MITF.
+> **For you, in plain words.** Sleep 7-9 h; circadian rhythm anchored by AM sunlight (face shielded — get AM light on body / hands); 22:30 bedtime; blackout cool 18-20°C room. *(Walker 2019)*
 
-### 7.5 Nervous-system reset
+### 7.5 Vagal nervous-system reset
 
-Cold-water face splash AM; humming + gargling 2 min BID; 4-7-8 breath 4 rounds pre-meal; optional consumer VNS (Nurosym, Sensate, Pulsetto) 10 min PM; HRV biofeedback (HeartMath Inner Balance) 10 min PM. **Gua sha** PM — rose quartz / jade, gentle 5 min along jaw + neck for lymphatic drainage and vascular component.
+> **For you, in plain words.** Bhramari, gentle cold splash to body (not heat to face), slow-paced breathing. Standard vagal toolkit applies.
 
-### 7.6 Exercise periodization (weekly + monthly)
+### 7.6 Exercise periodization
 
-**Weekly cadence**
-- **Mon / Wed / Fri** — Zone 2 cardio 30–45 min at 60–70% HRmax (brisk walk indoor/treadmill OR outdoor with iron-oxide SPF + hat + UV sunglasses). Cool rinse + niacinamide + mineral SPF re-apply after sweat.
-- **Tue / Thu** — strength training 45 min (compound lifts). Cool environment; avoid sauna immediately after.
-- **Sat** — moderate HIIT 20 min (indoor or shaded outdoor)
-- **Sun** — restorative yoga + 60–90 min nature walk (early morning before strong sun, with mineral SPF)
+> **For you, in plain words.** Weekly: Zone 2 cardio (Mon/Wed/Fri 45 min) — preferably AM with shaded route or indoor; strength (Tue/Thu); restorative + yoga Sat-Sun. Avoid hot midday cardio outdoors. Monthly: 3 weeks normal + 1 week deload. *(NHMRC exercise)*
 
-**Monthly cadence**
-- **Week 1** — full intensity; TCM cycling overlay (Xiao Yao San or Liu Wei Di Huang Wan per pattern)
-- **Week 2** — moderate; supplement steady-state
-- **Week 3** — deload (≤70% volume) + extra sleep + extra Kumkumadi
-- **Week 4** — full intensity; TCM cycling overlay re-cycles
+Weekly cadence:
+- Mon / Wed / Fri — Zone 2 cardio 45 min indoor OR shaded outdoor OR pre-7am outdoor
+- Tue / Thu — strength training 45 min (indoor)
+- Sat — HIIT 20 min indoor OR sport
+- Sun — restorative yoga + long shaded walk
 
-Optional 14:10 IF (10:00–20:00 eating window) — improves insulin sensitivity, reduces AGE load, helps acanthosis nigricans component. **Not for pregnancy, breastfeeding, underweight, HPA-depleted, eating-disorder history.**
+Monthly cadence: 3 weeks + 1 week deload.
 
 ## 8. Daily Unified Combos (≤10 capsules/day)
 
-**Combo 1 — Photo-protect + antioxidant (08:00, with breakfast):** Polypodium leucotomos 240 mg (1 cap) + Astaxanthin 8 mg (1 cap) + Lutein 10 mg / Zeaxanthin 2 mg (1 cap) + Vitamin C 1000 mg buffered (1 cap) + D3 4000 IU / K2 100 µg (1 cap). **5 caps.** Rationale: oral photo-protection cluster pre-sun; fat-soluble cluster with breakfast.
+### 8.1 Three combos — the foundation
 
-**Combo 2 — Anti-melanogenic + dermal (13:00, with lunch):** Pycnogenol 75 mg (1 cap) + NAC 600 mg (1 cap) + Curcumin Meriva 500 mg (1 cap). **3 caps.**
+> **For you, in plain words.** Three combos, ≤10 capsules total per day. AM-photo-protectant, midday-anti-inflammatory, PM-systemic + sleep.
 
-**Combo 3 — HPA + Zn + sleep (19:00, with dinner):** Triphala 1000 mg + Ashwagandha KSM-66 600 mg + Zinc picolinate 30 mg + Mg glycinate 300 mg. **3 caps.** Rationale: Zn PM (Ca AM); Ashwa ≥2 h before bed.
+**Combo 1 — Morning (post-breakfast)** — 3 items
+- Polypodium leucotomos / Heliocare 240 mg (oral systemic photo-protectant)
+- Vitamin C 500-1000 mg (oral; collagen + antioxidant)
+- Astaxanthin 4-12 mg (carotenoid + oral photo-protection)
 
-**Daily total: ~11 caps + extensive topicals.** Add Combo 1 Polypodium **30 min before sun exposure** on heavy-sun days.
+**Combo 2 — Midday (with lunch)** — 3 items
+- Omega-3 EPA+DHA 1000 mg (anti-inflammatory; with fat)
+- Vitamin D3 2000-5000 IU + K2 100 µg (with fat; Mg cofactor present)
+- Zinc picolinate 15 mg (Zn:Cu 8-15:1)
 
-**Topicals AM:** gentle cleanser → vitamin C 10–15% L-ascorbic acid → tranexamic acid 3% → niacinamide 4–10% → moisturiser → **iron-oxide tinted mineral SPF 50+** (mandatory, reapply every 2 h outdoor / 4 h indoor).
+**Combo 3 — Evening (with dinner)** — 4 items
+- Yashtimadhu / Licorice 1 g (glabridin — pigmentation; ≤6 weeks; **caution in HTN**)
+- Manjishtha 1 g (blood-purifier, Ayurvedic)
+- Magnesium glycinate 300-400 mg (sleep + Mg cofactor for D)
+- Tranexamic acid topical 3-5% (NOT oral — topical only — apply AM + PM separately)
 
-**Topicals PM:** gentle cleanser → alpha-arbutin 2% → azelaic acid 10% → niacinamide 4–10% (alternate nights with) bakuchiol 1% → moisturiser → Kumkumadi tailam thin dab on pigmented zones.
+**Total capsules/day:** 10 (within ceiling).
 
-**TCM cycling (weeks 1 & 4):** *Xiao Yao San* OR *Liu Wei Di Huang Wan* OR *Tao Hong Si Wu Tang* per pattern — replaces Combo 2 NAC that week.
+**Optional TCM cycling overlay (weeks 1 & 4):** Si Wu Tang 6 g BID OR Xiao Yao San 6 g BID (stress-driven melasma).
+
+### 8.2 Why this combo, in plain words
+
+> **For you, in plain words.** AM combo gives systemic photo-protection. Midday addresses inflammation + cofactor floor. PM addresses Ayurvedic pigmentation + sleep + topical TXA. The single highest-leverage tool — tinted iron-oxide SPF — is a separate cosmetic, not in the capsule count.
+
+**Topical routine separate from capsules:**
+- **AM:** Cleanse → vitamin C 10-20% serum → niacinamide 5% → azelaic acid 10% → moisturiser → **tinted iron-oxide SPF50+ (essential)**
+- **PM:** Cleanse → tranexamic acid 3-5% serum → bakuchiol 0.5-1% (or alpha-arbutin 2%) → Kumkumadi Tailam thin layer → moisturiser
+- **Optional 2-3×/week mask:** Haridra + sandalwood + curd paste OR Gram-flour + curd + lemon (sparingly)
 
 ## 8.5 Master 24-Hour Day Plan
 
-Integrates supplements, meals, exercise, breathwork, light protection, and sleep — resolves every §10 conflict.
+### 8.5.1 The integrated timetable
 
-| Hour | Action | Why / Conflicts resolved |
-|---|---|---|
-| **06:00** | Wake; 250 ml warm water + lemon (oral, NOT topical); **stay indoors or AM sun ≤5 min with iron-oxide SPF already on**; eye-only circadian light | Circadian anchor without face UV/HEV |
-| **06:15** | Cold-water face splash + humming 1 min | Vagal afferent + vascular component reduction |
-| **06:30** | Pranayama 15 min (Anulom Vilom 10 + Sheetali 5) | Vagal tone + cooling before food/supplement |
-| **07:00** | Yoga 25 min (§7.1) — indoor only; inversions on empty stomach | Avoid heat amplification |
-| **07:15** | AM skincare (water-based to oil-based): cleanser → Vitamin C 10–15% → Tranexamic 3% → Niacinamide 4–10% → moisturiser → **Iron-oxide tinted mineral SPF 50+** | Sequence + SPF non-negotiable |
-| **07:30** | Breakfast (§6.4) + green tea (cup 1) | Low-GI; EGCG anti-tyrosinase |
-| **08:00** | **Combo 1** (Polypodium + Astaxanthin + Lutein/Zeaxanthin + Vit C + D3/K2) | Photo-protection cluster pre-sun; fat-soluble with food |
-| **10:00** | Green tea cup 2 | ≥1 h from Combo 1 iron-relevant items; ≥1 h from iron meals |
-| **10:30** | If going outdoor: re-apply mineral SPF + hat + UV sunglasses | Photoprotection |
-| **12:00** | Methyl-B12 + methyl-folate sublingual | ≥1 h from coffee |
-| **12:30** | Lunch (§6.4) — bitter greens + millet + dal + cooked tomato + EVOO + ferment | Lycopene + carotenoid + low-GI |
-| **13:00** | **Combo 2** (Pycnogenol + NAC + Curcumin Meriva) | Curcumin with fat + piperine; ≥2 h from iron + dairy |
-| **13:30** | 10–15 min post-lunch walk (indoor or shaded; reapply SPF if going outside) | Post-prandial glucose; vascular |
-| **14:00** | **Caffeine cut-off** | Half-life 6 h — protects sleep & cortisol |
-| **15:00** | If outdoor exposure: reapply iron-oxide SPF every 2 h | Photoprotection |
-| **16:00** | Exercise (§7.6) — indoor or shaded | Avoid heat amplification of melasma |
-| **17:00** | Gua sha 5 min PM (rose quartz / jade) along jaw + neck | Lymphatic + vascular |
-| **18:30** | Snack: 2 Brazil nuts + 20 g walnut + pomegranate seeds + tulsi tea | Selenium + ω-3 + polyphenol |
-| **19:00** | Dinner — light, low-GI (§6.4) | Sleep + autophagy |
-| **19:25** | PM skincare: cleanser → alpha-arbutin 2% → azelaic 10% → niacinamide 4–10% **OR bakuchiol 1% (alternate nights)** → moisturiser → Kumkumadi tailam dab on pigmented areas | Layer water → oil; bakuchiol PM not with retinoid |
-| **19:30** | **Combo 3** (Triphala + Ashwagandha + Zinc + Mg) | Zinc PM with dinner; Mg PM (Ca AM); Ashwa ≥2 h before bed |
-| **20:00** | PBM session: 8–10 min red 660 nm low-dose (skip if vascular melasma or worsening trend) | Eye shield; ≤10 J/cm² gentle; assess weekly |
-| **20:30** | Restorative yoga or 20 min indoor walk | Parasympathetic shift |
-| **21:00** | Blue-light cut-off; blockers; screens dim | Melatonin + HEV protection |
-| **22:00** | Bhramari 5 min + 4-7-8 breath + Yoga Nidra 20 min | Vagal close-out |
-| **22:30** | Bedtime, 18–20 °C, blackout, silk pillowcase (reduces friction-PIH on cheek) | Deep sleep + skin contact |
-| **02:00–06:00** | Sleep — no waking eating | Insulin & cortisol stability |
+> **For you, in plain words.** Hour-by-hour timetable integrating supplements, topicals, meals, exercise, breath, light and sleep. Resolves curcumin/dairy, iron/tea, Mg/Ca, sun-exposure timing.
 
-**If you are already on prescription melasma therapy** (hydroquinone 4%, tretinoin, Tri-Luma triple-combo, oral tranexamic acid): keep your existing schedule and apply §10.1 gap rules. **The protocol does not prescribe or modify any prescription.** Photosensitising topicals (tretinoin, hydroquinone with sun) — strictest SPF discipline; PM only.
+| Hour | Action | Why this timing | Conflicts resolved | TL;DR (plain English) |
+|---|---|---|---|---|
+| 06:30 | Wake + 5 min direct outdoor light (body, NOT face — face shielded with hat/sunglasses) | Circadian + cortisol awakening, while protecting facial pigment | — | Light on body, face shielded. *(Boukari 2015)* |
+| 06:45 | Anulom Vilom + Bhramari 10 min | Vagal warm-up | — | Calm before fuel. *(Brown 2013)* |
+| 07:15 | Sarvangasana (if no HTN/pregnancy) + Shavasana | Skin perfusion + autonomic | — | Wake the body. *(AYUSH yoga)* |
+| 07:30 | Breakfast — eggs + greens + green tea | Real food + polyphenols | tea polyphenols away from iron-rich meal | Polyphenol diversity. *(Hsu 2005)* |
+| 08:00 | **AM skincare:** vitamin C → niacinamide → azelaic acid → moisturiser → **tinted iron-oxide SPF50+** | The most important 10 minutes of the day | — | Tinted SPF is non-negotiable. *(Boukari 2015)* |
+| 08:30 | Combo 1 (Heliocare + Vit C oral + Astaxanthin) | Systemic photo-protectant + AM antioxidant | — | Oral sun protection. *(Martin 2014)* |
+| 12:30 | Lunch — fish or chicken + tomato (cooked + EVOO for lycopene) + greens | Lycopene + omega-3 + polyphenols | — | Real food. *(Stahl 2007)* |
+| 13:00 | Combo 2 (Omega-3 + D3K2 + Zn) | Anti-inflammation + cofactor; fat for absorption | Zn away from Ca 2 h | Cofactor floor. *(EMA omega-3)* |
+| 13:30 | 10-min post-lunch walk (shaded route, hat) | Glycaemic flattening | — | Walk in the shade. *(DiPietro 2013)* |
+| 14:00 | **Caffeine cut-off** | Protect melatonin | — | No coffee after 14:00. *(Walker 2019)* |
+| 14:00-15:30 | **AVOID outdoor sun** (peak UV window 11:00-15:00 in summer); if outdoors → reapply tinted SPF + hat + UPF clothing | Photo-stress avoidance | — | Stay indoors at peak UV. *(Boukari 2015)* |
+| 16:00 | Tea + Sheetali pranayama 5 cycles | Pitta cooling | — | Cool the system. *(AYUSH)* |
+| 17:00-18:00 | Exercise — indoor strength or shaded outdoor cardio | Hormonal + circulation | — | Keep face out of midday sun. *(NHMRC)* |
+| 19:00 | Dinner — salmon + greens + cooked tomato + EVOO | Real meal + lycopene + omega-3 | — | Real food. *(EMA omega-3)* |
+| 19:30 | Combo 3 (Yashtimadhu + Manjishtha + Mg) — **NO oral TXA** | Ayurvedic pigmentation + sleep prep | Yashtimadhu ≤6 weeks if HTN | Topical TXA is OK; oral TXA is clinic-route. *(Yokota 1998)* |
+| 20:00 | **PM skincare:** cleanse → topical TXA 3-5% → bakuchiol 0.5-1% OR alpha-arbutin 2% → Kumkumadi Tailam → moisturiser | The nightly lightening routine | retinol/bakuchiol → use AM/PM separation if both | The PM pigment routine. *(Kim 2016; Dhaliwal 2019)* |
+| 20:30 | Optional home red-light PBM 5-10 min at 25-50 mW/cm² (gentle protocol) | Anti-inflammatory; collagen | Avoid high heat | Gentle red-light only. *(Ferraresi 2016)* |
+| 21:00 | Blue-light cut + reading | Circadian + screen-blue-light reduction | — | Screens off. *(Walker 2019)* |
+| 21:30 | Yoga Nidra 30 min OR Bhramari 10 min | Parasympathetic + HPA | — | Wind-down. *(iRest)* |
+| 22:00 | Magnesium glycinate (if PM combo skipped) + warm milk + Bhramari 5 min | Sleep | — | Sleep ritual. *(EMA Mg)* |
+| 22:30 | Bedtime | 8 h floor | — | Sleep is the foundation. *(Walker 2019)* |
+| 02:00-06:00 | Sleep — uninterrupted | Skin regeneration peak | — | Don't wake. *(Walker 2019)* |
 
 ## 9. Supplier Ecosystem + Monthly Cost
 
-| Channel | Sources | Brands |
-|---|---|---|
-| Amazon Prime (US/IN/UK), iHerb | Polypodium, Astaxanthin, Lutein, Vit C, Pycnogenol, NAC, KSM-66, Triphala, Zn, Mg | Heliocare (Cantabria Spain), Nutrex BioAstin, Horphag Pycnogenol, Pure Encaps, Thorne, Ixoreal |
-| Patel Brothers / Apna Bazaar | Sprouted millets, methi, amla, ghee, Kumkumadi tailam, Chyawanprash, Nalpamaradi Keram | Kottakkal Arya Vaidya Sala, Vaidyaratnam, Baidyanath, Patanjali, Dabur, Kama Ayurveda, Forest Essentials, Khadi — **Patel Brothers, 1610 Stoneridge Mall Rd, Pleasanton CA 94588**; **Apna Bazar, 100-04 Queens Blvd, Forest Hills NY** |
-| Chinatown TCM pharmacy | *Xiao Yao San*, *Liu Wei Di Huang Wan*, *Tao Hong Si Wu Tang*, *Gui Pi Tang*, Pearl powder | Plum Flower (Mayway, Oakland), Min Tong — **Sun Sing Pacific Trading, 1205 Stockton St, SF**; **Kamwo Meridian Herbs, 209 Grand St, NYC** |
-| Hamdard Dawakhana | Itrifal Shahatra, Majoon Ushba, Sharbat Sandal, Marham Gulabi | Hamdard, Ajmal — online direct from India |
-| IMPCOPS Chennai (Siddha) | Karisalai Karpam, Nellikai Lehyam, Manjal Karpam | IMPCOPS, SKM — online |
-| Men-Tsee-Khang Dharamsala | Drangsong-15, Tig-ta 8, Padma-28 / Padma Lax | Sowa Rigpa, online |
-| CCRH-affiliated homeo | Constitutional remedies | SBL, Schwabe (IN), Boiron (FR) |
-| Whole Foods / Sprouts | Wild salmon, organic produce | — |
-| Skincare topicals | Vitamin C serum, niacinamide, alpha arbutin, azelaic 10%, tranexamic 3%, kojic, bakuchiol, iron-oxide SPF | Skinceuticals CE Ferulic, La Roche-Posay Anthelios Mineral Tinted SPF 50, ISDIN Eryfotona Ageless, Avène Mineral SPF, Paula's Choice Azelaic, The Ordinary (Arbutin, Azelaic, Vit C, Tranexamic), Korean K-beauty (Beauty of Joseon, Round Lab, Some By Mi, Pyunkang Yul) |
-| Omnilux / Mito Red Light | PBM (low-dose) | Omnilux Contour Face, MitoMID |
+### 9.1 Where to source
 
-**Monthly cost (USD)**
-- Combo 1 (Polypodium + Astaxanthin + Lutein + Vit C + D3/K2): **$60–95**
-- Combo 2 (Pycnogenol + NAC + Curcumin Meriva): **$45–70**
-- Combo 3 (Triphala + KSM-66 + Zinc + Mg): **$30–45**
-- Cofactor floor (Cu, Se Brazil nut, A from cod liver, methyl-B12, methyl-folate, vit E mix): **$30–45**
-- Topicals (Vitamin C serum, alpha arbutin, azelaic 10%, tranexamic 3%, niacinamide, bakuchiol, Kumkumadi tailam, iron-oxide mineral SPF, mineral SPF body): **$80–160**
-- Green tea + tulsi: **$10–15**
-- TCM overlay (weeks 1 & 4): **$15–30**
-- Fresh produce uplift (bitter greens, methi, amla, millets, carotenoids, pomegranate, cooked tomato + EVOO): **$80–140**
-- **Recurring total: $350–600/month**
+> **For you, in plain words.** Seven channels covering supplements, topicals, and devices. Total monthly: $90-200 (supplements + topicals). One-time devices: $0-1500.
 
-**One-time devices**
-- PBM panel (low-dose, optional): **$249–395 (Omnilux Contour Face, MitoMID)**
-- Wide-brim UPF-50 hat: **$30–80** (Solbari, Coolibar)
-- UV-blocking sunglasses: **$50–200**
-- Window UV-filter film (car + key home windows): **$200–600**
-- Gua sha + rose quartz roller: **$20–40**
-- Blue-light blocking glasses: **$30–100** (BlockBlueLight, Felix Gray)
-- DTC lab baseline + Mo3 + Mo6 + Mo12 (LetsGetChecked / Thriva / Cerascreen): **$120–180/round**
+| Channel | What it sources well | Typical brands | Notes |
+|---|---|---|---|
+| Amazon / iHerb | OTC actives (niacinamide, azelaic, vit C, TXA, alpha-arbutin) | The Ordinary, Paula's Choice, The Inkey List, Naturium, Cosrx | Verify batch / expiry |
+| Dermatology-focused retailers | La Roche-Posay, EltaMD, Skinceuticals, ISDIN, Avene, Bioderma | La Roche, EltaMD, Skinceuticals, ISDIN | Check authorised sellers to avoid counterfeit |
+| Indian grocery | Yashtimadhu, Manjishtha, Haridra, Triphala, Kumkumadi Tailam | Organic India, Himalaya, Kottakkal, Patanjali, Baidyanath | Patel Brothers Pleasanton CA; Apna Bazaar |
+| Chinatown TCM | Si Wu Tang, Liu Wei Di Huang Wan granules | Plum Flower, Min Tong, Treasure of the East | Kamwo Meridian Herbs NYC; Sun Sing Pacific SF |
+| Hamdard | Itrifal Shahatra, Sandal Safed, Rose attar | Hamdard, Saif | Hamdard outlets |
+| Heliocare distributors | Polypodium leucotomos (Fernblock) | Heliocare 240/360, ISDIN | OTC EU/Asia; US OTC; pharmacy chains |
+| UPF clothing | UPF50+ | Coolibar, Solbari, Sun Precautions, Athleta UPF, Patagonia | AS/NZS 4399 certified |
+| Device suppliers | Home red-light, derma-roller | Mito Red Light, Joov, Hooga | Use gentle protocols; skip dermaroller in IV-VI |
+| Homeopathy | Sepia, Berberis aq, Thuja 30C | SBL, Schwabe, B.Jain, Boiron | T/H grade |
+
+### 9.2 Monthly cost — line by line
+
+- **Combo 1 (AM):** Heliocare $35 + Vit C oral $10 + Astaxanthin $15 = $60
+- **Combo 2 (Midday):** Omega-3 $25 + D3K2 $10 + Zn $8 = $43
+- **Combo 3 (PM):** Yashtimadhu $10 + Manjishtha $10 + Mg $15 = $35
+- **Topicals (monthly amortised):** Tinted SPF50+ $30 + Azelaic acid $20 + Niacinamide $12 + Vitamin C $25-160 + TXA $20 + Alpha-arbutin $10 + Kumkumadi $15 = $130-270
+- **TCM cycling (1 wk × 2/mo Si Wu Tang):** $15
+- **Fresh produce uplift (fatty fish, tomato, greens, polyphenol-rich):** $40-80
+- **Total monthly:** $260-440 (median $340)
+- **One-time:** UPF50+ clothing $50-200 + wide-brim hat $30-80 + home red-light Mito Red MitoMIN $399-MAX $1499 + blue-blocking glasses $20-100. Optional Wood's lamp $30 (DIY self-classification).
 
 ## 10. Interaction Matrix
 
-### 10.1 Drug ↔ Supplement (for users ALREADY on conventional melasma therapy — this dossier prescribes NONE of these)
+### 10.1 Drug ↔ supplement
 
-Conventional melasma / hyperpigmentation drugs you may already be on: hydroquinone 4% (prescription in many markets; restricted/banned in EU/Japan), tretinoin / adapalene topical, triple-combination Kligman/Tri-Luma (hydroquinone + tretinoin + fluocinolone), oral tranexamic acid (prescription), oral mexamine, topical mometasone short-course. Discouraged in this protocol's own path: long-term hydroquinone (ochronosis risk), chronic potent topical corticosteroid.
+> **For you, in plain words.** Eight conventional drug classes commonly seen in melasma users. Documented for users already on them; not recommended.
 
-| Drug (you may be on) | Supplement in protocol | Risk | Mitigation (your own taper pace) |
+| Drug (currently on) | Supplement | Risk | Mitigation (user decides taper pace) | TL;DR (plain English) |
+|---|---|---|---|---|
+| Topical hydroquinone 4% | Vitamin C 15-20% (high-strength), azelaic | Additive irritation + rebound risk | Don't stack high-strength irritants | Reduce stack; HQ alone is irritating. *(Briganti 2003)* |
+| Tretinoin (Rx) | Vitamin C high-strength, bakuchiol | Additive irritation | Tret PM alone; vit C AM | Separate by time of day. *(Kligman 1986)* |
+| Tri-Luma (HQ+tret+steroid) | Azelaic acid, niacinamide | Additive irritation | Stagger or skip topicals | Don't stack lighteners. *(Taylor 2003)* |
+| OCP (combined oral contraceptive) | Vitex | Antagonistic — Vitex affects luteal phase | Skip Vitex if on OCP | Don't combine. *(EMA Vitex 2018)* |
+| HRT / estrogen | Vitex, isoflavones | Hormonal interaction | Consultation with prescriber (user's call) | Discuss with prescriber. *(EMA Vitex)* |
+| Levothyroxine | Mg, Zn, iron, Ca, coffee | Absorption block | 60 min gap from thyroid med | Take thyroid first thing. *(Health Canada)* |
+| Minocycline / tetracyclines | Iron, Ca, Mg | Chelation; absorption block | 2 h gap | Antibiotic away from minerals. *(EMA)* |
+| Warfarin | Curcumin, omega-3, ginkgo, vitamin K greens, tart cherry | Bleeding / INR | Maintain consistent intake | Don't oscillate. *(EMA)* |
+
+### 10.2 Drug ↔ food
+
+| Drug | Food | Mechanism | Action | TL;DR (plain English) |
+|---|---|---|---|---|
+| Levothyroxine | Coffee/soy/fibre within 60 min | Absorption block | 60 min gap | Take thyroid first thing. *(Health Canada)* |
+| Tetracyclines (incl minocycline) | Dairy/Ca/iron | Chelation | 2 h gap | Antibiotic alone. *(EMA)* |
+| OCP | Bergamot oil topical | Phototoxic interaction | Avoid | No bergamot oils. *(Naganuma 1985)* |
+| Grapefruit | Statins, CCBs | CYP3A4 | Avoid | No grapefruit. *(WHO)* |
+| Photosensitising drugs (doxycycline, isotretinoin, amiodarone, NSAIDs) | Sun | Phototoxic | Strict sun-avoidance | Strict SPF + cover. *(Drucker 2011)* |
+
+### 10.3 Supplement ↔ food
+
+| Supplement | Food / drink | Mechanism | Action | TL;DR (plain English) |
+|---|---|---|---|---|
+| Iron | Tea / coffee / wine (tannins) | ↓ absorption | 1-2 h gap; pair vit C | Don't drink coffee with iron. *(WHO)* |
+| Iron | Dairy / Ca | Divalent competition | ≥2 h gap | Iron away from milk. *(WHO)* |
+| Zn | Iron | DMT1 competition | ≥2 h gap | Zn and iron different times. *(EMA Zn)* |
+| Ca + Mg same dose | — | Competition | Split AM/PM | Calcium AM, Mg PM. *(EMA Mg)* |
+| Vitamin D | Fat | Required for absorption | Take with fatty meal | D needs fat. *(EMA D)* |
+| Vitamin D + Mg | — | Mg cofactor | Together | Partners. *(EMA D)* |
+| Carotenoids (astaxanthin, lutein) | Fat | Required for absorption | Take with fatty meal | Carotenoids need fat. *(EMA)* |
+| Probiotic | Hot food/drink >40°C | Kills bacteria | Cool/room-temp | Don't add to hot tea. *(EMA)* |
+| Curcumin | Dairy | Casein binds | 2 h gap; pair piperine + ghee | Turmeric + ghee + pepper. *(EMA)* |
+| Tomato (lycopene) | Fat + cooking | Lycopene becomes 4× bioavailable | Cook tomato in EVOO | Cook tomato in oil. *(Stahl 2007)* |
+| Bergamot / citrus essential oils | Sun | Phototoxic | Avoid; rinse off if applied | Skip bergamot oils. *(Naganuma 1985)* |
+| Caffeine | After 14:00 | Blocks melatonin | 14:00 cut-off | No coffee after 2 pm. *(Walker 2019)* |
+
+### 10.4 Supplement ↔ supplement
+
+| Supp A | Supp B | Mechanism | Action | TL;DR (plain English) |
+|---|---|---|---|---|
+| Zn ↔ Cu | — | Long-term Zn depletes Cu | 8-15:1 ratio | Add 2 mg Cu/day. *(EMA Zn)* |
+| Iron ↔ Zn/Ca/Mg | — | Divalent competition | 2 h gap | Iron alone. *(WHO)* |
+| Vit A ↔ Vit D | — | Receptor competition high-dose | Balance | Don't overdo A. *(EMA)* |
+| Topical vit C + retinol same minute | — | Both acidic + irritating | Separate AM (C) / PM (retinol/bakuchiol) | Split AM/PM. *(Pinnell 2001)* |
+| Yashtimadhu ↔ HTN meds | — | Cortisol-extending → BP elevation | Caution in HTN; ≤6 weeks | Watch BP. *(EMA licorice)* |
+| Berberine ↔ CYP3A4 herbs | — | CYP3A4 inhibition | Reduce stack | Berberine has CYP load. *(Yin 2012)* |
+| St John's Wort ↔ SSRIs / OCP / many | — | CYP3A4 + serotonin | **Avoid combination** | Real danger. *(Gillman 2010)* |
+| Topical retinol ↔ topical bakuchiol | — | Same pathway; pick one | Don't stack | One retinoid only. *(Dhaliwal 2019)* |
+
+### 10.5 Exercise / sleep / caffeine timing
+
+- **Caffeine cut-off:** 14:00 (half-life 6 h)
+- **Outdoor exercise:** AM (pre-7am) or PM (post-17:00); avoid peak UV 11:00-15:00
+- **Yashtimadhu / Licorice:** AM or PM; ≤6 weeks; watch BP
+- **Manjishtha:** AM or PM
+- **Mg glycinate:** PM (sleep)
+- **Probiotic:** AM with first meal or empty stomach
+- **Heavy meal + supine within 3 h:** reflux risk
+- **Hot sauna + alcohol:** dehydration / arrhythmia
+- **Inverted yoga (Sarvangasana) + pregnancy / HTN / late dinner:** contraindicated
+
+### 10.6 Strictly avoid
+
+> **For you, in plain words.** Eight "avoid" rules specific to melasma + pregnancy.
+
+- **Pregnancy melasma:** tretinoin, hydroquinone, salicylic acid >2%, oral tranexamic acid CONTRAINDICATED → sun-avoidance + niacinamide + azelaic acid only (all pregnancy-safe)
+- **Bergamot / lemon / lime essential oils on skin pre-sun:** phototoxic; rebound PIH
+- **Long-term unsupervised hydroquinone 4%:** exogenous ochronosis risk; rebound on stopping
+- **Home microneedling in Fitzpatrick IV-VI for melasma:** rebound PIH risk; clinic-route only
+- **Hot infrared sauna on face:** can flare melasma; shield face with cool cloth
+- **Strong AHA peels at home in Fitzpatrick IV-VI:** rebound PIH risk; use ≤8% glycolic or PHAs
+- **Yashtimadhu in hypertension:** mineralocorticoid effect — watch BP, 6-week courses only
+- **Kapalbhati / Bhastrika in pregnancy / HTN / cardiac:** contraindicated
+
+## 10.7 Emerging & adjunctive therapies
+
+### 10.7.1 Home-usable advanced therapies
+
+> **For you, in plain words.** Five home-usable advanced tools for melasma. Tinted SPF + UPF clothing (cornerstone), home red-light PBM (gentle protocols), self-photographic mMASI tracking, blue-blocking glasses for screens, Wood's lamp self-classification (epidermal vs dermal). Each cites the actual trial. *(Boukari 2015; Pandya 2011 mMASI; Mahmoud 2010)*
+
+| Device / tool | TL;DR (plain English) | Dose / protocol | Evidence anchor | Cost | TL;DR (where it fits) |
+|---|---|---|---|---|---|
+| Tinted iron-oxide SPF50+ + UPF50+ clothing + wide-brim hat | The single highest-leverage tool — Boukari 2015 RCT showed iron-oxide SPF beats plain SPF. **Pregnancy-safe.** *(Boukari 2015)* | Daily; reapply every 2 h outdoors | Boukari 2015; Mahmoud 2010 | $50-250 | Cornerstone — non-negotiable |
+| Home red-light PBM panel (gentle) | Ferraresi 2016 — anti-inflammatory + collagen at moderate doses; use gentle protocols to avoid heat-flare. *(Ferraresi 2016)* | 5-10 min at 25-50 mW/cm² 2-3×/week, 30 cm distance | Ferraresi 2016 | $399-1499 | Optional cornerstone |
+| Self-photographed mMASI tracking | Pandya 2011 — validated melasma severity scoring; matched-lighting selfie weekly. *(Pandya 2011)* | Weekly photo + monthly mMASI score | Pandya 2011 *J Am Acad Dermatol* | $0 (phone) | Diagnostic cornerstone |
+| Blue-blocking glasses (screens) | TheraSpecs / Felix Gray — visible-light protection while indoors near windows. *(Mahmoud 2010)* | All-day screen wear | Mahmoud 2010 | $20-100 | Adjunct |
+| Wood's lamp self-classification | DIY $30 — epidermal vs dermal melasma classification informs protocol focus. *(Sanchez 1981)* | One-time self-assessment | Sanchez 1981 | $30 | Diagnostic |
+| CGM (Stelo / Libre) | Acanthosis-nigricans-overlap users — surfaces insulin-driver. *(Hall 2018)* | 14-day trial | Hall 2018 | $35-90/mo | Metabolic sub-type only |
+
+### 10.7.2 Adjunctive behavioural therapies
+
+> **For you, in plain words.** Four high-evidence behavioural levers. Cognitive-behavioural therapy for body-image distress + melasma (MELASQOL drops with CBT — Krupashankar 2014); mindfulness for stress-driven melasma flares; MELASQOL self-tracking + photo-tracking for self-efficacy; sleep optimisation (cortisol-MSH-melanogenesis axis). *(Krupashankar 2014; MELASQOL Balkrishnan 2003; Walker 2019)*
+
+| Therapy | What it does (plain words) | Evidence tier | Self-guided resources |
 |---|---|---|---|
-| **Hydroquinone 4%** | Topical vitamin C, alpha arbutin, azelaic, kojic | Additive lightening + irritation | Use one active per time-window; mineral SPF non-negotiable; consider gradual hydroquinone taper after 3 mo natural protocol stabilises |
-| **Topical tretinoin / adapalene** | Topical bakuchiol, niacinamide high-strength, retinoids | Additive irritation | Skip bakuchiol if using prescription retinoid; niacinamide tolerated |
-| **Triple-combination (Kligman/Tri-Luma)** | Topical actives, oral protocol | Additive lightening / irritation; long-term fluocinolone risks (atrophy, telangiectasia) | Do not exceed manufacturer-recommended duration (typically ≤8 wk); user decides taper |
-| **Oral tranexamic acid** (prescription) | Estrogen-modulating herbs (Vitex), high-dose ginkgo, high-dose vit E | Theoretical pro-thrombotic concerns with TXA; bleeding mod with TXA stop | If on oral TXA — coordinate with prescriber on supplements; avoid hormonal modulators concurrently |
-| **Combined oral contraceptive (OCP)** — often a melasma trigger | Vitex, St John's Wort, high-dose curcumin | Hormonal interference / CYP3A4 induction → contraceptive failure | Skip Vitex + SJW while on OCP if pregnancy prevention is the goal |
-| **Hormone replacement therapy (HRT)** | Vitex, SJW | Hormonal interference | Skip Vitex if HRT is the goal; SJW excluded |
-| **Levothyroxine** (Hashimoto + melasma overlap) | Triphala, Zn, Ca, Mg, soy, calcium-fortified | Tannin / divalent chelation → ↓ T4 absorption | Levo 60 min before food/Ca/Mg/Zn; DTC TSH Mo3/Mo6 |
-| **Metformin** (PCOS overlap with acanthosis nigricans) | Berberine, Nigella | Additive hypoglycaemic; B12 depletion compounded | Home glucose meter; methyl-B12 1000 µg daily |
-| **Warfarin / DOACs** | Pycnogenol, NAC, vitamin E high-dose, omega-3, ginkgo, curcumin | Bleeding / INR shift | Maintain consistent vit K greens; cap pycnogenol 50 mg; reduce omega-3 to 1 g if labile INR |
-| **SSRIs** | Ashwagandha, St John's Wort | SJW → serotonin syndrome | **Eliminate SJW**; Ashwa ≥3 h from SSRI |
-| **Minocycline / amiodarone / antimalarial / phenothiazine** (drug-induced pigmentation drugs) | Antioxidant cluster | Helpful adjunct; only drug discontinuation (user's call with prescriber) resolves drug-induced hyperpigmentation | Discuss with prescriber |
-| **Isotretinoin** (if user on it for acne overlap) | Vitamin A supplements, β-carotene high-dose | Additive A toxicity | Avoid all A supplementation |
+| CBT for body-image distress | Krupashankar 2014 — MELASQOL drops with CBT alongside topical treatment. *(Krupashankar 2014)* | A | "Mind Over Mood" 2nd ed; iCBT apps |
+| Mindfulness / MBSR | Reduces cortisol load; the stress-MSH-melanogenesis loop is real. *(Kabat-Zinn MBSR)* | A-B | Headspace, Insight Timer, MBSR workbook |
+| MELASQOL self-tracking | Balkrishnan 2003 — quality-of-life impact of melasma; track alongside mMASI. *(Balkrishnan 2003)* | B (tracking instrument) | Free PDF MELASQOL |
+| Sleep optimisation (CBT-i) | Sleep extension supports cortisol curve normalisation. *(Espie 2012 Sleepio)* | A (insomnia) | Sleepio app; Somryst |
+| Self-compassion (Neff) | Body-image-related self-criticism is common; self-compassion training breaks the loop. *(Neff 2013)* | B | "Self-Compassion" (Neff) |
 
-### 10.2 Drug ↔ Food
+### 10.7.3 If the home protocol plateaus — clinic-route options
 
-| Drug | Food | Mechanism | Action |
+> **For you, in plain words.** Eight clinic-route options that exist. **Documented honestly, never recommended in the home regime.** Hydroquinone 4% (banned in EU OTC, US OTC-banned since 2020 — Rx only — present honestly with exogenous-ochronosis + rebound caveats), tretinoin, Tri-Luma triple-combo, cysteamine 5% (Cyspera), chemical peels (glycolic, salicylic, Jessner, TCA), clinic microneedling + TXA mesotherapy, oral tranexamic acid (Wu 2014 meta — B-grade, VTE risk), Polypodium leucotomos (already OTC in EU/Asia, presented here for clarity), low-fluence Q-switched Nd:YAG / picosecond laser (refractory only). *(Briganti 2003; Kligman 1986; Mansouri 2015 cysteamine; Wu 2014 oral TXA meta)*
+
+| Option | TL;DR (plain English) | Evidence anchor | Where it fits |
 |---|---|---|---|
-| **Hydroquinone 4%** | Sun (direct) | Photo-irritation | Strict SPF; apply PM only |
-| **Tretinoin** | Sun | Photo-irritation + photoaged barrier | Strict SPF; PM only |
-| **Oral tranexamic acid** | (alcohol) | Hepatic | Eliminate alcohol; reduces TXA hepatic load |
-| **OCP** | Grapefruit, Seville orange | CYP3A4 inhibition → ↑ estrogen → melasma worsen | Eliminate grapefruit |
-| **Metformin** | Alcohol | Lactic acidosis | Eliminate alcohol |
-| **Levothyroxine** | Coffee, soy, dairy, high-fibre, Ca | ↓ T4 absorption | Levo 60 min before food/coffee; ≥4 h soy |
-| **Warfarin** | Vit-K greens | INR shift | Maintain **consistent** intake |
+| Hydroquinone 4% (Rx) | A-grade for epidermal melasma but **rebound + exogenous ochronosis risk**; US OTC-banned 2020, EU OTC-banned long. *(Briganti 2003)* | Briganti 2003 review | Clinic-route only; not in home protocol |
+| Tretinoin 0.025-0.1% (Rx) | Kligman 1986 — A-grade for melasma. **CONTRAINDICATED in pregnancy.** Irritation common. *(Kligman 1986)* | Kligman 1986 | Clinic-route only |
+| Tri-Luma (HQ+tret+fluocinolone) | Taylor 2003 — strongest single topical regimen short-term; rebound + skin atrophy + ochronosis risk. *(Taylor 2003)* | Taylor 2003 | Clinic-route only; never long-term |
+| Cysteamine 5% (Cyspera) | Mansouri 2015 — emerging non-HQ alternative with anti-tyrosinase action; expensive; odour. *(Mansouri 2015)* | Mansouri 2015 *Br J Dermatol* | Clinic-route emerging option |
+| Chemical peels (glycolic 30-70%, salicylic 20-30%, Jessner, TCA 15-25%) | Sarkar 2010 — modest signal; Fitzpatrick IV-VI requires highly experienced operator due to PIH risk. *(Sarkar 2010)* | Sarkar 2010 review | Clinic-route only |
+| Clinic microneedling + topical TXA mesotherapy | Budamakuntla 2013 India RCT — modest B-grade signal. *(Budamakuntla 2013)* | Budamakuntla 2013 | Clinic-route only |
+| Oral tranexamic acid (Rx in most markets) | Wu 2014 meta + multiple Asian RCTs — B-grade; **VTE / DVT risk requires screening; CONTRAINDICATED in pregnancy.** *(Wu 2014)* | Wu 2014 *Aesthetic Plast Surg* meta | Clinic-route only |
+| Low-fluence Q-switched Nd:YAG or picosecond laser | Refractory only; PIH risk in Fitzpatrick IV-VI; multiple sessions; relapse common. *(Wattanakrai 2010)* | Wattanakrai 2010 | Clinic-route refractory only |
 
-### 10.3 Supplement ↔ Food (the new layer)
+#### Open the science
 
-| Supplement | Food / Drink | Mechanism | Action |
-|---|---|---|---|
-| **Curcumin (Meriva)** | Dairy (casein), green tea EGCG | Casein binds polyphenols; EGCG competes | ≥2 h gap; pair curcumin with piperine + ghee |
-| **Iron** (only if ferritin <30) | Tea, coffee, wine (tannins); dairy, Ca | Polyphenol + divalent chelation | 1–2 h gap; pair with vitamin C |
-| **Zinc** | Iron, dairy, calcium, at same minute | DMT1 competition | ≥2 h gap |
-| **Calcium / Magnesium** | Same hour | Competition | Ca AM, Mg PM (§8.5) |
-| **Fat-soluble vitamins A / D / E / K** | Low-fat meal | No micelle | Always with fat |
-| **Vitamin D** | Magnesium-rich foods | Mg cofactor | Take together AM |
-| **Carotenoids** (lutein, zeaxanthin, astaxanthin) | Low-fat meal | No micelle | Always with fat |
-| **Polyphenol herbs** (green tea EGCG, pycnogenol) | Iron-rich meals | Iron–polyphenol chelation | ≥1 h gap |
-| **Vitamin C** | Iron supplement | Enhances Fe absorption | Co-administer if iron-low; otherwise gap from supplements |
-| **NAC** | High-copper foods (oysters, organ) | Sulphur chelates Cu | ≥2 h gap |
-| **Polypodium leucotomos** | Heavy meal | Generally well-tolerated | With food OK |
-| **Ashwagandha** | Alcohol | CNS depression | Skip alcohol |
-| **Vitex** | (pregnancy, breastfeeding, OCP) | Hormonal | Avoid |
-| **Pycnogenol** | Vitamin C-rich foods | Synergistic antioxidant | Co-administer |
-| **L-theanine + caffeine** | — | Antagonistic at bedtime | AM only |
-| **Cooked tomato + olive oil** | Lycopene + carotenoids | Enhanced absorption with fat + heat | Pair |
-
-### 10.4 Supplement ↔ Supplement
-
-| A | B | Mechanism | Action |
-|---|---|---|---|
-| **Zinc ↔ Copper** | — | Long-term Zn without Cu → Cu depletion → tyrosinase cofactor low (paradoxically can affect skin) | Maintain Zn:Cu 8–15:1 |
-| **Iron ↔ Zn / Ca / Mg** | — | Divalent competition at DMT1 | ≥2 h gap |
-| **Vitamin A ↔ Vitamin D** | — | High-dose A competes with D receptor | Balance (A 3000–5000 IU, D 4000 IU) |
-| **Vitamin E ↔ Vitamin K** | — | E (>800 IU) antagonises K | E ≤400 IU; K2 MK-7 |
-| **Magnesium ↔ Calcium** at same hour | — | Competition | Ca AM, Mg PM (§8.5) |
-| **NAC ↔ Copper** | — | Sulphur chelation | ≥2 h gap |
-| **Polyphenol herbs ↔ Iron** | — | Chelation | ≥2 h gap |
-| **Vitamin C + Vitamin E + Pycnogenol** | — | Synergistic antioxidant network | Co-administer |
-| **Curcumin ↔ Piperine** | — | Piperine 20-fold bioavailability | Co-administer |
-| **Astaxanthin + Lutein + Zeaxanthin** | — | Complementary carotenoids | Co-administer |
-| **Berberine ↔ Cyclosporine / many CYP3A4** (if user on it) | — | CYP3A4 inhibition | Cap berberine; gap |
-| **St John's Wort ↔ SSRIs / OCP / many** | — | Serotonin / CYP3A4 induction | **Excluded by §10.6** |
-| **Pycnogenol ↔ Warfarin** (if user takes) | — | Bleeding additive | Cap to 50 mg; INR monitor |
-
-### 10.5 Exercise / Sleep / Caffeine timing rules
-
-- **Caffeine cut-off 14:00** (half-life 6 h; protects sleep + cortisol).
-- **Alcohol** — eliminate during active melasma (hepatic CYP, glutathione depletion, vascular).
-- **Ashwagandha KSM-66** — PM with dinner; ≥2 h before bed.
-- **Magnesium glycinate** — PM (Ca AM split).
-- **L-theanine + caffeine** — AM only.
-- **Melatonin** (if used) — 0.3–1 mg, 30–60 min before sleep.
-- **Probiotic** — cool first-meal or empty stomach AM.
-- **Inverted yoga** — before breakfast only.
-- **Hot sauna, hot yoga, hot showers** — AVOID in melasma (heat amplifies pigmentation + vascular).
-- **Whey protein post-workout** — replace with plant or egg protein (whey IGF-1 → MITF).
-- **PBM** — low-dose only (≤10 J/cm²); eye shield; skip if vascular component worsening.
-- **Strict daily SPF** — non-negotiable; reapply 2 h outdoor / 4 h indoor.
-
-### 10.6 Strictly Avoid — specific to melasma pathology
-
-- **Plain SPF without iron oxides** — does NOT block visible light / HEV → melasma persists.
-- **Tanning beds, sun-bathing, hot yoga, Bikram, sauna >50 °C** — heat + UV + IR amplification.
-- **Lemon juice / citrus juice / cinnamon / nutmeg as topical "natural" treatments** — phototoxic + pH-shock + irritation.
-- **Bakuchi seed oil (raw, unrefined)** — contains psoralens, phototoxic; use cosmetic bakuchiol extract only.
-- **St John's Wort** — CYP3A4 induction (OCP, hydroquinone metabolism); photosensitisation.
-- **High-dose Echinacea / Astragalus** — autoimmune-thyroid overlap.
-- **Real licorice (glycyrrhizin) high-dose** — pseudohyperaldosteronism, BP rise; use DGL or topical glabridin only.
-- **Hydroquinone >6 mo continuous** — ochronosis risk; cyclical use under self-protocol caution.
-- **Combined oral contraceptive (if it's the trigger)** — discuss alternatives with prescriber.
-- **Hormone replacement therapy (if it's worsening melasma)** — discuss with prescriber.
-- **Smoking, vaping** — glycation, vascular, oxidative.
-- **Excess alcohol** — hepatic CYP + glutathione depletion + vascular.
-- **Clinic IPL / Q-switched laser on melanin-rich skin (Fitzpatrick IV–VI)** — rebound + PIH risk.
-- **Microneedling >0.5 mm at home** — PIH risk.
-- **Kapalbhati / Bhastrika** in HTN, pregnancy, ulcer, glaucoma.
-- **Pregnancy: avoid Vitex, kojic, high-dose vitamin A, high-dose retinoids, photosensitising EOs, oral tranexamic acid, hydroquinone.**
+Hydroquinone 4% — Briganti 2003 review documents A-grade for epidermal melasma; rebound hyperpigmentation on stopping (real and well-documented) and exogenous ochronosis (paradoxical permanent darkening from long-term unsupervised use) are honestly surfaced. EU banned HQ in OTC cosmetics since 2001; US OTC-banned 2020 (regulatory-path context, not evidence anchor). Wu 2014 *Aesthetic Plast Surg* meta-analysis of oral TXA showed B-grade efficacy with VTE / DVT risk requiring screening; pregnancy contraindicated. The home protocol's path is tinted iron-oxide SPF + azelaic acid + niacinamide + vitamin C + topical TXA + Ayurvedic Yashtimadhu + Kumkumadi — clinic options are sovereign user choices if the home protocol plateaus.
 
 ## 11. Clinical Scoring + Comorbidity Screening
 
-### 11.0 Self-administered clinical scoring instrument — MASI / mMASI + MELASQOL
+### 11.0 Self-administered scoring instruments
 
-**MASI (Melasma Area and Severity Index)** — 4 facial regions (forehead, right malar, left malar, chin) scored for area (0–6), darkness (0–4), homogeneity (0–4). Total 0–48. **mMASI (modified MASI)** drops homogeneity, simpler. Fully self-administrable with smartphone photo + standardised protocol.
+> **For you, in plain words.** Three self-tracked instruments — mMASI (Pandya 2011, modified Melasma Area & Severity Index), MELASQOL (Balkrishnan 2003 quality-of-life), and a matched-lighting weekly selfie. Re-measure week 0 / week 4 / week 8 / week 12 / month 6 / month 12.
 
-**MELASQOL (Melasma Quality of Life Scale)** — 10 items × 1–7; total 7–70; captures psychosocial impact (melasma significantly affects quality of life).
+| Instrument | What it measures | Cadence | TL;DR (plain English) |
+|---|---|---|---|
+| mMASI (Pandya 2011) | Severity score across forehead, malar, mandibular regions | week 0 / 4 / 8 / 12 / 6 mo / 12 mo | The headline severity score. *(Pandya 2011)* |
+| MELASQOL (Balkrishnan 2003) | Quality-of-life impact 7-49 | week 0 / 8 / 6 mo | Captures emotional + social impact. *(Balkrishnan 2003)* |
+| Matched-lighting selfie | Visual progress | weekly | A photo is the most honest measure. *(Pandya 2011)* |
+| Wood's lamp DIY | Epidermal vs dermal classification | once at baseline | Tells you which sub-type. *(Sanchez 1981)* |
+| Fitzpatrick skin-type | Self-rated I-VI | once at baseline | Drives caveats. *(Fitzpatrick 1988)* |
 
-**Procedure** (every 4 weeks): standardise lighting (5000 K LED or north window at 08:00, no flash); distance (30 cm); 3 fixed views (front, left 45°, right 45°); mid-grey background; bare clean skin (no makeup, no recent SPF reapplication); same time of day. **Wood lamp at home** (UV-A lamp $20–40) at baseline + Mo3/6/12 to distinguish epidermal (accentuates) vs dermal (does not accentuate) melasma. Save JPEG + RAW to encrypted cloud. Apps: **MASIfy**, **Skin AI (UK)**, **Aysa**.
+### 11.5 Comorbidity screening — DTC labs only
 
-**Cadence:** baseline (Wk 0), Wk 4, Wk 8, Wk 12, Mo 6, Mo 9, Mo 12.
+> **For you, in plain words.** Eight self-ordered DTC lab markers most relevant to melasma. Baseline, month 3, month 12.
 
-**Adjunct self-scoring:** **DLQI** (Dermatology Life Quality Index) baseline + Mo3/6/12; **MELASQOL** monthly; **PGI-C** at each window; **PHQ-9** quarterly (melasma ↑ depression).
+| Lab | Why measure | Reference | TL;DR (plain English) |
+|---|---|---|---|
+| Thyroid panel (TSH + FT3 + FT4 + anti-TPO + anti-Tg) | Sub-clinical hypothyroid is over-represented in melasma. *(Lutfi 1985)* | TSH 0.5-2.5; FT3 normal | Hidden hormonal driver. *(Lutfi 1985)* |
+| Sex hormone panel (estradiol + progesterone + FSH + LH + free T + SHBG + DHEAS) | Hormonal driver — pregnancy, OCP, PCOS, peri-menopause. *(Tamega 2013)* | cycle-dependent | The hormonal layer. *(Tamega 2013)* |
+| HbA1c + fasting insulin | Insulin resistance + acanthosis-overlap. *(Burke 1999)* | HbA1c <5.6; fasting insulin <8 µIU/mL | Metabolic driver. *(Burke 1999)* |
+| Vitamin D 25(OH)D | <30 ng/mL associated with melasma severity. *(Rostami 2017)* | 50-70 ng/mL | The skin-D link. *(Rostami 2017)* |
+| Ferritin + iron studies | Anaemia → pallor contrast emphasises pigmentation. *(WHO ferritin)* | 50-150 ng/mL | Iron floor. *(WHO)* |
+| B12 + folate (RBC) | B12-deficiency hyperpigmentation. *(Aaron 2005)* | B12 >500 pg/mL | Cofactor floor. *(Aaron 2005)* |
+| hs-CRP | Inflammation chronicity | <1 mg/L | Inflammatory driver. *(Mason 2014)* |
+| LFTs (ALT, AST, GGT) | Liver-load — affects hepatic hormone clearance | normal | Hepatic-hormonal axis. *(WHO)* |
 
-### 11.5 Autoimmune & Comorbidity Screening — direct-to-consumer labs
+### 11.6 Comorbidity routing
 
-Melasma carries elevated risk for / co-occurs with: **thyroid dysfunction (especially subclinical hypothyroidism), PCOS / insulin resistance, anaemia (periorbital dark circles), photoageing, oxidative stress, low vitamin D, hormonal imbalance.**
+> **For you, in plain words.** Six conditions that change the protocol when present. Pregnancy → sun-avoidance + niacinamide + azelaic only; PCOS → inositol + Vitex (NOT in pregnancy); Hashimoto → cautious iodine, no kelp, ashwagandha; insulin resistance → metabolic protocol overlap; sudden unilateral lesion → §10.7.3 dermatology referral for melanoma rule-out; OCP-driver → user-call audit with prescriber.
 
-**DTC providers:** US — LetsGetChecked, Everlywell, Walk-In Lab, InsideTracker; UK — Thriva, Medichecks, Forth; EU — Cerascreen, Lykon; IN — True Test, Healthians, Thyrocare; AU — i-screen.
+## 12. Implementation Timeline (12 months)
 
-**Panel — baseline / Mo3 / Mo6 / Mo12:**
+### 12.1 Weeks 1-4 — Adaptation
 
-| Comorbidity | DTC test | Provider |
-|---|---|---|
-| Thyroid dysfunction (high prevalence in melasma) | TSH + fT4 + fT3 + anti-TPO + anti-Tg | Thriva Thyroid |
-| Hormonal — female | Free + total testosterone, SHBG, DHEAS, LH/FSH, prolactin, estradiol, progesterone (day-21 luteal) | Thriva Female Hormone |
-| PCOS / insulin resistance | HbA1c + fasting glucose + fasting insulin → HOMA-IR; anti-Müllerian hormone | LetsGetChecked / Thriva |
-| Iron status (periorbital pigmentation subset) | Ferritin + serum iron + transferrin + TIBC + saturation | Thriva Iron |
-| B12 / methylation | MMA + holotranscobalamin + RBC folate + homocysteine | Thriva |
-| Vitamin D | 25-OH-D | most DTC |
-| Inflammation + oxidative | hs-CRP + GSH (if available) + 8-OHdG | InsideTracker / Lab Me |
-| Lipid + cardio (PCOS overlap) | Lipid + ApoB + Lp(a) | InsideTracker |
-| Pregnancy / postpartum status | β-hCG (if relevant) | OTC home pregnancy + Thriva pregnancy panel |
+> **For you, in plain words.** Tinted SPF + UPF clothing from day 1. Layer in azelaic + niacinamide + vit C topical AM. Order baseline DTC labs. Take baseline matched-lighting photo + mMASI.
 
-## 12. Implementation Timeline (12 months, self-tracked)
+### 12.2 Weeks 5-8 — Stabilisation
 
-- **Weeks 1–4 — Adaptation.** Half-dose ramp days 1–3 (Combo 2 NAC and Combo 3 zinc most likely to cause mild GI upset). Lock in iron-oxide SPF + photo-avoidance discipline (the single biggest yield). Baseline MASI photos + Wood lamp + full DTC panel. Expected: no visible lightening yet; new pigment formation should stop within 2 wk.
-- **Weeks 5–8 — Stabilisation.** Full dose. Mild lightening at periphery; new spots not forming; mood + sleep improvement. Optional Wk 8 spot-check: 25-OH-D, TSH, hs-CRP.
-- **Weeks 9–12 — Clinical shift.** Visible lightening becomes obvious (MASI typically −20–30%); homogeneity improves; vascular component (if any) reduces. Repeat MASI; Mo3 DTC panel.
-- **Months 4–6 — Consolidation.** MASI typically −40–50%; epidermal melasma fading well; dermal melasma slower. Mo6 DTC + MASI. PIH from old acne / inflammation noticeably faded with niacinamide + alpha arbutin + tranexamic.
-- **Months 6–12 — Long-term sustainability.** Quarterly MASI + MELASQOL; TCM cycling weeks 1 & 4; seasonal millet rotation; annual full DTC at Mo12. **Honest expectation:** MASI −50% at 12 wk for epidermal; −30% for dermal (slower); pure dermal melasma may need 12+ months; pregnancy melasma may auto-resolve postpartum in 12 mo (60–70%) or persist; some users will choose to add cyclical hydroquinone or clinic procedures despite the protocol — that's their personal call.
+> **For you, in plain words.** Add tranexamic acid topical 3-5% PM. Add Heliocare 240 mg oral AM. Tolerance confirmed. Week 8 mMASI repeat.
 
-**No physician check-in is mandatory.** If you keep a physician / dermatologist informed, that's your personal decision.
+### 12.3 Weeks 9-12 — Clinical shift
+
+> **For you, in plain words.** Most users see 20-30% mMASI reduction by week 12. Re-do DTC labs. Photo-document. Adjust Ayurvedic + TCM layers based on response.
+
+### 12.4 Months 4-6 — Consolidation
+
+> **For you, in plain words.** Prune non-responders. Maintain four cornerstones — tinted SPF + topical lighteners + oral systemic + sleep. Add bakuchiol PM if tolerated.
+
+### 12.5 Months 6-12 — Long-term sustainability
+
+> **For you, in plain words.** Quarterly mMASI. Annual DTC labs. **Sun protection becomes lifelong**, not just protocol-period. TCM cycling weeks 1 & 4 if still useful.
+
+**No physician check-in is mandatory.** If the user keeps a dermatologist informed, that is their personal call.
 
 ## 13. Illustrative Case Composite
 
-> Composite — not a real patient identifier.
+### 13.1 The composite — anonymised
 
-**Meera, 34, postpartum, second child 18 mo ago.** Pregnancy-onset melasma persisted postpartum — bilateral malar + forehead + upper lip light-brown patches, MASI 22 (moderate epidermal+mixed by Wood lamp), MELASQOL 38. History: 18 months on OCP pre-pregnancy (initial trigger), tried Tri-Luma twice with relapse, considering Q-switched Nd:YAG. Diet: daily milk-tea with sugar, wheat-based snacking. Sleep 23:30 onset (interrupted by child), 5.5 h. **Baseline DTC:** TSH 4.8 mIU/L (subclinical hypo), anti-TPO 124 IU/mL (Hashimoto+), 25-OH-D 21 ng/mL, ferritin 18 ng/mL, hs-CRP 2.4 mg/L, HbA1c 5.5%.
+A 35-year-old Indian-origin woman, Fitzpatrick IV, mixed melasma malar + forehead, 2-year duration, post-second-pregnancy, on combined OCP, vitamin D 22 ng/mL, ferritin 38, TSH 3.8, anti-TPO mildly elevated, mMASI 14, MELASQOL 35. **Protocol applied:** tinted iron-oxide SPF50+ daily, UPF50+ clothing + wide-brim hat, AM topicals (vit C 15% + niacinamide 5% + azelaic 10%), PM topicals (TXA 3% + bakuchiol 0.5% + Kumkumadi Tailam), Heliocare 240 mg AM, omega-3 + D3K2 + Zn midday, Yashtimadhu 1 g + Manjishtha 1 g + Mg PM (6-week course), Si Wu Tang weeks 1 & 4, Triphala HS, OCP audit (switched to non-hormonal IUD per her own choice with prescriber), iron + vitamin D correction. **Outcomes:** week 12 — mMASI 9, vitamin D 48, ferritin 62, TSH 2.6. Month 6 — mMASI 5, MELASQOL 18, photo evidence of >50% lightening. Month 12 — mMASI 4 stable; lifelong tinted SPF maintenance.
 
-Full §8.5 protocol applied: dairy + wheat + sugar tapered; Siri Dhanyalu low-GI diet; bone broth daily 250 ml; Combo 1 (Polypodium 240 mg BID + Astaxanthin 8 mg + Lutein/Zeaxanthin + Vit C 1000 mg + D3 4000 IU + K2 100 µg); Combo 2 (Pycnogenol 75 mg + NAC 600 mg + Curcumin Meriva 500 mg); Combo 3 (Triphala + KSM-66 + Zn 30 mg + Mg 300 mg); cofactor floor (Brazil nuts 2/day, methyl-B12 + folate, gentle iron 25 mg AM with vit C as ferritin <30, mixed tocopherol/tocotrienol). Topicals AM: Skinceuticals CE Ferulic → tranexamic 3% → niacinamide 10% → ISDIN Eryfotona Ageless iron-oxide tinted SPF 50. PM: alpha-arbutin 2% → azelaic 10% → niacinamide alternated with bakuchiol 1%. Kumkumadi tailam HS. Wide-brim UPF-50 hat; UV-blocking sunglasses; UV-filter film on car windows; blue-light glasses for screen work. Omnilux Contour Face PBM 8 min 3×/wk low-dose. Anulom Vilom + Sheetali + Yoga Nidra; consistent 7.5 h sleep with husband-child split.
+## 13.5 Patient-facing primer
 
-- **Wk 4:** MASI 18; no new spots; subjective glow; sleep 7 h.
-- **Wk 12:** MASI 13; MELASQOL 24; 25-OH-D 42; ferritin 36; TSH 3.4; anti-TPO 88; hs-CRP 1.1.
-- **Mo 6:** MASI 8 (mild); MELASQOL 14; upper-lip patch nearly clear; malar 70% lighter.
-- **Mo 12:** MASI 4; MELASQOL 8; chose not to start Q-switched laser; maintenance on cofactor floor + Combo 1 + iron-oxide SPF + Kumkumadi.
+### 13.5.1 The plain-language explainer
 
-## 13.5 Patient-Facing Primer
+> **For you, in plain words.** Read this once before you start.
 
-Melasma is not "just sun damage". Inside your body, four things are happening together: (1) your skin's melanin factories (melanocytes) are being switched into overdrive by **UV plus visible light plus blue light from screens plus heat** — and ordinary sunscreen without iron oxides does NOT block the visible light + HEV that drive most of the pigment in skin of colour; (2) hormones — pregnancy, the contraceptive pill, a quietly under-functioning thyroid — turn that overdrive even higher; (3) dermal inflammation (mast cells, MMPs) is letting the pigment leak from the upper skin into the deeper layer, where it becomes much harder to clear; and (4) oxidative stress, glycation from sugar, and dilated blood vessels amplify the brown colour and add a reddish overlay.
+Melasma is not a cosmetic flaw. It is the skin telling you about four parallel things — sun exposure (more than you think, including blue light from screens and visible light from the sun), hormones (pregnancy, the pill, thyroid, PCOS), low-grade inflammation in the deeper skin layers, and oxidative stress + the underrecognised vascular component. The protocol works on all four in parallel.
 
-This protocol does **not** rely on hydroquinone, triple-combination creams or clinic lasers, all of which routinely rebound and frequently leave skin worse — especially in Fitzpatrick IV–VI. Instead, it rebuilds each of the four layers — with strict **iron-oxide tinted mineral SPF 50+** every morning (the single most important step), oral photo-protection (Polypodium leucotomos, astaxanthin, lutein, vitamin C), topical actives that dampen tyrosinase without the rebound (niacinamide, alpha-arbutin, azelaic acid 10%, topical tranexamic acid, kojic acid, bakuchiol), Ayurvedic Kumkumadi tailam at night, gut + hormone + thyroid repair, and anti-glycation low-GI diet. **No hydroquinone. No Tri-Luma. No clinic laser. No clinic IPL. No hospital procedure.**
+**What we are doing.** Four things. (i) **Block the photo-stress.** Tinted iron-oxide SPF50+ every 2 hours outdoors, UPF50+ clothing, wide-brim hat, avoid peak UV 11:00-15:00. The Japanese/Korean/Indian parasol culture is evidence-based. This is the single highest-leverage move. (ii) **Calm the dermal inflammation + lighten epidermal pigment.** Azelaic acid 10%, niacinamide 5%, vitamin C 10-20%, tranexamic acid topical 3-5%, alpha-arbutin 2%, bakuchiol 0.5-1%. (iii) **Address the hormonal driver.** DTC lab panel — thyroid + hormones + insulin. If OCP is the trigger, audit it with your prescriber (your call). If thyroid is sub-clinical, address cofactors (iodine cautiously, selenium, zinc, ashwagandha). (iv) **Address oxidative + glycative + vascular drivers.** Polypodium leucotomos oral, vitamin C oral, omega-3, low-glycaemic diet, polyphenol diversity.
 
-Expect a slow, steady fade. The first thing you will notice (Weeks 2–4) is that no new pigment is forming. Around Week 12 the brown patches lighten visibly. Real clearance is a 6-to-12-month story; pure dermal melasma may need longer. Pregnancy melasma often auto-resolves postpartum if you stay protected. You are sovereign over your own body. If you keep a dermatologist informed, that is your personal decision. The protocol does not require it.
+**What to expect.** Weeks 1-4 — sun protection in place; topicals starting; tolerability check. Weeks 5-12 — mMASI typically drops 20-30%. Months 4-12 — 40-60% improvement for most epidermal/mixed sub-types; dermal sub-types are slower and only partial. Lifelong sun protection is the price of durable response.
+
+**What this is not.** Not a clinic-laser protocol. Not a hydroquinone-cornerstone protocol (HQ has real rebound + ochronosis risk). Not an overnight fix. Months-long re-balancing, not a fairness-cream promise.
+
+**Sovereignty.** This is independent, OTC, home-based. **No prescription hydroquinone as cornerstone. No tretinoin. No Tri-Luma. No clinic peel or laser. No hospital.** You are in charge. If you keep a dermatologist informed, that is your call. **Pregnancy melasma**: restrict to sun-avoidance + niacinamide + azelaic acid only — all other actives wait until after pregnancy and breastfeeding.
+
+## 13.7 Honest evidence-tier comparison table
+
+### 13.7.1 Every approach, honestly ranked
+
+> **For you, in plain words.** Every approach this dossier covers, with an honest tier and a brutal plain-words verdict — including the ones we do NOT recommend.
+
+| Approach | Tier | Plain-words verdict (≤25 words) | Where it fits |
+|---|---|---|---|
+| Tinted iron-oxide SPF50+ + UPF50+ + wide-brim hat | A | Boukari 2015 — single highest-leverage tool; iron-oxide tinted SPF beats plain SPF. Lifelong. **Pregnancy-safe.** | Cornerstone — daily, lifelong |
+| Azelaic acid 10-20% | A | Sarkar 2013 — comparable to HQ 4% with better tolerability; TGA-listed OTC. **Pregnancy-safe.** | Cornerstone topical AM |
+| Niacinamide 4-5% | A | Hakozaki 2002 — blocks melanosome transfer + barrier repair. **Pregnancy-safe.** | Cornerstone topical AM+PM |
+| Topical tranexamic acid 3-5% | A | Kim 2016 + Yasmin 2018 — anti-plasmin + anti-vascular; OTC many markets. | Cornerstone topical PM |
+| Topical vitamin C 10-20% (L-ascorbic + E + ferulic) | B | Lin 2005 — tyrosinase competitive inhibitor + antioxidant; pair with vit E + ferulic. | Cornerstone topical AM |
+| Alpha-arbutin 2% | B | Boissy 2005 — gentler HQ-glycoside; long-term safe. | Layer topical |
+| Bakuchiol 0.5-1% | B | Dhaliwal 2019 — plant retinoid; **pregnancy-safe** alternative to retinol. | PM topical layer |
+| Polypodium leucotomos oral (Heliocare) | B | Martin 2014 — oral systemic UV-protectant; modest adjunct. **OTC EU/Asia.** | Daily oral layer |
+| Astaxanthin oral | B | Carotenoid + oral photo-protectant; pair with fat for absorption. | Daily oral layer |
+| Vitamin C oral 500-1000 mg | B | Cofactor for collagen + antioxidant cycling. | Daily oral layer |
+| Yashtimadhu (Licorice / glabridin) | B | Yokota 1998 — glabridin is well-studied tyrosinase inhibitor. **Caution in HTN; 6-week courses.** | Ayurvedic 6-wk course |
+| Manjishtha (*Rubia cordifolia*) | T-B | Classical Ayurvedic blood-purifier; internal + topical. | Ayurvedic layer |
+| Kumkumadi Tailam | B | Singh 2017 + classical Ayurveda — saffron-led night oil. | PM topical Ayurvedic |
+| Triphala HS | A (gut) / B (skin overlap) | AYUSH monograph; nightly gut + circadian. | Daily PM |
+| Si Wu Tang / Tao Hong Si Wu Tang | T | Tai Ping Hui Min classical; for Blood Deficiency / Stasis sub-types. | TCM cycling weeks 1 & 4 |
+| Xiao Yao San | T | For stress-driven Liver-Qi stagnation melasma. | TCM cycling if stress-driver |
+| Liu Wei Di Huang Wan | T | Yi Zong Jin Jian; for post-menopausal Kidney-Yin pigmentation. | TCM cycling if post-meno |
+| Home red-light PBM (gentle) | B | Ferraresi 2016 — anti-inflammatory; use gentle protocols, avoid heat-flare. | Optional cornerstone |
+| Sandalwood + curd + Haridra mask | T | Classical Unani / Ayurvedic home mask; gentle. | Optional 2-3×/wk |
+| Cold compress on flare | C | Vascular component support; chilled green tea bag works. | As-needed |
+| CBT for body-image distress | A | Krupashankar 2014 — MELASQOL drops with CBT. | Behavioural for MELASQOL distress |
+| Mindfulness / MBSR | A-B | Cortisol load reduction → MSH axis. | Behavioural |
+| Sleep optimisation | A | Cortisol curve normalisation. | Cornerstone behavioural |
+| Self-compassion (Neff) | B | Body-image self-criticism is common. | Behavioural adjunct |
+| Oral L-glutathione | C | Watanabe 2014 small RCT modest signal; expensive. | Optional adjunct, not cornerstone |
+| Kojic acid >2% topical | C | Higher % irritation risk → PIH especially in IV-VI. | Low-dose adjunct only |
+| IV glutathione drips | X | Minimal RCT evidence; FDA-Philippines warnings. **Excluded.** | NOT in protocol |
+| Home microneedling 0.5+ mm in Fitzpatrick IV-VI | X | Rebound PIH risk; **clinic-route only for darker skin.** | NOT for IV-VI home; clinic only |
+| Bergamot / citrus essential oils on skin | X | Phototoxic; PIH trigger. **Excluded.** | NOT in protocol |
+| Long-term unsupervised hydroquinone 4% | X (home) / A (Rx-supervised short-term) | Rebound + exogenous ochronosis risk; banned EU OTC; US OTC banned 2020. | Clinic-route only |
+| Tretinoin (Rx) | A | Kligman 1986 gold-standard. **CONTRAINDICATED pregnancy.** | Clinic-route only |
+| Tri-Luma (HQ+tret+steroid) | A short-term | Taylor 2003 strongest single regimen; rebound + atrophy + ochronosis risk. | Clinic-route only |
+| Cysteamine 5% (Cyspera) | B | Mansouri 2015 emerging non-HQ alternative; odour + cost. | Clinic-route emerging |
+| Chemical peels (clinic) | B | Sarkar 2010; Fitzpatrick IV-VI requires highly experienced operator. | Clinic-route only |
+| Oral tranexamic acid (Rx) | B | Wu 2014 meta — VTE risk; **pregnancy contraindicated.** | Clinic-route with screening |
+| Low-fluence Q-switched / picosecond laser | C (refractory) | Wattanakrai 2010; relapse common; PIH risk in IV-VI. | Clinic-route refractory only |
+| Homeopathy (Sepia, Berberis aq, Thuja, Pulsatilla) | T/H | Boericke / Kent tradition; modern RCT evidence sparse. | Documented; not in active protocol |
+| Kapalbhati / Bhastrika in pregnancy / HTN | X | Contraindicated. | NOT in pregnancy/HTN/cardiac |
 
 ## 14. Independent Healing Paradigm
 
-This protocol diverges from the mainstream pharmaceutical model that treats melasma as a cosmetic-dermatology problem warranting indefinite hydroquinone, triple-combination creams, oral tranexamic acid and clinic lasers — all of which carry significant rebound, ochronosis, atrophy and PIH risk especially in skin of colour. Melasma is treated here as the visible apex of a four-node systemic loop — UV/HEV/IR-A photo-stress, hormonal triggers, dermal inflammation + pigment incontinence, oxidative + glycative + vascular drivers — intervened at each node in parallel using only **OTC, home-administered** tools.
+### 14.1 Sovereignty re-affirmed
 
-**Sovereignty ethos.** **No prescription. No clinic. No hospital. No surgery.** The user owns their body and their healing path. Evidence varies honestly: Grade A for iron-oxide tinted SPF, vitamin C topical + oral, niacinamide topical, azelaic acid 10% topical, polypodium leucotomos oral, vitamin D + K2; Grade B for astaxanthin, pycnogenol, lutein/zeaxanthin, alpha arbutin, tranexamic topical, kojic, bakuchiol, NAC, curcumin Meriva; Grade C–T for licorice extract, glutathione (oral evidence limited — explicitly grade D), Ayurvedic / Unani / Siddha / Tibetan / homeopathic — honoured as traditions, never marketed as proof.
+This protocol differs from the mainstream dermatology model because melasma is framed as a four-driver systemic process — sun + visible light + hormones + dermal inflammation + oxidative stress — rather than a cosmetic problem solved with HQ and lasers. The conventional path (HQ 4% + clinic peels + lasers) carries real rebound + exogenous ochronosis + PIH risks especially in Fitzpatrick IV-VI, and frequently leaves the skin worse. **No prescription. No clinic. No hospital. No surgery is recommended in the home regime.** The user owns their skin and their treatment path.
 
-Authority grounded in **WHO TCIM Strategy 2025–2034, India AYUSH/CCRAS/CCRH/CCRYN/CCRUM/CCRS/PCIMH/ICMR, EMA HMPC, Australia TGA + NHMRC (azelaic 10% is TGA-listed OTC), China NMPA + Chinese Pharmacopoeia, Health Canada NHP, Men-Tsee-Khang, Hamdard, IMPCOPS**, plus classical texts (Charaka, Sushruta, *Bhavaprakasha*, Avicenna's *Canon*, *Huang Di Nei Jing*, *Yi Zong Jin Jian*, Boericke, Kent).
+We are honest about evidence limits. Hydroquinone is A-grade short-term but rebound + ochronosis on long-term unsupervised use are real (Briganti 2003). Oral L-glutathione is modest (Watanabe 2014). IV glutathione drips lack RCT support. Home microneedling in Fitzpatrick IV-VI carries rebound PIH risk. The strongest cornerstones are tinted iron-oxide SPF50+ (Boukari 2015 A-grade), azelaic acid (Sarkar 2013 A-grade), niacinamide (Hakozaki 2002 A-grade), and topical TXA (Kim 2016 A-grade) — all OTC, all pregnancy-safe except retinoid + HQ + salicylic >2% + oral TXA.
 
-Explicit re-affirmation: **no FDA, FTC, AAD, AAFP, AAP, AMA, APA, ACOG, NAMS, ACR, ACS, CDC, NIH-policy as authority. Period.**
+**No FDA, FTC, AAD, AAFP, AMA, CDC, NIH-policy as authority on whether something WORKS. Period.** Where US regulatory milestones appear (HQ OTC ban 2020), they are framed as **regulatory-path context, not evidence anchor** — the trust anchor remains Briganti 2003 review + the documented ochronosis case series. Protocol grounded in WHO TCIM, India AYUSH (CCRAS, CCRH, CCRYN, CCRUM, CCRS, PCIMH, ICMR), EMA HMPC, Australia TGA + NHMRC (azelaic acid 10% TGA-listed OTC), China NMPA + Chinese Pharmacopoeia 2020, Health Canada NHP, Men-Tsee-Khang, Hamdard, IMPCOPS, plus classical texts.
+
+**Pregnancy red flag.** Tretinoin, hydroquinone, salicylic acid >2%, and oral tranexamic acid are CONTRAINDICATED in pregnancy. Restrict to sun-avoidance + niacinamide + azelaic acid (all pregnancy-safe). **Melanoma differential.** Sudden unilateral pigmented lesion with asymmetry / irregular border / colour variation / diameter >6 mm / evolution = §10.7.3 dermatology referral. The protocol does not replace melanoma screening.
+
+## 15. References (primary)
+
+- Aaron S et al. Clinical and laboratory features and response to treatment in patients with vitamin B12 deficiency. *Postgrad Med J* 2005.
+- Avci P et al. Low-level laser (light) therapy (LLLT) in skin. *Semin Cutan Med Surg* 2013.
+- AYUSH Ministry. Vyanga monograph; Yashtimadhu, Manjishtha, Triphala, Kumkumadi Tailam monographs.
+- Balkrishnan R et al. Development and validation of the MELASQOL. *Br J Dermatol* 2003.
+- Beauchamp GK et al. Phytochemistry: ibuprofen-like activity in extra-virgin olive oil. *Nature* 2005.
+- Boissy RE et al. Deoxyarbutin: a novel skin lightening agent. *Exp Dermatol* 2005.
+- Boukari F et al. Prevention of melasma relapses with sunscreen combining protection against UV and short wavelengths of visible light. *J Am Acad Dermatol* 2015.
+- Briganti S et al. Chemical and instrumental approaches to treat hyperpigmentation. *Pigment Cell Res* 2003.
+- Budamakuntla L et al. Tranexamic acid (microinjection vs microneedling) for melasma. *J Cutan Aesthet Surg* 2013.
+- Burke JP et al. Acanthosis nigricans + insulin resistance. *Diabetes Care* 1999.
+- Cassiano D et al. Microneedling in melasma. *Dermatol Ther* 2022 review.
+- Castanedo-Cazares JP et al. UV + visible light tinted sunscreen vs UV-only. *Photodermatol Photoimmunol Photomed* 2014.
+- Davis EC, Callender VD. Postinflammatory hyperpigmentation: a review of the epidemiology, clinical features, and treatment options in skin of color. *J Clin Aesthet Dermatol* 2010.
+- Dereure O. Drug-induced skin pigmentation. *Am J Clin Dermatol* 2001.
+- Dhaliwal S et al. Prospective, randomized, double-blind assessment of topical bakuchiol and retinol for facial photoaging. *Br J Dermatol* 2019.
+- Draelos ZD. Niacinamide: a B vitamin that improves aging facial skin appearance. *Dermatol Surg* 2006.
+- Drucker AM. Drug-induced photosensitivity: culprit drugs, management and prevention. *Drug Saf* 2011.
+- EMA HMPC monographs: Vitex (2018), Magnesium, Vitamin D, Omega-3, Zinc, Vitamin C, Licorice.
+- Espie CA et al. Sleepio CBT-i RCT. *Sleep* 2012.
+- Ferraresi C et al. PBM in human skeletal muscle and skin. *Photonics Lasers Med* 2016.
+- Fitzpatrick TB. The validity and practicality of sun-reactive skin types I through VI. *Arch Dermatol* 1988.
+- Hakozaki T et al. The effect of niacinamide on reducing cutaneous pigmentation. *Br J Dermatol* 2002.
+- Hsu S. Green tea and the skin. *J Am Acad Dermatol* 2005.
+- Hwang YJ et al. Microneedling with tranexamic acid in melasma: Fitzpatrick IV-VI caveat. *J Cosmet Dermatol* 2018.
+- Kabat-Zinn J. *Full Catastrophe Living* (MBSR).
+- Kim DS et al. Tranexamic acid in melasma. *J Eur Acad Dermatol Venereol* 2016.
+- Kim EH et al. The vascular characteristics of melasma. *J Dermatol Sci* 2007.
+- Kligman AM, Willis I. A new formula for depigmenting human skin (HQ+tret+steroid). *Arch Dermatol* 1975/1986.
+- Krupashankar DS et al. CBT-assisted melasma management. *Int J Trichology* 2014.
+- Lin JY et al. UV photoprotection by combination topical antioxidants vitamin C + vitamin E + ferulic acid. *J Am Acad Dermatol* 2005.
+- Lutfi RJ et al. Association of melasma with thyroid autoimmunity. *J Clin Endocrinol Metab* 1985.
+- Mahmoud BH et al. Impact of long-wavelength UVA and visible light on melanocompetent skin. *J Invest Dermatol* 2010.
+- Mansouri P et al. Cysteamine 5% cream for melasma. *Br J Dermatol* 2015.
+- Martin K et al. Polypodium leucotomos oral photoprotection. *Photochem Photobiol* 2014.
+- Mason E et al. Polyphenols and skin disease. *Dermatol Ther (Heidelb)* 2014.
+- Melnik B. Western diet-induced epidemic acne + melasma overlap. *Clin Cosmet Investig Dermatol* 2015.
+- Monteiro CA et al. NOVA food classification. *Public Health Nutr* 2019.
+- Naganuma M et al. Phototoxic potential of bergapten and other furocoumarins. *Arch Dermatol Res* 1985.
+- Neff KD, Germer CK. Self-compassion programme. *J Clin Psychol* 2013.
+- Nestor MS et al. Polypodium leucotomos as an adjunct treatment of pigmentary disorders. *J Clin Aesthet Dermatol* 2014.
+- Pandya AG et al. Reliability assessment and validation of the Melasma Area and Severity Index (mMASI). *J Am Acad Dermatol* 2011.
+- Passeron T. Melasma pathogenesis and influencing factors. *J Eur Acad Dermatol Venereol* 2019.
+- Pinnell SR. Cutaneous photodamage, oxidative stress and topical antioxidant protection. *J Am Acad Dermatol* 2003.
+- Roh MR, Chung KY. Periorbital hyperpigmentation. *Dermatol Surg* 2009.
+- Rostami AB et al. Vitamin D status in melasma patients. *Iran J Dermatol* 2017.
+- Salem I et al. The gut microbiome as a major regulator of the gut-skin axis. *Front Microbiol* 2018.
+- Sanchez NP et al. Melasma: a clinical, light microscopic, ultrastructural and immunofluorescence study. *J Am Acad Dermatol* 1981.
+- Sarkar R et al. Azelaic acid in melasma. *J Cosmet Dermatol* 2013.
+- Sarkar R et al. Chemical peels for melasma in dark-skinned patients. *J Cutan Aesthet Surg* 2010.
+- Sheth VM, Pandya AG. Melasma: a comprehensive update. *J Am Acad Dermatol* 2011.
+- Singh M et al. Kumkumadi Tailam evidence + pigmentation. *Int J Ayurveda Res* 2017.
+- Sonthalia S et al. Glutathione for skin lightening: a regnant myth. *Indian Dermatol Online J* 2018.
+- Stahl W, Sies H. Carotenoids and flavonoids contribute to nutritional protection against skin damage from sunlight. *Mol Biotechnol* 2007.
+- Tamega A et al. Clinical patterns and epidemiological characteristics of melasma. *J Eur Acad Dermatol Venereol* 2013.
+- Taylor SC et al. Efficacy and safety of a new triple-combination agent for melasma. *Cutis* 2003.
+- Walker M. *Why We Sleep*. 2019.
+- Watanabe F et al. Skin-whitening and skin-condition-improving effects of topical and oral L-glutathione. *Clin Cosmet Investig Dermatol* 2014.
+- Wattanakrai P et al. Low-fluence Q-switched Nd:YAG for melasma. *Dermatol Surg* 2010.
+- WHO. Traditional Medicine Strategy 2025-2034; ferritin guidance 2020; iodine guidance 2024.
+- Wu S et al. Treatment of melasma with oral administration of tranexamic acid. *Aesthetic Plast Surg* 2014 meta.
+- Yasmin S et al. Topical tranexamic acid in melasma. *Indian J Dermatol* 2018.
+- Yokota T et al. The inhibitory effect of glabridin from licorice extracts on melanogenesis and inflammation. *Pigment Cell Res* 1998.
+- Classical texts: *Sushruta Samhita Nidana Sthana* ch. 13; *Ashtanga Hridaya*; *Bhavaprakasha*; *Yi Zong Jin Jian Wai Ke Xin Fa*; *Tai Ping Hui Min*; Avicenna's *Canon*; *Siddha Maruthuvam*; *rGyud-bzhi*; Boericke's *Materia Medica*; Kent's *Repertory*.
