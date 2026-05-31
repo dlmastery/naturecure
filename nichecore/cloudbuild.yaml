@@ -18,16 +18,20 @@
 
 substitutions:
   _REGION: us-central1
-  _REPO: nichecore
+  _REPO: nichecore-images
   _SERVICE: nichecore
-  _IMAGE: ${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_REPO}/app:${SHORT_SHA}
+  # Image path is inlined directly in the steps below (Cloud Build does not
+  # recursively expand nested user-defined substitutions). Uses BUILD_ID
+  # (always populated, including for manual submits) as the tag.
 
 options:
   logging: CLOUD_LOGGING_ONLY
   machineType: E2_HIGHCPU_8
+  # Permit ad-hoc --substitutions overrides without breaking on unmatched keys.
+  substitution_option: ALLOW_LOOSE
 
 images:
-  - ${_IMAGE}
+  - ${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_REPO}/app:${BUILD_ID}
 
 steps:
   # 1. Build the container (build context = ./nichecore, passed on the CLI)
@@ -35,14 +39,14 @@ steps:
     name: gcr.io/cloud-builders/docker
     args:
       - build
-      - --tag=${_IMAGE}
-      - --cache-from=${_IMAGE}
+      - --tag=${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_REPO}/app:${BUILD_ID}
+      - --cache-from=${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_REPO}/app:${BUILD_ID}
       - .
 
   # 2. Push to Artifact Registry
   - id: push
     name: gcr.io/cloud-builders/docker
-    args: [push, "${_IMAGE}"]
+    args: [push, "${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_REPO}/app:${BUILD_ID}"]
 
   # 3. Deploy to Cloud Run
   - id: deploy
@@ -52,7 +56,7 @@ steps:
       - run
       - deploy
       - ${_SERVICE}
-      - --image=${_IMAGE}
+      - --image=${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_REPO}/app:${BUILD_ID}
       - --region=${_REGION}
       - --platform=managed
       - --allow-unauthenticated
