@@ -1,557 +1,684 @@
 ---
 ailmentId: respiratory-seasonal
-ailmentName: Respiratory Seasonal Support
+ailmentName: Respiratory & Seasonal Support
 domain: ImmuneOral
-lastUpdated: 2026-05-29
+lastUpdated: 2026-05-31
 gradeMix: [A, B, C, D, T, H]
-clinicalScoringInstrument: WURSS-21 (Wisconsin Upper Respiratory Symptom Survey) self-rated; Jackson cold score; PEFR home log; cough VAS
-subTypes: [acute-viral-URI, post-viral-cough, chronic-bronchitis-tendency, recurrent-URI-immune-weak, post-Covid-respiratory]
-comorbidityScreen: [allergic-rhinitis-overlap, asthma-tendency, low-vitamin-D, B12-deficiency, autoimmune-thyroid, smoker-or-vape-history, GERD-cough-overlap]
+clinicalScoringInstrument: "WURSS-21 (Wisconsin Upper Respiratory Symptom Survey 21-item self-rated; Barrett 2009), Jackson cold-symptom severity score, daily symptom + duration tracker, home pulse-oximeter SpO2, home rapid-test kits (COVID + flu A/B + strep — Lucira, Detect, Ellume), home peak-flow meter (Mir Spirobank Smart for asthma overlap), cough VAS"
+subTypes: [acute-viral-URI-common-cold, influenza-like-illness, post-viral-cough-3-8-weeks, recurrent-seasonal-URI-immune-fragile, asthma-overlap-flare, allergy-driven-overlap, post-COVID-respiratory, smoker-bronchitis-tendency]
+comorbidityScreen: [low-vitamin-D, low-zinc, low-ferritin, autoimmune-thyroid, allergic-rhinitis-overlap, asthma-tendency, GERD-cough-overlap, OSA, smoker-or-vape-history, post-viral-syndrome, recurrent-infections-immunodeficiency-suspicion]
 authorAgent: ailment-360-research
+schemaVersion: v6.2.3
+ralph: true
 internalRalph:
-  pass1Complete: true
-  pass2Complete: true
-  pass3Complete: true
+  pass1Complete: true   # structural — 16 sections + §10.7 emerging therapies (split 10.7.1/2/3) + §13.7 honest comparison + plain-English-first scaffold + tree-friendly H3 audit + red-flag block + SpO2 <94% escalation + persistent cough >3 weeks workup trigger
+  pass2Complete: true   # citations + Cochrane honesty (zinc lozenges Cochrane Singh 2013 B; vitamin C Cochrane Hemilä 2013 null prevention, small duration; vitamin D for asthma Martineau 2017 moderate; elderberry Tiralongo 2016 small; Pelargonium Cochrane Timmer 2013 B+; andrographis Cochrane Hu 2017 B+; xylitol nasal B; saline rinses A; oscillococcinum Cochrane Mathie 2015 NULL — honest)
+  pass3Complete: true   # AYUSH/BAMS + TGA-integrative GP + viral-rapid-test triage (RSV/flu/COVID/strep) + Ma Huang Ephedra honest stimulant CV + legal restrictions + montelukast neuropsych boxed warning + N95/KN95/KF94 + vaccination honest framing
 ---
 
-> **Framing.** Grounded in WHO TCIM Strategy 2025–2034, India AYUSH/CCRAS/CCRH/PCIMH monographs, EMA HMPC herbal monographs, TGA/NHMRC, NMPA + Chinese Pharmacopoeia, Health Canada NHP, Men-Tsee-Khang, Hamdard Dawakhana, IMPCOPS, and classical Ayurvedic, TCM, Unani, Siddha, Tibetan and homeopathic literature. **No FDA, CDC, ATS, AMA, NIH-policy or US disease-association source is cited as authority.**
+> **For you, in plain words.** This is a safe, over-the-counter, at-home plan for the specific problem of **seasonal upper-respiratory illness** — the common cold, influenza-like illness, the lingering post-viral cough, the every-winter-I-get-sick pattern, the mild flu, the back-to-school respiratory crud, the post-COVID respiratory residue. It is NOT for chronic asthma or chronic obstructive pulmonary disease (COPD) — those are separate journeys; this dossier touches their overlap edges only. The A-grade home levers are **saline nasal irrigation** (multiple Cochrane positive signals for symptom relief — Hayward 2012), **zinc lozenges started within 24 hours** (Cochrane Singh 2013 — B-grade duration reduction), **Pelargonium sidoides / Umckaloabo** (Cochrane Timmer 2013 — B+ acute bronchitis), **andrographis** (Cochrane Hu 2017 — B+ for URI), **vitamin D correction if low** (Martineau 2017 — moderate signal asthma exacerbations + URI). We are brutally honest where evidence is weak — **high-dose vitamin C failed the Cochrane review for prevention** (Hemilä 2013) but shows a small duration-reduction signal; **oscillococcinum failed the Cochrane review for flu** (Mathie 2015 — null) yet is widely sold; **Wim Hof method** has mixed evidence and we present it honestly. *(Hayward 2012; Cochrane Singh 2013; Cochrane Timmer 2013; Cochrane Hu 2017; Martineau 2017; Cochrane Hemilä 2013; Cochrane Mathie 2015)*
 >
-> **Sovereignty.** This is a **strictly OTC, strictly home-based** protocol. **No antibiotic, no oral corticosteroid, no inhaled bronchodilator, no antiviral prescription, no clinic admission** is recommended anywhere in this dossier. §10.1 documents conflicts for users **already on inhalers, antibiotics or antivirals** who are layering this protocol.
+> **The frame.** Grounded in WHO TCIM Strategy 2025–2034, India AYUSH (CCRAS, CCRH, CCRYN, CCRUM, CCRS, PCIMH, ICMR), EMA HMPC herbal monographs, Australia TGA + NHMRC, China NMPA + Chinese Pharmacopoeia 2020, Health Canada NHP, Tibetan Men-Tsee-Khang, Hamdard Dawakhana, IMPCOPS Chennai, plus classical Ayurvedic, TCM, Unani, Siddha, Tibetan and homeopathic texts. **No US regulator, no US disease association is cited as authority** for whether something works (vaccination scheduling is presented honestly per major-market guidance without recommending a specific national body as the trust anchor).
+>
+> **Sovereignty.** Every supplement, breath practice, food and home device here is something you can buy and use yourself. **No prescription, no clinic visit, no hospital admission is recommended in the home regime.** Clinic-route options (prescription antivirals like oseltamivir/Tamiflu and baloxavir/Xofluza for influenza within the 48-hour window, paxlovid/nirmatrelvir-ritonavir for high-risk SARS-CoV-2, prescription fluticasone/budesonide nasal sprays in non-US markets, montelukast/Singulair with its neuropsychiatric boxed warning, formal lung-function workup, chest CT for hemoptysis or weight loss, vaccination schedule) sit in a clearly labelled §10.7.3 referral addendum — never inside the home protocol.
+>
+> **RED FLAGS — read first.** **Stop the home protocol and seek immediate clinical care** if any of these are present: (1) SpO2 <94% on a home pulse-oximeter (significantly below your own baseline — get a baseline first); (2) severe shortness of breath, can't speak full sentences, retractions, use of accessory muscles; (3) chest pain that is sharp or pressure-like (cardiac differential mandatory); (4) coughing up blood (hemoptysis) — emergency workup; (5) persistent cough >3 weeks unresponsive to the home protocol (TB, malignancy, asthma, GERD, post-nasal-drip, ACE-inhibitor-induced workup); (6) weight loss + night sweats + chronic cough (TB / malignancy red-flag triad); (7) URI in an immunocompromised person (transplant, biologic immunosuppression, chemotherapy, advanced HIV) → urgent assessment; (8) high fever >39.5°C lasting >3 days; (9) altered mental status or extreme lethargy; (10) symptoms in an infant <3 months with fever. **For confirmed influenza in high-risk groups (>65, immunocompromised, pregnant, severe asthma, cardiac disease) — the 48-hour antiviral window is real**; treat as urgent assessment per §10.7.3, the home protocol is adjunctive only.
 
 ## 1. Executive Summary
 
-Acute viral upper respiratory infections (URI) and post-viral cough are conventionally siloed as "wait it out, take symptomatic relief" episodes, often abused with antibiotics that injure the airway microbiome. The integrative reframing: episodic respiratory susceptibility is the seasonal expression of a **mucosal immune system under-equipped at the airway barrier with vitamin D / zinc / flavonoid deficiency on a stressed HPA axis**, driven by four convergent root mechanisms — (i) airway barrier deficiency (mucin, sIgA, ciliary clearance, antimicrobial peptides), (ii) viral entry and replication (rhinovirus, coronavirus, influenza, RSV, parainfluenza) at ACE2 / ICAM-1 / sialic-acid receptors, (iii) Th1/IFN-α response calibration (vitamin D, zinc, melatonin, polyphenols all gate this), and (iv) HPA-axis exhaustion and circadian disruption suppressing nocturnal immune surveillance. **Synthesis:** A natural, OTC, home-based protocol that simultaneously thickens the airway barrier, blunts viral entry, calibrates IFN-α/Th1 and restores circadian immune cycling addresses the upstream drivers — not just the cough endpoint.
+### 1.1 What seasonal respiratory illness is
 
-## 2. Mechanistic Network (4-node)
+> **For you, in plain words.** Seasonal upper-respiratory illness covers the common cold (200+ viral causes — mostly rhinoviruses + seasonal coronaviruses + adenoviruses), influenza-like illness, RSV, seasonal SARS-CoV-2, post-viral cough, and the recurrent-URI pattern that some people slide into every winter. A measurable pattern with clear sub-types that benefit from different layers. *(Heikkinen 2003 common cold; Mäkelä 1998 viral causation)*
 
-**2.1 Airway barrier deficiency.** Mucin layer (MUC5AC, MUC5B), sIgA, lactoferrin, lysozyme, defensins (β-defensin-2), cathelicidin (LL-37, vitamin-D-driven) and mucociliary clearance form the first line. Deficits in these (low vitamin D, low zinc, dehydration, mouth breathing, sleep deprivation) raise URI susceptibility. Targeted by vitamin D3 + K2, zinc lozenges (acute), NAC mucolytic, mullein (demulcent), marshmallow root, slippery elm, licorice DGL, steam inhalation. **Synthesis:** Thicken the barrier and the virus rarely takes hold.
+### 1.2 The five drivers — at a glance
 
-**2.2 Viral entry and replication.** Rhinovirus binds ICAM-1; coronavirus binds ACE2 with TMPRSS2 priming; influenza binds α2,6-sialic acid receptors. Quercetin, EGCG, elderberry anthocyanins, andrographolides, pelargonium (EPs 7630), licorice glycyrrhizin, zinc (RNA-dependent RNA polymerase inhibition) all interfere at entry/replication. Targeted by acute-onset quercetin + zinc + elderberry + andrographis stacks within 24–48 h of first symptom. **Synthesis:** Hit early, hit broad.
+> **Quick start.** First 24 hours of symptoms: **zinc lozenge 13–24 mg every 2 waking hours** (Cochrane Singh 2013 — duration-reduction signal only if started within 24 h); **saline nasal irrigation 240 ml warm distilled water 2×/day** (Hayward 2012); **rest + sleep priority + 2 L fluids**; **honey 1–2 tsp for cough** (Cochrane Oduwole 2018 — A-grade for nocturnal cough in children >1 yr, never in <1 yr); **home rapid test (COVID + flu A/B) within 48 h if you might benefit from antivirals** — Lucira, Detect, Ellume; **N95/KN95/KF94 respirator** if you must be around others. This week: take **vitamin D 2,000–5,000 IU + K2** (if not already on it; Martineau 2017 moderate signal for URI prevention if low at baseline), **elderberry** (Tiralongo 2016 small RCT for duration), **Pelargonium / Umckaloabo** (Cochrane Timmer 2013 — B+ for acute bronchitis), **vitamin C 1–2 g** (Cochrane Hemilä 2013 — small duration signal even though prevention is null). *(Cochrane Singh 2013; Hayward 2012; Cochrane Oduwole 2018; Martineau 2017; Tiralongo 2016; Cochrane Timmer 2013; Cochrane Hemilä 2013)*
 
-**2.3 IFN-α / Th1 calibration.** Plasmacytoid DCs sense viral RNA via TLR7/8 → IFN-α. Vitamin D, zinc, selenium, melatonin and the gut microbiome (butyrate) all gate this response — deficiency leads to either weak (prolonged shedding) or excessive (cytokine storm) reactions. Targeted by vitamin D3 (50–70 ng/mL), zinc 15 mg daily floor + 75 mg pulsed acute, selenium 100–200 µg, melatonin 3 mg low-dose nightly during URI windows, multi-strain probiotic. **Synthesis:** Calibrated IFN-α equals shorter, milder illness.
+### 1.3 The deeper layer
 
-**2.4 HPA exhaustion + circadian disruption.** Sleep <6 h cuts NK cell activity ~70% acutely (Asian + European sleep-cytokine studies). Chronic stress elevates cortisol → suppresses Tregs and Th1. Targeted by Ashwagandha KSM-66, Tulsi, Bacopa, pranayama, Yoga Nidra, sleep prioritisation, AM sunlight, blue-light cutoff. **Synthesis:** Cortisol normalisation = nocturnal immune watchman re-staffed.
+The mainstream story prescribes a Z-pak (azithromycin) or amoxicillin for what is overwhelmingly a viral illness — global antibiotic stewardship data show >70% of antibiotic prescriptions for URI are inappropriate (van der Velden 2020). A more honest reframe: seasonal respiratory illness has **five mechanistic drivers** — (1) **viral inoculation + early replication** (zinc + saline rinses + early hydration target this window), (2) **innate immune response sufficiency** (vitamin D, zinc, micronutrient status), (3) **adaptive immune support + recovery** (sleep, polyphenols, elderberry, andrographis), (4) **secondary bacterial complication risk** (sinusitis, bronchitis — Pelargonium for bronchitis, xylitol-based nasal sprays for biofilm), (5) **post-viral residual cough + airway hyperresponsiveness** (honey, ivy leaf, nasal-breathing reinforcement, Buteyko method). A home protocol that addresses all five WITHOUT triggering antibiotic resistance and WITHOUT panicking into the ER for what is usually self-limiting illness is achievable. **Synthesis.** Most colds resolve in 7–10 days. The home protocol shaves 12–48 hours off duration and reduces secondary-complication risk. Honest about what works AND what doesn't.
 
-## 2.5 Clinical sub-types & differential prognosis
+## 2. Mechanistic Network (5-node)
 
-| Sub-type | Clinical features | Dominant §2 node | Expected protocol response |
-|---|---|---|---|
-| **Acute viral URI (common cold)** | Sore throat → congestion → cough, 5–10 day course | §2.1 + §2.2 | **Best** — duration ↓ 1.5–2 days with acute stack (zinc + elderberry + andrographis + quercetin + steam) |
-| **Post-viral cough** | Cough lingering 2–8 wk after URI; airway hyper-reactivity | §2.1 mucosa + bronchial sensitivity | **Moderate** — needs honey + thyme + mullein + slippery elm + NAC; 2–4 wk to resolve |
-| **Chronic bronchitis tendency** (smoker/vaper history, occupational dust) | Productive cough >3 mo / yr for 2 yr | §2.1 + §2.3 | **Moderate-slow** — needs NAC long-term + cessation + Lung TCM tonics (Bu Fei Tang); 3–6 mo |
-| **Recurrent URI (≥4 episodes/yr)** | Frequent colds, slow recovery | §2.3 + §2.4 + cofactor gaps | **Moderate** — Yu Ping Feng San pre-season + cofactor floor + sleep restoration; 6 mo |
-| **Post-Covid respiratory (long-COVID respiratory phenotype)** | Persistent cough, dyspnoea, exercise intolerance ≥3 mo | All four nodes; mitochondrial component | **Slow** — 6–12 mo; layer NAC, quercetin, Q10, omega-3, PEMF, graded breathwork; persistent escalating symptoms = beyond OTC scope |
+### 2.1 Five causes — the picture
+
+> **For you, in plain words.** Five drivers — viral inoculation window, innate immune sufficiency, adaptive recovery support, secondary bacterial risk, and post-viral residual cough. Each maps to specific home layers. *(Heikkinen 2003; Martineau 2017; Tiralongo 2016)*
+
+### 2.2 Viral inoculation + early replication
+
+> **For you, in plain words.** The first 24–48 hours after viral inoculation (touched contaminated surface, breathed virus-containing aerosol) are the window where zinc lozenges, saline nasal irrigation, and early hydration can blunt how sick you get. Miss this window and most interventions become symptomatic only. *(Cochrane Singh 2013; Hayward 2012)*
+
+#### Open the science
+
+Rhinoviruses (≈30% of common colds), seasonal coronaviruses (≈15%), adenoviruses, RSV, parainfluenza, influenza A/B, SARS-CoV-2, and metapneumoviruses all replicate in respiratory epithelium within hours of contact (Heikkinen 2003 review). The first symptom (sore throat, throat-clearing, "tickle") usually appears ~24–72 h post-inoculation. **Zinc mechanism:** zinc ions in oral cavity disrupt rhinovirus ICAM-1 binding + viral capsid integrity (Eby 2010). Cochrane Singh 2013 meta of 18 trials: zinc lozenges started within 24 h shorten cold duration by ≈33% (1–2 days average). Form matters — zinc acetate or zinc gluconate at 75–100+ mg elemental zinc per day in lozenge form (NOT swallowed pills — needs oral contact). Side effects: nausea, bad taste, occasional zinc-induced copper deficiency if used >7 days at high dose. **Saline nasal irrigation:** mechanically removes virus + mucus; restores mucociliary clearance; Hayward 2012 + Šlapak 2008 — symptom-reduction signal. Form: NeilMed Sinus Rinse, NetiPot, Xlear xylitol spray (B-grade — xylitol disrupts bacterial biofilm). **CAUTION:** use distilled or boiled-cooled water ONLY (tap water carries rare amoebic risk for nasal-irrigation route). **Synthesis.** Start zinc + saline within 24 h of first symptom — this is the highest-leverage window in the entire dossier.
+
+### 2.3 Innate immune sufficiency
+
+> **For you, in plain words.** Your innate immune system needs vitamin D, zinc, vitamin A, iron + ferritin, and adequate sleep to fire well. Chronically deficient — you get sicker, longer, more often. Measure vitamin D first (DTC test); correct deficiencies BEFORE you get sick, not during. *(Martineau 2017 vitamin D meta; Maares 2016 zinc; Wessels 2017 zinc-immune)*
+
+#### Open the science
+
+Vitamin D — Martineau 2017 individual-participant-data meta of 25 RCTs (n=10,933) showed daily/weekly vitamin D supplementation reduced acute respiratory infection risk especially in those with baseline 25-OH-D <25 nmol/L (10 ng/mL); effect smaller in vitamin-D-replete. Mechanism: vitamin D induces cathelicidin (antimicrobial peptide) + supports regulatory T cells. Target 25-OH-D 50–80 ng/mL (125–200 nmol/L); supplement 2,000–5,000 IU/day + K2. Zinc — cofactor for thymulin (T-cell maturation), NK cell activity, IL-2 production; deficiency state common in elderly, vegetarians, alcoholics, IBD patients (Wessels 2017). Target serum zinc 80–120 μg/dL; supplement 15–30 mg picolinate daily (longer-term) NOT high-dose lozenge (acute only). Vitamin A — supports epithelial integrity + IgA secretion; cod-liver oil 1 tsp = ~2,500 IU + omega-3 + D. Iron / ferritin — both deficiency AND overload impair immune function; target ferritin 30–100 ng/mL (lower in women). Sleep — the single largest behavioural lever for innate immune sufficiency. Prather 2015 showed people sleeping <6 h had 4.2× cold incidence vs ≥7 h after experimental rhinovirus inoculation. **Synthesis.** Correct deficiencies year-round. Don't wait for illness.
+
+### 2.4 Adaptive recovery support
+
+> **For you, in plain words.** Once viral load is established, the body needs polyphenol + adaptogen + sleep support to clear infection without crashing. Elderberry, andrographis, Pelargonium and adequate sleep address this. *(Tiralongo 2016 elderberry; Cochrane Hu 2017 andrographis; Cochrane Timmer 2013 Pelargonium)*
+
+#### Open the science
+
+Elderberry (Sambucus nigra) — Tiralongo 2016 (Australian RCT n=312 long-haul travellers) showed elderberry extract reduced cold duration + severity. Hawkins 2019 meta — modest signal for duration in URI. Mechanism: anthocyanin + flavonol antioxidants + direct anti-viral binding signal (Roschek 2009 in-vitro). Form: Sambucol syrup or capsule, 10–15 ml syrup or 500–1,000 mg 3–4×/day during illness. Andrographis (Andrographis paniculata) — Cochrane Hu 2017 meta of 33 RCTs (mostly Asian) for URI: B+ signal for symptom reduction + duration. Mechanism: andrographolide modulates NF-κB + cytokine production. Caution: bitter taste, occasional GI upset, theoretical pregnancy + autoimmune caution. Dose: standardised 60 mg andrographolide content 2×/day during illness. Pelargonium sidoides (Umckaloabo) — Cochrane Timmer 2013 meta showed B+ evidence for acute bronchitis, common cold, acute rhinosinusitis, acute tonsillopharyngitis. Mechanism: immunomodulation + mucolytic + antibacterial. Form: EPs 7630 standardised extract (Schwabe — German preparation), 30 drops 3×/day during illness, 7 days. **Synthesis.** Three layered evidence-based botanicals during active illness — pick the best fit per pattern.
+
+### 2.5 Secondary bacterial complication risk
+
+> **For you, in plain words.** Sinusitis and bronchitis sometimes complicate viral URI when bacteria colonise damaged mucosa. Most are still self-limiting and antibiotic stewardship is firm — but xylitol nasal spray disrupts biofilm, Pelargonium reduces bronchitis severity, and a few red-flag escalation triggers (fever >39°C lasting >5 days, unilateral facial pain + green discharge >10 days, purulent sputum + breathlessness) genuinely warrant clinical assessment. *(Cochrane Timmer 2013 Pelargonium; Lin 2016 xylitol nasal; Falagas 2008 sinusitis)*
+
+#### Open the science
+
+Acute bacterial rhinosinusitis (ABRS) — most "sinus infection" is actually viral and self-limits in 10 days. Red flags for bacterial: symptoms >10 days WITHOUT improvement, double-sickening pattern (initial improvement then worsening), unilateral facial pain over a single sinus, severe pain, high fever. Xylitol nasal spray (Xlear) — B-grade signal for biofilm disruption in chronic sinusitis (Lin 2016). Acute bronchitis — Pelargonium Cochrane meta B+ for reducing bronchitis severity + duration; honey + ivy leaf (Hedera helix) for cough; antibiotics generally NOT indicated for acute bronchitis in immunocompetent adults (Smith 2017 Cochrane). **Synthesis.** Most secondary complication is feared more than it occurs; honest screening triggers matter; antibiotic stewardship matters.
+
+### 2.6 Post-viral residual cough
+
+> **For you, in plain words.** Cough lingering 3–8 weeks after viral URI is common and usually self-resolves. Honey (Cochrane A-grade for kids' nocturnal cough >1 yr), nasal-breathing reinforcement, Buteyko method, and ivy leaf (Prospan in Europe) support recovery. Cough >3 weeks unresponsive needs workup. *(Cochrane Oduwole 2018; Cowie 2008 Buteyko; Holzinger 2011 ivy)*
+
+#### Open the science
+
+Post-viral cough — driven by transient airway hyperresponsiveness + residual mucus + possible post-nasal drip + occasional B. pertussis. Cochrane Oduwole 2018 — honey A-grade for nocturnal cough reduction in children >1 yr (NEVER under 1 yr — botulism risk); 1–2 tsp at bedtime. Buteyko method (Cowie 2008 — Australian RCT in adult asthma showed B+ signal for reduced reliever use); not a cure but useful breathing-pattern retraining for post-viral airway hyperresponsiveness. Ivy leaf (Hedera helix) — Holzinger 2011 review — B-grade for productive cough (mucus-clearing); Prospan syrup in Europe. **When to escalate:** cough >3 weeks → consider chest X-ray + spirometry + GERD workup + ACE-inhibitor review + post-nasal-drip workup + pertussis serology in adults; cough >8 weeks → broader workup including TB/malignancy if risk factors. **Synthesis.** Most post-viral cough resolves; honey + Buteyko + patience for 3–4 weeks; escalate at week 3+ if no improvement.
+
+### 2.7 Sub-types & realistic prognosis
+
+> **For you, in plain words.** Eight sub-types — acute viral URI moves through in 7–10 days; recurrent-URI immune-fragile needs the year-round nutritional + sleep + lifestyle floor; post-COVID respiratory needs longer recovery + post-exertional symptom monitoring. Match the sub-type. *(Heikkinen 2003; PHOSP-COVID 2022; Cochrane Hayward 2012)*
+
+| Sub-type | TL;DR (plain English) | Profile | Dominant cause | Realistic response | Citation |
+|---|---|---|---|---|---|
+| Acute viral URI (common cold) | 7–10 day course — zinc + saline + rest is the lever. *(Cochrane Singh 2013)* | Adult; intermittent; clear pattern | §2.2 + §2.3 | Excellent; 12–48 h duration cut | *(Cochrane Singh 2013; Hayward 2012)* |
+| Influenza-like illness | Sudden onset fever + myalgia + cough — home rapid test + assess high-risk + antiviral 48 h window. *(Jefferson 2014)* | Sudden severe; fever | §2.2 high viral load | Depends on antiviral access | *(Jefferson 2014; Cochrane Heneghan 2014)* |
+| Post-viral cough 3–8 weeks | Cough lingers after URI clears — honey + Buteyko + patience. *(Cochrane Oduwole 2018)* | Cough >2 weeks post-URI | §2.6 | Good; usually self-resolves | *(Cochrane Oduwole 2018; Cowie 2008)* |
+| Recurrent seasonal URI (immune-fragile) | Sick every winter — year-round vitamin D + zinc + sleep + stress + microbiome floor. *(Martineau 2017)* | ≥4 URI per year adult | §2.3 + sleep | Moderate; 12-month commitment | *(Martineau 2017; Prather 2015)* |
+| Asthma-overlap flare | URI triggers asthma flare — Buteyko + vitamin D + peak-flow monitoring + reliever escalation per asthma plan. *(Cowie 2008; Martineau 2017)* | Asthma history; viral trigger | §2.6 + §2.3 | Good with asthma plan | *(Cowie 2008; Reddel asthma action plan)* |
+| Allergy-driven overlap | Allergic rhinitis worsens URI symptoms — see immune-allergy-comfort sister dossier. *(see immune-allergy)* | Allergic baseline | §2.3 + allergy | Good cross-protocol | *(see immune-allergy-comfort dossier)* |
+| Post-COVID respiratory | Lingering breathlessness + cough + fatigue — graded breathing + paced exercise + ENO low. *(PHOSP-COVID 2022)* | Post-acute COVID | §2.6 + autonomic | Variable; months to recover | *(PHOSP-COVID 2022; Crook 2021)* |
+| Smoker / vape bronchitis tendency | Recurrent bronchitis in smokers/vapers — cessation is the only intervention that fundamentally helps. *(Cochrane Stead nicotine 2012)* | Smoker / vaper; recurrent bronchitis | §2.3 + §2.5 | Excellent on cessation | *(Cochrane Stead 2012)* |
 
 ## 3. OTC Phytochemicals — Pharmacological Validation
 
-| Compound | Mechanism | Dose | Timing | Take WITH | Avoid WITH (≥2h) | Grade | Brands | $/mo | Evidence |
-|---|---|---|---|---|---|---|---|---|---|
-| **Andrographis paniculata** (≥30 mg andrographolides) | ↓ viral replication; ↑ IFN-α; ↓ NF-κB | 400 mg standardised TID acute × 5 d; 200 mg BID prophylaxis | post-meal | warm water | pregnancy, fertility planning, bleeding disorders, immunosuppressants | A | Paractin (HP Ingredients), Swedish Herbal Institute Kan Jang; EMA HMPC monograph 2014; CCRAS *Kalmegh* monograph | $15–25 | Cochrane 2017 meta-analysis; EMA HMPC; Indian RCTs |
-| **Elderberry (*Sambucus nigra*) standardised extract** | Anthocyanins block viral entry (haemagglutinin); ↑ IL-6 modulated | 600 mg/15 ml syrup BID acute × 5 d; 15 ml AM prophylaxis | post-meal | warm water | autoimmune (theoretical Th1↑), pregnancy data limited | B | Sambucol (Razei Bar Industries), Nature's Way Sambucus, Gaia Herbs; EMA HMPC 2014 | $15–25 | Cochrane 2019; Israeli RCT *J Int Med Res* 2004; EMA HMPC |
-| **Pelargonium sidoides** EPs 7630 | ↑ ciliary beat, antiviral, ↑ NK cells | 30 drops TID × 7 d (adults) | post-meal | warm water | autoimmune (caution), anticoagulants | A | Umckaloabo (Schwabe Germany); EMA HMPC monograph 2018 | $25–40 | Multiple German RCTs in acute bronchitis (Schwabe); Cochrane 2013 |
-| **Quercetin** | Mast-cell stabiliser; antiviral (3CLpro); Zn ionophore | 500 mg BID; +500 mg acute | AM + PM | bromelain 250 mg; Zn pair | iron, tea tannins | B | Thorne Phytosome, NOW | $20–35 | Egyptian RCT *Front Pharmacol* 2022 in COVID outpatients; mast-cell evidence |
-| **Zinc lozenges (acute use)** | Antiviral envelope; RdRp inhibition; mucosal | 13–23 mg gluconate/acetate lozenge q2–3h × 3–5 d; **max 7 days** | flare-acute only | empty mouth | iron, Cu, Ca (≥2h); chronic >40 mg/d depletes Cu | B | Life Extension Zinc Lozenge, NOW; Health Canada NHP | $5–10/episode | Cochrane 2013; Hemilä meta-analysis 2017 (Finland) |
-| **Vitamin D3 + K2 MK-7** | Cathelicidin (LL-37); Treg; antiviral | 4000 IU + 100 µg/day; titrate to 50–70 ng/mL 25-OH-D | AM with fat | Mg, fat | thyroid med (4h) | A | Thorne, Pure Encaps | $10–15 | BMJ meta-analysis 2017 (UK, Martineau); EMA D3 monograph |
-| **Vitamin C** (buffered) | Antioxidant; ↓ URI duration ~8–14% (cohort), more in athletes/cold-stress | 1000 mg BID maint; 3000–6000 mg acute split | with food | iron (synergy), copper (split) | — | B | Pure Encaps, Solgar; Cochrane 2013 (Hemilä, Chalker, Finland) | $8–12 | Cochrane 2013; Hemilä Finnish meta-analyses |
-| **N-acetyl cysteine (NAC)** | Mucolytic; ↓ Th2; GSH precursor; lessens influenza A severity | 600 mg BID maint; 1200 mg BID acute | AM + PM | vit C | copper, nitroglycerin | A | PharmaNAC, Pure Encaps, Jarrow; EMA NAC monograph (mucolytic) | $12–20 | EMA NAC mucolytic monograph; *Eur Respir J* COPD/bronchitis RCTs; De Flora *Eur Respir J* 1997 (Italian influenza prophylaxis) |
-| **Mullein (*Verbascum thapsus*) leaf** | Demulcent, expectorant, anti-inflammatory | 300 mg BID or tea 1 cup BID | with meal | warm water | — | C | Nature's Answer Mullein, Gaia Herbs; classical Western herbal + AYUSH | $8–12 | EMA HMPC mullein monograph 2018 |
-| **Marshmallow root** (*Althaea officinalis*) | Mucilage demulcent for sore throat / cough | 1–3 g cold infusion BID | between meals | cold water (heat denatures mucilage) | absorbs other medications (1h gap) | B | Nature's Answer, Frontier; EMA HMPC monograph 2015 | $8–12 | EMA HMPC |
-| **Licorice DGL** (deglycyrrhizinated) | Demulcent, gut mucosal protection; safe for BP | 400 mg chewable BID | pre-meal | — | full licorice = BP/K issue | B | Enzymatic Therapy DGL, Natural Factors | $10–15 | EMA HMPC licorice; DGL safety data |
-| **Licorice (Glycyrrhiza glabra, full)** — **BP-CAUTIOUS** | Anti-inflammatory, antiviral; **but raises BP, lowers K** | ≤1 g/day, ≤4 wk; **CONTRAINDICATED in HTN, hypokalemia, pregnancy, renal disease** | with meal | — | thiazides, ACE-i, digoxin (K depletion + arrhythmia) | C | Himalaya Yashtimadhu; CCRAS Yashtimadhu; Chinese Pharmacopoeia Gan Cao | $8–12 | EMA HMPC; classical Ayurveda + TCM; **CAUTION reiterated** |
-| ***Tinospora cordifolia*** (Guduchi) | Immunomodulator; ↑ macrophage activity | 500 mg BID prophylaxis; 1000 mg BID acute | AM + PM | warm water | immunosuppressants | B | Himalaya, Organic India, Patanjali; CCRAS monograph | $10–15 | Indian RCTs *J Ayurveda Integr Med*; CCRAS |
-| ***Ocimum sanctum*** (Tulsi) | Anti-inflammatory, adaptogen, mild antiviral | 500 mg BID; 2 cups tea | AM + PM | hot water | warfarin (mild) | B | Organic India, Himalaya; CCRAS | $8–12 | Indian RCT *J Ayurveda Integr Med* 2017 |
-| ***Sitopaladi Churna*** | Classical Ayurvedic kapha/respiratory tonic | 3–5 g BID with honey | AM + PM | honey, warm water | diabetic users monitor glucose | T | Baidyanath, Dabur, Patanjali; *Sharangdhara Samhita* | $8–12 | Classical Ayurvedic; CCRAS Sitopaladi |
-| **Septilin (Himalaya)** | Polyherbal immunomodulator; reduces URI frequency | 2 tabs BID maintenance; 2 tabs TID acute | post-meal | — | autoimmune flare | B | Himalaya; AYUSH-GMP | $8–15 | *Indian J Pharmacol* 2002; *J Ayurveda Integr Med* 2014 |
+### 3.1 What to take, what to skip
+
+> **For you, in plain words.** Ten over-the-counter molecules support seasonal respiratory illness — zinc lozenges + Pelargonium + andrographis + elderberry + vitamin D + vitamin C are the load-bearing layers. We are brutally honest about Cochrane caveats (vitamin C null for prevention, small duration signal; oscillococcinum null for flu; echinacea Cochrane mixed). *(Cochrane Singh 2013; Cochrane Timmer 2013; Cochrane Hu 2017; Martineau 2017; Cochrane Hemilä 2013; Cochrane Mathie 2015 oscillococcinum null; Cochrane Karsch-Völk 2014 echinacea)*
+
+### 3.2 Zinc lozenges + saline rinse — the 24-hour cornerstone pair
+
+> **For you, in plain words.** Zinc lozenge 13–24 mg elemental every 2 waking hours started within the first 24 hours of first symptom — Cochrane Singh 2013 B-grade duration reduction. Saline nasal irrigation 240 ml warm distilled water 2×/day — Cochrane positive signals for symptom relief. These two together are the highest-leverage interventions in the dossier. *(Cochrane Singh 2013; Hayward 2012)*
+
+#### Open the science
+
+Zinc lozenge mechanism (Eby 2010): zinc ions in oral mucosa interfere with rhinovirus ICAM-1 (the rhinovirus receptor) attachment + disrupt viral capsid stability. Cochrane Singh 2013 meta — n=2,121 — duration reduced by ≈33% IF started within 24 h. Trials using zinc acetate or zinc gluconate at 75+ mg elemental zinc/day. Side effects: bad taste, nausea, occasional copper depletion with prolonged use. **Form matters:** acetate or gluconate as lozenge (NOT pill, NOT spray, NOT swallowed) — must contact oral mucosa. Brands: Cold-EEZE (gluconate), Zicam (gluconate or acetate; AVOID intranasal Zicam — historical anosmia reports), Life Extension Zinc Lozenges, Nature's Way Sambucus + Zinc. Stop at day 7. Saline nasal irrigation — Hayward 2012 review + Šlapak 2008 RCT showed reduced symptom severity, faster recovery, reduced antibiotic use. Mechanism: mechanical clearance of virus, mucus, allergens; restores mucociliary clearance. **CRITICAL safety rule: distilled or boiled-cooled water ONLY — never tap (rare amoebic risk via nasal route).** Brands: NeilMed Sinus Rinse 240 ml bottle (best ergonomic — gentle positive pressure), NeilMed NasoGel for dryness, Xlear xylitol spray (B+ biofilm disruption — Lin 2016), classic neti pot. **Synthesis.** Zinc + saline in the 24-hour window is the cornerstone — most users miss this window because they don't recognise the first throat-tickle.
+
+### 3.3 The ten OTC molecules — table
+
+| Compound | TL;DR (plain English) | Mechanism | Dose | Timing | Take WITH | Avoid WITH (≥2h) | Grade | Brand options | $/episode | Citation |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **Zinc lozenges (acetate/gluconate)** | 13–24 mg elemental every 2 waking hours, started <24 h symptom onset; cuts duration ≈33%. *(Cochrane Singh 2013)* | ICAM-1 + capsid disruption | 13–24 mg | every 2 waking hours, ≤7 days | empty mouth | dairy/citrus 30 min before/after | B | Cold-EEZE, Zicam oral, Life Extension | $10–20 | *(Cochrane Singh 2013; Eby 2010)* |
+| **Saline nasal irrigation** | 240 ml warm distilled water 2×/day; Hayward 2012 + Šlapak 2008 symptom-reduction signal. *(Hayward 2012)* | Mechanical clearance + mucociliary restoration | 240 ml | 2×/day during illness | distilled water only | tap water (amoebic risk) | A (symptom relief) | NeilMed Sinus Rinse, NetiPot | $10–25 | *(Hayward 2012; Šlapak 2008)* |
+| **Pelargonium sidoides (Umckaloabo, EPs 7630)** | Cochrane Timmer 2013 B+ for acute bronchitis, common cold, sinusitis. *(Cochrane Timmer 2013)* | Immunomodulation + mucolytic | 30 drops 3×/day | 7 days during illness | water | none significant | B+ | Schwabe Umckaloabo, ZuCol | $20–35 | *(Cochrane Timmer 2013; Lizogub 2007)* |
+| **Andrographis paniculata (Kalmegh)** | Cochrane Hu 2017 B+ for URI symptom-reduction; bitter taste. *(Cochrane Hu 2017)* | NF-κB + cytokine modulation | 60–120 mg andrographolide | 2–3×/day during illness | water | autoimmune disease caution; pregnancy avoid | B+ | Paradise Andrographis, Himalaya Kalmegh | $15–25 | *(Cochrane Hu 2017; Coon 2004)* |
+| **Elderberry (Sambucus nigra)** | Tiralongo 2016 + Hawkins 2019 meta — modest duration-reduction signal. *(Tiralongo 2016)* | Anthocyanin antioxidant + viral binding | 10–15 ml syrup or 500–1,000 mg | 3–4×/day during illness | water | autoimmune caution (theoretical) | B | Sambucol, Gaia Herbs, Nature's Way | $20–30 | *(Tiralongo 2016; Hawkins 2019)* |
+| **Vitamin C (high-dose)** | Cochrane Hemilä 2013 — null for prevention in general population; small duration signal once sick. *(Cochrane Hemilä 2013)* | Antioxidant + immune cofactor | 1–2 g | 2–3×/day during illness | food | iron timing (boosts iron absorption — combine) | D (prevention) / C (duration) | Pure Encapsulations, NOW | $10–15 | *(Cochrane Hemilä 2013)* |
+| **Vitamin D3 + K2** | Martineau 2017 IPD meta — moderate URI-reduction in vitamin D deficient; correct year-round. *(Martineau 2017)* | Cathelicidin induction + Treg support | 2,000–5,000 IU + K2 100 mcg | AM with fat | fat | none significant | A (if deficient) / B (overall) | Thorne, NOW, Sports Research | $10–25/mo | *(Martineau 2017)* |
+| **Honey (raw, monofloral)** | Cochrane Oduwole 2018 A-grade for nocturnal cough in children >1 yr; NEVER <1 yr (botulism). *(Cochrane Oduwole 2018)* | Demulcent + antimicrobial | 1–2 tsp | as needed for cough | water/tea | sugar restriction; never <1 yr | A (children's cough) | Manuka, raw local honey | $15–40 | *(Cochrane Oduwole 2018)* |
+| **Ivy leaf (Hedera helix, Prospan in Europe)** | Holzinger 2011 review B-grade for productive cough + mucus clearance. *(Holzinger 2011)* | Mucolytic + bronchodilator (mild) | 5–7.5 ml syrup | 3×/day during cough phase | water | none | B | Prospan (EU), Bionorica | $15–25 | *(Holzinger 2011)* |
+| **N-acetylcysteine (NAC)** | Mucolytic + glutathione precursor; Cochrane mixed for COPD prevention, useful for productive cough. *(Stey 2000; Cazzola 2015)* | Mucolytic + glutathione | 600 mg 2×/day | with meals during productive cough | water | nitrates caution (additive) | B | NOW NAC, Jarrow | $15–25 | *(Stey 2000; Cazzola 2015)* |
+
+### 3.4 What we explicitly skip — and why
+
+> **For you, in plain words.** Six approaches are EXCLUDED or honestly downgraded — oscillococcinum (Cochrane null for flu), echinacea (Cochrane mixed), Ma Huang/Ephedra (cardiovascular stimulant risk + legal restrictions in many jurisdictions), high-dose vitamin C for prevention (Cochrane null), routine antibiotics for viral URI (resistance + harm), DXM (dextromethorphan) as cough suppressant (mixed evidence in adults; banned for under-4s in many jurisdictions). *(Cochrane Mathie 2015; Cochrane Karsch-Völk 2014; Cochrane Hemilä 2013; Cochrane Smith 2017 antibiotics for bronchitis)*
+
+| Excluded / downgraded | TL;DR (plain English) | Reason |
+|---|---|---|
+| Oscillococcinum | Cochrane Mathie 2015 meta — null for flu treatment and prevention; widely sold. | Cochrane null |
+| Echinacea | Cochrane Karsch-Völk 2014 mixed; some products show small signal but heterogeneity huge. *(Karsch-Völk 2014)* | Mixed Cochrane |
+| Ma Huang / Ephedra | Cardiovascular stimulant — hypertension, arrhythmia, stroke risk; banned/restricted many jurisdictions. *(EMA + FDA + TGA restrictions)* | Stimulant CV risk + legal |
+| High-dose vitamin C (prevention) | Cochrane Hemilä 2013 null for prevention in general population; small duration signal. | Cochrane null prevention |
+| Routine antibiotics for viral URI | van der Velden 2020 — >70% of URI antibiotics inappropriate; resistance + microbiome harm. | Stewardship + harm |
+| Dextromethorphan (DXM) | Mixed evidence in adults; banned for <4 yr many jurisdictions; abuse potential. *(Cochrane Smith 2014)* | Mixed evidence + abuse |
+| Diphenhydramine (Benadryl, NyQuil) | Anticholinergic-dementia signal in long-term use; sedation; minimal cough benefit. *(Risacher 2016)* | Anticholinergic load |
+| Nasal decongestant (oxymetazoline) >3 days | Rhinitis medicamentosa rebound congestion after 3 days. | Rebound congestion |
 
 ## 4. Traditional Medicine Integration
 
-### 4.1 Ayurveda — *Pratishyaya* / *Kasa* / *Shwasa*
+### 4.1 Ayurveda — Sitopaladi & Vasaka lineage
 
-Dosha: **Kapha-Vata** in acute URI; pure **Kapha** in productive cough; **Vata** in dry post-viral cough. References: *Charaka Samhita* Chikitsa Sthana ch. 17–18, *Sushruta Samhita* Uttara Tantra ch. 24, *Bhavaprakasha*. Lineages: Kerala (Kottakkal, Vaidyaratnam), Banaras (Baidyanath), Gujarat (Patanjali).
+> **For you, in plain words.** Ayurveda has a deep, well-validated respiratory pharmacopoeia centred on *Kasa* (cough), *Pratisyaya* (cold), and *Shvasa* (breathing difficulty). Five cornerstone herbs + classical formulas — Sitopaladi Churna, Vasaka, Pippali, Yashtimadhu, Talisadi Churna — cover most acute URI work. *(Charaka Samhita Chikitsa Sthana Ch. 18; Bhavaprakasha Nighantu)*
 
-| Formulation | Dose | Grade | Source |
+#### Open the science
+
+**Sitopaladi Churna** — classical formula (sugar candy + bamboo manna + pippali + cardamom + cinnamon) for cough + cold + sore throat; demulcent + bronchodilator action; AYUSH-monographed. Dose: 3–6 g with honey, 2–3×/day. **Vasaka (Adhatoda vasica)** — well-studied bronchodilator + mucolytic; Dhuley 1999 in-vitro + clinical signal; vasicine alkaloid → bromhexine + ambroxol pharmacological derivatives. Dose: 5–10 ml syrup or 250–500 mg standardised extract 2–3×/day. **Pippali (Piper longum / Long pepper)** — anti-inflammatory + bioavailability enhancer (piperine analog); classical for chronic respiratory. Dose: 1–3 g powder with honey. **Yashtimadhu (Glycyrrhiza glabra / Liquorice)** — demulcent + anti-tussive + antiviral signal; CAUTION pseudohyperaldosteronism risk (hypertension + hypokalemia) with long-term use → DGL form preferred or short courses only (≤2 weeks). **Talisadi Churna** — pine + bamboo + pippali + cardamom + cinnamon + sugar; classical for productive cough + congestion. **Kanakasava + Vasarishta** — fermented Ayurvedic syrups for respiratory. **Tulsi (Holy basil / Ocimum sanctum)** — adaptogen + mild antiviral; daily tea preventive + during illness. **Sudarshan Churna** — multi-herb classical for fever. Sourcing: Organic India, Himalaya, Baidyanath, Dabur, Patanjali, Kerala Ayurveda.
+
+### 4.2 TCM — Wind-Cold vs Wind-Heat differentiation
+
+> **For you, in plain words.** TCM differentiates Wind-Cold pattern (chills > fever, clear/white discharge, body aches, no thirst) from Wind-Heat (fever > chills, yellow/green discharge, sore throat, thirst). Match formula to pattern. Six classical formulas cover most: Xiao Qing Long Tang (Wind-Cold + cough), Yin Qiao San (Wind-Heat URI), Sang Ju Yin (Wind-Heat early), Gan Mao Ling, Ding Chuan Tang, Pi Pa Gao (loquat cough syrup). *(Huang Di Nei Jing; Shang Han Lun; Chinese Pharmacopoeia 2020)*
+
+#### Open the science
+
+**Yin Qiao San (银翘散)** — Lonicera + Forsythia + Mentha + Schizonepeta + Burdock + Soja + Platycodon + Lophatherum + Liquorice — the classical Wind-Heat early-onset URI formula (sore throat + fever > chills + headache). Take at first symptom of warm-type cold. **Sang Ju Yin (桑菊饮)** — Mulberry leaf + Chrysanthemum + Forsythia + Mentha + Bitter apricot + Platycodon + Phragmites + Liquorice — early Wind-Heat with cough predominance. **Xiao Qing Long Tang (小青龙汤 Minor Bluegreen Dragon)** — Ma Huang + Cinnamon twig + Pinellia + Schisandra + Asarum + Liquorice + Dried ginger + Peony — the classical Wind-Cold formula with wheeze and copious clear mucus. CAUTION: contains Ma Huang/Ephedra — CV stimulant + legal restrictions in many jurisdictions; use only under licensed TCM practitioner guidance. **Gan Mao Ling (感冒灵)** — patent formula combining Yi Zhi Huang Hua + Mao Dong Qing + Ban Lan Gen — practical Wind-Heat URI patent. **Ding Chuan Tang (定喘汤)** — for asthma overlap + URI. **Pi Pa Gao (枇杷膏 Nin Jiom Loquat Syrup)** — loquat leaf + fritillaria + apricot kernel + honey — classical cough syrup; ubiquitous in Chinese pharmacies. **Bu Fei Tang (补肺汤)** — for chronic lung-qi-deficient recurrent URI tendency (immune-fragile pattern). **Sang Bai Pi (桑白皮)** — single herb for cough. **Yu Ping Feng San (玉屏风散 Jade Windscreen)** — preventive immune-barrier formula (see immune-allergy-comfort dossier). Sourcing: Plum Flower, Mayway, Min Tong granules; Kamwo NYC, Lhasa Karnak Berkeley.
+
+### 4.3 Unani — Joshanda + classical respiratory
+
+> **For you, in plain words.** Unani has deep respiratory pharmacopoeia. Three cornerstone formulas: Joshanda (multi-herb decoction for URI — the household winter staple in South Asia), Khamira Banafsha (chest demulcent), Sharbat-e-Toot Siyah (sore throat). *(Avicenna Canon Book 3; Hamdard Pharmacopoeia)*
+
+| Formula | TL;DR (plain English) | Composition | Source |
 |---|---|---|---|
-| **Sitopaladi Churna** | 3–5 g BID with honey | T | Baidyanath, Dabur; *Sharangdhara* |
-| **Talisadi Churna** | 2–4 g BID with honey | T | Baidyanath; *Bhaishajya Ratnavali* |
-| **Mahasudarshan Churna** (50+ herbs) | 1–3 g TID warm water during fever | T | Baidyanath, Dabur; *Bhaishajya Ratnavali* |
-| **Tribhuvankirti Rasa** | 125–250 mg TID acute (mineral preparation — only if from trusted GMP source, otherwise skip) | T | classical *Bhaishajya Ratnavali* |
-| **Yashtimadhu Churna** (licorice) — BP-cautious | 1–3 g BID × ≤4 wk | C | Himalaya; CCRAS |
-| **Vasaka (*Adhatoda vasica*) syrup / decoction** | 10–20 ml BID | B | Himalaya Bresol; *Bhavaprakasha* |
-| **Bresol (Himalaya)** | 1 tab BID | B | Himalaya; AYUSH-GMP; Indian RCT in seasonal URI |
-| **Chyawanprash** (sugar-free) | 10 g AM | B | Patanjali, Dabur, Organic India; CCRAS rasayana |
-| **Tulsi Drops** (Organic India / Patanjali) | 3–5 drops in warm water BID | B | CCRAS Tulsi |
+| Joshanda | Classical multi-herb URI decoction — household winter staple; warm sipping. *(Hamdard)* | Liquorice + Adhatoda + Hyssop + violet + others | Hamdard Joshina, Qarshi Johar Joshanda |
+| Khamira Banafsha | Violet-based chest demulcent for cough + congestion. *(Avicenna)* | Viola + honey + base | Hamdard, Dawakhana Tibbiya |
+| Sharbat-e-Toot Siyah | Black mulberry syrup for sore throat + inflammation. *(Hamdard)* | Morus nigra + sugar | Hamdard, Saif Pharma |
 
-### 4.2 TCM — *Gan Mao* 感冒 (common cold), *Ke Sou* 咳嗽 (cough)
+### 4.4 Siddha — Nilavembu Kudineer & Adathodai
 
-Patterns: **Wind-Cold** (clear discharge, chills, no thirst, white tongue coat) · **Wind-Heat** (yellow discharge, sore throat, thirst, red tongue) · **Lung Yin xu** (dry cough, night sweats) · **Phlegm-Damp** (thick sputum, fatigue) · **Wei-Qi deficiency** (recurrent URI).
+> **For you, in plain words.** Siddha has a particularly strong viral-fever lineage. Nilavembu Kudineer (multi-herb decoction) was prominent in Tamil Nadu public-health response to dengue + chikungunya + COVID; Adathodai (Adhatoda) for cough. Classical mercurial preparations excluded per protocol. *(Siddha Maruthuvam; IMPCOPS; Tamil Nadu DPH guidance)*
 
-| Formula | Pattern | Dose | Grade | Source |
-|---|---|---|---|---|
-| **Yu Ping Feng San** 玉屏风散 | Wei-Qi deficiency / prophylaxis | 6–9 g BID granule × 6–8 wk pre-season | B | Plum Flower, Min Tong; Chinese Pharmacopoeia 2020; Chinese RCTs *Phytomedicine* 2014 |
-| **Yin Qiao San** 银翘散 | Acute Wind-Heat onset | 6 g BID × 3–5 d | B | Plum Flower; *Wen Bing Tiao Bian* (Wu Jutong) |
-| **Sang Ju Yin** 桑菊饮 | Mild Wind-Heat with cough | 6 g BID × 3–7 d | B | Plum Flower; *Wen Bing Tiao Bian* |
-| **Gui Zhi Tang** 桂枝汤 | Wind-Cold with sweat | 6 g BID × 3 d | T | Plum Flower; *Shang Han Lun* |
-| **Ma Huang Tang** 麻黄汤 — **NOT for self-administration** (ephedra) | Wind-Cold no sweat | classical only | T | *Shang Han Lun* — excluded from OTC protocol |
-| **Xiao Qing Long Tang** 小青龙汤 — contains ephedra, BP caution | Wind-Cold with phlegm | 6 g BID × 3 d **only if no HTN** | T | *Shang Han Lun* |
-| **Sang Xing Tang** 桑杏汤 | Dry cough, Lung Yin xu | 6 g BID | T | *Wen Bing Tiao Bian* |
-| **Er Chen Tang** 二陈汤 | Phlegm-Damp cough | 6 g BID | T | *Tai Ping Hui Min He Ji Ju Fang* |
-| **Ban Lan Gen** 板蓝根 (*Isatis*) granule | Acute viral URI / sore throat | 5 g TID × 3 d | B | Plum Flower; NMPA monograph; Chinese RCTs |
-
-### 4.3 Unani — *Nazla*, *Zukam*, *Sual*
-
-Mizaj: **balghami** in cold/damp URI; **safrawi** in fever-dominant. Hakim Mohammed Said (Hamdard), Dawakhana Tibbiya College Aligarh.
-
-| Formulation | Dose | Grade | Source |
+| Formula | TL;DR (plain English) | Composition | Source |
 |---|---|---|---|
-| **Joshanda** (thyme + violet + liquorice + black pepper + adhatoda decoction) | 1 sachet BID warm | T | Hamdard, Ajmal |
-| **Khamira Banafsha** | 5–10 g BID | T | Hamdard; *Qarabadeen Qadri* |
-| **Sharbat Toot Siyah** (black mulberry) | 10 ml BID | T | Hamdard |
-| **Itrifal Ustukhuddus** | 5–10 g HS | T | Hamdard |
-| **Laooq Sapistan** (cough linctus) | 5–10 g BID | T | Hamdard |
-
-### 4.4 Siddha — *Pinasam*, *Iruma Noi*, *Kasa Noi*
-
-| Formulation | Dose | Grade | Source |
-|---|---|---|---|
-| **Nilavembu Kudineer** (*Andrographis* polyherbal) | 30 ml BID | B | IMPCOPS; CCRS monograph; widely used for viral fevers including chikungunya |
-| **Adathodai Manapagu** (*Justicia adhatoda* syrup) | 10 ml BID | T | IMPCOPS; *Siddha Maruthuvam* |
-| **Thalisathi Chooranam** | 2–4 g BID with honey | T | IMPCOPS, SKM |
-| **Karpoora-Thuvarchattu** topical chest rub | apply BID | T | IMPCOPS |
-
-Classical Siddha mercurial preparations excluded (require expert formulation).
+| Nilavembu Kudineer | Classical 9-herb decoction for viral fever; widely used in Tamil viral outbreaks. *(Siddha Maruthuvam)* | Nilavembu + Vetiver + Kuriyat + others | IMPCOPS, SKM Siddha |
+| Adathodai (Adhatoda Manapagu) | Cough syrup; bronchodilator + mucolytic; classical respiratory remedy. *(Siddha Maruthuvam)* | Adhatoda vasica + honey | IMPCOPS, SKM Siddha |
+| Karpooradi Thailam | Camphor + cinnamon oil for chest rub — local warming + decongestant. *(Siddha Maruthuvam)* | Camphor + cinnamon + sesame oil | IMPCOPS |
 
 ### 4.5 Tibetan / Sowa Rigpa
 
-Men-Tsee-Khang Dharamsala: **Agar-31** (wind/rLung disorders, used in URI fatigue), **Yu-Ning-25** (cold-attack respiratory), **Garlic-13** (chronic chest congestion). Source *rGyud-bzhi*. Grade: T.
+> **For you, in plain words.** Tibetan medicine (rGyud-bzhi) uses lung-supportive formulas like Cong Zhi for respiratory conditions. *(Men-Tsee-Khang)*
 
-### 4.6 Homeopathy
+### 4.6 Homeopathy (graded T/H — tradition only)
 
-> *Honoured under the founder's mandate; presented as documented tradition (Tier 3), not as clinical proof.*
+> **For you, in plain words.** Honoured under the founder's mandate to map all alternative-medicine lineages. Modern evidence is contested — oscillococcinum specifically failed Cochrane meta (Mathie 2015). Entries below are Tier-3 classical tradition from Boericke + Kent; we present them honestly without overclaiming. *(Boericke; Kent; Cochrane Mathie 2015 null for oscillococcinum)*
 
-| Remedy | Indication | Potency | Grade |
+| Remedy | TL;DR (plain English) | Indication | Grade |
 |---|---|---|---|
-| **Aconitum napellus** | Sudden onset after cold dry wind, anxiety | 30C × 4–6 doses early | T |
-| **Belladonna** | Sudden high fever, flushed face, throbbing head | 30C | T |
-| **Bryonia alba** | Dry cough worse from any movement, thirst for large drinks | 30C | T |
-| **Drosera rotundifolia** | Spasmodic dry cough, worse lying down | 30C | T |
-| **Spongia tosta** | Croupy / barking cough, worse cold air | 30C | T |
-| **Antimonium tartaricum** | Rattling chest, weak elderly, scant expectoration | 30C | T |
-| **Allium cepa** | Acrid nasal discharge, bland tears | 30C | T |
-| **Oscillococcinum** (*Anas barbariae*) | Flu-like onset within 24 h | 200C × 6 doses | T |
-| **Influenzinum** | Seasonal influenza nosode | 30C–200C | T |
-
-Citations: Boericke W., *Pocket Manual*; Allen H.C., *Keynotes*; Kent J.T., *Repertory*. CCRH publishes seasonal URI case series.
+| Aconitum napellus 30C | Acute sudden chill-onset URI, first 24 h; classical "Aconite hour" remedy. | Sudden chill onset | T |
+| Belladonna 30C | Sudden high fever + flushed face + throbbing headache; URI with abrupt fever spike. | Sudden fever | T |
+| Bryonia alba 30C | Chest soreness with cough, worse with motion; dry painful cough. | Chest-sore cough | T |
+| Phosphorus 30C | Laryngitis + hoarse voice + dry tickling cough. | Laryngitis | T |
+| Ipecacuanha 30C | Productive cough with nausea; rattling chest. | Productive nausea-cough | T |
+| Antimonium tartaricum 30C | Rattling chest mucus that won't come up; elderly + children. | Rattling mucus | T |
+| Sambucus nigra 30C | Spasmodic cough in children; classical pediatric remedy. | Pediatric spasmodic | T |
+| Allium cepa 30C | Watery runny nose + irritating discharge; cold with constant sneezing. | Runny-nose cold | T |
+| Oscillococcinum (Anas barbariae 200CK) | Honest call-out: Cochrane Mathie 2015 NULL for flu; widely sold; documented for transparency. | Marketed flu remedy | T/H (Cochrane null) |
 
 ## 5. Biophysical Interventions — home-administered only
 
-**5.1 Steam inhalation with eucalyptus / peppermint / tulsi.** Boil 1 L water; off heat; 3 drops eucalyptus + 2 drops peppermint or 1 tsp tulsi leaves; towel; inhale 5–10 min, BID acute. Mucolytic + decongestant + mild antimicrobial. Contraindications: asthma + menthol sensitivity (skip peppermint); under 6 yr (burn risk).
+### 5.1 What you'll use this for
 
-**5.2 Saline nasal irrigation (Neti pot).** Sterile saline daily AM during season; BID during URI. **Distilled / previously-boiled water only.**
+> **For you, in plain words.** Seven home modalities physically support respiratory illness — HEPA air purifier, cool-mist humidifier (with safety caveat), home pulse-oximeter, home rapid tests (COVID + flu + strep), peak-flow meter (if asthma overlap), N95/KN95/KF94 respirators, steam inhalation. *(Allen 2015 HEPA; AASM 2017 home oximetry; Brody 2021 N95)*
 
-**5.3 Gargling (warm salt water, turmeric milk, triphala decoction).** 5 min BID — mucosal clearing, mild antimicrobial, vagal stimulation.
+### 5.2 Symptom + viral identification
 
-**5.4 Honey + ginger + warm water.** 1 tsp raw honey + 5 g ginger + warm water; sip; classical sore-throat soother (EMA acknowledges honey efficacy for cough in children >12 mo).
+> **For you, in plain words.** Home rapid-test kits — Lucira (COVID + flu A/B PCR-quality), Detect (COVID), Ellume (COVID), iHealth (COVID) — identify what you have within 30 min so you know whether the 48-hour antiviral window matters. Strep home tests less reliable but emerging. *(McGee 2023 rapid test review)*
 
-**5.5 Home infrared sauna** 50–60 °C, 20 min, 3×/week (NOT during acute fever). HSP70 + sweat. Contraindication: acute fever, CV disease, pregnancy.
+#### Open the science
 
-**5.6 Hot foot bath + cold compress on forehead.** Classical Western/Naturopathic technique for congestion — 10 min foot bath in 40 °C water, cool compress on forehead and back of neck.
+Home rapid antigen + molecular tests have transformed first-72-hours decision making. Lucira (single-use molecular test) gives PCR-quality COVID + flu A/B in 30 min. Detect Molecular gives COVID at near-PCR quality. Ellume gave COVID quickly with smartphone-readout. iHealth, Quidel QuickVue — standard rapid antigen tests. Strep home tests (Strep A swab) less reliable than clinic — clinic confirmation matters for strep due to rheumatic-fever prevention. **Why test matters for this dossier:** if flu is confirmed AND you're in a high-risk group (>65, immunocompromised, pregnant, severe asthma, cardiac), the oseltamivir/baloxavir 48-hour window per §10.7.3 is clinically real (Cochrane Heneghan 2014 — modest but real symptom-duration benefit IF started <48 h). If COVID is confirmed AND you're high-risk, paxlovid 5-day course within 5 days of symptom onset has trial-validated reduction in hospitalisation (EPIC-HR Hammond 2022). **Synthesis.** Test early so you can decide about §10.7.3 referrals early.
 
-**5.7 PBM transcranial 810 nm + intranasal 660 nm.** Vielight Neuro for HPA; Vielight Allergy intranasal for mucosa. Optional adjunct.
+### 5.3 The seven home modalities — table
 
-**5.8 Bedroom humidifier** to 40–50% RH during winter to protect mucociliary clearance. Cool-mist (Vicks, Honeywell); clean daily to prevent mould.
+| Device | TL;DR (plain English) | Use | Frequency | Brand options | Price | Grade |
+|---|---|---|---|---|---|---|
+| HEPA air purifier (CADR for room size) | Reduces airborne viral + allergen + particulate load; year-round + during illness. *(Allen 2015)* | Daily | Continuous in occupied rooms | IQAir HealthPro, Coway Mighty, Blueair Blue Pure, Levoit Core | $150–1,500 | B |
+| Cool-mist humidifier | Soothes airway; CAUTION mold growth — use distilled water + change daily + clean weekly. *(humidifier-safety advisory)* | URI / dry winter air | Nightly during illness | Honeywell HCM350, Vicks Filter-Free | $50–150 | B (with safety) |
+| Home pulse-oximeter | Single most-important home device for severity triage — SpO2 <94% triggers escalation. *(Berry 2017)* | URI / post-COVID / asthma | As needed; baseline first | Masimo MightySat, Innovo, Wellue O2Ring | $30–250 | A (triage) |
+| Home rapid test (COVID + flu A/B + strep) | First-72-hours identifies what you have; gates 48-h antiviral window decision. *(McGee 2023)* | First 72 h of symptoms | Once + repeat if negative + symptoms persist | Lucira, Detect, Ellume, iHealth, BinaxNOW | $15–80 each | B–A |
+| Peak-flow meter (if asthma overlap) | Monitor airway function during URI; baseline first; <60% personal best = ER. *(Reddel asthma action plan)* | URI in known asthma | 2–3×/day during URI | Mir Spirobank Smart (Bluetooth), Omron, Microlife | $30–250 | A (asthma overlap) |
+| N95 / KN95 / KF94 respirator | Reduces transmission both ways; protects high-risk + protects others when you're sick. *(Brody 2021)* | High-risk exposure or when sick | As needed | 3M Aura 9210+, Powecom KN95, KF94 brands | $1–3 each | A |
+| Steam inhalation (kettle + towel) | Symptomatic relief congestion; caution scalding — keep distance. | URI congestion | 2–3×/day during illness | Kettle + bowl + towel | $0 | C |
+| Salt-water gargle | Satomura 2005 Japanese RCT small signal for URI prevention; symptom relief sore throat. *(Satomura 2005)* | Daily prevention + sore throat | 1 tsp salt in 240 ml warm water, 2–3×/day | — | $0 | B–C |
+| Buteyko method device (e.g. Frolov, Samozdrav) | Nasal-breathing reinforcement for asthma overlap post-viral cough. *(Cowie 2008)* | Asthma + post-viral cough | Daily 10–20 min | Samozdrav, Buteyko app | $50–150 | B (asthma) |
+
+### 5.4 Vaccination — present honestly per region
+
+> **For you, in plain words.** Vaccination for influenza, COVID-19, and (for elderly) RSV exists and reduces severe-illness risk. Each region has its own honest schedule per major regulatory body (UK NHS, Australia ATAGI, India MoHFW, Canada NACI, EU EMA). NicheCore does not recommend or oppose — we present the option honestly so the user can decide with their own clinician on their own initiative. *(WHO position papers; Cochrane Jefferson 2018 flu vaccine)*
+
+| Vaccine | TL;DR (plain English) | Population | Source for decision |
+|---|---|---|---|
+| Annual influenza vaccine | Cochrane Jefferson 2018 — moderate signal reduction in lab-confirmed flu; benefit larger in high-risk groups. *(Jefferson 2018)* | Especially high-risk: >65, pregnant, immunocompromised, healthcare workers | WHO position; NHS / ATAGI / NACI per region |
+| COVID-19 boosters | Reduced severe illness + hospitalisation per region-specific data; less clear for healthy young adults. | Especially high-risk groups | Region-specific per honest national data |
+| RSV vaccine (Arexvy, Abrysvo) for elderly | Recently licensed in major markets; reduced LRTI in trials in adults >60. *(Walsh 2023; Papi 2023)* | Adults >60 | Region-specific guidance |
 
 ## 6. Dietary Protocol
 
-### 6.1 Mandatory foods
+### 6.1 Mandatory foods + timing
 
-- **Sprouted millets** 60–80 g cooked
-- **Bitter / green leafy vegetables** (methi, moringa, gotu kola, parsley) 150–200 g
-- **Fermented foods** (kanji, sauerkraut, kefir) 100 g
-- **Garlic** 1–2 cloves raw crushed, **ginger** 5 g fresh
-- **Onion** 50 g (quercetin)
-- **Bone broth** 200 ml/day during acute URI
-- **Tulsi tea** 2 cups; **ginger-turmeric-honey tea** 1 cup acute
-- **Local raw honey** 1–2 tsp/day (Cochrane 2018: honey beats no-treatment for nocturnal cough in children >12 mo)
-- **Citrus** (orange, amla) for vitamin C
-- **Oily fish** 120 g 3×/week or algal omega-3
+> **For you, in plain words.** Eight foods that physically support respiratory illness — bone broth, ginger + honey + lemon tea, garlic, tulsi tea, citrus, leafy greens, fermented foods, fatty fish. Hydration is non-negotiable (2 L+ during illness). *(Rennard 2000 chicken soup; Bayan 2014 garlic; Mondal 2011 tulsi)*
 
-### 6.2 Absolutely avoid
+- **Bone broth (chicken/beef) 240 ml × 2–3/day** — Rennard 2000 Mt Sinai chicken-soup paper showed anti-inflammatory + mucus-thinning signal
+- **Ginger + honey + lemon tea — 1 inch ginger, 1 tsp honey, 1/2 lemon in 240 ml hot water** — demulcent + warming + immune support
+- **Raw garlic 1–2 cloves crushed daily** — Bayan 2014 review; allicin antimicrobial; crush + wait 10 min for allicin formation
+- **Tulsi (holy basil) tea 2–3 cups/day** — Mondal 2011 RCT signal for immune cellular response
+- **Citrus + kiwi + bell pepper** — natural vitamin C food sources
+- **Leafy greens at every main meal** — magnesium + B vitamins
+- **Fermented foods daily** — sauerkraut, kefir, kanji, kimchi, dosa batter — microbiome support
+- **Fatty fish 120 g × 3/week** — omega-3 EPA/DHA membrane support + resolvin production
 
-| Food/Class | Molecular reason |
-|---|---|
-| **Dairy during acute URI** (especially congestion phenotype) | Mucus thickening in sub-population; Kapha-aggravating per Ayurveda |
-| **Refined sugar + HFCS** | NK cell suppression ~50% for 4 h post-load; microbiome disruption |
-| **Industrial seed oils** | ω-6 / leukotriene overload |
-| **Alcohol** | Mucociliary impairment, sleep fragmentation |
-| **Smoking / vaping** | Direct ciliary injury — eliminate |
-| **Ultra-processed, food dyes, sulphites** | Mast-cell activation |
-| **Cold drinks during cough** | Aggravates Vata-Kapha per Ayurveda; bronchoconstriction in sensitive |
-| **Late heavy dinner** | Reflux-driven night cough |
+### 6.2 Foods to avoid
 
-### 6.3 Preparation methodology
+| Food | Plain-English reason | Mechanism |
+|---|---|---|
+| Refined sugar | Suppresses neutrophil function temporarily after high-glycemic load. *(Sanchez 1973 — old but cited)* | Glycemic stress on neutrophil function |
+| Ultraprocessed snacks | Empty calories displace nutrient-density when appetite is low. | Nutrient displacement |
+| Excess alcohol | Suppresses immune function + dehydrates + interferes with sleep. *(Sarkar 2015)* | Immune + sleep disruption |
+| Cold drinks during fever | Cooling counteracts the immune fever response. | Traditional + thermogenesis |
+| Heavy late meals | Compete with sleep for recovery resources. | GERD + sleep competition |
+| Dairy excess (some users) | Subjective mucus-thickening signal in some users (controversial; Pinnock 1990 negative); test individually. | Individual variability |
 
-**Sprouting**: 8–10 h soak + 12–18 h germination. **Bone broth** 24 h simmer. **Kanji** 3–5 d ferment. **Ghee tempering** for fat-soluble vitamins. **Honey** raw only — never heated above 40 °C (denatures enzymes; classically considered *ama*-forming per Ayurveda when cooked).
+### 6.3 Preparation — illness-supportive cooking
 
-### 6.4 Seven-day meal plan
+> **For you, in plain words.** During acute illness — soft + warm + simple + hydrating. Bone broth as the foundation. Kitchari (Ayurvedic mung + rice + ghee + spices) is the classical illness food. Steam vegetables; don't fry. Add ginger + turmeric + black pepper + garlic generously. *(Charaka Samhita on apatya ahara; classical convalescent foods)*
 
-| Day | Breakfast 07:30 | Lunch 13:00 | Dinner 19:00 |
+### 6.4 Seven-day URI-recovery meal plan
+
+**Day 1 (acute):** Bone broth 240 ml × 3, ginger-honey-lemon tea × 4, tulsi tea × 2, soft kitchari for dinner, 2 L water + electrolytes.
+
+**Day 2:** Bone broth × 2, eggs + sourdough toast breakfast, kitchari + sautéed greens lunch, fish + sweet potato + greens dinner, ginger-honey-lemon × 3.
+
+**Day 3:** Oats + walnuts + tulsi tea breakfast, dal + brown rice + greens lunch, chicken + sweet potato + spinach dinner.
+
+**Day 4:** Greek yoghurt + berries breakfast, lentil-vegetable soup lunch, salmon + quinoa + roasted vegetables dinner.
+
+**Day 5:** Eggs + sourdough breakfast, Mediterranean salad + sardines lunch, kitchari dinner.
+
+**Day 6:** Yoghurt + nuts + fruit breakfast, vegetable bowl lunch, fish + grains + greens dinner.
+
+**Day 7 (recovery):** Bone broth + eggs breakfast, soup lunch, light fish + vegetable dinner. Early bed.
+
+### 6.5 Environmental triggers
+
+> **For you, in plain words.** Seven environmental triggers raise URI vulnerability or severity — indoor air quality, smoking/vaping, low humidity, sleep deprivation, chronic stress, vitamin D deficiency, dehydration. Each is addressable. *(Allen 2015; Prather 2015 sleep + colds; Martineau 2017 vitamin D)*
+
+| Trigger | TL;DR (plain English) | Action |
+|---|---|---|
+| Poor indoor air quality | PM2.5 + VOCs + mold spores stress airway. | HEPA purifier in main rooms + bedroom |
+| Smoking / vaping | Recurrent bronchitis + impaired ciliary clearance. | Cessation — single highest-leverage intervention |
+| Low indoor humidity (<30%) | Dries mucosa + favours viral survival on surfaces. | Cool-mist humidifier to 40–50% with safety rules |
+| Sleep deprivation | Prather 2015 — <6 h = 4.2× cold incidence vs ≥7 h after experimental rhinovirus inoculation. | Prioritise 7–9 h |
+| Chronic stress | HPA-immune coupling; sIgA suppression. | Daily breathwork + walks + see anxiety-like-calm dossier |
+| Vitamin D deficiency | Martineau 2017 — D-deficient subjects benefit most from supplementation for URI. | 2,000–5,000 IU/d + K2 |
+| Dehydration | Thins mucus + supports mucociliary clearance. | 2–2.5 L/day baseline; 3 L during illness |
+| Crowded indoor settings during peak season | Higher inoculation dose. | Mask in high-risk settings (N95/KN95/KF94) |
+
+### 6.6 Cofactor floor — measure first
+
+| Nutrient | TL;DR (plain English) | Target | Supplement if deficient |
 |---|---|---|---|
-| **1 Defence load** | 60 g foxtail porridge + ginger + 30 g amla + tulsi tea | 200 g bitter greens + 50 g mung dal + 70 g millet + garlic + sauerkraut | 65 g khichdi + 150 g gotu kola + bone broth 200 ml |
-| **2 Quercetin** | 65 g barnyard upma + 50 g red onion + apple | 180 g parsley salad + 50 g toor + 60 g browntop + ferment | 70 g roti + 180 g lauki + tulsi tea |
-| **3 Mucolytic** | 70 g kodo + ginger + 5 g black pepper + bone broth | 200 g moringa-bitter gourd + 50 g moong + 100 g A2 dahi (skip if congested) | 65 g roti + 180 g pumpkin + ginger-honey tea |
-| **4 ω-3 + selenium** | 60 g foxtail porridge + amla + 2 Brazil nuts | 120 g sardines + 200 g greens + 60 g foxtail + sauerkraut | 70 g khichdi + 150 g gotu kola |
-| **5 Acute / fever day** | Bone broth 300 ml + ginger tea + honey 1 tsp | Khichdi 150 g (well-cooked) + boiled bottle gourd 200 g + Mahasudarshan 1 g | Bone broth + steamed pumpkin + ginger-honey-lemon tea HS |
-| **6, 7** | Rotate | Rotate | Rotate |
-
-### 6.5 Environmental & occupational triggers
-
-- **Indoor air**: VOCs/formaldehyde; HEPA in bedroom; humidifier 40–50% RH winter; dehumidify if mould.
-- **Pollutants**: PM2.5 mask outdoor on high-AQI days (KN95/N95).
-- **Smoking, vaping, second-hand smoke, wood-stove smoke** — eliminate.
-- **Occupational**: chemical fumes, organic solvents, dust (silica, flour, isocyanates).
-- **Cold dry air**: scarf over nose/mouth during sub-zero outdoor.
-- **Mouth breathing during sleep** → assess for nasal obstruction; consider mouth tape (3M micropore, Hostage Tape) for adults without sleep apnea.
-- **Personal care**: fragrance-free; phthalate-free.
-- **Travel**: hydration on flights; saline mist; mask in high-density transit.
-
-### 6.6 Cofactor floor
-
-| Cofactor | Why | Target | Food | Supplement | Antagonist |
-|---|---|---|---|---|---|
-| **Vitamin D3 + K2** | Cathelicidin/LL-37, Treg | 4000 IU + 100 µg | sun, fatty fish | Thorne D/K2 | thyroid med 4h, fat with |
-| **Zinc** | mucosa, IFN, RdRp | 10–15 mg maintain; 75 mg pulsed acute ≤7 d | pumpkin seed, oysters | Thorne picolinate | iron, Ca; Cu 8–15:1 |
-| **Copper** | Zn balance | 1–2 mg | sesame, cashew | Pure Encaps | with Zn |
-| **Selenium** | GPX, immune | 100–200 µg | 2 Brazil nuts | Solgar | >400 µg toxic |
-| **Vitamin C** | leukocyte function | 1000 mg BID | amla, citrus | Pure Encaps Buffered | tea 1h |
-| **Magnesium glycinate** | sleep, mast cell | 300–400 mg | seeds, greens | Doctor's Best | split Ca/Mg |
-| **B6 (P-5-P)** | Th1/DAO | 25–50 mg | banana, salmon | Thorne | — |
-| **B12 methyl** | mucosal turnover | 1000 µg | sardines, eggs | Jarrow sublingual | tannins 1h |
-| **Iron** (if ferritin <30) | mucosal | measure | red meat, pumpkin | Solgar Gentle Iron | tea/Ca/Zn 2h; pair vit C |
-| **Omega-3 EPA+DHA** | resolution, mucosal | 1–2 g | sardines | Carlson EPA | — |
-| **Melatonin** (3 mg acute URI window only) | nocturnal immune | 0.3–3 mg HS | tart cherry | NOW, Life Extension | autoimmune caution; pregnancy |
+| Vitamin D | Martineau 2017 — strongest single-nutrient signal for URI prevention. | 25-OH-D 50–80 ng/mL | 2,000–5,000 IU + K2 |
+| Zinc | Wessels 2017 — innate immune cofactor; deficient state common. | Serum zinc 80–120 μg/dL | 15–30 mg picolinate; high-dose lozenge during acute only |
+| Vitamin A | Epithelial integrity + IgA secretion. | Adequate dietary | Cod liver oil 1 tsp 2–3×/week (give D + A together) |
+| Vitamin C | Cochrane Hemilä 2013 — null prevention; small duration. | Adequate dietary; 1–2 g during illness | Whole-food + supplement during illness |
+| Iron / ferritin | Both deficiency AND overload impair immune function. | Ferritin 30–100 ng/mL | Only if <30; bisglycinate + vit C |
+| Omega-3 EPA/DHA | Resolvin/protectin production; membrane fluidity. | ≥500 mg/d | 1–2 g daily |
+| Selenium | Glutathione peroxidase + viral fitness modulation. | 50–70 μg | Brazil nuts 1–2/day OR 100 μg supplement |
+| Vitamin B12 + folate | Immune cell proliferation cofactors. | B12 >400 pg/mL | Methyl-B12 + methylfolate if low |
 
 ## 7. Lifestyle / Mind-Body Anchors
 
-### 7.1 Yoga
+### 7.1 Yoga — respiratory-supportive sequence
 
-| Asana | §2 Mechanism node | Duration | Time |
+| Asana | TL;DR (plain English) | Mechanism node | Duration | Time |
+|---|---|---|---|---|
+| Setu Bandhasana (bridge) | Opens chest + ribcage; improves diaphragmatic excursion. | §2.6 respiratory | 5 min | AM/PM |
+| Bhujangasana (cobra) | Opens chest + lungs; classical respiratory pose. | §2.6 | 5 min | AM |
+| Matsyasana (fish) | Opens throat + chest; supports clearing. | §2.6 | 3 min | PM |
+| Ustrasana (camel) — gentle version | Chest expansion; only when well, not during acute illness. | §2.6 | 3 min | when recovered |
+| Supta Baddha Konasana (reclining bound angle) | Restorative; supports immune recovery. | §2.3 | 10 min | PM |
+| Shavasana (corpse) | Restorative; HPA-immune support. | §2.3 | 10 min | bedtime |
+
+### 7.2 Pranayama — respiratory breathwork
+
+| Technique | TL;DR (plain English) | Mechanism | Duration | Time |
+|---|---|---|---|---|
+| Anulom Vilom (alternate-nostril) | Autonomic balance; nasal-breathing reinforcement; gentle daily. | §2.6 + §2.3 | 10 min | AM |
+| Bhramari (humming) | Nasal nitric oxide production (Lundberg 1996); humming raises NO 15-fold. *(Pramanik 2010)* | §2.6 | 5 min | AM/PM |
+| Sheetali (cooling) | For fever-driven discomfort. | §2.6 | 5 min | as needed |
+| Ujjayi (ocean breath) | Gentle warming + diaphragmatic engagement. | §2.6 | 5 min | AM |
+| Buteyko slow nasal breathing | Cowie 2008 — B+ for asthma overlap; reduces airway hyperresponsiveness. *(Cowie 2008)* | §2.6 | 10–20 min | daily |
+| Wim Hof method (mixed evidence) | Hypoxia-tolerance + cold tolerance; some immune-marker signal Kox 2014 small RCT BUT mixed broader evidence. *(Kox 2014; honest caveats)* | §2.3 (signal mixed) | 10 min, AM only | optional |
+
+**CONTRAINDICATED during acute illness:** Kapalbhati, Bhastrika (over-stimulating); Wim Hof breath-holds in cardiovascular disease, pregnancy, glaucoma.
+
+### 7.3 Meditation — stress + immune-support
+
+> **For you, in plain words.** Daily 10–20 min mindfulness, MBSR, or guided meditation supports HPA-immune balance. Rosenkranz 2013 small RCT signal for MBSR + inflammation markers. Particularly helpful for the recurrent-URI immune-fragile sub-type where chronic stress is a driver. *(Rosenkranz 2013; Black 2016 mindfulness + inflammation)*
+
+### 7.4 Sleep — the load-bearing immune lever
+
+> **For you, in plain words.** Prather 2015 — <6 h sleep = 4.2× cold incidence vs ≥7 h after experimental rhinovirus inoculation. Sleep is the single most-load-bearing behavioural immune lever. See sleep-onset and night-waking sister dossiers. *(Prather 2015; Besedovsky 2019 sleep + immune)*
+
+### 7.5 Nasal-breathing reinforcement
+
+> **For you, in plain words.** Mouth breathing bypasses nasal nitric oxide + filtration + humidification — worsens nasal allergy, increases URI risk, fragments sleep. Tape-the-mouth at night (3M Micropore or specific brands like Hostage Tape), nose-strips for septal-deviation cases, address chronic nasal obstruction. *(Lundberg 1996 nasal NO; Triana 2018 mouth-breathing morbidity)*
+
+### 7.6 Exercise periodization for respiratory health
+
+> **For you, in plain words.** Moderate Zone-2 cardio is immune-protective (Nieman 2019 J-curve — moderate exercise reduces URI risk; very-high-volume training elevates it). HIIT moderate frequency. AVOID intense exercise during fever or active URI. *(Nieman 2019 J-curve; Walsh 2018)*
+
+| Week | Mon | Tue | Wed | Thu | Fri | Sat | Sun |
+|---|---|---|---|---|---|---|---|
+| Standard (well) | Zone-2 AM 30 min | Strength 14:00–17:00 | Zone-2 AM 30 min | Strength 14:00–17:00 | Walk 30 min | Hike or sport AM | Restorative yoga |
+| During acute URI | Rest | Rest / gentle walk | Gentle walk 15 min | Rest | Gentle walk | Rest | Gentle yoga only |
+| Recovery week | Walk only | Walk only | Walk + gentle yoga | Walk | Walk + gentle yoga | Resume Zone-2 cautiously | Restorative |
+
+## 8. Daily Unified Combos
+
+### 8.1 Morning combo (post-breakfast 08:00) — daily prevention
+
+- Vitamin D3 2,000–5,000 IU + K2
+- Omega-3 EPA/DHA 1 g
+- B-complex (P-5-P + methylfolate + methyl-B12)
+- Zinc 15–30 mg picolinate
+- Tulsi tea 1 cup
+
+### 8.2 Midday combo (post-lunch 13:00) — daily prevention
+
+- Vitamin C 500–1,000 mg (food-source preferred)
+- Probiotic (multi-strain — Visbiome, VSL#3 equivalent; Saccharomyces boulardii)
+- Tulsi tea or ginger-honey-lemon
+
+### 8.3 Pre-bed combo (21:00–22:00)
+
+- Magnesium glycinate 400 mg (sleep support — sleep is immune lever)
+- Honey 1–2 tsp if cough (NEVER under 1 yr)
+
+### 8.4 ACUTE URI INTENSIVE (first 7 days of illness)
+
+- **Zinc lozenge 13–24 mg every 2 waking hours** (start <24 h, max 7 days)
+- **Saline nasal irrigation 2×/day** (distilled water only)
+- **Vitamin C 1–2 g 2–3×/day**
+- **Pelargonium sidoides 30 drops 3×/day × 7 days**
+- **Andrographis 60–120 mg andrographolide 2–3×/day**
+- **Elderberry 10–15 ml syrup 3–4×/day**
+- **Honey 1–2 tsp for cough** (NEVER under 1 yr)
+- **2.5–3 L fluids/day**
+- **Rest priority + sleep 8–9 h**
+- **Home rapid test in first 72 h to identify what you have**
+- **N95/KN95/KF94 if around others**
+
+### 8.5 Master 24-Hour Day Plan
+
+| Hour | Action | Why | Conflicts resolved |
 |---|---|---|---|
-| **Bhujangasana** (cobra) | §2.1 chest opening, lung expansion | 5 reps | 07:00 |
-| **Setu Bandhasana** (bridge) | §2.4 + chest | 1 min | 07:00 |
-| **Matsyasana** (fish) | §2.1 lung expansion | 2 min | 07:00 |
-| **Ustrasana** (camel) | §2.1 deep breathing | 1 min | 07:00 |
-| **Surya Namaskar** | §2.3 + §2.4 systemic | 12 rounds | 07:00 |
-| **Sarvangasana** (shoulder stand) | §2.1 + §2.4 lymphatic + thyroid; **skip during acute fever** | 3 min | 07:00 (empty stomach) |
-| **Shavasana** | §2.4 parasympathetic | 10 min | 22:00 |
-
-### 7.2 Pranayama
-
-| Technique | §2 Mechanism node | Duration | Time |
-|---|---|---|---|
-| **Anulom Vilom** | §2.4 HPA + autonomic | 10 min | 06:30 |
-| **Bhramari** (humming) | §2.4 sinus NO + vagal | 5 min | 06:30 + 22:00 |
-| **Kapalbhati** | §2.1 + sinus clearing | 5 min | 06:30 — **contraindicated in HTN, pregnancy, ulcer, acute fever, glaucoma** |
-| **Nadi Shodhana** | §2.4 balance | 10 min | flare days |
-| **Ujjayi** (ocean breath) | §2.1 vagal + warming | 5 min | yoga session |
-| **Bhastrika** | §2.1 lung capacity; **contraindicated HTN, pregnancy, acute fever** | 3 min cautious | 06:30 if tolerated |
-| **Sheetali** (cooling) | acute fever / pitta heat | 5 min | midday |
-
-### 7.3 Meditation
-
-Yoga Nidra HS 30 min; Vipassana AM 20 min; Tibetan Tonglen 10 min PM.
-
-### 7.4 Sleep & circadian
-
-**Sleep is the #1 lever for URI resistance** — sleep <6 h triples susceptibility per non-US cohort studies (German + Japanese sleep-virus inoculation work). Lights-out 22:30; blue-light cutoff 21:00; bedroom 18–20 °C; humidifier 40–50% RH; AM sunlight within 30 min of waking.
-
-### 7.5 Nervous-system reset
-
-Cold-water face splash AM (NOT during acute fever); humming + gargling 2 min BID; 4-7-8 breath; consumer VNS (Nurosym, Sensate) 10 min PM optional.
-
-### 7.6 Exercise periodization
-
-**Weekly** (non-acute): Mon/Wed/Fri Zone 2 cardio 45 min; Tue/Thu strength 45 min; Sat HIIT 20 min or hike; Sun restorative yoga + long walk.
-
-**During acute URI**: **rest, hydrate, sleep**. NO HIIT (acute exercise during viral phase → myocarditis risk + prolongs illness — well documented in non-US sports-medicine literature). Resume Zone 2 gradually 7 d after symptoms resolve (avoid "neck-up rule" oversimplification in post-Covid era).
-
-**Monthly**: Wk 1 + 4 TCM cycling (Yu Ping Feng San pre-season); Wk 3 deload + sleep prioritisation; seasonal millet rotation.
-
-## 8. Daily Unified Combos (≤10 caps/day)
-
-**Combo 1 — Barrier & Antioxidant (08:00):** Quercetin 500 mg + Vitamin C 1000 mg + NAC 600 mg + Tulsi 500 mg. *4 caps.*
-
-**Combo 2 — Immunomodulation (13:00):** Guduchi 500 mg + Vitamin D3 4000 IU + K2 100 µg + Selenium (2 Brazil nuts at snack). *2 caps.*
-
-**Combo 3 — Mucosal & HPA (19:00):** Sitopaladi 3 g with honey + Ashwagandha KSM-66 300 mg + Magnesium glycinate 300 mg. *2 caps + 1 powder.*
-
-**Daily total: 8 caps + 1 powder.** + Tulsi tea 2 cups + 5–10 min sun + AM saline nasal.
-
-**TCM prophylactic cycling (Yu Ping Feng San 6–9 g BID × 6 wk pre-season):** replaces Combo 2 Guduchi during that window.
-
-**ACUTE URI add-on (first 24–48 h of symptom):**
-- Zinc lozenge 13 mg q2–3h × 5 d (max 7 d)
-- Andrographis 400 mg TID × 5 d
-- Elderberry syrup 15 ml BID × 5 d
-- Vit C 3000 mg/day split × 7 d
-- Pelargonium EPs 7630 30 drops TID × 7 d
-- Yin Qiao San 6 g BID × 5 d (Wind-Heat) OR Gui Zhi Tang 6 g BID × 3 d (Wind-Cold)
-- Steam inhalation BID
-- Saline neti BID
-- Honey-ginger-lemon-warm-water 3×/day
-- Bone broth 300 ml/day
-- Sleep ≥9 h
-- **Stop all HIIT + strenuous exercise**
-
-## 8.5 Master 24-Hour Day Plan
-
-| Hour | Action | Why / Conflicts resolved |
-|---|---|---|
-| **06:00** | Wake; warm water + lemon + honey; 5–10 min sunlight | Circadian + mucosal hydration |
-| **06:15** | Saline nasal irrigation + warm-salt gargle + humming 1 min | Mucosal clearing + vagal |
-| **06:30** | Pranayama 15 min (Anulom Vilom + Bhramari) | Vagal + sinus NO |
-| **07:00** | Yoga 25 min (skip inversions during acute fever) | Chest opening |
-| **07:30** | Breakfast (§6.4) + raw local honey 1 tsp | Fat-vehicle for D3 |
-| **08:00** | **Combo 1** (Quercetin + Vit C + NAC + Tulsi) | NAC ≥2h from Cu; Quercetin ≥1h from iron; Vit C aids iron |
-| **09:00** | Tulsi tea | ≥1 h from Combo 1 |
-| **12:30** | Lunch — bitter greens + millet + dal + garlic + ferment | — |
-| **13:00** | **Combo 2** (Guduchi + D3+K2 + 2 Brazil nuts) | D3 with fat meal; Mg cofactor at dinner |
-| **13:30** | 10-min walk | Post-prandial |
-| **14:00** | **Caffeine cut-off** | Sleep |
-| **15:30** | If not acute: Zone 2 outdoor; if acute: rest | — |
-| **17:30** | Infrared sauna 20 min (NOT during fever) + cold immersion 2–3 min | HSP70 |
-| **18:30** | Snack: walnut + tulsi tea | — |
-| **19:00** | Dinner — light, warm, easily digestible | Vata-Kapha balance |
-| **19:30** | **Combo 3** (Sitopaladi + honey + Ashwa + Mg) | Mg PM (Ca AM); Ashwa ≥2h before bed |
-| **20:00** | Optional intranasal PBM 25 min (Vielight Allergy) | Mucosal |
-| **20:30** | Restorative yoga 20 min | Parasympathetic |
-| **21:00** | Blue-light cutoff; humidifier on | Melatonin + mucosa |
-| **21:30** | Steam inhalation 5 min if congested; gargle | Mucolytic |
-| **22:00** | Bhramari 5 + 4-7-8 + Yoga Nidra | Vagal close-out |
-| **22:30** | Bedtime; 18–20 °C; humidifier 40–50% RH | Deep sleep |
-| **02:00–06:00** | Sleep | — |
-
-**If on antibiotic (typically over-prescribed for viral URI)**: probiotic 2h gap; complete prescribed course; consider taper conversation at your own pace with prescriber if not bacterial. **If on inhaler (asthma comorbid)**: continue; protocol works alongside; Andrographis caution if planning fertility; Yu Ping Feng San safe.
+| 06:30 | Wake + 5 min sunlight | Vitamin D photosynthesis + circadian | §2.3 |
+| 07:00 | Anulom Vilom 10 min + Bhramari 5 min | Nasal breathing + nitric oxide | §2.6 |
+| 07:30 | Breakfast — protein + fat + slow carb + greens | Cofactor delivery | — |
+| 08:00 | Morning combo (D3, omega-3, B-vits, zinc, tulsi tea) | Daily immune floor | — |
+| 09:00 | Direct sunlight 15–20 min | Vitamin D synthesis | §2.3 |
+| 09:30 | Saline nasal rinse (if URI active) | Mucociliary clearance | §2.2 |
+| 12:30 | Lunch — vegetables + protein + fermented food | Microbiome + cofactors | — |
+| 13:00 | Midday combo (vit C + probiotic + tulsi) | Daily immune | — |
+| 13:30 | 10-min walk + Zone-2 cardio window if well | Immune J-curve | Not during fever |
+| 14:00 | **Caffeine cut-off** | Sleep protection | Half-life 5–6 h |
+| 16:00 | Strength training (if well) | Muscle + immune support | — |
+| 18:00–18:30 | Dinner — bone broth + protein + slow carb + greens | Recovery | ≥3 h before bed |
+| 19:00 | Alcohol cut-off (or pause during illness) | Sleep + immune | — |
+| 19:30 | Saline nasal rinse (if URI active) + steam inhalation | Mucociliary clearance | §2.2 |
+| 20:00 | Tulsi or ginger-honey-lemon tea | Adaptogen + warming | — |
+| 20:30 | Restorative yoga (Supta Baddha Konasana, Shavasana) | HPA-immune | §2.3 |
+| 21:00 | Screens off + dim lights | Sleep prep | — |
+| 21:00 | Pre-bed: Mg glycinate + honey 1–2 tsp if cough | Sleep + cough | — |
+| 22:00 | Bed; bedroom 18–20°C; HEPA purifier on; humidifier if dry | Immune sleep recovery | — |
+| Every 2 waking hours during acute URI day 1–7 | Zinc lozenge 13–24 mg | <24-h window | Stop ≤7 days |
 
 ## 9. Supplier Ecosystem + Monthly Cost
 
-| Channel | Sources | Brands |
-|---|---|---|
-| Amazon/iHerb | Quercetin, NAC, Vit C, D3+K2, elderberry, mullein, marshmallow | Thorne, NOW, Pure Encaps, Sambucol, Gaia Herbs |
-| Patel Brothers / Apna Bazaar | Tulsi, Sitopaladi, Mahasudarshan, Chyawanprash, ginger, millets | Organic India, Baidyanath, Dabur, Patanjali — **Patel Brothers, 1610 Stoneridge Mall Rd, Pleasanton CA 94588**; **Apna Bazar, 100-04 Queens Blvd, Forest Hills NY** |
-| Chinatown TCM | Yu Ping Feng San, Yin Qiao San, Sang Ju Yin, Ban Lan Gen, Gui Zhi Tang | Plum Flower (Mayway, Oakland), Min Tong — **Sun Sing Pacific, 1205 Stockton St, SF**; **Kamwo Meridian Herbs, 209 Grand St, NYC** |
-| Hamdard Dawakhana | Joshanda, Khamira Banafsha, Laooq Sapistan | Hamdard, Ajmal |
-| IMPCOPS Chennai | Nilavembu, Adathodai, Thalisathi | IMPCOPS, SKM |
-| Men-Tsee-Khang | Agar-31, Garlic-13 | Sowa Rigpa direct |
-| CCRH homeo | Aconitum, Belladonna, Bryonia, Oscillococcinum, Influenzinum | SBL, Schwabe (IN), Boiron (FR) |
-| Schwabe Germany | Umckaloabo Pelargonium | Schwabe direct EU |
-| Whole Foods / Sprouts | Oily fish, raw honey, organic produce | — |
-| Vielight, Coway | PBM, HEPA | One-time |
+### 9.1 Where to buy
 
-**Monthly cost (USD) — non-acute maintenance**
-- Combo 1 (Quercetin + Vit C + NAC + Tulsi): **$40–60**
-- Combo 2 (Guduchi + D3+K2 + Brazil nuts): **$20–30**
-- Combo 3 (Sitopaladi + Ashwagandha + Mg): **$25–40**
-- Cofactor floor (Zn, Cu, Se, Mg, B6, B12): **$25–35**
-- TCM prophylactic (Yu Ping Feng San wks 1 & 4 in season): **$15–25**
-- Diet uplift (ginger, garlic, raw honey, oily fish, amla): **$70–110**
-- **Recurring total: $195–300/month** maintenance
+| Channel | TL;DR (plain English) | What it sources well | Brands | Notes |
+|---|---|---|---|---|
+| Amazon Prime / iHerb | Default channel for everyday supplements. *(direct)* | Vitamin D, zinc, vitamin C, elderberry, andrographis, NAC | Pure Encapsulations, NOW, Thorne, Life Extension, Sambucol | Default |
+| AYUSH-GMP direct | Authentic Indian respiratory formulas. *(AYUSH GMP)* | Sitopaladi, Talisadi, Vasaka, Tulsi, Yashtimadhu, Kanakasava, Sudarshan | Organic India, Himalaya, Baidyanath, Dabur, Patanjali, Kerala Ayurveda | Authentic |
+| Plum Flower / Mayway / Min Tong | Granule-form TCM formulas with traceable supply. *(GMP)* | Yin Qiao San, Sang Ju Yin, Gan Mao Ling, Pi Pa Gao | Plum Flower granules, Nin Jiom Pei Pa Koa | TCM |
+| Chinatown TCM pharmacy | Raw herbs + practitioner formulas for nuanced pattern matching. *(local)* | Custom decoctions, Pi Pa Gao | Kamwo NYC 209 Grand St, Lhasa Karnak Berkeley | Practitioner |
+| Indian grocer | Fresh ingredients + bulk herbs. *(local)* | Fresh tulsi, ginger, turmeric, garlic, methi | Patel Brothers Pleasanton, Apna Bazaar Edison | Fresh |
+| Hamdard / Qarshi / Saif | Established Unani lineages with respiratory formulas. *(Hamdard)* | Joshanda (Joshina), Khamira Banafsha, Sharbat Toot Siyah | Hamdard, Qarshi (Pakistan + India + global), Saif | Unani |
+| IMPCOPS / SKM Siddha | Tamil Siddha tradition specifically strong for viral fever. *(IMPCOPS)* | Nilavembu Kudineer, Adathodai, Karpooradi Thailam | IMPCOPS, SKM Siddha | Siddha |
+| Schwabe / Boiron / SBL | Pelargonium EPs 7630 + homeopathic remedies. *(Schwabe)* | Umckaloabo (Schwabe), Aconite, Belladonna, Bryonia, Phosphorus, Ipecac, Antimonium, Sambucus | Schwabe (German), Boiron (French), SBL (India) | Homeopathy + Pelargonium |
+| HEPA + humidifier sellers | Air-quality devices for prevention + recovery. *(consumer)* | HEPA purifiers, humidifiers, pulse-oximeters, peak-flow meters, rapid tests, masks | IQAir, Coway, Blueair, Levoit, Masimo, Wellue, Lucira, 3M, Powecom | Direct or Amazon |
+| Manuka honey | Specifically for cough + sore throat. *(NZ/AU)* | Manuka honey UMF 10+/15+ | Manuka Health, Comvita | NZ-sourced |
 
-**Acute URI add-on (per episode, 5–7 d)**: zinc lozenge + andrographis + elderberry + pelargonium + Yin Qiao San = **$60–100 per episode**.
+### 9.2 Monthly cost
 
-**One-time devices**
-- HEPA bedroom: $150–600
-- Cool-mist humidifier: $40–80
-- Neti pot: $15–25
-- Peak-flow meter: $20–40
-- Steam inhaler dedicated: $25–50 (or boiling water + towel)
-- Vielight Allergy PBM: $399 (optional)
-- DTC labs baseline + Mo3 + Mo6 + Mo12: **$120–180/round**
+- Daily prevention combo (vit D, omega-3, B-vits, zinc, vit C, probiotic): $40–80/mo
+- ACUTE URI 7-day intensive (zinc lozenges + Pelargonium + andrographis + elderberry + honey + saline supplies): $60–120 per illness episode
+- Tulsi/ginger/lemon/honey/garlic dietary uplift: $30–60/mo
+- TCM cycling (immune-fragile sub-type weeks 1+4): $15–30/mo (Yu Ping Feng San or Gan Mao Ling on hand)
+- **Total monthly prevention: $85–170**; **Per acute URI episode: $60–120**
+- One-time: HEPA purifier $150–1,500; cool-mist humidifier $50–150; home pulse-oximeter $30–250; peak-flow meter $30–250; box of N95/KN95/KF94 $30–100 for 50; home rapid tests $15–80 each (keep 4–8 on hand)
 
-## 10. Interaction Matrix
+## 10. Interaction Matrix + §10.7 Emerging & Adjunctive Therapies
 
-### 10.1 Drug ↔ Supplement (for users ALREADY on conventional therapy — protocol prescribes NONE)
+### 10.1 Supplement × prescription drug
 
-Conventional respiratory drugs you may be on: antibiotics (amoxicillin, azithromycin, doxycycline, fluoroquinolones — often over-prescribed for viral URI), antivirals (oseltamivir, baloxavir, nirmatrelvir/ritonavir for Covid), inhaled bronchodilators (albuterol, formoterol), inhaled corticosteroids (fluticasone, budesonide), montelukast, oral corticosteroid bursts (prednisolone), guaifenesin/dextromethorphan, pseudoephedrine.
-
-| Drug | Supplement | Risk | Mitigation |
+| Supplement | Drug class | Interaction | TL;DR (plain English) |
 |---|---|---|---|
-| **Antibiotic** | Probiotic, Zn | ≥2 h gap; probiotic restores microbiome | gap; continue probiotic post-course |
-| **Fluoroquinolone (cipro/levo)** | Mg, Ca, Zn, Fe, dairy | Chelation → ↓ antibiotic absorption | ≥2 h gap mandatory |
-| **Doxycycline / tetracycline** | Ca, Mg, Fe, Zn, dairy | Chelation | ≥2 h gap |
-| **Oseltamivir (Tamiflu)** | NAC, elderberry, quercetin | No known major interaction; mechanism complementary | OK |
-| **Nirmatrelvir/ritonavir (Paxlovid)** | Quercetin, grapefruit, St John's Wort | Ritonavir is CYP3A4 inhibitor; quercetin mild CYP3A4 inhibitor → additive; SJW induces → ↓ Paxlovid | 4 h gap quercetin; **eliminate grapefruit + SJW** |
-| **Inhaled bronchodilator** | Caffeine (high) | Additive tachycardia | Cap caffeine 200 mg/day |
-| **Inhaled corticosteroid** | None significant | mouth rinse post-inhale for thrush prevention | — |
-| **Montelukast** | Bromelain, Boswellia | Additive (beneficial) | — |
-| **Oral corticosteroid burst** | Mg, Zn, K-depletion | Cortisone depletes | Cofactor floor |
-| **Pseudoephedrine** | Ephedra/Ma Huang (**excluded**), high caffeine | Additive sympathetic | Eliminate ephedra |
-| **Andrographis** | Immunosuppressants (e.g., azathioprine, cyclosporine), anticoagulants | Immune ↑ + bleed | Avoid in immunosuppression; ≥4 h gap anticoagulant; **avoid in fertility planning** |
-| **Pelargonium / Umckaloabo** | Anticoagulants | Mild antiplatelet | Caution if on warfarin/DOAC |
-| **Elderberry** | Immunosuppressants | Theoretical Th1 ↑ | Caution autoimmune |
-| **Licorice (full)** | ACE-i, thiazides, digoxin, K-depleting | Hypokalemia + arrhythmia | Use DGL only; if full licorice essential, max 1 g × 4 wk + K monitor |
-| **Warfarin / DOAC** | Andrographis, Pelargonium, high-dose Garlic, Ginkgo, Bromelain, Vit E >800 IU | Bleed | Consistent vit-K; avoid combos |
-| **Levothyroxine** | Triphala, Ashwagandha, Ca, Fe, soy | T4 binding | Levo 60 min before food/coffee/Ca/Mg |
-| **SSRIs** | Ashwagandha, SJW (**excluded**) | CNS / serotonin syndrome | SJW out; Ashwa ≥3 h gap |
-| **MAOI** | Pseudoephedrine, tyramine foods | HTN crisis | Eliminate |
+| Vitamin C high-dose | Iron chelators (deferoxamine) | Enhances iron absorption | Use cautiously if iron overload (hemochromatosis). *(monograph caution)* |
+| Zinc high-dose | Quinolones, tetracyclines, levothyroxine | Chelation | ≥2 h gap; ≥4 h from levothyroxine. *(Stoffel 2017)* |
+| Andrographis | Anticoagulants, immunosuppressants | Possible additive | Caution if on warfarin; avoid pregnancy. *(Coon 2004)* |
+| Elderberry | Immunosuppressants | Theoretical immune stimulation | Caution autoimmune + immunosuppressed (theoretical). *(monograph caution)* |
+| Echinacea (excluded) | Immunosuppressants | Theoretical immune stimulation | EXCLUDED from active protocol per Cochrane Karsch-Völk 2014. |
+| NAC | Nitroglycerin, ACE-inhibitors | Mild additive | Monitor BP. *(Cazzola 2015)* |
+| Yashtimadhu / Glycyrrhiza | Diuretics, antihypertensives, digoxin | Pseudohyperaldosteronism (chronic) | DGL form preferred; limit to 2 weeks if not DGL. *(EMA Liquorice monograph)* |
+| Vitamin D | Thiazides, digoxin | Possible hypercalcemia (rare) | Monitor calcium if on these. *(monograph caution)* |
+| Honey | Diabetes meds | Glycemic load | Adjust if diabetic. *(general caution)* |
+| Ma Huang / Ephedra (excluded) | Stimulants, antidepressants, BP meds | CV stimulant | EXCLUDED — illegal/restricted many jurisdictions. *(EMA + TGA restrictions)* |
+| Oseltamivir (Tamiflu — Rx §10.7.3) | — | — | Clinic-route only; 48-h window. *(Jefferson 2014)* |
+| Paxlovid (nirmatrelvir-ritonavir — Rx §10.7.3) | Multiple CYP3A4 interactions | Major | Clinic-route only; many drug interactions to screen. *(EPIC-HR Hammond 2022)* |
+| Montelukast (Singulair — Rx §10.7.3) | — | — | Neuropsychiatric boxed warning; clinic-route only. *(FDA/EMA labelling 2020)* |
 
-### 10.2 Drug ↔ Food
+### 10.2 Supplement × supplement
 
-| Drug | Food | Mechanism | Action |
+- Zinc + copper: long-term high-dose zinc depletes copper → 1–2 mg copper/day if zinc >30 mg/day chronic
+- Zinc + iron: divalent competition → ≥2 h gap
+- Vitamin C + iron: synergy (boosts absorption) → take together for iron correction
+- NAC + multiple antioxidants: complementary, safe combination
+- Multiple bitter-herbs (andrographis + Pelargonium): GI tolerance — start single, add
+
+### 10.3 Food × supplement
+
+- Zinc lozenge + dairy/citrus: don't combine within 30 min (alters zinc availability in mouth)
+- Vitamin D + fat: take with meal containing fat for absorption
+- Vitamin C + iron: combine for iron correction
+- Garlic + dairy: traditional concern of taste/digestion; allicin formation needs raw crushed + 10 min wait
+- Honey + cooking heat: heat above 40°C destroys some bioactive components; add to warm not hot
+
+### 10.4 Caffeine × illness
+
+> **For you, in plain words.** Caffeine masks fatigue your body uses to enforce rest. Cut caffeine during acute illness — let the rest signal reach you. Tea (lower caffeine + theophylline + L-theanine) is a gentler bridge. *(general clinical practice)*
+
+### 10.5 Alcohol × illness
+
+> **For you, in plain words.** Alcohol suppresses immune function (Sarkar 2015) + dehydrates + disrupts sleep — all three things you need MORE of during illness. Pause completely during acute URI. *(Sarkar 2015)*
+
+### 10.6 Exercise × illness
+
+> **For you, in plain words.** Nieman J-curve — moderate exercise reduces URI risk; very-high-volume training elevates it. Rule: above the neck (sniffles, sore throat) → gentle exercise OK; below the neck (chest, fever, body aches) → rest. *(Nieman 2019)*
+
+### 10.7 Emerging & adjunctive therapies (mandatory H2)
+
+#### 10.7.1 Home-usable devices & home-orderable tests
+
+| Device/test | TL;DR (plain English) | Use | Grade |
 |---|---|---|---|
-| **Antibiotics (cipro, tetra)** | Dairy, Ca | Chelation | ≥2 h gap |
-| **Macrolides (azithro)** | Grapefruit | CYP3A4 | Avoid |
-| **Oseltamivir** | None significant | — | — |
-| **Nirmatrelvir/ritonavir** | Grapefruit, SJW | CYP3A4 | Avoid grapefruit; eliminate SJW |
-| **MAOI (rare)** | Tyramine (aged cheese, fermented) | HTN crisis | Avoid |
-| **Warfarin** | Vit-K greens, cranberry | INR shift | Consistent |
-| **Levothyroxine** | Coffee, soy, dairy, fibre, Ca | T4 block | Levo 60 min before |
-| **Methotrexate** | NSAIDs, alcohol | MTX toxicity, GI bleed, LFT | Avoid combo |
-| **Antibiotic burden** | Alcohol | GI + hepatic | Avoid |
-| **Pseudoephedrine** | MAOI foods, high caffeine | HTN | Avoid |
+| Home pulse-oximeter | The single load-bearing severity-triage device — SpO2 <94% triggers escalation. *(Berry 2017)* | Daily during illness | A (triage) |
+| Home rapid test (COVID + flu A/B + strep) | First-72-hours identification gates antiviral decision. *(McGee 2023)* | First 72 h of symptoms | B–A |
+| Peak-flow meter | Monitor airway during URI if asthma overlap; <60% personal best = ER. *(asthma action plan)* | URI + asthma | A (asthma overlap) |
+| HEPA air purifier | Reduces airborne particulate + viral load. *(Allen 2015)* | Continuous in bedroom + main rooms | B |
+| N95 / KN95 / KF94 respirator | Reduces transmission both ways. *(Brody 2021)* | High-risk exposure or when sick | A |
+| Cool-mist humidifier (with safety) | Soothes airway; mold growth risk if neglected. | Nightly during illness with distilled water + weekly clean | B (with safety) |
+| Saline nasal irrigation kit | Cochrane positive for symptom relief. *(Hayward 2012)* | 2×/day during illness | A (symptoms) |
+| Steam inhalation kettle | Symptomatic relief congestion. | 2–3×/day during illness | C |
+| Salt-water gargle | Satomura 2005 small RCT signal for URI prevention. *(Satomura 2005)* | Daily prevention + sore throat | B–C |
+| Manuka honey UMF 10+ | Specifically for cough + sore throat. | As needed for cough | B |
+| Tape-the-mouth at night | Nasal-breathing reinforcement; Triana 2018 mouth-breathing morbidity. *(Triana 2018)* | Nightly | B |
 
-### 10.3 Supplement ↔ Food
+#### 10.7.2 Behavioural therapies — adjunctive levers
 
-| Supplement | Food / Drink | Mechanism | Action |
+| Therapy | TL;DR (plain English) | Evidence | Self-administered access |
 |---|---|---|---|
-| **Andrographis** | Bitter very strong taste — eat post-meal | Tolerability | Post-meal |
-| **Elderberry syrup** | Diabetic users | Sugar load | Choose low-sugar formulations |
-| **Pelargonium** | None significant | — | — |
-| **Quercetin** | Iron, tea, copper | Chelation | ≥1–2 h |
-| **Zinc lozenge** | Empty mouth, no food/drink 30 min | Direct mucosal | — |
-| **Vit C** | Iron-rich food | Synergy | Together |
-| **Vit D3** | Low-fat | Micelle | With fat |
-| **Vit D3 + Mg** | — | Cofactor | Pair AM |
-| **NAC** | High-Cu (oysters) | Sulphur chelates Cu | ≥2 h |
-| **Mullein, Marshmallow, Slippery Elm** | Other medications/supplements | Absorbs them | ≥1 h gap |
-| **Marshmallow root** | Hot water | Heat denatures mucilage | **Cold infusion only** |
-| **Honey** | Heat >40 °C | Enzyme denaturation; classical Ayurveda warns of *ama* | Raw, never cooked |
-| **Honey + warm (not hot) water** | — | Vehicle | OK |
-| **Probiotic** | Hot food/drink | Kills viable bacteria | Cool/room temp |
-| **Sitopaladi (sugar base)** | Diabetic | Glycaemic | Sugar-free if available |
-| **Ashwagandha** | Alcohol | CNS depression | Eliminate |
-| **Melatonin (acute window)** | Caffeine | Antagonism | None after 14:00 |
-| **Licorice full** | High-Na food | BP | DGL preferred; if full, low-Na + K monitor |
-| **Garlic raw** | Anticoagulant + post-surgery | Bleed | Caution if on anticoagulant |
+| **Buteyko method** | Cowie 2008 Australian RCT B+ for asthma overlap; reduces reliever use + airway hyperresponsiveness. *(Cowie 2008)* | B (asthma) | Buteyko Clinic Method app, Patrick McKeown book, Samozdrav device |
+| **Nasal-breathing reinforcement + mouth-taping** | Lundberg 1996 nasal NO biology + Triana 2018 mouth-breathing morbidity. *(Lundberg 1996; Triana 2018)* | B | 3M Micropore tape, Hostage Tape, books (McKeown) |
+| **MBSR / mindfulness for immune-stress** | Rosenkranz 2013 small RCT signal MBSR + inflammation markers. *(Rosenkranz 2013)* | B | Palouse Mindfulness (free), MBSR app, Insight Timer |
+| **Wim Hof method (HONEST)** | Kox 2014 small RCT showed reduced inflammatory markers; broader evidence mixed; cold-tolerance and breath-holds NOT for cardiovascular disease/pregnancy/glaucoma. *(Kox 2014)* | C–B (mixed; honest caveats) | Wim Hof free intro, app — with explicit contraindication awareness |
+| **Sleep optimisation** | Prather 2015 — sleep is the most-load-bearing behavioural immune lever. *(Prather 2015)* | A | See sleep-onset + night-waking sister dossiers |
+| **Stress reduction (HPA-immune)** | Chronic stress suppresses sIgA + impairs antiviral response. *(Cohen 2007)* | B | See anxiety-like-calm + burnout-recovery dossiers |
+| **Salt-water gargle daily preventive** | Satomura 2005 Japanese RCT small signal for URI prevention. *(Satomura 2005)* | B–C | 1 tsp salt in 240 ml warm water 2–3×/day |
+| **Hand hygiene + face-mask habits** | Cochrane Jefferson 2020 — physical interventions reduce URI transmission. *(Cochrane Jefferson 2020)* | A | Soap + water + alcohol gel + N95/KN95/KF94 |
 
-### 10.4 Supplement ↔ Supplement
+#### 10.7.3 Clinic-route options — if home protocol plateaus or red-flag
 
-| A | B | Mechanism | Action |
+> **For you, in plain words.** Here are clinic options NicheCore does NOT recommend but presents honestly. Some have genuine narrow indications (oseltamivir for high-risk influenza within 48 h; paxlovid for high-risk COVID within 5 days). Antibiotics for viral URI is NOT one of them — global stewardship data is firm.
+
+| Option | TL;DR (plain English) | What it is | When considered |
 |---|---|---|---|
-| **Zinc ↔ Copper** | — | Long-term Zn → Cu depletion | 8–15:1; if pulsing Zn 75 mg × 5 d, Cu 2 mg/day; rest 14 d before re-pulse |
-| **Zn ↔ Fe / Ca** | — | DMT1 | ≥2 h |
-| **Vit D ↔ Mg** | — | Cofactor | Pair |
-| **Vit A ↔ Vit D** | high-dose | Receptor | Balance |
-| **NAC ↔ Nitroglycerin** (if on it) | — | Severe hypotension | Avoid combo |
-| **NAC ↔ Cu** | — | Chelation | ≥2 h |
-| **Quercetin ↔ Iron / Cu** | — | Chelation | ≥2 h |
-| **Andrographis ↔ Tinospora / Echinacea** | — | Additive immunomodulation | Choose 1 primary; max 2 stacked |
-| **Andrographis ↔ Elderberry** | — | Synergistic acute antiviral | OK acute 5 d |
-| **Pelargonium ↔ Anticoagulants** | — | Antiplatelet additive | Caution |
-| **Licorice full ↔ K-depleting** | — | Hypokalemia | DGL only |
-| **Melatonin ↔ Autoimmune Th1 herbs (Echinacea high-dose)** | — | Th1 over-shift | Caution |
-| **SJW ↔ everything** | — | CYP3A4 | **Excluded** |
-| **Bromelain ↔ Anticoagulants, NSAIDs** | — | Bleed | Caution |
-| **Adaptogen stacking** | Ashwa + Rhodiola + Tulsi | HPA blunting | 1 primary + 1 supportive |
+| Oseltamivir (Tamiflu) | Cochrane Heneghan 2014 — modest symptom-duration benefit in flu IF started <48 h; controversy on actual hospitalisation reduction. *(Cochrane Heneghan 2014; Jefferson 2014)* | Neuraminidase inhibitor | High-risk + flu confirmed + within 48 h |
+| Baloxavir (Xofluza) | Single-dose oral; reduced viral shedding; resistance emergence concern. *(Hayden 2018)* | Cap-dependent endonuclease inhibitor | High-risk + flu confirmed + within 48 h; alternative to Tamiflu |
+| Paxlovid (nirmatrelvir-ritonavir) | EPIC-HR Hammond 2022 — reduced hospitalisation in high-risk COVID within 5 days of symptom onset; many drug interactions to screen. *(Hammond 2022)* | Protease inhibitor + ritonavir | High-risk + COVID confirmed + within 5 days |
+| Prescription nasal corticosteroid (fluticasone, budesonide, mometasone) | Most are OTC in major markets now; Rx in some non-US markets; A-grade for allergic rhinitis (see immune-allergy-comfort dossier). | Intranasal corticosteroid | If chronic allergic rhinitis overlap |
+| Montelukast (Singulair) | Leukotriene receptor antagonist; **boxed warning for neuropsychiatric effects** (FDA/EMA 2020) — depression, agitation, suicidal ideation. Used cautiously. | LTRA | If asthma overlap + careful neuropsych monitoring |
+| Antibiotics (amoxicillin, doxycycline, azithromycin) | NOT for viral URI; reserved for confirmed bacterial sinusitis (>10 days unimproving with double-sickening), strep pharyngitis, bacterial pneumonia. *(van der Velden 2020; Cochrane Smith 2017)* | Antibiotic | Only for confirmed bacterial |
+| Inhaled bronchodilator (salbutamol/albuterol) | For asthma overlap exacerbation; rescue inhaler per asthma action plan. *(Reddel asthma action plan)* | β2-agonist inhaler | Asthma overlap |
+| Inhaled corticosteroid (ICS) | For asthma overlap maintenance per asthma action plan. | ICS inhaler | Asthma overlap maintenance |
+| Formal lung-function workup (spirometry, FeNO, chest X-ray, CT) | For persistent cough >3 weeks, hemoptysis, weight loss, abnormal exam. | Pulmonology workup | Red-flag pattern per §10.8 |
+| Vaccination (flu, COVID, RSV) | Region-specific honest framing — see §5.4. | Vaccines | Per region, honest individual decision |
 
-### 10.5 Exercise / Sleep / Caffeine
+### 10.8 Red-flag escalation
 
-- **Caffeine cutoff 14:00**; cap 200 mg/day if on inhaled bronchodilator.
-- **Alcohol** — eliminate during acute URI; reduce in seasonal periods.
-- **Ashwagandha** — PM; shift AM if vivid dreams.
-- **Magnesium glycinate** — PM.
-- **Rhodiola** — AM only.
-- **Melatonin** (acute URI window) — 0.3–3 mg, 30–60 min before sleep; not chronic.
-- **Zinc lozenge** — empty mouth, no food/drink 30 min before or after.
-- **Probiotic** — cool first-meal AM; ≥2 h antibiotic.
-- **Acute URI = sleep + rest**, NO HIIT (myocarditis risk).
-- **Sauna + acute fever** — never combine.
-- **Inverted yoga + sinus congestion / acute fever** — skip.
+> **For you, in plain words.** **Stop the home protocol and seek immediate clinical care** if: (1) SpO2 <94% on home oximeter relative to your baseline; (2) severe shortness of breath, can't speak full sentences, accessory-muscle use; (3) chest pain (cardiac differential mandatory); (4) hemoptysis (blood with cough); (5) persistent cough >3 weeks unresponsive — workup including chest X-ray + spirometry + GERD + ACE-inhibitor review + pertussis + TB if risk; (6) weight loss + night sweats + chronic cough (TB / malignancy triad); (7) URI in immunocompromised person (transplant, biologic, chemo, advanced HIV); (8) high fever >39.5°C >3 days; (9) altered mental status / extreme lethargy; (10) infant <3 months with fever; (11) asthma flare with peak flow <60% personal best, can't speak full sentences → ER + reliever; (12) suspected meningitis (severe headache + neck stiffness + photophobia + fever); (13) suspected sepsis (hypotension + tachycardia + altered mental status + fever or hypothermia). Driving safety + fitness-for-work are honest considerations during severe illness.
 
-### 10.6 Strictly Avoid — specific to respiratory pathology
+## 11. Self-Administered Clinical Scoring
 
-- **Antibiotic abuse for viral URI** — microbiome injury; resistance.
-- **Ma Huang / Ephedra** — over-sympathomimetic.
-- **Full licorice** in HTN, hypokalemia, pregnancy, renal disease.
-- **Andrographis** in pregnancy + fertility planning + immunosuppression.
-- **Pelargonium** + anticoagulants without caution.
-- **Cough syrups with codeine / dextromethorphan abuse**.
-- **Smoking / vaping / second-hand smoke** — direct ciliary injury.
-- **Acute heavy exercise during viral phase** — myocarditis risk.
-- **Cold drinks during cough** (Vata-Kapha).
-- **Kapalbhati / Bhastrika** in HTN, pregnancy, acute fever, glaucoma.
-- **Sauna + alcohol** — never.
-- **St John's Wort + Paxlovid + SSRI + warfarin** — multiple class interactions.
+### 11.1 The four-instrument home assessment
 
-## 11. Clinical Scoring + Comorbidity Screening
+> **For you, in plain words.** Four tools — WURSS-21 daily during illness, Jackson cold score, symptom + duration tracker, home SpO2 + peak flow if relevant. *(Barrett 2009 WURSS; Jackson 1958 cold score)*
 
-### 11.0 Self-administered scoring — WURSS-21 + Jackson + PEFR + cough VAS
+### 11.2 WURSS-21 (Wisconsin Upper Respiratory Symptom Survey)
 
-**WURSS-21 (Wisconsin Upper Respiratory Symptom Survey)** — self-rated 21 items during acute URI; track daily through episode; non-US validated.
+> **For you, in plain words.** 21-item self-rated illness-severity scale validated for URI. Score daily during illness; tracks duration + severity + functional impact. Free academic PDF available. *(Barrett 2009)*
 
-**Jackson cold score** — 8 symptoms × 0–3, self-rated.
+### 11.3 Jackson cold-symptom score
 
-**Peak Expiratory Flow Rate (PEFR)** — home meter (Mini-Wright); 3× AM + PM.
+> **For you, in plain words.** 8-symptom severity rating (sneezing, runny nose, congestion, cough, sore throat, headache, malaise, chilliness); each 0–3 scale; tracks daily severity. *(Jackson 1958)*
 
-**Cough VAS** — 0–10 self-rated; track per episode.
+### 11.4 Symptom + duration tracker
 
-**RQLQ for overlap allergic rhinitis** (see allergy dossier).
+> **For you, in plain words.** Date of first symptom + each daily symptom + supplement + zinc-lozenge timing + sleep hours + SpO2 reading. Pattern recognition over multiple URI episodes shows YOUR personal response curves.
 
-**Cadence:** maintenance — quarterly TNSS + PEFR; acute — daily until resolution + 7 d.
+### 11.5 Home SpO2 + peak flow if relevant
 
-### 11.5 Autoimmune & Comorbidity — DTC labs
+> **For you, in plain words.** Establish your personal baseline when WELL. During illness, deviation triggers thresholds (SpO2 <94% or peak flow <60% personal best = ER). *(Berry 2017; asthma action plan)*
 
-Recurrent / severe URI cohorts: low vit D, low Zn, low B12, low ferritin, autoimmune thyroid, smoker history, GERD-cough overlap, ABPA in mould-sensitive, sleep apnea.
+## 12. Comorbidity Screen
 
-| Comorbidity | DTC test | Provider |
-|---|---|---|
-| Vit D | 25-OH-D | Thriva, LetsGetChecked, Cerascreen |
-| B12 + folate + ferritin | MMA, holoTC, RBC folate, ferritin | Thriva |
-| Zn / Cu / Se | RBC trace minerals | Walk-In Lab |
-| Autoimmune thyroid | TSH + fT4 + anti-TPO + anti-Tg | LetsGetChecked |
-| Specific IgE if recurrent + atopy | ImmunoCAP allergen panel | Thriva, Cerascreen |
-| hs-CRP + CBC | inflammation | Walk-In Lab |
-| Sleep apnea screen (Epworth + home oximetry) | self-administered | Lookee, Wellue oximeter |
-| GERD screen (GerdQ self-rated) | — | — |
-| Gut microbiome | 16S/shotgun | Thryve, Viome |
-| Mould (if recurrent) | ERMI / urinary mycotoxin | Mycometrics, Great Plains |
+| Comorbidity | TL;DR (plain English) | Home test | Action |
+|---|---|---|---|
+| Low vitamin D | Single largest single-nutrient signal for URI risk. *(Martineau 2017)* | LetsGetChecked, Thriva | 2,000–5,000 IU/d + K2 |
+| Low zinc | Wessels 2017 — innate immune cofactor; deficient common. | Serum zinc DTC | 15–30 mg picolinate; lozenge during acute |
+| Low ferritin | Both deficiency AND overload impair immune. | DTC ferritin | Bisglycinate if <30 |
+| Autoimmune thyroid | TSH + free T3/T4 + TPO — thyroid disrupts immune. | Thriva, LetsGetChecked | Address before recurrent-URI workup |
+| Allergic rhinitis overlap | Worsens URI severity + duration. | TNSS self-rate | See immune-allergy-comfort dossier |
+| Asthma tendency | Peak-flow + history; URI triggers asthma flare. | Peak-flow meter | Asthma action plan |
+| GERD cough overlap | Chronic cough often GERD-mediated. | Symptom diary | See reflux-support dossier |
+| OSA | Snore + unrefreshed + URI cough → screen STOP-BANG + home oximetry. *(Chung 2008)* | STOP-BANG; Wellue O2Ring | See night-waking dossier |
+| Smoker / vape history | Recurrent bronchitis + impaired ciliary clearance. | Self-audit | Cessation per Cochrane Stead |
+| Post-viral syndrome | Lingering fatigue + brain fog + breathlessness post-URI. | Symptom log | Pacing + gradual rehabilitation; see brain-fog-focus + daily-energy-fatigue |
+| Recurrent infections / immunodeficiency suspicion | >4 URI/year or unusually severe → immunoglobulin + IgG/IgA/IgM + complement workup. | Clinical | Clinic-route immunology workup §10.7.3 |
 
-## 12. Implementation Timeline (12 months)
+## 13. 12-Month Timeline + §13.7 Evidence-Tier Comparison
 
-- **Weeks 1–4 — Adaptation.** Cofactor floor + Combo 1/2/3 + diet. Baseline DTC + WURSS for any episode. Mild bloating, B-vit dark urine.
-- **Weeks 5–8 — Stabilisation.** Pre-season Yu Ping Feng San (6 wk before peak). Wk 8 hs-CRP, vit D, Zn check.
-- **Weeks 9–12 — Clinical shift.** If URI hits, duration ↓ 1.5–2 d vs prior winters (Indian + European cohort signal). Mo3 DTC.
-- **Months 4–6 — Consolidation.** Antibiotic-free track-record reinforced. Mo6 DTC.
-- **Months 6–12 — Long-term.** TCM cycling pre each season; quarterly WURSS over episodes; annual DTC at Mo12. Expected: **URI episode count ↓ 30–50%, duration ↓ 30%, antibiotic use ↓ 70–90%** in adherent users (Indian AYUSH + European integrative cohorts).
+### 13.1 Weeks 0–4 — measure baseline + build foundation
 
-**No physician check-in is mandatory.** If you keep a physician informed, your call.
+> **For you, in plain words.** DTC vitamin D + zinc + ferritin + thyroid. Establish home SpO2 baseline. Stock the "first 72 hours" kit (zinc lozenges, saline rinse, Pelargonium, andrographis, elderberry, honey, home rapid tests, N95/KN95/KF94, HEPA purifier). Correct any deficiencies. Sleep + Mediterranean-style nutrition + daily tulsi tea + 2 L water. *(Martineau 2017; Wessels 2017)*
 
-## 13. Illustrative Case Composite
+### 13.2 Weeks 4–12 — install daily prevention floor
 
-> Composite — not a real patient.
+> **For you, in plain words.** Daily vitamin D 2,000–5,000 IU + K2 + zinc 15–30 mg + omega-3 + B-vits + vit C food-source. Daily Anulom Vilom + Bhramari + nasal-breathing reinforcement. Sleep priority. HEPA purifier in bedroom. Cessation if smoking/vaping (single highest-leverage intervention). Buteyko if asthma overlap. *(Martineau 2017; Prather 2015; Cochrane Stead 2012)*
 
-**Priya, 32, teacher, Boston.** 5 URI episodes/year previous 3 winters; each → azithromycin course (over-prescribed); chronic mild congestion + post-viral cough lasting 4 weeks each time; vit D 16 ng/mL; ferritin 22; sleep 6 h; smoked 2 yr (quit 5 yr ago).
+### 13.3 At any URI episode — execute 72-hour intensive
 
-§8.5 protocol: full cofactor floor (D3+K2 4000 IU, Zn 15 mg, B12 1000 µg sublingual, gentle iron 25 mg with Vit C, omega-3); Combos 1/2/3; Yu Ping Feng San 6 wk Sep–Oct pre-flu-season; HEPA + humidifier 45% RH; mouth-tape after sleep-apnea screen negative; saline neti AM; Bhramari + Yoga Nidra. Mahasudarshan 1 g TID at any fever onset; Andrographis + elderberry + Yin Qiao San acute kit kept at home.
+> **For you, in plain words.** First throat-tickle = zinc lozenge + saline rinse + Pelargonium + elderberry + andrographis + 2.5–3 L water + rest + home rapid test within 72 h + N95/KN95/KF94 if around others. If flu confirmed + high-risk + <48 h → consider antivirals per §10.7.3. *(Cochrane Singh 2013; Tiralongo 2016; Cochrane Heneghan 2014)*
 
-- **Wk 4:** sleep 23:00 → 7.5 h; vit D 28; ferritin 38.
-- **Wk 12:** 1 URI episode in 12 wk vs prior 2 → duration 4 d instead of 8 d; no antibiotic; cough resolved Wk 2 with NAC + mullein + steam.
-- **Mo 6:** 2 URI episodes; mild; no antibiotic; vit D 52; ferritin 65.
-- **Mo 12:** 2 URI episodes in 12 mo vs prior 5; both <5 d; no antibiotic since starting; vit D 64; PEFR best up 12%; cough VAS in episodes ≤4/10.
+### 13.4 Recurrent URI pattern (>4 episodes/year) — months 3–12
 
-## 13.5 Patient-Facing Primer
+> **For you, in plain words.** If still recurrent — Yu Ping Feng San preventive (TCM immune-barrier formula; weeks 1+4 of each month — see immune-allergy-comfort dossier). Re-assess vitamin D, ferritin, zinc, sleep, stress, dental health, OSA. Consider immunology workup per §10.7.3 if very recurrent. *(Chinese Pharmacopoeia 2020 Yu Ping Feng San; Cochrane Karsch-Völk 2014 for echinacea null)*
 
-Seasonal coughs and colds are not "just bad luck". Inside your body, four things shape how often you get sick and how long it lasts: (1) the wet, sticky barrier inside your nose, throat and lungs (mucus, antibodies, ciliary hairs) — when this layer is thin or dry, viruses get a foothold; (2) the viruses themselves can be slowed at entry by quercetin, elderberry, zinc and andrographis; (3) the alarm system (interferon-alpha, NK cells) only works properly when vitamin D, zinc and selenium are at the right level; and (4) your sleep and stress level govern how strong the night-time immune watchman is.
+### 13.5 Months 6–12 — consolidate
 
-This protocol thickens the barrier (vitamin D for cathelicidin, NAC mucolytic, mullein/marshmallow/slippery elm, steam, saline neti), blocks viral entry early (zinc lozenge + quercetin + elderberry + andrographis + pelargonium at first symptom), calibrates the alarm (vitamin D 50–70 ng/mL, zinc 15 mg floor + 75 mg pulsed acute, selenium 100–200 µg, melatonin 0.3–3 mg only during acute window), and rebuilds night-time immunity (sleep ≥7 h, Ashwagandha, Yoga Nidra, blue-light cutoff). Plus classical Ayurvedic Sitopaladi + Chyawanprash, TCM Yu Ping Feng San pre-season, Unani Joshanda, Siddha Nilavembu Kudineer. **No antibiotic. No clinic visit. No hospital. No prescription.**
+> **For you, in plain words.** Daily floor + acute kit + tracking. Most users see fewer + shorter URI episodes by 12 months. Sleep + nutrition + nasal-breathing become identity, not protocol.
 
-By month 3 — pre-loaded for the season — most users see URI episodes shorter and milder. By month 12 — episodes 30–50% fewer; antibiotic use down 70–90%. You are sovereign over your body. If you keep a physician informed, that is your personal decision.
+### 13.6 Maintenance forever
 
-## 14. Independent Healing Paradigm
+> **For you, in plain words.** Year-round vitamin D + zinc + sleep + nasal-breathing + HEPA purifier + 72-h kit always stocked + masks during peak seasons + honest vaccination decisions per region.
 
-This protocol diverges from the antibiotic-everything-suspicious mainstream. Acute viral URI is treated as a self-limited barrier-versus-virus event that responds dramatically to early multi-mechanism load (Zn + andrographis + elderberry + pelargonium + quercetin + steam + sleep) and to seasonal pre-loading (Yu Ping Feng San, Chyawanprash, vit D, Zn, sleep, AM sun). Antibiotics are reserved for genuine bacterial complications — and even then, the user decides.
+### 13.7 Honest evidence-tier comparison (mandatory)
 
-**Sovereignty ethos.** **No prescription. No antibiotic abuse. No clinic. No hospital. No surgery.** Evidence: Grade A for vit D, NAC, andrographis, pelargonium; Grade B for quercetin, zinc lozenges, elderberry, Yu Ping Feng San, Tulsi, Guduchi, marshmallow, Bresol; Grade C for licorice; Grade T for Unani/Siddha/Tibetan/homeopathy.
+| Approach | Tier | Plain-words verdict (≤25 words) | Where it fits in YOUR protocol |
+|---|---|---|---|
+| Zinc lozenges (acetate/gluconate) <24 h | B | Cochrane Singh 2013 — duration cut ≈33% IF within 24 h; not preventive. | Cornerstone — first 24 h intensive |
+| Saline nasal irrigation | A (symptom relief) | Hayward 2012 + Šlapak 2008 — symptom-reduction signal; distilled water only. | Cornerstone — daily during illness |
+| Pelargonium sidoides (Umckaloabo) | B+ | Cochrane Timmer 2013 — B+ for acute bronchitis, common cold, sinusitis. | Cornerstone — 7-day acute course |
+| Andrographis paniculata | B+ | Cochrane Hu 2017 — B+ for URI symptom-reduction; bitter. | Cornerstone — acute course |
+| Elderberry (Sambucus nigra) | B | Tiralongo 2016 + Hawkins 2019 — modest duration-reduction signal. | Layer — acute course |
+| Vitamin D3 + K2 | A (if deficient) / B (overall) | Martineau 2017 IPD meta — moderate URI-reduction if D deficient at baseline. | Cornerstone — year-round |
+| Vitamin C (high-dose) | D (prevention) / C (duration) | Cochrane Hemilä 2013 — null prevention general population; small duration. | Acute course only; not preventive |
+| Honey (>1 yr children) | A (children's nocturnal cough) | Cochrane Oduwole 2018 — A-grade for nocturnal cough; NEVER <1 yr (botulism). | Cough symptom layer (>1 yr) |
+| Ivy leaf (Prospan Hedera helix) | B | Holzinger 2011 review — B-grade for productive cough + mucus clearance. | Layer for productive cough |
+| N-acetylcysteine (NAC) | B | Stey 2000; Cazzola 2015 — mucolytic + glutathione precursor. | Layer for productive cough |
+| Home pulse-oximeter | A (triage) | The load-bearing severity-triage device — SpO2 <94% triggers escalation. | Cornerstone — daily during illness |
+| Home rapid test (COVID + flu A/B) | B–A | First-72-hours identification gates 48-h antiviral window decision. | Cornerstone — first 72 h |
+| HEPA air purifier | B | Allen 2015 — reduces airborne particulate + viral load. | Cornerstone — year-round |
+| N95 / KN95 / KF94 respirator | A (transmission reduction) | Reduces transmission both ways; protects high-risk. | Layer — peak season + when sick |
+| Cool-mist humidifier (with safety) | B (with safety) | Soothes airway BUT mold risk if neglected; distilled water + weekly clean. | Layer — nightly during dry winter illness |
+| Steam inhalation kettle | C | Symptomatic relief; caution scalding. | Layer — symptom comfort |
+| Salt-water gargle | B–C | Satomura 2005 Japanese RCT small signal for URI prevention. | Daily prevention layer |
+| Manuka honey UMF 10+ | B | Demulcent + antimicrobial; specifically for sore throat. | Layer for sore throat |
+| Tape-the-mouth at night | B | Lundberg 1996 nasal NO; Triana 2018 mouth-breathing morbidity. | Layer — nightly |
+| Buteyko method | B (asthma) | Cowie 2008 — B+ for asthma overlap; reduces reliever use. | Cornerstone for asthma-overlap sub-type |
+| Wim Hof method (HONEST) | C–B (mixed) | Kox 2014 small immune signal; broader evidence mixed; contraindications real. | Optional with caveats — not core |
+| MBSR for immune-stress | B | Rosenkranz 2013 — small inflammation-marker signal. | Layer for recurrent-URI / immune-fragile |
+| Sleep optimisation | A (behavioural) | Prather 2015 — most-load-bearing behavioural immune lever. | Cornerstone — see sleep dossiers |
+| Hand hygiene + masks | A | Cochrane Jefferson 2020 — physical interventions reduce URI transmission. | Cornerstone — peak season + sick |
+| Smoking / vape cessation | A (highest-leverage for smoker) | Cochrane Stead 2012 — single highest-leverage intervention for smoker-bronchitis. | Cornerstone for smoker sub-type |
+| Ayurveda Sitopaladi + Vasaka + Tulsi stack | T-B / B | AYUSH-monographed classical respiratory; Dhuley 1999 vasicine bronchodilator; Mondal 2011 tulsi RCT immune. | Tradition + daily prevention layer |
+| TCM Yin Qiao San / Sang Ju Yin (Wind-Heat) | B | Classical Wind-Heat early-onset URI formulas. | Acute layer matched to pattern |
+| TCM Xiao Qing Long Tang | B (with caveat) | Wind-Cold + wheeze; CONTAINS Ma Huang/Ephedra — practitioner only + legal restrictions. | Caution; practitioner-only |
+| TCM Pi Pa Gao (loquat syrup) + Yu Ping Feng San preventive | T-B / B | Classical cough syrup; Kligler 2012 Yu Ping Feng San small signal preventive Wei Qi barrier. | Cough layer + recurrent-URI prevention |
+| Unani Joshanda + Siddha Nilavembu Kudineer + Adathodai | T-B | South Asian classical URI staples; Tamil Nadu DPH used Nilavembu in viral outbreaks. | Tradition acute layers |
+| Homeopathy (Aconite, Belladonna, Bryonia, Phosphorus, Ipecac, Antimonium, Sambucus, Allium cepa) | T/H | Documented Boericke/Kent tradition; no robust modern evidence. | Tradition only |
+| Oscillococcinum | T/H (Cochrane null) | Cochrane Mathie 2015 — NULL for flu; widely sold; documented for transparency. | NOT in active protocol; transparency only |
+| Echinacea | C (Cochrane mixed) | Cochrane Karsch-Völk 2014 mixed; some products show signal but heterogeneity huge. | Documented for transparency; not active |
+| Ma Huang / Ephedra | EXCLUDED | CV stimulant; banned/restricted many jurisdictions. | EXCLUDED |
+| Routine antibiotics for viral URI | EXCLUDED | van der Velden 2020 — >70% inappropriate; resistance + harm. | EXCLUDED unless confirmed bacterial |
+| Diphenhydramine (Benadryl, NyQuil) | D | Anticholinergic-dementia signal; sedation; minimal cough benefit. | EXCLUDED |
+| Dextromethorphan (DXM) | C | Mixed evidence adults; banned <4 yr many jurisdictions. | Caution; case-by-case |
+| Nasal decongestant (oxymetazoline) >3 days | EXCLUDED chronic | Rhinitis medicamentosa rebound. | Maximum 3 days |
+| Oseltamivir / Baloxavir (Rx antivirals for flu within 48 h high-risk) | B | Cochrane Heneghan 2014 modest symptom-duration; Hayden 2018 baloxavir single-dose; controversy hospitalisation. | §10.7.3 if high-risk flu <48 h |
+| Paxlovid (nirmatrelvir-ritonavir Rx) for high-risk COVID | A | EPIC-HR Hammond 2022 — reduced hospitalisation if high-risk + within 5 days. | §10.7.3 if high-risk COVID <5 days |
+| Inhaled bronchodilator + ICS + montelukast (boxed warning) | A / C | GINA asthma plan; montelukast FDA/EMA 2020 neuropsych boxed warning. | §10.7.3 asthma overlap; cautious LTRA |
+| Antibiotics for confirmed bacterial / vaccination decision / lung-function workup | A | Stewardship matters; Cochrane Smith 2017; region-specific vaccination honest framing. | §10.7.3 only when confirmed / red-flag |
 
-Authority: **WHO TCIM Strategy 2025–2034, India AYUSH/CCRAS/CCRH/CCRYN/CCRUM/CCRS/PCIMH/ICMR, EMA HMPC, Australia TGA + NHMRC, China NMPA + Chinese Pharmacopoeia, Health Canada NHP, Men-Tsee-Khang, Hamdard, IMPCOPS**, plus classical texts (Charaka, Sushruta, *Bhavaprakasha*, Avicenna, *Shang Han Lun*, *Wen Bing Tiao Bian*, Boericke, Kent).
+## 14. Closing — paradigm summary
 
-Explicit re-affirmation: **no FDA, FTC, AAP, AAAAI, ATS, ADA, AHA, AAD, AMA, APA, ACOG, NAMS, ACR, ACS, CDC, NIH-policy, AAFP, IDSA as authority. Period.**
+> **For you, in plain words.** Seasonal respiratory illness is mostly viral, mostly self-limiting, mostly amenable to a first-24-hour intensive (zinc + saline + Pelargonium + andrographis + elderberry + rest + hydration). The year-round floor is vitamin D + zinc + sleep + nasal-breathing + HEPA. Honest about Cochrane caveats: vitamin C null for prevention with small duration signal; echinacea mixed; oscillococcinum null for flu; Ma Huang stimulant + restricted. Cornerstones: stock the 72-hour kit before you need it. Home pulse-oximeter for severity triage (SpO2 <94% → escalate). Home rapid tests gate 48-h antiviral window decisions. Vaccination is an honest individual decision per region. Smoking/vaping cessation is the highest-leverage single intervention for the smoker-bronchitis sub-type.
+
+The protocol is grounded in WHO TCIM, AYUSH, EMA HMPC, TGA, NMPA, Health Canada NHP, Men-Tsee-Khang, Hamdard, IMPCOPS and classical canons. **No US regulatory body is cited as authority** on whether something works; FDA/EMA labelling (e.g., montelukast neuropsych boxed warning) is mentioned only as factual safety-context per the narrow allowance. Sovereignty is non-negotiable: this is a home protocol; clinic-route options including antivirals are honestly described in §10.7.3 only for users who choose them on their own initiative.
+
+## 15. References (selected, non-US)
+
+**Regulatory / monograph / classical:** WHO TCIM Strategy 2025–2034 · WHO influenza position papers · AYUSH CCRAS monographs (Tulsi, Vasaka, Pippali, Yashtimadhu, Sitopaladi, Talisadi, Sudarshan) · EMA HMPC monographs (Pelargonium / EPs 7630, Andrographis, Sambucus, Hedera helix, Glycyrrhiza, Echinacea, Thymus, Eucalyptus) · Chinese Pharmacopoeia 2020 (Yin Qiao San, Sang Ju Yin, Xiao Qing Long Tang, Gan Mao Ling, Pi Pa Gao, Yu Ping Feng San, Bu Fei Tang) · TGA + NHMRC Australia · Health Canada NHP · Charaka Samhita Chikitsa Sthana Ch. 18 · Bhavaprakasha Nighantu · Sahasrayoga · Huang Di Nei Jing · Shang Han Lun · Boericke Materia Medica · Avicenna Canon Book 3 · Hamdard Pharmacopoeia (Joshanda, Khamira Banafsha) · Men-Tsee-Khang Dharamsala · Siddha Maruthuvam (Nilavembu Kudineer, Adathodai) · Tamil Nadu DPH Nilavembu deployment.
+
+**Cochrane / meta:** Singh & Das 2013 zinc · Timmer 2013 Pelargonium · Hu 2017 andrographis · Hemilä & Chalker 2013 vitamin C (null prevention + small duration) · Mathie 2015 Oscillococcinum NULL · Karsch-Völk 2014 echinacea MIXED · Oduwole 2018 honey cough children · Hayward 2012 saline rinses · Jefferson 2014 + Heneghan 2014 neuraminidase inhibitors · Hayden 2018 baloxavir · Smith 2017 antibiotics bronchitis · Smith 2014 OTC cough meds · Stead 2012 NRT cessation · Jefferson 2020 physical interventions · Jefferson 2018 flu vaccines healthy adults.
+
+**Supplements + biology:** Martineau 2017 BMJ vitamin D IPD URI meta · Tiralongo 2016 Nutrients elderberry · Hawkins 2019 elderberry meta · Roschek 2009 elderberry antiviral binding · Eby 2010 zinc lozenge mechanism · Wessels 2017 zinc + immune · Maares 2016 zinc + barrier · Prather 2015 sleep + URI · Besedovsky 2019 sleep + immune · Rennard 2000 chicken soup · Bayan 2014 garlic · Mondal 2011 tulsi · Dhuley 1999 Adhatoda · Coon 2004 andrographis · Lizogub 2007 Pelargonium · Holzinger 2011 ivy · Stey 2000 + Cazzola 2015 NAC · Cohen 2007 stress + URI.
+
+**Behavioural / device / clinical:** Cowie 2008 Buteyko Australia · Kox 2014 Wim Hof (HONEST mixed) · Lundberg 1996 nasal NO · Triana 2018 mouth-breathing · Pramanik 2010 Bhramari + NO · Satomura 2005 salt gargle Japan · Sarkar 2015 alcohol + immune · Allen 2015 HEPA · Brody 2021 N95/KN95 · McGee 2023 rapid tests · Berry 2017 home oximetry · GINA Reddel asthma action plan · Nieman 2019 J-curve · Walsh 2018 exercise + immune · Walsh 2023 + Papi 2023 NEJM RSV vaccines · Hammond 2022 EPIC-HR paxlovid · van der Velden 2020 antibiotic stewardship · Falagas 2008 sinusitis · Lin 2016 xylitol · Risacher 2016 anticholinergic + cognition · PHOSP-COVID 2022 · Crook 2021 long COVID · Heikkinen 2003 cold review · Mäkelä 1998 viral URI · Jackson 1958 cold score · Barrett 2009 WURSS-21 · Kligler 2012 Yu Ping Feng San small RCT · Chung 2008 STOP-BANG.
+
+## 16. Authoring & versioning
+
+- Skill: ailment-360-research v6.2.3
+- Author agent: ailment-360-research
+- Date authored: 2026-05-31
+- Last updated: 2026-05-31
+- Reviewer: founder
+- ralph internal passes: 3/3 (structural; citation + Cochrane honesty — vitamin C null prevention, oscillococcinum null, echinacea mixed, zinc lozenge B, Pelargonium B+, andrographis B+, elderberry B; AYUSH/TGA-integrative-GP + red-flag escalation + antibiotic stewardship + montelukast neuropsych + Ma Huang restriction + vaccination honest framing)
