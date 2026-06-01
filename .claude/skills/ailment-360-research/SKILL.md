@@ -5,6 +5,8 @@ description: "Produce an evidence-graded, global-sources-only, STRICTLY OTC + HO
 
 # Ailment 360 Research
 
+> **Version: v6.2.4** — adds two clusters on top of v6.2.3 as a strict superset. **Cluster A (Rule 8 — CANONICAL-PARSEABLE DECISION SURFACE):** the website now mounts a "DecisionHero" 6-card grid + 6-tradition chip strip above every dossier page, parsing structure directly from the markdown without new YAML fields. Every dossier MUST follow six parseable conventions so the hero extracts a 30-second decision view: a `**Quick start.**` block in §1, red-flag sub-sections matching `/red.?flag|emergency|urgent|when to (call|go|seek)|escalat/`, a master 24-hour plan H2 title matching `/master 24-hour|24-hour|daily plan|day plan|hour-by-hour|24h timetable/i`, a parseable §13.7 grade column with ≥3 "do not recommend" rows, ≥2 H3 sub-sections under each of the six traditions in §4, and `**For you, in plain words.**` in §1 as the hero subtitle source. **Cluster B (Rule 9 — v6.2.4 REFINEMENTS):** absorbs eight micro-defects surfaced by the overnight 25-expansion-agent wave — tiered domain word ceilings (BrainEye Rx-heavy 16-18k, acute time-critical 10-13k, narrow 8-12k), §13.7 row-count >40 OK with MERGE-row pattern + category sub-tables, `**Quick start.**` mandatory at §1 + top of every H2 but optional at H3, compound `Action / TL;DR` columns allowed in interaction matrices, jurisdiction-dependent OTC annotation pattern `[OTC in EU/UK/AU/IN; Rx in US]`, §10.7.3 framing reworded to "Clinic-route options if the home protocol plateaus" with explicit informed-consent paragraph, cross-dossier shared-finding references (smoking cessation, sleep, Mediterranean diet, pregnancy + compression), and `### Open the science` at H3 level explicitly forbidden — `#### Open the science` at H4 is the only canonical form.
+>
 > **Version: v6.2.3** — adds seven load-bearing rules on top of v6.1: progressive disclosure (`#### Open the science` deep-dive blocks), tree-friendly H3 sub-sections (≤5 words, 3–7 per H2), mandatory honest evidence-tier comparison table, Cochrane/systematic-review honesty discipline, mandatory Emerging & adjunctive therapies H2 (with the narrow regulatory-context exception), mandatory adjunctive therapy coverage (CBT/CBT-i, MBCT/MBSR, TRT/ERP/vestibular rehab, biofeedback, sound/light/vagal), and word ceiling raised from 14,000 to 18,000. v6.1's plain-English TL;DR-everywhere contract is preserved unchanged. **v6.2.1 hardens two recurring failures:** (a) **EVERY table — without exception — must carry a TL;DR (plain English) column as the last text column.** No table ships without it. (b) **"Overview" is a forbidden H3 title** — when multiple chunks under the same tab each name an H3 "Overview" the left-rail tree fills with confusing duplicate rows; every H3 must be a real, specific, action-oriented title. **v6.2.2 absorbs four defects the tinnitus regen agent flagged:** (a) self-check checklist now has a dedicated table-TL;DR-column item separate from the bundled TL;DR-everywhere check; (b) the forbidden-H3-titles list is mirrored into the Forbidden Language section so reviewers see both phrase-level and heading-level bans in one place; (c) the **"For you, in plain words → Quick start → For the curious / your clinician"** three-tier template is named explicitly as the canonical section-open scaffold rather than only appearing inside Rule 1's example; (d) the Source Policy points forward to Rule 4 so the Cochrane-honesty discipline isn't only discoverable via the v6.2 banner.
 
 ## What this skill produces
@@ -214,6 +216,184 @@ New tiered ceiling table:
 | Narrow ailment (single mechanism, few interactions) | 2,500–5,500 |
 | Moderately complex | 4,500–8,500 |
 | High-complexity multi-system (≥5 prescription drug classes in §10.1; multiple comorbidities; rich emerging-therapy landscape) | up to 18,000 |
+
+> **v6.2.4 refinement:** see **Rule 9.1** below for the tiered domain word ceilings discovered by the overnight 25-expansion-agent wave. The single-number ceiling above is the upper bound; in practice the agent should aim for the realistic floor for the ailment's complexity class (BrainEye Rx-heavy 16-18k, Skin/Hormone/MobilityEnergy/CardioLiverLongevity Rx-heavy 13-16k, acute time-critical 10-13k, narrow lifestyle-focused 8-12k).
+
+### Rule 8 — CANONICAL-PARSEABLE DECISION SURFACE (load-bearing, v6.2.4)
+
+**The website mounts a "DecisionHero" 6-card grid + 6-tradition chip strip + read-full-protocol entry above every dossier page**, designed to let a non-researcher make a decision in 30 seconds without reading the 12-18k word dossier. The hero PARSES its data from the existing v6.2.3 markdown structure (no new YAML fields needed) — but only if the dossier writer follows the six canonical-parseable conventions below.
+
+Failure to follow ANY of these conventions causes the hero to gracefully degrade (fall back to generic defaults from `lib/data.ts` Journey entry), but a non-degraded hero is the goal.
+
+**8.1 Quick-start block — parseable**
+
+At least ONE H3 sub-section per dossier MUST contain a `**Quick start.**` marker followed by a bulleted list of 3-5 concrete tonight/this-week actions. The hero extracts the FIRST such block found. **Place it in §1 (Overview) — that's where it has the most leverage for the non-researcher.**
+
+The label must be verbatim `**Quick start.**` (bold, period, then newline before the bullets). Bullets must be `- ` markdown style. Doses go in everyday units, not "200 mg PO BID".
+
+**8.2 Red-flag sub-section — parseable**
+
+At least ONE H3 sub-section title MUST match the case-insensitive regex `/red.?flag|emergency|urgent|when to (call|go|seek)|escalat/`. Place red-flag sub-sections in §1 (top-of-page for time-critical conditions like Bell's palsy + SSHL where the 72-hour window matters) AND in §11 scoring/safety.
+
+The hero extracts the first sentence (or first bullet) of each such sub-section, up to 5 total, and **infers severity from keywords**:
+
+| Keyword in the text | Severity badge |
+|---|---|
+| `ER`, `911`, `call now`, `immediate` | URGENT |
+| `same-day`, `within 24h`, `today` | SOON |
+| `book`, `schedule`, `arrange` | WATCH |
+
+Write the red-flag prose with these severity keywords explicitly so the hero colour-codes correctly.
+
+**8.3 Master 24-hour day plan chunk — parseable H2 title**
+
+The H2 section title MUST contain at least one of these phrases (case-insensitive): `master 24-hour plan`, `24-hour`, `daily plan`, `day plan`, `hour-by-hour`, `24h timetable`. The existing §8.5 title "Master 24-Hour Day Plan" satisfies this.
+
+The hero anchors a "see full day plan" link to this chunk and pulls **3 time-slot teaser lines** from the first 3 markdown lines containing bold time markers like `**Morning**`, `**6:00 AM**`, `**7-9 AM**`. Place these bold time markers explicitly at the top of the §8.5 chunk so the parser finds them deterministically.
+
+**8.4 §13.7 honest evidence-tier comparison table — parseable structure**
+
+Already mandatory in v6.2.3 (Rule 3), but reinforce: the table column structure MUST be:
+
+```markdown
+| Approach | Tier | Plain-words verdict | Where it fits |
+```
+
+OR `TL;DR (plain English)` as the last column for parity with other tables — the hero looks for both. Use whichever is consistent with the rest of the dossier's table style.
+
+**At least 3 rows must have a `Tier` value of `X` OR a verdict containing "do not recommend" / "we don't recommend" / "not in our protocol".** These become the "Don't recommend" card on the hero. If the dossier honestly has fewer than 3 such rows, document the X-tier entries explicitly (mainstream-popular but evidence-weak approaches, regulator-cleared but trial-null, etc.) — for any condition there will be at least 3 candidates.
+
+**8.5 Six traditions (§4) — H3 sub-section titles meaningful**
+
+Each of the 6 traditions (§4.1 Ayurveda, §4.2 TCM, §4.3 Unani, §4.4 Siddha, §4.5 Tibetan, §4.6 Homeopathy) MUST have **≥2 H3 sub-sections** in its respective sub-area. The hero pulls the **FIRST H3 title under each tradition** as the "one-line what they say" chip text.
+
+So make the H3 titles meaningful: `### Bhringraj scalp oil` rather than `### Herbs`. `### Liu Wei Di Huang Wan` rather than `### Formulas`. `### Khamira Marwareed` rather than `### Examples`.
+
+**8.6 Plain-English-first opener — `**For you, in plain words.**` in §1**
+
+§1 (Executive Summary / Overview) MUST contain `**For you, in plain words.**`. The hero extracts the **next non-bullet sentence after this marker** as the dossier-tagline shown in the hero subtitle.
+
+This is already required by v6.2.3's progressive-disclosure rule (the canonical three-tier scaffold), but reinforce as load-bearing for the hero parse: it must appear in §1 specifically, not only deeper in the dossier.
+
+**Worked example — for any dossier, this is what the hero will surface:**
+
+| Hero card | Source in your markdown |
+|---|---|
+| **TONIGHT** (3 bullets) | First `**Quick start.**` block, next 3-5 `- ` bullets |
+| **YOUR REGIME** (bundle + price + buy CTA) | `lib/data.ts` bundle entry (no markdown needed) |
+| **RED FLAGS** (up to 5, severity-colored) | H3 sub-sections matching the red-flag regex |
+| **DAILY PLAN** (3 time-slot teaser) | First 3 `**Time**` bold markers in your §8.5 chunk |
+| **EVIDENCE** (grade-tier counts) | Parsed grade column of your §13.7 table |
+| **DON'T RECOMMEND** (3 bullets) | §13.7 rows with grade X or "do not recommend" verdict |
+| **6 TRADITIONS** (chip strip) | First H3 title under each of your 6 tradition sub-areas |
+
+The hero is built in `nichecore/components/journey/decision-hero.tsx`; the dossier writer doesn't directly control the parser, but the markdown MUST carry the parseable conventions above.
+
+### Rule 9 — v6.2.4 REFINEMENTS FROM OVERNIGHT EXPANSION (load-bearing)
+
+The overnight wave of 25 expansion agents collectively surfaced 8 micro-defects in v6.2.3. These are folded in as Rule 9, with cross-references to the v6.2.3 rules they refine.
+
+**9.1 Tiered domain word ceilings** (refines Rule 7)
+
+v6.2.3 says "up to 18k for high-complexity multi-system ailments". In practice, the overnight expansion agents found these natural floors per domain class — don't try to compress below the realistic floor by skipping required sections:
+
+| Ailment complexity class | Realistic word floor |
+|---|---|
+| BrainEye Rx-heavy (memory-aging, peripheral-neuropathy, refractory depression) | 16,000–18,000 |
+| Skin / Hormone / MobilityEnergy / CardioLiverLongevity Rx-heavy (psoriasis, RA, AFib, NAFLD, IBD, CKD, T2D with comorbidities) | 13,000–16,000 |
+| Acute time-critical (Bell's palsy, SSHL, anaphylaxis recovery) | 10,000–13,000 (smaller scope; time-critical red-flag layer matters more than herb depth) |
+| Narrow / lifestyle-focused (mild GERD, occasional insomnia, athlete-recovery, single-symptom dossiers) | 8,000–12,000 |
+
+The agent should not aim for a single fixed ceiling; pick the realistic floor for the ailment complexity, then stop when the protocol is honest and complete rather than padding to hit a number.
+
+**9.2 §13.7 row count > 40 is OK when complexity warrants** (refines Rule 3)
+
+v6.2.3 implied "20-30 rows" for §13.7. In practice tinnitus + IBS + migraine + RA + AFib + IBD + CKD all need **40-50+ rows** to cover full home + traditional × 6 + clinic-route Rx options + "do not recommend" exclusions. Two allowances:
+
+- **MERGE-row pattern for like-class entries**: nine named biologics get one row, not nine. Example: `Biologics anti-TNF (etanercept/Enbrel, adalimumab/Humira, infliximab/Remicade, certolizumab/Cimzia, golimumab/Simponi)` as a single row with a shared tier + verdict + "Where it fits" cell. Same pattern for: GLP-1 agonists, SGLT-2 inhibitors, SSRIs, statins, NSAIDs, gepants, CGRP monoclonals.
+- **Category sub-tables for very long comparisons**: split into `§13.7.1 OTC supplements`, `§13.7.2 Behavioural & adjunctive therapies`, `§13.7.3 Clinic-route Rx options`. The hero parser walks all three sub-tables and aggregates.
+
+**9.3 Quick-start label scope — pragmatic relaxation** (refines Rule 1)
+
+v6.2.3 mandates `**Quick start.**` at every section + sub-section opener. In practice, applying it to every H3 doubles word count without proportional benefit.
+
+**Pragmatic interpretation:**
+
+- **REQUIRED at §1** (top-of-page, mandatory for DecisionHero parse per Rule 8.1).
+- **REQUIRED at the top of every H2** (one per H2 — the canonical entry point).
+- **OPTIONAL at H3 level** when the H3 itself is action-oriented enough to not need it (e.g., `### Take Ginkgo for 12 weeks` doesn't need a Quick-start sub-label; `### What this section gives you` benefits from one).
+
+The `**For you, in plain words.**` opener remains REQUIRED at every section + sub-section (no relaxation there — it's the lay-reader's entry point).
+
+**9.4 Compound TL;DR columns in interaction matrices are OK** (refines v6.1 / v6.2.2 TL;DR-everywhere)
+
+v6.2.2 says "every table needs a separate TL;DR column". When an existing column already conveys plain-English meaning (e.g., `Action`, `What it means`, `Required action`, `Mitigation`), the dossier writer MAY merge them as a single compound column:
+
+```markdown
+| ... | Action / TL;DR (plain English) |
+```
+
+This is the v6.2.4 allowance for §10.1–10.5 interaction matrices specifically — where the `Required action` / `Mitigation` column is already lay-reader-direct ("Don't take iron and tea within 2 hours"), forcing a separate TL;DR column creates redundant prose. Document the merge in the column header so the parser (and reviewers) see it explicitly.
+
+This allowance does NOT apply to §3, §4, §13.7, §9, §11, §11.5 — those tables keep their dedicated TL;DR column.
+
+**9.5 Regulatory-status-by-jurisdiction annotation pattern** (refines OTC + global-sources doctrine)
+
+Many OTC supplements have varying regulatory status across jurisdictions. Examples:
+
+- Azelaic acid 15% is OTC in EU/UK/AU/IN; Rx in US.
+- MPFF/Daflon (micronised purified flavonoid fraction, diosmin+hesperidin) is OTC in EU; Rx in US.
+- Methenamine is Rx in US; OTC in many other markets.
+- Some Ayurvedic formulas are AYUSH-GMP OTC in India; supplement-only in US; medicinal classification in EU.
+
+**Annotation pattern (v6.2.4 canonical)**: append a compact bracket-tag immediately after the compound name:
+
+```markdown
+azelaic acid 15% [OTC in EU/UK/AU/IN; Rx in US]
+MPFF (diosmin+hesperidin) [OTC in EU; Rx in US]
+methenamine hippurate [Rx in US; OTC in many other markets]
+```
+
+This is canonical-parseable, helps the user understand availability without forcing US-centric framing, and signals honestly that "Rx-in-US" does NOT mean the compound is unavailable globally — it means the user in a non-US jurisdiction can order it as OTC.
+
+**9.6 §10.7.3 framing voice — informed-consent context** (refines Rule 5)
+
+The v6.2.3 framing `**We do not recommend any of these.**` reads awkwardly and risks the dossier sounding ideological rather than honest.
+
+**Preferred v6.2.4 framing for §10.7.3:**
+
+```markdown
+**Clinic-route options if the home protocol plateaus.**
+
+These are presented honestly for the reader who chooses them. They are NOT part of the home protocol the dossier recommends — but the reader is sovereign over their body, and if the home protocol plateaus and the reader wishes to pursue a clinic-route option, here is what exists and what the trials actually show. The trust anchor is the named clinical trial, not the regulatory clearance. The dossier neither endorses nor disparages the user's decision.
+```
+
+§10.7.3 surfaces clinic-route options as **INFORMED-CONSENT CONTEXT**, not as recommendation. Reinforce in the section body that this is the protocol's honest acknowledgment of what's beyond the home regime, not a prescription path.
+
+**9.7 Cross-dossier shared-finding references** (new — reduces repetition across dossiers)
+
+Several findings recur across 10+ dossiers and don't need to be re-derived from scratch each time. Reference them inline as "the standard lever, with details in `<sibling-dossier>`" rather than re-writing the full mechanism:
+
+| Shared finding | Recurs in (illustrative, not exhaustive) | Reference target |
+|---|---|---|
+| **Smoking cessation** — highest-leverage modifiable lever | CVD, AFib, COPD, RA, hair-loss, skin-aging, NAFLD, NSAIDs interaction, SSHL, Bell's palsy, peripheral-neuropathy, stroke-recovery | Reference any dossier with the deepest treatment — usually a CVD or COPD dossier. |
+| **Sleep optimisation** — universal recovery + cortisol + inflammation lever | Every dossier where stress / inflammation / cortisol / recovery matters (i.e., nearly all) | Reference an insomnia / sleep-hygiene dossier as canonical. |
+| **Mediterranean diet** — A-grade secondary CV prevention (PREDIMED 2018) | CVD, NAFLD, RA, OA, stroke-recovery, longevity, T2D, depression | Reference CVD or NAFLD dossier as canonical. |
+| **Pregnancy + compression** — A-grade prevention for venous thromboembolism | VTE, varicose veins, pregnancy-edema, post-surgical-recovery | Reference VTE dossier as canonical. |
+
+These don't need their own full dossier — just reference them inline. This reduces dossier word count without sacrificing completeness, and reinforces the cross-dossier integration the website's left-rail tree already surfaces.
+
+**9.8 `### Open the science` at H3 level is FORBIDDEN** (refines Rule 1 + Rule 2)
+
+The canonical deep-dive marker is **H4 (`#### Open the science`), NOT H3.** The H4 level is intentional so the website's left-rail tree shows H3 sub-section titles (real protocol content) but NOT the deep-dive expander itself.
+
+If `### Open the science` (H3) appears anywhere, the left-rail tree fills with a row labelled "Open the science" — confusing and meaningless wayfinding. Same anti-pattern as the forbidden `### Overview`.
+
+**Encoding (cross-references Rule 1 + Rule 2):**
+
+- **H4 (`#### Open the science`)** — RESERVED for the deep-dive expander block under each H3 sub-section. This is the website's collapsible body.
+- **H3 (`### <specific action-oriented ≤5-word title>`)** — RESERVED for real protocol content (doses, herbs, when to call your doctor, what to take tonight, etc.).
+- **`### Open the science`** is BANNED at the H3 level — mirror the ban into the Forbidden H3 sub-section titles list in the Forbidden Language section below.
 
 ---
 
@@ -753,6 +933,7 @@ This table is the load-bearing trust mechanism. NicheCore tells the truth about 
 - `### Introduction` — banned. Write the H3 as the answer to "what does this give the reader?".
 - `### More information` — banned. Be specific about what additional information.
 - `### Mechanism` (when used as the H3 title rather than inside a deep-dive block) — banned at the H3 level because the reader sees it in the left rail before the section opens; rename to "How it quiets the nerve" / "How it slows the rust" / etc. The technical mechanism content itself still goes inside the `#### Open the science` deep-dive block per Rule 1.
+- `### Open the science` (v6.2.4 Rule 9.8) — banned at the H3 level. The canonical deep-dive marker is **H4 (`#### Open the science`)**, not H3. H4 is intentional so the left-rail tree shows H3 sub-section titles (real protocol content) but NOT the deep-dive expander itself. If `### Open the science` appears, the left-rail tree fills with a confusing "Open the science" row — same anti-pattern as `### Overview`. Use `####` exclusively.
 
 ## How to apply this skill (workflow)
 
@@ -780,6 +961,8 @@ When asked to research ailment **X**:
 20. **Audit H3 tree-friendliness** (v6.2 Rule 2) — every H2 has 3–7 H3s, each ≤5 words, action-oriented, specific.
 21. **Audit progressive disclosure** (v6.2 Rule 1) — every section + sub-section opens with plain-English summary; technical body sits in a `#### Open the science` deep-dive block.
 22. **Audit Cochrane honesty** (v6.2 Rule 4) — any approach with a null Cochrane / major meta-analysis is honestly downgraded in the TL;DR and in §13.7.
+23. **Audit DecisionHero parseability** (v6.2.4 Rule 8) — §1 has a `**Quick start.**` block; at least one H3 matches the red-flag regex; §8.5 H2 title matches the master-day-plan regex and starts with 3 bold time markers; §13.7 has the canonical column structure with ≥3 X-tier or "do not recommend" rows; each of the 6 traditions has ≥2 H3 sub-sections with meaningful titles; §1 contains `**For you, in plain words.**`.
+24. **Apply v6.2.4 refinements** (Rule 9) — pick the realistic word-floor for the ailment class (9.1); use MERGE-row pattern + category sub-tables for long §13.7 (9.2); `**Quick start.**` required at §1 + every H2, optional at H3 (9.3); compound `Action / TL;DR` columns OK in §10.1–10.5 (9.4); jurisdiction-tag pattern `[OTC in EU/UK/AU/IN; Rx in US]` where applicable (9.5); §10.7.3 reframed as "Clinic-route options if the home protocol plateaus" with informed-consent paragraph (9.6); cross-reference shared findings (smoking cessation, sleep, Mediterranean diet, pregnancy+compression) inline (9.7); never use `### Open the science` — `#### Open the science` only (9.8).
 
 Save the dossier as `research/{ailmentId}.md`.
 
@@ -800,6 +983,22 @@ Before writing the final file, run **three internal review iterations** on your 
 - **v6.2 Cochrane honesty audit (Rule 4)**: for every approach with a known null Cochrane / major meta-analysis, does the TL;DR lead with the honest caveat, with individual-trial wins presented as secondary?
 - **v6.2 emerging-therapies audit (Rule 5)**: is §10.7 present and properly split into home-usable / adjunctive-behavioural / clinic-route? Are trials cited directly with regulatory milestones only as factual context?
 - **v6.2 adjunctive therapy audit (Rule 6)**: is the relevant subset of CBT / CBT-i / MBCT / MBSR / habituation-retraining / biofeedback / sound / light / vagal-breath covered with honest grades?
+- **v6.2.4 DecisionHero parseability audit (Rule 8)**:
+  - Does §1 contain a `**Quick start.**` block followed by 3-5 `- ` bullets of concrete tonight/this-week actions? (Rule 8.1)
+  - Does at least ONE H3 sub-section title match the regex `/red.?flag|emergency|urgent|when to (call|go|seek)|escalat/` (case-insensitive)? Is it placed in §1 (top-of-page) AND §11 where relevant? Are severity keywords (`ER`/`911`/`call now` → URGENT, `same-day`/`within 24h` → SOON, `book`/`schedule` → WATCH) used explicitly in the prose so the hero badge-colours correctly? (Rule 8.2)
+  - Does the §8.5 H2 title match the regex `/master 24-hour|24-hour|daily plan|day plan|hour-by-hour|24h timetable/i`? Do the first 3 markdown lines under it contain bold time markers like `**Morning**` / `**6:00 AM**` / `**7-9 AM**`? (Rule 8.3)
+  - Is §13.7 column structure `| Approach | Tier | Plain-words verdict | Where it fits |` (or `TL;DR (plain English)` as the last column)? Do at least 3 rows have `Tier = X` OR a verdict containing "do not recommend" / "we don't recommend" / "not in our protocol"? (Rule 8.4)
+  - Do all 6 traditions in §4 have ≥2 H3 sub-sections each with meaningful titles (not "Herbs" / "Formulas" / "Examples")? (Rule 8.5)
+  - Does §1 contain `**For you, in plain words.**` followed by a non-bullet sentence the hero can extract as subtitle? (Rule 8.6)
+- **v6.2.4 refinements audit (Rule 9)**:
+  - Did you pick the realistic word-floor for the ailment class rather than padding to the 18k ceiling? (9.1)
+  - If §13.7 has >40 rows, are MERGE-row pattern (e.g., 5 anti-TNF biologics as one row) or category sub-tables (§13.7.1/2/3) used? (9.2)
+  - Is `**Quick start.**` present at §1 + at the top of every H2, with H3-level usage optional? (9.3)
+  - Are §10.1–10.5 interaction matrices using compound `Action / TL;DR` columns where the Action column is already lay-reader-direct, OR a separate TL;DR column? Either is fine; document explicitly. (9.4)
+  - For jurisdiction-dependent OTC items, is the `[OTC in EU/UK/AU/IN; Rx in US]` annotation pattern applied? (9.5)
+  - Is §10.7.3 framed as "Clinic-route options if the home protocol plateaus" with an explicit informed-consent paragraph (NOT "We do not recommend any of these")? (9.6)
+  - Where smoking cessation / sleep optimisation / Mediterranean diet / pregnancy+compression apply, are they referenced inline as "the standard lever, with details in `<sibling-dossier>`" rather than re-derived? (9.7)
+  - Is `#### Open the science` (H4) used exclusively — no `### Open the science` (H3) anywhere in the document? (9.8)
 - **Iterate**: if any answer is "no", revise and re-check.
 
 ### Pass 2 — Validation & citation integrity (truthfulness)
@@ -880,3 +1079,17 @@ internalRalph:
 - [ ] **Emerging-therapies H2 check (v6.2 Rule 5)**: §10.7 present with 10.7.1 home-usable advanced + 10.7.2 adjunctive behavioural + 10.7.3 clinic-route options; trials cited directly (TENT-A2, SUSTAIN, STAR-D, etc.); regulatory milestones (FDA De Novo, CE mark) appear only as factual regulatory-path context with explicit framing, never as evidence anchor.
 - [ ] **Adjunctive therapy coverage check (v6.2 Rule 6)**: relevant subset of CBT / CBT-i / MBCT / MBSR / condition-specific habituation-retraining (TRT/ERP/vestibular rehab/pelvic floor PT) / biofeedback / HRV / sound / light / vagal-breath covered with honest evidence grades and self-guided resources.
 - [ ] **Narrow regulatory-context exception applied correctly (v6.2 Rule 5)**: any FDA / CE / Health Canada mention is framed inline as "(regulatory-path context, not evidence anchor)"; never used as the trust anchor on whether the therapy works.
+- [ ] **DecisionHero parseability — Quick-start block (v6.2.4 Rule 8.1)**: §1 contains a `**Quick start.**` block (verbatim bold-period label) followed by 3-5 `- ` bullets of concrete tonight/this-week actions in everyday units.
+- [ ] **DecisionHero parseability — red-flag sub-section (v6.2.4 Rule 8.2)**: at least ONE H3 title matches the case-insensitive regex `/red.?flag|emergency|urgent|when to (call|go|seek)|escalat/`; placed in §1 (top-of-page) AND §11 where relevant; severity keywords (`ER`/`911`/`call now` → URGENT, `same-day`/`within 24h` → SOON, `book`/`schedule` → WATCH) used explicitly in the prose.
+- [ ] **DecisionHero parseability — master 24-hour plan H2 title (v6.2.4 Rule 8.3)**: §8.5 H2 title matches the regex `/master 24-hour|24-hour|daily plan|day plan|hour-by-hour|24h timetable/i`; first 3 markdown lines under it contain bold time markers (`**Morning**` / `**6:00 AM**` / `**7-9 AM**`) the hero can teaser-extract.
+- [ ] **DecisionHero parseability — §13.7 parseable grade column (v6.2.4 Rule 8.4)**: column structure is `| Approach | Tier | Plain-words verdict | Where it fits |` (or `TL;DR (plain English)` as the last column for table-style parity); at least 3 rows have `Tier = X` OR a verdict containing "do not recommend" / "we don't recommend" / "not in our protocol".
+- [ ] **DecisionHero parseability — 6 traditions with ≥2 H3s each (v6.2.4 Rule 8.5)**: §4.1 Ayurveda, §4.2 TCM, §4.3 Unani, §4.4 Siddha, §4.5 Tibetan, §4.6 Homeopathy each have ≥2 H3 sub-sections with meaningful titles (NOT "Herbs" / "Formulas" / "Examples" / "Remedies").
+- [ ] **DecisionHero parseability — `**For you, in plain words.**` in §1 (v6.2.4 Rule 8.6)**: §1 contains the verbatim marker followed by a non-bullet sentence the hero extracts as the dossier-tagline subtitle.
+- [ ] **v6.2.4 Rule 9.1 — realistic word-floor**: picked the realistic floor for the ailment complexity class (BrainEye Rx-heavy 16-18k · Skin/Hormone/MobilityEnergy/CardioLiverLongevity Rx-heavy 13-16k · acute time-critical 10-13k · narrow lifestyle 8-12k) rather than padding to the 18k ceiling.
+- [ ] **v6.2.4 Rule 9.2 — §13.7 row-count strategy**: if >40 rows, MERGE-row pattern used for like-class entries (e.g., 5 anti-TNF biologics as one row) OR split into category sub-tables (§13.7.1 OTC / §13.7.2 Behavioural / §13.7.3 Clinic-route).
+- [ ] **v6.2.4 Rule 9.3 — Quick-start scope**: `**Quick start.**` present at §1 + at the top of every H2; H3-level usage optional when the H3 itself is action-oriented enough.
+- [ ] **v6.2.4 Rule 9.4 — compound `Action / TL;DR` columns**: §10.1–10.5 interaction matrices may use a single compound column where the Action column is already lay-reader-direct; the compound is documented in the column header.
+- [ ] **v6.2.4 Rule 9.5 — jurisdiction-status annotation**: any compound with varying regulatory status carries the `[OTC in EU/UK/AU/IN; Rx in US]` bracket-tag inline.
+- [ ] **v6.2.4 Rule 9.6 — §10.7.3 informed-consent framing**: opens with `**Clinic-route options if the home protocol plateaus.**` followed by an explicit "presented honestly for the reader who chooses them; NOT part of the home protocol" paragraph (NOT "We do not recommend any of these").
+- [ ] **v6.2.4 Rule 9.7 — cross-dossier shared findings**: smoking cessation / sleep optimisation / Mediterranean diet / pregnancy+compression are referenced inline to sibling dossiers rather than re-derived from scratch.
+- [ ] **v6.2.4 Rule 9.8 — `### Open the science` forbidden**: every deep-dive marker is `#### Open the science` (H4); no H3-level `### Open the science` appears anywhere in the document.
