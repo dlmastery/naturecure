@@ -225,9 +225,9 @@ export function ConversionStrip({
             eyebrow="Honest outcomes"
             title="What to expect — first 30 days"
             bullets={[
-              "Days 1–7: half-dose ramp + baseline self-scoring. Eye-protection and sound enrichment tonight.",
-              "Week 2–4: sleep and annoyance usually lift first. Loudness shifts later. Magnesium often noticeable in week 2.",
-              "Day 14 check-in: if Tinnitus Functional Index hasn't dropped 5+ points, we route to an audiologist before charging refills.",
+              "Days 1–7: half-dose ramp + baseline self-scoring on your tracked metric. First protocol habit tonight.",
+              "Week 2–4: early signals usually appear (sleep, mood, energy, comfort — what surfaces first depends on your condition).",
+              "Day 30: meaningful change in your tracked metric. If not, the safety check routes you to a credentialed expert before refills.",
             ]}
           />
 
@@ -236,11 +236,11 @@ export function ConversionStrip({
             tone="sky"
             icon={Clock}
             eyebrow="Habit feasibility"
-            title="~12 minutes of effort a day"
+            title="~10–15 minutes of effort a day"
             bullets={[
-              "Morning: 2 supplements with breakfast (Ginkgo + B12). 30 seconds.",
-              "Evening: 2 supplements after dinner (magnesium + zinc) + 5 minutes Bhramari breath. 6 minutes.",
-              "Night: sound enrichment on (myNoise or fan) and 5 minutes of cervical release. 5 minutes.",
+              `Morning: ${Math.min(2, Math.ceil(productCount / 2))} supplements with breakfast. About 30 seconds.`,
+              `Evening: ${Math.min(2, Math.floor(productCount / 2))} supplements after dinner + the protocol's breath or movement practice. 5–7 minutes.`,
+              "Night: the wind-down routine specific to your condition (sound, stretch, lighting, or breath). 5 minutes.",
             ]}
           />
 

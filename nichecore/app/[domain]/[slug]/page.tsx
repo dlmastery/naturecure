@@ -360,12 +360,11 @@ export default async function JourneyDetail({
       ]}
     >
       {/* TopShelf — 5-card decision-quality preview above §01 */}
-      {/* ConversionStrip — buy-decision surface FIRST.
-          Founder preferred reading order: marketing/decision view leads,
-          then the protocol-at-a-glance TopShelf follows. Gated to
-          tinnitus for preview; roll out to all bundled journeys after
-          eyeball review. Suppressed when there's no bundle yet. */}
-      {j.id === "tinnitus-support" && bundle && (
+      {/* ConversionStrip — buy-decision surface FIRST. Founder signed
+          off on the tinnitus preview; rolled out to every journey with
+          a bundle. Journeys without a bundle still get TopShelf +
+          dossier content as before. */}
+      {bundle && (
         <ConversionStrip
           journey={j}
           bundle={bundle}
