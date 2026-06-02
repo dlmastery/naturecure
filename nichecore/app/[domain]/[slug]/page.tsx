@@ -360,9 +360,10 @@ export default async function JourneyDetail({
       ]}
     >
       {/* TopShelf — 5-card decision-quality preview above §01 */}
-      {topShelf && <TopShelf data={topShelf} />}
-      {/* ConversionStrip — buy-decision surface. Gated to tinnitus
-          for founder preview; roll out to all bundled journeys after
+      {/* ConversionStrip — buy-decision surface FIRST.
+          Founder preferred reading order: marketing/decision view leads,
+          then the protocol-at-a-glance TopShelf follows. Gated to
+          tinnitus for preview; roll out to all bundled journeys after
           eyeball review. Suppressed when there's no bundle yet. */}
       {j.id === "tinnitus-support" && bundle && (
         <ConversionStrip
@@ -371,6 +372,7 @@ export default async function JourneyDetail({
           packageHref={pkgHref}
         />
       )}
+      {topShelf && <TopShelf data={topShelf} />}
 
       {/* 01 · Overview */}
       <SectionAnchor

@@ -288,19 +288,6 @@ export function ConversionStrip({
               `"It's an adjunct to anything you prescribe, not a replacement. May I share the dossier with you?"`,
             ]}
           />
-
-          {/* Trending / social proof */}
-          <SupportCard
-            tone="mint"
-            icon={RefreshCw}
-            eyebrow="Living protocol"
-            title="What changed this week"
-            bullets={[
-              "New: Lenire TENT-A2 12-month follow-up incorporated into §15 emerging-therapies addendum.",
-              "Downgraded: Lipoflavonoid moved to §13.7 not-recommended row (no new evidence after honest re-review).",
-              "Confirmed: magnesium glycinate retained at B-grade after Person 2026 secondary analysis.",
-            ]}
-          />
         </div>
       </div>
     </section>
