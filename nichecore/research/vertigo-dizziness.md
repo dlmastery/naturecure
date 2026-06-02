@@ -232,6 +232,8 @@ Vertigo is usually framed as "inner-ear thing — take meclizine." A more honest
 | Argentum nitricum | Vertigo from looking up + anticipation anxiety (PPPD overlap). | Looking-up + anxiety | T | *(Boericke)* |
 | Aconite | Acute vertigo + panic + sudden onset. | Acute + panic | T | *(Boericke)* |
 
+**Honest framing of Homeopathy in vertigo.** The above ten Homeopathy remedies are documented tradition (Tier T/H), drawn from Boericke 1927 *Materia Medica*, Kent 1897 *Repertory* and Allen *Keynotes*. Modern high-quality RCT evidence for Homeopathy in vertigo / BPPV / vestibular migraine / Ménière's / PPPD is limited (some German Vertigoheel cohort data exists but is contested). The active spine of this protocol remains §3 (Ginkgo EGb 761 — best evidence base, with antiplatelet caution; magnesium for vestibular migraine; vitamin D for BPPV recurrence prevention per Jeong 2020 KOR RCT), §5 self-administered Epley / Semont / Brandt-Daroff maneuvers (A-grade Cochrane Hilton 2014), §7 vestibular rehabilitation therapy (VRT) + gaze stabilisation. The Homeopathy table is documented for transparency under the founder mandate; it is not the primary active layer.
+
 ## 5. Biophysical Interventions — home only
 
 ### 5.1 Self-administered Epley maneuver (the cornerstone)

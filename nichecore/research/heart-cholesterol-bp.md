@@ -244,6 +244,8 @@ Aortic stiffening — measured as pulse wave velocity (PWV) — is independently
 
 CCRH has published case series; graded T as documented clinical tradition only. **Chest pain is a red-flag — homeopathic remedies are not appropriate first-response for acute chest pain (see top-of-page emergency routing).**
 
+**Honest framing of Homeopathy in cardio-metabolic protocol.** The above six Homeopathy remedies are presented as documented tradition (Tier T/H), drawn from Boericke 1927, Kent 1897, Allen *Keynotes*, and the Schwabe Crataegus mother-tincture lineage. Modern high-quality RCT evidence for Homeopathy in lipid reduction, BP control, or CV event prevention is essentially absent; what exists is repertorial tradition and small CCRH case-series. The active spine of this protocol remains §3 (PCSK9-mimetic / berberine / phytosterol / nattokinase / Pycnogenol / hawthorn material-dose), §5 home BP cuff (cornerstone), §7 Mediterranean / DASH / TLC food pattern, exercise. Homeopathy is NOT recommended as a substitute for guideline-based secondary prevention if you have established CV disease. The active layer of evidence is the named trial (PREDIMED, JUPITER, SPRINT, IMPROVE-IT, FOURIER), not Homeopathy.
+
 ## 5. Biophysical Interventions — home-administered only
 
 ### 5.1 What works at home — the priority order

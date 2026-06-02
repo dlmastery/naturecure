@@ -25,6 +25,12 @@ internalRalph:
 
 ## 1. Executive Summary
 
+> **CRITICAL SAFETY — read first.**
+>
+> If you are reading this DURING an acute stroke event (sudden onset face droop / arm weakness / speech difficulty / severe headache / vision change), STOP and call your local emergency number now: 911 (US), 999 (UK), 112 (EU + India + AU + many others), 119 (Japan), 120 (China). Every 30 minutes you wait equals ~1 month of brain tissue lost.
+>
+> This dossier is for the recovery + secondary-prevention phase, ALONGSIDE your neurology + PT/OT/SLT team — never instead. Antiplatelet / statin / BP-Rx / anticoagulation are gold-standard secondary prevention; this protocol is an adjunct that runs in parallel.
+
 ### 1.1 What stroke recovery actually is
 
 > **For you, in plain words.** A stroke is brain tissue dying from either a blocked blood vessel (ischemic — ~85%) or a burst blood vessel (hemorrhagic — ~15%). Recovery is the brain re-routing function around the dead tissue (neuroplasticity), supported by tight secondary-prevention so you don't have a second event. *(NINDS tPA 1995; Stroke Unit Trialists 2013)*

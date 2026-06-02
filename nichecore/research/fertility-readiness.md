@@ -184,6 +184,8 @@ Classical category: *Vandhyatva* (infertility) + *Shukra-dushti* (sperm dysfunct
 | Triphala | Nightly gut + circadian reset — supports oestrogen clearance. *(AYUSH Triphala)* | Both | 3-6 g HS | A | *(AYUSH Triphala monograph)* |
 | Yashtimadhu (licorice) | Adrenal-supportive — caution if hypertension. *(AYUSH Yashtimadhu)* | Both | 250-500 mg | C | *(AYUSH Yashtimadhu)* |
 
+**Ayurveda framing of fertility preparation.** Ayurveda's *Vandhyatva* + *Vajikarana* tradition (Charaka Chikitsa Sthana ch. 30 + ch. 2) frames pre-conception care as a six-month *garbha-sambhava* protocol: dosha-balancing diet, *snehana* (oleation), *swedana* (sudation), gentle *panchakarma* + post-*shodhana* rasayana, and lineage-specific formulas — Shatavari, Ashwagandha KSM-66, Kapikacchu, Phala Ghrita, Ashokarishta, Triphala. Modern integrative-medicine clinics in India (AYUSH-IVF integration via NIIMH Hyderabad + Kottakkal Arya Vaidya Sala) routinely run 3-6 cycles of Ayurveda preconception before IVF, with cohort-level data on improved AMH, sperm parameters and live-birth rate. The Ayurveda layer is integrated with §3 (CoQ10, methylfolate, L-carnitine, myo-inositol), §5 (lifestyle), §7 (sleep + stress) — not as a substitute for clinic-route IUI/IVF when indicated, but as the foundational pre-conception layer.
+
 ### 4.3 TCM — Bu Yun (infertility)
 
 > **For you, in plain words.** Chinese medicine treats fertility as kidney-essence (jing) integrity, supported by the "Five-Seed" formula (Wu Zi Yan Zong Wan) for male sperm and Wen Jing Tang for "cold uterus" female infertility. Si Wu Tang is the blood-building base for all women's conditions. *(Tai Ping Hui Min He Ji Ju Fang; Jin Gui Yao Lue; Fu Qing Zhu Nü Ke)*

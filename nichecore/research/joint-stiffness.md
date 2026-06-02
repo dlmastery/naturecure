@@ -240,6 +240,8 @@ Mizaj framing: cold-dry (saudawi) stiffness or hot-moist (damawi) inflammation. 
 | Causticum | Elderly contractures, paralytic stiffness. *(Hahnemann; Kent)* | Elderly contractures | T | *(Kent)* |
 | Apis mellifica | Warm-swollen-stinging joints. *(Boericke; Allen)* | Warm-swollen joint | T | *(Boericke)* |
 
+**Honest framing of Homeopathy in joint stiffness.** The above seven Homeopathy remedies are presented as documented tradition (Tier T/H), drawn from Boericke 1927 *Materia Medica*, Kent 1897 *Repertory*, Allen *Keynotes* and the Schuessler tissue-salts lineage. Modern high-quality arthritis RCT evidence for Homeopathy is contested (some small German trials positive; larger pragmatic trials null). The active spine of this protocol remains §3 (curcumin Meriva, boswellia AKBA, undenatured collagen, ASU, MSM, omega-3), §5 home PBM + compression + cold/heat contrast, §7 progressive RT + range-of-motion practice. The Homeopathy table is documented for transparency under the founder mandate; it is not the active layer.
+
 ## 5. Biophysical Interventions — home-administered only
 
 ### 5.1 The home toolkit at a glance

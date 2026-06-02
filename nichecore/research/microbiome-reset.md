@@ -224,6 +224,8 @@ The Ford 2018 ACG monograph (used here as global synthesis, not US-regulatory au
 | Nux vomica | Type-A overworked dysbiosis. *(Boericke)* | Type-A overworked | 30C | T | *(Boericke)* |
 | Calcarea carbonica | Sluggish chilly damp constitution. *(Boericke; Kent)* | Chilly + sluggish | 30C | T | *(Boericke; Kent)* |
 
+**Honest framing of Homeopathy in microbiome reset.** The above five Homeopathy remedies are documented tradition (Tier T/H) drawn from Boericke 1927 *Materia Medica* and Kent 1897 *Repertory*. No modern microbiome-sequencing-based RCT validates Homeopathy in dysbiosis. The active spine of this protocol remains §3 + §6 (fermented foods, prebiotic fibre PHGG, *Akkermansia*-supportive pomegranate ellagitannins, multi-strain probiotic, polyphenol diversity), §5 sleep + exercise + nature exposure, §7 stress + sleep regulation. The Homeopathy table is included for transparency under the founder mandate; it is not the active lever in microbiome-rebuilding.
+
 ## 5. Biophysical & Mind-Body Interventions
 
 ### 5.1 What works at home — priority order

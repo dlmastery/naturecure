@@ -716,6 +716,16 @@ Tretinoin (Kligman 1986 JAAD foundational + Olsen 1992 + many) remains the A-gra
 | hs-CRP | Chronic inflammation accelerates aging. *(EAS 2019)* | hs-CRP | LetsGetChecked, Thriva | *(EAS 2019)* |
 | Cu/Zn/Se status | Collagen + GPX cofactors. *(InsideTracker)* | Cu, Zn, Se panel | InsideTracker | *(InsideTracker)* |
 
+### When to call your doctor
+
+> **For you, in plain words.** Five situations in skin-aging are not "wait and see" — they need a dermatologist or relevant specialist (not the ER, but soon).
+
+- **Any new or changing pigmented lesion — ABCDE rule** (Asymmetry, Border irregular, Colour variation, Diameter >6 mm, Evolving) → urgent dermatology for melanoma rule-out; this is the single most important escalation in any anti-ageing workup. *(BAD melanoma; AAD ABCDE)*
+- **New non-pigmented skin lesion** — pearly, ulcerated, bleeding, non-healing >4 weeks → dermatology for BCC / SCC rule-out, especially in sun-exposed areas (face, ears, scalp, dorsum of hands). *(BAD non-melanoma skin cancer)*
+- **Sudden onset deep wrinkling + skin laxity + bruising + striae out of proportion to age** — rule out connective-tissue disorder (EDS, cutis laxa) or endogenous hypercortisolism (Cushing's); endocrinology + dermatology referral. *(EMA cortisol; ESE Cushing)*
+- **Severe photo-damage** — extensive solar elastosis, multiple actinic keratoses, history of significant burns or tanning bed use → dermatology for full-body skin check + field-treatment (5-FU, imiquimod, photodynamic therapy) options.
+- **Severe psychological distress around appearance** (BDD-spectrum, work/social impairment, repetitive cosmetic procedures) — mental-health referral; body dysmorphic disorder responds to CBT + SSRIs, not to more retinol. *(Cash 2008; crisis lines: 988 US, Samaritans UK, iCall IN, Lifeline AU)*
+
 ## 12. Implementation Timeline (12 months, self-tracked)
 
 ### 12.1 The year, in plain words

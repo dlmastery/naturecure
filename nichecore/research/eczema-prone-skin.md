@@ -671,6 +671,17 @@ Dupilumab — Simpson 2016 *NEJM* SOLO 1 and SOLO 2 (n=1379 combined) showed ~50
 | Gut microbiome | Stool 16S or shotgun for Bifidobacterium/Faecalibacterium status. *(Cabanillas 2017)* | Stool 16S / shotgun | BiomeSight, Viome | *(Cabanillas 2017)* |
 | DAO (histamine-intolerance suspicion) | Diamine oxidase enzyme test. *(Maintz 2007)* | DAO | Cerascreen | *(Maintz 2007)* |
 
+### When to call your doctor
+
+> **For you, in plain words.** Six situations in eczema (atopic dermatitis) are not "wait and see" — most need same-day or same-week medical attention.
+
+- **Signs of bacterial superinfection** — sudden yellow-honey crust, oozing, increasing pain or warmth, fever, expanding redness → urgent care today for antibiotics (likely *Staphylococcus aureus* impetiginisation). *(BAD eczema; NICE atopic dermatitis)*
+- **Eczema herpeticum** — sudden cluster of painful, punched-out monomorphic vesicles or erosions, fever, severe pain, looking systemically unwell → emergency department same day for IV aciclovir; this is a true dermatology emergency. *(WHO TCIM virology; Wollenberg 1999)*
+- **Severe sleep deprivation in a child due to itching** — failure to thrive, behavioural impact, school impact → paediatric dermatology + specialist eczema team (wet-wraps, biologics like dupilumab, optimised topical-steroid plan). *(NICE atopic dermatitis 0-12)*
+- **Failure of moisturiser + step-2 topical-corticosteroid plan after 8-12 weeks** — refer to dermatology for assessment (calcineurin inhibitors, dupilumab, narrowband UVB, JAK inhibitors). *(BAD eczema)*
+- **Suspected food-allergy trigger with anaphylaxis-spectrum symptoms** (lip/tongue swelling, throat tightness, hives, wheeze, vomiting after food) — emergency referral + allergist + EpiPen if confirmed; do not self-experiment with elimination diets in this picture.
+- **Severe psychological distress, depression, or social withdrawal** linked to skin — mental-health referral + dermatology coordination; chronic atopic dermatitis carries real mood-disorder risk. *(crisis lines: 988 US, Samaritans UK, iCall IN, Lifeline AU)*
+
 ## 12. Implementation Timeline (12 months, self-tracked)
 
 ### 12.1 The year, in plain words

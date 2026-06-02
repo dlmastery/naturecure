@@ -202,6 +202,10 @@ MPFF (micronised purified flavonoid fraction — Daflon, also marketed as Venita
 | Lachesis 30C | Left-sided pre-menopausal varicose with hot-purple distension. | Left-sided varicose | T |
 | Apis mellifica 30C | Warm-edematous legs with stinging-burning. | Warm-edematous | T |
 
+**Honest framing of Homeopathy in CVI.** The above nine Homeopathy remedies sit in a rich classical varicose-vein repertory (Boericke 1927; Kent 1897; Schuessler tissue salts) but modern high-quality RCT evidence for Homeopathy in chronic venous insufficiency is essentially absent. The active spine remains §3 (HCSE / horse chestnut — note this is the *material-dose* botanical, distinct from the homeopathic-potency Aesculus 30C above; Ruscus, Pycnogenol, Diosmin/Hesperidin), §5 medical-grade compression (A-grade Cochrane), §7 calf-pump exercise. The Homeopathy table is documented for transparency under the founder mandate; it is not the active layer.
+
+**Ayurveda framing.** This dossier draws on the classical Ayurveda *Sira* (vessel) and *Rakta-vaha-srotas* (blood-channel) frame; the active phytochemical layer (Gotu Kola / *Centella asiatica*, Triphala, Punarnava, Manjishtha, Guduchi) is detailed in §3 + §4.1 above. Ayurveda's whole-system view of CVI as a *Vata-Pitta-Rakta* derangement underpins the integration with compression, exercise and dietary protocol; the Ayurveda remedies are not stand-alone substitutes for compression.
+
 ## 5. Biophysical Interventions — home-administered only
 
 ### 5.1 What you'll use this for

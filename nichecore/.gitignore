@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# bundle-regen pipeline transient files
+scripts/__pycache__/
+scripts/bundles-stderr.txt

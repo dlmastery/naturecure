@@ -229,6 +229,8 @@ Classical category: *Vajikarana* (virilising therapy chapter — both-sex applic
 | Murex | For women with pelvic congestion + restless libido changes. *(Boericke)* | Women | Pelvic congestion, libido variations | 30C as needed | T/H | *(Boericke)* |
 | Lilium tigrinum | Women's pelvic congestion + restless desire. *(Boericke)* | Women | Pelvic congestion | 30C as needed | T/H | *(Boericke)* |
 
+**Honest framing of Homeopathy in libido + stamina.** The above nine Homeopathy remedies are documented tradition (Tier T/H), drawn from Boericke 1927, Kent 1897, and the CCRH AYUSH sexual-function repertorial lineage. Modern high-quality libido / ED / HSDD RCT evidence for Homeopathy is sparse — small case-series only. The active spine of this protocol remains §3 (L-citrulline, Ashwagandha KSM-66, Tongkat Ali, maca, Tribulus — graded honestly), §5 pelvic-floor training (A-grade for both sexes per Newman 2014) + Zone-2 cardio + strength training, §7 couples-CBT for performance anxiety. The Homeopathy table is documented for transparency under the founder mandate; it is not the primary active layer.
+
 ## 5. Biophysical Interventions — home-administered
 
 ### 5.1 Priority order — what works at home

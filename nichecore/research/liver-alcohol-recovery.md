@@ -226,6 +226,8 @@ Phase 1 = CYP450 enzymes (CYP3A4, CYP2E1 alcohol-induced, CYP1A2 coffee/crucifer
 
 CCRH (AYUSH Council for Research in Homoeopathy) has published case series; graded T as documented clinical tradition only. **Acute liver failure / jaundice / GI bleed are red flags — homeopathic remedies are not appropriate first-response.**
 
+**Honest framing of Homeopathy in liver / alcohol recovery.** The above six Homeopathy remedies are presented as documented tradition (Tier T/H), drawn from Boericke 1927, Kent 1897, Allen *Keynotes*, and the Schwabe Carduus marianus mother-tincture lineage. Modern high-quality liver RCT evidence for Homeopathy is essentially absent. The active spine of this protocol remains §3 (silymarin material-dose, PPC / phosphatidyl-choline, NAC, alpha-lipoic acid, taurine, glycine), §5 home weight management + sauna + alcohol cessation, §7 Mediterranean food pattern + structured exercise + AUDIT-C self-screening + Naltrexone-route (clinic) for alcohol use disorder. Homeopathy is NOT recommended as the active layer for documented NAFLD/MASH/alcoholic hepatitis; the active layer is the named trial (Vilar-Gomez 2015, PIVENS NASH, LEAN, EFRUIT).
+
 ## 5. Biophysical Interventions — home-administered only
 
 ### 5.1 What works at home — the priority order

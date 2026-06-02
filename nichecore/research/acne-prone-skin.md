@@ -664,6 +664,17 @@ Isotretinoin (Layton 2010 review; Cunliffe 2003) remains the most-evidenced syst
 | Gut microbiome | Stool 16S or shotgun metagenomics for Akkermansia/Faecalibacterium. *(Bowe 2014)* | Stool 16S / shotgun | BiomeSight, Viome | *(Bowe 2014)* |
 | Food sensitivity (dairy + gluten suspicion) | IgG food panel + anti-tTG-IgA + total IgA. *(ESPGHAN celiac)* | IgG food panel + anti-tTG-IgA + total IgA | Cerascreen / LetsGetChecked celiac | *(ESPGHAN celiac)* |
 
+### When to call your doctor
+
+> **For you, in plain words.** Six situations in acne are not "wait and see" — they need a dermatologist or relevant specialist (not the ER, but soon).
+
+- **Severe nodulocystic acne** (deep, painful, draining nodules; multiple cysts) — refer to dermatologist; this is the isotretinoin (Roaccutane) candidate territory and the home protocol cannot match it. *(EMA isotretinoin; BAD acne guidelines)*
+- **Sudden adult-onset acne, especially with hirsutism, irregular cycles, or male-pattern hair loss** — rule out PCOS, androgen-secreting tumour, late-onset CAH; full hormone workup + endocrinology referral. *(EMA PCOS; ESHRE/ASRM 2018)*
+- **Visible scarring developing** — ice-pick, boxcar, or rolling scars → derm referral within weeks; early intervention with topical retinoids or in-clinic chemical peels prevents permanent disfigurement.
+- **Severe psychological distress or social withdrawal** (DLQI ≥10), suicidal ideation linked to skin → mental-health referral + dermatology; isotretinoin has a black-box for mood, so this triad needs joint management. *(crisis lines: 988 US, Samaritans UK, iCall IN, Lifeline AU)*
+- **Pregnant or planning pregnancy + considering or recently on isotretinoin** — strict teratogenicity warning; contraception, pregnancy testing and obstetric coordination are non-negotiable. *(EMA isotretinoin PRRS)*
+- **Acne fulminans signs** (sudden severe acne + fever + joint pain + malaise) — urgent dermatology; rare but treatable.
+
 ## 12. Implementation Timeline (12 months, self-tracked)
 
 ### 12.1 The year, in plain words

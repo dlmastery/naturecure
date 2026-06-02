@@ -679,6 +679,17 @@ The 311 nm narrowband UVB clinic cabin remains the most-evidenced repigmentation
 | Heavy metals (if occupational suspicion) | Urine As/Pb/Hg via Doctor's Data if rubber / chemical / industrial work. *(EU-OSHA 2021)* | Urine As/Pb/Hg | Doctor's Data | *(EU-OSHA 2021)* |
 | Gut microbiome | Stool 16S or shotgun metagenomics for *Akkermansia*/*Faecalibacterium* status. *(Bzioueche 2021)* | Stool 16S / shotgun | Thryve / Viome / BiomeSight | *(Bzioueche 2021)* |
 
+### When to call your doctor
+
+> **For you, in plain words.** Six situations in active vitiligo are not "wait and see" — they need a dermatologist or relevant specialist (not the ER, but soon).
+
+- **Rapidly-spreading new patches over weeks** — rule out an alternative diagnosis (post-inflammatory hypopigmentation, pityriasis alba, tinea versicolor, leprosy, halo nevi) and consider phototherapy referral. *(VETF 2007; British Association of Dermatologists)*
+- **Co-occurring thyroid symptoms** — fatigue, hair loss, cold intolerance, neck enlargement or weight change → full thyroid antibody panel + endocrinology referral (Hashimoto / Graves overlap is common). *(WHO TCIM endocrine; EMA thyroid)*
+- **Severe psychological distress, depression, or social withdrawal** — VIS-22 or DLQI ≥10, suicidal ideation, or work/relationship impairment → mental-health referral; the cosmetic load is real. *(crisis lines: 988 US, Samaritans UK, iCall IN, Lifeline AU)*
+- **Patches in genital, oral, lip, periorbital or peri-anal mucosa** — these areas have specific phototherapy protocols and need dermatology + ophthalmology (peri-orbital) review before any home topical experimentation.
+- **Pre-PUVA, NB-UVB, or excimer phototherapy patient considering self-treating** — coordinate with the prescribing dermatologist before stacking the dossier's topical bakuchiol + sun-bath regime (additive phototoxicity risk).
+- **New autoimmune symptoms** — joint pain, alopecia areata patches, mouth ulcers, diarrhoea + weight loss (celiac), persistent fatigue with hyperpigmentation in non-vitiliginous areas (Addison) → relevant specialist referral.
+
 ## 12. Implementation Timeline (12 months, self-tracked)
 
 ### 12.1 The year, in plain words

@@ -210,6 +210,8 @@ Per Charaka Samhita Sutrasthana Ch. 1 (Rasayana), depletion-pattern illness (*ks
 | Aurum metallicum 200C | Caregiver-suicidal-ideation-from-burnout — classical homeopathic indication; ALSO crisis-line route. | Caregiver suicidal-burnout | T (+ crisis route) |
 | Natrum muriaticum 200C | Caregiver-repressed-grief-isolation — silent, withdrawn, can't cry. | Repressed-grief caregiver | T |
 
+**Honest framing of Homeopathy in caregiver burnout.** The above ten remedies are presented as documented Homeopathy tradition (Tier T/H) — repertorial classics from Boericke 1927, Kent 1897, Hahnemann *Materia Medica Pura* and Schuessler tissue salts. Modern high-quality RCT evidence for Homeopathy in caregiver burnout specifically is essentially absent; what exists is repertorial tradition and small CCRH-AYUSH case-series. The active spine of this protocol remains §3 (Ashwagandha KSM-66, Rhodiola, omega-3, magnesium glycinate, theanine), §5 sleep tracking + HRV biofeedback + respite coordination, §7 caregiver-specific CBT + grief work. If a single Homeopathy remedy provides personal comfort it is welcome; it is not where the trial evidence sits.
+
 ## 5. Biophysical Interventions — home-administered only
 
 ### 5.1 What you'll use this for

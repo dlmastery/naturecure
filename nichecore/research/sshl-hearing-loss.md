@@ -236,6 +236,8 @@ SSHL is usually framed as "sudden hearing loss — try steroids and hope." A mor
 | Lycopodium | Classical right-sided + cochlear hearing loss. | Right-sided | 30C | T/H | *(Boericke)* |
 | Pulsatilla | Classical changeable + post-viral hearing loss. | Post-viral | 30C | T/H | *(Boericke)* |
 
+**Honest framing of Homeopathy in SSHL.** The above eleven Homeopathy remedies are documented tradition (Tier T/H), drawn from Boericke 1927 *Materia Medica*, Kent 1897 *Repertory*, Clarke and Hahnemann *Organon*. Modern high-quality RCT evidence for Homeopathy in SSHL is essentially absent. **SSHL is a true otologic emergency: high-dose oral steroid started within 72 hours and intratympanic-steroid rescue if oral fails are the only A-grade interventions** (per ENT-UK, EAONO, EU clinical practice). The Homeopathy table is documented for transparency under the founder mandate; it is NOT a substitute for emergency oral steroid initiation. The active spine of this protocol remains §3 (NAC + magnesium + vit-E acute neuroprotection within 72 h, alongside steroid), §5 hyperbaric-oxygen referral if available, §7 hearing-aid evaluation if residual loss.
+
 ## 5. Cofactor Micronutrient Floor
 
 ### 5.1 The five-cofactor floor
@@ -316,7 +318,61 @@ SSHL is usually framed as "sudden hearing loss — try steroids and hope." A mor
 | Shavasana | Deep relaxation | — | Daily 15 min stress modulation |
 | Inversions (caution) | Cerebral circulation | If retinal, BP, or barotrauma | Avoid acute / barotrauma phase |
 
-## 8. Master 24-Hour Timetable
+## 8. Daily Unified Combos (≤10 capsules/day)
+
+> **For you, in plain words.** Three daily combo stacks that organise the OTC molecules from §3 + cofactor floor from §5 into a manageable AM / midday / PM rhythm. Total ≤10 capsules/day. **In the acute 72-hour window the cornerstone is oral steroid (clinic-route, not OTC) + Combo 0 neuroprotection.** *(Stachler 2012; Kuhn 2011 NAC + Mg neuroprotection)*
+
+### Combo 0 — Acute 72-hour neuroprotection stack (start as soon as SSHL identified)
+
+> **For you, in plain words.** Three molecules to start within hours of SSHL onset, alongside the oral steroid course coordinated with your ENT. NAC + magnesium + vitamin E are the small but real adjunctive neuroprotection layer.
+
+- N-Acetyl Cysteine (NAC) 600 mg twice a day
+- Magnesium glycinate 400 mg PM (Joachims 2003 dose)
+- Vitamin E (mixed tocopherols) 400 IU daily with fat
+- Continue 4-6 weeks during acute + sub-acute phase
+
+### Combo 1 — Morning (post-breakfast)
+
+> **For you, in plain words.** Five molecules with breakfast: B12 methyl, B-complex, omega-3, D3 + K2, magnesium AM portion. Take with food that contains fat for D3/K2/omega-3 absorption.
+
+- Methylcobalamin (B12) 1000-1500 µg sublingual
+- B-complex methylated (P-5-P + 5-MTHF + methyl-B12 + B1 + B2)
+- Omega-3 EPA + DHA 2 g (with fat)
+- Vitamin D3 5000 IU + K2 (MK-7) 100 µg
+- Magnesium glycinate 200 mg AM (in addition to Combo 0 PM dose)
+
+### Combo 2 — Midday (post-lunch)
+
+> **For you, in plain words.** Two molecules with lunch: Ginkgo EGb 761 (modest cochlear-flow signal), curcumin Meriva (anti-inflammatory). Plus the optional Ayurveda layer (Brahmi, Saraswatarishta) if pursued.
+
+- Ginkgo EGb 761 120 mg (Burschka 2001 dose; **antiplatelet caution — separate from any blood thinner**)
+- Curcumin Meriva 500 mg (with lunch fat)
+- Optional: Brahmi 300 mg / Saraswatarishta 15-20 ml post-lunch
+- Optional: Ashwagandha KSM-66 300 mg
+
+### Combo 3 — Evening (post-dinner + HS)
+
+> **For you, in plain words.** Three molecules at dinner + HS: alpha-lipoic acid (cochlear neuroprotection), zinc (if low), Saraswatarishta. Plus melatonin small dose if sleep disrupted.
+
+- Alpha-lipoic acid 300 mg (R-isomer if possible)
+- Zinc picolinate 15 mg (only if low on DTC labs; ≥2 h from breakfast Ca)
+- Saraswatarishta 15-20 ml PM
+- Melatonin 0.5-3 mg HS if sleep onset disrupted
+
+### Combo 4 — Daily mechanical + behavioural protocol (non-supplemental)
+
+> **For you, in plain words.** Quiet rest of the affected ear during acute phase; consumer audiogram tracking; CBT-T / MBCT-T for residual tinnitus distress (50%+ of SSHL patients); OTC or audiologist-fit hearing aids if loss persists past month 3.
+
+- Acoustic rest: avoid loud environments + earphones for the first 6 weeks
+- Weekly consumer audiogram (Mimi smartphone app)
+- CBT-T or MBCT-T self-guided (Insight Timer, Tinnitus E-Programme) — start week 2
+- If hearing loss persists Mo 3+: audiologist-fit hearing aids OR OTC (Jabra Enhance, Lexie, Bose, Sony CRE-C10)
+- If pulsatile or progressive — escalate to ENT immediately (vascular imaging)
+
+**Total daily on active acute stack: 8-10 capsules + acoustic rest + audiogram + behavioural.**
+**Total daily post-recovery / maintenance: 5-7 capsules.**
+
+## 8.5 Master 24-Hour Timetable
 
 ### 8.1 The day-of-SSHL plan
 
@@ -609,6 +665,33 @@ SSHL is usually framed as "sudden hearing loss — try steroids and hope." A mor
 | Professional hearing aid fitting | A | Audiology standard for residual + permanent partial. | §10.7.3 if month-3 audiogram persistent |
 | OTC hearing aids / AirPods Pro hearing mode | B / consumer-grade | FDA OTC clearance 2022 — regulatory-path context; mild-moderate residual. | Optional consumer-tier |
 | Tinnitus retraining therapy TRT (clinic) | B | Sister dossier overlap. | §10.7.3 if durable distress |
+
+### 13.7 Honest evidence-tier comparison — including what we DO NOT recommend
+
+> **For you, in plain words.** A consolidated honest-evidence table for SSHL, with "do not recommend" rows added explicitly for transparency. SSHL is a 72-hour emergency — oral steroid + ENT review is the only A-grade rescue. The supplements here are adjunctive.
+
+| Approach | Tier | Plain-words verdict (≤25 words) | Where it fits in YOUR protocol | TL;DR (plain English) |
+|---|---|---|---|---|
+| Oral high-dose steroid within 72 h | A | Wilson 1980 + Stachler 2012 + EAONO 2021 — only A-grade rescue. Coordinate with ENT today, not tomorrow. | Clinic-route — START WITHIN 72 H | The single most important action. *(Stachler 2012)* |
+| Intratympanic steroid rescue | A | If oral fails or contraindicated, ITS within 14 days. *(Plontke 2009)* | Clinic-route within 14 days | Rescue if oral fails. *(Plontke 2009)* |
+| MRI of internal auditory canal | A | ~10% of SSHL is vestibular schwannoma — non-substitutable workup. *(Stachler 2012)* | Mandatory baseline | Rule out the tumour. *(Stachler 2012)* |
+| Hyperbaric oxygen (within 14 days) | B | Bennett 2012 Cochrane modest benefit if available within 14 days. *(Bennett 2012)* | Clinic-route if available | If HBO accessible. *(Bennett 2012 Cochrane)* |
+| NAC + magnesium + Vit E 72 h neuro-protection | B | Kuhn 2011 NAC + Joachims 2003 Mg signal — adjunct, not substitute. *(Kuhn 2011; Joachims 2003)* | Cornerstone alongside steroid | Within 72 h. *(Kuhn 2011)* |
+| Ginkgo biloba EGb 761 | C | Burschka 2001 modest cochlear-flow signal; antiplatelet caution. *(Burschka 2001)* | Optional adjunct | Modest effect; bleeding risk. *(Burschka 2001)* |
+| Hearing aids / OTC hearing aids / AirPods Pro hearing mode | A (HA) / B (OTC) | For residual permanent loss, audiologist-fit HA is gold. *(Curhan 2014)* | §10.7.3 if loss persists Mo3+ | Don't suffer in silence. *(Curhan 2014)* |
+| Cochlear implant | A | For severe-to-profound permanent loss. *(Audiology standard)* | §10.7.3 if Mo6 severe | The end-of-line A-grade option. |
+| Mediterranean / anti-inflammatory food pattern | A (vascular) | PREDIMED 2013 + Curhan 2014 omega-3 + hearing. | Daily | The platform. *(PREDIMED 2013)* |
+| Glucose + BP + lipid + smoking control | A | Lin 2010 + Aimoni 2010 + classical CVD lit — biggest modifiable layer. | Cornerstone | The metabolic platform. *(Lin 2010)* |
+| Sleep + circadian | B | Indirect — fatigue worsens tinnitus distress. | Daily | Bed 22:30. |
+| Vagal tone (Brahmari, slow-paced breathing) | B (autonomic) | Telles 2011 + Hatha Yoga Pradipika. | Daily | Hum + breathe. |
+| CBT for hearing-loss distress | B | Andersson 2009 + Hesser 2012 internet-CBT. | If distress ≥3 | Internet-CBT (Woebot, MoodGym). |
+| MBSR | B | Sereda 2019. | Daily 15 min | Insight Timer free. |
+| Tinnitus retraining therapy (clinic) | B | Sister dossier overlap. | §10.7.3 if durable | See tinnitus-support sister dossier. |
+| **DO NOT RECOMMEND: Waiting >72 h before ENT review** | — | Every day delayed cuts recovery probability sharply; the window matters more than the supplement. *(Stachler 2012)* | NOT prescribed | Time is hearing. *(Stachler 2012)* |
+| **DO NOT RECOMMEND: Homeopathy alone for acute SSHL** | — | Documented tradition only; no RCT evidence; SSHL needs oral steroid. *(Boericke; CCRH)* | NOT first response | Get the steroid first. |
+| **DO NOT RECOMMEND: Loud earphone use during recovery** | — | Re-traumatises injured cochlea; ≥6 weeks acoustic rest. *(Audiology standard)* | NOT during recovery | Quiet the ear. |
+| **DO NOT RECOMMEND: Continued use of confirmed ototoxic drug if alternative exists** | — | Aminoglycoside, high-dose loop diuretic, platinum chemo, NSAID high-dose — coordinate alternative with prescriber. *(EMA ototoxicity)* | Coordinate substitution | Off-load the ear. |
+| **DO NOT RECOMMEND: Alternative-only treatment without baseline MRI** | — | Acoustic neuroma is ~10% of SSHL — rule it out first. *(Stachler 2012)* | Not optional | MRI is mandatory. *(Stachler 2012)* |
 
 ## 14. Direct-to-Consumer Comorbidity Screening
 

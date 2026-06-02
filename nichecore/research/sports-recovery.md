@@ -217,6 +217,8 @@ Sourcing: Plum Flower (Mayway, Oakland CA), Min Tong, Treasure of the East. Bric
 | Sarcolacticum acidum | Lactate-burn pattern post-endurance. *(Boericke)* | endurance fatigue | 30C BID | T/H | *(Boericke; CCRH)* |
 | Phosphoric acid | Exhaustion from physical + emotional drain. *(Boericke)* | post-endurance depletion | 30C BID | T/H | *(Boericke; Kent)* |
 
+**Honest framing of Homeopathy in sports recovery.** The above five Homeopathy remedies are documented tradition (Tier T/H), drawn from Boericke 1927 *Materia Medica*, Kent 1897 *Repertory*, Allen *Keynotes* and the CCRH-AYUSH sports-medicine case-series. Modern high-quality RCT evidence for Homeopathy in sports recovery is essentially absent — Cochrane reviews on Arnica for DOMS are null or contested. The active spine of this protocol remains §3 (creatine, whey, tart cherry, beetroot nitrate, magnesium, glutamine, omega-3, curcumin), §5 sleep + appropriately-timed CWI + sauna + compression, §6 protein floor + carbohydrate periodisation, §7 deload + sleep hygiene. The Homeopathy table is included for transparency under the founder mandate; it is not the active recovery layer.
+
 ## 5. Biophysical Interventions — home only
 
 ### 5.1 What home tools actually work

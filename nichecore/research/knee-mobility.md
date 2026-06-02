@@ -244,6 +244,8 @@ Mizaj framing: cold-dry (saudawi) joint stiffness or hot-moist (damawi) inflamma
 | Sulphur | Chronic joint with skin or gut overlay — Hahnemann's "psoric" constitutional. *(Hahnemann; Boericke)* | Chronic joint with constitutional layer | T | *(Hahnemann)* |
 | Lycopodium clavatum | Right-knee affinity in the Lycopodium constitution — bloating, 4-8 PM aggravation. *(Boericke; Kent)* | Right-knee OA in Lycopodium constitution | T | *(Boericke)* |
 
+**Honest framing of Homeopathy in knee mobility.** The above seven Homeopathy remedies are presented as documented tradition (Tier T/H), drawn from Boericke 1927 *Materia Medica*, Kent 1897 *Repertory*, Allen *Keynotes* and Hahnemann *Materia Medica Pura*. Modern high-quality knee-OA RCT evidence for Homeopathy is contested. The active spine of this protocol remains §3 (curcumin Meriva, boswellia AKBA, undenatured collagen UC-II, MSM, glucosamine + chondroitin), §5 home PBM + compression + unloader brace, §7 progressive RT (the single best evidence-base in knee OA — strengthening quads + glutes beats almost every supplement). The Homeopathy table is documented for transparency under the founder mandate; it is not the active layer.
+
 ## 5. Biophysical Interventions — home-administered only
 
 ### 5.1 The home toolkit at a glance

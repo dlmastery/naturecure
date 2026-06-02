@@ -693,6 +693,16 @@ Tertiary: **Smartphone macro trichoscopy** — visualises individual hair-shaft 
 | Cortisol pattern | 4-point salivary cortisol — for stress-driven greying. *(DUTCH cortisol kit)* | 4-point salivary cortisol | DUTCH | *(DUTCH kit)* |
 | Coeliac (if greying + digestive symptoms) | Anti-tTG-IgA — coeliac silently depletes ferritin and B12. *(Corazza 1995)* | Anti-tTG-IgA + total IgA | LetsGetChecked | *(Corazza 1995)* |
 
+### When to call your doctor
+
+> **For you, in plain words.** Five situations in premature greying are not "wait and see" — they need medical workup before topical experimentation.
+
+- **Rapid-onset greying over weeks/months, especially with neurological symptoms** (tingling, balance loss, cognitive change) — rule out B12-deficiency / pernicious-anaemia neuropathy, and rare paraneoplastic syndromes; immediate medical workup. *(Allen 2008; Bhat 2013)*
+- **Co-occurring thyroid symptoms** — fatigue, cold intolerance, weight change, dry skin, hair shedding → full thyroid panel + endocrinology; Hashimoto's silently drives both greying and shedding. *(EMA thyroid)*
+- **B12 + folate deficiency workup** — vegan / vegetarian / 65+ / metformin / PPI users with greying need full B12 + active-B12 + MMA + intrinsic-factor-antibody workup before topical anything; this is reversible at the source. *(BJ Haematology B12; Allen 2008)*
+- **Co-occurring vitiligo patches** — autoimmune cluster; refer to dermatology + the /vitiligo-support sister dossier for parallel management; consider full autoimmune-thyroid + ANA + anti-melanocyte panel.
+- **Severe psychological distress or body-image distress from greying** — mental-health referral; the perception load is real and CBT for body image (Cash workbook) is well-evidenced. *(Cash 2008; crisis lines: 988 US, Samaritans UK, iCall IN, Lifeline AU)*
+
 ## 12. Implementation Timeline (12 months, self-tracked)
 
 ### 12.1 The year, in plain words

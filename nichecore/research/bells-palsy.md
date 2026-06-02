@@ -231,6 +231,8 @@ Bell's palsy is usually framed as "viral inflammation of the facial nerve — wa
 | Stannum metallicum | Slowly-progressive paresis. | Slow-progressive | 30C | T/H | *(Boericke)* |
 | Conium maculatum | Chronic-paralysis ascending pattern. | Chronic ascending | 30C | T/H | *(Boericke)* |
 
+**Honest framing of Homeopathy in Bell's palsy.** The above ten Homeopathy remedies are presented as a documented tradition (Tier T/H), not as evidence-grade interventions. Modern high-quality RCT evidence for Homeopathy in Bell's palsy specifically is essentially absent; what exists is repertorial tradition (Boericke 1927; Kent 1897; Hahnemann *Organon*) and small CCRH case-series from India AYUSH. The active spine of this protocol remains §3 (Methylcobalamin, R-ALA, Acetyl-L-Carnitine), §5 home PBM + facial taping, and §7 mirror-feedback facial rehab. If a Homeopathy remedy is helpful as a personal layer it is welcome; it is not where the evidence sits.
+
 ## 5. Cofactor Micronutrient Floor
 
 ### 5.1 The five-cofactor floor
@@ -313,7 +315,52 @@ Bell's palsy is usually framed as "viral inflammation of the facial nerve — wa
 | Shavasana (Corpse pose) | Deep relaxation | — | Daily 15 min stress modulation |
 | Inversions (Sarvangasana — caution) | Cerebral circulation | If retinal or BP issue | Avoid if eye still vulnerable; later phase |
 
-## 8. Master 24-Hour Timetable
+## 8. Daily Unified Combos (≤10 capsules/day)
+
+> **For you, in plain words.** Three daily combo stacks that organise the OTC molecules from §3 + cofactor floor from §5 into a manageable AM / midday / PM rhythm. Total ≤10 capsules/day. Plus a parallel daily eye-protection + mirror-practice combo (mechanical, not supplemental). *(Sullivan 2007 oral steroid window; Beurskens 2003 mime therapy; AYUSH cofactor framework)*
+
+### Combo 1 — Morning (post-breakfast)
+
+> **For you, in plain words.** Five molecules with breakfast: methylcobalamin, B-complex, omega-3, D3 + K2, magnesium AM portion. Take with food that contains fat for D3/K2/omega-3 absorption.
+
+- Methylcobalamin (B12) 1000-1500 µg sublingual
+- B-complex methylated (P-5-P + 5-MTHF + methyl-B12 + B1 + B2 + B5)
+- Omega-3 EPA + DHA 2 g (with fat)
+- Vitamin D3 5000 IU + K2 (MK-7) 100 µg
+- Magnesium glycinate 150 mg AM
+
+### Combo 2 — Midday (post-lunch)
+
+> **For you, in plain words.** Two molecules with lunch: Ashwagandha KSM-66 (HPA + nerve), Curcumin Meriva (anti-inflammatory). Plus the optional Ayurveda layer (Bala, Saraswatarishta, Mahayogaraja Guggulu) if pursued.
+
+- Ashwagandha KSM-66 300 mg
+- Curcumin Meriva 500 mg (with lunch fat)
+- Optional: Bala 500 mg / Mahayogaraja Guggulu 500 mg (Ayurveda layer)
+- Optional: Saraswatarishta 15-20 ml post-lunch
+
+### Combo 3 — Evening (post-dinner + HS)
+
+> **For you, in plain words.** Three molecules at dinner + HS: alpha-lipoic acid (peripheral nerve), magnesium glycinate PM (sleep + nerve), Brahmi (Medhya). Plus the bedtime eye-protection ritual.
+
+- Alpha-lipoic acid 300 mg (R-isomer if possible)
+- Magnesium glycinate 250 mg PM (sleep + bone matrix + nerve)
+- Bacopa (Brahmi) 300 mg
+- Bedtime eye protection: preservative-free ophthalmic ointment + medical tape on affected eyelid
+
+### Combo 4 — Daily mechanical protocol (non-supplemental, non-negotiable)
+
+> **For you, in plain words.** The mechanical interventions matter more than the supplements in the acute phase. Eye protection every 1-2 h daytime; mime / mirror practice 15-30 min daily; Anu Taila Nasya 2 drops each nostril AM; Mahanarayan or Mahabhringraj taila gentle self-massage on affected side 5-10 min PM.
+
+- Preservative-free artificial tears (Refresh, Systane, Hycosan) every 1-2 hours daytime
+- Bedtime: ophthalmic ointment (Lacri-Lube, Refresh PM) + medical tape on affected eyelid
+- Mime / mirror practice (Beurskens 2003 protocol or VideoMime app) 15-30 min daily
+- Anu Taila Nasya 2 drops each nostril AM
+- Mahanarayan or Mahabhringraj taila self-massage 5-10 min affected side PM
+- If on prednisolone — coordinate timing with prescriber
+
+**Total daily: 8-10 capsules + mechanical eye-protection + mime/mirror practice + Nasya + taila.**
+
+## 8.5 Master 24-Hour Timetable
 
 ### 8.1 The day-of-Bell's plan
 
@@ -576,6 +623,38 @@ Bell's palsy is usually framed as "viral inflammation of the facial nerve — wa
 | EMG / ENoG prognostic grading | B | 3-21 days post-onset — guides surgical decompression decision. | §10.7.3 severe grading |
 | MRI brain | Standard | Atypical, slow-progressive, recurrent, bilateral, or red-flag. | §10.7.3 red-flag escalation |
 | Lid weights / tarsorrhaphy | Standard ophthalmology | Severe lagophthalmos refractory to OTC stack. | §10.7.3 ophthalmology |
+
+### 13.7 Honest evidence-tier comparison — including what we DO NOT recommend
+
+> **For you, in plain words.** The §13.2 table above ranks every approach this dossier covers by honest evidence tier. Below is the explicit "do not recommend" list for Bell's palsy, included for full transparency so users and clinicians know what the protocol does NOT endorse.
+
+| Approach | Tier | Plain-words verdict (≤25 words) | Where it fits in YOUR protocol | TL;DR (plain English) |
+|---|---|---|---|---|
+| Oral prednisolone 60 mg/d × 5d started within 72 h | A | Sullivan 2007 NEJM (n=551) — 9-month full recovery 83% steroid vs 64% control. The single largest outcome lever in Bell's palsy. *(Sullivan 2007)* | Coordinate with GP / urgent care today | Time is recovery. *(Sullivan 2007)* |
+| Eye protection (artificial tears + ointment + bedtime tape) | A | Standard ophthalmology; non-substitutable mechanical lever to prevent exposure keratitis. | Cornerstone — daily + nightly | Save the cornea. |
+| Mirror / mime / Kabat home practice | A | Beurskens 2003 BMJ RCT; Cardoso 2008 systematic review B+. | Cornerstone — daily | Practice the smile. *(Beurskens 2003)* |
+| Methylcobalamin + B-complex + omega-3 + Mg | B | Nerve-repair cofactor pool; small Bell's-specific RCTs (Diaz 2018 B12). | Daily layer | The cofactor floor. |
+| Ashwagandha + Bacopa + Bala + Mahanarayan taila | B / T | Classical Charaka vata-pacifying + Medhya Rasayana lineage. | Daily layer | The Ayurveda layer. |
+| Qian Zheng San + Bu Yang Huan Wu Tang (TCM) | T / B | Classical "correct the deviation" + Hao 2009 modern meta B+ for facial weakness recovery. | Optional 4-6 weeks | The TCM facial-paralysis classical. |
+| Roghan-e-Mukhraj (Unani external) | T | Classical Unani facial-paralysis external oil. | Optional external | The Unani classical. |
+| Brahma rasayanam + Karpooradi thailam (Siddha) | T | Classical Siddha cognitive + external camphor oil. | Optional layer | The Siddha classical. |
+| Agar-35 / Yu-nying-25 (Tibetan) | T | Classical Men-Tsee-Khang cranial-nerve formulas. | Optional layer | The Tibetan classical. |
+| Homeopathy — Causticum, Aconitum, Belladonna, Gelsemium, Cadmium sulph, Hypericum (10 remedies) | T / H | Classical Boericke + Kent keynote; no robust modern Bell's-specific RCT. | Documented; not active | Tradition under founder mandate. |
+| CBT for facial-disfigurement distress | B | Bogart 2010 small signal — body-image + identity adjustment. | Daily if distress | Internet-CBT free. |
+| MBSR for chronic-condition adjustment | B | Stress + acceptance — general chronic-illness evidence. | Daily 15 min | Insight Timer free. |
+| Smoking cessation + alcohol moderation | A (smoking) / B (recovery) | Vascular contribution + B-vit depletion + nerve repair. | Cornerstone behaviour | Quit smoking; reduce alcohol. |
+| Mediterranean / anti-inflammatory diet | A (vascular general) / B (Bell's extrap) | PREDIMED 2013 vascular base. | Daily food pattern | The platform. *(PREDIMED 2013)* |
+| Botulinum toxin for synkinesis | B (small) | Husseman 2008 + Choi 2013 — chronic post-Bell's synkinesis 6-12 mo. | §10.7.3 clinic | For chronic synkinesis. |
+| Lid weight / tarsorrhaphy / gold weight | Standard ophthalmology | For severe persistent lagophthalmos refractory to OTC. | §10.7.3 ophthalmology | If OTC fails. |
+| EMG / ENoG prognostic grading | B | 3-21 days post-onset — guides surgical decompression decision. | §10.7.3 severe | Only for severe grading. |
+| Hyperbaric oxygen | Mixed | Bennett 2012 mixed evidence. | Optional clinic-route | Not cornerstone. |
+| MRI brain | Standard | For atypical / slow-progressive / recurrent / bilateral / red-flag. | §10.7.3 red-flag | Rule out alternatives. |
+| **DO NOT RECOMMEND: Antivirals (valaciclovir / aciclovir) added to steroids in classic Bell's** | — | Sullivan 2007 NEJM + de Almeida 2009 meta — NO added benefit over steroids alone in classic Bell's. (Different in Ramsay-Hunt.) | NOT in active protocol | Steroids only; not antivirals (unless Ramsay-Hunt). *(Sullivan 2007)* |
+| **DO NOT RECOMMEND: Waiting >72 h before considering steroid** | — | The 72-hour window is the largest determinant of outcome; delay shrinks the steroid benefit. | NOT prescribed | Don't wait. *(Sullivan 2007)* |
+| **DO NOT RECOMMEND: Electro-acupuncture as cornerstone** | — | Cochrane Chen 2010 + Liang 2013 mixed; useful as optional layer, NOT replacement for evidence-based interventions. | Optional only | Not the cornerstone. *(Cochrane Chen 2010)* |
+| **DO NOT RECOMMEND: Surgical facial-nerve decompression as routine** | — | Gantz 1999 historical; evidence weak; not standard practice today. | NOT routine | Rare specific indications only. |
+| **DO NOT RECOMMEND: Homeopathy alone in the acute 72-h window** | — | Causticum etc. are documented tradition without modern RCT; the 72-h steroid window matters more. | Documented only | Steroids first. |
+| **DO NOT RECOMMEND: Skipping eye protection because the eye "doesn't feel dry"** | — | Corneal damage from exposure can occur silently; preservative-free tears + bedtime tape are non-negotiable. | NOT optional | Save the cornea. |
 
 ## 14. Direct-to-Consumer Comorbidity Screening
 

@@ -715,6 +715,17 @@ Overlay: **PSQI sleep score** (target <5), **GAD-7 anxiety**, **PHQ-9 depression
 | Inflammation | hs-CRP + GlycA + ANA — vascular + autoimmune screen. *(EAS inflammation)* | hs-CRP + GlycA + ANA | InsideTracker | *(EAS)* |
 | Coeliac (if AA / digestive) | Anti-tTG-IgA + total IgA — for alopecia areata + gut overlap. *(Corazza 1995 coeliac-AA cohort)* | Anti-tTG-IgA + total IgA | LetsGetChecked | *(Corazza 1995)* |
 
+### When to call your doctor
+
+> **For you, in plain words.** Six situations in hair thinning are not "wait and see" — they need a dermatologist or relevant specialist (not the ER, but soon).
+
+- **Sudden patchy hair loss** (smooth round bald patches) — likely alopecia areata; refer to dermatology for early assessment + treatment options (intralesional steroids, JAK inhibitors). *(BAD AA guidelines; Strazzulla 2018)*
+- **Scarring scalp inflammation** — redness, scaling, pustules, perifollicular scaling, smooth scarred patches, loss of follicular ostia → urgent dermatology referral; cicatricial alopecia (LPP, FFA, CCCA, folliculitis decalvans) needs early biopsy + immunomodulator treatment to halt permanent loss. *(BAD scarring alopecia)*
+- **Diffuse hair loss with fatigue, weight change, or cold intolerance** — workup for thyroid (TSH + fT4 + antibodies) and iron-deficiency (ferritin + iron panel) is non-negotiable before topical experimentation. *(EMA thyroid; WHO ferritin)*
+- **Post-COVID accelerated shedding 2-4 months after infection** — telogen effluvium; dermatology assessment + reassurance; usually reverses by 9-12 months. *(Mieczkowska 2021)*
+- **Co-occurring androgenic features** — irregular cycles, hirsutism, acne, oligomenorrhoea in women (PCOS workup) or low libido + ED + low energy in men (hypogonadism workup) → endocrinology referral. *(ESHRE/ASRM 2018 PCOS; EAU hypogonadism)*
+- **Severe psychological distress, social withdrawal, or suicidal ideation linked to hair loss** — mental-health referral + dermatology; the appearance impact is real. *(crisis lines: 988 US, Samaritans UK, iCall IN, Lifeline AU)*
+
 ## 12. Implementation Timeline (12 months, self-tracked)
 
 ### 12.1 The year, in plain words

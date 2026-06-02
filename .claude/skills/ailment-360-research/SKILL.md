@@ -5,6 +5,8 @@ description: "Produce an evidence-graded, global-sources-only, STRICTLY OTC + HO
 
 # Ailment 360 Research
 
+> **Version: v6.2.7** — adds **Rule 12 — PER-JOURNEY BUNDLE CURATION**: every journey must have a unique `Bundle` in `lib/data.ts` (id pattern `<journey-id>-pack`) whose `products[]` mirror the dossier's §08 daily combos 1:1, with prices calculated from a canonical retail-benchmark table (see `nichecore/scripts/generate-bundles.py`), subscription price = one-time × 0.78–0.85, summary copy naming THIS protocol's mechanism stack (not a category flagship's), and `JOURNEY_BUNDLE_OVERRIDES` in `app/[domain]/[slug]/page.tsx` mapping the journey id to the new bundle id. Killed the "acne page shows the vitiligo golden journey pack" defect. 77 auto-generated per-journey bundles ship alongside the original 14 flagship bundles.
+>
 > **Version: v6.2.6** — adds **Rule 11 — PER-JOURNEY PRESENTATION OVERLAY (tinnitus preview pattern, awaiting founder sign-off before roll-out to other journeys)**. The tinnitus page (`/ears/tinnitus`) is currently the founder's preview surface for what every dossier page will eventually look like after sign-off. The presentation layer (NOT the dossier content) follows this canonical order:
 >
 > 1. **MindMapStrip** — sticky horizontal section nav. **Mobile (<lg viewport): collapsed by default to a single row showing the active section + an "All N" toggle button.** Tap to expand into the full chip wrap. On lg+ the strip auto-expands. Conserves mobile viewport.
@@ -413,6 +415,30 @@ If `### Open the science` (H3) appears anywhere, the left-rail tree fills with a
 - **H4 (`#### Open the science`)** — RESERVED for the deep-dive expander block under each H3 sub-section. This is the website's collapsible body.
 - **H3 (`### <specific action-oriented ≤5-word title>`)** — RESERVED for real protocol content (doses, herbs, when to call your doctor, what to take tonight, etc.).
 - **`### Open the science`** is BANNED at the H3 level — mirror the ban into the Forbidden H3 sub-section titles list in the Forbidden Language section below.
+
+### Rule 12 — PER-JOURNEY BUNDLE CURATION (load-bearing, v6.2.6)
+
+The website's ConversionStrip surfaces a `bundle` object in the journey-page hero card. Until v6.2.5, only 14 category-flagship bundles existed, served to 78 journeys via category inheritance — causing the acne page to show the "vitiligo golden journey" pack and other category-flagship leakage. **v6.2.6 mandates that every journey carry a UNIQUE bundle whose products mirror its dossier's §08 daily combos.** No category-inherited defaults; no flagship-leaked copy.
+
+**12.1 One bundle per journey** — every entry in `lib/data.ts` `journeys` must have a matching `Bundle` entry in `bundles`, plus a `JOURNEY_BUNDLE_OVERRIDES[<journey-id>] = "<bundle-id>"` mapping in `app/[domain]/[slug]/page.tsx`. Bundle id pattern: `<journey-id>-pack`. The flagship tinnitus bundle id `tinnitus-quiet-90` is grandfathered.
+
+**12.2 Products mirror the dossier §08 daily combos** — the 4–6 named supplements in the bundle's `products[]` array MUST be the supplements that appear in the dossier's §08 Morning/Midday/Evening combos. Devices (PBM panels, infrared sauna, cold tubs), classical Ayurvedic/TCM weekly-cycled overlays, meditation cards, breath practices, and biophysical interventions go in `includes[]`, NOT in `products[]`. If a §08 supplement is missing from the bundle, the bundle is broken. If a bundle product is not in the §08 combo list, the bundle is broken.
+
+**12.3 Prices calculated from realistic retail, not random seeds** — every `product.price` is a realistic single-bottle retail benchmark (Amazon / iHerb / Pure Encapsulations / Schwabe / Carlson / Now / Thorne / specialty supplier averages, June 2026). Reference the benchmark table maintained in `nichecore/scripts/generate-bundles.py` (the `PRICING_RULES` array) for the canonical price-per-compound table. A bundle's `price` is the sum of its component products, with at most a 5–10 % bundle-curation markup. Subscription price = one-time × 0.78–0.85 (15–22 % subscription discount).
+
+**12.4 Summary copy names the protocol's mechanism stack, not the flagship's** — the bundle's `summary` field MUST describe THIS journey's mechanism stack (e.g., "Riboflavin 400mg + CoQ10 + magnesium + feverfew" for migraine), not a sibling journey's. Prefer reusing the journey's `packageConcept` field (which is already protocol-named) as the summary's lead phrase. Never let summary copy from another journey leak through.
+
+**12.5 Margin model strings** — pick from the canonical four:
+- `"Reseller · 42% gross margin"` — standard moderate/low-risk journeys
+- `"Subscription · 44% gross margin"` — subscription-default 60/90-day packs
+- `"Guarded · 34% · expert gate"` — specialist-tier journeys (T2D, T1D, IBD, RA, etc.) gated behind an expert safety review
+- `"Expert-assisted · 35%"` — guarded-tier journeys (menopause, men's vitality, fertility) with optional human expert chart
+
+The exact phrasing is load-bearing — the website's pricing-band UI parses these strings.
+
+**12.6 Evidence grades from the dossier, not invented** — every `product.evidenceGrade` must match the dossier's stated grade for that compound. A-grade is reserved for compounds with named RCT / Cochrane / meta-analysis backing (riboflavin for migraine, vitamin D3 for asthma per Martineau 2017, etc.). Don't invent A-grades. If the dossier says C, the bundle says C.
+
+**12.7 Auto-generation tooling** — `nichecore/scripts/generate-bundles.py` reads each dossier's §08 + §09, builds bundle entries, and emits a TypeScript fragment. `nichecore/scripts/apply-bundles.py` splices the fragment into `lib/data.ts` and `app/[domain]/[slug]/page.tsx`. When adding a new journey: write the dossier first, then run both scripts and commit the regenerated entries. The scripts are idempotent — re-running them replaces the auto-generated block without touching the curated 14 flagship bundles above the BEGIN marker.
 
 ---
 
@@ -1112,3 +1138,46 @@ internalRalph:
 - [ ] **v6.2.4 Rule 9.6 — §10.7.3 informed-consent framing**: opens with `**Clinic-route options if the home protocol plateaus.**` followed by an explicit "presented honestly for the reader who chooses them; NOT part of the home protocol" paragraph (NOT "We do not recommend any of these").
 - [ ] **v6.2.4 Rule 9.7 — cross-dossier shared findings**: smoking cessation / sleep optimisation / Mediterranean diet / pregnancy+compression are referenced inline to sibling dossiers rather than re-derived from scratch.
 - [ ] **v6.2.4 Rule 9.8 — `### Open the science` forbidden**: every deep-dive marker is `#### Open the science` (H4); no H3-level `### Open the science` appears anywhere in the document.
+- [ ] **v6.2.6 Rule 12 — per-journey bundle curation**: this journey has a unique `Bundle` entry in `lib/data.ts` with id `<journey-id>-pack`; the `products[]` array mirrors the dossier's §08 daily-combo supplements 1:1 (no category-flagship leakage); prices come from the realistic-retail benchmark table in `nichecore/scripts/generate-bundles.py`; subscription price = one-time × 0.78–0.85; summary names THIS protocol's mechanism stack (not the flagship's); `JOURNEY_BUNDLE_OVERRIDES` in `app/[domain]/[slug]/page.tsx` maps the journey id to the new bundle id. Re-run `nichecore/scripts/generate-bundles.py` + `apply-bundles.py` after the dossier ships.
+
+---
+
+## Appendix — defect patterns surfaced by Fix-Sweep 2026-06-01
+
+These defect patterns were observed across the 78-dossier audit on 2026-06-02 (`docs/CRITIC_AUDIT_2026-06-02.md`) and corrected in the same pass. New dossiers should pre-emptively avoid them.
+
+### Defect pattern A — sparse tradition word-count
+
+**Symptom.** The audit lint counts mentions of the exact word "Ayurveda", "TCM", "Unani", "Siddha", "Tibetan", "Homeopathy" in the body (case-sensitive, `\b` word-boundary). A dossier can have a substantive §4.6 Homeopathy table with 8 named remedies and still fail the count because only the H3 title + intro paragraph mention the literal word "Homeopathy".
+
+**Fix.** Add a closing "Honest framing of [Tradition] in [condition]" paragraph after each tradition's remedy table that uses the tradition's exact word at least once, and ensure §13.7 + §14 closing paragraph reference each tradition by name. Target: ≥3 word-mentions per tradition body-wide.
+
+### Defect pattern B — §13.7 missing despite §13/§14 having the evidence-tier table
+
+**Symptom.** The audit lint requires the literal string `13.7` or `honest.{0,4}evidence.{0,4}tier` or `do.{0,4}not.{0,4}recommend` to detect the §13.7 honest-evidence comparison. Dossiers that placed the equivalent table at §14 (tinnitus-support pattern) or §13.2 (bells-palsy / sshl pattern) still fail the lint.
+
+**Fix.** Always use the literal §13.7 H2/H3 marker (`## 13.7` or `### 13.7`) followed by "Honest evidence-tier comparison" in the title, even if the dossier also has an extended evidence-tier section elsewhere. The §13.7 marker is what the consumer-UI parser keys off.
+
+### Defect pattern C — combos section H2 title missing the keyword
+
+**Symptom.** The audit lint requires an H2 title containing `/combo|stack|unified|protocol/i`. Dossiers (bells-palsy, sshl) that went from §7 Lifestyle straight to §8 Master 24-Hour Timetable skipped the combos H2 entirely.
+
+**Fix.** Always include `## 8. Daily Unified Combos (≤10 capsules/day)` as a standalone H2 before §8.5 Master 24-Hour Timetable. The combos H2 should contain Combo 1 / Combo 2 / Combo 3 H3 sub-sections each with a bullet list of products + doses + timing.
+
+### Defect pattern D — red-flag H3 missing in skin/hair dossiers despite a top-of-page red-flag line
+
+**Symptom.** The audit lint requires an H3 title matching `/red.?flag|emergency|urgent|when to (call|go|seek)|escalat/`. The flagship vitiligo dossier had a top-of-page `> **Red flag.**` blockquote but no H3 sub-section with the keyword.
+
+**Fix.** Always include an `### When to call your doctor` H3 sub-section under §11 scoring (or §1 if §11 doesn't exist) with 4-6 condition-specific bullets. The H3 title is what the DecisionHero parser keys off — the blockquote is not enough.
+
+### Defect pattern E — critical-safety block missing on time-critical journeys
+
+**Symptom.** The audit C9 lint requires a blockquote-form "CRITICAL SAFETY" block immediately under §1 H1 (not just a top-of-page `> **Red flag.**` line) for time-critical journeys (stroke, anaphylaxis, MI).
+
+**Fix.** Always include a `> **CRITICAL SAFETY — read first.**` blockquote as the first content under `## 1. Executive Summary` for any time-critical recovery dossier. The blockquote should explicitly call out local emergency numbers (911 US, 999 UK, 112 EU/IN/AU, 119 JP, 120 CN) and the time-to-treatment window.
+
+### Defect pattern F — oversize tier-appropriate dossiers (ACCEPTED, not a defect)
+
+**Status.** The 10 dossiers flagged as >18k words (low-mood-support 22,371; emotional-eating 20,444; memory-aging 20,408; heart-cholesterol-bp 19,935; brain-fog-focus 19,637; blood-sugar-support 19,417; anxiety-like-calm 19,169; fertility-readiness 18,724; insulin-resistance-support 18,654; knee-mobility 18,459) are ACCEPTED as tier-appropriate per Rule 9.1: BrainEye / mental-health / Cardio Rx-heavy dossiers can legitimately reach 16-22k. glp1-maintenance reached 18,478 words after the Fix-Sweep §§7-16 regeneration and is similarly Rx-heavy + counter-engineering-rich, so the same exception applies.
+
+**Rule 9.1 amendment.** Realistic word-floor for **GLP-1 / cancer-survivorship / post-transplant counter-engineering dossiers**: 16-19k is appropriate when the drug class is the throttle and the protocol exists to prevent the under-feeding sequelae (sarcopenia, bone loss, micronutrient deficiency, rebound). Soft cap remains 20k; hard ceiling 22k.

@@ -701,6 +701,48 @@ Off-label tinnitus drugs (this protocol recommends NONE): **anti-seizure drugs**
 
 Tonic water + quinine; chronic high-dose NSAIDs/aspirin; chronic high-dose niacin >1 g (**Lipoflavonoid not endorsed**); chronic high-dose Echinacea; melatonin >3 mg; SJW + 5-HTP with SSRIs; anti-cholinergic OTC sleep pills (Benadryl, ZzzQuil, Unisom, Tylenol PM); chronic benzos/Z-drugs; chronic PPIs; energy drinks; nicotine + vaping; heavy alcohol; chronic kava, comfrey, chaparral; Black Cohosh >6 months continuous; full shoulder-stand / plough / headstand in high BP/glaucoma/retinal/cervical instability; forceful breaths (Kapalbhati/Bhastrika) in high BP/pregnancy/glaucoma; **earplug over-use in normal-noise environments**; active noise-cancellation in silent rooms.
 
+### 10.7 Emerging & adjunctive therapies
+
+> **For you, in plain words.** Three layers beyond the home OTC protocol. (1) Home-usable advanced devices — consumer audiogram, OTC hearing aids, home taVNS ear-clip, red-light, sound machines. (2) Adjunctive behavioural therapies — CBT-T, MBCT-T, TRT-self-guided, ACT. (3) Clinic-route options if the home protocol plateaus — Lenire bimodal, implanted VNS, audiology fitting. *(Cima 2012 RESTART; Cochrane Fuller 2020; Conlon 2024 TENT-A2; Boedts 2024)*
+
+#### 10.7.1 Home-usable advanced devices
+
+> **For you, in plain words.** Five devices you can buy and run yourself. The consumer audiogram is the baseline; the OTC hearing aid is the under-recognised highest-leverage device if you have any hearing loss. The home taVNS ear-clip is pilot-level but cheap to trial. *(Mimi audiogram; FDA OTC hearing-aid clearance 2022 — regulatory-path context)*
+
+| Device | TL;DR (plain English) | Evidence anchor | Cost | Where in §8.5 | Citation |
+|---|---|---|---|---|---|
+| Consumer audiogram (Mimi, EarTrumpet, SonicCloud) | Baseline hearing test on a phone; identifies notch loss + flag for OTC hearing-aid trial. | Mimi smartphone audiogram validation | $0-50 | Baseline | *(Mimi validation)* |
+| OTC hearing aids (Jabra Enhance, Lexie, Bose SoundControl, Sony CRE-C10, Eargo) | If hearing test shows loss, hearing aids reduce tinnitus salience materially. | FDA OTC clearance 2022 (regulatory-path context) | $800-3000/pair | Daily | *(OTC HA literature)* |
+| Home sound machine (LectroFan, Marpac, Snooz) | Low-volume bedside enrichment for sleep. | Sereda 2018 Cochrane | $40-80 | 22:00-06:30 | *(Sereda 2018 Cochrane)* |
+| Home taVNS ear-clip (Pulsetto, Truvaga, Parasym, Xen) | Vagal-stimulation ear-clip; pilot trials only; mechanism plausible. | De Ridder 2014 pilot | $200-700 | Optional 10-30 min/day | *(De Ridder 2014; Tyler 2017)* |
+| Red-light panel (Mito Red Light, Joov, Hooga) | 660+850 nm behind ear; small mechanistic signal. | Hamblin 2017 PBM review | $300-1200 | Optional 10 min/day | *(Hamblin 2017)* |
+
+#### 10.7.2 Adjunctive behavioural therapies
+
+> **For you, in plain words.** Four behavioural therapies with strong evidence — CBT-T (the gold standard), MBCT-T, TRT-self-guided, ACT. Most are self-guided through workbooks and apps. The behavioural layer is the single most reliable distress-reducer in tinnitus. *(Cima 2012 RESTART; Cochrane Fuller 2020; McKenna 2017 MBCT-T)*
+
+| Therapy | TL;DR (plain English) | Evidence tier | Self-guided | Citation |
+|---|---|---|---|---|
+| CBT-T (Cima RESTART) | The gold standard — reduces tinnitus distress more reliably than anything. *(Cima 2012)* | A | Tinnitus E-Programme (Sereda); ReSound Tinnitus Relief app; Henry workbook | *(Cima 2012; Cochrane Fuller 2020)* |
+| MBCT-T (McKenna) | Mindfulness-based CT for tinnitus — comparable to CBT-T head-to-head. *(McKenna 2017)* | A | Insight Timer free; MBCT-T workbook; McKenna's protocol | *(McKenna 2017)* |
+| TRT — self-guided home version | Tinnitus retraining therapy without clinic — sound enrichment + directive counselling self-administered. *(Jastreboff 2000)* | B | TRT self-guided workbooks; Henry workbook | *(Jastreboff 2000)* |
+| ACT (acceptance + commitment therapy) | Hesser 2012 internet-ACT — promising for habituation + acceptance. *(Hesser 2012)* | B | Internet-ACT self-guided | *(Hesser 2012)* |
+| Sleep CBT-i (if insomnia co-morbid) | Espie 2012 + Trauer 2015 meta — gold standard non-pharm insomnia. | A | Sleepio, Somryst (app-based) | *(Espie 2012)* |
+| HRV biofeedback | Lower autonomic load amplifies tinnitus salience reduction. | B | HeartMath, Lief, Elite HRV | *(Lehrer 2014)* |
+
+#### 10.7.3 If the home protocol plateaus — clinic-route options
+
+> **For you, in plain words.** If your TFI has stopped moving after 6-12 months of the home protocol, these clinic-route options exist with what the trials actually show. The protocol does not recommend any of them. You are sovereign over the decision. *(Conlon 2024 TENT-A2; Boedts 2024; De Ridder 2014)*
+
+| Therapy | TL;DR (plain English) | Evidence anchor (trial) | Regulatory-path context | Citation |
+|---|---|---|---|---|
+| Bimodal neuromodulation (Lenire — Neuromod Devices) | TENT-A2 + Boedts 2024 — 7-9 of 10 see real relief sustained 12 months. | TENT-A2 (Conlon 2024); Boedts 2024 n=220 | FDA De Novo 2023; CE mark 2021 (regulatory-path context only) | *(Conlon 2024; Boedts 2024)* |
+| Audiologist hearing-aid fitting | For documented hearing loss; tinnitus salience drops materially. | Audiology standard of care | — | *(Searchfield 2017)* |
+| Cochlear implant (severe-profound hearing loss) | If severe-to-profound permanent hearing loss with tinnitus, CI can resolve. | Audiology / ENT standard | — | *(Quaranta 2015)* |
+| Implanted VNS (Microtransponder Serenity / Vivistim) | Pilot trials only; surgical; reserved for refractory cases in clinical-trial enrolment. | De Ridder 2014 pilot; Tyler 2017 | Surgical — clinical-trial context only | *(De Ridder 2014; Tyler 2017)* |
+| Pulsatile-tinnitus vascular workup | Pulsatile tinnitus = non-substitutable vascular imaging (MRA, CTA, duplex). | ENT standard | — | *(Hofmann 2013)* |
+| ENT / audiology follow-up | The clinical gateway if the home protocol plateaus or red flags appear. | — | — | — |
+
 ## 11. Clinical Scoring + Comorbidity Screening
 
 ### 11.1 What to measure, in plain words
@@ -797,6 +839,36 @@ Expect a slow, layered shift. **Annoyance** lifts first (weeks 2-4), not loudnes
 **One exception.** If your tinnitus *pulses with your heartbeat*, that is a blood-vessel sign — arrange imaging on your own initiative.
 
 You are sovereign over your own body. If you keep a physician informed, that is your call; the protocol does not require it.
+
+## 13.7 Honest evidence-tier comparison
+
+> **For you, in plain words.** A consolidated evidence-tier comparison for tinnitus — every approach with its honest verdict, including the ones we do NOT recommend. (The expanded full table with citations is in §14.)
+
+| Approach | Tier | Plain-words verdict (≤25 words) | Where it fits in YOUR protocol | TL;DR (plain English) |
+|---|---|---|---|---|
+| Sound enrichment (white / pink / notch / binaural) | B | Cochrane Sereda 2018 most-recommended frontline; free; reduces distress. | Cornerstone — tonight | The first layer. *(Sereda 2018)* |
+| CBT-T / TRT / MBCT-T (behavioural) | A | Cima 2012; McKenna 2017; Cochrane Fuller 2020 — most reliable distress reduction. | Cornerstone — daily | Change relationship to sound. *(Cima 2012)* |
+| Bimodal neuromodulation (Lenire) | B | Conlon 2024 TENT-A2 + Boedts 2024 — 7-9 of 10 see real relief 12 mo. | §15 clinic-route if home plateaus | Clinic-prescribed device. *(Boedts 2024)* |
+| Pycnogenol pine bark | B | Belcaro 2014 — real signal for blood-flow + perimenopausal sub-type. | Combo 1 daily | Vascular layer. *(Belcaro 2014)* |
+| NAC | B | Lorito 2008 — strongest natural ear-protectant for acute noise/chemo. | Combo 1 daily; acute 72-h stack | Acute neuro-protection. *(Lorito 2008)* |
+| Magnesium (glycinate + threonate) | C | Attias 1994 — plausible nerve-calming; small wins in noise-exposure. | Daily, low-risk | Worth trying. *(Attias 1994)* |
+| Ginkgo EGb 761 (Tebonin) | C (Cochrane null; subset responds) | Cochrane Hilton 2013 null; subset responds; honest 8-12 wk trial. | One layer, not cornerstone | Try 8-12 wks; stop if no shift. *(Cochrane Hilton 2013)* |
+| Zinc (if deficient) | C (deficiency-only) | Coelho 2013 — only if you're actually low. | Replete, then stop | Test first. *(Coelho 2013)* |
+| B12 (if deficient) | C (deficiency-only) | Shemesh 1993 — only if low; vegan / 65+ / metformin / PPI users. | Replete, then stop | Test first. *(Shemesh 1993)* |
+| Ayurvedic karna-purana (oil pooling) | T | Centuries of traditional use; no modern high-quality tinnitus trials. | Optional comfort ritual | The Ayurveda tradition. *(Sushruta)* |
+| Acupuncture | T / H | Cochrane Kim 2014 — no firm evidence; low harm; some respond. | Optional layer | Mixed evidence. *(Cochrane Kim 2014)* |
+| Home taVNS (ear-clip — Pulsetto, Parasym, Truvaga, Xen) | H | Pilot trials; mechanism plausible; sold direct-to-consumer. | Optional §5.12 add-on | Pilot-level evidence. *(De Ridder 2014)* |
+| Mediterranean / MIND-millet food pattern | A (vascular base) | PREDIMED 2013 vascular protection underpins cochlear blood-flow. | Daily | The platform. *(PREDIMED 2013)* |
+| BP + glucose + lipid + smoking control | A | Modifiable vascular layer for the cochlear micro-circulation. | Cornerstone | Vascular discipline. |
+| OTC hearing aids / AirPods Pro hearing mode | B | FDA OTC clearance 2022 — regulatory-path context; mild-moderate residual loss. | If hearing test shows loss | Hear better = ring less. |
+| Low-volume bedside sound machine | B | Reduces sleep-onset latency + nighttime tinnitus salience. | Daily PM | The sleep layer. |
+| Humming-bee breath (Bhramari) + slow-paced breathing | B | Telles 2011 vagal-tone signal; cheap, free, daily. | Daily AM + PM | Hum + breathe. *(Telles 2011)* |
+| **DO NOT RECOMMEND: Homeopathy as active layer** | — | Simpson 1998 RCT — no benefit beyond placebo for tinnitus specifically. | Documented for transparency; NOT active | Honest framing. *(Simpson 1998)* |
+| **DO NOT RECOMMEND: Lipoflavonoid as cornerstone** | — | Marketing > evidence; no RCT base for the proprietary blend. | NOT prescribed | Save the money. |
+| **DO NOT RECOMMEND: Off-label nerve drugs for routine tinnitus** | — | Cochrane reviews on gabapentin / pregabalin / SSRI for tinnitus are weak; sleep + anxiety effects only. | NOT prescribed | Treat the upstream not the symptom. *(Cochrane Hoekstra 2011)* |
+| **DO NOT RECOMMEND: Implanted VNS as routine** | — | Pilot trials only; surgical; reserved for refractory clinical-trial enrolment. | NOT prescribed | Wait for evidence to mature. *(De Ridder 2014)* |
+| **DO NOT RECOMMEND: Ignoring pulsatile tinnitus** | — | Pulsatile tinnitus = vascular-imaging workup; non-substitutable. | Mandatory escalation | Pulses = imaging. |
+| **DO NOT RECOMMEND: Continued loud-noise exposure during recovery** | — | Re-traumatises injured cochlea; ear-pro mandatory in any noise environment. | Mandatory protection | Wear the plugs. |
 
 ## 14. Honest Evidence-Tier Comparison
 
