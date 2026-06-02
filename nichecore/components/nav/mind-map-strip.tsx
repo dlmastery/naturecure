@@ -1,10 +1,10 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useRef, useState } from "react";
 import {
   Compass, FlaskConical, Pill, BookOpen, Sun, Salad, Wind, Layers3,
   CalendarHeart, ShieldAlert, LineChart, TimerReset, ShoppingBag,
-  Quote, BookMarked, type LucideIcon,
+  Quote, BookMarked, ChevronDown, ChevronUp, type LucideIcon,
 } from "lucide-react";
 
 export interface MindMapSection {
@@ -78,6 +78,13 @@ export function MindMapStrip({
 }) {
   const stripRef = useRef<HTMLDivElement>(null);
   const activeRef = useRef<HTMLButtonElement>(null);
+
+  // Mobile collapse state — on viewports <lg (1024px), the wrap-strip
+  // can stack 4-5 rows of chips and eat the entire viewport. Default
+  // collapsed: show only the active section + an "Expand" toggle. Open
+  // by default on lg+ via CSS (the wrapper hides toggle + reveals all
+  // chips at lg breakpoint).
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   // No scroll-into-view: with wrap layout every chip is already visible.
 
@@ -188,9 +195,48 @@ export function MindMapStrip({
         borderBottom: "1px solid var(--color-line-strong)",
       }}
     >
+      {/* Mobile-only collapsed view (<lg): a thin row showing the
+          active section + a toggle. Hidden on lg+ via CSS. */}
+      <div className="flex items-center justify-between gap-2 px-3 py-2 lg:hidden">
+        <span
+          aria-hidden="true"
+          className="flex min-w-0 items-center gap-2 text-[0.78rem] font-medium"
+          style={{ color: "var(--color-ink)" }}
+        >
+          <span
+            className="font-mono text-[0.62rem] uppercase tracking-[0.18em] shrink-0"
+            style={{ color: "var(--color-ink-faint)" }}
+          >
+            Section
+          </span>
+          <span className="truncate">
+            {sections.find((s) => s.id === active)?.ordinal}
+            {sections.find((s) => s.id === active) ? " · " : ""}
+            {sections.find((s) => s.id === active)?.label ?? "—"}
+          </span>
+        </span>
+        <button
+          type="button"
+          onClick={() => setMobileOpen((v) => !v)}
+          aria-expanded={mobileOpen}
+          aria-label={mobileOpen ? "Hide all sections" : "Show all sections"}
+          className="inline-flex shrink-0 items-center gap-1.5 rounded-full border px-3 py-1 font-mono text-[0.65rem] uppercase tracking-wider transition-colors"
+          style={{
+            borderColor: "var(--color-line-strong)",
+            color: "var(--color-ink-soft)",
+            background: "#ffffff80",
+          }}
+        >
+          {mobileOpen ? "Hide" : `All ${sections.length}`}
+          {mobileOpen ? <ChevronUp size={12} aria-hidden="true" /> : <ChevronDown size={12} aria-hidden="true" />}
+        </button>
+      </div>
+
+      {/* Full chip wrap — always visible on lg+; on mobile only when
+          mobileOpen is true. */}
       <div
         ref={stripRef}
-        className="flex flex-wrap items-center gap-2 gap-y-2 px-3 py-2.5 sm:px-6 lg:px-8"
+        className={`${mobileOpen ? "flex" : "hidden"} flex-wrap items-center gap-2 gap-y-2 px-3 py-2.5 sm:px-6 lg:flex lg:px-8`}
       >
         {rendered}
       </div>

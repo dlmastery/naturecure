@@ -211,45 +211,13 @@ export function ConversionStrip({
                     <span className="font-medium">Pause or cancel</span> anytime · no contract
                   </span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <Calendar size={13} aria-hidden="true" className="mt-[3px] shrink-0" style={{ color: "var(--color-forest)" }} />
-                  <span>
-                    <span className="font-medium">Day-14 check-in</span> — if it's not working, we route you to an expert or pause refills
-                  </span>
-                </li>
               </ul>
             </div>
           </div>
         </div>
 
-        {/* ───────── Supporting 2x3 card grid ───────── */}
+        {/* ───────── Supporting card grid ───────── */}
         <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {/* Why this pack vs Amazon */}
-          <SupportCard
-            tone="ok"
-            icon={ShoppingBag}
-            eyebrow="The leakage block"
-            title="Why this pack, not Amazon"
-            bullets={[
-              "Every batch independently COA-tested for heavy metals + microbes — we name the brand because the brand matters.",
-              "Dose-organised box: you don't decode 4 bottles, you just take what's labelled for the time slot.",
-              "Subscription auto-pause when our weekly evidence sweep finds a real concern. You never get shipped something we'd downgrade.",
-            ]}
-          />
-
-          {/* Reviewed by */}
-          <SupportCard
-            tone="forest"
-            icon={UserRound}
-            eyebrow="Credibility"
-            title="Reviewed by a real practitioner"
-            bullets={[
-              `${reviewer.name} — ${reviewer.role}.`,
-              reviewer.credential,
-              `Last sweep: ${lastRefresh} · 47 sources verified · Cochrane + EMA HMPC + AYUSH cross-referenced.`,
-            ]}
-          />
-
           {/* First 30 days expectation */}
           <SupportCard
             tone="amber"

@@ -560,6 +560,79 @@ function SectionContent({
   );
 }
 
+/** Detects "wall-of-text" chunks (preface, patient-facing primer, closing
+ *  paradigm) and renders them with stronger visual hierarchy: each
+ *  paragraph becomes a left-bordered card with the first sentence as a
+ *  bold lead — turns dense prose into scan-friendly sections without
+ *  touching the underlying markdown. Bullets / lists inside the body
+ *  pass through unchanged. */
+function isPrettyProseChunk(c: { id: string; title: string }): boolean {
+  if (c.id === "preface") return true;
+  return /primer|patient.?facing|closing|paradigm|sovereign/i.test(c.title);
+}
+
+function PrettyProse({ body }: { body: string }) {
+  // Split on blank-line paragraph boundaries; preserve any existing
+  // markdown blocks (lists, tables) by detecting if a chunk starts
+  // with `- ` / `* ` / `|` / `>` / `#` and rendering it as-is.
+  const blocks = body
+    .split(/\n{2,}/)
+    .map((b) => b.trim())
+    .filter(Boolean);
+  return (
+    <div className="mt-4 flex flex-col gap-3">
+      {blocks.map((blk, i) => {
+        const isMd = /^(?:[-*•]\s|\d+\.\s|\||>|#)/.test(blk);
+        if (isMd) {
+          return (
+            <ReactMarkdown key={i} remarkPlugins={[remarkGfm]}>{blk}</ReactMarkdown>
+          );
+        }
+        // Find first sentence break (. or ; followed by space) — bold it.
+        // Find first sentence break (~20-200 chars ending in .!?) — bold
+        // it as a lead. Manual scan avoids the /s flag (older targets).
+        let cut = -1;
+        for (let k = 20; k < Math.min(blk.length, 220); k++) {
+          const ch = blk[k];
+          if ((ch === "." || ch === "!" || ch === "?") && /\s/.test(blk[k + 1] ?? " ")) {
+            cut = k + 1;
+            break;
+          }
+        }
+        const lead = cut > 0 ? blk.slice(0, cut) : blk;
+        const rest = cut > 0 ? blk.slice(cut).trimStart() : "";
+        return (
+          <div
+            key={i}
+            className="rounded-r-xl border-l-2 py-2 pl-4 pr-2"
+            style={{
+              borderColor: "var(--color-forest-soft)",
+              background: "linear-gradient(to right, color-mix(in oklab, var(--color-mint) 35%, transparent), transparent 30%)",
+            }}
+          >
+            <p className="text-[0.95rem] leading-relaxed">
+              <span className="font-semibold" style={{ color: "var(--color-ink)" }}>{lead}</span>
+              {rest && (
+                <>
+                  <span> </span>
+                  <span style={{ color: "var(--color-ink-soft)" }}>
+                    <ReactMarkdown
+                      remarkPlugins={[remarkGfm]}
+                      components={{ p: ({ children }) => <>{children}</> }}
+                    >
+                      {rest}
+                    </ReactMarkdown>
+                  </span>
+                </>
+              )}
+            </p>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
 function DossierChunks({
   chunks,
 }: {
@@ -570,6 +643,7 @@ function DossierChunks({
     <div className="mt-8 space-y-10">
       {chunks.map((c) => {
         const subs = splitChunkByH3(c);
+        const pretty = isPrettyProseChunk(c);
         return (
           <article key={c.id} className="dossier-prose" id={`chunk-${c.id}`}>
             <h3 className="font-display" style={{ fontSize: "1.35rem", color: "var(--color-forest)", marginTop: 0 }}>{c.title}</h3>
@@ -577,7 +651,11 @@ function DossierChunks({
               // Chunk has no H3 sub-sections — render the body as-is. The
               // chunk's own `chunk-<id>` anchor is the only navigation
               // target; no synthetic "Overview" label gets invented.
-              <ReactMarkdown remarkPlugins={[remarkGfm]}>{c.body}</ReactMarkdown>
+              pretty ? (
+                <PrettyProse body={c.body} />
+              ) : (
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>{c.body}</ReactMarkdown>
+              )
             ) : (
               <div className="mt-4 space-y-8">
                 {subs.map((sub) => (
