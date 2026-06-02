@@ -10,7 +10,7 @@ import {
 
 const NAV = [
   { href: "/", label: "Needs", icon: Compass, hint: "Catalog" },
-  { href: "/atlas", label: "Atlas", icon: FlaskConical, hint: "50 journeys" },
+  { href: "/atlas", label: "Atlas", icon: FlaskConical, hint: "Journeys" },
   { href: "/guru", label: "AI Guru", icon: Sparkles, hint: "Workspace" },
   { href: "/companion", label: "Companion", icon: CalendarHeart, hint: "Daily loop" },
   { href: "/expert", label: "Experts", icon: UserRound, hint: "Human charts" },

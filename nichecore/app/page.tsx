@@ -24,7 +24,7 @@ export default function Home() {
             packages, a daily companion and optional human experts. We grade the evidence,
             show the uncertainty, and refresh every hub as new findings emerge.
           </p>
-          {/* Prominent search — search across all 51 journeys, with
+          {/* Prominent search — fuzzy across every journey with
               nearest-match fallback and a suggest-for-future form. */}
           <div className="mt-8">
             <JourneySearch />
@@ -32,7 +32,7 @@ export default function Home() {
 
           <div className="mt-5 flex flex-wrap items-center gap-3">
             <Link href="/atlas" className="btn-primary">
-              Or browse the full atlas <ArrowRight size={16} />
+              Browse journeys <ArrowRight size={16} />
             </Link>
             <Link href="/skin/vitiligo" className="btn-ghost">See a full journey</Link>
           </div>
@@ -40,12 +40,12 @@ export default function Home() {
             01 Need · 02 Atlas · 03 Journey · 04 Personalise · 05 Regime · 06 Companion · 07 Expert · 08 Progress
           </div>
 
-          {/* Trust strip */}
+          {/* Trust strip — drop the count, surface the doctrine instead */}
           <div className="mt-12 grid max-w-2xl grid-cols-2 gap-x-6 gap-y-8 border-t pt-8 sm:grid-cols-4" style={{ borderColor: "var(--color-line-strong)" }}>
-            <Stat value="13" label="launch categories" />
-            <Stat value="50" label="need journeys" />
             <Stat value="A–X" label="evidence grades" />
-            <Stat value="May ’26" label="last refresh" />
+            <Stat value="OTC" label="strict, home-only" />
+            <Stat value="6" label="traditional systems" />
+            <Stat value="Jun ’26" label="last refresh" />
           </div>
         </div>
       </section>

@@ -186,3 +186,313 @@ function splitDeepDive(bufLines: string[]): { visible: string; deepDive: string 
   const deepDive = bufLines.slice(idx + 1).join("\n").trim();
   return { visible, deepDive };
 }
+
+// ─────────────── TopShelf (above-the-fold 5-card row) ───────────────
+//
+// Walks the dossier chunks already bucketed by canonical tab id and
+// extracts a 3-bullet decision-quality preview for each of the five
+// founder-promoted sections: 12-month timeline, daily combos,
+// strictly-avoid, diet & meal plan, supplier ecosystem.
+//
+// The parser is intentionally lenient — dossiers are markdown-prose
+// authored by hand with varying conventions across v6.x revisions. If
+// a section's chunk is missing or the heuristics find nothing usable
+// we mark the card `available: false` and the renderer shows a
+// graceful placeholder rather than crashing the page.
+
+export interface TopShelfCard {
+  /** 3 short bullets (≤~80 chars each), plain-text, no markdown markers. */
+  bullets: string[];
+  /** Anchor id to scroll to (canonical tab id), e.g. "timeline" / "combos". */
+  anchor: string;
+  /** False when the source chunk is missing in this dossier. */
+  available: boolean;
+}
+
+export interface TopShelfPreview {
+  timeline: TopShelfCard;
+  combos: TopShelfCard;
+  strictlyAvoid: TopShelfCard;
+  diet: TopShelfCard;
+  suppliers: TopShelfCard;
+}
+
+const MAX_BULLET_LEN = 80;
+
+/** Strip markdown emphasis, links, code-spans, italics-citations. */
+function plainText(s: string): string {
+  return s
+    // bold + italic (greedy-safe)
+    .replace(/\*\*([^*]+)\*\*/g, "$1")
+    .replace(/\*([^*]+)\*/g, "$1")
+    // any leftover stray `**` or `*` markers (unbalanced from regex captures)
+    .replace(/\*\*/g, "")
+    .replace(/\*/g, "")
+    // links → label
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    // inline code
+    .replace(/`([^`]+)`/g, "$1")
+    // collapse whitespace
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+/** Truncate to MAX_BULLET_LEN at a word boundary, append ellipsis. */
+function clampBullet(s: string): string {
+  const t = stripTldr(plainText(s));
+  if (t.length <= MAX_BULLET_LEN) return t;
+  const cut = t.slice(0, MAX_BULLET_LEN);
+  const lastSpace = cut.lastIndexOf(" ");
+  return (lastSpace > 40 ? cut.slice(0, lastSpace) : cut).replace(/[,;:.\s]+$/, "") + "…";
+}
+
+/** Pull bullet-like lines from a markdown body. Returns the raw line text minus the bullet marker. */
+function extractBulletLines(body: string): string[] {
+  const out: string[] = [];
+  for (const rawLn of body.split(/\r?\n/)) {
+    const ln = rawLn.trim();
+    // - foo / * foo / + foo / 1. foo
+    const m = ln.match(/^(?:[-*+]|\d+\.)\s+(.+)$/);
+    if (m) out.push(m[1]);
+  }
+  return out;
+}
+
+/** Strip the "TL;DR (label)." or "TL;DR." lead from a bullet body.
+ *  Runs on plain-text *or* on bullets that still carry markdown emphasis
+ *  (so we strip `**` first, then the prefix). */
+function stripTldr(s: string): string {
+  return s
+    .replace(/^\*\*\s*/, "")
+    .replace(/^TL;DR(?:\s*\([^)]+\))?\.?\s*\*?\*?\s*/i, "");
+}
+
+/** Strip leading "*(For you, in plain words.)*" callout language if present. */
+function stripCalloutLead(s: string): string {
+  return s.replace(/^For you,\s+in plain words\.?\s*/i, "");
+}
+
+function nonEmpty(arr: string[]): string[] {
+  return arr.map((s) => s.trim()).filter(Boolean);
+}
+
+// ── Per-card parsers ──────────────────────────────────────────────
+
+function parseTimeline(chunk: DossierChunk | undefined): TopShelfCard {
+  if (!chunk) {
+    return { bullets: ["Section not available in this dossier yet."], anchor: "timeline", available: false };
+  }
+  const bullets = extractBulletLines(chunk.body);
+  const monthMarker = /(\*\*)?(?:Months?\s+\d|Month\s+\d|Weeks?\s+\d|Week\s+\d|Phase\s+\d|Year\s+\d)/i;
+  const withMarker = bullets.filter((b) => monthMarker.test(b));
+  const picked = (withMarker.length >= 3 ? withMarker : bullets).slice(0, 3);
+  const out = nonEmpty(picked.map((b) => clampBullet(stripTldr(b))));
+  return {
+    bullets: out.length > 0 ? out : ["12-month protocol — see full timeline."],
+    anchor: "timeline",
+    available: out.length > 0,
+  };
+}
+
+function parseCombos(chunk: DossierChunk | undefined): TopShelfCard {
+  if (!chunk) {
+    return { bullets: ["Section not available in this dossier yet."], anchor: "combos", available: false };
+  }
+  // Strategy A: H3 sub-sections — pick titles that look like "Combo N — …"
+  const subs = splitChunkByH3(chunk);
+  const comboSubs = subs.filter((s) => /combo\s*\d/i.test(s.title));
+  if (comboSubs.length >= 3) {
+    const out = nonEmpty(
+      comboSubs.slice(0, 3).map((s) => {
+        // Use the H3 title itself, e.g. "8.2 Combo 1 — Hair-cell + circulation (08:00)"
+        const title = s.title.replace(/^\d+(?:\.\d+)*\.?\s+/, "").trim();
+        // Optionally pull first bullet for richer text
+        const firstBullet = extractBulletLines(s.visibleBody)[0];
+        const teaser = firstBullet ? plainText(stripTldr(firstBullet)) : "";
+        const combined = teaser ? `${title} — ${teaser}` : title;
+        return clampBullet(combined);
+      })
+    );
+    if (out.length > 0) return { bullets: out, anchor: "combos", available: true };
+  }
+  // Strategy B: bullet-prefixed combos in the body
+  const bullets = extractBulletLines(chunk.body);
+  const comboBullets = bullets.filter((b) => /combo\s*\d/i.test(b));
+  const picked = (comboBullets.length >= 3 ? comboBullets : bullets).slice(0, 3);
+  const out = nonEmpty(picked.map((b) => clampBullet(stripTldr(b))));
+  return {
+    bullets: out.length > 0 ? out : ["Three timed daily combos — see full regimen."],
+    anchor: "combos",
+    available: out.length > 0,
+  };
+}
+
+function parseStrictlyAvoid(chunk: DossierChunk | undefined): TopShelfCard {
+  if (!chunk) {
+    return { bullets: ["Section not available in this dossier yet."], anchor: "interactions", available: false };
+  }
+  // Strategy A: find H3 sub-chunk whose title matches strict-avoid intent
+  const subs = splitChunkByH3(chunk);
+  const matchRe = /strict(?:ly)?\s*avoid|do\s*not|forbidden|never\b|absolutely\s*avoid/i;
+  const target = subs.find((s) => matchRe.test(s.title));
+  if (target) {
+    const subBullets = extractBulletLines(target.visibleBody);
+    if (subBullets.length >= 1) {
+      const out = nonEmpty(subBullets.slice(0, 3).map((b) => clampBullet(stripTldr(b))));
+      if (out.length > 0) return { bullets: out, anchor: "interactions", available: true };
+    }
+    // No bullets — try splitting the visibleBody by ;
+    const paragraphs = target.visibleBody
+      .split(/\r?\n+/)
+      .map((p) => p.trim())
+      .filter((p) => p && !p.startsWith(">") && !p.startsWith("|") && !p.startsWith("#"));
+    const joined = paragraphs.join(" ");
+    if (joined) {
+      const parts = joined.split(/\s*;\s*/).filter(Boolean).slice(0, 3);
+      const out = nonEmpty(parts.map((p) => clampBullet(p)));
+      if (out.length > 0) return { bullets: out, anchor: "interactions", available: true };
+    }
+  }
+  // Strategy B: scan whole chunk for lines starting "Do not", "Never", "Avoid"
+  const bullets = extractBulletLines(chunk.body);
+  const avoidRe = /^(?:do\s*not|never|avoid|don['']t|eliminate)\b/i;
+  const matches = bullets.filter((b) => avoidRe.test(stripTldr(b)));
+  const out = nonEmpty(matches.slice(0, 3).map((b) => clampBullet(stripTldr(b))));
+  return {
+    bullets: out.length > 0 ? out : ["Red-flag interactions — see safety matrix."],
+    anchor: "interactions",
+    available: out.length > 0,
+  };
+}
+
+function parseDiet(chunk: DossierChunk | undefined): TopShelfCard {
+  if (!chunk) {
+    return { bullets: ["Section not available in this dossier yet."], anchor: "diet", available: false };
+  }
+  // Strategy A: find day-headers — bold like "**Day 1**" or "**Monday**"
+  const dayRe = /\*\*\s*(Day\s*\d+[^*]*|Mon(?:day)?|Tue(?:sday)?|Wed(?:nesday)?|Thu(?:rsday)?|Fri(?:day)?|Sat(?:urday)?|Sun(?:day)?)\s*\*\*\s*[—:\-]?\s*(.{0,180})/gi;
+  const days: string[] = [];
+  let m: RegExpExecArray | null;
+  while ((m = dayRe.exec(chunk.body)) !== null) {
+    const label = m[1].trim();
+    const teaser = plainText(m[2] || "").replace(/[.!?].*$/, "").trim();
+    const combined = teaser ? `${label} — ${teaser}` : label;
+    days.push(clampBullet(combined));
+    if (days.length >= 3) break;
+  }
+  if (days.length >= 3) return { bullets: days, anchor: "diet", available: true };
+
+  // Strategy A2: 7-day-meal-plan tables — pull the first 3 table rows with Day-cells.
+  const tableRowRe = /^\|\s*([0-9]+(?:\s+\w+)?)\s*\|\s*([^|]+)\s*\|/gim;
+  const rowMatches: string[] = [];
+  let rm: RegExpExecArray | null;
+  while ((rm = tableRowRe.exec(chunk.body)) !== null) {
+    const dayCell = rm[1].trim();
+    const tldrCell = plainText(stripTldr(rm[2])).replace(/[.!?].*$/, "").trim();
+    if (/^\d+/.test(dayCell)) {
+      const label = `Day ${dayCell}`;
+      const combined = tldrCell ? `${label} — ${tldrCell}` : label;
+      rowMatches.push(clampBullet(combined));
+      if (rowMatches.length >= 3) break;
+    }
+  }
+  if (rowMatches.length >= 3) return { bullets: rowMatches, anchor: "diet", available: true };
+
+  // Strategy B: bullets describing dietary moves
+  const bullets = extractBulletLines(chunk.body);
+  const out = nonEmpty(bullets.slice(0, 3).map((b) => clampBullet(stripTldr(b))));
+  return {
+    bullets: out.length > 0 ? out : ["Mediterranean-MIND base + 7-day meal anchor."],
+    anchor: "diet",
+    available: out.length > 0,
+  };
+}
+
+function parseSuppliers(chunk: DossierChunk | undefined): TopShelfCard {
+  if (!chunk) {
+    return { bullets: ["Section not available in this dossier yet."], anchor: "suppliers", available: false };
+  }
+  const out: string[] = [];
+
+  // Lead bullet: monthly cost — try several phrasings.
+  const costRe =
+    /(?:\*\*\s*)?(?:Recurring\s+total|Total\s+monthly|Monthly\s+(?:cost|total)|Recurring)[^.\n]{0,40}\$[\d,]+(?:\s*[-–]\s*\$?[\d,]+)?(?:\s*\/?\s*month)?/i;
+  const costMatch = chunk.body.match(costRe);
+  if (costMatch) {
+    out.push(clampBullet(plainText(costMatch[0])));
+  } else {
+    // Fallback: any "$X-Y/month" pattern
+    const fallback = chunk.body.match(/\$[\d,]+\s*[-–]\s*\$?[\d,]+\s*\/?\s*month/i);
+    if (fallback) out.push(clampBullet("Monthly total " + fallback[0]));
+  }
+
+  // Try to pull 2 supplier/brand bullets from §X.1 / table channel column.
+  // First scan markdown table rows of the form `| Channel | TL;DR ... |`
+  const supplierLines: string[] = [];
+  const lines = chunk.body.split(/\r?\n/);
+  for (const ln of lines) {
+    const t = ln.trim();
+    if (!t.startsWith("|")) continue;
+    if (/^\|\s*[-:]+\s*\|/.test(t)) continue; // separator
+    if (/^\|\s*Channel\s*\|/i.test(t)) continue; // header
+    // Extract first cell
+    const cells = t.split("|").map((c) => c.trim()).filter(Boolean);
+    if (cells.length < 2) continue;
+    const channel = cells[0];
+    const tldr = plainText(stripTldr(cells[1])).replace(/[.!?].*$/, "").trim();
+    if (channel && !/^TL;DR/i.test(channel)) {
+      const combined = tldr ? `${channel} — ${tldr}` : channel;
+      supplierLines.push(clampBullet(combined));
+    }
+    if (supplierLines.length >= 2) break;
+  }
+
+  // If no table, fall back to bullets with brand-like proper nouns
+  if (supplierLines.length === 0) {
+    const bullets = extractBulletLines(chunk.body);
+    const brandRe = /iHerb|Amazon|Thorne|Schwabe|Pure Encapsulations|Boots|Hamdard|IMPCOPS|Whole Foods|Apotheke|Jarrow|Patel Brothers|Kamwo|Plum Flower|Boiron|SBL|Nordic Naturals/i;
+    const brandBullets = bullets.filter((b) => brandRe.test(b));
+    const picked = (brandBullets.length > 0 ? brandBullets : bullets).slice(0, 2);
+    for (const b of picked) supplierLines.push(clampBullet(stripTldr(b)));
+  }
+
+  for (const s of supplierLines) {
+    if (out.length >= 3) break;
+    out.push(s);
+  }
+
+  // Top up with cost-breakdown bullets if we still have <3
+  if (out.length < 3) {
+    const bullets = extractBulletLines(chunk.body);
+    for (const b of bullets) {
+      if (out.length >= 3) break;
+      const t = clampBullet(stripTldr(b));
+      if (t && !out.includes(t)) out.push(t);
+    }
+  }
+
+  const final = nonEmpty(out.slice(0, 3));
+  return {
+    bullets: final.length > 0 ? final : ["Curated supplier ecosystem — see channels + brands."],
+    anchor: "suppliers",
+    available: final.length > 0,
+  };
+}
+
+/**
+ * Extract the 5-card TopShelf preview from a tab-bucketed dossier.
+ * Always returns all 5 cards; missing source chunks land as `available: false`
+ * placeholders so the renderer keeps a stable 5-card grid.
+ */
+export function extractTopShelf(
+  chunksByTab: Record<string, DossierChunk[]>
+): TopShelfPreview {
+  const first = (tabId: string): DossierChunk | undefined => chunksByTab[tabId]?.[0];
+  return {
+    timeline: parseTimeline(first("timeline")),
+    combos: parseCombos(first("combos")),
+    strictlyAvoid: parseStrictlyAvoid(first("interactions")),
+    diet: parseDiet(first("diet")),
+    suppliers: parseSuppliers(first("suppliers")),
+  };
+}

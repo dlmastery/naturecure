@@ -9,7 +9,7 @@ import type { Journey, JourneyDomain } from "@/lib/types";
 import { Eyebrow, GradeBadge, FreshnessChip, RiskTag, RuleCard, SafetyNote } from "@/components/ui";
 import { BundleCard } from "@/components/bundle-card";
 import { NextStep } from "@/components/next-step";
-import { readDossier, splitDossierByH2, splitChunkByH3 } from "@/lib/research";
+import { readDossier, splitDossierByH2, splitChunkByH3, extractTopShelf } from "@/lib/research";
 import { Footer } from "@/app/page";
 import { DossierShell, type SectionSpec, type SectionSubSpec } from "@/components/layout/dossier-shell";
 import { SectionAnchor } from "@/components/layout/section-anchor";
@@ -18,6 +18,7 @@ import { ManifestoBand } from "@/components/layout/manifesto-band";
 import { FoundationPillarRow } from "@/components/layout/foundation-pillar-row";
 import { Callout } from "@/components/callouts/callout";
 import { DeepDive } from "@/components/layout/deep-dive";
+import { TopShelf } from "@/components/layout/top-shelf";
 
 // ── Each journey points to a parent category for the deep evidence hub.
 //     Default by domain; specific journeys override where the natural parent differs.
@@ -136,6 +137,10 @@ export default async function JourneyDetail({
     chunksByTab[tabId].push(c);
   }
   const present = (id: string) => (chunksByTab[id]?.length ?? 0) > 0;
+
+  // 5-card TopShelf preview — built from the same tab-bucketed chunks.
+  // Only used in the dossier-backed render path below.
+  const topShelf = dossier ? extractTopShelf(chunksByTab) : null;
 
   // Build the rail manifest: always include overview + closing + (commerce) ;
   // include other sections only when the dossier has matching prose.
@@ -322,7 +327,7 @@ export default async function JourneyDetail({
 
         <NextStep
           step={parent ? `04 · Personalise + safety screen` : `Browse related journeys`}
-          title={parent ? "Build your reviewed regime" : "Explore the full 50-journey atlas"}
+          title={parent ? "Build your reviewed regime" : "Explore the full atlas"}
           body={parent
             ? `Answer four quick questions; if a flag fires we route you to a human instead of selling. Otherwise you'll see the ${parent.shortName.toLowerCase()} pack.`
             : `This journey is on the roadmap. The atlas shows every consumer need we track, with the evidence grade mix.`}
@@ -353,6 +358,9 @@ export default async function JourneyDetail({
         <span key="no-cure" className="chip">no cure claims</span>,
       ]}
     >
+      {/* TopShelf — 5-card decision-quality preview above §01 */}
+      {topShelf && <TopShelf data={topShelf} />}
+
       {/* 01 · Overview */}
       <SectionAnchor
         id="overview"
@@ -497,7 +505,7 @@ export default async function JourneyDetail({
 
       <NextStep
         step={parent ? `04 · Personalise + safety screen` : `Browse related journeys`}
-        title={parent ? "Build your reviewed regime" : "Explore the full 50-journey atlas"}
+        title={parent ? "Build your reviewed regime" : "Explore the full atlas"}
         body={parent
           ? `Answer four quick questions; if a flag fires we route you to a human instead of selling. Otherwise you'll see the ${parent.shortName.toLowerCase()} pack.`
           : `This journey is on the roadmap. The atlas shows every consumer need we track, with the evidence grade mix.`}

@@ -300,24 +300,32 @@
 }
 .dossier-prose table {
   width: 100%;
+  max-width: 100%;
   font-size: 0.88rem;
   border-collapse: collapse;
   margin: 1.5em 0;
-  display: block;
-  overflow-x: auto;
-  /* Hint horizontal scrollability when the table overflows the container
-     (skill v6.2.2 tables can be 4-6 columns wide on narrower viewports). */
-  background:
-    linear-gradient(to right, var(--color-paper), var(--color-paper)) left center / 20px 100% no-repeat,
-    linear-gradient(to right, rgba(14,59,46,0.06), rgba(14,59,46,0)) left center / 20px 100% no-repeat,
-    linear-gradient(to left,  var(--color-paper), var(--color-paper)) right center / 20px 100% no-repeat,
-    linear-gradient(to left,  rgba(14,59,46,0.06), rgba(14,59,46,0)) right center / 20px 100% no-repeat;
-  background-attachment: local, scroll, local, scroll;
+  /* Flow tables based on container width — cells wrap content rather
+     than forcing a horizontal scrollbar. Long words break gracefully. */
+  table-layout: auto;
 }
-/* Wide tables get a sensible min-width so cells don't squeeze illegibly.
-   When narrower than this, the parent's overflow-x:auto scrolls horizontally. */
-.dossier-prose table thead th { min-width: 8rem; }
-.dossier-prose table thead th:first-child { min-width: 10rem; }
+.dossier-prose table th,
+.dossier-prose table td {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  min-width: 0;
+  hyphens: auto;
+}
+/* On narrow viewports tables stay readable: cells stack tight,
+   no horizontal scrollbar, content wraps within columns. */
+@media (max-width: 640px) {
+  .dossier-prose table {
+    font-size: 0.78rem;
+  }
+  .dossier-prose th,
+  .dossier-prose td {
+    padding: 0.45rem 0.5rem;
+  }
+}
 .dossier-prose thead { background: var(--color-paper-deep); }
 .dossier-prose th,
 .dossier-prose td {

@@ -80,7 +80,7 @@ export const factoryJobs: FactoryJob[] = [
   { id: "job-energy", categoryId: "energy-recovery", status: "fresh", cadence: "Monthly", lastRun: "2026-05-03", nextRun: "2026-06-03", sourcesScanned: 109, claimsExtracted: 24, safetyFlags: 4, reviewer: "Sports nutrition reviewer" },
 ];
 
-// ───────────────────────── 50-journey atlas ─────────────────────────────
+// ───────────────────────── Journey atlas ─────────────────────────────
 export const journeys: Journey[] = [
   // Skin (6)
   { id: "vitiligo-support", name: "Vitiligo Support", domain: "Skin", route: "/skin/vitiligo", consumerHook: "Honest vitiligo support — no snake-oil repigmentation.", packageConcept: "90-day Skin Resilience Pack: COA antioxidants + gut + stress.", gradeMix: ["B", "C", "D", "T"], freshness: "fresh", risk: "moderate" },
