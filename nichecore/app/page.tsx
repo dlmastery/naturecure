@@ -71,6 +71,71 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ───────────────── Weekly research refresh — selling point ───────────────── */}
+      <section className="px-6 pt-16 sm:px-10 lg:px-14">
+        <div className="rounded-[var(--radius-lg)] border bg-white/70 px-6 py-8 sm:px-10 sm:py-10"
+          style={{ borderColor: "var(--color-line-strong)" }}>
+          <div className="grid items-center gap-6 lg:grid-cols-[1.2fr_1fr]">
+            <div>
+              <p className="eyebrow eyebrow--gold">A living protocol — not a static blog</p>
+              <h2 className="font-display mt-3 text-balance text-3xl leading-tight sm:text-4xl">
+                Every regime refreshed{" "}
+                <span className="italic" style={{ color: "var(--color-forest)" }}>weekly</span> with the newest research.
+              </h2>
+              <p className="mt-4 max-w-xl text-[0.95rem] leading-relaxed" style={{ color: "var(--color-ink-soft)" }}>
+                A backend factory sweeps Cochrane, EMA HMPC, AYUSH councils, TGA, NMPA, Health Canada NHP and the
+                classical Ayurveda / TCM / Unani / Siddha / Tibetan / Homeopathy corpus every week. New trials get
+                graded. Null findings get surfaced. Weak interventions get downgraded honestly. Your protocol stays
+                current — without you having to read another paper.
+              </p>
+              <div className="mt-6 flex flex-wrap gap-x-6 gap-y-3 text-[0.85rem]" style={{ color: "var(--color-ink-soft)" }}>
+                <span className="flex items-center gap-1.5">
+                  <RefreshCw size={14} style={{ color: "var(--color-forest)" }} />
+                  Weekly evidence sweep
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <FlaskConical size={14} style={{ color: "var(--color-forest)" }} />
+                  Cochrane · EMA · AYUSH · TGA · NMPA
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <ShieldCheck size={14} style={{ color: "var(--color-forest)" }} />
+                  Honest downgrades when evidence shifts
+                </span>
+              </div>
+            </div>
+            <div className="flex flex-col gap-3">
+              <div className="rounded-2xl border p-5"
+                style={{ background: "var(--color-paper-deep)", borderColor: "var(--color-line-strong)" }}>
+                <p className="font-mono text-[0.62rem] uppercase tracking-[0.18em]" style={{ color: "var(--color-ink-faint)" }}>
+                  Last evidence sweep
+                </p>
+                <p className="font-display mt-1.5 text-2xl leading-tight">June 1, 2026</p>
+                <p className="mt-2 text-[0.78rem]" style={{ color: "var(--color-ink-soft)" }}>
+                  Next sweep: every Monday · Friday digest emailed if you subscribe
+                </p>
+              </div>
+              <div className="grid grid-cols-3 gap-2">
+                <div className="rounded-xl border p-3 text-center"
+                  style={{ background: "#ffffff80", borderColor: "var(--color-line)" }}>
+                  <p className="font-display text-xl" style={{ color: "var(--color-forest)" }}>72</p>
+                  <p className="font-mono text-[0.6rem] uppercase tracking-wider" style={{ color: "var(--color-ink-faint)" }}>new sources this month</p>
+                </div>
+                <div className="rounded-xl border p-3 text-center"
+                  style={{ background: "#ffffff80", borderColor: "var(--color-line)" }}>
+                  <p className="font-display text-xl" style={{ color: "var(--color-forest)" }}>14</p>
+                  <p className="font-mono text-[0.6rem] uppercase tracking-wider" style={{ color: "var(--color-ink-faint)" }}>dossiers updated</p>
+                </div>
+                <div className="rounded-xl border p-3 text-center"
+                  style={{ background: "#ffffff80", borderColor: "var(--color-line)" }}>
+                  <p className="font-display text-xl" style={{ color: "var(--color-forest)" }}>3</p>
+                  <p className="font-mono text-[0.6rem] uppercase tracking-wider" style={{ color: "var(--color-ink-faint)" }}>honest downgrades</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ───────────────── Featured deep journeys ───────────────── */}
       <section className="px-6 pt-20 sm:px-10 lg:px-14">
         <SectionHeading
@@ -289,7 +354,7 @@ const FEATURED_JOURNEYS = [
 
 const REGIME_STAGES = [
   { ordinal: "01", title: "Need", body: "Arrive with what's bothering you, not a specialty.", href: "/" },
-  { ordinal: "02", title: "Atlas", body: "Browse all 51 journeys, filter by domain.", href: "/atlas" },
+  { ordinal: "02", title: "Atlas", body: "Browse all journeys, filter by domain.", href: "/atlas" },
   { ordinal: "03", title: "Journey", body: "Open the 15-section evidence dossier.", href: "/skin/vitiligo" },
   { ordinal: "04", title: "Personalise", body: "4-question safety quiz; routes to expert on flag.", href: "/c/skin-pigmentation/package" },
   { ordinal: "05", title: "Regime", body: "Quality-screened 90-day pack with COA-backed bottles.", href: "/c/skin-pigmentation/package" },

@@ -19,7 +19,7 @@ export default function Atlas() {
       <section className="px-6 pt-12 sm:px-10 lg:px-14">
         <Eyebrow>The journey atlas</Eyebrow>
         <h1 className="font-display mt-4 text-balance text-5xl leading-[1.0] sm:text-6xl">
-          Fifty needs, one <span className="italic" style={{ color: "var(--color-forest)" }}>repeatable</span> factory.
+          Every need, one <span className="italic" style={{ color: "var(--color-forest)" }}>repeatable</span> factory.
         </h1>
         <p className="mt-5 max-w-2xl text-lg leading-relaxed" style={{ color: "var(--color-ink-soft)" }}>
           Every journey runs the same loop — evidence hub, graded protocol, quality package, companion —

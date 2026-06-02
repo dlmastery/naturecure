@@ -141,7 +141,7 @@ export function JourneySearch() {
       {/* Eyebrow above input — sets expectations, includes the ⌘K hint. */}
       <div className="mb-2 flex items-center justify-between font-mono text-[0.65rem] uppercase tracking-[0.18em]"
         style={{ color: "var(--color-ink-faint)" }}>
-        <span>Search · 51 journeys</span>
+        <span>Search journeys</span>
         <span className="hidden sm:inline">⌘K to focus</span>
       </div>
 

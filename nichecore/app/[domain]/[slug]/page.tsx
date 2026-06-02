@@ -19,6 +19,7 @@ import { FoundationPillarRow } from "@/components/layout/foundation-pillar-row";
 import { Callout } from "@/components/callouts/callout";
 import { DeepDive } from "@/components/layout/deep-dive";
 import { TopShelf } from "@/components/layout/top-shelf";
+import { ConversionStrip } from "@/components/layout/conversion-strip";
 
 // ── Each journey points to a parent category for the deep evidence hub.
 //     Default by domain; specific journeys override where the natural parent differs.
@@ -360,6 +361,16 @@ export default async function JourneyDetail({
     >
       {/* TopShelf — 5-card decision-quality preview above §01 */}
       {topShelf && <TopShelf data={topShelf} />}
+      {/* ConversionStrip — buy-decision surface. Gated to tinnitus
+          for founder preview; roll out to all bundled journeys after
+          eyeball review. Suppressed when there's no bundle yet. */}
+      {j.id === "tinnitus-support" && bundle && (
+        <ConversionStrip
+          journey={j}
+          bundle={bundle}
+          packageHref={pkgHref}
+        />
+      )}
 
       {/* 01 · Overview */}
       <SectionAnchor
