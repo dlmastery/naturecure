@@ -148,42 +148,31 @@ for (const file of files) {
     bundle: '?', sections: '?', traditions: '?', quickStart: '?', redFlag: '?', overall: 'PASS'
   };
 
-  // ── Category 2 + 11 — YAML metadata trivial auto-fix ──
+  // ── Category 2 + 11 — YAML metadata validation (no auto-fix) ──
+  // 2026-06-06: Auto-fix path removed per elite-reviewer panel finding.
+  // Auto-stamping `schemaVersion: "v6.2.3"` destroys provenance — we cannot
+  // tell which dossiers were authored against which skill version.
+  // Auto-stamping `pass1Complete/pass2Complete/pass3Complete: true` for any
+  // dossier >5000 words fabricates ralph-pass provenance — the audit was
+  // lying to itself. Both behaviours are now BLOCKER-flagged instead.
   if (yaml) {
-    let yamlChanged = false;
-    let newYaml = body.substring(0, body.indexOf('\n---\n', 4) + 4);
     if (!yaml.schemaVersion) {
-      // Insert before `internalRalph:` or before closing ---
-      newYaml = newYaml.replace(/\nauthorAgent:/, '\nauthorAgent:');
-      const insert = 'schemaVersion: "v6.2.3"\n';
-      if (/^authorAgent:/m.test(newYaml.split('---\n')[1] ?? '')) {
-        newYaml = newYaml.replace(/(\nauthorAgent: .+?\n)/, `$1${insert}`);
-      } else {
-        newYaml = newYaml.replace(/\n---$/, `\n${insert.trim()}\n---`);
-      }
-      yamlChanged = true;
-      fixes.push({ file, what: 'Added missing `schemaVersion: "v6.2.3"`' });
+      issues.push({ file, line: 1, category: 'C2', severity: 'BLOCKER',
+        msg: 'Missing schemaVersion in YAML. Declare honestly (e.g. "unknown-pre-v6.2.3" if not migrated). Do NOT auto-stamp.' });
     }
     if (yaml.ailmentId && yaml.ailmentId !== id) {
-      newYaml = newYaml.replace(/\nailmentId:\s*[^\n]+/, `\nailmentId: ${id}`);
-      yamlChanged = true;
-      fixes.push({ file, what: `Fixed ailmentId mismatch: \`${yaml.ailmentId}\` → \`${id}\`` });
+      issues.push({ file, line: 1, category: 'C2', severity: 'BLOCKER',
+        msg: `ailmentId mismatch: declared "${yaml.ailmentId}", filename "${id}". Fix authoritatively in the dossier source.` });
     }
-    if (!yaml.internalRalph || !yaml.internalRalph.pass1Complete || !yaml.internalRalph.pass2Complete || !yaml.internalRalph.pass3Complete) {
-      if (wordCount > 5000) {
-        const ralphBlock = `internalRalph:\n  pass1Complete: true   # structural — auto-flagged complete by Critic 2026-06-02\n  pass2Complete: true   # citation integrity — auto-flagged complete by Critic 2026-06-02\n  pass3Complete: true   # AYUSH + TGA smell test — auto-flagged complete by Critic 2026-06-02\n`;
-        if (!yaml.internalRalph) {
-          // insert before closing ---
-          newYaml = newYaml.replace(/\n---$/, `\n${ralphBlock}---`);
-          yamlChanged = true;
-          fixes.push({ file, what: 'Added missing internalRalph 3/3 flags (body >5000 words)' });
-        }
-        // Don't try to update partial ralph blocks — too risky
+    if (!yaml.internalRalph) {
+      issues.push({ file, line: 1, category: 'C2', severity: 'BLOCKER',
+        msg: 'Missing internalRalph block. Declare per-pass status honestly. Do NOT auto-stamp 3/3.' });
+    } else {
+      const ralph = yaml.internalRalph;
+      if (!ralph.pass1Complete || !ralph.pass2Complete || !ralph.pass3Complete) {
+        issues.push({ file, line: 1, category: 'C2', severity: 'WARN',
+          msg: `internalRalph incomplete (pass1=${ralph.pass1Complete}, pass2=${ralph.pass2Complete}, pass3=${ralph.pass3Complete}). Complete the missing passes before next regen.` });
       }
-    }
-    if (yamlChanged) {
-      body = newYaml + body.substring(body.indexOf('\n---\n', 4) + 4);
-      fs.writeFileSync(full, body, 'utf8');
     }
   } else {
     issues.push({ file, line: 1, category: 'C2', severity: 'BLOCKER', msg: 'No YAML front-matter found.' });

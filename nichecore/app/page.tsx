@@ -79,19 +79,21 @@ export default function Home() {
             <div>
               <p className="eyebrow eyebrow--gold">A living protocol — not a static blog</p>
               <h2 className="font-display mt-3 text-balance text-3xl leading-tight sm:text-4xl">
-                Every regime refreshed{" "}
-                <span className="italic" style={{ color: "var(--color-forest)" }}>weekly</span> with the newest research.
+                Honest refresh, not{" "}
+                <span className="italic" style={{ color: "var(--color-forest)" }}>real-time</span> theatre.
               </h2>
               <p className="mt-4 max-w-xl text-[0.95rem] leading-relaxed" style={{ color: "var(--color-ink-soft)" }}>
-                A backend factory sweeps Cochrane, EMA HMPC, AYUSH councils, TGA, NMPA, Health Canada NHP and the
-                classical Ayurveda / TCM / Unani / Siddha / Tibetan / Homeopathy corpus every week. New trials get
-                graded. Null findings get surfaced. Weak interventions get downgraded honestly. Your protocol stays
-                current — without you having to read another paper.
+                Every dossier carries a date-stamped <span className="font-mono">lastUpdated</span> and a per-claim
+                evidence trace. Our editors track Cochrane updates, EMA HMPC monographs, AYUSH councils, TGA, NMPA,
+                Health Canada NHP and the six-tradition classical corpus. When a Cochrane review re-runs and a
+                grade should change, we re-render the dossier and log the change — and we will publish the changelog
+                at <span className="font-mono">/audit</span> once the public source-monitor pipeline ships. Until then,
+                trust the per-dossier date and the inline citations, not a dashboard number.
               </p>
               <div className="mt-6 flex flex-wrap gap-x-6 gap-y-3 text-[0.85rem]" style={{ color: "var(--color-ink-soft)" }}>
                 <span className="flex items-center gap-1.5">
                   <RefreshCw size={14} style={{ color: "var(--color-forest)" }} />
-                  Weekly evidence sweep
+                  Per-dossier refresh date
                 </span>
                 <span className="flex items-center gap-1.5">
                   <FlaskConical size={14} style={{ color: "var(--color-forest)" }} />
@@ -107,28 +109,30 @@ export default function Home() {
               <div className="rounded-2xl border p-5"
                 style={{ background: "var(--color-paper-deep)", borderColor: "var(--color-line-strong)" }}>
                 <p className="font-mono text-[0.62rem] uppercase tracking-[0.18em]" style={{ color: "var(--color-ink-faint)" }}>
-                  Last evidence sweep
+                  Refresh discipline
                 </p>
-                <p className="font-display mt-1.5 text-2xl leading-tight">June 1, 2026</p>
+                <p className="font-display mt-1.5 text-xl leading-tight">
+                  Per-dossier <span className="italic" style={{ color: "var(--color-forest)" }}>lastUpdated</span> on every page
+                </p>
                 <p className="mt-2 text-[0.78rem]" style={{ color: "var(--color-ink-soft)" }}>
-                  Next sweep: every Monday · Friday digest emailed if you subscribe
+                  Each dossier carries its own last-reviewed date in the header chip — that is the honest freshness signal until our public source-monitor changelog at <span className="font-mono">/audit</span> ships.
                 </p>
               </div>
-              <div className="grid grid-cols-3 gap-2">
-                <div className="rounded-xl border p-3 text-center"
+              <div className="grid grid-cols-1 gap-2 sm:grid-cols-3">
+                <div className="rounded-xl border p-3"
                   style={{ background: "#ffffff80", borderColor: "var(--color-line)" }}>
-                  <p className="font-display text-xl" style={{ color: "var(--color-forest)" }}>72</p>
-                  <p className="font-mono text-[0.6rem] uppercase tracking-wider" style={{ color: "var(--color-ink-faint)" }}>new sources this month</p>
+                  <p className="font-mono text-[0.6rem] uppercase tracking-wider" style={{ color: "var(--color-ink-faint)" }}>What we sweep</p>
+                  <p className="mt-1 text-[0.78rem] leading-snug" style={{ color: "var(--color-ink-soft)" }}>Cochrane · EMA HMPC · AYUSH · TGA · NMPA · Health Canada NHP</p>
                 </div>
-                <div className="rounded-xl border p-3 text-center"
+                <div className="rounded-xl border p-3"
                   style={{ background: "#ffffff80", borderColor: "var(--color-line)" }}>
-                  <p className="font-display text-xl" style={{ color: "var(--color-forest)" }}>14</p>
-                  <p className="font-mono text-[0.6rem] uppercase tracking-wider" style={{ color: "var(--color-ink-faint)" }}>dossiers updated</p>
+                  <p className="font-mono text-[0.6rem] uppercase tracking-wider" style={{ color: "var(--color-ink-faint)" }}>What we show</p>
+                  <p className="mt-1 text-[0.78rem] leading-snug" style={{ color: "var(--color-ink-soft)" }}>Sources cited inline · grades earned, not asserted · do-not-recommend rows where evidence fails</p>
                 </div>
-                <div className="rounded-xl border p-3 text-center"
+                <div className="rounded-xl border p-3"
                   style={{ background: "#ffffff80", borderColor: "var(--color-line)" }}>
-                  <p className="font-display text-xl" style={{ color: "var(--color-forest)" }}>3</p>
-                  <p className="font-mono text-[0.6rem] uppercase tracking-wider" style={{ color: "var(--color-ink-faint)" }}>honest downgrades</p>
+                  <p className="font-mono text-[0.6rem] uppercase tracking-wider" style={{ color: "var(--color-ink-faint)" }}>What's coming</p>
+                  <p className="mt-1 text-[0.78rem] leading-snug" style={{ color: "var(--color-ink-soft)" }}>Per-claim source-monitor pipeline + public weekly digest at <span className="font-mono">/audit</span></p>
                 </div>
               </div>
             </div>

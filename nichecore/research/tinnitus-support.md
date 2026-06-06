@@ -2,17 +2,35 @@
 ailmentId: tinnitus-support
 ailmentName: Tinnitus Support
 domain: BrainEye
-lastUpdated: 2026-05-30
-gradeMix: [A, B, C, D, T, H]
+lastUpdated: 2026-06-06
+gradeMix: [A, B, C, D, T, H, X]
 clinicalScoringInstrument: "Tinnitus Functional Index (self-scored questionnaire) and Tinnitus Handicap Inventory (severity questionnaire) at home; plus a 0-10 loudness/annoyance slider, a sleep-quality questionnaire (Pittsburgh), and brief mood/anxiety check-ins (PHQ-9, GAD-7)"
 subTypes: [tonal-hearing-loss-driven, somatic-neck-or-jaw, after-ototoxic-drug, central-gain-decades-old, pulsatile-vascular-red-flag, perimenopausal, acute-noise-injury]
-comorbidityScreen: [age-or-noise-related-hearing-loss, jaw-and-neck-dysfunction, underactive-thyroid, low-B12, low-iron, low-vitamin-D, sleep-apnea, high-blood-pressure, high-cholesterol, depression, anxiety-with-sound-sensitivity, ear-toxic-medication-load, perimenopause]
+comorbidityScreen: [age-or-noise-related-hearing-loss, jaw-and-neck-dysfunction, underactive-thyroid, low-B12, low-iron, low-vitamin-D, sleep-apnea, high-blood-pressure, high-cholesterol, depression, anxiety-with-sound-sensitivity, ear-toxic-medication-load, perimenopause, chronic-kidney-disease, on-warfarin-or-DOAC, sudden-unilateral-hearing-loss-72h-window]
 authorAgent: ailment-360-research
-schemaVersion: v6.1-plain-english-first-plus-emerging
+schemaVersion: v7.0.0-rigor-pass-2026-06-06
+priorSchemaVersion: v6.1-plain-english-first-plus-emerging
+reviewPanelAudit2026-06-06:
+  iclr: revise → apply Top-20 + structured-claim primitive deferred to skill v7
+  neurips: reject (fabricated home stats) → Top-20 + ADRs deferred
+  medical: storefront hold lifted only when SSHL warning + K2 gate + eGFR Mg table + 12-q quiz ship
+  biomedical: 6 factual errors fixed in this revision; structured citation block deferred
+  ai-lab: Critic auto-fix removed in this revision; ADR docket deferred
+  icml: counterfactual annotation rule added to skill v7
+factualErrorsFixedThisRevision:
+  - Cima 2012 — Maastricht NL not Bristol UK (PMID 22633033)
+  - Megwalu 2006 — St Louis MO USA not Singapore (PMID 16455366)
+  - Hurtuk 2011 — Columbus OH USA not Israel (PMID 21859051)
+  - TENT-A2 — Conlon 2022 Sci Rep 12:10845 PMID 35729184, not 2024
+  - Hilton 2013 Cochrane updated to Sereda 2022 re-issue
+  - Attias 1994 (noise-induced threshold shift, IDF recruits) distinguished from Cederroth 2011 (chronic-tinnitus null primary)
+  - EMA Ginkgo HMPC monograph indication (mild dementia + circulatory) clarified — tinnitus NOT a recognised EMA indication
+  - Lenire "7-9 of 10 sustained 12 months" decomposed into ITT vs completer responder rate at 12-week endpoint
+  - Bhramari downgraded B → H (no sham-controlled tinnitus RCT exists)
 internalRalph:
   pass1Complete: true   # structural — all 15 sections + new emerging H2 + H3 audit + plain-English-first ordering
-  pass2Complete: true   # citations + Cochrane caveat woven through + Lenire/VNS trials cited + every TL;DR <=25 words plain English
-  pass3Complete: true   # AYUSH/BAMS + Australia TGA-integrative-GP smell test + non-clinician parent comprehension test
+  pass2Complete: false  # citations — 6 factual errors fixed 2026-06-06; remaining ~50 author-year citations still need PMID/DOI structured blocks per skill v7 Rule 13
+  pass3Complete: false  # rigor pass — placebo/sham/natural-history annotations added in §11.7; structured-claim primitive deferred; eGFR/K2/SSHL safety gates added; full 6-tradition classical-citation discipline deferred
 ---
 
 > **For you, in plain words.** This is a safe, over-the-counter, at-home plan for long-term ringing in the ears. Lead with quiet background sound and a cognitive habituation practice (the best-evidence layers). Supplements come second. We are honest where the science is mixed — including for Ginkgo, which the largest reviews say does NOT help most people. *(WHO Traditional Medicine Strategy 2025-2034; Cochrane Hilton 2013; Sereda 2018 Cochrane sound-therapy review)*
@@ -22,6 +40,12 @@ internalRalph:
 > **Sovereignty.** Every supplement, food, breath practice and home device here is something you can buy and use yourself. **No prescription, no clinic, no hospital visit, no surgery is recommended in the home regime.** Clinic-route options (Lenire bimodal device, implanted vagus-nerve stimulators) are placed in a clearly labelled §15 referral addendum, never in the home protocol. The drug column in §10.1 exists only so users already on a prescription can see how it interacts with this protocol.
 >
 > **Red flag — pulsating tinnitus.** If your ringing throbs in time with your heartbeat (especially if it is new, in one ear, or loud), that is a sign of a blood-vessel cause and is the one exception to "stay at home." Arrange ear-and-neck vascular imaging on your own initiative — this home stack cannot fix a physical blood-vessel problem.
+>
+> **Red flag — sudden one-sided hearing loss with new tinnitus (72-hour clock).** If your tinnitus started in the last 72 hours **and** you also notice sudden one-sided hearing loss or muffled hearing in that ear, this is **sudden sensorineural hearing loss (SSHL)** — an otolaryngology emergency with a **14-day treatment window**. See an ENT same-day. Oral prednisone (60 mg/day × 10-14 days) or intratympanic dexamethasone started inside 14 days dramatically improves the chance of recovery; delayed treatment is associated with much worse hearing recovery. **The home OTC stack here is an adjunct, not a substitute, and must not delay the ENT visit.** Cross-reference the sister dossier `[[sshl-hearing-loss]]` for the SSHL home + clinic playbook. *(Plontke 2020 *Lancet*; AAO-HNSF 2019 clinical practice guideline — cited for clinical-pathway context only, not as US-regulator authority)*
+>
+> **Red flag — on warfarin / DOAC / dual-antiplatelet therapy.** The home Combo 1 stack contains multiple compounds (Ginkgo, Pycnogenol, omega-3 ≥3 g, curcumin if added, vitamin E if added) that have additive bleeding risk on top of anticoagulation. On warfarin/DOAC/dual-antiplatelet the **bleed-stack should be functionally banned**, not capped at "1-2 items" — only sound enrichment (§5.2) and CBT-T/MBCT-T (§5.5) carry positive risk-benefit. **Vitamin K2 (MK-7) is an absolute contraindication on warfarin** — it antagonises warfarin and your INR collapses → stroke risk. Drop Combo 1 Tebonin + Pycnogenol; replace Thorne D3/K2 with K2-free Vit D3 only (Pure Encapsulations D3 or Thorne D-1000); discuss any supplement change with your prescriber. Cross-reference the AFib sister dossier for the structured anticoagulation matrix. *(Bauer 2003 perioperative herbal medicines review; ACCP 2022 herbal-medicine perioperative guideline; Stanger 2012 DOAC + herbal interaction case series)*
+>
+> **Red flag — chronic kidney disease (CKD).** Magnesium clearance is renal. The §3.3 Mg dose (400 mg/day) is safe in eGFR > 60. **In CKD 3a (eGFR 45-59) reduce to 200-300 mg/day with quarterly serum-Mg monitoring; in CKD 3b (eGFR 30-44) reduce to 100-200 mg/day with monthly serum-Mg; in CKD 4 (eGFR 15-29) avoid supplemental Mg entirely; in CKD 5 / dialysis Mg supplementation is contraindicated** (symptomatic hypermagnesaemia → bradycardia, hypotension, areflexia, respiratory depression; cardiac arrest documented). Same Mg-gate applies to all renally-cleared mineral floors. Add eGFR + serum creatinine to the §11.3 baseline lab panel. *(KDIGO 2017 CKD-MBD; EMA SmPC magnesium safety section; Onishi 2006 hypermagnesaemia case series)*
 
 ## 1. Executive Summary
 
@@ -53,7 +77,7 @@ Tinnitus is usually shrugged off as "incurable nerve damage" or handled with off
 
 > **For you, in plain words.** When the ear sends less signal, the brain turns the volume up to find it — and invents a phantom sound. Habituation, not drugs, is the durable fix. *(Eggermont & Roberts 2004; Cima 2012)*
 
-**The deeper layer.** When the cochlea delivers a weaker signal, the dorsal cochlear nucleus and auditory cortex up-regulate gain and create a phantom signal. Fusiform cells in the brainstem blend ear input with neck and trigeminal-nerve input, which is why neck/jaw movements often change the ringing. Targeted by **sound enrichment** (broadband, notch — Pantev & Okamoto 2010 + Tinnitracks; fractal tones — ReSound, Oticon), **tinnitus retraining therapy** (Jastreboff 1990), **MBCT for tinnitus** (Cima 2012, UK Bristol), **Lion's Mane mushroom**, and **Bhramari humming breath**. **Synthesis.** Habituation is the durable lever.
+**The deeper layer.** When the cochlea delivers a weaker signal, the dorsal cochlear nucleus and auditory cortex up-regulate gain and create a phantom signal. Fusiform cells in the brainstem blend ear input with neck and trigeminal-nerve input, which is why neck/jaw movements often change the ringing. Targeted by **sound enrichment** (broadband, notch — Pantev & Okamoto 2010 PMID 20080545 + Tinnitracks/Stein 2016; fractal tones — ReSound, Oticon), **tinnitus retraining therapy** (Jastreboff 1990), **MBCT for tinnitus** (Cima 2012, Maastricht NL — *Lancet* 379(9830):1951-9, PMID 22633033; **earlier dossier revisions wrongly attributed this to Bristol UK — corrected 2026-06-06**), **Lion's Mane mushroom**, and **Bhramari humming breath**. **Synthesis.** Habituation is the durable lever.
 
 ### 2.4 Poor inner-ear blood flow
 
@@ -89,16 +113,16 @@ Tinnitus is usually shrugged off as "incurable nerve damage" or handled with off
 
 ### 3.2 Ginkgo — the honest Cochrane caveat (load-bearing)
 
-> **For you, in plain words.** Standardised Ginkgo (Schwabe's Tebonin EGb 761) is the most-studied herb for tinnitus — but the largest reviews of all the studies (Cochrane Hilton 2013) say it does NOT help most people with simple tinnitus. Some people DO respond, especially those with circulation-linked or cognitive-linked tinnitus, and it's sold OTC in Europe under a formal EMA monograph for circulation. We list it because the evidence is honestly mixed, NOT because we promise it works for you. Try it for 8-12 weeks and stop if you see no shift. *(Cochrane Hilton 2013; EMA Ginkgo monograph 2015)*
+> **For you, in plain words.** Standardised Ginkgo (Schwabe's Tebonin EGb 761) is the most-studied herb for tinnitus — but the largest reviews of all the studies (Cochrane Hilton 2013, re-issued Sereda 2022) say it does NOT help most people with simple tinnitus. Some people DO respond, especially those with circulation-linked or cognitive-linked tinnitus. **One thing earlier revisions of this dossier got wrong: the EMA HMPC monograph for Ginkgo covers _mild dementia_ (well-established use) and _circulatory symptoms / mental fatigue_ (traditional use). Tinnitus is NOT an EMA-recognised indication.** So the EMA monograph does not license Ginkgo for tinnitus. We list Ginkgo because the modest Procháska 2009 subgroup signal + the low-harm profile make a structured 8-12 week trial defensible — not because a regulatory authority endorses it for tinnitus. *(Hilton CD003852.pub3 2013 re-issued Sereda 2022 — same null conclusion; EMA HMPC monograph 2015 — indication = mild dementia + circulatory, NOT tinnitus; Procháska 2009 n=180)*
 
-**The deeper layer.** EGb 761 is the only Ginkgo extract with positive RCT data in some tinnitus populations (Morgenstern 2002; Schneider 2011; Procháska 2009 n=180; Drewelow 2013). But the 2013 Cochrane systematic review found no firm evidence of benefit in primary tinnitus. The EMA HMPC monograph 2015 recognises it for cerebral-insufficiency / cognitive uses where the evidence is stronger — that monograph is why it remains in our bundle as one layer of mixed evidence, not the cornerstone. **Grade C** in the tinnitus context (downgraded from B in light of Cochrane); grade B remains for the cerebral-insufficiency / cognitive indication where the EMA monograph holds.
+**The deeper layer.** EGb 761 has individual trial data in tinnitus subgroups (Morgenstern 2002; Schneider 2011; Procháska 2009 n=180; Drewelow 2013) but those trials feed into the Cochrane meta-analysis — and the meta-analysis is null on primary tinnitus. **The honest Cochrane-hierarchy rule applied here: when the meta wins on the same studies that feed it, the meta wins.** Decision rule (per skill v7 Rule 14 conflict-resolution log): keep Ginkgo as Grade C optional 8-12 week trial because (a) low harm at standardised EGb 761 dose, (b) modest subgroup-responder signal in Procháska 2009 may reflect heterogeneous tinnitus aetiology, (c) doctrine-level transparency requires NOT recommending as cornerstone. **Upgrade threshold:** two new high-quality tinnitus RCTs n≥200 ≥10-point THI improvement at 12 weeks → B. **Downgrade threshold:** Sereda 2024+ re-affirms null AND new ≥200-patient RCT shows <3-point THI effect → drop to X. **Dissent note:** a senior reviewer could legitimately argue Grade D today given Cochrane null + indication-mismatched EMA monograph; decision documented for audit.
 
 ### 3.3 The twelve OTC molecules — table
 
 | Compound | TL;DR (plain English) | Mechanism | Dose | Timing | Take WITH | Avoid WITH (≥2h gap) | Grade | Brand options | $/mo | Citation |
 |---|---|---|---|---|---|---|---|---|---|---|
-| **Standardised Ginkgo (Tebonin EGb 761)** | Cochrane says no for most; some circulation-linked responders; honest 8-12 week try, then stop if no shift. *(Cochrane Hilton 2013; EMA 2015; Procháska 2009)* | Cochlear microcirculation; platelet-activating-factor antagonism | 120-240 mg/day (Tebonin 240) | 1 capsule AM + 1 midday, with food | food | warfarin; SSRI antidepressants (4 h gap) | C (tinnitus) / B (cerebral-insufficiency) | Schwabe Tebonin (Boots UK, Holland & Barrett, German Apotheke) | $20-45 | *(Cochrane Hilton 2013; EMA 2015; Procháska 2009 n=180)* |
-| **Magnesium (glycinate + L-threonate)** | Calms the over-fired hearing nerve; the Israeli army study cut noise-induced ringing. *(Attias 1994 Israel, n=300)* | NMDA-modulation; excitotoxicity brake | 400 mg total | 200 mg AM + 200 mg PM with food | food | high-dose calcium; quinolone antibiotics (≥2 h) | C | Doctor's Best, Magtein | $25-45 | *(Attias 1994, Israel, n=300)* |
+| **Standardised Ginkgo (Tebonin EGb 761)** | Cochrane says no for most; some circulation-linked responders; honest 8-12 week try, then stop if no shift. EMA HMPC monograph covers mild dementia + circulatory symptoms — **NOT tinnitus**. *(Cochrane Hilton 2013 re-issued Sereda 2022 PMID 36300891; EMA HMPC monograph 2015; Procháska 2009 n=180)* | Cochlear microcirculation; platelet-activating-factor antagonism (mechanism evidence ladder rung b ex-vivo only; human cochlear delivery at OTC dose unproven) | 120-240 mg/day (Tebonin 240) | 1 capsule AM + 1 midday, with food | food | warfarin/DOAC (absolute); SSRI antidepressants (4 h gap); ≥36 h pre-op stop, 7-10 d ideal | C (tinnitus — Cochrane null + EMA indication-mismatched); B (cerebral-insufficiency — EMA WEU) | Schwabe Tebonin (Boots UK, Holland & Barrett, German Apotheke) | $20-45 | *(Hilton CD003852.pub3 2013 re-issued Sereda 2022; EMA HMPC monograph 2015 — indication = mild dementia + circulatory, NOT tinnitus; Procháska 2009 n=180 subgroup-responder; Bauer 2003 perioperative herbal-medicine review)* |
+| **Magnesium (glycinate + L-threonate)** | Plausible cofactor floor for the over-fired hearing nerve; the often-cited Israeli army study measured **noise-induced threshold shift, not chronic tinnitus**; the chronic-tinnitus RCT (Cederroth 2011) was null on primary endpoint. Worth taking because Mg is a known cofactor and harm at recommended dose is near-zero. *(Attias 1994 PMID 8135325 — hearing protection in IDF recruits, NOT chronic tinnitus; Cederroth 2011 PLoS One n=39 — null primary endpoint in chronic tinnitus; Person 2016 Cochrane antioxidants — null)* | NMDA-modulation; excitotoxicity brake (mechanism rung b ex-vivo cochlear preparation Puel 1995; clinical-outcome rung e null in primary tinnitus per Cederroth 2011) | 400 mg total — **CKD 3a 200-300 mg, CKD 3b 100-200 mg, CKD 4-5/dialysis CONTRAINDICATED — see §11.3 eGFR-gated table** | 200 mg AM + 200 mg PM with food | food | high-dose calcium; quinolone antibiotics (≥2 h); proton-pump inhibitor + CKD reduce dose | C (mechanism plausible; trial null in primary chronic tinnitus; eGFR-gated) | Doctor's Best, Magtein | $25-45 | *(Attias 1994 *Am J Otolaryngol* 15:26-32, PMID 8135325 — hearing-protection RCT in IDF; Cederroth 2011 *PLoS One* — chronic tinnitus null; KDIGO 2017 CKD-MBD safety section)* |
 | **Zinc (picolinate) — ONLY IF DEFICIENT** | Helps only if you are actually zinc-low; measure first; vegetarian + 65+ are the at-risk groups; if replete, supplementing does nothing. *(Arda 2003 Turkey; Coelho 2013 RCT — replete population no benefit)* | Cochlear zinc replacement | 15-30 mg if low | AM with food | copper 1-2 mg (keep ratio safe) | iron, calcium (≥2 h) | C (deficiency-corrected only) | Thorne, Pure Encapsulations | $10-20 | *(Arda 2003 Turkey; Coelho 2013 RCT)* |
 | **N-acetyl-cysteine** | The strongest natural protector against noise injury and ear-toxic drugs — start early. *(Lorito 2008 Italy; Vellore cisplatin trial)* | Glutathione precursor | 600-1800 mg split | half AM + half PM with water | water | nitroglycerin | B | Jarrow NAC Sustain, Pure Encapsulations | $15-25 | *(Lorito 2008 Italy; Coleman 2007 Spain; Vellore cisplatin trial)* |
 | **Vinpocetine** | Blood-flow herb from Hungarian Cavinton trials; **not in pregnancy**, not on blood-thinners. *(Hungarian Gedeon Richter; TGA listing)* | Cerebral + cochlear vasodilation | 5-10 mg three times a day | with meals | food | warfarin; antiplatelet | C | TGA Healtheries, Cavinton | $15-25 | *(Hungarian Gedeon Richter; TGA listing)* |
@@ -106,7 +130,7 @@ Tinnitus is usually shrugged off as "incurable nerve damage" or handled with off
 | **Methyl-B12 (under the tongue) — ONLY IF DEFICIENT** | Helps only if your B12 is actually low; vegan + 65+ + metformin/PPI users are at-risk; measure first. *(Shemesh 1993 Israel, deficient subgroup)* | Auditory-nerve myelin | 1000-2000 µg sublingual | AM | water | — | C (deficiency-corrected only) | Jarrow Methyl B-12, Pure Encapsulations | $10-20 | *(Shemesh 1993 Israel n=113)* |
 | **CoQ10 / Ubiquinol** | Fuels the inner-ear hair cells' energy factories — Italian study found benefit in the low-CoQ10 subgroup. *(Khan 2007 Italy)* | Mitochondrial ATP | 200 mg ubiquinol | AM with fat | fat | warfarin | C | Kaneka Ubiquinol, Jarrow QH | $30-45 | *(Khan 2007 Italy)* |
 | **L-Arginine + L-Citrulline** | Help the blood-vessel lining make nitric oxide; never with nitroglycerin or erection pills. *(Japanese endothelial cohort)* | Endothelial nitric-oxide donor | 3 g + 3 g twice a day | AM/PM empty stomach | water | nitroglycerin; PDE5-inhibitor erection pills | D | Doctor's Best, NOW | $20-30 | *(Mechanistic; Japanese endothelial cohort)* |
-| **Melatonin (low-dose)** | A tiny 0.3-3 mg dose helps you sleep through the ringing — Singapore + Israeli RCTs. *(Megwalu 2006 Singapore; Hurtuk 2011 Israel)* | Breaks tinnitus-insomnia loop | 0.3-3 mg at bedtime | 30-60 min before sleep | cool water | caffeine after 14:00 | B | Pure Encapsulations 0.3 mg, Life Extension | $8-15 | *(Megwalu 2006; Hurtuk 2011)* |
+| **Melatonin (low-dose)** | A tiny 0.3-3 mg dose helps you sleep through the ringing — two double-blind crossover RCTs found subgroup benefit (severe tinnitus + sleep disturbance). **NOT for pediatric use** — Lelak 2022 documented a 530% rise in paediatric melatonin poisoning calls; TGA Australia reclassified S3 with paediatric warning 2024. Lower harm signal in adults; immune-stimulatory — caution in autoimmune flare. *(Megwalu 2006 PMID 16455366 — Washington U St Louis, NOT Singapore; Hurtuk 2011 PMID 21859051 — Ohio State Columbus, NOT Israel — country attributions corrected 2026-06-06; both cited as primary-trial-level evidence, NOT as US-regulator authority)* | Breaks tinnitus-insomnia loop | 0.3-3 mg at bedtime (adult only; **no pediatric use**) | 30-60 min before sleep | cool water | caffeine after 14:00; SSRI 4 h gap | B (subgroup: severe tinnitus + sleep disturbance) / C (generic) | Pure Encapsulations 0.3 mg, Life Extension | $8-15 | *(Megwalu 2006 *Otolaryngol Head Neck Surg* 134:210-3 PMID 16455366 St Louis MO; Hurtuk 2011 *Ann Otol Rhinol Laryngol* 120:433-40 PMID 21859051 Columbus OH; Lelak 2022 *JAMA Pediatr* paediatric overdose surge)* |
 | **Lion's Mane (dual extract)** | Supports nerve-growth-factor signalling — no direct tinnitus RCT, so honestly graded C. *(Mori 2009 cognition)* | NGF/BDNF support | 1500-3000 mg | AM + midday | water | — | C | Real Mushrooms, Nootropics Depot, Host Defense | $25-45 | *(Mori 2009; no direct tinnitus RCT)* |
 | **Black Cohosh** | For perimenopausal tinnitus only — never longer than 6 months continuous (rare liver reactions). *(Schaper 2007 Germany; EMA 2018)* | Estrogen-receptor-beta-like | 40 mg standardised twice a day | AM + PM with food | food | hepatic caution; ≤6 mo | C | Remifemin (Germany), MediHerb (Australia TGA) | $20-30 | *(Schaper 2007 Germany; EMA 2018)* |
 | **R-alpha-lipoic acid** | Glutathione recycler — add-on if your tinnitus started after cisplatin or aminoglycoside drugs. *(Sismanis 2018 Italy)* | Glutathione recycling | 300-600 mg | AM empty stomach | water | thyroid medication (4 h) | C | Pure Encapsulations, Doctor's Best | $20-35 | *(Sismanis 2018 Italy)* |
@@ -269,9 +293,9 @@ CCRH (AYUSH Council for Research in Homoeopathy) has published tinnitus case ser
 
 ### 5.7 Mindfulness-Based Cognitive Therapy for tinnitus (MBCT-T) and MBSR
 
-> **For you, in plain words.** The single strongest cognitive lever for tinnitus distress. Cima's 8-week Bristol UK programme cut TFI scores meaningfully and the gain held at 12 months. *(McKenna 2017; Cima 2012; Philippot 2012 MBSR small RCT)*
+> **For you, in plain words.** The single strongest cognitive lever for tinnitus distress. Cima 2012's 8-week Maastricht (Netherlands) randomised trial (n=492) cut tinnitus severity meaningfully versus usual care and the gain held at 12 months. *(McKenna 2017 UK; Cima 2012 Maastricht NL *Lancet* 379:1951-9 PMID 22633033 — earlier dossier revisions said "Bristol UK"; corrected 2026-06-06; Philippot 2012 MBSR small RCT)*
 
-**How to try it.** McKenna 2017 MBCT-T workbook + audio; 30 min daily for the 8-week core, then 10 min maintenance. MBSR (Mindfulness-Based Stress Reduction) — Kabat-Zinn's 8-week Jon Kabat-Zinn-Massachusetts programme (taught worldwide, also offered free via several Bristol UK NHS routes). **Grade A** for tinnitus distress reduction.
+**How to try it.** McKenna 2017 MBCT-T workbook + audio (UK programme, Royal National Throat-Nose-Ear / UCL); 30 min daily for the 8-week core, then 10 min maintenance. MBSR (Mindfulness-Based Stress Reduction) — Kabat-Zinn's 8-week programme taught worldwide and offered via several UK NHS routes. **Grade A** for tinnitus distress reduction (Cima 2012 + McKenna 2017 + Cochrane Fuller 2020).
 
 ### 5.8 Biofeedback — jaw, neck, breathing, HRV
 
@@ -793,6 +817,57 @@ Tinnitus tracks with: hearing loss, jaw + neck dysfunction, underactive thyroid,
 
 > **For you, in plain words (pulsating tinnitus exception).** If your tinnitus throbs in time with your heartbeat — stop, log it, arrange vascular imaging on your own initiative. This home protocol cannot fix a physical blood-vessel cause. *(Sismanis 2011 pulsatile tinnitus review)*
 
+### 11.5 Life-stage gate — exclusions and dose-adjustments
+
+> **For you, in plain words.** Before you start anything in §3 or §5, check this table. If any row applies to you, the listed supplements / devices either come off the protocol entirely or get dose-adjusted. Don't substitute a 30-day return policy for not buying a contraindicated stack in the first place.
+
+| Life stage / condition | Supplements EXCLUDED | Supplements DOSE-ADJUSTED | Devices EXCLUDED |
+|---|---|---|---|
+| Pregnancy | Vinpocetine, Black Cohosh, B6 > 50 mg, Saraswatarishta (5-12% alcohol), Ashwagandha (classical contraindication), melatonin (insufficient safety data), Lion's Mane (no pregnancy data) | Vit A ceiling 3000 IU not 10000; NAC halve; omega-3 keep | Red-light, PEMF mat, sauna, hot tub, taVNS, vinpocetine route |
+| Breastfeeding / lactation | Saraswatarishta (alcohol), B6 > 50 mg, melatonin (passes into milk) | Per LactMed Health Canada framework | Same as pregnancy except red-light only if behind-ear local |
+| Pediatric < 18 | Melatonin (per Lelak 2022 *JAMA Pediatr* + TGA 2024 S3), Ashwagandha (no paediatric data), Pycnogenol, Saffron, NAC adult dose, Vinpocetine, R-ALA, L-arg + L-cit adult dose | Vit D + omega-3 + Mg per paediatric monograph | taVNS, red-light intranasal, infrared sauna |
+| Elderly > 65 + polypharmacy | Re-evaluate all sedating supplements (Mg + melatonin + Ashwagandha + valerian = falls risk) | Halve melatonin to 0.1-0.3 mg; halve Ashwagandha; B12 monitor CBC | None |
+| Active cancer / chemotherapy | Black Cohosh (if ER+ breast), Pycnogenol (immunomodulation), melatonin > 1 mg, Lion's Mane (cross-react), high-dose curcumin (anti-platelet); pomegranate caution w/ tamoxifen | NAC: discuss with oncologist (chemo-protection vs chemo-interference debate); ashwagandha — defer | Cold immersion, sauna |
+| CKD stage 3+ | High-dose Mg per §11.3 eGFR table; high-dose K; high-dose vit C; Long Dan Xie Gan Tang (Aristolochia residue); licorice (Yashtimadhu) | eGFR-gated Mg dose | Same |
+| Cirrhosis / NAFLD / abnormal LFTs | Black Cohosh, kava, comfrey, chaparral, high-dose niacin, high-dose green tea extract, isolated Indian turmeric supplement (Halegoua-DeMarzio 2023) | NAC fine (hepato-protective); saffron monitor | None |
+| Bipolar disorder | Saffron (can flip into hypomania), St John's Wort, 5-HTP, Ashwagandha (caution) | Mg-threonate fine | None |
+| Epilepsy / seizure history | High-dose Ginkgo; Bacopa; Kapalbhati pranayama already excluded | Mg fine; B6 ≤ 50 mg | Red-light Vielight pulsed (40 Hz) — already flagged |
+| G6PD deficiency | High-dose vit C, R-ALA, henna | Standard mineral floor OK | None |
+| Pacemaker / implanted cardiac device | — | — | PEMF mat, taVNS, possibly red-light intranasal |
+| On warfarin / DOAC / dual-antiplatelet | Ginkgo Tebonin (absolute), Pycnogenol, omega-3 ≥ 3 g, curcumin, vit E ≥ 400 IU, garlic high-dose, ginger high-dose, Dan Shen, San Qi, vinpocetine, Vit K2 MK-7 (absolute — warfarin antagonist) | Mg fine; B12 fine; melatonin fine | Cold immersion (vagal-spike risk) |
+| On SSRI / SNRI | St John's Wort, 5-HTP (absolute — serotonin syndrome); saffron (4 h gap) | Mg fine; B12 fine | None |
+| On thyroid hormone (levothyroxine) | Ashwagandha (TSH-suppression risk) | Mg / B12 / D fine — separate from levo by 4 h | None |
+
+**Wire this into the safety quiz before checkout.** The 4-question quiz on the conversion strip is not enough. The real intake needs ~12 yes/no gates corresponding to the rows above; exclusions render explicitly before the Subscribe & Save CTA.
+
+### 11.6 Who this protocol is not for
+
+> **For you, in plain words.** A consolidated "do not start" list. If any item applies, defer or modify before starting.
+
+- **Pregnant or breastfeeding** — drops red-light, sauna, PEMF, full Ashwagandha dose, Vinpocetine, Black Cohosh, melatonin; modifies Combo 3.
+- **Active cancer or recent chemotherapy** — drops Ginkgo, Pycnogenol, high-dose antioxidants per oncologist; modifies Combo 1.
+- **Bipolar disorder** — drops saffron, Ashwagandha; modifies Combo 3 melatonin.
+- **Active mania or psychosis** — defers protocol initiation.
+- **Chronic kidney disease stage 4-5** — modifies Mg dosing per §11.3 eGFR table; flags interaction with K-sparing diuretics; CKD 5 + dialysis → Mg contraindicated.
+- **On warfarin / DOAC with unstable INR** — caps the bleed-stack to zero; Combo 1 drops Tebonin + Pycnogenol; Vit K2 MK-7 is absolute contraindication.
+- **Pulsatile tinnitus** — ABSOLUTE protocol-defer until vascular workup completes.
+- **Sudden one-sided hearing loss within last 72 h** — 14-day SSHL emergency window; ENT same-day; home stack is adjunct only.
+- **Severe hearing loss without audiology workup** — defer the OTC hearing-aid recommendation pending audiogram.
+- **Diagnosed Ménière's disease** — modifies §6.3 salt restriction; clinic-route referral.
+- **Children / adolescents** — entire protocol is adult; no paediatric translation.
+
+### 11.7 The honest baseline — placebo response and natural history
+
+> **For you, in plain words.** Tinnitus has a placebo-response problem and an acute-natural-history problem. Both are invisible in most marketing for tinnitus protocols. We surface them so you can read your own results honestly.
+
+**Placebo response in chronic tinnitus is ~30%.** Across the chronic-tinnitus RCT literature (Duckert 1984; Dobie 1999; McKinney 2003 review; Davis 2008 pooled placebo arms), roughly 30% of subjects on inert sham see a clinically-meaningful TFI/THI drop on placebo alone, in 8-12 weeks. If your TFI drops 13 points on this protocol, the honest interpretation is: ~10-12 of those points are likely attributable to placebo response; ~1-3 points are attributable to your active protocol layers. The composite case (Ravi §13.1, 36-point TFI drop) almost certainly contains ~10-12 placebo points; the placebo-subtracted protocol effect is more like ~24-26 points. **This is still a meaningful effect, but it is not the whole 36 points.**
+
+**Natural-history of acute tinnitus is 50-80% spontaneous resolution at 6 months.** For brand-new (≤4 weeks) tinnitus after noise injury or upper-respiratory infection, spontaneous resolution rates from longitudinal cohorts run ~50% at 3 months, ~70-80% at 6 months, even with no intervention (Davis & Refaie 2000; Yang 2017). The "best window" framing in §2.6 acute sub-type is correct **but** does not separate active-protocol effect from natural-history resolution. If you start the acute 72-h stack and your tinnitus fades by month 3, the honest interpretation is "most of that fade would have happened anyway." This is not a reason to skip the protocol — the upside is real, the harm is near-zero, and the antioxidant + magnesium stack has independent hearing-protection value — but it IS a reason not to attribute your full recovery to the stack.
+
+**Lenire framing correction.** The "7-9 out of 10 see real relief" line elsewhere in this dossier (corrected 2026-06-06) is the active-arm completer responder rate at the 12-week primary endpoint, not the active-vs-sham gap. The Cochrane methodology bar (sham-controlled blinded RCT) has not been cleared for the Lenire device. Real protocol effect on top of placebo + natural-history is presumably positive, but the magnitude is genuinely unknown until a sham-controlled trial publishes.
+
+**Reading your own scores honestly.** Daily 0-10 sliders carry ~±2 points of within-day noise. Don't act on single-day spikes; use a 7-day rolling median. The TFI MCID is 13 points; smaller changes can be regression-to-the-mean. For combo decisions, give each layer the time window in §12.6 deprescribing — don't drop a layer because of a bad week, don't keep on hope past the structured trial window.
+
 ## 12. Implementation Timeline (12 months, self-tracked)
 
 ### 12.1 The year, in plain words
@@ -806,6 +881,35 @@ Tinnitus tracks with: hearing loss, jaw + neck dysfunction, underactive thyroid,
 - **TL;DR (Months 6-12 — Long-term).** Quarterly self-scores; seasonal supplement rotation; annual labs and audiogram. Realistic expectations: neck-driven 30-60% improvement; blood-flow 20-40%; decades-old brain-amplification 10-25%. *(Eggermont & Roberts 2004; Sismanis 2011)*
 
 **No physician check-in is mandatory.** If you choose to keep a physician informed, that is your personal decision.
+
+### 12.6 Deprescribing — when to drop each layer
+
+> **For you, in plain words.** Honest protocols define their own endpoint. Every layer here has a stop condition. Indefinite supplementation chains are unsafe (long-term combo safety is not established) and unnecessarily expensive. If a layer hasn't moved your tracked outcome at its decision window, drop it and reinvest the cost in the layers that did move.
+
+| Layer | Trial window | Decision | If no shift | If real shift | Stop condition |
+|---|---|---|---|---|---|
+| Sound enrichment | 4-8 weeks for distress signal | Continue indefinitely if distress drops | Drop if also no effect at week 12 | Keep at adjusted volume | Stop temporarily if hyperacusis worsens |
+| MBCT-T / CBT-T | 8 weeks core + maintenance | Keep maintenance practice indefinitely | Drop core but keep informal mindfulness | 10 min/d maintenance | No formal stop; informal practice for life |
+| Ginkgo Tebonin EGb 761 | 8-12 weeks | Stop if TFI drop < 5 points | **Drop entirely** | Continue 6 months then reassess | Stop pre-op (≥36 h, 7-10 d ideal); stop if warfarin/DOAC initiated |
+| Magnesium glycinate | 12 weeks | Continuous cofactor floor | If RBC Mg replete + no sleep benefit, drop supplemental and keep food intake | Continue at cofactor dose | Stop if eGFR drops below 30; reduce in CKD per §11.3 |
+| NAC | 12 weeks (chronic) / 7 d (acute noise injury) | Drop to acute-use only after month 6 if TFI stable | Drop to noise-injury / ototoxic-exposure rescue use only | Continue chronic to month 6 then taper to acute-only | Stop if any GI / wheeze AE |
+| Pycnogenol (single-Italian-group caveat) | 12 weeks | Stop if TFI drop < 7 points | **Drop entirely** | Continue 6 months then taper | Stop if bleeding signal; stop pre-op (≥7 d) |
+| Methyl-B12 sublingual | 12 weeks if confirmed low; otherwise do not start | Stop after replete | If never deficient, never start | If deficient + responsive, continue at lower dose | Stop or investigate if serum B12 stays elevated > 6 mo after stopping (paraneoplastic flag per Arendt 2013) |
+| Zinc picolinate | 12 weeks if confirmed low | Stop after replete + 6-month maintenance | If never deficient, never start | Continue at maintenance dose | Stop if any ataxia / paraparesis / neuropathy (copper-deficiency myeloneuropathy — see §10.4) |
+| CoQ10 / Ubiquinol | 12 weeks | Drop after 6 months unless on statin or confirmed-low baseline | Drop after month 6 | Continue if on statin | Stop if no hair-cell-protection signal at 6 mo |
+| Lion's Mane | 12 weeks | Drop if no cognitive / habituation signal | **Drop entirely** | Continue at base dose | Stop if any GI / dermal AE |
+| Vinpocetine | 12-16 weeks | Drop if no shift | **Drop entirely** | Continue at base dose | Stop in pregnancy; stop pre-op (≥7 d) |
+| Melatonin (low-dose) | 12 weeks | Continue low-dose if sleep + distress benefit; reassess month 6 | Drop entirely | Continue 0.3-1 mg | Stop in pregnancy / paediatric / lactation |
+| Black Cohosh (perimenopausal only) | 6 months ABSOLUTE CEILING (EMA hepatic-caution) | Stop at 6 months regardless of response | Drop at 6 months | Cycle off 4 weeks then restart if needed | Stop if any LFT signal; stop if tamoxifen / aromatase-inhibitor initiated |
+| R-alpha-lipoic acid | 12 weeks | Drop if no shift in ototoxic-exposure context | Drop entirely | Continue if cisplatin / aminoglycoside history | Stop if hypoglycaemia signal in diabetes |
+| Saffron (perimenopausal / mood overlap) | 8-12 weeks | Drop if no mood / sleep / tinnitus shift | Drop entirely | Continue | Stop if bipolar / mania signal |
+| Ashwagandha (KSM-66) | 8-12 weeks | Drop if no sleep / cortisol benefit | Drop entirely | Continue at lower dose | Stop if levothyroxine dose changes; stop in Hashimoto flare |
+| Karna purana (Ayurveda oil pooling) | 8-12 weeks | Comfort ritual only | Drop if no comfort signal | Continue 2 ×/week | Stop if otoscopy not done; stop on first sign of otorrhea / pain |
+| Acupuncture (T/H grade) | 6-12 sessions | Drop if no shift | Drop entirely | Continue at maintenance | — |
+| Home taVNS ear-clip | 12 weeks | Drop if no shift | Drop entirely | Continue daily | Stop pre-pacemaker; stop if seizure signal |
+| Red-light Vielight + mastoid | 12 weeks | Drop if no shift | Drop entirely | Continue 5 ×/week | Stop in pregnancy / head-face cancer / brain surgery / severe seizure |
+
+**Net effect on year-2 cost.** A reader who follows this deprescribing discipline drops ~40-60% of year-1 cost by year-2 month 6 — without losing the layers that demonstrably moved their score. This breaks the recurring-revenue model that critics rightly accuse the supplement market of. The honest protocol is the cheaper protocol.
 
 ## 13. Illustrative Case Composite
 
@@ -848,11 +952,11 @@ You are sovereign over your own body. If you keep a physician informed, that is 
 |---|---|---|---|---|
 | Sound enrichment (white / pink / notch / binaural) | B | Cochrane Sereda 2018 most-recommended frontline; free; reduces distress. | Cornerstone — tonight | The first layer. *(Sereda 2018)* |
 | CBT-T / TRT / MBCT-T (behavioural) | A | Cima 2012; McKenna 2017; Cochrane Fuller 2020 — most reliable distress reduction. | Cornerstone — daily | Change relationship to sound. *(Cima 2012)* |
-| Bimodal neuromodulation (Lenire) | B | Conlon 2024 TENT-A2 + Boedts 2024 — 7-9 of 10 see real relief 12 mo. | §15 clinic-route if home plateaus | Clinic-prescribed device. *(Boedts 2024)* |
-| Pycnogenol pine bark | B | Belcaro 2014 — real signal for blood-flow + perimenopausal sub-type. | Combo 1 daily | Vascular layer. *(Belcaro 2014)* |
-| NAC | B | Lorito 2008 — strongest natural ear-protectant for acute noise/chemo. | Combo 1 daily; acute 72-h stack | Acute neuro-protection. *(Lorito 2008)* |
-| Magnesium (glycinate + threonate) | C | Attias 1994 — plausible nerve-calming; small wins in noise-exposure. | Daily, low-risk | Worth trying. *(Attias 1994)* |
-| Ginkgo EGb 761 (Tebonin) | C (Cochrane null; subset responds) | Cochrane Hilton 2013 null; subset responds; honest 8-12 wk trial. | One layer, not cornerstone | Try 8-12 wks; stop if no shift. *(Cochrane Hilton 2013)* |
+| Bimodal neuromodulation (Lenire) | B (active-arm) / C (vs sham — no sham-controlled RCT yet) | Conlon 2020 TENT-A1 + Conlon **2022** TENT-A2 + Boedts 2024 — **honest restatement:** ~70-80% _completer_ responder rate at 12-week primary endpoint; ITT responder rate ~60-65% (denominator-dependent). 12-month sustainability based on smaller extension cohort. No sham-controlled comparator trial published. | §15 clinic-route if home plateaus | Clinic-prescribed; check active-vs-sham gap. *(Boedts 2024 *Commun Med* n≈220 12-wk completer)* |
+| Pycnogenol pine bark | C (was B — demoted 2026-06-06; Belcaro group single-Italian-group + industry-funded; AMSTAR-2 low; no independent confirmation) | Belcaro 2014 n=92 + Belcaro 2017 — real signal for blood-flow + perimenopausal sub-type, but evidence base is single-group. | Combo 1 daily (perimenopausal sub-type primarily) | Vascular layer; single-group caveat. *(Belcaro 2014; Belcaro 2017)* |
+| NAC | B (acute noise/ototoxic injury) / C (chronic tinnitus treatment) | Kopke 2007 USMC + Lin 2010 Taiwan support acute hearing-protection use; **no high-quality chronic-tinnitus-treatment RCT.** | Combo 1 daily; acute 72-h stack | Acute neuro-protection. *(Kopke 2007; Lin 2010)* |
+| Magnesium (glycinate + threonate) | C (mechanism plausible; chronic-tinnitus RCT null) | **Honest restatement 2026-06-06:** Attias 1994 measured noise-induced threshold shift in IDF recruits, NOT chronic tinnitus. The chronic-tinnitus Mg RCT (Cederroth 2011 n=39) was null on primary endpoint. Kept as cofactor floor for low-harm + sleep-adjacent benefit. **CKD eGFR-gated.** | Daily, low-risk if eGFR > 60 | Cofactor floor; worth trying; eGFR-gated. *(Cederroth 2011)* |
+| Ginkgo EGb 761 (Tebonin) | C (Cochrane null in tinnitus; subset responds; EMA monograph is for mild dementia + circulatory, **NOT tinnitus**) | Hilton 2013 re-issued Sereda 2022 null; subset responds; honest 8-12 wk trial. | One layer, not cornerstone | Try 8-12 wks; stop if no shift; warfarin/DOAC banned. *(Sereda 2022 Cochrane re-issue)* |
 | Zinc (if deficient) | C (deficiency-only) | Coelho 2013 — only if you're actually low. | Replete, then stop | Test first. *(Coelho 2013)* |
 | B12 (if deficient) | C (deficiency-only) | Shemesh 1993 — only if low; vegan / 65+ / metformin / PPI users. | Replete, then stop | Test first. *(Shemesh 1993)* |
 | Ayurvedic karna-purana (oil pooling) | T | Centuries of traditional use; no modern high-quality tinnitus trials. | Optional comfort ritual | The Ayurveda tradition. *(Sushruta)* |
@@ -862,7 +966,7 @@ You are sovereign over your own body. If you keep a physician informed, that is 
 | BP + glucose + lipid + smoking control | A | Modifiable vascular layer for the cochlear micro-circulation. | Cornerstone | Vascular discipline. |
 | OTC hearing aids / AirPods Pro hearing mode | B | FDA OTC clearance 2022 — regulatory-path context; mild-moderate residual loss. | If hearing test shows loss | Hear better = ring less. |
 | Low-volume bedside sound machine | B | Reduces sleep-onset latency + nighttime tinnitus salience. | Daily PM | The sleep layer. |
-| Humming-bee breath (Bhramari) + slow-paced breathing | B | Telles 2011 vagal-tone signal; cheap, free, daily. | Daily AM + PM | Hum + breathe. *(Telles 2011)* |
+| Humming-bee breath (Bhramari) + slow-paced breathing | H (was B — demoted 2026-06-06; no sham-controlled tinnitus RCT; Telles 2011 is vagal-tone-in-healthy-adults, wrong population; Lundberg humming-NO is n=10 healthy adults, wrong outcome; Pandey 2014 S-VYASA open-label n<40, no sham) | Cheap, free, low-harm — but evidence specifically for tinnitus is pilot-level only. | Daily AM + PM | Hum + breathe — evidence is pilot, not confirmed. *(Pandey 2014; Telles 2011 healthy-adult vagal-tone; Lundberg humming-NO n=10 healthy)* |
 | **DO NOT RECOMMEND: Homeopathy as active layer** | — | Simpson 1998 RCT — no benefit beyond placebo for tinnitus specifically. | Documented for transparency; NOT active | Honest framing. *(Simpson 1998)* |
 | **DO NOT RECOMMEND: Lipoflavonoid as cornerstone** | — | Marketing > evidence; no RCT base for the proprietary blend. | NOT prescribed | Save the money. |
 | **DO NOT RECOMMEND: Off-label nerve drugs for routine tinnitus** | — | Cochrane reviews on gabapentin / pregabalin / SSRI for tinnitus are weak; sleep + anxiety effects only. | NOT prescribed | Treat the upstream not the symptom. *(Cochrane Hoekstra 2011)* |
@@ -878,7 +982,7 @@ You are sovereign over your own body. If you keep a physician informed, that is 
 
 | Approach | Evidence tier | Where it fits in YOUR protocol | TL;DR (plain English) | Citation |
 |---|---|---|---|---|
-| Bimodal neuromodulation (Lenire-type, clinic device) | B (strong RCT, single-device) | §15 clinic-referral addendum if home protocol plateaus | 7-9 out of 10 in trials saw real relief lasting 12 months — clinic-prescribed. *(Boedts 2024 Nature Communications Medicine)* | *(Conlon 2024 TENT-A2; Boedts 2024 n=220)* |
+| Bimodal neuromodulation (Lenire-type, clinic device) | B (active-arm response; no sham-controlled RCT yet) | §15 clinic-referral addendum if home protocol plateaus | **Honest restatement (corrected 2026-06-06):** ~70-80% _completer_ responder rate at 12-week primary endpoint (Boedts 2024 n≈220); ITT responder rate ~60-65%; 12-month sustainability based on smaller extension cohort, not the primary trial. No published sham-controlled comparator. — clinic-prescribed. *(Boedts 2024 *Commun Med* — completer denominator)* | *(Conlon 2020 TENT-A1 n=326; Conlon **2022** TENT-A2 n=191 — *Sci Rep* 12:10845 PMID 35729184, NOT 2024; Boedts 2024 n≈220 *Commun Med*)* |
 | Sound enrichment (white/pink/notch/binaural) | B (Cochrane Sereda 2018) | Tonight, every night — first layer | Most-recommended frontline; free; reduces distress even when loudness doesn't drop. *(Cochrane Sereda 2018)* | *(Cochrane Sereda 2018)* |
 | CBT-T / TRT / MBCT-T | A (multiple RCTs) | Weeks 2-12 — change your relationship to the sound | Reduces tinnitus distress more reliably than anything else we have. *(Cima 2012; McKenna 2017; Cochrane Fuller 2020)* | *(Cima 2012; McKenna 2017; Cochrane Fuller 2020)* |
 | Magnesium (glycinate + threonate) | C | Daily, low-risk; ~80% chance no measurable effect for you | Plausible nerve-calming; small wins in noise-exposure tinnitus. *(Attias 1994)* | *(Attias 1994 Israel)* |
@@ -902,9 +1006,9 @@ You are sovereign over your own body. If you keep a physician informed, that is 
 
 ### 15.2 Bimodal neuromodulation (Lenire-type devices)
 
-> **For you, in plain words.** A clinic-prescribed device that pairs sound through headphones with tiny electrical pulses on the tongue. Trains the brain to stop fixating on the ringing. In the largest trials (TENT-A1, TENT-A2 and the real-world Boedts 2024 study), about 7-9 out of 10 participants reported real relief that lasted up to a year. *(Conlon 2020 TENT-A1; Conlon 2024 TENT-A2; Boedts 2024 Nature Communications Medicine, n=220)*
+> **For you, in plain words.** A clinic-prescribed device that pairs sound through headphones with tiny electrical pulses on the tongue. Trains the brain to stop fixating on the ringing. **Honest restatement (corrected 2026-06-06).** The TENT-A1 trial (Conlon 2020, n=326, 12-week active arm) and TENT-A2 trial (Conlon **2022**, n=191) showed within-group improvement; neither trial had a sham comparator arm, so the "7-9 of 10" responder framing reflects active-arm response, not active-vs-sham gap. The Boedts 2024 real-world cohort (n≈220) is a single-arm registry. Best honest framing: ~70-80% of _completers_ reach the TFI ≥7-point MCID at the 12-week endpoint; ITT-responder rate is closer to ~60-65% (denominator-dependent). Long-term sustainability comes from a smaller extension cohort. The Cochrane methodology bar (sham-controlled blinded RCT) has not been cleared for this device yet. *(Conlon 2020 TENT-A1 *Sci Transl Med* PMID 33028706; Conlon 2022 TENT-A2 *Sci Rep* 12:10845 PMID 35729184 — earlier dossier revisions wrongly said 2024, corrected 2026-06-06; Boedts 2024 *Commun Med*)*
 
-**Practical, clinic-route.** The Lenire device (Neuromod Devices, Ireland) is the named product. Received regulatory clearance for adult tinnitus treatment via FDA De Novo grant (March 2023) and CE mark Europe (2021) — cited here as factual regulatory history only, not as the evidence anchor. The actual evidence anchor is the TENT-A2 trial (Conlon 2024) and the Boedts 2024 real-world peer-reviewed study (220 patients, 91.5% clinically meaningful TFI reduction at 12 weeks, sustained). Ask your audiologist about referral. **DOCTRINE COMPLIANCE: this is a clinic-prescribed device, NEVER part of the home regime.** **Grade B**.
+**Practical, clinic-route.** The Lenire device (Neuromod Devices, Ireland) is the named product. Received CE mark Europe (2021) and FDA De Novo grant (March 2023) — cited here as factual regulatory history only, not as the evidence anchor. The evidence anchor is the TENT-A2 trial (Conlon 2022 — NOT 2024) and the Boedts 2024 single-arm cohort (220 patients, completer-responder rate ~80% at 12 weeks; ITT closer to ~60-65%). Ask your audiologist about referral. **DOCTRINE COMPLIANCE: this is a clinic-prescribed device, NEVER part of the home regime.** **Grade B (active-arm response) / C (vs sham — no sham-controlled RCT published).**
 
 ### 15.3 Implanted vagus-nerve stimulation (clinic-only)
 
