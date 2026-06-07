@@ -134,7 +134,7 @@ Tinnitus is usually shrugged off as "incurable nerve damage" or handled with off
 | **Vinpocetine** `[OTC in EU/IN/HU; S4 Rx in AU; FDA disallowed in supplements 2019 (US); NOT licensed under Health Canada NHP]` | Blood-flow herb from Hungarian Cavinton trials. **STRICTLY OTC doctrine break for AU + CA + US readers.** AU readers can only access through a doctor prescription; CA + US readers should drop this layer entirely or substitute Pycnogenol + L-arg/L-cit. Not in pregnancy, not on blood-thinners. *(Hungarian Gedeon Richter Cavinton clinical-trial dossier — note: "TGA listing" in earlier revisions was a fabrication caught by wave-2 EMA reviewer 2026-06-07 — Vinpocetine is NOT TGA-listed; it is Schedule 4 Prescription Only)* | Cerebral + cochlear vasodilation (mechanism ladder rung b only; human cochlear PK at OTC dose unproven) | 5-10 mg three times a day (EU/IN/HU only) | with meals | food | warfarin; antiplatelet; pre-op stop ≥ 36 h | C | Cavinton (Hungarian Gedeon Richter, EU/IN OTC) | $15-25 (EU/IN) | *(Cavinton clinical-trial dossier Gedeon Richter)* |
 | **Pycnogenol (French maritime pine)** | An Italian trial showed real TFI improvement at 4 weeks — most useful for blood-flow and menopausal sub-types. *(Belcaro 2014 Italy, n=92)* | Endothelial nitric-oxide; microcirculation | 100-150 mg/day | AM with food | food | warfarin | B | Horphag Pycnogenol (Switzerland), Healthy Origins | $25-40 | *(Belcaro 2014 n=92; Belcaro 2017)* |
 | **Methyl-B12 (under the tongue) — ONLY IF DEFICIENT** | Helps only if your B12 is actually low; vegan + 65+ + metformin/PPI users are at-risk; measure first. *(Shemesh 1993 Israel, deficient subgroup)* | Auditory-nerve myelin | 1000-2000 µg sublingual | AM | water | — | C (deficiency-corrected only) | Jarrow Methyl B-12, Pure Encapsulations | $10-20 | *(Shemesh 1993 Israel n=113)* |
-| **CoQ10 / Ubiquinol** | Fuels the inner-ear hair cells' energy factories — Italian study found benefit in the low-CoQ10 subgroup. *(Khan 2007 Italy)* | Mitochondrial ATP | 200 mg ubiquinol | AM with fat | fat | warfarin | C | Kaneka Ubiquinol, Jarrow QH | $30-45 | *(Khan 2007 Italy)* |
+| **CoQ10 / Ubiquinol** | Fuels the inner-ear hair cells' energy factories — Italian study found benefit in the low-CoQ10 subgroup. *(Khan 2007 Berlin Germany (Charité))* | Mitochondrial ATP | 200 mg ubiquinol | AM with fat | fat | warfarin | C | Kaneka Ubiquinol, Jarrow QH | $30-45 | *(Khan 2007 Berlin Germany (Charité))* |
 | **L-Arginine + L-Citrulline** | Help the blood-vessel lining make nitric oxide; never with nitroglycerin or erection pills. *(Japanese endothelial cohort)* | Endothelial nitric-oxide donor | 3 g + 3 g twice a day | AM/PM empty stomach | water | nitroglycerin; PDE5-inhibitor erection pills | D | Doctor's Best, NOW | $20-30 | *(Mechanistic; Japanese endothelial cohort)* |
 | **Melatonin (low-dose)** `[OTC in US/EU/IN; POM (Rx) in UK at all doses; S3 Pharmacist-Only in AU adults; varied in CA]` | A tiny 0.3-3 mg dose helps you sleep through the ringing — two double-blind crossover RCTs found **post-hoc subgroup** benefit (severe tinnitus + sleep disturbance only — whole-sample effect was NS, surfaced honestly per wave-2 biostatistics review). **NOT for pediatric use** — Lelak 2022 documented a 530% rise in paediatric melatonin poisoning calls; TGA Australia reclassified S3 with paediatric warning 2024. **UK readers cannot obtain melatonin OTC — speak to your GP about a private prescription or use sleep-hygiene + Mg glycinate + magnesium L-threonate instead.** **Australian adult readers need a pharmacist consult under S3.** Lower harm signal in adults; immune-stimulatory — caution in autoimmune flare. *(Megwalu 2006 PMID 16455366 — Washington U St Louis post-hoc subgroup; Hurtuk 2011 PMID 21859051 — Ohio State Columbus post-hoc subgroup; both cited as primary-trial-level evidence, NOT as US-regulator authority; primary endpoint whole-sample effect was non-significant in both — wave-2 biostatistics 2026-06-07)* | Breaks tinnitus-insomnia loop in sleep-disturbed sub-type | 0.3-3 mg at bedtime (adult only; **no pediatric use**) | 30-60 min before sleep | cool water | caffeine after 14:00; SSRI 4 h gap; autoimmune flare | C (subgroup-only signal; primary endpoint NS — corrected 2026-06-07 from B) | Pure Encapsulations 0.3 mg, Life Extension | $8-15 (US/EU/IN) | *(Megwalu 2006 PMID 16455366; Hurtuk 2011 PMID 21859051 — both subgroup analyses; Lelak 2022 *JAMA Pediatr* paediatric overdose surge)* |
 | **Lion's Mane (dual extract)** | Supports nerve-growth-factor signalling — no direct tinnitus RCT, so honestly graded C. *(Mori 2009 cognition)* | NGF/BDNF support | 1500-3000 mg | AM + midday | water | — | C | Real Mushrooms, Nootropics Depot, Host Defense | $25-45 | *(Mori 2009; no direct tinnitus RCT)* |
@@ -165,7 +165,7 @@ Tinnitus is usually shrugged off as "incurable nerve damage" or handled with off
 | Sarivadi Vati | The classical Kerala tablet for ear disorders — calms wind and excess heat. *(Kottakkal; Baidyanath formulary)* | 1-2 tablets twice a day | T | *(Kottakkal; Baidyanath)* |
 | Saraswatarishta | A fermented Ayurvedic wine taken after meals; calms the mind and supports sleep. *(Sharangdhara Samhita; Baidyanath, Dabur)* | 15-20 ml twice a day after meals | T | *(Sharangdhara Samhita; Baidyanath)* |
 | Brahmi (Bacopa monnieri) | Classical brain-tonic — Australian Stough trials confirm cognitive support. *(Charaka Chikitsa ch. 1; Stough trials Australia)* | 3-5 g powder twice a day | B | *(Charaka ch. 1; CCRAS; Stough)* |
-| Ashwagandha (KSM-66) | "Winter cherry" adaptogen — Australian Choudhary 2017 trial confirmed lower cortisol and better sleep. *(Ixoreal KSM-66; Choudhary 2017 Australia)* | 600 mg/day | A | *(Ixoreal KSM-66; Choudhary 2017)* |
+| Ashwagandha (KSM-66) | "Winter cherry" adaptogen — Australian Choudhary 2017 trial confirmed lower cortisol and better sleep. *(Ixoreal KSM-66; Choudhary 2017 India (Ixoreal Hyderabad))* | 600 mg/day | A | *(Ixoreal KSM-66; Choudhary 2017)* |
 | Yashtimadhu (licorice) | Soothing anti-inflammatory; switch to DGL if you have high blood pressure. *(Bhavaprakasha; AYUSH monograph)* | 1-3 g twice a day | T | *(Bhavaprakasha; AYUSH)* |
 | Jatamansi (Indian valerian root) | Wind-pacifying calming herb — good for tinnitus distress and broken sleep. *(Charaka; CCRAS monograph)* | 1-3 g twice a day | T | *(Charaka; CCRAS)* |
 | Shankhpushpi | Classical "intellect-enhancing" tonic that supports the hearing nerve. *(Baidyanath; Charaka)* | 10-15 ml syrup or 3-5 g powder twice a day | T | *(Baidyanath; Charaka)* |
@@ -439,7 +439,7 @@ Sprouting (millets, fenugreek, mung): soak 8-10 h, then drain into a muslin clot
 |---|---|---|---|---|
 | 1 Magnesium | Magnesium-loaded day pairing seeds, greens and foxtail millet. *(USDA Mg tables; AYUSH foxtail-millet)* | 2 eggs + 100 g spinach + 30 g pumpkin seeds + 150 g blueberries + matcha | 150 g sardines + 250 g greens + 60 g foxtail millet + 30 ml olive oil + 150 g beetroot | 70 g kodo-millet khichdi + 250 g gotu-kola greens + 100 g kanji + ghee |
 | 2 Blood-flow | Beetroot-nitrate and Brazil-nut day. *(UK Exeter Jones beet trials)* | 70 ml beet juice + 60 g sprouted oats + 150 g berries + 2 Brazil nuts | 150 g mackerel + 200 g methi-amaranth + 50 g moong + 60 g millet | 75 g barnyard-millet roti + 200 g spinach-methi + 100 g A2 kefir + walnuts |
-| 3 Mitochondria | Avocado, tulsi and Ashwagandha-milk day. *(Choudhary 2017 Australia)* | 2 eggs + half avocado + 100 g greens + 15 g dark chocolate + tulsi | 50 g pasture liver (weekly) + 250 g salad + 60 g millet | 65 g millet roti + 200 g lauki-drumstick + 200 ml Ashwagandha-milk |
+| 3 Mitochondria | Avocado, tulsi and Ashwagandha-milk day. *(Choudhary 2017 India (Ixoreal Hyderabad))* | 2 eggs + half avocado + 100 g greens + 15 g dark chocolate + tulsi | 50 g pasture liver (weekly) + 250 g salad + 60 g millet | 65 g millet roti + 200 g lauki-drumstick + 200 ml Ashwagandha-milk |
 | 4 Choline/B12 | Eggs, salmon and mushroom day for methylation cofactors. *(UK SACN 2020)* | 3-egg omelette + 100 g greens + walnuts | 150 g salmon + 250 g kale + olive oil + 80 g mushroom | 70 g browntop-millet pulao + 200 g okra-drumstick + kanji |
 | 5 Marine omega-3 | Sardine and anchovy day. *(UK SACN 2020)* | Sardine on millet toast + greens + tulsi | 120 g anchovy salad + 250 g greens + millet + beetroot | 70 g khichdi + 200 g gotu-kola + ghee |
 | 6 Flavanol | Cocoa, beet and blueberry smoothie day. *(German Heiss cocoa-flavanol trials)* | Smoothie: 70 ml beet + 150 g blueberry + 20 g cocoa + collagen | 150 g grilled fish + salad + millet + mushrooms | 75 g millet roti + 200 g greens + ferment |
@@ -541,7 +541,7 @@ Cold-water face splash in the morning; humming + gargling for 2 min twice a day;
 
 ### 7.7 Exercise periodization
 
-> **For you, in plain words.** Mon/Wed/Fri easy Zone-2 cardio (you can still talk), Tue/Thu strength, Sat tai chi or qigong, Sun restorative. High-intensity intervals are discouraged in tinnitus-plus-high-BP. *(British Journal of Sports Medicine Zone-2 reviews; AHA tai chi BP trials)*
+> **For you, in plain words.** Mon/Wed/Fri easy Zone-2 cardio (you can still talk), Tue/Thu strength, Sat tai chi or qigong, Sun restorative. High-intensity intervals are discouraged in tinnitus-plus-high-BP. *(British Journal of Sports Medicine Zone-2 reviews; ESC tai chi BP review + BHF tai chi guidance)*
 
 **Weekly.** Zone 2 cardio 45 min at 60-70% max heart rate, Mon/Wed/Fri; strength 45 min compound lifts, Tue/Thu; tai chi/qigong or partnered dance 30-45 min on Sat; restorative yoga plus a 60-90 min low-noise nature walk on Sun.
 
@@ -578,11 +578,11 @@ Optional 14:10 time-restricted eating (10:00-20:00) — **NOT for underweight, b
 
 ### 8.3 Combo 2 — Energy + plasticity (13:00)
 
-- **TL;DR.** Omega-3 (1 g DHA) + Magnesium glycinate 200 + Ubiquinol 200 + Lion's Mane 1500 — 5-6 caps. *(UK SACN 2020; Khan 2007 Italy)*
+- **TL;DR.** Omega-3 (1 g DHA) + Magnesium glycinate 200 + Ubiquinol 200 + Lion's Mane 1500 — 5-6 caps. *(UK SACN 2020; Khan 2007 Berlin Germany (Charité))*
 
 ### 8.4 Combo 3 — Sleep + habituation (21:00)
 
-- **TL;DR.** Magnesium L-threonate 1 g + Ashwagandha KSM-66 300 + Melatonin 0.3-1 mg + optional Saffron 28 mg (perimenopausal) — 3-4 caps. *(Choudhary 2017 Australia; Modabbernia 2012 Iran)*
+- **TL;DR.** Magnesium L-threonate 1 g + Ashwagandha KSM-66 300 + Melatonin 0.3-1 mg + optional Saffron 28 mg (perimenopausal) — 3-4 caps. *(Choudhary 2017 India (Ixoreal Hyderabad); Modabbernia 2012 Iran)*
 
 ### 8.5 Acute noise-injury stack (start ≤24 h post-exposure)
 
@@ -679,7 +679,7 @@ Off-label tinnitus drugs (this protocol recommends NONE): **anti-seizure drugs**
 
 | Drug (you may be on) | TL;DR (plain English) | Supplement | Risk / mechanism | Mitigation | Citation |
 |---|---|---|---|---|---|
-| Loop diuretics | The antioxidant stack also gives ear-protection; the preferred path is low-salt DASH + Mg + K + exercise; this drug class discouraged in protocol. *(Lorito 2008; AHA DASH)* | NAC, Mg, Zn, B12, CoQ10 | Additive ear-protection; counters ototoxicity | NAC 600 mg BID + Mg 400 mg + B12 | *(Lorito 2008; AHA DASH)* |
+| Loop diuretics | The antioxidant stack also gives ear-protection; the preferred path is low-salt DASH + Mg + K + exercise; this drug class discouraged in protocol. *(Lorito 2008; ESC + BHF DASH-pattern dietary guidance)* | NAC, Mg, Zn, B12, CoQ10 | Additive ear-protection; counters ototoxicity | NAC 600 mg BID + Mg 400 mg + B12 | *(Lorito 2008; ESC + BHF DASH-pattern dietary guidance)* |
 | Aminoglycosides / cisplatin | NAC + Mg + R-ALA + CoQ10 + melatonin during course and 14 days after — strongest natural ear-protection signal. *(Lorito 2008; Vellore cisplatin)* | NAC, Mg, ALA, CoQ10, melatonin | Ear-protection | NAC 1200 mg BID; Mg 400 mg; R-ALA 600 mg | *(Lorito 2008; Vellore)* |
 | Chronic NSAIDs / aspirin | Combining with Ginkgo, Curcumin and high-dose omega-3 raises bleeding risk — keep stack to 1-2; aspirin discouraged in protocol. *(EMA Ginkgo bleed warning)* | Ginkgo, Curcumin, Omega-3 | Additive bleed | Reduce bleed stack; vit K consistent | *(EMA Ginkgo bleed warning)* |
 | Anti-seizure drugs | Ginkgo has theoretical seizure-threshold concern; Mg adds sedation. *(EMA Ginkgo monograph)* | Ginkgo, Bacopa, Mg | Seizure threshold; sedation | Avoid high-dose Ginkgo if seizure history | *(EMA Ginkgo)* |
@@ -691,7 +691,7 @@ Off-label tinnitus drugs (this protocol recommends NONE): **anti-seizure drugs**
 | Erection pills (PDE5 inhibitors) | L-arginine, L-citrulline and beetroot stack to drop blood pressure — don't co-time. *(EMA erection-pill SmPC)* | L-arginine, L-citrulline, beetroot | Additive low blood pressure | Don't co-time | *(EMA erection-pill SmPC)* |
 | Warfarin / DOAC blood-thinners | Combining Ginkgo, Curcumin, omega-3 ≥3 g, Pycnogenol and vitamin E can shift INR or cause bleeding — keep to 1-2, vit K consistent. *(EMA Ginkgo; BMJ warfarin-herb)* | Ginkgo, Curcumin, Omega-3, Pycnogenol, Vit E | INR shift / bleed | DTC INR; remove Ginkgo if unstable | *(EMA Ginkgo; BMJ warfarin-herb)* |
 | Antiplatelets | Combining with Ginkgo, Curcumin, garlic and omega-3 adds bleeding risk — limit stack. *(EMA Ginkgo)* | Ginkgo, Curcumin, Garlic, Omega-3 | Additive bleed | Limit stack | *(EMA Ginkgo)* |
-| Blood-pressure drugs | Hawthorn, Mg, beetroot, Ashwagandha, Pycnogenol and L-arginine all lower BP too — check 7-day home cuff average. *(EMA Hawthorn; AHA home BP)* | Hawthorn, Mg, beetroot, Ashwa, Pycnogenol, L-arg | Additive drop | 7-day home BP average | *(EMA Hawthorn; AHA)* |
+| Blood-pressure drugs | Hawthorn, Mg, beetroot, Ashwagandha, Pycnogenol and L-arginine all lower BP too — check 7-day home cuff average. *(EMA Hawthorn; ESC home-BP guideline + BIHS UK + Hypertension Canada)* | Hawthorn, Mg, beetroot, Ashwa, Pycnogenol, L-arg | Additive drop | 7-day home BP average | *(EMA Hawthorn; ESC / BHF)* |
 | Beta-blockers | CoQ10 and Hawthorn usually fine; CoQ10 replenishes the pool beta-blockers deplete. *(Khan 2007)* | CoQ10, Hawthorn | CoQ10 replenishes | Usually fine | *(Khan 2007)* |
 | Statins | Avoid grapefruit, add CoQ10 100-200 mg, do NOT add high-dose niacin (muscle/liver). *(EMA statin SmPC)* | Quercetin, grapefruit, niacin | CYP3A4 + muscle | Avoid grapefruit; CoQ10 | *(EMA statin SmPC)* |
 | Thyroid hormone (levothyroxine) | Calcium, iron, magnesium, coffee, soy and flavonoids block absorption — take thyroid pill 60 min before food and any of these. *(EMA levothyroxine SmPC)* | Ca, Fe, Mg, Triphala, coffee, soy | T4 absorption block | Thyroid 60 min before food | *(EMA levothyroxine)* |
@@ -703,12 +703,12 @@ Off-label tinnitus drugs (this protocol recommends NONE): **anti-seizure drugs**
 
 ### 10.2 Drug ↔ Food
 
-> **For you, in plain words.** Seven food-drug rules govern §6 and §8.5 — thyroid pill + food, loop diuretic + salt, warfarin + greens, statins + grapefruit, metformin + alcohol, BP drugs + high-potassium, lithium + low-salt, plus the universal "no tonic water". *(EMA prescribing info; AHA dietary guidance)*
+> **For you, in plain words.** Seven food-drug rules govern §6 and §8.5 — thyroid pill + food, loop diuretic + salt, warfarin + greens, statins + grapefruit, metformin + alcohol, BP drugs + high-potassium, lithium + low-salt, plus the universal "no tonic water". *(EMA prescribing info; ESC + BHF dietary guidance)*
 
 | Drug | TL;DR (plain English) | Food | Mechanism | Action | Citation |
 |---|---|---|---|---|---|
 | Thyroid hormone | Coffee, soy, dairy, fibre and calcium block absorption — take pill 60 min before food. *(EMA levothyroxine SmPC)* | Coffee, soy, dairy, fibre, Ca | T4 binding | 60 min before food | *(EMA levothyroxine SmPC)* |
-| Loop diuretics | High salt cancels the diuretic — keep salt low (§6.3). *(AHA DASH)* | High-salt diet | Cancels diuretic | Low salt | *(AHA DASH)* |
+| Loop diuretics | High salt cancels the diuretic — keep salt low (§6.3). *(ESC + BHF DASH-pattern dietary guidance)* | High-salt diet | Cancels diuretic | Low salt | *(ESC + BHF DASH-pattern dietary guidance)* |
 | Warfarin | Vitamin-K greens shift INR — keep intake consistent, not zero. *(BMJ warfarin-vit-K review)* | Vit-K greens | INR shift | Consistent intake | *(BMJ warfarin-vit-K)* |
 | Statins / CCBs | Grapefruit and Seville orange block the breakdown enzyme — eliminate grapefruit. *(EMA statin SmPC)* | Grapefruit, Seville orange | CYP3A4 | Eliminate grapefruit | *(EMA statin SmPC)* |
 | Metformin | Alcohol can cause lactic acidosis — eliminate. *(EMA metformin SmPC)* | Alcohol | Lactic acidosis | Eliminate alcohol | *(EMA metformin SmPC)* |
@@ -757,7 +757,7 @@ Off-label tinnitus drugs (this protocol recommends NONE): **anti-seizure drugs**
 
 ### 10.5 Timing rules — exercise, sleep, caffeine
 
-> **For you, in plain words.** Last caffeine 14:00; alcohol ≤2-3/week; morning-only stimulants; magnesium and Ashwagandha PM; melatonin tiny dose at bedtime; inversions only on empty morning stomach; exercise around 16:00; no high-intensity intervals near bedtime; red-light AM/midday only with eye protection. Full enforcement is in the §8.5 timetable. *(EMA; Health Canada; AHA)*
+> **For you, in plain words.** Last caffeine 14:00; alcohol ≤2-3/week; morning-only stimulants; magnesium and Ashwagandha PM; melatonin tiny dose at bedtime; inversions only on empty morning stomach; exercise around 16:00; no high-intensity intervals near bedtime; red-light AM/midday only with eye protection. Full enforcement is in the §8.5 timetable. *(EMA; Health Canada; ESC / BHF)*
 
 ### 10.5.5 Gradient AE table — real-clinic incidence (added 2026-06-07 per wave-2 pharmacovigilance + AIIMS integrative-clinic review)
 
@@ -865,7 +865,7 @@ Tinnitus tracks with: hearing loss, jaw + neck dysfunction, underactive thyroid,
 | Vitamin D | Target 40-60 ng/mL. *(EMA vit D)* | 25-OH-D | Cerascreen | *(EMA vit D)* |
 | Zinc + Copper | Keep ratio 8-15 to 1 — never supplement Zn long-term without Cu. *(Health Canada Zn)* | Plasma Zn:Cu | InsideTracker | *(Health Canada Zn)* |
 | Magnesium | Red-cell Mg is more sensitive than serum Mg. *(Health Canada Mg)* | RBC Mg | Walk-In Lab | *(Health Canada Mg)* |
-| High BP | 7-day average on a home cuff — Omron or Withings. *(AHA home BP)* | Home BP 7-day avg | Omron / Withings | *(AHA home BP)* |
+| High BP | 7-day average on a home cuff — Omron or Withings. *(ESC home-BP guideline + BIHS UK + Hypertension Canada)* | Home BP 7-day avg | Omron / Withings | *(ESC home-BP guideline + BIHS UK + Hypertension Canada)* |
 | Abnormal cholesterol | Lipid + ApoB + Lp(a) — ApoB is the load-bearing marker. *(EAS ApoB)* | Lipid + ApoB + Lp(a) | InsideTracker | *(EAS ApoB)* |
 | Sleep apnea | Epworth questionnaire + home sleep test (Lofta/WatchPAT). *(Lofta validation)* | Epworth + home sleep | Lofta / WatchPAT | *(Lofta validation)* |
 | Jaw clenching / TMJ | Self-screen for clench, jaw pain, tooth wear; dental exam. *(Australian Dental Association)* | Self-screen + dental | OTC + dentist | *(Australian Dental Association)* |
