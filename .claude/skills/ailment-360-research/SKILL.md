@@ -479,6 +479,344 @@ The exact phrasing is load-bearing — the website's pricing-band UI parses thes
 
 ---
 
+## v7.0.0 RIGOR RULES (load-bearing, post-2026-06-05 elite-reviewer panel)
+
+Rules 13-22 are the v7.0.0 additions encoded into the skill body. They take effect on every regen as of 2026-06-06. They are a strict superset of Rules 1-12; nothing in v6.2.x is retired. The tinnitus exemplar 2026-06-06 revision is the canonical worked example — open it side-by-side with this skill when authoring a new dossier or regenerating an old one.
+
+### Rule 13 — COUNTERFACTUAL ANNOTATION DISCIPLINE (v7.0.0, load-bearing)
+
+**Every intervention claim with a quantitative magnitude — effect size, response rate, "X out of Y," "median drop of N points" — MUST surface its counterfactual base rate.** This is the single highest-leverage marketing-claim fix the ICML reviewer surfaced. The skill's existing Cochrane-honesty discipline (Rule 4) catches the meta-vs-individual-trial conflict; Rule 13 catches the protocol-vs-baseline conflict.
+
+The three counterfactuals to name per claim:
+
+- **(a) Placebo / sham-control arm response rate** from the most rigorous RCT in the same population. Tinnitus example: "~30% placebo responder rate at the TFI ≥13-point MCID over 8-12 weeks (Duckert 1984; Dobie 1999; McKinney 2003 review; Davis 2008 pooled placebo arms)."
+- **(b) Natural-history / spontaneous-resolution rate** for the same condition over the same window. Acute tinnitus example: "50% spontaneous resolution at 3 months, ~70-80% at 6 months even with no intervention (Davis & Refaie 2000; Yang 2017)."
+- **(c) `counterfactual-unknown` explicit annotation** when neither is available. This is honest; silence isn't.
+
+**Audit trigger.** If the dossier's prose contains any of: `X out of Y see relief`, `responder rate Z%`, `clinically meaningful drop`, `improvement at week N`, `sustained response at N months`, `meaningful change`, `real relief`, and the same paragraph does NOT contain at least one of: `placebo`, `sham`, `natural history`, `spontaneous resolution`, `counterfactual-unknown`, the dossier FAILS Rule 13.
+
+**Worked example — Lenire "7-9 of 10 see real relief sustained 12 months" (the load-bearing failure from the 2026-06-05 audit):**
+
+❌ **Wrong** (compositional misframing — conflates active-arm completer responder rate with active-vs-sham gap, conflates 12-week primary endpoint with 12-month sustainability):
+```markdown
+| Bimodal neuromodulation (Lenire) | B | Conlon 2024 TENT-A2 + Boedts 2024 — 7-9 of 10 see real relief 12 mo. |
+```
+
+✅ **Right** (honest restatement, counterfactual surfaced, ITT vs completer split):
+```markdown
+| Bimodal neuromodulation (Lenire) | B (active-arm) / C (vs sham — no sham-controlled RCT yet) |
+~70-80% completer responder rate at 12-week primary endpoint; ITT responder rate
+~60-65%; 12-month sustainability based on smaller extension cohort. No sham-controlled
+comparator trial published. Active-vs-sham gap unknown. |
+```
+
+The §11.7 "Honest baseline" section in the tinnitus exemplar (2026-06-06 revision) is the canonical implementation: every quantitative protocol claim renders with its placebo + natural-history counterfactual + Lenire ITT-vs-completer split + intra-subject variability framing. Reproduce this section pattern in every dossier with chronic-condition claims.
+
+### Rule 14 — CONFLICT-RESOLUTION LOG PER INTERVENTION (v7.0.0, load-bearing)
+
+**Every intervention where multiple evidence sources conflict — Cochrane vs individual RCT, EMA monograph for a different indication vs condition null, classical text vs modern RCT null — MUST carry a structured conflict-resolution log.** Rule 4 (Cochrane honesty) makes the downgrade; Rule 14 makes the reasoning auditable.
+
+Mandatory fields:
+
+```yaml
+conflict_resolution_log:
+  intervention: "<exact name + form>"
+  sources:
+    - source: "<source citation>"
+      weight: 0.0-1.0   # higher = stronger evidence tier
+      verdict: "<one-line summary>"
+      caveat: "<honest qualifier — e.g., 'indication mismatch — covers cerebral insufficiency not tinnitus'>"
+  decision_rule: "<the auditable rule used to weight conflicting evidence — e.g., 'Cochrane meta-analysis is the highest-evidence tier; when meta and individual trials conflict and individuals feed the meta, meta wins'>"
+  decision: "<current grade + rationale>"
+  upgrade_threshold: "<explicit 'what new evidence would tip this up' — e.g., 'two new high-quality tinnitus RCTs n≥200 ≥10-point THI improvement at 12 weeks → upgrade to B'>"
+  downgrade_threshold: "<symmetric 'what new evidence would tip this down' — e.g., 'Sereda 2024+ reaffirms null AND new ≥200-patient RCT <3-point THI effect → drop to X'>"
+  dissent_note: "<the legitimate alternative grade a senior reviewer could argue today — e.g., 'a senior reviewer could legitimately argue Grade D given Cochrane null + indication-mismatched EMA monograph; decision documented for audit'>"
+```
+
+The tinnitus dossier's Ginkgo §3.2 block is the canonical worked example as of 2026-06-06. Acupuncture (Cochrane Kim 2014 null + RMIT meta + small RCTs mixed → "optional layer") and Black Cohosh (EMA monograph for menopause + no tinnitus RCT → C for perimenopausal sub-type only) need parallel blocks in their dossiers.
+
+### Rule 15 — MECHANISM EVIDENCE LADDER (v7.0.0, load-bearing)
+
+**Every mechanism claim MUST carry a rung tag in square brackets naming the level of evidence the mechanism rests on.** Conflating rungs into a single bullet — the canonical failure pattern the biomedical reviewer caught in the tinnitus dossier's magnesium and Ginkgo rows — is now a BLOCKER.
+
+The rungs:
+
+| Rung | Meaning | Example |
+|---|---|---|
+| `(a) animal model` | Rodent / guinea-pig / chinchilla preclinical | Puel 1995 cochlear NMDA in guinea pig |
+| `(b) ex vivo human cells / cochlear preparation` | Lab-grade evidence at the cellular level | Lorito 2008 chinchilla; ex-vivo hair-cell preparation |
+| `(c) healthy human imaging / pharmacokinetic` | Mechanism observable in healthy adults | Lundberg humming-NO n=10 healthy adults |
+| `(d) condition-specific human imaging` | Mechanism observable in the condition population | MEG cortical-tinnitus-frequency-suppression in tinnitus subjects |
+| `(e) condition-specific clinical RCT` | Mechanism translates to clinical outcome change in the condition | Cima 2012 MBCT-T n=492 in chronic tinnitus |
+
+**Audit trigger.** If a dossier claims "Compound X dampens mechanism Y → improves outcome Z in condition W" without explicit rung-tagging at each step of the chain, the chain is presumed laundered. Surface the rung-tag inline:
+
+```markdown
+**Magnesium (glycinate + L-threonate)**
+Mechanism: NMDA modulation in cochlear inner hair-cell synapse
+  [Rung (b) — ex vivo guinea-pig cochlear preparation, Puel 1995]
+Cochlear delivery at OTC dose: pharmacokinetics in human perilymph
+  [Rung — UNKNOWN, plausibility only]
+Clinical outcome — primary chronic tinnitus loudness/distress reduction
+  [Rung (e) — Cederroth 2011 NULL primary endpoint; Attias 1994 was noise-induced TTS, NOT chronic tinnitus — do not transfer]
+Net grade: C (mechanism plausible; trial null in primary chronic tinnitus)
+```
+
+The tinnitus dossier's §3.3 magnesium row (2026-06-06 revision) is the canonical implementation. Every B-grade or higher claim in a v7-compliant dossier must trace through this ladder. If any rung returns UNKNOWN, the next claim downstream of it must surface the gap honestly, not skip past it.
+
+### Rule 16 — STRUCTURED PER-CLAIM CITATION BLOCK (v7.0.0, load-bearing)
+
+**Every quantitative clinical claim — effect size, n, primary endpoint, dose — MUST be backed by a structured citation block surfaced inside the `#### Open the science` H4 collapsible.** Author-year-only inline italic citations remain in the prose as reading aids; the structured block lives in the deep-dive and is what an auditor + a clinician + an LLM-critic verification pass actually trace.
+
+Mandatory fields per primary-source citation:
+
+```yaml
+citation:
+  authors: "<full author list — first author + et al. is acceptable for >6 authors>"
+  year: <integer>
+  title: "<full paper title>"
+  journal: "<journal abbreviation per ISO 4>"
+  volume_issue: "<vol(issue)>"
+  pages: "<start-end>"
+  pmid: "<NLM PubMed ID>"
+  doi: "<10.xxxx/...>"
+  country: "<authoring institution country — VERIFY against the affiliation field, do NOT infer from author surname>"
+  design: "RCT | cohort | case-control | Cochrane SR | EMA HMPC monograph | classical-text | observational"
+  n: <integer or "n/a for monograph">
+  intervention: "<exact intervention as studied — dose + form + frequency + duration>"
+  comparator: "<placebo / sham / usual care / active control / none — if none, say so>"
+  primary_endpoint: "<exact endpoint as pre-registered>"
+  effect_size: "<metric + value + 95% CI — e.g., 'THI mean Δ -7.6 vs placebo Δ -1.4 in subgroup with severe tinnitus + sleep disturbance; whole-sample NS'>"
+  follow_up: "<duration + cadence>"
+  risk_of_bias: "<RoB-2 or AMSTAR-2 rating with justification>"
+  funding: "<sponsor>"
+  coi_disclosure: "<conflicts of interest as declared>"
+  retrieval_date: "<YYYY-MM-DD when the citation was last verified>"
+  applies_to: "<population scoping — e.g., 'sleep-disturbed tinnitus subgroup; do not over-generalise'>"
+  doctrine_note: "<US-authored trial: 'cited as primary-trial-level evidence, NOT as US-regulator authority'; classical-text: 'honoured as documented classical tradition; modern RCT evidence absent'; industry-funded single-group: 'Belcaro-group methodology critique applies; AMSTAR-2 low; demoted one tier'>"
+```
+
+For classical-text citations, a parallel `ClassicalRef` block is required. Mandatory fields:
+
+```yaml
+classical_citation:
+  text: "<canonical text + tantra/khanda>"
+  chapter: <integer>
+  verse_range: "<start-end>"
+  edition: "<editor + publisher + year>"
+  translator: "<translator + edition + year + language>"
+  page: "<page in cited edition>"
+  surrounding_context: "<is the cited intervention one of several listed for this condition? what are the alternatives?>"
+  cherry_pick_check: "<is the cited intervention the canonical / most commonly recommended classical option, or one cherry-picked because it fits the home-OTC frame? document honestly>"
+  ayush_or_pharmacopoeia_cross_ref: "<e.g., CCRAS Karna-roga STG 2017 pp. 23-26 confirms karna-purana with Bilva taila as one acceptable protocol>"
+  doctrine_note: "Honoured as documented classical tradition; modern RCT evidence absent."
+```
+
+The 2026-06-06 tinnitus revision applied this rule partially — six factual errors caught + inline citations annotated with PMIDs + the EMA Ginkgo monograph indication conflation fixed. Full structured-block back-fill across all ~50 claims is the next pass (item I31 in `docs/IMPROVEMENT_BACKLOG_2026-06-06.md`). New dossiers authored against v7.0.0 ship with structured blocks on every quantitative claim from the start.
+
+### Rule 17 — OPERATIONAL GRADE RUBRIC (v7.0.0, load-bearing)
+
+**Replace prose-label grades with decision-tree triggers.** The Evidence Grading table in the body of this skill (lines ~980-988 today) is descriptive prose. Rule 17 promotes it to an operational rubric with explicit triggers + automatic-downgrade rules + dissent threshold.
+
+```yaml
+grade_rubric_v7:
+  A:
+    conditions_all_required:
+      - "≥ 2 RCTs OR 1 Cochrane SR with low RoB"
+      - "effect_size_clinically_meaningful per condition-specific MCID"
+      - "effect_replicated_across_independent_research_groups"
+    examples:
+      - CBT-T for tinnitus distress
+      - MBCT-T for tinnitus distress
+      - Riboflavin 400 mg for migraine prevention (Schoenen 1998 + Maizels 2004)
+      - Mediterranean diet for secondary CV prevention (PREDIMED 2018)
+
+  B:
+    conditions_any:
+      - "1 well-powered low-RoB RCT + supporting mechanistic evidence"
+      - "Cochrane SR positive with moderate certainty (GRADE B equivalent)"
+      - "regulatory monograph (EMA HMPC well-established-use OR NMPA OR TGA) backed by ≥ 1 published RCT in the cited indication"
+    automatic_downgrade_if:
+      - "all trials from single research group → demote to C"
+      - "all trials industry-sponsored → demote to C unless independent confirmation exists"
+      - "regulatory monograph covers different indication than the dossier's claim → demote to C and surface the indication mismatch"
+    examples:
+      - "NAC for noise-induced ototoxicity prevention (Kopke 2007 + Lin 2010)"
+      - "Sound enrichment for tinnitus distress (Cochrane Sereda 2018)"
+      - "Notched music for tinnitus (Pantev & Okamoto 2010)"
+
+  C:
+    conditions_any:
+      - "small pilot RCTs with mixed results"
+      - "well-designed observational evidence + plausible mechanism"
+      - "regulatory monograph for narrow indication weak/null for the claimed indication"
+      - "automatic-downgrade from B per Rule 17.B above"
+    examples:
+      - "Magnesium for chronic tinnitus (Cederroth 2011 null primary; Attias 1994 was noise-protection, not chronic tinnitus)"
+      - "Tebonin EGb 761 for tinnitus (Cochrane Hilton 2013 re-issued Sereda 2022 null; EMA monograph covers mild dementia + circulatory, NOT tinnitus)"
+      - "Pycnogenol for perimenopausal tinnitus (Belcaro 2014 single-Italian-group + industry-funded — demoted from B per the single-group downgrade rule)"
+
+  D:
+    conditions:
+      - "mechanistic only — in vitro / animal / no human data"
+    examples:
+      - "L-arginine + L-citrulline for tinnitus (Japanese endothelial cohort + mechanistic plausibility; no tinnitus RCT)"
+
+  T:
+    conditions:
+      - "traditional-use evidence — classical text or pharmacopoeial entry"
+      - "no modern RCT in the cited indication"
+      - "honest about evidence gap"
+    examples:
+      - "Karna-purana for tinnitus (Sushruta Uttara Tantra ch. 21)"
+      - "Sushruta-cited Karnapurana with Bilva taila — one of seven oils named; documented for tradition, modern RCT absent"
+
+  H:
+    conditions:
+      - "≤ 3 pilot studies, mostly mechanistic + small n"
+      - "explicit 'early days' framing"
+    examples:
+      - "Home taVNS ear-clip for tinnitus (De Ridder 2014 pilot + Tyler 2017)"
+      - "Bhramari pranayama for tinnitus (Pandey 2014 S-VYASA open-label n<40, no sham control; Telles 2011 vagal-tone-in-healthy-adults is wrong population)"
+
+  X:
+    conditions_any:
+      - "high-quality trial demonstrates null"
+      - "documented harm exceeds benefit"
+      - "marketing > evidence pattern with no RCT base"
+    surface_as: "red-line UI accent in §13.7"
+    examples:
+      - "Homeopathy as active layer for tinnitus (Simpson 1998 PMID 9923984 — no benefit beyond placebo)"
+      - "Lipoflavonoid as cornerstone (marketing > evidence; no RCT base)"
+      - "Kava for anxiety (efficacy C-D; harm E hepatotoxicity — Rule 19 harm-axis veto)"
+
+grade_attaches_to: "(intervention, outcome, population, context) tuples — NOT to the intervention noun"
+worked_examples:
+  - "Pycnogenol grade B for perimenopausal-subgroup short-term TFI; Grade D for generic chronic tinnitus"
+  - "Tebonin EGb 761 grade C in the tinnitus context (Cochrane null); grade B for the cerebral-insufficiency / mild-dementia indication where the EMA monograph holds"
+
+mandatory_fields_per_grade_assignment:
+  - grade_rationale: "specific evidence triggers + automatic downgrades + dissent threshold"
+  - dissent_note: "the legitimate alternative grade a senior reviewer could argue today"
+```
+
+When a dossier ships, the inline `Grade: X` annotation in every table row must be backed by a `grade_rationale` field in the structured side-panel. The 2026-06-06 tinnitus dossier surfaces this rationale inline in prose; full structured-block migration is item I38 in the backlog.
+
+### Rule 18 — FACTUAL-CORRECTNESS AUDIT (v7.0.0, anti-pattern list)
+
+**Every regen MUST verify each cited paper's:**
+
+- (a) journal + year of publication
+- (b) authoring country (do NOT infer from author surname)
+- (c) primary outcome population
+- (d) primary endpoint
+- (e) intervention dose
+
+**The following anti-patterns are documented BLOCKERs after the 2026-06-05 biomedical-reviewer audit caught them in the tinnitus exemplar:**
+
+| Anti-pattern | Failure mode | Correct attribution |
+|---|---|---|
+| `Cima 2012 UK Bristol` | Country fabricated from author surname pattern-matching | Cima RFF et al. *Lancet* 2012; **Maastricht NL** (PMID 22633033). McKenna 2017 is the UK programme; do not conflate. |
+| `Megwalu 2006 Singapore` | Country fabricated from author surname pattern-matching | Megwalu UC et al. *Otolaryngol Head Neck Surg* 2006; **St Louis MO USA (Washington U)** (PMID 16455366). Annotate as US-authored trial cited as primary-trial-level evidence, NOT as US-regulator authority. |
+| `Hurtuk 2011 Israel` | Country fabricated from author surname pattern-matching | Hurtuk A et al. *Ann Otol Rhinol Laryngol* 2011; **Columbus OH USA (Ohio State)** (PMID 21859051). Same handling note. |
+| `Conlon 2024 TENT-A2` | Year fabricated by +2 from publication date | Conlon B et al. TENT-A2 *Sci Rep* 12:10845 **2022** (PMID 35729184), NOT 2024. |
+| `Cochrane Hilton 2013` (without naming re-issue) | Living-review version pin missing | Hilton 2013 PMID 23543524 re-issued by Sereda 2022 PMID 36300891 — same null conclusion. Always version-pin Cochrane reviews. |
+| `Attias 1994 Israel` (as chronic-tinnitus evidence anchor) | Outcome substitution — population + endpoint conflation | Attias 1994 PMID 8135325 measured noise-induced permanent threshold shift in IDF recruits, NOT chronic tinnitus. The chronic-tinnitus Mg trial is Cederroth 2011 PLoS One n=39 — null primary endpoint. Cite Attias for hearing-protection adjacency; cite Cederroth for honest null on chronic tinnitus. |
+
+**The country-attribution errors hollow the no-US-regulator-authority doctrine if US-authored trials are laundered as Singapore / Israel.** This is the founder's specific complaint. The doctrine survives only if every cited paper's affiliation is verified.
+
+**Verification workflow per new dossier (or per regen of an existing dossier):**
+
+1. For every italic author-year citation, resolve it to a PMID + DOI + journal.
+2. Open the paper's affiliation field. Use the FIRST AUTHOR's affiliation as the citation country. Do not pattern-match on surname.
+3. If the affiliation is US (any university, hospital, or research institute in the US), annotate the citation with the explicit doctrine note: `*(Author Year PMID XXXXX — US-authored trial cited as primary-trial-level evidence, NOT as US-regulator authority)*`.
+4. If the paper measured a different outcome (e.g., noise-induced threshold shift) than the claim (e.g., chronic tinnitus reduction), surface the gap explicitly — DO NOT extrapolate silently.
+5. If the paper is a Cochrane review, version-pin it (`Hilton 2013 re-issued Sereda 2022 — same conclusion`).
+
+This rule is the v7.0.0 minimum to claim "honest pluralist evidence" without the apparatus contradicting the claim.
+
+### Rule 19 — TWO-AXIS GRADING — EFFICACY × HARM (v7.0.0, load-bearing)
+
+**The single-letter grade conflates "we don't have evidence it works" with "we have evidence it harms".** These two axes can decouple. A herb with weak efficacy evidence and strong harm signal must be REJECTED. A herb with weak efficacy evidence and no harm signal can be tried. Rule 19 promotes the grade to a compound `EfficacyGrade / HarmGrade`.
+
+**Efficacy axis** — A / B / C / D / T / H / X per Rule 17.
+
+**Harm axis** — A through F:
+
+| Harm grade | Meaning | Examples |
+|---|---|---|
+| A | Essentially zero documented harm at recommended dose | Sound enrichment, MBCT-T, slow-paced breathing |
+| B | Low; predictable mild side effects | NAC (mild GI), magnesium (loose stool), Pycnogenol (anti-platelet at high dose) |
+| C | Moderate; predictable interactions or population-specific risks | Black Cohosh (hepatic ≤ 6 mo ceiling), Ashwagandha (thyroid + Hashimoto's), zinc chronic (copper depletion → CDM) |
+| D | Well-documented serious AE class — hepatic, cardiac, neurologic, haematologic | Chronic high-dose niacin (hepatic), high-dose B6 chronic (peripheral neuropathy), pediatric melatonin overdose (Lelak 2022) |
+| E | Well-documented serious AE class — multiple case clusters or trial signals | Kava (hepatotoxicity), kratom (opioid dependence + hepatic + fatal overdoses), high-dose ephedra (cardiac arrhythmia) |
+| F | Documented life-threatening / irreversible | Comfrey (veno-occlusive disease), chaparral (hepatic), aristolochia (renal failure + urothelial carcinoma) |
+
+**Harm-axis veto rule:** if `HarmGrade ≥ D`, the intervention is REJECTED regardless of efficacy. Surface as Grade X in §13.7 with explicit because-of-harm distinction.
+
+**Per §13.7 column structure (v7.0.0 update to Rule 8.4):** the Tier column becomes compound `Efficacy / Harm`. Rows sorted by `HarmGrade` descending, then `EfficacyGrade` descending. Every "DO NOT RECOMMEND" row carries explicit because-of-harm vs because-of-efficacy distinction in the verdict.
+
+Worked example (from medical reviewer §5.3 table):
+
+| Approach | Efficacy / Harm | Verdict | Where it fits |
+|---|---|---|---|
+| Sound enrichment | B / A | Cochrane Sereda 2018 most-recommended frontline; zero harm. | Cornerstone |
+| Magnesium glycinate | C / A (eGFR-gated) | Cofactor floor; chronic-tinnitus null on primary endpoint. | Daily if eGFR > 60 |
+| Kava | C-D / E | Hepatotoxicity well-documented; banned in EU. **HARM VETO.** | NEVER |
+| Comfrey | T / F | Veno-occlusive hepatic disease. **HARM VETO.** | NEVER |
+| Homeopathy | X / A | Simpson 1998 null; placebo equivalent. Documented for transparency. | NOT active |
+| Lipoflavonoid | X / C | Marketing > evidence; chronic high-dose niacin hepatic. | NEVER |
+
+The §13.7 table in the v7-compliant dossier renders this compound format. The 2026-06-06 tinnitus revision didn't fully migrate to compound format (deferred to next pass — backlog item I40). New dossiers ship with compound format from the start.
+
+### Rule 20 — DEPRESCRIBING DISCIPLINE §12.6 (v7.0.0, load-bearing)
+
+**Every supplement and intervention in the daily combos MUST have an explicit stop condition documented in a `§12.6 Deprescribing — when to drop each layer` table.** Indefinite supplementation chains are now a BLOCKER. This breaks the recurring-revenue marketing pattern and demonstrates honest endpoint thinking.
+
+Required §12.6 columns:
+
+| Layer | Trial window | Decision rule | Action if no shift | Action if real shift | Stop condition |
+|---|---|---|---|---|---|
+
+Mandatory rows per dossier:
+
+- Every supplement in the §08 daily combos
+- Every device in §05 biophysical (red-light, PEMF, sauna, taVNS)
+- Every behavioural intervention in §07 (yoga, pranayama, meditation, MBCT-T, CBT-T)
+- Every classical/traditional formula in §04
+
+The 2026-06-06 tinnitus dossier §12.6 is the canonical worked example — 20 rows covering sound enrichment, MBCT-T, Ginkgo, Magnesium, NAC, Pycnogenol, B12, Zinc, CoQ10, Lion's Mane, Vinpocetine, Melatonin, Black Cohosh, R-ALA, Saffron, Ashwagandha, Karna purana, Acupuncture, taVNS, red-light. Reproduce this pattern in every v7-compliant dossier.
+
+**Closing note in §12.6:** include the "year-2 cost reduction" framing — a reader who follows the deprescribing discipline drops ~40-60% of year-1 cost by year-2 month 6 without losing the layers that demonstrably moved their score. The honest protocol is the cheaper protocol.
+
+### Rule 21 — NO FABRICATED METRICS IN UI (v7.0.0, BLOCKER)
+
+**No number ships to UI without a measured / computed source.** This rule is the consequence of the 2026-06-05 audit's rejection-deciding finding: the home-page "72 new sources / 14 dossiers updated / 3 honest downgrades" stats were JSX string literals with no backend source. Removed 2026-06-06.
+
+**Specific bans:**
+
+- Hard-coded JSX numerals labeled "X new sources this month / Y dossiers updated / Z honest downgrades" are BLOCKERs.
+- Hard-coded date literals labeled "Last evidence sweep: <date>" are BLOCKERs unless backed by a real audit pipeline file `audit/weekly-sweep-YYYY-Wnn.json`.
+- Default props in shared components that look bespoke (e.g., `reviewer = "Dr. Meera Iyer · BAMS · 12 yrs Bengaluru"` as a default) are BLOCKERs. Components must require explicit prop pass-through and crash at build if missing for a journey.
+- Marketing claims that bind the user to a commerce SLA the backend doesn't yet support — "30-day return on unopened items", "Pause or cancel anytime · no contract", "Day 30 meaningful change", "~12 minutes of effort a day" — must either come off the strip or render qualitative-aspirational with the dependent infrastructure tracked in `docs/IMPROVEMENT_BACKLOG_2026-06-06.md`.
+
+**The honest pattern (encoded on the 2026-06-06 home page):** qualitative tiles describing what we sweep + what we show + what's coming at `/audit`. Quantitative claims return only when backed by a real measurement.
+
+### Rule 22 — CRITIC AUTO-FIX BANNED (v7.0.0, BLOCKER)
+
+**`tools/critic-audit.mjs` MUST NOT auto-stamp `schemaVersion`** (destroys provenance — we cannot tell which dossiers were authored against which skill version). **MUST NOT auto-stamp `internalRalph: { pass1Complete: true, pass2Complete: true, pass3Complete: true }`** for any dossier > 5k words (fabricates ralph-pass provenance). Both behaviours were removed at `tools/critic-audit.mjs:140-170` on 2026-06-06.
+
+The audit surfaces gaps honestly, not laundered them.
+
+- Missing `schemaVersion` → BLOCKER. Honest fallback when migrating an old dossier without provenance: declare `schemaVersion: "unknown-pre-v6.2.3"`.
+- Missing `internalRalph` block → BLOCKER.
+- Incomplete `internalRalph` passes (any of pass1/pass2/pass3 false) → WARN. Surface the incomplete pass count so authors can target the gap on next regen.
+- `ailmentId` mismatch between YAML and filename → BLOCKER. Fix authoritatively in the dossier source; do not auto-rename.
+
+**The audit lying to itself was the load-bearing self-laundering pattern the NeurIPS reviewer caught.** v7.0.0 removes that path.
+
+---
+
 ## Foundational rule — TL;DR EVERYWHERE (load-bearing, v6.1)
 
 **Every entry must be readable by a non-technical user in under 15 seconds.** Add a TL;DR line/column to every list item, table row, claim, formula, ingredient, food, anchor, combo, day-plan slot, interaction, scoring instrument, timeline milestone, supplier, expert, FAQ, and references row.
@@ -1016,6 +1354,22 @@ This table is the load-bearing trust mechanism. NicheCore tells the truth about 
 - `### More information` — banned. Be specific about what additional information.
 - `### Mechanism` (when used as the H3 title rather than inside a deep-dive block) — banned at the H3 level because the reader sees it in the left rail before the section opens; rename to "How it quiets the nerve" / "How it slows the rust" / etc. The technical mechanism content itself still goes inside the `#### Open the science` deep-dive block per Rule 1.
 - `### Open the science` (v6.2.4 Rule 9.8) — banned at the H3 level. The canonical deep-dive marker is **H4 (`#### Open the science`)**, not H3. H4 is intentional so the left-rail tree shows H3 sub-section titles (real protocol content) but NOT the deep-dive expander itself. If `### Open the science` appears, the left-rail tree fills with a confusing "Open the science" row — same anti-pattern as `### Overview`. Use `####` exclusively.
+
+**Forbidden marketing / UI claims (v7.0.0 — Rule 21):**
+
+- Hard-coded numeric activity claims in UI ("X new sources this month" / "Y dossiers updated" / "Z honest downgrades") unless backed by `audit/weekly-sweep-YYYY-Wnn.json`.
+- Hard-coded "Last evidence sweep: <date>" strings unless backed by the same audit file.
+- Default props in shared components that look bespoke ("Reviewed by Dr. X · BAMS · N years" as a fallback) — must be required journey-sourced.
+- Binding consumer-SLA claims without backend support: "30-day return", "Pause or cancel anytime · no contract", "Day 30 meaningful change", "~12 minutes of effort a day". Either drop or render aspirational-with-pipeline-tracked.
+- Conflating active-arm completer responder rate with sham-controlled effect ("7-9 out of 10 see real relief") without Rule 13 counterfactual annotation.
+
+**Forbidden citation patterns (v7.0.0 — Rule 18):**
+
+- Country attribution inferred from author surname pattern rather than affiliation field. Verify against PubMed affiliation; do NOT guess from surname.
+- Author-year citation as the only anchor for a quantitative claim. PMID + DOI mandatory inside `#### Open the science` per Rule 16.
+- Cochrane review citation without version pin (Hilton 2013 vs Sereda 2022 re-issue must be distinguished).
+- Cross-condition outcome-substitution: citing a hearing-protection trial as chronic-tinnitus evidence, citing an OCD-NAC trial as a tinnitus mechanism anchor, etc. Surface the bridge or drop the claim.
+- Regulatory-monograph indication conflation: citing EMA Ginkgo HMPC for tinnitus (the monograph covers mild dementia + circulatory). Surface the indication mismatch explicitly.
 
 ## How to apply this skill (workflow)
 
