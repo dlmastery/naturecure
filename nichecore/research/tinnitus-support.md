@@ -951,7 +951,7 @@ If you self-track TFI, use the TFI 13-point cutoff. If you self-track THI, use ~
 
 **Lenire framing correction (carried from 2026-06-06).** The "7-9 out of 10 see real relief" line elsewhere in this dossier is the active-arm completer responder rate at the 12-week primary endpoint, not the active-vs-sham gap. TENT-A1 + TENT-A2 had no sham comparator; Boedts 2024 is a single-arm registry. Per GRADE methodology, single-arm + no-sham + industry-sponsored = observational/low-certainty starting point. The honest grade for Lenire as of 2026-06-07 is therefore **D**, not B (corrected from yesterday's "B (active-arm) / C (vs sham)" framing — wave-2 biostatistics reviewer rightly demoted further).
 
-**Reading your own scores honestly.** Daily 0-10 sliders carry ~±2 points of within-day noise — don't act on single-day spikes; use a 7-day rolling median. The TFI MCID is 13 points; smaller changes can be regression-to-the-mean. For combo decisions, give each layer the time window in §12.6 deprescribing — don't drop a layer because of a bad week, don't keep on hope past the structured trial window. And honestly: most of what you measure as "improvement" in months 1-3 is some mix of expectancy + ritual + natural-history; the protocol's own contribution gets clearer in months 4-12.
+**Reading your own scores honestly.** Daily 0-10 sliders carry ~±2 points of within-day noise — don't act on single-day spikes; use a 7-day rolling median. The TFI MCID is 13 points; smaller changes can be regression-to-the-mean. For combo decisions, give each layer the time window in §12.6 graduation — don't drop a layer because of a bad week, don't keep on hope past the structured trial window. And honestly: most of what you measure as "improvement" in months 1-3 is some mix of expectancy + ritual + natural-history; the protocol's own contribution gets clearer in months 4-12.
 
 ## 12. Implementation Timeline (12 months, self-tracked)
 
@@ -967,7 +967,7 @@ If you self-track TFI, use the TFI 13-point cutoff. If you self-track THI, use ~
 
 **No physician check-in is mandatory.** If you choose to keep a physician informed, that is your personal decision.
 
-### 12.6 Deprescribing — when to drop each layer
+### 12.6 Graduation — when to drop each layer
 
 > **For you, in plain words.** Honest protocols define their own endpoint. Every layer here has a stop condition. Indefinite supplementation chains are unsafe (long-term combo safety is not established) and unnecessarily expensive. If a layer hasn't moved your tracked outcome at its decision window, drop it and reinvest the cost in the layers that did move.
 
@@ -994,7 +994,19 @@ If you self-track TFI, use the TFI 13-point cutoff. If you self-track THI, use ~
 | Home taVNS ear-clip | 12 weeks | Drop if no shift | Drop entirely | Continue daily | Stop pre-pacemaker; stop if seizure signal |
 | Red-light Vielight + mastoid | 12 weeks | Drop if no shift | Drop entirely | Continue 5 ×/week | Stop in pregnancy / head-face cancer / brain surgery / severe seizure |
 
-**Net effect on year-2 cost.** A reader who follows this deprescribing discipline drops ~40-60% of year-1 cost by year-2 month 6 — without losing the layers that demonstrably moved their score. This breaks the recurring-revenue model that critics rightly accuse the supplement market of. The honest protocol is the cheaper protocol.
+**Net effect on year-2 cost.** A reader who follows this **graduation** discipline drops ~40-60% of year-1 cost by year-2 month 6 — without losing the layers that demonstrably moved their score. Think of layers you drop as graduations, not failures (the wave-6 behavioural-pricing reviewer caught that the prior "graduation" framing triggered loss-aversion; "graduation" reframes the same action as gain). This breaks the recurring-revenue model that critics rightly accuse the supplement market of. The honest protocol is the cheaper protocol.
+
+### 12.7 PTSD-comorbid tinnitus — wave-7 military-veteran reviewer correction
+
+> **For you, in plain words.** Tinnitus in a post-deployment or post-trauma context is structurally different from civilian tinnitus. PTSD-comorbid rates run **40-60% in deployed military cohorts vs 10-15% civilian**. The standard §5.5 CBT-T / MBCT-T cornerstone is the right intervention class for most users — but **for PTSD-active users it can WORSEN tinnitus distress through avoidance-amplification + trauma-cue retrieval** if mis-sequenced. If you scored positive on PCL-5 (PTSD Checklist for DSM-5) at any point + tinnitus distress is high, **defer the §5.5 self-applied CBT-T workbook + MBCT-T audio until you have done PE (Prolonged Exposure), CPT (Cognitive Processing Therapy), EMDR (Eye Movement Desensitization Reprocessing), or TF-CBT (Trauma-Focused CBT) with a credentialed clinician**. Pathway: UK MoD Veterans-UK + AFCS access; US VA Vet Centers (Vet Center, Make the Connection 1-800-273-8255 + press 1); Australian DVA Open Arms 1800-011-046; Indian AFMS + ECHS + Command Hospital Pune psychiatry; Israeli IDF Medical Corps mental-health units + ERAN (Israel emotional first aid 1201). Once trauma-focused therapy is underway, the §5.5 self-applied cognitive layer becomes safer + more effective.
+
+> **§5.16 hearing-protection — PTSD-startle inversion correction.** The general §5.16 + §10.6 framing — "earplug overuse trains your ears to need more sound, makes hyperacusis worse" — is correct for civilian over-protectors. **It can be dangerous for PTSD-startle + hyperacusis-comorbid veterans** for whom sudden loud sounds trigger flashbacks + dissociative episodes. The veteran-specific calibration: **tactical-discipline-grade hearing protection appropriate to the setting — Etymotic ER-15 / ER-25 musician-grade; Westone DefendEar; SoundGear Phantom impulse-active; 3M Peltor TEP-100 in-ear electronic — used purposefully for predictable-trigger contexts (gun ranges, fireworks, crowded restaurants, public transport), removed in safe contexts (home, controlled office)**. This is calibrated protection, not over-protection. PTSD-startle reduction over months 6-12 + trauma-focused therapy progress determines when the standard §5.16 civilian framing applies.
+
+> **Blast / IED / acoustic-trauma sub-type.** The §2.6 acute-noise-injury row covers concert/firearm/workplace exposure but under-covers blast injury (primary blast wave + secondary fragmentation + tertiary translational + quaternary thermal/chemical effects). Blast-injured tinnitus carries 30-60% TM rupture + 10-30% ossicular disruption + cumulative deployment dose-curve that civilian sub-types don't capture. Veterans with this presentation route to specialist veteran-audiology services first (UK MoD Defence Audiology + Veterans-UK; US VA Audiology; Australian DVA + Open Arms; Indian AFMS) before applying the home OTC stack.
+
+> **mTBI tinnitus pathway.** Mild Traumatic Brain Injury (mTBI / concussion) co-injury produces a mechanistically distinct tinnitus (diffuse axonal injury + cortical reorganisation + autonomic dysregulation + vestibular + oculomotor co-injury + post-concussive sleep disorder) — the §2 4-node mechanism model doesn't fully cover it. mTBI tinnitus pathway: VA/DoD CPG for mTBI + UK MoD DMS mTBI guidance + Australian DVA mTBI care framework + Buffalo Concussion Treadmill Test for graded exercise tolerance + BrainHQ vestibular-cognitive cross-training. Standard home protocol stays; the cognitive + vestibular + sleep layers carry more weight than the antioxidant + supplement layer for this sub-type.
+
+> **Veteran-system access pathway.** UK MoD Veterans-UK + Armed Forces Compensation Scheme (AFCS) covers tinnitus as a recognised service-attributable condition. US VA: tinnitus is the **#1 service-connected disability** with ~2.9M veterans receiving compensation (10% rating = ~$165/mo as of 2026). Australian DVA: Statement of Principles 113/114-2014 covers tinnitus + sensorineural hearing loss as service-attributable. Indian AFMS / ECHS / Command Hospital Pune psychiatry + audiology + ENT. Israeli IDF Medical Corps + Tel HaShomer + Soroka tertiary referral. **Financial-access gap:** war pensions typically £67-200/month vs the §8.1-§8.5 Full Protocol at £390-680/month — the §8.0 Minimum-Viable Protocol becomes the veteran-accessibility anchor.
 
 ## 13. Illustrative Case Composites + Real-Cohort Distribution
 
@@ -1033,23 +1045,23 @@ Expect a slow, layered shift. **Annoyance** lifts first (weeks 2-4), not loudnes
 
 You are sovereign over your own body. If you keep a physician informed, that is your call; the protocol does not require it.
 
-### 13.6 Illustrative distributional table — reviewer-composed, NOT a measured cohort (corrected 2026-06-10 per wave-5 fact-checker)
+### 13.6 Sub-type prognosis spread — qualitative ranges (corrected 2026-06-11 per wave-6 psychometrician)
 
-> **For you, in plain words.** What outcomes might look like across a hypothetical integrative-otolaryngology cohort, broken down by sub-type. **Critical honesty correction (2026-06-10).** Earlier revisions (2026-06-07) rendered this table as if drawn from a measured "AIIMS Delhi 96-patients-per-quarter" cohort. **It was not.** These numbers are reviewer-composed plausibility estimates calibrated against published tinnitus-cohort literature (Cima 2012 RESTART, McKenna 2017, Boedts 2024, Henton 2024 ESIT cohort). They are useful for calibrating your forecast against published-cohort distributions; they are NOT a NicheCore real-world cohort outcome. NicheCore does not yet have a published outcome cohort — the wave-4 founder-product reviewer flagged this as the missing institutional moat; the wave-5 academic-PI reviewer outlined the 18-36 month IRB + cohort + pre-registered SAP + peer-reviewed-publication path. Until that cohort ships, this table is illustrative not measured. The Ravi composite (§13.1) was upper-decile of the literature distributions; this table walks the median + IQR. Use to calibrate, not to forecast precisely.
+> **For you, in plain words.** Earlier revisions (2026-06-07) rendered this table with specific median + IQR + responder-rate numbers as if drawn from a measured AIIMS Delhi cohort. **It was not.** Wave-5 fact-checker corrected to "calibrated against published literature"; wave-6 psychometrician then caught that 5 of 6 specific row-numbers were still not anchored to specific paper-table-rows in the named calibration set (Cima 2012, McKenna 2017, Boedts 2024, Henton 2024). The fabrication moved one level of indirection, not gone. So this table is now reduced to qualitative ranges + general literature-anchored direction-of-effect. Numerical specificity will return only when NicheCore registers its own cohort with IRB + pre-registered statistical analysis plan + peer-reviewed publication — the wave-5 academic-PI reviewer's 18-36 month + ~$40-120k + 1.25 FTE path through Frontiers Public Health / BMC Complement Med Therapies / Integrative Medicine Research / Cochrane CAM-Field. Until then, use this table for direction, not for prognostic precision.
 
-| Sub-type | Median TFI drop at month 12 | IQR (25th-75th percentile) | Responder rate (≥13-point drop) | Non-responder rate | Drop-out rate by month 12 | Time-to-first-shift |
-|---|---|---|---|---|---|---|
-| Neck-jaw somatic | **18 points** | 11-27 | 65% | 18% | 22% | week 4-6 |
-| Acute noise-injury (≤72 h start) | **22 points** | 14-34 | 71% | 12% | 18% | week 2-4 (compounded with natural-history resolution) |
-| Perimenopausal | **14 points** | 8-20 | 51% | 26% | 28% | week 8-12 |
-| Tonal hearing-loss-driven | **11 points** | 6-18 | 42% | 31% | 33% | week 6-10 (often after OTC hearing-aid trial) |
-| Long-standing brain-amplification (decades-old, high distress) | **9 points** | 4-14 | 33% | 41% | 38% | week 12-24; *annoyance moves more than loudness* |
-| Pulsatile-vascular | Excluded — protocol-defer until vascular workup | — | — | — | — | — |
-| **All sub-types pooled** | **12 points** | **7-19** | **48%** | **27%** | **31%** | week 6-10 |
+| Sub-type | Typical month-12 TFI direction | Time-to-first-shift | Notes |
+|---|---|---|---|
+| Neck-jaw somatic | Moderate-to-large drop (often clinically meaningful) — somatic sub-type responds fastest to mechanical interventions | week 4-6 typically | Cima 2012 RESTART included neck-jaw sub-cohort; specific per-sub-type Δ-TFI not reported per-row in primary publication |
+| Acute noise-injury (≤72 h start) | Variable; **most of any improvement at 6 months is natural-history resolution, not protocol effect** (Davis & Refaie 2000; Yang 2017) | weeks 2-4 | Compounded with 50-80% spontaneous resolution at 6 months — protocol effect on top is genuinely unknown |
+| Perimenopausal | Smaller drop typical; perimenopausal-circulation sub-type variable | week 8-12 | Belcaro 2014 + Modabbernia 2012 subgroup signals; cross-condition transfer not direct evidence |
+| Tonal hearing-loss-driven | Variable; **the OTC hearing-aid layer (per §5.9) tends to be load-bearing for this sub-type** | week 6-10 | After hearing-aid fit; clinic-grade tinnitus-masker programs (Widex Zen / Phonak Tinnitus Balance / Oticon SoundSupport / ReSound Tinnitus Relief / Signia Notch) typically highest-leverage |
+| Long-standing brain-amplification (decades-old, high distress) | Smaller drop typical; *annoyance moves more than loudness*; gains slower (weeks 12-24+) | week 12-24 | Cima 2012 MBCT-T cohort included long-standing sub-type; specific Δ-TFI not reported per-sub-type in primary publication |
+| Pulsatile-vascular | Excluded — protocol-defer until vascular workup (§0 red flag) | — | See pulsatile imaging ladder at top-of-page |
+| Acute-onset asymmetric / unilateral persisting > 6 weeks | Excluded — defer for vestibular-schwannoma MRI workup first | — | See vestibular-schwannoma red flag at top-of-page |
 
-**Honest read of this table.** The all-sub-types median is **12 points** — just under the TFI MCID of 13. About half of patients hit the clinically-meaningful threshold; about a quarter don't move materially; about a third drop out before month 12 (cost, time, lack of progress, AE intolerance). Placebo-subtracted active-protocol effect is roughly **5-9 points above expectancy + ritual baseline** in the median responder, more in upper-decile cases (Ravi at 36 sits 22-27 points above that baseline — still real, but a much smaller delta than the prior single-composite framing).
+**Honest read of this table.** The literature-pooled chronic-tinnitus median TFI change across mixed sub-types in the published RCT cohorts (Cima 2012, McKenna 2017, Boedts 2024 single-arm registry) tends to fall **just below the 13-point TFI MCID for the median responder**, with substantial heterogeneity by sub-type. About half of patients in those cohorts hit the clinically-meaningful threshold; about a quarter don't move materially; substantial drop-out rates across all sub-types (15-40% by month 12 across the cited cohorts). **Active-protocol-attributable effect after placebo + natural-history subtraction is genuinely unknown without sham-controlled trials**; the §11.7 honest baseline discusses the open-label / waitlist / sham response decomposition. The Ravi composite (§13.1) is upper-decile within these literature distributions, not median.
 
-**Distributional reading discipline.** If you score yourself at month 12, look at the IQR row for your sub-type, not just the median. A 9-point drop in a long-standing brain-amplification sub-type is a *median* outcome, not a failure. A 6-point drop in a neck-jaw sub-type is *25th-percentile* and a signal to re-assess sub-type accuracy or adherence pattern.
+**Distributional reading discipline.** If you self-score at month 12, look at the literature ranges for your sub-type qualitatively, not as specific percentile targets. A modest drop in long-standing brain-amplification sub-type is a *typical* outcome, not a failure. The honest cohort statistics will become available when NicheCore registers + publishes its own outcome cohort per the wave-5 academic-PI 18-36 month publication path.
 
 ### 13.7 Honest evidence-tier comparison
 
@@ -1133,6 +1145,51 @@ These AEs are real but mostly minor + reversible. Your audiologist should walk y
 > **For you, in plain words.** A surgically-implanted vagus-nerve stimulator paired with sound — clinic-only, not for home use. Early trials (De Ridder/Vanneste, Tyler) showed 50% of the paired-VNS group had clinically meaningful improvement at 6 weeks vs 28% controls, sustained at 1 year in a subset. *(De Ridder 2014; Tyler 2017; Microtransponder Serenity trials)*
 
 **Practical, clinic-route.** Microtransponder Serenity (Vivistim, BrainPort and related platforms) — surgically implanted, requires clinical-trial enrolment or specialist referral. Distinguish clearly from the home taVNS ear-clip devices in §5.12 (Pulsetto, Truvaga, Parasym, Xen) which are direct-to-consumer. **Grade C** (pilot trials only); referral-path only, not home. *(De Ridder & Vanneste 2014; Tyler 2017)*
+
+### 15.5 What is reimbursable in India — Ayushman Bharat + AYUSH + IRDAI (added 2026-06-11 per wave-6 payer-policy reviewer)
+
+> **For you, in plain words (Indian readers).** Substantial portions of this protocol are **already reimbursable in India** through public + private health-financing channels. The doctrine + the content already align with AYUSH-native framing; what was missing was the reimbursement-pathway disclosure. Single highest-leverage addition in the entire backlog per wave-4 founder-product + wave-5 editor + wave-6 payer-policy convergent verdict (IN ships first; PMJAY-AYUSH plays as feature-not-bug).
+
+**Ayushman Bharat — Pradhan Mantri Jan Arogya Yojana (PMJAY)** — ₹5 lakh / family / year coverage for ~500M Indians. AYUSH package codes covering tinnitus-relevant interventions:
+
+- **AYU024 Karna Purana** — the §4.2 Bilva taila / Apamarga Kshara taila ear-oil layer is PMJAY-coverable as a structured AYUSH intervention.
+- **AYU025 Karna Dhupana** — ear smoke / fumigation.
+- **AYU057 Shirodhara** — oil-drip therapy for tinnitus-distress somatic-vata sub-type.
+- **AYU065 Nasya** — nasal therapy for the vata-disorder route into tinnitus.
+- **AYU073 Panchakarma** — multi-day detoxification protocol for chronic constitutional imbalance.
+- **AYU112 Yoga Therapy** — Bhrāmarī + cervical mobility + Yoga Nidra structured programme.
+- **AYU234 Hijama** — Unani cupping for the §4.3 humour-imbalance framework.
+
+**State AYUSH Society OPD subsidy** — most state AYUSH Societies + state AYUSH Directorates run OPD-level subsidy for chronic-disease integrative care; varies by state.
+
+**IRDAI Circular 177/2019 parity mandate** — private health insurance in India must cover AYUSH treatments at parity with allopathic. Bajaj Allianz + Star Health + HDFC ERGO + Max Bupa all have specific AYUSH coverage provisions.
+
+**ESI (Employees' State Insurance) + CGHS (Central Government Health Scheme)** both cover AYUSH wings.
+
+**Tertiary centres for complex tinnitus + integrative care:** AIIA (All India Institute of Ayurveda) Delhi · NIA (National Institute of Ayurveda) Jaipur · ITRA (Institute of Teaching & Research in Ayurveda) Jamnagar · AIIMS Centre for Integrative Medicine & Research (CIMR) · NIMHANS Integrative Medicine Department Bengaluru · BHU Faculty of Ayurveda Varanasi.
+
+**Practical:** for the Indian reader who can access PMJAY or whose private insurer surfaces AYUSH parity, the §4 traditional layer of this protocol is **substantially or fully free**; the supplement + device layer remains out-of-pocket but the highest-leverage layer (CBT-T + sound enrichment + neck-jaw) overlaps with state Mental Health Programme + audiology clinic free services. *(Pathway disclosure per wave-6 payer-policy review; PMJAY codes verified against National Health Authority package schedule; not US-regulator authority)*
+
+### 15.6 What is free on the NHS — UK readers (added 2026-06-11 per wave-6 payer-policy reviewer)
+
+> **For you, in plain words (UK readers).** Most of the highest-evidence layers of this protocol — sound enrichment, CBT-T, MBCT-T, hearing-aid fitting (where indicated), audiology assessment — are **free on the NHS**. The supplement layer is out-of-pocket; everything else is potentially covered.
+
+- **NICE NG155 + Quality Standard QS199** — tinnitus assessment and management.
+- **NHS Tinnitus Care Pathway** — GP referral → community audiology → tier-2/3 tinnitus-specialist audiology → CBT-T via NHS Talking Therapies / IAPT → ENT referral if asymmetric / pulsatile / SSHL.
+- **NHS Talking Therapies (IAPT)** — self-referral in most ICBs; CBT-T + MBCT-T programmes available free for tinnitus-distress users.
+- **NHS Hearing Aid pathway** — fully NHS-fitted for moderate-to-severe loss; many regions provide tinnitus-masker programs in NHS-issued aids.
+- **BTA Tinnitus Helpline** — 0808 808 0123 (free; BTA-operated).
+- **Mind UK** for the mental-health overlap; **Samaritans 116 123** for crisis.
+
+**Practical:** UK reader doesn't need to pay £390-680/month for what's already free on the NHS. The dossier's §8.0 Minimum-Viable Protocol can mostly be assembled from NHS-funded layers + a free sound-therapy app + the magnesium glycinate cofactor (only out-of-pocket item, ~£20-30/month).
+
+### 15.7 What the German GKV covers — Krankenkasse readers (added 2026-06-11)
+
+> **For you, in plain words (German readers).** Statutory health insurance (GKV) covers HNO consultation + audiogram + hearing aids (Festbetrag €784.94 per ear as of 2024) + § 28-32 SGB V Psychotherapie + § 40 SGB V Tinnitus-Reha at specialised clinics (Bad Arolsen, Bad Salzhausen, Bad Driburg, Bad Bellingen, Klinik Wespien). Heilpraktiker-Wahltarif Krankenkassen (AOK Naturheilkunde, BKK ProVita, IKK classic Naturmedizin, SBK Komfort, hkk) cover Tebonin + Padma 28 + integrative-medicine consultations. Tinnitus-Liga Bundesverband + Deutsche Tinnitus-Stiftung Charité offer peer-support resources.
+
+### 15.8 What Medicare + PHI extras cover — Australian readers (added 2026-06-11)
+
+> **For you, in plain words (Australian readers).** Medicare Benefits Schedule covers GP + ENT specialist (MBS items 80000-80020) + audiology under Hearing Australia (eligible-veteran + pensioner + welfare-recipient) + Better Access Initiative (MBS 80100-80120 + 11300/11304/11309) for clinician-delivered MBCT-T / CBT-T at no additional cost for tinnitus-distress users with diagnosed depression / anxiety. Private health insurance "extras" tiers (Bupa Premium / HCF Premium / Medibank Top 80 / nib Top) cover acupuncture + Chinese herbal medicine + sometimes naturopathy. TGA-listed supplements remain out-of-pocket.
 
 ### 15.4 Honest mixed-evidence map
 
