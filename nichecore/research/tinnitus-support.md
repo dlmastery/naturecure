@@ -8,7 +8,7 @@ clinicalScoringInstrument: "Tinnitus Functional Index (self-scored questionnaire
 subTypes: [tonal-hearing-loss-driven, somatic-neck-or-jaw, after-ototoxic-drug, central-gain-decades-old, pulsatile-vascular-red-flag, perimenopausal, acute-noise-injury]
 comorbidityScreen: [age-or-noise-related-hearing-loss, jaw-and-neck-dysfunction, underactive-thyroid, low-B12, low-iron, low-vitamin-D, sleep-apnea, high-blood-pressure, high-cholesterol, depression, anxiety-with-sound-sensitivity, ear-toxic-medication-load, perimenopause, chronic-kidney-disease, on-warfarin-or-DOAC, sudden-unilateral-hearing-loss-72h-window]
 authorAgent: ailment-360-research
-schemaVersion: v7.0.0-rigor-pass-2026-06-06
+schemaVersion: v7.1.0-option-c-architectural-commit-2026-06-08
 priorSchemaVersion: v6.1-plain-english-first-plus-emerging
 reviewPanelAudit2026-06-06:
   iclr: revise → apply Top-20 + structured-claim primitive deferred to skill v7
@@ -33,6 +33,8 @@ internalRalph:
   pass3Complete: false  # rigor pass — placebo/sham/natural-history annotations added in §11.7; structured-claim primitive deferred; eGFR/K2/SSHL safety gates added; full 6-tradition classical-citation discipline deferred
 ---
 
+> **Architectural commit (v7.1.0, added 2026-06-08).** After a 14-wave / 70-elite-reviewer audit converging on six independent framework anchors (cost-per-QALY + adherence + accessibility + cultural inclusion + vulnerable-population safety + carbon-and-biodiversity), this dossier commits to **Option C: MVP-as-default + progressive disclosure + cost-per-QALY-sorted prominence + WCAG 2.2 AA + per-jurisdiction PPP + PREMs + paediatric overlay + disability-justice surface + diaspora-multilingual glossary**. The §8.0 Minimum-Viable Protocol is now the **primary recommendation**; §8.1-§8.5 escalate **only** when the MVP self-check signals at week 8 + week 12 indicate it. The full protocol is no longer the default — it is the opt-in step-up. **The six-axis inverse-care-law remediation is the doctrinal commitment, not a footnote.** *(Founder-synthesis wave-14; quintuple-convergent wave-13; full backlog at docs/IMPROVEMENT_BACKLOG_WAVE14_2026-06-08.md)*
+>
 > **For you, in plain words.** This is a safe, over-the-counter, at-home plan for long-term ringing in the ears. Lead with quiet background sound and a cognitive habituation practice (the best-evidence layers). Supplements come second. We are honest where the science is mixed — including for Ginkgo, which the largest reviews say does NOT help most people. *(WHO Traditional Medicine Strategy 2025-2034; Cochrane Hilton 2013; Sereda 2018 Cochrane sound-therapy review)*
 >
 > **The frame.** Grounded in WHO Traditional & Complementary Medicine Strategy 2025-2034, India's Ministry of AYUSH (CCRAS, CCRH, CCRUM, CCRS, PCIMH), EMA herbal monographs, Australia TGA, China NMPA + Chinese Pharmacopoeia 2020, Health Canada Natural Health Products, Tibetan Men-Tsee-Khang, Hamdard Dawakhana, IMPCOPS Chennai, plus the classical Ayurvedic, Chinese, Unani, Siddha, Tibetan and homeopathic texts. **No US regulator or US disease association is cited as authority.** The single factual exception is the regulatory-path note about Lenire (FDA De Novo grant 2023) in §15, used as historical context, not as the evidence anchor — the evidence anchor for that device remains the TENT-A2 trial and Boedts 2024 in Nature Communications Medicine.
