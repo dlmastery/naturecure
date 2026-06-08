@@ -23,7 +23,7 @@ const RUN_EVENTS: EventItem[] = [
   { tool: "compose.answer", detail: "Bound answer to claim IDs + source links — no free-form claims", icon: Cpu },
 ];
 
-const UNSAFE_TRIGGER = /spreading|chest pain|suicid|hypoglyc|emergency|cure/i;
+const UNSAFE_TRIGGER = /spreading|chest pain|suicid|self[- ]?harm|kill myself|end (my|it) (all|now|life)|hopeless|hypoglyc|emergency|cure|sudden hearing loss|hearing loss in (one|left|right) ear|deaf in (one|left|right) ear|one[- ]?sided|asymmetric|unilateral|pulsatile|whooshing|heartbeat in (my )?ear|new headache|worst headache|thunderclap|visual obscur|papill?oedema|sshl|hashimoto|levothyrox|warfarin|coumadin|ototoxi|aminoglycos|cisplatin|gentamicin|tobramycin|amikacin|vanco|furosemid|bumetanid|cinchona|quinine|chemo|radiation|stroke|tia|seizure|fainted|loss of consciousness|pregnant|breastfeed|lactating|postpart|peri[- ]?delivery|pre[- ]?eclamp|hellp|epidural|spinal block|pdph|sheehan|pituitary|cvst|venous sinus thromb|bell.s palsy|facial droop|facial weakness|tongue numb|slurred speech|hemipares|vertigo and|nystagmus|menieres? (attack|crisis)|hyperten(sive|sion) (urgency|crisis)|bp (over |above |of )(180|200)|stiff neck|photophobia/i;
 
 export default function Guru() {
   const [prompt, setPrompt] = useState("");
